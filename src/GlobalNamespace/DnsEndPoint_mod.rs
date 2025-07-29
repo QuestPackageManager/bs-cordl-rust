@@ -1,4 +1,4 @@
-#[cfg(feature = "DnsEndPoint")]
+#[cfg(feature = "cordl_class_DnsEndPoint")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DnsEndPoint {
@@ -11,7 +11,7 @@ pub struct DnsEndPoint {
         >,
     >,
 }
-#[cfg(feature = "DnsEndPoint")]
+#[cfg(feature = "cordl_class_DnsEndPoint")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DnsEndPoint {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DnsEndPoint 
         false
     }
 }
-#[cfg(feature = "DnsEndPoint")]
+#[cfg(feature = "cordl_class_DnsEndPoint")]
 impl std::ops::Deref for crate::GlobalNamespace::DnsEndPoint {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DnsEndPoint")]
+#[cfg(feature = "cordl_class_DnsEndPoint")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DnsEndPoint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -338,7 +338,7 @@ impl crate::GlobalNamespace::DnsEndPoint {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DnsEndPoint")]
+#[cfg(feature = "cordl_class_DnsEndPoint")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DnsEndPoint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeFieldAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub _useEditMode_k__BackingField: crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimeFieldAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Timeline::TimeFieldAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimeFieldAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimeFieldAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -105,7 +105,7 @@ impl crate::UnityEngine::Timeline::TimeFieldAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TimeFieldAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -115,7 +115,7 @@ for crate::UnityEngine::Timeline::TimeFieldAttribute {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeFieldAttribute_UseEditMode {
@@ -123,7 +123,7 @@ pub enum TimeFieldAttribute_UseEditMode {
     ApplyEditMode = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
     type Held<'a> = Self;
@@ -153,7 +153,7 @@ for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
     type Type = Self;
@@ -164,7 +164,7 @@ for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
     type Actual = Self;
@@ -178,7 +178,7 @@ for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
     type Type = Self;
@@ -193,7 +193,7 @@ for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
     type Actual = Self;

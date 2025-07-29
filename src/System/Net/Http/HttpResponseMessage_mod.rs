@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Http+HttpResponseMessage")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpResponseMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpResponseMessage {
@@ -17,7 +17,7 @@ pub struct HttpResponseMessage {
         crate::System::Net::Http::HttpRequestMessage,
     >,
 }
-#[cfg(feature = "System+Net+Http+HttpResponseMessage")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpResponseMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::HttpResponseMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::System::Net::Http::HttpResponseMessage {
         false
     }
 }
-#[cfg(feature = "System+Net+Http+HttpResponseMessage")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpResponseMessage")]
 impl std::ops::Deref for crate::System::Net::Http::HttpResponseMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Http+HttpResponseMessage")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpResponseMessage")]
 impl std::ops::DerefMut for crate::System::Net::Http::HttpResponseMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -451,7 +451,7 @@ impl crate::System::Net::Http::HttpResponseMessage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Http+HttpResponseMessage")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpResponseMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::HttpResponseMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EIOBufferMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EIOBufferMode {
@@ -7,7 +7,7 @@ pub enum EIOBufferMode {
     Read = 1i32,
     Write = 2i32,
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EIOBufferMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EIOBufferMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EIOBufferMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EIOBufferMod
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EIOBufferMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EIOBufferMo
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EIOBufferMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EIOBufferMod
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EIOBufferMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

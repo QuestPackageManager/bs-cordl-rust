@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+AttributeCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttributeCollection {
@@ -15,7 +15,7 @@ pub struct AttributeCollection {
     >,
     pub _index: i32,
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::AttributeCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::System::ComponentModel::AttributeCollection {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::AttributeCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection")]
 impl std::ops::DerefMut for crate::System::ComponentModel::AttributeCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -394,7 +394,7 @@ impl crate::System::ComponentModel::AttributeCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::AttributeCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -432,14 +432,14 @@ for crate::System::ComponentModel::AttributeCollection {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection+AttributeEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AttributeCollection_AttributeEntry {
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub index: i32,
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Held<'a> = Self;
@@ -469,7 +469,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Type = Self;
@@ -480,7 +480,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Actual = Self;
@@ -494,7 +494,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
         self
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Type = Self;
@@ -509,7 +509,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
         }
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Actual = Self;
@@ -523,7 +523,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
         actual
     }
 }
-#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Type = Self;

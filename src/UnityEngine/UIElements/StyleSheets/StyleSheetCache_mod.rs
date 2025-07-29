@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleSheetCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -162,7 +162,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -172,14 +172,18 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleSheetCache_SheetHandleKey {
     pub sheetInstanceID: i32,
     pub index: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Held<'a> = Self;
@@ -209,7 +213,9 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Type = Self;
@@ -220,7 +226,9 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Actual = Self;
@@ -234,7 +242,9 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Type = Self;
@@ -249,7 +259,9 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Actual = Self;
@@ -263,7 +275,9 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Type = Self;
@@ -310,7 +324,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -318,7 +332,7 @@ pub struct StyleSheetCache_SheetHandleKeyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
@@ -340,7 +354,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
@@ -350,7 +364,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
@@ -448,7 +462,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {

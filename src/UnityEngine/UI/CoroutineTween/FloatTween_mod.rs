@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FloatTween {
@@ -10,7 +10,7 @@ pub struct FloatTween {
     pub m_Duration: f32,
     pub m_IgnoreTimeScale: bool,
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::CoroutineTween::FloatTween {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CoroutineTween::FloatTween {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CoroutineTween::FloatTween {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CoroutineTween::FloatTween {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::CoroutineTween::FloatTween {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UI::CoroutineTween::FloatTween {
     type Type = Self;
@@ -403,13 +403,17 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatTween_FloatTweenCallback {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -429,7 +433,9 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
     type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
@@ -437,7 +443,9 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -475,7 +483,9 @@ impl crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

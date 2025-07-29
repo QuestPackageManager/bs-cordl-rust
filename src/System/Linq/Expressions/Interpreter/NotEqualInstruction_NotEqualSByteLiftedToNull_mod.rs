@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NotEqualInstruction_NotEqualSByteLiftedToNull {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {

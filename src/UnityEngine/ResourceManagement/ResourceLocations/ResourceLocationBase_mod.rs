@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceLocationBase {
@@ -19,7 +21,9 @@ pub struct ResourceLocationBase {
     >,
     pub m_PrimaryKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,7 +43,9 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationB
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -47,7 +53,9 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationB
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -469,7 +477,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocation
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

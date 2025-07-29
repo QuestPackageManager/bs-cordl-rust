@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputDeviceCharacteristics {
@@ -16,7 +16,7 @@ pub enum InputDeviceCharacteristics {
     TrackedDevice = 32u32,
     TrackingReference = 128u32,
 }
-#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Actual = Self;

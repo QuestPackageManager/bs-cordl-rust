@@ -1,4 +1,4 @@
-#[cfg(feature = "PackDefinitionSO")]
+#[cfg(feature = "cordl_class_PackDefinitionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO {
@@ -26,7 +26,7 @@ pub struct PackDefinitionSO {
         crate::GlobalNamespace::PackDefinitionSO_Credits,
     >,
 }
-#[cfg(feature = "PackDefinitionSO")]
+#[cfg(feature = "cordl_class_PackDefinitionSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PackDefinitionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PackDefiniti
         false
     }
 }
-#[cfg(feature = "PackDefinitionSO")]
+#[cfg(feature = "cordl_class_PackDefinitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackDefinitionSO")]
+#[cfg(feature = "cordl_class_PackDefinitionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -603,7 +603,7 @@ impl crate::GlobalNamespace::PackDefinitionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackDefinitionSO")]
+#[cfg(feature = "cordl_class_PackDefinitionSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackDefinitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -612,7 +612,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackDefinitio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PackDefinitionSO+Credits")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Credits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_Credits {
@@ -622,7 +622,7 @@ pub struct PackDefinitionSO_Credits {
         crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
     >,
 }
-#[cfg(feature = "PackDefinitionSO+Credits")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Credits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackDefinitionSO_Credits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -642,14 +642,14 @@ for crate::GlobalNamespace::PackDefinitionSO_Credits {
         false
     }
 }
-#[cfg(feature = "PackDefinitionSO+Credits")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Credits")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_Credits {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackDefinitionSO+Credits")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Credits")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionSO_Credits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -686,7 +686,7 @@ impl crate::GlobalNamespace::PackDefinitionSO_Credits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackDefinitionSO+Credits")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Credits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PackDefinitionSO_Credits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -696,7 +696,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Credits {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LeaderboardIds")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_LeaderboardIds {
@@ -717,7 +717,7 @@ pub struct PackDefinitionSO_LeaderboardIds {
         crate::GlobalNamespace::SonyLeaderboardIdsSO,
     >,
 }
-#[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LeaderboardIds")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -737,14 +737,14 @@ for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
         false
     }
 }
-#[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LeaderboardIds")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LeaderboardIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1066,7 +1066,7 @@ impl crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LeaderboardIds")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1076,7 +1076,7 @@ for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LevelProductPacks")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_LevelProductPacks {
@@ -1097,7 +1097,7 @@ pub struct PackDefinitionSO_LevelProductPacks {
         crate::GlobalNamespace::PS5LevelProductPacksSO,
     >,
 }
-#[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LevelProductPacks")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1117,14 +1117,14 @@ for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
         false
     }
 }
-#[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LevelProductPacks")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LevelProductPacks")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1452,7 +1452,7 @@ impl crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+LevelProductPacks")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1462,7 +1462,7 @@ for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PackDefinitionSO+Tags")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Tags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PackDefinitionSO_Tags {
@@ -1472,7 +1472,7 @@ pub enum PackDefinitionSO_Tags {
     Hidden = 0i32,
     InDevelopment = 4i32,
 }
-#[cfg(feature = "PackDefinitionSO+Tags")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Held<'a> = Self;
@@ -1502,7 +1502,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Tags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PackDefinitionSO+Tags")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Type = Self;
@@ -1513,7 +1513,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Tags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PackDefinitionSO+Tags")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Actual = Self;
@@ -1527,7 +1527,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Tags {
         self
     }
 }
-#[cfg(feature = "PackDefinitionSO+Tags")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Type = Self;
@@ -1542,7 +1542,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Tags {
         }
     }
 }
-#[cfg(feature = "PackDefinitionSO+Tags")]
+#[cfg(feature = "cordl_class_PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Actual = Self;

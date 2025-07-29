@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+ObjectIdRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ObjectIdRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectIdRequest {
@@ -7,7 +7,7 @@ pub struct ObjectIdRequest {
         crate::UnityEngine::RenderTexture,
     >,
 }
-#[cfg(feature = "UnityEngine+Rendering+ObjectIdRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ObjectIdRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::ObjectIdRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::Rendering::ObjectIdRequest {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ObjectIdRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ObjectIdRequest")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::ObjectIdRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ObjectIdRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ObjectIdRequest")]
 impl std::ops::DerefMut for crate::UnityEngine::Rendering::ObjectIdRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -70,7 +70,7 @@ impl crate::UnityEngine::Rendering::ObjectIdRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ObjectIdRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ObjectIdRequest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Rendering::ObjectIdRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

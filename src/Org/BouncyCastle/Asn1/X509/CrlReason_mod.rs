@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+CrlReason")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+CrlReason")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CrlReason {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerEnumerated,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+CrlReason")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+CrlReason")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::X509::CrlReason {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::X509::CrlReason {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+CrlReason")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+CrlReason")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::CrlReason {
     type Target = crate::Org::BouncyCastle::Asn1::DerEnumerated;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+CrlReason")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+CrlReason")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::CrlReason {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlReason {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+CrlReason")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+CrlReason")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::X509::CrlReason {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

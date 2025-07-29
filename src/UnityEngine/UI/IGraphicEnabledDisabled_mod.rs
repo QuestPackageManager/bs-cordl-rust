@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UI+IGraphicEnabledDisabled")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+IGraphicEnabledDisabled")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IGraphicEnabledDisabled {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UI+IGraphicEnabledDisabled")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+IGraphicEnabledDisabled")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::IGraphicEnabledDisabled {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UI::IGraphicEnabledDisabled {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+IGraphicEnabledDisabled")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+IGraphicEnabledDisabled")]
 impl std::ops::Deref for crate::UnityEngine::UI::IGraphicEnabledDisabled {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+IGraphicEnabledDisabled")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+IGraphicEnabledDisabled")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::IGraphicEnabledDisabled {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -70,7 +70,7 @@ impl crate::UnityEngine::UI::IGraphicEnabledDisabled {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+IGraphicEnabledDisabled")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+IGraphicEnabledDisabled")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::IGraphicEnabledDisabled {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

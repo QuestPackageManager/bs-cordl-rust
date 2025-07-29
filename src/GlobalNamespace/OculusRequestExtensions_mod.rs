@@ -1,10 +1,10 @@
-#[cfg(feature = "OculusRequestExtensions")]
+#[cfg(feature = "cordl_class_OculusRequestExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusRequestExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OculusRequestExtensions")]
+#[cfg(feature = "cordl_class_OculusRequestExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusRequestExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OculusRequestExtensions {
         false
     }
 }
-#[cfg(feature = "OculusRequestExtensions")]
+#[cfg(feature = "cordl_class_OculusRequestExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusRequestExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusRequestExtensions")]
+#[cfg(feature = "cordl_class_OculusRequestExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusRequestExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::OculusRequestExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusRequestExtensions")]
+#[cfg(feature = "cordl_class_OculusRequestExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusRequestExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

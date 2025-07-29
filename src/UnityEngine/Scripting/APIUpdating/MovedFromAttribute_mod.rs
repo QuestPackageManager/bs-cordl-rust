@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MovedFromAttribute {
     __cordl_parent: crate::System::Attribute,
     pub data: crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData,
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -136,7 +136,7 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLobbyCenterStageManager")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyCenterStageManager {
@@ -13,7 +13,7 @@ pub struct MultiplayerLobbyCenterStageManager {
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
 }
-#[cfg(feature = "MultiplayerLobbyCenterStageManager")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
         false
     }
 }
-#[cfg(feature = "MultiplayerLobbyCenterStageManager")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLobbyCenterStageManager")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -180,7 +180,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLobbyCenterStageManager")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+InternalRemotingServices")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+InternalRemotingServices")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalRemotingServices {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Remoting+InternalRemotingServices")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+InternalRemotingServices")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::InternalRemotingServices {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::InternalRemotingServices {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+InternalRemotingServices")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+InternalRemotingServices")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::InternalRemotingServices {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+InternalRemotingServices")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+InternalRemotingServices")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::InternalRemotingServices {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::System::Runtime::Remoting::InternalRemotingServices {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+InternalRemotingServices")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+InternalRemotingServices")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::InternalRemotingServices {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

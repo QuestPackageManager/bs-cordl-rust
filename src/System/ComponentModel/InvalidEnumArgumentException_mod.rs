@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+InvalidEnumArgumentException")]
+#[cfg(feature = "cordl_class_System+ComponentModel+InvalidEnumArgumentException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvalidEnumArgumentException {
     __cordl_parent: crate::System::ArgumentException,
 }
-#[cfg(feature = "System+ComponentModel+InvalidEnumArgumentException")]
+#[cfg(feature = "cordl_class_System+ComponentModel+InvalidEnumArgumentException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::InvalidEnumArgumentException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::InvalidEnumArgumentException {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+InvalidEnumArgumentException")]
+#[cfg(feature = "cordl_class_System+ComponentModel+InvalidEnumArgumentException")]
 impl std::ops::Deref for crate::System::ComponentModel::InvalidEnumArgumentException {
     type Target = crate::System::ArgumentException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+InvalidEnumArgumentException")]
+#[cfg(feature = "cordl_class_System+ComponentModel+InvalidEnumArgumentException")]
 impl std::ops::DerefMut for crate::System::ComponentModel::InvalidEnumArgumentException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::System::ComponentModel::InvalidEnumArgumentException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+InvalidEnumArgumentException")]
+#[cfg(feature = "cordl_class_System+ComponentModel+InvalidEnumArgumentException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::InvalidEnumArgumentException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

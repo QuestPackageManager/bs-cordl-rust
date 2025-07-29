@@ -1,4 +1,4 @@
-#[cfg(feature = "DisappearingArrowController")]
+#[cfg(feature = "cordl_class_DisappearingArrowController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisappearingArrowController {
@@ -9,7 +9,7 @@ pub struct DisappearingArrowController {
         crate::GlobalNamespace::GameNoteController,
     >,
 }
-#[cfg(feature = "DisappearingArrowController")]
+#[cfg(feature = "cordl_class_DisappearingArrowController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DisappearingArrowController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::DisappearingArrowController {
         false
     }
 }
-#[cfg(feature = "DisappearingArrowController")]
+#[cfg(feature = "cordl_class_DisappearingArrowController")]
 impl std::ops::Deref for crate::GlobalNamespace::DisappearingArrowController {
     type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::DisappearingArrowController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DisappearingArrowController")]
+#[cfg(feature = "cordl_class_DisappearingArrowController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DisappearingArrowController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -104,7 +104,7 @@ impl crate::GlobalNamespace::DisappearingArrowController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DisappearingArrowController")]
+#[cfg(feature = "cordl_class_DisappearingArrowController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DisappearingArrowController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

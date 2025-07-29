@@ -1,4 +1,4 @@
-#[cfg(feature = "ListLogger")]
+#[cfg(feature = "cordl_class_ListLogger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListLogger {
@@ -9,7 +9,7 @@ pub struct ListLogger {
         >,
     >,
 }
-#[cfg(feature = "ListLogger")]
+#[cfg(feature = "cordl_class_ListLogger")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ListLogger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ListLogger {
         false
     }
 }
-#[cfg(feature = "ListLogger")]
+#[cfg(feature = "cordl_class_ListLogger")]
 impl std::ops::Deref for crate::GlobalNamespace::ListLogger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ListLogger")]
+#[cfg(feature = "cordl_class_ListLogger")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ListLogger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -353,7 +353,7 @@ impl crate::GlobalNamespace::ListLogger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ListLogger")]
+#[cfg(feature = "cordl_class_ListLogger")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ListLogger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -376,7 +376,7 @@ for crate::GlobalNamespace::ListLogger {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "ListLogger+LogMessage")]
+#[cfg(feature = "cordl_class_ListLogger+LogMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListLogger_LogMessage {
@@ -385,7 +385,7 @@ pub struct ListLogger_LogMessage {
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "ListLogger+LogMessage")]
+#[cfg(feature = "cordl_class_ListLogger+LogMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ListLogger_LogMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -405,14 +405,14 @@ for crate::GlobalNamespace::ListLogger_LogMessage {
         false
     }
 }
-#[cfg(feature = "ListLogger+LogMessage")]
+#[cfg(feature = "cordl_class_ListLogger+LogMessage")]
 impl std::ops::Deref for crate::GlobalNamespace::ListLogger_LogMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ListLogger+LogMessage")]
+#[cfg(feature = "cordl_class_ListLogger+LogMessage")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ListLogger_LogMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -495,7 +495,7 @@ impl crate::GlobalNamespace::ListLogger_LogMessage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ListLogger+LogMessage")]
+#[cfg(feature = "cordl_class_ListLogger+LogMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ListLogger_LogMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -505,7 +505,7 @@ for crate::GlobalNamespace::ListLogger_LogMessage {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ListLogger+LogType")]
+#[cfg(feature = "cordl_class_ListLogger+LogType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ListLogger_LogType {
@@ -515,7 +515,7 @@ pub enum ListLogger_LogType {
     Info = 0i32,
     Warning = 1i32,
 }
-#[cfg(feature = "ListLogger+LogType")]
+#[cfg(feature = "cordl_class_ListLogger+LogType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ListLogger_LogType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -544,7 +544,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ListLogger_L
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ListLogger+LogType")]
+#[cfg(feature = "cordl_class_ListLogger+LogType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ListLogger_LogType {
     type Type = Self;
@@ -555,7 +555,7 @@ for crate::GlobalNamespace::ListLogger_LogType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ListLogger+LogType")]
+#[cfg(feature = "cordl_class_ListLogger+LogType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ListLogger_LogType {
     type Actual = Self;
@@ -569,7 +569,7 @@ for crate::GlobalNamespace::ListLogger_LogType {
         self
     }
 }
-#[cfg(feature = "ListLogger+LogType")]
+#[cfg(feature = "cordl_class_ListLogger+LogType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ListLogger_LogType {
     type Type = Self;
@@ -584,7 +584,7 @@ for crate::GlobalNamespace::ListLogger_LogType {
         }
     }
 }
-#[cfg(feature = "ListLogger+LogType")]
+#[cfg(feature = "cordl_class_ListLogger+LogType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ListLogger_LogType {
     type Actual = Self;

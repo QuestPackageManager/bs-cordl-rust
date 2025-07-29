@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerScoreDiffText")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerScoreDiffText {
@@ -26,7 +26,7 @@ pub struct MultiplayerScoreDiffText {
         crate::Tweening::FloatTween,
     >,
 }
-#[cfg(feature = "MultiplayerScoreDiffText")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerScoreDiffText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText {
         false
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreDiffText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreDiffText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -341,7 +341,7 @@ impl crate::GlobalNamespace::MultiplayerScoreDiffText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerScoreDiffText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -351,7 +351,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+HorizontalPosition")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerScoreDiffText_HorizontalPosition {
@@ -359,7 +359,7 @@ pub enum MultiplayerScoreDiffText_HorizontalPosition {
     Left = 0i32,
     Right = 1i32,
 }
-#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+HorizontalPosition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
     type Held<'a> = Self;
@@ -389,7 +389,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+HorizontalPosition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
     type Type = Self;
@@ -400,7 +400,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+HorizontalPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
     type Actual = Self;
@@ -414,7 +414,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
         self
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+HorizontalPosition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
     type Type = Self;
@@ -429,7 +429,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
         }
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+HorizontalPosition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
     type Actual = Self;
@@ -443,7 +443,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition {
         actual
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+State")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerScoreDiffText_State {
@@ -453,7 +453,7 @@ pub enum MultiplayerScoreDiffText_State {
     Displayed = 1i32,
     Hidden = 0i32,
 }
-#[cfg(feature = "MultiplayerScoreDiffText+State")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
     type Held<'a> = Self;
@@ -483,7 +483,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+State")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
     type Type = Self;
@@ -494,7 +494,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+State")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
     type Actual = Self;
@@ -508,7 +508,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
         self
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+State")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
     type Type = Self;
@@ -523,7 +523,7 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
         }
     }
 }
-#[cfg(feature = "MultiplayerScoreDiffText+State")]
+#[cfg(feature = "cordl_class_MultiplayerScoreDiffText+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerScoreDiffText_State {
     type Actual = Self;

@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HybridReferenceDictionary_2<
@@ -17,7 +19,9 @@ pub struct HybridReferenceDictionary_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -59,7 +63,9 @@ for crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -73,7 +79,9 @@ for crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -369,7 +377,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

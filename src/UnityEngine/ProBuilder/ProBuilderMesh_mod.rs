@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProBuilderMesh {
@@ -78,7 +78,7 @@ pub struct ProBuilderMesh {
         crate::System::Collections::Generic::List_1<i32>,
     >,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::ProBuilderMesh {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -98,14 +98,14 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::ProBuilderMesh {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ProBuilderMesh {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4904,7 +4904,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::ProBuilderMesh {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4914,7 +4914,7 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProBuilderMesh_CacheValidState {
@@ -4922,7 +4922,7 @@ pub enum ProBuilderMesh_CacheValidState {
     SharedTexture = 2u8,
     SharedVertex = 1u8,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
     type Held<'a> = Self;
@@ -4952,7 +4952,7 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
     type Type = Self;
@@ -4963,7 +4963,7 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
     type Actual = Self;
@@ -4977,7 +4977,7 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
     type Type = Self;
@@ -4992,7 +4992,7 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
     type Actual = Self;
@@ -5006,7 +5006,9 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProBuilderMesh_NonVersionedEditScope {
@@ -5016,7 +5018,9 @@ pub struct ProBuilderMesh_NonVersionedEditScope {
     pub m_VersionIndex: u16,
     pub m_InstanceVersionIndex: u16,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
     type Held<'a> = Self;
@@ -5046,7 +5050,9 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
     type Type = Self;
@@ -5057,7 +5063,9 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
     type Actual = Self;
@@ -5071,7 +5079,9 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
     type Type = Self;
@@ -5086,7 +5096,9 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
     type Actual = Self;
@@ -5100,7 +5112,9 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
     type Type = Self;

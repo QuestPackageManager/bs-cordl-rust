@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+CurvedTextMeshPro")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurvedTextMeshPro {
@@ -12,7 +12,7 @@ pub struct CurvedTextMeshPro {
         crate::HMUI::CurvedCanvasSettingsHelper,
     >,
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CurvedTextMeshPro {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CurvedTextMeshPro {
         false
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro")]
 impl std::ops::Deref for crate::HMUI::CurvedTextMeshPro {
     type Target = crate::TMPro::TextMeshProUGUI;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro")]
 impl std::ops::DerefMut for crate::HMUI::CurvedTextMeshPro {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -344,7 +344,7 @@ impl crate::HMUI::CurvedTextMeshPro {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::CurvedTextMeshPro {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -367,7 +367,7 @@ for crate::HMUI::CurvedTextMeshPro {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CurvedTextMeshPro_CurvedMeshInfo {
@@ -375,7 +375,7 @@ pub struct CurvedTextMeshPro_CurvedMeshInfo {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
     >,
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Held<'a> = Self;
@@ -405,7 +405,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Type = Self;
@@ -416,7 +416,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Actual = Self;
@@ -430,7 +430,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
         self
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Type = Self;
@@ -445,7 +445,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
         }
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Actual = Self;
@@ -459,7 +459,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
         actual
     }
 }
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+#[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Type = Self;

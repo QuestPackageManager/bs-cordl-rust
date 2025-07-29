@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePropertyInfo {
@@ -11,7 +11,7 @@ pub struct RuntimePropertyInfo {
         crate::System::Reflection::RuntimePropertyInfo_GetterAdapter,
     >,
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::RuntimePropertyInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Reflection::RuntimePropertyInfo {
         false
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo")]
 impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo {
     type Target = crate::System::Reflection::PropertyInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo")]
 impl std::ops::DerefMut for crate::System::Reflection::RuntimePropertyInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1098,7 +1098,7 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::RuntimePropertyInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1122,13 +1122,13 @@ for crate::System::Reflection::RuntimePropertyInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePropertyInfo_GetterAdapter {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1148,14 +1148,14 @@ for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
         false
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 impl std::ops::DerefMut
 for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1235,7 +1235,7 @@ impl crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1245,7 +1245,7 @@ for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+Getter_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePropertyInfo_Getter_2<
@@ -1256,7 +1256,7 @@ pub struct RuntimePropertyInfo_Getter_2<
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_R: std::marker::PhantomData<R>,
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+Getter_2")]
 unsafe impl<
     T: quest_hook::libil2cpp::Type,
     R: quest_hook::libil2cpp::Type,
@@ -1295,7 +1295,7 @@ for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
         false
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+Getter_2")]
 impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
     type Target = crate::System::MulticastDelegate;
@@ -1303,7 +1303,7 @@ for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+Getter_2")]
 impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1395,7 +1395,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+Getter_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     R: quest_hook::libil2cpp::Type,
@@ -1408,14 +1408,14 @@ for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePropertyInfo_StaticGetter_1<R: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_R: std::marker::PhantomData<R>,
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 unsafe impl<R: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1451,7 +1451,7 @@ for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
         false
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 impl<R: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
     type Target = crate::System::MulticastDelegate;
@@ -1459,7 +1459,7 @@ for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 impl<R: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1542,7 +1542,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 impl<R: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

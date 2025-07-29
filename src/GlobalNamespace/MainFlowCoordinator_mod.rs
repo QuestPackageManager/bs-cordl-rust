@@ -1,4 +1,4 @@
-#[cfg(feature = "MainFlowCoordinator")]
+#[cfg(feature = "cordl_class_MainFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainFlowCoordinator {
@@ -71,7 +71,7 @@ pub struct MainFlowCoordinator {
     >,
     pub _goToMultiplayerAfterAvatarCreation: bool,
 }
-#[cfg(feature = "MainFlowCoordinator")]
+#[cfg(feature = "cordl_class_MainFlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MainFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -90,14 +90,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MainFlowCoor
         false
     }
 }
-#[cfg(feature = "MainFlowCoordinator")]
+#[cfg(feature = "cordl_class_MainFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::MainFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainFlowCoordinator")]
+#[cfg(feature = "cordl_class_MainFlowCoordinator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -886,7 +886,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainFlowCoordinator")]
+#[cfg(feature = "cordl_class_MainFlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

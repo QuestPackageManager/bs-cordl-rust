@@ -1,10 +1,10 @@
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ScriptMeshInputUVLayoutExample {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
         false
     }
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample")]
 impl std::ops::Deref for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -124,7 +124,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ScriptMeshInputUVLayoutExample_OutputMode {
@@ -132,7 +132,7 @@ pub enum HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     COPY = 0i32,
     REPLACE = 1i32,
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Held<'a> = Self;
@@ -162,7 +162,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Type = Self;
@@ -173,7 +173,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Actual = Self;
@@ -187,7 +187,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
         self
     }
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Type = Self;
@@ -202,7 +202,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
         }
     }
 }
-#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
+#[cfg(feature = "cordl_class_HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Actual = Self;

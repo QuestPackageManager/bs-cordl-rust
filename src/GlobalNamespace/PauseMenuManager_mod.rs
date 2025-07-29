@@ -1,4 +1,4 @@
-#[cfg(feature = "PauseMenuManager")]
+#[cfg(feature = "cordl_class_PauseMenuManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PauseMenuManager {
@@ -31,7 +31,7 @@ pub struct PauseMenuManager {
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _disabledInteractionRemainingTime: f32,
 }
-#[cfg(feature = "PauseMenuManager")]
+#[cfg(feature = "cordl_class_PauseMenuManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PauseMenuManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -50,14 +50,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PauseMenuMan
         false
     }
 }
-#[cfg(feature = "PauseMenuManager")]
+#[cfg(feature = "cordl_class_PauseMenuManager")]
 impl std::ops::Deref for crate::GlobalNamespace::PauseMenuManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PauseMenuManager")]
+#[cfg(feature = "cordl_class_PauseMenuManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PauseMenuManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -587,7 +587,7 @@ impl crate::GlobalNamespace::PauseMenuManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PauseMenuManager")]
+#[cfg(feature = "cordl_class_PauseMenuManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseMenuManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -596,7 +596,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseMenuMana
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PauseMenuManager+InitData")]
+#[cfg(feature = "cordl_class_PauseMenuManager+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PauseMenuManager_InitData {
@@ -607,7 +607,7 @@ pub struct PauseMenuManager_InitData {
     pub showRestartButton: bool,
     pub showLevelBar: bool,
 }
-#[cfg(feature = "PauseMenuManager+InitData")]
+#[cfg(feature = "cordl_class_PauseMenuManager+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PauseMenuManager_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -627,14 +627,14 @@ for crate::GlobalNamespace::PauseMenuManager_InitData {
         false
     }
 }
-#[cfg(feature = "PauseMenuManager+InitData")]
+#[cfg(feature = "cordl_class_PauseMenuManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::PauseMenuManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PauseMenuManager+InitData")]
+#[cfg(feature = "cordl_class_PauseMenuManager+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PauseMenuManager_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -717,7 +717,7 @@ impl crate::GlobalNamespace::PauseMenuManager_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PauseMenuManager+InitData")]
+#[cfg(feature = "cordl_class_PauseMenuManager+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PauseMenuManager_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "ParticleSystemEventController")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemEventController {
@@ -7,7 +7,7 @@ pub struct ParticleSystemEventController {
     pub _particleSystemFullDuration: f32,
     pub _startTime_k__BackingField: f32,
 }
-#[cfg(feature = "ParticleSystemEventController")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ParticleSystemEventController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::ParticleSystemEventController {
         false
     }
 }
-#[cfg(feature = "ParticleSystemEventController")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEventController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ParticleSystemEventController")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemEventController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -272,7 +272,7 @@ impl crate::GlobalNamespace::ParticleSystemEventController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ParticleSystemEventController")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ParticleSystemEventController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -282,7 +282,7 @@ for crate::GlobalNamespace::ParticleSystemEventController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ParticleSystemEventController+Pool")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemEventController_Pool {
@@ -290,7 +290,7 @@ pub struct ParticleSystemEventController_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ParticleSystemEventController>,
     >,
 }
-#[cfg(feature = "ParticleSystemEventController+Pool")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ParticleSystemEventController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -310,7 +310,7 @@ for crate::GlobalNamespace::ParticleSystemEventController_Pool {
         false
     }
 }
-#[cfg(feature = "ParticleSystemEventController+Pool")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEventController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ParticleSystemEventController>,
@@ -319,7 +319,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEventController_P
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ParticleSystemEventController+Pool")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemEventController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -356,7 +356,7 @@ impl crate::GlobalNamespace::ParticleSystemEventController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ParticleSystemEventController+Pool")]
+#[cfg(feature = "cordl_class_ParticleSystemEventController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ParticleSystemEventController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

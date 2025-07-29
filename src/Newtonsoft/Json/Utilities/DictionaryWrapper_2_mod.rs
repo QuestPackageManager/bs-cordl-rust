@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DictionaryWrapper_2<
@@ -17,7 +17,7 @@ pub struct DictionaryWrapper_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -56,7 +56,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1288,7 +1288,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1473,7 +1473,9 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DictionaryWrapper_2_DictionaryEnumerator_2<
@@ -1495,7 +1497,9 @@ pub struct DictionaryWrapper_2_DictionaryEnumerator_2<
     __cordl_phantom_TEnumeratorKey: std::marker::PhantomData<TEnumeratorKey>,
     __cordl_phantom_TEnumeratorValue: std::marker::PhantomData<TEnumeratorValue>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1551,7 +1555,9 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1572,7 +1578,9 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1596,7 +1604,9 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1621,7 +1631,9 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1645,7 +1657,9 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

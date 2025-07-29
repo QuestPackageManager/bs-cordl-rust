@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleSyntaxTokenType {
@@ -25,7 +27,9 @@ pub enum StyleSyntaxTokenType {
     String = 1i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
     type Held<'a> = Self;
@@ -55,7 +59,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
     type Type = Self;
@@ -66,7 +72,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
     type Actual = Self;
@@ -80,7 +88,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
     type Type = Self;
@@ -95,7 +105,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType {
     type Actual = Self;

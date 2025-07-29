@@ -1,10 +1,10 @@
-#[cfg(feature = "Interpolation")]
+#[cfg(feature = "cordl_class_Interpolation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interpolation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Interpolation")]
+#[cfg(feature = "cordl_class_Interpolation")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interpolation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interpolatio
         false
     }
 }
-#[cfg(feature = "Interpolation")]
+#[cfg(feature = "cordl_class_Interpolation")]
 impl std::ops::Deref for crate::GlobalNamespace::Interpolation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Interpolation")]
+#[cfg(feature = "cordl_class_Interpolation")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Interpolation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::Interpolation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Interpolation")]
+#[cfg(feature = "cordl_class_Interpolation")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interpolation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

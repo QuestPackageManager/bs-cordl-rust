@@ -1,10 +1,10 @@
-#[cfg(feature = "VRControllerTransformOffset")]
+#[cfg(feature = "cordl_class_VRControllerTransformOffset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllerTransformOffset {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "VRControllerTransformOffset")]
+#[cfg(feature = "cordl_class_VRControllerTransformOffset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VRControllerTransformOffset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::VRControllerTransformOffset {
         false
     }
 }
-#[cfg(feature = "VRControllerTransformOffset")]
+#[cfg(feature = "cordl_class_VRControllerTransformOffset")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllerTransformOffset {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRControllerTransformOffset")]
+#[cfg(feature = "cordl_class_VRControllerTransformOffset")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRControllerTransformOffset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -235,7 +235,7 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRControllerTransformOffset")]
+#[cfg(feature = "cordl_class_VRControllerTransformOffset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VRControllerTransformOffset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

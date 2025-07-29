@@ -1,10 +1,10 @@
-#[cfg(feature = "PrefabTemplate")]
+#[cfg(feature = "cordl_class_PrefabTemplate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabTemplate {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }
-#[cfg(feature = "PrefabTemplate")]
+#[cfg(feature = "cordl_class_PrefabTemplate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PrefabTemplate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PrefabTempla
         false
     }
 }
-#[cfg(feature = "PrefabTemplate")]
+#[cfg(feature = "cordl_class_PrefabTemplate")]
 impl std::ops::Deref for crate::GlobalNamespace::PrefabTemplate {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PrefabTemplate")]
+#[cfg(feature = "cordl_class_PrefabTemplate")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PrefabTemplate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::PrefabTemplate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PrefabTemplate")]
+#[cfg(feature = "cordl_class_PrefabTemplate")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PrefabTemplate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

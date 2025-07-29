@@ -1,4 +1,4 @@
-#[cfg(feature = "MirroredObstacleController")]
+#[cfg(feature = "cordl_class_MirroredObstacleController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredObstacleController {
@@ -12,7 +12,7 @@ pub struct MirroredObstacleController {
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _followedTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "MirroredObstacleController")]
+#[cfg(feature = "cordl_class_MirroredObstacleController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MirroredObstacleController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::MirroredObstacleController {
         false
     }
 }
-#[cfg(feature = "MirroredObstacleController")]
+#[cfg(feature = "cordl_class_MirroredObstacleController")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredObstacleController {
     type Target = crate::GlobalNamespace::ObstacleControllerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MirroredObstacleController")]
+#[cfg(feature = "cordl_class_MirroredObstacleController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredObstacleController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -281,7 +281,7 @@ impl crate::GlobalNamespace::MirroredObstacleController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MirroredObstacleController")]
+#[cfg(feature = "cordl_class_MirroredObstacleController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MirroredObstacleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -291,7 +291,7 @@ for crate::GlobalNamespace::MirroredObstacleController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MirroredObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MirroredObstacleController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredObstacleController_Pool {
@@ -299,7 +299,7 @@ pub struct MirroredObstacleController_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
     >,
 }
-#[cfg(feature = "MirroredObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MirroredObstacleController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MirroredObstacleController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -319,7 +319,7 @@ for crate::GlobalNamespace::MirroredObstacleController_Pool {
         false
     }
 }
-#[cfg(feature = "MirroredObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MirroredObstacleController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredObstacleController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
@@ -328,7 +328,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MirroredObstacleController_Pool
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MirroredObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MirroredObstacleController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredObstacleController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -365,7 +365,7 @@ impl crate::GlobalNamespace::MirroredObstacleController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MirroredObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MirroredObstacleController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MirroredObstacleController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

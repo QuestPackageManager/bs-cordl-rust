@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSceneRoom")]
+#[cfg(feature = "cordl_class_OVRSceneRoom")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneRoom {
@@ -45,7 +45,7 @@ pub struct OVRSceneRoom {
         crate::System::Action_2<bool, crate::GlobalNamespace::OVRAnchor>,
     >,
 }
-#[cfg(feature = "OVRSceneRoom")]
+#[cfg(feature = "cordl_class_OVRSceneRoom")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneRoom {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -64,14 +64,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneRoom
         false
     }
 }
-#[cfg(feature = "OVRSceneRoom")]
+#[cfg(feature = "cordl_class_OVRSceneRoom")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneRoom {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSceneRoom")]
+#[cfg(feature = "cordl_class_OVRSceneRoom")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneRoom {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -553,7 +553,7 @@ impl crate::GlobalNamespace::OVRSceneRoom {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSceneRoom")]
+#[cfg(feature = "cordl_class_OVRSceneRoom")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneRoom {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

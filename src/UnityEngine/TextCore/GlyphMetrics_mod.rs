@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphMetrics")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphMetrics {
@@ -8,7 +8,7 @@ pub struct GlyphMetrics {
     pub m_HorizontalBearingY: f32,
     pub m_HorizontalAdvance: f32,
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphMetrics")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::GlyphMetrics {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::GlyphM
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphMetrics")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::GlyphMetrics {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::GlyphMetrics {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphMetrics")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::GlyphMetrics {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::TextCore::GlyphMetrics {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphMetrics")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::GlyphMetrics {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::TextCore::GlyphMetrics {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphMetrics")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::GlyphMetrics {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::TextCore::GlyphMetrics {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphMetrics")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::GlyphMetrics {
     type Type = Self;

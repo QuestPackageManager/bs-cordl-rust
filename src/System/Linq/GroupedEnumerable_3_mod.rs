@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+GroupedEnumerable_3")]
+#[cfg(feature = "cordl_class_System+Linq+GroupedEnumerable_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupedEnumerable_3<
@@ -21,7 +21,7 @@ pub struct GroupedEnumerable_3<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "System+Linq+GroupedEnumerable_3")]
+#[cfg(feature = "cordl_class_System+Linq+GroupedEnumerable_3")]
 unsafe impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -61,7 +61,7 @@ for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
         false
     }
 }
-#[cfg(feature = "System+Linq+GroupedEnumerable_3")]
+#[cfg(feature = "cordl_class_System+Linq+GroupedEnumerable_3")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -72,7 +72,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+GroupedEnumerable_3")]
+#[cfg(feature = "cordl_class_System+Linq+GroupedEnumerable_3")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -266,7 +266,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+GroupedEnumerable_3")]
+#[cfg(feature = "cordl_class_System+Linq+GroupedEnumerable_3")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

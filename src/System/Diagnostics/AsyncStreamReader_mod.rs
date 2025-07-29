@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
+#[cfg(feature = "cordl_class_System+Diagnostics+AsyncStreamReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncStreamReader {
@@ -13,7 +13,7 @@ pub struct AsyncStreamReader {
     pub syncObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub asyncReadResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
 }
-#[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
+#[cfg(feature = "cordl_class_System+Diagnostics+AsyncStreamReader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::AsyncStreamReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::System::Diagnostics::AsyncStreamReader {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
+#[cfg(feature = "cordl_class_System+Diagnostics+AsyncStreamReader")]
 impl std::ops::Deref for crate::System::Diagnostics::AsyncStreamReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
+#[cfg(feature = "cordl_class_System+Diagnostics+AsyncStreamReader")]
 impl std::ops::DerefMut for crate::System::Diagnostics::AsyncStreamReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::System::Diagnostics::AsyncStreamReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
+#[cfg(feature = "cordl_class_System+Diagnostics+AsyncStreamReader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::AsyncStreamReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

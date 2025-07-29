@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PopupWindow {
@@ -7,7 +7,7 @@ pub struct PopupWindow {
         crate::UnityEngine::UIElements::VisualElement,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::PopupWindow {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Popu
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow {
     type Target = crate::UnityEngine::UIElements::TextElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PopupWindow {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -103,7 +103,7 @@ impl crate::UnityEngine::UIElements::PopupWindow {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::PopupWindow {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -112,7 +112,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Popup
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PopupWindow_UxmlFactory {
@@ -121,7 +121,7 @@ pub struct PopupWindow_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PopupWindow_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -141,7 +141,7 @@ for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PopupWindow>,
@@ -151,7 +151,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -188,7 +188,7 @@ impl crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -198,13 +198,13 @@ for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PopupWindow_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement_UxmlTraits,
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -224,14 +224,14 @@ for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -268,7 +268,7 @@ impl crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

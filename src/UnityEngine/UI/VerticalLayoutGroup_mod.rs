@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UI+VerticalLayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+VerticalLayoutGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VerticalLayoutGroup {
     __cordl_parent: crate::UnityEngine::UI::HorizontalOrVerticalLayoutGroup,
 }
-#[cfg(feature = "UnityEngine+UI+VerticalLayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+VerticalLayoutGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::VerticalLayoutGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::VerticalLayo
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+VerticalLayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+VerticalLayoutGroup")]
 impl std::ops::Deref for crate::UnityEngine::UI::VerticalLayoutGroup {
     type Target = crate::UnityEngine::UI::HorizontalOrVerticalLayoutGroup;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+VerticalLayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+VerticalLayoutGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::VerticalLayoutGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -167,7 +167,7 @@ impl crate::UnityEngine::UI::VerticalLayoutGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+VerticalLayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+VerticalLayoutGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::VerticalLayoutGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

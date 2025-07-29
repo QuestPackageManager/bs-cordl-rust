@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+ContractionComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContractionComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+ContractionComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::ContractionComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Mono::Globalization::Unicode::ContractionComparer {
         false
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+ContractionComparer")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::ContractionComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+ContractionComparer")]
 impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::ContractionComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::Mono::Globalization::Unicode::ContractionComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+ContractionComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Globalization::Unicode::ContractionComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

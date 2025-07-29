@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JValue {
@@ -6,7 +6,7 @@ pub struct JValue {
     pub _valueType: crate::Newtonsoft::Json::Linq::JTokenType,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JValue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JValu
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JValue {
     type Target = crate::Newtonsoft::Json::Linq::JToken;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1939,7 +1939,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue")]
 impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JValue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2040,7 +2040,7 @@ impl AsMut<crate::System::IFormattable> for crate::Newtonsoft::Json::Linq::JValu
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JValue_JValueDynamicProxy {
@@ -2048,7 +2048,7 @@ pub struct JValue_JValueDynamicProxy {
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2068,7 +2068,7 @@ for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
     type Target = crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
@@ -2077,7 +2077,7 @@ impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProx
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2202,7 +2202,7 @@ impl crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

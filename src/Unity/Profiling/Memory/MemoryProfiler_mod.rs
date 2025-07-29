@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Profiling+Memory+MemoryProfiler")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemoryProfiler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryProfiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Profiling+Memory+MemoryProfiler")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemoryProfiler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Profiling::Memory::MemoryProfiler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Profiling::Memory::MemoryProfiler {
         false
     }
 }
-#[cfg(feature = "Unity+Profiling+Memory+MemoryProfiler")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemoryProfiler")]
 impl std::ops::Deref for crate::Unity::Profiling::Memory::MemoryProfiler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Profiling+Memory+MemoryProfiler")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemoryProfiler")]
 impl std::ops::DerefMut for crate::Unity::Profiling::Memory::MemoryProfiler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -211,7 +211,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Profiling+Memory+MemoryProfiler")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemoryProfiler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Profiling::Memory::MemoryProfiler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

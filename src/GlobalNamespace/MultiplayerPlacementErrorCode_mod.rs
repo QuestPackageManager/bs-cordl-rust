@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerPlacementErrorCode")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerPlacementErrorCode {
@@ -12,7 +12,7 @@ pub enum MultiplayerPlacementErrorCode {
     Success = 0i32,
     Unknown = 1i32,
 }
-#[cfg(feature = "MultiplayerPlacementErrorCode")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerPlacementErrorCode")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerPlacementErrorCode")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
         self
     }
 }
-#[cfg(feature = "MultiplayerPlacementErrorCode")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
         }
     }
 }
-#[cfg(feature = "MultiplayerPlacementErrorCode")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Actual = Self;

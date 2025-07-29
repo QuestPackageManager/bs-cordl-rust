@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Bounds")]
+#[cfg(feature = "cordl_class_UnityEngine+Bounds")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Bounds {
     pub m_Center: crate::UnityEngine::Vector3,
     pub m_Extents: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "UnityEngine+Bounds")]
+#[cfg(feature = "cordl_class_UnityEngine+Bounds")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Bounds {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Bounds {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Bounds")]
+#[cfg(feature = "cordl_class_UnityEngine+Bounds")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Bounds {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Bounds {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Bounds")]
+#[cfg(feature = "cordl_class_UnityEngine+Bounds")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Bounds {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Bounds {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Bounds")]
+#[cfg(feature = "cordl_class_UnityEngine+Bounds")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Bounds {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Bounds {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Bounds")]
+#[cfg(feature = "cordl_class_UnityEngine+Bounds")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Bounds {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Bounds {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Bounds")]
+#[cfg(feature = "cordl_class_UnityEngine+Bounds")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Bounds {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "ColorExtensions")]
+#[cfg(feature = "cordl_class_ColorExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ColorExtensions")]
+#[cfg(feature = "cordl_class_ColorExtensions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorExtensi
         false
     }
 }
-#[cfg(feature = "ColorExtensions")]
+#[cfg(feature = "cordl_class_ColorExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorExtensions")]
+#[cfg(feature = "cordl_class_ColorExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -381,7 +381,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorExtensions")]
+#[cfg(feature = "cordl_class_ColorExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

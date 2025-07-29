@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelDataLoadRequest")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataLoadRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelDataLoadRequest {
@@ -22,7 +22,7 @@ pub struct BeatmapLevelDataLoadRequest {
     >,
     pub assetBundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
 }
-#[cfg(feature = "BeatmapLevelDataLoadRequest")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataLoadRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelDataLoadRequest")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataLoadRequest")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelDataLoadRequest")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataLoadRequest")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -294,7 +294,7 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelDataLoadRequest")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataLoadRequest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

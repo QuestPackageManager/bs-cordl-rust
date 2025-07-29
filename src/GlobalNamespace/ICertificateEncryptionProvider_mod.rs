@@ -1,10 +1,10 @@
-#[cfg(feature = "ICertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_ICertificateEncryptionProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ICertificateEncryptionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ICertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_ICertificateEncryptionProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ICertificateEncryptionProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ICertificateEncryptionProvider {
         false
     }
 }
-#[cfg(feature = "ICertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_ICertificateEncryptionProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::ICertificateEncryptionProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ICertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_ICertificateEncryptionProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ICertificateEncryptionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -83,7 +83,7 @@ impl crate::GlobalNamespace::ICertificateEncryptionProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ICertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_ICertificateEncryptionProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ICertificateEncryptionProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Configuration+ConfigurationCollectionAttribute")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationCollectionAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConfigurationCollectionAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+Configuration+ConfigurationCollectionAttribute")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationCollectionAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Configuration::ConfigurationCollectionAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Configuration::ConfigurationCollectionAttribute {
         false
     }
 }
-#[cfg(feature = "System+Configuration+ConfigurationCollectionAttribute")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationCollectionAttribute")]
 impl std::ops::Deref for crate::System::Configuration::ConfigurationCollectionAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Configuration+ConfigurationCollectionAttribute")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationCollectionAttribute")]
 impl std::ops::DerefMut
 for crate::System::Configuration::ConfigurationCollectionAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -76,7 +76,7 @@ impl crate::System::Configuration::ConfigurationCollectionAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Configuration+ConfigurationCollectionAttribute")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationCollectionAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Configuration::ConfigurationCollectionAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

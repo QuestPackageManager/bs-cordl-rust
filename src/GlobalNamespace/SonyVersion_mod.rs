@@ -1,4 +1,4 @@
-#[cfg(feature = "SonyVersion")]
+#[cfg(feature = "cordl_class_SonyVersion")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyVersion {
@@ -6,7 +6,7 @@ pub struct SonyVersion {
     pub _majorVersion: u32,
     pub _minorVersion: u32,
 }
-#[cfg(feature = "SonyVersion")]
+#[cfg(feature = "cordl_class_SonyVersion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SonyVersion {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SonyVersion 
         false
     }
 }
-#[cfg(feature = "SonyVersion")]
+#[cfg(feature = "cordl_class_SonyVersion")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyVersion {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SonyVersion")]
+#[cfg(feature = "cordl_class_SonyVersion")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyVersion {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -299,7 +299,7 @@ impl crate::GlobalNamespace::SonyVersion {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SonyVersion")]
+#[cfg(feature = "cordl_class_SonyVersion")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SonyVersion {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -308,7 +308,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SonyVersion {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SonyVersion+VersionFormat")]
+#[cfg(feature = "cordl_class_SonyVersion+VersionFormat")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SonyVersion_VersionFormat {
@@ -318,7 +318,7 @@ pub enum SonyVersion_VersionFormat {
     Long = 1i32,
     Short = 3i32,
 }
-#[cfg(feature = "SonyVersion+VersionFormat")]
+#[cfg(feature = "cordl_class_SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Held<'a> = Self;
@@ -348,7 +348,7 @@ for crate::GlobalNamespace::SonyVersion_VersionFormat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SonyVersion+VersionFormat")]
+#[cfg(feature = "cordl_class_SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Type = Self;
@@ -359,7 +359,7 @@ for crate::GlobalNamespace::SonyVersion_VersionFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SonyVersion+VersionFormat")]
+#[cfg(feature = "cordl_class_SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Actual = Self;
@@ -373,7 +373,7 @@ for crate::GlobalNamespace::SonyVersion_VersionFormat {
         self
     }
 }
-#[cfg(feature = "SonyVersion+VersionFormat")]
+#[cfg(feature = "cordl_class_SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Type = Self;
@@ -388,7 +388,7 @@ for crate::GlobalNamespace::SonyVersion_VersionFormat {
         }
     }
 }
-#[cfg(feature = "SonyVersion+VersionFormat")]
+#[cfg(feature = "cordl_class_SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Actual = Self;

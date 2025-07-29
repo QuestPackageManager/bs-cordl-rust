@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedPropertyBagProvider {
@@ -34,7 +34,7 @@ pub struct ReflectedPropertyBagProvider {
         crate::System::Reflection::MethodInfo,
     >,
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,7 +54,7 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -62,7 +62,7 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -640,7 +640,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

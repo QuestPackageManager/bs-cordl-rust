@@ -1,4 +1,4 @@
-#[cfg(feature = "PointLight")]
+#[cfg(feature = "cordl_class_PointLight")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointLight {
@@ -6,7 +6,7 @@ pub struct PointLight {
     pub color: crate::UnityEngine::Color,
     pub intensity: f32,
 }
-#[cfg(feature = "PointLight")]
+#[cfg(feature = "cordl_class_PointLight")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PointLight {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PointLight {
         false
     }
 }
-#[cfg(feature = "PointLight")]
+#[cfg(feature = "cordl_class_PointLight")]
 impl std::ops::Deref for crate::GlobalNamespace::PointLight {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PointLight")]
+#[cfg(feature = "cordl_class_PointLight")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PointLight {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::GlobalNamespace::PointLight {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PointLight")]
+#[cfg(feature = "cordl_class_PointLight")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PointLight {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

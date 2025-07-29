@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayModifierParamsSO")]
+#[cfg(feature = "cordl_class_GameplayModifierParamsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifierParamsSO {
@@ -29,7 +29,7 @@ pub struct GameplayModifierParamsSO {
     pub _multiplierConditionallyValid: bool,
     pub _isInBeta: bool,
 }
-#[cfg(feature = "GameplayModifierParamsSO")]
+#[cfg(feature = "cordl_class_GameplayModifierParamsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifierParamsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::GameplayModifierParamsSO {
         false
     }
 }
-#[cfg(feature = "GameplayModifierParamsSO")]
+#[cfg(feature = "cordl_class_GameplayModifierParamsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifierParamsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplayModifierParamsSO")]
+#[cfg(feature = "cordl_class_GameplayModifierParamsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifierParamsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -356,7 +356,7 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplayModifierParamsSO")]
+#[cfg(feature = "cordl_class_GameplayModifierParamsSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayModifierParamsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

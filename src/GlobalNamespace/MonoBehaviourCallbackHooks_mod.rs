@@ -1,4 +1,4 @@
-#[cfg(feature = "MonoBehaviourCallbackHooks")]
+#[cfg(feature = "cordl_class_MonoBehaviourCallbackHooks")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoBehaviourCallbackHooks {
@@ -8,7 +8,7 @@ pub struct MonoBehaviourCallbackHooks {
     pub m_OnUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     pub m_OnLateUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
 }
-#[cfg(feature = "MonoBehaviourCallbackHooks")]
+#[cfg(feature = "cordl_class_MonoBehaviourCallbackHooks")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
         false
     }
 }
-#[cfg(feature = "MonoBehaviourCallbackHooks")]
+#[cfg(feature = "cordl_class_MonoBehaviourCallbackHooks")]
 impl std::ops::Deref for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     type Target = crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MonoBehaviourCallbackHooks>,
@@ -37,7 +37,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MonoBehaviourCallbackHooks")]
+#[cfg(feature = "cordl_class_MonoBehaviourCallbackHooks")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -247,7 +247,7 @@ impl crate::GlobalNamespace::MonoBehaviourCallbackHooks {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MonoBehaviourCallbackHooks")]
+#[cfg(feature = "cordl_class_MonoBehaviourCallbackHooks")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

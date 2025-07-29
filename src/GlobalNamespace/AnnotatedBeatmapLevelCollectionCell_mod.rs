@@ -1,4 +1,4 @@
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionCell {
@@ -22,7 +22,7 @@ pub struct AnnotatedBeatmapLevelCollectionCell {
         crate::System::Threading::CancellationTokenSource,
     >,
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
         false
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionCell")]
 impl std::ops::Deref for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     type Target = crate::HMUI::SelectableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -392,7 +392,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionCell")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

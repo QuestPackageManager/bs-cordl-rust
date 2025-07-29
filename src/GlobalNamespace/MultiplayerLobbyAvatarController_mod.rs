@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLobbyAvatarController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarController {
@@ -18,7 +18,7 @@ pub struct MultiplayerLobbyAvatarController {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -249,7 +249,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -259,7 +259,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController+Factory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarController_Factory {
@@ -270,7 +270,7 @@ pub struct MultiplayerLobbyAvatarController_Factory {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController+Factory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -290,7 +290,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
         false
     }
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
@@ -303,7 +303,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController+Factory")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -341,7 +341,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController+Factory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

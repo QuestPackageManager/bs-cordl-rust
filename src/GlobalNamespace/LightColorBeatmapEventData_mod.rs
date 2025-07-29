@@ -1,4 +1,4 @@
-#[cfg(feature = "LightColorBeatmapEventData")]
+#[cfg(feature = "cordl_class_LightColorBeatmapEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightColorBeatmapEventData {
@@ -13,7 +13,7 @@ pub struct LightColorBeatmapEventData {
     pub _strobeBrightness_k__BackingField: f32,
     pub _strobeFade_k__BackingField: bool,
 }
-#[cfg(feature = "LightColorBeatmapEventData")]
+#[cfg(feature = "cordl_class_LightColorBeatmapEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightColorBeatmapEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::LightColorBeatmapEventData {
         false
     }
 }
-#[cfg(feature = "LightColorBeatmapEventData")]
+#[cfg(feature = "cordl_class_LightColorBeatmapEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::LightColorBeatmapEventData {
     type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightColorBeatmapEventData")]
+#[cfg(feature = "cordl_class_LightColorBeatmapEventData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightColorBeatmapEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -680,7 +680,7 @@ impl crate::GlobalNamespace::LightColorBeatmapEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightColorBeatmapEventData")]
+#[cfg(feature = "cordl_class_LightColorBeatmapEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightColorBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

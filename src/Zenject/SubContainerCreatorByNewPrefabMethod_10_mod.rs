@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_10")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_10")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabMethod_10<
@@ -40,7 +40,7 @@ pub struct SubContainerCreatorByNewPrefabMethod_10<
     __cordl_phantom_TParam9: std::marker::PhantomData<TParam9>,
     __cordl_phantom_TParam10: std::marker::PhantomData<TParam10>,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_10")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_10")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -111,7 +111,7 @@ for crate::Zenject::SubContainerCreatorByNewPrefabMethod_10<
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_10")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_10")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -141,7 +141,7 @@ for crate::Zenject::SubContainerCreatorByNewPrefabMethod_10<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_10")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_10")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -398,7 +398,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_10")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_10")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

@@ -1,4 +1,4 @@
-#[cfg(feature = "LufsMetering+LoudnessData")]
+#[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LoudnessData {
@@ -8,7 +8,7 @@ pub struct LoudnessData {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
 }
-#[cfg(feature = "LufsMetering+LoudnessData")]
+#[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::LoudnessData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::LoudnessData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LufsMetering+LoudnessData")]
+#[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LufsMetering::LoudnessData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LufsMetering::LoudnessDat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LufsMetering+LoudnessData")]
+#[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LufsMetering::LoudnessData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LufsMetering::LoudnessDa
         self
     }
 }
-#[cfg(feature = "LufsMetering+LoudnessData")]
+#[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::LoudnessData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::LoudnessDat
         }
     }
 }
-#[cfg(feature = "LufsMetering+LoudnessData")]
+#[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::LoudnessData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::LoudnessData 
         actual
     }
 }
-#[cfg(feature = "LufsMetering+LoudnessData")]
+#[cfg(feature = "cordl_class_LufsMetering+LoudnessData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LufsMetering::LoudnessData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

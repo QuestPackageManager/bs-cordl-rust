@@ -1,10 +1,10 @@
-#[cfg(feature = "StaticPacketPoolProvider")]
+#[cfg(feature = "cordl_class_StaticPacketPoolProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticPacketPoolProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "StaticPacketPoolProvider")]
+#[cfg(feature = "cordl_class_StaticPacketPoolProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StaticPacketPoolProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::StaticPacketPoolProvider {
         false
     }
 }
-#[cfg(feature = "StaticPacketPoolProvider")]
+#[cfg(feature = "cordl_class_StaticPacketPoolProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticPacketPoolProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StaticPacketPoolProvider")]
+#[cfg(feature = "cordl_class_StaticPacketPoolProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StaticPacketPoolProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::StaticPacketPoolProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StaticPacketPoolProvider")]
+#[cfg(feature = "cordl_class_StaticPacketPoolProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StaticPacketPoolProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

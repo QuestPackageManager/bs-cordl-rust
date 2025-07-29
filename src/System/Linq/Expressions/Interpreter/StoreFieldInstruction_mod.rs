@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StoreFieldInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::FieldInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::StoreFieldInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::StoreFieldInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::StoreFieldInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::FieldInstruction;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::StoreFieldInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::StoreFieldInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -153,7 +153,7 @@ impl crate::System::Linq::Expressions::Interpreter::StoreFieldInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+StoreFieldInstruction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::StoreFieldInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

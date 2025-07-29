@@ -1,10 +1,10 @@
-#[cfg(feature = "Interop")]
+#[cfg(feature = "cordl_class_Interop")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interop {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Interop")]
+#[cfg(feature = "cordl_class_Interop")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop {
         false
     }
 }
-#[cfg(feature = "Interop")]
+#[cfg(feature = "cordl_class_Interop")]
 impl std::ops::Deref for crate::GlobalNamespace::Interop {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Interop")]
+#[cfg(feature = "cordl_class_Interop")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Interop {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -276,7 +276,7 @@ impl crate::GlobalNamespace::Interop {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Interop")]
+#[cfg(feature = "cordl_class_Interop")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -285,7 +285,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Interop+Error")]
+#[cfg(feature = "cordl_class_Interop+Error")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Interop_Error {
@@ -370,7 +370,7 @@ pub enum Interop_Error {
     _cordl_EXDEV = 65615i32,
     SUCCESS = 0i32,
 }
-#[cfg(feature = "Interop+Error")]
+#[cfg(feature = "cordl_class_Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Error {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -399,7 +399,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Erro
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Interop+Error")]
+#[cfg(feature = "cordl_class_Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Interop_Error {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -409,7 +409,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Interop_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Interop+Error")]
+#[cfg(feature = "cordl_class_Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::Interop_Error {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -422,7 +422,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::Interop
         self
     }
 }
-#[cfg(feature = "Interop+Error")]
+#[cfg(feature = "cordl_class_Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Interop_Error {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -436,7 +436,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Interop_
         }
     }
 }
-#[cfg(feature = "Interop+Error")]
+#[cfg(feature = "cordl_class_Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_Error {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -449,14 +449,14 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_Er
         actual
     }
 }
-#[cfg(feature = "Interop+ErrorInfo")]
+#[cfg(feature = "cordl_class_Interop+ErrorInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Interop_ErrorInfo {
     pub _error: crate::GlobalNamespace::Interop_Error,
     pub _rawErrno: i32,
 }
-#[cfg(feature = "Interop+ErrorInfo")]
+#[cfg(feature = "cordl_class_Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_ErrorInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -485,7 +485,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Erro
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Interop+ErrorInfo")]
+#[cfg(feature = "cordl_class_Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Interop_ErrorInfo {
     type Type = Self;
@@ -496,7 +496,7 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Interop+ErrorInfo")]
+#[cfg(feature = "cordl_class_Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Interop_ErrorInfo {
     type Actual = Self;
@@ -510,7 +510,7 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
         self
     }
 }
-#[cfg(feature = "Interop+ErrorInfo")]
+#[cfg(feature = "cordl_class_Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Interop_ErrorInfo {
     type Type = Self;
@@ -525,7 +525,7 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
         }
     }
 }
-#[cfg(feature = "Interop+ErrorInfo")]
+#[cfg(feature = "cordl_class_Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_ErrorInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -538,7 +538,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_Er
         actual
     }
 }
-#[cfg(feature = "Interop+ErrorInfo")]
+#[cfg(feature = "cordl_class_Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::Interop_ErrorInfo {
     type Type = Self;
@@ -696,13 +696,13 @@ impl crate::GlobalNamespace::Interop_ErrorInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Interop+Sys")]
+#[cfg(feature = "cordl_class_Interop+Sys")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interop_Sys {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Interop+Sys")]
+#[cfg(feature = "cordl_class_Interop+Sys")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Sys {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -721,14 +721,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Sys 
         false
     }
 }
-#[cfg(feature = "Interop+Sys")]
+#[cfg(feature = "cordl_class_Interop+Sys")]
 impl std::ops::Deref for crate::GlobalNamespace::Interop_Sys {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Interop+Sys")]
+#[cfg(feature = "cordl_class_Interop+Sys")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Interop_Sys {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1590,7 +1590,7 @@ impl crate::GlobalNamespace::Interop_Sys {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Interop+Sys")]
+#[cfg(feature = "cordl_class_Interop+Sys")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1599,7 +1599,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Sys_Interop_DirectoryEntry {
@@ -1607,7 +1607,7 @@ pub struct Sys_Interop_DirectoryEntry {
     pub NameLength: i32,
     pub InodeType: crate::GlobalNamespace::Sys_Interop_NodeType,
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Held<'a> = Self;
@@ -1637,7 +1637,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Type = Self;
@@ -1648,7 +1648,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Actual = Self;
@@ -1662,7 +1662,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         self
     }
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Type = Self;
@@ -1677,7 +1677,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         }
     }
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Actual = Self;
@@ -1691,7 +1691,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         actual
     }
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Type = Self;
@@ -1731,7 +1731,7 @@ impl crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatus")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Sys_Interop_FileStatus {
@@ -1752,7 +1752,7 @@ pub struct Sys_Interop_FileStatus {
     pub Ino: i64,
     pub UserFlags: u32,
 }
-#[cfg(feature = "Interop+Sys+FileStatus")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Held<'a> = Self;
@@ -1782,7 +1782,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatus")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Type = Self;
@@ -1793,7 +1793,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatus")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Actual = Self;
@@ -1807,7 +1807,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
         self
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatus")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Type = Self;
@@ -1822,7 +1822,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
         }
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatus")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Actual = Self;
@@ -1836,7 +1836,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
         actual
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatus")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Type = Self;
@@ -1849,7 +1849,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
 }
 #[cfg(feature = "Interop+Sys+FileStatus")]
 impl crate::GlobalNamespace::Sys_Interop_FileStatus {}
-#[cfg(feature = "Interop+Sys+FileStatusFlags")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Sys_Interop_FileStatusFlags {
@@ -1857,7 +1857,7 @@ pub enum Sys_Interop_FileStatusFlags {
     HasBirthTime = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "Interop+Sys+FileStatusFlags")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Held<'a> = Self;
@@ -1887,7 +1887,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatusFlags")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Type = Self;
@@ -1898,7 +1898,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatusFlags")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Actual = Self;
@@ -1912,7 +1912,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
         self
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatusFlags")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Type = Self;
@@ -1927,7 +1927,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
         }
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatusFlags")]
+#[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Actual = Self;
@@ -1941,7 +1941,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
         actual
     }
 }
-#[cfg(feature = "Interop+Sys+NodeType")]
+#[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Sys_Interop_NodeType {
@@ -1956,7 +1956,7 @@ pub enum Sys_Interop_NodeType {
     DT_UNKNOWN = 0i32,
     DT_WHT = 14i32,
 }
-#[cfg(feature = "Interop+Sys+NodeType")]
+#[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Held<'a> = Self;
@@ -1986,7 +1986,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Interop+Sys+NodeType")]
+#[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Type = Self;
@@ -1997,7 +1997,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Interop+Sys+NodeType")]
+#[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Actual = Self;
@@ -2011,7 +2011,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
         self
     }
 }
-#[cfg(feature = "Interop+Sys+NodeType")]
+#[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Type = Self;
@@ -2026,7 +2026,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
         }
     }
 }
-#[cfg(feature = "Interop+Sys+NodeType")]
+#[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Actual = Self;
@@ -2040,7 +2040,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
         actual
     }
 }
-#[cfg(feature = "Interop+Sys+Permissions")]
+#[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Sys_Interop_Permissions {
@@ -2059,7 +2059,7 @@ pub enum Sys_Interop_Permissions {
     S_IXOTH = 1i32,
     S_IXUSR = 64i32,
 }
-#[cfg(feature = "Interop+Sys+Permissions")]
+#[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Held<'a> = Self;
@@ -2089,7 +2089,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Interop+Sys+Permissions")]
+#[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Type = Self;
@@ -2100,7 +2100,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Interop+Sys+Permissions")]
+#[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Actual = Self;
@@ -2114,7 +2114,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
         self
     }
 }
-#[cfg(feature = "Interop+Sys+Permissions")]
+#[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Type = Self;
@@ -2129,7 +2129,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
         }
     }
 }
-#[cfg(feature = "Interop+Sys+Permissions")]
+#[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Actual = Self;

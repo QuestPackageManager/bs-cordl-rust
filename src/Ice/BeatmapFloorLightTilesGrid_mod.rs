@@ -1,4 +1,4 @@
-#[cfg(feature = "Ice+BeatmapFloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+BeatmapFloorLightTilesGrid")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapFloorLightTilesGrid {
@@ -11,7 +11,7 @@ pub struct BeatmapFloorLightTilesGrid {
         crate::GlobalNamespace::BeatmapObjectSpawnController,
     >,
 }
-#[cfg(feature = "Ice+BeatmapFloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+BeatmapFloorLightTilesGrid")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Ice::BeatmapFloorLightTilesGrid {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::BeatmapFloorLightTilesGr
         false
     }
 }
-#[cfg(feature = "Ice+BeatmapFloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+BeatmapFloorLightTilesGrid")]
 impl std::ops::Deref for crate::Ice::BeatmapFloorLightTilesGrid {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Ice+BeatmapFloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+BeatmapFloorLightTilesGrid")]
 impl std::ops::DerefMut for crate::Ice::BeatmapFloorLightTilesGrid {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::Ice::BeatmapFloorLightTilesGrid {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Ice+BeatmapFloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+BeatmapFloorLightTilesGrid")]
 impl quest_hook::libil2cpp::ObjectType for crate::Ice::BeatmapFloorLightTilesGrid {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

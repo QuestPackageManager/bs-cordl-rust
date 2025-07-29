@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Columns")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Columns {
@@ -59,7 +59,7 @@ pub struct Columns {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Columns {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -78,14 +78,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Colu
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Columns {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Columns {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1494,7 +1494,7 @@ impl crate::UnityEngine::UIElements::Columns {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Columns {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1573,7 +1573,7 @@ for crate::UnityEngine::UIElements::Columns {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+StretchMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Columns_StretchMode {
@@ -1581,7 +1581,7 @@ pub enum Columns_StretchMode {
     Grow = 0i32,
     GrowAndFill = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+StretchMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Columns_StretchMode {
     type Held<'a> = Self;
@@ -1611,7 +1611,7 @@ for crate::UnityEngine::UIElements::Columns_StretchMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+StretchMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Columns_StretchMode {
     type Type = Self;
@@ -1622,7 +1622,7 @@ for crate::UnityEngine::UIElements::Columns_StretchMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+StretchMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Columns_StretchMode {
     type Actual = Self;
@@ -1636,7 +1636,7 @@ for crate::UnityEngine::UIElements::Columns_StretchMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+StretchMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Columns_StretchMode {
     type Type = Self;
@@ -1651,7 +1651,7 @@ for crate::UnityEngine::UIElements::Columns_StretchMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+StretchMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Columns_StretchMode {
     type Actual = Self;
@@ -1665,7 +1665,7 @@ for crate::UnityEngine::UIElements::Columns_StretchMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Columns_UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> {
@@ -1677,7 +1677,7 @@ pub struct Columns_UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1713,7 +1713,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
     type Target = crate::UnityEngine::UIElements::UxmlObjectFactory_2<
@@ -1726,7 +1726,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1772,7 +1772,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1782,7 +1782,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Columns_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
@@ -1811,7 +1811,7 @@ pub struct Columns_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1847,7 +1847,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
     type Target = crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>;
@@ -1855,7 +1855,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1939,7 +1939,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

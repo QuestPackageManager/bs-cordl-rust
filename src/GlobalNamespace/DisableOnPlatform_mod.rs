@@ -1,4 +1,4 @@
-#[cfg(feature = "DisableOnPlatform")]
+#[cfg(feature = "cordl_class_DisableOnPlatform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisableOnPlatform {
@@ -7,7 +7,7 @@ pub struct DisableOnPlatform {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RuntimePlatform>,
     >,
 }
-#[cfg(feature = "DisableOnPlatform")]
+#[cfg(feature = "cordl_class_DisableOnPlatform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DisableOnPlatform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DisableOnPla
         false
     }
 }
-#[cfg(feature = "DisableOnPlatform")]
+#[cfg(feature = "cordl_class_DisableOnPlatform")]
 impl std::ops::Deref for crate::GlobalNamespace::DisableOnPlatform {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DisableOnPlatform")]
+#[cfg(feature = "cordl_class_DisableOnPlatform")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DisableOnPlatform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::DisableOnPlatform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DisableOnPlatform")]
+#[cfg(feature = "cordl_class_DisableOnPlatform")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisableOnPlatform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

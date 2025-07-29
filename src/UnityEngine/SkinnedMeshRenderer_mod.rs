@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinnedMeshRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkinnedMeshRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
 }
-#[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinnedMeshRenderer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SkinnedMeshRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SkinnedMeshRende
         false
     }
 }
-#[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinnedMeshRenderer")]
 impl std::ops::Deref for crate::UnityEngine::SkinnedMeshRenderer {
     type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinnedMeshRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::SkinnedMeshRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -691,7 +691,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinnedMeshRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SkinnedMeshRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

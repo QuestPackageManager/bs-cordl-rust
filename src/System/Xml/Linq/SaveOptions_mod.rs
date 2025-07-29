@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Linq+SaveOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+SaveOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SaveOptions {
@@ -7,7 +7,7 @@ pub enum SaveOptions {
     None = 0i32,
     OmitDuplicateNamespaces = 2i32,
 }
-#[cfg(feature = "System+Xml+Linq+SaveOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::SaveOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::SaveOption
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Linq+SaveOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Linq::SaveOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Linq::SaveOp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Linq+SaveOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Linq::SaveOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Linq::SaveO
         self
     }
 }
-#[cfg(feature = "System+Xml+Linq+SaveOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Linq::SaveOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Linq::SaveOp
         }
     }
 }
-#[cfg(feature = "System+Xml+Linq+SaveOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Linq::SaveOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

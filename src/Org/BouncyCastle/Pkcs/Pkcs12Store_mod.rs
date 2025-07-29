@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Store {
@@ -29,7 +29,7 @@ pub struct Pkcs12Store {
         crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -48,14 +48,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Pkcs::Pkcs
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1036,7 +1036,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1045,14 +1045,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Pkcs::Pkcs1
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Store_CertId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1072,14 +1072,14 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1238,7 +1238,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1248,7 +1248,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Store_IgnoresCaseHashtable {
@@ -1256,7 +1256,7 @@ pub struct Pkcs12Store_IgnoresCaseHashtable {
     pub orig: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1276,7 +1276,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1284,7 +1284,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1537,7 +1537,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

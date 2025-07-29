@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+DoubleField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<f64>,
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::DoubleField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Doub
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<f64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -258,7 +258,7 @@ impl crate::UnityEngine::UIElements::DoubleField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::DoubleField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -267,13 +267,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Doubl
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+DoubleInput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleField_DoubleInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f64>,
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+DoubleInput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -293,14 +293,14 @@ for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+DoubleInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+DoubleInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -479,7 +479,7 @@ impl crate::UnityEngine::UIElements::DoubleField_DoubleInput {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+DoubleInput")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -489,7 +489,7 @@ for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleField_UxmlFactory {
@@ -498,7 +498,7 @@ pub struct DoubleField_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -518,7 +518,7 @@ for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField>,
@@ -528,7 +528,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_UxmlFactory
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -565,7 +565,7 @@ impl crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -575,7 +575,7 @@ for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleField_UxmlTraits {
@@ -586,7 +586,7 @@ pub struct DoubleField_UxmlTraits {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -606,7 +606,7 @@ for crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         f64,
@@ -618,7 +618,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_UxmlTraits 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -655,7 +655,7 @@ impl crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XsdDateTimeFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTimeFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdDateTimeFlags {
@@ -16,7 +16,7 @@ pub enum XsdDateTimeFlags {
     XdrDateTimeNoTz = 256i32,
     XdrTimeNoTz = 1024i32,
 }
-#[cfg(feature = "System+Xml+Schema+XsdDateTimeFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTimeFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdDateTimeFlags {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::System::Xml::Schema::XsdDateTimeFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDateTimeFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTimeFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XsdDateTimeFlags {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::System::Xml::Schema::XsdDateTimeFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDateTimeFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTimeFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdDateTimeFlags {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::System::Xml::Schema::XsdDateTimeFlags {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDateTimeFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTimeFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XsdDateTimeFlags {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::System::Xml::Schema::XsdDateTimeFlags {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDateTimeFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTimeFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XsdDateTimeFlags {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+ValueUtf8Converter")]
+#[cfg(feature = "cordl_class_System+Text+ValueUtf8Converter")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueUtf8Converter {
@@ -7,7 +7,7 @@ pub struct ValueUtf8Converter {
     >,
     pub _bytes: crate::System::Span_1<u8>,
 }
-#[cfg(feature = "System+Text+ValueUtf8Converter")]
+#[cfg(feature = "cordl_class_System+Text+ValueUtf8Converter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::ValueUtf8Converter {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::ValueUtf8Conver
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Text+ValueUtf8Converter")]
+#[cfg(feature = "cordl_class_System+Text+ValueUtf8Converter")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Text::ValueUtf8Converter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Text::ValueUtf8Co
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Text+ValueUtf8Converter")]
+#[cfg(feature = "cordl_class_System+Text+ValueUtf8Converter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::ValueUtf8Converter {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::System::Text::ValueUtf8Converter {
         self
     }
 }
-#[cfg(feature = "System+Text+ValueUtf8Converter")]
+#[cfg(feature = "cordl_class_System+Text+ValueUtf8Converter")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Text::ValueUtf8Converter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Text::ValueUtf8Co
         }
     }
 }
-#[cfg(feature = "System+Text+ValueUtf8Converter")]
+#[cfg(feature = "cordl_class_System+Text+ValueUtf8Converter")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Text::ValueUtf8Converter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Text::ValueUtf8Conv
         actual
     }
 }
-#[cfg(feature = "System+Text+ValueUtf8Converter")]
+#[cfg(feature = "cordl_class_System+Text+ValueUtf8Converter")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Text::ValueUtf8Converter {
     type Type = Self;

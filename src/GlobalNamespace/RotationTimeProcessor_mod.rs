@@ -1,4 +1,4 @@
-#[cfg(feature = "RotationTimeProcessor")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RotationTimeProcessor {
@@ -10,7 +10,7 @@ pub struct RotationTimeProcessor {
     >,
     pub currentBpmChangesDataIdx: i32,
 }
-#[cfg(feature = "RotationTimeProcessor")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RotationTimeProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::RotationTimeProcessor {
         false
     }
 }
-#[cfg(feature = "RotationTimeProcessor")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::RotationTimeProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RotationTimeProcessor")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RotationTimeProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -220,7 +220,7 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RotationTimeProcessor")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RotationTimeProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -230,14 +230,14 @@ for crate::GlobalNamespace::RotationTimeProcessor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RotationTimeProcessor_RotationChangeData {
     pub beat: f32,
     pub rotation: i32,
 }
-#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Held<'a> = Self;
@@ -267,7 +267,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Type = Self;
@@ -278,7 +278,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Actual = Self;
@@ -292,7 +292,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
         self
     }
 }
-#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Type = Self;
@@ -307,7 +307,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
         }
     }
 }
-#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Actual = Self;
@@ -321,7 +321,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
         actual
     }
 }
-#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
+#[cfg(feature = "cordl_class_RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Type = Self;

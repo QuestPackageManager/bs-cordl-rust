@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+TaskFactory")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskFactory {
@@ -10,7 +10,7 @@ pub struct TaskFactory {
     pub m_defaultCreationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
     pub m_defaultContinuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::TaskFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Threading::Tasks::TaskFactory {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -740,7 +740,7 @@ impl crate::System::Threading::Tasks::TaskFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::TaskFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -749,7 +749,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskFactory_CompleteOnInvokePromise {
@@ -762,7 +764,9 @@ pub struct TaskFactory_CompleteOnInvokePromise {
         >,
     >,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -782,7 +786,9 @@ for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise"
+)]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
     type Target = crate::System::Threading::Tasks::Task_1<
@@ -792,7 +798,9 @@ for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise"
+)]
 impl std::ops::DerefMut
 for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -898,7 +906,9 @@ impl crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

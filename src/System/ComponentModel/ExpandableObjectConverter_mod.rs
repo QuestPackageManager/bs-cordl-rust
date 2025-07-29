@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+ExpandableObjectConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExpandableObjectConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpandableObjectConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }
-#[cfg(feature = "System+ComponentModel+ExpandableObjectConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExpandableObjectConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::ExpandableObjectConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::ExpandableObjectConverter {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+ExpandableObjectConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExpandableObjectConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::ExpandableObjectConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+ExpandableObjectConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExpandableObjectConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::ExpandableObjectConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::System::ComponentModel::ExpandableObjectConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+ExpandableObjectConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExpandableObjectConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::ExpandableObjectConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

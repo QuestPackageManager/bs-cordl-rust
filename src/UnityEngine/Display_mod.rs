@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Display")]
+#[cfg(feature = "cordl_class_UnityEngine+Display")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Display {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nativeDisplay: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+Display")]
+#[cfg(feature = "cordl_class_UnityEngine+Display")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Display {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Display {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Display")]
+#[cfg(feature = "cordl_class_UnityEngine+Display")]
 impl std::ops::Deref for crate::UnityEngine::Display {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Display")]
+#[cfg(feature = "cordl_class_UnityEngine+Display")]
 impl std::ops::DerefMut for crate::UnityEngine::Display {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -372,7 +372,7 @@ impl crate::UnityEngine::Display {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Display")]
+#[cfg(feature = "cordl_class_UnityEngine+Display")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Display {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -381,13 +381,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Display {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+Display+DisplaysUpdatedDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Display_DisplaysUpdatedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+Display+DisplaysUpdatedDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Display_DisplaysUpdatedDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -407,14 +407,14 @@ for crate::UnityEngine::Display_DisplaysUpdatedDelegate {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+Display+DisplaysUpdatedDelegate")]
 impl std::ops::Deref for crate::UnityEngine::Display_DisplaysUpdatedDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+Display+DisplaysUpdatedDelegate")]
 impl std::ops::DerefMut for crate::UnityEngine::Display_DisplaysUpdatedDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -486,7 +486,7 @@ impl crate::UnityEngine::Display_DisplaysUpdatedDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+Display+DisplaysUpdatedDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Display_DisplaysUpdatedDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

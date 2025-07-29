@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsyncInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizationAsyncInstaller {
@@ -14,7 +14,7 @@ pub struct LocalizationAsyncInstaller {
         >,
     >,
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsyncInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,7 +34,7 @@ for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
@@ -43,7 +43,7 @@ impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsyncInstaller")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -259,7 +259,7 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsyncInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureOutEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerCaptureOutEvent {
@@ -6,7 +6,7 @@ pub struct PointerCaptureOutEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCaptureOutEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureOutEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PointerCaptureOutEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::PointerCaptureOutEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureOutEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCaptureOutEvent {
     type Target = crate::UnityEngine::UIElements::PointerCaptureEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCaptureOutEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCaptureOutEvent 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureOutEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerCaptureOutEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureOutEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureOutEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PointerCaptureOutEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BasicUIAudioManager")]
+#[cfg(feature = "cordl_class_BasicUIAudioManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicUIAudioManager {
@@ -22,7 +22,7 @@ pub struct BasicUIAudioManager {
         >,
     >,
 }
-#[cfg(feature = "BasicUIAudioManager")]
+#[cfg(feature = "cordl_class_BasicUIAudioManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BasicUIAudioManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BasicUIAudio
         false
     }
 }
-#[cfg(feature = "BasicUIAudioManager")]
+#[cfg(feature = "cordl_class_BasicUIAudioManager")]
 impl std::ops::Deref for crate::GlobalNamespace::BasicUIAudioManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BasicUIAudioManager")]
+#[cfg(feature = "cordl_class_BasicUIAudioManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BasicUIAudioManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,7 +173,7 @@ impl crate::GlobalNamespace::BasicUIAudioManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BasicUIAudioManager")]
+#[cfg(feature = "cordl_class_BasicUIAudioManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BasicUIAudioManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

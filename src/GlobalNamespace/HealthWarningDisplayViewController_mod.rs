@@ -1,4 +1,4 @@
-#[cfg(feature = "HealthWarningDisplayViewController")]
+#[cfg(feature = "cordl_class_HealthWarningDisplayViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningDisplayViewController {
@@ -14,7 +14,7 @@ pub struct HealthWarningDisplayViewController {
     >,
     pub _showShortHealthAndSafety: bool,
 }
-#[cfg(feature = "HealthWarningDisplayViewController")]
+#[cfg(feature = "cordl_class_HealthWarningDisplayViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HealthWarningDisplayViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::HealthWarningDisplayViewController {
         false
     }
 }
-#[cfg(feature = "HealthWarningDisplayViewController")]
+#[cfg(feature = "cordl_class_HealthWarningDisplayViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningDisplayViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HealthWarningDisplayViewController")]
+#[cfg(feature = "cordl_class_HealthWarningDisplayViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningDisplayViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::HealthWarningDisplayViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HealthWarningDisplayViewController")]
+#[cfg(feature = "cordl_class_HealthWarningDisplayViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HealthWarningDisplayViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

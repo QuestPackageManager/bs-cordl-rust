@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+ConcreteIdBinderNonGeneric")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdBinderNonGeneric")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConcreteIdBinderNonGeneric {
     __cordl_parent: crate::Zenject::ConcreteBinderNonGeneric,
 }
-#[cfg(feature = "Zenject+ConcreteIdBinderNonGeneric")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdBinderNonGeneric")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ConcreteIdBinderNonGeneric {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ConcreteIdBinderNonG
         false
     }
 }
-#[cfg(feature = "Zenject+ConcreteIdBinderNonGeneric")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdBinderNonGeneric")]
 impl std::ops::Deref for crate::Zenject::ConcreteIdBinderNonGeneric {
     type Target = crate::Zenject::ConcreteBinderNonGeneric;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ConcreteIdBinderNonGeneric")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdBinderNonGeneric")]
 impl std::ops::DerefMut for crate::Zenject::ConcreteIdBinderNonGeneric {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::Zenject::ConcreteIdBinderNonGeneric {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ConcreteIdBinderNonGeneric")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdBinderNonGeneric")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ConcreteIdBinderNonGeneric {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

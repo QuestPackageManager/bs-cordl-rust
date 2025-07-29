@@ -1,10 +1,10 @@
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
+#[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
+#[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
         false
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
+#[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 impl std::ops::Deref
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
+#[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
+#[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -107,7 +107,9 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+#[cfg(
+    feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
@@ -117,7 +119,9 @@ pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     pub TotalFiles: i32,
     pub IsEditorOnly: bool,
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+#[cfg(
+    feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Held<'a> = Self;
@@ -147,7 +151,9 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+#[cfg(
+    feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Type = Self;
@@ -158,7 +164,9 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+#[cfg(
+    feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Actual = Self;
@@ -172,7 +180,9 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
         self
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+#[cfg(
+    feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Type = Self;
@@ -187,7 +197,9 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
         }
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+#[cfg(
+    feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Actual = Self;
@@ -201,7 +213,9 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
         actual
     }
 }
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+#[cfg(
+    feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Type = Self;

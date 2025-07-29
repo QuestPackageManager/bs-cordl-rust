@@ -1,10 +1,10 @@
-#[cfg(feature = "TMPro+TMP_Character")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Character")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Character {
     __cordl_parent: crate::TMPro::TMP_TextElement,
 }
-#[cfg(feature = "TMPro+TMP_Character")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Character")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Character {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Character {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_Character")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Character")]
 impl std::ops::Deref for crate::TMPro::TMP_Character {
     type Target = crate::TMPro::TMP_TextElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_Character")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Character")]
 impl std::ops::DerefMut for crate::TMPro::TMP_Character {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -191,7 +191,7 @@ impl crate::TMPro::TMP_Character {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Character")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Character")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Character {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

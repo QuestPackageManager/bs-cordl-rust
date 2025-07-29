@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputNode {
@@ -41,7 +41,7 @@ pub struct HEU_InputNode {
         crate::HoudiniEngineUnity::HEU_InputNodeUICache,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_InputNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -60,14 +60,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Input
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputNode {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1841,7 +1841,7 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_InputNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1878,7 +1878,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputActions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_InputNode_InputActions {
@@ -1887,7 +1887,7 @@ pub enum HEU_InputNode_InputActions {
     DELETE = 1i32,
     INSERT = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputActions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
     type Held<'a> = Self;
@@ -1917,7 +1917,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputActions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
     type Type = Self;
@@ -1928,7 +1928,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputActions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
     type Actual = Self;
@@ -1942,7 +1942,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputActions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
     type Type = Self;
@@ -1957,7 +1957,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputActions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
     type Actual = Self;
@@ -1971,7 +1971,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_InputNode_InputNodeType {
@@ -1980,7 +1980,7 @@ pub enum HEU_InputNode_InputNodeType {
     NODE = 1i32,
     PARAMETER = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
     type Held<'a> = Self;
@@ -2010,7 +2010,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
     type Type = Self;
@@ -2021,7 +2021,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
     type Actual = Self;
@@ -2035,7 +2035,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
     type Type = Self;
@@ -2050,7 +2050,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
     type Actual = Self;
@@ -2064,7 +2064,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_InputNode_InputObjectType {
@@ -2076,7 +2076,7 @@ pub enum HEU_InputNode_InputObjectType {
     TILEMAP = 5i32,
     UNITY_MESH = 1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
     type Held<'a> = Self;
@@ -2106,7 +2106,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
     type Type = Self;
@@ -2117,7 +2117,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
     type Actual = Self;
@@ -2131,7 +2131,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
     type Type = Self;
@@ -2146,7 +2146,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
     type Actual = Self;
@@ -2160,7 +2160,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_InputNode_InternalObjectType {
@@ -2169,7 +2169,7 @@ pub enum HEU_InputNode_InternalObjectType {
     UNITY_MESH = 2i32,
     UNKNOWN = 0i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
     type Held<'a> = Self;
@@ -2199,7 +2199,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
     type Type = Self;
@@ -2210,7 +2210,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
     type Actual = Self;
@@ -2224,7 +2224,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
     type Type = Self;
@@ -2239,7 +2239,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
     type Actual = Self;

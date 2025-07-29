@@ -1,4 +1,4 @@
-#[cfg(feature = "MockPlatformUserModel")]
+#[cfg(feature = "cordl_class_MockPlatformUserModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlatformUserModel {
@@ -9,7 +9,7 @@ pub struct MockPlatformUserModel {
         >,
     >,
 }
-#[cfg(feature = "MockPlatformUserModel")]
+#[cfg(feature = "cordl_class_MockPlatformUserModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockPlatformUserModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MockPlatformUserModel {
         false
     }
 }
-#[cfg(feature = "MockPlatformUserModel")]
+#[cfg(feature = "cordl_class_MockPlatformUserModel")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlatformUserModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockPlatformUserModel")]
+#[cfg(feature = "cordl_class_MockPlatformUserModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockPlatformUserModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -422,7 +422,7 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockPlatformUserModel")]
+#[cfg(feature = "cordl_class_MockPlatformUserModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MockPlatformUserModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

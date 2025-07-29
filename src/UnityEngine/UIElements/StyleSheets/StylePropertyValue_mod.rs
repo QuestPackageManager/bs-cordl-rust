@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyValue {
     pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub handle: crate::UnityEngine::UIElements::StyleValueHandle,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue {
     type Type = Self;

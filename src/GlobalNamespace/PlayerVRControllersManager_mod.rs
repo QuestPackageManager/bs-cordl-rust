@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerVRControllersManager")]
+#[cfg(feature = "cordl_class_PlayerVRControllersManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerVRControllersManager {
@@ -10,7 +10,7 @@ pub struct PlayerVRControllersManager {
         crate::GlobalNamespace::VRController,
     >,
 }
-#[cfg(feature = "PlayerVRControllersManager")]
+#[cfg(feature = "cordl_class_PlayerVRControllersManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerVRControllersManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::PlayerVRControllersManager {
         false
     }
 }
-#[cfg(feature = "PlayerVRControllersManager")]
+#[cfg(feature = "cordl_class_PlayerVRControllersManager")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerVRControllersManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerVRControllersManager")]
+#[cfg(feature = "cordl_class_PlayerVRControllersManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerVRControllersManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::PlayerVRControllersManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerVRControllersManager")]
+#[cfg(feature = "cordl_class_PlayerVRControllersManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerVRControllersManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

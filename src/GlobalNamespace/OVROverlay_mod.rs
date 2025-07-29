@@ -1,4 +1,4 @@
-#[cfg(feature = "OVROverlay")]
+#[cfg(feature = "cordl_class_OVROverlay")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVROverlay {
@@ -68,7 +68,7 @@ pub struct OVROverlay {
     pub constructedOverlayXRDevice: crate::GlobalNamespace::OVRManager_XRDevice,
     pub xrDeviceConstructed: bool,
 }
-#[cfg(feature = "OVROverlay")]
+#[cfg(feature = "cordl_class_OVROverlay")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVROverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -87,14 +87,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVROverlay {
         false
     }
 }
-#[cfg(feature = "OVROverlay")]
+#[cfg(feature = "cordl_class_OVROverlay")]
 impl std::ops::Deref for crate::GlobalNamespace::OVROverlay {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVROverlay")]
+#[cfg(feature = "cordl_class_OVROverlay")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVROverlay {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1014,7 +1014,7 @@ impl crate::GlobalNamespace::OVROverlay {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVROverlay")]
+#[cfg(feature = "cordl_class_OVROverlay")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVROverlay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1023,13 +1023,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVROverlay {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+#[cfg(feature = "cordl_class_OVROverlay+ExternalSurfaceObjectCreated")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVROverlay_ExternalSurfaceObjectCreated {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+#[cfg(feature = "cordl_class_OVROverlay+ExternalSurfaceObjectCreated")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1049,7 +1049,7 @@ for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
         false
     }
 }
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+#[cfg(feature = "cordl_class_OVROverlay+ExternalSurfaceObjectCreated")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
     type Target = crate::System::MulticastDelegate;
@@ -1057,7 +1057,7 @@ for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+#[cfg(feature = "cordl_class_OVROverlay+ExternalSurfaceObjectCreated")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1190,7 +1190,7 @@ impl crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+#[cfg(feature = "cordl_class_OVROverlay+ExternalSurfaceObjectCreated")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1200,7 +1200,7 @@ for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVROverlay+LayerTexture")]
+#[cfg(feature = "cordl_class_OVROverlay+LayerTexture")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVROverlay_LayerTexture {
@@ -1215,7 +1215,7 @@ pub struct OVROverlay_LayerTexture {
         quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
     >,
 }
-#[cfg(feature = "OVROverlay+LayerTexture")]
+#[cfg(feature = "cordl_class_OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Held<'a> = Self;
@@ -1245,7 +1245,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVROverlay+LayerTexture")]
+#[cfg(feature = "cordl_class_OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Type = Self;
@@ -1256,7 +1256,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVROverlay+LayerTexture")]
+#[cfg(feature = "cordl_class_OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Actual = Self;
@@ -1270,7 +1270,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
         self
     }
 }
-#[cfg(feature = "OVROverlay+LayerTexture")]
+#[cfg(feature = "cordl_class_OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Type = Self;
@@ -1285,7 +1285,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
         }
     }
 }
-#[cfg(feature = "OVROverlay+LayerTexture")]
+#[cfg(feature = "cordl_class_OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Actual = Self;
@@ -1299,7 +1299,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
         actual
     }
 }
-#[cfg(feature = "OVROverlay+LayerTexture")]
+#[cfg(feature = "cordl_class_OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Type = Self;
@@ -1312,7 +1312,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
 }
 #[cfg(feature = "OVROverlay+LayerTexture")]
 impl crate::GlobalNamespace::OVROverlay_LayerTexture {}
-#[cfg(feature = "OVROverlay+OverlayShape")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayShape")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVROverlay_OverlayShape {
@@ -1328,7 +1328,7 @@ pub enum OVROverlay_OverlayShape {
     ReconstructionPassthrough = 7i32,
     SurfaceProjectedPassthrough = 8i32,
 }
-#[cfg(feature = "OVROverlay+OverlayShape")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Held<'a> = Self;
@@ -1358,7 +1358,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVROverlay+OverlayShape")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Type = Self;
@@ -1369,7 +1369,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVROverlay+OverlayShape")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Actual = Self;
@@ -1383,7 +1383,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
         self
     }
 }
-#[cfg(feature = "OVROverlay+OverlayShape")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Type = Self;
@@ -1398,7 +1398,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
         }
     }
 }
-#[cfg(feature = "OVROverlay+OverlayShape")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Actual = Self;
@@ -1412,7 +1412,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
         actual
     }
 }
-#[cfg(feature = "OVROverlay+OverlayType")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVROverlay_OverlayType {
@@ -1421,7 +1421,7 @@ pub enum OVROverlay_OverlayType {
     Overlay = 2i32,
     Underlay = 1i32,
 }
-#[cfg(feature = "OVROverlay+OverlayType")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Held<'a> = Self;
@@ -1451,7 +1451,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVROverlay+OverlayType")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Type = Self;
@@ -1462,7 +1462,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVROverlay+OverlayType")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Actual = Self;
@@ -1476,7 +1476,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
         self
     }
 }
-#[cfg(feature = "OVROverlay+OverlayType")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Type = Self;
@@ -1491,7 +1491,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
         }
     }
 }
-#[cfg(feature = "OVROverlay+OverlayType")]
+#[cfg(feature = "cordl_class_OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Actual = Self;

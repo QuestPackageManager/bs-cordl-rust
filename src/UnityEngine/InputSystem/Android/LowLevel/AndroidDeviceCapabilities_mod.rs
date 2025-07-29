@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidDeviceCapabilities {
@@ -13,7 +15,9 @@ pub struct AndroidDeviceCapabilities {
     >,
     pub inputSources: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidInputSource,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities {
     type Held<'a> = Self;
@@ -43,7 +47,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilitie
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities {
     type Type = Self;
@@ -54,7 +60,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilitie
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities {
     type Actual = Self;
@@ -68,7 +76,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilitie
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities {
     type Type = Self;
@@ -83,7 +93,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilitie
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities {
     type Actual = Self;
@@ -97,7 +109,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilitie
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities {
     type Type = Self;

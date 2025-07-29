@@ -1,10 +1,10 @@
-#[cfg(feature = "ILevelEndActions")]
+#[cfg(feature = "cordl_class_ILevelEndActions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ILevelEndActions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ILevelEndActions")]
+#[cfg(feature = "cordl_class_ILevelEndActions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ILevelEndActions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ILevelEndAct
         false
     }
 }
-#[cfg(feature = "ILevelEndActions")]
+#[cfg(feature = "cordl_class_ILevelEndActions")]
 impl std::ops::Deref for crate::GlobalNamespace::ILevelEndActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ILevelEndActions")]
+#[cfg(feature = "cordl_class_ILevelEndActions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ILevelEndActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::GlobalNamespace::ILevelEndActions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ILevelEndActions")]
+#[cfg(feature = "cordl_class_ILevelEndActions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ILevelEndActions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerIntroAnimationController")]
+#[cfg(feature = "cordl_class_MultiplayerIntroAnimationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerIntroAnimationController {
@@ -45,7 +45,7 @@ pub struct MultiplayerIntroAnimationController {
     pub _introDuration: i64,
     pub _bindingFinished: bool,
 }
-#[cfg(feature = "MultiplayerIntroAnimationController")]
+#[cfg(feature = "cordl_class_MultiplayerIntroAnimationController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerIntroAnimationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -65,14 +65,14 @@ for crate::GlobalNamespace::MultiplayerIntroAnimationController {
         false
     }
 }
-#[cfg(feature = "MultiplayerIntroAnimationController")]
+#[cfg(feature = "cordl_class_MultiplayerIntroAnimationController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerIntroAnimationController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerIntroAnimationController")]
+#[cfg(feature = "cordl_class_MultiplayerIntroAnimationController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerIntroAnimationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -355,7 +355,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerIntroAnimationController")]
+#[cfg(feature = "cordl_class_MultiplayerIntroAnimationController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerIntroAnimationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

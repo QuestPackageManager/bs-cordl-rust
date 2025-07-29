@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSAPKCS1SignatureFormatter {
     __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
 }
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
     type Target = crate::System::Security::Cryptography::AsymmetricSignatureFormatter;
@@ -32,7 +32,7 @@ for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

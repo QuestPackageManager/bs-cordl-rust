@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ErrorCode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ErrorCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_ErrorCode {
@@ -6,7 +6,7 @@ pub enum HAPI_ErrorCode {
     HAPI_ERRORCODE_ASSET_DEF_NOT_FOUND = 1i32,
     HAPI_ERRORCODE_PYTHON_NODE_ERROR = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ErrorCode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_ErrorCode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Erro
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ErrorCode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_ErrorCode {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::HoudiniEngineUnity::HAPI_ErrorCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ErrorCode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_ErrorCode {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::HoudiniEngineUnity::HAPI_ErrorCode {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ErrorCode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_ErrorCode {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::HoudiniEngineUnity::HAPI_ErrorCode {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ErrorCode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_ErrorCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

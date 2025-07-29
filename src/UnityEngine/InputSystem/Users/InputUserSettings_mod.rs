@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputUserSettings {
@@ -19,7 +19,7 @@ pub struct InputUserSettings {
     pub _vibrationStrength_k__BackingField: f32,
     pub m_CustomBindings: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Users::InputUserSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::UnityEngine::InputSystem::Users::InputUserSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserSettings")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Users::InputUserSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Users::InputUserSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -655,7 +655,7 @@ impl crate::UnityEngine::InputSystem::Users::InputUserSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Users::InputUserSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

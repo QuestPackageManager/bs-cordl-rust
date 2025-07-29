@@ -1,10 +1,10 @@
-#[cfg(feature = "LiteNetLib+TooBigPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+TooBigPacketException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TooBigPacketException {
     __cordl_parent: crate::LiteNetLib::InvalidPacketException,
 }
-#[cfg(feature = "LiteNetLib+TooBigPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+TooBigPacketException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::TooBigPacketException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::TooBigPacketExcep
         false
     }
 }
-#[cfg(feature = "LiteNetLib+TooBigPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+TooBigPacketException")]
 impl std::ops::Deref for crate::LiteNetLib::TooBigPacketException {
     type Target = crate::LiteNetLib::InvalidPacketException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+TooBigPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+TooBigPacketException")]
 impl std::ops::DerefMut for crate::LiteNetLib::TooBigPacketException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::LiteNetLib::TooBigPacketException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+TooBigPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+TooBigPacketException")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::TooBigPacketException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

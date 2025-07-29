@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Properties+Internal+IPropertyBagRegister")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+IPropertyBagRegister")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPropertyBagRegister {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Properties+Internal+IPropertyBagRegister")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+IPropertyBagRegister")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::IPropertyBagRegister {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Properties::Internal::IPropertyBagRegister {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+IPropertyBagRegister")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+IPropertyBagRegister")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::IPropertyBagRegister {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+IPropertyBagRegister")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+IPropertyBagRegister")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::IPropertyBagRegister {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -66,7 +66,7 @@ impl crate::Unity::Properties::Internal::IPropertyBagRegister {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+IPropertyBagRegister")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+IPropertyBagRegister")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::IPropertyBagRegister {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CullingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CullingGroup {
@@ -8,7 +8,7 @@ pub struct CullingGroup {
         crate::UnityEngine::CullingGroup_StateChanged,
     >,
 }
-#[cfg(feature = "UnityEngine+CullingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CullingGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CullingGroup {
         false
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup")]
 impl std::ops::Deref for crate::UnityEngine::CullingGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::CullingGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::UnityEngine::CullingGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CullingGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -85,13 +85,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CullingGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroup+StateChanged")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup+StateChanged")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CullingGroup_StateChanged {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+CullingGroup+StateChanged")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup+StateChanged")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::CullingGroup_StateChanged {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -111,14 +111,14 @@ for crate::UnityEngine::CullingGroup_StateChanged {
         false
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroup+StateChanged")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup+StateChanged")]
 impl std::ops::Deref for crate::UnityEngine::CullingGroup_StateChanged {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroup+StateChanged")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup+StateChanged")]
 impl std::ops::DerefMut for crate::UnityEngine::CullingGroup_StateChanged {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::UnityEngine::CullingGroup_StateChanged {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroup+StateChanged")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroup+StateChanged")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::CullingGroup_StateChanged {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

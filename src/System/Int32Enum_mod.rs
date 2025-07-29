@@ -1,8 +1,8 @@
-#[cfg(feature = "System+Int32Enum")]
+#[cfg(feature = "cordl_class_System+Int32Enum")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Int32Enum {}
-#[cfg(feature = "System+Int32Enum")]
+#[cfg(feature = "cordl_class_System+Int32Enum")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Int32Enum {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Int32Enum {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Int32Enum")]
+#[cfg(feature = "cordl_class_System+Int32Enum")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Int32Enum {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Int32Enum {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Int32Enum")]
+#[cfg(feature = "cordl_class_System+Int32Enum")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Int32Enum {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,7 +54,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Int32Enum {
         self
     }
 }
-#[cfg(feature = "System+Int32Enum")]
+#[cfg(feature = "cordl_class_System+Int32Enum")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Int32Enum {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,7 +68,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Int32Enum {
         }
     }
 }
-#[cfg(feature = "System+Int32Enum")]
+#[cfg(feature = "cordl_class_System+Int32Enum")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Int32Enum {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

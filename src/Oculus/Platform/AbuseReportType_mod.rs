@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+AbuseReportType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AbuseReportType {
@@ -7,7 +7,7 @@ pub enum AbuseReportType {
     Unknown = 0i32,
     User = 2i32,
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AbuseReportType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AbuseReport
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::AbuseReportType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::Oculus::Platform::AbuseReportType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::AbuseReportType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::Oculus::Platform::AbuseReportType {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::AbuseReportType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::Oculus::Platform::AbuseReportType {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::AbuseReportType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

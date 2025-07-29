@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Uri")]
+#[cfg(feature = "cordl_class_System+Uri")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Uri {
@@ -13,7 +13,7 @@ pub struct Uri {
     pub m_Info: quest_hook::libil2cpp::Gc<crate::System::Uri_UriInfo>,
     pub m_iriParsing: bool,
 }
-#[cfg(feature = "System+Uri")]
+#[cfg(feature = "cordl_class_System+Uri")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri {
         false
     }
 }
-#[cfg(feature = "System+Uri")]
+#[cfg(feature = "cordl_class_System+Uri")]
 impl std::ops::Deref for crate::System::Uri {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Uri")]
+#[cfg(feature = "cordl_class_System+Uri")]
 impl std::ops::DerefMut for crate::System::Uri {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3681,7 +3681,7 @@ impl crate::System::Uri {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Uri")]
+#[cfg(feature = "cordl_class_System+Uri")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Uri {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -3702,7 +3702,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable> for crate::Syst
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Uri+Check")]
+#[cfg(feature = "cordl_class_System+Uri+Check")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Uri_Check {
@@ -3717,7 +3717,7 @@ pub enum Uri_Check {
     NotIriCanonical = 64i32,
     ReservedFound = 32i32,
 }
-#[cfg(feature = "System+Uri+Check")]
+#[cfg(feature = "cordl_class_System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Check {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3746,7 +3746,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Check {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Uri+Check")]
+#[cfg(feature = "cordl_class_System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Check {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3756,7 +3756,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Check {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Uri+Check")]
+#[cfg(feature = "cordl_class_System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Check {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3769,7 +3769,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Check {
         self
     }
 }
-#[cfg(feature = "System+Uri+Check")]
+#[cfg(feature = "cordl_class_System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Check {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3783,7 +3783,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Check {
         }
     }
 }
-#[cfg(feature = "System+Uri+Check")]
+#[cfg(feature = "cordl_class_System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Check {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3796,7 +3796,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Check {
         actual
     }
 }
-#[cfg(feature = "System+Uri+Flags")]
+#[cfg(feature = "cordl_class_System+Uri+Flags")]
 #[repr(u64)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Uri_Flags {
@@ -3855,7 +3855,7 @@ pub enum Uri_Flags {
     UserIriCanonical = 549755813888u64,
     UserNotCanonical = 2u64,
 }
-#[cfg(feature = "System+Uri+Flags")]
+#[cfg(feature = "cordl_class_System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3884,7 +3884,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Flags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Uri+Flags")]
+#[cfg(feature = "cordl_class_System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Flags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3894,7 +3894,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Uri+Flags")]
+#[cfg(feature = "cordl_class_System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Flags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3907,7 +3907,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Flags {
         self
     }
 }
-#[cfg(feature = "System+Uri+Flags")]
+#[cfg(feature = "cordl_class_System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Flags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3921,7 +3921,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Flags {
         }
     }
 }
-#[cfg(feature = "System+Uri+Flags")]
+#[cfg(feature = "cordl_class_System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Flags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3934,7 +3934,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Flags {
         actual
     }
 }
-#[cfg(feature = "System+Uri+MoreInfo")]
+#[cfg(feature = "cordl_class_System+Uri+MoreInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Uri_MoreInfo {
@@ -3946,7 +3946,7 @@ pub struct Uri_MoreInfo {
     pub Hash: i32,
     pub RemoteUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Uri+MoreInfo")]
+#[cfg(feature = "cordl_class_System+Uri+MoreInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_MoreInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -3965,14 +3965,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_MoreInfo {
         false
     }
 }
-#[cfg(feature = "System+Uri+MoreInfo")]
+#[cfg(feature = "cordl_class_System+Uri+MoreInfo")]
 impl std::ops::Deref for crate::System::Uri_MoreInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Uri+MoreInfo")]
+#[cfg(feature = "cordl_class_System+Uri+MoreInfo")]
 impl std::ops::DerefMut for crate::System::Uri_MoreInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4009,7 +4009,7 @@ impl crate::System::Uri_MoreInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Uri+MoreInfo")]
+#[cfg(feature = "cordl_class_System+Uri+MoreInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Uri_MoreInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -4018,7 +4018,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Uri_MoreInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Uri+Offset")]
+#[cfg(feature = "cordl_class_System+Uri+Offset")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Uri_Offset {
@@ -4031,7 +4031,7 @@ pub struct Uri_Offset {
     pub Fragment: u16,
     pub End: u16,
 }
-#[cfg(feature = "System+Uri+Offset")]
+#[cfg(feature = "cordl_class_System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Offset {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -4060,7 +4060,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Offset {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Uri+Offset")]
+#[cfg(feature = "cordl_class_System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Offset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4070,7 +4070,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Offset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Uri+Offset")]
+#[cfg(feature = "cordl_class_System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Offset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4083,7 +4083,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Offset {
         self
     }
 }
-#[cfg(feature = "System+Uri+Offset")]
+#[cfg(feature = "cordl_class_System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Offset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4097,7 +4097,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Offset {
         }
     }
 }
-#[cfg(feature = "System+Uri+Offset")]
+#[cfg(feature = "cordl_class_System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Offset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4110,7 +4110,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Offset {
         actual
     }
 }
-#[cfg(feature = "System+Uri+Offset")]
+#[cfg(feature = "cordl_class_System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Uri_Offset {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -4122,7 +4122,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Uri_Offset {
 }
 #[cfg(feature = "System+Uri+Offset")]
 impl crate::System::Uri_Offset {}
-#[cfg(feature = "System+Uri+UriInfo")]
+#[cfg(feature = "cordl_class_System+Uri+UriInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Uri_UriInfo {
@@ -4134,7 +4134,7 @@ pub struct Uri_UriInfo {
     pub DnsSafeHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub MoreInfo: quest_hook::libil2cpp::Gc<crate::System::Uri_MoreInfo>,
 }
-#[cfg(feature = "System+Uri+UriInfo")]
+#[cfg(feature = "cordl_class_System+Uri+UriInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_UriInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -4153,14 +4153,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_UriInfo {
         false
     }
 }
-#[cfg(feature = "System+Uri+UriInfo")]
+#[cfg(feature = "cordl_class_System+Uri+UriInfo")]
 impl std::ops::Deref for crate::System::Uri_UriInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Uri+UriInfo")]
+#[cfg(feature = "cordl_class_System+Uri+UriInfo")]
 impl std::ops::DerefMut for crate::System::Uri_UriInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4197,7 +4197,7 @@ impl crate::System::Uri_UriInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Uri+UriInfo")]
+#[cfg(feature = "cordl_class_System+Uri+UriInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Uri_UriInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

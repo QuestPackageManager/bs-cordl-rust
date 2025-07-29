@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IO+FileSystem")]
+#[cfg(feature = "cordl_class_System+IO+FileSystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+IO+FileSystem")]
+#[cfg(feature = "cordl_class_System+IO+FileSystem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileSystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileSystem {
         false
     }
 }
-#[cfg(feature = "System+IO+FileSystem")]
+#[cfg(feature = "cordl_class_System+IO+FileSystem")]
 impl std::ops::Deref for crate::System::IO::FileSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+FileSystem")]
+#[cfg(feature = "cordl_class_System+IO+FileSystem")]
 impl std::ops::DerefMut for crate::System::IO::FileSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -545,7 +545,7 @@ impl crate::System::IO::FileSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+FileSystem")]
+#[cfg(feature = "cordl_class_System+IO+FileSystem")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::FileSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

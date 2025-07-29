@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ButtonSpriteSwapToggle")]
+#[cfg(feature = "cordl_class_HMUI+ButtonSpriteSwapToggle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonSpriteSwapToggle {
@@ -7,7 +7,7 @@ pub struct ButtonSpriteSwapToggle {
     pub _ignoreHighlight: bool,
     pub _isToggled: bool,
 }
-#[cfg(feature = "HMUI+ButtonSpriteSwapToggle")]
+#[cfg(feature = "cordl_class_HMUI+ButtonSpriteSwapToggle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ButtonSpriteSwapToggle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ButtonSpriteSwapToggle 
         false
     }
 }
-#[cfg(feature = "HMUI+ButtonSpriteSwapToggle")]
+#[cfg(feature = "cordl_class_HMUI+ButtonSpriteSwapToggle")]
 impl std::ops::Deref for crate::HMUI::ButtonSpriteSwapToggle {
     type Target = crate::HMUI::ButtonSpriteSwap;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ButtonSpriteSwapToggle")]
+#[cfg(feature = "cordl_class_HMUI+ButtonSpriteSwapToggle")]
 impl std::ops::DerefMut for crate::HMUI::ButtonSpriteSwapToggle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -160,7 +160,7 @@ impl crate::HMUI::ButtonSpriteSwapToggle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ButtonSpriteSwapToggle")]
+#[cfg(feature = "cordl_class_HMUI+ButtonSpriteSwapToggle")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ButtonSpriteSwapToggle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

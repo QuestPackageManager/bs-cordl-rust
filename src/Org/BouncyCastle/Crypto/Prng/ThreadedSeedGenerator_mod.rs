@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadedSeedGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -102,7 +102,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -112,7 +112,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadedSeedGenerator_SeedGenerator {
@@ -120,7 +122,9 @@ pub struct ThreadedSeedGenerator_SeedGenerator {
     pub counter: i32,
     pub stop: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -140,7 +144,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator 
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -148,7 +154,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -274,7 +282,9 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

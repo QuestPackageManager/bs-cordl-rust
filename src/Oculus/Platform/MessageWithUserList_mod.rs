@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithUserList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithUserList {
@@ -6,7 +6,7 @@ pub struct MessageWithUserList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithUserList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithUserList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithUserList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithUserList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithUserList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithUserList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithUserList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithUserList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithUserList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithUserList")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::MessageWithUserList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

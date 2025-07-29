@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Dimension {
     pub unit: crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit,
     pub value: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::Dimension {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::Dimension {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::Dimension {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::Dimension {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::Dimension {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::Dimension {
     type Type = Self;
@@ -359,7 +359,7 @@ impl AsMut<
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Dimension_Unit {
@@ -374,7 +374,7 @@ pub enum Dimension_Unit {
     Turn = 8i32,
     Unitless = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
     type Held<'a> = Self;
@@ -404,7 +404,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
     type Type = Self;
@@ -415,7 +415,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
     type Actual = Self;
@@ -429,7 +429,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
     type Type = Self;
@@ -444,7 +444,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit {
     type Actual = Self;

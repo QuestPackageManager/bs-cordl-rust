@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+ConventionFilterTypesBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConventionFilterTypesBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConventionFilterTypesBinder {
     __cordl_parent: crate::Zenject::ConventionAssemblySelectionBinder,
 }
-#[cfg(feature = "Zenject+ConventionFilterTypesBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConventionFilterTypesBinder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ConventionFilterTypesBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ConventionFilterType
         false
     }
 }
-#[cfg(feature = "Zenject+ConventionFilterTypesBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConventionFilterTypesBinder")]
 impl std::ops::Deref for crate::Zenject::ConventionFilterTypesBinder {
     type Target = crate::Zenject::ConventionAssemblySelectionBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ConventionFilterTypesBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConventionFilterTypesBinder")]
 impl std::ops::DerefMut for crate::Zenject::ConventionFilterTypesBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -696,7 +696,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ConventionFilterTypesBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConventionFilterTypesBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ConventionFilterTypesBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

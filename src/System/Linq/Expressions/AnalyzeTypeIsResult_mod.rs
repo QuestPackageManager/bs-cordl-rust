@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+AnalyzeTypeIsResult")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AnalyzeTypeIsResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnalyzeTypeIsResult {
@@ -8,7 +8,7 @@ pub enum AnalyzeTypeIsResult {
     KnownTrue = 1i32,
     Unknown = 3i32,
 }
-#[cfg(feature = "System+Linq+Expressions+AnalyzeTypeIsResult")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AnalyzeTypeIsResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+AnalyzeTypeIsResult")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AnalyzeTypeIsResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Linq+Expressions+AnalyzeTypeIsResult")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AnalyzeTypeIsResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
         self
     }
 }
-#[cfg(feature = "System+Linq+Expressions+AnalyzeTypeIsResult")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AnalyzeTypeIsResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
         }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+AnalyzeTypeIsResult")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AnalyzeTypeIsResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::AnalyzeTypeIsResult {
     type Actual = Self;

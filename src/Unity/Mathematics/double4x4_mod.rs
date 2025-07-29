@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Mathematics+double4x4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+double4x4")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct double4x4 {
@@ -7,7 +7,7 @@ pub struct double4x4 {
     pub c2: crate::Unity::Mathematics::double4,
     pub c3: crate::Unity::Mathematics::double4,
 }
-#[cfg(feature = "Unity+Mathematics+double4x4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+double4x4")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::double4x4 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::double4x4
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+double4x4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+double4x4")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::double4x4 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::doubl
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+double4x4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+double4x4")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::double4x4 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::doub
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+double4x4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+double4x4")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::double4x4 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::doubl
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+double4x4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+double4x4")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::double4x4 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::double4
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+double4x4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+double4x4")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Mathematics::double4x4 {
     type Type = Self;

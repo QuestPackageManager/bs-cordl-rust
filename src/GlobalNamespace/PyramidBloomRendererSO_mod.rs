@@ -1,4 +1,4 @@
-#[cfg(feature = "PyramidBloomRendererSO")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PyramidBloomRendererSO {
@@ -18,7 +18,7 @@ pub struct PyramidBloomRendererSO {
     >,
     pub _initialized: bool,
 }
-#[cfg(feature = "PyramidBloomRendererSO")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PyramidBloomRendererSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::PyramidBloomRendererSO {
         false
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PyramidBloomRendererSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PyramidBloomRendererSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -266,7 +266,7 @@ impl crate::GlobalNamespace::PyramidBloomRendererSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PyramidBloomRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -276,14 +276,14 @@ for crate::GlobalNamespace::PyramidBloomRendererSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PyramidBloomRendererSO_Level {
     pub down: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub up: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
 }
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Held<'a> = Self;
@@ -313,7 +313,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Type = Self;
@@ -324,7 +324,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Actual = Self;
@@ -338,7 +338,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
         self
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Type = Self;
@@ -353,7 +353,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
         }
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Actual = Self;
@@ -367,7 +367,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
         actual
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Type = Self;
@@ -380,7 +380,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
 }
 #[cfg(feature = "PyramidBloomRendererSO+Level")]
 impl crate::GlobalNamespace::PyramidBloomRendererSO_Level {}
-#[cfg(feature = "PyramidBloomRendererSO+Pass")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PyramidBloomRendererSO_Pass {
@@ -400,7 +400,7 @@ pub enum PyramidBloomRendererSO_Pass {
     UpsampleTentAndReinhardToneMapping = 11i32,
     UpsampleTentGamma = 7i32,
 }
-#[cfg(feature = "PyramidBloomRendererSO+Pass")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     type Held<'a> = Self;
@@ -430,7 +430,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Pass")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     type Type = Self;
@@ -441,7 +441,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Pass")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     type Actual = Self;
@@ -455,7 +455,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
         self
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Pass")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     type Type = Self;
@@ -470,7 +470,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
         }
     }
 }
-#[cfg(feature = "PyramidBloomRendererSO+Pass")]
+#[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     type Actual = Self;

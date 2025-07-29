@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GlobalKeyword")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlobalKeyword {
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Index: u32,
 }
-#[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GlobalKeyword")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::GlobalKeyword {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::Rendering::GlobalKeyword {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GlobalKeyword")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::GlobalKeyword {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::Rendering::GlobalKeyword {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GlobalKeyword")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::GlobalKeyword {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::Rendering::GlobalKeyword {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GlobalKeyword")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::GlobalKeyword {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::Rendering::GlobalKeyword {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GlobalKeyword")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::GlobalKeyword {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::Rendering::GlobalKeyword {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GlobalKeyword")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::GlobalKeyword {
     type Type = Self;

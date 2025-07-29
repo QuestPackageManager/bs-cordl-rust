@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_MissionGameplaySceneSetupData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionGameplaySceneSetupData {
@@ -16,7 +16,7 @@ pub struct MissionGameplaySceneSetupData {
     >,
     pub backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "MissionGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_MissionGameplaySceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionGameplaySceneSetupData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::MissionGameplaySceneSetupData {
         false
     }
 }
-#[cfg(feature = "MissionGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_MissionGameplaySceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionGameplaySceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_MissionGameplaySceneSetupData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionGameplaySceneSetupData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_MissionGameplaySceneSetupData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionGameplaySceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

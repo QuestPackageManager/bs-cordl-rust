@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayServerControlSettings")]
+#[cfg(feature = "cordl_class_GameplayServerControlSettings")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayServerControlSettings {
@@ -8,7 +8,7 @@ pub enum GameplayServerControlSettings {
     AllowSpectate = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "GameplayServerControlSettings")]
+#[cfg(feature = "cordl_class_GameplayServerControlSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayServerControlSettings {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::GameplayServerControlSettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameplayServerControlSettings")]
+#[cfg(feature = "cordl_class_GameplayServerControlSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayServerControlSettings {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::GameplayServerControlSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameplayServerControlSettings")]
+#[cfg(feature = "cordl_class_GameplayServerControlSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayServerControlSettings {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::GlobalNamespace::GameplayServerControlSettings {
         self
     }
 }
-#[cfg(feature = "GameplayServerControlSettings")]
+#[cfg(feature = "cordl_class_GameplayServerControlSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayServerControlSettings {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::GameplayServerControlSettings {
         }
     }
 }
-#[cfg(feature = "GameplayServerControlSettings")]
+#[cfg(feature = "cordl_class_GameplayServerControlSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayServerControlSettings {
     type Actual = Self;

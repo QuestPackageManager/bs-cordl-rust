@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionObjectiveStyleSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveStyleSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjectiveStyleSO {
@@ -9,7 +9,7 @@ pub struct MissionObjectiveStyleSO {
         crate::GlobalNamespace::ColorStyleSO,
     >,
 }
-#[cfg(feature = "MissionObjectiveStyleSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveStyleSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionObjectiveStyleSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MissionObjectiveStyleSO {
         false
     }
 }
-#[cfg(feature = "MissionObjectiveStyleSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveStyleSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionObjectiveStyleSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionObjectiveStyleSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveStyleSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjectiveStyleSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::MissionObjectiveStyleSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionObjectiveStyleSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveStyleSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionObjectiveStyleSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

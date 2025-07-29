@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+HideFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+HideFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HideFlags {
@@ -13,7 +13,7 @@ pub enum HideFlags {
     None = 0i32,
     NotEditable = 8i32,
 }
-#[cfg(feature = "UnityEngine+HideFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+HideFlags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HideFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -42,7 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HideFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+HideFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+HideFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::HideFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -52,7 +52,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::HideFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+HideFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+HideFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::HideFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -65,7 +65,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::HideFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+HideFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+HideFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::HideFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -79,7 +79,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::HideFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+HideFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+HideFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::HideFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

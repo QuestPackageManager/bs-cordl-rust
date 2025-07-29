@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScheduleMode {
@@ -7,7 +7,7 @@ pub enum ScheduleMode {
     Run = 0i32,
     Single = 2i32,
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
         self
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
         }
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Actual = Self;

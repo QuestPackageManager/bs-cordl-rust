@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicPropertyCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _properties: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +39,9 @@ for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -213,7 +221,9 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -224,7 +234,7 @@ for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
     }
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -238,7 +248,7 @@ pub struct DynamicPropertyCollection_DynamicPropertyReg {
     >,
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_DynamicPropertyReg {
@@ -260,7 +270,7 @@ for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_Dynami
     }
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_DynamicPropertyReg {
@@ -270,7 +280,7 @@ for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_Dynami
     }
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_DynamicPropertyReg {
@@ -312,7 +322,7 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_Dynam
     }
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
+    feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_DynamicPropertyReg {

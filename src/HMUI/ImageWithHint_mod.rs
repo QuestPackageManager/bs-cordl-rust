@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ImageWithHint")]
+#[cfg(feature = "cordl_class_HMUI+ImageWithHint")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageWithHint {
@@ -6,7 +6,7 @@ pub struct ImageWithHint {
     pub _image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
 }
-#[cfg(feature = "HMUI+ImageWithHint")]
+#[cfg(feature = "cordl_class_HMUI+ImageWithHint")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ImageWithHint {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ImageWithHint {
         false
     }
 }
-#[cfg(feature = "HMUI+ImageWithHint")]
+#[cfg(feature = "cordl_class_HMUI+ImageWithHint")]
 impl std::ops::Deref for crate::HMUI::ImageWithHint {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ImageWithHint")]
+#[cfg(feature = "cordl_class_HMUI+ImageWithHint")]
 impl std::ops::DerefMut for crate::HMUI::ImageWithHint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -199,7 +199,7 @@ impl crate::HMUI::ImageWithHint {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ImageWithHint")]
+#[cfg(feature = "cordl_class_HMUI+ImageWithHint")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ImageWithHint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

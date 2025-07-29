@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRLocatable")]
+#[cfg(feature = "cordl_class_OVRLocatable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRLocatable {
     pub _Handle_k__BackingField: u64,
 }
-#[cfg(feature = "OVRLocatable")]
+#[cfg(feature = "cordl_class_OVRLocatable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRLocatable {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRLocatable
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRLocatable")]
+#[cfg(feature = "cordl_class_OVRLocatable")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRLocatable {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRLocat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRLocatable")]
+#[cfg(feature = "cordl_class_OVRLocatable")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRLocatable {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRLoca
         self
     }
 }
-#[cfg(feature = "OVRLocatable")]
+#[cfg(feature = "cordl_class_OVRLocatable")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRLocatable {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRLocat
         }
     }
 }
-#[cfg(feature = "OVRLocatable")]
+#[cfg(feature = "cordl_class_OVRLocatable")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRLocatable {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRLocatab
         actual
     }
 }
-#[cfg(feature = "OVRLocatable")]
+#[cfg(feature = "cordl_class_OVRLocatable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRLocatable {
     type Type = Self;
@@ -562,7 +562,7 @@ for crate::GlobalNamespace::OVRLocatable {
         todo!()
     }
 }
-#[cfg(feature = "OVRLocatable+TrackingSpacePose")]
+#[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRLocatable_TrackingSpacePose {
@@ -574,7 +574,7 @@ pub struct OVRLocatable_TrackingSpacePose {
     >,
     pub _flags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
 }
-#[cfg(feature = "OVRLocatable+TrackingSpacePose")]
+#[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     type Held<'a> = Self;
@@ -604,7 +604,7 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRLocatable+TrackingSpacePose")]
+#[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     type Type = Self;
@@ -615,7 +615,7 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRLocatable+TrackingSpacePose")]
+#[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     type Actual = Self;
@@ -629,7 +629,7 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         self
     }
 }
-#[cfg(feature = "OVRLocatable+TrackingSpacePose")]
+#[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     type Type = Self;
@@ -644,7 +644,7 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         }
     }
 }
-#[cfg(feature = "OVRLocatable+TrackingSpacePose")]
+#[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     type Actual = Self;
@@ -658,7 +658,7 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
         actual
     }
 }
-#[cfg(feature = "OVRLocatable+TrackingSpacePose")]
+#[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     type Type = Self;

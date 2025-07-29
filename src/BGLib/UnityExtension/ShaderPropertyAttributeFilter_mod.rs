@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderPropertyAttributeFilter {
@@ -6,7 +6,7 @@ pub struct ShaderPropertyAttributeFilter {
     pub propType: crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType,
     pub nameFilter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
 impl std::ops::DerefMut for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -86,7 +86,7 @@ impl crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -96,7 +96,9 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShaderPropertyAttributeFilter_PropType {
@@ -109,7 +111,9 @@ pub enum ShaderPropertyAttributeFilter_PropType {
     Texture = 5i32,
     Vector = 2i32,
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Held<'a> = Self;
@@ -139,7 +143,9 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Type = Self;
@@ -150,7 +156,9 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Actual = Self;
@@ -164,7 +172,9 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
         self
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Type = Self;
@@ -179,7 +189,9 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
         }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Actual = Self;

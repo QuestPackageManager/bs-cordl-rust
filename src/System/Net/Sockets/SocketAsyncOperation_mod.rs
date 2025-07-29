@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncOperation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketAsyncOperation {
@@ -14,7 +14,7 @@ pub enum SocketAsyncOperation {
     SendPackets = 8i32,
     SendTo = 9i32,
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::System::Net::Sockets::SocketAsyncOperation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::System::Net::Sockets::SocketAsyncOperation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::System::Net::Sockets::SocketAsyncOperation {
         self
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::System::Net::Sockets::SocketAsyncOperation {
         }
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Actual = Self;

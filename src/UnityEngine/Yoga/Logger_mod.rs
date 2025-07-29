@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Yoga+Logger")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+Logger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Logger {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Yoga+Logger")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+Logger")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::Logger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::Logger {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+Logger")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+Logger")]
 impl std::ops::Deref for crate::UnityEngine::Yoga::Logger {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+Logger")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+Logger")]
 impl std::ops::DerefMut for crate::UnityEngine::Yoga::Logger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::UnityEngine::Yoga::Logger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+Logger")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+Logger")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Yoga::Logger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

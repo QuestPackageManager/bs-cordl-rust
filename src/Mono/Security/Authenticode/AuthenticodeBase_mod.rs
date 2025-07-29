@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthenticodeBase {
@@ -13,7 +13,7 @@ pub struct AuthenticodeBase {
     pub coffSymbolTableOffset: i32,
     pub pe64: bool,
 }
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Authenticode::AuthenticodeBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::Mono::Security::Authenticode::AuthenticodeBase {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeBase")]
 impl std::ops::Deref for crate::Mono::Security::Authenticode::AuthenticodeBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeBase")]
 impl std::ops::DerefMut for crate::Mono::Security::Authenticode::AuthenticodeBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -274,7 +274,7 @@ impl crate::Mono::Security::Authenticode::AuthenticodeBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Authenticode::AuthenticodeBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

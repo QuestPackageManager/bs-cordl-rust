@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+CancellationToken")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationToken")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CancellationToken {
@@ -6,7 +6,7 @@ pub struct CancellationToken {
         crate::System::Threading::CancellationTokenSource,
     >,
 }
-#[cfg(feature = "System+Threading+CancellationToken")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationToken")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::CancellationToken {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Cancellati
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+CancellationToken")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationToken")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::CancellationToken {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::System::Threading::CancellationToken {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+CancellationToken")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationToken")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::CancellationToken {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::System::Threading::CancellationToken {
         self
     }
 }
-#[cfg(feature = "System+Threading+CancellationToken")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationToken")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::CancellationToken {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::System::Threading::CancellationToken {
         }
     }
 }
-#[cfg(feature = "System+Threading+CancellationToken")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationToken")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::CancellationToken {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::System::Threading::CancellationToken {
         actual
     }
 }
-#[cfg(feature = "System+Threading+CancellationToken")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationToken")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::CancellationToken {
     type Type = Self;

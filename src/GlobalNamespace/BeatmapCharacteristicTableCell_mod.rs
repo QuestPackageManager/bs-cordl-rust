@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapCharacteristicTableCell")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicTableCell {
@@ -10,7 +10,7 @@ pub struct BeatmapCharacteristicTableCell {
     pub _bgNormalColor: crate::UnityEngine::Color,
     pub _bgHighlightColor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "BeatmapCharacteristicTableCell")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicTableCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapCharacteristicTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::BeatmapCharacteristicTableCell {
         false
     }
 }
-#[cfg(feature = "BeatmapCharacteristicTableCell")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapCharacteristicTableCell")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCharacteristicTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -181,7 +181,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapCharacteristicTableCell")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicTableCell")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapCharacteristicTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

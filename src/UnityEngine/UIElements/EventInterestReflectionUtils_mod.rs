@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+EventInterestReflectionUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventInterestReflectionUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventInterestReflectionUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventInterestReflectionUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventInterestReflectionUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -140,7 +140,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventInterestReflectionUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -151,7 +151,7 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
+    feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -160,7 +160,7 @@ pub struct EventInterestReflectionUtils_DefaultEventInterests {
     pub DefaultActionAtTargetCategories: i32,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
+    feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInterests {
@@ -192,7 +192,7 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInt
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
+    feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInterests {
@@ -205,7 +205,7 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInt
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
+    feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInterests {
@@ -221,7 +221,7 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInt
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
+    feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInterests {
@@ -238,7 +238,7 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInt
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
+    feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInterests {
@@ -254,7 +254,7 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInt
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
+    feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInterests {

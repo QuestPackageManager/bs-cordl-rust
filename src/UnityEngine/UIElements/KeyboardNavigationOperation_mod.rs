@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationOperation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KeyboardNavigationOperation {
@@ -16,7 +16,7 @@ pub enum KeyboardNavigationOperation {
     SelectAll = 1i32,
     Submit = 3i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationOperation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationOperation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationOperation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationOperation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationOperation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::KeyboardNavigationOperation {
     type Actual = Self;

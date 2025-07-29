@@ -1,4 +1,4 @@
-#[cfg(feature = "VRCenterAdjust")]
+#[cfg(feature = "cordl_class_VRCenterAdjust")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRCenterAdjust {
@@ -10,7 +10,7 @@ pub struct VRCenterAdjust {
         crate::GlobalNamespace::SettingsApplicatorSO,
     >,
 }
-#[cfg(feature = "VRCenterAdjust")]
+#[cfg(feature = "cordl_class_VRCenterAdjust")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VRCenterAdjust {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VRCenterAdju
         false
     }
 }
-#[cfg(feature = "VRCenterAdjust")]
+#[cfg(feature = "cordl_class_VRCenterAdjust")]
 impl std::ops::Deref for crate::GlobalNamespace::VRCenterAdjust {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRCenterAdjust")]
+#[cfg(feature = "cordl_class_VRCenterAdjust")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRCenterAdjust {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -224,7 +224,7 @@ impl crate::GlobalNamespace::VRCenterAdjust {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRCenterAdjust")]
+#[cfg(feature = "cordl_class_VRCenterAdjust")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VRCenterAdjust {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

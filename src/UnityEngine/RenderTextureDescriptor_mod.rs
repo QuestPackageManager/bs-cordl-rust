@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureDescriptor")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderTextureDescriptor {
@@ -16,7 +16,7 @@ pub struct RenderTextureDescriptor {
     pub _flags: crate::UnityEngine::RenderTextureCreationFlags,
     pub _memoryless_k__BackingField: crate::UnityEngine::RenderTextureMemoryless,
 }
-#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureDescriptor {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureDes
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RenderTextureDescriptor {
     type Type = Self;
@@ -56,7 +56,7 @@ for crate::UnityEngine::RenderTextureDescriptor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RenderTextureDescriptor {
     type Actual = Self;
@@ -70,7 +70,7 @@ for crate::UnityEngine::RenderTextureDescriptor {
         self
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RenderTextureDescriptor {
     type Type = Self;
@@ -85,7 +85,7 @@ for crate::UnityEngine::RenderTextureDescriptor {
         }
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RenderTextureDescriptor {
     type Actual = Self;
@@ -99,7 +99,7 @@ for crate::UnityEngine::RenderTextureDescriptor {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::RenderTextureDescriptor {
     type Type = Self;

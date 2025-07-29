@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveData_EnabledObstacleType {
@@ -7,7 +7,7 @@ pub enum GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     FullHeightOnly = 1i32,
     None = 2i32,
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
         self
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
         }
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
         actual
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnergyType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveData_EnergyType {
@@ -99,7 +99,7 @@ pub enum GameplayModifiers_PlayerSaveData_EnergyType {
     Bar = 0i32,
     Battery = 1i32,
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Held<'a> = Self;
@@ -129,7 +129,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Type = Self;
@@ -140,7 +140,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Actual = Self;
@@ -154,7 +154,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
         self
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Type = Self;
@@ -169,7 +169,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
         }
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Actual = Self;
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
         actual
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+SongSpeed")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveData_SongSpeed {
@@ -192,7 +192,7 @@ pub enum GameplayModifiers_PlayerSaveData_SongSpeed {
     Normal = 0i32,
     Slower = 2i32,
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Held<'a> = Self;
@@ -222,7 +222,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Type = Self;
@@ -233,7 +233,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Actual = Self;
@@ -247,7 +247,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
         self
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Type = Self;
@@ -262,7 +262,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
         }
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Actual = Self;
@@ -276,7 +276,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
         actual
     }
 }
-#[cfg(feature = "PlayerSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData {
@@ -292,7 +292,7 @@ pub struct PlayerSaveData {
         >,
     >,
 }
-#[cfg(feature = "PlayerSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -311,14 +311,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerSaveDa
         false
     }
 }
-#[cfg(feature = "PlayerSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData {
     type Target = crate::GlobalNamespace::VersionSaveData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -390,7 +390,7 @@ impl crate::GlobalNamespace::PlayerSaveData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -399,7 +399,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorOverrideType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSaveData_ColorOverrideType {
@@ -407,7 +407,7 @@ pub enum PlayerSaveData_ColorOverrideType {
     All = 0i32,
     NotesOnly = 1i32,
 }
-#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Held<'a> = Self;
@@ -437,7 +437,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Type = Self;
@@ -448,7 +448,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Actual = Self;
@@ -462,7 +462,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
         self
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Type = Self;
@@ -477,7 +477,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
         }
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Actual = Self;
@@ -491,7 +491,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
         actual
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorScheme")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorScheme")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_ColorScheme {
@@ -505,7 +505,7 @@ pub struct PlayerSaveData_ColorScheme {
     pub environmentColor0Boost: crate::UnityEngine::Color,
     pub environmentColor1Boost: crate::UnityEngine::Color,
 }
-#[cfg(feature = "PlayerSaveData+ColorScheme")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorScheme")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -525,14 +525,14 @@ for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorScheme")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorScheme")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorScheme")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorScheme")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -626,7 +626,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorScheme")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorScheme")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -636,7 +636,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorSchemesSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_ColorSchemesSettings {
@@ -652,7 +652,7 @@ pub struct PlayerSaveData_ColorSchemesSettings {
         >,
     >,
 }
-#[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorSchemesSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -672,14 +672,14 @@ for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorSchemesSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorSchemesSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -775,7 +775,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+ColorSchemesSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -785,7 +785,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_GameplayModifiers {
@@ -806,7 +806,7 @@ pub struct PlayerSaveData_GameplayModifiers {
     pub zenMode: bool,
     pub smallCubes: bool,
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -826,14 +826,14 @@ for crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -876,7 +876,7 @@ impl crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -886,14 +886,14 @@ for crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+GuestPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GuestPlayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_GuestPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "PlayerSaveData+GuestPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GuestPlayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -913,14 +913,14 @@ for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+GuestPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GuestPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+GuestPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GuestPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -957,7 +957,7 @@ impl crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+GuestPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+GuestPlayer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -967,7 +967,7 @@ for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+LocalPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+LocalPlayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_LocalPlayer {
@@ -1042,7 +1042,7 @@ pub struct PlayerSaveData_LocalPlayer {
     pub userAgeCategory: crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData,
     pub desiredSensitivityFlag: crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData,
 }
-#[cfg(feature = "PlayerSaveData+LocalPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+LocalPlayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1062,14 +1062,14 @@ for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+LocalPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+LocalPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+LocalPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+LocalPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1106,7 +1106,7 @@ impl crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+LocalPlayer")]
+#[cfg(feature = "cordl_class_PlayerSaveData+LocalPlayer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1116,7 +1116,7 @@ for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+MultiplayerModeSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_MultiplayerModeSettings {
@@ -1133,7 +1133,7 @@ pub struct PlayerSaveData_MultiplayerModeSettings {
     >,
     pub quickPlayEnableLevelSelection: bool,
 }
-#[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+MultiplayerModeSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1153,14 +1153,14 @@ for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+MultiplayerModeSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+MultiplayerModeSettings")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1198,7 +1198,7 @@ impl crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+MultiplayerModeSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1208,7 +1208,7 @@ for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+OverrideEnvironmentSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_OverrideEnvironmentSettings {
@@ -1221,7 +1221,7 @@ pub struct PlayerSaveData_OverrideEnvironmentSettings {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+OverrideEnvironmentSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1241,7 +1241,7 @@ for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+OverrideEnvironmentSettings")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1249,7 +1249,7 @@ for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+OverrideEnvironmentSettings")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1287,7 +1287,7 @@ impl crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+OverrideEnvironmentSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1297,7 +1297,7 @@ for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAgreementsData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerAgreementsData {
@@ -1308,7 +1308,7 @@ pub struct PlayerSaveData_PlayerAgreementsData {
     pub playerSensitivityFlagVersion: i32,
     pub endOfLifeVersion: i32,
 }
-#[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAgreementsData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1328,14 +1328,14 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAgreementsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAgreementsData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1372,7 +1372,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAgreementsData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1382,7 +1382,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAllOverallStatsData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerAllOverallStatsData {
@@ -1400,7 +1400,7 @@ pub struct PlayerSaveData_PlayerAllOverallStatsData {
         crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
     >,
 }
-#[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAllOverallStatsData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1420,7 +1420,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAllOverallStatsData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1428,7 +1428,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAllOverallStatsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1553,7 +1553,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerAllOverallStatsData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1563,7 +1563,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerLevelStatsData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerLevelStatsData {
@@ -1580,7 +1580,7 @@ pub struct PlayerSaveData_PlayerLevelStatsData {
     pub validScore: bool,
     pub playCount: i32,
 }
-#[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerLevelStatsData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1600,14 +1600,14 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerLevelStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerLevelStatsData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1644,7 +1644,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerLevelStatsData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1654,7 +1654,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerMissionStatsData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerMissionStatsData {
@@ -1662,7 +1662,7 @@ pub struct PlayerSaveData_PlayerMissionStatsData {
     pub missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cleared: bool,
 }
-#[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerMissionStatsData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1682,14 +1682,14 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerMissionStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerMissionStatsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1727,7 +1727,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerMissionStatsData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1737,7 +1737,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerOverallStatsData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerOverallStatsData {
@@ -1754,7 +1754,7 @@ pub struct PlayerSaveData_PlayerOverallStatsData {
     pub handDistanceTravelled: i32,
     pub cummulativeCutScoreWithoutMultiplier: i64,
 }
-#[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerOverallStatsData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1774,14 +1774,14 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerOverallStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerOverallStatsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1905,7 +1905,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerOverallStatsData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1915,7 +1915,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSensitivityFlagSaveData")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSaveData_PlayerSensitivityFlagSaveData {
@@ -1925,7 +1925,7 @@ pub enum PlayerSaveData_PlayerSensitivityFlagSaveData {
     Themes = 2i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Held<'a> = Self;
@@ -1955,7 +1955,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Type = Self;
@@ -1966,7 +1966,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Actual = Self;
@@ -1980,7 +1980,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
         self
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Type = Self;
@@ -1995,7 +1995,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
         }
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Actual = Self;
@@ -2009,7 +2009,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
         actual
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerSpecificSettings {
@@ -2036,7 +2036,7 @@ pub struct PlayerSaveData_PlayerSpecificSettings {
     pub environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData,
     pub headsetHapticIntensity: f32,
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2056,14 +2056,14 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2111,7 +2111,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2121,7 +2121,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+PracticeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PracticeSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_PracticeSettings {
@@ -2129,7 +2129,7 @@ pub struct PlayerSaveData_PracticeSettings {
     pub startSongTime: f32,
     pub songSpeedMul: f32,
 }
-#[cfg(feature = "PlayerSaveData+PracticeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PracticeSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2149,14 +2149,14 @@ for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
         false
     }
 }
-#[cfg(feature = "PlayerSaveData+PracticeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PracticeSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSaveData+PracticeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PracticeSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2193,7 +2193,7 @@ impl crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSaveData+PracticeSettings")]
+#[cfg(feature = "cordl_class_PlayerSaveData+PracticeSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2203,7 +2203,7 @@ for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+UserAgeCategorySaveData")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSaveData_UserAgeCategorySaveData {
@@ -2213,7 +2213,7 @@ pub enum PlayerSaveData_UserAgeCategorySaveData {
     Teen = 2i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Held<'a> = Self;
@@ -2243,7 +2243,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Type = Self;
@@ -2254,7 +2254,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Actual = Self;
@@ -2268,7 +2268,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
         self
     }
 }
-#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Type = Self;
@@ -2283,7 +2283,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
         }
     }
 }
-#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
+#[cfg(feature = "cordl_class_PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Actual = Self;
@@ -2297,7 +2297,9 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
         actual
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[cfg(
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
@@ -2307,7 +2309,9 @@ pub enum PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     None = 0i32,
     Standard = 2i32,
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[cfg(
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Held<'a> = Self;
@@ -2337,7 +2341,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[cfg(
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Type = Self;
@@ -2348,7 +2354,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[cfg(
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Actual = Self;
@@ -2362,7 +2370,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
         self
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[cfg(
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Type = Self;
@@ -2377,7 +2387,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
         }
     }
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[cfg(
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Actual = Self;
@@ -2392,7 +2404,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -2403,7 +2415,7 @@ pub enum PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSav
     StrobeFilter = 1i32,
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
@@ -2435,7 +2447,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
@@ -2448,7 +2460,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
@@ -2464,7 +2476,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
@@ -2481,7 +2493,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
@@ -2497,7 +2509,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -2507,7 +2519,7 @@ pub enum PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveD
     Static = 1i32,
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
@@ -2539,7 +2551,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
@@ -2552,7 +2564,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
@@ -2568,7 +2580,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
@@ -2585,7 +2597,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
     }
 }
 #[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+    feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {

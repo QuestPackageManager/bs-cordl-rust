@@ -1,4 +1,4 @@
-#[cfg(feature = "FlyingTextEffect")]
+#[cfg(feature = "cordl_class_FlyingTextEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingTextEffect {
@@ -9,7 +9,7 @@ pub struct FlyingTextEffect {
     >,
     pub _color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "FlyingTextEffect")]
+#[cfg(feature = "cordl_class_FlyingTextEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingTextEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingTextEf
         false
     }
 }
-#[cfg(feature = "FlyingTextEffect")]
+#[cfg(feature = "cordl_class_FlyingTextEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingTextEffect {
     type Target = crate::GlobalNamespace::FlyingObjectEffect;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FlyingTextEffect")]
+#[cfg(feature = "cordl_class_FlyingTextEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FlyingTextEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::FlyingTextEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FlyingTextEffect")]
+#[cfg(feature = "cordl_class_FlyingTextEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingTextEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -155,7 +155,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingTextEff
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "FlyingTextEffect+Pool")]
+#[cfg(feature = "cordl_class_FlyingTextEffect+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingTextEffect_Pool {
@@ -163,7 +163,7 @@ pub struct FlyingTextEffect_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingTextEffect>,
     >,
 }
-#[cfg(feature = "FlyingTextEffect+Pool")]
+#[cfg(feature = "cordl_class_FlyingTextEffect+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FlyingTextEffect_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::FlyingTextEffect_Pool {
         false
     }
 }
-#[cfg(feature = "FlyingTextEffect+Pool")]
+#[cfg(feature = "cordl_class_FlyingTextEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingTextEffect_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingTextEffect>,
@@ -192,7 +192,7 @@ impl std::ops::Deref for crate::GlobalNamespace::FlyingTextEffect_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FlyingTextEffect+Pool")]
+#[cfg(feature = "cordl_class_FlyingTextEffect+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FlyingTextEffect_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -229,7 +229,7 @@ impl crate::GlobalNamespace::FlyingTextEffect_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FlyingTextEffect+Pool")]
+#[cfg(feature = "cordl_class_FlyingTextEffect+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FlyingTextEffect_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

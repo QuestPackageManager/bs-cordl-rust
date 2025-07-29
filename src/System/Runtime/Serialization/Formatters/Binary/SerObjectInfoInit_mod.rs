@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerObjectInfoInit {
@@ -11,7 +13,9 @@ pub struct SerObjectInfoInit {
         crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
     >,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +35,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +45,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -77,7 +85,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoIni
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

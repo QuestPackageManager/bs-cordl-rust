@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BaseSliderData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseSliderData {
@@ -11,7 +11,7 @@ pub struct BaseSliderData {
     pub tx: i32,
     pub ty: i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BaseSliderData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion3::BaseSliderData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::BeatmapSaveDataVersion3::BaseSliderData {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BaseSliderData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::BaseSliderData {
     type Target = crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BaseSliderData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::BaseSliderData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -265,7 +265,7 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BaseSliderData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion3::BaseSliderData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

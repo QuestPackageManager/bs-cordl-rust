@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidSensorState {
     pub data: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Held<'a> = Self;
@@ -34,7 +38,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Type = Self;
@@ -45,7 +51,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Actual = Self;
@@ -59,7 +67,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Type = Self;
@@ -74,7 +84,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Actual = Self;
@@ -88,7 +100,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Type = Self;
@@ -180,7 +194,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -188,7 +202,7 @@ pub struct AndroidSensorState__data_e__FixedBuffer {
     pub FixedElementField: f32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
@@ -220,7 +234,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
@@ -233,7 +247,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
@@ -249,7 +263,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
@@ -266,7 +280,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
@@ -282,7 +296,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {

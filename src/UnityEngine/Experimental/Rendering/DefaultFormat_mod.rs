@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Experimental+Rendering+DefaultFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+DefaultFormat")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DefaultFormat {
@@ -9,7 +9,7 @@ pub enum DefaultFormat {
     Shadow = 3i32,
     Video = 4i32,
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+DefaultFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+DefaultFormat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+DefaultFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+DefaultFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+DefaultFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+DefaultFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+DefaultFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+DefaultFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+DefaultFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+DefaultFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::Rendering::DefaultFormat {
     type Actual = Self;

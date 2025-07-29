@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerEventSystem {
     __cordl_parent: crate::UnityEngine::EventSystems::EventSystem,
     pub m_PlayerRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::MultiplayerEventSystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::InputSystem::UI::MultiplayerEventSystem {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::MultiplayerEventSystem {
     type Target = crate::UnityEngine::EventSystems::EventSystem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::UI::MultiplayerEventSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -210,7 +210,7 @@ impl crate::UnityEngine::InputSystem::UI::MultiplayerEventSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::UI::MultiplayerEventSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

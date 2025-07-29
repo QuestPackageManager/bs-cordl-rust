@@ -1,4 +1,4 @@
-#[cfg(feature = "Tayx+Graphy+G_GraphShader")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+G_GraphShader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_GraphShader {
@@ -23,7 +23,7 @@ pub struct G_GraphShader {
     pub m_cautionColorPropertyId: i32,
     pub m_criticalColorPropertyId: i32,
 }
-#[cfg(feature = "Tayx+Graphy+G_GraphShader")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+G_GraphShader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::G_GraphShader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::G_GraphShader {
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+G_GraphShader")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+G_GraphShader")]
 impl std::ops::Deref for crate::Tayx::Graphy::G_GraphShader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+G_GraphShader")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+G_GraphShader")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::G_GraphShader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -238,7 +238,7 @@ impl crate::Tayx::Graphy::G_GraphShader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+G_GraphShader")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+G_GraphShader")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::G_GraphShader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+DateTimeZoneHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DateTimeZoneHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeZoneHandling {
@@ -8,7 +8,7 @@ pub enum DateTimeZoneHandling {
     Unspecified = 2i32,
     Utc = 1i32,
 }
-#[cfg(feature = "Newtonsoft+Json+DateTimeZoneHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DateTimeZoneHandling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::DateTimeZoneHandling {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Newtonsoft::Json::DateTimeZoneHandling {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DateTimeZoneHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DateTimeZoneHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::DateTimeZoneHandling {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Newtonsoft::Json::DateTimeZoneHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DateTimeZoneHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DateTimeZoneHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::DateTimeZoneHandling {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Newtonsoft::Json::DateTimeZoneHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DateTimeZoneHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DateTimeZoneHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::DateTimeZoneHandling {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Newtonsoft::Json::DateTimeZoneHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DateTimeZoneHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DateTimeZoneHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::DateTimeZoneHandling {
     type Actual = Self;

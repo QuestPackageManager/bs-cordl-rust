@@ -1,10 +1,10 @@
-#[cfg(feature = "OculusNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_OculusNetworkPlayerModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusNetworkPlayerModel {
     __cordl_parent: crate::GlobalNamespace::PlatformNetworkPlayerModel,
 }
-#[cfg(feature = "OculusNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_OculusNetworkPlayerModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusNetworkPlayerModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OculusNetworkPlayerModel {
         false
     }
 }
-#[cfg(feature = "OculusNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_OculusNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusNetworkPlayerModel {
     type Target = crate::GlobalNamespace::PlatformNetworkPlayerModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_OculusNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::OculusNetworkPlayerModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_OculusNetworkPlayerModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

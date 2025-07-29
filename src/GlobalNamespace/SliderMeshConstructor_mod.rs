@@ -1,4 +1,4 @@
-#[cfg(feature = "SliderMeshConstructor")]
+#[cfg(feature = "cordl_class_SliderMeshConstructor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderMeshConstructor {
@@ -18,7 +18,7 @@ pub struct SliderMeshConstructor {
     >,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
-#[cfg(feature = "SliderMeshConstructor")]
+#[cfg(feature = "cordl_class_SliderMeshConstructor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderMeshConstructor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::SliderMeshConstructor {
         false
     }
 }
-#[cfg(feature = "SliderMeshConstructor")]
+#[cfg(feature = "cordl_class_SliderMeshConstructor")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderMeshConstructor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderMeshConstructor")]
+#[cfg(feature = "cordl_class_SliderMeshConstructor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderMeshConstructor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -253,7 +253,7 @@ impl crate::GlobalNamespace::SliderMeshConstructor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderMeshConstructor")]
+#[cfg(feature = "cordl_class_SliderMeshConstructor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderMeshConstructor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

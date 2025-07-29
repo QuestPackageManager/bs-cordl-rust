@@ -1,11 +1,11 @@
-#[cfg(feature = "System+ComponentModel+SettingsBindableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SettingsBindableAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SettingsBindableAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Bindable_k__BackingField: bool,
 }
-#[cfg(feature = "System+ComponentModel+SettingsBindableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SettingsBindableAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::SettingsBindableAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::ComponentModel::SettingsBindableAttribute {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+SettingsBindableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SettingsBindableAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::SettingsBindableAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+SettingsBindableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SettingsBindableAttribute")]
 impl std::ops::DerefMut for crate::System::ComponentModel::SettingsBindableAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -132,7 +132,7 @@ impl crate::System::ComponentModel::SettingsBindableAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+SettingsBindableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SettingsBindableAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::SettingsBindableAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

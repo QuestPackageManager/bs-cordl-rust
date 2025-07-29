@@ -1,10 +1,14 @@
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationBaseDataConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter {
         false
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter"
+)]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter"
+)]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -74,7 +82,9 @@ impl crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::LightTranslationBaseDataConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

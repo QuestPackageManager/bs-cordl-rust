@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IChannelSender")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IChannelSender {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IChannelSender")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Channels::IChannelSender {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::Channels::IChannelSender {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IChannelSender")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::IChannelSender {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IChannelSender")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Channels::IChannelSender {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::System::Runtime::Remoting::Channels::IChannelSender {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IChannelSender")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Channels::IChannelSender {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

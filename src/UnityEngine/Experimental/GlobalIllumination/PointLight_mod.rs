@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+PointLight")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+PointLight")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PointLight {
@@ -13,7 +13,7 @@ pub struct PointLight {
     pub sphereRadius: f32,
     pub falloff: crate::UnityEngine::Experimental::GlobalIllumination::FalloffType,
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+PointLight")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+PointLight")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+PointLight")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+PointLight")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+PointLight")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+PointLight")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+PointLight")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+PointLight")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+PointLight")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+PointLight")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
     type Actual = Self;
@@ -97,7 +97,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+PointLight")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+PointLight")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Experimental::GlobalIllumination::PointLight {
     type Type = Self;

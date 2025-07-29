@@ -1,4 +1,4 @@
-#[cfg(feature = "Internal+Cryptography+Pal+GeneralNameType")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+GeneralNameType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GeneralNameType {
@@ -13,7 +13,7 @@ pub enum GeneralNameType {
     UniformResourceIdentifier = 6i32,
     X400Address = 3i32,
 }
-#[cfg(feature = "Internal+Cryptography+Pal+GeneralNameType")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+GeneralNameType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Internal::Cryptography::Pal::GeneralNameType {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::Internal::Cryptography::Pal::GeneralNameType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+GeneralNameType")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+GeneralNameType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Internal::Cryptography::Pal::GeneralNameType {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::Internal::Cryptography::Pal::GeneralNameType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+GeneralNameType")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+GeneralNameType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Internal::Cryptography::Pal::GeneralNameType {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::Internal::Cryptography::Pal::GeneralNameType {
         self
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+GeneralNameType")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+GeneralNameType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Internal::Cryptography::Pal::GeneralNameType {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::Internal::Cryptography::Pal::GeneralNameType {
         }
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+GeneralNameType")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+GeneralNameType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Internal::Cryptography::Pal::GeneralNameType {
     type Actual = Self;

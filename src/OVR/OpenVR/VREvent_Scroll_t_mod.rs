@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+VREvent_Scroll_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_Scroll_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_Scroll_t {
@@ -6,7 +6,7 @@ pub struct VREvent_Scroll_t {
     pub ydelta: f32,
     pub repeatCount: u32,
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_Scroll_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_Scroll_t")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VREvent_Scroll_t {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VREvent_Scroll_t
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_Scroll_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_Scroll_t")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::VREvent_Scroll_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::VREvent_Scro
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_Scroll_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_Scroll_t")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::VREvent_Scroll_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::VREvent_Scr
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_Scroll_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_Scroll_t")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::VREvent_Scroll_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::VREvent_Scro
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_Scroll_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_Scroll_t")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VREvent_Scroll_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VREvent_Scroll
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_Scroll_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_Scroll_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::VREvent_Scroll_t {
     type Type = Self;

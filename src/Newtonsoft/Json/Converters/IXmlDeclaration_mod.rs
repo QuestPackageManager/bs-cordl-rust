@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Converters+IXmlDeclaration")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+IXmlDeclaration")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IXmlDeclaration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+IXmlDeclaration")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+IXmlDeclaration")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Converters::IXmlDeclaration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Converters::IXmlDeclaration {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+IXmlDeclaration")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+IXmlDeclaration")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::IXmlDeclaration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+IXmlDeclaration")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+IXmlDeclaration")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::IXmlDeclaration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::Newtonsoft::Json::Converters::IXmlDeclaration {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+IXmlDeclaration")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+IXmlDeclaration")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Converters::IXmlDeclaration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

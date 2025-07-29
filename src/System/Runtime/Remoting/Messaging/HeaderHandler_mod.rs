@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+HeaderHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeaderHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+HeaderHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+HeaderHandler")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+HeaderHandler")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -122,7 +122,7 @@ impl crate::System::Runtime::Remoting::Messaging::HeaderHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+HeaderHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

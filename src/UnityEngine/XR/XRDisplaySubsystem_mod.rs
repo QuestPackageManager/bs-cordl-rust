@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XRDisplaySubsystem_LateLatchNode {
@@ -7,7 +7,7 @@ pub enum XRDisplaySubsystem_LateLatchNode {
     LeftHand = 1i32,
     RightHand = 2i32,
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRDisplaySubsystem_XRBlitParams {
@@ -104,7 +104,7 @@ pub struct XRDisplaySubsystem_XRBlitParams {
     pub srcHdrColorGamut: crate::UnityEngine::ColorGamut,
     pub srcHdrMaxLuminance: i32,
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
     type Held<'a> = Self;
@@ -134,7 +134,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
     type Type = Self;
@@ -145,7 +145,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
     type Actual = Self;
@@ -159,7 +159,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
     type Type = Self;
@@ -174,7 +174,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
     type Actual = Self;
@@ -188,7 +188,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
     type Type = Self;
@@ -201,7 +201,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
 }
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 impl crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {}
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRDisplaySubsystem_XRMirrorViewBlitDesc {
@@ -210,7 +210,7 @@ pub struct XRDisplaySubsystem_XRMirrorViewBlitDesc {
     pub nativeBlitInvalidStates: bool,
     pub blitParamsCount: i32,
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
     type Held<'a> = Self;
@@ -240,7 +240,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
     type Type = Self;
@@ -251,7 +251,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
     type Actual = Self;
@@ -265,7 +265,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
     type Type = Self;
@@ -280,7 +280,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
     type Actual = Self;
@@ -294,7 +294,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
     type Type = Self;
@@ -307,7 +307,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
 }
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 impl crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {}
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRDisplaySubsystem_XRRenderPass {
@@ -322,7 +322,7 @@ pub struct XRDisplaySubsystem_XRRenderPass {
     pub cullingPassIndex: i32,
     pub foveatedRenderingInfo: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
     type Held<'a> = Self;
@@ -352,7 +352,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
     type Type = Self;
@@ -363,7 +363,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
     type Actual = Self;
@@ -377,7 +377,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
     type Type = Self;
@@ -392,7 +392,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
     type Actual = Self;
@@ -406,7 +406,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
     type Type = Self;

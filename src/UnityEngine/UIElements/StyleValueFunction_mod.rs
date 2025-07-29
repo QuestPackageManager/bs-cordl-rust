@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleValueFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueFunction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleValueFunction {
@@ -8,7 +8,7 @@ pub enum StyleValueFunction {
     Unknown = 0i32,
     Var = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleValueFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleValueFunction {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::UIElements::StyleValueFunction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleValueFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueFunction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleValueFunction {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::StyleValueFunction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleValueFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueFunction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleValueFunction {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::StyleValueFunction {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleValueFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueFunction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleValueFunction {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::StyleValueFunction {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleValueFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueFunction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleValueFunction {
     type Actual = Self;

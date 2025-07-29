@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ClosestPointCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+ClosestPointCommand")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ClosestPointCommand {
@@ -8,7 +8,7 @@ pub struct ClosestPointCommand {
     pub _rotation_k__BackingField: crate::UnityEngine::Quaternion,
     pub _scale_k__BackingField: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "UnityEngine+ClosestPointCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+ClosestPointCommand")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ClosestPointCommand {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ClosestPointComm
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ClosestPointCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+ClosestPointCommand")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ClosestPointCommand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ClosestPoint
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ClosestPointCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+ClosestPointCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ClosestPointCommand {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ClosestPointCommand {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ClosestPointCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+ClosestPointCommand")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ClosestPointCommand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ClosestPoint
         }
     }
 }
-#[cfg(feature = "UnityEngine+ClosestPointCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+ClosestPointCommand")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ClosestPointCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ClosestPointCo
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ClosestPointCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+ClosestPointCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ClosestPointCommand {
     type Type = Self;

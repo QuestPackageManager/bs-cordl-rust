@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsIntField {
@@ -12,7 +12,7 @@ pub struct BoundsIntField {
         crate::UnityEngine::UIElements::Vector3IntField,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BoundsIntField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::BoundsIntField {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField {
     type Target = crate::UnityEngine::UIElements::BaseField_1<
         crate::UnityEngine::BoundsInt,
@@ -41,7 +41,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -232,7 +232,7 @@ impl crate::UnityEngine::UIElements::BoundsIntField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BoundsIntField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -242,7 +242,7 @@ for crate::UnityEngine::UIElements::BoundsIntField {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsIntField_UxmlFactory {
@@ -253,7 +253,7 @@ pub struct BoundsIntField_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -273,7 +273,7 @@ for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BoundsIntField>,
@@ -285,7 +285,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlFact
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -322,7 +322,7 @@ impl crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -332,7 +332,7 @@ for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsIntField_UxmlTraits {
@@ -358,7 +358,7 @@ pub struct BoundsIntField_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -378,7 +378,7 @@ for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::BoundsInt,
@@ -387,7 +387,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlTrai
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -460,7 +460,7 @@ impl crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

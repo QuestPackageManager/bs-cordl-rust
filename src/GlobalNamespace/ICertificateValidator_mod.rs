@@ -1,10 +1,10 @@
-#[cfg(feature = "ICertificateValidator")]
+#[cfg(feature = "cordl_class_ICertificateValidator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ICertificateValidator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ICertificateValidator")]
+#[cfg(feature = "cordl_class_ICertificateValidator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ICertificateValidator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ICertificateValidator {
         false
     }
 }
-#[cfg(feature = "ICertificateValidator")]
+#[cfg(feature = "cordl_class_ICertificateValidator")]
 impl std::ops::Deref for crate::GlobalNamespace::ICertificateValidator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ICertificateValidator")]
+#[cfg(feature = "cordl_class_ICertificateValidator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ICertificateValidator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::ICertificateValidator {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ICertificateValidator")]
+#[cfg(feature = "cordl_class_ICertificateValidator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ICertificateValidator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

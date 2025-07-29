@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+ExecutionContext")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExecutionContext {
@@ -28,7 +28,7 @@ pub struct ExecutionContext {
         >,
     >,
 }
-#[cfg(feature = "System+Threading+ExecutionContext")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::ExecutionContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::ExecutionC
         false
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext")]
 impl std::ops::Deref for crate::System::Threading::ExecutionContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext")]
 impl std::ops::DerefMut for crate::System::Threading::ExecutionContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1097,7 +1097,7 @@ impl crate::System::Threading::ExecutionContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::ExecutionContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1132,7 +1132,7 @@ for crate::System::Threading::ExecutionContext {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+CaptureOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExecutionContext_CaptureOptions {
@@ -1141,7 +1141,7 @@ pub enum ExecutionContext_CaptureOptions {
     None = 0i32,
     OptimizeDefaultCase = 2i32,
 }
-#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Held<'a> = Self;
@@ -1171,7 +1171,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Type = Self;
@@ -1182,7 +1182,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Actual = Self;
@@ -1196,7 +1196,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
         self
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Type = Self;
@@ -1211,7 +1211,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
         }
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Actual = Self;
@@ -1225,7 +1225,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
         actual
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Flags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExecutionContext_Flags {
@@ -1235,7 +1235,7 @@ pub enum ExecutionContext_Flags {
     IsPreAllocatedDefault = 4i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ExecutionContext_Flags {
     type Held<'a> = Self;
@@ -1265,7 +1265,7 @@ for crate::System::Threading::ExecutionContext_Flags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ExecutionContext_Flags {
     type Type = Self;
@@ -1276,7 +1276,7 @@ for crate::System::Threading::ExecutionContext_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ExecutionContext_Flags {
     type Actual = Self;
@@ -1290,7 +1290,7 @@ for crate::System::Threading::ExecutionContext_Flags {
         self
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ExecutionContext_Flags {
     type Type = Self;
@@ -1305,7 +1305,7 @@ for crate::System::Threading::ExecutionContext_Flags {
         }
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ExecutionContext_Flags {
     type Actual = Self;
@@ -1319,13 +1319,13 @@ for crate::System::Threading::ExecutionContext_Flags {
         actual
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Reader")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExecutionContext_Reader {
     pub m_ec: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ExecutionContext_Reader {
     type Held<'a> = Self;
@@ -1355,7 +1355,7 @@ for crate::System::Threading::ExecutionContext_Reader {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ExecutionContext_Reader {
     type Type = Self;
@@ -1366,7 +1366,7 @@ for crate::System::Threading::ExecutionContext_Reader {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ExecutionContext_Reader {
     type Actual = Self;
@@ -1380,7 +1380,7 @@ for crate::System::Threading::ExecutionContext_Reader {
         self
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ExecutionContext_Reader {
     type Type = Self;
@@ -1395,7 +1395,7 @@ for crate::System::Threading::ExecutionContext_Reader {
         }
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ExecutionContext_Reader {
     type Actual = Self;
@@ -1409,7 +1409,7 @@ for crate::System::Threading::ExecutionContext_Reader {
         actual
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::ExecutionContext_Reader {
     type Type = Self;

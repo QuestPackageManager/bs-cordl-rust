@@ -1,10 +1,10 @@
-#[cfg(feature = "FireEffectShaderHelper")]
+#[cfg(feature = "cordl_class_FireEffectShaderHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireEffectShaderHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "FireEffectShaderHelper")]
+#[cfg(feature = "cordl_class_FireEffectShaderHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FireEffectShaderHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::FireEffectShaderHelper {
         false
     }
 }
-#[cfg(feature = "FireEffectShaderHelper")]
+#[cfg(feature = "cordl_class_FireEffectShaderHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::FireEffectShaderHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FireEffectShaderHelper")]
+#[cfg(feature = "cordl_class_FireEffectShaderHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FireEffectShaderHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FireEffectShaderHelper {
 }
 #[cfg(feature = "FireEffectShaderHelper")]
 impl crate::GlobalNamespace::FireEffectShaderHelper {}
-#[cfg(feature = "FireEffectShaderHelper")]
+#[cfg(feature = "cordl_class_FireEffectShaderHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FireEffectShaderHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

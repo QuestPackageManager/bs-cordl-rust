@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyConstraints")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RigidbodyConstraints {
@@ -14,7 +14,7 @@ pub enum RigidbodyConstraints {
     FreezeRotationZ = 64i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RigidbodyConstraints {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RigidbodyConstra
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RigidbodyConstraints {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::UnityEngine::RigidbodyConstraints {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RigidbodyConstraints {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::RigidbodyConstraints {
         self
     }
 }
-#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RigidbodyConstraints {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::UnityEngine::RigidbodyConstraints {
         }
     }
 }
-#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RigidbodyConstraints {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

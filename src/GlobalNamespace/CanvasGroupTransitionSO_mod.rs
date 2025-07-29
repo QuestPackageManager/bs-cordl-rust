@@ -1,4 +1,4 @@
-#[cfg(feature = "CanvasGroupTransitionSO")]
+#[cfg(feature = "cordl_class_CanvasGroupTransitionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CanvasGroupTransitionSO {
@@ -10,7 +10,7 @@ pub struct CanvasGroupTransitionSO {
     pub _selectedAlpha: f32,
     pub _selectedAndHighlightedAlpha: f32,
 }
-#[cfg(feature = "CanvasGroupTransitionSO")]
+#[cfg(feature = "cordl_class_CanvasGroupTransitionSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CanvasGroupTransitionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::CanvasGroupTransitionSO {
         false
     }
 }
-#[cfg(feature = "CanvasGroupTransitionSO")]
+#[cfg(feature = "cordl_class_CanvasGroupTransitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::CanvasGroupTransitionSO {
     type Target = crate::GlobalNamespace::BaseTransitionSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CanvasGroupTransitionSO")]
+#[cfg(feature = "cordl_class_CanvasGroupTransitionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CanvasGroupTransitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::CanvasGroupTransitionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CanvasGroupTransitionSO")]
+#[cfg(feature = "cordl_class_CanvasGroupTransitionSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CanvasGroupTransitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

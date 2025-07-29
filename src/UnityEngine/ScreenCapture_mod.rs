@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ScreenCapture")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenCapture {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ScreenCapture")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ScreenCapture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ScreenCapture {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ScreenCapture")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture")]
 impl std::ops::Deref for crate::UnityEngine::ScreenCapture {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ScreenCapture")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture")]
 impl std::ops::DerefMut for crate::UnityEngine::ScreenCapture {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::UnityEngine::ScreenCapture {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ScreenCapture")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScreenCapture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -108,7 +108,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScreenCapture {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenCapture_StereoScreenCaptureMode {
@@ -117,7 +117,7 @@ pub enum ScreenCapture_StereoScreenCaptureMode {
     LeftEye = 1i32,
     RightEye = 2i32,
 }
-#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Held<'a> = Self;
@@ -147,7 +147,7 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Type = Self;
@@ -158,7 +158,7 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Actual = Self;
@@ -172,7 +172,7 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Type = Self;
@@ -187,7 +187,7 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Actual = Self;

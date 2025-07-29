@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRGLTFAnimatinonNode")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGLTFAnimatinonNode {
@@ -25,7 +25,7 @@ pub struct OVRGLTFAnimatinonNode {
     >,
     pub m_additiveWeightIndex: i32,
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         false
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -506,7 +506,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -516,7 +516,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRGLTFAnimatinonNode_InputNodeState {
@@ -524,7 +524,7 @@ pub struct OVRGLTFAnimatinonNode_InputNodeState {
     pub t: f32,
     pub vecT: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Held<'a> = Self;
@@ -554,7 +554,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Type = Self;
@@ -565,7 +565,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Actual = Self;
@@ -579,7 +579,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
         self
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Type = Self;
@@ -594,7 +594,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
         }
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Actual = Self;
@@ -608,7 +608,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
         actual
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Type = Self;
@@ -621,7 +621,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 impl crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {}
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFAnimatinonNode_OVRGLTFTransformType {
@@ -632,7 +632,7 @@ pub enum OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     Translation = 1i32,
     Weights = 4i32,
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Held<'a> = Self;
@@ -662,7 +662,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Type = Self;
@@ -673,7 +673,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Actual = Self;
@@ -687,7 +687,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
         self
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Type = Self;
@@ -702,7 +702,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
         }
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Actual = Self;
@@ -716,7 +716,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
         actual
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFAnimatinonNode_OVRInterpolationType {
@@ -726,7 +726,7 @@ pub enum OVRGLTFAnimatinonNode_OVRInterpolationType {
     None = 0i32,
     STEP = 2i32,
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Held<'a> = Self;
@@ -756,7 +756,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Type = Self;
@@ -767,7 +767,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Actual = Self;
@@ -781,7 +781,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
         self
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Type = Self;
@@ -796,7 +796,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
         }
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Actual = Self;
@@ -810,7 +810,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
         actual
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFAnimatinonNode_ThumbstickDirection {
@@ -825,7 +825,7 @@ pub enum OVRGLTFAnimatinonNode_ThumbstickDirection {
     SouthWest = 6i32,
     West = 7i32,
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Held<'a> = Self;
@@ -855,7 +855,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Type = Self;
@@ -866,7 +866,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Actual = Self;
@@ -880,7 +880,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
         self
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Type = Self;
@@ -895,7 +895,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
         }
     }
 }
-#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Actual = Self;

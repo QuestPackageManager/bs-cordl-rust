@@ -1,11 +1,11 @@
-#[cfg(feature = "TimelinePauseMarker")]
+#[cfg(feature = "cordl_class_TimelinePauseMarker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelinePauseMarker {
     __cordl_parent: crate::UnityEngine::Timeline::Marker,
     pub _id_k__BackingField: crate::UnityEngine::PropertyName,
 }
-#[cfg(feature = "TimelinePauseMarker")]
+#[cfg(feature = "cordl_class_TimelinePauseMarker")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TimelinePauseMarker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TimelinePaus
         false
     }
 }
-#[cfg(feature = "TimelinePauseMarker")]
+#[cfg(feature = "cordl_class_TimelinePauseMarker")]
 impl std::ops::Deref for crate::GlobalNamespace::TimelinePauseMarker {
     type Target = crate::UnityEngine::Timeline::Marker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TimelinePauseMarker")]
+#[cfg(feature = "cordl_class_TimelinePauseMarker")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TimelinePauseMarker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::TimelinePauseMarker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TimelinePauseMarker")]
+#[cfg(feature = "cordl_class_TimelinePauseMarker")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TimelinePauseMarker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

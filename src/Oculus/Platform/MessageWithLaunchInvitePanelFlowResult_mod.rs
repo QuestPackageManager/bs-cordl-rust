@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLaunchInvitePanelFlowResult {
@@ -8,7 +8,7 @@ pub struct MessageWithLaunchInvitePanelFlowResult {
         >,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
     type Target = crate::Oculus::Platform::Message_1<
@@ -40,7 +40,7 @@ for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -148,7 +148,7 @@ impl crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "ConnectionFailedReason")]
+#[cfg(feature = "cordl_class_ConnectionFailedReason")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectionFailedReason {
@@ -20,7 +20,7 @@ pub enum ConnectionFailedReason {
     Unknown = 1i32,
     VersionMismatch = 7i32,
 }
-#[cfg(feature = "ConnectionFailedReason")]
+#[cfg(feature = "cordl_class_ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Held<'a> = Self;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::ConnectionFailedReason {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ConnectionFailedReason")]
+#[cfg(feature = "cordl_class_ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Type = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::ConnectionFailedReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ConnectionFailedReason")]
+#[cfg(feature = "cordl_class_ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Actual = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::ConnectionFailedReason {
         self
     }
 }
-#[cfg(feature = "ConnectionFailedReason")]
+#[cfg(feature = "cordl_class_ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Type = Self;
@@ -90,7 +90,7 @@ for crate::GlobalNamespace::ConnectionFailedReason {
         }
     }
 }
-#[cfg(feature = "ConnectionFailedReason")]
+#[cfg(feature = "cordl_class_ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Actual = Self;

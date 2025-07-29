@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModel")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaModel {
@@ -53,7 +53,7 @@ pub struct JsonSchemaModel {
     >,
     pub _Disallow_k__BackingField: crate::Newtonsoft::Json::Schema::JsonSchemaType,
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModel")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Schema::JsonSchemaModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -73,14 +73,14 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaModel {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModel")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaModel")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModel")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaModel")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1484,7 +1484,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModel")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Schema::JsonSchemaModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

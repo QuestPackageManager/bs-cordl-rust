@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MarkToBaseAdjustmentRecord {
@@ -7,7 +7,7 @@ pub struct MarkToBaseAdjustmentRecord {
     pub m_MarkGlyphID: u32,
     pub m_MarkPositionAdjustment: crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkToBaseAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord {
     type Type = Self;

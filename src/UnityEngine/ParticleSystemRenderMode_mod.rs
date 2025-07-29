@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemRenderMode {
@@ -10,7 +10,7 @@ pub enum ParticleSystemRenderMode {
     Stretch = 1i32,
     VerticalBillboard = 3i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::ParticleSystemRenderMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::ParticleSystemRenderMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::ParticleSystemRenderMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::ParticleSystemRenderMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Actual = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_SingleFixedSceneScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SingleFixedSceneScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     pub _sceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
 }
-#[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_SingleFixedSceneScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_SingleFixedSceneScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_SingleFixedSceneScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_SingleFixedSceneScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

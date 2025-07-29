@@ -1,4 +1,4 @@
-#[cfg(feature = "ResultsTableView")]
+#[cfg(feature = "cordl_class_ResultsTableView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResultsTableView {
@@ -14,7 +14,7 @@ pub struct ResultsTableView {
         >,
     >,
 }
-#[cfg(feature = "ResultsTableView")]
+#[cfg(feature = "cordl_class_ResultsTableView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ResultsTableView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ResultsTable
         false
     }
 }
-#[cfg(feature = "ResultsTableView")]
+#[cfg(feature = "cordl_class_ResultsTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::ResultsTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ResultsTableView")]
+#[cfg(feature = "cordl_class_ResultsTableView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ResultsTableView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -181,7 +181,7 @@ impl crate::GlobalNamespace::ResultsTableView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ResultsTableView")]
+#[cfg(feature = "cordl_class_ResultsTableView")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ResultsTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

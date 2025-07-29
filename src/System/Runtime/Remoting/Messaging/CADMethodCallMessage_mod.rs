@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CADMethodCallMessage {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::CADMessageBase,
     pub _uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
     type Target = crate::System::Runtime::Remoting::Messaging::CADMessageBase;
@@ -33,7 +33,7 @@ for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -232,7 +232,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "FlyingTextSpawner")]
+#[cfg(feature = "cordl_class_FlyingTextSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingTextSpawner {
@@ -14,7 +14,7 @@ pub struct FlyingTextSpawner {
         crate::GlobalNamespace::FlyingTextEffect_Pool,
     >,
 }
-#[cfg(feature = "FlyingTextSpawner")]
+#[cfg(feature = "cordl_class_FlyingTextSpawner")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingTextSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingTextSp
         false
     }
 }
-#[cfg(feature = "FlyingTextSpawner")]
+#[cfg(feature = "cordl_class_FlyingTextSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingTextSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FlyingTextSpawner")]
+#[cfg(feature = "cordl_class_FlyingTextSpawner")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FlyingTextSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::GlobalNamespace::FlyingTextSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FlyingTextSpawner")]
+#[cfg(feature = "cordl_class_FlyingTextSpawner")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingTextSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

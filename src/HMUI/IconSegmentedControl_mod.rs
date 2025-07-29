@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+IconSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IconSegmentedControl {
@@ -26,7 +26,7 @@ pub struct IconSegmentedControl {
     >,
     pub _isInitialized: bool,
 }
-#[cfg(feature = "HMUI+IconSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconSegmentedControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconSegmentedControl {
         false
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl")]
 impl std::ops::Deref for crate::HMUI::IconSegmentedControl {
     type Target = crate::HMUI::SegmentedControl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl")]
 impl std::ops::DerefMut for crate::HMUI::IconSegmentedControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -193,7 +193,7 @@ impl crate::HMUI::IconSegmentedControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::IconSegmentedControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -216,7 +216,7 @@ for crate::HMUI::IconSegmentedControl {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl+DataItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IconSegmentedControl_DataItem {
@@ -227,7 +227,7 @@ pub struct IconSegmentedControl_DataItem {
     >,
     pub _interactable_k__BackingField: bool,
 }
-#[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl+DataItem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconSegmentedControl_DataItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -246,14 +246,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconSegmentedControl_Da
         false
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl+DataItem")]
 impl std::ops::Deref for crate::HMUI::IconSegmentedControl_DataItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl+DataItem")]
 impl std::ops::DerefMut for crate::HMUI::IconSegmentedControl_DataItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -456,7 +456,7 @@ impl crate::HMUI::IconSegmentedControl_DataItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControl+DataItem")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::IconSegmentedControl_DataItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

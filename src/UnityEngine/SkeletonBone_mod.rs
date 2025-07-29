@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+SkeletonBone")]
+#[cfg(feature = "cordl_class_UnityEngine+SkeletonBone")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SkeletonBone {
@@ -8,7 +8,7 @@ pub struct SkeletonBone {
     pub rotation: crate::UnityEngine::Quaternion,
     pub scale: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "UnityEngine+SkeletonBone")]
+#[cfg(feature = "cordl_class_UnityEngine+SkeletonBone")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SkeletonBone {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SkeletonBone {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SkeletonBone")]
+#[cfg(feature = "cordl_class_UnityEngine+SkeletonBone")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SkeletonBone {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SkeletonBone
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SkeletonBone")]
+#[cfg(feature = "cordl_class_UnityEngine+SkeletonBone")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SkeletonBone {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SkeletonBon
         self
     }
 }
-#[cfg(feature = "UnityEngine+SkeletonBone")]
+#[cfg(feature = "cordl_class_UnityEngine+SkeletonBone")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SkeletonBone {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SkeletonBone
         }
     }
 }
-#[cfg(feature = "UnityEngine+SkeletonBone")]
+#[cfg(feature = "cordl_class_UnityEngine+SkeletonBone")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SkeletonBone {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SkeletonBone {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+SkeletonBone")]
+#[cfg(feature = "cordl_class_UnityEngine+SkeletonBone")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::SkeletonBone {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

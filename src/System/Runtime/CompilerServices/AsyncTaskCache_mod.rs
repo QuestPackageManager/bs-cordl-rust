@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskCache")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+AsyncTaskCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncTaskCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskCache")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+AsyncTaskCache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::AsyncTaskCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::CompilerServices::AsyncTaskCache {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskCache")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+AsyncTaskCache")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::AsyncTaskCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskCache")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+AsyncTaskCache")]
 impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::AsyncTaskCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -110,7 +110,7 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskCache")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+AsyncTaskCache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::AsyncTaskCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

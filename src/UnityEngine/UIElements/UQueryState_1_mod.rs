@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UQueryState_1<T: quest_hook::libil2cpp::Type> {
@@ -12,7 +12,7 @@ pub struct UQueryState_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     type Held<'a> = Self;
@@ -58,7 +58,7 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     type Type = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     type Actual = Self;
@@ -83,7 +83,7 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     type Type = Self;
@@ -98,7 +98,7 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     type Actual = Self;
@@ -112,7 +112,7 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     type Type = Self;
@@ -505,7 +505,7 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UQueryState_1_ActionQueryMatcher<T: quest_hook::libil2cpp::Type> {
@@ -513,7 +513,7 @@ pub struct UQueryState_1_ActionQueryMatcher<T: quest_hook::libil2cpp::Type> {
     pub _callBack_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -549,7 +549,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
     type Target = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
@@ -557,7 +557,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -670,7 +670,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -680,7 +680,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UQueryState_1_Enumerator<T: quest_hook::libil2cpp::Type> {
@@ -692,7 +692,7 @@ pub struct UQueryState_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub currentIndex: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
     type Held<'a> = Self;
@@ -738,7 +738,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
     type Type = Self;
@@ -749,7 +749,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
     type Actual = Self;
@@ -763,7 +763,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
     type Type = Self;
@@ -778,7 +778,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
     type Actual = Self;
@@ -792,7 +792,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
     type Type = Self;
@@ -1005,7 +1005,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UQueryState_1_ListQueryMatcher_1<
@@ -1019,7 +1019,7 @@ pub struct UQueryState_1_ListQueryMatcher_1<
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
 unsafe impl<
     T: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -1058,7 +1058,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ListQueryMatcher_1<T, TElement
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -1069,7 +1069,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ListQueryMatcher_1<T, TElement
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -1257,7 +1257,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

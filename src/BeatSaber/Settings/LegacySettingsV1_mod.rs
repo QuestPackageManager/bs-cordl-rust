@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV1")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV1 {
@@ -55,7 +55,7 @@ pub struct LegacySettingsV1 {
     pub enableFPSCounter: bool,
     pub enableFPSRecorder: bool,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV1")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV1")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV1 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -75,14 +75,14 @@ for crate::BeatSaber::Settings::LegacySettingsV1 {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV1")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV1")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV1")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV1")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV1 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,7 +147,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV1 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV1")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV1")]
 impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Settings::LegacySettingsV1 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

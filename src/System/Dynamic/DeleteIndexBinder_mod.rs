@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Dynamic+DeleteIndexBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+DeleteIndexBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeleteIndexBinder {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
 }
-#[cfg(feature = "System+Dynamic+DeleteIndexBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+DeleteIndexBinder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::DeleteIndexBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::DeleteIndexB
         false
     }
 }
-#[cfg(feature = "System+Dynamic+DeleteIndexBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+DeleteIndexBinder")]
 impl std::ops::Deref for crate::System::Dynamic::DeleteIndexBinder {
     type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+DeleteIndexBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+DeleteIndexBinder")]
 impl std::ops::DerefMut for crate::System::Dynamic::DeleteIndexBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -185,7 +185,7 @@ impl crate::System::Dynamic::DeleteIndexBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Dynamic+DeleteIndexBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+DeleteIndexBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::DeleteIndexBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

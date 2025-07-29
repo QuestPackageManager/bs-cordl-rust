@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IServiceProvider")]
+#[cfg(feature = "cordl_class_System+IServiceProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IServiceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+IServiceProvider")]
+#[cfg(feature = "cordl_class_System+IServiceProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IServiceProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IServiceProvider {
         false
     }
 }
-#[cfg(feature = "System+IServiceProvider")]
+#[cfg(feature = "cordl_class_System+IServiceProvider")]
 impl std::ops::Deref for crate::System::IServiceProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IServiceProvider")]
+#[cfg(feature = "cordl_class_System+IServiceProvider")]
 impl std::ops::DerefMut for crate::System::IServiceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::System::IServiceProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+IServiceProvider")]
+#[cfg(feature = "cordl_class_System+IServiceProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IServiceProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

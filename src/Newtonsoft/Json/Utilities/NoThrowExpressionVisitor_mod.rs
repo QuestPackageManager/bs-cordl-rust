@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoThrowExpressionVisitor {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
     type Target = crate::System::Linq::Expressions::ExpressionVisitor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -103,7 +103,7 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

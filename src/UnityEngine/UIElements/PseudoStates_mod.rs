@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PseudoStates")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PseudoStates")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PseudoStates {
@@ -10,7 +10,7 @@ pub enum PseudoStates {
     Hover = 2i32,
     Root = 128i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+PseudoStates")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PseudoStates")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PseudoStates {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::UIElements::PseudoStates {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PseudoStates")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PseudoStates")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::PseudoStates {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::UIElements::PseudoStates {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PseudoStates")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PseudoStates")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::PseudoStates {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::UIElements::PseudoStates {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PseudoStates")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PseudoStates")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::PseudoStates {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UIElements::PseudoStates {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PseudoStates")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PseudoStates")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::PseudoStates {
     type Actual = Self;

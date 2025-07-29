@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionEvaluator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ExpressionEvaluator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ExpressionEvalua
         false
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator")]
 impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -596,7 +596,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ExpressionEvaluator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -605,7 +605,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ExpressionEvaluat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Associativity")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExpressionEvaluator_Associativity {
@@ -613,7 +613,7 @@ pub enum ExpressionEvaluator_Associativity {
     Left = 0i32,
     Right = 1i32,
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Held<'a> = Self;
@@ -643,7 +643,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Type = Self;
@@ -654,7 +654,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Actual = Self;
@@ -668,7 +668,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Type = Self;
@@ -683,7 +683,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Actual = Self;
@@ -697,7 +697,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Expression")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionEvaluator_Expression {
@@ -709,7 +709,7 @@ pub struct ExpressionEvaluator_Expression {
     >,
     pub hasVariables: bool,
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Expression")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ExpressionEvaluator_Expression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -729,14 +729,14 @@ for crate::UnityEngine::ExpressionEvaluator_Expression {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Expression")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator_Expression {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Expression")]
 impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator_Expression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -812,7 +812,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Expression")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ExpressionEvaluator_Expression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -822,7 +822,7 @@ for crate::UnityEngine::ExpressionEvaluator_Expression {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Op")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExpressionEvaluator_Op {
@@ -844,7 +844,7 @@ pub enum ExpressionEvaluator_Op {
     Sub = 1i32,
     Tan = 10i32,
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ExpressionEvaluator_Op {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -873,7 +873,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ExpressionEvalua
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ExpressionEvaluator_Op {
     type Type = Self;
@@ -884,7 +884,7 @@ for crate::UnityEngine::ExpressionEvaluator_Op {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ExpressionEvaluator_Op {
     type Actual = Self;
@@ -898,7 +898,7 @@ for crate::UnityEngine::ExpressionEvaluator_Op {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ExpressionEvaluator_Op {
     type Type = Self;
@@ -913,7 +913,7 @@ for crate::UnityEngine::ExpressionEvaluator_Op {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ExpressionEvaluator_Op {
     type Actual = Self;
@@ -927,7 +927,7 @@ for crate::UnityEngine::ExpressionEvaluator_Op {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Operator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionEvaluator_Operator {
@@ -937,7 +937,7 @@ pub struct ExpressionEvaluator_Operator {
     pub associativity: crate::UnityEngine::ExpressionEvaluator_Associativity,
     pub inputs: i32,
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Operator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ExpressionEvaluator_Operator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -957,14 +957,14 @@ for crate::UnityEngine::ExpressionEvaluator_Operator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Operator")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator_Operator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Operator")]
 impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator_Operator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1020,7 +1020,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Operator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+Operator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ExpressionEvaluator_Operator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1030,14 +1030,14 @@ for crate::UnityEngine::ExpressionEvaluator_Operator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+PcgRandom")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExpressionEvaluator_PcgRandom {
     pub increment: u64,
     pub state: u64,
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Held<'a> = Self;
@@ -1067,7 +1067,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Type = Self;
@@ -1078,7 +1078,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Actual = Self;
@@ -1092,7 +1092,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Type = Self;
@@ -1107,7 +1107,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Actual = Self;
@@ -1121,7 +1121,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
+#[cfg(feature = "cordl_class_UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Type = Self;

@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptingRuntimeHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -96,7 +104,9 @@ impl crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

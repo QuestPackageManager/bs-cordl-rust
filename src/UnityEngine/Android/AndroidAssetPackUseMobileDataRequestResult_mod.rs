@@ -1,11 +1,15 @@
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidAssetPackUseMobileDataRequestResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _allowed_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +39,9 @@ for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -74,7 +82,9 @@ impl crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

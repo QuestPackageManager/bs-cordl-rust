@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataCommon+NoteLineLayer")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteLineLayer")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteLineLayer {
@@ -7,7 +7,7 @@ pub enum NoteLineLayer {
     Top = 2i32,
     Upper = 1i32,
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteLineLayer")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataCommon::NoteLineLayer {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataCommon::NoteLi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteLineLayer")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::NoteLineLayer {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::BeatmapSaveDataCommon::NoteLineLayer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteLineLayer")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::NoteLineLayer {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::BeatmapSaveDataCommon::NoteLineLayer {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteLineLayer")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::NoteLineLayer {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::BeatmapSaveDataCommon::NoteLineLayer {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteLineLayer")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::NoteLineLayer {
     type Actual = Self;

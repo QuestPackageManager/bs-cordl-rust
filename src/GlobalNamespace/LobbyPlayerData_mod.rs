@@ -1,4 +1,4 @@
-#[cfg(feature = "LobbyPlayerData")]
+#[cfg(feature = "cordl_class_LobbyPlayerData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyPlayerData {
@@ -8,7 +8,7 @@ pub struct LobbyPlayerData {
     pub _isReady_k__BackingField: bool,
     pub _isInLobby_k__BackingField: bool,
 }
-#[cfg(feature = "LobbyPlayerData")]
+#[cfg(feature = "cordl_class_LobbyPlayerData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LobbyPlayerData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LobbyPlayerD
         false
     }
 }
-#[cfg(feature = "LobbyPlayerData")]
+#[cfg(feature = "cordl_class_LobbyPlayerData")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyPlayerData {
     type Target = crate::GlobalNamespace::LevelGameplaySetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LobbyPlayerData")]
+#[cfg(feature = "cordl_class_LobbyPlayerData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LobbyPlayerData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -243,7 +243,7 @@ impl crate::GlobalNamespace::LobbyPlayerData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LobbyPlayerData")]
+#[cfg(feature = "cordl_class_LobbyPlayerData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LobbyPlayerData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

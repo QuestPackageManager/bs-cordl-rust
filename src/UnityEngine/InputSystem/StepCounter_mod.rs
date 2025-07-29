@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+StepCounter")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+StepCounter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StepCounter {
@@ -7,7 +7,7 @@ pub struct StepCounter {
         crate::UnityEngine::InputSystem::Controls::IntegerControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+StepCounter")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+StepCounter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::StepCounter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::InputSystem::StepCounter {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+StepCounter")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+StepCounter")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::StepCounter {
     type Target = crate::UnityEngine::InputSystem::Sensor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+StepCounter")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+StepCounter")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::StepCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -257,7 +257,7 @@ impl crate::UnityEngine::InputSystem::StepCounter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+StepCounter")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+StepCounter")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::StepCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

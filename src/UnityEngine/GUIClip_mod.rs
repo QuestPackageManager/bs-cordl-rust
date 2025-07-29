@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+GUIClip")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUIClip {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+GUIClip")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUIClip {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUIClip {
         false
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip")]
 impl std::ops::Deref for crate::UnityEngine::GUIClip {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip")]
 impl std::ops::DerefMut for crate::UnityEngine::GUIClip {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -457,7 +457,7 @@ impl crate::UnityEngine::GUIClip {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUIClip {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -466,13 +466,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUIClip {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip+ParentClipScope")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GUIClip_ParentClipScope {
     pub m_Disposed: bool,
 }
-#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUIClip_ParentClipScope {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -501,7 +501,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUIClip_ParentCl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Type = Self;
@@ -512,7 +512,7 @@ for crate::UnityEngine::GUIClip_ParentClipScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Actual = Self;
@@ -526,7 +526,7 @@ for crate::UnityEngine::GUIClip_ParentClipScope {
         self
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Type = Self;
@@ -541,7 +541,7 @@ for crate::UnityEngine::GUIClip_ParentClipScope {
         }
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Actual = Self;
@@ -555,7 +555,7 @@ for crate::UnityEngine::GUIClip_ParentClipScope {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Type = Self;

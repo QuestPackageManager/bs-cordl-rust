@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarsAsyncInstaller {
@@ -8,7 +8,7 @@ pub struct AvatarsAsyncInstaller {
         >,
     >,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -174,7 +174,7 @@ impl crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

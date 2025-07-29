@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+Primes")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Primes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::Primes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::Prim
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Primes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -543,7 +543,7 @@ impl crate::Org::BouncyCastle::Math::Primes {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::Primes {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -552,7 +552,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::Prime
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+MROutput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Primes_MROutput {
@@ -560,7 +560,7 @@ pub struct Primes_MROutput {
     pub mProvablyComposite: bool,
     pub mFactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+MROutput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::Primes_MROutput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -580,14 +580,14 @@ for crate::Org::BouncyCastle::Math::Primes_MROutput {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+MROutput")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes_MROutput {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+MROutput")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Primes_MROutput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -786,7 +786,7 @@ impl crate::Org::BouncyCastle::Math::Primes_MROutput {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+MROutput")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::Primes_MROutput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -796,7 +796,7 @@ for crate::Org::BouncyCastle::Math::Primes_MROutput {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+STOutput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Primes_STOutput {
@@ -805,7 +805,7 @@ pub struct Primes_STOutput {
     pub mPrimeSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mPrimeGenCounter: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+STOutput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::Primes_STOutput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -825,14 +825,14 @@ for crate::Org::BouncyCastle::Math::Primes_STOutput {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+STOutput")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes_STOutput {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+STOutput")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Primes_STOutput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -964,7 +964,7 @@ impl crate::Org::BouncyCastle::Math::Primes_STOutput {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+STOutput")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::Primes_STOutput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

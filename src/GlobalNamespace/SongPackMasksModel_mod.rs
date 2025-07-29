@@ -1,4 +1,4 @@
-#[cfg(feature = "SongPackMasksModel")]
+#[cfg(feature = "cordl_class_SongPackMasksModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPackMasksModel {
@@ -21,7 +21,7 @@ pub struct SongPackMasksModel {
         >,
     >,
 }
-#[cfg(feature = "SongPackMasksModel")]
+#[cfg(feature = "cordl_class_SongPackMasksModel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongPackMasksModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -40,14 +40,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongPackMask
         false
     }
 }
-#[cfg(feature = "SongPackMasksModel")]
+#[cfg(feature = "cordl_class_SongPackMasksModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPackMasksModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongPackMasksModel")]
+#[cfg(feature = "cordl_class_SongPackMasksModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongPackMasksModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -244,7 +244,7 @@ impl crate::GlobalNamespace::SongPackMasksModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongPackMasksModel")]
+#[cfg(feature = "cordl_class_SongPackMasksModel")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPackMasksModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -253,14 +253,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPackMasks
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SongPackMasksModel_LocalizedText {
     pub textKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isPlural: bool,
 }
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     type Held<'a> = Self;
@@ -290,7 +290,7 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     type Type = Self;
@@ -301,7 +301,7 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     type Actual = Self;
@@ -315,7 +315,7 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
         self
     }
 }
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     type Type = Self;
@@ -330,7 +330,7 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
         }
     }
 }
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     type Actual = Self;
@@ -344,7 +344,7 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
         actual
     }
 }
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     type Type = Self;
@@ -417,14 +417,14 @@ impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SongPackMasksModel_MaskInfo {
     pub localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
     pub mask: crate::GlobalNamespace::SongPackMask,
 }
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Held<'a> = Self;
@@ -454,7 +454,7 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Type = Self;
@@ -465,7 +465,7 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Actual = Self;
@@ -479,7 +479,7 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
         self
     }
 }
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Type = Self;
@@ -494,7 +494,7 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
         }
     }
 }
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Actual = Self;
@@ -508,7 +508,7 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
         actual
     }
 }
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+#[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Type = Self;

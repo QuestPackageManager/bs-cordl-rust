@@ -1,10 +1,10 @@
-#[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct INoteControllerNoteDidStartDissolvingEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
         false
     }
 }
-#[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
 impl std::ops::Deref
 for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ImageSource")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ImageSource {
@@ -9,7 +9,7 @@ pub struct ImageSource {
     >,
     pub renderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ImageSource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ImageSource")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ImageSource")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ImageSource")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ImageSource")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ImageSource")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::ImageSource {
     type Type = Self;

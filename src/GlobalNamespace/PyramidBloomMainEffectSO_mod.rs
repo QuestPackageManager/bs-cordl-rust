@@ -1,4 +1,4 @@
-#[cfg(feature = "PyramidBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_PyramidBloomMainEffectSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PyramidBloomMainEffectSO {
@@ -25,7 +25,7 @@ pub struct PyramidBloomMainEffectSO {
     pub _fadeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _mainEffectMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
-#[cfg(feature = "PyramidBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_PyramidBloomMainEffectSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PyramidBloomMainEffectSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::PyramidBloomMainEffectSO {
         false
     }
 }
-#[cfg(feature = "PyramidBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_PyramidBloomMainEffectSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PyramidBloomMainEffectSO {
     type Target = crate::GlobalNamespace::MainEffectSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PyramidBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_PyramidBloomMainEffectSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PyramidBloomMainEffectSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -226,7 +226,7 @@ impl crate::GlobalNamespace::PyramidBloomMainEffectSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PyramidBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_PyramidBloomMainEffectSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PyramidBloomMainEffectSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

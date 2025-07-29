@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+SecurityElementType")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElementType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SecurityElementType {
@@ -7,7 +7,7 @@ pub enum SecurityElementType {
     Format = 1i32,
     Regular = 0i32,
 }
-#[cfg(feature = "System+Security+SecurityElementType")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElementType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::SecurityElementType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Security::SecurityElementType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+SecurityElementType")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElementType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::SecurityElementType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Security::SecurityElementType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+SecurityElementType")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElementType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::SecurityElementType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Security::SecurityElementType {
         self
     }
 }
-#[cfg(feature = "System+Security+SecurityElementType")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElementType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::SecurityElementType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Security::SecurityElementType {
         }
     }
 }
-#[cfg(feature = "System+Security+SecurityElementType")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElementType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::SecurityElementType {
     type Actual = Self;

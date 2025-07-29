@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+SerializationInfoEnumerator")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationInfoEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializationInfoEnumerator {
@@ -22,7 +22,7 @@ pub struct SerializationInfoEnumerator {
     pub _currItem: i32,
     pub _current: bool,
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationInfoEnumerator")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationInfoEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::SerializationInfoEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,7 +42,7 @@ for crate::System::Runtime::Serialization::SerializationInfoEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationInfoEnumerator")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationInfoEnumerator")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SerializationInfoEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -50,7 +50,7 @@ for crate::System::Runtime::Serialization::SerializationInfoEnumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationInfoEnumerator")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationInfoEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::SerializationInfoEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -317,7 +317,7 @@ impl crate::System::Runtime::Serialization::SerializationInfoEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationInfoEnumerator")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationInfoEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::SerializationInfoEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

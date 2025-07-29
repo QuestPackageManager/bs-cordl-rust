@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+BasicPlayableBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicPlayableBehaviour {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
 }
-#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+BasicPlayableBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+BasicPlayableBehaviour")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+BasicPlayableBehaviour")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -380,7 +380,7 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+BasicPlayableBehaviour")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

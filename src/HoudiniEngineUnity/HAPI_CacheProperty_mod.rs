@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CacheProperty")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CacheProperty")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_CacheProperty {
@@ -10,7 +10,7 @@ pub enum HAPI_CacheProperty {
     HAPI_CACHEPROP_MAX = 4i32,
     HAPI_CACHEPROP_MIN = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CacheProperty")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CacheProperty")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_CacheProperty {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::HoudiniEngineUnity::HAPI_CacheProperty {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CacheProperty")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CacheProperty")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_CacheProperty {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::HoudiniEngineUnity::HAPI_CacheProperty {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CacheProperty")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CacheProperty")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_CacheProperty {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::HoudiniEngineUnity::HAPI_CacheProperty {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CacheProperty")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CacheProperty")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_CacheProperty {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::HoudiniEngineUnity::HAPI_CacheProperty {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CacheProperty")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CacheProperty")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_CacheProperty {
     type Actual = Self;

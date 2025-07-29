@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExceptionHandler {
@@ -11,7 +11,7 @@ pub struct ExceptionHandler {
         crate::System::Linq::Expressions::Interpreter::ExceptionFilter,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::ExceptionHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::System::Linq::Expressions::Interpreter::ExceptionHandler {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionHandler")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::ExceptionHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +39,7 @@ for crate::System::Linq::Expressions::Interpreter::ExceptionHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionHandler")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::ExceptionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -170,7 +170,7 @@ impl crate::System::Linq::Expressions::Interpreter::ExceptionHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ExceptionHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

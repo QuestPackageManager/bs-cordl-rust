@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_FontAsset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_FontAsset {
@@ -130,7 +130,7 @@ pub struct TMP_FontAsset {
         crate::System::Collections::Generic::HashSet_1<u32>,
     >,
 }
-#[cfg(feature = "TMPro+TMP_FontAsset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_FontAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -149,14 +149,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_FontAsset {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_FontAsset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
 impl std::ops::Deref for crate::TMPro::TMP_FontAsset {
     type Target = crate::TMPro::TMP_Asset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_FontAsset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
 impl std::ops::DerefMut for crate::TMPro::TMP_FontAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2853,7 +2853,7 @@ impl crate::TMPro::TMP_FontAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_FontAsset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_FontAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

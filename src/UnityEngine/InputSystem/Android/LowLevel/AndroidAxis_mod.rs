@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidAxis {
@@ -46,7 +46,7 @@ pub enum AndroidAxis {
     Y = 1i32,
     Z = 11i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
     type Held<'a> = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
     type Actual = Self;
@@ -101,7 +101,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
     type Type = Self;
@@ -116,7 +116,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis {
     type Actual = Self;

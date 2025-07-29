@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+BurstDiscardAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstDiscardAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstDiscardAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Burst+BurstDiscardAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstDiscardAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstDiscardAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstDiscardAtt
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstDiscardAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstDiscardAttribute")]
 impl std::ops::Deref for crate::Unity::Burst::BurstDiscardAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstDiscardAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstDiscardAttribute")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstDiscardAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::Unity::Burst::BurstDiscardAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstDiscardAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstDiscardAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstDiscardAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

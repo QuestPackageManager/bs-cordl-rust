@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+JsonReaderException")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReaderException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonReaderException {
@@ -9,7 +9,7 @@ pub struct JsonReaderException {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonReaderException")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReaderException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonReaderException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Newtonsoft::Json::JsonReaderException {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonReaderException")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReaderException")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonReaderException {
     type Target = crate::Newtonsoft::Json::JsonException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonReaderException")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReaderException")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonReaderException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -438,7 +438,7 @@ impl crate::Newtonsoft::Json::JsonReaderException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonReaderException")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReaderException")]
 impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::JsonReaderException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

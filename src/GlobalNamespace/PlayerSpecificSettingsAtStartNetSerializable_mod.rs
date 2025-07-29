@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsAtStartNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSpecificSettingsAtStartNetSerializable {
@@ -16,7 +16,7 @@ pub struct PlayerSpecificSettingsAtStartNetSerializable {
         >,
     >,
 }
-#[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsAtStartNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
         false
     }
 }
-#[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsAtStartNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsAtStartNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -312,7 +312,7 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsAtStartNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

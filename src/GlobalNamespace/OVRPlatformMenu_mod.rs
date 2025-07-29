@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRPlatformMenu")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlatformMenu {
@@ -7,7 +7,7 @@ pub struct OVRPlatformMenu {
     pub shortPressHandler: crate::GlobalNamespace::OVRPlatformMenu_eHandler,
     pub OnShortPress: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
 }
-#[cfg(feature = "OVRPlatformMenu")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlatformMenu {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlatformM
         false
     }
 }
-#[cfg(feature = "OVRPlatformMenu")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlatformMenu {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPlatformMenu")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlatformMenu {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -185,7 +185,7 @@ impl crate::GlobalNamespace::OVRPlatformMenu {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPlatformMenu")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlatformMenu {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -194,7 +194,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlatformMe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eBackButtonAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlatformMenu_eBackButtonAction {
@@ -202,7 +202,7 @@ pub enum OVRPlatformMenu_eBackButtonAction {
     NONE = 0i32,
     SHORT_PRESS = 1i32,
 }
-#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Held<'a> = Self;
@@ -232,7 +232,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Type = Self;
@@ -243,7 +243,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Actual = Self;
@@ -257,7 +257,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
         self
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Type = Self;
@@ -272,7 +272,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
         }
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Actual = Self;
@@ -286,7 +286,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
         actual
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eHandler")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eHandler")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlatformMenu_eHandler {
@@ -294,7 +294,7 @@ pub enum OVRPlatformMenu_eHandler {
     RetreatOneLevel = 1i32,
     ShowConfirmQuit = 0i32,
 }
-#[cfg(feature = "OVRPlatformMenu+eHandler")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Held<'a> = Self;
@@ -324,7 +324,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eHandler")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Type = Self;
@@ -335,7 +335,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eHandler")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Actual = Self;
@@ -349,7 +349,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
         self
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eHandler")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Type = Self;
@@ -364,7 +364,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
         }
     }
 }
-#[cfg(feature = "OVRPlatformMenu+eHandler")]
+#[cfg(feature = "cordl_class_OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Actual = Self;

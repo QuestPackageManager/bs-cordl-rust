@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseStyleMatcher {
@@ -10,7 +10,7 @@ pub struct BaseStyleMatcher {
     >,
     pub m_CurrentContext: crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -910,7 +910,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -920,14 +920,18 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BaseStyleMatcher_MatchContext {
     pub valueIndex: i32,
     pub matchedVariableCount: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
     type Held<'a> = Self;
@@ -957,7 +961,9 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
     type Type = Self;
@@ -968,7 +974,9 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
     type Actual = Self;
@@ -982,7 +990,9 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
     type Type = Self;
@@ -997,7 +1007,9 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
     type Actual = Self;
@@ -1011,7 +1023,9 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext {
     type Type = Self;

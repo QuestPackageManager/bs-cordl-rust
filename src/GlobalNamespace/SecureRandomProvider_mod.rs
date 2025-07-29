@@ -1,10 +1,10 @@
-#[cfg(feature = "SecureRandomProvider")]
+#[cfg(feature = "cordl_class_SecureRandomProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureRandomProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "SecureRandomProvider")]
+#[cfg(feature = "cordl_class_SecureRandomProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SecureRandomProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::SecureRandomProvider {
         false
     }
 }
-#[cfg(feature = "SecureRandomProvider")]
+#[cfg(feature = "cordl_class_SecureRandomProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::SecureRandomProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SecureRandomProvider")]
+#[cfg(feature = "cordl_class_SecureRandomProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SecureRandomProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::GlobalNamespace::SecureRandomProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SecureRandomProvider")]
+#[cfg(feature = "cordl_class_SecureRandomProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SecureRandomProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -157,7 +157,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SecureRandomP
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SecureRandomProvider+SecureRandomState")]
+#[cfg(feature = "cordl_class_SecureRandomProvider+SecureRandomState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureRandomProvider_SecureRandomState {
@@ -173,7 +173,7 @@ pub struct SecureRandomProvider_SecureRandomState {
     >,
     pub _index: i32,
 }
-#[cfg(feature = "SecureRandomProvider+SecureRandomState")]
+#[cfg(feature = "cordl_class_SecureRandomProvider+SecureRandomState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SecureRandomProvider_SecureRandomState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -193,14 +193,14 @@ for crate::GlobalNamespace::SecureRandomProvider_SecureRandomState {
         false
     }
 }
-#[cfg(feature = "SecureRandomProvider+SecureRandomState")]
+#[cfg(feature = "cordl_class_SecureRandomProvider+SecureRandomState")]
 impl std::ops::Deref for crate::GlobalNamespace::SecureRandomProvider_SecureRandomState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SecureRandomProvider+SecureRandomState")]
+#[cfg(feature = "cordl_class_SecureRandomProvider+SecureRandomState")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SecureRandomProvider_SecureRandomState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -311,7 +311,7 @@ impl crate::GlobalNamespace::SecureRandomProvider_SecureRandomState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SecureRandomProvider+SecureRandomState")]
+#[cfg(feature = "cordl_class_SecureRandomProvider+SecureRandomState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SecureRandomProvider_SecureRandomState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

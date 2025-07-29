@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Security+SslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslServerAuthenticationOptions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SslServerAuthenticationOptions {
@@ -12,7 +12,7 @@ pub struct SslServerAuthenticationOptions {
         crate::System::Security::Cryptography::X509Certificates::X509Certificate,
     >,
 }
-#[cfg(feature = "System+Net+Security+SslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslServerAuthenticationOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Security::SslServerAuthenticationOptions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::System::Net::Security::SslServerAuthenticationOptions {
         false
     }
 }
-#[cfg(feature = "System+Net+Security+SslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslServerAuthenticationOptions")]
 impl std::ops::Deref for crate::System::Net::Security::SslServerAuthenticationOptions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Security+SslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslServerAuthenticationOptions")]
 impl std::ops::DerefMut
 for crate::System::Net::Security::SslServerAuthenticationOptions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -288,7 +288,7 @@ impl crate::System::Net::Security::SslServerAuthenticationOptions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Security+SslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslServerAuthenticationOptions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Security::SslServerAuthenticationOptions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

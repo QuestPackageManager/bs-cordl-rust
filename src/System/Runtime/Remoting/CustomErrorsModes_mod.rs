@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+CustomErrorsModes")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+CustomErrorsModes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CustomErrorsModes {
@@ -7,7 +7,7 @@ pub enum CustomErrorsModes {
     On = 0i32,
     RemoteOnly = 2i32,
 }
-#[cfg(feature = "System+Runtime+Remoting+CustomErrorsModes")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+CustomErrorsModes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::CustomErrorsModes {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Runtime::Remoting::CustomErrorsModes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+CustomErrorsModes")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+CustomErrorsModes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Remoting::CustomErrorsModes {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Runtime::Remoting::CustomErrorsModes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+CustomErrorsModes")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+CustomErrorsModes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Remoting::CustomErrorsModes {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Runtime::Remoting::CustomErrorsModes {
         self
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+CustomErrorsModes")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+CustomErrorsModes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Remoting::CustomErrorsModes {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Runtime::Remoting::CustomErrorsModes {
         }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+CustomErrorsModes")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+CustomErrorsModes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Remoting::CustomErrorsModes {
     type Actual = Self;

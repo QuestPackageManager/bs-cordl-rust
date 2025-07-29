@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SceneContextRegistryAdderAndRemover")]
+#[cfg(feature = "cordl_class_Zenject+SceneContextRegistryAdderAndRemover")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneContextRegistryAdderAndRemover {
@@ -6,7 +6,7 @@ pub struct SceneContextRegistryAdderAndRemover {
     pub _registry: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContextRegistry>,
     pub _sceneContext: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
 }
-#[cfg(feature = "Zenject+SceneContextRegistryAdderAndRemover")]
+#[cfg(feature = "cordl_class_Zenject+SceneContextRegistryAdderAndRemover")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SceneContextRegistryAdderAndRemover {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Zenject::SceneContextRegistryAdderAndRemover {
         false
     }
 }
-#[cfg(feature = "Zenject+SceneContextRegistryAdderAndRemover")]
+#[cfg(feature = "cordl_class_Zenject+SceneContextRegistryAdderAndRemover")]
 impl std::ops::Deref for crate::Zenject::SceneContextRegistryAdderAndRemover {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SceneContextRegistryAdderAndRemover")]
+#[cfg(feature = "cordl_class_Zenject+SceneContextRegistryAdderAndRemover")]
 impl std::ops::DerefMut for crate::Zenject::SceneContextRegistryAdderAndRemover {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -188,7 +188,7 @@ impl crate::Zenject::SceneContextRegistryAdderAndRemover {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SceneContextRegistryAdderAndRemover")]
+#[cfg(feature = "cordl_class_Zenject+SceneContextRegistryAdderAndRemover")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SceneContextRegistryAdderAndRemover {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

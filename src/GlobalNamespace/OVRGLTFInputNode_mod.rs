@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRGLTFInputNode")]
+#[cfg(feature = "cordl_class_OVRGLTFInputNode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFInputNode {
@@ -11,7 +11,7 @@ pub enum OVRGLTFInputNode {
     Trigger_Front = 5i32,
     Trigger_Grip = 4i32,
 }
-#[cfg(feature = "OVRGLTFInputNode")]
+#[cfg(feature = "cordl_class_OVRGLTFInputNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFInputNode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFInput
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRGLTFInputNode")]
+#[cfg(feature = "cordl_class_OVRGLTFInputNode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFInputNode {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::OVRGLTFInputNode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRGLTFInputNode")]
+#[cfg(feature = "cordl_class_OVRGLTFInputNode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFInputNode {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::GlobalNamespace::OVRGLTFInputNode {
         self
     }
 }
-#[cfg(feature = "OVRGLTFInputNode")]
+#[cfg(feature = "cordl_class_OVRGLTFInputNode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFInputNode {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::GlobalNamespace::OVRGLTFInputNode {
         }
     }
 }
-#[cfg(feature = "OVRGLTFInputNode")]
+#[cfg(feature = "cordl_class_OVRGLTFInputNode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRGLTFInputNode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

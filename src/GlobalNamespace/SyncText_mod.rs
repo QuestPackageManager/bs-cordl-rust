@@ -1,4 +1,4 @@
-#[cfg(feature = "SyncText")]
+#[cfg(feature = "cordl_class_SyncText")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SyncText {
@@ -6,7 +6,7 @@ pub struct SyncText {
     pub _otherTextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub _textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
 }
-#[cfg(feature = "SyncText")]
+#[cfg(feature = "cordl_class_SyncText")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SyncText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SyncText {
         false
     }
 }
-#[cfg(feature = "SyncText")]
+#[cfg(feature = "cordl_class_SyncText")]
 impl std::ops::Deref for crate::GlobalNamespace::SyncText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SyncText")]
+#[cfg(feature = "cordl_class_SyncText")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SyncText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::GlobalNamespace::SyncText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SyncText")]
+#[cfg(feature = "cordl_class_SyncText")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SyncText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

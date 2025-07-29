@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRCompositor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRCompositor {
@@ -128,7 +128,7 @@ pub struct IVRCompositor {
         crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -157,7 +157,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRCompositor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -167,7 +167,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRComposito
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRCompositor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -180,7 +180,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRComposit
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRCompositor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -194,7 +194,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRComposito
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRCompositor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -207,7 +207,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRCompositor 
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRCompositor {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -306,13 +306,13 @@ impl crate::OVR::OpenVR::IVRCompositor {
     #[cfg(feature = "OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
     pub type _WaitGetPoses = crate::OVR::OpenVR::IVRCompositor__WaitGetPoses;
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CanRenderScene")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CanRenderScene")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__CanRenderScene {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CanRenderScene")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CanRenderScene")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -332,14 +332,14 @@ for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CanRenderScene")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CanRenderScene")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CanRenderScene")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CanRenderScene")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -467,7 +467,7 @@ impl crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CanRenderScene")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CanRenderScene")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -477,13 +477,13 @@ for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__ClearLastSubmittedFrame {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -503,14 +503,14 @@ for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -642,7 +642,7 @@ impl crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -652,13 +652,13 @@ for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__ClearSkyboxOverride {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -678,14 +678,14 @@ for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -817,7 +817,7 @@ impl crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -827,13 +827,13 @@ for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__CompositorBringToFront {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -853,14 +853,14 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -992,7 +992,7 @@ impl crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1002,13 +1002,13 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__CompositorDumpImages {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1028,14 +1028,14 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1167,7 +1167,7 @@ impl crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1177,13 +1177,13 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__CompositorGoToBack {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1203,14 +1203,14 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1342,7 +1342,7 @@ impl crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1352,13 +1352,13 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorQuit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorQuit")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__CompositorQuit {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorQuit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorQuit")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1378,14 +1378,14 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorQuit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorQuit")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorQuit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorQuit")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1517,7 +1517,7 @@ impl crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorQuit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorQuit")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1527,13 +1527,13 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeGrid")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeGrid")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__FadeGrid {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeGrid")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeGrid")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor__FadeGrid {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1552,14 +1552,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor__F
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeGrid")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeGrid")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__FadeGrid {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeGrid")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeGrid")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__FadeGrid {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1702,7 +1702,7 @@ impl crate::OVR::OpenVR::IVRCompositor__FadeGrid {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeGrid")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeGrid")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__FadeGrid {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1711,13 +1711,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Fa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeToColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeToColor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__FadeToColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeToColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeToColor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1737,14 +1737,14 @@ for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeToColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeToColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeToColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeToColor")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1915,7 +1915,7 @@ impl crate::OVR::OpenVR::IVRCompositor__FadeToColor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeToColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeToColor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1925,13 +1925,13 @@ for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__ForceInterleavedReprojectionOn {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1951,7 +1951,7 @@ for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
     type Target = crate::System::MulticastDelegate;
@@ -1959,7 +1959,7 @@ for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2095,7 +2095,7 @@ impl crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2105,13 +2105,13 @@ for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__ForceReconnectProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2131,14 +2131,14 @@ for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2270,7 +2270,7 @@ impl crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2280,13 +2280,13 @@ for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetCumulativeStats {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2306,14 +2306,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2475,7 +2475,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2485,13 +2485,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetCurrentFadeColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2511,14 +2511,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2657,7 +2657,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2667,13 +2667,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetCurrentGridAlpha {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2693,14 +2693,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2828,7 +2828,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2838,13 +2838,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetCurrentSceneFocusProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2864,14 +2864,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3000,7 +3000,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3010,13 +3010,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetFrameTimeRemaining {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3036,14 +3036,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3171,7 +3171,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3181,13 +3181,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetFrameTiming {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3207,14 +3207,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3376,7 +3376,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3386,13 +3386,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetFrameTimings {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3412,14 +3412,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3581,7 +3581,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3591,13 +3591,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetLastFrameRenderer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3617,14 +3617,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3752,7 +3752,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3762,13 +3762,17 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetLastPoseForTrackedDeviceIndex {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3788,7 +3792,9 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
     type Target = crate::System::MulticastDelegate;
@@ -3796,7 +3802,9 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3982,7 +3990,9 @@ impl crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3992,13 +4002,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoses")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetLastPoses {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoses")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4018,14 +4028,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoses")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoses")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4246,7 +4256,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoses")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4256,13 +4266,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetMirrorTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4282,14 +4292,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4461,7 +4471,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4471,13 +4481,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetMirrorTextureGL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4497,14 +4507,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4662,7 +4672,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4672,13 +4682,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetTrackingSpace {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4698,14 +4708,14 @@ for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4841,7 +4851,7 @@ impl crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4851,13 +4861,17 @@ for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetVulkanDeviceExtensionsRequired {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4877,7 +4891,9 @@ for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
     type Target = crate::System::MulticastDelegate;
@@ -4885,7 +4901,9 @@ for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5044,7 +5062,9 @@ impl crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5054,13 +5074,17 @@ for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__GetVulkanInstanceExtensionsRequired {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5080,7 +5104,9 @@ for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
     type Target = crate::System::MulticastDelegate;
@@ -5088,7 +5114,9 @@ for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5239,7 +5267,9 @@ impl crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5249,13 +5279,13 @@ for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__HideMirrorWindow {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5275,14 +5305,14 @@ for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5414,7 +5444,7 @@ impl crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5424,13 +5454,13 @@ for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsFullscreen")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsFullscreen")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__IsFullscreen {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsFullscreen")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsFullscreen")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5450,14 +5480,14 @@ for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsFullscreen")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsFullscreen")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsFullscreen")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsFullscreen")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5585,7 +5615,7 @@ impl crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsFullscreen")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsFullscreen")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5595,13 +5625,13 @@ for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__IsMirrorWindowVisible {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5621,14 +5651,14 @@ for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5756,7 +5786,7 @@ impl crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5766,13 +5796,13 @@ for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__LockGLSharedTextureForAccess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5792,7 +5822,7 @@ for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
     type Target = crate::System::MulticastDelegate;
@@ -5800,7 +5830,7 @@ for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5941,7 +5971,7 @@ impl crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5951,13 +5981,13 @@ for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__PostPresentHandoff {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5977,14 +6007,14 @@ for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6116,7 +6146,7 @@ impl crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6126,13 +6156,13 @@ for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__ReleaseMirrorTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6152,14 +6182,14 @@ for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6300,7 +6330,7 @@ impl crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6310,13 +6340,13 @@ for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__ReleaseSharedGLTexture {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6336,14 +6366,14 @@ for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6486,7 +6516,7 @@ impl crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6496,13 +6526,13 @@ for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__SetExplicitTimingMode {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6522,14 +6552,14 @@ for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6668,7 +6698,7 @@ impl crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6678,13 +6708,13 @@ for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__SetSkyboxOverride {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6704,14 +6734,14 @@ for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6877,7 +6907,7 @@ impl crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6887,13 +6917,13 @@ for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__SetTrackingSpace {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6913,14 +6943,14 @@ for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7059,7 +7089,7 @@ impl crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7069,13 +7099,13 @@ for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__ShouldAppRenderWithLowResources {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7095,7 +7125,7 @@ for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
     type Target = crate::System::MulticastDelegate;
@@ -7103,7 +7133,7 @@ for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7232,7 +7262,7 @@ impl crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7242,13 +7272,13 @@ for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__ShowMirrorWindow {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7268,14 +7298,14 @@ for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7407,7 +7437,7 @@ impl crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7417,13 +7447,13 @@ for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_Submit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_Submit")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__Submit {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_Submit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_Submit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor__Submit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -7442,14 +7472,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor__S
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_Submit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_Submit")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__Submit {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_Submit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_Submit")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__Submit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7625,7 +7655,7 @@ impl crate::OVR::OpenVR::IVRCompositor__Submit {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_Submit")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_Submit")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Submit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -7634,13 +7664,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Su
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__SubmitExplicitTimingData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7660,14 +7690,14 @@ for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7803,7 +7833,7 @@ impl crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7813,13 +7843,13 @@ for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SuspendRendering")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SuspendRendering")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__SuspendRendering {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SuspendRendering")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SuspendRendering")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7839,14 +7869,14 @@ for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SuspendRendering")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SuspendRendering")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SuspendRendering")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SuspendRendering")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7981,7 +8011,7 @@ impl crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_SuspendRendering")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SuspendRendering")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7991,13 +8021,13 @@ for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__UnlockGLSharedTextureForAccess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8017,7 +8047,7 @@ for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
     type Target = crate::System::MulticastDelegate;
@@ -8025,7 +8055,7 @@ for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -8166,7 +8196,7 @@ impl crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8176,13 +8206,13 @@ for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRCompositor__WaitGetPoses {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8202,14 +8232,14 @@ for crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8430,7 +8460,7 @@ impl crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

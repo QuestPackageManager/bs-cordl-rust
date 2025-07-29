@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Globalization+TimeSpanParse")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeSpanParse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::TimeSpanParse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::TimeSp
         false
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse")]
 impl std::ops::Deref for crate::System::Globalization::TimeSpanParse {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse")]
 impl std::ops::DerefMut for crate::System::Globalization::TimeSpanParse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -673,7 +673,7 @@ impl crate::System::Globalization::TimeSpanParse {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanParse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -682,7 +682,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanParse_ParseFailureKind {
@@ -693,7 +693,7 @@ pub enum TimeSpanParse_ParseFailureKind {
     None = 0u8,
     Overflow = 4u8,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
     type Held<'a> = Self;
@@ -723,7 +723,7 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
     type Type = Self;
@@ -734,7 +734,7 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
     type Actual = Self;
@@ -748,7 +748,7 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
     type Type = Self;
@@ -763,7 +763,7 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
     type Actual = Self;
@@ -777,7 +777,7 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_StringParser {
@@ -786,7 +786,7 @@ pub struct TimeSpanParse_StringParser {
     pub _pos: i32,
     pub _len: i32,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanParse_StringParser {
     type Held<'a> = Self;
@@ -816,7 +816,7 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanParse_StringParser {
     type Type = Self;
@@ -827,7 +827,7 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanParse_StringParser {
     type Actual = Self;
@@ -841,7 +841,7 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanParse_StringParser {
     type Type = Self;
@@ -856,7 +856,7 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanParse_StringParser {
     type Actual = Self;
@@ -870,7 +870,7 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::TimeSpanParse_StringParser {
     type Type = Self;
@@ -1047,7 +1047,7 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanParse_TTT {
@@ -1058,7 +1058,7 @@ pub enum TimeSpanParse_TTT {
     NumOverflow = 4u8,
     Sep = 3u8,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanParse_TTT {
     type Held<'a> = Self;
@@ -1088,7 +1088,7 @@ for crate::System::Globalization::TimeSpanParse_TTT {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanParse_TTT {
     type Type = Self;
@@ -1099,7 +1099,7 @@ for crate::System::Globalization::TimeSpanParse_TTT {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanParse_TTT {
     type Actual = Self;
@@ -1113,7 +1113,7 @@ for crate::System::Globalization::TimeSpanParse_TTT {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanParse_TTT {
     type Type = Self;
@@ -1128,7 +1128,7 @@ for crate::System::Globalization::TimeSpanParse_TTT {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanParse_TTT {
     type Actual = Self;
@@ -1142,7 +1142,7 @@ for crate::System::Globalization::TimeSpanParse_TTT {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_TimeSpanRawInfo {
@@ -1168,7 +1168,7 @@ pub struct TimeSpanParse_TimeSpanRawInfo {
     pub _literals4: crate::System::ReadOnlySpan_1<char>,
     pub _literals5: crate::System::ReadOnlySpan_1<char>,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     type Held<'a> = Self;
@@ -1198,7 +1198,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     type Type = Self;
@@ -1209,7 +1209,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     type Actual = Self;
@@ -1223,7 +1223,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     type Type = Self;
@@ -1238,7 +1238,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     type Actual = Self;
@@ -1252,7 +1252,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     type Type = Self;
@@ -1742,14 +1742,14 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_TimeSpanResult {
     pub parsedTimeSpan: crate::System::TimeSpan,
     pub _throwOnFailure: bool,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     type Held<'a> = Self;
@@ -1779,7 +1779,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     type Type = Self;
@@ -1790,7 +1790,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     type Actual = Self;
@@ -1804,7 +1804,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     type Type = Self;
@@ -1819,7 +1819,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     type Actual = Self;
@@ -1833,7 +1833,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     type Type = Self;
@@ -1913,7 +1913,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanParse_TimeSpanStandardStyles {
@@ -1924,7 +1924,7 @@ pub enum TimeSpanParse_TimeSpanStandardStyles {
     None = 0u8,
     RequireFull = 4u8,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
     type Held<'a> = Self;
@@ -1954,7 +1954,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
     type Type = Self;
@@ -1965,7 +1965,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
     type Actual = Self;
@@ -1979,7 +1979,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
     type Type = Self;
@@ -1994,7 +1994,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
     type Actual = Self;
@@ -2008,7 +2008,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_TimeSpanToken {
@@ -2017,7 +2017,7 @@ pub struct TimeSpanParse_TimeSpanToken {
     pub _zeroes: i32,
     pub _sep: crate::System::ReadOnlySpan_1<char>,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     type Held<'a> = Self;
@@ -2047,7 +2047,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     type Type = Self;
@@ -2058,7 +2058,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     type Actual = Self;
@@ -2072,7 +2072,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     type Type = Self;
@@ -2087,7 +2087,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     type Actual = Self;
@@ -2101,7 +2101,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     type Type = Self;
@@ -2242,14 +2242,14 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_TimeSpanTokenizer {
     pub _value: crate::System::ReadOnlySpan_1<char>,
     pub _pos: i32,
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     type Held<'a> = Self;
@@ -2279,7 +2279,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     type Type = Self;
@@ -2290,7 +2290,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     type Actual = Self;
@@ -2304,7 +2304,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     type Type = Self;
@@ -2319,7 +2319,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     type Actual = Self;
@@ -2333,7 +2333,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     type Type = Self;

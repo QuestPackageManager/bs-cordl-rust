@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+CryptoException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+CryptoException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptoException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+CryptoException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+CryptoException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::CryptoException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::CryptoException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+CryptoException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+CryptoException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::CryptoException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+CryptoException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+CryptoException")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::CryptoException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::Org::BouncyCastle::Crypto::CryptoException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+CryptoException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+CryptoException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::CryptoException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

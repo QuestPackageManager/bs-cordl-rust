@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConvertUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::ConvertUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::ConvertUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::ConvertUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -719,7 +719,7 @@ impl crate::Newtonsoft::Json::Utilities::ConvertUtils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::ConvertUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -729,7 +729,7 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConvertUtils_ConvertResult {
@@ -739,7 +739,7 @@ pub enum ConvertUtils_ConvertResult {
     NotInstantiableType = 2i32,
     Success = 0i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
     type Held<'a> = Self;
@@ -769,7 +769,7 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
     type Type = Self;
@@ -780,7 +780,7 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
     type Actual = Self;
@@ -794,7 +794,7 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
     type Type = Self;
@@ -809,7 +809,7 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
     type Actual = Self;

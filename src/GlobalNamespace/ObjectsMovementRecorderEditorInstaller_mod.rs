@@ -1,10 +1,10 @@
-#[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderEditorInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectsMovementRecorderEditorInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
 }
-#[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderEditorInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
         false
     }
 }
-#[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderEditorInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderEditorInstaller")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderEditorInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

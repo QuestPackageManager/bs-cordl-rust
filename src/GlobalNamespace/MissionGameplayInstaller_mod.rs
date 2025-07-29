@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionGameplayInstaller")]
+#[cfg(feature = "cordl_class_MissionGameplayInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionGameplayInstaller {
@@ -7,7 +7,7 @@ pub struct MissionGameplayInstaller {
         crate::GlobalNamespace::MissionGameplaySceneSetupData,
     >,
 }
-#[cfg(feature = "MissionGameplayInstaller")]
+#[cfg(feature = "cordl_class_MissionGameplayInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionGameplayInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MissionGameplayInstaller {
         false
     }
 }
-#[cfg(feature = "MissionGameplayInstaller")]
+#[cfg(feature = "cordl_class_MissionGameplayInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionGameplayInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionGameplayInstaller")]
+#[cfg(feature = "cordl_class_MissionGameplayInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionGameplayInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::MissionGameplayInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionGameplayInstaller")]
+#[cfg(feature = "cordl_class_MissionGameplayInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionGameplayInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

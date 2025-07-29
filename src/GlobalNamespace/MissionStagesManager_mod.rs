@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionStagesManager")]
+#[cfg(feature = "cordl_class_MissionStagesManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionStagesManager {
@@ -15,7 +15,7 @@ pub struct MissionStagesManager {
         crate::GlobalNamespace::MissionStage,
     >,
 }
-#[cfg(feature = "MissionStagesManager")]
+#[cfg(feature = "cordl_class_MissionStagesManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionStagesManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::MissionStagesManager {
         false
     }
 }
-#[cfg(feature = "MissionStagesManager")]
+#[cfg(feature = "cordl_class_MissionStagesManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionStagesManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionStagesManager")]
+#[cfg(feature = "cordl_class_MissionStagesManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionStagesManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -231,7 +231,7 @@ impl crate::GlobalNamespace::MissionStagesManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionStagesManager")]
+#[cfg(feature = "cordl_class_MissionStagesManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionStagesManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

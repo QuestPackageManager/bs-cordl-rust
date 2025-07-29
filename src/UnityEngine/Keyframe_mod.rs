@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Keyframe")]
+#[cfg(feature = "cordl_class_UnityEngine+Keyframe")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Keyframe {
@@ -10,7 +10,7 @@ pub struct Keyframe {
     pub m_InWeight: f32,
     pub m_OutWeight: f32,
 }
-#[cfg(feature = "UnityEngine+Keyframe")]
+#[cfg(feature = "cordl_class_UnityEngine+Keyframe")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Keyframe {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Keyframe {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Keyframe")]
+#[cfg(feature = "cordl_class_UnityEngine+Keyframe")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Keyframe {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Keyframe {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Keyframe")]
+#[cfg(feature = "cordl_class_UnityEngine+Keyframe")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Keyframe {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Keyframe {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Keyframe")]
+#[cfg(feature = "cordl_class_UnityEngine+Keyframe")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Keyframe {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Keyframe {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Keyframe")]
+#[cfg(feature = "cordl_class_UnityEngine+Keyframe")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Keyframe {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Keyframe {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Keyframe")]
+#[cfg(feature = "cordl_class_UnityEngine+Keyframe")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Keyframe {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

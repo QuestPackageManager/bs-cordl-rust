@@ -1,4 +1,4 @@
-#[cfg(feature = "AppInit")]
+#[cfg(feature = "cordl_class_AppInit")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppInit {
@@ -15,7 +15,7 @@ pub struct AppInit {
         crate::GlobalNamespace::GameScenesManager,
     >,
 }
-#[cfg(feature = "AppInit")]
+#[cfg(feature = "cordl_class_AppInit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AppInit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AppInit {
         false
     }
 }
-#[cfg(feature = "AppInit")]
+#[cfg(feature = "cordl_class_AppInit")]
 impl std::ops::Deref for crate::GlobalNamespace::AppInit {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AppInit")]
+#[cfg(feature = "cordl_class_AppInit")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AppInit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -404,7 +404,7 @@ impl crate::GlobalNamespace::AppInit {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AppInit")]
+#[cfg(feature = "cordl_class_AppInit")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AppInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -413,7 +413,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AppInit {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AppInit+AppStartType")]
+#[cfg(feature = "cordl_class_AppInit+AppStartType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppInit_AppStartType {
@@ -422,7 +422,7 @@ pub enum AppInit_AppStartType {
     AppStart = 0i32,
     MultiSceneEditor = 2i32,
 }
-#[cfg(feature = "AppInit+AppStartType")]
+#[cfg(feature = "cordl_class_AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Held<'a> = Self;
@@ -452,7 +452,7 @@ for crate::GlobalNamespace::AppInit_AppStartType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AppInit+AppStartType")]
+#[cfg(feature = "cordl_class_AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Type = Self;
@@ -463,7 +463,7 @@ for crate::GlobalNamespace::AppInit_AppStartType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AppInit+AppStartType")]
+#[cfg(feature = "cordl_class_AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Actual = Self;
@@ -477,7 +477,7 @@ for crate::GlobalNamespace::AppInit_AppStartType {
         self
     }
 }
-#[cfg(feature = "AppInit+AppStartType")]
+#[cfg(feature = "cordl_class_AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Type = Self;
@@ -492,7 +492,7 @@ for crate::GlobalNamespace::AppInit_AppStartType {
         }
     }
 }
-#[cfg(feature = "AppInit+AppStartType")]
+#[cfg(feature = "cordl_class_AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Actual = Self;

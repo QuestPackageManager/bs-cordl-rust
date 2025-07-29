@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -9,7 +9,7 @@ pub struct BinaryCrossAppDomainAssembly {
     pub assemblyIndex: i32,
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainAssembly {
@@ -31,7 +31,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDom
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainAssembly {
@@ -41,7 +41,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDom
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainAssembly {
@@ -134,7 +134,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDo
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainAssembly {

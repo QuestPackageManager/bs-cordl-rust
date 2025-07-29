@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeNotificationBehaviour {
@@ -12,7 +12,7 @@ pub struct TimeNotificationBehaviour {
     pub m_NeedSortNotifications: bool,
     pub m_TimeSource: crate::UnityEngine::Playables::Playable,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -454,7 +454,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -464,7 +464,9 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeNotificationBehaviour_NotificationEntry {
@@ -473,7 +475,9 @@ pub struct TimeNotificationBehaviour_NotificationEntry {
     pub notificationFired: bool,
     pub flags: crate::UnityEngine::Timeline::NotificationFlags,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     type Held<'a> = Self;
@@ -503,7 +507,9 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     type Type = Self;
@@ -514,7 +520,9 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     type Actual = Self;
@@ -528,7 +536,9 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     type Type = Self;
@@ -543,7 +553,9 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     type Actual = Self;
@@ -557,7 +569,9 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     type Type = Self;

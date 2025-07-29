@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RestrictionFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RestrictionFlags {
@@ -16,7 +16,7 @@ pub enum RestrictionFlags {
     TotalDigits = 1024i32,
     WhiteSpace = 32i32,
 }
-#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::RestrictionFlags {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::System::Xml::Schema::RestrictionFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::RestrictionFlags {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::System::Xml::Schema::RestrictionFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::RestrictionFlags {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::System::Xml::Schema::RestrictionFlags {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::RestrictionFlags {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::System::Xml::Schema::RestrictionFlags {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::RestrictionFlags {
     type Actual = Self;

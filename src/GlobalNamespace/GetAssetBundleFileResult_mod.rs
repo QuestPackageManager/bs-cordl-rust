@@ -1,11 +1,11 @@
-#[cfg(feature = "GetAssetBundleFileResult")]
+#[cfg(feature = "cordl_class_GetAssetBundleFileResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GetAssetBundleFileResult {
     pub isError: bool,
     pub assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "GetAssetBundleFileResult")]
+#[cfg(feature = "cordl_class_GetAssetBundleFileResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GetAssetBundleFileResult {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::GetAssetBundleFileResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GetAssetBundleFileResult")]
+#[cfg(feature = "cordl_class_GetAssetBundleFileResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GetAssetBundleFileResult {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::GetAssetBundleFileResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GetAssetBundleFileResult")]
+#[cfg(feature = "cordl_class_GetAssetBundleFileResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GetAssetBundleFileResult {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::GetAssetBundleFileResult {
         self
     }
 }
-#[cfg(feature = "GetAssetBundleFileResult")]
+#[cfg(feature = "cordl_class_GetAssetBundleFileResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GetAssetBundleFileResult {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::GetAssetBundleFileResult {
         }
     }
 }
-#[cfg(feature = "GetAssetBundleFileResult")]
+#[cfg(feature = "cordl_class_GetAssetBundleFileResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GetAssetBundleFileResult {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::GlobalNamespace::GetAssetBundleFileResult {
         actual
     }
 }
-#[cfg(feature = "GetAssetBundleFileResult")]
+#[cfg(feature = "cordl_class_GetAssetBundleFileResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::GetAssetBundleFileResult {
     type Type = Self;

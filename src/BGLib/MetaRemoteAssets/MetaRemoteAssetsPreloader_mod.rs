@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MetaRemoteAssetsPreloader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncPreloader,
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
         false
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 impl std::ops::Deref for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncPreloader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 impl std::ops::DerefMut for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "GameCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetupData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameCoreSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
 }
-#[cfg(feature = "GameCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameCoreSceneSetupData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::GameCoreSceneSetupData {
         false
     }
 }
-#[cfg(feature = "GameCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameCoreSceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetupData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameCoreSceneSetupData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::GameCoreSceneSetupData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetupData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameCoreSceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

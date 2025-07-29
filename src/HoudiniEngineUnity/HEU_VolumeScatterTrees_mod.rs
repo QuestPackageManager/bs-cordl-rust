@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeScatterTrees")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeScatterTrees")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_VolumeScatterTrees {
@@ -29,7 +29,7 @@ pub struct HEU_VolumeScatterTrees {
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeScatterTrees")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeScatterTrees")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeScatterTrees")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeScatterTrees")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeScatterTrees")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeScatterTrees")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeScatterTrees")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeScatterTrees")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_VolumeScatterTrees {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

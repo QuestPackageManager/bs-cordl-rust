@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+DetailPrototype")]
+#[cfg(feature = "cordl_class_UnityEngine+DetailPrototype")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DetailPrototype {
@@ -23,7 +23,7 @@ pub struct DetailPrototype {
     pub m_PositionJitter: f32,
     pub m_TargetCoverage: f32,
 }
-#[cfg(feature = "UnityEngine+DetailPrototype")]
+#[cfg(feature = "cordl_class_UnityEngine+DetailPrototype")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::DetailPrototype {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::DetailPrototype 
         false
     }
 }
-#[cfg(feature = "UnityEngine+DetailPrototype")]
+#[cfg(feature = "cordl_class_UnityEngine+DetailPrototype")]
 impl std::ops::Deref for crate::UnityEngine::DetailPrototype {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+DetailPrototype")]
+#[cfg(feature = "cordl_class_UnityEngine+DetailPrototype")]
 impl std::ops::DerefMut for crate::UnityEngine::DetailPrototype {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -597,7 +597,7 @@ impl crate::UnityEngine::DetailPrototype {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+DetailPrototype")]
+#[cfg(feature = "cordl_class_UnityEngine+DetailPrototype")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::DetailPrototype {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

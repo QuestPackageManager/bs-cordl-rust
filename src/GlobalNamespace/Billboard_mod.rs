@@ -1,4 +1,4 @@
-#[cfg(feature = "Billboard")]
+#[cfg(feature = "cordl_class_Billboard")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Billboard {
@@ -7,7 +7,7 @@ pub struct Billboard {
     pub _flipDirection: bool,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "Billboard")]
+#[cfg(feature = "cordl_class_Billboard")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Billboard {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Billboard {
         false
     }
 }
-#[cfg(feature = "Billboard")]
+#[cfg(feature = "cordl_class_Billboard")]
 impl std::ops::Deref for crate::GlobalNamespace::Billboard {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Billboard")]
+#[cfg(feature = "cordl_class_Billboard")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Billboard {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::Billboard {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Billboard")]
+#[cfg(feature = "cordl_class_Billboard")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Billboard {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -127,7 +127,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Billboard {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Billboard+RotationMode")]
+#[cfg(feature = "cordl_class_Billboard+RotationMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Billboard_RotationMode {
@@ -137,7 +137,7 @@ pub enum Billboard_RotationMode {
     YAxis = 2i32,
     ZAxis = 3i32,
 }
-#[cfg(feature = "Billboard+RotationMode")]
+#[cfg(feature = "cordl_class_Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Held<'a> = Self;
@@ -167,7 +167,7 @@ for crate::GlobalNamespace::Billboard_RotationMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Billboard+RotationMode")]
+#[cfg(feature = "cordl_class_Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Type = Self;
@@ -178,7 +178,7 @@ for crate::GlobalNamespace::Billboard_RotationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Billboard+RotationMode")]
+#[cfg(feature = "cordl_class_Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Actual = Self;
@@ -192,7 +192,7 @@ for crate::GlobalNamespace::Billboard_RotationMode {
         self
     }
 }
-#[cfg(feature = "Billboard+RotationMode")]
+#[cfg(feature = "cordl_class_Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Type = Self;
@@ -207,7 +207,7 @@ for crate::GlobalNamespace::Billboard_RotationMode {
         }
     }
 }
-#[cfg(feature = "Billboard+RotationMode")]
+#[cfg(feature = "cordl_class_Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Actual = Self;

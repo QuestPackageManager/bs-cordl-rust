@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SM2P256V1FieldElement {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -645,7 +645,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1FieldElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

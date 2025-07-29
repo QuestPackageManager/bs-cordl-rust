@@ -1,4 +1,4 @@
-#[cfg(feature = "StandaloneGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_StandaloneGraphicSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandaloneGraphicSettingsViewController {
@@ -24,7 +24,7 @@ pub struct StandaloneGraphicSettingsViewController {
         crate::GlobalNamespace::PresetsSettingsController,
     >,
 }
-#[cfg(feature = "StandaloneGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_StandaloneGraphicSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         false
     }
 }
-#[cfg(feature = "StandaloneGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_StandaloneGraphicSettingsViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
     type Target = crate::GlobalNamespace::GraphicSettingsViewController;
@@ -52,7 +52,7 @@ for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandaloneGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_StandaloneGraphicSettingsViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -366,7 +366,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandaloneGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_StandaloneGraphicSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

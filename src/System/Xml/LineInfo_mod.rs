@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+LineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+LineInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LineInfo {
     pub lineNo: i32,
     pub linePos: i32,
 }
-#[cfg(feature = "System+Xml+LineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+LineInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::LineInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::LineInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+LineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+LineInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::LineInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::LineInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+LineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+LineInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::LineInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::LineInfo {
         self
     }
 }
-#[cfg(feature = "System+Xml+LineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+LineInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::LineInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::LineInfo {
         }
     }
 }
-#[cfg(feature = "System+Xml+LineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+LineInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::LineInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::LineInfo {
         actual
     }
 }
-#[cfg(feature = "System+Xml+LineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+LineInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Xml::LineInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "SFB+StandaloneFileBrowser")]
+#[cfg(feature = "cordl_class_SFB+StandaloneFileBrowser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandaloneFileBrowser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "SFB+StandaloneFileBrowser")]
+#[cfg(feature = "cordl_class_SFB+StandaloneFileBrowser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::SFB::StandaloneFileBrowser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::SFB::StandaloneFileBrowser {
         false
     }
 }
-#[cfg(feature = "SFB+StandaloneFileBrowser")]
+#[cfg(feature = "cordl_class_SFB+StandaloneFileBrowser")]
 impl std::ops::Deref for crate::SFB::StandaloneFileBrowser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SFB+StandaloneFileBrowser")]
+#[cfg(feature = "cordl_class_SFB+StandaloneFileBrowser")]
 impl std::ops::DerefMut for crate::SFB::StandaloneFileBrowser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -621,7 +621,7 @@ impl crate::SFB::StandaloneFileBrowser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SFB+StandaloneFileBrowser")]
+#[cfg(feature = "cordl_class_SFB+StandaloneFileBrowser")]
 impl quest_hook::libil2cpp::ObjectType for crate::SFB::StandaloneFileBrowser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+RangeContentValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangeContentValidator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RangeContentValidator {
@@ -19,7 +19,7 @@ pub struct RangeContentValidator {
     pub minMaxNodesCount: i32,
     pub endMarkerPos: i32,
 }
-#[cfg(feature = "System+Xml+Schema+RangeContentValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangeContentValidator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::RangeContentValidator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::System::Xml::Schema::RangeContentValidator {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+RangeContentValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangeContentValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::RangeContentValidator {
     type Target = crate::System::Xml::Schema::ContentValidator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+RangeContentValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangeContentValidator")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::RangeContentValidator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -346,7 +346,7 @@ impl crate::System::Xml::Schema::RangeContentValidator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+RangeContentValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangeContentValidator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::RangeContentValidator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

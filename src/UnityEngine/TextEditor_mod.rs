@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextEditor")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextEditor {
@@ -22,7 +22,7 @@ pub struct TextEditor {
     pub m_bJustSelected: bool,
     pub m_iAltCursorPos: i32,
 }
-#[cfg(feature = "UnityEngine+TextEditor")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextEditor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextEditor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextEditor")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor")]
 impl std::ops::Deref for crate::UnityEngine::TextEditor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextEditor")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor")]
 impl std::ops::DerefMut for crate::UnityEngine::TextEditor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -87,7 +87,7 @@ impl crate::UnityEngine::TextEditor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextEditor")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextEditor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -96,7 +96,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextEditor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor+DblClickSnapping")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextEditor_DblClickSnapping {
@@ -104,7 +104,7 @@ pub enum TextEditor_DblClickSnapping {
     PARAGRAPHS = 1u8,
     WORDS = 0u8,
 }
-#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Held<'a> = Self;
@@ -134,7 +134,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Type = Self;
@@ -145,7 +145,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Actual = Self;
@@ -159,7 +159,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Type = Self;
@@ -174,7 +174,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Actual = Self;

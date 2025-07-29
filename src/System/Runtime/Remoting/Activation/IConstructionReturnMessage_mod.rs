@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionReturnMessage"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IConstructionReturnMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionReturnMessage"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionReturnMessage"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionReturnMessage"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -47,7 +55,9 @@ impl crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionReturnMessage"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

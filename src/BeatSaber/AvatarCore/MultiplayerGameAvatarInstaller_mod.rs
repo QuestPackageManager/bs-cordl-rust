@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerGameAvatarInstaller {
@@ -7,7 +7,7 @@ pub struct MultiplayerGameAvatarInstaller {
         crate::GlobalNamespace::IConnectedPlayer,
     >,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::MultiplayerGameAvatarInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::BeatSaber::AvatarCore::MultiplayerGameAvatarInstaller {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::MultiplayerGameAvatarInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
 impl std::ops::DerefMut
 for crate::BeatSaber::AvatarCore::MultiplayerGameAvatarInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -97,7 +97,7 @@ impl crate::BeatSaber::AvatarCore::MultiplayerGameAvatarInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerGameAvatarInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::MultiplayerGameAvatarInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

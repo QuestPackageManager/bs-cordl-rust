@@ -1,10 +1,10 @@
-#[cfg(feature = "LightGroupRotationZTransform")]
+#[cfg(feature = "cordl_class_LightGroupRotationZTransform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupRotationZTransform {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "LightGroupRotationZTransform")]
+#[cfg(feature = "cordl_class_LightGroupRotationZTransform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightGroupRotationZTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::LightGroupRotationZTransform {
         false
     }
 }
-#[cfg(feature = "LightGroupRotationZTransform")]
+#[cfg(feature = "cordl_class_LightGroupRotationZTransform")]
 impl std::ops::Deref for crate::GlobalNamespace::LightGroupRotationZTransform {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightGroupRotationZTransform")]
+#[cfg(feature = "cordl_class_LightGroupRotationZTransform")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightGroupRotationZTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::LightGroupRotationZTransform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightGroupRotationZTransform")]
+#[cfg(feature = "cordl_class_LightGroupRotationZTransform")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightGroupRotationZTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

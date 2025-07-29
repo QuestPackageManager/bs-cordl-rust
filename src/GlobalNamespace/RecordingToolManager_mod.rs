@@ -1,4 +1,4 @@
-#[cfg(feature = "RecordingToolManager")]
+#[cfg(feature = "cordl_class_RecordingToolManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolManager {
@@ -24,7 +24,7 @@ pub struct RecordingToolManager {
     >,
     pub _currentRecordingIndex: i32,
 }
-#[cfg(feature = "RecordingToolManager")]
+#[cfg(feature = "cordl_class_RecordingToolManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RecordingToolManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::RecordingToolManager {
         false
     }
 }
-#[cfg(feature = "RecordingToolManager")]
+#[cfg(feature = "cordl_class_RecordingToolManager")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RecordingToolManager")]
+#[cfg(feature = "cordl_class_RecordingToolManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -244,7 +244,7 @@ impl crate::GlobalNamespace::RecordingToolManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RecordingToolManager")]
+#[cfg(feature = "cordl_class_RecordingToolManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingToolManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -253,14 +253,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingTool
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "RecordingToolManager+SetupData")]
+#[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RecordingToolManager_SetupData {
     pub profileSong: bool,
     pub runAutopilot: bool,
 }
-#[cfg(feature = "RecordingToolManager+SetupData")]
+#[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Held<'a> = Self;
@@ -290,7 +290,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "RecordingToolManager+SetupData")]
+#[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Type = Self;
@@ -301,7 +301,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "RecordingToolManager+SetupData")]
+#[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Actual = Self;
@@ -315,7 +315,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
         self
     }
 }
-#[cfg(feature = "RecordingToolManager+SetupData")]
+#[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Type = Self;
@@ -330,7 +330,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
         }
     }
 }
-#[cfg(feature = "RecordingToolManager+SetupData")]
+#[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Actual = Self;
@@ -344,7 +344,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
         actual
     }
 }
-#[cfg(feature = "RecordingToolManager+SetupData")]
+#[cfg(feature = "cordl_class_RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Type = Self;

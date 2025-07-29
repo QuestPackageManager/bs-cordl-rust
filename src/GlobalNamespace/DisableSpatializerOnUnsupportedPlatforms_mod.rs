@@ -1,11 +1,11 @@
-#[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
+#[cfg(feature = "cordl_class_DisableSpatializerOnUnsupportedPlatforms")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisableSpatializerOnUnsupportedPlatforms {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
 }
-#[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
+#[cfg(feature = "cordl_class_DisableSpatializerOnUnsupportedPlatforms")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
         false
     }
 }
-#[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
+#[cfg(feature = "cordl_class_DisableSpatializerOnUnsupportedPlatforms")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
+#[cfg(feature = "cordl_class_DisableSpatializerOnUnsupportedPlatforms")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
+#[cfg(feature = "cordl_class_DisableSpatializerOnUnsupportedPlatforms")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+SelectionType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SelectionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectionType {
@@ -7,7 +7,7 @@ pub enum SelectionType {
     None = 0i32,
     Single = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+SelectionType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SelectionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::SelectionType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::UIElements::SelectionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SelectionType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SelectionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::SelectionType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::UIElements::SelectionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SelectionType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SelectionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::SelectionType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::SelectionType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SelectionType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SelectionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::SelectionType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::UIElements::SelectionType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SelectionType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SelectionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::SelectionType {
     type Actual = Self;

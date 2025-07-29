@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UICharInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UICharInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UICharInfo {
     pub cursorPos: crate::UnityEngine::Vector2,
     pub charWidth: f32,
 }
-#[cfg(feature = "UnityEngine+UICharInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UICharInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UICharInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UICharInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UICharInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UICharInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UICharInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UICharInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UICharInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UICharInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UICharInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UICharInfo 
         self
     }
 }
-#[cfg(feature = "UnityEngine+UICharInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UICharInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UICharInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UICharInfo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UICharInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UICharInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UICharInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UICharInfo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UICharInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UICharInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::UICharInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

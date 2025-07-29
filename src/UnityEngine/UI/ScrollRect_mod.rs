@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollRect {
@@ -53,7 +53,7 @@ pub struct ScrollRect {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ScrollRect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -72,14 +72,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ScrollRect {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect")]
 impl std::ops::Deref for crate::UnityEngine::UI::ScrollRect {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::ScrollRect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2337,7 +2337,7 @@ impl crate::UnityEngine::UI::ScrollRect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ScrollRect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2488,7 +2488,7 @@ impl AsMut<crate::UnityEngine::UI::ILayoutGroup> for crate::UnityEngine::UI::Scr
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+MovementType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollRect_MovementType {
@@ -2497,7 +2497,7 @@ pub enum ScrollRect_MovementType {
     Elastic = 1i32,
     Unrestricted = 0i32,
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+MovementType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ScrollRect_MovementType {
     type Held<'a> = Self;
@@ -2527,7 +2527,7 @@ for crate::UnityEngine::UI::ScrollRect_MovementType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+MovementType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::ScrollRect_MovementType {
     type Type = Self;
@@ -2538,7 +2538,7 @@ for crate::UnityEngine::UI::ScrollRect_MovementType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+MovementType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::ScrollRect_MovementType {
     type Actual = Self;
@@ -2552,7 +2552,7 @@ for crate::UnityEngine::UI::ScrollRect_MovementType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+MovementType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::ScrollRect_MovementType {
     type Type = Self;
@@ -2567,7 +2567,7 @@ for crate::UnityEngine::UI::ScrollRect_MovementType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+MovementType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::ScrollRect_MovementType {
     type Actual = Self;
@@ -2581,7 +2581,7 @@ for crate::UnityEngine::UI::ScrollRect_MovementType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollRect_ScrollRectEvent {
@@ -2589,7 +2589,7 @@ pub struct ScrollRect_ScrollRectEvent {
         crate::UnityEngine::Vector2,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2609,14 +2609,14 @@ for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2653,7 +2653,7 @@ impl crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2663,7 +2663,7 @@ for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollRect_ScrollbarVisibility {
@@ -2672,7 +2672,7 @@ pub enum ScrollRect_ScrollbarVisibility {
     AutoHideAndExpandViewport = 2i32,
     Permanent = 0i32,
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
     type Held<'a> = Self;
@@ -2702,7 +2702,7 @@ for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
     type Type = Self;
@@ -2713,7 +2713,7 @@ for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
     type Actual = Self;
@@ -2727,7 +2727,7 @@ for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
     type Type = Self;
@@ -2742,7 +2742,7 @@ for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
     type Actual = Self;

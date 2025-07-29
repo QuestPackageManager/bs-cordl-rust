@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+Unity+UnityTlsProvider")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTlsProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTlsProvider {
     __cordl_parent: crate::Mono::Net::Security::MobileTlsProvider,
 }
-#[cfg(feature = "Mono+Unity+UnityTlsProvider")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTlsProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTlsProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTlsProvider
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTlsProvider")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTlsProvider")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTlsProvider {
     type Target = crate::Mono::Net::Security::MobileTlsProvider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTlsProvider")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTlsProvider")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTlsProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -374,7 +374,7 @@ impl crate::Mono::Unity::UnityTlsProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTlsProvider")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTlsProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTlsProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

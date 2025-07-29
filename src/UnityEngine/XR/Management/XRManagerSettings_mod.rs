@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagerSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRManagerSettings {
@@ -21,7 +21,7 @@ pub struct XRManagerSettings {
         crate::UnityEngine::XR::Management::XRLoader,
     >,
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagerSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::Management::XRManagerSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::UnityEngine::XR::Management::XRManagerSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagerSettings")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRManagerSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagerSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRManagerSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -797,7 +797,7 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagerSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::XR::Management::XRManagerSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

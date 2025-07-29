@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerAgreements")]
+#[cfg(feature = "cordl_class_PlayerAgreements")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerAgreements {
@@ -10,7 +10,7 @@ pub struct PlayerAgreements {
     pub playerSensitivityFlagVersion: i32,
     pub endOfLifeNoticeVersion: i32,
 }
-#[cfg(feature = "PlayerAgreements")]
+#[cfg(feature = "cordl_class_PlayerAgreements")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerAgreements {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerAgreem
         false
     }
 }
-#[cfg(feature = "PlayerAgreements")]
+#[cfg(feature = "cordl_class_PlayerAgreements")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerAgreements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerAgreements")]
+#[cfg(feature = "cordl_class_PlayerAgreements")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerAgreements {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -507,7 +507,7 @@ impl crate::GlobalNamespace::PlayerAgreements {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerAgreements")]
+#[cfg(feature = "cordl_class_PlayerAgreements")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerAgreements {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

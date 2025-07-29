@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProgressBar {
     __cordl_parent: crate::UnityEngine::UIElements::AbstractProgressBar,
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::ProgressBar {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Prog
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ProgressBar {
     type Target = crate::UnityEngine::UIElements::AbstractProgressBar;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ProgressBar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -69,7 +69,7 @@ impl crate::UnityEngine::UIElements::ProgressBar {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ProgressBar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -78,7 +78,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Progr
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProgressBar_UxmlFactory {
@@ -89,7 +89,7 @@ pub struct ProgressBar_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ProgressBar_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -109,7 +109,7 @@ for crate::UnityEngine::UIElements::ProgressBar_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ProgressBar_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ProgressBar>,
@@ -121,7 +121,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::ProgressBar_UxmlFactory
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ProgressBar_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::UnityEngine::UIElements::ProgressBar_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ProgressBar+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ProgressBar_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

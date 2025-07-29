@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Globalization+HebrewNumberParsingContext")]
+#[cfg(feature = "cordl_class_System+Globalization+HebrewNumberParsingContext")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HebrewNumberParsingContext {
     pub state: crate::System::Globalization::HebrewNumber_HS,
     pub result: i32,
 }
-#[cfg(feature = "System+Globalization+HebrewNumberParsingContext")]
+#[cfg(feature = "cordl_class_System+Globalization+HebrewNumberParsingContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::HebrewNumberParsingContext {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::System::Globalization::HebrewNumberParsingContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+HebrewNumberParsingContext")]
+#[cfg(feature = "cordl_class_System+Globalization+HebrewNumberParsingContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::HebrewNumberParsingContext {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::System::Globalization::HebrewNumberParsingContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+HebrewNumberParsingContext")]
+#[cfg(feature = "cordl_class_System+Globalization+HebrewNumberParsingContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::HebrewNumberParsingContext {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::System::Globalization::HebrewNumberParsingContext {
         self
     }
 }
-#[cfg(feature = "System+Globalization+HebrewNumberParsingContext")]
+#[cfg(feature = "cordl_class_System+Globalization+HebrewNumberParsingContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::HebrewNumberParsingContext {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::System::Globalization::HebrewNumberParsingContext {
         }
     }
 }
-#[cfg(feature = "System+Globalization+HebrewNumberParsingContext")]
+#[cfg(feature = "cordl_class_System+Globalization+HebrewNumberParsingContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::HebrewNumberParsingContext {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::System::Globalization::HebrewNumberParsingContext {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+HebrewNumberParsingContext")]
+#[cfg(feature = "cordl_class_System+Globalization+HebrewNumberParsingContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::HebrewNumberParsingContext {
     type Type = Self;

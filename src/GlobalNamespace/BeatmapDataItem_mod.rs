@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapDataItem")]
+#[cfg(feature = "cordl_class_BeatmapDataItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataItem {
@@ -8,7 +8,7 @@ pub struct BeatmapDataItem {
     pub _subtypeIdentifier_k__BackingField: i32,
     pub _type_k__BackingField: crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType,
 }
-#[cfg(feature = "BeatmapDataItem")]
+#[cfg(feature = "cordl_class_BeatmapDataItem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataI
         false
     }
 }
-#[cfg(feature = "BeatmapDataItem")]
+#[cfg(feature = "cordl_class_BeatmapDataItem")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataItem")]
+#[cfg(feature = "cordl_class_BeatmapDataItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -326,7 +326,7 @@ impl crate::GlobalNamespace::BeatmapDataItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataItem")]
+#[cfg(feature = "cordl_class_BeatmapDataItem")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -363,7 +363,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
+#[cfg(feature = "cordl_class_BeatmapDataItem+BeatmapDataItemType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapDataItem_BeatmapDataItemType {
@@ -371,7 +371,7 @@ pub enum BeatmapDataItem_BeatmapDataItemType {
     BeatmapEvent = 1i32,
     BeatmapObject = 0i32,
 }
-#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
+#[cfg(feature = "cordl_class_BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Held<'a> = Self;
@@ -401,7 +401,7 @@ for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
+#[cfg(feature = "cordl_class_BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Type = Self;
@@ -412,7 +412,7 @@ for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
+#[cfg(feature = "cordl_class_BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Actual = Self;
@@ -426,7 +426,7 @@ for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
         self
     }
 }
-#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
+#[cfg(feature = "cordl_class_BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Type = Self;
@@ -441,7 +441,7 @@ for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
         }
     }
 }
-#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
+#[cfg(feature = "cordl_class_BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Actual = Self;

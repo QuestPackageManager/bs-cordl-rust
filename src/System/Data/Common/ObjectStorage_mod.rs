@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+Common+ObjectStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectStorage {
@@ -10,7 +10,7 @@ pub struct ObjectStorage {
     >,
     pub _implementsIXmlSerializable: bool,
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Common::ObjectStorage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Common::ObjectS
         false
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage")]
 impl std::ops::Deref for crate::System::Data::Common::ObjectStorage {
     type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage")]
 impl std::ops::DerefMut for crate::System::Data::Common::ObjectStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -728,7 +728,7 @@ impl crate::System::Data::Common::ObjectStorage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Common::ObjectStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -737,7 +737,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Common::ObjectSt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+Families")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObjectStorage_Families {
@@ -748,7 +748,7 @@ pub enum ObjectStorage_Families {
     NUMBER = 1i32,
     STRING = 2i32,
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::Common::ObjectStorage_Families {
     type Held<'a> = Self;
@@ -778,7 +778,7 @@ for crate::System::Data::Common::ObjectStorage_Families {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::Common::ObjectStorage_Families {
     type Type = Self;
@@ -789,7 +789,7 @@ for crate::System::Data::Common::ObjectStorage_Families {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::Common::ObjectStorage_Families {
     type Actual = Self;
@@ -803,7 +803,7 @@ for crate::System::Data::Common::ObjectStorage_Families {
         self
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::Common::ObjectStorage_Families {
     type Type = Self;
@@ -818,7 +818,7 @@ for crate::System::Data::Common::ObjectStorage_Families {
         }
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::Common::ObjectStorage_Families {
     type Actual = Self;
@@ -832,13 +832,13 @@ for crate::System::Data::Common::ObjectStorage_Families {
         actual
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectStorage_TempAssemblyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -858,7 +858,7 @@ for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
         false
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 impl std::ops::Deref
 for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -866,7 +866,7 @@ for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 impl std::ops::DerefMut
 for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -990,7 +990,7 @@ impl crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
+#[cfg(feature = "cordl_class_System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

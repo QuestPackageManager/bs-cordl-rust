@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExtendedAxisEventData {
     __cordl_parent: crate::UnityEngine::EventSystems::AxisEventData,
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::ExtendedAxisEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::UI::ExtendedAxisEventData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::ExtendedAxisEventData {
     type Target = crate::UnityEngine::EventSystems::AxisEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::UI::ExtendedAxisEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -108,7 +108,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedAxisEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::UI::ExtendedAxisEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

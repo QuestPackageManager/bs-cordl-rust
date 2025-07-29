@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_InputField")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField {
@@ -131,7 +131,7 @@ pub struct TMP_InputField {
     pub m_forceRectTransformAdjustment: bool,
     pub m_ProcessingEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
 }
-#[cfg(feature = "TMPro+TMP_InputField")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -150,14 +150,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5689,7 +5689,7 @@ impl crate::TMPro::TMP_InputField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -5836,7 +5836,7 @@ impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TMP_InputFi
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+CharacterValidation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_CharacterValidation {
@@ -5851,7 +5851,7 @@ pub enum TMP_InputField_CharacterValidation {
     None = 0i32,
     Regex = 6i32,
 }
-#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Held<'a> = Self;
@@ -5881,7 +5881,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Type = Self;
@@ -5892,7 +5892,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Actual = Self;
@@ -5906,7 +5906,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Type = Self;
@@ -5921,7 +5921,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Actual = Self;
@@ -5935,7 +5935,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+ContentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_ContentType {
@@ -5951,7 +5951,7 @@ pub enum TMP_InputField_ContentType {
     Pin = 8i32,
     Standard = 0i32,
 }
-#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_ContentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -5980,7 +5980,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_Content
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_InputField_ContentType {
     type Type = Self;
@@ -5991,7 +5991,7 @@ for crate::TMPro::TMP_InputField_ContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_InputField_ContentType {
     type Actual = Self;
@@ -6005,7 +6005,7 @@ for crate::TMPro::TMP_InputField_ContentType {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_InputField_ContentType {
     type Type = Self;
@@ -6020,7 +6020,7 @@ for crate::TMPro::TMP_InputField_ContentType {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_ContentType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6033,7 +6033,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_Conte
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+EditState")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+EditState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_EditState {
@@ -6041,7 +6041,7 @@ pub enum TMP_InputField_EditState {
     Continue = 0i32,
     Finish = 1i32,
 }
-#[cfg(feature = "TMPro+TMP_InputField+EditState")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_EditState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -6070,7 +6070,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_EditSta
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+EditState")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_EditState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6080,7 +6080,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_Edi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+EditState")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_EditState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6093,7 +6093,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_Ed
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+EditState")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_EditState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6107,7 +6107,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_Edi
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+EditState")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_EditState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6120,7 +6120,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_EditS
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+InputType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+InputType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_InputType {
@@ -6129,7 +6129,7 @@ pub enum TMP_InputField_InputType {
     Password = 2i32,
     Standard = 0i32,
 }
-#[cfg(feature = "TMPro+TMP_InputField+InputType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_InputType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -6158,7 +6158,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_InputTy
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+InputType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_InputType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6168,7 +6168,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_Inp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+InputType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_InputType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6181,7 +6181,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_In
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+InputType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_InputType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6195,7 +6195,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_Inp
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+InputType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_InputType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6208,7 +6208,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_Input
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+LineType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+LineType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_LineType {
@@ -6217,7 +6217,7 @@ pub enum TMP_InputField_LineType {
     MultiLineSubmit = 1i32,
     SingleLine = 0i32,
 }
-#[cfg(feature = "TMPro+TMP_InputField+LineType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_LineType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -6246,7 +6246,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_LineTyp
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+LineType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_LineType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6256,7 +6256,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_Lin
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+LineType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_LineType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6269,7 +6269,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_Li
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+LineType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_LineType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6283,7 +6283,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_Lin
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+LineType")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_LineType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6296,7 +6296,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_LineT
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnChangeEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_OnChangeEvent {
@@ -6304,7 +6304,7 @@ pub struct TMP_InputField_OnChangeEvent {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnChangeEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_OnChangeEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -6323,7 +6323,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_OnChang
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_OnChangeEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6332,7 +6332,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_OnChangeEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnChangeEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_OnChangeEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6369,7 +6369,7 @@ impl crate::TMPro::TMP_InputField_OnChangeEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnChangeEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnChangeEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -6378,13 +6378,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnChange
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnValidateInput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_OnValidateInput {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnValidateInput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_InputField_OnValidateInput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6404,14 +6404,14 @@ for crate::TMPro::TMP_InputField_OnValidateInput {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnValidateInput")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_OnValidateInput {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnValidateInput")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_OnValidateInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6565,7 +6565,7 @@ impl crate::TMPro::TMP_InputField_OnValidateInput {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnValidateInput")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnValidateInput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -6574,7 +6574,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnValida
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SelectionEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_SelectionEvent {
@@ -6582,7 +6582,7 @@ pub struct TMP_InputField_SelectionEvent {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SelectionEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_SelectionEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -6601,7 +6601,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_Selecti
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SelectionEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_SelectionEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6610,7 +6610,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_SelectionEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SelectionEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_SelectionEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6647,7 +6647,7 @@ impl crate::TMPro::TMP_InputField_SelectionEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SelectionEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_SelectionEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -6656,7 +6656,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_Selectio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SubmitEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_SubmitEvent {
@@ -6664,7 +6664,7 @@ pub struct TMP_InputField_SubmitEvent {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SubmitEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_SubmitEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -6683,7 +6683,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_SubmitE
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SubmitEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_SubmitEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6692,7 +6692,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_SubmitEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SubmitEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_SubmitEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6729,7 +6729,7 @@ impl crate::TMPro::TMP_InputField_SubmitEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SubmitEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_SubmitEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -6738,7 +6738,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_SubmitEv
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TextSelectionEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_TextSelectionEvent {
@@ -6748,7 +6748,7 @@ pub struct TMP_InputField_TextSelectionEvent {
         i32,
     >,
 }
-#[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TextSelectionEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_InputField_TextSelectionEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6768,7 +6768,7 @@ for crate::TMPro::TMP_InputField_TextSelectionEvent {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TextSelectionEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_TextSelectionEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_3<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6779,7 +6779,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_TextSelectionEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TextSelectionEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_TextSelectionEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6816,7 +6816,7 @@ impl crate::TMPro::TMP_InputField_TextSelectionEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TextSelectionEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::TMPro::TMP_InputField_TextSelectionEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6826,7 +6826,7 @@ for crate::TMPro::TMP_InputField_TextSelectionEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_TouchScreenKeyboardEvent {
@@ -6834,7 +6834,7 @@ pub struct TMP_InputField_TouchScreenKeyboardEvent {
         crate::UnityEngine::TouchScreenKeyboard_Status,
     >,
 }
-#[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6854,7 +6854,7 @@ for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::TouchScreenKeyboard_Status,
@@ -6863,7 +6863,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6900,7 +6900,7 @@ impl crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
+#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

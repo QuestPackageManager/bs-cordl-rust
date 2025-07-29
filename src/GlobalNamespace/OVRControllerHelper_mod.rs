@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRControllerHelper")]
+#[cfg(feature = "cordl_class_OVRControllerHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerHelper {
@@ -46,7 +46,7 @@ pub struct OVRControllerHelper {
     pub m_prevControllerConnectedCached: bool,
     pub m_prevControllerInHandState: crate::GlobalNamespace::OVRInput_ControllerInHandState,
 }
-#[cfg(feature = "OVRControllerHelper")]
+#[cfg(feature = "cordl_class_OVRControllerHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRControllerHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -65,14 +65,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRControlle
         false
     }
 }
-#[cfg(feature = "OVRControllerHelper")]
+#[cfg(feature = "cordl_class_OVRControllerHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRControllerHelper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRControllerHelper")]
+#[cfg(feature = "cordl_class_OVRControllerHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -228,7 +228,7 @@ impl crate::GlobalNamespace::OVRControllerHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRControllerHelper")]
+#[cfg(feature = "cordl_class_OVRControllerHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRControllerHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -237,7 +237,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRController
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRControllerHelper+ControllerType")]
+#[cfg(feature = "cordl_class_OVRControllerHelper+ControllerType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRControllerHelper_ControllerType {
@@ -248,7 +248,7 @@ pub enum OVRControllerHelper_ControllerType {
     TouchPlus = 5i32,
     TouchPro = 4i32,
 }
-#[cfg(feature = "OVRControllerHelper+ControllerType")]
+#[cfg(feature = "cordl_class_OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Held<'a> = Self;
@@ -278,7 +278,7 @@ for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRControllerHelper+ControllerType")]
+#[cfg(feature = "cordl_class_OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Type = Self;
@@ -289,7 +289,7 @@ for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRControllerHelper+ControllerType")]
+#[cfg(feature = "cordl_class_OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Actual = Self;
@@ -303,7 +303,7 @@ for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
         self
     }
 }
-#[cfg(feature = "OVRControllerHelper+ControllerType")]
+#[cfg(feature = "cordl_class_OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Type = Self;
@@ -318,7 +318,7 @@ for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
         }
     }
 }
-#[cfg(feature = "OVRControllerHelper+ControllerType")]
+#[cfg(feature = "cordl_class_OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Actual = Self;

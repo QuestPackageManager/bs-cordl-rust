@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlUnsignedIntAttributeDescription {
     __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<u32>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<u32>;
@@ -32,7 +38,9 @@ for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +141,9 @@ impl crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

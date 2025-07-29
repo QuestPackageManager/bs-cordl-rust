@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ContextClickEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextClickEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextClickEvent {
@@ -6,7 +6,7 @@ pub struct ContextClickEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ContextClickEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ContextClickEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextClickEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ContextClickEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::ContextClickEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ContextClickEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextClickEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ContextClickEvent {
     type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ContextClickEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::ContextClickEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ContextClickEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextClickEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ContextClickEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::ContextClickEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ContextClickEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextClickEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ContextClickEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

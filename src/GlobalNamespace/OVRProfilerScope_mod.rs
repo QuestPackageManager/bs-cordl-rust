@@ -1,8 +1,8 @@
-#[cfg(feature = "OVRProfilerScope")]
+#[cfg(feature = "cordl_class_OVRProfilerScope")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRProfilerScope {}
-#[cfg(feature = "OVRProfilerScope")]
+#[cfg(feature = "cordl_class_OVRProfilerScope")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRProfilerScope {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRProfilerS
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRProfilerScope")]
+#[cfg(feature = "cordl_class_OVRProfilerScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRProfilerScope {
     type Type = Self;
@@ -42,7 +42,7 @@ for crate::GlobalNamespace::OVRProfilerScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRProfilerScope")]
+#[cfg(feature = "cordl_class_OVRProfilerScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRProfilerScope {
     type Actual = Self;
@@ -56,7 +56,7 @@ for crate::GlobalNamespace::OVRProfilerScope {
         self
     }
 }
-#[cfg(feature = "OVRProfilerScope")]
+#[cfg(feature = "cordl_class_OVRProfilerScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRProfilerScope {
     type Type = Self;
@@ -71,7 +71,7 @@ for crate::GlobalNamespace::OVRProfilerScope {
         }
     }
 }
-#[cfg(feature = "OVRProfilerScope")]
+#[cfg(feature = "cordl_class_OVRProfilerScope")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRProfilerScope {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRProfile
         actual
     }
 }
-#[cfg(feature = "OVRProfilerScope")]
+#[cfg(feature = "cordl_class_OVRProfilerScope")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRProfilerScope {
     type Type = Self;

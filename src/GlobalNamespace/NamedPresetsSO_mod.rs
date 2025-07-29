@@ -1,10 +1,10 @@
-#[cfg(feature = "NamedPresetsSO")]
+#[cfg(feature = "cordl_class_NamedPresetsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedPresetsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
 }
-#[cfg(feature = "NamedPresetsSO")]
+#[cfg(feature = "cordl_class_NamedPresetsSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NamedPresetsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NamedPresets
         false
     }
 }
-#[cfg(feature = "NamedPresetsSO")]
+#[cfg(feature = "cordl_class_NamedPresetsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedPresetsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NamedPresetsSO")]
+#[cfg(feature = "cordl_class_NamedPresetsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NamedPresetsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::NamedPresetsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NamedPresetsSO")]
+#[cfg(feature = "cordl_class_NamedPresetsSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NamedPresetsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

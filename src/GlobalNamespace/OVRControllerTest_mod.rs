@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor+BoolGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoolMonitor_OVRControllerTest_BoolGenerator {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor+BoolGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
         false
     }
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor+BoolGenerator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor+BoolGenerator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -161,7 +161,7 @@ impl crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor+BoolGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -171,7 +171,7 @@ for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRControllerTest")]
+#[cfg(feature = "cordl_class_OVRControllerTest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerTest {
@@ -186,7 +186,7 @@ pub struct OVRControllerTest {
     >,
     pub data: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
-#[cfg(feature = "OVRControllerTest")]
+#[cfg(feature = "cordl_class_OVRControllerTest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRControllerTest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -205,14 +205,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRControlle
         false
     }
 }
-#[cfg(feature = "OVRControllerTest")]
+#[cfg(feature = "cordl_class_OVRControllerTest")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRControllerTest {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRControllerTest")]
+#[cfg(feature = "cordl_class_OVRControllerTest")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerTest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -293,7 +293,7 @@ impl crate::GlobalNamespace::OVRControllerTest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRControllerTest")]
+#[cfg(feature = "cordl_class_OVRControllerTest")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRControllerTest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -302,7 +302,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRController
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerTest_BoolMonitor {
@@ -317,7 +317,7 @@ pub struct OVRControllerTest_BoolMonitor {
     pub m_displayTimeout: f32,
     pub m_displayTimer: f32,
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -337,14 +337,14 @@ for crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
         false
     }
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -457,7 +457,7 @@ impl crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRControllerTest+BoolMonitor")]
+#[cfg(feature = "cordl_class_OVRControllerTest+BoolMonitor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

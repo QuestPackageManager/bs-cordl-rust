@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryKeyNameCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<268usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
     type Type = Self;
@@ -233,7 +233,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -241,7 +241,7 @@ pub struct QueryKeyNameCommand__nameBuffer_e__FixedBuffer {
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e__FixedBuffer {
@@ -273,7 +273,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e__FixedBuffer {
@@ -286,7 +286,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e__FixedBuffer {
@@ -302,7 +302,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e__FixedBuffer {
@@ -319,7 +319,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e__FixedBuffer {
@@ -335,7 +335,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand__nameBuffer_e__FixedBuffer {

@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKPriority")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPriority")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKPriority {
@@ -11,7 +11,7 @@ pub struct SDKPriority {
     pub groundPlane: i8,
     pub reserved2: i8,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPriority")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPriority")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKPriority {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKPriority 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPriority")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPriority")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKPriority {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKPrior
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPriority")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPriority")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKPriority {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKPrio
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPriority")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPriority")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKPriority {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKPrior
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPriority")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPriority")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKPriority {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKPriorit
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPriority")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPriority")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LIV::SDK::Unity::SDKPriority {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

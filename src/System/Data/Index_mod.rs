@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+Index")]
+#[cfg(feature = "cordl_class_System+Data+Index")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Index {
@@ -27,7 +27,7 @@ pub struct Index {
     pub _hasRemoteAggregate: bool,
     pub _objectID: i32,
 }
-#[cfg(feature = "System+Data+Index")]
+#[cfg(feature = "cordl_class_System+Data+Index")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Index {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -46,14 +46,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Index {
         false
     }
 }
-#[cfg(feature = "System+Data+Index")]
+#[cfg(feature = "cordl_class_System+Data+Index")]
 impl std::ops::Deref for crate::System::Data::Index {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+Index")]
+#[cfg(feature = "cordl_class_System+Data+Index")]
 impl std::ops::DerefMut for crate::System::Data::Index {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1884,7 +1884,7 @@ impl crate::System::Data::Index {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+Index")]
+#[cfg(feature = "cordl_class_System+Data+Index")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Index {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1893,14 +1893,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Index {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Data+Index+IndexTree")]
+#[cfg(feature = "cordl_class_System+Data+Index+IndexTree")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Index_IndexTree {
     __cordl_parent: crate::System::Data::RBTree_1<i32>,
     pub _index: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
 }
-#[cfg(feature = "System+Data+Index+IndexTree")]
+#[cfg(feature = "cordl_class_System+Data+Index+IndexTree")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Index_IndexTree {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1919,14 +1919,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Index_IndexTree
         false
     }
 }
-#[cfg(feature = "System+Data+Index+IndexTree")]
+#[cfg(feature = "cordl_class_System+Data+Index+IndexTree")]
 impl std::ops::Deref for crate::System::Data::Index_IndexTree {
     type Target = crate::System::Data::RBTree_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+Index+IndexTree")]
+#[cfg(feature = "cordl_class_System+Data+Index+IndexTree")]
 impl std::ops::DerefMut for crate::System::Data::Index_IndexTree {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2016,7 +2016,7 @@ impl crate::System::Data::Index_IndexTree {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+Index+IndexTree")]
+#[cfg(feature = "cordl_class_System+Data+Index+IndexTree")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Index_IndexTree {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

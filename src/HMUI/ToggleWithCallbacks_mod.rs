@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ToggleWithCallbacks")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ToggleWithCallbacks {
@@ -7,7 +7,7 @@ pub struct ToggleWithCallbacks {
         crate::System::Action_1<crate::HMUI::ToggleWithCallbacks_SelectionState>,
     >,
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ToggleWithCallbacks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ToggleWithCallbacks {
         false
     }
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks")]
 impl std::ops::Deref for crate::HMUI::ToggleWithCallbacks {
     type Target = crate::UnityEngine::UI::Toggle;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks")]
 impl std::ops::DerefMut for crate::HMUI::ToggleWithCallbacks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -188,7 +188,7 @@ impl crate::HMUI::ToggleWithCallbacks {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ToggleWithCallbacks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -197,7 +197,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ToggleWithCallbacks {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks+SelectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ToggleWithCallbacks_SelectionState {
@@ -208,7 +208,7 @@ pub enum ToggleWithCallbacks_SelectionState {
     Pressed = 2i32,
     Selected = 3i32,
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::ToggleWithCallbacks_SelectionState {
     type Held<'a> = Self;
@@ -238,7 +238,7 @@ for crate::HMUI::ToggleWithCallbacks_SelectionState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::ToggleWithCallbacks_SelectionState {
     type Type = Self;
@@ -249,7 +249,7 @@ for crate::HMUI::ToggleWithCallbacks_SelectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ToggleWithCallbacks_SelectionState {
     type Actual = Self;
@@ -263,7 +263,7 @@ for crate::HMUI::ToggleWithCallbacks_SelectionState {
         self
     }
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::ToggleWithCallbacks_SelectionState {
     type Type = Self;
@@ -278,7 +278,7 @@ for crate::HMUI::ToggleWithCallbacks_SelectionState {
         }
     }
 }
-#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+ToggleWithCallbacks+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::ToggleWithCallbacks_SelectionState {
     type Actual = Self;

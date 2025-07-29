@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TimerEventScheduler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerEventScheduler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerEventScheduler {
@@ -22,7 +22,7 @@ pub struct TimerEventScheduler {
     pub disableThrottling: bool,
     pub m_LastUpdatedIndex: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerEventScheduler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerEventScheduler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TimerEventScheduler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::UnityEngine::UIElements::TimerEventScheduler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerEventScheduler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerEventScheduler")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TimerEventScheduler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerEventScheduler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerEventScheduler")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TimerEventScheduler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -217,7 +217,7 @@ impl crate::UnityEngine::UIElements::TimerEventScheduler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerEventScheduler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerEventScheduler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TimerEventScheduler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleEnumType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleEnumType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleEnumType {
@@ -26,7 +26,7 @@ pub enum StyleEnumType {
     WhiteSpace = 20i32,
     Wrap = 21i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleEnumType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleEnumType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
     type Held<'a> = Self;
@@ -56,7 +56,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleEnumType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleEnumType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
     type Type = Self;
@@ -67,7 +67,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleEnumType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleEnumType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
     type Actual = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleEnumType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleEnumType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
     type Type = Self;
@@ -96,7 +96,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleEnumType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleEnumType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::StyleEnumType {
     type Actual = Self;

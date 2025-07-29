@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRSpaceUser")]
+#[cfg(feature = "cordl_class_OVRSpaceUser")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpaceUser {
     pub _handle: u64,
 }
-#[cfg(feature = "OVRSpaceUser")]
+#[cfg(feature = "cordl_class_OVRSpaceUser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSpaceUser {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSpaceUser
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpaceUser")]
+#[cfg(feature = "cordl_class_OVRSpaceUser")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRSpaceUser {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRSpace
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpaceUser")]
+#[cfg(feature = "cordl_class_OVRSpaceUser")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRSpaceUser {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRSpac
         self
     }
 }
-#[cfg(feature = "OVRSpaceUser")]
+#[cfg(feature = "cordl_class_OVRSpaceUser")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRSpaceUser {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRSpace
         }
     }
 }
-#[cfg(feature = "OVRSpaceUser")]
+#[cfg(feature = "cordl_class_OVRSpaceUser")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRSpaceUser {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRSpaceUs
         actual
     }
 }
-#[cfg(feature = "OVRSpaceUser")]
+#[cfg(feature = "cordl_class_OVRSpaceUser")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSpaceUser {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "GridView")]
+#[cfg(feature = "cordl_class_GridView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GridView {
@@ -34,7 +34,7 @@ pub struct GridView {
         crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
     >,
 }
-#[cfg(feature = "GridView")]
+#[cfg(feature = "cordl_class_GridView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GridView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GridView {
         false
     }
 }
-#[cfg(feature = "GridView")]
+#[cfg(feature = "cordl_class_GridView")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GridView")]
+#[cfg(feature = "cordl_class_GridView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GridView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -434,7 +434,7 @@ impl crate::GlobalNamespace::GridView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GridView")]
+#[cfg(feature = "cordl_class_GridView")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GridView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -443,14 +443,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GridView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+#[cfg(feature = "cordl_class_GridView+GridViewCellsEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GridView_GridViewCellsEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gridView: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView>,
 }
-#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+#[cfg(feature = "cordl_class_GridView+GridViewCellsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -470,14 +470,14 @@ for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
         false
     }
 }
-#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+#[cfg(feature = "cordl_class_GridView+GridViewCellsEnumerator")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+#[cfg(feature = "cordl_class_GridView+GridViewCellsEnumerator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -587,7 +587,7 @@ impl crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+#[cfg(feature = "cordl_class_GridView+GridViewCellsEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -639,13 +639,13 @@ for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "GridView+IDataSource")]
+#[cfg(feature = "cordl_class_GridView+IDataSource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GridView_IDataSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "GridView+IDataSource")]
+#[cfg(feature = "cordl_class_GridView+IDataSource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GridView_IDataSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -665,14 +665,14 @@ for crate::GlobalNamespace::GridView_IDataSource {
         false
     }
 }
-#[cfg(feature = "GridView+IDataSource")]
+#[cfg(feature = "cordl_class_GridView+IDataSource")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView_IDataSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GridView+IDataSource")]
+#[cfg(feature = "cordl_class_GridView+IDataSource")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GridView_IDataSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -769,7 +769,7 @@ impl crate::GlobalNamespace::GridView_IDataSource {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GridView+IDataSource")]
+#[cfg(feature = "cordl_class_GridView+IDataSource")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GridView_IDataSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

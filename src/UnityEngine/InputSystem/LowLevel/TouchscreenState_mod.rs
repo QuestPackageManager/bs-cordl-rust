@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TouchscreenState {
     padding: quest_hook::libil2cpp::ValueTypePadding<616usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     type Type = Self;
@@ -235,7 +235,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -243,7 +243,7 @@ pub struct TouchscreenState__primaryTouchData_e__FixedBuffer {
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchData_e__FixedBuffer {
@@ -275,7 +275,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDat
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchData_e__FixedBuffer {
@@ -288,7 +288,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDat
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchData_e__FixedBuffer {
@@ -304,7 +304,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDat
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchData_e__FixedBuffer {
@@ -321,7 +321,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDat
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchData_e__FixedBuffer {
@@ -337,7 +337,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDat
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchData_e__FixedBuffer {
@@ -354,7 +354,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDat
 )]
 impl crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchData_e__FixedBuffer {}
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -362,7 +362,7 @@ pub struct TouchscreenState__touchData_e__FixedBuffer {
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__FixedBuffer {
@@ -394,7 +394,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__Fi
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__FixedBuffer {
@@ -407,7 +407,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__Fi
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__FixedBuffer {
@@ -423,7 +423,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__Fi
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__FixedBuffer {
@@ -440,7 +440,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__Fi
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__FixedBuffer {
@@ -456,7 +456,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__Fi
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__FixedBuffer {

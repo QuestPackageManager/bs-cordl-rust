@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRSystemPerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSystemPerfMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRSystemPerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSystemPerfMetrics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics {
         false
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSystemPerfMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSystemPerfMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::OVRSystemPerfMetrics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSystemPerfMetrics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -85,7 +85,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSystemPerf
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
@@ -95,7 +95,7 @@ pub struct OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     >,
     pub listeningPort: i32,
 }
-#[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -115,7 +115,7 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
         false
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -123,7 +123,7 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -255,7 +255,7 @@ impl crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -265,7 +265,7 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+PerfMetrics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSystemPerfMetrics_PerfMetrics {
@@ -306,7 +306,7 @@ pub struct OVRSystemPerfMetrics_PerfMetrics {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
 }
-#[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+PerfMetrics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -326,14 +326,14 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
         false
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+PerfMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+PerfMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -423,7 +423,7 @@ impl crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
+#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+PerfMetrics")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

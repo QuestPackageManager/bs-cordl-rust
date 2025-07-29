@@ -1,10 +1,10 @@
-#[cfg(feature = "IScoreSyncStateManager")]
+#[cfg(feature = "cordl_class_IScoreSyncStateManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IScoreSyncStateManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IScoreSyncStateManager")]
+#[cfg(feature = "cordl_class_IScoreSyncStateManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IScoreSyncStateManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IScoreSyncStateManager {
         false
     }
 }
-#[cfg(feature = "IScoreSyncStateManager")]
+#[cfg(feature = "cordl_class_IScoreSyncStateManager")]
 impl std::ops::Deref for crate::GlobalNamespace::IScoreSyncStateManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IScoreSyncStateManager")]
+#[cfg(feature = "cordl_class_IScoreSyncStateManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IScoreSyncStateManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::IScoreSyncStateManager {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IScoreSyncStateManager")]
+#[cfg(feature = "cordl_class_IScoreSyncStateManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IScoreSyncStateManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

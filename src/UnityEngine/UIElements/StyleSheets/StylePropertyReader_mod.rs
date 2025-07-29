@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyReader {
@@ -34,7 +34,7 @@ pub struct StylePropertyReader {
     pub _valueCount_k__BackingField: i32,
     pub _dpiScaling_k__BackingField: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,7 +54,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1628,7 +1628,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1639,7 +1639,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1647,7 +1647,7 @@ pub struct StylePropertyReader_GetCursorIdFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorIdFunction {
@@ -1669,7 +1669,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorId
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorIdFunction {
@@ -1679,7 +1679,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorId
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorIdFunction {
@@ -1767,7 +1767,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorI
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorIdFunction {

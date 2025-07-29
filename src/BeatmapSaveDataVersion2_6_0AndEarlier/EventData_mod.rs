@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventData {
@@ -8,7 +8,7 @@ pub struct EventData {
     pub _value: i32,
     pub _floatValue: f32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
     type Target = crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -162,7 +162,7 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

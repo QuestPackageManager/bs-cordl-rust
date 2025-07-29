@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+KerningPair")]
+#[cfg(feature = "cordl_class_TMPro+KerningPair")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KerningPair {
@@ -10,7 +10,7 @@ pub struct KerningPair {
     pub xOffset: f32,
     pub m_IgnoreSpacingAdjustments: bool,
 }
-#[cfg(feature = "TMPro+KerningPair")]
+#[cfg(feature = "cordl_class_TMPro+KerningPair")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::KerningPair {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::KerningPair {
         false
     }
 }
-#[cfg(feature = "TMPro+KerningPair")]
+#[cfg(feature = "cordl_class_TMPro+KerningPair")]
 impl std::ops::Deref for crate::TMPro::KerningPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+KerningPair")]
+#[cfg(feature = "cordl_class_TMPro+KerningPair")]
 impl std::ops::DerefMut for crate::TMPro::KerningPair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -350,7 +350,7 @@ impl crate::TMPro::KerningPair {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+KerningPair")]
+#[cfg(feature = "cordl_class_TMPro+KerningPair")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::KerningPair {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

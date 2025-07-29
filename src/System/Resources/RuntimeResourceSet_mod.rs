@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Resources+RuntimeResourceSet")]
+#[cfg(feature = "cordl_class_System+Resources+RuntimeResourceSet")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeResourceSet {
@@ -20,7 +20,7 @@ pub struct RuntimeResourceSet {
     >,
     pub _haveReadFromReader: bool,
 }
-#[cfg(feature = "System+Resources+RuntimeResourceSet")]
+#[cfg(feature = "cordl_class_System+Resources+RuntimeResourceSet")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Resources::RuntimeResourceSet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::System::Resources::RuntimeResourceSet {
         false
     }
 }
-#[cfg(feature = "System+Resources+RuntimeResourceSet")]
+#[cfg(feature = "cordl_class_System+Resources+RuntimeResourceSet")]
 impl std::ops::Deref for crate::System::Resources::RuntimeResourceSet {
     type Target = crate::System::Resources::ResourceSet;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Resources+RuntimeResourceSet")]
+#[cfg(feature = "cordl_class_System+Resources+RuntimeResourceSet")]
 impl std::ops::DerefMut for crate::System::Resources::RuntimeResourceSet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -455,7 +455,7 @@ impl crate::System::Resources::RuntimeResourceSet {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Resources+RuntimeResourceSet")]
+#[cfg(feature = "cordl_class_System+Resources+RuntimeResourceSet")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Resources::RuntimeResourceSet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

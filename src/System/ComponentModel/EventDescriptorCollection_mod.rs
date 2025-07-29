@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptorCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventDescriptorCollection {
@@ -19,7 +19,7 @@ pub struct EventDescriptorCollection {
     pub _readOnly: bool,
     pub _Count_k__BackingField: i32,
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptorCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::EventDescriptorCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::System::ComponentModel::EventDescriptorCollection {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptorCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::EventDescriptorCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptorCollection")]
 impl std::ops::DerefMut for crate::System::ComponentModel::EventDescriptorCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1058,7 +1058,7 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptorCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::EventDescriptorCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1110,7 +1110,9 @@ for crate::System::ComponentModel::EventDescriptorCollection {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventDescriptorCollection_ArraySubsetEnumerator {
@@ -1119,7 +1121,9 @@ pub struct EventDescriptorCollection_ArraySubsetEnumerator {
     pub _total: i32,
     pub _current: i32,
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1139,7 +1143,9 @@ for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerat
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1147,7 +1153,9 @@ for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerat
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1259,7 +1267,9 @@ impl crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumera
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

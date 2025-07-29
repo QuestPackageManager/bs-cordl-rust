@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerHeightDetector")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerHeightDetector {
@@ -26,7 +26,7 @@ pub struct PlayerHeightDetector {
     pub _changeWeight: f32,
     pub _lastReportedHeight: f32,
 }
-#[cfg(feature = "PlayerHeightDetector")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerHeightDetector {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::GlobalNamespace::PlayerHeightDetector {
         false
     }
 }
-#[cfg(feature = "PlayerHeightDetector")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerHeightDetector {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerHeightDetector")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerHeightDetector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -252,7 +252,7 @@ impl crate::GlobalNamespace::PlayerHeightDetector {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerHeightDetector")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerHeightDetector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -261,7 +261,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerHeightD
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerHeightDetector+InitData")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerHeightDetector_InitData {
@@ -269,7 +269,7 @@ pub struct PlayerHeightDetector_InitData {
     pub headPosToPlayerHeightOffset: f32,
     pub startPlayerHeight: f32,
 }
-#[cfg(feature = "PlayerHeightDetector+InitData")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerHeightDetector_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -289,14 +289,14 @@ for crate::GlobalNamespace::PlayerHeightDetector_InitData {
         false
     }
 }
-#[cfg(feature = "PlayerHeightDetector+InitData")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerHeightDetector_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerHeightDetector+InitData")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerHeightDetector_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -346,7 +346,7 @@ impl crate::GlobalNamespace::PlayerHeightDetector_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerHeightDetector+InitData")]
+#[cfg(feature = "cordl_class_PlayerHeightDetector+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerHeightDetector_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

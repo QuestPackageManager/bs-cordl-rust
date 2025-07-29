@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Message")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Message {
@@ -7,7 +7,7 @@ pub struct Message {
     pub requestID: u64,
     pub error: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Error>,
 }
-#[cfg(feature = "Oculus+Platform+Message")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Message {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Message {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Message")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message")]
 impl std::ops::Deref for crate::Oculus::Platform::Message {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Message")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Message {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2290,7 +2290,7 @@ impl crate::Oculus::Platform::Message {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Message")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Message {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2299,13 +2299,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Message {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+Callback")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+Callback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Message_Callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Oculus+Platform+Message+Callback")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+Callback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Message_Callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -2324,14 +2324,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Message_Cal
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+Callback")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+Callback")]
 impl std::ops::Deref for crate::Oculus::Platform::Message_Callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+Callback")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+Callback")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Message_Callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2470,7 +2470,7 @@ impl crate::Oculus::Platform::Message_Callback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+Callback")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+Callback")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Message_Callback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2479,13 +2479,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Message_Call
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+ExtraMessageTypesHandler")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+ExtraMessageTypesHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Message_ExtraMessageTypesHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Oculus+Platform+Message+ExtraMessageTypesHandler")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+ExtraMessageTypesHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2505,14 +2505,14 @@ for crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+ExtraMessageTypesHandler")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+ExtraMessageTypesHandler")]
 impl std::ops::Deref for crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+ExtraMessageTypesHandler")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+ExtraMessageTypesHandler")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2662,7 +2662,7 @@ impl crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+ExtraMessageTypesHandler")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+ExtraMessageTypesHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2672,7 +2672,7 @@ for crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+MessageType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+MessageType")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Message_MessageType {
@@ -2814,7 +2814,7 @@ pub enum Message_MessageType {
     Voip_GetMicrophoneAvailability = 1951195973u32,
     Voip_SetSystemVoipSuppressed = 1161808298u32,
 }
-#[cfg(feature = "Oculus+Platform+Message+MessageType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+MessageType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Message_MessageType {
     type Held<'a> = Self;
@@ -2844,7 +2844,7 @@ for crate::Oculus::Platform::Message_MessageType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+MessageType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+MessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::Message_MessageType {
     type Type = Self;
@@ -2855,7 +2855,7 @@ for crate::Oculus::Platform::Message_MessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+MessageType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+MessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::Message_MessageType {
     type Actual = Self;
@@ -2869,7 +2869,7 @@ for crate::Oculus::Platform::Message_MessageType {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+MessageType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+MessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::Message_MessageType {
     type Type = Self;
@@ -2884,7 +2884,7 @@ for crate::Oculus::Platform::Message_MessageType {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+Message+MessageType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Message+MessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::Message_MessageType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerationSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGenerationSettings {
@@ -67,7 +67,7 @@ pub struct TextGenerationSettings {
     pub charWidthMaxAdj: f32,
     pub inputSource: crate::UnityEngine::TextCore::Text::TextInputSource,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerationSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -87,14 +87,14 @@ for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -268,7 +268,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerationSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

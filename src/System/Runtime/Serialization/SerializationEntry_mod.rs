@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SerializationEntry {
@@ -6,7 +6,7 @@ pub struct SerializationEntry {
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::SerializationEntry {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::System::Runtime::Serialization::SerializationEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Serialization::SerializationEntry {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::Runtime::Serialization::SerializationEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Serialization::SerializationEntry {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Runtime::Serialization::SerializationEntry {
         self
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Serialization::SerializationEntry {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::Runtime::Serialization::SerializationEntry {
         }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Serialization::SerializationEntry {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::System::Runtime::Serialization::SerializationEntry {
         actual
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Runtime::Serialization::SerializationEntry {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusMetrics")]
+#[cfg(feature = "cordl_class_OculusMetrics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusMetrics {
@@ -13,7 +13,7 @@ pub struct OculusMetrics {
         crate::System::Collections::Generic::List_1<f32>,
     >,
 }
-#[cfg(feature = "OculusMetrics")]
+#[cfg(feature = "cordl_class_OculusMetrics")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OculusMetrics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OculusMetric
         false
     }
 }
-#[cfg(feature = "OculusMetrics")]
+#[cfg(feature = "cordl_class_OculusMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusMetrics")]
+#[cfg(feature = "cordl_class_OculusMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -206,7 +206,7 @@ impl crate::GlobalNamespace::OculusMetrics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusMetrics")]
+#[cfg(feature = "cordl_class_OculusMetrics")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusMetrics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

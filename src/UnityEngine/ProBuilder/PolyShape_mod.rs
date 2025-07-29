@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PolyShape {
@@ -14,7 +14,7 @@ pub struct PolyShape {
     pub m_FlipNormals: bool,
     pub isOnGrid: bool,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::PolyShape {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Poly
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::PolyShape {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::PolyShape {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -361,7 +361,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::PolyShape {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -370,7 +370,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::PolyS
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PolyShape_PolyEditMode {
@@ -380,7 +380,7 @@ pub enum PolyShape_PolyEditMode {
     None = 0i32,
     Path = 1i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
     type Held<'a> = Self;
@@ -410,7 +410,7 @@ for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
     type Type = Self;
@@ -421,7 +421,7 @@ for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
     type Actual = Self;
@@ -435,7 +435,7 @@ for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
     type Type = Self;
@@ -450,7 +450,7 @@ for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode {
     type Actual = Self;

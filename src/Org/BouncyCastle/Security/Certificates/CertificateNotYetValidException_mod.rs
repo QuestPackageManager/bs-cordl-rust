@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
+    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct CertificateNotYetValidException {
     __cordl_parent: crate::Org::BouncyCastle::Security::Certificates::CertificateException,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
+    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidException {
@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidExce
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
+    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidException {
@@ -39,7 +39,7 @@ for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidExce
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
+    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidException {
@@ -158,7 +158,7 @@ impl crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidExc
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
+    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidException {

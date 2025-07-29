@@ -1,11 +1,11 @@
-#[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
+#[cfg(feature = "cordl_class_HMUI+CustomFormatRangeValuesSlider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomFormatRangeValuesSlider {
     __cordl_parent: crate::HMUI::RangeValuesTextSlider,
     pub _formatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
+#[cfg(feature = "cordl_class_HMUI+CustomFormatRangeValuesSlider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CustomFormatRangeValuesSlider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CustomFormatRangeValues
         false
     }
 }
-#[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
+#[cfg(feature = "cordl_class_HMUI+CustomFormatRangeValuesSlider")]
 impl std::ops::Deref for crate::HMUI::CustomFormatRangeValuesSlider {
     type Target = crate::HMUI::RangeValuesTextSlider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
+#[cfg(feature = "cordl_class_HMUI+CustomFormatRangeValuesSlider")]
 impl std::ops::DerefMut for crate::HMUI::CustomFormatRangeValuesSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::HMUI::CustomFormatRangeValuesSlider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
+#[cfg(feature = "cordl_class_HMUI+CustomFormatRangeValuesSlider")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::CustomFormatRangeValuesSlider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

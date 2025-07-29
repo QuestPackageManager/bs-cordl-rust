@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRIOBuffer {
@@ -10,7 +10,7 @@ pub struct IVRIOBuffer {
         crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRIOBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRIOBuffer 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRIOBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRIOBuffer
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRIOBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRIOBuffer 
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRIOBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRIOBuffer {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRIOBuffer {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -112,13 +112,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer {
     #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
     pub type _Write = crate::OVR::OpenVR::IVRIOBuffer__Write;
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Close")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__Close {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Close")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer__Close {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -137,14 +137,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer__Clo
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Close")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__Close {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Close")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRIOBuffer__Close {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -283,7 +283,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Close {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Close")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Close {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -292,13 +292,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Clos
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Open")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__Open {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Open")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer__Open {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -317,14 +317,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer__Ope
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Open")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__Open {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Open")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRIOBuffer__Open {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -505,7 +505,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Open")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Open {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -514,13 +514,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Open
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__PropertyContainer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -540,14 +540,14 @@ for crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -679,7 +679,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -689,13 +689,13 @@ for crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Read")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__Read {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Read")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer__Read {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -714,14 +714,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer__Rea
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Read")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__Read {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Read")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRIOBuffer__Read {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -882,7 +882,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Read")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Read {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -891,13 +891,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Read
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Write")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__Write {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Write")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer__Write {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -916,14 +916,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRIOBuffer__Wri
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Write")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__Write {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Write")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRIOBuffer__Write {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1069,7 +1069,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Write")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Write {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

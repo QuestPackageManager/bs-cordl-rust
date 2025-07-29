@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LRUCache_2<
@@ -38,7 +38,7 @@ pub struct LRUCache_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -77,7 +77,7 @@ for crate::BGLib::DotnetExtension::Collections::LRUCache_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -88,7 +88,7 @@ for crate::BGLib::DotnetExtension::Collections::LRUCache_2<TKey, TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -440,7 +440,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -453,7 +453,7 @@ for crate::BGLib::DotnetExtension::Collections::LRUCache_2<TKey, TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LRUCache_2_CacheElement<
@@ -466,7 +466,7 @@ pub struct LRUCache_2_CacheElement<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -505,7 +505,7 @@ for crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<TKey, TV
         false
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -516,7 +516,7 @@ for crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<TKey, TV
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -604,7 +604,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+Collections+LRUCache_2+CacheElement")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

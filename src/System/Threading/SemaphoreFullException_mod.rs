@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+SemaphoreFullException")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreFullException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SemaphoreFullException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+Threading+SemaphoreFullException")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreFullException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::SemaphoreFullException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Threading::SemaphoreFullException {
         false
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreFullException")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreFullException")]
 impl std::ops::Deref for crate::System::Threading::SemaphoreFullException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreFullException")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreFullException")]
 impl std::ops::DerefMut for crate::System::Threading::SemaphoreFullException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::System::Threading::SemaphoreFullException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreFullException")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreFullException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::SemaphoreFullException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "SelectRegionViewController")]
+#[cfg(feature = "cordl_class_SelectRegionViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectRegionViewController {
@@ -18,7 +18,7 @@ pub struct SelectRegionViewController {
         >,
     >,
 }
-#[cfg(feature = "SelectRegionViewController")]
+#[cfg(feature = "cordl_class_SelectRegionViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectRegionViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::SelectRegionViewController {
         false
     }
 }
-#[cfg(feature = "SelectRegionViewController")]
+#[cfg(feature = "cordl_class_SelectRegionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectRegionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SelectRegionViewController")]
+#[cfg(feature = "cordl_class_SelectRegionViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectRegionViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -264,7 +264,7 @@ impl crate::GlobalNamespace::SelectRegionViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SelectRegionViewController")]
+#[cfg(feature = "cordl_class_SelectRegionViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SelectRegionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -274,7 +274,7 @@ for crate::GlobalNamespace::SelectRegionViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SelectRegionViewController+Region")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+Region")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectRegionViewController_Region {
@@ -286,7 +286,7 @@ pub enum SelectRegionViewController_Region {
     Other = 5i32,
     SouthKorea = 3i32,
 }
-#[cfg(feature = "SelectRegionViewController+Region")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+Region")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectRegionViewController_Region {
     type Held<'a> = Self;
@@ -316,7 +316,7 @@ for crate::GlobalNamespace::SelectRegionViewController_Region {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SelectRegionViewController+Region")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+Region")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SelectRegionViewController_Region {
     type Type = Self;
@@ -327,7 +327,7 @@ for crate::GlobalNamespace::SelectRegionViewController_Region {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SelectRegionViewController+Region")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+Region")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SelectRegionViewController_Region {
     type Actual = Self;
@@ -341,7 +341,7 @@ for crate::GlobalNamespace::SelectRegionViewController_Region {
         self
     }
 }
-#[cfg(feature = "SelectRegionViewController+Region")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+Region")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SelectRegionViewController_Region {
     type Type = Self;
@@ -356,7 +356,7 @@ for crate::GlobalNamespace::SelectRegionViewController_Region {
         }
     }
 }
-#[cfg(feature = "SelectRegionViewController+Region")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+Region")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SelectRegionViewController_Region {
     type Actual = Self;
@@ -370,14 +370,14 @@ for crate::GlobalNamespace::SelectRegionViewController_Region {
         actual
     }
 }
-#[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+RegionToLocalizationKeyPair")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SelectRegionViewController_RegionToLocalizationKeyPair {
     pub region: crate::GlobalNamespace::SelectRegionViewController_Region,
     pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+RegionToLocalizationKeyPair")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair {
     type Held<'a> = Self;
@@ -407,7 +407,7 @@ for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+RegionToLocalizationKeyPair")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair {
     type Type = Self;
@@ -418,7 +418,7 @@ for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+RegionToLocalizationKeyPair")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair {
     type Actual = Self;
@@ -432,7 +432,7 @@ for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPa
         self
     }
 }
-#[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+RegionToLocalizationKeyPair")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair {
     type Type = Self;
@@ -447,7 +447,7 @@ for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPa
         }
     }
 }
-#[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+RegionToLocalizationKeyPair")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair {
     type Actual = Self;
@@ -461,7 +461,7 @@ for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPa
         actual
     }
 }
-#[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
+#[cfg(feature = "cordl_class_SelectRegionViewController+RegionToLocalizationKeyPair")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair {
     type Type = Self;

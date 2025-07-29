@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvid
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvid
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -377,7 +385,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvi
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

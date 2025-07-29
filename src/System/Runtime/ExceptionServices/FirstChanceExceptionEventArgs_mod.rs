@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FirstChanceExceptionEventArgs {
     __cordl_parent: crate::System::EventArgs,
 }
-#[cfg(feature = "System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs {
     type Target = crate::System::EventArgs;
@@ -32,7 +38,9 @@ for crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -41,7 +49,9 @@ for crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs {
 }
 #[cfg(feature = "System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs")]
 impl crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs {}
-#[cfg(feature = "System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ExceptionServices+FirstChanceExceptionEventArgs"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

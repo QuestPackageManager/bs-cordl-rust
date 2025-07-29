@@ -1,10 +1,10 @@
-#[cfg(feature = "System+EnvironmentHelpers")]
+#[cfg(feature = "cordl_class_System+EnvironmentHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+EnvironmentHelpers")]
+#[cfg(feature = "cordl_class_System+EnvironmentHelpers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::EnvironmentHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::EnvironmentHelpers {
         false
     }
 }
-#[cfg(feature = "System+EnvironmentHelpers")]
+#[cfg(feature = "cordl_class_System+EnvironmentHelpers")]
 impl std::ops::Deref for crate::System::EnvironmentHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+EnvironmentHelpers")]
+#[cfg(feature = "cordl_class_System+EnvironmentHelpers")]
 impl std::ops::DerefMut for crate::System::EnvironmentHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -56,7 +56,7 @@ impl crate::System::EnvironmentHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+EnvironmentHelpers")]
+#[cfg(feature = "cordl_class_System+EnvironmentHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::EnvironmentHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

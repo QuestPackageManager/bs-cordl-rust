@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AdditionalInformationSyntax {
@@ -7,7 +9,9 @@ pub struct AdditionalInformationSyntax {
         crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
@@ -35,7 +41,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -210,7 +218,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

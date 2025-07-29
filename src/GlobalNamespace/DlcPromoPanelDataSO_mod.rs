@@ -1,4 +1,4 @@
-#[cfg(feature = "DlcPromoPanelDataSO")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DlcPromoPanelDataSO {
@@ -13,7 +13,7 @@ pub struct DlcPromoPanelDataSO {
         crate::GlobalNamespace::PromoBannerInfoSO,
     >,
 }
-#[cfg(feature = "DlcPromoPanelDataSO")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DlcPromoPanelDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DlcPromoPane
         false
     }
 }
-#[cfg(feature = "DlcPromoPanelDataSO")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelDataSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DlcPromoPanelDataSO")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::GlobalNamespace::DlcPromoPanelDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DlcPromoPanelDataSO")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanelDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -232,7 +232,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanel
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO+DlcPromoPanelType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DlcPromoPanelDataSO_DlcPromoPanelType {
@@ -240,7 +240,7 @@ pub enum DlcPromoPanelDataSO_DlcPromoPanelType {
     Pack = 0i32,
     Store = 1i32,
 }
-#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Held<'a> = Self;
@@ -270,7 +270,7 @@ for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Type = Self;
@@ -281,7 +281,7 @@ for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Actual = Self;
@@ -295,7 +295,7 @@ for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
         self
     }
 }
-#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Type = Self;
@@ -310,7 +310,7 @@ for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
         }
     }
 }
-#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Actual = Self;

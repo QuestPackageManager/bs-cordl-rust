@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleCollator {
@@ -27,7 +27,7 @@ pub struct SimpleCollator {
     pub lcid: i32,
     pub frenchSort: bool,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::SimpleCollator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,14 +47,14 @@ for crate::Mono::Globalization::Unicode::SimpleCollator {
         false
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::SimpleCollator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator")]
 impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::SimpleCollator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1965,7 +1965,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Globalization::Unicode::SimpleCollator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1989,7 +1989,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Context")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SimpleCollator_Context {
@@ -2001,7 +2001,7 @@ pub struct SimpleCollator_Context {
     pub PrevCode: i32,
     pub PrevSortKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Held<'a> = Self;
@@ -2031,7 +2031,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Type = Self;
@@ -2042,7 +2042,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Actual = Self;
@@ -2056,7 +2056,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         self
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Type = Self;
@@ -2071,7 +2071,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Actual = Self;
@@ -2085,7 +2085,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         actual
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Type = Self;
@@ -2151,7 +2151,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Escape")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SimpleCollator_Escape {
@@ -2161,7 +2161,7 @@ pub struct SimpleCollator_Escape {
     pub End: i32,
     pub Optional: i32,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Held<'a> = Self;
@@ -2191,7 +2191,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Type = Self;
@@ -2202,7 +2202,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Actual = Self;
@@ -2216,7 +2216,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
         self
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Type = Self;
@@ -2231,7 +2231,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
         }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Actual = Self;
@@ -2245,7 +2245,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
         actual
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Type = Self;
@@ -2258,7 +2258,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
 impl crate::Mono::Globalization::Unicode::SimpleCollator_Escape {}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SimpleCollator_ExtenderType {
@@ -2269,7 +2269,7 @@ pub enum SimpleCollator_ExtenderType {
     Simple = 1i32,
     Voiced = 2i32,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Held<'a> = Self;
@@ -2299,7 +2299,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Type = Self;
@@ -2310,7 +2310,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Actual = Self;
@@ -2324,7 +2324,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
         self
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Type = Self;
@@ -2339,7 +2339,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
         }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Actual = Self;
@@ -2353,14 +2353,14 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
         actual
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SimpleCollator_PreviousInfo {
     pub Code: i32,
     pub SortKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Held<'a> = Self;
@@ -2390,7 +2390,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Type = Self;
@@ -2401,7 +2401,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Actual = Self;
@@ -2415,7 +2415,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
         self
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Type = Self;
@@ -2430,7 +2430,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
         }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Actual = Self;
@@ -2444,7 +2444,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
         actual
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Type = Self;

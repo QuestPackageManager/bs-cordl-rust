@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Events+PersistentCallGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCallGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PersistentCallGroup {
@@ -9,7 +9,7 @@ pub struct PersistentCallGroup {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+Events+PersistentCallGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCallGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Events::PersistentCallGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::UnityEngine::Events::PersistentCallGroup {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Events+PersistentCallGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCallGroup")]
 impl std::ops::Deref for crate::UnityEngine::Events::PersistentCallGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Events+PersistentCallGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCallGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::Events::PersistentCallGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -128,7 +128,7 @@ impl crate::UnityEngine::Events::PersistentCallGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Events+PersistentCallGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCallGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Events::PersistentCallGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

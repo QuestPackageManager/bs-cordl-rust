@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AwaitTaskContinuation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AwaitTaskContinuation {
@@ -8,7 +8,7 @@ pub struct AwaitTaskContinuation {
     >,
     pub m_action: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AwaitTaskContinuation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::AwaitTaskContinuation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Threading::Tasks::AwaitTaskContinuation {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AwaitTaskContinuation")]
 impl std::ops::Deref for crate::System::Threading::Tasks::AwaitTaskContinuation {
     type Target = crate::System::Threading::Tasks::TaskContinuation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AwaitTaskContinuation")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::AwaitTaskContinuation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -422,7 +422,7 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AwaitTaskContinuation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::AwaitTaskContinuation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

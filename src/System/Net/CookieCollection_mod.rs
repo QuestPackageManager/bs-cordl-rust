@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+CookieCollection")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookieCollection {
@@ -9,7 +9,7 @@ pub struct CookieCollection {
     pub m_has_other_versions: bool,
     pub m_IsReadOnly: bool,
 }
-#[cfg(feature = "System+Net+CookieCollection")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieCollection
         false
     }
 }
-#[cfg(feature = "System+Net+CookieCollection")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection")]
 impl std::ops::Deref for crate::System::Net::CookieCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+CookieCollection")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection")]
 impl std::ops::DerefMut for crate::System::Net::CookieCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -397,7 +397,7 @@ impl crate::System::Net::CookieCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+CookieCollection")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CookieCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -434,7 +434,7 @@ for crate::System::Net::CookieCollection {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+CookieCollectionEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookieCollection_CookieCollectionEnumerator {
@@ -444,7 +444,7 @@ pub struct CookieCollection_CookieCollectionEnumerator {
     pub m_index: i32,
     pub m_version: i32,
 }
-#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+CookieCollectionEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -464,7 +464,7 @@ for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+CookieCollectionEnumerator")]
 impl std::ops::Deref
 for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -472,7 +472,7 @@ for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+CookieCollectionEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -594,7 +594,7 @@ impl crate::System::Net::CookieCollection_CookieCollectionEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+CookieCollectionEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -618,7 +618,7 @@ for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+Stamp")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+Stamp")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CookieCollection_Stamp {
@@ -628,7 +628,7 @@ pub enum CookieCollection_Stamp {
     SetToMaxUsed = 3i32,
     SetToUnused = 2i32,
 }
-#[cfg(feature = "System+Net+CookieCollection+Stamp")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieCollection_Stamp {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -657,7 +657,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieCollection
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+Stamp")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::CookieCollection_Stamp {
     type Type = Self;
@@ -668,7 +668,7 @@ for crate::System::Net::CookieCollection_Stamp {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+Stamp")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::CookieCollection_Stamp {
     type Actual = Self;
@@ -682,7 +682,7 @@ for crate::System::Net::CookieCollection_Stamp {
         self
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+Stamp")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::CookieCollection_Stamp {
     type Type = Self;
@@ -697,7 +697,7 @@ for crate::System::Net::CookieCollection_Stamp {
         }
     }
 }
-#[cfg(feature = "System+Net+CookieCollection+Stamp")]
+#[cfg(feature = "cordl_class_System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::CookieCollection_Stamp {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreName")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+StoreName")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StoreName {
@@ -12,7 +12,7 @@ pub enum StoreName {
     TrustedPeople = 7i32,
     TrustedPublisher = 8i32,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreName")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+StoreName")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::StoreName {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::System::Security::Cryptography::X509Certificates::StoreName {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreName")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+StoreName")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::StoreName {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::System::Security::Cryptography::X509Certificates::StoreName {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreName")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+StoreName")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::StoreName {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::System::Security::Cryptography::X509Certificates::StoreName {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreName")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+StoreName")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::StoreName {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::System::Security::Cryptography::X509Certificates::StoreName {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreName")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+StoreName")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::StoreName {
     type Actual = Self;

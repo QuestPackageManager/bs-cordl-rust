@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerSessionManager")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerSessionManager {
@@ -64,7 +64,7 @@ pub struct MultiplayerSessionManager {
         crate::GlobalNamespace::ConnectedPlayerManager,
     >,
 }
-#[cfg(feature = "MultiplayerSessionManager")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerSessionManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -84,14 +84,14 @@ for crate::GlobalNamespace::MultiplayerSessionManager {
         false
     }
 }
-#[cfg(feature = "MultiplayerSessionManager")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerSessionManager {
     type Target = crate::GlobalNamespace::StandaloneMonobehavior;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerSessionManager")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerSessionManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2147,7 +2147,7 @@ impl crate::GlobalNamespace::MultiplayerSessionManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerSessionManager")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerSessionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2171,7 +2171,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+ConnectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerSessionManager_ConnectionState {
@@ -2181,7 +2181,7 @@ pub enum MultiplayerSessionManager_ConnectionState {
     Disconnected = 0i32,
     Disconnecting = 3i32,
 }
-#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Held<'a> = Self;
@@ -2211,7 +2211,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Type = Self;
@@ -2222,7 +2222,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Actual = Self;
@@ -2236,7 +2236,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
         self
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Type = Self;
@@ -2251,7 +2251,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
         }
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Actual = Self;
@@ -2265,7 +2265,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
         actual
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+MessageType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+MessageType")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerSessionManager_MessageType {
@@ -2278,7 +2278,7 @@ pub enum MultiplayerSessionManager_MessageType {
     ScoreSyncState = 3u8,
     ScoreSyncStateDelta = 5u8,
 }
-#[cfg(feature = "MultiplayerSessionManager+MessageType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Held<'a> = Self;
@@ -2308,7 +2308,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+MessageType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Type = Self;
@@ -2319,7 +2319,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+MessageType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Actual = Self;
@@ -2333,7 +2333,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
         self
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+MessageType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Type = Self;
@@ -2348,7 +2348,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
         }
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+MessageType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Actual = Self;
@@ -2362,7 +2362,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
         actual
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+SessionType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+SessionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerSessionManager_SessionType {
@@ -2371,7 +2371,7 @@ pub enum MultiplayerSessionManager_SessionType {
     Player = 0i32,
     Spectator = 1i32,
 }
-#[cfg(feature = "MultiplayerSessionManager+SessionType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Held<'a> = Self;
@@ -2401,7 +2401,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+SessionType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Type = Self;
@@ -2412,7 +2412,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+SessionType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Actual = Self;
@@ -2426,7 +2426,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
         self
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+SessionType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Type = Self;
@@ -2441,7 +2441,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
         }
     }
 }
-#[cfg(feature = "MultiplayerSessionManager+SessionType")]
+#[cfg(feature = "cordl_class_MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Actual = Self;

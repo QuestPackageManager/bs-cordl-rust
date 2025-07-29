@@ -1,4 +1,4 @@
-#[cfg(feature = "PositionRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_PositionRectTransformViewStateTransition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PositionRectTransformViewStateTransition {
@@ -10,7 +10,7 @@ pub struct PositionRectTransformViewStateTransition {
     >,
     pub _vectorTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
 }
-#[cfg(feature = "PositionRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_PositionRectTransformViewStateTransition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
         false
     }
 }
-#[cfg(feature = "PositionRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_PositionRectTransformViewStateTransition")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PositionRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_PositionRectTransformViewStateTransition")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -547,7 +547,7 @@ impl crate::GlobalNamespace::PositionRectTransformViewStateTransition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PositionRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_PositionRectTransformViewStateTransition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

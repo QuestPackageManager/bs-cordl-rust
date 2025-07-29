@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Console")]
+#[cfg(feature = "cordl_class_System+Console")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Console {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Console")]
+#[cfg(feature = "cordl_class_System+Console")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Console {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Console {
         false
     }
 }
-#[cfg(feature = "System+Console")]
+#[cfg(feature = "cordl_class_System+Console")]
 impl std::ops::Deref for crate::System::Console {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Console")]
+#[cfg(feature = "cordl_class_System+Console")]
 impl std::ops::DerefMut for crate::System::Console {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -428,7 +428,7 @@ impl crate::System::Console {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Console")]
+#[cfg(feature = "cordl_class_System+Console")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Console {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -437,13 +437,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Console {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Console+WindowsConsole")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Console_WindowsConsole {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Console+WindowsConsole")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Console_WindowsConsole {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -462,14 +462,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Console_WindowsConsol
         false
     }
 }
-#[cfg(feature = "System+Console+WindowsConsole")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole")]
 impl std::ops::Deref for crate::System::Console_WindowsConsole {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Console+WindowsConsole")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole")]
 impl std::ops::DerefMut for crate::System::Console_WindowsConsole {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -573,7 +573,7 @@ impl crate::System::Console_WindowsConsole {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Console+WindowsConsole")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Console_WindowsConsole {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -582,13 +582,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Console_WindowsConsole
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole+WindowsCancelHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WindowsConsole_Console_WindowsCancelHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole+WindowsCancelHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::WindowsConsole_Console_WindowsCancelHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -608,14 +608,14 @@ for crate::System::WindowsConsole_Console_WindowsCancelHandler {
         false
     }
 }
-#[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole+WindowsCancelHandler")]
 impl std::ops::Deref for crate::System::WindowsConsole_Console_WindowsCancelHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole+WindowsCancelHandler")]
 impl std::ops::DerefMut for crate::System::WindowsConsole_Console_WindowsCancelHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -685,7 +685,7 @@ impl crate::System::WindowsConsole_Console_WindowsCancelHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
+#[cfg(feature = "cordl_class_System+Console+WindowsConsole+WindowsCancelHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::WindowsConsole_Console_WindowsCancelHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

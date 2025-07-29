@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TerrainUtils+TerrainMapStatusCode")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainUtils+TerrainMapStatusCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TerrainMapStatusCode {
@@ -8,7 +8,7 @@ pub enum TerrainMapStatusCode {
     Overlapping = 1i32,
     SizeMismatch = 4i32,
 }
-#[cfg(feature = "UnityEngine+TerrainUtils+TerrainMapStatusCode")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainUtils+TerrainMapStatusCode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TerrainUtils+TerrainMapStatusCode")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainUtils+TerrainMapStatusCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TerrainUtils+TerrainMapStatusCode")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainUtils+TerrainMapStatusCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TerrainUtils+TerrainMapStatusCode")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainUtils+TerrainMapStatusCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TerrainUtils+TerrainMapStatusCode")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainUtils+TerrainMapStatusCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TerrainUtils::TerrainMapStatusCode {
     type Actual = Self;

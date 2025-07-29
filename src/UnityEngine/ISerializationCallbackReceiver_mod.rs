@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ISerializationCallbackReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+ISerializationCallbackReceiver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISerializationCallbackReceiver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ISerializationCallbackReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+ISerializationCallbackReceiver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ISerializationCallbackReceiver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ISerializationCallbackReceiver {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ISerializationCallbackReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+ISerializationCallbackReceiver")]
 impl std::ops::Deref for crate::UnityEngine::ISerializationCallbackReceiver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ISerializationCallbackReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+ISerializationCallbackReceiver")]
 impl std::ops::DerefMut for crate::UnityEngine::ISerializationCallbackReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+ISerializationCallbackReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+ISerializationCallbackReceiver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ISerializationCallbackReceiver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

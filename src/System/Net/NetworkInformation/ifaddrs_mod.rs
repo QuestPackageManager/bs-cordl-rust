@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+NetworkInformation+ifaddrs")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifaddrs")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ifaddrs {
@@ -10,7 +10,7 @@ pub struct ifaddrs {
     pub ifa_ifu: crate::System::Net::NetworkInformation::ifa_ifu,
     pub ifa_data: crate::System::IntPtr,
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifaddrs")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifaddrs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::ifaddrs {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::System::Net::NetworkInformation::ifaddrs {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifaddrs")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifaddrs")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::ifaddrs {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::System::Net::NetworkInformation::ifaddrs {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifaddrs")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifaddrs")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::ifaddrs {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::System::Net::NetworkInformation::ifaddrs {
         self
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifaddrs")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifaddrs")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::ifaddrs {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::System::Net::NetworkInformation::ifaddrs {
         }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifaddrs")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifaddrs")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::ifaddrs {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::System::Net::NetworkInformation::ifaddrs {
         actual
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifaddrs")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifaddrs")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::NetworkInformation::ifaddrs {
     type Type = Self;

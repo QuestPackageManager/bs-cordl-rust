@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNamespaceManager {
@@ -21,7 +21,7 @@ pub struct XmlNamespaceManager {
     pub xml: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub xmlNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNamespaceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -40,14 +40,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNamespaceMana
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::XmlNamespaceManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager")]
 impl std::ops::DerefMut for crate::System::Xml::XmlNamespaceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -437,7 +437,7 @@ impl crate::System::Xml::XmlNamespaceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNamespaceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -474,7 +474,7 @@ for crate::System::Xml::XmlNamespaceManager {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlNamespaceManager_NamespaceDeclaration {
@@ -483,7 +483,7 @@ pub struct XmlNamespaceManager_NamespaceDeclaration {
     pub scopeId: i32,
     pub previousNsIndex: i32,
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
     type Held<'a> = Self;
@@ -513,7 +513,7 @@ for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
     type Type = Self;
@@ -524,7 +524,7 @@ for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
     type Actual = Self;
@@ -538,7 +538,7 @@ for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
     type Type = Self;
@@ -553,7 +553,7 @@ for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
     type Actual = Self;
@@ -567,7 +567,7 @@ for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
     type Type = Self;

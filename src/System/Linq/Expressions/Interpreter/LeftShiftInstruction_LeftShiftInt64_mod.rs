@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LeftShiftInstruction_LeftShiftInt64 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt64 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt64 {
     type Target = crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftI
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt64 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt64 {

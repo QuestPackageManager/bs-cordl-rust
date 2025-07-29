@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ClassInterfaceType {
@@ -7,7 +7,7 @@ pub enum ClassInterfaceType {
     AutoDual = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::ClassInterfaceType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Runtime::InteropServices::ClassInterfaceType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::InteropServices::ClassInterfaceType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Runtime::InteropServices::ClassInterfaceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::InteropServices::ClassInterfaceType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Runtime::InteropServices::ClassInterfaceType {
         self
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::InteropServices::ClassInterfaceType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Runtime::InteropServices::ClassInterfaceType {
         }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::InteropServices::ClassInterfaceType {
     type Actual = Self;

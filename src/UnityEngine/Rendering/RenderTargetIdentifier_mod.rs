@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetIdentifier")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderTargetIdentifier {
@@ -10,7 +10,7 @@ pub struct RenderTargetIdentifier {
     pub m_CubeFace: crate::UnityEngine::CubemapFace,
     pub m_DepthSlice: i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetIdentifier")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::Rendering::RenderTargetIdentifier {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetIdentifier")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::Rendering::RenderTargetIdentifier {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetIdentifier")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::Rendering::RenderTargetIdentifier {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetIdentifier")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::Rendering::RenderTargetIdentifier {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetIdentifier")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::Rendering::RenderTargetIdentifier {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTargetIdentifier")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     type Type = Self;

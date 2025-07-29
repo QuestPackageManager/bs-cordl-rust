@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+HumanLimit")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanLimit")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HumanLimit {
@@ -8,7 +8,7 @@ pub struct HumanLimit {
     pub m_AxisLength: f32,
     pub m_UseDefaultValues: i32,
 }
-#[cfg(feature = "UnityEngine+HumanLimit")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanLimit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HumanLimit {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HumanLimit {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+HumanLimit")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanLimit")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::HumanLimit {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::HumanLimit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+HumanLimit")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanLimit")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::HumanLimit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::HumanLimit 
         self
     }
 }
-#[cfg(feature = "UnityEngine+HumanLimit")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanLimit")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::HumanLimit {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::HumanLimit {
         }
     }
 }
-#[cfg(feature = "UnityEngine+HumanLimit")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanLimit")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::HumanLimit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::HumanLimit {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+HumanLimit")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanLimit")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::HumanLimit {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

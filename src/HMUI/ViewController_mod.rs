@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ViewController")]
+#[cfg(feature = "cordl_class_HMUI+ViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewController {
@@ -21,7 +21,7 @@ pub struct ViewController {
         crate::UnityEngine::EventSystems::BaseRaycaster,
     >,
 }
-#[cfg(feature = "HMUI+ViewController")]
+#[cfg(feature = "cordl_class_HMUI+ViewController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -40,14 +40,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewController {
         false
     }
 }
-#[cfg(feature = "HMUI+ViewController")]
+#[cfg(feature = "cordl_class_HMUI+ViewController")]
 impl std::ops::Deref for crate::HMUI::ViewController {
     type Target = crate::HMUI::ViewControllerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ViewController")]
+#[cfg(feature = "cordl_class_HMUI+ViewController")]
 impl std::ops::DerefMut for crate::HMUI::ViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1005,7 +1005,7 @@ impl crate::HMUI::ViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ViewController")]
+#[cfg(feature = "cordl_class_HMUI+ViewController")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1014,7 +1014,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ViewController_AnimationDirection {
@@ -1022,7 +1022,7 @@ pub enum ViewController_AnimationDirection {
     Horizontal = 0i32,
     Vertical = 1i32,
 }
-#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::ViewController_AnimationDirection {
     type Held<'a> = Self;
@@ -1052,7 +1052,7 @@ for crate::HMUI::ViewController_AnimationDirection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::ViewController_AnimationDirection {
     type Type = Self;
@@ -1063,7 +1063,7 @@ for crate::HMUI::ViewController_AnimationDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ViewController_AnimationDirection {
     type Actual = Self;
@@ -1077,7 +1077,7 @@ for crate::HMUI::ViewController_AnimationDirection {
         self
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::ViewController_AnimationDirection {
     type Type = Self;
@@ -1092,7 +1092,7 @@ for crate::HMUI::ViewController_AnimationDirection {
         }
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::ViewController_AnimationDirection {
     type Actual = Self;
@@ -1106,7 +1106,7 @@ for crate::HMUI::ViewController_AnimationDirection {
         actual
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ViewController_AnimationType {
@@ -1115,7 +1115,7 @@ pub enum ViewController_AnimationType {
     None = 0i32,
     Out = 2i32,
 }
-#[cfg(feature = "HMUI+ViewController+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewController_AnimationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1144,7 +1144,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewController_Animatio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::ViewController_AnimationType {
     type Type = Self;
@@ -1155,7 +1155,7 @@ for crate::HMUI::ViewController_AnimationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ViewController_AnimationType {
     type Actual = Self;
@@ -1169,7 +1169,7 @@ for crate::HMUI::ViewController_AnimationType {
         self
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::ViewController_AnimationType {
     type Type = Self;
@@ -1184,7 +1184,7 @@ for crate::HMUI::ViewController_AnimationType {
         }
     }
 }
-#[cfg(feature = "HMUI+ViewController+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ViewController_AnimationType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

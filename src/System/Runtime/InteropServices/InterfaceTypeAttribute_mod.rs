@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+InteropServices+InterfaceTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+InterfaceTypeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InterfaceTypeAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _val: crate::System::Runtime::InteropServices::ComInterfaceType,
 }
-#[cfg(feature = "System+Runtime+InteropServices+InterfaceTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+InterfaceTypeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::InterfaceTypeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Runtime::InteropServices::InterfaceTypeAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+InterfaceTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+InterfaceTypeAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::InterfaceTypeAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::System::Runtime::InteropServices::InterfaceTypeAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+InterfaceTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+InterfaceTypeAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::InterfaceTypeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -78,7 +78,7 @@ impl crate::System::Runtime::InteropServices::InterfaceTypeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+InterfaceTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+InterfaceTypeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::InterfaceTypeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

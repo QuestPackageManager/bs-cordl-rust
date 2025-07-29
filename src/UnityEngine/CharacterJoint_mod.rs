@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CharacterJoint")]
+#[cfg(feature = "cordl_class_UnityEngine+CharacterJoint")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CharacterJoint {
@@ -7,7 +7,7 @@ pub struct CharacterJoint {
     pub targetAngularVelocity: crate::UnityEngine::Vector3,
     pub rotationDrive: crate::UnityEngine::JointDrive,
 }
-#[cfg(feature = "UnityEngine+CharacterJoint")]
+#[cfg(feature = "cordl_class_UnityEngine+CharacterJoint")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CharacterJoint {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CharacterJoint {
         false
     }
 }
-#[cfg(feature = "UnityEngine+CharacterJoint")]
+#[cfg(feature = "cordl_class_UnityEngine+CharacterJoint")]
 impl std::ops::Deref for crate::UnityEngine::CharacterJoint {
     type Target = crate::UnityEngine::Joint;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+CharacterJoint")]
+#[cfg(feature = "cordl_class_UnityEngine+CharacterJoint")]
 impl std::ops::DerefMut for crate::UnityEngine::CharacterJoint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -944,7 +944,7 @@ impl crate::UnityEngine::CharacterJoint {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+CharacterJoint")]
+#[cfg(feature = "cordl_class_UnityEngine+CharacterJoint")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CharacterJoint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

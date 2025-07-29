@@ -1,11 +1,11 @@
-#[cfg(feature = "Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EntitlementCheck {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub exitAppOnFailure: bool,
 }
-#[cfg(feature = "Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -33,7 +33,7 @@ for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -244,7 +244,7 @@ impl crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

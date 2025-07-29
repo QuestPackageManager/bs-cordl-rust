@@ -1,4 +1,4 @@
-#[cfg(feature = "ShowTextOnGameEventController")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShowTextOnGameEventController {
@@ -14,7 +14,7 @@ pub struct ShowTextOnGameEventController {
         >,
     >,
 }
-#[cfg(feature = "ShowTextOnGameEventController")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ShowTextOnGameEventController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::ShowTextOnGameEventController {
         false
     }
 }
-#[cfg(feature = "ShowTextOnGameEventController")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController")]
 impl std::ops::Deref for crate::GlobalNamespace::ShowTextOnGameEventController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ShowTextOnGameEventController")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ShowTextOnGameEventController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -122,7 +122,7 @@ impl crate::GlobalNamespace::ShowTextOnGameEventController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ShowTextOnGameEventController")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ShowTextOnGameEventController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -132,7 +132,7 @@ for crate::GlobalNamespace::ShowTextOnGameEventController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController+EventTextBinding")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShowTextOnGameEventController_EventTextBinding {
@@ -144,7 +144,7 @@ pub struct ShowTextOnGameEventController_EventTextBinding {
         crate::GlobalNamespace::TextFadeTransitions,
     >,
 }
-#[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController+EventTextBinding")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -164,7 +164,7 @@ for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
         false
     }
 }
-#[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController+EventTextBinding")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -172,7 +172,7 @@ for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController+EventTextBinding")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -286,7 +286,7 @@ impl crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
+#[cfg(feature = "cordl_class_ShowTextOnGameEventController+EventTextBinding")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

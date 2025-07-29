@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseVisualTreeHierarchyTrackerUpdater {
@@ -11,7 +13,9 @@ pub struct BaseVisualTreeHierarchyTrackerUpdater {
         crate::UnityEngine::UIElements::VisualElement,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +35,9 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
     type Target = crate::UnityEngine::UIElements::BaseVisualTreeUpdater;
@@ -39,7 +45,9 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -250,7 +258,9 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -260,7 +270,9 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BaseVisualTreeHierarchyTrackerUpdater_State {
@@ -269,7 +281,9 @@ pub enum BaseVisualTreeHierarchyTrackerUpdater_State {
     TrackingRemove = 2i32,
     Waiting = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State {
     type Held<'a> = Self;
@@ -299,7 +313,9 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State {
     type Type = Self;
@@ -310,7 +326,9 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State {
     type Actual = Self;
@@ -324,7 +342,9 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State 
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State {
     type Type = Self;
@@ -339,7 +359,9 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State 
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+GlyphPairKey")]
+#[cfg(feature = "cordl_class_TMPro+GlyphPairKey")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphPairKey {
@@ -6,7 +6,7 @@ pub struct GlyphPairKey {
     pub secondGlyphIndex: u32,
     pub key: u32,
 }
-#[cfg(feature = "TMPro+GlyphPairKey")]
+#[cfg(feature = "cordl_class_TMPro+GlyphPairKey")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::GlyphPairKey {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::GlyphPairKey {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+GlyphPairKey")]
+#[cfg(feature = "cordl_class_TMPro+GlyphPairKey")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::GlyphPairKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::GlyphPairKey {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+GlyphPairKey")]
+#[cfg(feature = "cordl_class_TMPro+GlyphPairKey")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::GlyphPairKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::GlyphPairKey {
         self
     }
 }
-#[cfg(feature = "TMPro+GlyphPairKey")]
+#[cfg(feature = "cordl_class_TMPro+GlyphPairKey")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::GlyphPairKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::GlyphPairKey {
         }
     }
 }
-#[cfg(feature = "TMPro+GlyphPairKey")]
+#[cfg(feature = "cordl_class_TMPro+GlyphPairKey")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::GlyphPairKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::GlyphPairKey {
         actual
     }
 }
-#[cfg(feature = "TMPro+GlyphPairKey")]
+#[cfg(feature = "cordl_class_TMPro+GlyphPairKey")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::GlyphPairKey {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

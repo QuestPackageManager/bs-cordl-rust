@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+RootResolveMethods")]
+#[cfg(feature = "cordl_class_Zenject+RootResolveMethods")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RootResolveMethods {
@@ -6,7 +6,7 @@ pub enum RootResolveMethods {
     All = 1i32,
     NonLazyOnly = 0i32,
 }
-#[cfg(feature = "Zenject+RootResolveMethods")]
+#[cfg(feature = "cordl_class_Zenject+RootResolveMethods")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::RootResolveMethods {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::RootResolveMethods {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+RootResolveMethods")]
+#[cfg(feature = "cordl_class_Zenject+RootResolveMethods")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::RootResolveMethods {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::RootResolveMetho
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+RootResolveMethods")]
+#[cfg(feature = "cordl_class_Zenject+RootResolveMethods")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::RootResolveMethods {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::RootResolveMeth
         self
     }
 }
-#[cfg(feature = "Zenject+RootResolveMethods")]
+#[cfg(feature = "cordl_class_Zenject+RootResolveMethods")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::RootResolveMethods {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::RootResolveMetho
         }
     }
 }
-#[cfg(feature = "Zenject+RootResolveMethods")]
+#[cfg(feature = "cordl_class_Zenject+RootResolveMethods")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::RootResolveMethods {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

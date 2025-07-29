@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+ThreadLocal_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadLocal_1<T: quest_hook::libil2cpp::Type> {
@@ -12,7 +12,7 @@ pub struct ThreadLocal_1<T: quest_hook::libil2cpp::Type> {
     pub m_trackAllValues: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadLocal_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,7 +48,7 @@ for crate::System::Threading::ThreadLocal_1<T> {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadLocal_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -56,7 +56,7 @@ for crate::System::Threading::ThreadLocal_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadLocal_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -504,7 +504,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadLocal_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -528,7 +528,7 @@ for crate::System::Threading::ThreadLocal_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+FinalizationHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadLocal_1_FinalizationHelper<T: quest_hook::libil2cpp::Type> {
@@ -541,7 +541,7 @@ pub struct ThreadLocal_1_FinalizationHelper<T: quest_hook::libil2cpp::Type> {
     pub m_trackAllValues: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+FinalizationHelper")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -577,7 +577,7 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+FinalizationHelper")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -585,7 +585,7 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+FinalizationHelper")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -684,7 +684,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+FinalizationHelper")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -694,7 +694,7 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadLocal_1_IdManager<T: quest_hook::libil2cpp::Type> {
@@ -705,7 +705,7 @@ pub struct ThreadLocal_1_IdManager<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadLocal_1_IdManager<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -741,7 +741,7 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadLocal_1_IdManager<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -749,7 +749,7 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadLocal_1_IdManager<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -846,7 +846,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadLocal_1_IdManager<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -856,7 +856,7 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlot")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadLocal_1_LinkedSlot<T: quest_hook::libil2cpp::Type> {
@@ -875,7 +875,7 @@ pub struct ThreadLocal_1_LinkedSlot<T: quest_hook::libil2cpp::Type> {
     pub Value: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlot")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -911,7 +911,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlot")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -919,7 +919,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlot")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -988,7 +988,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlot")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -998,7 +998,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ThreadLocal_1_LinkedSlotVolatile<T: quest_hook::libil2cpp::Type> {
@@ -1007,7 +1007,7 @@ pub struct ThreadLocal_1_LinkedSlotVolatile<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Held<'a> = Self;
@@ -1053,7 +1053,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Type = Self;
@@ -1064,7 +1064,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Actual = Self;
@@ -1078,7 +1078,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
         self
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Type = Self;
@@ -1093,7 +1093,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
         }
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Actual = Self;
@@ -1107,7 +1107,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
         actual
     }
 }
-#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Type = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseCaptureController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MouseCaptureController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::MouseCaptureController {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseCaptureController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureController")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseCaptureController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::UnityEngine::UIElements::MouseCaptureController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MouseCaptureController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

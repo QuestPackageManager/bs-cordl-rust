@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Touch")]
+#[cfg(feature = "cordl_class_UnityEngine+Touch")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Touch {
@@ -17,7 +17,7 @@ pub struct Touch {
     pub m_AltitudeAngle: f32,
     pub m_AzimuthAngle: f32,
 }
-#[cfg(feature = "UnityEngine+Touch")]
+#[cfg(feature = "cordl_class_UnityEngine+Touch")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Touch {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Touch {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Touch")]
+#[cfg(feature = "cordl_class_UnityEngine+Touch")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Touch {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Touch {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Touch")]
+#[cfg(feature = "cordl_class_UnityEngine+Touch")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Touch {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,7 +69,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Touch {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Touch")]
+#[cfg(feature = "cordl_class_UnityEngine+Touch")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Touch {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Touch {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Touch")]
+#[cfg(feature = "cordl_class_UnityEngine+Touch")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Touch {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -96,7 +96,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Touch {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Touch")]
+#[cfg(feature = "cordl_class_UnityEngine+Touch")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Touch {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

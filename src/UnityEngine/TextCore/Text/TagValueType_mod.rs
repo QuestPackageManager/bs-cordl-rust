@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TagValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TagValueType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TagValueType {
@@ -8,7 +8,7 @@ pub enum TagValueType {
     NumericalValue = 1i32,
     StringValue = 2i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TagValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TagValueType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TagValueType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::TextCore::Text::TagValueType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TagValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TagValueType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::TagValueType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::TextCore::Text::TagValueType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TagValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TagValueType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::TagValueType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::TextCore::Text::TagValueType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TagValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TagValueType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::TagValueType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::TextCore::Text::TagValueType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TagValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TagValueType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::TagValueType {
     type Actual = Self;

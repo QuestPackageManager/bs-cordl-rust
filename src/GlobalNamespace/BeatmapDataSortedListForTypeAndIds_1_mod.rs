@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
+#[cfg(feature = "cordl_class_BeatmapDataSortedListForTypeAndIds_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataSortedListForTypeAndIds_1<TBase: quest_hook::libil2cpp::Type> {
@@ -30,7 +30,7 @@ pub struct BeatmapDataSortedListForTypeAndIds_1<TBase: quest_hook::libil2cpp::Ty
     >,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
 }
-#[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
+#[cfg(feature = "cordl_class_BeatmapDataSortedListForTypeAndIds_1")]
 unsafe impl<TBase: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -66,7 +66,7 @@ for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
         false
     }
 }
-#[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
+#[cfg(feature = "cordl_class_BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
+#[cfg(feature = "cordl_class_BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -365,7 +365,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
+#[cfg(feature = "cordl_class_BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

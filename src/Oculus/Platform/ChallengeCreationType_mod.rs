@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+ChallengeCreationType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeCreationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChallengeCreationType {
@@ -7,7 +7,7 @@ pub enum ChallengeCreationType {
     Unknown = 0i32,
     UserCreated = 1i32,
 }
-#[cfg(feature = "Oculus+Platform+ChallengeCreationType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeCreationType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::ChallengeCreationType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Oculus::Platform::ChallengeCreationType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+ChallengeCreationType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeCreationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::ChallengeCreationType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Oculus::Platform::ChallengeCreationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+ChallengeCreationType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeCreationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::ChallengeCreationType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Oculus::Platform::ChallengeCreationType {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+ChallengeCreationType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeCreationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::ChallengeCreationType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Oculus::Platform::ChallengeCreationType {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+ChallengeCreationType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeCreationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::ChallengeCreationType {
     type Actual = Self;

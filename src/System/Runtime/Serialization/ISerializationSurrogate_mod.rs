@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Serialization+ISerializationSurrogate")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ISerializationSurrogate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISerializationSurrogate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Serialization+ISerializationSurrogate")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ISerializationSurrogate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::ISerializationSurrogate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::Serialization::ISerializationSurrogate {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+ISerializationSurrogate")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ISerializationSurrogate")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::ISerializationSurrogate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+ISerializationSurrogate")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ISerializationSurrogate")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::ISerializationSurrogate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -132,7 +132,7 @@ impl crate::System::Runtime::Serialization::ISerializationSurrogate {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+ISerializationSurrogate")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ISerializationSurrogate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::ISerializationSurrogate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

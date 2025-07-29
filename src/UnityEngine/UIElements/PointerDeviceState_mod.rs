@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerDeviceState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PointerDeviceState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::PointerDeviceState {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerDeviceState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerDeviceState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -405,7 +405,7 @@ impl crate::UnityEngine::UIElements::PointerDeviceState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PointerDeviceState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -415,7 +415,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PointerDeviceState_LocationFlag {
@@ -423,7 +423,7 @@ pub enum PointerDeviceState_LocationFlag {
     None = 0i32,
     OutsidePanel = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Held<'a> = Self;
@@ -453,7 +453,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Type = Self;
@@ -464,7 +464,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Actual = Self;
@@ -478,7 +478,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Type = Self;
@@ -493,7 +493,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Actual = Self;
@@ -507,7 +507,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PointerDeviceState_PointerLocation {
@@ -517,7 +517,7 @@ pub struct PointerDeviceState_PointerLocation {
     >,
     pub _Flags_k__BackingField: crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag,
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Held<'a> = Self;
@@ -547,7 +547,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Type = Self;
@@ -558,7 +558,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Actual = Self;
@@ -572,7 +572,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Type = Self;
@@ -587,7 +587,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Actual = Self;
@@ -601,7 +601,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Type = Self;

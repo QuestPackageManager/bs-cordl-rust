@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Diagnostics+StackTrace")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StackTrace {
@@ -15,7 +15,7 @@ pub struct StackTrace {
     >,
     pub debug_info: bool,
 }
-#[cfg(feature = "System+Diagnostics+StackTrace")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Diagnostics::StackTrace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Diagnostics::StackTra
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+StackTrace")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace")]
 impl std::ops::Deref for crate::System::Diagnostics::StackTrace {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+StackTrace")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace")]
 impl std::ops::DerefMut for crate::System::Diagnostics::StackTrace {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -568,7 +568,7 @@ impl crate::System::Diagnostics::StackTrace {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+StackTrace")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::StackTrace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -577,7 +577,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::StackTrac
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace+TraceFormat")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StackTrace_TraceFormat {
@@ -586,7 +586,7 @@ pub enum StackTrace_TraceFormat {
     Normal = 0i32,
     TrailingNewLine = 1i32,
 }
-#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Held<'a> = Self;
@@ -616,7 +616,7 @@ for crate::System::Diagnostics::StackTrace_TraceFormat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Type = Self;
@@ -627,7 +627,7 @@ for crate::System::Diagnostics::StackTrace_TraceFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Actual = Self;
@@ -641,7 +641,7 @@ for crate::System::Diagnostics::StackTrace_TraceFormat {
         self
     }
 }
-#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Type = Self;
@@ -656,7 +656,7 @@ for crate::System::Diagnostics::StackTrace_TraceFormat {
         }
     }
 }
-#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
+#[cfg(feature = "cordl_class_System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Actual = Self;

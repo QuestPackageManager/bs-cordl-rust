@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+IAuthenticationModule")]
+#[cfg(feature = "cordl_class_System+Net+IAuthenticationModule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IAuthenticationModule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+IAuthenticationModule")]
+#[cfg(feature = "cordl_class_System+Net+IAuthenticationModule")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::IAuthenticationModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::IAuthenticationM
         false
     }
 }
-#[cfg(feature = "System+Net+IAuthenticationModule")]
+#[cfg(feature = "cordl_class_System+Net+IAuthenticationModule")]
 impl std::ops::Deref for crate::System::Net::IAuthenticationModule {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+IAuthenticationModule")]
+#[cfg(feature = "cordl_class_System+Net+IAuthenticationModule")]
 impl std::ops::DerefMut for crate::System::Net::IAuthenticationModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -139,7 +139,7 @@ impl crate::System::Net::IAuthenticationModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+IAuthenticationModule")]
+#[cfg(feature = "cordl_class_System+Net+IAuthenticationModule")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::IAuthenticationModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

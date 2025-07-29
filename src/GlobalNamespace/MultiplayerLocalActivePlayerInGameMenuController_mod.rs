@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerInGameMenuController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerInGameMenuController {
@@ -25,7 +25,7 @@ pub struct MultiplayerLocalActivePlayerInGameMenuController {
     pub _gameMenuIsShown: bool,
     pub _menuChangedStateTime: f32,
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerInGameMenuController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerInGameMenuController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -53,7 +53,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerInGameMenuController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -500,7 +500,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerInGameMenuController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

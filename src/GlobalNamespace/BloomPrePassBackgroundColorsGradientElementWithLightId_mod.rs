@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientElementWithLightId {
@@ -14,7 +14,7 @@ pub struct BloomPrePassBackgroundColorsGradientElementWithLightId {
         >,
     >,
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLight
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
@@ -42,7 +42,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLight
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLigh
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -118,7 +118,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLight
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId+Elements")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId+Elements"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
@@ -127,7 +129,9 @@ pub struct BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
     pub intensity: f32,
     pub minIntensity: f32,
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId+Elements")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId+Elements"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -147,7 +151,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLight
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId+Elements")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId+Elements"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -155,7 +161,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLight
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId+Elements")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId+Elements"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -193,7 +201,9 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLigh
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId+Elements")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId+Elements"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

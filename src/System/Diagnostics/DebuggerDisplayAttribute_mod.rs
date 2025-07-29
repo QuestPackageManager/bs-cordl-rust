@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerDisplayAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebuggerDisplayAttribute {
@@ -7,7 +7,7 @@ pub struct DebuggerDisplayAttribute {
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerDisplayAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::DebuggerDisplayAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Diagnostics::DebuggerDisplayAttribute {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerDisplayAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::DebuggerDisplayAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerDisplayAttribute")]
 impl std::ops::DerefMut for crate::System::Diagnostics::DebuggerDisplayAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::System::Diagnostics::DebuggerDisplayAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerDisplayAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::DebuggerDisplayAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

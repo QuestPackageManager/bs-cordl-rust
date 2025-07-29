@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+InteropServices+DllImportSearchPath")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportSearchPath")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DllImportSearchPath {
@@ -11,7 +11,7 @@ pub enum DllImportSearchPath {
     UseDllDirectoryForDependencies = 256i32,
     UserDirectories = 1024i32,
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportSearchPath")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportSearchPath")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::DllImportSearchPath {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::System::Runtime::InteropServices::DllImportSearchPath {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportSearchPath")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportSearchPath")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::InteropServices::DllImportSearchPath {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::System::Runtime::InteropServices::DllImportSearchPath {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportSearchPath")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportSearchPath")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::InteropServices::DllImportSearchPath {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::System::Runtime::InteropServices::DllImportSearchPath {
         self
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportSearchPath")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportSearchPath")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::InteropServices::DllImportSearchPath {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::System::Runtime::InteropServices::DllImportSearchPath {
         }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportSearchPath")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportSearchPath")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::InteropServices::DllImportSearchPath {
     type Actual = Self;

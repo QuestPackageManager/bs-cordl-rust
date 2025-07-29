@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+WhenAllPromise")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_WhenAllPromise {
@@ -12,7 +12,7 @@ pub struct Task_WhenAllPromise {
     >,
     pub m_count: i32,
 }
-#[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+WhenAllPromise")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Task_WhenAllPromise {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Task_WhenAll
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+WhenAllPromise")]
 impl std::ops::Deref for crate::GlobalNamespace::Task_WhenAllPromise {
     type Target = crate::System::Threading::Tasks::Task_1<
         crate::System::Threading::Tasks::VoidTaskResult,
@@ -40,7 +40,7 @@ impl std::ops::Deref for crate::GlobalNamespace::Task_WhenAllPromise {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+WhenAllPromise")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Task_WhenAllPromise {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -168,7 +168,7 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+WhenAllPromise")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Task_WhenAllPromise {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

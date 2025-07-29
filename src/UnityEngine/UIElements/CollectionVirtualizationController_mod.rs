@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+CollectionVirtualizationController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionVirtualizationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionVirtualizationController {
@@ -7,7 +7,7 @@ pub struct CollectionVirtualizationController {
         crate::UnityEngine::UIElements::ScrollView,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+CollectionVirtualizationController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionVirtualizationController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::CollectionVirtualizationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::UnityEngine::UIElements::CollectionVirtualizationController {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+CollectionVirtualizationController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionVirtualizationController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::CollectionVirtualizationController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::CollectionVirtualizationController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+CollectionVirtualizationController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionVirtualizationController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::CollectionVirtualizationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -491,7 +491,7 @@ impl crate::UnityEngine::UIElements::CollectionVirtualizationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+CollectionVirtualizationController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionVirtualizationController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::CollectionVirtualizationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

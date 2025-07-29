@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotInstruction+NotByte"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotInstruction_NotByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotInstruction+NotByte"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NotInstruction_NotByte {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +28,18 @@ for crate::GlobalNamespace::NotInstruction_NotByte {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotInstruction+NotByte"
+)]
 impl std::ops::Deref for crate::GlobalNamespace::NotInstruction_NotByte {
     type Target = crate::System::Linq::Expressions::Interpreter::NotInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotInstruction+NotByte"
+)]
 impl std::ops::DerefMut for crate::GlobalNamespace::NotInstruction_NotByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +106,9 @@ impl crate::GlobalNamespace::NotInstruction_NotByte {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotInstruction+NotByte"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NotInstruction_NotByte {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

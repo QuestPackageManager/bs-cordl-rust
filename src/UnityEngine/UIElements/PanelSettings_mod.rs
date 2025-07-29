@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelSettings {
@@ -45,7 +45,7 @@ pub struct PanelSettings {
         crate::System::Func_2<crate::UnityEngine::Vector2, crate::UnityEngine::Vector2>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PanelSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -65,14 +65,14 @@ for crate::UnityEngine::UIElements::PanelSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PanelSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1374,7 +1374,7 @@ impl crate::UnityEngine::UIElements::PanelSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PanelSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1384,7 +1384,7 @@ for crate::UnityEngine::UIElements::PanelSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelSettings_RuntimePanelAccess {
@@ -1396,7 +1396,7 @@ pub struct PanelSettings_RuntimePanelAccess {
         crate::UnityEngine::UIElements::BaseRuntimePanel,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1416,7 +1416,7 @@ for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1424,7 +1424,7 @@ for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1700,7 +1700,7 @@ impl crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "EnterPlayerGuestNameViewController")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterPlayerGuestNameViewController {
@@ -18,7 +18,7 @@ pub struct EnterPlayerGuestNameViewController {
         crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate,
     >,
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
         false
     }
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -201,7 +201,7 @@ impl crate::GlobalNamespace::EnterPlayerGuestNameViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -211,13 +211,13 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController+FinishDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterPlayerGuestNameViewController_FinishDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController+FinishDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -237,7 +237,7 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
         false
     }
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController+FinishDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -245,7 +245,7 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController+FinishDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -404,7 +404,7 @@ impl crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
+#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController+FinishDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

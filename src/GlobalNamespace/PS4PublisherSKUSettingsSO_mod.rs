@@ -1,4 +1,4 @@
-#[cfg(feature = "PS4PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4PublisherSKUSettingsSO {
@@ -16,7 +16,7 @@ pub struct PS4PublisherSKUSettingsSO {
     pub _defaultAgeRestriction: i32,
     pub _applicationCategory: crate::GlobalNamespace::PS4ApplicationCategory,
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         false
     }
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
     type Target = crate::GlobalNamespace::SonyPublisherSKUSettingsSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -230,7 +230,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -240,7 +240,7 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4PublisherSKUSettingsSO_PS4BuildVersion {
@@ -250,7 +250,7 @@ pub struct PS4PublisherSKUSettingsSO_PS4BuildVersion {
         crate::GlobalNamespace::SonyVersion,
     >,
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -270,7 +270,7 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         false
     }
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -278,7 +278,7 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -425,7 +425,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
+#[cfg(feature = "cordl_class_PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

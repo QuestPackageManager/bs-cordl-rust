@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContentExtension")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaComplexContentExtension {
@@ -14,7 +14,7 @@ pub struct XmlSchemaComplexContentExtension {
     >,
     pub baseTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContentExtension")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaComplexContentExtension {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::System::Xml::Schema::XmlSchemaComplexContentExtension {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContentExtension")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaComplexContentExtension {
     type Target = crate::System::Xml::Schema::XmlSchemaContent;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContentExtension")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaComplexContentExtension {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -309,7 +309,7 @@ impl crate::System::Xml::Schema::XmlSchemaComplexContentExtension {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContentExtension")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaComplexContentExtension {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

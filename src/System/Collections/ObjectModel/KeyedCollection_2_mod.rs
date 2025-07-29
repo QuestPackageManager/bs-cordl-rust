@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+ObjectModel+KeyedCollection_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+KeyedCollection_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyedCollection_2<
@@ -17,7 +17,7 @@ pub struct KeyedCollection_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
 }
-#[cfg(feature = "System+Collections+ObjectModel+KeyedCollection_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+KeyedCollection_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
@@ -56,7 +56,7 @@ for crate::System::Collections::ObjectModel::KeyedCollection_2<TKey, TItem> {
         false
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+KeyedCollection_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+KeyedCollection_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ for crate::System::Collections::ObjectModel::KeyedCollection_2<TKey, TItem> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+KeyedCollection_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+KeyedCollection_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
@@ -643,7 +643,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+KeyedCollection_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+KeyedCollection_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,

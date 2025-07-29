@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphRect {
@@ -7,7 +7,7 @@ pub struct GlyphRect {
     pub m_Width: i32,
     pub m_Height: i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::GlyphRect {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::GlyphR
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextCore::GlyphRect {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextCore::Gl
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::GlyphRect {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::TextCore::GlyphRect {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextCore::GlyphRect {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextCore::Gl
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextCore::GlyphRect {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextCore::Glyp
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+GlyphRect")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::GlyphRect {
     type Type = Self;

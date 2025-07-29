@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventType")]
+#[cfg(feature = "cordl_class_UnityEngine+EventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventType {
@@ -29,7 +29,7 @@ pub enum EventType {
     Used = 12i32,
     ValidateCommand = 13i32,
 }
-#[cfg(feature = "UnityEngine+EventType")]
+#[cfg(feature = "cordl_class_UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::EventType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::EventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventType")]
+#[cfg(feature = "cordl_class_UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::EventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,7 +68,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::EventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventType")]
+#[cfg(feature = "cordl_class_UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::EventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -81,7 +81,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::EventType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventType")]
+#[cfg(feature = "cordl_class_UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::EventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -95,7 +95,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::EventType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventType")]
+#[cfg(feature = "cordl_class_UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::EventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

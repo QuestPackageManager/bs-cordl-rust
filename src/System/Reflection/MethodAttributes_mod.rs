@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+MethodAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodAttributes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MethodAttributes {
@@ -26,7 +26,7 @@ pub enum MethodAttributes {
     UnmanagedExport = 8i32,
     Virtual = 64i32,
 }
-#[cfg(feature = "System+Reflection+MethodAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::MethodAttributes {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -55,7 +55,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::MethodAtt
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+MethodAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::MethodAttributes {
     type Type = Self;
@@ -66,7 +66,7 @@ for crate::System::Reflection::MethodAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+MethodAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::MethodAttributes {
     type Actual = Self;
@@ -80,7 +80,7 @@ for crate::System::Reflection::MethodAttributes {
         self
     }
 }
-#[cfg(feature = "System+Reflection+MethodAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::MethodAttributes {
     type Type = Self;
@@ -95,7 +95,7 @@ for crate::System::Reflection::MethodAttributes {
         }
     }
 }
-#[cfg(feature = "System+Reflection+MethodAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::MethodAttributes {
     type Actual = Self;

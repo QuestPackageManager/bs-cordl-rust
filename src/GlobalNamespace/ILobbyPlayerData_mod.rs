@@ -1,10 +1,10 @@
-#[cfg(feature = "ILobbyPlayerData")]
+#[cfg(feature = "cordl_class_ILobbyPlayerData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ILobbyPlayerData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ILobbyPlayerData")]
+#[cfg(feature = "cordl_class_ILobbyPlayerData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ILobbyPlayerData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ILobbyPlayer
         false
     }
 }
-#[cfg(feature = "ILobbyPlayerData")]
+#[cfg(feature = "cordl_class_ILobbyPlayerData")]
 impl std::ops::Deref for crate::GlobalNamespace::ILobbyPlayerData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ILobbyPlayerData")]
+#[cfg(feature = "cordl_class_ILobbyPlayerData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ILobbyPlayerData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -216,7 +216,7 @@ impl crate::GlobalNamespace::ILobbyPlayerData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ILobbyPlayerData")]
+#[cfg(feature = "cordl_class_ILobbyPlayerData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ILobbyPlayerData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "ParticleSystemEventEffect")]
+#[cfg(feature = "cordl_class_ParticleSystemEventEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemEventEffect {
@@ -28,7 +28,7 @@ pub struct ParticleSystemEventEffect {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "ParticleSystemEventEffect")]
+#[cfg(feature = "cordl_class_ParticleSystemEventEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ParticleSystemEventEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,14 +48,14 @@ for crate::GlobalNamespace::ParticleSystemEventEffect {
         false
     }
 }
-#[cfg(feature = "ParticleSystemEventEffect")]
+#[cfg(feature = "cordl_class_ParticleSystemEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ParticleSystemEventEffect")]
+#[cfg(feature = "cordl_class_ParticleSystemEventEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -210,7 +210,7 @@ impl crate::GlobalNamespace::ParticleSystemEventEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ParticleSystemEventEffect")]
+#[cfg(feature = "cordl_class_ParticleSystemEventEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ParticleSystemEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+UInt64")]
+#[cfg(feature = "cordl_class_System+UInt64")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UInt64 {
     pub m_value: u64,
 }
-#[cfg(feature = "System+UInt64")]
+#[cfg(feature = "cordl_class_System+UInt64")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::UInt64 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UInt64 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+UInt64")]
+#[cfg(feature = "cordl_class_System+UInt64")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::UInt64 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::UInt64 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+UInt64")]
+#[cfg(feature = "cordl_class_System+UInt64")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::UInt64 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::UInt64 {
         self
     }
 }
-#[cfg(feature = "System+UInt64")]
+#[cfg(feature = "cordl_class_System+UInt64")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::UInt64 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::UInt64 {
         }
     }
 }
-#[cfg(feature = "System+UInt64")]
+#[cfg(feature = "cordl_class_System+UInt64")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::UInt64 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::UInt64 {
         actual
     }
 }
-#[cfg(feature = "System+UInt64")]
+#[cfg(feature = "cordl_class_System+UInt64")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::UInt64 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

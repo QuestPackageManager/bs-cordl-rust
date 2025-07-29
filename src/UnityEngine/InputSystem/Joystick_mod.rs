@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Joystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Joystick")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Joystick {
@@ -16,7 +16,7 @@ pub struct Joystick {
         crate::UnityEngine::InputSystem::Controls::Vector2Control,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Joystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Joystick")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Joystick {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Joy
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Joystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Joystick")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Joystick {
     type Target = crate::UnityEngine::InputSystem::InputDevice;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Joystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Joystick")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Joystick {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -498,7 +498,7 @@ impl crate::UnityEngine::InputSystem::Joystick {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Joystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Joystick")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Joystick {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

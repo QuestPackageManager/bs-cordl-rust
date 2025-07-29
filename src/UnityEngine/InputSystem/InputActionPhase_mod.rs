@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionPhase")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputActionPhase {
@@ -9,7 +9,7 @@ pub enum InputActionPhase {
     Started = 2i32,
     Waiting = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionPhase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionPhase {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::InputSystem::InputActionPhase {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionPhase")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionPhase {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::InputSystem::InputActionPhase {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionPhase")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionPhase {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::InputSystem::InputActionPhase {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionPhase")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionPhase {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::InputSystem::InputActionPhase {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionPhase")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionPhase {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+ArrayExtensions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+ArrayExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+ArrayExtensions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+ArrayExtensions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::ArrayExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::ArrayExte
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+ArrayExtensions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+ArrayExtensions")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::ArrayExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+ArrayExtensions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+ArrayExtensions")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::ArrayExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -218,7 +218,7 @@ impl crate::HoudiniEngineUnity::ArrayExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+ArrayExtensions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+ArrayExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::ArrayExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

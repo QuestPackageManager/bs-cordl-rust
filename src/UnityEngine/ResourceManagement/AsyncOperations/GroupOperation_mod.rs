@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupOperation {
@@ -26,7 +28,9 @@ pub struct GroupOperation {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,7 +50,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
@@ -60,7 +66,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -570,7 +578,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -599,7 +609,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -610,7 +620,7 @@ pub enum GroupOperation_GroupOperationSettings {
     ReleaseDependenciesOnFailure = 1i32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings {
@@ -642,7 +652,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_Grou
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings {
@@ -655,7 +665,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_Grou
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings {
@@ -671,7 +681,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_Grou
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings {
@@ -688,7 +698,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_Grou
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings {

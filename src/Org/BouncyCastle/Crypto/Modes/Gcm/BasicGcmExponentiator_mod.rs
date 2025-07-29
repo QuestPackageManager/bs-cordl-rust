@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicGcmExponentiator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -131,7 +131,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

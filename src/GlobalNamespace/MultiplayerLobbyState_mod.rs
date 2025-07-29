@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLobbyState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLobbyState {
@@ -10,7 +10,7 @@ pub enum MultiplayerLobbyState {
     LobbySetup = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "MultiplayerLobbyState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::MultiplayerLobbyState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerLobbyState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::MultiplayerLobbyState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerLobbyState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::GlobalNamespace::MultiplayerLobbyState {
         self
     }
 }
-#[cfg(feature = "MultiplayerLobbyState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::GlobalNamespace::MultiplayerLobbyState {
         }
     }
 }
-#[cfg(feature = "MultiplayerLobbyState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Actual = Self;

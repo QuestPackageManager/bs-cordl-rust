@@ -1,4 +1,4 @@
-#[cfg(feature = "BufferedAudioStream")]
+#[cfg(feature = "cordl_class_BufferedAudioStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedAudioStream {
@@ -9,7 +9,7 @@ pub struct BufferedAudioStream {
     pub playbackDelayRemaining: f32,
     pub remainingBufferTime: f32,
 }
-#[cfg(feature = "BufferedAudioStream")]
+#[cfg(feature = "cordl_class_BufferedAudioStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BufferedAudioStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BufferedAudi
         false
     }
 }
-#[cfg(feature = "BufferedAudioStream")]
+#[cfg(feature = "cordl_class_BufferedAudioStream")]
 impl std::ops::Deref for crate::GlobalNamespace::BufferedAudioStream {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BufferedAudioStream")]
+#[cfg(feature = "cordl_class_BufferedAudioStream")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BufferedAudioStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::BufferedAudioStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BufferedAudioStream")]
+#[cfg(feature = "cordl_class_BufferedAudioStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BufferedAudioStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

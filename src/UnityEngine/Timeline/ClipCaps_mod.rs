@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+ClipCaps")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ClipCaps")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ClipCaps {
@@ -12,7 +12,7 @@ pub enum ClipCaps {
     None = 0i32,
     SpeedMultiplier = 8i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+ClipCaps")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ClipCaps")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::ClipCaps {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::ClipCa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ClipCaps")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ClipCaps")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Timeline::ClipCaps {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -51,7 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Timeline::Cl
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ClipCaps")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ClipCaps")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Timeline::ClipCaps {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -64,7 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Timeline::C
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ClipCaps")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ClipCaps")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Timeline::ClipCaps {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -78,7 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Timeline::Cl
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ClipCaps")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ClipCaps")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Timeline::ClipCaps {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

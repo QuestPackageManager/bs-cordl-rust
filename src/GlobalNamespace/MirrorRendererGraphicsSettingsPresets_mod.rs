@@ -1,4 +1,4 @@
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirrorRendererGraphicsSettingsPresets {
@@ -11,7 +11,7 @@ pub struct MirrorRendererGraphicsSettingsPresets {
         >,
     >,
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
         false
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
 impl std::ops::Deref for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     type Target = crate::GlobalNamespace::NamedPresetsSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -160,7 +160,7 @@ impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -170,7 +170,7 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirrorRendererGraphicsSettingsPresets_Preset {
@@ -184,7 +184,7 @@ pub struct MirrorRendererGraphicsSettingsPresets_Preset {
     pub maxAntiAliasing: i32,
     pub enableBloomPrePassFog: bool,
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
         false
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     type Target = crate::GlobalNamespace::NamedPreset;
@@ -212,7 +212,7 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -252,7 +252,7 @@ impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -262,7 +262,7 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
@@ -271,7 +271,7 @@ pub enum Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     None = 0i32,
     RenderedMirror = 2i32,
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Held<'a> = Self;
@@ -301,7 +301,7 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Type = Self;
@@ -312,7 +312,7 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Actual = Self;
@@ -326,7 +326,7 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
         self
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Type = Self;
@@ -341,7 +341,7 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
         }
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
+#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Actual = Self;

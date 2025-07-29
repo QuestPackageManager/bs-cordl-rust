@@ -1,10 +1,10 @@
-#[cfg(feature = "ISliderTailDidMovePastCutMarkEvent")]
+#[cfg(feature = "cordl_class_ISliderTailDidMovePastCutMarkEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISliderTailDidMovePastCutMarkEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ISliderTailDidMovePastCutMarkEvent")]
+#[cfg(feature = "cordl_class_ISliderTailDidMovePastCutMarkEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent {
         false
     }
 }
-#[cfg(feature = "ISliderTailDidMovePastCutMarkEvent")]
+#[cfg(feature = "cordl_class_ISliderTailDidMovePastCutMarkEvent")]
 impl std::ops::Deref for crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ISliderTailDidMovePastCutMarkEvent")]
+#[cfg(feature = "cordl_class_ISliderTailDidMovePastCutMarkEvent")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ISliderTailDidMovePastCutMarkEvent")]
+#[cfg(feature = "cordl_class_ISliderTailDidMovePastCutMarkEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

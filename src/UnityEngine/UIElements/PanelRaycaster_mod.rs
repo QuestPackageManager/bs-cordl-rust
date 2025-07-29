@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelRaycaster {
@@ -7,7 +7,7 @@ pub struct PanelRaycaster {
         crate::UnityEngine::UIElements::BaseRuntimePanel,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PanelRaycaster {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::PanelRaycaster {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelRaycaster {
     type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelRaycaster")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PanelRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -333,7 +333,7 @@ impl crate::UnityEngine::UIElements::PanelRaycaster {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelRaycaster")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PanelRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -30,7 +30,7 @@ pub struct BinaryObjectWithMapTyped {
     pub assemId: i32,
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped {
@@ -52,7 +52,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithM
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped {
@@ -62,7 +62,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithM
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped {
@@ -288,7 +288,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWith
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped {

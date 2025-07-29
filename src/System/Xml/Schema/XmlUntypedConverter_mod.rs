@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+Schema+XmlUntypedConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUntypedConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlUntypedConverter {
     __cordl_parent: crate::System::Xml::Schema::XmlListConverter,
     pub allowListToList: bool,
 }
-#[cfg(feature = "System+Xml+Schema+XmlUntypedConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUntypedConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlUntypedConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Xml::Schema::XmlUntypedConverter {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlUntypedConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUntypedConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlUntypedConverter {
     type Target = crate::System::Xml::Schema::XmlListConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlUntypedConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUntypedConverter")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlUntypedConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1214,7 +1214,7 @@ impl crate::System::Xml::Schema::XmlUntypedConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlUntypedConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUntypedConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlUntypedConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

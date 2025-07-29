@@ -1,4 +1,4 @@
-#[cfg(feature = "GhostEffectBehaviour")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GhostEffectBehaviour {
@@ -31,7 +31,7 @@ pub struct GhostEffectBehaviour {
     pub _direction: crate::UnityEngine::Vector3,
     pub _finished: bool,
 }
-#[cfg(feature = "GhostEffectBehaviour")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GhostEffectBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::GlobalNamespace::GhostEffectBehaviour {
         false
     }
 }
-#[cfg(feature = "GhostEffectBehaviour")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::GhostEffectBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GhostEffectBehaviour")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GhostEffectBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::GlobalNamespace::GhostEffectBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GhostEffectBehaviour")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GhostEffectBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -198,7 +198,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GhostEffectBe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GhostEffectBehaviour_EndBehavior {
@@ -207,7 +207,7 @@ pub enum GhostEffectBehaviour_EndBehavior {
     DisableCopies = 1i32,
     Nothing = 2i32,
 }
-#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Held<'a> = Self;
@@ -237,7 +237,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Type = Self;
@@ -248,7 +248,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Actual = Self;
@@ -262,7 +262,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
         self
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Type = Self;
@@ -277,7 +277,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
         }
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Actual = Self;
@@ -291,7 +291,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
         actual
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GhostEffectBehaviour_GhostEffectType {
@@ -299,7 +299,7 @@ pub enum GhostEffectBehaviour_GhostEffectType {
     Canvas = 1i32,
     TextMeshPro = 0i32,
 }
-#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Held<'a> = Self;
@@ -329,7 +329,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Type = Self;
@@ -340,7 +340,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Actual = Self;
@@ -354,7 +354,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
         self
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Type = Self;
@@ -369,7 +369,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
         }
     }
 }
-#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
+#[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Actual = Self;

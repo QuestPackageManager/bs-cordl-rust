@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NotEqualInstruction_NotEqualUInt32LiftedToNull {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32LiftedToNull {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32LiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32LiftedToNull {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32LiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32LiftedToNull {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32LiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt32LiftedToNull"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt32LiftedToNull {

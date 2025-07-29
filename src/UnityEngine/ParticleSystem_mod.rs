@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ParticleSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystem {
     __cordl_parent: crate::UnityEngine::Component,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystem {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem")]
 impl std::ops::Deref for crate::UnityEngine::ParticleSystem {
     type Target = crate::UnityEngine::Component;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem")]
 impl std::ops::DerefMut for crate::UnityEngine::ParticleSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3912,7 +3912,7 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ParticleSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -3921,13 +3921,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ParticleSystem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CollisionModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_CollisionModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CollisionModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_CollisionModule {
     type Held<'a> = Self;
@@ -3957,7 +3957,7 @@ for crate::UnityEngine::ParticleSystem_CollisionModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CollisionModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_CollisionModule {
     type Type = Self;
@@ -3968,7 +3968,7 @@ for crate::UnityEngine::ParticleSystem_CollisionModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CollisionModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_CollisionModule {
     type Actual = Self;
@@ -3982,7 +3982,7 @@ for crate::UnityEngine::ParticleSystem_CollisionModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CollisionModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_CollisionModule {
     type Type = Self;
@@ -3997,7 +3997,7 @@ for crate::UnityEngine::ParticleSystem_CollisionModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CollisionModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_CollisionModule {
     type Actual = Self;
@@ -4011,7 +4011,7 @@ for crate::UnityEngine::ParticleSystem_CollisionModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CollisionModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_CollisionModule {
     type Type = Self;
@@ -4051,13 +4051,13 @@ impl crate::UnityEngine::ParticleSystem_CollisionModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorBySpeedModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ColorBySpeedModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
     type Held<'a> = Self;
@@ -4087,7 +4087,7 @@ for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
     type Type = Self;
@@ -4098,7 +4098,7 @@ for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
     type Actual = Self;
@@ -4112,7 +4112,7 @@ for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
     type Type = Self;
@@ -4127,7 +4127,7 @@ for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
     type Actual = Self;
@@ -4141,7 +4141,7 @@ for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
     type Type = Self;
@@ -4181,13 +4181,13 @@ impl crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ColorOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
     type Held<'a> = Self;
@@ -4217,7 +4217,7 @@ for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
     type Type = Self;
@@ -4228,7 +4228,7 @@ for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
     type Actual = Self;
@@ -4242,7 +4242,7 @@ for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
     type Type = Self;
@@ -4257,7 +4257,7 @@ for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
     type Actual = Self;
@@ -4271,7 +4271,7 @@ for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
     type Type = Self;
@@ -4311,13 +4311,13 @@ impl crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CustomDataModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_CustomDataModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CustomDataModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_CustomDataModule {
     type Held<'a> = Self;
@@ -4347,7 +4347,7 @@ for crate::UnityEngine::ParticleSystem_CustomDataModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CustomDataModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_CustomDataModule {
     type Type = Self;
@@ -4358,7 +4358,7 @@ for crate::UnityEngine::ParticleSystem_CustomDataModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CustomDataModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_CustomDataModule {
     type Actual = Self;
@@ -4372,7 +4372,7 @@ for crate::UnityEngine::ParticleSystem_CustomDataModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CustomDataModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_CustomDataModule {
     type Type = Self;
@@ -4387,7 +4387,7 @@ for crate::UnityEngine::ParticleSystem_CustomDataModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CustomDataModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_CustomDataModule {
     type Actual = Self;
@@ -4401,7 +4401,7 @@ for crate::UnityEngine::ParticleSystem_CustomDataModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+CustomDataModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_CustomDataModule {
     type Type = Self;
@@ -4441,13 +4441,13 @@ impl crate::UnityEngine::ParticleSystem_CustomDataModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmissionModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_EmissionModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmissionModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_EmissionModule {
     type Held<'a> = Self;
@@ -4477,7 +4477,7 @@ for crate::UnityEngine::ParticleSystem_EmissionModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmissionModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_EmissionModule {
     type Type = Self;
@@ -4488,7 +4488,7 @@ for crate::UnityEngine::ParticleSystem_EmissionModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmissionModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_EmissionModule {
     type Actual = Self;
@@ -4502,7 +4502,7 @@ for crate::UnityEngine::ParticleSystem_EmissionModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmissionModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_EmissionModule {
     type Type = Self;
@@ -4517,7 +4517,7 @@ for crate::UnityEngine::ParticleSystem_EmissionModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmissionModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_EmissionModule {
     type Actual = Self;
@@ -4531,7 +4531,7 @@ for crate::UnityEngine::ParticleSystem_EmissionModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmissionModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_EmissionModule {
     type Type = Self;
@@ -4785,7 +4785,7 @@ impl crate::UnityEngine::ParticleSystem_EmissionModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmitParams")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_EmitParams {
@@ -4802,7 +4802,7 @@ pub struct ParticleSystem_EmitParams {
     pub m_MeshIndexSet: bool,
     pub m_ApplyShapeToPosition: bool,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmitParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_EmitParams {
     type Held<'a> = Self;
@@ -4832,7 +4832,7 @@ for crate::UnityEngine::ParticleSystem_EmitParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmitParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_EmitParams {
     type Type = Self;
@@ -4843,7 +4843,7 @@ for crate::UnityEngine::ParticleSystem_EmitParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmitParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_EmitParams {
     type Actual = Self;
@@ -4857,7 +4857,7 @@ for crate::UnityEngine::ParticleSystem_EmitParams {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmitParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_EmitParams {
     type Type = Self;
@@ -4872,7 +4872,7 @@ for crate::UnityEngine::ParticleSystem_EmitParams {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmitParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_EmitParams {
     type Actual = Self;
@@ -4886,7 +4886,7 @@ for crate::UnityEngine::ParticleSystem_EmitParams {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+EmitParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_EmitParams {
     type Type = Self;
@@ -5004,13 +5004,13 @@ impl crate::UnityEngine::ParticleSystem_EmitParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ExternalForcesModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ExternalForcesModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ExternalForcesModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
     type Held<'a> = Self;
@@ -5040,7 +5040,7 @@ for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ExternalForcesModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
     type Type = Self;
@@ -5051,7 +5051,7 @@ for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ExternalForcesModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
     type Actual = Self;
@@ -5065,7 +5065,7 @@ for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ExternalForcesModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
     type Type = Self;
@@ -5080,7 +5080,7 @@ for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ExternalForcesModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
     type Actual = Self;
@@ -5094,7 +5094,7 @@ for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ExternalForcesModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
     type Type = Self;
@@ -5134,13 +5134,13 @@ impl crate::UnityEngine::ParticleSystem_ExternalForcesModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ForceOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
     type Held<'a> = Self;
@@ -5170,7 +5170,7 @@ for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
     type Type = Self;
@@ -5181,7 +5181,7 @@ for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
     type Actual = Self;
@@ -5195,7 +5195,7 @@ for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
     type Type = Self;
@@ -5210,7 +5210,7 @@ for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
     type Actual = Self;
@@ -5224,7 +5224,7 @@ for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
     type Type = Self;
@@ -5264,13 +5264,13 @@ impl crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+InheritVelocityModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_InheritVelocityModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+InheritVelocityModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
     type Held<'a> = Self;
@@ -5300,7 +5300,7 @@ for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+InheritVelocityModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
     type Type = Self;
@@ -5311,7 +5311,7 @@ for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+InheritVelocityModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
     type Actual = Self;
@@ -5325,7 +5325,7 @@ for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+InheritVelocityModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
     type Type = Self;
@@ -5340,7 +5340,7 @@ for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+InheritVelocityModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
     type Actual = Self;
@@ -5354,7 +5354,7 @@ for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+InheritVelocityModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
     type Type = Self;
@@ -5394,13 +5394,13 @@ impl crate::UnityEngine::ParticleSystem_InheritVelocityModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_LifetimeByEmitterSpeedModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
     type Held<'a> = Self;
@@ -5430,7 +5430,7 @@ for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
     type Type = Self;
@@ -5441,7 +5441,7 @@ for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
     type Actual = Self;
@@ -5455,7 +5455,7 @@ for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
     type Type = Self;
@@ -5470,7 +5470,7 @@ for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
     type Actual = Self;
@@ -5484,7 +5484,7 @@ for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
     type Type = Self;
@@ -5524,13 +5524,13 @@ impl crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LightsModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_LightsModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LightsModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_LightsModule {
     type Held<'a> = Self;
@@ -5560,7 +5560,7 @@ for crate::UnityEngine::ParticleSystem_LightsModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LightsModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_LightsModule {
     type Type = Self;
@@ -5571,7 +5571,7 @@ for crate::UnityEngine::ParticleSystem_LightsModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LightsModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_LightsModule {
     type Actual = Self;
@@ -5585,7 +5585,7 @@ for crate::UnityEngine::ParticleSystem_LightsModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LightsModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_LightsModule {
     type Type = Self;
@@ -5600,7 +5600,7 @@ for crate::UnityEngine::ParticleSystem_LightsModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LightsModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_LightsModule {
     type Actual = Self;
@@ -5614,7 +5614,7 @@ for crate::UnityEngine::ParticleSystem_LightsModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+LightsModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_LightsModule {
     type Type = Self;
@@ -5654,13 +5654,17 @@ impl crate::UnityEngine::ParticleSystem_LightsModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_LimitVelocityOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
     type Held<'a> = Self;
@@ -5690,7 +5694,9 @@ for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
     type Type = Self;
@@ -5701,7 +5707,9 @@ for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
     type Actual = Self;
@@ -5715,7 +5723,9 @@ for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
     type Type = Self;
@@ -5730,7 +5740,9 @@ for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
     type Actual = Self;
@@ -5744,7 +5756,9 @@ for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
     type Type = Self;
@@ -5784,13 +5798,13 @@ impl crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MainModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_MainModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MainModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_MainModule {
     type Held<'a> = Self;
@@ -5820,7 +5834,7 @@ for crate::UnityEngine::ParticleSystem_MainModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MainModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_MainModule {
     type Type = Self;
@@ -5831,7 +5845,7 @@ for crate::UnityEngine::ParticleSystem_MainModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MainModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_MainModule {
     type Actual = Self;
@@ -5845,7 +5859,7 @@ for crate::UnityEngine::ParticleSystem_MainModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MainModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_MainModule {
     type Type = Self;
@@ -5860,7 +5874,7 @@ for crate::UnityEngine::ParticleSystem_MainModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MainModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_MainModule {
     type Actual = Self;
@@ -5874,7 +5888,7 @@ for crate::UnityEngine::ParticleSystem_MainModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MainModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_MainModule {
     type Type = Self;
@@ -7816,7 +7830,7 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurve")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_MinMaxCurve {
@@ -7827,7 +7841,7 @@ pub struct ParticleSystem_MinMaxCurve {
     pub m_ConstantMin: f32,
     pub m_ConstantMax: f32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurve")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_MinMaxCurve {
     type Held<'a> = Self;
@@ -7857,7 +7871,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxCurve {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurve")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_MinMaxCurve {
     type Type = Self;
@@ -7868,7 +7882,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxCurve {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurve")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_MinMaxCurve {
     type Actual = Self;
@@ -7882,7 +7896,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxCurve {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurve")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_MinMaxCurve {
     type Type = Self;
@@ -7897,7 +7911,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxCurve {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurve")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_MinMaxCurve {
     type Actual = Self;
@@ -7911,7 +7925,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxCurve {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurve")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_MinMaxCurve {
     type Type = Self;
@@ -8051,7 +8065,7 @@ impl crate::UnityEngine::ParticleSystem_MinMaxCurve {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradient")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_MinMaxGradient {
@@ -8061,7 +8075,7 @@ pub struct ParticleSystem_MinMaxGradient {
     pub m_ColorMin: crate::UnityEngine::Color,
     pub m_ColorMax: crate::UnityEngine::Color,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradient")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_MinMaxGradient {
     type Held<'a> = Self;
@@ -8091,7 +8105,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxGradient {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradient")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_MinMaxGradient {
     type Type = Self;
@@ -8102,7 +8116,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxGradient {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradient")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_MinMaxGradient {
     type Actual = Self;
@@ -8116,7 +8130,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxGradient {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradient")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_MinMaxGradient {
     type Type = Self;
@@ -8131,7 +8145,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxGradient {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradient")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_MinMaxGradient {
     type Actual = Self;
@@ -8145,7 +8159,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxGradient {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradient")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_MinMaxGradient {
     type Type = Self;
@@ -8233,13 +8247,13 @@ impl crate::UnityEngine::ParticleSystem_MinMaxGradient {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+NoiseModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_NoiseModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+NoiseModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_NoiseModule {
     type Held<'a> = Self;
@@ -8269,7 +8283,7 @@ for crate::UnityEngine::ParticleSystem_NoiseModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+NoiseModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_NoiseModule {
     type Type = Self;
@@ -8280,7 +8294,7 @@ for crate::UnityEngine::ParticleSystem_NoiseModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+NoiseModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_NoiseModule {
     type Actual = Self;
@@ -8294,7 +8308,7 @@ for crate::UnityEngine::ParticleSystem_NoiseModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+NoiseModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_NoiseModule {
     type Type = Self;
@@ -8309,7 +8323,7 @@ for crate::UnityEngine::ParticleSystem_NoiseModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+NoiseModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_NoiseModule {
     type Actual = Self;
@@ -8323,7 +8337,7 @@ for crate::UnityEngine::ParticleSystem_NoiseModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+NoiseModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_NoiseModule {
     type Type = Self;
@@ -8363,7 +8377,7 @@ impl crate::UnityEngine::ParticleSystem_NoiseModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Particle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_Particle {
@@ -8385,7 +8399,7 @@ pub struct ParticleSystem_Particle {
     pub m_EmitAccumulator1: f32,
     pub m_Flags: u32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Particle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystem_Particle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -8414,7 +8428,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystem_P
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Particle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_Particle {
     type Type = Self;
@@ -8425,7 +8439,7 @@ for crate::UnityEngine::ParticleSystem_Particle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Particle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_Particle {
     type Actual = Self;
@@ -8439,7 +8453,7 @@ for crate::UnityEngine::ParticleSystem_Particle {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Particle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_Particle {
     type Type = Self;
@@ -8454,7 +8468,7 @@ for crate::UnityEngine::ParticleSystem_Particle {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Particle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_Particle {
     type Actual = Self;
@@ -8468,7 +8482,7 @@ for crate::UnityEngine::ParticleSystem_Particle {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Particle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_Particle {
     type Type = Self;
@@ -8742,7 +8756,7 @@ impl crate::UnityEngine::ParticleSystem_Particle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_PlaybackState {
@@ -8759,7 +8773,7 @@ pub struct ParticleSystem_PlaybackState {
     pub m_Lights: crate::UnityEngine::PlaybackState_ParticleSystem_Lights,
     pub m_Trail: crate::UnityEngine::PlaybackState_ParticleSystem_Trail,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_PlaybackState {
     type Held<'a> = Self;
@@ -8789,7 +8803,7 @@ for crate::UnityEngine::ParticleSystem_PlaybackState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_PlaybackState {
     type Type = Self;
@@ -8800,7 +8814,7 @@ for crate::UnityEngine::ParticleSystem_PlaybackState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_PlaybackState {
     type Actual = Self;
@@ -8814,7 +8828,7 @@ for crate::UnityEngine::ParticleSystem_PlaybackState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_PlaybackState {
     type Type = Self;
@@ -8829,7 +8843,7 @@ for crate::UnityEngine::ParticleSystem_PlaybackState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_PlaybackState {
     type Actual = Self;
@@ -8843,7 +8857,7 @@ for crate::UnityEngine::ParticleSystem_PlaybackState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_PlaybackState {
     type Type = Self;
@@ -8877,13 +8891,13 @@ impl crate::UnityEngine::ParticleSystem_PlaybackState {
     #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
     pub type Trail = crate::UnityEngine::PlaybackState_ParticleSystem_Trail;
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationBySpeedModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_RotationBySpeedModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
     type Held<'a> = Self;
@@ -8913,7 +8927,7 @@ for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
     type Type = Self;
@@ -8924,7 +8938,7 @@ for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
     type Actual = Self;
@@ -8938,7 +8952,7 @@ for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
     type Type = Self;
@@ -8953,7 +8967,7 @@ for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
     type Actual = Self;
@@ -8967,7 +8981,7 @@ for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
     type Type = Self;
@@ -9007,13 +9021,13 @@ impl crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_RotationOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
     type Held<'a> = Self;
@@ -9043,7 +9057,7 @@ for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
     type Type = Self;
@@ -9054,7 +9068,7 @@ for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
     type Actual = Self;
@@ -9068,7 +9082,7 @@ for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
     type Type = Self;
@@ -9083,7 +9097,7 @@ for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
     type Actual = Self;
@@ -9097,7 +9111,7 @@ for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
     type Type = Self;
@@ -9137,13 +9151,13 @@ impl crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ShapeModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ShapeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ShapeModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_ShapeModule {
     type Held<'a> = Self;
@@ -9173,7 +9187,7 @@ for crate::UnityEngine::ParticleSystem_ShapeModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ShapeModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_ShapeModule {
     type Type = Self;
@@ -9184,7 +9198,7 @@ for crate::UnityEngine::ParticleSystem_ShapeModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ShapeModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_ShapeModule {
     type Actual = Self;
@@ -9198,7 +9212,7 @@ for crate::UnityEngine::ParticleSystem_ShapeModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ShapeModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_ShapeModule {
     type Type = Self;
@@ -9213,7 +9227,7 @@ for crate::UnityEngine::ParticleSystem_ShapeModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ShapeModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_ShapeModule {
     type Actual = Self;
@@ -9227,7 +9241,7 @@ for crate::UnityEngine::ParticleSystem_ShapeModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+ShapeModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_ShapeModule {
     type Type = Self;
@@ -9443,13 +9457,13 @@ impl crate::UnityEngine::ParticleSystem_ShapeModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeBySpeedModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_SizeBySpeedModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
     type Held<'a> = Self;
@@ -9479,7 +9493,7 @@ for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
     type Type = Self;
@@ -9490,7 +9504,7 @@ for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
     type Actual = Self;
@@ -9504,7 +9518,7 @@ for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
     type Type = Self;
@@ -9519,7 +9533,7 @@ for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
     type Actual = Self;
@@ -9533,7 +9547,7 @@ for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeBySpeedModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
     type Type = Self;
@@ -9573,13 +9587,13 @@ impl crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_SizeOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
     type Held<'a> = Self;
@@ -9609,7 +9623,7 @@ for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
     type Type = Self;
@@ -9620,7 +9634,7 @@ for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
     type Actual = Self;
@@ -9634,7 +9648,7 @@ for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
     type Type = Self;
@@ -9649,7 +9663,7 @@ for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
     type Actual = Self;
@@ -9663,7 +9677,7 @@ for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
     type Type = Self;
@@ -9703,13 +9717,13 @@ impl crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SubEmittersModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_SubEmittersModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SubEmittersModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_SubEmittersModule {
     type Held<'a> = Self;
@@ -9739,7 +9753,7 @@ for crate::UnityEngine::ParticleSystem_SubEmittersModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SubEmittersModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_SubEmittersModule {
     type Type = Self;
@@ -9750,7 +9764,7 @@ for crate::UnityEngine::ParticleSystem_SubEmittersModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SubEmittersModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_SubEmittersModule {
     type Actual = Self;
@@ -9764,7 +9778,7 @@ for crate::UnityEngine::ParticleSystem_SubEmittersModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SubEmittersModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_SubEmittersModule {
     type Type = Self;
@@ -9779,7 +9793,7 @@ for crate::UnityEngine::ParticleSystem_SubEmittersModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SubEmittersModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_SubEmittersModule {
     type Actual = Self;
@@ -9793,7 +9807,7 @@ for crate::UnityEngine::ParticleSystem_SubEmittersModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+SubEmittersModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_SubEmittersModule {
     type Type = Self;
@@ -9942,13 +9956,13 @@ impl crate::UnityEngine::ParticleSystem_SubEmittersModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_TextureSheetAnimationModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
     type Held<'a> = Self;
@@ -9978,7 +9992,7 @@ for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
     type Type = Self;
@@ -9989,7 +10003,7 @@ for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
     type Actual = Self;
@@ -10003,7 +10017,7 @@ for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
     type Type = Self;
@@ -10018,7 +10032,7 @@ for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
     type Actual = Self;
@@ -10032,7 +10046,7 @@ for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
     type Type = Self;
@@ -10072,13 +10086,13 @@ impl crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TrailModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_TrailModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TrailModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_TrailModule {
     type Held<'a> = Self;
@@ -10108,7 +10122,7 @@ for crate::UnityEngine::ParticleSystem_TrailModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TrailModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_TrailModule {
     type Type = Self;
@@ -10119,7 +10133,7 @@ for crate::UnityEngine::ParticleSystem_TrailModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TrailModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_TrailModule {
     type Actual = Self;
@@ -10133,7 +10147,7 @@ for crate::UnityEngine::ParticleSystem_TrailModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TrailModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_TrailModule {
     type Type = Self;
@@ -10148,7 +10162,7 @@ for crate::UnityEngine::ParticleSystem_TrailModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TrailModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_TrailModule {
     type Actual = Self;
@@ -10162,7 +10176,7 @@ for crate::UnityEngine::ParticleSystem_TrailModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TrailModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_TrailModule {
     type Type = Self;
@@ -10202,7 +10216,7 @@ impl crate::UnityEngine::ParticleSystem_TrailModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Trails")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_Trails {
@@ -10224,7 +10238,7 @@ pub struct ParticleSystem_Trails {
     pub maxTrailCount: i32,
     pub maxPositionsPerTrailCount: i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Trails")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystem_Trails {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -10253,7 +10267,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystem_T
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Trails")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_Trails {
     type Type = Self;
@@ -10264,7 +10278,7 @@ for crate::UnityEngine::ParticleSystem_Trails {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Trails")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_Trails {
     type Actual = Self;
@@ -10278,7 +10292,7 @@ for crate::UnityEngine::ParticleSystem_Trails {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Trails")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_Trails {
     type Type = Self;
@@ -10293,7 +10307,7 @@ for crate::UnityEngine::ParticleSystem_Trails {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Trails")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ParticleSystem_Trails {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -10306,7 +10320,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ParticleSystem
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+Trails")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_Trails {
     type Type = Self;
@@ -10341,13 +10355,13 @@ impl crate::UnityEngine::ParticleSystem_Trails {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TriggerModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_TriggerModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TriggerModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_TriggerModule {
     type Held<'a> = Self;
@@ -10377,7 +10391,7 @@ for crate::UnityEngine::ParticleSystem_TriggerModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TriggerModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_TriggerModule {
     type Type = Self;
@@ -10388,7 +10402,7 @@ for crate::UnityEngine::ParticleSystem_TriggerModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TriggerModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_TriggerModule {
     type Actual = Self;
@@ -10402,7 +10416,7 @@ for crate::UnityEngine::ParticleSystem_TriggerModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TriggerModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_TriggerModule {
     type Type = Self;
@@ -10417,7 +10431,7 @@ for crate::UnityEngine::ParticleSystem_TriggerModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TriggerModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_TriggerModule {
     type Actual = Self;
@@ -10431,7 +10445,7 @@ for crate::UnityEngine::ParticleSystem_TriggerModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+TriggerModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_TriggerModule {
     type Type = Self;
@@ -10471,13 +10485,13 @@ impl crate::UnityEngine::ParticleSystem_TriggerModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_VelocityOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
     type Held<'a> = Self;
@@ -10507,7 +10521,7 @@ for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
     type Type = Self;
@@ -10518,7 +10532,7 @@ for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
     type Actual = Self;
@@ -10532,7 +10546,7 @@ for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
     type Type = Self;
@@ -10547,7 +10561,7 @@ for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
     type Actual = Self;
@@ -10561,7 +10575,7 @@ for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
     type Type = Self;
@@ -10601,13 +10615,13 @@ impl crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Collision")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Collision {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed4,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Collision")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
     type Held<'a> = Self;
@@ -10637,7 +10651,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Collision")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
     type Type = Self;
@@ -10648,7 +10662,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Collision")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
     type Actual = Self;
@@ -10662,7 +10676,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Collision")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
     type Type = Self;
@@ -10677,7 +10691,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Collision")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
     type Actual = Self;
@@ -10691,7 +10705,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Collision")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
     type Type = Self;
@@ -10704,7 +10718,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Collision {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Emission")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Emission {
@@ -10712,7 +10726,7 @@ pub struct PlaybackState_ParticleSystem_Emission {
     pub m_ToEmitAccumulator: f32,
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Emission")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
     type Held<'a> = Self;
@@ -10742,7 +10756,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Emission")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
     type Type = Self;
@@ -10753,7 +10767,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Emission")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
     type Actual = Self;
@@ -10767,7 +10781,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Emission")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
     type Type = Self;
@@ -10782,7 +10796,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Emission")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
     type Actual = Self;
@@ -10796,7 +10810,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Emission")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
     type Type = Self;
@@ -10809,13 +10823,13 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Emission {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Force")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Force {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed4,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Force")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
     type Held<'a> = Self;
@@ -10845,7 +10859,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Force")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
     type Type = Self;
@@ -10856,7 +10870,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Force")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
     type Actual = Self;
@@ -10870,7 +10884,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Force")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
     type Type = Self;
@@ -10885,7 +10899,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Force")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
     type Actual = Self;
@@ -10899,7 +10913,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Force")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
     type Type = Self;
@@ -10912,13 +10926,13 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Force {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Initial")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Initial {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed4,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Initial")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
     type Held<'a> = Self;
@@ -10948,7 +10962,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Initial")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
     type Type = Self;
@@ -10959,7 +10973,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Initial")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
     type Actual = Self;
@@ -10973,7 +10987,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Initial")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
     type Type = Self;
@@ -10988,7 +11002,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Initial")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
     type Actual = Self;
@@ -11002,7 +11016,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Initial")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
     type Type = Self;
@@ -11015,14 +11029,14 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Initial {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Lights")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Lights {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed,
     pub m_ParticleEmissionCounter: f32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Lights")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
     type Held<'a> = Self;
@@ -11052,7 +11066,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Lights")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
     type Type = Self;
@@ -11063,7 +11077,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Lights")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
     type Actual = Self;
@@ -11077,7 +11091,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Lights")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
     type Type = Self;
@@ -11092,7 +11106,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Lights")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
     type Actual = Self;
@@ -11106,7 +11120,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Lights")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
     type Type = Self;
@@ -11119,13 +11133,13 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Lights {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Noise")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Noise {
     pub m_ScrollOffset: f32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Noise")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
     type Held<'a> = Self;
@@ -11155,7 +11169,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Noise")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
     type Type = Self;
@@ -11166,7 +11180,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Noise")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
     type Actual = Self;
@@ -11180,7 +11194,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Noise")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
     type Type = Self;
@@ -11195,7 +11209,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Noise")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
     type Actual = Self;
@@ -11209,7 +11223,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Noise")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
     type Type = Self;
@@ -11222,7 +11236,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Noise {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Seed {
@@ -11231,7 +11245,7 @@ pub struct PlaybackState_ParticleSystem_Seed {
     pub z: u32,
     pub w: u32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
     type Held<'a> = Self;
@@ -11261,7 +11275,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
     type Type = Self;
@@ -11272,7 +11286,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
     type Actual = Self;
@@ -11286,7 +11300,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
     type Type = Self;
@@ -11301,7 +11315,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
     type Actual = Self;
@@ -11315,7 +11329,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
     type Type = Self;
@@ -11328,7 +11342,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Seed {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Seed4 {
@@ -11337,7 +11351,7 @@ pub struct PlaybackState_ParticleSystem_Seed4 {
     pub z: crate::UnityEngine::PlaybackState_ParticleSystem_Seed,
     pub w: crate::UnityEngine::PlaybackState_ParticleSystem_Seed,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
     type Held<'a> = Self;
@@ -11367,7 +11381,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
     type Type = Self;
@@ -11378,7 +11392,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
     type Actual = Self;
@@ -11392,7 +11406,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
     type Type = Self;
@@ -11407,7 +11421,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
     type Actual = Self;
@@ -11421,7 +11435,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
     type Type = Self;
@@ -11434,7 +11448,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Shape")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Shape {
@@ -11447,7 +11461,7 @@ pub struct PlaybackState_ParticleSystem_Shape {
     pub m_MeshSpawnTimerPrev: f32,
     pub m_OrderedMeshVertexIndex: i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Shape")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
     type Held<'a> = Self;
@@ -11477,7 +11491,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Shape")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
     type Type = Self;
@@ -11488,7 +11502,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Shape")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
     type Actual = Self;
@@ -11502,7 +11516,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Shape")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
     type Type = Self;
@@ -11517,7 +11531,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Shape")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
     type Actual = Self;
@@ -11531,7 +11545,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Shape")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
     type Type = Self;
@@ -11544,13 +11558,13 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Shape {}
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Trail")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Trail {
     pub m_Timer: f32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Trail")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
     type Held<'a> = Self;
@@ -11580,7 +11594,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Trail")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
     type Type = Self;
@@ -11591,7 +11605,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Trail")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
     type Actual = Self;
@@ -11605,7 +11619,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Trail")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
     type Type = Self;
@@ -11620,7 +11634,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Trail")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
     type Actual = Self;
@@ -11634,7 +11648,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+PlaybackState+Trail")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
     type Type = Self;

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -11,7 +11,7 @@ pub struct X509BasicConstraintsExtension {
     pub _status: crate::System::Security::Cryptography::AsnDecodeStatus,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509BasicConstraintsExtension {
@@ -33,7 +33,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509BasicConstraint
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509BasicConstraintsExtension {
@@ -43,7 +43,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509BasicConstraint
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509BasicConstraintsExtension {
@@ -362,7 +362,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509BasicConstrain
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509BasicConstraintsExtension"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509BasicConstraintsExtension {

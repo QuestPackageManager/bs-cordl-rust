@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_TMPro+AtlasPopulationMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AtlasPopulationMode {
@@ -6,7 +6,7 @@ pub enum AtlasPopulationMode {
     Dynamic = 1i32,
     Static = 0i32,
 }
-#[cfg(feature = "TMPro+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_TMPro+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::AtlasPopulationMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::AtlasPopulationMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_TMPro+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::AtlasPopulationMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::AtlasPopulationMod
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_TMPro+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::AtlasPopulationMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::AtlasPopulationMo
         self
     }
 }
-#[cfg(feature = "TMPro+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_TMPro+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::AtlasPopulationMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::AtlasPopulationMod
         }
     }
 }
-#[cfg(feature = "TMPro+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_TMPro+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::AtlasPopulationMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

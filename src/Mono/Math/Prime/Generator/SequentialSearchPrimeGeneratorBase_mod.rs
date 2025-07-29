@@ -1,10 +1,14 @@
-#[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
+#[cfg(
+    feature = "cordl_class_Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SequentialSearchPrimeGeneratorBase {
     __cordl_parent: crate::Mono::Math::Prime::Generator::PrimeGeneratorBase,
 }
-#[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
+#[cfg(
+    feature = "cordl_class_Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
         false
     }
 }
-#[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
+#[cfg(
+    feature = "cordl_class_Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase"
+)]
 impl std::ops::Deref
 for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     type Target = crate::Mono::Math::Prime::Generator::PrimeGeneratorBase;
@@ -32,7 +38,9 @@ for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
+#[cfg(
+    feature = "cordl_class_Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -198,7 +206,9 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
+#[cfg(
+    feature = "cordl_class_Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

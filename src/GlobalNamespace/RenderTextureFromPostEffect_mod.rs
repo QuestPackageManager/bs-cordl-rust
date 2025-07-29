@@ -1,4 +1,4 @@
-#[cfg(feature = "RenderTextureFromPostEffect")]
+#[cfg(feature = "cordl_class_RenderTextureFromPostEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderTextureFromPostEffect {
@@ -6,7 +6,7 @@ pub struct RenderTextureFromPostEffect {
     pub _targetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
 }
-#[cfg(feature = "RenderTextureFromPostEffect")]
+#[cfg(feature = "cordl_class_RenderTextureFromPostEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RenderTextureFromPostEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::RenderTextureFromPostEffect {
         false
     }
 }
-#[cfg(feature = "RenderTextureFromPostEffect")]
+#[cfg(feature = "cordl_class_RenderTextureFromPostEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::RenderTextureFromPostEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RenderTextureFromPostEffect")]
+#[cfg(feature = "cordl_class_RenderTextureFromPostEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RenderTextureFromPostEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::GlobalNamespace::RenderTextureFromPostEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RenderTextureFromPostEffect")]
+#[cfg(feature = "cordl_class_RenderTextureFromPostEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RenderTextureFromPostEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

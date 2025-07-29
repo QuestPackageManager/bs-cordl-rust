@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextSelectingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextSelectingUtilities {
@@ -20,7 +20,7 @@ pub struct TextSelectingUtilities {
     pub OnSelectIndexChange: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub OnRevealCursorChange: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextSelectingUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextSelectingUti
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities")]
 impl std::ops::Deref for crate::UnityEngine::TextSelectingUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities")]
 impl std::ops::DerefMut for crate::UnityEngine::TextSelectingUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1849,7 +1849,7 @@ impl crate::UnityEngine::TextSelectingUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextSelectingUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1858,7 +1858,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextSelectingUtil
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+CharacterType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextSelectingUtilities_CharacterType {
@@ -1869,7 +1869,7 @@ pub enum TextSelectingUtilities_CharacterType {
     Symbol2 = 2i32,
     WhiteSpace = 3i32,
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Held<'a> = Self;
@@ -1899,7 +1899,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Type = Self;
@@ -1910,7 +1910,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Actual = Self;
@@ -1924,7 +1924,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Type = Self;
@@ -1939,7 +1939,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Actual = Self;
@@ -1953,7 +1953,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+Direction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextSelectingUtilities_Direction {
@@ -1961,7 +1961,7 @@ pub enum TextSelectingUtilities_Direction {
     Backward = 1i32,
     Forward = 0i32,
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Held<'a> = Self;
@@ -1991,7 +1991,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Type = Self;
@@ -2002,7 +2002,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Actual = Self;
@@ -2016,7 +2016,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Type = Self;
@@ -2031,7 +2031,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Actual = Self;

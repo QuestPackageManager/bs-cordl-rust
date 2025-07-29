@@ -1,11 +1,11 @@
-#[cfg(feature = "Mono+ValueTuple_1")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTuple_1<T1: quest_hook::libil2cpp::Type> {
     pub Item1: T1,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
 }
-#[cfg(feature = "Mono+ValueTuple_1")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Mono::ValueTuple_1<T1> {
     type Held<'a> = Self;
@@ -48,7 +48,7 @@ for crate::Mono::ValueTuple_1<T1> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+ValueTuple_1")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Mono::ValueTuple_1<T1> {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::Mono::ValueTuple_1<T1> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+ValueTuple_1")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Mono::ValueTuple_1<T1> {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::Mono::ValueTuple_1<T1> {
         self
     }
 }
-#[cfg(feature = "Mono+ValueTuple_1")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Mono::ValueTuple_1<T1> {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::Mono::ValueTuple_1<T1> {
         }
     }
 }
-#[cfg(feature = "Mono+ValueTuple_1")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Mono::ValueTuple_1<T1> {
     type Actual = Self;
@@ -102,7 +102,7 @@ for crate::Mono::ValueTuple_1<T1> {
         actual
     }
 }
-#[cfg(feature = "Mono+ValueTuple_1")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Mono::ValueTuple_1<T1> {
     type Type = Self;

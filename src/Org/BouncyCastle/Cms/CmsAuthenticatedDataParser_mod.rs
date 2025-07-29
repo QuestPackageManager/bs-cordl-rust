@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsAuthenticatedDataParser {
@@ -22,7 +22,7 @@ pub struct CmsAuthenticatedDataParser {
     pub authAttrNotRead: bool,
     pub unauthAttrNotRead: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataParser {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataParser {
     type Target = crate::Org::BouncyCastle::Cms::CmsContentInfoParser;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -335,7 +335,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataParser")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

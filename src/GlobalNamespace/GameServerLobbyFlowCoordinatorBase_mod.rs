@@ -1,10 +1,10 @@
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerLobbyFlowCoordinatorBase {
     __cordl_parent: crate::HMUI::FlowCoordinator,
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase {
         false
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -357,7 +357,7 @@ impl crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -367,7 +367,7 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase+LobbyType")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase+LobbyType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameServerLobbyFlowCoordinatorBase_LobbyType {
@@ -377,7 +377,7 @@ pub enum GameServerLobbyFlowCoordinatorBase_LobbyType {
     Party = 3i32,
     QuickPlayLobby = 2i32,
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase+LobbyType")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase+LobbyType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
     type Held<'a> = Self;
@@ -407,7 +407,7 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase+LobbyType")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase+LobbyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
     type Type = Self;
@@ -418,7 +418,7 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase+LobbyType")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase+LobbyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
     type Actual = Self;
@@ -432,7 +432,7 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
         self
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase+LobbyType")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase+LobbyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
     type Type = Self;
@@ -447,7 +447,7 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
         }
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinatorBase+LobbyType")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinatorBase+LobbyType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase_LobbyType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+InputTrackingState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputTrackingState")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputTrackingState {
@@ -12,7 +12,7 @@ pub enum InputTrackingState {
     Rotation = 2u32,
     Velocity = 4u32,
 }
-#[cfg(feature = "UnityEngine+XR+InputTrackingState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputTrackingState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::InputTrackingState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::InputTrackin
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputTrackingState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputTrackingState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::InputTrackingState {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::XR::InputTrackingState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputTrackingState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputTrackingState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::InputTrackingState {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::XR::InputTrackingState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputTrackingState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputTrackingState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::InputTrackingState {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::XR::InputTrackingState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputTrackingState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputTrackingState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::InputTrackingState {
     type Actual = Self;

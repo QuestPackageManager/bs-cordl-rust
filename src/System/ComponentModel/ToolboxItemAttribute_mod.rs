@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+ToolboxItemAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ToolboxItemAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ToolboxItemAttribute {
@@ -7,7 +7,7 @@ pub struct ToolboxItemAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+ComponentModel+ToolboxItemAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ToolboxItemAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::ToolboxItemAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::ComponentModel::ToolboxItemAttribute {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+ToolboxItemAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ToolboxItemAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::ToolboxItemAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+ToolboxItemAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ToolboxItemAttribute")]
 impl std::ops::DerefMut for crate::System::ComponentModel::ToolboxItemAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -200,7 +200,7 @@ impl crate::System::ComponentModel::ToolboxItemAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+ToolboxItemAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ToolboxItemAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::ToolboxItemAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

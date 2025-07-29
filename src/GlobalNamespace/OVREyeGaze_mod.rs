@@ -1,4 +1,4 @@
-#[cfg(feature = "OVREyeGaze")]
+#[cfg(feature = "cordl_class_OVREyeGaze")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVREyeGaze {
@@ -19,7 +19,7 @@ pub struct OVREyeGaze {
         >,
     >,
 }
-#[cfg(feature = "OVREyeGaze")]
+#[cfg(feature = "cordl_class_OVREyeGaze")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVREyeGaze {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVREyeGaze {
         false
     }
 }
-#[cfg(feature = "OVREyeGaze")]
+#[cfg(feature = "cordl_class_OVREyeGaze")]
 impl std::ops::Deref for crate::GlobalNamespace::OVREyeGaze {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVREyeGaze")]
+#[cfg(feature = "cordl_class_OVREyeGaze")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVREyeGaze {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -366,7 +366,7 @@ impl crate::GlobalNamespace::OVREyeGaze {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVREyeGaze")]
+#[cfg(feature = "cordl_class_OVREyeGaze")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVREyeGaze {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -375,7 +375,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVREyeGaze {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeId")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeId")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVREyeGaze_EyeId {
@@ -383,7 +383,7 @@ pub enum OVREyeGaze_EyeId {
     Left = 0i32,
     Right = 1i32,
 }
-#[cfg(feature = "OVREyeGaze+EyeId")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -412,7 +412,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVREyeGaze_E
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeId")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Type = Self;
@@ -423,7 +423,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeId {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeId")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Actual = Self;
@@ -437,7 +437,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeId {
         self
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeId")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Type = Self;
@@ -452,7 +452,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeId {
         }
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeId")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -465,7 +465,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVREyeGaze
         actual
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeTrackingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVREyeGaze_EyeTrackingMode {
@@ -474,7 +474,7 @@ pub enum OVREyeGaze_EyeTrackingMode {
     TrackingSpace = 2i32,
     WorldSpace = 1i32,
 }
-#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Held<'a> = Self;
@@ -504,7 +504,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Type = Self;
@@ -515,7 +515,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Actual = Self;
@@ -529,7 +529,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
         self
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Type = Self;
@@ -544,7 +544,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
         }
     }
 }
-#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+#[cfg(feature = "cordl_class_OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Actual = Self;

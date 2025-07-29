@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+SequenceNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SequenceNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SequenceNode {
     __cordl_parent: crate::System::Xml::Schema::InteriorNode,
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SequenceNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SequenceNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Sequence
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SequenceNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::SequenceNode {
     type Target = crate::System::Xml::Schema::InteriorNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SequenceNode")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SequenceNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -172,7 +172,7 @@ impl crate::System::Xml::Schema::SequenceNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SequenceNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SequenceNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -181,7 +181,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SequenceN
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+SequenceNode+SequenceConstructPosContext"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SequenceNode_SequenceConstructPosContext {
@@ -191,7 +193,9 @@ pub struct SequenceNode_SequenceConstructPosContext {
     pub lastposLeft: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub firstposRight: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+SequenceNode+SequenceConstructPosContext"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
     type Held<'a> = Self;
@@ -221,7 +225,9 @@ for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+SequenceNode+SequenceConstructPosContext"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
     type Type = Self;
@@ -232,7 +238,9 @@ for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+SequenceNode+SequenceConstructPosContext"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
     type Actual = Self;
@@ -246,7 +254,9 @@ for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+SequenceNode+SequenceConstructPosContext"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
     type Type = Self;
@@ -261,7 +271,9 @@ for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+SequenceNode+SequenceConstructPosContext"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
     type Actual = Self;
@@ -275,7 +287,9 @@ for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+SequenceNode+SequenceConstructPosContext"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Schema::SequenceNode_SequenceConstructPosContext {
     type Type = Self;

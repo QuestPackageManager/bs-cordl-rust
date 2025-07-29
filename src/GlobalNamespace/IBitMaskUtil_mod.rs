@@ -1,10 +1,10 @@
-#[cfg(feature = "IBitMaskUtil")]
+#[cfg(feature = "cordl_class_IBitMaskUtil")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IBitMaskUtil {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IBitMaskUtil")]
+#[cfg(feature = "cordl_class_IBitMaskUtil")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IBitMaskUtil {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IBitMaskUtil
         false
     }
 }
-#[cfg(feature = "IBitMaskUtil")]
+#[cfg(feature = "cordl_class_IBitMaskUtil")]
 impl std::ops::Deref for crate::GlobalNamespace::IBitMaskUtil {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IBitMaskUtil")]
+#[cfg(feature = "cordl_class_IBitMaskUtil")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IBitMaskUtil {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -293,7 +293,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IBitMaskUtil")]
+#[cfg(feature = "cordl_class_IBitMaskUtil")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IBitMaskUtil {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

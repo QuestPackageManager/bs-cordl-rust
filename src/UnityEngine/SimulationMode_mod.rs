@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+SimulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SimulationMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SimulationMode {
@@ -7,7 +7,7 @@ pub enum SimulationMode {
     Script = 2i32,
     Update = 1i32,
 }
-#[cfg(feature = "UnityEngine+SimulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SimulationMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SimulationMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SimulationMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SimulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SimulationMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SimulationMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SimulationMo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SimulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SimulationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SimulationMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SimulationM
         self
     }
 }
-#[cfg(feature = "UnityEngine+SimulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SimulationMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SimulationMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SimulationMo
         }
     }
 }
-#[cfg(feature = "UnityEngine+SimulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SimulationMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SimulationMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

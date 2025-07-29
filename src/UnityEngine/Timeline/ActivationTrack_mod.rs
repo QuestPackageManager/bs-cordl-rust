@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivationTrack {
@@ -8,7 +8,7 @@ pub struct ActivationTrack {
         crate::UnityEngine::Timeline::ActivationMixerPlayable,
     >,
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::ActivationTrack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::UnityEngine::Timeline::ActivationTrack {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationTrack {
     type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::ActivationTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -267,7 +267,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::ActivationTrack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -277,7 +277,7 @@ for crate::UnityEngine::Timeline::ActivationTrack {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ActivationTrack_PostPlaybackState {
@@ -287,7 +287,7 @@ pub enum ActivationTrack_PostPlaybackState {
     LeaveAsIs = 3i32,
     Revert = 2i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
     type Held<'a> = Self;
@@ -317,7 +317,7 @@ for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
     type Type = Self;
@@ -328,7 +328,7 @@ for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
     type Actual = Self;
@@ -342,7 +342,7 @@ for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
     type Type = Self;
@@ -357,7 +357,7 @@ for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState {
     type Actual = Self;

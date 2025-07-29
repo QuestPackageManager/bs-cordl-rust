@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Set_1")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Set_1<TElement: quest_hook::libil2cpp::Type> {
@@ -14,7 +14,7 @@ pub struct Set_1<TElement: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "System+Linq+Set_1")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Linq::Set_1<TElement> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,7 +47,7 @@ for crate::System::Linq::Set_1<TElement> {
         false
     }
 }
-#[cfg(feature = "System+Linq+Set_1")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Set_1<TElement> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -55,7 +55,7 @@ for crate::System::Linq::Set_1<TElement> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Set_1")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Linq::Set_1<TElement> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -242,7 +242,7 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Set_1<TElement>
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Set_1")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1")]
 impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Set_1<TElement> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -252,7 +252,7 @@ for crate::System::Linq::Set_1<TElement> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Set_1+Slot")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1+Slot")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Set_1_Slot<TElement: quest_hook::libil2cpp::Type> {
@@ -261,7 +261,7 @@ pub struct Set_1_Slot<TElement: quest_hook::libil2cpp::Type> {
     pub next: i32,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "System+Linq+Set_1+Slot")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Held<'a> = Self;
@@ -304,7 +304,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Linq+Set_1+Slot")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Type = Self;
@@ -315,7 +315,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Linq+Set_1+Slot")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Actual = Self;
@@ -329,7 +329,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
         self
     }
 }
-#[cfg(feature = "System+Linq+Set_1+Slot")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Type = Self;
@@ -344,7 +344,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
         }
     }
 }
-#[cfg(feature = "System+Linq+Set_1+Slot")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Actual = Self;
@@ -358,7 +358,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
         actual
     }
 }
-#[cfg(feature = "System+Linq+Set_1+Slot")]
+#[cfg(feature = "cordl_class_System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Type = Self;

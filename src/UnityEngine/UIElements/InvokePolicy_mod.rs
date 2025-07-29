@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+InvokePolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InvokePolicy")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InvokePolicy {
@@ -6,7 +6,7 @@ pub enum InvokePolicy {
     Default = 0i32,
     IncludeDisabled = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+InvokePolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InvokePolicy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::InvokePolicy {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::UIElements::InvokePolicy {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InvokePolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InvokePolicy")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::InvokePolicy {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::InvokePolicy {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InvokePolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InvokePolicy")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::InvokePolicy {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::InvokePolicy {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InvokePolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InvokePolicy")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::InvokePolicy {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::InvokePolicy {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InvokePolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InvokePolicy")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::InvokePolicy {
     type Actual = Self;

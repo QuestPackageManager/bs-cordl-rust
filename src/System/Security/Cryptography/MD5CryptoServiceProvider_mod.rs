@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+MD5CryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MD5CryptoServiceProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MD5CryptoServiceProvider {
@@ -11,7 +11,7 @@ pub struct MD5CryptoServiceProvider {
     >,
     pub _ProcessingBufferCount: i32,
 }
-#[cfg(feature = "System+Security+Cryptography+MD5CryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MD5CryptoServiceProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::MD5CryptoServiceProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::System::Security::Cryptography::MD5CryptoServiceProvider {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+MD5CryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MD5CryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::MD5CryptoServiceProvider {
     type Target = crate::System::Security::Cryptography::MD5;
@@ -39,7 +39,7 @@ for crate::System::Security::Cryptography::MD5CryptoServiceProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+MD5CryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MD5CryptoServiceProvider")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::MD5CryptoServiceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -309,7 +309,7 @@ impl crate::System::Security::Cryptography::MD5CryptoServiceProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+MD5CryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MD5CryptoServiceProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::MD5CryptoServiceProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

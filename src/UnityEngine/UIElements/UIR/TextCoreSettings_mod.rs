@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextCoreSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextCoreSettings {
@@ -9,7 +9,7 @@ pub struct TextCoreSettings {
     pub underlayOffset: crate::UnityEngine::Vector2,
     pub underlaySoftness: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextCoreSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextCoreSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextCoreSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextCoreSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextCoreSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextCoreSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
     type Type = Self;

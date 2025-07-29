@@ -1,4 +1,4 @@
-#[cfg(feature = "ClickButtonWithCommandArgument")]
+#[cfg(feature = "cordl_class_ClickButtonWithCommandArgument")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClickButtonWithCommandArgument {
@@ -6,7 +6,7 @@ pub struct ClickButtonWithCommandArgument {
     pub _argument: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
 }
-#[cfg(feature = "ClickButtonWithCommandArgument")]
+#[cfg(feature = "cordl_class_ClickButtonWithCommandArgument")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ClickButtonWithCommandArgument {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::ClickButtonWithCommandArgument {
         false
     }
 }
-#[cfg(feature = "ClickButtonWithCommandArgument")]
+#[cfg(feature = "cordl_class_ClickButtonWithCommandArgument")]
 impl std::ops::Deref for crate::GlobalNamespace::ClickButtonWithCommandArgument {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ClickButtonWithCommandArgument")]
+#[cfg(feature = "cordl_class_ClickButtonWithCommandArgument")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ClickButtonWithCommandArgument {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::ClickButtonWithCommandArgument {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ClickButtonWithCommandArgument")]
+#[cfg(feature = "cordl_class_ClickButtonWithCommandArgument")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ClickButtonWithCommandArgument {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "ProgressActivitySubtaskSO")]
+#[cfg(feature = "cordl_class_ProgressActivitySubtaskSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProgressActivitySubtaskSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _activityId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "ProgressActivitySubtaskSO")]
+#[cfg(feature = "cordl_class_ProgressActivitySubtaskSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ProgressActivitySubtaskSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::ProgressActivitySubtaskSO {
         false
     }
 }
-#[cfg(feature = "ProgressActivitySubtaskSO")]
+#[cfg(feature = "cordl_class_ProgressActivitySubtaskSO")]
 impl std::ops::Deref for crate::GlobalNamespace::ProgressActivitySubtaskSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ProgressActivitySubtaskSO")]
+#[cfg(feature = "cordl_class_ProgressActivitySubtaskSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ProgressActivitySubtaskSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::ProgressActivitySubtaskSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ProgressActivitySubtaskSO")]
+#[cfg(feature = "cordl_class_ProgressActivitySubtaskSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ProgressActivitySubtaskSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

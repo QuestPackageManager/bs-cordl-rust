@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache {
@@ -22,7 +22,7 @@ pub struct ReflectionMethodsCache {
         crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ReflectionMethodsCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::UnityEngine::UI::ReflectionMethodsCache {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache")]
 impl std::ops::Deref for crate::UnityEngine::UI::ReflectionMethodsCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::ReflectionMethodsCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::ReflectionMethodsCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -139,13 +139,17 @@ for crate::UnityEngine::UI::ReflectionMethodsCache {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_GetRayIntersectionAllCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -165,7 +169,9 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback {
     type Target = crate::System::MulticastDelegate;
@@ -173,7 +179,9 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -335,7 +343,9 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallbac
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -346,7 +356,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback
     }
 }
 #[cfg(
-    feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -354,7 +364,7 @@ pub struct ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
@@ -376,7 +386,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAlloc
     }
 }
 #[cfg(
-    feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
@@ -386,7 +396,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAlloc
     }
 }
 #[cfg(
-    feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
@@ -557,7 +567,7 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllo
     }
 }
 #[cfg(
-    feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
@@ -568,13 +578,17 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAlloc
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_GetRaycastNonAllocCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -594,7 +608,9 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
     type Target = crate::System::MulticastDelegate;
@@ -602,7 +618,9 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -769,7 +787,9 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -779,13 +799,13 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_Raycast2DCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -805,7 +825,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
     type Target = crate::System::MulticastDelegate;
@@ -813,7 +833,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -967,7 +987,7 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -977,13 +997,13 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_Raycast3DCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1003,7 +1023,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
     type Target = crate::System::MulticastDelegate;
@@ -1011,7 +1031,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1175,7 +1195,7 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1185,13 +1205,13 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_RaycastAllCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1211,7 +1231,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
     type Target = crate::System::MulticastDelegate;
@@ -1219,7 +1239,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1381,7 +1401,7 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

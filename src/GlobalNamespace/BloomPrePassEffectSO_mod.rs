@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassEffectSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassEffectSO {
@@ -8,7 +8,7 @@ pub struct BloomPrePassEffectSO {
     pub _fov: crate::UnityEngine::Vector2,
     pub _linesWidth: f32,
 }
-#[cfg(feature = "BloomPrePassEffectSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassEffectSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::BloomPrePassEffectSO {
         false
     }
 }
-#[cfg(feature = "BloomPrePassEffectSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassEffectSO {
     type Target = crate::GlobalNamespace::TextureEffectSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassEffectSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassEffectSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -198,7 +198,7 @@ impl crate::GlobalNamespace::BloomPrePassEffectSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassEffectSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassEffectSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

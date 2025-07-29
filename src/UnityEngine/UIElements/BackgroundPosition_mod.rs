@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BackgroundPosition {
     pub keyword: crate::UnityEngine::UIElements::BackgroundPositionKeyword,
     pub offset: crate::UnityEngine::UIElements::Length,
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BackgroundPosition {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::BackgroundPosition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::BackgroundPosition {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::BackgroundPosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::BackgroundPosition {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::BackgroundPosition {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::BackgroundPosition {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::BackgroundPosition {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::BackgroundPosition {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::BackgroundPosition {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::BackgroundPosition {
     type Type = Self;

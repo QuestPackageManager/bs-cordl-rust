@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeSerializationEventArgs {
@@ -10,7 +10,7 @@ pub struct SafeSerializationEventArgs {
         >,
     >,
 }
-#[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationEventArgs")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
     type Target = crate::System::EventArgs;
@@ -38,7 +38,7 @@ for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationEventArgs")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -122,7 +122,7 @@ impl crate::System::Runtime::Serialization::SafeSerializationEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

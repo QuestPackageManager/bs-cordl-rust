@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayModifierMask")]
+#[cfg(feature = "cordl_class_GameplayModifierMask")]
 #[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifierMask {
@@ -24,7 +24,7 @@ pub enum GameplayModifierMask {
     SuperFastSong = 4096u16,
     ZenMode = 16384u16,
 }
-#[cfg(feature = "GameplayModifierMask")]
+#[cfg(feature = "cordl_class_GameplayModifierMask")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifierMask {
     type Held<'a> = Self;
@@ -54,7 +54,7 @@ for crate::GlobalNamespace::GameplayModifierMask {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameplayModifierMask")]
+#[cfg(feature = "cordl_class_GameplayModifierMask")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifierMask {
     type Type = Self;
@@ -65,7 +65,7 @@ for crate::GlobalNamespace::GameplayModifierMask {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameplayModifierMask")]
+#[cfg(feature = "cordl_class_GameplayModifierMask")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifierMask {
     type Actual = Self;
@@ -79,7 +79,7 @@ for crate::GlobalNamespace::GameplayModifierMask {
         self
     }
 }
-#[cfg(feature = "GameplayModifierMask")]
+#[cfg(feature = "cordl_class_GameplayModifierMask")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifierMask {
     type Type = Self;
@@ -94,7 +94,7 @@ for crate::GlobalNamespace::GameplayModifierMask {
         }
     }
 }
-#[cfg(feature = "GameplayModifierMask")]
+#[cfg(feature = "cordl_class_GameplayModifierMask")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifierMask {
     type Actual = Self;

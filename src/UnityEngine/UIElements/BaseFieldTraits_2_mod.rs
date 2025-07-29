@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BaseFieldTraits_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseFieldTraits_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseFieldTraits_2<
@@ -12,7 +12,7 @@ pub struct BaseFieldTraits_2<
         TValueUxmlAttributeType,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseFieldTraits_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseFieldTraits_2")]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
@@ -54,7 +54,7 @@ for crate::UnityEngine::UIElements::BaseFieldTraits_2<
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseFieldTraits_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseFieldTraits_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
@@ -68,7 +68,7 @@ for crate::UnityEngine::UIElements::BaseFieldTraits_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseFieldTraits_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseFieldTraits_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
@@ -173,7 +173,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseFieldTraits_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseFieldTraits_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,

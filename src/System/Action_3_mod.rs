@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Action_3")]
+#[cfg(feature = "cordl_class_System+Action_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Action_3<
@@ -11,7 +11,7 @@ pub struct Action_3<
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
     __cordl_phantom_T3: std::marker::PhantomData<T3>,
 }
-#[cfg(feature = "System+Action_3")]
+#[cfg(feature = "cordl_class_System+Action_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -47,7 +47,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "System+Action_3")]
+#[cfg(feature = "cordl_class_System+Action_3")]
 impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Action_3")]
+#[cfg(feature = "cordl_class_System+Action_3")]
 impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -169,7 +169,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Action_3")]
+#[cfg(feature = "cordl_class_System+Action_3")]
 impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

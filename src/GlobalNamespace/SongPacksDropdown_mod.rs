@@ -1,4 +1,4 @@
-#[cfg(feature = "SongPacksDropdown")]
+#[cfg(feature = "cordl_class_SongPacksDropdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPacksDropdown {
@@ -17,7 +17,7 @@ pub struct SongPacksDropdown {
         >,
     >,
 }
-#[cfg(feature = "SongPacksDropdown")]
+#[cfg(feature = "cordl_class_SongPacksDropdown")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongPacksDropdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongPacksDro
         false
     }
 }
-#[cfg(feature = "SongPacksDropdown")]
+#[cfg(feature = "cordl_class_SongPacksDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPacksDropdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongPacksDropdown")]
+#[cfg(feature = "cordl_class_SongPacksDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongPacksDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -342,7 +342,7 @@ impl crate::GlobalNamespace::SongPacksDropdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongPacksDropdown")]
+#[cfg(feature = "cordl_class_SongPacksDropdown")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPacksDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

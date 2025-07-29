@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+Screen")]
+#[cfg(feature = "cordl_class_HMUI+Screen")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Screen {
@@ -6,7 +6,7 @@ pub struct Screen {
     pub _rootViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _isBeingDestroyed: bool,
 }
-#[cfg(feature = "HMUI+Screen")]
+#[cfg(feature = "cordl_class_HMUI+Screen")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::Screen {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::Screen {
         false
     }
 }
-#[cfg(feature = "HMUI+Screen")]
+#[cfg(feature = "cordl_class_HMUI+Screen")]
 impl std::ops::Deref for crate::HMUI::Screen {
     type Target = crate::HMUI::ScreenBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+Screen")]
+#[cfg(feature = "cordl_class_HMUI+Screen")]
 impl std::ops::DerefMut for crate::HMUI::Screen {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -175,7 +175,7 @@ impl crate::HMUI::Screen {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+Screen")]
+#[cfg(feature = "cordl_class_HMUI+Screen")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::Screen {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

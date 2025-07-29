@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+CanvasScaler")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CanvasScaler {
@@ -18,7 +18,7 @@ pub struct CanvasScaler {
     pub m_PrevReferencePixelsPerUnit: f32,
     pub m_PresetInfoIsWorld: bool,
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::CanvasScaler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::CanvasScaler
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler")]
 impl std::ops::Deref for crate::UnityEngine::UI::CanvasScaler {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::CanvasScaler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -792,7 +792,7 @@ impl crate::UnityEngine::UI::CanvasScaler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::CanvasScaler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -801,7 +801,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::CanvasScaler 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScaleMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CanvasScaler_ScaleMode {
@@ -810,7 +810,7 @@ pub enum CanvasScaler_ScaleMode {
     ConstantPixelSize = 0i32,
     ScaleWithScreenSize = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Held<'a> = Self;
@@ -840,7 +840,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Type = Self;
@@ -851,7 +851,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Actual = Self;
@@ -865,7 +865,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Type = Self;
@@ -880,7 +880,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Actual = Self;
@@ -894,7 +894,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CanvasScaler_ScreenMatchMode {
@@ -903,7 +903,7 @@ pub enum CanvasScaler_ScreenMatchMode {
     MatchWidthOrHeight = 0i32,
     Shrink = 2i32,
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Held<'a> = Self;
@@ -933,7 +933,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Type = Self;
@@ -944,7 +944,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Actual = Self;
@@ -958,7 +958,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Type = Self;
@@ -973,7 +973,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Actual = Self;
@@ -987,7 +987,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+Unit")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CanvasScaler_Unit {
@@ -998,7 +998,7 @@ pub enum CanvasScaler_Unit {
     Picas = 4i32,
     Points = 3i32,
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1027,7 +1027,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::CanvasScaler
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Type = Self;
@@ -1038,7 +1038,7 @@ for crate::UnityEngine::UI::CanvasScaler_Unit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Actual = Self;
@@ -1052,7 +1052,7 @@ for crate::UnityEngine::UI::CanvasScaler_Unit {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Type = Self;
@@ -1067,7 +1067,7 @@ for crate::UnityEngine::UI::CanvasScaler_Unit {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

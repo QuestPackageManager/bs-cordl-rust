@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+ObjectCreationHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ObjectCreationHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObjectCreationHandling {
@@ -7,7 +7,7 @@ pub enum ObjectCreationHandling {
     Replace = 2i32,
     Reuse = 1i32,
 }
-#[cfg(feature = "Newtonsoft+Json+ObjectCreationHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ObjectCreationHandling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::ObjectCreationHandling {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Newtonsoft::Json::ObjectCreationHandling {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ObjectCreationHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ObjectCreationHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::ObjectCreationHandling {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Newtonsoft::Json::ObjectCreationHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ObjectCreationHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ObjectCreationHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::ObjectCreationHandling {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Newtonsoft::Json::ObjectCreationHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ObjectCreationHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ObjectCreationHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::ObjectCreationHandling {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Newtonsoft::Json::ObjectCreationHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ObjectCreationHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ObjectCreationHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::ObjectCreationHandling {
     type Actual = Self;

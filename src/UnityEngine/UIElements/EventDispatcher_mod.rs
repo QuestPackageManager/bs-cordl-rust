@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventDispatcher {
@@ -30,7 +30,7 @@ pub struct EventDispatcher {
     pub m_Immediate: bool,
     pub _processingEvents_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventDispatcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,14 +50,14 @@ for crate::UnityEngine::UIElements::EventDispatcher {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventDispatcher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventDispatcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -410,7 +410,7 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EventDispatcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -420,7 +420,7 @@ for crate::UnityEngine::UIElements::EventDispatcher {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventDispatcher_DispatchContext {
@@ -431,7 +431,7 @@ pub struct EventDispatcher_DispatchContext {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
     type Held<'a> = Self;
@@ -461,7 +461,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
     type Type = Self;
@@ -472,7 +472,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
     type Actual = Self;
@@ -486,7 +486,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
     type Type = Self;
@@ -501,7 +501,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
     type Actual = Self;
@@ -515,7 +515,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
     type Type = Self;
@@ -528,14 +528,14 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 impl crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {}
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventDispatcher_EventRecord {
     pub m_Event: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     pub m_Panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
     type Held<'a> = Self;
@@ -565,7 +565,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
     type Type = Self;
@@ -576,7 +576,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
     type Actual = Self;
@@ -590,7 +590,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
     type Type = Self;
@@ -605,7 +605,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
     type Actual = Self;
@@ -619,7 +619,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
     type Type = Self;

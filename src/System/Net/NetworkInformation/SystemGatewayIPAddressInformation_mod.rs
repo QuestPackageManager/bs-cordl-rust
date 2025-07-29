@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+SystemGatewayIPAddressInformation"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemGatewayIPAddressInformation {
     __cordl_parent: crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
     pub address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
 }
-#[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+SystemGatewayIPAddressInformation"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+SystemGatewayIPAddressInformation"
+)]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
     type Target = crate::System::Net::NetworkInformation::GatewayIPAddressInformation;
@@ -33,7 +39,9 @@ for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+SystemGatewayIPAddressInformation"
+)]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -113,7 +121,9 @@ impl crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+SystemGatewayIPAddressInformation"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

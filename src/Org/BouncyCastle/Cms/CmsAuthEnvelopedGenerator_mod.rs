@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsAuthEnvelopedGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

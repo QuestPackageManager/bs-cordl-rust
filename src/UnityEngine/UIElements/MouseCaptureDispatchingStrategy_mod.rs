@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseCaptureDispatchingStrategy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -136,7 +136,7 @@ impl crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -162,7 +162,9 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MouseCaptureDispatchingStrategy_EventBehavior {
@@ -171,7 +173,9 @@ pub enum MouseCaptureDispatchingStrategy_EventBehavior {
     IsSentExclusivelyToCapturingElement = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavior {
     type Held<'a> = Self;
@@ -201,7 +205,9 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavior {
     type Type = Self;
@@ -212,7 +218,9 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavior {
     type Actual = Self;
@@ -226,7 +234,9 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavio
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavior {
     type Type = Self;
@@ -241,7 +251,9 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavio
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavior {
     type Actual = Self;

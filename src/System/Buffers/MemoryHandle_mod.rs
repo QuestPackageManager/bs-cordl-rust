@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Buffers+MemoryHandle")]
+#[cfg(feature = "cordl_class_System+Buffers+MemoryHandle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MemoryHandle {
@@ -6,7 +6,7 @@ pub struct MemoryHandle {
     pub _handle: crate::System::Runtime::InteropServices::GCHandle,
     pub _pinnable: quest_hook::libil2cpp::Gc<crate::System::Buffers::IPinnable>,
 }
-#[cfg(feature = "System+Buffers+MemoryHandle")]
+#[cfg(feature = "cordl_class_System+Buffers+MemoryHandle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Buffers::MemoryHandle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Buffers::MemoryHandle
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Buffers+MemoryHandle")]
+#[cfg(feature = "cordl_class_System+Buffers+MemoryHandle")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Buffers::MemoryHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Buffers::MemoryHa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Buffers+MemoryHandle")]
+#[cfg(feature = "cordl_class_System+Buffers+MemoryHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Buffers::MemoryHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Buffers::MemoryH
         self
     }
 }
-#[cfg(feature = "System+Buffers+MemoryHandle")]
+#[cfg(feature = "cordl_class_System+Buffers+MemoryHandle")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Buffers::MemoryHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Buffers::MemoryHa
         }
     }
 }
-#[cfg(feature = "System+Buffers+MemoryHandle")]
+#[cfg(feature = "cordl_class_System+Buffers+MemoryHandle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Buffers::MemoryHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Buffers::MemoryHand
         actual
     }
 }
-#[cfg(feature = "System+Buffers+MemoryHandle")]
+#[cfg(feature = "cordl_class_System+Buffers+MemoryHandle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Buffers::MemoryHandle {
     type Type = Self;

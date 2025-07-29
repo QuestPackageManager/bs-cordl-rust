@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+Plane")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Plane {
     pub NormalAndDistance: crate::Unity::Mathematics::float4,
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::Geometry::Plane {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::Geometry:
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::Geometry::Plane {
     type Type = Self;
@@ -44,7 +44,7 @@ for crate::Unity::Mathematics::Geometry::Plane {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::Geometry::Plane {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::Unity::Mathematics::Geometry::Plane {
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::Geometry::Plane {
     type Type = Self;
@@ -73,7 +73,7 @@ for crate::Unity::Mathematics::Geometry::Plane {
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::Geometry::Plane {
     type Actual = Self;
@@ -87,7 +87,7 @@ for crate::Unity::Mathematics::Geometry::Plane {
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Mathematics::Geometry::Plane {
     type Type = Self;

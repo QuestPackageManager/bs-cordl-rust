@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Init+GameVersion")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameVersion {
@@ -8,7 +8,7 @@ pub struct GameVersion {
         crate::BeatSaber::Init::GameVersion_Metadata,
     >,
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::GameVersion {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::GameVersion 
         false
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion")]
 impl std::ops::Deref for crate::BeatSaber::Init::GameVersion {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion")]
 impl std::ops::DerefMut for crate::BeatSaber::Init::GameVersion {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -248,7 +248,7 @@ impl crate::BeatSaber::Init::GameVersion {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion")]
 impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Init::GameVersion {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -313,7 +313,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+BuildInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GameVersion_BuildInfo {
@@ -322,7 +322,7 @@ pub struct GameVersion_BuildInfo {
     pub platformId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub platformIdIntValue: i32,
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+BuildInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     type Held<'a> = Self;
@@ -352,7 +352,7 @@ for crate::BeatSaber::Init::GameVersion_BuildInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+BuildInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     type Type = Self;
@@ -363,7 +363,7 @@ for crate::BeatSaber::Init::GameVersion_BuildInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+BuildInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     type Actual = Self;
@@ -377,7 +377,7 @@ for crate::BeatSaber::Init::GameVersion_BuildInfo {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+BuildInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     type Type = Self;
@@ -392,7 +392,7 @@ for crate::BeatSaber::Init::GameVersion_BuildInfo {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+BuildInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     type Actual = Self;
@@ -406,7 +406,7 @@ for crate::BeatSaber::Init::GameVersion_BuildInfo {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+BuildInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     type Type = Self;
@@ -674,7 +674,7 @@ for crate::BeatSaber::Init::GameVersion_BuildInfo {
         todo!()
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Content")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GameVersion_Content {
@@ -682,7 +682,7 @@ pub struct GameVersion_Content {
     pub minor: u32,
     pub patch: u32,
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Content")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::GameVersion_Content {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -711,7 +711,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::GameVersion_
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Content")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Init::GameVersion_Content {
     type Type = Self;
@@ -722,7 +722,7 @@ for crate::BeatSaber::Init::GameVersion_Content {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Content")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Init::GameVersion_Content {
     type Actual = Self;
@@ -736,7 +736,7 @@ for crate::BeatSaber::Init::GameVersion_Content {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Content")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Init::GameVersion_Content {
     type Type = Self;
@@ -751,7 +751,7 @@ for crate::BeatSaber::Init::GameVersion_Content {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Content")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Init::GameVersion_Content {
     type Actual = Self;
@@ -765,7 +765,7 @@ for crate::BeatSaber::Init::GameVersion_Content {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Content")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Init::GameVersion_Content {
     type Type = Self;
@@ -1035,7 +1035,7 @@ for crate::BeatSaber::Init::GameVersion_Content {
         todo!()
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Metadata")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GameVersion_Metadata {
@@ -1044,7 +1044,7 @@ pub struct GameVersion_Metadata {
         crate::BeatSaber::Init::GameVersion_BuildInfo,
     >,
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Metadata")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Init::GameVersion_Metadata {
     type Held<'a> = Self;
@@ -1074,7 +1074,7 @@ for crate::BeatSaber::Init::GameVersion_Metadata {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Metadata")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Init::GameVersion_Metadata {
     type Type = Self;
@@ -1085,7 +1085,7 @@ for crate::BeatSaber::Init::GameVersion_Metadata {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Metadata")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Init::GameVersion_Metadata {
     type Actual = Self;
@@ -1099,7 +1099,7 @@ for crate::BeatSaber::Init::GameVersion_Metadata {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Metadata")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Init::GameVersion_Metadata {
     type Type = Self;
@@ -1114,7 +1114,7 @@ for crate::BeatSaber::Init::GameVersion_Metadata {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Metadata")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Init::GameVersion_Metadata {
     type Actual = Self;
@@ -1128,7 +1128,7 @@ for crate::BeatSaber::Init::GameVersion_Metadata {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Metadata")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Init::GameVersion_Metadata {
     type Type = Self;
@@ -1424,14 +1424,14 @@ for crate::BeatSaber::Init::GameVersion_Metadata {
         todo!()
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleaseLabel")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GameVersion_PreReleaseLabel {
     pub prefix: crate::BeatSaber::Init::GameVersion_PreReleasePrefix,
     pub label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleaseLabel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     type Held<'a> = Self;
@@ -1461,7 +1461,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleaseLabel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     type Type = Self;
@@ -1472,7 +1472,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleaseLabel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     type Actual = Self;
@@ -1486,7 +1486,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleaseLabel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     type Type = Self;
@@ -1501,7 +1501,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleaseLabel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     type Actual = Self;
@@ -1515,7 +1515,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleaseLabel")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     type Type = Self;
@@ -1777,7 +1777,7 @@ impl AsMut<
         todo!()
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleasePrefix")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleasePrefix")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameVersion_PreReleasePrefix {
@@ -1787,7 +1787,7 @@ pub enum GameVersion_PreReleasePrefix {
     Nightly = 20i32,
     ReleaseCandidate = 30i32,
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleasePrefix")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleasePrefix")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
     type Held<'a> = Self;
@@ -1817,7 +1817,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleasePrefix")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleasePrefix")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
     type Type = Self;
@@ -1828,7 +1828,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleasePrefix")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleasePrefix")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
     type Actual = Self;
@@ -1842,7 +1842,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleasePrefix")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleasePrefix")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
     type Type = Self;
@@ -1857,7 +1857,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersion+PreReleasePrefix")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleasePrefix")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
     type Actual = Self;

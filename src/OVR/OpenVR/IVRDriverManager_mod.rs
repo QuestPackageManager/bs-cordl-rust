@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRDriverManager {
@@ -12,7 +12,7 @@ pub struct IVRDriverManager {
         crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRDriverManager {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRDriverManager
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRDriverManager {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -51,7 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRDriverMan
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRDriverManager {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -64,7 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRDriverMa
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRDriverManager {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -78,7 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRDriverMan
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRDriverManager {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRDriverManag
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::IVRDriverManager {
     type Type = Self;
@@ -111,13 +111,13 @@ impl crate::OVR::OpenVR::IVRDriverManager {
     #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
     pub type _GetDriverName = crate::OVR::OpenVR::IVRDriverManager__GetDriverName;
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRDriverManager__GetDriverCount {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -137,14 +137,14 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -272,7 +272,7 @@ impl crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -282,13 +282,13 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRDriverManager__GetDriverHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -308,14 +308,14 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -456,7 +456,7 @@ impl crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -466,13 +466,13 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRDriverManager__GetDriverName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -492,14 +492,14 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -656,7 +656,7 @@ impl crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

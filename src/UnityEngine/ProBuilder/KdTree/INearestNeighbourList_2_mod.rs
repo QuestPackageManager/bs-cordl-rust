@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct INearestNeighbourList_2<
@@ -9,7 +9,7 @@ pub struct INearestNeighbourList_2<
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TDistance: std::marker::PhantomData<TDistance>,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ for crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<TItem, TDist
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ for crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<TItem, TDist
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,
@@ -205,7 +205,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+INearestNeighbourList_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+AddressMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AddressMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AddressMode {
@@ -7,7 +7,7 @@ pub enum AddressMode {
     Mirror = 2i32,
     Wrap = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+AddressMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AddressMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::AddressMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Addr
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AddressMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AddressMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::AddressMode {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::AddressMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AddressMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AddressMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::AddressMode {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::AddressMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AddressMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AddressMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::AddressMode {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::AddressMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AddressMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AddressMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::AddressMode {
     type Actual = Self;

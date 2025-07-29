@@ -1,4 +1,4 @@
-#[cfg(feature = "StandardLevelInfoSaveData")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelInfoSaveData {
@@ -42,7 +42,7 @@ pub struct StandardLevelInfoSaveData {
         >,
     >,
 }
-#[cfg(feature = "StandardLevelInfoSaveData")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelInfoSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -62,14 +62,14 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData {
         false
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelInfoSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelInfoSaveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -802,7 +802,7 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardLevelInfoSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -812,7 +812,7 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmap")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelInfoSaveData_DifficultyBeatmap {
@@ -825,7 +825,7 @@ pub struct StandardLevelInfoSaveData_DifficultyBeatmap {
     pub _beatmapColorSchemeIdx: i32,
     pub _environmentNameIdx: i32,
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmap")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -845,7 +845,7 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
         false
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -853,7 +853,7 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1084,7 +1084,7 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmap")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1094,7 +1094,7 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmapSet")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelInfoSaveData_DifficultyBeatmapSet {
@@ -1110,7 +1110,7 @@ pub struct StandardLevelInfoSaveData_DifficultyBeatmapSet {
         >,
     >,
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmapSet")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1130,7 +1130,7 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
         false
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmapSet")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1138,7 +1138,7 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmapSet")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1283,7 +1283,7 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_StandardLevelInfoSaveData+DifficultyBeatmapSet")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

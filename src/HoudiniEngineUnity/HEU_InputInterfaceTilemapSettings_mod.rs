@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTilemapSettings {
@@ -8,7 +8,7 @@ pub struct HEU_InputInterfaceTilemapSettings {
     pub _applyTileColor: bool,
     pub _applyTilemapOrientation: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -73,7 +73,7 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemapSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

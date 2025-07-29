@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+Design+ITypeDescriptorFilterService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+ITypeDescriptorFilterService")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ITypeDescriptorFilterService {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+Design+ITypeDescriptorFilterService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+ITypeDescriptorFilterService")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+ITypeDescriptorFilterService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+ITypeDescriptorFilterService")]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+ITypeDescriptorFilterService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+ITypeDescriptorFilterService")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -149,7 +149,7 @@ impl crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+ITypeDescriptorFilterService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+ITypeDescriptorFilterService")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::Design::ITypeDescriptorFilterService {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

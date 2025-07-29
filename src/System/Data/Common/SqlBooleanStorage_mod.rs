@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+Common+SqlBooleanStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+SqlBooleanStorage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SqlBooleanStorage {
@@ -7,7 +7,7 @@ pub struct SqlBooleanStorage {
         quest_hook::libil2cpp::Il2CppArray<crate::System::Data::SqlTypes::SqlBoolean>,
     >,
 }
-#[cfg(feature = "System+Data+Common+SqlBooleanStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+SqlBooleanStorage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::Common::SqlBooleanStorage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Data::Common::SqlBooleanStorage {
         false
     }
 }
-#[cfg(feature = "System+Data+Common+SqlBooleanStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+SqlBooleanStorage")]
 impl std::ops::Deref for crate::System::Data::Common::SqlBooleanStorage {
     type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+Common+SqlBooleanStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+SqlBooleanStorage")]
 impl std::ops::DerefMut for crate::System::Data::Common::SqlBooleanStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -484,7 +484,7 @@ impl crate::System::Data::Common::SqlBooleanStorage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+Common+SqlBooleanStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+SqlBooleanStorage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::Common::SqlBooleanStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonAssetProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -104,7 +112,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvide
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

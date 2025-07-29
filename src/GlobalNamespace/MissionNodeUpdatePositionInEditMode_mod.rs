@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
+#[cfg(feature = "cordl_class_MissionNodeUpdatePositionInEditMode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionNodeUpdatePositionInEditMode {
@@ -7,7 +7,7 @@ pub struct MissionNodeUpdatePositionInEditMode {
         crate::GlobalNamespace::MissionNodeConnection,
     >,
 }
-#[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
+#[cfg(feature = "cordl_class_MissionNodeUpdatePositionInEditMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
         false
     }
 }
-#[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
+#[cfg(feature = "cordl_class_MissionNodeUpdatePositionInEditMode")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
+#[cfg(feature = "cordl_class_MissionNodeUpdatePositionInEditMode")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
+#[cfg(feature = "cordl_class_MissionNodeUpdatePositionInEditMode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

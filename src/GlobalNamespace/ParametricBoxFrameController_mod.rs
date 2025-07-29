@@ -1,4 +1,4 @@
-#[cfg(feature = "ParametricBoxFrameController")]
+#[cfg(feature = "cordl_class_ParametricBoxFrameController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParametricBoxFrameController {
@@ -13,7 +13,7 @@ pub struct ParametricBoxFrameController {
         crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
 }
-#[cfg(feature = "ParametricBoxFrameController")]
+#[cfg(feature = "cordl_class_ParametricBoxFrameController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ParametricBoxFrameController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::ParametricBoxFrameController {
         false
     }
 }
-#[cfg(feature = "ParametricBoxFrameController")]
+#[cfg(feature = "cordl_class_ParametricBoxFrameController")]
 impl std::ops::Deref for crate::GlobalNamespace::ParametricBoxFrameController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ParametricBoxFrameController")]
+#[cfg(feature = "cordl_class_ParametricBoxFrameController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ParametricBoxFrameController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -212,7 +212,7 @@ impl crate::GlobalNamespace::ParametricBoxFrameController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ParametricBoxFrameController")]
+#[cfg(feature = "cordl_class_ParametricBoxFrameController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ParametricBoxFrameController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

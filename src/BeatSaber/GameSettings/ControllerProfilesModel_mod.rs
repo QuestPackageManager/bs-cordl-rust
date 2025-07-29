@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllerProfilesModel {
@@ -19,7 +19,7 @@ pub struct ControllerProfilesModel {
         >,
     >,
 }
-#[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::GameSettings::ControllerProfilesModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::BeatSaber::GameSettings::ControllerProfilesModel {
         false
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesModel")]
 impl std::ops::Deref for crate::BeatSaber::GameSettings::ControllerProfilesModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesModel")]
 impl std::ops::DerefMut for crate::BeatSaber::GameSettings::ControllerProfilesModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -535,7 +535,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::GameSettings::ControllerProfilesModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

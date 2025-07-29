@@ -1,4 +1,4 @@
-#[cfg(feature = "PlatformInstaller")]
+#[cfg(feature = "cordl_class_PlatformInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInstaller {
@@ -14,7 +14,7 @@ pub struct PlatformInstaller {
         crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
     >,
 }
-#[cfg(feature = "PlatformInstaller")]
+#[cfg(feature = "cordl_class_PlatformInstaller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlatformInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlatformInst
         false
     }
 }
-#[cfg(feature = "PlatformInstaller")]
+#[cfg(feature = "cordl_class_PlatformInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformInstaller {
     type Target = crate::Zenject::Installer_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
@@ -46,7 +46,7 @@ impl std::ops::Deref for crate::GlobalNamespace::PlatformInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformInstaller")]
+#[cfg(feature = "cordl_class_PlatformInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -314,7 +314,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformInstaller")]
+#[cfg(feature = "cordl_class_PlatformInstaller")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

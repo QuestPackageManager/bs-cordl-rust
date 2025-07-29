@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_ColorBoostBeatmapEventDataProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorBoostBeatmapEventDataProcessor {
@@ -6,7 +6,7 @@ pub struct ColorBoostBeatmapEventDataProcessor {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorBoostBeatmapEventData>,
     >,
 }
-#[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_ColorBoostBeatmapEventDataProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
         false
     }
 }
-#[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_ColorBoostBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
     type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorBoostBeatmapEventData>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ColorBoostBeatmapEventDataProce
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_ColorBoostBeatmapEventDataProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_ColorBoostBeatmapEventDataProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

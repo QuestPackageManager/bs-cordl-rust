@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentType")]
+#[cfg(feature = "cordl_class_EnvironmentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentType {
@@ -8,7 +8,7 @@ pub enum EnvironmentType {
     Normal = 0i32,
     Tutorial = 3i32,
 }
-#[cfg(feature = "EnvironmentType")]
+#[cfg(feature = "cordl_class_EnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EnvironmentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EnvironmentT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "EnvironmentType")]
+#[cfg(feature = "cordl_class_EnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::EnvironmentType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Environm
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "EnvironmentType")]
+#[cfg(feature = "cordl_class_EnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::EnvironmentType {
         self
     }
 }
-#[cfg(feature = "EnvironmentType")]
+#[cfg(feature = "cordl_class_EnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::EnvironmentType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Environm
         }
     }
 }
-#[cfg(feature = "EnvironmentType")]
+#[cfg(feature = "cordl_class_EnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::EnvironmentType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

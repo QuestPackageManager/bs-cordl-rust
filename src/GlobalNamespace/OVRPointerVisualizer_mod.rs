@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRPointerVisualizer")]
+#[cfg(feature = "cordl_class_OVRPointerVisualizer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPointerVisualizer {
@@ -7,7 +7,7 @@ pub struct OVRPointerVisualizer {
     pub linePointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
     pub rayDrawDistance: f32,
 }
-#[cfg(feature = "OVRPointerVisualizer")]
+#[cfg(feature = "cordl_class_OVRPointerVisualizer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPointerVisualizer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::OVRPointerVisualizer {
         false
     }
 }
-#[cfg(feature = "OVRPointerVisualizer")]
+#[cfg(feature = "cordl_class_OVRPointerVisualizer")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPointerVisualizer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPointerVisualizer")]
+#[cfg(feature = "cordl_class_OVRPointerVisualizer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPointerVisualizer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::OVRPointerVisualizer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPointerVisualizer")]
+#[cfg(feature = "cordl_class_OVRPointerVisualizer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPointerVisualizer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

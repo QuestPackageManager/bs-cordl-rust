@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBoxGroup {
@@ -10,7 +10,7 @@ pub struct EventBoxGroup {
         quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::EventBox>,
     >,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion4::EventBoxGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::BeatmapSaveDataVersion4::EventBoxGroup {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion4::EventBoxGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroup")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion4::EventBoxGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -91,7 +91,7 @@ impl crate::BeatmapSaveDataVersion4::EventBoxGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion4::EventBoxGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

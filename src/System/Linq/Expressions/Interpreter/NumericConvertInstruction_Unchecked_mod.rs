@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NumericConvertInstruction_Unchecked {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NumericConvertInstruction_Unchecked {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NumericConvertInstruction_Unchecked {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_Unchecked {
     type Target = crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_Unche
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::NumericConvertInstruction_Unchecked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -257,7 +257,7 @@ impl crate::GlobalNamespace::NumericConvertInstruction_Unchecked {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NumericConvertInstruction_Unchecked {

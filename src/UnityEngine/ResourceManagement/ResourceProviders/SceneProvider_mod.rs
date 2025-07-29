@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -297,7 +305,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -344,7 +354,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -371,7 +381,7 @@ pub struct SceneProvider_SceneOp {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
@@ -393,7 +403,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
@@ -405,7 +415,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
@@ -863,7 +873,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
@@ -895,7 +905,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -910,7 +920,7 @@ pub struct SceneProvider_UnloadSceneOp {
     pub m_UnloadOptions: crate::UnityEngine::SceneManagement::UnloadSceneOptions,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
@@ -932,7 +942,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
@@ -944,7 +954,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
@@ -1127,7 +1137,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Un
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {

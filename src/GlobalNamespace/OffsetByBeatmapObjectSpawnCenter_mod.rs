@@ -1,4 +1,4 @@
-#[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
+#[cfg(feature = "cordl_class_OffsetByBeatmapObjectSpawnCenter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OffsetByBeatmapObjectSpawnCenter {
@@ -7,7 +7,7 @@ pub struct OffsetByBeatmapObjectSpawnCenter {
         crate::GlobalNamespace::BeatmapObjectSpawnCenter,
     >,
 }
-#[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
+#[cfg(feature = "cordl_class_OffsetByBeatmapObjectSpawnCenter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
         false
     }
 }
-#[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
+#[cfg(feature = "cordl_class_OffsetByBeatmapObjectSpawnCenter")]
 impl std::ops::Deref for crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
+#[cfg(feature = "cordl_class_OffsetByBeatmapObjectSpawnCenter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
+#[cfg(feature = "cordl_class_OffsetByBeatmapObjectSpawnCenter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

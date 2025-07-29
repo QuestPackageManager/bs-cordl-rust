@@ -1,11 +1,11 @@
-#[cfg(feature = "Unity+Burst+Intrinsics+V128DebugView")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+V128DebugView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct V128DebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Value: crate::Unity::Burst::Intrinsics::v128,
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+V128DebugView")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+V128DebugView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::Intrinsics::V128DebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Unity::Burst::Intrinsics::V128DebugView {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+V128DebugView")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+V128DebugView")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::V128DebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+V128DebugView")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+V128DebugView")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::V128DebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -366,7 +366,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+V128DebugView")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+V128DebugView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::Intrinsics::V128DebugView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

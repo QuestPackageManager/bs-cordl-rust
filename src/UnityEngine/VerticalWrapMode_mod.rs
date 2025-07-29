@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+VerticalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+VerticalWrapMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VerticalWrapMode {
@@ -6,7 +6,7 @@ pub enum VerticalWrapMode {
     Overflow = 1i32,
     Truncate = 0i32,
 }
-#[cfg(feature = "UnityEngine+VerticalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+VerticalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::VerticalWrapMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::VerticalWrapMode
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+VerticalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+VerticalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::VerticalWrapMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::VerticalWrap
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+VerticalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+VerticalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::VerticalWrapMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::VerticalWra
         self
     }
 }
-#[cfg(feature = "UnityEngine+VerticalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+VerticalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::VerticalWrapMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::VerticalWrap
         }
     }
 }
-#[cfg(feature = "UnityEngine+VerticalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+VerticalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::VerticalWrapMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

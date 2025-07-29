@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+SequencedChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+SequencedChannel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SequencedChannel {
@@ -12,7 +12,7 @@ pub struct SequencedChannel {
     pub _id: u8,
     pub _lastPacketSendTime: i64,
 }
-#[cfg(feature = "LiteNetLib+SequencedChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+SequencedChannel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::SequencedChannel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::SequencedChannel 
         false
     }
 }
-#[cfg(feature = "LiteNetLib+SequencedChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+SequencedChannel")]
 impl std::ops::Deref for crate::LiteNetLib::SequencedChannel {
     type Target = crate::LiteNetLib::BaseChannel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+SequencedChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+SequencedChannel")]
 impl std::ops::DerefMut for crate::LiteNetLib::SequencedChannel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,7 +141,7 @@ impl crate::LiteNetLib::SequencedChannel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+SequencedChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+SequencedChannel")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::SequencedChannel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

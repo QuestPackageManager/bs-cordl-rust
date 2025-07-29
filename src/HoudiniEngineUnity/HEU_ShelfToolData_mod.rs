@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ShelfToolData {
@@ -16,7 +16,7 @@ pub struct HEU_ShelfToolData {
     >,
     pub _jsonPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_ShelfToolData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::HoudiniEngineUnity::HEU_ShelfToolData {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ShelfToolData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_ShelfToolData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -82,7 +82,7 @@ impl crate::HoudiniEngineUnity::HEU_ShelfToolData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_ShelfToolData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -91,7 +91,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_ShelfT
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ShelfToolData_ToolType {
@@ -101,7 +101,7 @@ pub enum HEU_ShelfToolData_ToolType {
     OPERATOR_MULTI = 2i32,
     OPERATOR_SINGLE = 1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
     type Held<'a> = Self;
@@ -131,7 +131,7 @@ for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
     type Type = Self;
@@ -142,7 +142,7 @@ for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
     type Actual = Self;
@@ -156,7 +156,7 @@ for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
     type Type = Self;
@@ -171,7 +171,7 @@ for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType {
     type Actual = Self;

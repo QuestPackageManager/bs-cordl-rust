@@ -1,4 +1,4 @@
-#[cfg(feature = "SelectLevelDestination")]
+#[cfg(feature = "cordl_class_SelectLevelDestination")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLevelDestination {
@@ -12,7 +12,7 @@ pub struct SelectLevelDestination {
         crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
 }
-#[cfg(feature = "SelectLevelDestination")]
+#[cfg(feature = "cordl_class_SelectLevelDestination")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectLevelDestination {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::SelectLevelDestination {
         false
     }
 }
-#[cfg(feature = "SelectLevelDestination")]
+#[cfg(feature = "cordl_class_SelectLevelDestination")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectLevelDestination {
     type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SelectLevelDestination")]
+#[cfg(feature = "cordl_class_SelectLevelDestination")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectLevelDestination {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::SelectLevelDestination {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SelectLevelDestination")]
+#[cfg(feature = "cordl_class_SelectLevelDestination")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SelectLevelDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+LockQueue")]
+#[cfg(feature = "cordl_class_System+Threading+LockQueue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LockQueue {
@@ -6,7 +6,7 @@ pub struct LockQueue {
     pub rwlock: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterLock>,
     pub lockCount: i32,
 }
-#[cfg(feature = "System+Threading+LockQueue")]
+#[cfg(feature = "cordl_class_System+Threading+LockQueue")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::LockQueue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::LockQueue 
         false
     }
 }
-#[cfg(feature = "System+Threading+LockQueue")]
+#[cfg(feature = "cordl_class_System+Threading+LockQueue")]
 impl std::ops::Deref for crate::System::Threading::LockQueue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+LockQueue")]
+#[cfg(feature = "cordl_class_System+Threading+LockQueue")]
 impl std::ops::DerefMut for crate::System::Threading::LockQueue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -135,7 +135,7 @@ impl crate::System::Threading::LockQueue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+LockQueue")]
+#[cfg(feature = "cordl_class_System+Threading+LockQueue")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::LockQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

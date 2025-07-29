@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+SqlTypes+SqlCompareOptions")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlCompareOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SqlCompareOptions {
@@ -11,7 +11,7 @@ pub enum SqlCompareOptions {
     IgnoreWidth = 16i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlCompareOptions")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlCompareOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::SqlTypes::SqlCompareOptions {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::System::Data::SqlTypes::SqlCompareOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlCompareOptions")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlCompareOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::SqlTypes::SqlCompareOptions {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::System::Data::SqlTypes::SqlCompareOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlCompareOptions")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlCompareOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::SqlTypes::SqlCompareOptions {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::System::Data::SqlTypes::SqlCompareOptions {
         self
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlCompareOptions")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlCompareOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::SqlTypes::SqlCompareOptions {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::System::Data::SqlTypes::SqlCompareOptions {
         }
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlCompareOptions")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlCompareOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::SqlTypes::SqlCompareOptions {
     type Actual = Self;

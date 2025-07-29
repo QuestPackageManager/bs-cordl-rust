@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyBagStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::PropertyBagStore {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Properties::Internal::PropertyBagStore {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::PropertyBagStore {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::PropertyBagStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -137,7 +137,7 @@ impl crate::Unity::Properties::Internal::PropertyBagStore {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::PropertyBagStore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -147,13 +147,13 @@ for crate::Unity::Properties::Internal::PropertyBagStore {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PropertyBagStore_TypedStore_1<TContainer: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Held<'a> = Self;
@@ -199,7 +199,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Type = Self;
@@ -210,7 +210,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Actual = Self;
@@ -224,7 +224,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
         self
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Type = Self;
@@ -239,7 +239,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
         }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Actual = Self;
@@ -253,7 +253,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
         actual
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FxEventType {
@@ -7,7 +7,7 @@ pub enum FxEventType {
     Float = 1i32,
     Int = 0i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion3::FxEventType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion3::FxEv
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion3::FxEventType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::BeatmapSaveDataVersion3::FxEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion3::FxEventType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::BeatmapSaveDataVersion3::FxEventType {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion3::FxEventType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::BeatmapSaveDataVersion3::FxEventType {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion3::FxEventType {
     type Actual = Self;

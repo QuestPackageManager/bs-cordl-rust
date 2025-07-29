@@ -1,4 +1,4 @@
-#[cfg(feature = "LightPairRotationEventEffect")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightPairRotationEventEffect {
@@ -33,7 +33,7 @@ pub struct LightPairRotationEventEffect {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "LightPairRotationEventEffect")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightPairRotationEventEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,14 +53,14 @@ for crate::GlobalNamespace::LightPairRotationEventEffect {
         false
     }
 }
-#[cfg(feature = "LightPairRotationEventEffect")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightPairRotationEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightPairRotationEventEffect")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightPairRotationEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -235,7 +235,7 @@ impl crate::GlobalNamespace::LightPairRotationEventEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightPairRotationEventEffect")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightPairRotationEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -245,7 +245,7 @@ for crate::GlobalNamespace::LightPairRotationEventEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LightPairRotationEventEffect+RotationData")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect+RotationData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightPairRotationEventEffect_RotationData {
@@ -257,7 +257,7 @@ pub struct LightPairRotationEventEffect_RotationData {
     pub startRotationAngle: f32,
     pub rotationAngle: f32,
 }
-#[cfg(feature = "LightPairRotationEventEffect+RotationData")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect+RotationData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightPairRotationEventEffect_RotationData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -277,7 +277,7 @@ for crate::GlobalNamespace::LightPairRotationEventEffect_RotationData {
         false
     }
 }
-#[cfg(feature = "LightPairRotationEventEffect+RotationData")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect+RotationData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightPairRotationEventEffect_RotationData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -285,7 +285,7 @@ for crate::GlobalNamespace::LightPairRotationEventEffect_RotationData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightPairRotationEventEffect+RotationData")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect+RotationData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LightPairRotationEventEffect_RotationData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -323,7 +323,7 @@ impl crate::GlobalNamespace::LightPairRotationEventEffect_RotationData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightPairRotationEventEffect+RotationData")]
+#[cfg(feature = "cordl_class_LightPairRotationEventEffect+RotationData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightPairRotationEventEffect_RotationData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

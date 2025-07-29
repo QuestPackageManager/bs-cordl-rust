@@ -1,4 +1,4 @@
-#[cfg(feature = "ConsoleCommandBase")]
+#[cfg(feature = "cordl_class_ConsoleCommandBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConsoleCommandBase {
@@ -12,7 +12,7 @@ pub struct ConsoleCommandBase {
         >,
     >,
 }
-#[cfg(feature = "ConsoleCommandBase")]
+#[cfg(feature = "cordl_class_ConsoleCommandBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ConsoleCommandBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ConsoleComma
         false
     }
 }
-#[cfg(feature = "ConsoleCommandBase")]
+#[cfg(feature = "cordl_class_ConsoleCommandBase")]
 impl std::ops::Deref for crate::GlobalNamespace::ConsoleCommandBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ConsoleCommandBase")]
+#[cfg(feature = "cordl_class_ConsoleCommandBase")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ConsoleCommandBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -612,7 +612,7 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ConsoleCommandBase")]
+#[cfg(feature = "cordl_class_ConsoleCommandBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ConsoleCommandBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

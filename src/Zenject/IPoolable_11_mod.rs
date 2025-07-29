@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+IPoolable_11")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_11")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPoolable_11<
@@ -27,7 +27,7 @@ pub struct IPoolable_11<
     __cordl_phantom_TParam10: std::marker::PhantomData<TParam10>,
     __cordl_phantom_TParam11: std::marker::PhantomData<TParam11>,
 }
-#[cfg(feature = "Zenject+IPoolable_11")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_11")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -98,7 +98,7 @@ for crate::Zenject::IPoolable_11<
         false
     }
 }
-#[cfg(feature = "Zenject+IPoolable_11")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_11")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -130,7 +130,7 @@ for crate::Zenject::IPoolable_11<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+IPoolable_11")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_11")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -315,7 +315,7 @@ impl<
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Zenject+IPoolable_11")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_11")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

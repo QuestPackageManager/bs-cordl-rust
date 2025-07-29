@@ -1,11 +1,11 @@
-#[cfg(feature = "System+ValueTuple_1")]
+#[cfg(feature = "cordl_class_System+ValueTuple_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTuple_1<T1: quest_hook::libil2cpp::Type> {
     pub Item1: T1,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
 }
-#[cfg(feature = "System+ValueTuple_1")]
+#[cfg(feature = "cordl_class_System+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::ValueTuple_1<T1> {
     type Held<'a> = Self;
@@ -48,7 +48,7 @@ for crate::System::ValueTuple_1<T1> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ValueTuple_1")]
+#[cfg(feature = "cordl_class_System+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::ValueTuple_1<T1> {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::System::ValueTuple_1<T1> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ValueTuple_1")]
+#[cfg(feature = "cordl_class_System+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::ValueTuple_1<T1> {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::System::ValueTuple_1<T1> {
         self
     }
 }
-#[cfg(feature = "System+ValueTuple_1")]
+#[cfg(feature = "cordl_class_System+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::ValueTuple_1<T1> {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::System::ValueTuple_1<T1> {
         }
     }
 }
-#[cfg(feature = "System+ValueTuple_1")]
+#[cfg(feature = "cordl_class_System+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::ValueTuple_1<T1> {
     type Actual = Self;
@@ -102,7 +102,7 @@ for crate::System::ValueTuple_1<T1> {
         actual
     }
 }
-#[cfg(feature = "System+ValueTuple_1")]
+#[cfg(feature = "cordl_class_System+ValueTuple_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::ValueTuple_1<T1> {
     type Type = Self;

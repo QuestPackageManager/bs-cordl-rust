@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveLevelFailController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalActiveLevelFailController {
@@ -22,7 +22,7 @@ pub struct MultiplayerLocalActiveLevelFailController {
         crate::GlobalNamespace::MultiplayerPlayersManager,
     >,
 }
-#[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveLevelFailController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,7 +42,7 @@ for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveLevelFailController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveLevelFailController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -189,7 +189,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveLevelFailController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

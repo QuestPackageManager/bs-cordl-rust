@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectManyObservable_2<
@@ -18,7 +18,7 @@ pub struct SelectManyObservable_2<
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
 unsafe impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -207,7 +207,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -249,7 +249,9 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectManyObservable_2_Select<
@@ -267,7 +269,9 @@ pub struct SelectManyObservable_2_Select<
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select"
+)]
 unsafe impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -309,7 +313,9 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select"
+)]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -323,7 +329,9 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select"
+)]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -509,7 +517,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select"
+)]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

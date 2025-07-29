@@ -1,4 +1,4 @@
-#[cfg(feature = "BGNet+Core+DeliveryMethod")]
+#[cfg(feature = "cordl_class_BGNet+Core+DeliveryMethod")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeliveryMethod {
@@ -6,7 +6,7 @@ pub enum DeliveryMethod {
     ReliableOrdered = 1u8,
     Unreliable = 0u8,
 }
-#[cfg(feature = "BGNet+Core+DeliveryMethod")]
+#[cfg(feature = "cordl_class_BGNet+Core+DeliveryMethod")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Core::DeliveryMethod {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Core::DeliveryMethod {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGNet+Core+DeliveryMethod")]
+#[cfg(feature = "cordl_class_BGNet+Core+DeliveryMethod")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::BGNet::Core::DeliveryMethod {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::BGNet::Core::DeliveryMeth
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGNet+Core+DeliveryMethod")]
+#[cfg(feature = "cordl_class_BGNet+Core+DeliveryMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::BGNet::Core::DeliveryMethod {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::BGNet::Core::DeliveryMet
         self
     }
 }
-#[cfg(feature = "BGNet+Core+DeliveryMethod")]
+#[cfg(feature = "cordl_class_BGNet+Core+DeliveryMethod")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::BGNet::Core::DeliveryMethod {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::BGNet::Core::DeliveryMeth
         }
     }
 }
-#[cfg(feature = "BGNet+Core+DeliveryMethod")]
+#[cfg(feature = "cordl_class_BGNet+Core+DeliveryMethod")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BGNet::Core::DeliveryMethod {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

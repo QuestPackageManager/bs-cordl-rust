@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+GridLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+GridLayout")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GridLayout {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
-#[cfg(feature = "UnityEngine+GridLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+GridLayout")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GridLayout {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GridLayout {
         false
     }
 }
-#[cfg(feature = "UnityEngine+GridLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+GridLayout")]
 impl std::ops::Deref for crate::UnityEngine::GridLayout {
     type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GridLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+GridLayout")]
 impl std::ops::DerefMut for crate::UnityEngine::GridLayout {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::UnityEngine::GridLayout {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GridLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+GridLayout")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GridLayout {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

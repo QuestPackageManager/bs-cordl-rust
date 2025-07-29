@@ -1,11 +1,11 @@
-#[cfg(feature = "BeatmapObjectExecutionRating")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRating")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectExecutionRating {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _time_k__BackingField: f32,
 }
-#[cfg(feature = "BeatmapObjectExecutionRating")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRating")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectExecutionRating {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::BeatmapObjectExecutionRating {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectExecutionRating")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRating")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectExecutionRating {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectExecutionRating")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRating")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectExecutionRating {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::BeatmapObjectExecutionRating {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectExecutionRating")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRating")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectExecutionRating {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

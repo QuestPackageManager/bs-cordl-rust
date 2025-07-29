@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+JsonExtension+Vector2IntConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector2IntConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2IntConverter {
@@ -6,7 +6,7 @@ pub struct Vector2IntConverter {
         crate::UnityEngine::Vector2Int,
     >,
 }
-#[cfg(feature = "BGLib+JsonExtension+Vector2IntConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector2IntConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::JsonExtension::Vector2IntConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::BGLib::JsonExtension::Vector2IntConverter {
         false
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+Vector2IntConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector2IntConverter")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::Vector2IntConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter_1<
         crate::UnityEngine::Vector2Int,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::BGLib::JsonExtension::Vector2IntConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+Vector2IntConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector2IntConverter")]
 impl std::ops::DerefMut for crate::BGLib::JsonExtension::Vector2IntConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::BGLib::JsonExtension::Vector2IntConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+Vector2IntConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector2IntConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::JsonExtension::Vector2IntConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

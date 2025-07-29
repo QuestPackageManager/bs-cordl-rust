@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZTauElement {
@@ -6,7 +6,7 @@ pub struct ZTauElement {
     pub u: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub v: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -86,7 +86,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

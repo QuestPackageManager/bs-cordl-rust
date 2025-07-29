@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_TestHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_TestHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_TestH
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_TestHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_TestHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1427,7 +1427,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_TestHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1436,14 +1436,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_TestHe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_TestHelpers_RequireClass_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1479,7 +1479,7 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1487,7 +1487,7 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1533,7 +1533,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireClass_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1543,14 +1543,14 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_TestHelpers_RequireStruct_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1586,7 +1586,7 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<T> {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1594,7 +1594,7 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1640,7 +1640,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TestHelpers+RequireStruct_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

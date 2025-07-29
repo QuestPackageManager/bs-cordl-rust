@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+StandaloneRenderResize")]
+#[cfg(feature = "cordl_class_UnityEngine+StandaloneRenderResize")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandaloneRenderResize {
@@ -6,7 +6,7 @@ pub enum StandaloneRenderResize {
     Disabled = 1i32,
     Enabled = 0i32,
 }
-#[cfg(feature = "UnityEngine+StandaloneRenderResize")]
+#[cfg(feature = "cordl_class_UnityEngine+StandaloneRenderResize")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::StandaloneRenderResize {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::StandaloneRender
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+StandaloneRenderResize")]
+#[cfg(feature = "cordl_class_UnityEngine+StandaloneRenderResize")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::StandaloneRenderResize {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::StandaloneRenderResize {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+StandaloneRenderResize")]
+#[cfg(feature = "cordl_class_UnityEngine+StandaloneRenderResize")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::StandaloneRenderResize {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::StandaloneRenderResize {
         self
     }
 }
-#[cfg(feature = "UnityEngine+StandaloneRenderResize")]
+#[cfg(feature = "cordl_class_UnityEngine+StandaloneRenderResize")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::StandaloneRenderResize {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::StandaloneRenderResize {
         }
     }
 }
-#[cfg(feature = "UnityEngine+StandaloneRenderResize")]
+#[cfg(feature = "cordl_class_UnityEngine+StandaloneRenderResize")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::StandaloneRenderResize {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Operator {
@@ -7,7 +7,7 @@ pub struct Operator {
     pub _opnd1: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     pub _opnd2: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::Operator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::Ope
         false
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Operator {
     type Target = crate::MS::Internal::Xml::XPath::AstNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Operator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -143,7 +143,7 @@ impl crate::MS::Internal::Xml::XPath::Operator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator")]
 impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Operator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -152,7 +152,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Oper
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator+Op")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Operator_Op {
@@ -173,7 +173,7 @@ pub enum Operator_Op {
     PLUS = 9i32,
     UNION = 14i32,
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Held<'a> = Self;
@@ -203,7 +203,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Type = Self;
@@ -214,7 +214,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Actual = Self;
@@ -228,7 +228,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
         self
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Type = Self;
@@ -243,7 +243,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
         }
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Actual = Self;

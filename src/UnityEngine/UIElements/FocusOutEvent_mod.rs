@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+FocusOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusOutEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FocusOutEvent {
@@ -6,7 +6,7 @@ pub struct FocusOutEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusOutEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusOutEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::FocusOutEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::FocusOutEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusOutEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FocusOutEvent {
     type Target = crate::UnityEngine::UIElements::FocusEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusOutEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::FocusOutEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusOutEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FocusOutEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::UnityEngine::UIElements::FocusOutEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusOutEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::FocusOutEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

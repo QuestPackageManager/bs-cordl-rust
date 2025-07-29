@@ -1,4 +1,4 @@
-#[cfg(feature = "HardwareCategory")]
+#[cfg(feature = "cordl_class_HardwareCategory")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HardwareCategory {
@@ -12,7 +12,7 @@ pub enum HardwareCategory {
     QuestPro = 4i32,
     Standalone = 0i32,
 }
-#[cfg(feature = "HardwareCategory")]
+#[cfg(feature = "cordl_class_HardwareCategory")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::HardwareCategory {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::HardwareCate
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HardwareCategory")]
+#[cfg(feature = "cordl_class_HardwareCategory")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::HardwareCategory {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::GlobalNamespace::HardwareCategory {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HardwareCategory")]
+#[cfg(feature = "cordl_class_HardwareCategory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::HardwareCategory {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::GlobalNamespace::HardwareCategory {
         self
     }
 }
-#[cfg(feature = "HardwareCategory")]
+#[cfg(feature = "cordl_class_HardwareCategory")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::HardwareCategory {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::GlobalNamespace::HardwareCategory {
         }
     }
 }
-#[cfg(feature = "HardwareCategory")]
+#[cfg(feature = "cordl_class_HardwareCategory")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::HardwareCategory {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

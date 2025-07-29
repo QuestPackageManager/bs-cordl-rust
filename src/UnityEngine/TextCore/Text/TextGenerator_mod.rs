@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGenerator {
@@ -180,7 +180,7 @@ pub struct TextGenerator {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -200,14 +200,14 @@ for crate::UnityEngine::TextCore::Text::TextGenerator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1342,7 +1342,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1352,13 +1352,17 @@ for crate::UnityEngine::TextCore::Text::TextGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGenerator_MissingCharacterEventCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1378,7 +1382,9 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallb
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
     type Target = crate::System::MulticastDelegate;
@@ -1386,7 +1392,9 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallb
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1479,7 +1487,9 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCall
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1489,7 +1499,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallb
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextGenerator_SpecialCharacter {
@@ -1502,7 +1512,7 @@ pub struct TextGenerator_SpecialCharacter {
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialIndex: i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
     type Held<'a> = Self;
@@ -1532,7 +1542,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
     type Type = Self;
@@ -1543,7 +1553,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
     type Actual = Self;
@@ -1557,7 +1567,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
     type Type = Self;
@@ -1572,7 +1582,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
     type Actual = Self;
@@ -1586,7 +1596,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
     type Type = Self;

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NotEqualInstruction_NotEqualBoolean {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualBoolean {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualBoolean {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NotEqualInstruction_NotEqualBoolean {
     type Target = crate::System::Linq::Expressions::Interpreter::NotEqualInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NotEqualInstruction_NotEqualBoo
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::NotEqualInstruction_NotEqualBoolean {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::NotEqualInstruction_NotEqualBoolean {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualBoolean"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualBoolean {

@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManagerDiagnostics {
@@ -15,7 +17,9 @@ pub struct ResourceManagerDiagnostics {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,7 +39,9 @@ for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -43,7 +49,9 @@ for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -249,7 +257,9 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

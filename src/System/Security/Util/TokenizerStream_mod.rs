@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Util+TokenizerStream")]
+#[cfg(feature = "cordl_class_System+Security+Util+TokenizerStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TokenizerStream {
@@ -22,7 +22,7 @@ pub struct TokenizerStream {
     >,
     pub m_indexStrings: i32,
 }
-#[cfg(feature = "System+Security+Util+TokenizerStream")]
+#[cfg(feature = "cordl_class_System+Security+Util+TokenizerStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Util::TokenizerStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::System::Security::Util::TokenizerStream {
         false
     }
 }
-#[cfg(feature = "System+Security+Util+TokenizerStream")]
+#[cfg(feature = "cordl_class_System+Security+Util+TokenizerStream")]
 impl std::ops::Deref for crate::System::Security::Util::TokenizerStream {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Util+TokenizerStream")]
+#[cfg(feature = "cordl_class_System+Security+Util+TokenizerStream")]
 impl std::ops::DerefMut for crate::System::Security::Util::TokenizerStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -314,7 +314,7 @@ impl crate::System::Security::Util::TokenizerStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Util+TokenizerStream")]
+#[cfg(feature = "cordl_class_System+Security+Util+TokenizerStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Util::TokenizerStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

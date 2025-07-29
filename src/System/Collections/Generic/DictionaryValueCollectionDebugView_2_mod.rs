@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Collections+Generic+DictionaryValueCollectionDebugView_2")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+DictionaryValueCollectionDebugView_2"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DictionaryValueCollectionDebugView_2<
@@ -9,7 +11,9 @@ pub struct DictionaryValueCollectionDebugView_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+DictionaryValueCollectionDebugView_2")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+DictionaryValueCollectionDebugView_2"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -51,7 +55,9 @@ for crate::System::Collections::Generic::DictionaryValueCollectionDebugView_2<
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+DictionaryValueCollectionDebugView_2")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+DictionaryValueCollectionDebugView_2"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -65,7 +71,9 @@ for crate::System::Collections::Generic::DictionaryValueCollectionDebugView_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+DictionaryValueCollectionDebugView_2")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+DictionaryValueCollectionDebugView_2"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -86,7 +94,9 @@ impl<
     TKey,
     TValue,
 > {}
-#[cfg(feature = "System+Collections+Generic+DictionaryValueCollectionDebugView_2")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+DictionaryValueCollectionDebugView_2"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

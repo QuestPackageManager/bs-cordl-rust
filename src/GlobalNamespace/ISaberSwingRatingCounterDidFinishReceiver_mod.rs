@@ -1,10 +1,10 @@
-#[cfg(feature = "ISaberSwingRatingCounterDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidFinishReceiver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISaberSwingRatingCounterDidFinishReceiver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ISaberSwingRatingCounterDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidFinishReceiver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
         false
     }
 }
-#[cfg(feature = "ISaberSwingRatingCounterDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidFinishReceiver")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ISaberSwingRatingCounterDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidFinishReceiver")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ISaberSwingRatingCounterDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidFinishReceiver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

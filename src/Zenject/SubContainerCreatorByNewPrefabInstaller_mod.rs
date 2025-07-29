@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabInstaller {
@@ -8,7 +8,7 @@ pub struct SubContainerCreatorByNewPrefabInstaller {
         crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabInstaller")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
     type Target = crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabInstaller")]
 impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -156,7 +156,7 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

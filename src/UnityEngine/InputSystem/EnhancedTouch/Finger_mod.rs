@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Finger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Finger {
@@ -13,7 +13,7 @@ pub struct Finger {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Finger")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Finger")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Finger")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -380,7 +380,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Finger")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

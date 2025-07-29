@@ -1,4 +1,4 @@
-#[cfg(feature = "DirectionalLight")]
+#[cfg(feature = "cordl_class_DirectionalLight")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectionalLight {
@@ -7,7 +7,7 @@ pub struct DirectionalLight {
     pub intensity: f32,
     pub radius: f32,
 }
-#[cfg(feature = "DirectionalLight")]
+#[cfg(feature = "cordl_class_DirectionalLight")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DirectionalLight {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DirectionalL
         false
     }
 }
-#[cfg(feature = "DirectionalLight")]
+#[cfg(feature = "cordl_class_DirectionalLight")]
 impl std::ops::Deref for crate::GlobalNamespace::DirectionalLight {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DirectionalLight")]
+#[cfg(feature = "cordl_class_DirectionalLight")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DirectionalLight {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -150,7 +150,7 @@ impl crate::GlobalNamespace::DirectionalLight {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DirectionalLight")]
+#[cfg(feature = "cordl_class_DirectionalLight")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DirectionalLight {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

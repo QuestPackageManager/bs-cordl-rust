@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+HeaderVariantInfo")]
+#[cfg(feature = "cordl_class_System+Net+HeaderVariantInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HeaderVariantInfo {
     pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_variant: crate::System::Net::CookieVariant,
 }
-#[cfg(feature = "System+Net+HeaderVariantInfo")]
+#[cfg(feature = "cordl_class_System+Net+HeaderVariantInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HeaderVariantInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HeaderVariantInf
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HeaderVariantInfo")]
+#[cfg(feature = "cordl_class_System+Net+HeaderVariantInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::HeaderVariantInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::HeaderVarian
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HeaderVariantInfo")]
+#[cfg(feature = "cordl_class_System+Net+HeaderVariantInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::HeaderVariantInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::HeaderVaria
         self
     }
 }
-#[cfg(feature = "System+Net+HeaderVariantInfo")]
+#[cfg(feature = "cordl_class_System+Net+HeaderVariantInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::HeaderVariantInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::HeaderVarian
         }
     }
 }
-#[cfg(feature = "System+Net+HeaderVariantInfo")]
+#[cfg(feature = "cordl_class_System+Net+HeaderVariantInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::HeaderVariantInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::HeaderVariantI
         actual
     }
 }
-#[cfg(feature = "System+Net+HeaderVariantInfo")]
+#[cfg(feature = "cordl_class_System+Net+HeaderVariantInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::HeaderVariantInfo {
     type Type = Self;

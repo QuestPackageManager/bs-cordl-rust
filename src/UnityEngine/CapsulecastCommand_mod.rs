@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CapsulecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+CapsulecastCommand")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CapsulecastCommand {
@@ -10,7 +10,7 @@ pub struct CapsulecastCommand {
     pub _physicsScene_k__BackingField: crate::UnityEngine::PhysicsScene,
     pub queryParameters: crate::UnityEngine::QueryParameters,
 }
-#[cfg(feature = "UnityEngine+CapsulecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+CapsulecastCommand")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CapsulecastCommand {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CapsulecastComma
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CapsulecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+CapsulecastCommand")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CapsulecastCommand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CapsulecastC
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CapsulecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+CapsulecastCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CapsulecastCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Capsulecast
         self
     }
 }
-#[cfg(feature = "UnityEngine+CapsulecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+CapsulecastCommand")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CapsulecastCommand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CapsulecastC
         }
     }
 }
-#[cfg(feature = "UnityEngine+CapsulecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+CapsulecastCommand")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CapsulecastCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CapsulecastCom
         actual
     }
 }
-#[cfg(feature = "UnityEngine+CapsulecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+CapsulecastCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::CapsulecastCommand {
     type Type = Self;

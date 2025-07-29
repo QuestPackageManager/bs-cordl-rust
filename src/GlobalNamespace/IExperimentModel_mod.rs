@@ -1,10 +1,10 @@
-#[cfg(feature = "IExperimentModel")]
+#[cfg(feature = "cordl_class_IExperimentModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IExperimentModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IExperimentModel")]
+#[cfg(feature = "cordl_class_IExperimentModel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IExperimentModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IExperimentM
         false
     }
 }
-#[cfg(feature = "IExperimentModel")]
+#[cfg(feature = "cordl_class_IExperimentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::IExperimentModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IExperimentModel")]
+#[cfg(feature = "cordl_class_IExperimentModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IExperimentModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::IExperimentModel {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IExperimentModel")]
+#[cfg(feature = "cordl_class_IExperimentModel")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IExperimentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

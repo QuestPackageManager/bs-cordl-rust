@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingFunction")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EasingFunction {
     pub m_Mode: crate::UnityEngine::UIElements::EasingMode,
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EasingFunction {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::UIElements::EasingFunction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingFunction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EasingFunction {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::EasingFunction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingFunction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EasingFunction {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::EasingFunction {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingFunction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EasingFunction {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::UIElements::EasingFunction {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingFunction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EasingFunction {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::UIElements::EasingFunction {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingFunction")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::EasingFunction {
     type Type = Self;

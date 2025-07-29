@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderTagId")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ShaderTagId {
     pub m_Id: i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::ShaderTagId {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Shade
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Type = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::Rendering::ShaderTagId {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::UnityEngine::Rendering::ShaderTagId {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Type = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::Rendering::ShaderTagId {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Actual = Self;
@@ -87,7 +87,7 @@ for crate::UnityEngine::Rendering::ShaderTagId {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Type = Self;

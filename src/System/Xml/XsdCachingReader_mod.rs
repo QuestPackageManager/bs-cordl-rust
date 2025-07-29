@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XsdCachingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdCachingReader {
@@ -31,7 +31,7 @@ pub struct XsdCachingReader {
         crate::System::Xml::ValidatingReaderNodeData,
     >,
 }
-#[cfg(feature = "System+Xml+XsdCachingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XsdCachingReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -50,14 +50,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XsdCachingReader
         false
     }
 }
-#[cfg(feature = "System+Xml+XsdCachingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader")]
 impl std::ops::Deref for crate::System::Xml::XsdCachingReader {
     type Target = crate::System::Xml::XmlReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XsdCachingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader")]
 impl std::ops::DerefMut for crate::System::Xml::XsdCachingReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1365,7 +1365,7 @@ impl crate::System::Xml::XsdCachingReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XsdCachingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XsdCachingReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1386,7 +1386,7 @@ impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XsdCachingR
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader+CachingReaderState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdCachingReader_CachingReaderState {
@@ -1398,7 +1398,7 @@ pub enum XsdCachingReader_CachingReaderState {
     Record = 2i32,
     Replay = 3i32,
 }
-#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader+CachingReaderState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XsdCachingReader_CachingReaderState {
     type Held<'a> = Self;
@@ -1428,7 +1428,7 @@ for crate::System::Xml::XsdCachingReader_CachingReaderState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader+CachingReaderState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XsdCachingReader_CachingReaderState {
     type Type = Self;
@@ -1439,7 +1439,7 @@ for crate::System::Xml::XsdCachingReader_CachingReaderState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader+CachingReaderState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XsdCachingReader_CachingReaderState {
     type Actual = Self;
@@ -1453,7 +1453,7 @@ for crate::System::Xml::XsdCachingReader_CachingReaderState {
         self
     }
 }
-#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader+CachingReaderState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XsdCachingReader_CachingReaderState {
     type Type = Self;
@@ -1468,7 +1468,7 @@ for crate::System::Xml::XsdCachingReader_CachingReaderState {
         }
     }
 }
-#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdCachingReader+CachingReaderState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XsdCachingReader_CachingReaderState {
     type Actual = Self;

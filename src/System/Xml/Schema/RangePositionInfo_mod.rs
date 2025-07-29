@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangePositionInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RangePositionInfo {
@@ -7,7 +7,7 @@ pub struct RangePositionInfo {
         quest_hook::libil2cpp::Il2CppArray<crate::System::Decimal>,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangePositionInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::RangePositionInfo {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Xml::Schema::RangePositionInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangePositionInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::RangePositionInfo {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Xml::Schema::RangePositionInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangePositionInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::RangePositionInfo {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Xml::Schema::RangePositionInfo {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangePositionInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::RangePositionInfo {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Xml::Schema::RangePositionInfo {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangePositionInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::RangePositionInfo {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::System::Xml::Schema::RangePositionInfo {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+RangePositionInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Schema::RangePositionInfo {
     type Type = Self;

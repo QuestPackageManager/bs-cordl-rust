@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Configuration+WebRequestModulesSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+WebRequestModulesSection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequestModulesSection {
     __cordl_parent: crate::System::Configuration::ConfigurationSection,
 }
-#[cfg(feature = "System+Net+Configuration+WebRequestModulesSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+WebRequestModulesSection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Configuration::WebRequestModulesSection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Net::Configuration::WebRequestModulesSection {
         false
     }
 }
-#[cfg(feature = "System+Net+Configuration+WebRequestModulesSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+WebRequestModulesSection")]
 impl std::ops::Deref for crate::System::Net::Configuration::WebRequestModulesSection {
     type Target = crate::System::Configuration::ConfigurationSection;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Configuration+WebRequestModulesSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+WebRequestModulesSection")]
 impl std::ops::DerefMut for crate::System::Net::Configuration::WebRequestModulesSection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::System::Net::Configuration::WebRequestModulesSection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Configuration+WebRequestModulesSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+WebRequestModulesSection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Configuration::WebRequestModulesSection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

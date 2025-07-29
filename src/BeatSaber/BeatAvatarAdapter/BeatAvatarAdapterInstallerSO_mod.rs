@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatAvatarAdapterInstallerSO {
@@ -19,7 +19,7 @@ pub struct BeatAvatarAdapterInstallerSO {
         crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController,
     >,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,7 +39,7 @@ for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
     type Target = crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO;
@@ -47,7 +47,7 @@ for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -136,7 +136,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

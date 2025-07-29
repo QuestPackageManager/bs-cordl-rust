@@ -1,4 +1,4 @@
-#[cfg(feature = "SceneType")]
+#[cfg(feature = "cordl_class_SceneType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SceneType {
@@ -7,7 +7,7 @@ pub enum SceneType {
     Menu = 1i32,
     Undefined = 0i32,
 }
-#[cfg(feature = "SceneType")]
+#[cfg(feature = "cordl_class_SceneType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SceneType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SceneType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SceneType")]
+#[cfg(feature = "cordl_class_SceneType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SceneType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SceneTyp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SceneType")]
+#[cfg(feature = "cordl_class_SceneType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::SceneType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::SceneTy
         self
     }
 }
-#[cfg(feature = "SceneType")]
+#[cfg(feature = "cordl_class_SceneType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SceneType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SceneTyp
         }
     }
 }
-#[cfg(feature = "SceneType")]
+#[cfg(feature = "cordl_class_SceneType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::SceneType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

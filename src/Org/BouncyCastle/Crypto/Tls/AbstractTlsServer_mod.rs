@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractTlsServer {
@@ -44,7 +44,7 @@ pub struct AbstractTlsServer {
         crate::System::Collections::IDictionary,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -64,14 +64,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsPeer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -924,7 +924,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

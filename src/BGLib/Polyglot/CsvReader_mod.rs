@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+Polyglot+CsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CsvReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::CsvReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::CsvReader {
         false
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader")]
 impl std::ops::Deref for crate::BGLib::Polyglot::CsvReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::CsvReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -120,7 +120,7 @@ impl crate::BGLib::Polyglot::CsvReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::CsvReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -129,7 +129,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::CsvReader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader+ParsingMode")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader+ParsingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CsvReader_ParsingMode {
@@ -138,7 +138,7 @@ pub enum CsvReader_ParsingMode {
     None = 0i32,
     OutQuote = 1i32,
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader+ParsingMode")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::Polyglot::CsvReader_ParsingMode {
     type Held<'a> = Self;
@@ -168,7 +168,7 @@ for crate::BGLib::Polyglot::CsvReader_ParsingMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader+ParsingMode")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::Polyglot::CsvReader_ParsingMode {
     type Type = Self;
@@ -179,7 +179,7 @@ for crate::BGLib::Polyglot::CsvReader_ParsingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader+ParsingMode")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::Polyglot::CsvReader_ParsingMode {
     type Actual = Self;
@@ -193,7 +193,7 @@ for crate::BGLib::Polyglot::CsvReader_ParsingMode {
         self
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader+ParsingMode")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::Polyglot::CsvReader_ParsingMode {
     type Type = Self;
@@ -208,7 +208,7 @@ for crate::BGLib::Polyglot::CsvReader_ParsingMode {
         }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvReader+ParsingMode")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvReader+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::Polyglot::CsvReader_ParsingMode {
     type Actual = Self;

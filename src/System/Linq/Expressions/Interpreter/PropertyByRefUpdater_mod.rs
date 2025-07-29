@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyByRefUpdater {
@@ -8,7 +8,7 @@ pub struct PropertyByRefUpdater {
     >,
     pub _property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::PropertyByRefUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::System::Linq::Expressions::Interpreter::PropertyByRefUpdater {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::PropertyByRefUpdater {
     type Target = crate::System::Linq::Expressions::Interpreter::ByRefUpdater;
@@ -36,7 +36,7 @@ for crate::System::Linq::Expressions::Interpreter::PropertyByRefUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::PropertyByRefUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -171,7 +171,7 @@ impl crate::System::Linq::Expressions::Interpreter::PropertyByRefUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::PropertyByRefUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

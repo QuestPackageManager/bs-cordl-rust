@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DateTimeParser")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DateTimeParser {
@@ -15,7 +15,7 @@ pub struct DateTimeParser {
     pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _end: i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DateTimeParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::DateTimeParser {
     type Held<'a> = Self;
@@ -45,7 +45,7 @@ for crate::Newtonsoft::Json::Utilities::DateTimeParser {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DateTimeParser")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::DateTimeParser {
     type Type = Self;
@@ -56,7 +56,7 @@ for crate::Newtonsoft::Json::Utilities::DateTimeParser {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DateTimeParser")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::DateTimeParser {
     type Actual = Self;
@@ -70,7 +70,7 @@ for crate::Newtonsoft::Json::Utilities::DateTimeParser {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DateTimeParser")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::DateTimeParser {
     type Type = Self;
@@ -85,7 +85,7 @@ for crate::Newtonsoft::Json::Utilities::DateTimeParser {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DateTimeParser")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::DateTimeParser {
     type Actual = Self;
@@ -99,7 +99,7 @@ for crate::Newtonsoft::Json::Utilities::DateTimeParser {
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DateTimeParser")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::Utilities::DateTimeParser {
     type Type = Self;

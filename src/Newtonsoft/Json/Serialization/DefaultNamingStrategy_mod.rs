@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultNamingStrategy {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::NamingStrategy,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
     type Target = crate::Newtonsoft::Json::Serialization::NamingStrategy;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -97,7 +97,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionNodeGizmos")]
+#[cfg(feature = "cordl_class_MissionNodeGizmos")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionNodeGizmos {
@@ -11,7 +11,7 @@ pub struct MissionNodeGizmos {
         crate::GlobalNamespace::CampaignProgressModel,
     >,
 }
-#[cfg(feature = "MissionNodeGizmos")]
+#[cfg(feature = "cordl_class_MissionNodeGizmos")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MissionNodeGizmos {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MissionNodeG
         false
     }
 }
-#[cfg(feature = "MissionNodeGizmos")]
+#[cfg(feature = "cordl_class_MissionNodeGizmos")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodeGizmos {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionNodeGizmos")]
+#[cfg(feature = "cordl_class_MissionNodeGizmos")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodeGizmos {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::MissionNodeGizmos {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionNodeGizmos")]
+#[cfg(feature = "cordl_class_MissionNodeGizmos")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionNodeGizmos {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

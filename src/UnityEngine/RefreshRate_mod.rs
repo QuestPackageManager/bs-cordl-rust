@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+RefreshRate")]
+#[cfg(feature = "cordl_class_UnityEngine+RefreshRate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RefreshRate {
     pub numerator: u32,
     pub denominator: u32,
 }
-#[cfg(feature = "UnityEngine+RefreshRate")]
+#[cfg(feature = "cordl_class_UnityEngine+RefreshRate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RefreshRate {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RefreshRate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RefreshRate")]
+#[cfg(feature = "cordl_class_UnityEngine+RefreshRate")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RefreshRate {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RefreshRate 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RefreshRate")]
+#[cfg(feature = "cordl_class_UnityEngine+RefreshRate")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RefreshRate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RefreshRate
         self
     }
 }
-#[cfg(feature = "UnityEngine+RefreshRate")]
+#[cfg(feature = "cordl_class_UnityEngine+RefreshRate")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RefreshRate {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RefreshRate 
         }
     }
 }
-#[cfg(feature = "UnityEngine+RefreshRate")]
+#[cfg(feature = "cordl_class_UnityEngine+RefreshRate")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RefreshRate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RefreshRate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+RefreshRate")]
+#[cfg(feature = "cordl_class_UnityEngine+RefreshRate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RefreshRate {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

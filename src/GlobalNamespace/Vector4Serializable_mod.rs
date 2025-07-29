@@ -1,4 +1,4 @@
-#[cfg(feature = "Vector4Serializable")]
+#[cfg(feature = "cordl_class_Vector4Serializable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Vector4Serializable {
@@ -7,7 +7,7 @@ pub struct Vector4Serializable {
     pub _z: i32,
     pub _w: i32,
 }
-#[cfg(feature = "Vector4Serializable")]
+#[cfg(feature = "cordl_class_Vector4Serializable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Vector4Serializable {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Vector4Seria
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Vector4Serializable")]
+#[cfg(feature = "cordl_class_Vector4Serializable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Vector4Serializable {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::Vector4Serializable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Vector4Serializable")]
+#[cfg(feature = "cordl_class_Vector4Serializable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Vector4Serializable {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::Vector4Serializable {
         self
     }
 }
-#[cfg(feature = "Vector4Serializable")]
+#[cfg(feature = "cordl_class_Vector4Serializable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Vector4Serializable {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::Vector4Serializable {
         }
     }
 }
-#[cfg(feature = "Vector4Serializable")]
+#[cfg(feature = "cordl_class_Vector4Serializable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Vector4Serializable {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::GlobalNamespace::Vector4Serializable {
         actual
     }
 }
-#[cfg(feature = "Vector4Serializable")]
+#[cfg(feature = "cordl_class_Vector4Serializable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::Vector4Serializable {
     type Type = Self;

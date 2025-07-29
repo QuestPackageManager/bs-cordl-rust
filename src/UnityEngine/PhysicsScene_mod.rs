@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+PhysicsScene")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PhysicsScene {
     pub m_Handle: i32,
 }
-#[cfg(feature = "UnityEngine+PhysicsScene")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PhysicsScene {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PhysicsScene {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PhysicsScene")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::PhysicsScene {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::PhysicsScene
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PhysicsScene")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::PhysicsScene {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::PhysicsScen
         self
     }
 }
-#[cfg(feature = "UnityEngine+PhysicsScene")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::PhysicsScene {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::PhysicsScene
         }
     }
 }
-#[cfg(feature = "UnityEngine+PhysicsScene")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::PhysicsScene {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::PhysicsScene {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PhysicsScene")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicsScene")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::PhysicsScene {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

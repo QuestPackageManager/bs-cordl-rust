@@ -1,4 +1,4 @@
-#[cfg(feature = "SimpleTextWithIconTableCell")]
+#[cfg(feature = "cordl_class_SimpleTextWithIconTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleTextWithIconTableCell {
@@ -6,7 +6,7 @@ pub struct SimpleTextWithIconTableCell {
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
-#[cfg(feature = "SimpleTextWithIconTableCell")]
+#[cfg(feature = "cordl_class_SimpleTextWithIconTableCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SimpleTextWithIconTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::SimpleTextWithIconTableCell {
         false
     }
 }
-#[cfg(feature = "SimpleTextWithIconTableCell")]
+#[cfg(feature = "cordl_class_SimpleTextWithIconTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::SimpleTextWithIconTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SimpleTextWithIconTableCell")]
+#[cfg(feature = "cordl_class_SimpleTextWithIconTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SimpleTextWithIconTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::SimpleTextWithIconTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SimpleTextWithIconTableCell")]
+#[cfg(feature = "cordl_class_SimpleTextWithIconTableCell")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SimpleTextWithIconTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

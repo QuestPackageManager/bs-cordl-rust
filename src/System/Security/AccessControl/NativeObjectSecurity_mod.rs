@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeObjectSecurity {
@@ -7,7 +7,7 @@ pub struct NativeObjectSecurity {
         crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
     >,
 }
-#[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::NativeObjectSecurity {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Security::AccessControl::NativeObjectSecurity {
         false
     }
 }
-#[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity")]
 impl std::ops::Deref for crate::System::Security::AccessControl::NativeObjectSecurity {
     type Target = crate::System::Security::AccessControl::CommonObjectSecurity;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity")]
 impl std::ops::DerefMut
 for crate::System::Security::AccessControl::NativeObjectSecurity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -386,7 +386,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::AccessControl::NativeObjectSecurity {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -397,7 +397,7 @@ for crate::System::Security::AccessControl::NativeObjectSecurity {
     }
 }
 #[cfg(
-    feature = "System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
+    feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -405,7 +405,7 @@ pub struct NativeObjectSecurity_ExceptionFromErrorCode {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
+    feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode {
@@ -427,7 +427,7 @@ for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromEr
     }
 }
 #[cfg(
-    feature = "System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
+    feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
 )]
 impl std::ops::Deref
 for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode {
@@ -437,7 +437,7 @@ for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromEr
     }
 }
 #[cfg(
-    feature = "System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
+    feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode {
@@ -537,7 +537,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromE
     }
 }
 #[cfg(
-    feature = "System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
+    feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode {

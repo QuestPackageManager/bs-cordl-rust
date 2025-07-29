@@ -1,10 +1,10 @@
-#[cfg(feature = "System+SerializableAttribute")]
+#[cfg(feature = "cordl_class_System+SerializableAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializableAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+SerializableAttribute")]
+#[cfg(feature = "cordl_class_System+SerializableAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::SerializableAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::SerializableAttribute
         false
     }
 }
-#[cfg(feature = "System+SerializableAttribute")]
+#[cfg(feature = "cordl_class_System+SerializableAttribute")]
 impl std::ops::Deref for crate::System::SerializableAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+SerializableAttribute")]
+#[cfg(feature = "cordl_class_System+SerializableAttribute")]
 impl std::ops::DerefMut for crate::System::SerializableAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::System::SerializableAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+SerializableAttribute")]
+#[cfg(feature = "cordl_class_System+SerializableAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::SerializableAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

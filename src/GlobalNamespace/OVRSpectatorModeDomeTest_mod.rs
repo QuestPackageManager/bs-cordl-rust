@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSpectatorModeDomeTest")]
+#[cfg(feature = "cordl_class_OVRSpectatorModeDomeTest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSpectatorModeDomeTest {
@@ -15,7 +15,7 @@ pub struct OVRSpectatorModeDomeTest {
     pub elevation: f32,
     pub polar: f32,
 }
-#[cfg(feature = "OVRSpectatorModeDomeTest")]
+#[cfg(feature = "cordl_class_OVRSpectatorModeDomeTest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::OVRSpectatorModeDomeTest {
         false
     }
 }
-#[cfg(feature = "OVRSpectatorModeDomeTest")]
+#[cfg(feature = "cordl_class_OVRSpectatorModeDomeTest")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSpectatorModeDomeTest")]
+#[cfg(feature = "cordl_class_OVRSpectatorModeDomeTest")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -324,7 +324,7 @@ impl crate::GlobalNamespace::OVRSpectatorModeDomeTest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSpectatorModeDomeTest")]
+#[cfg(feature = "cordl_class_OVRSpectatorModeDomeTest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

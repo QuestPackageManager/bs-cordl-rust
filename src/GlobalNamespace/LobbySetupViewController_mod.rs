@@ -1,4 +1,4 @@
-#[cfg(feature = "LobbySetupViewController")]
+#[cfg(feature = "cordl_class_LobbySetupViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbySetupViewController {
@@ -41,7 +41,7 @@ pub struct LobbySetupViewController {
     pub _isPartyOwner: bool,
     pub _isQuickStart: bool,
 }
-#[cfg(feature = "LobbySetupViewController")]
+#[cfg(feature = "cordl_class_LobbySetupViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LobbySetupViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -61,14 +61,14 @@ for crate::GlobalNamespace::LobbySetupViewController {
         false
     }
 }
-#[cfg(feature = "LobbySetupViewController")]
+#[cfg(feature = "cordl_class_LobbySetupViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbySetupViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LobbySetupViewController")]
+#[cfg(feature = "cordl_class_LobbySetupViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LobbySetupViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -836,7 +836,7 @@ impl crate::GlobalNamespace::LobbySetupViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LobbySetupViewController")]
+#[cfg(feature = "cordl_class_LobbySetupViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LobbySetupViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

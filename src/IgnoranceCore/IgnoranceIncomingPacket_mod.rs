@@ -1,4 +1,4 @@
-#[cfg(feature = "IgnoranceCore+IgnoranceIncomingPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceIncomingPacket")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceIncomingPacket {
@@ -6,7 +6,7 @@ pub struct IgnoranceIncomingPacket {
     pub NativePeerId: u32,
     pub Payload: crate::ENet::Packet,
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceIncomingPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceIncomingPacket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::IgnoranceCore::IgnoranceIncomingPacket {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::IgnoranceCore::IgnoranceIncomingPacket {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceIncomingPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceIncomingPacket")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceIncomingPacket {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::IgnoranceCore::IgnoranceIncomingPacket {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceIncomingPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceIncomingPacket")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceIncomingPacket {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::IgnoranceCore::IgnoranceIncomingPacket {
         self
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceIncomingPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceIncomingPacket")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceIncomingPacket {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::IgnoranceCore::IgnoranceIncomingPacket {
         }
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceIncomingPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceIncomingPacket")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceIncomingPacket {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::IgnoranceCore::IgnoranceIncomingPacket {
         actual
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceIncomingPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceIncomingPacket")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::IgnoranceCore::IgnoranceIncomingPacket {
     type Type = Self;

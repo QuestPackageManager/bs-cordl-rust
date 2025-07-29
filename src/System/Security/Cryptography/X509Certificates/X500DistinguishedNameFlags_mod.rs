@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -17,7 +17,7 @@ pub enum X500DistinguishedNameFlags {
     UseUTF8Encoding = 4096i32,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags {
@@ -49,7 +49,7 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags {
@@ -62,7 +62,7 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags {
@@ -78,7 +78,7 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags {
@@ -95,7 +95,7 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags {

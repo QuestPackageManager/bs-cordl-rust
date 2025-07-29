@@ -1,4 +1,4 @@
-#[cfg(feature = "LightWithIdMonoBehaviour")]
+#[cfg(feature = "cordl_class_LightWithIdMonoBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightWithIdMonoBehaviour {
@@ -9,7 +9,7 @@ pub struct LightWithIdMonoBehaviour {
     >,
     pub _isRegistered: bool,
 }
-#[cfg(feature = "LightWithIdMonoBehaviour")]
+#[cfg(feature = "cordl_class_LightWithIdMonoBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightWithIdMonoBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::LightWithIdMonoBehaviour {
         false
     }
 }
-#[cfg(feature = "LightWithIdMonoBehaviour")]
+#[cfg(feature = "cordl_class_LightWithIdMonoBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::LightWithIdMonoBehaviour {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightWithIdMonoBehaviour")]
+#[cfg(feature = "cordl_class_LightWithIdMonoBehaviour")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightWithIdMonoBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -297,7 +297,7 @@ impl crate::GlobalNamespace::LightWithIdMonoBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightWithIdMonoBehaviour")]
+#[cfg(feature = "cordl_class_LightWithIdMonoBehaviour")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightWithIdMonoBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

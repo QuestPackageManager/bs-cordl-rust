@@ -1,4 +1,4 @@
-#[cfg(feature = "CutoutEffect")]
+#[cfg(feature = "cordl_class_CutoutEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CutoutEffect {
@@ -13,7 +13,7 @@ pub struct CutoutEffect {
     pub _randomNoiseTexOffset: crate::UnityEngine::Vector3,
     pub _cutout: f32,
 }
-#[cfg(feature = "CutoutEffect")]
+#[cfg(feature = "cordl_class_CutoutEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CutoutEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CutoutEffect
         false
     }
 }
-#[cfg(feature = "CutoutEffect")]
+#[cfg(feature = "cordl_class_CutoutEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::CutoutEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CutoutEffect")]
+#[cfg(feature = "cordl_class_CutoutEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CutoutEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::CutoutEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CutoutEffect")]
+#[cfg(feature = "cordl_class_CutoutEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CutoutEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

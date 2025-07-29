@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRMeshData")]
+#[cfg(feature = "cordl_class_OVRMeshData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRMeshData {
@@ -9,7 +9,7 @@ pub struct OVRMeshData {
         quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRMeshAttributes>,
     >,
 }
-#[cfg(feature = "OVRMeshData")]
+#[cfg(feature = "cordl_class_OVRMeshData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMeshData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMeshData 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRMeshData")]
+#[cfg(feature = "cordl_class_OVRMeshData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRMeshData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRMeshD
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRMeshData")]
+#[cfg(feature = "cordl_class_OVRMeshData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRMeshData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRMesh
         self
     }
 }
-#[cfg(feature = "OVRMeshData")]
+#[cfg(feature = "cordl_class_OVRMeshData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRMeshData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRMeshD
         }
     }
 }
-#[cfg(feature = "OVRMeshData")]
+#[cfg(feature = "cordl_class_OVRMeshData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRMeshData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRMeshDat
         actual
     }
 }
-#[cfg(feature = "OVRMeshData")]
+#[cfg(feature = "cordl_class_OVRMeshData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRMeshData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

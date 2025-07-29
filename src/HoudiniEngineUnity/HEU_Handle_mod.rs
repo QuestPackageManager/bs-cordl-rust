@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_Handle {
@@ -22,7 +22,7 @@ pub struct HEU_Handle {
     pub _xyzOrder: crate::HoudiniEngineUnity::HAPI_XYZOrder,
     pub _convertedTransformEuler: crate::HoudiniEngineUnity::HAPI_TransformEuler,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Handle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Handl
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_Handle {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_Handle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -716,7 +716,7 @@ impl crate::HoudiniEngineUnity::HEU_Handle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Handle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -753,7 +753,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_Handle_HEU_HandleType {
@@ -761,7 +761,7 @@ pub enum HEU_Handle_HEU_HandleType {
     UNSUPPORTED = 1i32,
     XFORM = 0i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
     type Held<'a> = Self;
@@ -791,7 +791,7 @@ for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
     type Type = Self;
@@ -802,7 +802,7 @@ for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
     type Actual = Self;
@@ -816,7 +816,7 @@ for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
     type Type = Self;
@@ -831,7 +831,7 @@ for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType {
     type Actual = Self;

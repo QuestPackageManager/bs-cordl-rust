@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteCutSoundEffect")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutSoundEffect {
@@ -48,7 +48,7 @@ pub struct NoteCutSoundEffect {
         >,
     >,
 }
-#[cfg(feature = "NoteCutSoundEffect")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutSoundEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -67,14 +67,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutSound
         false
     }
 }
-#[cfg(feature = "NoteCutSoundEffect")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutSoundEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteCutSoundEffect")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutSoundEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -480,7 +480,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteCutSoundEffect")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutSoundEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -489,7 +489,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutSoundE
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "NoteCutSoundEffect+Pool")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutSoundEffect_Pool {
@@ -497,7 +497,7 @@ pub struct NoteCutSoundEffect_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutSoundEffect>,
     >,
 }
-#[cfg(feature = "NoteCutSoundEffect+Pool")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -517,7 +517,7 @@ for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
         false
     }
 }
-#[cfg(feature = "NoteCutSoundEffect+Pool")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutSoundEffect>,
@@ -526,7 +526,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteCutSoundEffect+Pool")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -563,7 +563,7 @@ impl crate::GlobalNamespace::NoteCutSoundEffect_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteCutSoundEffect+Pool")]
+#[cfg(feature = "cordl_class_NoteCutSoundEffect+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

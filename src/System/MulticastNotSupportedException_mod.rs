@@ -1,10 +1,10 @@
-#[cfg(feature = "System+MulticastNotSupportedException")]
+#[cfg(feature = "cordl_class_System+MulticastNotSupportedException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MulticastNotSupportedException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+MulticastNotSupportedException")]
+#[cfg(feature = "cordl_class_System+MulticastNotSupportedException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::MulticastNotSupportedException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::MulticastNotSupportedException {
         false
     }
 }
-#[cfg(feature = "System+MulticastNotSupportedException")]
+#[cfg(feature = "cordl_class_System+MulticastNotSupportedException")]
 impl std::ops::Deref for crate::System::MulticastNotSupportedException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+MulticastNotSupportedException")]
+#[cfg(feature = "cordl_class_System+MulticastNotSupportedException")]
 impl std::ops::DerefMut for crate::System::MulticastNotSupportedException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::System::MulticastNotSupportedException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+MulticastNotSupportedException")]
+#[cfg(feature = "cordl_class_System+MulticastNotSupportedException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::MulticastNotSupportedException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

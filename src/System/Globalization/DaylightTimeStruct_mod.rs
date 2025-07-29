@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+DaylightTimeStruct")]
+#[cfg(feature = "cordl_class_System+Globalization+DaylightTimeStruct")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DaylightTimeStruct {
@@ -6,7 +6,7 @@ pub struct DaylightTimeStruct {
     pub End: crate::System::DateTime,
     pub Delta: crate::System::TimeSpan,
 }
-#[cfg(feature = "System+Globalization+DaylightTimeStruct")]
+#[cfg(feature = "cordl_class_System+Globalization+DaylightTimeStruct")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::DaylightTimeStruct {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::System::Globalization::DaylightTimeStruct {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+DaylightTimeStruct")]
+#[cfg(feature = "cordl_class_System+Globalization+DaylightTimeStruct")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::DaylightTimeStruct {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::Globalization::DaylightTimeStruct {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+DaylightTimeStruct")]
+#[cfg(feature = "cordl_class_System+Globalization+DaylightTimeStruct")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::DaylightTimeStruct {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Globalization::DaylightTimeStruct {
         self
     }
 }
-#[cfg(feature = "System+Globalization+DaylightTimeStruct")]
+#[cfg(feature = "cordl_class_System+Globalization+DaylightTimeStruct")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::DaylightTimeStruct {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::Globalization::DaylightTimeStruct {
         }
     }
 }
-#[cfg(feature = "System+Globalization+DaylightTimeStruct")]
+#[cfg(feature = "cordl_class_System+Globalization+DaylightTimeStruct")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::DaylightTimeStruct {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::System::Globalization::DaylightTimeStruct {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+DaylightTimeStruct")]
+#[cfg(feature = "cordl_class_System+Globalization+DaylightTimeStruct")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::DaylightTimeStruct {
     type Type = Self;

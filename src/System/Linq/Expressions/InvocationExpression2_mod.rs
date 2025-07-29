@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+InvocationExpression2")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+InvocationExpression2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvocationExpression2 {
@@ -6,7 +6,7 @@ pub struct InvocationExpression2 {
     pub _arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
-#[cfg(feature = "System+Linq+Expressions+InvocationExpression2")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+InvocationExpression2")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::InvocationExpression2 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Linq::Expressions::InvocationExpression2 {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+InvocationExpression2")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+InvocationExpression2")]
 impl std::ops::Deref for crate::System::Linq::Expressions::InvocationExpression2 {
     type Target = crate::System::Linq::Expressions::InvocationExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+InvocationExpression2")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+InvocationExpression2")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::InvocationExpression2 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -187,7 +187,7 @@ impl crate::System::Linq::Expressions::InvocationExpression2 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+InvocationExpression2")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+InvocationExpression2")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::InvocationExpression2 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

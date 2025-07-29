@@ -1,10 +1,10 @@
-#[cfg(feature = "LocalLeaderboardsAsyncLoader")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsAsyncLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalLeaderboardsAsyncLoader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
 }
-#[cfg(feature = "LocalLeaderboardsAsyncLoader")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsAsyncLoader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
         false
     }
 }
-#[cfg(feature = "LocalLeaderboardsAsyncLoader")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LocalLeaderboardsAsyncLoader")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsAsyncLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -163,7 +163,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LocalLeaderboardsAsyncLoader")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsAsyncLoader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

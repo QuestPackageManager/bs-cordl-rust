@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyDescriptorCollection {
@@ -26,7 +26,7 @@ pub struct PropertyDescriptorCollection {
     >,
     pub _Count_k__BackingField: i32,
 }
-#[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::PropertyDescriptorCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::System::ComponentModel::PropertyDescriptorCollection {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::PropertyDescriptorCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection")]
 impl std::ops::DerefMut for crate::System::ComponentModel::PropertyDescriptorCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1512,7 +1512,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::PropertyDescriptorCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1579,7 +1579,7 @@ for crate::System::ComponentModel::PropertyDescriptorCollection {
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
+    feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1591,7 +1591,7 @@ pub struct PropertyDescriptorCollection_PropertyDescriptorEnumerator {
     pub _index: i32,
 }
 #[cfg(
-    feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
+    feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
@@ -1613,7 +1613,7 @@ for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescript
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
+    feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
@@ -1623,7 +1623,7 @@ for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescript
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
+    feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
@@ -1822,7 +1822,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescrip
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
+    feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {

@@ -1,11 +1,11 @@
-#[cfg(feature = "Oculus+Platform+Models+LivestreamingApplicationStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LivestreamingApplicationStatus")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LivestreamingApplicationStatus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub StreamingEnabled: bool,
 }
-#[cfg(feature = "Oculus+Platform+Models+LivestreamingApplicationStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LivestreamingApplicationStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LivestreamingApplicationStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LivestreamingApplicationStatus")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LivestreamingApplicationStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LivestreamingApplicationStatus")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -78,7 +78,7 @@ impl crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LivestreamingApplicationStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LivestreamingApplicationStatus")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

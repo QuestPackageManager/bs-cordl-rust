@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PemUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::OpenSsl::PemUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::OpenSsl::PemUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -204,7 +204,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -214,7 +214,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PemUtilities_PemBaseAlg {
@@ -230,7 +230,7 @@ pub enum PemUtilities_PemBaseAlg {
     RC2_40 = 8i32,
     RC2_64 = 9i32,
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
     type Held<'a> = Self;
@@ -260,7 +260,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
     type Type = Self;
@@ -271,7 +271,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
     type Actual = Self;
@@ -285,7 +285,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
     type Type = Self;
@@ -300,7 +300,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
     type Actual = Self;
@@ -314,7 +314,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
         actual
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PemUtilities_PemMode {
@@ -324,7 +324,7 @@ pub enum PemUtilities_PemMode {
     ECB = 2i32,
     OFB = 3i32,
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
     type Held<'a> = Self;
@@ -354,7 +354,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
     type Type = Self;
@@ -365,7 +365,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
     type Actual = Self;
@@ -379,7 +379,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
     type Type = Self;
@@ -394,7 +394,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteAssetImportFormats {
@@ -6,7 +6,7 @@ pub enum SpriteAssetImportFormats {
     None = 0i32,
     TexturePackerJsonArray = 1i32,
 }
-#[cfg(feature = "TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
         self
     }
 }
-#[cfg(feature = "TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
         }
     }
 }
-#[cfg(feature = "TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
+#[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+SpriteAssetImportFormats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::SpriteAssetUtilities::SpriteAssetImportFormats {
     type Actual = Self;

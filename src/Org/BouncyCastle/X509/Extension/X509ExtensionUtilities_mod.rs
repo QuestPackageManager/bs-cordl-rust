@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ExtensionUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::X509::Extension::X509ExtensionUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::X509::Extension::X509ExtensionUtilities {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::Extension::X509ExtensionUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::X509::Extension::X509ExtensionUtilities {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::X509::Extension::X509ExtensionUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -198,7 +198,7 @@ impl crate::Org::BouncyCastle::X509::Extension::X509ExtensionUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::X509::Extension::X509ExtensionUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

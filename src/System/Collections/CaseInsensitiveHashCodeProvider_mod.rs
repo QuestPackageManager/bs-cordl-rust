@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+CaseInsensitiveHashCodeProvider")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveHashCodeProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CaseInsensitiveHashCodeProvider {
@@ -7,7 +7,7 @@ pub struct CaseInsensitiveHashCodeProvider {
         crate::System::Globalization::CompareInfo,
     >,
 }
-#[cfg(feature = "System+Collections+CaseInsensitiveHashCodeProvider")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveHashCodeProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::CaseInsensitiveHashCodeProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Collections::CaseInsensitiveHashCodeProvider {
         false
     }
 }
-#[cfg(feature = "System+Collections+CaseInsensitiveHashCodeProvider")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveHashCodeProvider")]
 impl std::ops::Deref for crate::System::Collections::CaseInsensitiveHashCodeProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+CaseInsensitiveHashCodeProvider")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveHashCodeProvider")]
 impl std::ops::DerefMut for crate::System::Collections::CaseInsensitiveHashCodeProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -134,7 +134,7 @@ impl crate::System::Collections::CaseInsensitiveHashCodeProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+CaseInsensitiveHashCodeProvider")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveHashCodeProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::CaseInsensitiveHashCodeProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

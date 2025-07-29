@@ -1,11 +1,11 @@
-#[cfg(feature = "IntFxBaseData")]
+#[cfg(feature = "cordl_class_IntFxBaseData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntFxBaseData {
     __cordl_parent: crate::GlobalNamespace::FxBaseData,
     pub value: i32,
 }
-#[cfg(feature = "IntFxBaseData")]
+#[cfg(feature = "cordl_class_IntFxBaseData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IntFxBaseData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IntFxBaseDat
         false
     }
 }
-#[cfg(feature = "IntFxBaseData")]
+#[cfg(feature = "cordl_class_IntFxBaseData")]
 impl std::ops::Deref for crate::GlobalNamespace::IntFxBaseData {
     type Target = crate::GlobalNamespace::FxBaseData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IntFxBaseData")]
+#[cfg(feature = "cordl_class_IntFxBaseData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IntFxBaseData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::IntFxBaseData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IntFxBaseData")]
+#[cfg(feature = "cordl_class_IntFxBaseData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IntFxBaseData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

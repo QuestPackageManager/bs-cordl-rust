@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TransitionEndEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionEndEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransitionEndEvent {
@@ -6,7 +6,7 @@ pub struct TransitionEndEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionEndEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TransitionEndEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionEndEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TransitionEndEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::TransitionEndEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransitionEndEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionEndEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TransitionEndEvent {
     type Target = crate::UnityEngine::UIElements::TransitionEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionEndEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TransitionEndEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransitionEndEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionEndEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TransitionEndEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::TransitionEndEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransitionEndEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionEndEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TransitionEndEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

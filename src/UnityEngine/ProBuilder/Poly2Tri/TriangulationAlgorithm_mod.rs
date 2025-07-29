@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TriangulationAlgorithm {
     #[default]
     DTSweep = 0i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm {
     type Actual = Self;

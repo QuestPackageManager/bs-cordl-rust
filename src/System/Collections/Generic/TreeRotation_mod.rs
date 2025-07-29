@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Generic+TreeRotation")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+TreeRotation")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TreeRotation {
@@ -8,7 +8,7 @@ pub enum TreeRotation {
     Right = 2u8,
     RightLeft = 3u8,
 }
-#[cfg(feature = "System+Collections+Generic+TreeRotation")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+TreeRotation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Generic::TreeRotation {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Collections::Generic::TreeRotation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+Generic+TreeRotation")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+TreeRotation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Collections::Generic::TreeRotation {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Collections::Generic::TreeRotation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+Generic+TreeRotation")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+TreeRotation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Collections::Generic::TreeRotation {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Collections::Generic::TreeRotation {
         self
     }
 }
-#[cfg(feature = "System+Collections+Generic+TreeRotation")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+TreeRotation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Collections::Generic::TreeRotation {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Collections::Generic::TreeRotation {
         }
     }
 }
-#[cfg(feature = "System+Collections+Generic+TreeRotation")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+TreeRotation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Collections::Generic::TreeRotation {
     type Actual = Self;

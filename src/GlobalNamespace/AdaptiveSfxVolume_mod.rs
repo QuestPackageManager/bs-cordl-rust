@@ -1,4 +1,4 @@
-#[cfg(feature = "AdaptiveSfxVolume")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AdaptiveSfxVolume {
@@ -16,7 +16,7 @@ pub struct AdaptiveSfxVolume {
         crate::GlobalNamespace::MomentaryLoudnessHistory,
     >,
 }
-#[cfg(feature = "AdaptiveSfxVolume")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AdaptiveSfxVolume {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AdaptiveSfxV
         false
     }
 }
-#[cfg(feature = "AdaptiveSfxVolume")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume")]
 impl std::ops::Deref for crate::GlobalNamespace::AdaptiveSfxVolume {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AdaptiveSfxVolume")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AdaptiveSfxVolume {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -204,7 +204,7 @@ impl crate::GlobalNamespace::AdaptiveSfxVolume {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AdaptiveSfxVolume")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AdaptiveSfxVolume {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -213,7 +213,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AdaptiveSfxVo
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AdaptiveSfxVolume+InitData")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AdaptiveSfxVolume_InitData {
@@ -222,7 +222,7 @@ pub struct AdaptiveSfxVolume_InitData {
     pub adaptiveSfx: bool,
     pub frequency: i32,
 }
-#[cfg(feature = "AdaptiveSfxVolume+InitData")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AdaptiveSfxVolume_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -242,14 +242,14 @@ for crate::GlobalNamespace::AdaptiveSfxVolume_InitData {
         false
     }
 }
-#[cfg(feature = "AdaptiveSfxVolume+InitData")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::AdaptiveSfxVolume_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AdaptiveSfxVolume+InitData")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AdaptiveSfxVolume_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -301,7 +301,7 @@ impl crate::GlobalNamespace::AdaptiveSfxVolume_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AdaptiveSfxVolume+InitData")]
+#[cfg(feature = "cordl_class_AdaptiveSfxVolume+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AdaptiveSfxVolume_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

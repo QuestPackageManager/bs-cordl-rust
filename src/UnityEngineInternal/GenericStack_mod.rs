@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngineInternal+GenericStack")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+GenericStack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericStack {
     __cordl_parent: crate::System::Collections::Stack,
 }
-#[cfg(feature = "UnityEngineInternal+GenericStack")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+GenericStack")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngineInternal::GenericStack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngineInternal::GenericS
         false
     }
 }
-#[cfg(feature = "UnityEngineInternal+GenericStack")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+GenericStack")]
 impl std::ops::Deref for crate::UnityEngineInternal::GenericStack {
     type Target = crate::System::Collections::Stack;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngineInternal+GenericStack")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+GenericStack")]
 impl std::ops::DerefMut for crate::UnityEngineInternal::GenericStack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::UnityEngineInternal::GenericStack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngineInternal+GenericStack")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+GenericStack")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngineInternal::GenericStack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

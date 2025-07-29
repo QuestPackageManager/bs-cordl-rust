@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+FtpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpWebRequest {
@@ -49,7 +49,7 @@ pub struct FtpWebRequest {
         crate::System::Net::LazyAsyncResult,
     >,
 }
-#[cfg(feature = "System+Net+FtpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpWebRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -68,14 +68,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpWebRequest {
         false
     }
 }
-#[cfg(feature = "System+Net+FtpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest")]
 impl std::ops::Deref for crate::System::Net::FtpWebRequest {
     type Target = crate::System::Net::WebRequest;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+FtpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest")]
 impl std::ops::DerefMut for crate::System::Net::FtpWebRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1336,7 +1336,7 @@ impl crate::System::Net::FtpWebRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+FtpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpWebRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1345,7 +1345,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpWebRequest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest+RequestStage")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FtpWebRequest_RequestStage {
@@ -1356,7 +1356,7 @@ pub enum FtpWebRequest_RequestStage {
     RequestStarted = 1i32,
     WriteReady = 2i32,
 }
-#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Held<'a> = Self;
@@ -1386,7 +1386,7 @@ for crate::System::Net::FtpWebRequest_RequestStage {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Type = Self;
@@ -1397,7 +1397,7 @@ for crate::System::Net::FtpWebRequest_RequestStage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Actual = Self;
@@ -1411,7 +1411,7 @@ for crate::System::Net::FtpWebRequest_RequestStage {
         self
     }
 }
-#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Type = Self;
@@ -1426,7 +1426,7 @@ for crate::System::Net::FtpWebRequest_RequestStage {
         }
     }
 }
-#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Actual = Self;

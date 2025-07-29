@@ -1,4 +1,4 @@
-#[cfg(feature = "GameObjectKeywordSwitchEffect")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObjectKeywordSwitchEffect {
@@ -12,7 +12,7 @@ pub struct GameObjectKeywordSwitchEffect {
         >,
     >,
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
         false
     }
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -118,7 +118,7 @@ for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
@@ -126,7 +126,7 @@ pub struct GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -146,7 +146,7 @@ for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem 
         false
     }
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -154,7 +154,7 @@ for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -192,7 +192,7 @@ impl crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
+#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

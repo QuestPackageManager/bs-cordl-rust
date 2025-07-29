@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MultiplayerLevelScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelScenesTransitionSetupDataSO {
@@ -46,7 +46,7 @@ pub struct MultiplayerLevelScenesTransitionSetupDataSO {
         crate::GlobalNamespace::EnvironmentInfoSO,
     >,
 }
-#[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MultiplayerLevelScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -66,7 +66,7 @@ for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MultiplayerLevelScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MultiplayerLevelScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -833,7 +833,7 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MultiplayerLevelScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

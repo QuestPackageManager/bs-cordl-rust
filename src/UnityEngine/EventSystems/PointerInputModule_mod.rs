@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerInputModule {
@@ -13,7 +13,7 @@ pub struct PointerInputModule {
         crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PointerInputModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::UnityEngine::EventSystems::PointerInputModule {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::PointerInputModule {
     type Target = crate::UnityEngine::EventSystems::BaseInputModule;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::PointerInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -555,7 +555,7 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::PointerInputModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -565,7 +565,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerInputModule_ButtonState {
@@ -575,7 +575,7 @@ pub struct PointerInputModule_ButtonState {
         crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -595,7 +595,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -603,7 +603,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 impl std::ops::DerefMut
 for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -755,7 +755,7 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -765,7 +765,9 @@ for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerInputModule_MouseButtonEventData {
@@ -775,7 +777,9 @@ pub struct PointerInputModule_MouseButtonEventData {
         crate::UnityEngine::EventSystems::PointerEventData,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -795,7 +799,9 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -803,7 +809,9 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -875,7 +883,9 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -885,7 +895,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerInputModule_MouseState {
@@ -898,7 +908,7 @@ pub struct PointerInputModule_MouseState {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -918,7 +928,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseState")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -926,7 +936,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseState")]
 impl std::ops::DerefMut
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1067,7 +1077,7 @@ impl crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

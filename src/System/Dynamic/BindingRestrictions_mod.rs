@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Dynamic+BindingRestrictions")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::BindingRestrictions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::BindingRestr
         false
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions")]
 impl std::ops::Deref for crate::System::Dynamic::BindingRestrictions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions")]
 impl std::ops::DerefMut for crate::System::Dynamic::BindingRestrictions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -280,7 +280,7 @@ impl crate::System::Dynamic::BindingRestrictions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::BindingRestrictions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -289,13 +289,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::BindingRestri
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
+#[cfg(
+    feature = "cordl_class_System+Dynamic+BindingRestrictions+BindingRestrictionsProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions_BindingRestrictionsProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
+#[cfg(
+    feature = "cordl_class_System+Dynamic+BindingRestrictions+BindingRestrictionsProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -315,7 +319,9 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
         false
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
+#[cfg(
+    feature = "cordl_class_System+Dynamic+BindingRestrictions+BindingRestrictionsProxy"
+)]
 impl std::ops::Deref
 for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -323,7 +329,9 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
+#[cfg(
+    feature = "cordl_class_System+Dynamic+BindingRestrictions+BindingRestrictionsProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -332,7 +340,9 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
 impl crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {}
-#[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
+#[cfg(
+    feature = "cordl_class_System+Dynamic+BindingRestrictions+BindingRestrictionsProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -342,7 +352,7 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions_TestBuilder {
@@ -358,7 +368,7 @@ pub struct BindingRestrictions_TestBuilder {
         >,
     >,
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Dynamic::BindingRestrictions_TestBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -378,14 +388,14 @@ for crate::System::Dynamic::BindingRestrictions_TestBuilder {
         false
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]
 impl std::ops::Deref for crate::System::Dynamic::BindingRestrictions_TestBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]
 impl std::ops::DerefMut for crate::System::Dynamic::BindingRestrictions_TestBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -515,7 +525,7 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Dynamic::BindingRestrictions_TestBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -525,14 +535,14 @@ for crate::System::Dynamic::BindingRestrictions_TestBuilder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TestBuilder_BindingRestrictions_AndNode {
     pub Depth: i32,
     pub Node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Held<'a> = Self;
@@ -562,7 +572,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Type = Self;
@@ -573,7 +583,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Actual = Self;
@@ -587,7 +597,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
         self
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Type = Self;
@@ -602,7 +612,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
         }
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Actual = Self;
@@ -616,7 +626,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
         actual
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Type = Self;

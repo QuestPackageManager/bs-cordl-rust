@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Events+UnityEventCallState")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEventCallState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityEventCallState {
@@ -7,7 +7,7 @@ pub enum UnityEventCallState {
     Off = 0i32,
     RuntimeOnly = 2i32,
 }
-#[cfg(feature = "UnityEngine+Events+UnityEventCallState")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEventCallState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Events::UnityEventCallState {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::Events::UnityEventCallState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEventCallState")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEventCallState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Events::UnityEventCallState {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Events::UnityEventCallState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEventCallState")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEventCallState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Events::UnityEventCallState {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::Events::UnityEventCallState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEventCallState")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEventCallState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Events::UnityEventCallState {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::Events::UnityEventCallState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEventCallState")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEventCallState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Events::UnityEventCallState {
     type Actual = Self;

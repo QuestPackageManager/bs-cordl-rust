@@ -1,4 +1,4 @@
-#[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_EventsTestScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestScenesTransitionSetupDataSO {
@@ -11,7 +11,7 @@ pub struct EventsTestScenesTransitionSetupDataSO {
     >,
     pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
 }
-#[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_EventsTestScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_EventsTestScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_EventsTestScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_EventsTestScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

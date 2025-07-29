@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider {
@@ -26,7 +26,7 @@ pub struct Slider {
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,
     pub m_DelayedUpdateVisuals: bool,
 }
-#[cfg(feature = "UnityEngine+UI+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider")]
 impl std::ops::Deref for crate::UnityEngine::UI::Slider {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Slider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1240,7 +1240,7 @@ impl crate::UnityEngine::UI::Slider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Slider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1307,7 +1307,7 @@ impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::S
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Axis")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Slider_Axis {
@@ -1315,7 +1315,7 @@ pub enum Slider_Axis {
     Horizontal = 0i32,
     Vertical = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Axis")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Axis {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1344,7 +1344,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Axis 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Axis")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Slider_Axis {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1354,7 +1354,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Slider_A
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Axis")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Slider_Axis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1367,7 +1367,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Slider_
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Axis")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Slider_Axis {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1381,7 +1381,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Slider_A
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Axis")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Slider_Axis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1394,7 +1394,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Slider_Axi
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Direction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Slider_Direction {
@@ -1404,7 +1404,7 @@ pub enum Slider_Direction {
     RightToLeft = 1i32,
     TopToBottom = 3i32,
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Direction")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Direction {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1433,7 +1433,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Direc
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Direction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Slider_Direction {
     type Type = Self;
@@ -1444,7 +1444,7 @@ for crate::UnityEngine::UI::Slider_Direction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Direction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Slider_Direction {
     type Actual = Self;
@@ -1458,7 +1458,7 @@ for crate::UnityEngine::UI::Slider_Direction {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Direction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Slider_Direction {
     type Type = Self;
@@ -1473,7 +1473,7 @@ for crate::UnityEngine::UI::Slider_Direction {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+Direction")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Slider_Direction {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1486,13 +1486,13 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Slider_Dir
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+SliderEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider_SliderEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
 }
-#[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+SliderEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_SliderEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1511,14 +1511,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Slide
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+SliderEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Slider_SliderEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+SliderEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Slider_SliderEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1555,7 +1555,7 @@ impl crate::UnityEngine::UI::Slider_SliderEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+SliderEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Slider_SliderEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

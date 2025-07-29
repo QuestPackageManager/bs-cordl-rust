@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SymbolsDictionary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SymbolsDictionary {
@@ -10,7 +10,7 @@ pub struct SymbolsDictionary {
     pub particleLast: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub isUpaEnforced: bool,
 }
-#[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SymbolsDictionary")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::SymbolsDictionary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Xml::Schema::SymbolsDictionary {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SymbolsDictionary")]
 impl std::ops::Deref for crate::System::Xml::Schema::SymbolsDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SymbolsDictionary")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SymbolsDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -382,7 +382,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SymbolsDictionary")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::SymbolsDictionary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

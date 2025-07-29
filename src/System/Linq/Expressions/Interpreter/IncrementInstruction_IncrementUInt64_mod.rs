@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct IncrementInstruction_IncrementUInt64 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::IncrementInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {
     type Target = crate::System::Linq::Expressions::Interpreter::IncrementInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementU
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {

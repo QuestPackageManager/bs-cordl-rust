@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Timeline+GroupTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+GroupTrack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupTrack {
     __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
 }
-#[cfg(feature = "UnityEngine+Timeline+GroupTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+GroupTrack")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::GroupTrack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::GroupT
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+GroupTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+GroupTrack")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::GroupTrack {
     type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+GroupTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+GroupTrack")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::GroupTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::UnityEngine::Timeline::GroupTrack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+GroupTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+GroupTrack")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::GroupTrack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

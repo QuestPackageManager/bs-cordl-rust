@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSpecificSettings {
@@ -24,7 +24,7 @@ pub struct PlayerSpecificSettings {
     pub _environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     pub _headsetHapticIntensity: f32,
 }
-#[cfg(feature = "PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSpecificSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::PlayerSpecificSettings {
         false
     }
 }
-#[cfg(feature = "PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSpecificSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSpecificSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -778,7 +778,7 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSpecificSettings")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSpecificSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSimpleJSON+JSONTextMode")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONTextMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JSONTextMode {
@@ -6,7 +6,7 @@ pub enum JSONTextMode {
     Compact = 0i32,
     Indent = 1i32,
 }
-#[cfg(feature = "OVRSimpleJSON+JSONTextMode")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONTextMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONTextMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONTextMode")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVRSimpleJSON::JSONTextMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVRSimpleJSON::JSONTextMo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONTextMode")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVRSimpleJSON::JSONTextMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVRSimpleJSON::JSONTextM
         self
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONTextMode")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVRSimpleJSON::JSONTextMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVRSimpleJSON::JSONTextMo
         }
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONTextMode")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVRSimpleJSON::JSONTextMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

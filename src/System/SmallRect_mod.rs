@@ -1,4 +1,4 @@
-#[cfg(feature = "System+SmallRect")]
+#[cfg(feature = "cordl_class_System+SmallRect")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SmallRect {
@@ -7,7 +7,7 @@ pub struct SmallRect {
     pub Right: i16,
     pub Bottom: i16,
 }
-#[cfg(feature = "System+SmallRect")]
+#[cfg(feature = "cordl_class_System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::SmallRect {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::SmallRect {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+SmallRect")]
+#[cfg(feature = "cordl_class_System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::SmallRect {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::SmallRect {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+SmallRect")]
+#[cfg(feature = "cordl_class_System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::SmallRect {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::SmallRect {
         self
     }
 }
-#[cfg(feature = "System+SmallRect")]
+#[cfg(feature = "cordl_class_System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::SmallRect {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::SmallRect {
         }
     }
 }
-#[cfg(feature = "System+SmallRect")]
+#[cfg(feature = "cordl_class_System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::SmallRect {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::SmallRect {
         actual
     }
 }
-#[cfg(feature = "System+SmallRect")]
+#[cfg(feature = "cordl_class_System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::SmallRect {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

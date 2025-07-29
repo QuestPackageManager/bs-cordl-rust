@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Timeline+NotKeyableAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotKeyableAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotKeyableAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+Timeline+NotKeyableAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotKeyableAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::NotKeyableAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Timeline::NotKeyableAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+NotKeyableAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotKeyableAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::NotKeyableAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+NotKeyableAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotKeyableAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::NotKeyableAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::Timeline::NotKeyableAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+NotKeyableAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotKeyableAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::NotKeyableAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

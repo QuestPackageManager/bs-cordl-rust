@@ -1,4 +1,4 @@
-#[cfg(feature = "BTSCharacterMaterialSwitcher")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher {
@@ -11,7 +11,7 @@ pub struct BTSCharacterMaterialSwitcher {
         >,
     >,
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
         false
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -115,7 +115,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+MaterialPairs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher_MaterialPairs {
@@ -124,7 +124,7 @@ pub struct BTSCharacterMaterialSwitcher_MaterialPairs {
     pub defaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub alternativeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+MaterialPairs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -144,7 +144,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
         false
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -152,7 +152,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -190,7 +190,7 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -200,7 +200,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
@@ -214,7 +214,7 @@ pub struct BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
         >,
     >,
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -234,7 +234,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs 
         false
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -242,7 +242,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -357,7 +357,7 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
+#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

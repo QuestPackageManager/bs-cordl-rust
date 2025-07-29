@@ -1,4 +1,4 @@
-#[cfg(feature = "NoTransitionButtonSelectableStateController")]
+#[cfg(feature = "cordl_class_NoTransitionButtonSelectableStateController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoTransitionButtonSelectableStateController {
@@ -6,7 +6,7 @@ pub struct NoTransitionButtonSelectableStateController {
         quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton>,
     >,
 }
-#[cfg(feature = "NoTransitionButtonSelectableStateController")]
+#[cfg(feature = "cordl_class_NoTransitionButtonSelectableStateController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
         false
     }
 }
-#[cfg(feature = "NoTransitionButtonSelectableStateController")]
+#[cfg(feature = "cordl_class_NoTransitionButtonSelectableStateController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
     type Target = crate::GlobalNamespace::SelectableStateController_1<
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoTransitionButtonSelectableStateController")]
+#[cfg(feature = "cordl_class_NoTransitionButtonSelectableStateController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoTransitionButtonSelectableStateController")]
+#[cfg(feature = "cordl_class_NoTransitionButtonSelectableStateController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

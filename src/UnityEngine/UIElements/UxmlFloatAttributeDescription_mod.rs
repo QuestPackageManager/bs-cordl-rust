@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFloatAttributeDescription")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlFloatAttributeDescription {
     __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<f32>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFloatAttributeDescription")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFloatAttributeDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFloatAttributeDescription")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -132,7 +132,7 @@ impl crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFloatAttributeDescription")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

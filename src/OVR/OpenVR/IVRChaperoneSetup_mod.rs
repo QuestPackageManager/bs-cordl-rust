@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRChaperoneSetup {
@@ -63,7 +63,7 @@ pub struct IVRChaperoneSetup {
         crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRChaperoneSetup {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -92,7 +92,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRChaperoneSetu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRChaperoneSetup {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -102,7 +102,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRChaperone
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRChaperoneSetup {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -115,7 +115,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRChaperon
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRChaperoneSetup {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -129,7 +129,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRChaperone
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRChaperoneSetup {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -142,7 +142,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRChaperoneSe
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::IVRChaperoneSetup {
     type Type = Self;
@@ -206,13 +206,13 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup {
     )]
     pub type _SetWorkingStandingZeroPoseToRawTrackingPose = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose;
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__CommitWorkingCopy {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -232,14 +232,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -378,7 +378,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -388,13 +388,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__ExportLiveToBuffer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -414,14 +414,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -575,7 +575,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -585,13 +585,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -611,7 +611,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -619,7 +619,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -790,7 +790,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -800,13 +800,17 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -826,7 +830,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -834,7 +840,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -997,7 +1005,9 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1007,13 +1017,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1033,7 +1043,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -1041,7 +1051,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1212,7 +1222,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1222,13 +1232,17 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1248,7 +1262,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPos
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose {
     type Target = crate::System::MulticastDelegate;
@@ -1256,7 +1272,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPos
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1418,7 +1436,9 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPo
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1428,13 +1448,17 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPos
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1454,7 +1478,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -1462,7 +1488,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1633,7 +1661,9 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1643,13 +1673,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__GetWorkingPlayAreaRect {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1669,14 +1699,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1824,7 +1854,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1834,13 +1864,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__GetWorkingPlayAreaSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1860,14 +1890,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2019,7 +2049,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2030,7 +2060,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -2038,7 +2068,7 @@ pub struct IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -2060,7 +2090,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -2070,7 +2100,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -2236,7 +2266,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackin
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -2248,7 +2278,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -2256,7 +2286,7 @@ pub struct IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose {
@@ -2278,7 +2308,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTracki
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose {
@@ -2288,7 +2318,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTracki
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose {
@@ -2454,7 +2484,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrack
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose {
@@ -2465,13 +2495,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTracki
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__ImportFromBufferToWorking {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2491,7 +2521,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
     type Target = crate::System::MulticastDelegate;
@@ -2499,7 +2529,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2650,7 +2680,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2660,13 +2690,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__ReloadFromDisk {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2686,14 +2716,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2832,7 +2862,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2842,13 +2872,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__RevertWorkingCopy {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2868,14 +2898,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3007,7 +3037,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3017,13 +3047,17 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3043,7 +3077,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -3051,7 +3087,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3218,7 +3256,9 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3228,13 +3268,17 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3254,7 +3298,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -3262,7 +3308,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3421,7 +3469,9 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3431,13 +3481,17 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3457,7 +3511,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo"
+)]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -3465,7 +3521,9 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo"
+)]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3632,7 +3690,9 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
+#[cfg(
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3642,13 +3702,13 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperoneSetup__SetWorkingPlayAreaSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3668,14 +3728,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3818,7 +3878,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3829,7 +3889,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -3837,7 +3897,7 @@ pub struct IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -3859,7 +3919,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -3869,7 +3929,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -4035,7 +4095,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackin
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -4047,7 +4107,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -4055,7 +4115,7 @@ pub struct IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose {
@@ -4077,7 +4137,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTracki
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose {
@@ -4087,7 +4147,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTracki
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose {
@@ -4253,7 +4313,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrack
     }
 }
 #[cfg(
-    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose {

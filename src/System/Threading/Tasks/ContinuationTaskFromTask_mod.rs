@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromTask")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContinuationTaskFromTask {
     __cordl_parent: crate::System::Threading::Tasks::Task,
     pub m_antecedent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromTask")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::ContinuationTaskFromTask {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Threading::Tasks::ContinuationTaskFromTask {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromTask")]
 impl std::ops::Deref for crate::System::Threading::Tasks::ContinuationTaskFromTask {
     type Target = crate::System::Threading::Tasks::Task;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromTask")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::ContinuationTaskFromTask {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::System::Threading::Tasks::ContinuationTaskFromTask {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromTask")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::ContinuationTaskFromTask {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

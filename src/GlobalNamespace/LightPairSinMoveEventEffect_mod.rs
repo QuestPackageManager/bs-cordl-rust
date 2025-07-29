@@ -1,4 +1,4 @@
-#[cfg(feature = "LightPairSinMoveEventEffect")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightPairSinMoveEventEffect {
@@ -30,7 +30,7 @@ pub struct LightPairSinMoveEventEffect {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "LightPairSinMoveEventEffect")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightPairSinMoveEventEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,14 +50,14 @@ for crate::GlobalNamespace::LightPairSinMoveEventEffect {
         false
     }
 }
-#[cfg(feature = "LightPairSinMoveEventEffect")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightPairSinMoveEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightPairSinMoveEventEffect")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightPairSinMoveEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -230,7 +230,7 @@ impl crate::GlobalNamespace::LightPairSinMoveEventEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightPairSinMoveEventEffect")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightPairSinMoveEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -240,7 +240,7 @@ for crate::GlobalNamespace::LightPairSinMoveEventEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LightPairSinMoveEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect+MovementData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightPairSinMoveEventEffect_MovementData {
@@ -253,7 +253,7 @@ pub struct LightPairSinMoveEventEffect_MovementData {
     pub movementValue: f32,
     pub side: f32,
 }
-#[cfg(feature = "LightPairSinMoveEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect+MovementData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -273,7 +273,7 @@ for crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {
         false
     }
 }
-#[cfg(feature = "LightPairSinMoveEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect+MovementData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -281,7 +281,7 @@ for crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightPairSinMoveEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect+MovementData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -319,7 +319,7 @@ impl crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightPairSinMoveEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_LightPairSinMoveEventEffect+MovementData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

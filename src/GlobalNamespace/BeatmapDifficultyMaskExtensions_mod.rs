@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapDifficultyMaskExtensions")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMaskExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDifficultyMaskExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDifficultyMaskExtensions")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMaskExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         false
     }
 }
-#[cfg(feature = "BeatmapDifficultyMaskExtensions")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMaskExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDifficultyMaskExtensions")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMaskExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -287,7 +287,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDifficultyMaskExtensions")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMaskExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

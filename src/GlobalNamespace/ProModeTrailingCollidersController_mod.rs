@@ -1,4 +1,4 @@
-#[cfg(feature = "ProModeTrailingCollidersController")]
+#[cfg(feature = "cordl_class_ProModeTrailingCollidersController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProModeTrailingCollidersController {
@@ -14,7 +14,7 @@ pub struct ProModeTrailingCollidersController {
     pub _noteMovement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "ProModeTrailingCollidersController")]
+#[cfg(feature = "cordl_class_ProModeTrailingCollidersController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ProModeTrailingCollidersController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::ProModeTrailingCollidersController {
         false
     }
 }
-#[cfg(feature = "ProModeTrailingCollidersController")]
+#[cfg(feature = "cordl_class_ProModeTrailingCollidersController")]
 impl std::ops::Deref for crate::GlobalNamespace::ProModeTrailingCollidersController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ProModeTrailingCollidersController")]
+#[cfg(feature = "cordl_class_ProModeTrailingCollidersController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ProModeTrailingCollidersController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::ProModeTrailingCollidersController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ProModeTrailingCollidersController")]
+#[cfg(feature = "cordl_class_ProModeTrailingCollidersController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ProModeTrailingCollidersController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

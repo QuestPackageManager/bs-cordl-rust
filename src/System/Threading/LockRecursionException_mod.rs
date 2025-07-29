@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+LockRecursionException")]
+#[cfg(feature = "cordl_class_System+Threading+LockRecursionException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LockRecursionException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "System+Threading+LockRecursionException")]
+#[cfg(feature = "cordl_class_System+Threading+LockRecursionException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::LockRecursionException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Threading::LockRecursionException {
         false
     }
 }
-#[cfg(feature = "System+Threading+LockRecursionException")]
+#[cfg(feature = "cordl_class_System+Threading+LockRecursionException")]
 impl std::ops::Deref for crate::System::Threading::LockRecursionException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+LockRecursionException")]
+#[cfg(feature = "cordl_class_System+Threading+LockRecursionException")]
 impl std::ops::DerefMut for crate::System::Threading::LockRecursionException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::System::Threading::LockRecursionException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+LockRecursionException")]
+#[cfg(feature = "cordl_class_System+Threading+LockRecursionException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::LockRecursionException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

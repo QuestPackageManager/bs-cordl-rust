@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+SpriteMeshType")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteMeshType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteMeshType {
@@ -6,7 +6,7 @@ pub enum SpriteMeshType {
     FullRect = 0i32,
     Tight = 1i32,
 }
-#[cfg(feature = "UnityEngine+SpriteMeshType")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteMeshType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpriteMeshType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpriteMeshType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SpriteMeshType")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteMeshType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpriteMeshType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpriteMeshTy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SpriteMeshType")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteMeshType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpriteMeshType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpriteMeshT
         self
     }
 }
-#[cfg(feature = "UnityEngine+SpriteMeshType")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteMeshType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpriteMeshType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpriteMeshTy
         }
     }
 }
-#[cfg(feature = "UnityEngine+SpriteMeshType")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteMeshType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SpriteMeshType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

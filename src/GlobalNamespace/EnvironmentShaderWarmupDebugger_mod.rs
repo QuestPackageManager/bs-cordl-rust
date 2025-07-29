@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentShaderWarmupDebugger")]
+#[cfg(feature = "cordl_class_EnvironmentShaderWarmupDebugger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentShaderWarmupDebugger {
@@ -17,7 +17,7 @@ pub struct EnvironmentShaderWarmupDebugger {
         crate::System::Text::StringBuilder,
     >,
 }
-#[cfg(feature = "EnvironmentShaderWarmupDebugger")]
+#[cfg(feature = "cordl_class_EnvironmentShaderWarmupDebugger")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
         false
     }
 }
-#[cfg(feature = "EnvironmentShaderWarmupDebugger")]
+#[cfg(feature = "cordl_class_EnvironmentShaderWarmupDebugger")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentShaderWarmupDebugger")]
+#[cfg(feature = "cordl_class_EnvironmentShaderWarmupDebugger")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentShaderWarmupDebugger")]
+#[cfg(feature = "cordl_class_EnvironmentShaderWarmupDebugger")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

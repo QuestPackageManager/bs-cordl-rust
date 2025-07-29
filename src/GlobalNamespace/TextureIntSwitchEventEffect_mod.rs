@@ -1,4 +1,4 @@
-#[cfg(feature = "TextureIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextureIntSwitchEventEffect {
@@ -30,7 +30,7 @@ pub struct TextureIntSwitchEventEffect {
         >,
     >,
 }
-#[cfg(feature = "TextureIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TextureIntSwitchEventEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,14 +50,14 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect {
         false
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TextureIntSwitchEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextureIntSwitchEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -201,7 +201,7 @@ impl crate::GlobalNamespace::TextureIntSwitchEventEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TextureIntSwitchEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -211,14 +211,14 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect+TextureValueTuple")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextureIntSwitchEventEffect_TextureValueTuple {
     pub value: i32,
     pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
 }
-#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Held<'a> = Self;
@@ -248,7 +248,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Type = Self;
@@ -259,7 +259,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Actual = Self;
@@ -273,7 +273,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
         self
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Type = Self;
@@ -288,7 +288,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
         }
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Actual = Self;
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
         actual
     }
 }
-#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
+#[cfg(feature = "cordl_class_TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Type = Self;

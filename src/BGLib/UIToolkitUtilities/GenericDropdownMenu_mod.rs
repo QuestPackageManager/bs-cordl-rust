@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UIToolkitUtilities+GenericDropdownMenu")]
+#[cfg(feature = "cordl_class_BGLib+UIToolkitUtilities+GenericDropdownMenu")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericDropdownMenu {
@@ -7,7 +7,7 @@ pub struct GenericDropdownMenu {
         crate::UnityEngine::UIElements::GenericDropdownMenu,
     >,
 }
-#[cfg(feature = "BGLib+UIToolkitUtilities+GenericDropdownMenu")]
+#[cfg(feature = "cordl_class_BGLib+UIToolkitUtilities+GenericDropdownMenu")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
         false
     }
 }
-#[cfg(feature = "BGLib+UIToolkitUtilities+GenericDropdownMenu")]
+#[cfg(feature = "cordl_class_BGLib+UIToolkitUtilities+GenericDropdownMenu")]
 impl std::ops::Deref for crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UIToolkitUtilities+GenericDropdownMenu")]
+#[cfg(feature = "cordl_class_BGLib+UIToolkitUtilities+GenericDropdownMenu")]
 impl std::ops::DerefMut for crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -281,7 +281,7 @@ impl crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UIToolkitUtilities+GenericDropdownMenu")]
+#[cfg(feature = "cordl_class_BGLib+UIToolkitUtilities+GenericDropdownMenu")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

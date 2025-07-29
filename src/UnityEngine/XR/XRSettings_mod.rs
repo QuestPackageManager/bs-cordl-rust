@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+XR+XRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::XRSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -394,7 +394,7 @@ impl crate::UnityEngine::XR::XRSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::XRSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -403,7 +403,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::XRSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings+StereoRenderingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XRSettings_StereoRenderingMode {
@@ -413,7 +413,7 @@ pub enum XRSettings_StereoRenderingMode {
     SinglePassInstanced = 2i32,
     SinglePassMultiview = 3i32,
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Held<'a> = Self;
@@ -443,7 +443,7 @@ for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Type = Self;
@@ -454,7 +454,7 @@ for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Actual = Self;
@@ -468,7 +468,7 @@ for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Type = Self;
@@ -483,7 +483,7 @@ for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Actual = Self;

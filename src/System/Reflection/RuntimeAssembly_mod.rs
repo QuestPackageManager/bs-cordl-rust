@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+RuntimeAssembly")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeAssembly")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeAssembly {
@@ -16,7 +16,7 @@ pub struct RuntimeAssembly {
     pub fromByteArray: bool,
     pub assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Reflection+RuntimeAssembly")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeAssembly")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::RuntimeAssembly {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::RuntimeAs
         false
     }
 }
-#[cfg(feature = "System+Reflection+RuntimeAssembly")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeAssembly")]
 impl std::ops::Deref for crate::System::Reflection::RuntimeAssembly {
     type Target = crate::System::Reflection::Assembly;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+RuntimeAssembly")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeAssembly")]
 impl std::ops::DerefMut for crate::System::Reflection::RuntimeAssembly {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -869,7 +869,7 @@ impl crate::System::Reflection::RuntimeAssembly {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+RuntimeAssembly")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeAssembly")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::RuntimeAssembly {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

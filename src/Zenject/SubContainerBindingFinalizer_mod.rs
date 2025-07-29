@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerBindingFinalizer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerBindingFinalizer {
@@ -12,7 +12,7 @@ pub struct SubContainerBindingFinalizer {
         >,
     >,
 }
-#[cfg(feature = "Zenject+SubContainerBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerBindingFinalizer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SubContainerBindingFinalizer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::Zenject::SubContainerBindingFinalizer {
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerBindingFinalizer")]
 impl std::ops::Deref for crate::Zenject::SubContainerBindingFinalizer {
     type Target = crate::Zenject::ProviderBindingFinalizer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerBindingFinalizer")]
 impl std::ops::DerefMut for crate::Zenject::SubContainerBindingFinalizer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -210,7 +210,7 @@ impl crate::Zenject::SubContainerBindingFinalizer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerBindingFinalizer")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SubContainerBindingFinalizer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

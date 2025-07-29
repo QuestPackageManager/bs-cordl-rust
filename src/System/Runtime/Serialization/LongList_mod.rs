@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+LongList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+LongList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LongList {
@@ -8,7 +8,7 @@ pub struct LongList {
     pub m_totalItems: i32,
     pub m_currentItem: i32,
 }
-#[cfg(feature = "System+Runtime+Serialization+LongList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+LongList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::LongList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Runtime::Serialization::LongList {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+LongList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+LongList")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::LongList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+LongList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+LongList")]
 impl std::ops::DerefMut for crate::System::Runtime::Serialization::LongList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -245,7 +245,7 @@ impl crate::System::Runtime::Serialization::LongList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+LongList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+LongList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::LongList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -9,7 +9,7 @@ pub enum ProviderBehaviourFlags {
     None = 0i32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags {
@@ -41,7 +41,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviour
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags {
@@ -54,7 +54,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviour
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags {
@@ -70,7 +70,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviour
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags {
@@ -87,7 +87,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviour
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderBehaviourFlags"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags {

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+CompilerServices+TypeDependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+TypeDependencyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDependencyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+TypeDependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+TypeDependencyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+TypeDependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+TypeDependencyAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+TypeDependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+TypeDependencyAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -78,7 +78,7 @@ impl crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+TypeDependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+TypeDependencyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

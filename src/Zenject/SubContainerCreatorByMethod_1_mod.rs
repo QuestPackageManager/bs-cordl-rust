@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByMethod_1")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethod_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByMethod_1<TParam1: quest_hook::libil2cpp::Type> {
@@ -11,7 +11,7 @@ pub struct SubContainerCreatorByMethod_1<TParam1: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByMethod_1")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethod_1")]
 unsafe impl<TParam1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Zenject::SubContainerCreatorByMethod_1<TParam1> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,7 +47,7 @@ for crate::Zenject::SubContainerCreatorByMethod_1<TParam1> {
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByMethod_1")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethod_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::SubContainerCreatorByMethod_1<TParam1> {
     type Target = crate::Zenject::SubContainerCreatorByMethodBase;
@@ -55,7 +55,7 @@ for crate::Zenject::SubContainerCreatorByMethod_1<TParam1> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByMethod_1")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethod_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::SubContainerCreatorByMethod_1<TParam1> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -182,7 +182,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByMethod_1")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethod_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SubContainerCreatorByMethod_1<TParam1> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

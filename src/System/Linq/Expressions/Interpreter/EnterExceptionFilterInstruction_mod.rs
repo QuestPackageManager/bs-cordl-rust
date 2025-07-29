@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterExceptionFilterInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::EnterExceptionFilterInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Linq::Expressions::Interpreter::EnterExceptionFilterInstructi
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::EnterExceptionFilterInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -32,7 +38,9 @@ for crate::System::Linq::Expressions::Interpreter::EnterExceptionFilterInstructi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::EnterExceptionFilterInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -144,7 +152,9 @@ impl crate::System::Linq::Expressions::Interpreter::EnterExceptionFilterInstruct
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterExceptionFilterInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::EnterExceptionFilterInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

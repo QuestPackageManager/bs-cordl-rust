@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RuntimePlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+RuntimePlatform")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RuntimePlatform {
@@ -53,7 +53,7 @@ pub enum RuntimePlatform {
     XboxOne = 27i32,
     tvOS = 31i32,
 }
-#[cfg(feature = "UnityEngine+RuntimePlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RuntimePlatform {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -82,7 +82,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RuntimePlatform 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RuntimePlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RuntimePlatform {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -92,7 +92,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RuntimePlatf
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RuntimePlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RuntimePlatform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -105,7 +105,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RuntimePlat
         self
     }
 }
-#[cfg(feature = "UnityEngine+RuntimePlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RuntimePlatform {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -119,7 +119,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RuntimePlatf
         }
     }
 }
-#[cfg(feature = "UnityEngine+RuntimePlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RuntimePlatform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

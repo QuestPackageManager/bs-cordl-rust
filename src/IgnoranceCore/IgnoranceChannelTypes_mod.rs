@@ -1,4 +1,4 @@
-#[cfg(feature = "IgnoranceCore+IgnoranceChannelTypes")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceChannelTypes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IgnoranceChannelTypes {
@@ -10,7 +10,7 @@ pub enum IgnoranceChannelTypes {
     UnreliableSequenced = 0i32,
     Unthrottled = 32i32,
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceChannelTypes")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceChannelTypes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceChannelTypes {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceChann
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceChannelTypes")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceChannelTypes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceChannelTypes {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::IgnoranceCore::IgnoranceChannelTypes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceChannelTypes")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceChannelTypes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceChannelTypes {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::IgnoranceCore::IgnoranceChannelTypes {
         self
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceChannelTypes")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceChannelTypes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceChannelTypes {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::IgnoranceCore::IgnoranceChannelTypes {
         }
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceChannelTypes")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceChannelTypes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceChannelTypes {
     type Actual = Self;

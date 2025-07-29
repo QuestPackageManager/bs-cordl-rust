@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputActionType {
@@ -7,7 +7,7 @@ pub enum InputActionType {
     PassThrough = 2i32,
     Value = 0i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::InputSystem::InputActionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::InputSystem::InputActionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::InputSystem::InputActionType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::InputSystem::InputActionType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionType {
     type Actual = Self;

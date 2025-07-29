@@ -1,11 +1,11 @@
-#[cfg(feature = "OVRWaitCursor")]
+#[cfg(feature = "cordl_class_OVRWaitCursor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRWaitCursor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub rotateSpeeds: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "OVRWaitCursor")]
+#[cfg(feature = "cordl_class_OVRWaitCursor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRWaitCursor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRWaitCurso
         false
     }
 }
-#[cfg(feature = "OVRWaitCursor")]
+#[cfg(feature = "cordl_class_OVRWaitCursor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRWaitCursor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRWaitCursor")]
+#[cfg(feature = "cordl_class_OVRWaitCursor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRWaitCursor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::OVRWaitCursor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRWaitCursor")]
+#[cfg(feature = "cordl_class_OVRWaitCursor")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRWaitCursor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultInputActions {
@@ -61,7 +61,7 @@ pub struct DefaultInputActions {
     pub m_JoystickSchemeIndex: i32,
     pub m_XRSchemeIndex: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::DefaultInputActions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -81,14 +81,14 @@ for crate::UnityEngine::InputSystem::DefaultInputActions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::DefaultInputActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::DefaultInputActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -784,7 +784,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::DefaultInputActions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -882,13 +882,17 @@ for crate::UnityEngine::InputSystem::DefaultInputActions {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IPlayerActions"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultInputActions_IPlayerActions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IPlayerActions"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -908,7 +912,9 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IPlayerActions"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -916,7 +922,9 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IPlayerActions"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1009,7 +1017,9 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IPlayerActions"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1019,13 +1029,13 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultInputActions_IUIActions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1045,7 +1055,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1053,7 +1063,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1328,7 +1338,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1338,7 +1348,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DefaultInputActions_PlayerActions {
@@ -1346,7 +1356,7 @@ pub struct DefaultInputActions_PlayerActions {
         crate::UnityEngine::InputSystem::DefaultInputActions,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Held<'a> = Self;
@@ -1376,7 +1386,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Type = Self;
@@ -1387,7 +1397,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Actual = Self;
@@ -1401,7 +1411,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Type = Self;
@@ -1416,7 +1426,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Actual = Self;
@@ -1430,7 +1440,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Type = Self;
@@ -1708,7 +1718,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DefaultInputActions_UIActions {
@@ -1716,7 +1726,7 @@ pub struct DefaultInputActions_UIActions {
         crate::UnityEngine::InputSystem::DefaultInputActions,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Held<'a> = Self;
@@ -1746,7 +1756,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Type = Self;
@@ -1757,7 +1767,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Actual = Self;
@@ -1771,7 +1781,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Type = Self;
@@ -1786,7 +1796,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Actual = Self;
@@ -1800,7 +1810,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Type = Self;

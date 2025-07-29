@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayModifierInfoListItem")]
+#[cfg(feature = "cordl_class_GameplayModifierInfoListItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifierInfoListItem {
@@ -6,7 +6,7 @@ pub struct GameplayModifierInfoListItem {
     pub _hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
     pub _iconImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
-#[cfg(feature = "GameplayModifierInfoListItem")]
+#[cfg(feature = "cordl_class_GameplayModifierInfoListItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifierInfoListItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::GameplayModifierInfoListItem {
         false
     }
 }
-#[cfg(feature = "GameplayModifierInfoListItem")]
+#[cfg(feature = "cordl_class_GameplayModifierInfoListItem")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifierInfoListItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplayModifierInfoListItem")]
+#[cfg(feature = "cordl_class_GameplayModifierInfoListItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifierInfoListItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -104,7 +104,7 @@ impl crate::GlobalNamespace::GameplayModifierInfoListItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplayModifierInfoListItem")]
+#[cfg(feature = "cordl_class_GameplayModifierInfoListItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayModifierInfoListItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

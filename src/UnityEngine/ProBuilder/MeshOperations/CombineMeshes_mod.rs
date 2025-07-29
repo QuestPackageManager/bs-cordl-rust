@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CombineMeshes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -538,7 +538,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

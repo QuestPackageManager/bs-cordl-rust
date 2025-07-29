@@ -1,4 +1,4 @@
-#[cfg(feature = "SonyLeaderboardIdsSO")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLeaderboardIdsSO {
@@ -11,7 +11,7 @@ pub struct SonyLeaderboardIdsSO {
         >,
     >,
 }
-#[cfg(feature = "SonyLeaderboardIdsSO")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SonyLeaderboardIdsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::SonyLeaderboardIdsSO {
         false
     }
 }
-#[cfg(feature = "SonyLeaderboardIdsSO")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLeaderboardIdsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SonyLeaderboardIdsSO")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyLeaderboardIdsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -197,7 +197,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SonyLeaderboardIdsSO")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SonyLeaderboardIdsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -220,7 +220,7 @@ for crate::GlobalNamespace::SonyLeaderboardIdsSO {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO+LeaderboardIdData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLeaderboardIdsSO_LeaderboardIdData {
@@ -230,7 +230,7 @@ pub struct SonyLeaderboardIdsSO_LeaderboardIdData {
     >,
     pub _sonyLeaderboardId: u32,
 }
-#[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO+LeaderboardIdData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -250,14 +250,14 @@ for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
         false
     }
 }
-#[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO+LeaderboardIdData")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO+LeaderboardIdData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -358,7 +358,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
+#[cfg(feature = "cordl_class_SonyLeaderboardIdsSO+LeaderboardIdData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

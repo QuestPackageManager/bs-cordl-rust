@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DownloadStatus {
@@ -6,7 +8,9 @@ pub struct DownloadStatus {
     pub DownloadedBytes: i64,
     pub IsDone: bool,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
     type Held<'a> = Self;
@@ -36,7 +40,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
     type Type = Self;
@@ -47,7 +53,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
     type Actual = Self;
@@ -61,7 +69,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
     type Type = Self;
@@ -76,7 +86,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
     type Actual = Self;
@@ -90,7 +102,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus {
     type Type = Self;

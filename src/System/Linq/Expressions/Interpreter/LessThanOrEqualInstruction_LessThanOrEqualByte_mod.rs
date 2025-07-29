@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LessThanOrEqualInstruction_LessThanOrEqualByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LessThanOrEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualByte {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualByte {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualByte {
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualByte"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualByte {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsGraph")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_FpsGraph {
@@ -14,7 +14,7 @@ pub struct G_FpsGraph {
     pub m_fpsArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_highestFps: i32,
 }
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsGraph")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Fps::G_FpsGraph {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Fps::G_FpsGraph
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsGraph")]
 impl std::ops::Deref for crate::Tayx::Graphy::Fps::G_FpsGraph {
     type Target = crate::Tayx::Graphy::Graph::G_Graph;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsGraph")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Fps::G_FpsGraph {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -194,7 +194,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsGraph {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsGraph")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Fps::G_FpsGraph {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

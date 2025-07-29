@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReaderWriterLockSlim {
@@ -25,7 +25,7 @@ pub struct ReaderWriterLockSlim {
     pub owners: u32,
     pub fDisposed: bool,
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ReaderWriterLockSlim {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::System::Threading::ReaderWriterLockSlim {
         false
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim")]
 impl std::ops::Deref for crate::System::Threading::ReaderWriterLockSlim {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim")]
 impl std::ops::DerefMut for crate::System::Threading::ReaderWriterLockSlim {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1238,7 +1238,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ReaderWriterLockSlim {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1262,14 +1262,14 @@ for crate::System::Threading::ReaderWriterLockSlim {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ReaderWriterLockSlim_TimeoutTracker {
     pub m_total: i32,
     pub m_start: i32,
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Held<'a> = Self;
@@ -1299,7 +1299,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Type = Self;
@@ -1310,7 +1310,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Actual = Self;
@@ -1324,7 +1324,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         self
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Type = Self;
@@ -1339,7 +1339,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         }
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Actual = Self;
@@ -1353,7 +1353,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         actual
     }
 }
-#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
+#[cfg(feature = "cordl_class_System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Type = Self;

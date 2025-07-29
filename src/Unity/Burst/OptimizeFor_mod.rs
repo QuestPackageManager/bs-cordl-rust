@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Burst+OptimizeFor")]
+#[cfg(feature = "cordl_class_Unity+Burst+OptimizeFor")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OptimizeFor {
@@ -9,7 +9,7 @@ pub enum OptimizeFor {
     Performance = 1i32,
     Size = 2i32,
 }
-#[cfg(feature = "Unity+Burst+OptimizeFor")]
+#[cfg(feature = "cordl_class_Unity+Burst+OptimizeFor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::OptimizeFor {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::OptimizeFor {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+OptimizeFor")]
+#[cfg(feature = "cordl_class_Unity+Burst+OptimizeFor")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::OptimizeFor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::OptimizeFor
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+OptimizeFor")]
+#[cfg(feature = "cordl_class_Unity+Burst+OptimizeFor")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::OptimizeFor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::OptimizeFo
         self
     }
 }
-#[cfg(feature = "Unity+Burst+OptimizeFor")]
+#[cfg(feature = "cordl_class_Unity+Burst+OptimizeFor")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::OptimizeFor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::OptimizeFor
         }
     }
 }
-#[cfg(feature = "Unity+Burst+OptimizeFor")]
+#[cfg(feature = "cordl_class_Unity+Burst+OptimizeFor")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::OptimizeFor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "SpawnRotationChevron")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevron {
@@ -11,7 +11,7 @@ pub struct SpawnRotationChevron {
     pub _color: crate::UnityEngine::Color,
     pub _lightAmount: f32,
 }
-#[cfg(feature = "SpawnRotationChevron")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpawnRotationChevron {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::SpawnRotationChevron {
         false
     }
 }
-#[cfg(feature = "SpawnRotationChevron")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron")]
 impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevron {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpawnRotationChevron")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpawnRotationChevron {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::SpawnRotationChevron {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpawnRotationChevron")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpawnRotationChevron {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -163,7 +163,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpawnRotation
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SpawnRotationChevron+Pool")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevron_Pool {
@@ -171,7 +171,7 @@ pub struct SpawnRotationChevron_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SpawnRotationChevron>,
     >,
 }
-#[cfg(feature = "SpawnRotationChevron+Pool")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpawnRotationChevron_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -191,7 +191,7 @@ for crate::GlobalNamespace::SpawnRotationChevron_Pool {
         false
     }
 }
-#[cfg(feature = "SpawnRotationChevron+Pool")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevron_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SpawnRotationChevron>,
@@ -200,7 +200,7 @@ impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevron_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpawnRotationChevron+Pool")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpawnRotationChevron_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -237,7 +237,7 @@ impl crate::GlobalNamespace::SpawnRotationChevron_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpawnRotationChevron+Pool")]
+#[cfg(feature = "cordl_class_SpawnRotationChevron+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SpawnRotationChevron_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

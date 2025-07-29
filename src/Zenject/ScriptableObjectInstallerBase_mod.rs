@@ -1,11 +1,11 @@
-#[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
+#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstallerBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptableObjectInstallerBase {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
-#[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
+#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstallerBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::ScriptableObjectInstallerBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Zenject::ScriptableObjectInstallerBase {
         false
     }
 }
-#[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
+#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstallerBase")]
 impl std::ops::Deref for crate::Zenject::ScriptableObjectInstallerBase {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
+#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstallerBase")]
 impl std::ops::DerefMut for crate::Zenject::ScriptableObjectInstallerBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -235,7 +235,7 @@ impl crate::Zenject::ScriptableObjectInstallerBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
+#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstallerBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::ScriptableObjectInstallerBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

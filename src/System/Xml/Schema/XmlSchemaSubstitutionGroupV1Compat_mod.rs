@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSubstitutionGroupV1Compat {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
     pub choice: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaSubstitutionGroupV1Compat {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Xml::Schema::XmlSchemaSubstitutionGroupV1Compat {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSubstitutionGroupV1Compat {
     type Target = crate::System::Xml::Schema::XmlSchemaSubstitutionGroup;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaSubstitutionGroupV1Compat {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -99,7 +99,7 @@ impl crate::System::Xml::Schema::XmlSchemaSubstitutionGroupV1Compat {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaSubstitutionGroupV1Compat {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

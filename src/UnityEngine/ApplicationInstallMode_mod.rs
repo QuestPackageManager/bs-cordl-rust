@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ApplicationInstallMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationInstallMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ApplicationInstallMode {
@@ -10,7 +10,7 @@ pub enum ApplicationInstallMode {
     Store = 1i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "UnityEngine+ApplicationInstallMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationInstallMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ApplicationInstallMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ApplicationInsta
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationInstallMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationInstallMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ApplicationInstallMode {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::ApplicationInstallMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationInstallMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationInstallMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ApplicationInstallMode {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::ApplicationInstallMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationInstallMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationInstallMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ApplicationInstallMode {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::ApplicationInstallMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationInstallMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationInstallMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ApplicationInstallMode {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CspProviderFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CspProviderFlags {
@@ -13,7 +13,7 @@ pub enum CspProviderFlags {
     UseNonExportableKey = 4i32,
     UseUserProtectedKey = 32i32,
 }
-#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::System::Security::Cryptography::CspProviderFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::System::Security::Cryptography::CspProviderFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::System::Security::Cryptography::CspProviderFlags {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::System::Security::Cryptography::CspProviderFlags {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Actual = Self;

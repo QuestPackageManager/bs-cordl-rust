@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CrlStoreSelector {
@@ -29,7 +29,7 @@ pub struct X509CrlStoreSelector {
         crate::Org::BouncyCastle::Math::BigInteger,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -788,7 +788,7 @@ impl crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

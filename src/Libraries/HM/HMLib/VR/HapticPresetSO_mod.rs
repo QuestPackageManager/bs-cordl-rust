@@ -1,4 +1,4 @@
-#[cfg(feature = "Libraries+HM+HMLib+VR+HapticPresetSO")]
+#[cfg(feature = "cordl_class_Libraries+HM+HMLib+VR+HapticPresetSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HapticPresetSO {
@@ -20,7 +20,7 @@ pub struct HapticPresetSO {
     >,
     pub _hasOculusHapticsClip: crate::System::Nullable_1<bool>,
 }
-#[cfg(feature = "Libraries+HM+HMLib+VR+HapticPresetSO")]
+#[cfg(feature = "cordl_class_Libraries+HM+HMLib+VR+HapticPresetSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Libraries::HM::HMLib::VR::HapticPresetSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::Libraries::HM::HMLib::VR::HapticPresetSO {
         false
     }
 }
-#[cfg(feature = "Libraries+HM+HMLib+VR+HapticPresetSO")]
+#[cfg(feature = "cordl_class_Libraries+HM+HMLib+VR+HapticPresetSO")]
 impl std::ops::Deref for crate::Libraries::HM::HMLib::VR::HapticPresetSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Libraries+HM+HMLib+VR+HapticPresetSO")]
+#[cfg(feature = "cordl_class_Libraries+HM+HMLib+VR+HapticPresetSO")]
 impl std::ops::DerefMut for crate::Libraries::HM::HMLib::VR::HapticPresetSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::Libraries::HM::HMLib::VR::HapticPresetSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Libraries+HM+HMLib+VR+HapticPresetSO")]
+#[cfg(feature = "cordl_class_Libraries+HM+HMLib+VR+HapticPresetSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Libraries::HM::HMLib::VR::HapticPresetSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

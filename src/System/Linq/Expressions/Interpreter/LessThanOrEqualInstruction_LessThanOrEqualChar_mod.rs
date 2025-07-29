@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LessThanOrEqualInstruction_LessThanOrEqualChar {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LessThanOrEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualChar {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualChar {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualChar {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualChar {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualChar {
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualChar {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualChar"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualChar {

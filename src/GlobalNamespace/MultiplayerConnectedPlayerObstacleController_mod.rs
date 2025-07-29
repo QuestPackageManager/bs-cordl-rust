@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerObstacleController {
@@ -7,7 +7,7 @@ pub struct MultiplayerConnectedPlayerObstacleController {
         crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
     type Target = crate::GlobalNamespace::ObstacleController;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -121,7 +121,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerObstacleController_Pool {
@@ -134,7 +134,7 @@ pub struct MultiplayerConnectedPlayerObstacleController_Pool {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -154,7 +154,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController+Pool")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
@@ -166,7 +166,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController+Pool")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -234,7 +234,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObstacleController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

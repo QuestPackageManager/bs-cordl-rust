@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+StencilState")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StencilState {
@@ -15,7 +15,7 @@ pub struct StencilState {
     pub m_FailOperationBack: u8,
     pub m_ZFailOperationBack: u8,
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilState")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::StencilState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Stenc
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilState")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::StencilState {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::UnityEngine::Rendering::StencilState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilState")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::StencilState {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::Rendering::StencilState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilState")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::StencilState {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::Rendering::StencilState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilState")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::StencilState {
     type Actual = Self;
@@ -98,7 +98,7 @@ for crate::UnityEngine::Rendering::StencilState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilState")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::StencilState {
     type Type = Self;

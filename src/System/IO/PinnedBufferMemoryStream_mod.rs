@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+PinnedBufferMemoryStream")]
+#[cfg(feature = "cordl_class_System+IO+PinnedBufferMemoryStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PinnedBufferMemoryStream {
@@ -6,7 +6,7 @@ pub struct PinnedBufferMemoryStream {
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _pinningHandle: crate::System::Runtime::InteropServices::GCHandle,
 }
-#[cfg(feature = "System+IO+PinnedBufferMemoryStream")]
+#[cfg(feature = "cordl_class_System+IO+PinnedBufferMemoryStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::PinnedBufferMemoryStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::PinnedBufferMemor
         false
     }
 }
-#[cfg(feature = "System+IO+PinnedBufferMemoryStream")]
+#[cfg(feature = "cordl_class_System+IO+PinnedBufferMemoryStream")]
 impl std::ops::Deref for crate::System::IO::PinnedBufferMemoryStream {
     type Target = crate::System::IO::UnmanagedMemoryStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+PinnedBufferMemoryStream")]
+#[cfg(feature = "cordl_class_System+IO+PinnedBufferMemoryStream")]
 impl std::ops::DerefMut for crate::System::IO::PinnedBufferMemoryStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,7 +173,7 @@ impl crate::System::IO::PinnedBufferMemoryStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+PinnedBufferMemoryStream")]
+#[cfg(feature = "cordl_class_System+IO+PinnedBufferMemoryStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::PinnedBufferMemoryStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+UnhandledExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+UnhandledExceptionEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnhandledExceptionEventArgs {
@@ -6,7 +6,7 @@ pub struct UnhandledExceptionEventArgs {
     pub _exception: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _isTerminating: bool,
 }
-#[cfg(feature = "System+UnhandledExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+UnhandledExceptionEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::UnhandledExceptionEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UnhandledExceptionEve
         false
     }
 }
-#[cfg(feature = "System+UnhandledExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+UnhandledExceptionEventArgs")]
 impl std::ops::Deref for crate::System::UnhandledExceptionEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+UnhandledExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+UnhandledExceptionEventArgs")]
 impl std::ops::DerefMut for crate::System::UnhandledExceptionEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -127,7 +127,7 @@ impl crate::System::UnhandledExceptionEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+UnhandledExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+UnhandledExceptionEventArgs")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::UnhandledExceptionEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentIntensityReductionOptions")]
+#[cfg(feature = "cordl_class_EnvironmentIntensityReductionOptions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentIntensityReductionOptions {
@@ -6,7 +6,7 @@ pub struct EnvironmentIntensityReductionOptions {
     pub _compressExpand: crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType,
     pub _rotateRings: crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType,
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions")]
+#[cfg(feature = "cordl_class_EnvironmentIntensityReductionOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
         false
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions")]
+#[cfg(feature = "cordl_class_EnvironmentIntensityReductionOptions")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions")]
+#[cfg(feature = "cordl_class_EnvironmentIntensityReductionOptions")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions")]
+#[cfg(feature = "cordl_class_EnvironmentIntensityReductionOptions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -139,7 +139,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+CompressExpandReductionType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentIntensityReductionOptions_CompressExpandReductionType {
@@ -147,7 +149,9 @@ pub enum EnvironmentIntensityReductionOptions_CompressExpandReductionType {
     Keep = 0i32,
     RemoveWithStrobeFilter = 1i32,
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+CompressExpandReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType {
     type Held<'a> = Self;
@@ -177,7 +181,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandR
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+CompressExpandReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType {
     type Type = Self;
@@ -188,7 +194,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandR
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+CompressExpandReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType {
     type Actual = Self;
@@ -202,7 +210,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandR
         self
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+CompressExpandReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType {
     type Type = Self;
@@ -217,7 +227,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandR
         }
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+CompressExpandReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType {
     type Actual = Self;
@@ -231,7 +243,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandR
         actual
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+RotateRingsReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+RotateRingsReductionType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentIntensityReductionOptions_RotateRingsReductionType {
@@ -239,7 +253,9 @@ pub enum EnvironmentIntensityReductionOptions_RotateRingsReductionType {
     Keep = 0i32,
     RemoveWithStrobeFilter = 1i32,
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+RotateRingsReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+RotateRingsReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType {
     type Held<'a> = Self;
@@ -269,7 +285,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsRedu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+RotateRingsReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+RotateRingsReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType {
     type Type = Self;
@@ -280,7 +298,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsRedu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+RotateRingsReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+RotateRingsReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType {
     type Actual = Self;
@@ -294,7 +314,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsRedu
         self
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+RotateRingsReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+RotateRingsReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType {
     type Type = Self;
@@ -309,7 +331,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsRedu
         }
     }
 }
-#[cfg(feature = "EnvironmentIntensityReductionOptions+RotateRingsReductionType")]
+#[cfg(
+    feature = "cordl_class_EnvironmentIntensityReductionOptions+RotateRingsReductionType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType {
     type Actual = Self;

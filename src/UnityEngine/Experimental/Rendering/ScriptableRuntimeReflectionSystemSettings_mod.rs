@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct ScriptableRuntimeReflectionSystemSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings {
@@ -29,7 +29,7 @@ for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSyst
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings {
@@ -39,7 +39,7 @@ for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSyst
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings {
@@ -138,7 +138,7 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings {

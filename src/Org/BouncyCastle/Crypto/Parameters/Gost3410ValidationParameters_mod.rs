@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Gost3410ValidationParameters {
@@ -8,7 +10,9 @@ pub struct Gost3410ValidationParameters {
     pub x0L: i64,
     pub cL: i64,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410ValidationParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +32,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410ValidationParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410ValidationParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -36,7 +42,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410ValidationParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410ValidationParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -231,7 +239,9 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410ValidationParameters 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410ValidationParameters"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410ValidationParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

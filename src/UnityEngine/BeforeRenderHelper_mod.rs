@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+BeforeRenderHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeforeRenderHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::BeforeRenderHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::BeforeRenderHelp
         false
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper")]
 impl std::ops::Deref for crate::UnityEngine::BeforeRenderHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper")]
 impl std::ops::DerefMut for crate::UnityEngine::BeforeRenderHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::UnityEngine::BeforeRenderHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::BeforeRenderHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -154,14 +154,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::BeforeRenderHelpe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper+OrderBlock")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeforeRenderHelper_OrderBlock {
     pub order: i32,
     pub callback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper+OrderBlock")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
     type Held<'a> = Self;
@@ -191,7 +191,7 @@ for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper+OrderBlock")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
     type Type = Self;
@@ -202,7 +202,7 @@ for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper+OrderBlock")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
     type Actual = Self;
@@ -216,7 +216,7 @@ for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
         self
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper+OrderBlock")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
     type Type = Self;
@@ -231,7 +231,7 @@ for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
         }
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper+OrderBlock")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
     type Actual = Self;
@@ -245,7 +245,7 @@ for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+BeforeRenderHelper+OrderBlock")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::BeforeRenderHelper_OrderBlock {
     type Type = Self;

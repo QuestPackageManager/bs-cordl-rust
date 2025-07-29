@@ -1,4 +1,4 @@
-#[cfg(feature = "CenterStageScreenController")]
+#[cfg(feature = "cordl_class_CenterStageScreenController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CenterStageScreenController {
@@ -33,7 +33,7 @@ pub struct CenterStageScreenController {
     pub _countdownShown_k__BackingField: bool,
     pub _countdownEndTime: i64,
 }
-#[cfg(feature = "CenterStageScreenController")]
+#[cfg(feature = "cordl_class_CenterStageScreenController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CenterStageScreenController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,14 +53,14 @@ for crate::GlobalNamespace::CenterStageScreenController {
         false
     }
 }
-#[cfg(feature = "CenterStageScreenController")]
+#[cfg(feature = "cordl_class_CenterStageScreenController")]
 impl std::ops::Deref for crate::GlobalNamespace::CenterStageScreenController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CenterStageScreenController")]
+#[cfg(feature = "cordl_class_CenterStageScreenController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CenterStageScreenController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -397,7 +397,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CenterStageScreenController")]
+#[cfg(feature = "cordl_class_CenterStageScreenController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CenterStageScreenController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

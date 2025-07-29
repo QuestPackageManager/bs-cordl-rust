@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ArithmeticException")]
+#[cfg(feature = "cordl_class_System+ArithmeticException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArithmeticException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+ArithmeticException")]
+#[cfg(feature = "cordl_class_System+ArithmeticException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ArithmeticException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ArithmeticException {
         false
     }
 }
-#[cfg(feature = "System+ArithmeticException")]
+#[cfg(feature = "cordl_class_System+ArithmeticException")]
 impl std::ops::Deref for crate::System::ArithmeticException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ArithmeticException")]
+#[cfg(feature = "cordl_class_System+ArithmeticException")]
 impl std::ops::DerefMut for crate::System::ArithmeticException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -190,7 +190,7 @@ impl crate::System::ArithmeticException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ArithmeticException")]
+#[cfg(feature = "cordl_class_System+ArithmeticException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ArithmeticException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+BurstCompiler")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstCompiler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstCompiler {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstCompiler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1143,7 +1143,7 @@ impl crate::Unity::Burst::BurstCompiler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1152,13 +1152,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
+#[cfg(
+    feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
+#[cfg(
+    feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1178,7 +1182,9 @@ for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegat
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
+#[cfg(
+    feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate"
+)]
 impl std::ops::Deref
 for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -1186,7 +1192,9 @@ for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegat
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
+#[cfg(
+    feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate"
+)]
 impl std::ops::DerefMut
 for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1315,7 +1323,9 @@ impl crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelega
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
+#[cfg(
+    feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1325,13 +1335,13 @@ for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompiler_BurstCompilerHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1351,14 +1361,14 @@ for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1438,7 +1448,7 @@ impl crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1448,7 +1458,7 @@ for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+CommandBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompiler_CommandBuilder {
@@ -1456,7 +1466,7 @@ pub struct BurstCompiler_CommandBuilder {
     pub _builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _hasArgs: bool,
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+CommandBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstCompiler_CommandBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1476,14 +1486,14 @@ for crate::Unity::Burst::BurstCompiler_CommandBuilder {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+CommandBuilder")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler_CommandBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+CommandBuilder")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstCompiler_CommandBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1667,7 +1677,7 @@ impl crate::Unity::Burst::BurstCompiler_CommandBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+CommandBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::BurstCompiler_CommandBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1677,7 +1687,7 @@ for crate::Unity::Burst::BurstCompiler_CommandBuilder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+FakeDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompiler_FakeDelegate {
@@ -1686,7 +1696,7 @@ pub struct BurstCompiler_FakeDelegate {
         crate::System::Reflection::MethodInfo,
     >,
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+FakeDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstCompiler_FakeDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1706,14 +1716,14 @@ for crate::Unity::Burst::BurstCompiler_FakeDelegate {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+FakeDelegate")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler_FakeDelegate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+FakeDelegate")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstCompiler_FakeDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1786,7 +1796,7 @@ impl crate::Unity::Burst::BurstCompiler_FakeDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+FakeDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::BurstCompiler_FakeDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1796,14 +1806,14 @@ for crate::Unity::Burst::BurstCompiler_FakeDelegate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompiler_StaticTypeReinitAttribute {
     __cordl_parent: crate::System::Attribute,
     pub reinitType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1823,14 +1833,14 @@ for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1875,7 +1885,7 @@ impl crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

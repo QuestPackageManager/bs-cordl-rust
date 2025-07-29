@@ -1,4 +1,4 @@
-#[cfg(feature = "SwitchSettingsController")]
+#[cfg(feature = "cordl_class_SwitchSettingsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SwitchSettingsController {
@@ -6,7 +6,7 @@ pub struct SwitchSettingsController {
     pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _on: bool,
 }
-#[cfg(feature = "SwitchSettingsController")]
+#[cfg(feature = "cordl_class_SwitchSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SwitchSettingsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::SwitchSettingsController {
         false
     }
 }
-#[cfg(feature = "SwitchSettingsController")]
+#[cfg(feature = "cordl_class_SwitchSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::SwitchSettingsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SwitchSettingsController")]
+#[cfg(feature = "cordl_class_SwitchSettingsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SwitchSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::GlobalNamespace::SwitchSettingsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SwitchSettingsController")]
+#[cfg(feature = "cordl_class_SwitchSettingsController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SwitchSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

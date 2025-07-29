@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NormalizeProcessor {
@@ -7,7 +7,7 @@ pub struct NormalizeProcessor {
     pub max: f32,
     pub zero: f32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeProcessor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
     type Target = crate::UnityEngine::InputSystem::InputProcessor_1<f32>;
@@ -35,7 +35,7 @@ for crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeProcessor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -184,7 +184,7 @@ impl crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

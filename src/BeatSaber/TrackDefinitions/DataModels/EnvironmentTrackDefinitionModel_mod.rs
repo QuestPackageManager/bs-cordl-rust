@@ -1,4 +1,6 @@
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionModel {
@@ -79,7 +81,9 @@ pub struct EnvironmentTrackDefinitionModel {
         >,
     >,
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -99,7 +103,9 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
         false
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel"
+)]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -107,7 +113,9 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel"
+)]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -700,7 +708,9 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -711,7 +721,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -729,7 +739,7 @@ pub struct EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
     >,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
@@ -751,7 +761,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
@@ -761,7 +771,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
@@ -850,7 +860,7 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
@@ -862,7 +872,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -873,7 +883,7 @@ pub struct EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
     pub trackType: crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
@@ -895,7 +905,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
@@ -905,7 +915,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
@@ -966,7 +976,7 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {

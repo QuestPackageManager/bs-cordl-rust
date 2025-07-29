@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_LineInfo")]
+#[cfg(feature = "cordl_class_TMPro+TMP_LineInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_LineInfo {
@@ -23,7 +23,7 @@ pub struct TMP_LineInfo {
     pub alignment: crate::TMPro::HorizontalAlignmentOptions,
     pub lineExtents: crate::TMPro::Extents,
 }
-#[cfg(feature = "TMPro+TMP_LineInfo")]
+#[cfg(feature = "cordl_class_TMPro+TMP_LineInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_LineInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -52,7 +52,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_LineInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_LineInfo")]
+#[cfg(feature = "cordl_class_TMPro+TMP_LineInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_LineInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_LineInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_LineInfo")]
+#[cfg(feature = "cordl_class_TMPro+TMP_LineInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_LineInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_LineInfo {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_LineInfo")]
+#[cfg(feature = "cordl_class_TMPro+TMP_LineInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_LineInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_LineInfo {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_LineInfo")]
+#[cfg(feature = "cordl_class_TMPro+TMP_LineInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_LineInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -102,7 +102,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_LineInfo {
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_LineInfo")]
+#[cfg(feature = "cordl_class_TMPro+TMP_LineInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_LineInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

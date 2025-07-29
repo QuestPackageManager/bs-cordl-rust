@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+Experimental+Lerp")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+Lerp")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lerp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+Experimental+Lerp")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+Lerp")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Experimental::Lerp {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::Experimental::Lerp {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Experimental+Lerp")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+Lerp")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Experimental::Lerp {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Experimental+Lerp")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+Lerp")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Experimental::Lerp {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Experimental+Lerp")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+Lerp")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Experimental::Lerp {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

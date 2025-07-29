@@ -1,10 +1,10 @@
-#[cfg(feature = "System+FieldAccessException")]
+#[cfg(feature = "cordl_class_System+FieldAccessException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FieldAccessException {
     __cordl_parent: crate::System::MemberAccessException,
 }
-#[cfg(feature = "System+FieldAccessException")]
+#[cfg(feature = "cordl_class_System+FieldAccessException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::FieldAccessException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::FieldAccessException 
         false
     }
 }
-#[cfg(feature = "System+FieldAccessException")]
+#[cfg(feature = "cordl_class_System+FieldAccessException")]
 impl std::ops::Deref for crate::System::FieldAccessException {
     type Target = crate::System::MemberAccessException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+FieldAccessException")]
+#[cfg(feature = "cordl_class_System+FieldAccessException")]
 impl std::ops::DerefMut for crate::System::FieldAccessException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::FieldAccessException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+FieldAccessException")]
+#[cfg(feature = "cordl_class_System+FieldAccessException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::FieldAccessException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

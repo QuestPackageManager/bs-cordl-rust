@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MergeElements {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -197,7 +197,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

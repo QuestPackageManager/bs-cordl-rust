@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerPrefixCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerPrefixCollection {
@@ -10,7 +10,7 @@ pub struct HttpListenerPrefixCollection {
     >,
     pub listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
 }
-#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerPrefixCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpListenerPrefixCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Net::HttpListenerPrefixCollection {
         false
     }
 }
-#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerPrefixCollection")]
 impl std::ops::Deref for crate::System::Net::HttpListenerPrefixCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerPrefixCollection")]
 impl std::ops::DerefMut for crate::System::Net::HttpListenerPrefixCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -322,7 +322,7 @@ impl crate::System::Net::HttpListenerPrefixCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerPrefixCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::HttpListenerPrefixCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

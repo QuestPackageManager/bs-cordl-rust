@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Tilemaps+Tile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tile {
@@ -10,7 +10,7 @@ pub struct Tile {
     pub m_Flags: crate::UnityEngine::Tilemaps::TileFlags,
     pub m_ColliderType: crate::UnityEngine::Tilemaps::Tile_ColliderType,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Tilemaps::Tile {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Tilemaps::Tile {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile")]
 impl std::ops::Deref for crate::UnityEngine::Tilemaps::Tile {
     type Target = crate::UnityEngine::Tilemaps::TileBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile")]
 impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::Tile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -417,7 +417,7 @@ impl crate::UnityEngine::Tilemaps::Tile {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Tilemaps::Tile {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -426,7 +426,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Tilemaps::Tile {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile+ColliderType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Tile_ColliderType {
@@ -435,7 +435,7 @@ pub enum Tile_ColliderType {
     None = 0i32,
     Sprite = 1i32,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Tilemaps::Tile_ColliderType {
     type Held<'a> = Self;
@@ -465,7 +465,7 @@ for crate::UnityEngine::Tilemaps::Tile_ColliderType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Tilemaps::Tile_ColliderType {
     type Type = Self;
@@ -476,7 +476,7 @@ for crate::UnityEngine::Tilemaps::Tile_ColliderType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Tilemaps::Tile_ColliderType {
     type Actual = Self;
@@ -490,7 +490,7 @@ for crate::UnityEngine::Tilemaps::Tile_ColliderType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Tilemaps::Tile_ColliderType {
     type Type = Self;
@@ -505,7 +505,7 @@ for crate::UnityEngine::Tilemaps::Tile_ColliderType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Tilemaps::Tile_ColliderType {
     type Actual = Self;

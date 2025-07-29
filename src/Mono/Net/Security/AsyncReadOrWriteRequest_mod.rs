@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Net+Security+AsyncReadOrWriteRequest")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncReadOrWriteRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncReadOrWriteRequest {
@@ -8,7 +8,7 @@ pub struct AsyncReadOrWriteRequest {
     >,
     pub _CurrentSize_k__BackingField: i32,
 }
-#[cfg(feature = "Mono+Net+Security+AsyncReadOrWriteRequest")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncReadOrWriteRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Net::Security::AsyncReadOrWriteRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Mono::Net::Security::AsyncReadOrWriteRequest {
         false
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncReadOrWriteRequest")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncReadOrWriteRequest")]
 impl std::ops::Deref for crate::Mono::Net::Security::AsyncReadOrWriteRequest {
     type Target = crate::Mono::Net::Security::AsyncProtocolRequest;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncReadOrWriteRequest")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncReadOrWriteRequest")]
 impl std::ops::DerefMut for crate::Mono::Net::Security::AsyncReadOrWriteRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -201,7 +201,7 @@ impl crate::Mono::Net::Security::AsyncReadOrWriteRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncReadOrWriteRequest")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncReadOrWriteRequest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Net::Security::AsyncReadOrWriteRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

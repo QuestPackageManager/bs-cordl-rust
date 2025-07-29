@@ -1,4 +1,4 @@
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsText")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_FpsText {
@@ -16,7 +16,7 @@ pub struct G_FpsText {
     pub m_fps: f32,
     pub m_ms: f32,
 }
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsText")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Fps::G_FpsText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Fps::G_FpsText 
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsText")]
 impl std::ops::Deref for crate::Tayx::Graphy::Fps::G_FpsText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsText")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Fps::G_FpsText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::Tayx::Graphy::Fps::G_FpsText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+Fps+G_FpsText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsText")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Fps::G_FpsText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

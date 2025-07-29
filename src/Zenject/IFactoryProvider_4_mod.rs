@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+IFactoryProvider_4")]
+#[cfg(feature = "cordl_class_Zenject+IFactoryProvider_4")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IFactoryProvider_4<
@@ -13,7 +13,7 @@ pub struct IFactoryProvider_4<
     __cordl_phantom_TParam3: std::marker::PhantomData<TParam3>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
-#[cfg(feature = "Zenject+IFactoryProvider_4")]
+#[cfg(feature = "cordl_class_Zenject+IFactoryProvider_4")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -51,7 +51,7 @@ for crate::Zenject::IFactoryProvider_4<TParam1, TParam2, TParam3, TContract> {
         false
     }
 }
-#[cfg(feature = "Zenject+IFactoryProvider_4")]
+#[cfg(feature = "cordl_class_Zenject+IFactoryProvider_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -64,7 +64,7 @@ for crate::Zenject::IFactoryProvider_4<TParam1, TParam2, TParam3, TContract> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+IFactoryProvider_4")]
+#[cfg(feature = "cordl_class_Zenject+IFactoryProvider_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -209,7 +209,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+IFactoryProvider_4")]
+#[cfg(feature = "cordl_class_Zenject+IFactoryProvider_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

@@ -1,10 +1,10 @@
-#[cfg(feature = "ENet+Library")]
+#[cfg(feature = "cordl_class_ENet+Library")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Library {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ENet+Library")]
+#[cfg(feature = "cordl_class_ENet+Library")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::Library {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::Library {
         false
     }
 }
-#[cfg(feature = "ENet+Library")]
+#[cfg(feature = "cordl_class_ENet+Library")]
 impl std::ops::Deref for crate::ENet::Library {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ENet+Library")]
+#[cfg(feature = "cordl_class_ENet+Library")]
 impl std::ops::DerefMut for crate::ENet::Library {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -182,7 +182,7 @@ impl crate::ENet::Library {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ENet+Library")]
+#[cfg(feature = "cordl_class_ENet+Library")]
 impl quest_hook::libil2cpp::ObjectType for crate::ENet::Library {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

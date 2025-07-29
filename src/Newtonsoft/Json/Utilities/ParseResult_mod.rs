@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParseResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParseResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParseResult {
@@ -8,7 +8,7 @@ pub enum ParseResult {
     Overflow = 2i32,
     Success = 1i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParseResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParseResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::ParseResult {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Newtonsoft::Json::Utilities::ParseResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParseResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParseResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::ParseResult {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Newtonsoft::Json::Utilities::ParseResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParseResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParseResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::ParseResult {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Newtonsoft::Json::Utilities::ParseResult {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParseResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParseResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::ParseResult {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Newtonsoft::Json::Utilities::ParseResult {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParseResult")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParseResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::ParseResult {
     type Actual = Self;

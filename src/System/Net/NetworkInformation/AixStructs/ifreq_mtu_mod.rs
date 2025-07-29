@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ifreq_mtu {
     padding: quest_hook::libil2cpp::ValueTypePadding<20usize>,
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
         self
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
         }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
         actual
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Type = Self;
@@ -107,7 +107,7 @@ impl crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     pub type _ifr_name_e__FixedBuffer = crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer;
 }
 #[cfg(
-    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+    feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -115,7 +115,7 @@ pub struct ifreq_mtu__ifr_name_e__FixedBuffer {
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+    feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
@@ -147,7 +147,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
     }
 }
 #[cfg(
-    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+    feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
@@ -160,7 +160,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
     }
 }
 #[cfg(
-    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+    feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
@@ -176,7 +176,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
     }
 }
 #[cfg(
-    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+    feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
@@ -193,7 +193,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
     }
 }
 #[cfg(
-    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+    feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
@@ -209,7 +209,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
     }
 }
 #[cfg(
-    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+    feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {

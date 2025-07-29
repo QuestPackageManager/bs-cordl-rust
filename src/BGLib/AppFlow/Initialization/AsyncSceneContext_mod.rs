@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncSceneContext {
@@ -22,7 +22,7 @@ pub struct AsyncSceneContext {
         crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
     >,
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         false
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
     type Target = crate::Zenject::SceneContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext")]
 impl std::ops::DerefMut for crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -281,7 +281,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -291,7 +291,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsyncSceneContext_State {
@@ -300,7 +300,7 @@ pub enum AsyncSceneContext_State {
     Initializing = 1i32,
     NotInitialized = 0i32,
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Held<'a> = Self;
@@ -330,7 +330,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Type = Self;
@@ -341,7 +341,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Actual = Self;
@@ -355,7 +355,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
         self
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Type = Self;
@@ -370,7 +370,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
         }
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableGraphExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableGraphExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioPlayableGraphExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableGraphExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableGraphExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableGraphExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableGraphExtensions")]
 impl std::ops::Deref for crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableGraphExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableGraphExtensions")]
 impl std::ops::DerefMut for crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -81,7 +81,7 @@ impl crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableGraphExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableGraphExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

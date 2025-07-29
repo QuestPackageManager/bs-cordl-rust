@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AssetTask {
@@ -10,7 +10,7 @@ pub struct HEU_AssetTask {
     pub _buildResult: bool,
     pub _forceSessionID: i64,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_AssetTask {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Asset
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetTask {
     type Target = crate::HoudiniEngineUnity::HEU_Task;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AssetTask {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -274,7 +274,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetTask {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetTask {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -283,7 +283,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetT
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask+BuildType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AssetTask_BuildType {
@@ -293,7 +293,7 @@ pub enum HEU_AssetTask_BuildType {
     NONE = 0i32,
     RELOAD = 3i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask+BuildType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
     type Held<'a> = Self;
@@ -323,7 +323,7 @@ for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask+BuildType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
     type Type = Self;
@@ -334,7 +334,7 @@ for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask+BuildType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
     type Actual = Self;
@@ -348,7 +348,7 @@ for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask+BuildType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
     type Type = Self;
@@ -363,7 +363,7 @@ for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetTask+BuildType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_AssetTask_BuildType {
     type Actual = Self;

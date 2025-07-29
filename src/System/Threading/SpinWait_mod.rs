@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+SpinWait")]
+#[cfg(feature = "cordl_class_System+Threading+SpinWait")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpinWait {
     pub _count: i32,
 }
-#[cfg(feature = "System+Threading+SpinWait")]
+#[cfg(feature = "cordl_class_System+Threading+SpinWait")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::SpinWait {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::SpinWait {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+SpinWait")]
+#[cfg(feature = "cordl_class_System+Threading+SpinWait")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::SpinWait {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::SpinWa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+SpinWait")]
+#[cfg(feature = "cordl_class_System+Threading+SpinWait")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Threading::SpinWait {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Threading::SpinW
         self
     }
 }
-#[cfg(feature = "System+Threading+SpinWait")]
+#[cfg(feature = "cordl_class_System+Threading+SpinWait")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::SpinWait {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::SpinWa
         }
     }
 }
-#[cfg(feature = "System+Threading+SpinWait")]
+#[cfg(feature = "cordl_class_System+Threading+SpinWait")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::SpinWait {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::SpinWait
         actual
     }
 }
-#[cfg(feature = "System+Threading+SpinWait")]
+#[cfg(feature = "cordl_class_System+Threading+SpinWait")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Threading::SpinWait {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

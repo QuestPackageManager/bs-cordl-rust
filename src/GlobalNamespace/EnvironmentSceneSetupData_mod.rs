@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentSceneSetupData")]
+#[cfg(feature = "cordl_class_EnvironmentSceneSetupData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentSceneSetupData {
@@ -9,7 +9,7 @@ pub struct EnvironmentSceneSetupData {
     >,
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
-#[cfg(feature = "EnvironmentSceneSetupData")]
+#[cfg(feature = "cordl_class_EnvironmentSceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentSceneSetupData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::EnvironmentSceneSetupData {
         false
     }
 }
-#[cfg(feature = "EnvironmentSceneSetupData")]
+#[cfg(feature = "cordl_class_EnvironmentSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentSceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentSceneSetupData")]
+#[cfg(feature = "cordl_class_EnvironmentSceneSetupData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentSceneSetupData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::EnvironmentSceneSetupData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentSceneSetupData")]
+#[cfg(feature = "cordl_class_EnvironmentSceneSetupData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentSceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ICutScoreBufferDidFinishReceiver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ICutScoreBufferDidFinishReceiver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ICutScoreBufferDidFinishReceiver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
         false
     }
 }
-#[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ICutScoreBufferDidFinishReceiver")]
 impl std::ops::Deref for crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ICutScoreBufferDidFinishReceiver")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
+#[cfg(feature = "cordl_class_ICutScoreBufferDidFinishReceiver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

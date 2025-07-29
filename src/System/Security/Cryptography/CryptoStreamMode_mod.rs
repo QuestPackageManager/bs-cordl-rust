@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+CryptoStreamMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStreamMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CryptoStreamMode {
@@ -6,7 +6,7 @@ pub enum CryptoStreamMode {
     Read = 0i32,
     Write = 1i32,
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStreamMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStreamMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::CryptoStreamMode {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::System::Security::Cryptography::CryptoStreamMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStreamMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStreamMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::CryptoStreamMode {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::Security::Cryptography::CryptoStreamMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStreamMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStreamMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::CryptoStreamMode {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Security::Cryptography::CryptoStreamMode {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStreamMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStreamMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::CryptoStreamMode {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::Security::Cryptography::CryptoStreamMode {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStreamMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStreamMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::CryptoStreamMode {
     type Actual = Self;

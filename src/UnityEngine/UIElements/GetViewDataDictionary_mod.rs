@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+GetViewDataDictionary")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+GetViewDataDictionary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GetViewDataDictionary {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UIElements+GetViewDataDictionary")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+GetViewDataDictionary")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::GetViewDataDictionary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::GetViewDataDictionary {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+GetViewDataDictionary")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+GetViewDataDictionary")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GetViewDataDictionary {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+GetViewDataDictionary")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+GetViewDataDictionary")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::GetViewDataDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::UnityEngine::UIElements::GetViewDataDictionary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+GetViewDataDictionary")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+GetViewDataDictionary")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::GetViewDataDictionary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

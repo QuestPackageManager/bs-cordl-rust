@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubOvfInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -180,7 +180,7 @@ impl crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

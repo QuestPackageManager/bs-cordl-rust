@@ -1,10 +1,10 @@
-#[cfg(feature = "System+DivideByZeroException")]
+#[cfg(feature = "cordl_class_System+DivideByZeroException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DivideByZeroException {
     __cordl_parent: crate::System::ArithmeticException,
 }
-#[cfg(feature = "System+DivideByZeroException")]
+#[cfg(feature = "cordl_class_System+DivideByZeroException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DivideByZeroException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DivideByZeroException
         false
     }
 }
-#[cfg(feature = "System+DivideByZeroException")]
+#[cfg(feature = "cordl_class_System+DivideByZeroException")]
 impl std::ops::Deref for crate::System::DivideByZeroException {
     type Target = crate::System::ArithmeticException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+DivideByZeroException")]
+#[cfg(feature = "cordl_class_System+DivideByZeroException")]
 impl std::ops::DerefMut for crate::System::DivideByZeroException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::DivideByZeroException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+DivideByZeroException")]
+#[cfg(feature = "cordl_class_System+DivideByZeroException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::DivideByZeroException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

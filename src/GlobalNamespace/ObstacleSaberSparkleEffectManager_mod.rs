@@ -1,4 +1,4 @@
-#[cfg(feature = "ObstacleSaberSparkleEffectManager")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleSaberSparkleEffectManager {
@@ -34,7 +34,7 @@ pub struct ObstacleSaberSparkleEffectManager {
         crate::System::Action_1<crate::GlobalNamespace::SaberType>,
     >,
 }
-#[cfg(feature = "ObstacleSaberSparkleEffectManager")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,14 +54,14 @@ for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
         false
     }
 }
-#[cfg(feature = "ObstacleSaberSparkleEffectManager")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObstacleSaberSparkleEffectManager")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -432,7 +432,7 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObstacleSaberSparkleEffectManager")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -442,13 +442,13 @@ for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleSaberSparkleEffectManager_BoxSideRotations {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -468,7 +468,7 @@ for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {
         false
     }
 }
-#[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -476,7 +476,7 @@ for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -485,7 +485,7 @@ for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {
 }
 #[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {}
-#[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
+#[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

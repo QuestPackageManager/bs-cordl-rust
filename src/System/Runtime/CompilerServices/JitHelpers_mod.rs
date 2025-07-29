@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JitHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::JitHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::CompilerServices::JitHelpers {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::JitHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
 impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::JitHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -109,7 +109,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::JitHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+LoadSceneRelationship")]
+#[cfg(feature = "cordl_class_Zenject+LoadSceneRelationship")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LoadSceneRelationship {
@@ -7,7 +7,7 @@ pub enum LoadSceneRelationship {
     None = 0i32,
     Sibling = 2i32,
 }
-#[cfg(feature = "Zenject+LoadSceneRelationship")]
+#[cfg(feature = "cordl_class_Zenject+LoadSceneRelationship")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::LoadSceneRelationship {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::LoadSceneRelationshi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+LoadSceneRelationship")]
+#[cfg(feature = "cordl_class_Zenject+LoadSceneRelationship")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::LoadSceneRelationship {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::LoadSceneRelatio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+LoadSceneRelationship")]
+#[cfg(feature = "cordl_class_Zenject+LoadSceneRelationship")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::LoadSceneRelationship {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::LoadSceneRelati
         self
     }
 }
-#[cfg(feature = "Zenject+LoadSceneRelationship")]
+#[cfg(feature = "cordl_class_Zenject+LoadSceneRelationship")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::LoadSceneRelationship {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::LoadSceneRelatio
         }
     }
 }
-#[cfg(feature = "Zenject+LoadSceneRelationship")]
+#[cfg(feature = "cordl_class_Zenject+LoadSceneRelationship")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::LoadSceneRelationship {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

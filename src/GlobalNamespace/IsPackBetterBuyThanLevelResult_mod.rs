@@ -1,4 +1,4 @@
-#[cfg(feature = "IsPackBetterBuyThanLevelResult")]
+#[cfg(feature = "cordl_class_IsPackBetterBuyThanLevelResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IsPackBetterBuyThanLevelResult {
@@ -7,7 +7,7 @@ pub enum IsPackBetterBuyThanLevelResult {
     LevelIsBetter = 1i32,
     PackIsBetter = 0i32,
 }
-#[cfg(feature = "IsPackBetterBuyThanLevelResult")]
+#[cfg(feature = "cordl_class_IsPackBetterBuyThanLevelResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IsPackBetterBuyThanLevelResult")]
+#[cfg(feature = "cordl_class_IsPackBetterBuyThanLevelResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IsPackBetterBuyThanLevelResult")]
+#[cfg(feature = "cordl_class_IsPackBetterBuyThanLevelResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
         self
     }
 }
-#[cfg(feature = "IsPackBetterBuyThanLevelResult")]
+#[cfg(feature = "cordl_class_IsPackBetterBuyThanLevelResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
         }
     }
 }
-#[cfg(feature = "IsPackBetterBuyThanLevelResult")]
+#[cfg(feature = "cordl_class_IsPackBetterBuyThanLevelResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IsPackBetterBuyThanLevelResult {
     type Actual = Self;

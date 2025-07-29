@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+IPProtectionLevel")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPProtectionLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IPProtectionLevel {
@@ -8,7 +8,7 @@ pub enum IPProtectionLevel {
     Unrestricted = 10i32,
     Unspecified = -1i32,
 }
-#[cfg(feature = "System+Net+Sockets+IPProtectionLevel")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPProtectionLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::IPProtectionLevel {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Net::Sockets::IPProtectionLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPProtectionLevel")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPProtectionLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::IPProtectionLevel {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Net::Sockets::IPProtectionLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPProtectionLevel")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPProtectionLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::IPProtectionLevel {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Net::Sockets::IPProtectionLevel {
         self
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPProtectionLevel")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPProtectionLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::IPProtectionLevel {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Net::Sockets::IPProtectionLevel {
         }
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPProtectionLevel")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPProtectionLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Sockets::IPProtectionLevel {
     type Actual = Self;

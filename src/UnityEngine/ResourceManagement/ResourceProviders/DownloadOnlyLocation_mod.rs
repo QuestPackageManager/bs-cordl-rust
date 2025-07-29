@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DownloadOnlyLocation {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocat
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocation {
     type Target = crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocat
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -83,7 +91,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLoca
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

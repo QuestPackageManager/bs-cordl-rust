@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteMovement")]
+#[cfg(feature = "cordl_class_NoteMovement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteMovement {
@@ -29,7 +29,7 @@ pub struct NoteMovement {
     pub _prevLocalPosition: crate::UnityEngine::Vector3,
     pub _distanceToPlayer: f32,
 }
-#[cfg(feature = "NoteMovement")]
+#[cfg(feature = "cordl_class_NoteMovement")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteMovement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -48,14 +48,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteMovement
         false
     }
 }
-#[cfg(feature = "NoteMovement")]
+#[cfg(feature = "cordl_class_NoteMovement")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteMovement {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteMovement")]
+#[cfg(feature = "cordl_class_NoteMovement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteMovement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -984,7 +984,7 @@ impl crate::GlobalNamespace::NoteMovement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteMovement")]
+#[cfg(feature = "cordl_class_NoteMovement")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteMovement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+ComponentModel+ReadOnlyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReadOnlyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadOnlyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _IsReadOnly_k__BackingField: bool,
 }
-#[cfg(feature = "System+ComponentModel+ReadOnlyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReadOnlyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::ReadOnlyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::ComponentModel::ReadOnlyAttribute {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+ReadOnlyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReadOnlyAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::ReadOnlyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+ReadOnlyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReadOnlyAttribute")]
 impl std::ops::DerefMut for crate::System::ComponentModel::ReadOnlyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::System::ComponentModel::ReadOnlyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+ReadOnlyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReadOnlyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::ReadOnlyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementElementCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+Configuration+ConnectionManagementElementCollection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectionManagementElementCollection {
     __cordl_parent: crate::System::Configuration::ConfigurationElementCollection,
 }
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementElementCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+Configuration+ConnectionManagementElementCollection"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Configuration::ConnectionManagementElementCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Net::Configuration::ConnectionManagementElementCollection {
         false
     }
 }
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementElementCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+Configuration+ConnectionManagementElementCollection"
+)]
 impl std::ops::Deref
 for crate::System::Net::Configuration::ConnectionManagementElementCollection {
     type Target = crate::System::Configuration::ConfigurationElementCollection;
@@ -32,7 +38,9 @@ for crate::System::Net::Configuration::ConnectionManagementElementCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementElementCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+Configuration+ConnectionManagementElementCollection"
+)]
 impl std::ops::DerefMut
 for crate::System::Net::Configuration::ConnectionManagementElementCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::System::Net::Configuration::ConnectionManagementElementCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementElementCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+Configuration+ConnectionManagementElementCollection"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Configuration::ConnectionManagementElementCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

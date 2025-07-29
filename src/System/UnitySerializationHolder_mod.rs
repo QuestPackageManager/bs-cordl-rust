@@ -1,4 +1,4 @@
-#[cfg(feature = "System+UnitySerializationHolder")]
+#[cfg(feature = "cordl_class_System+UnitySerializationHolder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnitySerializationHolder {
@@ -20,7 +20,7 @@ pub struct UnitySerializationHolder {
     pub m_assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_unityType: i32,
 }
-#[cfg(feature = "System+UnitySerializationHolder")]
+#[cfg(feature = "cordl_class_System+UnitySerializationHolder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::UnitySerializationHolder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UnitySerializationHol
         false
     }
 }
-#[cfg(feature = "System+UnitySerializationHolder")]
+#[cfg(feature = "cordl_class_System+UnitySerializationHolder")]
 impl std::ops::Deref for crate::System::UnitySerializationHolder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+UnitySerializationHolder")]
+#[cfg(feature = "cordl_class_System+UnitySerializationHolder")]
 impl std::ops::DerefMut for crate::System::UnitySerializationHolder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -357,7 +357,7 @@ impl crate::System::UnitySerializationHolder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+UnitySerializationHolder")]
+#[cfg(feature = "cordl_class_System+UnitySerializationHolder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::UnitySerializationHolder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

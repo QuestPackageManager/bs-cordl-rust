@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IValueTupleInternal")]
+#[cfg(feature = "cordl_class_System+IValueTupleInternal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IValueTupleInternal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+IValueTupleInternal")]
+#[cfg(feature = "cordl_class_System+IValueTupleInternal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IValueTupleInternal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IValueTupleInternal {
         false
     }
 }
-#[cfg(feature = "System+IValueTupleInternal")]
+#[cfg(feature = "cordl_class_System+IValueTupleInternal")]
 impl std::ops::Deref for crate::System::IValueTupleInternal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IValueTupleInternal")]
+#[cfg(feature = "cordl_class_System+IValueTupleInternal")]
 impl std::ops::DerefMut for crate::System::IValueTupleInternal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -101,7 +101,7 @@ impl crate::System::IValueTupleInternal {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+IValueTupleInternal")]
+#[cfg(feature = "cordl_class_System+IValueTupleInternal")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IValueTupleInternal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

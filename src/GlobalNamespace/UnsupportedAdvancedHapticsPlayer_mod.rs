@@ -1,10 +1,10 @@
-#[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
+#[cfg(feature = "cordl_class_UnsupportedAdvancedHapticsPlayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsupportedAdvancedHapticsPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
+#[cfg(feature = "cordl_class_UnsupportedAdvancedHapticsPlayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
         false
     }
 }
-#[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
+#[cfg(feature = "cordl_class_UnsupportedAdvancedHapticsPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
+#[cfg(feature = "cordl_class_UnsupportedAdvancedHapticsPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
+#[cfg(feature = "cordl_class_UnsupportedAdvancedHapticsPlayer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

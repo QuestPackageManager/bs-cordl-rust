@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionModifierBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionModifierBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectionModifierBehavior {
@@ -7,7 +7,7 @@ pub enum SelectionModifierBehavior {
     Difference = 2i32,
     Subtract = 1i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionModifierBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionModifierBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionModifierBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionModifierBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionModifierBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionModifierBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionModifierBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionModifierBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionModifierBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionModifierBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::SelectionModifierBehavior {
     type Actual = Self;

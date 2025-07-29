@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::StringUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Utilities::StringUtils {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::StringUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::StringUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -762,7 +762,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::StringUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -772,7 +772,7 @@ for crate::Newtonsoft::Json::Utilities::StringUtils {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StringUtils_SeparatedCaseState {
@@ -782,7 +782,7 @@ pub enum StringUtils_SeparatedCaseState {
     Start = 0i32,
     Upper = 2i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
     type Held<'a> = Self;
@@ -812,7 +812,7 @@ for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
     type Type = Self;
@@ -823,7 +823,7 @@ for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
     type Actual = Self;
@@ -837,7 +837,7 @@ for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
     type Type = Self;
@@ -852,7 +852,7 @@ for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
     type Actual = Self;

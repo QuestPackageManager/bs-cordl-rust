@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelPackDetailViewController")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelPackDetailViewController {
@@ -39,7 +39,7 @@ pub struct LevelPackDetailViewController {
     pub _pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     pub _blurredPackArtwork: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
-#[cfg(feature = "LevelPackDetailViewController")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelPackDetailViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -59,14 +59,14 @@ for crate::GlobalNamespace::LevelPackDetailViewController {
         false
     }
 }
-#[cfg(feature = "LevelPackDetailViewController")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelPackDetailViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelPackDetailViewController")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelPackDetailViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -421,7 +421,7 @@ impl crate::GlobalNamespace::LevelPackDetailViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelPackDetailViewController")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelPackDetailViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -431,7 +431,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LevelPackDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController+ContentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelPackDetailViewController_ContentType {
@@ -441,7 +441,7 @@ pub enum LevelPackDetailViewController_ContentType {
     Loading = 0i32,
     NonBuyable = 1i32,
 }
-#[cfg(feature = "LevelPackDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Held<'a> = Self;
@@ -471,7 +471,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LevelPackDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Type = Self;
@@ -482,7 +482,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LevelPackDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Actual = Self;
@@ -496,7 +496,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
         self
     }
 }
-#[cfg(feature = "LevelPackDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Type = Self;
@@ -511,7 +511,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
         }
     }
 }
-#[cfg(feature = "LevelPackDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Actual = Self;

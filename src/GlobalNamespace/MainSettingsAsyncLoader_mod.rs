@@ -1,4 +1,4 @@
-#[cfg(feature = "MainSettingsAsyncLoader")]
+#[cfg(feature = "cordl_class_MainSettingsAsyncLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainSettingsAsyncLoader {
@@ -16,7 +16,7 @@ pub struct MainSettingsAsyncLoader {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "MainSettingsAsyncLoader")]
+#[cfg(feature = "cordl_class_MainSettingsAsyncLoader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainSettingsAsyncLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::MainSettingsAsyncLoader {
         false
     }
 }
-#[cfg(feature = "MainSettingsAsyncLoader")]
+#[cfg(feature = "cordl_class_MainSettingsAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::MainSettingsAsyncLoader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainSettingsAsyncLoader")]
+#[cfg(feature = "cordl_class_MainSettingsAsyncLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainSettingsAsyncLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -217,7 +217,7 @@ impl crate::GlobalNamespace::MainSettingsAsyncLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainSettingsAsyncLoader")]
+#[cfg(feature = "cordl_class_MainSettingsAsyncLoader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainSettingsAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

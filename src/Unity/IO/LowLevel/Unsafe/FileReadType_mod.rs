@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileReadType")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileReadType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileReadType {
@@ -6,7 +6,7 @@ pub enum FileReadType {
     Async = 1i32,
     Sync = 0i32,
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileReadType")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileReadType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileReadType")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileReadType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileReadType")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileReadType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
         self
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileReadType")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileReadType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
         }
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileReadType")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+FileReadType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::IO::LowLevel::Unsafe::FileReadType {
     type Actual = Self;

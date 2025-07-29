@@ -1,4 +1,4 @@
-#[cfg(feature = "BrowsingMenusRichPresenceData")]
+#[cfg(feature = "cordl_class_BrowsingMenusRichPresenceData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BrowsingMenusRichPresenceData {
@@ -7,7 +7,7 @@ pub struct BrowsingMenusRichPresenceData {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "BrowsingMenusRichPresenceData")]
+#[cfg(feature = "cordl_class_BrowsingMenusRichPresenceData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BrowsingMenusRichPresenceData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BrowsingMenusRichPresenceData {
         false
     }
 }
-#[cfg(feature = "BrowsingMenusRichPresenceData")]
+#[cfg(feature = "cordl_class_BrowsingMenusRichPresenceData")]
 impl std::ops::Deref for crate::GlobalNamespace::BrowsingMenusRichPresenceData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BrowsingMenusRichPresenceData")]
+#[cfg(feature = "cordl_class_BrowsingMenusRichPresenceData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BrowsingMenusRichPresenceData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::BrowsingMenusRichPresenceData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BrowsingMenusRichPresenceData")]
+#[cfg(feature = "cordl_class_BrowsingMenusRichPresenceData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BrowsingMenusRichPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

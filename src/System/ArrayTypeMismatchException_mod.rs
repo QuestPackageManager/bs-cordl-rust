@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ArrayTypeMismatchException")]
+#[cfg(feature = "cordl_class_System+ArrayTypeMismatchException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayTypeMismatchException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+ArrayTypeMismatchException")]
+#[cfg(feature = "cordl_class_System+ArrayTypeMismatchException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ArrayTypeMismatchException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ArrayTypeMismatchExce
         false
     }
 }
-#[cfg(feature = "System+ArrayTypeMismatchException")]
+#[cfg(feature = "cordl_class_System+ArrayTypeMismatchException")]
 impl std::ops::Deref for crate::System::ArrayTypeMismatchException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ArrayTypeMismatchException")]
+#[cfg(feature = "cordl_class_System+ArrayTypeMismatchException")]
 impl std::ops::DerefMut for crate::System::ArrayTypeMismatchException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::System::ArrayTypeMismatchException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ArrayTypeMismatchException")]
+#[cfg(feature = "cordl_class_System+ArrayTypeMismatchException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ArrayTypeMismatchException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

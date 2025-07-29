@@ -1,10 +1,10 @@
-#[cfg(feature = "NoteControllerBase")]
+#[cfg(feature = "cordl_class_NoteControllerBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteControllerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "NoteControllerBase")]
+#[cfg(feature = "cordl_class_NoteControllerBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteControllerBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteControll
         false
     }
 }
-#[cfg(feature = "NoteControllerBase")]
+#[cfg(feature = "cordl_class_NoteControllerBase")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteControllerBase {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteControllerBase")]
+#[cfg(feature = "cordl_class_NoteControllerBase")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteControllerBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::GlobalNamespace::NoteControllerBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteControllerBase")]
+#[cfg(feature = "cordl_class_NoteControllerBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteControllerBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerDisappearingArrowController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerDisappearingArrowController {
@@ -11,7 +11,7 @@ pub struct MultiplayerConnectedPlayerDisappearingArrowController {
         crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerDisappearingArrowController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowControlle
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerDisappearingArrowController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowControlle
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerDisappearingArrowController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowControll
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerDisappearingArrowController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

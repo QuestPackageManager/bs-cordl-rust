@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InheritedData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InheritedData {
@@ -17,7 +17,7 @@ pub struct InheritedData {
     pub whiteSpace: crate::UnityEngine::UIElements::WhiteSpace,
     pub wordSpacing: crate::UnityEngine::UIElements::Length,
 }
-#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InheritedData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::InheritedData {
     type Held<'a> = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::InheritedData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InheritedData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::InheritedData {
     type Type = Self;
@@ -58,7 +58,7 @@ for crate::UnityEngine::UIElements::InheritedData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InheritedData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::InheritedData {
     type Actual = Self;
@@ -72,7 +72,7 @@ for crate::UnityEngine::UIElements::InheritedData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InheritedData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::InheritedData {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::UnityEngine::UIElements::InheritedData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InheritedData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::InheritedData {
     type Actual = Self;
@@ -101,7 +101,7 @@ for crate::UnityEngine::UIElements::InheritedData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InheritedData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InheritedData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::InheritedData {
     type Type = Self;

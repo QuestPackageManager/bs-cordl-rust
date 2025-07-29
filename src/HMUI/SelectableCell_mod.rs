@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+SelectableCell")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectableCell {
@@ -23,7 +23,7 @@ pub struct SelectableCell {
     pub _highlighted_k__BackingField: bool,
     pub _selected_k__BackingField: bool,
 }
-#[cfg(feature = "HMUI+SelectableCell")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SelectableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SelectableCell {
         false
     }
 }
-#[cfg(feature = "HMUI+SelectableCell")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell")]
 impl std::ops::Deref for crate::HMUI::SelectableCell {
     type Target = crate::HMUI::Interactable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+SelectableCell")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell")]
 impl std::ops::DerefMut for crate::HMUI::SelectableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -728,7 +728,7 @@ impl crate::HMUI::SelectableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+SelectableCell")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SelectableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -807,7 +807,7 @@ for crate::HMUI::SelectableCell {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell+TransitionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectableCell_TransitionType {
@@ -815,7 +815,7 @@ pub enum SelectableCell_TransitionType {
     Animated = 1i32,
     Instant = 0i32,
 }
-#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SelectableCell_TransitionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -844,7 +844,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SelectableCell_Transiti
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::SelectableCell_TransitionType {
     type Type = Self;
@@ -855,7 +855,7 @@ for crate::HMUI::SelectableCell_TransitionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::SelectableCell_TransitionType {
     type Actual = Self;
@@ -869,7 +869,7 @@ for crate::HMUI::SelectableCell_TransitionType {
         self
     }
 }
-#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::SelectableCell_TransitionType {
     type Type = Self;
@@ -884,7 +884,7 @@ for crate::HMUI::SelectableCell_TransitionType {
         }
     }
 }
-#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
+#[cfg(feature = "cordl_class_HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::SelectableCell_TransitionType {
     type Actual = Self;

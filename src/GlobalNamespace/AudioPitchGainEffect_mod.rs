@@ -1,4 +1,4 @@
-#[cfg(feature = "AudioPitchGainEffect")]
+#[cfg(feature = "cordl_class_AudioPitchGainEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioPitchGainEffect {
@@ -11,7 +11,7 @@ pub struct AudioPitchGainEffect {
     pub _startPitch: f32,
     pub _startVolume: f32,
 }
-#[cfg(feature = "AudioPitchGainEffect")]
+#[cfg(feature = "cordl_class_AudioPitchGainEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AudioPitchGainEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::AudioPitchGainEffect {
         false
     }
 }
-#[cfg(feature = "AudioPitchGainEffect")]
+#[cfg(feature = "cordl_class_AudioPitchGainEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioPitchGainEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AudioPitchGainEffect")]
+#[cfg(feature = "cordl_class_AudioPitchGainEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioPitchGainEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -207,7 +207,7 @@ impl crate::GlobalNamespace::AudioPitchGainEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AudioPitchGainEffect")]
+#[cfg(feature = "cordl_class_AudioPitchGainEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioPitchGainEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

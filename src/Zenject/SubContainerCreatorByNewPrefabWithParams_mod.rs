@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabWithParams")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabWithParams {
@@ -10,7 +10,7 @@ pub struct SubContainerCreatorByNewPrefabWithParams {
         crate::Zenject::GameObjectCreationParameters,
     >,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabWithParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabWithParams")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabWithParams")]
 impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -204,7 +204,7 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabWithParams")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "SceneTransitionFadingExtensions")]
+#[cfg(feature = "cordl_class_SceneTransitionFadingExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneTransitionFadingExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "SceneTransitionFadingExtensions")]
+#[cfg(feature = "cordl_class_SceneTransitionFadingExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SceneTransitionFadingExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::SceneTransitionFadingExtensions {
         false
     }
 }
-#[cfg(feature = "SceneTransitionFadingExtensions")]
+#[cfg(feature = "cordl_class_SceneTransitionFadingExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::SceneTransitionFadingExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SceneTransitionFadingExtensions")]
+#[cfg(feature = "cordl_class_SceneTransitionFadingExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SceneTransitionFadingExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::SceneTransitionFadingExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SceneTransitionFadingExtensions")]
+#[cfg(feature = "cordl_class_SceneTransitionFadingExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SceneTransitionFadingExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

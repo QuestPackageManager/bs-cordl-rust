@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
+#[cfg(feature = "cordl_class_EnvironmentStartEndSongAudioEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentStartEndSongAudioEffect {
@@ -37,7 +37,7 @@ pub struct EnvironmentStartEndSongAudioEffect {
     pub _songFinishedPlayed: bool,
     pub _isWaitingToPlayStartAudio: bool,
 }
-#[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
+#[cfg(feature = "cordl_class_EnvironmentStartEndSongAudioEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -57,14 +57,14 @@ for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
         false
     }
 }
-#[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
+#[cfg(feature = "cordl_class_EnvironmentStartEndSongAudioEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
+#[cfg(feature = "cordl_class_EnvironmentStartEndSongAudioEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -265,7 +265,7 @@ impl crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
+#[cfg(feature = "cordl_class_EnvironmentStartEndSongAudioEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

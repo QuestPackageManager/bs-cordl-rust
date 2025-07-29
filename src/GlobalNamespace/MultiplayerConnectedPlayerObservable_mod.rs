@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerObservable")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObservable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerObservable {
@@ -7,7 +7,7 @@ pub struct MultiplayerConnectedPlayerObservable {
         crate::GlobalNamespace::IConnectedPlayer,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObservable")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObservable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObservable")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObservable")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObservable")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObservable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerObservable")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObservable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayingTutorialPresenceData")]
+#[cfg(feature = "cordl_class_PlayingTutorialPresenceData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayingTutorialPresenceData {
@@ -7,7 +7,7 @@ pub struct PlayingTutorialPresenceData {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "PlayingTutorialPresenceData")]
+#[cfg(feature = "cordl_class_PlayingTutorialPresenceData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayingTutorialPresenceData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::PlayingTutorialPresenceData {
         false
     }
 }
-#[cfg(feature = "PlayingTutorialPresenceData")]
+#[cfg(feature = "cordl_class_PlayingTutorialPresenceData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayingTutorialPresenceData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayingTutorialPresenceData")]
+#[cfg(feature = "cordl_class_PlayingTutorialPresenceData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayingTutorialPresenceData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::PlayingTutorialPresenceData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayingTutorialPresenceData")]
+#[cfg(feature = "cordl_class_PlayingTutorialPresenceData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayingTutorialPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

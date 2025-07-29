@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Timeline+PrefabControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+PrefabControlPlayable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub m_Instance: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "UnityEngine+Timeline+PrefabControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+PrefabControlPlayable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::PrefabControlPlayable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Timeline::PrefabControlPlayable {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+PrefabControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+PrefabControlPlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::PrefabControlPlayable {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+PrefabControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+PrefabControlPlayable")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::PrefabControlPlayable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -286,7 +286,7 @@ impl crate::UnityEngine::Timeline::PrefabControlPlayable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+PrefabControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+PrefabControlPlayable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::PrefabControlPlayable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+GUISkin")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUISkin {
@@ -56,7 +56,7 @@ pub struct GUISkin {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+GUISkin")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUISkin {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -75,14 +75,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUISkin {
         false
     }
 }
-#[cfg(feature = "UnityEngine+GUISkin")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin")]
 impl std::ops::Deref for crate::UnityEngine::GUISkin {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GUISkin")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin")]
 impl std::ops::DerefMut for crate::UnityEngine::GUISkin {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1716,7 +1716,7 @@ impl crate::UnityEngine::GUISkin {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GUISkin")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUISkin {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1725,13 +1725,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUISkin {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin+SkinChangedDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUISkin_SkinChangedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin+SkinChangedDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::GUISkin_SkinChangedDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1751,14 +1751,14 @@ for crate::UnityEngine::GUISkin_SkinChangedDelegate {
         false
     }
 }
-#[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin+SkinChangedDelegate")]
 impl std::ops::Deref for crate::UnityEngine::GUISkin_SkinChangedDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin+SkinChangedDelegate")]
 impl std::ops::DerefMut for crate::UnityEngine::GUISkin_SkinChangedDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1830,7 +1830,7 @@ impl crate::UnityEngine::GUISkin_SkinChangedDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+GUISkin+SkinChangedDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::GUISkin_SkinChangedDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

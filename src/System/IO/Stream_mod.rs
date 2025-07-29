@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+Stream")]
+#[cfg(feature = "cordl_class_System+IO+Stream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stream {
@@ -10,7 +10,7 @@ pub struct Stream {
         crate::System::Threading::SemaphoreSlim,
     >,
 }
-#[cfg(feature = "System+IO+Stream")]
+#[cfg(feature = "cordl_class_System+IO+Stream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Stream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Stream {
         false
     }
 }
-#[cfg(feature = "System+IO+Stream")]
+#[cfg(feature = "cordl_class_System+IO+Stream")]
 impl std::ops::Deref for crate::System::IO::Stream {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Stream")]
+#[cfg(feature = "cordl_class_System+IO+Stream")]
 impl std::ops::DerefMut for crate::System::IO::Stream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1802,7 +1802,7 @@ impl crate::System::IO::Stream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Stream")]
+#[cfg(feature = "cordl_class_System+IO+Stream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Stream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1835,7 +1835,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::IO::Stream {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteParameters")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Stream_ReadWriteParameters {
@@ -1843,7 +1843,7 @@ pub struct Stream_ReadWriteParameters {
     pub Offset: i32,
     pub Count: i32,
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Stream_ReadWriteParameters {
     type Held<'a> = Self;
@@ -1873,7 +1873,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::IO::Stream_ReadWriteParameters {
     type Type = Self;
@@ -1884,7 +1884,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::IO::Stream_ReadWriteParameters {
     type Actual = Self;
@@ -1898,7 +1898,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
         self
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::IO::Stream_ReadWriteParameters {
     type Type = Self;
@@ -1913,7 +1913,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
         }
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::IO::Stream_ReadWriteParameters {
     type Actual = Self;
@@ -1927,7 +1927,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
         actual
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::IO::Stream_ReadWriteParameters {
     type Type = Self;
@@ -1940,7 +1940,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
 }
 #[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
 impl crate::System::IO::Stream_ReadWriteParameters {}
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteTask")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stream_ReadWriteTask {
@@ -1954,7 +1954,7 @@ pub struct Stream_ReadWriteTask {
     pub _callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
     pub _context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteTask")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Stream_ReadWriteTask {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1973,14 +1973,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Stream_ReadWriteT
         false
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteTask")]
 impl std::ops::Deref for crate::System::IO::Stream_ReadWriteTask {
     type Target = crate::System::Threading::Tasks::Task_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteTask")]
 impl std::ops::DerefMut for crate::System::IO::Stream_ReadWriteTask {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2192,7 +2192,7 @@ impl crate::System::IO::Stream_ReadWriteTask {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteTask")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Stream_ReadWriteTask {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2215,7 +2215,7 @@ for crate::System::IO::Stream_ReadWriteTask {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+Stream+SynchronousAsyncResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stream_SynchronousAsyncResult {
@@ -2231,7 +2231,7 @@ pub struct Stream_SynchronousAsyncResult {
     pub _endXxxCalled: bool,
     pub _bytesRead: i32,
 }
-#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+Stream+SynchronousAsyncResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Stream_SynchronousAsyncResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2251,14 +2251,14 @@ for crate::System::IO::Stream_SynchronousAsyncResult {
         false
     }
 }
-#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+Stream+SynchronousAsyncResult")]
 impl std::ops::Deref for crate::System::IO::Stream_SynchronousAsyncResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+Stream+SynchronousAsyncResult")]
 impl std::ops::DerefMut for crate::System::IO::Stream_SynchronousAsyncResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2552,7 +2552,7 @@ impl crate::System::IO::Stream_SynchronousAsyncResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+Stream+SynchronousAsyncResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::IO::Stream_SynchronousAsyncResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2576,7 +2576,7 @@ for crate::System::IO::Stream_SynchronousAsyncResult {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+#[cfg(feature = "cordl_class_System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Stream___ReadAsync_g__FinishReadAsync_44_0_d {
@@ -2593,7 +2593,7 @@ pub struct Stream___ReadAsync_g__FinishReadAsync_44_0_d {
         i32,
     >,
 }
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+#[cfg(feature = "cordl_class_System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Held<'a> = Self;
@@ -2623,7 +2623,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+#[cfg(feature = "cordl_class_System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Type = Self;
@@ -2634,7 +2634,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+#[cfg(feature = "cordl_class_System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Actual = Self;
@@ -2648,7 +2648,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
         self
     }
 }
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+#[cfg(feature = "cordl_class_System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Type = Self;
@@ -2663,7 +2663,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
         }
     }
 }
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+#[cfg(feature = "cordl_class_System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Actual = Self;
@@ -2677,7 +2677,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
         actual
     }
 }
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+#[cfg(feature = "cordl_class_System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Type = Self;

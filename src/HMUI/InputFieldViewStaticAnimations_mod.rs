@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+InputFieldViewStaticAnimations")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldViewStaticAnimations")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldViewStaticAnimations {
@@ -11,7 +11,7 @@ pub struct InputFieldViewStaticAnimations {
     pub _selectedClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     pub _didStart: bool,
 }
-#[cfg(feature = "HMUI+InputFieldViewStaticAnimations")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldViewStaticAnimations")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InputFieldViewStaticAnimations {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InputFieldViewStaticAni
         false
     }
 }
-#[cfg(feature = "HMUI+InputFieldViewStaticAnimations")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldViewStaticAnimations")]
 impl std::ops::Deref for crate::HMUI::InputFieldViewStaticAnimations {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+InputFieldViewStaticAnimations")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldViewStaticAnimations")]
 impl std::ops::DerefMut for crate::HMUI::InputFieldViewStaticAnimations {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -184,7 +184,7 @@ impl crate::HMUI::InputFieldViewStaticAnimations {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+InputFieldViewStaticAnimations")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldViewStaticAnimations")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::InputFieldViewStaticAnimations {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

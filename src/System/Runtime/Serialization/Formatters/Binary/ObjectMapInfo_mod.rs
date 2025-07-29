@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectMapInfo {
@@ -16,7 +18,9 @@ pub struct ObjectMapInfo {
         >,
     >,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,7 +40,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -44,7 +50,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -181,7 +189,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectMapInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

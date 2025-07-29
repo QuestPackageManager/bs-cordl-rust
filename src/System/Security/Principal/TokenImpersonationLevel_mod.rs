@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Principal+TokenImpersonationLevel")]
+#[cfg(feature = "cordl_class_System+Security+Principal+TokenImpersonationLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TokenImpersonationLevel {
@@ -9,7 +9,7 @@ pub enum TokenImpersonationLevel {
     Impersonation = 3i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Security+Principal+TokenImpersonationLevel")]
+#[cfg(feature = "cordl_class_System+Security+Principal+TokenImpersonationLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Principal::TokenImpersonationLevel {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::System::Security::Principal::TokenImpersonationLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Principal+TokenImpersonationLevel")]
+#[cfg(feature = "cordl_class_System+Security+Principal+TokenImpersonationLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Principal::TokenImpersonationLevel {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Security::Principal::TokenImpersonationLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Principal+TokenImpersonationLevel")]
+#[cfg(feature = "cordl_class_System+Security+Principal+TokenImpersonationLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Principal::TokenImpersonationLevel {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Security::Principal::TokenImpersonationLevel {
         self
     }
 }
-#[cfg(feature = "System+Security+Principal+TokenImpersonationLevel")]
+#[cfg(feature = "cordl_class_System+Security+Principal+TokenImpersonationLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Principal::TokenImpersonationLevel {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Security::Principal::TokenImpersonationLevel {
         }
     }
 }
-#[cfg(feature = "System+Security+Principal+TokenImpersonationLevel")]
+#[cfg(feature = "cordl_class_System+Security+Principal+TokenImpersonationLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Principal::TokenImpersonationLevel {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ScreenModeController")]
+#[cfg(feature = "cordl_class_HMUI+ScreenModeController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenModeController {
@@ -14,7 +14,7 @@ pub struct ScreenModeController {
     pub _defaultModeData: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenModeData>,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "HMUI+ScreenModeController")]
+#[cfg(feature = "cordl_class_HMUI+ScreenModeController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScreenModeController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScreenModeController {
         false
     }
 }
-#[cfg(feature = "HMUI+ScreenModeController")]
+#[cfg(feature = "cordl_class_HMUI+ScreenModeController")]
 impl std::ops::Deref for crate::HMUI::ScreenModeController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ScreenModeController")]
+#[cfg(feature = "cordl_class_HMUI+ScreenModeController")]
 impl std::ops::DerefMut for crate::HMUI::ScreenModeController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::HMUI::ScreenModeController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ScreenModeController")]
+#[cfg(feature = "cordl_class_HMUI+ScreenModeController")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ScreenModeController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

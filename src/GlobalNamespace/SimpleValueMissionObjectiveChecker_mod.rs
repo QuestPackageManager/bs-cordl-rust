@@ -1,10 +1,10 @@
-#[cfg(feature = "SimpleValueMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_SimpleValueMissionObjectiveChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleValueMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::MissionObjectiveChecker,
 }
-#[cfg(feature = "SimpleValueMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_SimpleValueMissionObjectiveChecker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
         false
     }
 }
-#[cfg(feature = "SimpleValueMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_SimpleValueMissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
     type Target = crate::GlobalNamespace::MissionObjectiveChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SimpleValueMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_SimpleValueMissionObjectiveChecker")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SimpleValueMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_SimpleValueMissionObjectiveChecker")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

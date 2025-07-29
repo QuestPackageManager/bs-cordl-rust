@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+AssignBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AssignBinaryExpression")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssignBinaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::BinaryExpression,
 }
-#[cfg(feature = "System+Linq+Expressions+AssignBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AssignBinaryExpression")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::AssignBinaryExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Linq::Expressions::AssignBinaryExpression {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+AssignBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AssignBinaryExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::AssignBinaryExpression {
     type Target = crate::System::Linq::Expressions::BinaryExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+AssignBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AssignBinaryExpression")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::AssignBinaryExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -136,7 +136,7 @@ impl crate::System::Linq::Expressions::AssignBinaryExpression {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+AssignBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+AssignBinaryExpression")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::AssignBinaryExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

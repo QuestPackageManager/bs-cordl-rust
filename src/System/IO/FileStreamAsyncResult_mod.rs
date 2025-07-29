@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+FileStreamAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+FileStreamAsyncResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileStreamAsyncResult {
@@ -13,7 +13,7 @@ pub struct FileStreamAsyncResult {
     pub BytesRead: i32,
     pub realcb: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
 }
-#[cfg(feature = "System+IO+FileStreamAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+FileStreamAsyncResult")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileStreamAsyncResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileStreamAsyncRe
         false
     }
 }
-#[cfg(feature = "System+IO+FileStreamAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+FileStreamAsyncResult")]
 impl std::ops::Deref for crate::System::IO::FileStreamAsyncResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+FileStreamAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+FileStreamAsyncResult")]
 impl std::ops::DerefMut for crate::System::IO::FileStreamAsyncResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -203,7 +203,7 @@ impl crate::System::IO::FileStreamAsyncResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+FileStreamAsyncResult")]
+#[cfg(feature = "cordl_class_System+IO+FileStreamAsyncResult")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::FileStreamAsyncResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

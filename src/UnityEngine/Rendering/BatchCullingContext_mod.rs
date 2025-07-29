@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+BatchCullingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingContext")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchCullingContext {
@@ -20,7 +20,7 @@ pub struct BatchCullingContext {
     pub receiverPlaneOffset: i32,
     pub receiverPlaneCount: i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchCullingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::BatchCullingContext {
     type Held<'a> = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::Rendering::BatchCullingContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchCullingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::BatchCullingContext {
     type Type = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::Rendering::BatchCullingContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchCullingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::BatchCullingContext {
     type Actual = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::Rendering::BatchCullingContext {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchCullingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::BatchCullingContext {
     type Type = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::Rendering::BatchCullingContext {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchCullingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::BatchCullingContext {
     type Actual = Self;
@@ -104,7 +104,7 @@ for crate::UnityEngine::Rendering::BatchCullingContext {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchCullingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::BatchCullingContext {
     type Type = Self;

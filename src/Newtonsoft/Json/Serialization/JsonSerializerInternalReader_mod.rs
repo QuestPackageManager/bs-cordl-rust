@@ -1,10 +1,14 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerInternalReader {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader"
+)]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     type Target = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase;
@@ -32,7 +38,9 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader"
+)]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2496,7 +2504,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2507,7 +2517,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -2527,7 +2537,7 @@ pub struct JsonSerializerInternalReader_CreatorPropertyContext {
     pub Used: bool,
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
@@ -2549,7 +2559,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
 )]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
@@ -2559,7 +2569,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
 )]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
@@ -2608,7 +2618,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creato
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
@@ -2620,7 +2630,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -2631,7 +2641,7 @@ pub enum JsonSerializerInternalReader_PropertyPresence {
     Value = 2i32,
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {
@@ -2663,7 +2673,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {
@@ -2676,7 +2686,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {
@@ -2692,7 +2702,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {
@@ -2709,7 +2719,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputUpdate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -196,7 +196,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -206,14 +206,18 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUpdate_SerializedState {
     pub lastUpdateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     pub playerUpdateStepCount: crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
     type Held<'a> = Self;
@@ -243,7 +247,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
     type Type = Self;
@@ -254,7 +260,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
     type Actual = Self;
@@ -268,7 +276,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
     type Type = Self;
@@ -283,7 +293,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
     type Actual = Self;
@@ -297,7 +309,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
     type Type = Self;
@@ -310,14 +324,18 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUpdate_UpdateStepCount {
     pub m_WasUpdated: bool,
     pub _value_k__BackingField: u32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
     type Held<'a> = Self;
@@ -347,7 +365,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
     type Type = Self;
@@ -358,7 +378,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
     type Actual = Self;
@@ -372,7 +394,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
     type Type = Self;
@@ -387,7 +411,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
     type Actual = Self;
@@ -401,7 +427,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
     type Type = Self;

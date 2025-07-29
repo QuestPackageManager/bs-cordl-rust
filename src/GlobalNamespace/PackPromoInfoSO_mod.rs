@@ -1,4 +1,4 @@
-#[cfg(feature = "PackPromoInfoSO")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackPromoInfoSO {
@@ -14,7 +14,7 @@ pub struct PackPromoInfoSO {
         >,
     >,
 }
-#[cfg(feature = "PackPromoInfoSO")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PackPromoInfoSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PackPromoInf
         false
     }
 }
-#[cfg(feature = "PackPromoInfoSO")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PackPromoInfoSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackPromoInfoSO")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackPromoInfoSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::PackPromoInfoSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackPromoInfoSO")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackPromoInfoSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -160,7 +160,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackPromoInfo
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO+LevelPromoInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackPromoInfoSO_LevelPromoInfo {
@@ -170,7 +170,7 @@ pub struct PackPromoInfoSO_LevelPromoInfo {
         crate::GlobalNamespace::PromoBannerInfoSO,
     >,
 }
-#[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO+LevelPromoInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -190,14 +190,14 @@ for crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
         false
     }
 }
-#[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO+LevelPromoInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO+LevelPromoInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -290,7 +290,7 @@ impl crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
+#[cfg(feature = "cordl_class_PackPromoInfoSO+LevelPromoInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

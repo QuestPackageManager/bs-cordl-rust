@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Profiling+DebugScreenCapture")]
+#[cfg(feature = "cordl_class_Unity+Profiling+DebugScreenCapture")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DebugScreenCapture {
@@ -9,7 +9,7 @@ pub struct DebugScreenCapture {
     pub _Width_k__BackingField: i32,
     pub _Height_k__BackingField: i32,
 }
-#[cfg(feature = "Unity+Profiling+DebugScreenCapture")]
+#[cfg(feature = "cordl_class_Unity+Profiling+DebugScreenCapture")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Profiling::DebugScreenCapture {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Profiling::DebugScreen
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Profiling+DebugScreenCapture")]
+#[cfg(feature = "cordl_class_Unity+Profiling+DebugScreenCapture")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::DebugScreenCapture {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Unity::Profiling::DebugScreenCapture {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Profiling+DebugScreenCapture")]
+#[cfg(feature = "cordl_class_Unity+Profiling+DebugScreenCapture")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::DebugScreenCapture {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Unity::Profiling::DebugScreenCapture {
         self
     }
 }
-#[cfg(feature = "Unity+Profiling+DebugScreenCapture")]
+#[cfg(feature = "cordl_class_Unity+Profiling+DebugScreenCapture")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::DebugScreenCapture {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Unity::Profiling::DebugScreenCapture {
         }
     }
 }
-#[cfg(feature = "Unity+Profiling+DebugScreenCapture")]
+#[cfg(feature = "cordl_class_Unity+Profiling+DebugScreenCapture")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::DebugScreenCapture {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::Unity::Profiling::DebugScreenCapture {
         actual
     }
 }
-#[cfg(feature = "Unity+Profiling+DebugScreenCapture")]
+#[cfg(feature = "cordl_class_Unity+Profiling+DebugScreenCapture")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Profiling::DebugScreenCapture {
     type Type = Self;

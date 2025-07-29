@@ -1,10 +1,10 @@
-#[cfg(feature = "System+NotImplementedException")]
+#[cfg(feature = "cordl_class_System+NotImplementedException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotImplementedException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+NotImplementedException")]
+#[cfg(feature = "cordl_class_System+NotImplementedException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::NotImplementedException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::NotImplementedExcepti
         false
     }
 }
-#[cfg(feature = "System+NotImplementedException")]
+#[cfg(feature = "cordl_class_System+NotImplementedException")]
 impl std::ops::Deref for crate::System::NotImplementedException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+NotImplementedException")]
+#[cfg(feature = "cordl_class_System+NotImplementedException")]
 impl std::ops::DerefMut for crate::System::NotImplementedException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::NotImplementedException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+NotImplementedException")]
+#[cfg(feature = "cordl_class_System+NotImplementedException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::NotImplementedException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

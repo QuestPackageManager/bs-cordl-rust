@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NegateCheckedInstruction_NegateCheckedInt64 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {

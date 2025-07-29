@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EIOBufferError")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferError")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EIOBufferError {
@@ -11,7 +11,7 @@ pub enum EIOBufferError {
     IOBuffer_Permission = 105i32,
     IOBuffer_Success = 0i32,
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferError")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferError")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EIOBufferError {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EIOBufferError {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferError")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferError")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EIOBufferError {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EIOBufferErr
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferError")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferError")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EIOBufferError {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EIOBufferEr
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferError")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferError")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EIOBufferError {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EIOBufferErr
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EIOBufferError")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EIOBufferError")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EIOBufferError {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

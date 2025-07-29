@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRSpaceQuery")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSpaceQuery {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRSpaceQuery")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSpaceQuery {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSpaceQuer
         false
     }
 }
-#[cfg(feature = "OVRSpaceQuery")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSpaceQuery {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSpaceQuery")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSpaceQuery {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::OVRSpaceQuery {
     #[cfg(feature = "OVRSpaceQuery+Options")]
     pub type Options = crate::GlobalNamespace::OVRSpaceQuery_Options;
 }
-#[cfg(feature = "OVRSpaceQuery")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpaceQuery {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -50,7 +50,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpaceQuery
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSpaceQuery+Options")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpaceQuery_Options {
@@ -64,7 +64,7 @@ pub struct OVRSpaceQuery_Options {
         crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
     >,
 }
-#[cfg(feature = "OVRSpaceQuery+Options")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Held<'a> = Self;
@@ -94,7 +94,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpaceQuery+Options")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Type = Self;
@@ -105,7 +105,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpaceQuery+Options")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Actual = Self;
@@ -119,7 +119,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
         self
     }
 }
-#[cfg(feature = "OVRSpaceQuery+Options")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Type = Self;
@@ -134,7 +134,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
         }
     }
 }
-#[cfg(feature = "OVRSpaceQuery+Options")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Actual = Self;
@@ -148,7 +148,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
         actual
     }
 }
-#[cfg(feature = "OVRSpaceQuery+Options")]
+#[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Type = Self;

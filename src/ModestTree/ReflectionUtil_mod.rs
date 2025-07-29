@@ -1,10 +1,10 @@
-#[cfg(feature = "ModestTree+ReflectionUtil")]
+#[cfg(feature = "cordl_class_ModestTree+ReflectionUtil")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionUtil {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ModestTree+ReflectionUtil")]
+#[cfg(feature = "cordl_class_ModestTree+ReflectionUtil")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ModestTree::ReflectionUtil {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ModestTree::ReflectionUtil {
         false
     }
 }
-#[cfg(feature = "ModestTree+ReflectionUtil")]
+#[cfg(feature = "cordl_class_ModestTree+ReflectionUtil")]
 impl std::ops::Deref for crate::ModestTree::ReflectionUtil {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ModestTree+ReflectionUtil")]
+#[cfg(feature = "cordl_class_ModestTree+ReflectionUtil")]
 impl std::ops::DerefMut for crate::ModestTree::ReflectionUtil {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -573,7 +573,7 @@ impl crate::ModestTree::ReflectionUtil {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ModestTree+ReflectionUtil")]
+#[cfg(feature = "cordl_class_ModestTree+ReflectionUtil")]
 impl quest_hook::libil2cpp::ObjectType for crate::ModestTree::ReflectionUtil {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

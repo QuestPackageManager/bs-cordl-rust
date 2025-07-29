@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AssemblyFullName")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyFullName")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AssemblyFullName {
@@ -7,7 +7,7 @@ pub struct AssemblyFullName {
     pub PublicKeyToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Culture: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+AssemblyFullName")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyFullName")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AssemblyFullName {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AssemblyFullName
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyFullName")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyFullName")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AssemblyFullName {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AssemblyFull
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyFullName")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyFullName")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AssemblyFullName {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AssemblyFul
         self
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyFullName")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyFullName")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AssemblyFullName {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AssemblyFull
         }
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyFullName")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyFullName")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AssemblyFullName {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AssemblyFullNa
         actual
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyFullName")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyFullName")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::AssemblyFullName {
     type Type = Self;

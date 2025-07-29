@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+ZenInjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+ZenInjectMethod")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenInjectMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Zenject+ZenInjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+ZenInjectMethod")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenInjectMethod {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenInjectMethod {
         false
     }
 }
-#[cfg(feature = "Zenject+ZenInjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+ZenInjectMethod")]
 impl std::ops::Deref for crate::Zenject::ZenInjectMethod {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ZenInjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+ZenInjectMethod")]
 impl std::ops::DerefMut for crate::Zenject::ZenInjectMethod {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -199,7 +199,7 @@ impl crate::Zenject::ZenInjectMethod {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ZenInjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+ZenInjectMethod")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenInjectMethod {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

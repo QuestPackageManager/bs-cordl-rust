@@ -1,4 +1,4 @@
-#[cfg(feature = "StaticEnvironmentLights")]
+#[cfg(feature = "cordl_class_StaticEnvironmentLights")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticEnvironmentLights {
@@ -12,7 +12,7 @@ pub struct StaticEnvironmentLights {
         >,
     >,
 }
-#[cfg(feature = "StaticEnvironmentLights")]
+#[cfg(feature = "cordl_class_StaticEnvironmentLights")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StaticEnvironmentLights {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::StaticEnvironmentLights {
         false
     }
 }
-#[cfg(feature = "StaticEnvironmentLights")]
+#[cfg(feature = "cordl_class_StaticEnvironmentLights")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticEnvironmentLights {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StaticEnvironmentLights")]
+#[cfg(feature = "cordl_class_StaticEnvironmentLights")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StaticEnvironmentLights {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::StaticEnvironmentLights {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StaticEnvironmentLights")]
+#[cfg(feature = "cordl_class_StaticEnvironmentLights")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StaticEnvironmentLights {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

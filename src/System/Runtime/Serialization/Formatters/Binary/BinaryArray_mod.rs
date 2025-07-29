@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryArray")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryArray"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryArray {
@@ -13,7 +15,9 @@ pub struct BinaryArray {
     pub binaryHeaderEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum,
     pub binaryArrayTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryArrayTypeEnum,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryArray")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryArray"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +37,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryArray")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryArray"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -41,7 +47,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryArray")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryArray"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -235,7 +243,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryArray")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryArray"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

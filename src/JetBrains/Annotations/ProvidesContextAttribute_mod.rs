@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+ProvidesContextAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ProvidesContextAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProvidesContextAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+ProvidesContextAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ProvidesContextAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::ProvidesContextAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::ProvidesContextAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ProvidesContextAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ProvidesContextAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::ProvidesContextAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ProvidesContextAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ProvidesContextAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::ProvidesContextAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::JetBrains::Annotations::ProvidesContextAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ProvidesContextAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ProvidesContextAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::ProvidesContextAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

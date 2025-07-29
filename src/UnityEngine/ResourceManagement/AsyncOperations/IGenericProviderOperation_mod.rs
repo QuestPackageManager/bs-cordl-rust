@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct IGenericProviderOperation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {
@@ -29,7 +29,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOpe
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {
@@ -39,7 +39,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOpe
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {
@@ -450,7 +450,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+AccessControl+ResourceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+ResourceType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ResourceType {
@@ -17,7 +17,7 @@ pub enum ResourceType {
     WindowObject = 7i32,
     WmiGuidObject = 11i32,
 }
-#[cfg(feature = "System+Security+AccessControl+ResourceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::ResourceType {
     type Held<'a> = Self;
@@ -47,7 +47,7 @@ for crate::System::Security::AccessControl::ResourceType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+ResourceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::AccessControl::ResourceType {
     type Type = Self;
@@ -58,7 +58,7 @@ for crate::System::Security::AccessControl::ResourceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+AccessControl+ResourceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::AccessControl::ResourceType {
     type Actual = Self;
@@ -72,7 +72,7 @@ for crate::System::Security::AccessControl::ResourceType {
         self
     }
 }
-#[cfg(feature = "System+Security+AccessControl+ResourceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::AccessControl::ResourceType {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::System::Security::AccessControl::ResourceType {
         }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+ResourceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::AccessControl::ResourceType {
     type Actual = Self;

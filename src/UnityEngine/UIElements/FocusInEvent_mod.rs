@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+FocusInEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusInEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FocusInEvent {
@@ -6,7 +6,7 @@ pub struct FocusInEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusInEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusInEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusInEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::FocusInEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::FocusInEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusInEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusInEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FocusInEvent {
     type Target = crate::UnityEngine::UIElements::FocusEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusInEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::FocusInEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusInEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusInEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FocusInEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::UnityEngine::UIElements::FocusInEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusInEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusInEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::FocusInEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

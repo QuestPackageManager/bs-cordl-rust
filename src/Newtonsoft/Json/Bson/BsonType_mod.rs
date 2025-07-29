@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonType")]
 #[repr(i8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BsonType {
@@ -24,7 +24,7 @@ pub enum BsonType {
     TimeStamp = 17i8,
     Undefined = 6i8,
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Bson::BsonType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Bson::BsonT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::Bson::BsonType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::Bson::B
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Bson::BsonType {
     type Actual = Self;
@@ -77,7 +77,7 @@ for crate::Newtonsoft::Json::Bson::BsonType {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::Bson::BsonType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::Bson::B
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::Bson::BsonType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

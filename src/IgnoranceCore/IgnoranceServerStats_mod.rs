@@ -1,4 +1,4 @@
-#[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceServerStats")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceServerStats {
@@ -14,7 +14,7 @@ pub struct IgnoranceServerStats {
         >,
     >,
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceServerStats")]
 unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceServerStats {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceServe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceServerStats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceServerStats {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::IgnoranceCore::IgnoranceServerStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceServerStats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceServerStats {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::IgnoranceCore::IgnoranceServerStats {
         self
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceServerStats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceServerStats {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::IgnoranceCore::IgnoranceServerStats {
         }
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceServerStats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceServerStats {
     type Actual = Self;
@@ -97,7 +97,7 @@ for crate::IgnoranceCore::IgnoranceServerStats {
         actual
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceServerStats")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::IgnoranceCore::IgnoranceServerStats {
     type Type = Self;

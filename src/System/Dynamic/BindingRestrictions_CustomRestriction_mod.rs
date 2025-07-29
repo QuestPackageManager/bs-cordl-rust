@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Dynamic+BindingRestrictions+CustomRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+CustomRestriction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions_CustomRestriction {
@@ -7,7 +7,7 @@ pub struct BindingRestrictions_CustomRestriction {
         crate::System::Linq::Expressions::Expression,
     >,
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+CustomRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+CustomRestriction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BindingRestrictions_CustomRestriction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BindingRestrictions_CustomRestriction {
         false
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+CustomRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+CustomRestriction")]
 impl std::ops::Deref for crate::GlobalNamespace::BindingRestrictions_CustomRestriction {
     type Target = crate::System::Dynamic::BindingRestrictions;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+CustomRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+CustomRestriction")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BindingRestrictions_CustomRestriction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -157,7 +157,7 @@ impl crate::GlobalNamespace::BindingRestrictions_CustomRestriction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+CustomRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+CustomRestriction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BindingRestrictions_CustomRestriction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

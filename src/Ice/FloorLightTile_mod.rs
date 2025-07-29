@@ -1,4 +1,4 @@
-#[cfg(feature = "Ice+FloorLightTile")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightTile {
@@ -18,7 +18,7 @@ pub struct FloorLightTile {
     pub _fadeInTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
     pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
-#[cfg(feature = "Ice+FloorLightTile")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile {
         false
     }
 }
-#[cfg(feature = "Ice+FloorLightTile")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile")]
 impl std::ops::Deref for crate::Ice::FloorLightTile {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Ice+FloorLightTile")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile")]
 impl std::ops::DerefMut for crate::Ice::FloorLightTile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -230,7 +230,7 @@ impl crate::Ice::FloorLightTile {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Ice+FloorLightTile")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile")]
 impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightTile {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -239,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightTile {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Ice+FloorLightTile+Pool")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightTile_Pool {
@@ -247,7 +247,7 @@ pub struct FloorLightTile_Pool {
         quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
     >,
 }
-#[cfg(feature = "Ice+FloorLightTile+Pool")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile+Pool")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -266,7 +266,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile_Pool {
         false
     }
 }
-#[cfg(feature = "Ice+FloorLightTile+Pool")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile+Pool")]
 impl std::ops::Deref for crate::Ice::FloorLightTile_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
@@ -275,7 +275,7 @@ impl std::ops::Deref for crate::Ice::FloorLightTile_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Ice+FloorLightTile+Pool")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile+Pool")]
 impl std::ops::DerefMut for crate::Ice::FloorLightTile_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -312,7 +312,7 @@ impl crate::Ice::FloorLightTile_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Ice+FloorLightTile+Pool")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTile+Pool")]
 impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightTile_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

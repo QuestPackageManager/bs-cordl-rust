@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+InstantHandleAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+InstantHandleAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstantHandleAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+InstantHandleAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+InstantHandleAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::InstantHandleAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::InstantHandleAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+InstantHandleAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+InstantHandleAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::InstantHandleAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+InstantHandleAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+InstantHandleAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::InstantHandleAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::JetBrains::Annotations::InstantHandleAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+InstantHandleAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+InstantHandleAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::InstantHandleAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

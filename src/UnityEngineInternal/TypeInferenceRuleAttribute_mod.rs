@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRuleAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeInferenceRuleAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _rule: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRuleAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngineInternal::TypeInferenceRuleAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngineInternal::TypeInferenceRuleAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRuleAttribute")]
 impl std::ops::Deref for crate::UnityEngineInternal::TypeInferenceRuleAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRuleAttribute")]
 impl std::ops::DerefMut for crate::UnityEngineInternal::TypeInferenceRuleAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::UnityEngineInternal::TypeInferenceRuleAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRuleAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngineInternal::TypeInferenceRuleAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

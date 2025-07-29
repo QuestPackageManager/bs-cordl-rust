@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlUnionConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUnionConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlUnionConverter {
@@ -11,7 +11,7 @@ pub struct XmlUnionConverter {
     pub hasAtomicMember: bool,
     pub hasListMember: bool,
 }
-#[cfg(feature = "System+Xml+Schema+XmlUnionConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUnionConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlUnionConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Xml::Schema::XmlUnionConverter {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlUnionConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUnionConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlUnionConverter {
     type Target = crate::System::Xml::Schema::XmlBaseConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlUnionConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUnionConverter")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlUnionConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -156,7 +156,7 @@ impl crate::System::Xml::Schema::XmlUnionConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlUnionConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlUnionConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlUnionConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

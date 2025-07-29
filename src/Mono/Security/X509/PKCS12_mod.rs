@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+X509+PKCS12")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS12 {
@@ -18,7 +18,7 @@ pub struct PKCS12 {
         crate::System::Security::Cryptography::RandomNumberGenerator,
     >,
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::X509::PKCS12 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::X509::PKCS12 
         false
     }
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12")]
 impl std::ops::Deref for crate::Mono::Security::X509::PKCS12 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12")]
 impl std::ops::DerefMut for crate::Mono::Security::X509::PKCS12 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -978,7 +978,7 @@ impl crate::Mono::Security::X509::PKCS12 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::PKCS12 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -999,7 +999,7 @@ impl AsMut<crate::System::ICloneable> for crate::Mono::Security::X509::PKCS12 {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12+DeriveBytes")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS12_DeriveBytes {
@@ -1009,7 +1009,7 @@ pub struct PKCS12_DeriveBytes {
     pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12+DeriveBytes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::X509::PKCS12_DeriveBytes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1029,14 +1029,14 @@ for crate::Mono::Security::X509::PKCS12_DeriveBytes {
         false
     }
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12+DeriveBytes")]
 impl std::ops::Deref for crate::Mono::Security::X509::PKCS12_DeriveBytes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12+DeriveBytes")]
 impl std::ops::DerefMut for crate::Mono::Security::X509::PKCS12_DeriveBytes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1343,7 +1343,7 @@ impl crate::Mono::Security::X509::PKCS12_DeriveBytes {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12+DeriveBytes")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::X509::PKCS12_DeriveBytes {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

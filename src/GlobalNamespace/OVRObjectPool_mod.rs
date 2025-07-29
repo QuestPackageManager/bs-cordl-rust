@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRObjectPool")]
+#[cfg(feature = "cordl_class_OVRObjectPool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRObjectPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRObjectPool")]
+#[cfg(feature = "cordl_class_OVRObjectPool")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRObjectPool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRObjectPoo
         false
     }
 }
-#[cfg(feature = "OVRObjectPool")]
+#[cfg(feature = "cordl_class_OVRObjectPool")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRObjectPool {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRObjectPool")]
+#[cfg(feature = "cordl_class_OVRObjectPool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRObjectPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -373,7 +373,7 @@ impl crate::GlobalNamespace::OVRObjectPool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRObjectPool")]
+#[cfg(feature = "cordl_class_OVRObjectPool")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRObjectPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -382,7 +382,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRObjectPool
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+#[cfg(feature = "cordl_class_OVRObjectPool+DictionaryScope_2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRObjectPool_DictionaryScope_2<
@@ -395,7 +395,7 @@ pub struct OVRObjectPool_DictionaryScope_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+#[cfg(feature = "cordl_class_OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -444,7 +444,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+#[cfg(feature = "cordl_class_OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -458,7 +458,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+#[cfg(feature = "cordl_class_OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -475,7 +475,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
         self
     }
 }
-#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+#[cfg(feature = "cordl_class_OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -493,7 +493,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
         }
     }
 }
-#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+#[cfg(feature = "cordl_class_OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -510,7 +510,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
         actual
     }
 }
-#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+#[cfg(feature = "cordl_class_OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -620,7 +620,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
         todo!()
     }
 }
-#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+HashSetScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRObjectPool_HashSetScope_1<T: quest_hook::libil2cpp::Type> {
@@ -629,7 +629,7 @@ pub struct OVRObjectPool_HashSetScope_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Held<'a> = Self;
@@ -675,7 +675,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Type = Self;
@@ -686,7 +686,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Actual = Self;
@@ -700,7 +700,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
         self
     }
 }
-#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Type = Self;
@@ -715,7 +715,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
         }
     }
 }
-#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Actual = Self;
@@ -729,7 +729,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
         actual
     }
 }
-#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Type = Self;
@@ -820,14 +820,14 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ItemScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRObjectPool_ItemScope_1<T: quest_hook::libil2cpp::Type> {
     pub _item: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Held<'a> = Self;
@@ -870,7 +870,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Type = Self;
@@ -881,7 +881,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Actual = Self;
@@ -895,7 +895,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
         self
     }
 }
-#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Type = Self;
@@ -910,7 +910,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
         }
     }
 }
-#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Actual = Self;
@@ -924,7 +924,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
         actual
     }
 }
-#[cfg(feature = "OVRObjectPool+ItemScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Type = Self;
@@ -1009,14 +1009,14 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "OVRObjectPool+ListScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ListScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRObjectPool_ListScope_1<T: quest_hook::libil2cpp::Type> {
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OVRObjectPool+ListScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Held<'a> = Self;
@@ -1059,7 +1059,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRObjectPool+ListScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Type = Self;
@@ -1070,7 +1070,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRObjectPool+ListScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Actual = Self;
@@ -1084,7 +1084,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
         self
     }
 }
-#[cfg(feature = "OVRObjectPool+ListScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Type = Self;
@@ -1099,7 +1099,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
         }
     }
 }
-#[cfg(feature = "OVRObjectPool+ListScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Actual = Self;
@@ -1113,7 +1113,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
         actual
     }
 }
-#[cfg(feature = "OVRObjectPool+ListScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Type = Self;
@@ -1204,7 +1204,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+QueueScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRObjectPool_QueueScope_1<T: quest_hook::libil2cpp::Type> {
@@ -1213,7 +1213,7 @@ pub struct OVRObjectPool_QueueScope_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Held<'a> = Self;
@@ -1259,7 +1259,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Type = Self;
@@ -1270,7 +1270,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Actual = Self;
@@ -1284,7 +1284,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
         self
     }
 }
-#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Type = Self;
@@ -1299,7 +1299,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
         }
     }
 }
-#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Actual = Self;
@@ -1313,7 +1313,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
         actual
     }
 }
-#[cfg(feature = "OVRObjectPool+QueueScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Type = Self;
@@ -1404,7 +1404,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "OVRObjectPool+StackScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+StackScope_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRObjectPool_StackScope_1<T: quest_hook::libil2cpp::Type> {
@@ -1413,7 +1413,7 @@ pub struct OVRObjectPool_StackScope_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OVRObjectPool+StackScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Held<'a> = Self;
@@ -1459,7 +1459,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRObjectPool+StackScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Type = Self;
@@ -1470,7 +1470,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRObjectPool+StackScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Actual = Self;
@@ -1484,7 +1484,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
         self
     }
 }
-#[cfg(feature = "OVRObjectPool+StackScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Type = Self;
@@ -1499,7 +1499,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
         }
     }
 }
-#[cfg(feature = "OVRObjectPool+StackScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Actual = Self;
@@ -1513,7 +1513,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
         actual
     }
 }
-#[cfg(feature = "OVRObjectPool+StackScope_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Type = Self;
@@ -1604,14 +1604,14 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "OVRObjectPool+Storage_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+Storage_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRObjectPool_Storage_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OVRObjectPool+Storage_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+Storage_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1644,7 +1644,7 @@ for crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {
         false
     }
 }
-#[cfg(feature = "OVRObjectPool+Storage_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+Storage_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1652,7 +1652,7 @@ for crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRObjectPool+Storage_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+Storage_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1661,7 +1661,7 @@ for crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {
 }
 #[cfg(feature = "OVRObjectPool+Storage_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {}
-#[cfg(feature = "OVRObjectPool+Storage_1")]
+#[cfg(feature = "cordl_class_OVRObjectPool+Storage_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

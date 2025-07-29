@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Proxies+TransparentProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+TransparentProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransparentProxy {
@@ -9,7 +9,7 @@ pub struct TransparentProxy {
     pub _class: crate::Mono::RuntimeRemoteClassHandle,
     pub _custom_type_info: bool,
 }
-#[cfg(feature = "System+Runtime+Remoting+Proxies+TransparentProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+TransparentProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Proxies::TransparentProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Runtime::Remoting::Proxies::TransparentProxy {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Proxies+TransparentProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+TransparentProxy")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Proxies::TransparentProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Proxies+TransparentProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+TransparentProxy")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Proxies::TransparentProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -226,7 +226,7 @@ impl crate::System::Runtime::Remoting::Proxies::TransparentProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Proxies+TransparentProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+TransparentProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Proxies::TransparentProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

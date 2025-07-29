@@ -1,4 +1,4 @@
-#[cfg(feature = "LufsMetering+FilterCoefficients")]
+#[cfg(feature = "cordl_class_LufsMetering+FilterCoefficients")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FilterCoefficients {
@@ -9,7 +9,7 @@ pub struct FilterCoefficients {
     pub b1: f32,
     pub b2: f32,
 }
-#[cfg(feature = "LufsMetering+FilterCoefficients")]
+#[cfg(feature = "cordl_class_LufsMetering+FilterCoefficients")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::FilterCoefficients {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::FilterCoefficie
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LufsMetering+FilterCoefficients")]
+#[cfg(feature = "cordl_class_LufsMetering+FilterCoefficients")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LufsMetering::FilterCoefficients {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LufsMetering::FilterCoeff
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LufsMetering+FilterCoefficients")]
+#[cfg(feature = "cordl_class_LufsMetering+FilterCoefficients")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LufsMetering::FilterCoefficients {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::LufsMetering::FilterCoefficients {
         self
     }
 }
-#[cfg(feature = "LufsMetering+FilterCoefficients")]
+#[cfg(feature = "cordl_class_LufsMetering+FilterCoefficients")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::FilterCoefficients {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::FilterCoeff
         }
     }
 }
-#[cfg(feature = "LufsMetering+FilterCoefficients")]
+#[cfg(feature = "cordl_class_LufsMetering+FilterCoefficients")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::FilterCoefficients {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::FilterCoeffic
         actual
     }
 }
-#[cfg(feature = "LufsMetering+FilterCoefficients")]
+#[cfg(feature = "cordl_class_LufsMetering+FilterCoefficients")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LufsMetering::FilterCoefficients {
     type Type = Self;

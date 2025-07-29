@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Principal+WindowsImpersonationContext")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsImpersonationContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WindowsImpersonationContext {
@@ -6,7 +6,7 @@ pub struct WindowsImpersonationContext {
     pub _token: crate::System::IntPtr,
     pub undo: bool,
 }
-#[cfg(feature = "System+Security+Principal+WindowsImpersonationContext")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsImpersonationContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Principal::WindowsImpersonationContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::System::Security::Principal::WindowsImpersonationContext {
         false
     }
 }
-#[cfg(feature = "System+Security+Principal+WindowsImpersonationContext")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsImpersonationContext")]
 impl std::ops::Deref
 for crate::System::Security::Principal::WindowsImpersonationContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::System::Security::Principal::WindowsImpersonationContext {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Principal+WindowsImpersonationContext")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsImpersonationContext")]
 impl std::ops::DerefMut
 for crate::System::Security::Principal::WindowsImpersonationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -213,7 +213,7 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Principal+WindowsImpersonationContext")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsImpersonationContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Principal::WindowsImpersonationContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

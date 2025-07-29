@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CollisionPairEventFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairEventFlags")]
 #[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollisionPairEventFlags {
@@ -22,7 +22,7 @@ pub enum CollisionPairEventFlags {
     SolveContacts = 1u16,
     TriggerDefault = 1044u16,
 }
-#[cfg(feature = "UnityEngine+CollisionPairEventFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairEventFlags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CollisionPairEventFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -51,7 +51,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CollisionPairEve
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairEventFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairEventFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::CollisionPairEventFlags {
     type Type = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::CollisionPairEventFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairEventFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairEventFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::CollisionPairEventFlags {
     type Actual = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::CollisionPairEventFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairEventFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairEventFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::CollisionPairEventFlags {
     type Type = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::CollisionPairEventFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairEventFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairEventFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::CollisionPairEventFlags {
     type Actual = Self;

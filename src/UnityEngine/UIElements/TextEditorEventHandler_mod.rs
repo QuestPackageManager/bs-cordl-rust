@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextEditorEventHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextEditorEventHandler {
@@ -10,7 +10,7 @@ pub struct TextEditorEventHandler {
         crate::UnityEngine::TextEditingUtilities,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextEditorEventHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TextEditorEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::UnityEngine::UIElements::TextEditorEventHandler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextEditorEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextEditorEventHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextEditorEventHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextEditorEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::UnityEngine::UIElements::TextEditorEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextEditorEventHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TextEditorEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

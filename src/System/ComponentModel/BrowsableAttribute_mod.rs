@@ -1,11 +1,11 @@
-#[cfg(feature = "System+ComponentModel+BrowsableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BrowsableAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BrowsableAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Browsable_k__BackingField: bool,
 }
-#[cfg(feature = "System+ComponentModel+BrowsableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BrowsableAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::BrowsableAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::ComponentModel::BrowsableAttribute {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+BrowsableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BrowsableAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::BrowsableAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+BrowsableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BrowsableAttribute")]
 impl std::ops::DerefMut for crate::System::ComponentModel::BrowsableAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::System::ComponentModel::BrowsableAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+BrowsableAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BrowsableAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::BrowsableAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

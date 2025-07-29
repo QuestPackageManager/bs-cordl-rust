@@ -1,10 +1,10 @@
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBombNoteController {
     __cordl_parent: crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
     type Target = crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -116,7 +116,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBombNoteController_Pool {
@@ -126,7 +126,7 @@ pub struct MultiplayerConnectedPlayerBombNoteController_Pool {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -146,7 +146,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController+Pool")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
@@ -158,7 +158,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController+Pool")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -196,7 +196,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBombNoteController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

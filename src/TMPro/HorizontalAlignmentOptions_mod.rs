@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+HorizontalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+HorizontalAlignmentOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HorizontalAlignmentOptions {
@@ -10,7 +10,7 @@ pub enum HorizontalAlignmentOptions {
     Left = 1i32,
     Right = 4i32,
 }
-#[cfg(feature = "TMPro+HorizontalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+HorizontalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::HorizontalAlignmentOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::HorizontalAlignmentOpt
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+HorizontalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+HorizontalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::HorizontalAlignmentOptions {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::TMPro::HorizontalAlignmentOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+HorizontalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+HorizontalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::HorizontalAlignmentOptions {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::TMPro::HorizontalAlignmentOptions {
         self
     }
 }
-#[cfg(feature = "TMPro+HorizontalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+HorizontalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::HorizontalAlignmentOptions {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::TMPro::HorizontalAlignmentOptions {
         }
     }
 }
-#[cfg(feature = "TMPro+HorizontalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+HorizontalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::HorizontalAlignmentOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

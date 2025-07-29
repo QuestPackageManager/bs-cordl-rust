@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement {
@@ -108,7 +108,7 @@ pub struct VisualElement {
         crate::UnityEngine::UIElements::VisualElement_TypeData,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -128,14 +128,14 @@ for crate::UnityEngine::UIElements::VisualElement {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement {
     type Target = crate::UnityEngine::UIElements::Focusable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8968,7 +8968,7 @@ impl crate::UnityEngine::UIElements::VisualElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9070,7 +9070,9 @@ for crate::UnityEngine::UIElements::VisualElement {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement_BaseVisualElementScheduledItem {
@@ -9083,7 +9085,9 @@ pub struct VisualElement_BaseVisualElementScheduledItem {
         crate::UnityEngine::UIElements::VisualElementPanelActivator,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9103,7 +9107,9 @@ for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
     type Target = crate::UnityEngine::UIElements::ScheduledItem;
@@ -9111,7 +9117,9 @@ for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9439,7 +9447,9 @@ impl crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledIte
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9481,7 +9491,7 @@ for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement_CustomStyleAccess {
@@ -9494,7 +9504,7 @@ pub struct VisualElement_CustomStyleAccess {
     >,
     pub m_DpiScaling: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9514,7 +9524,7 @@ for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9522,7 +9532,7 @@ for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9929,7 +9939,7 @@ impl crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9953,7 +9963,7 @@ for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+Hierarchy")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualElement_Hierarchy {
@@ -9961,7 +9971,7 @@ pub struct VisualElement_Hierarchy {
         crate::UnityEngine::UIElements::VisualElement,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Held<'a> = Self;
@@ -9991,7 +10001,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Type = Self;
@@ -10002,7 +10012,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Actual = Self;
@@ -10016,7 +10026,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Type = Self;
@@ -10031,7 +10041,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Actual = Self;
@@ -10045,7 +10055,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Type = Self;
@@ -10768,7 +10778,7 @@ impl crate::UnityEngine::UIElements::VisualElement_Hierarchy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+MeasureMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VisualElement_MeasureMode {
@@ -10777,7 +10787,7 @@ pub enum VisualElement_MeasureMode {
     Exactly = 1i32,
     Undefined = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Held<'a> = Self;
@@ -10807,7 +10817,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Type = Self;
@@ -10818,7 +10828,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Actual = Self;
@@ -10832,7 +10842,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Type = Self;
@@ -10847,7 +10857,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Actual = Self;
@@ -10861,7 +10871,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VisualElement_RenderTargetMode {
@@ -10871,7 +10881,7 @@ pub enum VisualElement_RenderTargetMode {
     NoColorConversion = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Held<'a> = Self;
@@ -10901,7 +10911,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Type = Self;
@@ -10912,7 +10922,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Actual = Self;
@@ -10926,7 +10936,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Type = Self;
@@ -10941,7 +10951,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Actual = Self;
@@ -10955,7 +10965,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement_SimpleScheduledItem {
@@ -10963,7 +10973,7 @@ pub struct VisualElement_SimpleScheduledItem {
         quest_hook::libil2cpp::Gc<crate::System::Action>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10983,7 +10993,7 @@ for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
     type Target = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
@@ -10993,7 +11003,7 @@ for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -11075,7 +11085,7 @@ impl crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -11085,7 +11095,9 @@ for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+TimerStateScheduledItem"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement_TimerStateScheduledItem {
@@ -11095,7 +11107,9 @@ pub struct VisualElement_TimerStateScheduledItem {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+TimerStateScheduledItem"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -11115,7 +11129,9 @@ for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+TimerStateScheduledItem"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
     type Target = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
@@ -11127,7 +11143,9 @@ for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+TimerStateScheduledItem"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -11217,7 +11235,9 @@ impl crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+TimerStateScheduledItem"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -11227,7 +11247,7 @@ for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+TypeData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement_TypeData {
@@ -11237,7 +11257,7 @@ pub struct VisualElement_TypeData {
     pub m_TypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_TypeNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+TypeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_TypeData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -11257,14 +11277,14 @@ for crate::UnityEngine::UIElements::VisualElement_TypeData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+TypeData")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_TypeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+TypeData")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_TypeData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -11414,7 +11434,7 @@ impl crate::UnityEngine::UIElements::VisualElement_TypeData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+TypeData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement_TypeData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -11424,7 +11444,7 @@ for crate::UnityEngine::UIElements::VisualElement_TypeData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement_UxmlFactory {
@@ -11435,7 +11455,7 @@ pub struct VisualElement_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -11455,7 +11475,7 @@ for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -11467,7 +11487,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlFacto
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -11504,7 +11524,7 @@ impl crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -11514,7 +11534,7 @@ for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement_UxmlTraits {
@@ -11557,7 +11577,7 @@ pub struct VisualElement_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -11577,14 +11597,14 @@ for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -11719,7 +11739,7 @@ impl crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -11729,7 +11749,9 @@ for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElement_VisualElementScheduledItem_1<
@@ -11739,7 +11761,9 @@ pub struct VisualElement_VisualElementScheduledItem_1<
     pub updateEvent: ActionType,
     __cordl_phantom_ActionType: std::marker::PhantomData<ActionType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1"
+)]
 unsafe impl<ActionType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
     ActionType,
@@ -11777,7 +11801,9 @@ for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1"
+)]
 impl<ActionType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
     ActionType,
@@ -11787,7 +11813,9 @@ for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1"
+)]
 impl<ActionType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
     ActionType,
@@ -11857,7 +11885,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1"
+)]
 impl<ActionType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
     ActionType,

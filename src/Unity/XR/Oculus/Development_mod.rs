@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+XR+Oculus+Development")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Development {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+XR+Oculus+Development")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Development {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Developmen
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Development")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Development {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Development")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Development {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::Unity::XR::Oculus::Development {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Development")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Development {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -125,7 +125,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Development
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Development_UserDeveloperModeSettingCache {
@@ -134,7 +134,7 @@ pub enum Development_UserDeveloperModeSettingCache {
     UserSettingFalse = 1i32,
     UserSettingTrue = 2i32,
 }
-#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Held<'a> = Self;
@@ -164,7 +164,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Type = Self;
@@ -175,7 +175,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Actual = Self;
@@ -189,7 +189,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
         self
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Type = Self;
@@ -204,7 +204,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
         }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Actual = Self;

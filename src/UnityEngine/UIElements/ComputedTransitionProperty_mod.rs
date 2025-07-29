@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionProperty")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ComputedTransitionProperty {
@@ -7,7 +7,7 @@ pub struct ComputedTransitionProperty {
     pub delayMs: i32,
     pub easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
 }
-#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionProperty")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ComputedTransitionProperty {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::UIElements::ComputedTransitionProperty {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionProperty")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ComputedTransitionProperty {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::UIElements::ComputedTransitionProperty {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionProperty")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ComputedTransitionProperty {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::ComputedTransitionProperty {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionProperty")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ComputedTransitionProperty {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::UIElements::ComputedTransitionProperty {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionProperty")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ComputedTransitionProperty {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::UIElements::ComputedTransitionProperty {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionProperty")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::ComputedTransitionProperty {
     type Type = Self;

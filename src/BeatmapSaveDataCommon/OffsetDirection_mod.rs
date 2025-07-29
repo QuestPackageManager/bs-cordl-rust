@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataCommon+OffsetDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+OffsetDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OffsetDirection {
@@ -13,7 +13,7 @@ pub enum OffsetDirection {
     UpLeft = 4i32,
     UpRight = 5i32,
 }
-#[cfg(feature = "BeatmapSaveDataCommon+OffsetDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+OffsetDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataCommon::OffsetDirection {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::BeatmapSaveDataCommon::OffsetDirection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+OffsetDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+OffsetDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::OffsetDirection {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::BeatmapSaveDataCommon::OffsetDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+OffsetDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+OffsetDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::OffsetDirection {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::BeatmapSaveDataCommon::OffsetDirection {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+OffsetDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+OffsetDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::OffsetDirection {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::BeatmapSaveDataCommon::OffsetDirection {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+OffsetDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+OffsetDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::OffsetDirection {
     type Actual = Self;

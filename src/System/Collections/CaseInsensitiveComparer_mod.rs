@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CaseInsensitiveComparer {
@@ -7,7 +7,7 @@ pub struct CaseInsensitiveComparer {
         crate::System::Globalization::CompareInfo,
     >,
 }
-#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::CaseInsensitiveComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Collections::CaseInsensitiveComparer {
         false
     }
 }
-#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveComparer")]
 impl std::ops::Deref for crate::System::Collections::CaseInsensitiveComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveComparer")]
 impl std::ops::DerefMut for crate::System::Collections::CaseInsensitiveComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -142,7 +142,7 @@ impl crate::System::Collections::CaseInsensitiveComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
+#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::CaseInsensitiveComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

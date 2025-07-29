@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRInput")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRInput {
@@ -57,7 +57,7 @@ pub struct IVRInput {
         crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRInput {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRInput {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRInput {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -96,7 +96,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRInput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRInput {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -109,7 +109,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRInput {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRInput {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -123,7 +123,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRInput {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRInput {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -136,7 +136,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRInput {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRInput {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -185,13 +185,13 @@ impl crate::OVR::OpenVR::IVRInput {
     #[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]
     pub type _UpdateActionState = crate::OVR::OpenVR::IVRInput__UpdateActionState;
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__DecompressSkeletalBoneData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -211,14 +211,14 @@ for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -433,7 +433,7 @@ impl crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -443,13 +443,13 @@ for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetActionHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetActionHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -469,14 +469,14 @@ for crate::OVR::OpenVR::IVRInput__GetActionHandle {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetActionHandle {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionHandle")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetActionHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -630,7 +630,7 @@ impl crate::OVR::OpenVR::IVRInput__GetActionHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionHandle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetActionHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -640,13 +640,13 @@ for crate::OVR::OpenVR::IVRInput__GetActionHandle {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionOrigins")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetActionOrigins {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionOrigins")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -666,14 +666,14 @@ for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionOrigins")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionOrigins")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -853,7 +853,7 @@ impl crate::OVR::OpenVR::IVRInput__GetActionOrigins {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionOrigins")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -863,13 +863,13 @@ for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionSetHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionSetHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetActionSetHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionSetHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionSetHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -889,14 +889,14 @@ for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionSetHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionSetHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionSetHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionSetHandle")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1050,7 +1050,7 @@ impl crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionSetHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionSetHandle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1060,13 +1060,13 @@ for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetAnalogActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetAnalogActionData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetAnalogActionData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetAnalogActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetAnalogActionData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1086,14 +1086,14 @@ for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetAnalogActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetAnalogActionData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetAnalogActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetAnalogActionData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1277,7 +1277,7 @@ impl crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetAnalogActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetAnalogActionData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1287,13 +1287,13 @@ for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetDigitalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetDigitalActionData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetDigitalActionData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetDigitalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetDigitalActionData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1313,14 +1313,14 @@ for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetDigitalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetDigitalActionData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetDigitalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetDigitalActionData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1504,7 +1504,7 @@ impl crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetDigitalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetDigitalActionData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1514,13 +1514,13 @@ for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetInputSourceHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1540,14 +1540,14 @@ for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1705,7 +1705,7 @@ impl crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1715,13 +1715,13 @@ for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetOriginLocalizedName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1741,14 +1741,14 @@ for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1906,7 +1906,7 @@ impl crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1916,13 +1916,13 @@ for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetOriginTrackedDeviceInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1942,14 +1942,14 @@ for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2119,7 +2119,7 @@ impl crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2129,13 +2129,13 @@ for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetPoseActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetPoseActionData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetPoseActionData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetPoseActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetPoseActionData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2155,14 +2155,14 @@ for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetPoseActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetPoseActionData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetPoseActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetPoseActionData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2363,7 +2363,7 @@ impl crate::OVR::OpenVR::IVRInput__GetPoseActionData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetPoseActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetPoseActionData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2373,13 +2373,13 @@ for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetSkeletalActionData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2399,14 +2399,14 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2590,7 +2590,7 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2600,13 +2600,13 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetSkeletalBoneData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2626,14 +2626,14 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2838,7 +2838,7 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2848,13 +2848,13 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__GetSkeletalBoneDataCompressed {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2874,14 +2874,14 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3077,7 +3077,7 @@ impl crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3087,13 +3087,13 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_SetActionManifestPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_SetActionManifestPath")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__SetActionManifestPath {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_SetActionManifestPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_SetActionManifestPath")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3113,14 +3113,14 @@ for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_SetActionManifestPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_SetActionManifestPath")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_SetActionManifestPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_SetActionManifestPath")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3266,7 +3266,7 @@ impl crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_SetActionManifestPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_SetActionManifestPath")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3276,13 +3276,13 @@ for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowActionOrigins")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__ShowActionOrigins {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowActionOrigins")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3302,14 +3302,14 @@ for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowActionOrigins")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowActionOrigins")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3455,7 +3455,7 @@ impl crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowActionOrigins")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowActionOrigins")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3465,13 +3465,13 @@ for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__ShowBindingsForActionSet {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3491,14 +3491,14 @@ for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3690,7 +3690,7 @@ impl crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3700,13 +3700,13 @@ for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__TriggerHapticVibrationAction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3726,14 +3726,14 @@ for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3911,7 +3911,7 @@ impl crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3921,13 +3921,13 @@ for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_UpdateActionState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRInput__UpdateActionState {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_UpdateActionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRInput__UpdateActionState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3947,14 +3947,14 @@ for crate::OVR::OpenVR::IVRInput__UpdateActionState {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_UpdateActionState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__UpdateActionState {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_UpdateActionState")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__UpdateActionState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4135,7 +4135,7 @@ impl crate::OVR::OpenVR::IVRInput__UpdateActionState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_UpdateActionState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRInput__UpdateActionState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

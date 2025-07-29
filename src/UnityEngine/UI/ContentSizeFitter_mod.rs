@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContentSizeFitter {
@@ -8,7 +8,7 @@ pub struct ContentSizeFitter {
     pub m_Rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ContentSizeFitter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ContentSizeF
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter")]
 impl std::ops::Deref for crate::UnityEngine::UI::ContentSizeFitter {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::ContentSizeFitter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -370,7 +370,7 @@ impl crate::UnityEngine::UI::ContentSizeFitter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ContentSizeFitter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -407,7 +407,7 @@ for crate::UnityEngine::UI::ContentSizeFitter {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter+FitMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ContentSizeFitter_FitMode {
@@ -416,7 +416,7 @@ pub enum ContentSizeFitter_FitMode {
     PreferredSize = 2i32,
     Unconstrained = 0i32,
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Held<'a> = Self;
@@ -446,7 +446,7 @@ for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Type = Self;
@@ -457,7 +457,7 @@ for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Actual = Self;
@@ -471,7 +471,7 @@ for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Type = Self;
@@ -486,7 +486,7 @@ for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Actual = Self;

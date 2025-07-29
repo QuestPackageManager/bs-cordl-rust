@@ -1,4 +1,4 @@
-#[cfg(feature = "PracticeViewController")]
+#[cfg(feature = "cordl_class_PracticeViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PracticeViewController {
@@ -46,7 +46,7 @@ pub struct PracticeViewController {
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
-#[cfg(feature = "PracticeViewController")]
+#[cfg(feature = "cordl_class_PracticeViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PracticeViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -66,14 +66,14 @@ for crate::GlobalNamespace::PracticeViewController {
         false
     }
 }
-#[cfg(feature = "PracticeViewController")]
+#[cfg(feature = "cordl_class_PracticeViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::PracticeViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PracticeViewController")]
+#[cfg(feature = "cordl_class_PracticeViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PracticeViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -491,7 +491,7 @@ impl crate::GlobalNamespace::PracticeViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PracticeViewController")]
+#[cfg(feature = "cordl_class_PracticeViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PracticeViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

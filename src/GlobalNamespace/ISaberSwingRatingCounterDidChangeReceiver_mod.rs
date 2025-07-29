@@ -1,10 +1,10 @@
-#[cfg(feature = "ISaberSwingRatingCounterDidChangeReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidChangeReceiver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISaberSwingRatingCounterDidChangeReceiver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ISaberSwingRatingCounterDidChangeReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidChangeReceiver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
         false
     }
 }
-#[cfg(feature = "ISaberSwingRatingCounterDidChangeReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidChangeReceiver")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ISaberSwingRatingCounterDidChangeReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidChangeReceiver")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ISaberSwingRatingCounterDidChangeReceiver")]
+#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidChangeReceiver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

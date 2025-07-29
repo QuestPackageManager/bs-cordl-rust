@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_Asset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Asset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Asset {
@@ -8,7 +8,7 @@ pub struct TMP_Asset {
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialHashCode: i32,
 }
-#[cfg(feature = "TMPro+TMP_Asset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Asset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Asset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Asset {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_Asset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Asset")]
 impl std::ops::Deref for crate::TMPro::TMP_Asset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_Asset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Asset")]
 impl std::ops::DerefMut for crate::TMPro::TMP_Asset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -88,7 +88,7 @@ impl crate::TMPro::TMP_Asset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Asset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Asset")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Asset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

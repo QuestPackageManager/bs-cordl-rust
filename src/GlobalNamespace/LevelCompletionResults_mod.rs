@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelCompletionResults")]
+#[cfg(feature = "cordl_class_LevelCompletionResults")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelCompletionResults {
@@ -31,7 +31,7 @@ pub struct LevelCompletionResults {
     pub endSongTime: f32,
     pub invalidated: bool,
 }
-#[cfg(feature = "LevelCompletionResults")]
+#[cfg(feature = "cordl_class_LevelCompletionResults")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelCompletionResults {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::GlobalNamespace::LevelCompletionResults {
         false
     }
 }
-#[cfg(feature = "LevelCompletionResults")]
+#[cfg(feature = "cordl_class_LevelCompletionResults")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCompletionResults {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelCompletionResults")]
+#[cfg(feature = "cordl_class_LevelCompletionResults")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelCompletionResults {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -410,7 +410,7 @@ impl crate::GlobalNamespace::LevelCompletionResults {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelCompletionResults")]
+#[cfg(feature = "cordl_class_LevelCompletionResults")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelCompletionResults {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -462,7 +462,7 @@ for crate::GlobalNamespace::LevelCompletionResults {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelCompletionResults_LevelEndAction {
@@ -471,7 +471,7 @@ pub enum LevelCompletionResults_LevelEndAction {
     Quit = 1i32,
     Restart = 2i32,
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Held<'a> = Self;
@@ -501,7 +501,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Type = Self;
@@ -512,7 +512,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Actual = Self;
@@ -526,7 +526,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
         self
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Type = Self;
@@ -541,7 +541,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
         }
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Actual = Self;
@@ -555,7 +555,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
         actual
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndStateType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelCompletionResults_LevelEndStateType {
@@ -564,7 +564,7 @@ pub enum LevelCompletionResults_LevelEndStateType {
     Failed = 2i32,
     Incomplete = 0i32,
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Held<'a> = Self;
@@ -594,7 +594,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Type = Self;
@@ -605,7 +605,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Actual = Self;
@@ -619,7 +619,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
         self
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Type = Self;
@@ -634,7 +634,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
         }
     }
 }
-#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
+#[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Actual = Self;

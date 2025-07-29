@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+GroupPresenceJoinIntent")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+GroupPresenceJoinIntent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupPresenceJoinIntent {
@@ -10,7 +10,7 @@ pub struct GroupPresenceJoinIntent {
     pub LobbySessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub MatchSessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "Oculus+Platform+Models+GroupPresenceJoinIntent")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+GroupPresenceJoinIntent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::GroupPresenceJoinIntent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Oculus::Platform::Models::GroupPresenceJoinIntent {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+GroupPresenceJoinIntent")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+GroupPresenceJoinIntent")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::GroupPresenceJoinIntent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+GroupPresenceJoinIntent")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+GroupPresenceJoinIntent")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::GroupPresenceJoinIntent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -81,7 +81,7 @@ impl crate::Oculus::Platform::Models::GroupPresenceJoinIntent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+GroupPresenceJoinIntent")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+GroupPresenceJoinIntent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::GroupPresenceJoinIntent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

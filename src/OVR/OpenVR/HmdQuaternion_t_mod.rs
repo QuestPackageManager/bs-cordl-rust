@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+HmdQuaternion_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+HmdQuaternion_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HmdQuaternion_t {
@@ -7,7 +7,7 @@ pub struct HmdQuaternion_t {
     pub y: f64,
     pub z: f64,
 }
-#[cfg(feature = "OVR+OpenVR+HmdQuaternion_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+HmdQuaternion_t")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::HmdQuaternion_t {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::HmdQuaternion_t 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+HmdQuaternion_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+HmdQuaternion_t")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::HmdQuaternion_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::HmdQuaternio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+HmdQuaternion_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+HmdQuaternion_t")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::HmdQuaternion_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::HmdQuaterni
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+HmdQuaternion_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+HmdQuaternion_t")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::HmdQuaternion_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::HmdQuaternio
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+HmdQuaternion_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+HmdQuaternion_t")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::HmdQuaternion_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::HmdQuaternion_
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+HmdQuaternion_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+HmdQuaternion_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::HmdQuaternion_t {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

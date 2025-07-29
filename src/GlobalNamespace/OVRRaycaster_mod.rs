@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRRaycaster")]
+#[cfg(feature = "cordl_class_OVRRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRRaycaster {
@@ -12,7 +12,7 @@ pub struct OVRRaycaster {
         >,
     >,
 }
-#[cfg(feature = "OVRRaycaster")]
+#[cfg(feature = "cordl_class_OVRRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRRaycaster {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRRaycaster
         false
     }
 }
-#[cfg(feature = "OVRRaycaster")]
+#[cfg(feature = "cordl_class_OVRRaycaster")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRRaycaster {
     type Target = crate::UnityEngine::UI::GraphicRaycaster;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRRaycaster")]
+#[cfg(feature = "cordl_class_OVRRaycaster")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -445,7 +445,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRRaycaster")]
+#[cfg(feature = "cordl_class_OVRRaycaster")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -482,7 +482,7 @@ for crate::GlobalNamespace::OVRRaycaster {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OVRRaycaster+RaycastHit")]
+#[cfg(feature = "cordl_class_OVRRaycaster+RaycastHit")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRRaycaster_RaycastHit {
@@ -490,7 +490,7 @@ pub struct OVRRaycaster_RaycastHit {
     pub worldPos: crate::UnityEngine::Vector3,
     pub fromMouse: bool,
 }
-#[cfg(feature = "OVRRaycaster+RaycastHit")]
+#[cfg(feature = "cordl_class_OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Held<'a> = Self;
@@ -520,7 +520,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRRaycaster+RaycastHit")]
+#[cfg(feature = "cordl_class_OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Type = Self;
@@ -531,7 +531,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRRaycaster+RaycastHit")]
+#[cfg(feature = "cordl_class_OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Actual = Self;
@@ -545,7 +545,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
         self
     }
 }
-#[cfg(feature = "OVRRaycaster+RaycastHit")]
+#[cfg(feature = "cordl_class_OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Type = Self;
@@ -560,7 +560,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
         }
     }
 }
-#[cfg(feature = "OVRRaycaster+RaycastHit")]
+#[cfg(feature = "cordl_class_OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Actual = Self;
@@ -574,7 +574,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
         actual
     }
 }
-#[cfg(feature = "OVRRaycaster+RaycastHit")]
+#[cfg(feature = "cordl_class_OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Type = Self;

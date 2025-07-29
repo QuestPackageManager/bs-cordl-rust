@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+TypedConstantExpression")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypedConstantExpression {
     __cordl_parent: crate::System::Linq::Expressions::ConstantExpression,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+TypedConstantExpression")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::TypedConstantExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Linq::Expressions::TypedConstantExpression {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+TypedConstantExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::TypedConstantExpression {
     type Target = crate::System::Linq::Expressions::ConstantExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+TypedConstantExpression")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::TypedConstantExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -108,7 +108,7 @@ impl crate::System::Linq::Expressions::TypedConstantExpression {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+TypedConstantExpression")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::TypedConstantExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

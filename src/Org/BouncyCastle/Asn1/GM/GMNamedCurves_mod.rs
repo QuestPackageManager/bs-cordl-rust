@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GMNamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -359,7 +359,7 @@ impl crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -369,13 +369,13 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GMNamedCurves_SM2P256V1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -395,7 +395,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -403,7 +403,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -470,7 +470,7 @@ impl crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -480,13 +480,13 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GMNamedCurves_WapiP192V1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -506,7 +506,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -514,7 +514,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -581,7 +581,7 @@ impl crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

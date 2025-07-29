@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+Compositor_CumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_CumulativeStats")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Compositor_CumulativeStats {
@@ -18,7 +18,7 @@ pub struct Compositor_CumulativeStats {
     pub m_nNumDroppedFramesTimedOut: u32,
     pub m_nNumReprojectedFramesTimedOut: u32,
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_CumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_CumulativeStats")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::Compositor_CumulativeStats {
     type Held<'a> = Self;
@@ -48,7 +48,7 @@ for crate::OVR::OpenVR::Compositor_CumulativeStats {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_CumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_CumulativeStats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::Compositor_CumulativeStats {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::OVR::OpenVR::Compositor_CumulativeStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_CumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_CumulativeStats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::Compositor_CumulativeStats {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::OVR::OpenVR::Compositor_CumulativeStats {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_CumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_CumulativeStats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::Compositor_CumulativeStats {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::OVR::OpenVR::Compositor_CumulativeStats {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_CumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_CumulativeStats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::Compositor_CumulativeStats {
     type Actual = Self;
@@ -102,7 +102,7 @@ for crate::OVR::OpenVR::Compositor_CumulativeStats {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_CumulativeStats")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_CumulativeStats")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::Compositor_CumulativeStats {
     type Type = Self;

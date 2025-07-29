@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Security+SslPolicyErrors")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslPolicyErrors")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SslPolicyErrors {
@@ -8,7 +8,7 @@ pub enum SslPolicyErrors {
     RemoteCertificateNameMismatch = 2i32,
     RemoteCertificateNotAvailable = 1i32,
 }
-#[cfg(feature = "System+Net+Security+SslPolicyErrors")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Security::SslPolicyErrors {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Net::Security::SslPolicyErrors {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Security+SslPolicyErrors")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Security::SslPolicyErrors {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Net::Security::SslPolicyErrors {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Security+SslPolicyErrors")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Security::SslPolicyErrors {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Net::Security::SslPolicyErrors {
         self
     }
 }
-#[cfg(feature = "System+Net+Security+SslPolicyErrors")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Security::SslPolicyErrors {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Net::Security::SslPolicyErrors {
         }
     }
 }
-#[cfg(feature = "System+Net+Security+SslPolicyErrors")]
+#[cfg(feature = "cordl_class_System+Net+Security+SslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Security::SslPolicyErrors {
     type Actual = Self;

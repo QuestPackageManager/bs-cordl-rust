@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRPassthroughLayer")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer {
@@ -52,7 +52,7 @@ pub struct OVRPassthroughLayer {
         crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler,
     >,
 }
-#[cfg(feature = "OVRPassthroughLayer")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPassthroughLayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -71,14 +71,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPassthrou
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1121,7 +1121,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPassthroughLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1130,13 +1130,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPassthroug
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+BCSStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BCSStyleHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_BCSStyleHandler {
     __cordl_parent: crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler,
 }
-#[cfg(feature = "OVRPassthroughLayer+BCSStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BCSStyleHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1156,14 +1156,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+BCSStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BCSStyleHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
     type Target = crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+BCSStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BCSStyleHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1264,7 +1264,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+BCSStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BCSStyleHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1274,7 +1274,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_BaseGeneratedStyleHandler {
@@ -1282,7 +1282,7 @@ pub struct OVRPassthroughLayer_BaseGeneratedStyleHandler {
     pub _colorMapDataHandle: crate::System::Runtime::InteropServices::GCHandle,
     pub _colorMapData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1302,7 +1302,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1310,7 +1310,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1624,7 +1624,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1650,7 +1650,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorLutHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_ColorLutHandler {
@@ -1665,7 +1665,7 @@ pub struct OVRPassthroughLayer_ColorLutHandler {
     pub _Weight_k__BackingField: f32,
     pub _IsValid_k__BackingField: bool,
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorLutHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1685,14 +1685,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorLutHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorLutHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2028,7 +2028,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorLutHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2054,7 +2054,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorMapEditorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPassthroughLayer_ColorMapEditorType {
@@ -2067,7 +2067,7 @@ pub enum OVRPassthroughLayer_ColorMapEditorType {
     InterpolatedColorLut = 6i32,
     None = 0i32,
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Held<'a> = Self;
@@ -2097,7 +2097,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Type = Self;
@@ -2108,7 +2108,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Actual = Self;
@@ -2122,7 +2122,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
         self
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Type = Self;
@@ -2137,7 +2137,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
         }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Actual = Self;
@@ -2151,14 +2151,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub updateTransform: bool,
 }
-#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Held<'a> = Self;
@@ -2188,7 +2188,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Type = Self;
@@ -2199,7 +2199,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Actual = Self;
@@ -2213,7 +2213,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
         self
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Type = Self;
@@ -2228,7 +2228,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
         }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Actual = Self;
@@ -2242,7 +2242,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Type = Self;
@@ -2255,13 +2255,13 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
 }
 #[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 impl crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {}
-#[cfg(feature = "OVRPassthroughLayer+IStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+IStyleHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_IStyleHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRPassthroughLayer+IStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+IStyleHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2281,14 +2281,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+IStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+IStyleHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+IStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+IStyleHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2396,7 +2396,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+IStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+IStyleHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2406,7 +2406,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+InterpolatedColorLutHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_InterpolatedColorLutHandler {
@@ -2418,7 +2418,7 @@ pub struct OVRPassthroughLayer_InterpolatedColorLutHandler {
         crate::GlobalNamespace::OVRPassthroughColorLut,
     >,
 }
-#[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+InterpolatedColorLutHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2438,7 +2438,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+InterpolatedColorLutHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     type Target = crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler;
@@ -2446,7 +2446,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+InterpolatedColorLutHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2658,7 +2658,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+InterpolatedColorLutHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2668,13 +2668,13 @@ for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToMonoStyleHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_MonoToMonoStyleHandler {
     __cordl_parent: crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler,
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToMonoStyleHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2694,7 +2694,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToMonoStyleHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
     type Target = crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler;
@@ -2702,7 +2702,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToMonoStyleHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2832,7 +2832,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToMonoStyleHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2842,7 +2842,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToRgbaStyleHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_MonoToRgbaStyleHandler {
@@ -2851,7 +2851,7 @@ pub struct OVRPassthroughLayer_MonoToRgbaStyleHandler {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToRgbaStyleHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2871,7 +2871,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToRgbaStyleHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
     type Target = crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler;
@@ -2879,7 +2879,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToRgbaStyleHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3062,7 +3062,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToRgbaStyleHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3072,13 +3072,13 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+NoneStyleHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_NoneStyleHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+NoneStyleHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3098,14 +3098,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+NoneStyleHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+NoneStyleHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3237,7 +3237,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+NoneStyleHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3263,7 +3263,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+PassthroughMeshInstance")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughLayer_PassthroughMeshInstance {
@@ -3272,7 +3272,7 @@ pub struct OVRPassthroughLayer_PassthroughMeshInstance {
     pub updateTransform: bool,
     pub localToWorld: crate::UnityEngine::Matrix4x4,
 }
-#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Held<'a> = Self;
@@ -3302,7 +3302,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Type = Self;
@@ -3313,7 +3313,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Actual = Self;
@@ -3327,7 +3327,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
         self
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Type = Self;
@@ -3342,7 +3342,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
         }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Actual = Self;
@@ -3356,7 +3356,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Type = Self;
@@ -3369,7 +3369,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
 }
 #[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
 impl crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {}
-#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ProjectionSurfaceType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPassthroughLayer_ProjectionSurfaceType {
@@ -3377,7 +3377,7 @@ pub enum OVRPassthroughLayer_ProjectionSurfaceType {
     Reconstructed = 0i32,
     UserDefined = 1i32,
 }
-#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Held<'a> = Self;
@@ -3407,7 +3407,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Type = Self;
@@ -3418,7 +3418,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Actual = Self;
@@ -3432,7 +3432,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
         self
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Type = Self;
@@ -3447,7 +3447,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
         }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Actual = Self;
@@ -3461,14 +3461,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+SerializedSurfaceGeometry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughLayer_SerializedSurfaceGeometry {
     pub meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub updateTransform: bool,
 }
-#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Held<'a> = Self;
@@ -3498,7 +3498,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Type = Self;
@@ -3509,7 +3509,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Actual = Self;
@@ -3523,7 +3523,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
         self
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Type = Self;
@@ -3538,7 +3538,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
         }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Actual = Self;
@@ -3552,7 +3552,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Type = Self;
@@ -3565,7 +3565,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
 }
 #[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
 impl crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {}
-#[cfg(feature = "OVRPassthroughLayer+Settings")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+Settings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughLayer_Settings {
@@ -3579,7 +3579,7 @@ pub struct OVRPassthroughLayer_Settings {
     pub lutWeight: f32,
     pub flipLutY: bool,
 }
-#[cfg(feature = "OVRPassthroughLayer+Settings")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Held<'a> = Self;
@@ -3609,7 +3609,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+Settings")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Type = Self;
@@ -3620,7 +3620,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+Settings")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Actual = Self;
@@ -3634,7 +3634,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
         self
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+Settings")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Type = Self;
@@ -3649,7 +3649,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
         }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+Settings")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Actual = Self;
@@ -3663,7 +3663,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+Settings")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Type = Self;
@@ -3735,7 +3735,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_Settings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+StylesHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_StylesHandler {
@@ -3764,7 +3764,7 @@ pub struct OVRPassthroughLayer_StylesHandler {
         crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler,
     >,
 }
-#[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+StylesHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3784,14 +3784,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+StylesHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+StylesHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4016,7 +4016,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
+#[cfg(feature = "cordl_class_OVRPassthroughLayer+StylesHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

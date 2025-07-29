@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+RadioButton")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButton {
@@ -7,7 +7,7 @@ pub struct RadioButton {
         crate::UnityEngine::UIElements::VisualElement,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::RadioButton {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Radi
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton {
     type Target = crate::UnityEngine::UIElements::BaseBoolField;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RadioButton {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -360,7 +360,7 @@ impl crate::UnityEngine::UIElements::RadioButton {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::RadioButton {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -383,7 +383,7 @@ for crate::UnityEngine::UIElements::RadioButton {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButton_UxmlFactory {
@@ -392,7 +392,7 @@ pub struct RadioButton_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -412,7 +412,7 @@ for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton>,
@@ -422,7 +422,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton_UxmlFactory
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -459,7 +459,7 @@ impl crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -469,7 +469,7 @@ for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButton_UxmlTraits {
@@ -483,7 +483,7 @@ pub struct RadioButton_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -503,7 +503,7 @@ for crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
         bool,
@@ -515,7 +515,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton_UxmlTraits 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -588,7 +588,7 @@ impl crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

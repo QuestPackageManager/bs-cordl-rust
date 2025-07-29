@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CBZip2OutputStream {
@@ -39,7 +39,7 @@ pub struct CBZip2OutputStream {
     pub bsStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub incs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -59,14 +59,14 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1163,7 +1163,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1173,7 +1173,9 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CBZip2OutputStream_StackElem {
@@ -1182,7 +1184,9 @@ pub struct CBZip2OutputStream_StackElem {
     pub hh: i32,
     pub dd: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1202,7 +1206,9 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1210,7 +1216,9 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1248,7 +1256,9 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

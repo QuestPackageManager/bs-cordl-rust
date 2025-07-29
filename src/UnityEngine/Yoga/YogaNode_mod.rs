@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct YogaNode {
@@ -19,7 +19,7 @@ pub struct YogaNode {
     >,
     pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::YogaNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::YogaNode {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaNode")]
 impl std::ops::Deref for crate::UnityEngine::Yoga::YogaNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaNode")]
 impl std::ops::DerefMut for crate::UnityEngine::Yoga::YogaNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1876,7 +1876,7 @@ impl crate::UnityEngine::Yoga::YogaNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Yoga::YogaNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

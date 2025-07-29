@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelEventHandler {
@@ -13,7 +13,7 @@ pub struct PanelEventHandler {
     pub m_Selecting: bool,
     pub m_Event: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PanelEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::UnityEngine::UIElements::PanelEventHandler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelEventHandler {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PanelEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1113,7 +1113,7 @@ impl crate::UnityEngine::UIElements::PanelEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PanelEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1319,7 +1319,7 @@ for crate::UnityEngine::UIElements::PanelEventHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelEventHandler_PointerEvent {
@@ -1347,7 +1347,7 @@ pub struct PanelEventHandler_PointerEvent {
     pub _radiusVariance_k__BackingField: crate::UnityEngine::Vector2,
     pub _modifiers_k__BackingField: crate::UnityEngine::EventModifiers,
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1367,14 +1367,14 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2518,7 +2518,7 @@ impl crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2542,7 +2542,7 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PanelEventHandler_PointerEventType {
@@ -2551,7 +2551,7 @@ pub enum PanelEventHandler_PointerEventType {
     Down = 1i32,
     Up = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
     type Held<'a> = Self;
@@ -2581,7 +2581,7 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
     type Type = Self;
@@ -2592,7 +2592,7 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
     type Actual = Self;
@@ -2606,7 +2606,7 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
     type Type = Self;
@@ -2621,7 +2621,7 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
     type Actual = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberFlatList")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberFlatList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTypeMapMemberFlatList {
     __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapMemberExpandable,
     pub _listMap: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::ListMap>,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberFlatList")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberFlatList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlTypeMapMemberFlatList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Xml::Serialization::XmlTypeMapMemberFlatList {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberFlatList")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberFlatList")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeMapMemberFlatList {
     type Target = crate::System::Xml::Serialization::XmlTypeMapMemberExpandable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberFlatList")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberFlatList")]
 impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlTypeMapMemberFlatList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::System::Xml::Serialization::XmlTypeMapMemberFlatList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberFlatList")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberFlatList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlTypeMapMemberFlatList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

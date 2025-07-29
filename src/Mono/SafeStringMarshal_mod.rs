@@ -1,11 +1,11 @@
-#[cfg(feature = "Mono+SafeStringMarshal")]
+#[cfg(feature = "cordl_class_Mono+SafeStringMarshal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SafeStringMarshal {
     pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub marshaled_string: crate::System::IntPtr,
 }
-#[cfg(feature = "Mono+SafeStringMarshal")]
+#[cfg(feature = "cordl_class_Mono+SafeStringMarshal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::SafeStringMarshal {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::SafeStringMarshal {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+SafeStringMarshal")]
+#[cfg(feature = "cordl_class_Mono+SafeStringMarshal")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::SafeStringMarshal {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::SafeStringMarshal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+SafeStringMarshal")]
+#[cfg(feature = "cordl_class_Mono+SafeStringMarshal")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::SafeStringMarshal {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::SafeStringMarshal 
         self
     }
 }
-#[cfg(feature = "Mono+SafeStringMarshal")]
+#[cfg(feature = "cordl_class_Mono+SafeStringMarshal")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::SafeStringMarshal {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::SafeStringMarshal {
         }
     }
 }
-#[cfg(feature = "Mono+SafeStringMarshal")]
+#[cfg(feature = "cordl_class_Mono+SafeStringMarshal")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::SafeStringMarshal {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::SafeStringMarshal {
         actual
     }
 }
-#[cfg(feature = "Mono+SafeStringMarshal")]
+#[cfg(feature = "cordl_class_Mono+SafeStringMarshal")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::SafeStringMarshal {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

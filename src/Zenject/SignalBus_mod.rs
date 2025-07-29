@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SignalBus")]
+#[cfg(feature = "cordl_class_Zenject+SignalBus")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalBus {
@@ -27,7 +27,7 @@ pub struct SignalBus {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
-#[cfg(feature = "Zenject+SignalBus")]
+#[cfg(feature = "cordl_class_Zenject+SignalBus")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalBus {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -46,14 +46,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalBus {
         false
     }
 }
-#[cfg(feature = "Zenject+SignalBus")]
+#[cfg(feature = "cordl_class_Zenject+SignalBus")]
 impl std::ops::Deref for crate::Zenject::SignalBus {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SignalBus")]
+#[cfg(feature = "cordl_class_Zenject+SignalBus")]
 impl std::ops::DerefMut for crate::Zenject::SignalBus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1827,7 +1827,7 @@ impl crate::Zenject::SignalBus {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SignalBus")]
+#[cfg(feature = "cordl_class_Zenject+SignalBus")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalBus {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

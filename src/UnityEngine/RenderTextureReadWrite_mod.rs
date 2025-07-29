@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RenderTextureReadWrite")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureReadWrite")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureReadWrite {
@@ -7,7 +7,7 @@ pub enum RenderTextureReadWrite {
     Linear = 1i32,
     sRGB = 2i32,
 }
-#[cfg(feature = "UnityEngine+RenderTextureReadWrite")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureReadWrite")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureReadWrite {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureRea
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureReadWrite")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureReadWrite")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RenderTextureReadWrite {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::RenderTextureReadWrite {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureReadWrite")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureReadWrite")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RenderTextureReadWrite {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::RenderTextureReadWrite {
         self
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureReadWrite")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureReadWrite")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RenderTextureReadWrite {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::RenderTextureReadWrite {
         }
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureReadWrite")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureReadWrite")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RenderTextureReadWrite {
     type Actual = Self;

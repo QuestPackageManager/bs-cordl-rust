@@ -1,10 +1,10 @@
-#[cfg(feature = "ISonyCommerceHelper")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISonyCommerceHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ISonyCommerceHelper")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ISonyCommerceHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ISonyCommerc
         false
     }
 }
-#[cfg(feature = "ISonyCommerceHelper")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::ISonyCommerceHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ISonyCommerceHelper")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ISonyCommerceHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ISonyCommerceHelper")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyCommerceHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -187,7 +187,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyCommerce
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
@@ -198,7 +200,9 @@ pub struct ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
         >,
     >,
 }
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Held<'a> = Self;
@@ -228,7 +232,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Type = Self;
@@ -239,7 +245,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Actual = Self;
@@ -253,7 +261,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
         self
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Type = Self;
@@ -268,7 +278,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
         }
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Actual = Self;
@@ -282,7 +294,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
         actual
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Type = Self;
@@ -295,7 +309,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
 }
 #[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
 impl crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {}
-#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
@@ -303,7 +317,7 @@ pub enum ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     Failed = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Held<'a> = Self;
@@ -333,7 +347,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Type = Self;
@@ -344,7 +358,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Actual = Self;
@@ -358,7 +372,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
         self
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Type = Self;
@@ -373,7 +387,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
         }
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Actual = Self;
@@ -387,7 +401,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
         actual
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyCommerceHelper_DisplayProductBrowseDialogResult {
@@ -395,7 +409,7 @@ pub enum ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     Failed = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Held<'a> = Self;
@@ -425,7 +439,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Type = Self;
@@ -436,7 +450,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Actual = Self;
@@ -450,7 +464,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
         self
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Type = Self;
@@ -465,7 +479,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
         }
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
+#[cfg(feature = "cordl_class_ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Actual = Self;
@@ -479,7 +493,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
         actual
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+GetAdditionalContentEntitlementsResult"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
@@ -487,7 +503,9 @@ pub enum ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     Failed = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+GetAdditionalContentEntitlementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Held<'a> = Self;
@@ -517,7 +535,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+GetAdditionalContentEntitlementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Type = Self;
@@ -528,7 +548,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+GetAdditionalContentEntitlementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Actual = Self;
@@ -542,7 +564,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
         self
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+GetAdditionalContentEntitlementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Type = Self;
@@ -557,7 +581,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
         }
     }
 }
-#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
+#[cfg(
+    feature = "cordl_class_ISonyCommerceHelper+GetAdditionalContentEntitlementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Actual = Self;

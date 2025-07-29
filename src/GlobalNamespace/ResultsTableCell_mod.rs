@@ -1,4 +1,4 @@
-#[cfg(feature = "ResultsTableCell")]
+#[cfg(feature = "cordl_class_ResultsTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResultsTableCell {
@@ -9,7 +9,7 @@ pub struct ResultsTableCell {
     pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
-#[cfg(feature = "ResultsTableCell")]
+#[cfg(feature = "cordl_class_ResultsTableCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ResultsTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ResultsTable
         false
     }
 }
-#[cfg(feature = "ResultsTableCell")]
+#[cfg(feature = "cordl_class_ResultsTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::ResultsTableCell {
     type Target = crate::GlobalNamespace::TableCellWithSeparator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ResultsTableCell")]
+#[cfg(feature = "cordl_class_ResultsTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ResultsTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::ResultsTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ResultsTableCell")]
+#[cfg(feature = "cordl_class_ResultsTableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ResultsTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

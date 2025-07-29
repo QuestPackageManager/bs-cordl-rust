@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ElGamalKeyGenerationParameters {
@@ -7,7 +9,9 @@ pub struct ElGamalKeyGenerationParameters {
         crate::Org::BouncyCastle::Crypto::Parameters::ElGamalParameters,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameters
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameters {
     type Target = crate::Org::BouncyCastle::Crypto::KeyGenerationParameters;
@@ -35,7 +41,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameters
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -157,7 +165,9 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameter
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ElGamalKeyGenerationParameters"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+StandardFrameRates")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+StandardFrameRates")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandardFrameRates {
@@ -12,7 +12,7 @@ pub enum StandardFrameRates {
     Fps59_94 = 7i32,
     Fps60 = 6i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+StandardFrameRates")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+StandardFrameRates")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::StandardFrameRates {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::UnityEngine::Timeline::StandardFrameRates {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+StandardFrameRates")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+StandardFrameRates")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::StandardFrameRates {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::UnityEngine::Timeline::StandardFrameRates {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+StandardFrameRates")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+StandardFrameRates")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::StandardFrameRates {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::UnityEngine::Timeline::StandardFrameRates {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+StandardFrameRates")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+StandardFrameRates")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::StandardFrameRates {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::UnityEngine::Timeline::StandardFrameRates {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+StandardFrameRates")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+StandardFrameRates")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::StandardFrameRates {
     type Actual = Self;

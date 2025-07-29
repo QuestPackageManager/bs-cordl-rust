@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SignalDeclaration")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalDeclaration {
@@ -21,7 +21,7 @@ pub struct SignalDeclaration {
     >,
     pub _TickPriority_k__BackingField: i32,
 }
-#[cfg(feature = "Zenject+SignalDeclaration")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalDeclaration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -40,14 +40,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalDeclaration {
         false
     }
 }
-#[cfg(feature = "Zenject+SignalDeclaration")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration")]
 impl std::ops::Deref for crate::Zenject::SignalDeclaration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SignalDeclaration")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration")]
 impl std::ops::DerefMut for crate::Zenject::SignalDeclaration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -409,7 +409,7 @@ impl crate::Zenject::SignalDeclaration {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SignalDeclaration")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalDeclaration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -442,7 +442,7 @@ impl AsMut<crate::Zenject::ITickable> for crate::Zenject::SignalDeclaration {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Zenject+SignalDeclaration+Factory")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration+Factory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalDeclaration_Factory {
@@ -451,7 +451,7 @@ pub struct SignalDeclaration_Factory {
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >,
 }
-#[cfg(feature = "Zenject+SignalDeclaration+Factory")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration+Factory")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalDeclaration_Factory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -470,7 +470,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalDeclaration_Fa
         false
     }
 }
-#[cfg(feature = "Zenject+SignalDeclaration+Factory")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration+Factory")]
 impl std::ops::Deref for crate::Zenject::SignalDeclaration_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
@@ -480,7 +480,7 @@ impl std::ops::Deref for crate::Zenject::SignalDeclaration_Factory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SignalDeclaration+Factory")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration+Factory")]
 impl std::ops::DerefMut for crate::Zenject::SignalDeclaration_Factory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -579,7 +579,7 @@ impl crate::Zenject::SignalDeclaration_Factory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SignalDeclaration+Factory")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclaration+Factory")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalDeclaration_Factory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_SessionHAPI")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_SessionHAPI")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_SessionHAPI {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_SessionBase,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_SessionHAPI")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_SessionHAPI")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_SessionHAPI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Sessi
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_SessionHAPI")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_SessionHAPI")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_SessionHAPI {
     type Target = crate::HoudiniEngineUnity::HEU_SessionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_SessionHAPI")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_SessionHAPI")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_SessionHAPI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionHAPI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_SessionHAPI")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_SessionHAPI")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_SessionHAPI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+RuntimeStructs")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeStructs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Mono+RuntimeStructs")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs {
         false
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs")]
 impl std::ops::Deref for crate::Mono::RuntimeStructs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs")]
 impl std::ops::DerefMut for crate::Mono::RuntimeStructs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -47,7 +47,7 @@ impl crate::Mono::RuntimeStructs {
     #[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
     pub type RemoteClass = crate::Mono::RuntimeStructs_RemoteClass;
 }
-#[cfg(feature = "Mono+RuntimeStructs")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::RuntimeStructs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -56,14 +56,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::RuntimeStructs {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GPtrArray")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeStructs_GPtrArray {
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub len: i32,
 }
-#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_GPtrArray {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -92,7 +92,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_GPtrArra
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_GPtrArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -102,7 +102,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_GPtr
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeStructs_GPtrArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -115,7 +115,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeStructs_GPt
         self
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_GPtrArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -129,7 +129,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_GPtr
         }
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_GPtrArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -142,7 +142,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_GPtrAr
         actual
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::RuntimeStructs_GPtrArray {
     type Type = Self;
@@ -155,7 +155,7 @@ for crate::Mono::RuntimeStructs_GPtrArray {
 }
 #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 impl crate::Mono::RuntimeStructs_GPtrArray {}
-#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GenericParamInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeStructs_GenericParamInfo {
@@ -165,7 +165,7 @@ pub struct RuntimeStructs_GenericParamInfo {
     pub token: u32,
     pub constraints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Held<'a> = Self;
@@ -195,7 +195,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Type = Self;
@@ -206,7 +206,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Actual = Self;
@@ -220,7 +220,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
         self
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Type = Self;
@@ -235,7 +235,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
         }
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Actual = Self;
@@ -249,7 +249,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
         actual
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Type = Self;
@@ -262,11 +262,11 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
 }
 #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 impl crate::Mono::RuntimeStructs_GenericParamInfo {}
-#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeStructs_MonoClass {}
-#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_MonoClass {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -295,7 +295,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_MonoClas
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_MonoClass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -305,7 +305,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_Mono
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeStructs_MonoClass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -318,7 +318,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeStructs_Mon
         self
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_MonoClass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -332,7 +332,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_Mono
         }
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_MonoClass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -345,7 +345,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_MonoCl
         actual
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::RuntimeStructs_MonoClass {
     type Type = Self;
@@ -358,7 +358,7 @@ for crate::Mono::RuntimeStructs_MonoClass {
 }
 #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 impl crate::Mono::RuntimeStructs_MonoClass {}
-#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+RemoteClass")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeStructs_RemoteClass {
@@ -368,7 +368,7 @@ pub struct RuntimeStructs_RemoteClass {
     pub proxy_class_name: crate::System::IntPtr,
     pub interface_count: u32,
 }
-#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_RemoteClass {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -397,7 +397,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_RemoteCl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_RemoteClass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -407,7 +407,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_Remo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::RuntimeStructs_RemoteClass {
     type Actual = Self;
@@ -421,7 +421,7 @@ for crate::Mono::RuntimeStructs_RemoteClass {
         self
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_RemoteClass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -435,7 +435,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_Remo
         }
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_RemoteClass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -448,7 +448,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_Remote
         actual
     }
 }
-#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+#[cfg(feature = "cordl_class_Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::RuntimeStructs_RemoteClass {
     type Type = Self;

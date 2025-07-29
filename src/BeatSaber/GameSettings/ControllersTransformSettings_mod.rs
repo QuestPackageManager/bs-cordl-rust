@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+GameSettings+ControllersTransformSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllersTransformSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllersTransformSettings {
@@ -14,7 +14,7 @@ pub struct ControllersTransformSettings {
         crate::BeatSaber::GameSettings::ControllerProfile,
     >,
 }
-#[cfg(feature = "BeatSaber+GameSettings+ControllersTransformSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllersTransformSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::GameSettings::ControllersTransformSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::BeatSaber::GameSettings::ControllersTransformSettings {
         false
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+ControllersTransformSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllersTransformSettings")]
 impl std::ops::Deref for crate::BeatSaber::GameSettings::ControllersTransformSettings {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+ControllersTransformSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllersTransformSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::GameSettings::ControllersTransformSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -273,7 +273,7 @@ impl crate::BeatSaber::GameSettings::ControllersTransformSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+ControllersTransformSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllersTransformSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::GameSettings::ControllersTransformSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

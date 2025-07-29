@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataRelationPropertyDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRelationPropertyDescriptor {
@@ -7,7 +7,7 @@ pub struct DataRelationPropertyDescriptor {
         crate::System::Data::DataRelation,
     >,
 }
-#[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataRelationPropertyDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::DataRelationPropertyDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Data::DataRelationPropertyDescriptor {
         false
     }
 }
-#[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataRelationPropertyDescriptor")]
 impl std::ops::Deref for crate::System::Data::DataRelationPropertyDescriptor {
     type Target = crate::System::ComponentModel::PropertyDescriptor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataRelationPropertyDescriptor")]
 impl std::ops::DerefMut for crate::System::Data::DataRelationPropertyDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -355,7 +355,7 @@ impl crate::System::Data::DataRelationPropertyDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataRelationPropertyDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::DataRelationPropertyDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

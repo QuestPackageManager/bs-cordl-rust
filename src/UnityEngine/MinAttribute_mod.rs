@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+MinAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+MinAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MinAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub min: f32,
 }
-#[cfg(feature = "UnityEngine+MinAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+MinAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MinAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MinAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+MinAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+MinAttribute")]
 impl std::ops::Deref for crate::UnityEngine::MinAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+MinAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+MinAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::MinAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::UnityEngine::MinAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+MinAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+MinAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::MinAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

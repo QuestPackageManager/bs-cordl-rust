@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CameraProperties {
@@ -35,7 +35,7 @@ pub struct CameraProperties {
     pub projectionIsOblique: i32,
     pub isImplicitProjectionMatrix: i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::CameraProperties {
     type Held<'a> = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::Rendering::CameraProperties {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::CameraProperties {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::Rendering::CameraProperties {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::CameraProperties {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::Rendering::CameraProperties {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::CameraProperties {
     type Type = Self;
@@ -105,7 +105,7 @@ for crate::UnityEngine::Rendering::CameraProperties {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::CameraProperties {
     type Actual = Self;
@@ -119,7 +119,7 @@ for crate::UnityEngine::Rendering::CameraProperties {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::CameraProperties {
     type Type = Self;
@@ -287,7 +287,7 @@ for crate::UnityEngine::Rendering::CameraProperties {
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -295,7 +295,7 @@ pub struct CameraProperties__layerCullDistances_e__FixedBuffer {
     pub FixedElementField: f32,
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
@@ -327,7 +327,7 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
@@ -340,7 +340,7 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
@@ -356,7 +356,7 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
@@ -373,7 +373,7 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
@@ -389,7 +389,7 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {
@@ -406,7 +406,7 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
 )]
 impl crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer {}
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -414,7 +414,7 @@ pub struct CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
@@ -446,7 +446,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
@@ -459,7 +459,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
@@ -475,7 +475,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
@@ -492,7 +492,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
@@ -508,7 +508,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
@@ -525,7 +525,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
 )]
 impl crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer {}
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -533,7 +533,7 @@ pub struct CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
@@ -565,7 +565,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
@@ -578,7 +578,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
@@ -594,7 +594,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
@@ -611,7 +611,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
@@ -627,7 +627,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {

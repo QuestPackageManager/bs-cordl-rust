@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+InteropServices+GCHandleType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+GCHandleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GCHandleType {
@@ -8,7 +8,7 @@ pub enum GCHandleType {
     Weak = 0i32,
     WeakTrackResurrection = 1i32,
 }
-#[cfg(feature = "System+Runtime+InteropServices+GCHandleType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+GCHandleType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::GCHandleType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Runtime::InteropServices::GCHandleType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+GCHandleType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+GCHandleType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::InteropServices::GCHandleType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Runtime::InteropServices::GCHandleType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+GCHandleType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+GCHandleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::InteropServices::GCHandleType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Runtime::InteropServices::GCHandleType {
         self
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+GCHandleType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+GCHandleType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::InteropServices::GCHandleType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Runtime::InteropServices::GCHandleType {
         }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+GCHandleType")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+GCHandleType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::InteropServices::GCHandleType {
     type Actual = Self;

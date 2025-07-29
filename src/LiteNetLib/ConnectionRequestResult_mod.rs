@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+ConnectionRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequestResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectionRequestResult {
@@ -8,7 +8,7 @@ pub enum ConnectionRequestResult {
     Reject = 2i32,
     RejectForce = 3i32,
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequestResult")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ConnectionRequestResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ConnectionRequest
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequestResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::ConnectionRequestResult {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::LiteNetLib::ConnectionRequestResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequestResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::ConnectionRequestResult {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::LiteNetLib::ConnectionRequestResult {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequestResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::ConnectionRequestResult {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::LiteNetLib::ConnectionRequestResult {
         }
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequestResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::ConnectionRequestResult {
     type Actual = Self;

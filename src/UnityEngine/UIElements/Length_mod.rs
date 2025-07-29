@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+Length")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Length {
     pub m_Value: f32,
     pub m_Unit: crate::UnityEngine::UIElements::Length_Unit,
 }
-#[cfg(feature = "UnityEngine+UIElements+Length")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Length {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Leng
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::Length {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::Length {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements:
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::Length {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Length {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Le
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::Length {
     type Type = Self;
@@ -551,7 +551,7 @@ for crate::UnityEngine::UIElements::Length {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+Unit")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Length_Unit {
@@ -561,7 +561,7 @@ pub enum Length_Unit {
     Percent = 1i32,
     Pixel = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+Unit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Length_Unit {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -590,7 +590,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Leng
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+Unit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Length_Unit {
     type Type = Self;
@@ -601,7 +601,7 @@ for crate::UnityEngine::UIElements::Length_Unit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+Unit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Length_Unit {
     type Actual = Self;
@@ -615,7 +615,7 @@ for crate::UnityEngine::UIElements::Length_Unit {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+Unit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Length_Unit {
     type Type = Self;
@@ -630,7 +630,7 @@ for crate::UnityEngine::UIElements::Length_Unit {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+Unit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Length_Unit {
     type Actual = Self;

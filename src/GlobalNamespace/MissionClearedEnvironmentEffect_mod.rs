@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionClearedEnvironmentEffect")]
+#[cfg(feature = "cordl_class_MissionClearedEnvironmentEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionClearedEnvironmentEffect {
@@ -10,7 +10,7 @@ pub struct MissionClearedEnvironmentEffect {
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
 }
-#[cfg(feature = "MissionClearedEnvironmentEffect")]
+#[cfg(feature = "cordl_class_MissionClearedEnvironmentEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionClearedEnvironmentEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::MissionClearedEnvironmentEffect {
         false
     }
 }
-#[cfg(feature = "MissionClearedEnvironmentEffect")]
+#[cfg(feature = "cordl_class_MissionClearedEnvironmentEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionClearedEnvironmentEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionClearedEnvironmentEffect")]
+#[cfg(feature = "cordl_class_MissionClearedEnvironmentEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionClearedEnvironmentEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::MissionClearedEnvironmentEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionClearedEnvironmentEffect")]
+#[cfg(feature = "cordl_class_MissionClearedEnvironmentEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionClearedEnvironmentEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

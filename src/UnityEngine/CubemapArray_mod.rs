@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+CubemapArray")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapArray")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CubemapArray {
     __cordl_parent: crate::UnityEngine::Texture,
 }
-#[cfg(feature = "UnityEngine+CubemapArray")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapArray")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CubemapArray {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CubemapArray {
         false
     }
 }
-#[cfg(feature = "UnityEngine+CubemapArray")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapArray")]
 impl std::ops::Deref for crate::UnityEngine::CubemapArray {
     type Target = crate::UnityEngine::Texture;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+CubemapArray")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapArray")]
 impl std::ops::DerefMut for crate::UnityEngine::CubemapArray {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -635,7 +635,7 @@ impl crate::UnityEngine::CubemapArray {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+CubemapArray")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapArray")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CubemapArray {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

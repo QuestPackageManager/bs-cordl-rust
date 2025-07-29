@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AtlasSpriteProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvid
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvid
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -96,7 +104,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvi
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

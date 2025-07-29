@@ -1,4 +1,4 @@
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant+Variant")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderVariant_ShaderVariantsSO_Variant {
@@ -6,7 +6,7 @@ pub struct ShaderVariant_ShaderVariantsSO_Variant {
     pub _passType: crate::UnityEngine::Rendering::PassType,
     pub _keywords: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant+Variant")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
         false
     }
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant+Variant")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant+Variant")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant+Variant")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -147,7 +147,7 @@ for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ShaderVariantsSO")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderVariantsSO {
@@ -160,7 +160,7 @@ pub struct ShaderVariantsSO {
         >,
     >,
 }
-#[cfg(feature = "ShaderVariantsSO")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ShaderVariantsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -179,14 +179,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ShaderVarian
         false
     }
 }
-#[cfg(feature = "ShaderVariantsSO")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariantsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ShaderVariantsSO")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ShaderVariantsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -306,7 +306,7 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ShaderVariantsSO")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ShaderVariantsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -315,7 +315,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ShaderVariant
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderVariantsSO_ShaderVariant {
@@ -329,7 +329,7 @@ pub struct ShaderVariantsSO_ShaderVariant {
     >,
     pub _shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -349,14 +349,14 @@ for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         false
     }
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -495,7 +495,7 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
+#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

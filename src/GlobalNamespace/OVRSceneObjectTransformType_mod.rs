@@ -1,11 +1,11 @@
-#[cfg(feature = "OVRSceneObjectTransformType")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneObjectTransformType {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub TransformType: crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation,
 }
-#[cfg(feature = "OVRSceneObjectTransformType")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSceneObjectTransformType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType {
         false
     }
 }
-#[cfg(feature = "OVRSceneObjectTransformType")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneObjectTransformType {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSceneObjectTransformType")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneObjectTransformType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::OVRSceneObjectTransformType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSceneObjectTransformType")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSceneObjectTransformType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -81,7 +81,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType+Transformation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSceneObjectTransformType_Transformation {
@@ -90,7 +90,7 @@ pub enum OVRSceneObjectTransformType_Transformation {
     Plane = 1i32,
     Volume = 0i32,
 }
-#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Held<'a> = Self;
@@ -120,7 +120,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Type = Self;
@@ -131,7 +131,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Actual = Self;
@@ -145,7 +145,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
         self
     }
 }
-#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Type = Self;
@@ -160,7 +160,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
         }
     }
 }
-#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
+#[cfg(feature = "cordl_class_OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Actual = Self;

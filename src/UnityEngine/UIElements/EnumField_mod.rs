@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EnumField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumField {
@@ -20,7 +20,7 @@ pub struct EnumField {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::EnumField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Enum
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField {
     type Target = crate::UnityEngine::UIElements::BaseField_1<
         quest_hook::libil2cpp::Gc<crate::System::Enum>,
@@ -48,7 +48,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::EnumField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -546,7 +546,7 @@ impl crate::UnityEngine::UIElements::EnumField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::EnumField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -555,7 +555,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::EnumF
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumField_UxmlFactory {
@@ -564,7 +564,7 @@ pub struct EnumField_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EnumField_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -584,7 +584,7 @@ for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EnumField>,
@@ -594,7 +594,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -631,7 +631,7 @@ impl crate::UnityEngine::UIElements::EnumField_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -641,7 +641,7 @@ for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumField_UxmlTraits {
@@ -660,7 +660,7 @@ pub struct EnumField_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EnumField_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -680,7 +680,7 @@ for crate::UnityEngine::UIElements::EnumField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         quest_hook::libil2cpp::Gc<crate::System::Enum>,
@@ -689,7 +689,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField_UxmlTraits {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::EnumField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -762,7 +762,7 @@ impl crate::UnityEngine::UIElements::EnumField_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EnumField_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

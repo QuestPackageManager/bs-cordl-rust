@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BaseListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseListViewController {
@@ -19,7 +19,7 @@ pub struct BaseListViewController {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseListViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::UnityEngine::UIElements::BaseListViewController {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListViewController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseListViewController {
     type Target = crate::UnityEngine::UIElements::CollectionViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListViewController")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseListViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -807,7 +807,7 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BaseListViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

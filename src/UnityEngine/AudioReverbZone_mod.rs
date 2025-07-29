@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+AudioReverbZone")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioReverbZone")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioReverbZone {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
-#[cfg(feature = "UnityEngine+AudioReverbZone")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioReverbZone")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioReverbZone {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioReverbZone 
         false
     }
 }
-#[cfg(feature = "UnityEngine+AudioReverbZone")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioReverbZone")]
 impl std::ops::Deref for crate::UnityEngine::AudioReverbZone {
     type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AudioReverbZone")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioReverbZone")]
 impl std::ops::DerefMut for crate::UnityEngine::AudioReverbZone {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -806,7 +806,7 @@ impl crate::UnityEngine::AudioReverbZone {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AudioReverbZone")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioReverbZone")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AudioReverbZone {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

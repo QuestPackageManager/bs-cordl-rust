@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+DateTimeFormatFlags")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeFormatFlags {
@@ -12,7 +12,7 @@ pub enum DateTimeFormatFlags {
     UseSpacesInDayNames = 16i32,
     UseSpacesInMonthNames = 4i32,
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatFlags")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::DateTimeFormatFlags {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::System::Globalization::DateTimeFormatFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatFlags")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::DateTimeFormatFlags {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::System::Globalization::DateTimeFormatFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatFlags")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::DateTimeFormatFlags {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::System::Globalization::DateTimeFormatFlags {
         self
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatFlags")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::DateTimeFormatFlags {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::System::Globalization::DateTimeFormatFlags {
         }
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatFlags")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::DateTimeFormatFlags {
     type Actual = Self;

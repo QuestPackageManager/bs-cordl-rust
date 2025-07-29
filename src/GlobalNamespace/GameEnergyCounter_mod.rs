@@ -1,4 +1,4 @@
-#[cfg(feature = "GameEnergyCounter")]
+#[cfg(feature = "cordl_class_GameEnergyCounter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameEnergyCounter {
@@ -30,7 +30,7 @@ pub struct GameEnergyCounter {
     pub _didReach0Energy: bool,
     pub _nextFrameEnergyChange: f32,
 }
-#[cfg(feature = "GameEnergyCounter")]
+#[cfg(feature = "cordl_class_GameEnergyCounter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameEnergyCounter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -49,14 +49,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameEnergyCo
         false
     }
 }
-#[cfg(feature = "GameEnergyCounter")]
+#[cfg(feature = "cordl_class_GameEnergyCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::GameEnergyCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameEnergyCounter")]
+#[cfg(feature = "cordl_class_GameEnergyCounter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameEnergyCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -688,7 +688,7 @@ impl crate::GlobalNamespace::GameEnergyCounter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameEnergyCounter")]
+#[cfg(feature = "cordl_class_GameEnergyCounter")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameEnergyCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -711,7 +711,7 @@ for crate::GlobalNamespace::GameEnergyCounter {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "GameEnergyCounter+InitData")]
+#[cfg(feature = "cordl_class_GameEnergyCounter+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameEnergyCounter_InitData {
@@ -721,7 +721,7 @@ pub struct GameEnergyCounter_InitData {
     pub instaFail: bool,
     pub failOnSaberClash: bool,
 }
-#[cfg(feature = "GameEnergyCounter+InitData")]
+#[cfg(feature = "cordl_class_GameEnergyCounter+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameEnergyCounter_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -741,14 +741,14 @@ for crate::GlobalNamespace::GameEnergyCounter_InitData {
         false
     }
 }
-#[cfg(feature = "GameEnergyCounter+InitData")]
+#[cfg(feature = "cordl_class_GameEnergyCounter+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameEnergyCounter_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameEnergyCounter+InitData")]
+#[cfg(feature = "cordl_class_GameEnergyCounter+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameEnergyCounter_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -807,7 +807,7 @@ impl crate::GlobalNamespace::GameEnergyCounter_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameEnergyCounter+InitData")]
+#[cfg(feature = "cordl_class_GameEnergyCounter+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameEnergyCounter_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "Oculus+Platform+InviteOptions")]
+#[cfg(feature = "cordl_class_Oculus+Platform+InviteOptions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InviteOptions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Handle: crate::System::IntPtr,
 }
-#[cfg(feature = "Oculus+Platform+InviteOptions")]
+#[cfg(feature = "cordl_class_Oculus+Platform+InviteOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::InviteOptions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::InviteOptio
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+InviteOptions")]
+#[cfg(feature = "cordl_class_Oculus+Platform+InviteOptions")]
 impl std::ops::Deref for crate::Oculus::Platform::InviteOptions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+InviteOptions")]
+#[cfg(feature = "cordl_class_Oculus+Platform+InviteOptions")]
 impl std::ops::DerefMut for crate::Oculus::Platform::InviteOptions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -167,7 +167,7 @@ impl crate::Oculus::Platform::InviteOptions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+InviteOptions")]
+#[cfg(feature = "cordl_class_Oculus+Platform+InviteOptions")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::InviteOptions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

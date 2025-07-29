@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+AssemblyTitleAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyTitleAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyTitleAttribute {
@@ -7,7 +7,7 @@ pub struct AssemblyTitleAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+Reflection+AssemblyTitleAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyTitleAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::AssemblyTitleAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Reflection::AssemblyTitleAttribute {
         false
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyTitleAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyTitleAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyTitleAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyTitleAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyTitleAttribute")]
 impl std::ops::DerefMut for crate::System::Reflection::AssemblyTitleAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -78,7 +78,7 @@ impl crate::System::Reflection::AssemblyTitleAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyTitleAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyTitleAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::AssemblyTitleAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

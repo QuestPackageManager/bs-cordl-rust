@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+WebCompletionSource_1")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebCompletionSource_1<T: quest_hook::libil2cpp::Type> {
@@ -15,7 +15,7 @@ pub struct WebCompletionSource_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Net::WebCompletionSource_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,7 +51,7 @@ for crate::System::Net::WebCompletionSource_1<T> {
         false
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Net::WebCompletionSource_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -59,7 +59,7 @@ for crate::System::Net::WebCompletionSource_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Net::WebCompletionSource_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -368,7 +368,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Net::WebCompletionSource_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -378,7 +378,7 @@ for crate::System::Net::WebCompletionSource_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Result")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebCompletionSource_1_Result<T: quest_hook::libil2cpp::Type> {
@@ -390,7 +390,7 @@ pub struct WebCompletionSource_1_Result<T: quest_hook::libil2cpp::Type> {
     pub _Argument_k__BackingField: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Result")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Net::WebCompletionSource_1_Result<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -426,7 +426,7 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
         false
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Result")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Net::WebCompletionSource_1_Result<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -434,7 +434,7 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Result")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Net::WebCompletionSource_1_Result<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -647,7 +647,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Result")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Net::WebCompletionSource_1_Result<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -657,7 +657,7 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Status")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebCompletionSource_1_Status {
@@ -667,7 +667,7 @@ pub enum WebCompletionSource_1_Status {
     Faulted = 3i32,
     Running = 0i32,
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Status")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::WebCompletionSource_1_Status {
     type Held<'a> = Self;
@@ -697,7 +697,7 @@ for crate::System::Net::WebCompletionSource_1_Status {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Status")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::WebCompletionSource_1_Status {
     type Type = Self;
@@ -708,7 +708,7 @@ for crate::System::Net::WebCompletionSource_1_Status {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Status")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::WebCompletionSource_1_Status {
     type Actual = Self;
@@ -722,7 +722,7 @@ for crate::System::Net::WebCompletionSource_1_Status {
         self
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Status")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::WebCompletionSource_1_Status {
     type Type = Self;
@@ -737,7 +737,7 @@ for crate::System::Net::WebCompletionSource_1_Status {
         }
     }
 }
-#[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
+#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Status")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::WebCompletionSource_1_Status {
     type Actual = Self;

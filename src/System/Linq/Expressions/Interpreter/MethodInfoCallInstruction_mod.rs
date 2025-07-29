@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MethodInfoCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MethodInfoCallInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodInfoCallInstruction {
@@ -6,7 +8,9 @@ pub struct MethodInfoCallInstruction {
     pub _target: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub _argumentCount: i32,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MethodInfoCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MethodInfoCallInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +30,9 @@ for crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MethodInfoCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MethodInfoCallInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::CallInstruction;
@@ -34,7 +40,9 @@ for crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MethodInfoCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MethodInfoCallInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -227,7 +235,9 @@ impl crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MethodInfoCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MethodInfoCallInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderModel_TextureMap_t_Packed {
@@ -6,7 +6,7 @@ pub struct RenderModel_TextureMap_t_Packed {
     pub unHeight: u16,
     pub rubTextureMapData: crate::System::IntPtr,
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_TextureMap_t_Packed")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
     type Type = Self;

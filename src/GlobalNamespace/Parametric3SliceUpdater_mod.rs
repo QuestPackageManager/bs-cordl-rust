@@ -1,4 +1,4 @@
-#[cfg(feature = "Parametric3SliceUpdater")]
+#[cfg(feature = "cordl_class_Parametric3SliceUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parametric3SliceUpdater {
@@ -7,7 +7,7 @@ pub struct Parametric3SliceUpdater {
         crate::GlobalNamespace::Parametric3SliceSpriteController,
     >,
 }
-#[cfg(feature = "Parametric3SliceUpdater")]
+#[cfg(feature = "cordl_class_Parametric3SliceUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Parametric3SliceUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::Parametric3SliceUpdater {
         false
     }
 }
-#[cfg(feature = "Parametric3SliceUpdater")]
+#[cfg(feature = "cordl_class_Parametric3SliceUpdater")]
 impl std::ops::Deref for crate::GlobalNamespace::Parametric3SliceUpdater {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Parametric3SliceUpdater")]
+#[cfg(feature = "cordl_class_Parametric3SliceUpdater")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Parametric3SliceUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::Parametric3SliceUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Parametric3SliceUpdater")]
+#[cfg(feature = "cordl_class_Parametric3SliceUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::Parametric3SliceUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

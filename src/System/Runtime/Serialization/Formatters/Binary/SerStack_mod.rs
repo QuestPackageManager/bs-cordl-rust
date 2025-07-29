@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerStack")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerStack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerStack {
@@ -11,7 +11,7 @@ pub struct SerStack {
     pub stackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub top: i32,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerStack")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerStack")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::SerStack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerStack {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerStack")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerStack")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::SerStack {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +39,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerStack {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerStack")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerStack")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::SerStack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -233,7 +233,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::SerStack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerStack")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerStack")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::SerStack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

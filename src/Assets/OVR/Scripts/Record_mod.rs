@@ -1,4 +1,4 @@
-#[cfg(feature = "Assets+OVR+Scripts+Record")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+Record")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Record {
@@ -7,7 +7,7 @@ pub struct Record {
     pub category: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "Assets+OVR+Scripts+Record")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+Record")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Assets::OVR::Scripts::Record {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Assets::OVR::Scripts::Record 
         false
     }
 }
-#[cfg(feature = "Assets+OVR+Scripts+Record")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+Record")]
 impl std::ops::Deref for crate::Assets::OVR::Scripts::Record {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Assets+OVR+Scripts+Record")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+Record")]
 impl std::ops::DerefMut for crate::Assets::OVR::Scripts::Record {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::Assets::OVR::Scripts::Record {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Assets+OVR+Scripts+Record")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+Record")]
 impl quest_hook::libil2cpp::ObjectType for crate::Assets::OVR::Scripts::Record {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

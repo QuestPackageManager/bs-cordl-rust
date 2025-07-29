@@ -1,4 +1,4 @@
-#[cfg(feature = "RemoteProcedureCall_3")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteProcedureCall_3<
@@ -20,7 +20,7 @@ pub struct RemoteProcedureCall_3<
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
 }
-#[cfg(feature = "RemoteProcedureCall_3")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_3")]
 unsafe impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::RemoteProcedureCall_3<T0, T1, T2> {
         false
     }
 }
-#[cfg(feature = "RemoteProcedureCall_3")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_3")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -68,7 +68,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RemoteProcedureCall_3")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_3")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -354,7 +354,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RemoteProcedureCall_3")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_3")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,

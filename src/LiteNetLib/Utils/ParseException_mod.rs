@@ -1,10 +1,10 @@
-#[cfg(feature = "LiteNetLib+Utils+ParseException")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+ParseException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParseException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "LiteNetLib+Utils+ParseException")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+ParseException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::ParseException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::ParseExcep
         false
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+ParseException")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+ParseException")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::ParseException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+ParseException")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+ParseException")]
 impl std::ops::DerefMut for crate::LiteNetLib::Utils::ParseException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -74,7 +74,7 @@ impl crate::LiteNetLib::Utils::ParseException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+ParseException")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+ParseException")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::ParseException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

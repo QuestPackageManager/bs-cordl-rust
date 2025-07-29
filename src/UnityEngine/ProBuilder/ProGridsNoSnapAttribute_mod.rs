@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProGridsNoSnapAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

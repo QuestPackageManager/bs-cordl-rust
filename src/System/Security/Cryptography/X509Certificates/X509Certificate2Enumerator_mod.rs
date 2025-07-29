@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -8,7 +8,7 @@ pub struct X509Certificate2Enumerator {
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enumerator {
@@ -30,7 +30,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enu
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enumerator {
@@ -40,7 +40,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enu
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enumerator {
@@ -218,7 +218,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2En
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Enumerator {

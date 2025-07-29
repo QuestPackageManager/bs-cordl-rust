@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioPlayableAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioPlayableAsset {
@@ -10,7 +10,7 @@ pub struct AudioPlayableAsset {
         crate::UnityEngine::Timeline::AudioClipProperties,
     >,
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioPlayableAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AudioPlayableAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::UnityEngine::Timeline::AudioPlayableAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AudioPlayableAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioPlayableAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::AudioPlayableAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -322,7 +322,7 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioPlayableAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::AudioPlayableAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

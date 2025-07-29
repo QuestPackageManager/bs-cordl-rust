@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+RuntimeRemoteClassHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeRemoteClassHandle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeRemoteClassHandle {
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Mono+RuntimeRemoteClassHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeRemoteClassHandle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeRemoteClassHandle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeRemoteClassHandl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+RuntimeRemoteClassHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeRemoteClassHandle")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeRemoteClassHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeRemoteClassH
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+RuntimeRemoteClassHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeRemoteClassHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeRemoteClassHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeRemoteClass
         self
     }
 }
-#[cfg(feature = "Mono+RuntimeRemoteClassHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeRemoteClassHandle")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeRemoteClassHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeRemoteClassH
         }
     }
 }
-#[cfg(feature = "Mono+RuntimeRemoteClassHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeRemoteClassHandle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeRemoteClassHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeRemoteClassHan
         actual
     }
 }
-#[cfg(feature = "Mono+RuntimeRemoteClassHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeRemoteClassHandle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::RuntimeRemoteClassHandle {
     type Type = Self;

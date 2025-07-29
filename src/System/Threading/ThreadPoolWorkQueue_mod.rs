@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue {
@@ -11,7 +11,7 @@ pub struct ThreadPoolWorkQueue {
     >,
     pub numOutstandingThreadRequests: i32,
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadPoolWorkQueue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Threading::ThreadPoolWorkQueue {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue")]
 impl std::ops::DerefMut for crate::System::Threading::ThreadPoolWorkQueue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -287,7 +287,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadPoolWorkQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -297,7 +297,7 @@ for crate::System::Threading::ThreadPoolWorkQueue {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_QueueSegment {
@@ -312,7 +312,7 @@ pub struct ThreadPoolWorkQueue_QueueSegment {
         crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
     >,
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -332,14 +332,14 @@ for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 impl std::ops::DerefMut for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -518,7 +518,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -528,7 +528,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_SparseArray_1<T: quest_hook::libil2cpp::Type> {
@@ -536,7 +536,7 @@ pub struct ThreadPoolWorkQueue_SparseArray_1<T: quest_hook::libil2cpp::Type> {
     pub m_array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -572,7 +572,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -580,7 +580,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -709,7 +709,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -719,7 +719,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_WorkStealingQueue {
@@ -734,7 +734,7 @@ pub struct ThreadPoolWorkQueue_WorkStealingQueue {
     pub m_tailIndex: i32,
     pub m_foreignLock: crate::System::Threading::SpinLock,
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -754,7 +754,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 impl std::ops::Deref
 for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -762,7 +762,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 impl std::ops::DerefMut
 for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -963,7 +963,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

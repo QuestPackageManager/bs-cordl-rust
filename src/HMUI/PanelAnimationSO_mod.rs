@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+PanelAnimationSO")]
+#[cfg(feature = "cordl_class_HMUI+PanelAnimationSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelAnimationSO {
@@ -17,7 +17,7 @@ pub struct PanelAnimationSO {
         crate::UnityEngine::AnimationCurve,
     >,
 }
-#[cfg(feature = "HMUI+PanelAnimationSO")]
+#[cfg(feature = "cordl_class_HMUI+PanelAnimationSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::PanelAnimationSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::PanelAnimationSO {
         false
     }
 }
-#[cfg(feature = "HMUI+PanelAnimationSO")]
+#[cfg(feature = "cordl_class_HMUI+PanelAnimationSO")]
 impl std::ops::Deref for crate::HMUI::PanelAnimationSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+PanelAnimationSO")]
+#[cfg(feature = "cordl_class_HMUI+PanelAnimationSO")]
 impl std::ops::DerefMut for crate::HMUI::PanelAnimationSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -207,7 +207,7 @@ impl crate::HMUI::PanelAnimationSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+PanelAnimationSO")]
+#[cfg(feature = "cordl_class_HMUI+PanelAnimationSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::PanelAnimationSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

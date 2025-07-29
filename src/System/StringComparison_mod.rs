@@ -1,4 +1,4 @@
-#[cfg(feature = "System+StringComparison")]
+#[cfg(feature = "cordl_class_System+StringComparison")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StringComparison {
@@ -10,7 +10,7 @@ pub enum StringComparison {
     Ordinal = 4i32,
     OrdinalIgnoreCase = 5i32,
 }
-#[cfg(feature = "System+StringComparison")]
+#[cfg(feature = "cordl_class_System+StringComparison")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::StringComparison {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::StringComparison {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+StringComparison")]
+#[cfg(feature = "cordl_class_System+StringComparison")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::StringComparison {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::StringComparison 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+StringComparison")]
+#[cfg(feature = "cordl_class_System+StringComparison")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::StringComparison {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::StringComparison
         self
     }
 }
-#[cfg(feature = "System+StringComparison")]
+#[cfg(feature = "cordl_class_System+StringComparison")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::StringComparison {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::StringComparison 
         }
     }
 }
-#[cfg(feature = "System+StringComparison")]
+#[cfg(feature = "cordl_class_System+StringComparison")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::StringComparison {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

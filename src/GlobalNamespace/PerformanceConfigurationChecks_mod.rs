@@ -1,4 +1,4 @@
-#[cfg(feature = "PerformanceConfigurationChecks")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformanceConfigurationChecks {
@@ -17,7 +17,7 @@ pub struct PerformanceConfigurationChecks {
         >,
     >,
 }
-#[cfg(feature = "PerformanceConfigurationChecks")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceConfigurationChecks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks {
         false
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]
 impl std::ops::Deref for crate::GlobalNamespace::PerformanceConfigurationChecks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceConfigurationChecks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -273,7 +273,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PerformanceConfigurationChecks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -283,7 +283,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationChecks_AppConfig {
@@ -292,7 +292,7 @@ pub struct PerformanceConfigurationChecks_AppConfig {
     pub runInBackground: bool,
     pub backgroundLoadingPriority: crate::UnityEngine::ThreadPriority,
 }
-#[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
     type Held<'a> = Self;
@@ -322,7 +322,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
     type Type = Self;
@@ -333,7 +333,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
     type Actual = Self;
@@ -347,7 +347,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
         self
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
     type Type = Self;
@@ -362,7 +362,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
         }
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
     type Actual = Self;
@@ -376,7 +376,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
         actual
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
     type Type = Self;
@@ -389,13 +389,13 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
 }
 #[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {}
-#[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationChecks_LevelConfig {
     pub modifiers: crate::GlobalNamespace::GameplayModifierMask,
 }
-#[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
     type Held<'a> = Self;
@@ -425,7 +425,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
     type Type = Self;
@@ -436,7 +436,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
     type Actual = Self;
@@ -450,7 +450,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
         self
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
     type Type = Self;
@@ -465,7 +465,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
         }
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
     type Actual = Self;
@@ -479,7 +479,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
         actual
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
     type Type = Self;
@@ -492,14 +492,14 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
 }
 #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {}
-#[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationChecks_Mismatch {
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub frames: i32,
 }
-#[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
     type Held<'a> = Self;
@@ -529,7 +529,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
     type Type = Self;
@@ -540,7 +540,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
     type Actual = Self;
@@ -554,7 +554,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
         self
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
     type Type = Self;
@@ -569,7 +569,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
         }
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
     type Actual = Self;
@@ -583,7 +583,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
         actual
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
     type Type = Self;
@@ -596,7 +596,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
 }
 #[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {}
-#[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OVRConfig")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationChecks_OVRConfig {
@@ -629,7 +629,7 @@ pub struct PerformanceConfigurationChecks_OVRConfig {
     pub localDimmingSupported: bool,
     pub localDimming: bool,
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OVRConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
     type Held<'a> = Self;
@@ -659,7 +659,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OVRConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
     type Type = Self;
@@ -670,7 +670,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OVRConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
     type Actual = Self;
@@ -684,7 +684,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
         self
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OVRConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
     type Type = Self;
@@ -699,7 +699,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
         }
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OVRConfig")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
     type Actual = Self;
@@ -713,7 +713,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
         actual
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OVRConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
     type Type = Self;
@@ -726,13 +726,13 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
 }
 #[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {}
-#[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OculusXRConfig")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationChecks_OculusXRConfig {
     pub boundaryDimension: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OculusXRConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
     type Held<'a> = Self;
@@ -762,7 +762,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OculusXRConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
     type Type = Self;
@@ -773,7 +773,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OculusXRConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
     type Actual = Self;
@@ -787,7 +787,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
         self
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OculusXRConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
     type Type = Self;
@@ -802,7 +802,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
         }
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OculusXRConfig")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
     type Actual = Self;
@@ -816,7 +816,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
         actual
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+OculusXRConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
     type Type = Self;
@@ -829,7 +829,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
 }
 #[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {}
-#[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationChecks_PlayerConfig {
@@ -854,7 +854,7 @@ pub struct PerformanceConfigurationChecks_PlayerConfig {
     pub environmentEffectsFilterDefaultPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     pub environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
 }
-#[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
     type Held<'a> = Self;
@@ -884,7 +884,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
     type Type = Self;
@@ -895,7 +895,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
     type Actual = Self;
@@ -909,7 +909,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
         self
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
     type Type = Self;
@@ -924,7 +924,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
         }
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
     type Actual = Self;
@@ -938,7 +938,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
         actual
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
     type Type = Self;
@@ -951,7 +951,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
 }
 #[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {}
-#[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationChecks_XRConfig {
@@ -967,7 +967,7 @@ pub struct PerformanceConfigurationChecks_XRConfig {
     pub occlusionMaskScale: f32,
     pub useOcclusionMesh: bool,
 }
-#[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
     type Held<'a> = Self;
@@ -997,7 +997,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
     type Type = Self;
@@ -1008,7 +1008,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
     type Actual = Self;
@@ -1022,7 +1022,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
         self
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
     type Type = Self;
@@ -1037,7 +1037,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
         }
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
     type Actual = Self;
@@ -1051,7 +1051,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
         actual
     }
 }
-#[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
+#[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
     type Type = Self;

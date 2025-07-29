@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Mail+QuotedStringFormatReader")]
+#[cfg(feature = "cordl_class_System+Net+Mail+QuotedStringFormatReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuotedStringFormatReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+Mail+QuotedStringFormatReader")]
+#[cfg(feature = "cordl_class_System+Net+Mail+QuotedStringFormatReader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Mail::QuotedStringFormatReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Net::Mail::QuotedStringFormatReader {
         false
     }
 }
-#[cfg(feature = "System+Net+Mail+QuotedStringFormatReader")]
+#[cfg(feature = "cordl_class_System+Net+Mail+QuotedStringFormatReader")]
 impl std::ops::Deref for crate::System::Net::Mail::QuotedStringFormatReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Mail+QuotedStringFormatReader")]
+#[cfg(feature = "cordl_class_System+Net+Mail+QuotedStringFormatReader")]
 impl std::ops::DerefMut for crate::System::Net::Mail::QuotedStringFormatReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -134,7 +134,7 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Mail+QuotedStringFormatReader")]
+#[cfg(feature = "cordl_class_System+Net+Mail+QuotedStringFormatReader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Mail::QuotedStringFormatReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

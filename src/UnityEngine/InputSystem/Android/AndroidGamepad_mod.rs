@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepad")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidGamepad {
     __cordl_parent: crate::UnityEngine::InputSystem::Gamepad,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepad")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidGamepad {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Android::AndroidGamepad {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepad")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Android::AndroidGamepad {
     type Target = crate::UnityEngine::InputSystem::Gamepad;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepad")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Android::AndroidGamepad {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::InputSystem::Android::AndroidGamepad {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepad")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidGamepad {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

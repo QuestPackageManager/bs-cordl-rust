@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+FloatTween")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FloatTween {
@@ -8,7 +8,7 @@ pub struct FloatTween {
     pub m_Duration: f32,
     pub m_IgnoreTimeScale: bool,
 }
-#[cfg(feature = "TMPro+FloatTween")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FloatTween {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FloatTween {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+FloatTween")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FloatTween {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FloatTween {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+FloatTween")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::FloatTween {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::FloatTween {
         self
     }
 }
-#[cfg(feature = "TMPro+FloatTween")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FloatTween {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FloatTween {
         }
     }
 }
-#[cfg(feature = "TMPro+FloatTween")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::FloatTween {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::FloatTween {
         actual
     }
 }
-#[cfg(feature = "TMPro+FloatTween")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::FloatTween {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -393,13 +393,13 @@ impl AsMut<crate::TMPro::ITweenValue> for crate::TMPro::FloatTween {
         todo!()
     }
 }
-#[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween+FloatTweenCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatTween_FloatTweenCallback {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
 }
-#[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween+FloatTweenCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FloatTween_FloatTweenCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -418,14 +418,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FloatTween_FloatTweenC
         false
     }
 }
-#[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween+FloatTweenCallback")]
 impl std::ops::Deref for crate::TMPro::FloatTween_FloatTweenCallback {
     type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween+FloatTweenCallback")]
 impl std::ops::DerefMut for crate::TMPro::FloatTween_FloatTweenCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -462,7 +462,7 @@ impl crate::TMPro::FloatTween_FloatTweenCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+FloatTween+FloatTweenCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::FloatTween_FloatTweenCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

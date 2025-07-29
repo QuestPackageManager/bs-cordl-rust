@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Mathematics+float3x3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+float3x3")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct float3x3 {
@@ -6,7 +6,7 @@ pub struct float3x3 {
     pub c1: crate::Unity::Mathematics::float3,
     pub c2: crate::Unity::Mathematics::float3,
 }
-#[cfg(feature = "Unity+Mathematics+float3x3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+float3x3")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::float3x3 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::float3x3 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+float3x3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+float3x3")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::float3x3 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::float
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+float3x3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+float3x3")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::float3x3 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::floa
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+float3x3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+float3x3")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::float3x3 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::float
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+float3x3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+float3x3")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::float3x3 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::float3x
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+float3x3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+float3x3")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::float3x3 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

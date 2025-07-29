@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+SignatureArrayType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureArrayType")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignatureArrayType {
@@ -6,7 +6,7 @@ pub struct SignatureArrayType {
     pub _rank: i32,
     pub _isMultiDim: bool,
 }
-#[cfg(feature = "System+Reflection+SignatureArrayType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureArrayType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::SignatureArrayType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Reflection::SignatureArrayType {
         false
     }
 }
-#[cfg(feature = "System+Reflection+SignatureArrayType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureArrayType")]
 impl std::ops::Deref for crate::System::Reflection::SignatureArrayType {
     type Target = crate::System::Reflection::SignatureHasElementType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+SignatureArrayType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureArrayType")]
 impl std::ops::DerefMut for crate::System::Reflection::SignatureArrayType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -216,7 +216,7 @@ impl crate::System::Reflection::SignatureArrayType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+SignatureArrayType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureArrayType")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::SignatureArrayType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

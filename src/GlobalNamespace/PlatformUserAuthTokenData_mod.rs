@@ -1,4 +1,4 @@
-#[cfg(feature = "PlatformUserAuthTokenData")]
+#[cfg(feature = "cordl_class_PlatformUserAuthTokenData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformUserAuthTokenData {
@@ -8,7 +8,7 @@ pub struct PlatformUserAuthTokenData {
     >,
     pub _validPlatformEnvironment_k__BackingField: crate::GlobalNamespace::PlatformEnvironment,
 }
-#[cfg(feature = "PlatformUserAuthTokenData")]
+#[cfg(feature = "cordl_class_PlatformUserAuthTokenData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformUserAuthTokenData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::PlatformUserAuthTokenData {
         false
     }
 }
-#[cfg(feature = "PlatformUserAuthTokenData")]
+#[cfg(feature = "cordl_class_PlatformUserAuthTokenData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformUserAuthTokenData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformUserAuthTokenData")]
+#[cfg(feature = "cordl_class_PlatformUserAuthTokenData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformUserAuthTokenData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -190,7 +190,7 @@ impl crate::GlobalNamespace::PlatformUserAuthTokenData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformUserAuthTokenData")]
+#[cfg(feature = "cordl_class_PlatformUserAuthTokenData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformUserAuthTokenData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

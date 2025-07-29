@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+NetworkInformation+AixNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixNetworkInterface")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AixNetworkInterface {
@@ -6,7 +6,7 @@ pub struct AixNetworkInterface {
     pub _ifa_flags: u32,
     pub _ifru_mtu: i32,
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixNetworkInterface")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::AixNetworkInterface {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Net::NetworkInformation::AixNetworkInterface {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixNetworkInterface")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::AixNetworkInterface {
     type Target = crate::System::Net::NetworkInformation::UnixNetworkInterface;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixNetworkInterface")]
 impl std::ops::DerefMut for crate::System::Net::NetworkInformation::AixNetworkInterface {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterface {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixNetworkInterface")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::AixNetworkInterface {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

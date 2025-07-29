@@ -1,4 +1,4 @@
-#[cfg(feature = "MomentaryLoudnessBuffer")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessBuffer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MomentaryLoudnessBuffer {
@@ -7,7 +7,7 @@ pub struct MomentaryLoudnessBuffer {
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub _readingInterval: i32,
 }
-#[cfg(feature = "MomentaryLoudnessBuffer")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MomentaryLoudnessBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MomentaryLoudnessBuffer {
         false
     }
 }
-#[cfg(feature = "MomentaryLoudnessBuffer")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessBuffer")]
 impl std::ops::Deref for crate::GlobalNamespace::MomentaryLoudnessBuffer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MomentaryLoudnessBuffer")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessBuffer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MomentaryLoudnessBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MomentaryLoudnessBuffer")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessBuffer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MomentaryLoudnessBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

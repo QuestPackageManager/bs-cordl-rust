@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Panel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Panel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Panel {
@@ -50,7 +50,7 @@ pub struct Panel {
     pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
     pub m_ValidatingLayout: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+Panel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Panel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Panel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -69,14 +69,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Pane
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Panel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Panel")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Panel {
     type Target = crate::UnityEngine::UIElements::BaseVisualElementPanel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Panel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Panel")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Panel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1514,7 +1514,7 @@ impl crate::UnityEngine::UIElements::Panel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Panel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Panel")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Panel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

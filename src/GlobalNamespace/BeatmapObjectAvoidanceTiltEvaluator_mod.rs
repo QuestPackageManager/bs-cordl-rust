@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapObjectAvoidanceTiltEvaluator")]
+#[cfg(feature = "cordl_class_BeatmapObjectAvoidanceTiltEvaluator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectAvoidanceTiltEvaluator {
@@ -13,7 +13,7 @@ pub struct BeatmapObjectAvoidanceTiltEvaluator {
     >,
     pub _currentAcceleration: f32,
 }
-#[cfg(feature = "BeatmapObjectAvoidanceTiltEvaluator")]
+#[cfg(feature = "cordl_class_BeatmapObjectAvoidanceTiltEvaluator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectAvoidanceTiltEvaluator")]
+#[cfg(feature = "cordl_class_BeatmapObjectAvoidanceTiltEvaluator")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectAvoidanceTiltEvaluator")]
+#[cfg(feature = "cordl_class_BeatmapObjectAvoidanceTiltEvaluator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectAvoidanceTiltEvaluator")]
+#[cfg(feature = "cordl_class_BeatmapObjectAvoidanceTiltEvaluator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

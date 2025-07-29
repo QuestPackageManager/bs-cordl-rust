@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+ChameleonKey")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ChameleonKey")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChameleonKey {
@@ -8,7 +8,7 @@ pub struct ChameleonKey {
     pub originalSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     pub hashCode: i32,
 }
-#[cfg(feature = "System+Xml+Schema+ChameleonKey")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ChameleonKey")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::ChameleonKey {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Chameleo
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+ChameleonKey")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ChameleonKey")]
 impl std::ops::Deref for crate::System::Xml::Schema::ChameleonKey {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+ChameleonKey")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ChameleonKey")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::ChameleonKey {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::System::Xml::Schema::ChameleonKey {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+ChameleonKey")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ChameleonKey")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::ChameleonKey {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformation")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnicastIPAddressInformation {
     __cordl_parent: crate::System::Net::NetworkInformation::IPAddressInformation,
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformation")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::UnicastIPAddressInformation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Net::NetworkInformation::UnicastIPAddressInformation {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformation")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformation")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::UnicastIPAddressInformation {
     type Target = crate::System::Net::NetworkInformation::IPAddressInformation;
@@ -32,7 +32,7 @@ for crate::System::Net::NetworkInformation::UnicastIPAddressInformation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformation")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformation")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::UnicastIPAddressInformation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformation")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::UnicastIPAddressInformation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

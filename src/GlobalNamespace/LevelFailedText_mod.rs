@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelFailedText")]
+#[cfg(feature = "cordl_class_LevelFailedText")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelFailedText {
@@ -8,7 +8,7 @@ pub struct LevelFailedText {
         crate::BGLib::Polyglot::LocalizedTextMeshPro,
     >,
 }
-#[cfg(feature = "LevelFailedText")]
+#[cfg(feature = "cordl_class_LevelFailedText")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelFailedText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelFailedT
         false
     }
 }
-#[cfg(feature = "LevelFailedText")]
+#[cfg(feature = "cordl_class_LevelFailedText")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelFailedText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelFailedText")]
+#[cfg(feature = "cordl_class_LevelFailedText")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelFailedText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::LevelFailedText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelFailedText")]
+#[cfg(feature = "cordl_class_LevelFailedText")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelFailedText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

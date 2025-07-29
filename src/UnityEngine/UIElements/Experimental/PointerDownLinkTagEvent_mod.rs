@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerDownLinkTagEvent {
@@ -14,7 +16,9 @@ pub struct PointerDownLinkTagEvent {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,7 +38,9 @@ for crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
     type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
@@ -46,7 +52,9 @@ for crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -221,7 +229,9 @@ impl crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

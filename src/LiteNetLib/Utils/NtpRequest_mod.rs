@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NtpRequest {
@@ -11,7 +11,7 @@ pub struct NtpRequest {
     >,
     pub _ntpEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpRequest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NtpRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NtpRequest
         false
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpRequest")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NtpRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpRequest")]
 impl std::ops::DerefMut for crate::LiteNetLib::Utils::NtpRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -360,7 +360,7 @@ impl crate::LiteNetLib::Utils::NtpRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpRequest")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NtpRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

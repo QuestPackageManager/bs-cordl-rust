@@ -1,10 +1,14 @@
-#[cfg(feature = "JetBrains+Annotations+CannotApplyEqualityOperatorAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+CannotApplyEqualityOperatorAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CannotApplyEqualityOperatorAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+CannotApplyEqualityOperatorAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+CannotApplyEqualityOperatorAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+CannotApplyEqualityOperatorAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+CannotApplyEqualityOperatorAttribute"
+)]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +38,9 @@ for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+CannotApplyEqualityOperatorAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+CannotApplyEqualityOperatorAttribute"
+)]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+CannotApplyEqualityOperatorAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+CannotApplyEqualityOperatorAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

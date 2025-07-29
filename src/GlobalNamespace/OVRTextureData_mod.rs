@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRTextureData")]
+#[cfg(feature = "cordl_class_OVRTextureData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTextureData {
@@ -9,7 +9,7 @@ pub struct OVRTextureData {
     pub transcodedFormat: crate::UnityEngine::TextureFormat,
     pub uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "OVRTextureData")]
+#[cfg(feature = "cordl_class_OVRTextureData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTextureData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTextureDa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRTextureData")]
+#[cfg(feature = "cordl_class_OVRTextureData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRTextureData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRTextu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRTextureData")]
+#[cfg(feature = "cordl_class_OVRTextureData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRTextureData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRText
         self
     }
 }
-#[cfg(feature = "OVRTextureData")]
+#[cfg(feature = "cordl_class_OVRTextureData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRTextureData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRTextu
         }
     }
 }
-#[cfg(feature = "OVRTextureData")]
+#[cfg(feature = "cordl_class_OVRTextureData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRTextureData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRTexture
         actual
     }
 }
-#[cfg(feature = "OVRTextureData")]
+#[cfg(feature = "cordl_class_OVRTextureData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRTextureData {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsNoTransitionInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolSettingsNoTransitionInstaller {
@@ -10,7 +10,7 @@ pub struct RecordingToolSettingsNoTransitionInstaller {
         crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
     >,
 }
-#[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsNoTransitionInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
         false
     }
 }
-#[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsNoTransitionInstaller")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsNoTransitionInstaller")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsNoTransitionInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

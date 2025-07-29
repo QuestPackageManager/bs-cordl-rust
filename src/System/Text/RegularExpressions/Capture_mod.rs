@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+RegularExpressions+Capture")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Capture")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Capture {
@@ -9,7 +9,7 @@ pub struct Capture {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+Text+RegularExpressions+Capture")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Capture")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::Capture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Text::RegularExpressions::Capture {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Capture")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Capture")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Capture {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Capture")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Capture")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::Capture {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -333,7 +333,7 @@ impl crate::System::Text::RegularExpressions::Capture {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Capture")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Capture")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::Capture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

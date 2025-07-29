@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRAudioSourceTest")]
+#[cfg(feature = "cordl_class_OVRAudioSourceTest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRAudioSourceTest {
@@ -6,7 +6,7 @@ pub struct OVRAudioSourceTest {
     pub period: f32,
     pub nextActionTime: f32,
 }
-#[cfg(feature = "OVRAudioSourceTest")]
+#[cfg(feature = "cordl_class_OVRAudioSourceTest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRAudioSourceTest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRAudioSour
         false
     }
 }
-#[cfg(feature = "OVRAudioSourceTest")]
+#[cfg(feature = "cordl_class_OVRAudioSourceTest")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRAudioSourceTest {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRAudioSourceTest")]
+#[cfg(feature = "cordl_class_OVRAudioSourceTest")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRAudioSourceTest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::OVRAudioSourceTest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRAudioSourceTest")]
+#[cfg(feature = "cordl_class_OVRAudioSourceTest")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRAudioSourceTest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

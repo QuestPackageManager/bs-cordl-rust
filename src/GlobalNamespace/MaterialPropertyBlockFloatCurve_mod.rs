@@ -1,4 +1,4 @@
-#[cfg(feature = "MaterialPropertyBlockFloatCurve")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatCurve")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockFloatCurve {
@@ -7,7 +7,7 @@ pub struct MaterialPropertyBlockFloatCurve {
     pub _valueMultiplier: f32,
     pub _speedMultiplier: f32,
 }
-#[cfg(feature = "MaterialPropertyBlockFloatCurve")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatCurve")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialPropertyBlockFloatCurve {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MaterialPropertyBlockFloatCurve {
         false
     }
 }
-#[cfg(feature = "MaterialPropertyBlockFloatCurve")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatCurve")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockFloatCurve {
     type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialPropertyBlockFloatCurve")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatCurve")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyBlockFloatCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockFloatCurve {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialPropertyBlockFloatCurve")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatCurve")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialPropertyBlockFloatCurve {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

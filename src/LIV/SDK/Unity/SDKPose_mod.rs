@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKPose")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPose")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKPose {
@@ -11,7 +11,7 @@ pub struct SDKPose {
     pub unused0: i32,
     pub unused1: i32,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPose")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPose")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKPose {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKPose {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPose")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPose")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKPose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKPose 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPose")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPose")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKPose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKPose
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPose")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPose")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKPose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKPose 
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPose")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPose")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKPose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKPose {
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPose")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPose")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LIV::SDK::Unity::SDKPose {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

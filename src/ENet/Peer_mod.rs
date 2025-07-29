@@ -1,11 +1,11 @@
-#[cfg(feature = "ENet+Peer")]
+#[cfg(feature = "cordl_class_ENet+Peer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Peer {
     pub nativePeer: crate::System::IntPtr,
     pub nativeID: u32,
 }
-#[cfg(feature = "ENet+Peer")]
+#[cfg(feature = "cordl_class_ENet+Peer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::Peer {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::Peer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ENet+Peer")]
+#[cfg(feature = "cordl_class_ENet+Peer")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::Peer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::Peer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ENet+Peer")]
+#[cfg(feature = "cordl_class_ENet+Peer")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::Peer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::Peer {
         self
     }
 }
-#[cfg(feature = "ENet+Peer")]
+#[cfg(feature = "cordl_class_ENet+Peer")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::Peer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::Peer {
         }
     }
 }
-#[cfg(feature = "ENet+Peer")]
+#[cfg(feature = "cordl_class_ENet+Peer")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::Peer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::ENet::Peer {
         actual
     }
 }
-#[cfg(feature = "ENet+Peer")]
+#[cfg(feature = "cordl_class_ENet+Peer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::Peer {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+XmlBooleanConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBooleanConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlBooleanConverter {
     __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
 }
-#[cfg(feature = "System+Xml+Schema+XmlBooleanConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBooleanConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlBooleanConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::XmlBooleanConverter {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlBooleanConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBooleanConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlBooleanConverter {
     type Target = crate::System::Xml::Schema::XmlBaseConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlBooleanConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBooleanConverter")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlBooleanConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -337,7 +337,7 @@ impl crate::System::Xml::Schema::XmlBooleanConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlBooleanConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBooleanConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlBooleanConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

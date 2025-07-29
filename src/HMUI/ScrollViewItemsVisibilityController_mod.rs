@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ScrollViewItemsVisibilityController")]
+#[cfg(feature = "cordl_class_HMUI+ScrollViewItemsVisibilityController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollViewItemsVisibilityController {
@@ -45,7 +45,7 @@ pub struct ScrollViewItemsVisibilityController {
     pub _contentMaxY: f32,
     pub _contentMinY: f32,
 }
-#[cfg(feature = "HMUI+ScrollViewItemsVisibilityController")]
+#[cfg(feature = "cordl_class_HMUI+ScrollViewItemsVisibilityController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::ScrollViewItemsVisibilityController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -65,14 +65,14 @@ for crate::HMUI::ScrollViewItemsVisibilityController {
         false
     }
 }
-#[cfg(feature = "HMUI+ScrollViewItemsVisibilityController")]
+#[cfg(feature = "cordl_class_HMUI+ScrollViewItemsVisibilityController")]
 impl std::ops::Deref for crate::HMUI::ScrollViewItemsVisibilityController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ScrollViewItemsVisibilityController")]
+#[cfg(feature = "cordl_class_HMUI+ScrollViewItemsVisibilityController")]
 impl std::ops::DerefMut for crate::HMUI::ScrollViewItemsVisibilityController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -203,7 +203,7 @@ impl crate::HMUI::ScrollViewItemsVisibilityController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ScrollViewItemsVisibilityController")]
+#[cfg(feature = "cordl_class_HMUI+ScrollViewItemsVisibilityController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HMUI::ScrollViewItemsVisibilityController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

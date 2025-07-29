@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParserTimeZone")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParserTimeZone")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParserTimeZone {
@@ -8,7 +8,7 @@ pub enum ParserTimeZone {
     Unspecified = 0i32,
     Utc = 1i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParserTimeZone")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParserTimeZone")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParserTimeZone")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParserTimeZone")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParserTimeZone")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParserTimeZone")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParserTimeZone")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParserTimeZone")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ParserTimeZone")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ParserTimeZone")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::ParserTimeZone {
     type Actual = Self;

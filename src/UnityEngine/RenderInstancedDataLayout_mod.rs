@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RenderInstancedDataLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderInstancedDataLayout")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderInstancedDataLayout {
@@ -7,7 +7,7 @@ pub struct RenderInstancedDataLayout {
     pub _offsetPrevObjectToWorld_k__BackingField: i32,
     pub _offsetRenderingLayerMask_k__BackingField: i32,
 }
-#[cfg(feature = "UnityEngine+RenderInstancedDataLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderInstancedDataLayout")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::RenderInstancedDataLayout {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::RenderInstancedDataLayout {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RenderInstancedDataLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderInstancedDataLayout")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RenderInstancedDataLayout {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::RenderInstancedDataLayout {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RenderInstancedDataLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderInstancedDataLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RenderInstancedDataLayout {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::RenderInstancedDataLayout {
         self
     }
 }
-#[cfg(feature = "UnityEngine+RenderInstancedDataLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderInstancedDataLayout")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RenderInstancedDataLayout {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::RenderInstancedDataLayout {
         }
     }
 }
-#[cfg(feature = "UnityEngine+RenderInstancedDataLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderInstancedDataLayout")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RenderInstancedDataLayout {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::RenderInstancedDataLayout {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+RenderInstancedDataLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderInstancedDataLayout")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::RenderInstancedDataLayout {
     type Type = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+Tasks+Sources+IValueTaskSource")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Sources+IValueTaskSource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IValueTaskSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+IValueTaskSource")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Sources+IValueTaskSource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::Sources::IValueTaskSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Threading::Tasks::Sources::IValueTaskSource {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+IValueTaskSource")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Sources+IValueTaskSource")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Sources::IValueTaskSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+IValueTaskSource")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Sources+IValueTaskSource")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::Sources::IValueTaskSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::System::Threading::Tasks::Sources::IValueTaskSource {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+IValueTaskSource")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+Sources+IValueTaskSource")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::Sources::IValueTaskSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

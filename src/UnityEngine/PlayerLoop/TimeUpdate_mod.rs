@@ -1,8 +1,8 @@
-#[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::TimeUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::Time
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::TimeUpdate {
     type Type = Self;
@@ -42,7 +42,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::TimeUpdate {
     type Actual = Self;
@@ -56,7 +56,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::TimeUpdate {
     type Type = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::TimeUpdate {
     type Actual = Self;
@@ -85,7 +85,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::TimeUpdate {
     type Type = Self;
@@ -104,13 +104,13 @@ impl crate::UnityEngine::PlayerLoop::TimeUpdate {
     pub type WaitForLastPresentationAndUpdateTime = crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateTime;
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
+    feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeUpdate_WaitForLastPresentationAndUpdateTime {}
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
+    feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateTime {
@@ -142,7 +142,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateT
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
+    feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateTime {
@@ -155,7 +155,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateT
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
+    feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateTime {
@@ -171,7 +171,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateT
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
+    feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateTime {
@@ -188,7 +188,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateT
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
+    feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateTime {
@@ -204,7 +204,7 @@ for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateT
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
+    feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::TimeUpdate_WaitForLastPresentationAndUpdateTime {

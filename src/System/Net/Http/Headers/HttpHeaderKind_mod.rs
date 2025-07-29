@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Http+Headers+HttpHeaderKind")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpHeaderKind")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpHeaderKind {
@@ -8,7 +8,7 @@ pub enum HttpHeaderKind {
     Request = 1i32,
     Response = 2i32,
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpHeaderKind")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpHeaderKind")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::Headers::HttpHeaderKind {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Net::Http::Headers::HttpHeaderKind {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpHeaderKind")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpHeaderKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Http::Headers::HttpHeaderKind {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Net::Http::Headers::HttpHeaderKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpHeaderKind")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpHeaderKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Http::Headers::HttpHeaderKind {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Net::Http::Headers::HttpHeaderKind {
         self
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpHeaderKind")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpHeaderKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Http::Headers::HttpHeaderKind {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Net::Http::Headers::HttpHeaderKind {
         }
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpHeaderKind")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpHeaderKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Http::Headers::HttpHeaderKind {
     type Actual = Self;

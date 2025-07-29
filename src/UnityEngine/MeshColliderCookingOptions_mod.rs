@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshColliderCookingOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshColliderCookingOptions {
@@ -10,7 +10,7 @@ pub enum MeshColliderCookingOptions {
     UseFastMidphase = 16i32,
     WeldColocatedVertices = 8i32,
 }
-#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::MeshColliderCookingOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::MeshColliderCookingOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::MeshColliderCookingOptions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::MeshColliderCookingOptions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Actual = Self;

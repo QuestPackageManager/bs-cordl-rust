@@ -1,4 +1,4 @@
-#[cfg(feature = "SortedList_2")]
+#[cfg(feature = "cordl_class_SortedList_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_2<
@@ -18,7 +18,7 @@ pub struct SortedList_2<
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
 }
-#[cfg(feature = "SortedList_2")]
+#[cfg(feature = "cordl_class_SortedList_2")]
 unsafe impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
@@ -53,7 +53,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "SortedList_2")]
+#[cfg(feature = "cordl_class_SortedList_2")]
 impl<T: quest_hook::libil2cpp::Type, TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::SortedList_2<T, TBase> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::SortedList_2<T, TBase> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SortedList_2")]
+#[cfg(feature = "cordl_class_SortedList_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
@@ -371,7 +371,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SortedList_2")]
+#[cfg(feature = "cordl_class_SortedList_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,

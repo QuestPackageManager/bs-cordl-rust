@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Diagnostics+DiagnosticsConfigurationHandler")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DiagnosticsConfigurationHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiagnosticsConfigurationHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Diagnostics+DiagnosticsConfigurationHandler")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DiagnosticsConfigurationHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::DiagnosticsConfigurationHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Diagnostics::DiagnosticsConfigurationHandler {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+DiagnosticsConfigurationHandler")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DiagnosticsConfigurationHandler")]
 impl std::ops::Deref for crate::System::Diagnostics::DiagnosticsConfigurationHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+DiagnosticsConfigurationHandler")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DiagnosticsConfigurationHandler")]
 impl std::ops::DerefMut for crate::System::Diagnostics::DiagnosticsConfigurationHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -108,7 +108,7 @@ impl crate::System::Diagnostics::DiagnosticsConfigurationHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+DiagnosticsConfigurationHandler")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DiagnosticsConfigurationHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::DiagnosticsConfigurationHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

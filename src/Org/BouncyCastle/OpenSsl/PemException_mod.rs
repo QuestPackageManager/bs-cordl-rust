@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PemException {
     __cordl_parent: crate::System::IO::IOException,
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::OpenSsl::PemException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::OpenSsl::PemException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::OpenSsl::PemException {
     type Target = crate::System::IO::IOException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemException")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::OpenSsl::PemException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::OpenSsl::PemException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

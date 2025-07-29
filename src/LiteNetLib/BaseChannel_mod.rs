@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+BaseChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+BaseChannel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseChannel {
@@ -11,7 +11,7 @@ pub struct BaseChannel {
         >,
     >,
 }
-#[cfg(feature = "LiteNetLib+BaseChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+BaseChannel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::BaseChannel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::BaseChannel {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+BaseChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+BaseChannel")]
 impl std::ops::Deref for crate::LiteNetLib::BaseChannel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+BaseChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+BaseChannel")]
 impl std::ops::DerefMut for crate::LiteNetLib::BaseChannel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -175,7 +175,7 @@ impl crate::LiteNetLib::BaseChannel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+BaseChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+BaseChannel")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::BaseChannel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

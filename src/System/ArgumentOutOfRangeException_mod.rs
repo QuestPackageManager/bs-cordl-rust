@@ -1,11 +1,11 @@
-#[cfg(feature = "System+ArgumentOutOfRangeException")]
+#[cfg(feature = "cordl_class_System+ArgumentOutOfRangeException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArgumentOutOfRangeException {
     __cordl_parent: crate::System::ArgumentException,
     pub _actualValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+ArgumentOutOfRangeException")]
+#[cfg(feature = "cordl_class_System+ArgumentOutOfRangeException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ArgumentOutOfRangeException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ArgumentOutOfRangeExc
         false
     }
 }
-#[cfg(feature = "System+ArgumentOutOfRangeException")]
+#[cfg(feature = "cordl_class_System+ArgumentOutOfRangeException")]
 impl std::ops::Deref for crate::System::ArgumentOutOfRangeException {
     type Target = crate::System::ArgumentException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ArgumentOutOfRangeException")]
+#[cfg(feature = "cordl_class_System+ArgumentOutOfRangeException")]
 impl std::ops::DerefMut for crate::System::ArgumentOutOfRangeException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -303,7 +303,7 @@ impl crate::System::ArgumentOutOfRangeException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ArgumentOutOfRangeException")]
+#[cfg(feature = "cordl_class_System+ArgumentOutOfRangeException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ArgumentOutOfRangeException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

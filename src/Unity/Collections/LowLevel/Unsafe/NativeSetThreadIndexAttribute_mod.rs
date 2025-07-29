@@ -1,10 +1,14 @@
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeSetThreadIndexAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute"
+)]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +38,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute"
+)]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -41,7 +49,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute")]
 impl crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {}
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

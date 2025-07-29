@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContextProperty")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContextProperty")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IContextProperty {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContextProperty")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContextProperty")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Contexts::IContextProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::Contexts::IContextProperty {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContextProperty")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContextProperty")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Contexts::IContextProperty {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContextProperty")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContextProperty")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Contexts::IContextProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +133,7 @@ impl crate::System::Runtime::Remoting::Contexts::IContextProperty {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContextProperty")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContextProperty")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Contexts::IContextProperty {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

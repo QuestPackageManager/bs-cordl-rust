@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelsPromoModel")]
+#[cfg(feature = "cordl_class_BeatmapLevelsPromoModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelsPromoModel {
@@ -24,7 +24,7 @@ pub struct BeatmapLevelsPromoModel {
         >,
     >,
 }
-#[cfg(feature = "BeatmapLevelsPromoModel")]
+#[cfg(feature = "cordl_class_BeatmapLevelsPromoModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelsPromoModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::BeatmapLevelsPromoModel {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelsPromoModel")]
+#[cfg(feature = "cordl_class_BeatmapLevelsPromoModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelsPromoModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelsPromoModel")]
+#[cfg(feature = "cordl_class_BeatmapLevelsPromoModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelsPromoModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -217,7 +217,7 @@ impl crate::GlobalNamespace::BeatmapLevelsPromoModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelsPromoModel")]
+#[cfg(feature = "cordl_class_BeatmapLevelsPromoModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelsPromoModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

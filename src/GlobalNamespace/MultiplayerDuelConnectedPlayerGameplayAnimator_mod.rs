@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerDuelConnectedPlayerGameplayAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerDuelConnectedPlayerGameplayAnimator {
@@ -10,7 +10,7 @@ pub struct MultiplayerDuelConnectedPlayerGameplayAnimator {
         crate::GlobalNamespace::MultiplayerConnectedPlayerLevelFailController,
     >,
 }
-#[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerDuelConnectedPlayerGameplayAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
         false
     }
 }
-#[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerDuelConnectedPlayerGameplayAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
     type Target = crate::GlobalNamespace::MultiplayerGameplayAnimator;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerDuelConnectedPlayerGameplayAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -199,7 +199,7 @@ impl crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerDuelConnectedPlayerGameplayAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

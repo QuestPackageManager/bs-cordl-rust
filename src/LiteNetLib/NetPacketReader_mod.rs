@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+NetPacketReader")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetPacketReader {
@@ -7,7 +7,7 @@ pub struct NetPacketReader {
     pub _manager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
     pub _evt: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetEvent>,
 }
-#[cfg(feature = "LiteNetLib+NetPacketReader")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetPacketReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetPacketReader {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NetPacketReader")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketReader")]
 impl std::ops::Deref for crate::LiteNetLib::NetPacketReader {
     type Target = crate::LiteNetLib::Utils::NetDataReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NetPacketReader")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketReader")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetPacketReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -154,7 +154,7 @@ impl crate::LiteNetLib::NetPacketReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NetPacketReader")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetPacketReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CanStartDragArgs")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CanStartDragArgs {
@@ -10,7 +10,7 @@ pub struct CanStartDragArgs {
         crate::System::Collections::Generic::IEnumerable_1<i32>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CanStartDragArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::CanStartDragArgs {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::UIElements::CanStartDragArgs {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CanStartDragArgs")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::CanStartDragArgs {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::UIElements::CanStartDragArgs {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CanStartDragArgs")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::CanStartDragArgs {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::UIElements::CanStartDragArgs {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CanStartDragArgs")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::CanStartDragArgs {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UIElements::CanStartDragArgs {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CanStartDragArgs")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::CanStartDragArgs {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::UIElements::CanStartDragArgs {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+CanStartDragArgs")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::CanStartDragArgs {
     type Type = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "HEU_ScriptCallbackExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptCallbackExample")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ScriptCallbackExample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "HEU_ScriptCallbackExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptCallbackExample")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::HEU_ScriptCallbackExample {
         false
     }
 }
-#[cfg(feature = "HEU_ScriptCallbackExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptCallbackExample")]
 impl std::ops::Deref for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HEU_ScriptCallbackExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptCallbackExample")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::HEU_ScriptCallbackExample {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HEU_ScriptCallbackExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptCallbackExample")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

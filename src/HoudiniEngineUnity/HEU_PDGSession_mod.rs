@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PDGSession {
@@ -26,7 +26,7 @@ pub struct HEU_PDGSession {
         >,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_PDGSession {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_PDGSe
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PDGSession {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PDGSession {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1026,7 +1026,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_PDGSession {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1035,7 +1035,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_PDGSes
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PDGSession_EventMessageColor {
@@ -1044,7 +1044,7 @@ pub enum HEU_PDGSession_EventMessageColor {
     ERROR = 2i32,
     WARNING = 1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Held<'a> = Self;
@@ -1074,7 +1074,7 @@ for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Type = Self;
@@ -1085,7 +1085,7 @@ for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Actual = Self;
@@ -1099,7 +1099,7 @@ for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Type = Self;
@@ -1114,7 +1114,7 @@ for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Actual = Self;

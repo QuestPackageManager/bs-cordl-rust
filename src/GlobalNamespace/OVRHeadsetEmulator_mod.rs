@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRHeadsetEmulator")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHeadsetEmulator {
@@ -20,7 +20,7 @@ pub struct OVRHeadsetEmulator {
     pub emulatorHasInitialized: bool,
     pub previousCursorLockMode: crate::UnityEngine::CursorLockMode,
 }
-#[cfg(feature = "OVRHeadsetEmulator")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHeadsetEmulator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHeadsetEm
         false
     }
 }
-#[cfg(feature = "OVRHeadsetEmulator")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHeadsetEmulator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRHeadsetEmulator")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHeadsetEmulator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::OVRHeadsetEmulator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRHeadsetEmulator")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHeadsetEmulator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -175,7 +175,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHeadsetEmu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator+OpMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRHeadsetEmulator_OpMode {
@@ -184,7 +184,7 @@ pub enum OVRHeadsetEmulator_OpMode {
     EditorOnly = 1i32,
     Off = 0i32,
 }
-#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Held<'a> = Self;
@@ -214,7 +214,7 @@ for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Type = Self;
@@ -225,7 +225,7 @@ for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Actual = Self;
@@ -239,7 +239,7 @@ for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
         self
     }
 }
-#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Type = Self;
@@ -254,7 +254,7 @@ for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
         }
     }
 }
-#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
+#[cfg(feature = "cordl_class_OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Actual = Self;

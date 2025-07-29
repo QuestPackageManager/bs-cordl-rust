@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Dynamic+Utils+TypeUtils")]
+#[cfg(feature = "cordl_class_System+Dynamic+Utils+TypeUtils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Dynamic+Utils+TypeUtils")]
+#[cfg(feature = "cordl_class_System+Dynamic+Utils+TypeUtils")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::Utils::TypeUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::Utils::TypeU
         false
     }
 }
-#[cfg(feature = "System+Dynamic+Utils+TypeUtils")]
+#[cfg(feature = "cordl_class_System+Dynamic+Utils+TypeUtils")]
 impl std::ops::Deref for crate::System::Dynamic::Utils::TypeUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+Utils+TypeUtils")]
+#[cfg(feature = "cordl_class_System+Dynamic+Utils+TypeUtils")]
 impl std::ops::DerefMut for crate::System::Dynamic::Utils::TypeUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1223,7 +1223,7 @@ impl crate::System::Dynamic::Utils::TypeUtils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Dynamic+Utils+TypeUtils")]
+#[cfg(feature = "cordl_class_System+Dynamic+Utils+TypeUtils")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::Utils::TypeUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

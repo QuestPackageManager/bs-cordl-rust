@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionEnvIntType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionEnvIntType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_SessionEnvIntType {
@@ -7,7 +7,7 @@ pub enum HAPI_SessionEnvIntType {
     HAPI_SESSIONENVINT_LICENSE = 100i32,
     HAPI_SESSIONENVINT_MAX = 101i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionEnvIntType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionEnvIntType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionEnvIntType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionEnvIntType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionEnvIntType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionEnvIntType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionEnvIntType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionEnvIntType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionEnvIntType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionEnvIntType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_SessionEnvIntType {
     type Actual = Self;

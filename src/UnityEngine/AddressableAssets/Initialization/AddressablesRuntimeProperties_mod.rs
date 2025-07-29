@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct AddressablesRuntimeProperties {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {
@@ -29,7 +29,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimePr
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {
@@ -39,7 +39,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimePr
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {
@@ -276,7 +276,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeP
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {

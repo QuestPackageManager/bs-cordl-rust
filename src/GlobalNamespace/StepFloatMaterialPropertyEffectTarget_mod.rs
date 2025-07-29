@@ -1,4 +1,4 @@
-#[cfg(feature = "StepFloatMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_StepFloatMaterialPropertyEffectTarget")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StepFloatMaterialPropertyEffectTarget {
@@ -11,7 +11,7 @@ pub struct StepFloatMaterialPropertyEffectTarget {
     pub _stepSize: f32,
     pub _propertyId: i32,
 }
-#[cfg(feature = "StepFloatMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_StepFloatMaterialPropertyEffectTarget")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StepFloatMaterialPropertyEffectTarget {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::StepFloatMaterialPropertyEffectTarget {
         false
     }
 }
-#[cfg(feature = "StepFloatMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_StepFloatMaterialPropertyEffectTarget")]
 impl std::ops::Deref for crate::GlobalNamespace::StepFloatMaterialPropertyEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StepFloatMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_StepFloatMaterialPropertyEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StepFloatMaterialPropertyEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -179,7 +179,7 @@ impl crate::GlobalNamespace::StepFloatMaterialPropertyEffectTarget {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StepFloatMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_StepFloatMaterialPropertyEffectTarget")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StepFloatMaterialPropertyEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

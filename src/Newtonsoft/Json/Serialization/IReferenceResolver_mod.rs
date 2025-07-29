@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+IReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+IReferenceResolver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IReferenceResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+IReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+IReferenceResolver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Serialization::IReferenceResolver {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+IReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+IReferenceResolver")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+IReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+IReferenceResolver")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+IReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+IReferenceResolver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

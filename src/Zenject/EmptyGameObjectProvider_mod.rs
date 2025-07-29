@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+EmptyGameObjectProvider")]
+#[cfg(feature = "cordl_class_Zenject+EmptyGameObjectProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EmptyGameObjectProvider {
@@ -8,7 +8,7 @@ pub struct EmptyGameObjectProvider {
         crate::Zenject::GameObjectCreationParameters,
     >,
 }
-#[cfg(feature = "Zenject+EmptyGameObjectProvider")]
+#[cfg(feature = "cordl_class_Zenject+EmptyGameObjectProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::EmptyGameObjectProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::EmptyGameObjectProvi
         false
     }
 }
-#[cfg(feature = "Zenject+EmptyGameObjectProvider")]
+#[cfg(feature = "cordl_class_Zenject+EmptyGameObjectProvider")]
 impl std::ops::Deref for crate::Zenject::EmptyGameObjectProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+EmptyGameObjectProvider")]
+#[cfg(feature = "cordl_class_Zenject+EmptyGameObjectProvider")]
 impl std::ops::DerefMut for crate::Zenject::EmptyGameObjectProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -206,7 +206,7 @@ impl crate::Zenject::EmptyGameObjectProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+EmptyGameObjectProvider")]
+#[cfg(feature = "cordl_class_Zenject+EmptyGameObjectProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::EmptyGameObjectProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

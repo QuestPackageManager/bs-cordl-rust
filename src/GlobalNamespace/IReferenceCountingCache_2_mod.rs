@@ -1,4 +1,4 @@
-#[cfg(feature = "IReferenceCountingCache_2")]
+#[cfg(feature = "cordl_class_IReferenceCountingCache_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IReferenceCountingCache_2<
@@ -9,7 +9,7 @@ pub struct IReferenceCountingCache_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "IReferenceCountingCache_2")]
+#[cfg(feature = "cordl_class_IReferenceCountingCache_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "IReferenceCountingCache_2")]
+#[cfg(feature = "cordl_class_IReferenceCountingCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -55,7 +55,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IReferenceCountingCache_2")]
+#[cfg(feature = "cordl_class_IReferenceCountingCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -213,7 +213,7 @@ impl<
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IReferenceCountingCache_2")]
+#[cfg(feature = "cordl_class_IReferenceCountingCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

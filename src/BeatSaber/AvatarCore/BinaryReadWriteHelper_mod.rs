@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatSaber+AvatarCore+BinaryReadWriteHelper")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+BinaryReadWriteHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryReadWriteHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+BinaryReadWriteHelper")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+BinaryReadWriteHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+BinaryReadWriteHelper")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+BinaryReadWriteHelper")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+BinaryReadWriteHelper")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+BinaryReadWriteHelper")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+BinaryReadWriteHelper")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+BinaryReadWriteHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

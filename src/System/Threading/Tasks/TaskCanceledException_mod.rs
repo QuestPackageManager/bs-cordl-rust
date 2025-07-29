@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Threading+Tasks+TaskCanceledException")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCanceledException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskCanceledException {
     __cordl_parent: crate::System::OperationCanceledException,
     pub _canceledTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCanceledException")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCanceledException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::TaskCanceledException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Threading::Tasks::TaskCanceledException {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCanceledException")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCanceledException")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskCanceledException {
     type Target = crate::System::OperationCanceledException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCanceledException")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCanceledException")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskCanceledException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -187,7 +187,7 @@ impl crate::System::Threading::Tasks::TaskCanceledException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCanceledException")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCanceledException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::TaskCanceledException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

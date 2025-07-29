@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+Obstacle")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Obstacle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Obstacle {
@@ -8,7 +8,7 @@ pub struct Obstacle {
     pub w: i32,
     pub h: i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Obstacle")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Obstacle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Obstacle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Obst
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Obstacle")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Obstacle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::Obstacle {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BeatmapSaveDataVersion4::Obstacle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Obstacle")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Obstacle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::Obstacle {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BeatmapSaveDataVersion4::Obstacle {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Obstacle")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Obstacle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::Obstacle {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BeatmapSaveDataVersion4::Obstacle {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Obstacle")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Obstacle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::Obstacle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::Ob
         actual
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Obstacle")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Obstacle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapSaveDataVersion4::Obstacle {
     type Type = Self;

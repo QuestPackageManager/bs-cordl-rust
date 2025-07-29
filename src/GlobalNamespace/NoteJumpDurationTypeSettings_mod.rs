@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteJumpDurationTypeSettings")]
+#[cfg(feature = "cordl_class_NoteJumpDurationTypeSettings")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteJumpDurationTypeSettings {
@@ -6,7 +6,7 @@ pub enum NoteJumpDurationTypeSettings {
     Dynamic = 0i32,
     Static = 1i32,
 }
-#[cfg(feature = "NoteJumpDurationTypeSettings")]
+#[cfg(feature = "cordl_class_NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteJumpDurationTypeSettings")]
+#[cfg(feature = "cordl_class_NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteJumpDurationTypeSettings")]
+#[cfg(feature = "cordl_class_NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
         self
     }
 }
-#[cfg(feature = "NoteJumpDurationTypeSettings")]
+#[cfg(feature = "cordl_class_NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
         }
     }
 }
-#[cfg(feature = "NoteJumpDurationTypeSettings")]
+#[cfg(feature = "cordl_class_NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Actual = Self;

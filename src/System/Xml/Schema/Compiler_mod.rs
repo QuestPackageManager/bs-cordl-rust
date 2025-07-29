@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+Compiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Compiler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Compiler {
@@ -41,7 +41,7 @@ pub struct Compiler {
         crate::System::Xml::Schema::XmlSchema,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+Compiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Compiler")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Compiler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -60,14 +60,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Compiler
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+Compiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Compiler")]
 impl std::ops::Deref for crate::System::Xml::Schema::Compiler {
     type Target = crate::System::Xml::Schema::BaseProcessor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+Compiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Compiler")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Compiler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2726,7 +2726,7 @@ impl crate::System::Xml::Schema::Compiler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+Compiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Compiler")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::Compiler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

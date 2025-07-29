@@ -1,4 +1,4 @@
-#[cfg(feature = "HealthWarningFlowCoordinator")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator {
@@ -56,7 +56,7 @@ pub struct HealthWarningFlowCoordinator {
     pub _selectedRegion: crate::GlobalNamespace::SelectRegionViewController_Region,
     pub _openedWithLanguage: crate::BGLib::Polyglot::Language,
 }
-#[cfg(feature = "HealthWarningFlowCoordinator")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HealthWarningFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -76,14 +76,14 @@ for crate::GlobalNamespace::HealthWarningFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "HealthWarningFlowCoordinator")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HealthWarningFlowCoordinator")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -629,7 +629,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HealthWarningFlowCoordinator")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HealthWarningFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -639,7 +639,7 @@ for crate::GlobalNamespace::HealthWarningFlowCoordinator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator_InitData {
@@ -648,7 +648,7 @@ pub struct HealthWarningFlowCoordinator_InitData {
         crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     >,
 }
-#[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -668,14 +668,14 @@ for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
         false
     }
 }
-#[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -726,7 +726,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_HealthWarningFlowCoordinator+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

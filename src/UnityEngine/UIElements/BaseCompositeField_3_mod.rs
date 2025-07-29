@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseCompositeField_3<
@@ -17,7 +17,7 @@ pub struct BaseCompositeField_3<
     __cordl_phantom_TField: std::marker::PhantomData<TField>,
     __cordl_phantom_TFieldValue: std::marker::PhantomData<TFieldValue>,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3")]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -77,7 +77,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -390,7 +390,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -408,7 +408,9 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BaseCompositeField_3_FieldDescription<
@@ -430,7 +432,9 @@ pub struct BaseCompositeField_3_FieldDescription<
     __cordl_phantom_TField: std::marker::PhantomData<TField>,
     __cordl_phantom_TFieldValue: std::marker::PhantomData<TFieldValue>,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription"
+)]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -484,7 +488,9 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription"
+)]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -503,7 +509,9 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription"
+)]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -525,7 +533,9 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription"
+)]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -548,7 +558,9 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription"
+)]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -570,7 +582,9 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription"
+)]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -669,7 +683,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -684,7 +698,7 @@ pub struct FieldDescription_BaseCompositeField_3_WriteDelegate<
     __cordl_phantom_TFieldValue: std::marker::PhantomData<TFieldValue>,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
 )]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
@@ -730,7 +744,7 @@ for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteD
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
 )]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
@@ -748,7 +762,7 @@ for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteD
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
 )]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
@@ -871,7 +885,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
 )]
 impl<
     TValueType: quest_hook::libil2cpp::Type,

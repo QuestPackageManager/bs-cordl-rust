@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Interface+MonoTlsSettings")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoTlsSettings {
@@ -48,7 +48,7 @@ pub struct MonoTlsSettings {
         crate::Mono::Security::Interface::ICertificateValidator,
     >,
 }
-#[cfg(feature = "Mono+Security+Interface+MonoTlsSettings")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Interface::MonoTlsSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -68,14 +68,14 @@ for crate::Mono::Security::Interface::MonoTlsSettings {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoTlsSettings")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsSettings")]
 impl std::ops::Deref for crate::Mono::Security::Interface::MonoTlsSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoTlsSettings")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsSettings")]
 impl std::ops::DerefMut for crate::Mono::Security::Interface::MonoTlsSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1030,7 +1030,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoTlsSettings")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Interface::MonoTlsSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

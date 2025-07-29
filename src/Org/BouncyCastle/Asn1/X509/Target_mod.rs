@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Target {
@@ -10,7 +10,7 @@ pub struct Target {
         crate::Org::BouncyCastle::Asn1::X509::GeneralName,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::X509::Target {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Asn1::X509::Target {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::Target {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::Target {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -251,7 +251,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::Target {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::X509::Target {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -274,7 +274,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Target {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target+Choice")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Target_Choice {
@@ -282,7 +282,7 @@ pub enum Target_Choice {
     Group = 1i32,
     Name = 0i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target+Choice")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
     type Held<'a> = Self;
@@ -312,7 +312,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target+Choice")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
     type Type = Self;
@@ -323,7 +323,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target+Choice")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
     type Actual = Self;
@@ -337,7 +337,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target+Choice")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
     type Type = Self;
@@ -352,7 +352,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target+Choice")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
     type Actual = Self;

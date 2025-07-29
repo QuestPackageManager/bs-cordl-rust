@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarPropertyBlockColorSetter {
@@ -14,7 +14,7 @@ pub struct AvatarPropertyBlockColorSetter {
     pub _boostColor: crate::UnityEngine::Color,
     pub _highlighted: bool,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,7 +34,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -42,7 +42,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -227,7 +227,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

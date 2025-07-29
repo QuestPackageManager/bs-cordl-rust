@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -24,7 +24,7 @@ pub struct InitalizationObjectsOperation {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation {
@@ -46,7 +46,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObject
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation {
@@ -58,7 +58,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObject
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation {
@@ -271,7 +271,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjec
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation {

@@ -1,4 +1,4 @@
-#[cfg(feature = "RectangleFakeGlowLightWithId")]
+#[cfg(feature = "cordl_class_RectangleFakeGlowLightWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectangleFakeGlowLightWithId {
@@ -9,7 +9,7 @@ pub struct RectangleFakeGlowLightWithId {
         crate::GlobalNamespace::RectangleFakeGlow,
     >,
 }
-#[cfg(feature = "RectangleFakeGlowLightWithId")]
+#[cfg(feature = "cordl_class_RectangleFakeGlowLightWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RectangleFakeGlowLightWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::RectangleFakeGlowLightWithId {
         false
     }
 }
-#[cfg(feature = "RectangleFakeGlowLightWithId")]
+#[cfg(feature = "cordl_class_RectangleFakeGlowLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::RectangleFakeGlowLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RectangleFakeGlowLightWithId")]
+#[cfg(feature = "cordl_class_RectangleFakeGlowLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RectangleFakeGlowLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::RectangleFakeGlowLightWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RectangleFakeGlowLightWithId")]
+#[cfg(feature = "cordl_class_RectangleFakeGlowLightWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RectangleFakeGlowLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

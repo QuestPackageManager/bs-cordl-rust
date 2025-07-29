@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusTestExperiment")]
+#[cfg(feature = "cordl_class_OculusTestExperiment")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusTestExperiment {
@@ -7,7 +7,7 @@ pub struct OculusTestExperiment {
         crate::GlobalNamespace::IExperimentModel,
     >,
 }
-#[cfg(feature = "OculusTestExperiment")]
+#[cfg(feature = "cordl_class_OculusTestExperiment")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusTestExperiment {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::OculusTestExperiment {
         false
     }
 }
-#[cfg(feature = "OculusTestExperiment")]
+#[cfg(feature = "cordl_class_OculusTestExperiment")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusTestExperiment {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusTestExperiment")]
+#[cfg(feature = "cordl_class_OculusTestExperiment")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusTestExperiment {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::OculusTestExperiment {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusTestExperiment")]
+#[cfg(feature = "cordl_class_OculusTestExperiment")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusTestExperiment {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -104,7 +104,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusTestExp
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OculusTestExperiment+ExperimentData")]
+#[cfg(feature = "cordl_class_OculusTestExperiment+ExperimentData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusTestExperiment_ExperimentData {
@@ -113,7 +113,7 @@ pub struct OculusTestExperiment_ExperimentData {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "OculusTestExperiment+ExperimentData")]
+#[cfg(feature = "cordl_class_OculusTestExperiment+ExperimentData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -133,14 +133,14 @@ for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
         false
     }
 }
-#[cfg(feature = "OculusTestExperiment+ExperimentData")]
+#[cfg(feature = "cordl_class_OculusTestExperiment+ExperimentData")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusTestExperiment+ExperimentData")]
+#[cfg(feature = "cordl_class_OculusTestExperiment+ExperimentData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -215,7 +215,7 @@ impl crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusTestExperiment+ExperimentData")]
+#[cfg(feature = "cordl_class_OculusTestExperiment+ExperimentData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

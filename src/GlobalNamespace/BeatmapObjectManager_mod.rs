@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapObjectManager")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectManager {
@@ -90,7 +90,7 @@ pub struct BeatmapObjectManager {
     >,
     pub _spawnHidden_k__BackingField: bool,
 }
-#[cfg(feature = "BeatmapObjectManager")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -110,14 +110,14 @@ for crate::GlobalNamespace::BeatmapObjectManager {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectManager")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectManager")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2414,7 +2414,7 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectManager")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapObjectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2561,13 +2561,13 @@ for crate::GlobalNamespace::BeatmapObjectManager {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager+NoteWasCutDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectManager_NoteWasCutDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager+NoteWasCutDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2587,7 +2587,7 @@ for crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager+NoteWasCutDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -2595,7 +2595,7 @@ for crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager+NoteWasCutDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2764,7 +2764,7 @@ impl crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]
+#[cfg(feature = "cordl_class_BeatmapObjectManager+NoteWasCutDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

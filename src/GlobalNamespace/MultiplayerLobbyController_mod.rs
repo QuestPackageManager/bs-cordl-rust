@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLobbyController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyController {
@@ -25,7 +25,7 @@ pub struct MultiplayerLobbyController {
     >,
     pub _lobbyActivated_k__BackingField: bool,
 }
-#[cfg(feature = "MultiplayerLobbyController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::MultiplayerLobbyController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLobbyController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLobbyController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -182,7 +182,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLobbyController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLobbyController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

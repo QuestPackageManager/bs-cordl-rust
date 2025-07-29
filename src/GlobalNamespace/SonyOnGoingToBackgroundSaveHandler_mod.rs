@@ -1,4 +1,4 @@
-#[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
+#[cfg(feature = "cordl_class_SonyOnGoingToBackgroundSaveHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyOnGoingToBackgroundSaveHandler {
@@ -13,7 +13,7 @@ pub struct SonyOnGoingToBackgroundSaveHandler {
         crate::GlobalNamespace::LocalLeaderboardsModel,
     >,
 }
-#[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
+#[cfg(feature = "cordl_class_SonyOnGoingToBackgroundSaveHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
         false
     }
 }
-#[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
+#[cfg(feature = "cordl_class_SonyOnGoingToBackgroundSaveHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
+#[cfg(feature = "cordl_class_SonyOnGoingToBackgroundSaveHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
+#[cfg(feature = "cordl_class_SonyOnGoingToBackgroundSaveHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

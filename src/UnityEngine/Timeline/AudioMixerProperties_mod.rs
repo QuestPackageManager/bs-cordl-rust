@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+AudioMixerProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioMixerProperties")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioMixerProperties {
@@ -7,7 +7,7 @@ pub struct AudioMixerProperties {
     pub stereoPan: f32,
     pub spatialBlend: f32,
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioMixerProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioMixerProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AudioMixerProperties {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::Timeline::AudioMixerProperties {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioMixerProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioMixerProperties")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AudioMixerProperties {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioMixerProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioMixerProperties")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::AudioMixerProperties {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -101,7 +101,7 @@ impl crate::UnityEngine::Timeline::AudioMixerProperties {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioMixerProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioMixerProperties")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::AudioMixerProperties {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

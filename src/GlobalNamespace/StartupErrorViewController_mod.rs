@@ -1,4 +1,4 @@
-#[cfg(feature = "StartupErrorViewController")]
+#[cfg(feature = "cordl_class_StartupErrorViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StartupErrorViewController {
@@ -6,7 +6,7 @@ pub struct StartupErrorViewController {
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub _quitButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
 }
-#[cfg(feature = "StartupErrorViewController")]
+#[cfg(feature = "cordl_class_StartupErrorViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StartupErrorViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::StartupErrorViewController {
         false
     }
 }
-#[cfg(feature = "StartupErrorViewController")]
+#[cfg(feature = "cordl_class_StartupErrorViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::StartupErrorViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StartupErrorViewController")]
+#[cfg(feature = "cordl_class_StartupErrorViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StartupErrorViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -153,7 +153,7 @@ impl crate::GlobalNamespace::StartupErrorViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StartupErrorViewController")]
+#[cfg(feature = "cordl_class_StartupErrorViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StartupErrorViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

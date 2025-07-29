@@ -1,4 +1,4 @@
-#[cfg(feature = "SliderIntensityEffect")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderIntensityEffect {
@@ -37,7 +37,7 @@ pub struct SliderIntensityEffect {
         >,
     >,
 }
-#[cfg(feature = "SliderIntensityEffect")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderIntensityEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -57,14 +57,14 @@ for crate::GlobalNamespace::SliderIntensityEffect {
         false
     }
 }
-#[cfg(feature = "SliderIntensityEffect")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderIntensityEffect")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderIntensityEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -416,7 +416,7 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderIntensityEffect")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderIntensityEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -426,7 +426,7 @@ for crate::GlobalNamespace::SliderIntensityEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SliderIntensityEffect+FadeElement")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+FadeElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderIntensityEffect_FadeElement {
@@ -437,7 +437,7 @@ pub struct SliderIntensityEffect_FadeElement {
     pub easeType: crate::GlobalNamespace::EaseType,
     pub startCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "SliderIntensityEffect+FadeElement")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+FadeElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -457,14 +457,14 @@ for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
         false
     }
 }
-#[cfg(feature = "SliderIntensityEffect+FadeElement")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+FadeElement")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderIntensityEffect+FadeElement")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+FadeElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -526,7 +526,7 @@ impl crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderIntensityEffect+FadeElement")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+FadeElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -536,7 +536,7 @@ for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SliderIntensityEffect+InitData")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderIntensityEffect_InitData {
@@ -544,7 +544,7 @@ pub struct SliderIntensityEffect_InitData {
     pub sliderColorIntensity: f32,
     pub hapticFeedback: f32,
 }
-#[cfg(feature = "SliderIntensityEffect+InitData")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderIntensityEffect_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -564,14 +564,14 @@ for crate::GlobalNamespace::SliderIntensityEffect_InitData {
         false
     }
 }
-#[cfg(feature = "SliderIntensityEffect+InitData")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderIntensityEffect+InitData")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderIntensityEffect_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -618,7 +618,7 @@ impl crate::GlobalNamespace::SliderIntensityEffect_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderIntensityEffect+InitData")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderIntensityEffect_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -628,13 +628,13 @@ for crate::GlobalNamespace::SliderIntensityEffect_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+IntensityCalculationDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderIntensityEffect_IntensityCalculationDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+IntensityCalculationDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -654,7 +654,7 @@ for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
         false
     }
 }
-#[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+IntensityCalculationDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -662,7 +662,7 @@ for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+IntensityCalculationDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -806,7 +806,7 @@ impl crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
+#[cfg(feature = "cordl_class_SliderIntensityEffect+IntensityCalculationDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+UIVertex")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIVertex {
@@ -11,7 +11,7 @@ pub struct UIVertex {
     pub uv2: crate::UnityEngine::Vector4,
     pub uv3: crate::UnityEngine::Vector4,
 }
-#[cfg(feature = "UnityEngine+UIVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+UIVertex")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIVertex {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIVertex {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+UIVertex")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIVertex {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIVertex {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+UIVertex")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIVertex {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIVertex {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+UIVertex")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIVertex {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIVertex {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+UIVertex")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIVertex {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIVertex {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+UIVertex")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::UIVertex {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

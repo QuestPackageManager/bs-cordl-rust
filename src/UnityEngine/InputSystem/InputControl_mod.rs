@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControl {
@@ -38,7 +38,7 @@ pub struct InputControl {
     pub m_MaxValue: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     pub m_OptimizedControlDataType: crate::UnityEngine::InputSystem::Utilities::FourCC,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -58,14 +58,14 @@ for crate::UnityEngine::InputSystem::InputControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1880,7 +1880,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1890,7 +1890,7 @@ for crate::UnityEngine::InputSystem::InputControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl+ControlFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControl_ControlFlags {
@@ -1903,7 +1903,7 @@ pub enum InputControl_ControlFlags {
     SetupFinished = 32i32,
     UsesStateFromOtherControl = 64i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Held<'a> = Self;
@@ -1933,7 +1933,7 @@ for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Type = Self;
@@ -1944,7 +1944,7 @@ for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Actual = Self;
@@ -1958,7 +1958,7 @@ for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Type = Self;
@@ -1973,7 +1973,7 @@ for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Actual = Self;

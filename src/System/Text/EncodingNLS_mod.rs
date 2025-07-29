@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Text+EncodingNLS")]
+#[cfg(feature = "cordl_class_System+Text+EncodingNLS")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncodingNLS {
     __cordl_parent: crate::System::Text::Encoding,
 }
-#[cfg(feature = "System+Text+EncodingNLS")]
+#[cfg(feature = "cordl_class_System+Text+EncodingNLS")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::EncodingNLS {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::EncodingNLS {
         false
     }
 }
-#[cfg(feature = "System+Text+EncodingNLS")]
+#[cfg(feature = "cordl_class_System+Text+EncodingNLS")]
 impl std::ops::Deref for crate::System::Text::EncodingNLS {
     type Target = crate::System::Text::Encoding;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+EncodingNLS")]
+#[cfg(feature = "cordl_class_System+Text+EncodingNLS")]
 impl std::ops::DerefMut for crate::System::Text::EncodingNLS {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -517,7 +517,7 @@ impl crate::System::Text::EncodingNLS {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+EncodingNLS")]
+#[cfg(feature = "cordl_class_System+Text+EncodingNLS")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Text::EncodingNLS {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

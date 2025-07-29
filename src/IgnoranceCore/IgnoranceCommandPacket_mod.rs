@@ -1,11 +1,11 @@
-#[cfg(feature = "IgnoranceCore+IgnoranceCommandPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceCommandPacket")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceCommandPacket {
     pub Type: crate::IgnoranceCore::IgnoranceCommandType,
     pub PeerId: u32,
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceCommandPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceCommandPacket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::IgnoranceCore::IgnoranceCommandPacket {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::IgnoranceCore::IgnoranceCommandPacket {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceCommandPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceCommandPacket")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceCommandPacket {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::IgnoranceCore::IgnoranceCommandPacket {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceCommandPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceCommandPacket")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceCommandPacket {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::IgnoranceCore::IgnoranceCommandPacket {
         self
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceCommandPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceCommandPacket")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceCommandPacket {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::IgnoranceCore::IgnoranceCommandPacket {
         }
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceCommandPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceCommandPacket")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceCommandPacket {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::IgnoranceCore::IgnoranceCommandPacket {
         actual
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceCommandPacket")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceCommandPacket")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::IgnoranceCore::IgnoranceCommandPacket {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
+#[cfg(feature = "cordl_class_SliderHapticFeedbackInteractionEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderHapticFeedbackInteractionEffect {
@@ -12,7 +12,7 @@ pub struct SliderHapticFeedbackInteractionEffect {
     pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
     pub _saberType: crate::GlobalNamespace::SaberType,
 }
-#[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
+#[cfg(feature = "cordl_class_SliderHapticFeedbackInteractionEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
         false
     }
 }
-#[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
+#[cfg(feature = "cordl_class_SliderHapticFeedbackInteractionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     type Target = crate::GlobalNamespace::SliderInteractionEffect;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
+#[cfg(feature = "cordl_class_SliderHapticFeedbackInteractionEffect")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -188,7 +188,7 @@ impl crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
+#[cfg(feature = "cordl_class_SliderHapticFeedbackInteractionEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

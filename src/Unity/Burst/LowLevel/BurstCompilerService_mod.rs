@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompilerService {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::LowLevel::BurstCompilerService {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService")]
 impl std::ops::Deref for crate::Unity::Burst::LowLevel::BurstCompilerService {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService")]
 impl std::ops::DerefMut for crate::Unity::Burst::LowLevel::BurstCompilerService {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -331,7 +331,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::LowLevel::BurstCompilerService {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -341,7 +341,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstCompilerService_BurstLogType {
@@ -350,7 +350,7 @@ pub enum BurstCompilerService_BurstLogType {
     Info = 0i32,
     Warning = 1i32,
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Held<'a> = Self;
@@ -380,7 +380,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Type = Self;
@@ -391,7 +391,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Actual = Self;
@@ -405,7 +405,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Type = Self;
@@ -420,7 +420,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
+#[cfg(feature = "cordl_class_Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Actual = Self;

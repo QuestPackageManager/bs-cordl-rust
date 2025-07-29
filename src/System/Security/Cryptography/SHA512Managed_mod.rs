@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+SHA512Managed")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA512Managed")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SHA512Managed {
@@ -8,7 +8,7 @@ pub struct SHA512Managed {
     pub _stateSHA512: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     pub _W: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
-#[cfg(feature = "System+Security+Cryptography+SHA512Managed")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA512Managed")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::SHA512Managed {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Security::Cryptography::SHA512Managed {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+SHA512Managed")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA512Managed")]
 impl std::ops::Deref for crate::System::Security::Cryptography::SHA512Managed {
     type Target = crate::System::Security::Cryptography::SHA512;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+SHA512Managed")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA512Managed")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::SHA512Managed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -431,7 +431,7 @@ impl crate::System::Security::Cryptography::SHA512Managed {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+SHA512Managed")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA512Managed")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::SHA512Managed {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

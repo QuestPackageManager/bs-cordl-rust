@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+SynchronizationLockException")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationLockException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SynchronizationLockException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+Threading+SynchronizationLockException")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationLockException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::SynchronizationLockException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Threading::SynchronizationLockException {
         false
     }
 }
-#[cfg(feature = "System+Threading+SynchronizationLockException")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationLockException")]
 impl std::ops::Deref for crate::System::Threading::SynchronizationLockException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+SynchronizationLockException")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationLockException")]
 impl std::ops::DerefMut for crate::System::Threading::SynchronizationLockException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::System::Threading::SynchronizationLockException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+SynchronizationLockException")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationLockException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::SynchronizationLockException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

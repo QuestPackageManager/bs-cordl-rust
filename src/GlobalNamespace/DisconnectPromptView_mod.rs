@@ -1,4 +1,4 @@
-#[cfg(feature = "DisconnectPromptView")]
+#[cfg(feature = "cordl_class_DisconnectPromptView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisconnectPromptView {
@@ -11,7 +11,7 @@ pub struct DisconnectPromptView {
     pub didViewFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
-#[cfg(feature = "DisconnectPromptView")]
+#[cfg(feature = "cordl_class_DisconnectPromptView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DisconnectPromptView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::DisconnectPromptView {
         false
     }
 }
-#[cfg(feature = "DisconnectPromptView")]
+#[cfg(feature = "cordl_class_DisconnectPromptView")]
 impl std::ops::Deref for crate::GlobalNamespace::DisconnectPromptView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DisconnectPromptView")]
+#[cfg(feature = "cordl_class_DisconnectPromptView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DisconnectPromptView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -266,7 +266,7 @@ impl crate::GlobalNamespace::DisconnectPromptView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DisconnectPromptView")]
+#[cfg(feature = "cordl_class_DisconnectPromptView")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisconnectPromptView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

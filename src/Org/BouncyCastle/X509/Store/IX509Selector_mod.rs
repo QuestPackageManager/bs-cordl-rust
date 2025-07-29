@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+X509+Store+IX509Selector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+IX509Selector")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IX509Selector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Store+IX509Selector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+IX509Selector")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::X509::Store::IX509Selector {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::X509::Store::IX509Selector {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Store+IX509Selector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+IX509Selector")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::Store::IX509Selector {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Store+IX509Selector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+IX509Selector")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::Store::IX509Selector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::X509::Store::IX509Selector {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Store+IX509Selector")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+IX509Selector")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::X509::Store::IX509Selector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

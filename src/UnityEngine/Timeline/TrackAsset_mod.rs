@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackAsset {
@@ -41,7 +41,7 @@ pub struct TrackAsset {
     >,
     pub m_Markers: crate::UnityEngine::Timeline::MarkerList,
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::TrackAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -60,14 +60,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::TrackA
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TrackAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2871,7 +2871,7 @@ impl crate::UnityEngine::Timeline::TrackAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::TrackAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2922,13 +2922,13 @@ for crate::UnityEngine::Timeline::TrackAsset {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackAsset_TrackAssetUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2948,14 +2948,14 @@ for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2963,7 +2963,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackAsset_TrackAssetU
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 impl crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {}
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2973,7 +2973,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrackAsset_TransientBuildData {
@@ -2993,7 +2993,7 @@ pub struct TrackAsset_TransientBuildData {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Held<'a> = Self;
@@ -3023,7 +3023,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Type = Self;
@@ -3034,7 +3034,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Actual = Self;
@@ -3048,7 +3048,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Type = Self;
@@ -3063,7 +3063,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Actual = Self;
@@ -3077,7 +3077,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Type = Self;
@@ -3137,7 +3137,7 @@ impl crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+Versions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackAsset_Versions {
@@ -3147,7 +3147,7 @@ pub enum TrackAsset_Versions {
     RootMotionUpgrade = 2i32,
     RotationAsEuler = 1i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Held<'a> = Self;
@@ -3177,7 +3177,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Type = Self;
@@ -3188,7 +3188,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Actual = Self;
@@ -3202,7 +3202,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Type = Self;
@@ -3217,7 +3217,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Actual = Self;

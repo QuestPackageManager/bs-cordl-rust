@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+X509+X509ChainStatusFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ChainStatusFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509ChainStatusFlags {
@@ -11,7 +11,7 @@ pub enum X509ChainStatusFlags {
     PartialChain = 65536i32,
     UntrustedRoot = 32i32,
 }
-#[cfg(feature = "Mono+Security+X509+X509ChainStatusFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ChainStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::X509::X509ChainStatusFlags {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::Mono::Security::X509::X509ChainStatusFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Security+X509+X509ChainStatusFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ChainStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Security::X509::X509ChainStatusFlags {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::Mono::Security::X509::X509ChainStatusFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Security+X509+X509ChainStatusFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ChainStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Security::X509::X509ChainStatusFlags {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::Mono::Security::X509::X509ChainStatusFlags {
         self
     }
 }
-#[cfg(feature = "Mono+Security+X509+X509ChainStatusFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ChainStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Security::X509::X509ChainStatusFlags {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::Mono::Security::X509::X509ChainStatusFlags {
         }
     }
 }
-#[cfg(feature = "Mono+Security+X509+X509ChainStatusFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ChainStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Security::X509::X509ChainStatusFlags {
     type Actual = Self;

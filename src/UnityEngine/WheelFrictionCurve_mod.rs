@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+WheelFrictionCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+WheelFrictionCurve")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct WheelFrictionCurve {
@@ -8,7 +8,7 @@ pub struct WheelFrictionCurve {
     pub m_AsymptoteValue: f32,
     pub m_Stiffness: f32,
 }
-#[cfg(feature = "UnityEngine+WheelFrictionCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+WheelFrictionCurve")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WheelFrictionCurve {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WheelFrictionCur
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+WheelFrictionCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+WheelFrictionCurve")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::WheelFrictionCurve {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::WheelFrictio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+WheelFrictionCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+WheelFrictionCurve")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::WheelFrictionCurve {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::WheelFricti
         self
     }
 }
-#[cfg(feature = "UnityEngine+WheelFrictionCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+WheelFrictionCurve")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::WheelFrictionCurve {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::WheelFrictio
         }
     }
 }
-#[cfg(feature = "UnityEngine+WheelFrictionCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+WheelFrictionCurve")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::WheelFrictionCurve {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::WheelFrictionC
         actual
     }
 }
-#[cfg(feature = "UnityEngine+WheelFrictionCurve")]
+#[cfg(feature = "cordl_class_UnityEngine+WheelFrictionCurve")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::WheelFrictionCurve {
     type Type = Self;

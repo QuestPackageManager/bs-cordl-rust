@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractAdapterInstallerSO {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AbstractAdapterInstallerSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

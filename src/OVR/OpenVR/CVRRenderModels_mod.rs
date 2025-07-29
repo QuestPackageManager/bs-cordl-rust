@@ -1,11 +1,11 @@
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRRenderModels {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRRenderModels,
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRRenderModels {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRRenderModels 
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRRenderModels {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRRenderModels {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -784,7 +784,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRRenderModels {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -793,13 +793,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRRenderModels {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CVRRenderModels_GetComponentStateUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
     type Held<'a> = Self;
@@ -829,7 +829,7 @@ for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
     type Type = Self;
@@ -840,7 +840,7 @@ for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
     type Actual = Self;
@@ -854,7 +854,7 @@ for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
     type Type = Self;
@@ -869,7 +869,7 @@ for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
     type Actual = Self;
@@ -883,7 +883,7 @@ for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
     type Type = Self;
@@ -896,13 +896,13 @@ for crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {
 }
 #[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 impl crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {}
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRRenderModels__GetComponentStatePacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -922,14 +922,14 @@ for crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1169,7 +1169,7 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

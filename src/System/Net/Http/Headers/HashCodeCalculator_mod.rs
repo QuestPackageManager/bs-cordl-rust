@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Http+Headers+HashCodeCalculator")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HashCodeCalculator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HashCodeCalculator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+Http+Headers+HashCodeCalculator")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HashCodeCalculator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::Headers::HashCodeCalculator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Net::Http::Headers::HashCodeCalculator {
         false
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HashCodeCalculator")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HashCodeCalculator")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::HashCodeCalculator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HashCodeCalculator")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HashCodeCalculator")]
 impl std::ops::DerefMut for crate::System::Net::Http::Headers::HashCodeCalculator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -73,7 +73,7 @@ impl crate::System::Net::Http::Headers::HashCodeCalculator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HashCodeCalculator")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HashCodeCalculator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::HashCodeCalculator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

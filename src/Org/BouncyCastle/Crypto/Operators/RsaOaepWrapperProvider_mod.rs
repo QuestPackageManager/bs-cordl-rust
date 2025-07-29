@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RsaOaepWrapperProvider {
@@ -7,7 +7,7 @@ pub struct RsaOaepWrapperProvider {
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -125,7 +125,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

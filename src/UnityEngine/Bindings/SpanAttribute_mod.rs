@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Bindings+SpanAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+SpanAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpanAttribute {
@@ -8,7 +8,7 @@ pub struct SpanAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+Bindings+SpanAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+SpanAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Bindings::SpanAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Bindings::SpanAt
         false
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+SpanAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+SpanAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::SpanAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+SpanAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+SpanAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Bindings::SpanAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -85,7 +85,7 @@ impl crate::UnityEngine::Bindings::SpanAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+SpanAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+SpanAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Bindings::SpanAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

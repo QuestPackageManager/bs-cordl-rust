@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+DrivenTransformProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+DrivenTransformProperties")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DrivenTransformProperties {
@@ -29,7 +29,7 @@ pub enum DrivenTransformProperties {
     SizeDeltaX = 4096i32,
     SizeDeltaY = 8192i32,
 }
-#[cfg(feature = "UnityEngine+DrivenTransformProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+DrivenTransformProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::DrivenTransformProperties {
     type Held<'a> = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::DrivenTransformProperties {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+DrivenTransformProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+DrivenTransformProperties")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::DrivenTransformProperties {
     type Type = Self;
@@ -70,7 +70,7 @@ for crate::UnityEngine::DrivenTransformProperties {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+DrivenTransformProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+DrivenTransformProperties")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::DrivenTransformProperties {
     type Actual = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::DrivenTransformProperties {
         self
     }
 }
-#[cfg(feature = "UnityEngine+DrivenTransformProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+DrivenTransformProperties")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::DrivenTransformProperties {
     type Type = Self;
@@ -99,7 +99,7 @@ for crate::UnityEngine::DrivenTransformProperties {
         }
     }
 }
-#[cfg(feature = "UnityEngine+DrivenTransformProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+DrivenTransformProperties")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::DrivenTransformProperties {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NumberHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NumberHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NumberHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NumberHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NumberHelpers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NumberHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NumberHelpers")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NumberHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NumberHelpers")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -260,7 +260,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NumberHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NumberHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

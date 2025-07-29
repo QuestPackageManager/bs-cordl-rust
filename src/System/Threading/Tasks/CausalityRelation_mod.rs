@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+CausalityRelation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityRelation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CausalityRelation {
@@ -9,7 +9,7 @@ pub enum CausalityRelation {
     Error = 4i32,
     Join = 1i32,
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityRelation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityRelation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::CausalityRelation {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::System::Threading::Tasks::CausalityRelation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityRelation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityRelation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::CausalityRelation {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Threading::Tasks::CausalityRelation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityRelation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityRelation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::CausalityRelation {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Threading::Tasks::CausalityRelation {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityRelation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityRelation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::CausalityRelation {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Threading::Tasks::CausalityRelation {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityRelation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityRelation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::CausalityRelation {
     type Actual = Self;

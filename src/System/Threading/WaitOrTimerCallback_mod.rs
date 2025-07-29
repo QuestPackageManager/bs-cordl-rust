@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+WaitOrTimerCallback")]
+#[cfg(feature = "cordl_class_System+Threading+WaitOrTimerCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaitOrTimerCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Threading+WaitOrTimerCallback")]
+#[cfg(feature = "cordl_class_System+Threading+WaitOrTimerCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::WaitOrTimerCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Threading::WaitOrTimerCallback {
         false
     }
 }
-#[cfg(feature = "System+Threading+WaitOrTimerCallback")]
+#[cfg(feature = "cordl_class_System+Threading+WaitOrTimerCallback")]
 impl std::ops::Deref for crate::System::Threading::WaitOrTimerCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+WaitOrTimerCallback")]
+#[cfg(feature = "cordl_class_System+Threading+WaitOrTimerCallback")]
 impl std::ops::DerefMut for crate::System::Threading::WaitOrTimerCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::System::Threading::WaitOrTimerCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+WaitOrTimerCallback")]
+#[cfg(feature = "cordl_class_System+Threading+WaitOrTimerCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::WaitOrTimerCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

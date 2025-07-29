@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_HandleParamBinding {
@@ -11,7 +11,7 @@ pub struct HEU_HandleParamBinding {
         quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -107,7 +107,7 @@ impl crate::HoudiniEngineUnity::HEU_HandleParamBinding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -145,7 +145,9 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_HandleParamBinding_HEU_HandleParamType {
@@ -154,7 +156,9 @@ pub enum HEU_HandleParamBinding_HEU_HandleParamType {
     SCALE = 2i32,
     TRANSLATE = 0i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Held<'a> = Self;
@@ -184,7 +188,9 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Type = Self;
@@ -195,7 +201,9 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Actual = Self;
@@ -209,7 +217,9 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Type = Self;
@@ -224,7 +234,9 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Actual = Self;

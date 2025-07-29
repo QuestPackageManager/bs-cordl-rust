@@ -1,4 +1,4 @@
-#[cfg(feature = "GameLiftConnectionManager")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftConnectionManager {
@@ -59,7 +59,7 @@ pub struct GameLiftConnectionManager {
         >,
     >,
 }
-#[cfg(feature = "GameLiftConnectionManager")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameLiftConnectionManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -79,14 +79,14 @@ for crate::GlobalNamespace::GameLiftConnectionManager {
         false
     }
 }
-#[cfg(feature = "GameLiftConnectionManager")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::GameLiftConnectionManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameLiftConnectionManager")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameLiftConnectionManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1547,7 +1547,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameLiftConnectionManager")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameLiftConnectionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1599,7 +1599,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectToServerParams")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftConnectionManager_ConnectToServerParams {
@@ -1607,7 +1607,7 @@ pub struct GameLiftConnectionManager_ConnectToServerParams {
     pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectToServerParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1627,7 +1627,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
         false
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectToServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
     type Target = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
@@ -1635,7 +1635,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectToServerParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1673,7 +1673,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectToServerParams")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1683,7 +1683,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameLiftConnectionManager_ConnectionState {
@@ -1693,7 +1693,7 @@ pub enum GameLiftConnectionManager_ConnectionState {
     Disconnecting = 3i32,
     Unconnected = 0i32,
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Held<'a> = Self;
@@ -1723,7 +1723,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Type = Self;
@@ -1734,7 +1734,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Actual = Self;
@@ -1748,7 +1748,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
         self
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Type = Self;
@@ -1763,7 +1763,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
         }
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Actual = Self;
@@ -1777,7 +1777,9 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
         actual
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
+#[cfg(
+    feature = "cordl_class_GameLiftConnectionManager+GameLiftConnectionManagerParamsBase"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
@@ -1795,7 +1797,9 @@ pub struct GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
 }
-#[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
+#[cfg(
+    feature = "cordl_class_GameLiftConnectionManager+GameLiftConnectionManagerParamsBase"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1815,7 +1819,9 @@ for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerP
         false
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
+#[cfg(
+    feature = "cordl_class_GameLiftConnectionManager+GameLiftConnectionManagerParamsBase"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1823,7 +1829,9 @@ for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerP
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
+#[cfg(
+    feature = "cordl_class_GameLiftConnectionManager+GameLiftConnectionManagerParamsBase"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1861,7 +1869,9 @@ impl crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManager
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
+#[cfg(
+    feature = "cordl_class_GameLiftConnectionManager+GameLiftConnectionManagerParamsBase"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1901,13 +1911,13 @@ for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerP
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+StartClientParams")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftConnectionManager_StartClientParams {
     __cordl_parent: crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
 }
-#[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+StartClientParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1927,7 +1937,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
         false
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+StartClientParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
     type Target = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
@@ -1935,7 +1945,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+StartClientParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1973,7 +1983,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_GameLiftConnectionManager+StartClientParams")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

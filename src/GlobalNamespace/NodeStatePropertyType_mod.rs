@@ -1,4 +1,4 @@
-#[cfg(feature = "NodeStatePropertyType")]
+#[cfg(feature = "cordl_class_NodeStatePropertyType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NodeStatePropertyType {
@@ -10,7 +10,7 @@ pub enum NodeStatePropertyType {
     Position = 4i32,
     Velocity = 2i32,
 }
-#[cfg(feature = "NodeStatePropertyType")]
+#[cfg(feature = "cordl_class_NodeStatePropertyType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NodeStatePropertyType {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::NodeStatePropertyType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NodeStatePropertyType")]
+#[cfg(feature = "cordl_class_NodeStatePropertyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NodeStatePropertyType {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::NodeStatePropertyType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NodeStatePropertyType")]
+#[cfg(feature = "cordl_class_NodeStatePropertyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NodeStatePropertyType {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::GlobalNamespace::NodeStatePropertyType {
         self
     }
 }
-#[cfg(feature = "NodeStatePropertyType")]
+#[cfg(feature = "cordl_class_NodeStatePropertyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NodeStatePropertyType {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::GlobalNamespace::NodeStatePropertyType {
         }
     }
 }
-#[cfg(feature = "NodeStatePropertyType")]
+#[cfg(feature = "cordl_class_NodeStatePropertyType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NodeStatePropertyType {
     type Actual = Self;

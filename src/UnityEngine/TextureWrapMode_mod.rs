@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextureWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureWrapMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextureWrapMode {
@@ -8,7 +8,7 @@ pub enum TextureWrapMode {
     MirrorOnce = 3i32,
     Repeat = 0i32,
 }
-#[cfg(feature = "UnityEngine+TextureWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureWrapMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextureWrapMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextureWrapMode 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextureWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureWrapMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextureWrapMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextureWrapM
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextureWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureWrapMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextureWrapMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextureWrap
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextureWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureWrapMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextureWrapMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextureWrapM
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextureWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureWrapMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextureWrapMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

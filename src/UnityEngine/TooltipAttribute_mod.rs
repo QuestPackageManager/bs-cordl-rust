@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+TooltipAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+TooltipAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TooltipAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub tooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+TooltipAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+TooltipAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TooltipAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TooltipAttribute
         false
     }
 }
-#[cfg(feature = "UnityEngine+TooltipAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+TooltipAttribute")]
 impl std::ops::Deref for crate::UnityEngine::TooltipAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TooltipAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+TooltipAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::TooltipAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::UnityEngine::TooltipAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TooltipAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+TooltipAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TooltipAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

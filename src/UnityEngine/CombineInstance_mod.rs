@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CombineInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+CombineInstance")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CombineInstance {
@@ -8,7 +8,7 @@ pub struct CombineInstance {
     pub m_LightmapScaleOffset: crate::UnityEngine::Vector4,
     pub m_RealtimeLightmapScaleOffset: crate::UnityEngine::Vector4,
 }
-#[cfg(feature = "UnityEngine+CombineInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CombineInstance {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CombineInstance 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CombineInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CombineInstance {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CombineInsta
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CombineInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CombineInstance {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CombineInst
         self
     }
 }
-#[cfg(feature = "UnityEngine+CombineInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CombineInstance {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CombineInsta
         }
     }
 }
-#[cfg(feature = "UnityEngine+CombineInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CombineInstance {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CombineInstanc
         actual
     }
 }
-#[cfg(feature = "UnityEngine+CombineInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::CombineInstance {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

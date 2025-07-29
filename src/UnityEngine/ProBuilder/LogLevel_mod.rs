@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+LogLevel")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LogLevel {
@@ -10,7 +10,7 @@ pub enum LogLevel {
     None = 0i32,
     Warning = 2i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogLevel")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::LogLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::LogL
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogLevel")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::LogLevel {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::ProBuilder::LogLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogLevel")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::LogLevel {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::ProBuilder::LogLevel {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogLevel")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::LogLevel {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::ProBuilder::LogLevel {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogLevel")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ProBuilder::LogLevel {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

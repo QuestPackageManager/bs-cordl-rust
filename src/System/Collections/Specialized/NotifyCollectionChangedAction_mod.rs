@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedAction")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedAction"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NotifyCollectionChangedAction {
@@ -9,7 +11,9 @@ pub enum NotifyCollectionChangedAction {
     Replace = 2i32,
     Reset = 4i32,
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedAction")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedAction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
     type Held<'a> = Self;
@@ -39,7 +43,9 @@ for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedAction")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedAction"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
     type Type = Self;
@@ -50,7 +56,9 @@ for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedAction")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedAction"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
     type Actual = Self;
@@ -64,7 +72,9 @@ for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
         self
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedAction")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedAction"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
     type Type = Self;
@@ -79,7 +89,9 @@ for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
         }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedAction")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedAction"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Collections::Specialized::NotifyCollectionChangedAction {
     type Actual = Self;

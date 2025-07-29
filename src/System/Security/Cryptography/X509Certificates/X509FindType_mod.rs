@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509FindType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509FindType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509FindType {
@@ -19,7 +21,9 @@ pub enum X509FindType {
     FindByTimeNotYetValid = 7i32,
     FindByTimeValid = 6i32,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509FindType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509FindType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509FindType {
     type Held<'a> = Self;
@@ -49,7 +53,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509FindType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509FindType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509FindType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::X509FindType {
     type Type = Self;
@@ -60,7 +66,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509FindType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509FindType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509FindType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::X509FindType {
     type Actual = Self;
@@ -74,7 +82,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509FindType {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509FindType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509FindType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::X509FindType {
     type Type = Self;
@@ -89,7 +99,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509FindType {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509FindType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509FindType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::X509FindType {
     type Actual = Self;

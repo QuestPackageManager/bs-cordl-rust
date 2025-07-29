@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+CanvasUpdateRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasUpdateRegistry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CanvasUpdateRegistry {
@@ -21,7 +21,7 @@ pub struct CanvasUpdateRegistry {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+CanvasUpdateRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasUpdateRegistry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::CanvasUpdateRegistry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::UnityEngine::UI::CanvasUpdateRegistry {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasUpdateRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasUpdateRegistry")]
 impl std::ops::Deref for crate::UnityEngine::UI::CanvasUpdateRegistry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasUpdateRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasUpdateRegistry")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::CanvasUpdateRegistry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -613,7 +613,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CanvasUpdateRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CanvasUpdateRegistry")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::CanvasUpdateRegistry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

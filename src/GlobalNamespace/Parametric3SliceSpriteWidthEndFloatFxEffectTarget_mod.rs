@@ -1,4 +1,4 @@
-#[cfg(feature = "Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
@@ -9,7 +9,7 @@ pub struct Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     pub _valueBounds: crate::UnityEngine::Vector2,
     pub _valueMultiplier: f32,
 }
-#[cfg(feature = "Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
         false
     }
 }
-#[cfg(feature = "Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

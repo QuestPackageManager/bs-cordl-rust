@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NativeDisableUnsafePtrRestrictionAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestrictionAttribute {
@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestricti
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestrictionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestricti
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestrictionAttribute {
@@ -81,7 +81,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestrict
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestrictionAttribute {

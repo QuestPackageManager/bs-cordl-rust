@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DirectionalLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+DirectionalLight"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DirectionalLight {
@@ -12,7 +14,9 @@ pub struct DirectionalLight {
     pub penumbraWidthRadian: f32,
     pub direction: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DirectionalLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+DirectionalLight"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
     type Held<'a> = Self;
@@ -42,7 +46,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DirectionalLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+DirectionalLight"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
     type Type = Self;
@@ -53,7 +59,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DirectionalLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+DirectionalLight"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
     type Actual = Self;
@@ -67,7 +75,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DirectionalLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+DirectionalLight"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
     type Type = Self;
@@ -82,7 +92,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DirectionalLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+DirectionalLight"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
     type Actual = Self;
@@ -96,7 +108,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DirectionalLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+DirectionalLight"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight {
     type Type = Self;

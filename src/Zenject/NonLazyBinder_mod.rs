@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+NonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+NonLazyBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NonLazyBinder {
     __cordl_parent: crate::Zenject::IfNotBoundBinder,
 }
-#[cfg(feature = "Zenject+NonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+NonLazyBinder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::NonLazyBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::NonLazyBinder {
         false
     }
 }
-#[cfg(feature = "Zenject+NonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+NonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::NonLazyBinder {
     type Target = crate::Zenject::IfNotBoundBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+NonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+NonLazyBinder")]
 impl std::ops::DerefMut for crate::Zenject::NonLazyBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -128,7 +128,7 @@ impl crate::Zenject::NonLazyBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+NonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+NonLazyBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::NonLazyBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

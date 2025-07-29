@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+GetterProvider_2")]
+#[cfg(feature = "cordl_class_Zenject+GetterProvider_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GetterProvider_2<
@@ -14,7 +14,7 @@ pub struct GetterProvider_2<
     __cordl_phantom_TObj: std::marker::PhantomData<TObj>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "Zenject+GetterProvider_2")]
+#[cfg(feature = "cordl_class_Zenject+GetterProvider_2")]
 unsafe impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -49,7 +49,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "Zenject+GetterProvider_2")]
+#[cfg(feature = "cordl_class_Zenject+GetterProvider_2")]
 impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+GetterProvider_2")]
+#[cfg(feature = "cordl_class_Zenject+GetterProvider_2")]
 impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -321,7 +321,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+GetterProvider_2")]
+#[cfg(feature = "cordl_class_Zenject+GetterProvider_2")]
 impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

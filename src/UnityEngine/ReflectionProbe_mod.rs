@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ReflectionProbe")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionProbe {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ReflectionProbe {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ReflectionProbe 
         false
     }
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe")]
 impl std::ops::Deref for crate::UnityEngine::ReflectionProbe {
     type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe")]
 impl std::ops::DerefMut for crate::UnityEngine::ReflectionProbe {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1945,7 +1945,7 @@ impl crate::UnityEngine::ReflectionProbe {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ReflectionProbe {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1954,7 +1954,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ReflectionProbe {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbe_ReflectionProbeEvent {
@@ -1962,7 +1962,7 @@ pub enum ReflectionProbe_ReflectionProbeEvent {
     ReflectionProbeAdded = 0i32,
     ReflectionProbeRemoved = 1i32,
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Held<'a> = Self;
@@ -1992,7 +1992,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Type = Self;
@@ -2003,7 +2003,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Actual = Self;
@@ -2017,7 +2017,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Type = Self;
@@ -2032,7 +2032,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Actual = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "TimelinePauseReceiver")]
+#[cfg(feature = "cordl_class_TimelinePauseReceiver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelinePauseReceiver {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub timelinePauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "TimelinePauseReceiver")]
+#[cfg(feature = "cordl_class_TimelinePauseReceiver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TimelinePauseReceiver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::TimelinePauseReceiver {
         false
     }
 }
-#[cfg(feature = "TimelinePauseReceiver")]
+#[cfg(feature = "cordl_class_TimelinePauseReceiver")]
 impl std::ops::Deref for crate::GlobalNamespace::TimelinePauseReceiver {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TimelinePauseReceiver")]
+#[cfg(feature = "cordl_class_TimelinePauseReceiver")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TimelinePauseReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::GlobalNamespace::TimelinePauseReceiver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TimelinePauseReceiver")]
+#[cfg(feature = "cordl_class_TimelinePauseReceiver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TimelinePauseReceiver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

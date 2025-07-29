@@ -1,10 +1,10 @@
-#[cfg(feature = "StandaloneSettingsApplicatorSO")]
+#[cfg(feature = "cordl_class_StandaloneSettingsApplicatorSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandaloneSettingsApplicatorSO {
     __cordl_parent: crate::GlobalNamespace::SettingsApplicatorSO,
 }
-#[cfg(feature = "StandaloneSettingsApplicatorSO")]
+#[cfg(feature = "cordl_class_StandaloneSettingsApplicatorSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
         false
     }
 }
-#[cfg(feature = "StandaloneSettingsApplicatorSO")]
+#[cfg(feature = "cordl_class_StandaloneSettingsApplicatorSO")]
 impl std::ops::Deref for crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
     type Target = crate::GlobalNamespace::SettingsApplicatorSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandaloneSettingsApplicatorSO")]
+#[cfg(feature = "cordl_class_StandaloneSettingsApplicatorSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandaloneSettingsApplicatorSO")]
+#[cfg(feature = "cordl_class_StandaloneSettingsApplicatorSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

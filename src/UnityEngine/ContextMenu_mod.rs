@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ContextMenu")]
+#[cfg(feature = "cordl_class_UnityEngine+ContextMenu")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextMenu {
@@ -7,7 +7,7 @@ pub struct ContextMenu {
     pub validate: bool,
     pub priority: i32,
 }
-#[cfg(feature = "UnityEngine+ContextMenu")]
+#[cfg(feature = "cordl_class_UnityEngine+ContextMenu")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ContextMenu {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ContextMenu {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ContextMenu")]
+#[cfg(feature = "cordl_class_UnityEngine+ContextMenu")]
 impl std::ops::Deref for crate::UnityEngine::ContextMenu {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ContextMenu")]
+#[cfg(feature = "cordl_class_UnityEngine+ContextMenu")]
 impl std::ops::DerefMut for crate::UnityEngine::ContextMenu {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -165,7 +165,7 @@ impl crate::UnityEngine::ContextMenu {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ContextMenu")]
+#[cfg(feature = "cordl_class_UnityEngine+ContextMenu")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ContextMenu {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

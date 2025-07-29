@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PickingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PickingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PickingMode {
@@ -6,7 +6,7 @@ pub enum PickingMode {
     Ignore = 1i32,
     Position = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+PickingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PickingMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::PickingMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Pick
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PickingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PickingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::PickingMode {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::PickingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PickingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PickingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::PickingMode {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::PickingMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PickingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PickingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::PickingMode {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::PickingMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PickingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PickingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::PickingMode {
     type Actual = Self;

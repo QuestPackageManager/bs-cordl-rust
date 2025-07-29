@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
+#[cfg(feature = "cordl_class_System+Net+Http+ClientCertificateOption")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ClientCertificateOption {
@@ -6,7 +6,7 @@ pub enum ClientCertificateOption {
     Automatic = 1i32,
     Manual = 0i32,
 }
-#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
+#[cfg(feature = "cordl_class_System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::ClientCertificateOption {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::System::Net::Http::ClientCertificateOption {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
+#[cfg(feature = "cordl_class_System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Http::ClientCertificateOption {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::Net::Http::ClientCertificateOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
+#[cfg(feature = "cordl_class_System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Http::ClientCertificateOption {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Net::Http::ClientCertificateOption {
         self
     }
 }
-#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
+#[cfg(feature = "cordl_class_System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Http::ClientCertificateOption {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::Net::Http::ClientCertificateOption {
         }
     }
 }
-#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
+#[cfg(feature = "cordl_class_System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Http::ClientCertificateOption {
     type Actual = Self;

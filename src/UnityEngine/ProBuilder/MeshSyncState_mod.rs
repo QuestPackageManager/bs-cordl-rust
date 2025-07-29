@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshSyncState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshSyncState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshSyncState {
@@ -9,7 +9,7 @@ pub enum MeshSyncState {
     NeedsRebuild = 4i32,
     Null = 0i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshSyncState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshSyncState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshSyncState {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::ProBuilder::MeshSyncState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshSyncState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshSyncState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::MeshSyncState {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::ProBuilder::MeshSyncState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshSyncState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshSyncState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::MeshSyncState {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::ProBuilder::MeshSyncState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshSyncState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshSyncState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::MeshSyncState {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::ProBuilder::MeshSyncState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshSyncState")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshSyncState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::MeshSyncState {
     type Actual = Self;

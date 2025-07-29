@@ -1,4 +1,4 @@
-#[cfg(feature = "UserInfo")]
+#[cfg(feature = "cordl_class_UserInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UserInfo {
@@ -7,7 +7,7 @@ pub struct UserInfo {
     pub platformUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UserInfo")]
+#[cfg(feature = "cordl_class_UserInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UserInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UserInfo {
         false
     }
 }
-#[cfg(feature = "UserInfo")]
+#[cfg(feature = "cordl_class_UserInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::UserInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UserInfo")]
+#[cfg(feature = "cordl_class_UserInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UserInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::UserInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UserInfo")]
+#[cfg(feature = "cordl_class_UserInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UserInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -101,7 +101,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UserInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UserInfo+Platform")]
+#[cfg(feature = "cordl_class_UserInfo+Platform")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UserInfo_Platform {
@@ -112,7 +112,7 @@ pub enum UserInfo_Platform {
     Steam = 1i32,
     Test = 0i32,
 }
-#[cfg(feature = "UserInfo+Platform")]
+#[cfg(feature = "cordl_class_UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UserInfo_Platform {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -141,7 +141,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UserInfo_Pla
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UserInfo+Platform")]
+#[cfg(feature = "cordl_class_UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::UserInfo_Platform {
     type Type = Self;
@@ -152,7 +152,7 @@ for crate::GlobalNamespace::UserInfo_Platform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UserInfo+Platform")]
+#[cfg(feature = "cordl_class_UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::UserInfo_Platform {
     type Actual = Self;
@@ -166,7 +166,7 @@ for crate::GlobalNamespace::UserInfo_Platform {
         self
     }
 }
-#[cfg(feature = "UserInfo+Platform")]
+#[cfg(feature = "cordl_class_UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::UserInfo_Platform {
     type Type = Self;
@@ -181,7 +181,7 @@ for crate::GlobalNamespace::UserInfo_Platform {
         }
     }
 }
-#[cfg(feature = "UserInfo+Platform")]
+#[cfg(feature = "cordl_class_UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::UserInfo_Platform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

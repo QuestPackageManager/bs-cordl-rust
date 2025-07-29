@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+GraphicsTier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GraphicsTier")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicsTier {
@@ -7,7 +7,7 @@ pub enum GraphicsTier {
     Tier2 = 1i32,
     Tier3 = 2i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+GraphicsTier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GraphicsTier")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::GraphicsTier {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Graph
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GraphicsTier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GraphicsTier")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::GraphicsTier {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::Rendering::GraphicsTier {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GraphicsTier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GraphicsTier")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::GraphicsTier {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::Rendering::GraphicsTier {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GraphicsTier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GraphicsTier")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::GraphicsTier {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::Rendering::GraphicsTier {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+GraphicsTier")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+GraphicsTier")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::GraphicsTier {
     type Actual = Self;

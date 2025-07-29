@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRAutoDestroyInMRC")]
+#[cfg(feature = "cordl_class_OVRAutoDestroyInMRC")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRAutoDestroyInMRC {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "OVRAutoDestroyInMRC")]
+#[cfg(feature = "cordl_class_OVRAutoDestroyInMRC")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRAutoDestroyInMRC {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRAutoDestr
         false
     }
 }
-#[cfg(feature = "OVRAutoDestroyInMRC")]
+#[cfg(feature = "cordl_class_OVRAutoDestroyInMRC")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRAutoDestroyInMRC {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRAutoDestroyInMRC")]
+#[cfg(feature = "cordl_class_OVRAutoDestroyInMRC")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRAutoDestroyInMRC {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::OVRAutoDestroyInMRC {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRAutoDestroyInMRC")]
+#[cfg(feature = "cordl_class_OVRAutoDestroyInMRC")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRAutoDestroyInMRC {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

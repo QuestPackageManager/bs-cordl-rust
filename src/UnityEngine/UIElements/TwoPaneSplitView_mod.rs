@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TwoPaneSplitView {
@@ -33,7 +33,7 @@ pub struct TwoPaneSplitView {
         crate::UnityEngine::UIElements::TwoPaneSplitViewResizer,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TwoPaneSplitView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,14 +53,14 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView {
     type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TwoPaneSplitView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -500,7 +500,7 @@ impl crate::UnityEngine::UIElements::TwoPaneSplitView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TwoPaneSplitView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -510,7 +510,7 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TwoPaneSplitView_UxmlFactory {
@@ -521,7 +521,7 @@ pub struct TwoPaneSplitView_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -541,7 +541,7 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TwoPaneSplitView>,
@@ -553,7 +553,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -591,7 +591,7 @@ impl crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -601,7 +601,7 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TwoPaneSplitView_UxmlTraits {
@@ -618,7 +618,7 @@ pub struct TwoPaneSplitView_UxmlTraits {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -638,14 +638,14 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -718,7 +718,7 @@ impl crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

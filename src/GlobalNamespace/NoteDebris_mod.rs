@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteDebris")]
+#[cfg(feature = "cordl_class_NoteDebris")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebris {
@@ -20,7 +20,7 @@ pub struct NoteDebris {
         >,
     >,
 }
-#[cfg(feature = "NoteDebris")]
+#[cfg(feature = "cordl_class_NoteDebris")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteDebris {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteDebris {
         false
     }
 }
-#[cfg(feature = "NoteDebris")]
+#[cfg(feature = "cordl_class_NoteDebris")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebris {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteDebris")]
+#[cfg(feature = "cordl_class_NoteDebris")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebris {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -243,7 +243,7 @@ impl crate::GlobalNamespace::NoteDebris {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteDebris")]
+#[cfg(feature = "cordl_class_NoteDebris")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteDebris {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -252,7 +252,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteDebris {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "NoteDebris+Pool")]
+#[cfg(feature = "cordl_class_NoteDebris+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebris_Pool {
@@ -260,7 +260,7 @@ pub struct NoteDebris_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
     >,
 }
-#[cfg(feature = "NoteDebris+Pool")]
+#[cfg(feature = "cordl_class_NoteDebris+Pool")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteDebris_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -279,7 +279,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteDebris_P
         false
     }
 }
-#[cfg(feature = "NoteDebris+Pool")]
+#[cfg(feature = "cordl_class_NoteDebris+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebris_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
@@ -288,7 +288,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NoteDebris_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteDebris+Pool")]
+#[cfg(feature = "cordl_class_NoteDebris+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebris_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -325,7 +325,7 @@ impl crate::GlobalNamespace::NoteDebris_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteDebris+Pool")]
+#[cfg(feature = "cordl_class_NoteDebris+Pool")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteDebris_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

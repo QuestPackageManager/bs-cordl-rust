@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+AnimatedSwitchView")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatedSwitchView {
@@ -34,7 +34,7 @@ pub struct AnimatedSwitchView {
     pub _originalKnobHeight: f32,
     pub _toggle: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleWithCallbacks>,
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AnimatedSwitchView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AnimatedSwitchView {
         false
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView")]
 impl std::ops::DerefMut for crate::HMUI::AnimatedSwitchView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -362,7 +362,7 @@ impl crate::HMUI::AnimatedSwitchView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AnimatedSwitchView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -371,7 +371,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AnimatedSwitchView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+AnimationState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimatedSwitchView_AnimationState {
@@ -384,7 +384,7 @@ pub enum AnimatedSwitchView_AnimationState {
     SwitchingOff = 2i32,
     SwitchingOn = 1i32,
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Held<'a> = Self;
@@ -414,7 +414,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Type = Self;
@@ -425,7 +425,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Actual = Self;
@@ -439,7 +439,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
         self
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Type = Self;
@@ -454,7 +454,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
         }
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Actual = Self;
@@ -468,7 +468,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
         actual
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+ColorBlock")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatedSwitchView_ColorBlock {
@@ -480,7 +480,7 @@ pub struct AnimatedSwitchView_ColorBlock {
     pub backgroundColor0: crate::UnityEngine::Color,
     pub backgroundColor1: crate::UnityEngine::Color,
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+ColorBlock")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AnimatedSwitchView_ColorBlock {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -499,14 +499,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AnimatedSwitchView_Colo
         false
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+ColorBlock")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView_ColorBlock {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+ColorBlock")]
 impl std::ops::DerefMut for crate::HMUI::AnimatedSwitchView_ColorBlock {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -543,7 +543,7 @@ impl crate::HMUI::AnimatedSwitchView_ColorBlock {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+ColorBlock")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AnimatedSwitchView_ColorBlock {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -552,13 +552,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AnimatedSwitchView_Color
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+GetColorDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatedSwitchView_GetColorDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+GetColorDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -578,14 +578,14 @@ for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
         false
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+GetColorDelegate")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+GetColorDelegate")]
 impl std::ops::DerefMut for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -730,7 +730,7 @@ impl crate::HMUI::AnimatedSwitchView_GetColorDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
+#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+GetColorDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

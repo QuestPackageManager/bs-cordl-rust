@@ -1,4 +1,4 @@
-#[cfg(feature = "SaberSound")]
+#[cfg(feature = "cordl_class_SaberSound")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberSound {
@@ -16,7 +16,7 @@ pub struct SaberSound {
     pub _prevPos: crate::UnityEngine::Vector3,
     pub _speed: f32,
 }
-#[cfg(feature = "SaberSound")]
+#[cfg(feature = "cordl_class_SaberSound")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberSound {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberSound {
         false
     }
 }
-#[cfg(feature = "SaberSound")]
+#[cfg(feature = "cordl_class_SaberSound")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberSound {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SaberSound")]
+#[cfg(feature = "cordl_class_SaberSound")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SaberSound {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::SaberSound {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SaberSound")]
+#[cfg(feature = "cordl_class_SaberSound")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberSound {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorTween {
@@ -11,7 +11,7 @@ pub struct ColorTween {
     pub m_Duration: f32,
     pub m_IgnoreTimeScale: bool,
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::CoroutineTween::ColorTween {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CoroutineTween::ColorTween {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CoroutineTween::ColorTween {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CoroutineTween::ColorTween {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::CoroutineTween::ColorTween {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UI::CoroutineTween::ColorTween {
     type Type = Self;
@@ -477,13 +477,17 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorTween_ColorTweenCallback {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Color>,
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -503,7 +507,9 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
     type Target = crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Color>;
@@ -511,7 +517,9 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -549,7 +557,9 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -559,7 +569,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorTween_ColorTweenMode {
@@ -568,7 +578,7 @@ pub enum ColorTween_ColorTweenMode {
     Alpha = 2i32,
     RGB = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
     type Held<'a> = Self;
@@ -598,7 +608,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
     type Type = Self;
@@ -609,7 +619,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
     type Actual = Self;
@@ -623,7 +633,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
     type Type = Self;
@@ -638,7 +648,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode {
     type Actual = Self;

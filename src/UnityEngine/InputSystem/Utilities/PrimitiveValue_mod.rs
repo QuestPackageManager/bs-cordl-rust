@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PrimitiveValue {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
     type Type = Self;

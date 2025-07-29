@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LegacyResourcesProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider {
@@ -29,7 +29,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider {
@@ -39,7 +39,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider {
@@ -147,7 +147,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider {
@@ -159,7 +159,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -171,7 +171,7 @@ pub struct LegacyResourcesProvider_InternalOp {
     pub m_ProvideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider_InternalOp {
@@ -193,7 +193,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider_InternalOp {
@@ -203,7 +203,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider_InternalOp {
@@ -331,7 +331,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider_InternalOp {

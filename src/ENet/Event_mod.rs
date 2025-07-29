@@ -1,10 +1,10 @@
-#[cfg(feature = "ENet+Event")]
+#[cfg(feature = "cordl_class_ENet+Event")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Event {
     pub nativeEvent: crate::ENet::ENetEvent,
 }
-#[cfg(feature = "ENet+Event")]
+#[cfg(feature = "cordl_class_ENet+Event")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::Event {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::Event {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ENet+Event")]
+#[cfg(feature = "cordl_class_ENet+Event")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::Event {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::Event {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ENet+Event")]
+#[cfg(feature = "cordl_class_ENet+Event")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::Event {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::Event {
         self
     }
 }
-#[cfg(feature = "ENet+Event")]
+#[cfg(feature = "cordl_class_ENet+Event")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::Event {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::Event {
         }
     }
 }
-#[cfg(feature = "ENet+Event")]
+#[cfg(feature = "cordl_class_ENet+Event")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::Event {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::ENet::Event {
         actual
     }
 }
-#[cfg(feature = "ENet+Event")]
+#[cfg(feature = "cordl_class_ENet+Event")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::Event {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

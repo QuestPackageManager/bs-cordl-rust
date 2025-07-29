@@ -1,10 +1,10 @@
-#[cfg(feature = "System+TypeNameParser")]
+#[cfg(feature = "cordl_class_System+TypeNameParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeNameParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+TypeNameParser")]
+#[cfg(feature = "cordl_class_System+TypeNameParser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeNameParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeNameParser {
         false
     }
 }
-#[cfg(feature = "System+TypeNameParser")]
+#[cfg(feature = "cordl_class_System+TypeNameParser")]
 impl std::ops::Deref for crate::System::TypeNameParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+TypeNameParser")]
+#[cfg(feature = "cordl_class_System+TypeNameParser")]
 impl std::ops::DerefMut for crate::System::TypeNameParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::System::TypeNameParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TypeNameParser")]
+#[cfg(feature = "cordl_class_System+TypeNameParser")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNameParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

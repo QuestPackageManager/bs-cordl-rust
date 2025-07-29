@@ -1,4 +1,4 @@
-#[cfg(feature = "SynchronizedActionQueue")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SynchronizedActionQueue {
@@ -9,7 +9,7 @@ pub struct SynchronizedActionQueue {
         >,
     >,
 }
-#[cfg(feature = "SynchronizedActionQueue")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SynchronizedActionQueue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::SynchronizedActionQueue {
         false
     }
 }
-#[cfg(feature = "SynchronizedActionQueue")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue")]
 impl std::ops::Deref for crate::GlobalNamespace::SynchronizedActionQueue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SynchronizedActionQueue")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SynchronizedActionQueue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::SynchronizedActionQueue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SynchronizedActionQueue")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SynchronizedActionQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -155,14 +155,14 @@ for crate::GlobalNamespace::SynchronizedActionQueue {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue+SynchronizedAction")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SynchronizedActionQueue_SynchronizedAction {
     pub _cordl_time: f32,
     pub action: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Held<'a> = Self;
@@ -192,7 +192,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Type = Self;
@@ -203,7 +203,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Actual = Self;
@@ -217,7 +217,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
         self
     }
 }
-#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Type = Self;
@@ -232,7 +232,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
         }
     }
 }
-#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Actual = Self;
@@ -246,7 +246,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
         actual
     }
 }
-#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
+#[cfg(feature = "cordl_class_SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Type = Self;

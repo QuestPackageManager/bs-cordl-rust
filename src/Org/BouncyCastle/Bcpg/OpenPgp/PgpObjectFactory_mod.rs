@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpObjectFactory {
@@ -7,7 +7,7 @@ pub struct PgpObjectFactory {
         crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -226,7 +226,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

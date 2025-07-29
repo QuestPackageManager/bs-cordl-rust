@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+Selectable")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Selectable {
@@ -24,7 +24,7 @@ pub struct Selectable {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+Selectable")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Selectable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Selectable {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable")]
 impl std::ops::Deref for crate::UnityEngine::UI::Selectable {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Selectable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1655,7 +1655,7 @@ impl crate::UnityEngine::UI::Selectable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Selectable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1776,7 +1776,7 @@ for crate::UnityEngine::UI::Selectable {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+SelectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Selectable_SelectionState {
@@ -1787,7 +1787,7 @@ pub enum Selectable_SelectionState {
     Pressed = 2i32,
     Selected = 3i32,
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Held<'a> = Self;
@@ -1817,7 +1817,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Type = Self;
@@ -1828,7 +1828,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Actual = Self;
@@ -1842,7 +1842,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Type = Self;
@@ -1857,7 +1857,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Actual = Self;
@@ -1871,7 +1871,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+Transition")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Selectable_Transition {
@@ -1881,7 +1881,7 @@ pub enum Selectable_Transition {
     None = 0i32,
     SpriteSwap = 2i32,
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::Selectable_Transition {
     type Held<'a> = Self;
@@ -1911,7 +1911,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Selectable_Transition {
     type Type = Self;
@@ -1922,7 +1922,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Selectable_Transition {
     type Actual = Self;
@@ -1936,7 +1936,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Selectable_Transition {
     type Type = Self;
@@ -1951,7 +1951,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Selectable_Transition {
     type Actual = Self;

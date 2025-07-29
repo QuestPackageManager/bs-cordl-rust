@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapCharacteristicExtensions")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapCharacteristicExtensions")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapCharacteristicExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapCharacteristicExtensions {
         false
     }
 }
-#[cfg(feature = "BeatmapCharacteristicExtensions")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapCharacteristicExtensions")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCharacteristicExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapCharacteristicExtensions")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapCharacteristicExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

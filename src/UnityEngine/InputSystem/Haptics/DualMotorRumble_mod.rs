@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+DualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+DualMotorRumble")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DualMotorRumble {
     pub _lowFrequencyMotorSpeed_k__BackingField: f32,
     pub _highFrequencyMotorSpeed_k__BackingField: f32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+DualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+DualMotorRumble")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+DualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+DualMotorRumble")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+DualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+DualMotorRumble")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+DualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+DualMotorRumble")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+DualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+DualMotorRumble")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+DualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+DualMotorRumble")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
     type Type = Self;

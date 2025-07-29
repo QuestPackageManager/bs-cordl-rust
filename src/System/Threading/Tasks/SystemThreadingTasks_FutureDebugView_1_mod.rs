@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemThreadingTasks_FutureDebugView_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1"
+)]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::SystemThreadingTasks_FutureDebugView_1<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +45,9 @@ for crate::System::Threading::Tasks::SystemThreadingTasks_FutureDebugView_1<TRes
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::SystemThreadingTasks_FutureDebugView_1<TResult> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -49,7 +55,9 @@ for crate::System::Threading::Tasks::SystemThreadingTasks_FutureDebugView_1<TRes
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::SystemThreadingTasks_FutureDebugView_1<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -60,7 +68,9 @@ for crate::System::Threading::Tasks::SystemThreadingTasks_FutureDebugView_1<TRes
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::Threading::Tasks::SystemThreadingTasks_FutureDebugView_1<TResult> {}
-#[cfg(feature = "System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SystemThreadingTasks_FutureDebugView_1"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::SystemThreadingTasks_FutureDebugView_1<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

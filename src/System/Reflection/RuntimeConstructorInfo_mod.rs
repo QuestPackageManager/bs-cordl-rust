@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+RuntimeConstructorInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeConstructorInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeConstructorInfo {
@@ -7,7 +7,7 @@ pub struct RuntimeConstructorInfo {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub reftype: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Reflection+RuntimeConstructorInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeConstructorInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::RuntimeConstructorInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Reflection::RuntimeConstructorInfo {
         false
     }
 }
-#[cfg(feature = "System+Reflection+RuntimeConstructorInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeConstructorInfo")]
 impl std::ops::Deref for crate::System::Reflection::RuntimeConstructorInfo {
     type Target = crate::System::Reflection::ConstructorInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+RuntimeConstructorInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeConstructorInfo")]
 impl std::ops::DerefMut for crate::System::Reflection::RuntimeConstructorInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1045,7 +1045,7 @@ impl crate::System::Reflection::RuntimeConstructorInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+RuntimeConstructorInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+RuntimeConstructorInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::RuntimeConstructorInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

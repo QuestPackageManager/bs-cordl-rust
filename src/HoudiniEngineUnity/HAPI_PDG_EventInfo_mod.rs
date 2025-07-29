@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_EventInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_PDG_EventInfo {
@@ -10,7 +10,7 @@ pub struct HAPI_PDG_EventInfo {
     pub eventType: i32,
     pub msgSH: i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_EventInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_EventInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_EventInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_EventInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_EventInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_EventInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HAPI_PDG_EventInfo {
     type Type = Self;

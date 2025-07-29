@@ -1,11 +1,11 @@
-#[cfg(feature = "Zenject+PrefabProvider")]
+#[cfg(feature = "cordl_class_Zenject+PrefabProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
 }
-#[cfg(feature = "Zenject+PrefabProvider")]
+#[cfg(feature = "cordl_class_Zenject+PrefabProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::PrefabProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::PrefabProvider {
         false
     }
 }
-#[cfg(feature = "Zenject+PrefabProvider")]
+#[cfg(feature = "cordl_class_Zenject+PrefabProvider")]
 impl std::ops::Deref for crate::Zenject::PrefabProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+PrefabProvider")]
+#[cfg(feature = "cordl_class_Zenject+PrefabProvider")]
 impl std::ops::DerefMut for crate::Zenject::PrefabProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::Zenject::PrefabProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+PrefabProvider")]
+#[cfg(feature = "cordl_class_Zenject+PrefabProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PrefabProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

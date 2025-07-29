@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ForDeviceEventObservable {
@@ -13,7 +15,9 @@ pub struct ForDeviceEventObservable {
     >,
     pub m_DeviceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +37,9 @@ for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -41,7 +47,9 @@ for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -148,7 +156,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -186,7 +196,9 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ForDeviceEventObservable_ForDevice {
@@ -201,7 +213,9 @@ pub struct ForDeviceEventObservable_ForDevice {
     >,
     pub m_DeviceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -221,7 +235,9 @@ for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevi
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -229,7 +245,9 @@ for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -373,7 +391,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDev
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

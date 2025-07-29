@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+VerticalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+VerticalAlignmentOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VerticalAlignmentOptions {
@@ -10,7 +10,7 @@ pub enum VerticalAlignmentOptions {
     Middle = 512i32,
     Top = 256i32,
 }
-#[cfg(feature = "TMPro+VerticalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+VerticalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::VerticalAlignmentOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::VerticalAlignmentOptio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+VerticalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+VerticalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::VerticalAlignmentOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::VerticalAlignmentO
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+VerticalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+VerticalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::VerticalAlignmentOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::VerticalAlignment
         self
     }
 }
-#[cfg(feature = "TMPro+VerticalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+VerticalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::VerticalAlignmentOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::VerticalAlignmentO
         }
     }
 }
-#[cfg(feature = "TMPro+VerticalAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+VerticalAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::VerticalAlignmentOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

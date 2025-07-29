@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+MeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
 }
-#[cfg(feature = "UnityEngine+MeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshRenderer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MeshRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MeshRenderer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+MeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshRenderer")]
 impl std::ops::Deref for crate::UnityEngine::MeshRenderer {
     type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+MeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::MeshRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -215,7 +215,7 @@ impl crate::UnityEngine::MeshRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+MeshRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::MeshRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

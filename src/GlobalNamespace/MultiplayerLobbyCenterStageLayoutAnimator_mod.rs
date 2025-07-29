@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageLayoutAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyCenterStageLayoutAnimator {
@@ -17,7 +17,7 @@ pub struct MultiplayerLobbyCenterStageLayoutAnimator {
         crate::Tweening::TimeTweeningManager,
     >,
 }
-#[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageLayoutAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
         false
     }
 }
-#[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageLayoutAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageLayoutAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -188,7 +188,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageLayoutAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerRequestUriBuilder {
@@ -15,7 +15,7 @@ pub struct HttpListenerRequestUriBuilder {
     pub rawPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpListenerRequestUriBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::System::Net::HttpListenerRequestUriBuilder {
         false
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder")]
 impl std::ops::Deref for crate::System::Net::HttpListenerRequestUriBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder")]
 impl std::ops::DerefMut for crate::System::Net::HttpListenerRequestUriBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -590,7 +590,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::HttpListenerRequestUriBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -600,7 +600,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpListenerRequestUriBuilder_EncodingType {
@@ -608,7 +608,7 @@ pub enum HttpListenerRequestUriBuilder_EncodingType {
     Primary = 0i32,
     Secondary = 1i32,
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Held<'a> = Self;
@@ -638,7 +638,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Type = Self;
@@ -649,7 +649,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Actual = Self;
@@ -663,7 +663,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
         self
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Type = Self;
@@ -678,7 +678,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
         }
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Actual = Self;
@@ -692,7 +692,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
         actual
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpListenerRequestUriBuilder_ParsingResult {
@@ -701,7 +701,7 @@ pub enum HttpListenerRequestUriBuilder_ParsingResult {
     InvalidString = 1i32,
     Success = 0i32,
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Held<'a> = Self;
@@ -731,7 +731,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Type = Self;
@@ -742,7 +742,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Actual = Self;
@@ -756,7 +756,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
         self
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Type = Self;
@@ -771,7 +771,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
         }
     }
 }
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Actual = Self;

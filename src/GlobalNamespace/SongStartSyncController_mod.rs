@@ -1,4 +1,4 @@
-#[cfg(feature = "SongStartSyncController")]
+#[cfg(feature = "cordl_class_SongStartSyncController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongStartSyncController {
@@ -20,7 +20,7 @@ pub struct SongStartSyncController {
     pub syncStartSuccessEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     pub syncResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
 }
-#[cfg(feature = "SongStartSyncController")]
+#[cfg(feature = "cordl_class_SongStartSyncController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongStartSyncController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::GlobalNamespace::SongStartSyncController {
         false
     }
 }
-#[cfg(feature = "SongStartSyncController")]
+#[cfg(feature = "cordl_class_SongStartSyncController")]
 impl std::ops::Deref for crate::GlobalNamespace::SongStartSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongStartSyncController")]
+#[cfg(feature = "cordl_class_SongStartSyncController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongStartSyncController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -430,7 +430,7 @@ impl crate::GlobalNamespace::SongStartSyncController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongStartSyncController")]
+#[cfg(feature = "cordl_class_SongStartSyncController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SongStartSyncController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

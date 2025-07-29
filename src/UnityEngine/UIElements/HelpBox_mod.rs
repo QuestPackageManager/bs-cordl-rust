@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+HelpBox")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpBox {
@@ -8,7 +8,7 @@ pub struct HelpBox {
     pub m_IconClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Label: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::HelpBox {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Help
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox {
     type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::HelpBox {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::UnityEngine::UIElements::HelpBox {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::HelpBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -232,7 +232,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::HelpB
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpBox_UxmlFactory {
@@ -241,7 +241,7 @@ pub struct HelpBox_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::HelpBox_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -261,7 +261,7 @@ for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::HelpBox>,
@@ -271,7 +271,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -308,7 +308,7 @@ impl crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -318,7 +318,7 @@ for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpBox_UxmlTraits {
@@ -332,7 +332,7 @@ pub struct HelpBox_UxmlTraits {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -352,14 +352,14 @@ for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -432,7 +432,7 @@ impl crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

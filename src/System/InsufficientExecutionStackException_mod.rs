@@ -1,10 +1,10 @@
-#[cfg(feature = "System+InsufficientExecutionStackException")]
+#[cfg(feature = "cordl_class_System+InsufficientExecutionStackException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InsufficientExecutionStackException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+InsufficientExecutionStackException")]
+#[cfg(feature = "cordl_class_System+InsufficientExecutionStackException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::InsufficientExecutionStackException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::InsufficientExecutionStackException {
         false
     }
 }
-#[cfg(feature = "System+InsufficientExecutionStackException")]
+#[cfg(feature = "cordl_class_System+InsufficientExecutionStackException")]
 impl std::ops::Deref for crate::System::InsufficientExecutionStackException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+InsufficientExecutionStackException")]
+#[cfg(feature = "cordl_class_System+InsufficientExecutionStackException")]
 impl std::ops::DerefMut for crate::System::InsufficientExecutionStackException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::System::InsufficientExecutionStackException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+InsufficientExecutionStackException")]
+#[cfg(feature = "cordl_class_System+InsufficientExecutionStackException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::InsufficientExecutionStackException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

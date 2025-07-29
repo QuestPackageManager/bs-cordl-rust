@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomFogEnvironmentParams")]
+#[cfg(feature = "cordl_class_BloomFogEnvironmentParams")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomFogEnvironmentParams {
@@ -11,7 +11,7 @@ pub struct BloomFogEnvironmentParams {
     pub legacyAutoExposure: bool,
     pub noteSpawnIntensity: f32,
 }
-#[cfg(feature = "BloomFogEnvironmentParams")]
+#[cfg(feature = "cordl_class_BloomFogEnvironmentParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomFogEnvironmentParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::BloomFogEnvironmentParams {
         false
     }
 }
-#[cfg(feature = "BloomFogEnvironmentParams")]
+#[cfg(feature = "cordl_class_BloomFogEnvironmentParams")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomFogEnvironmentParams {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomFogEnvironmentParams")]
+#[cfg(feature = "cordl_class_BloomFogEnvironmentParams")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogEnvironmentParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::BloomFogEnvironmentParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomFogEnvironmentParams")]
+#[cfg(feature = "cordl_class_BloomFogEnvironmentParams")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomFogEnvironmentParams {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

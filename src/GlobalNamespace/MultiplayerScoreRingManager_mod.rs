@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerScoreRingManager")]
+#[cfg(feature = "cordl_class_MultiplayerScoreRingManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerScoreRingManager {
@@ -45,7 +45,7 @@ pub struct MultiplayerScoreRingManager {
     pub _spawnCenterDistanceFound: bool,
     pub _playersSpawned: bool,
 }
-#[cfg(feature = "MultiplayerScoreRingManager")]
+#[cfg(feature = "cordl_class_MultiplayerScoreRingManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerScoreRingManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -65,14 +65,14 @@ for crate::GlobalNamespace::MultiplayerScoreRingManager {
         false
     }
 }
-#[cfg(feature = "MultiplayerScoreRingManager")]
+#[cfg(feature = "cordl_class_MultiplayerScoreRingManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreRingManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerScoreRingManager")]
+#[cfg(feature = "cordl_class_MultiplayerScoreRingManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreRingManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -553,7 +553,7 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerScoreRingManager")]
+#[cfg(feature = "cordl_class_MultiplayerScoreRingManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerScoreRingManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionObjective")]
+#[cfg(feature = "cordl_class_MissionObjective")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjective {
@@ -7,7 +7,7 @@ pub struct MissionObjective {
     pub _referenceValueComparisonType: crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType,
     pub _referenceValue: i32,
 }
-#[cfg(feature = "MissionObjective")]
+#[cfg(feature = "cordl_class_MissionObjective")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MissionObjective {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MissionObjec
         false
     }
 }
-#[cfg(feature = "MissionObjective")]
+#[cfg(feature = "cordl_class_MissionObjective")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionObjective {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionObjective")]
+#[cfg(feature = "cordl_class_MissionObjective")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjective {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -254,7 +254,7 @@ impl crate::GlobalNamespace::MissionObjective {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionObjective")]
+#[cfg(feature = "cordl_class_MissionObjective")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionObjective {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -263,7 +263,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionObject
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
+#[cfg(feature = "cordl_class_MissionObjective+ReferenceValueComparisonType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MissionObjective_ReferenceValueComparisonType {
@@ -273,7 +273,7 @@ pub enum MissionObjective_ReferenceValueComparisonType {
     Min = 3i32,
     None = 0i32,
 }
-#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
+#[cfg(feature = "cordl_class_MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Held<'a> = Self;
@@ -303,7 +303,7 @@ for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
+#[cfg(feature = "cordl_class_MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Type = Self;
@@ -314,7 +314,7 @@ for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
+#[cfg(feature = "cordl_class_MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Actual = Self;
@@ -328,7 +328,7 @@ for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
         self
     }
 }
-#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
+#[cfg(feature = "cordl_class_MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Type = Self;
@@ -343,7 +343,7 @@ for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
         }
     }
 }
-#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
+#[cfg(feature = "cordl_class_MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Actual = Self;

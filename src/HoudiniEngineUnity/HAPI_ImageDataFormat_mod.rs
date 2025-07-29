@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImageDataFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImageDataFormat")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_ImageDataFormat {
@@ -11,7 +11,7 @@ pub enum HAPI_ImageDataFormat {
     HAPI_IMAGE_DATA_MAX = 5i32,
     HAPI_IMAGE_DATA_UNKNOWN = -1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImageDataFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImageDataFormat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImageDataFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImageDataFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImageDataFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImageDataFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImageDataFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImageDataFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImageDataFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImageDataFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_ImageDataFormat {
     type Actual = Self;

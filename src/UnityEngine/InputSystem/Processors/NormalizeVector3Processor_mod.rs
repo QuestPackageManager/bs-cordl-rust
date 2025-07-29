@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeVector3Processor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeVector3Processor"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NormalizeVector3Processor {
@@ -6,7 +8,9 @@ pub struct NormalizeVector3Processor {
         crate::UnityEngine::Vector3,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeVector3Processor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeVector3Processor"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Processors::NormalizeVector3Processor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +30,9 @@ for crate::UnityEngine::InputSystem::Processors::NormalizeVector3Processor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeVector3Processor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeVector3Processor"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::NormalizeVector3Processor {
     type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
@@ -36,7 +42,9 @@ for crate::UnityEngine::InputSystem::Processors::NormalizeVector3Processor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeVector3Processor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeVector3Processor"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Processors::NormalizeVector3Processor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +141,9 @@ impl crate::UnityEngine::InputSystem::Processors::NormalizeVector3Processor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeVector3Processor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeVector3Processor"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Processors::NormalizeVector3Processor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

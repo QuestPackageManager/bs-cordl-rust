@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+Imu_OffScaleFlags")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Imu_OffScaleFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Imu_OffScaleFlags {
@@ -10,7 +10,7 @@ pub enum Imu_OffScaleFlags {
     OffScale_GyroY = 16i32,
     OffScale_GyroZ = 32i32,
 }
-#[cfg(feature = "OVR+OpenVR+Imu_OffScaleFlags")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Imu_OffScaleFlags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::Imu_OffScaleFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::Imu_OffScaleFlag
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+Imu_OffScaleFlags")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Imu_OffScaleFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::Imu_OffScaleFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::Imu_OffScale
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+Imu_OffScaleFlags")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Imu_OffScaleFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::Imu_OffScaleFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::Imu_OffScal
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+Imu_OffScaleFlags")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Imu_OffScaleFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::Imu_OffScaleFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::Imu_OffScale
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+Imu_OffScaleFlags")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Imu_OffScaleFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::Imu_OffScaleFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

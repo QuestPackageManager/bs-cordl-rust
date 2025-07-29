@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AvatarMaskBodyPart")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMaskBodyPart")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarMaskBodyPart {
@@ -18,7 +18,7 @@ pub enum AvatarMaskBodyPart {
     RightLeg = 4i32,
     Root = 0i32,
 }
-#[cfg(feature = "UnityEngine+AvatarMaskBodyPart")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMaskBodyPart")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AvatarMaskBodyPart {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AvatarMaskBodyPa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AvatarMaskBodyPart")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMaskBodyPart")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AvatarMaskBodyPart {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AvatarMaskBo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AvatarMaskBodyPart")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMaskBodyPart")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AvatarMaskBodyPart {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AvatarMaskB
         self
     }
 }
-#[cfg(feature = "UnityEngine+AvatarMaskBodyPart")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMaskBodyPart")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AvatarMaskBodyPart {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AvatarMaskBo
         }
     }
 }
-#[cfg(feature = "UnityEngine+AvatarMaskBodyPart")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMaskBodyPart")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AvatarMaskBodyPart {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultSignedAttributeTableGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub table: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -208,7 +208,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

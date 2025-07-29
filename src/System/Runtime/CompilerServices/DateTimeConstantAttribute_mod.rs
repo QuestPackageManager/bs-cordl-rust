@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeConstantAttribute {
     __cordl_parent: crate::System::Runtime::CompilerServices::CustomConstantAttribute,
     pub _date: crate::System::DateTime,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
     type Target = crate::System::Runtime::CompilerServices::CustomConstantAttribute;
@@ -33,7 +33,7 @@ for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

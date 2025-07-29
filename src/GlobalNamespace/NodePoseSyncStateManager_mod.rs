@@ -1,4 +1,4 @@
-#[cfg(feature = "NodePoseSyncStateManager")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NodePoseSyncStateManager {
@@ -14,7 +14,7 @@ pub struct NodePoseSyncStateManager {
         >,
     >,
 }
-#[cfg(feature = "NodePoseSyncStateManager")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NodePoseSyncStateManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::NodePoseSyncStateManager {
         false
     }
 }
-#[cfg(feature = "NodePoseSyncStateManager")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateManager")]
 impl std::ops::Deref for crate::GlobalNamespace::NodePoseSyncStateManager {
     type Target = crate::GlobalNamespace::MultiplayerSyncStateManager_5<
         crate::GlobalNamespace::NodePoseSyncState,
@@ -51,7 +51,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NodePoseSyncStateManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NodePoseSyncStateManager")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NodePoseSyncStateManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -367,7 +367,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NodePoseSyncStateManager")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NodePoseSyncStateManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "PackLevelListHeaderTableCell")]
+#[cfg(feature = "cordl_class_PackLevelListHeaderTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackLevelListHeaderTableCell {
@@ -12,7 +12,7 @@ pub struct PackLevelListHeaderTableCell {
         crate::System::Threading::CancellationTokenSource,
     >,
 }
-#[cfg(feature = "PackLevelListHeaderTableCell")]
+#[cfg(feature = "cordl_class_PackLevelListHeaderTableCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackLevelListHeaderTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::PackLevelListHeaderTableCell {
         false
     }
 }
-#[cfg(feature = "PackLevelListHeaderTableCell")]
+#[cfg(feature = "cordl_class_PackLevelListHeaderTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::PackLevelListHeaderTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackLevelListHeaderTableCell")]
+#[cfg(feature = "cordl_class_PackLevelListHeaderTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackLevelListHeaderTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -206,7 +206,7 @@ impl crate::GlobalNamespace::PackLevelListHeaderTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackLevelListHeaderTableCell")]
+#[cfg(feature = "cordl_class_PackLevelListHeaderTableCell")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PackLevelListHeaderTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

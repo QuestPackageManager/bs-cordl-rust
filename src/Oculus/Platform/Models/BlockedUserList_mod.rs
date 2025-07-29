@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+BlockedUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+BlockedUserList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BlockedUserList {
@@ -6,7 +6,7 @@ pub struct BlockedUserList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUser>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+Models+BlockedUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+BlockedUserList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::BlockedUserList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::Models::BlockedUserList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+BlockedUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+BlockedUserList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::BlockedUserList {
     type Target = crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUser>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::Models::BlockedUserList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+BlockedUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+BlockedUserList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::BlockedUserList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::Oculus::Platform::Models::BlockedUserList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+BlockedUserList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+BlockedUserList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::BlockedUserList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

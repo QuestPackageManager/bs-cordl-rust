@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeStampTokenInfo {
@@ -6,7 +6,7 @@ pub struct TimeStampTokenInfo {
     pub tstInfo: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Tsp::TstInfo>,
     pub genTime: crate::System::DateTime,
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Tsp::TimeStampTokenInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Tsp::TimeStampTokenInfo {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Tsp::TimeStampTokenInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Tsp::TimeStampTokenInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -434,7 +434,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampTokenInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Tsp::TimeStampTokenInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "IStandaloneMonobehavior")]
+#[cfg(feature = "cordl_class_IStandaloneMonobehavior")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IStandaloneMonobehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IStandaloneMonobehavior")]
+#[cfg(feature = "cordl_class_IStandaloneMonobehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IStandaloneMonobehavior {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IStandaloneMonobehavior {
         false
     }
 }
-#[cfg(feature = "IStandaloneMonobehavior")]
+#[cfg(feature = "cordl_class_IStandaloneMonobehavior")]
 impl std::ops::Deref for crate::GlobalNamespace::IStandaloneMonobehavior {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IStandaloneMonobehavior")]
+#[cfg(feature = "cordl_class_IStandaloneMonobehavior")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IStandaloneMonobehavior {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -168,7 +168,7 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IStandaloneMonobehavior")]
+#[cfg(feature = "cordl_class_IStandaloneMonobehavior")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IStandaloneMonobehavior {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

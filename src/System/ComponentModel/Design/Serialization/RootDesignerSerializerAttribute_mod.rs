@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -15,7 +15,7 @@ pub struct RootDesignerSerializerAttribute {
     >,
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializerAttribute {
@@ -37,7 +37,7 @@ for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializer
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializerAttribute {
@@ -47,7 +47,7 @@ for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializer
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializerAttribute {
@@ -177,7 +177,7 @@ impl crate::System::ComponentModel::Design::Serialization::RootDesignerSerialize
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializerAttribute {

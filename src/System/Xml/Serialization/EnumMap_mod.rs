@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Serialization+EnumMap")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumMap {
@@ -23,7 +23,7 @@ pub struct EnumMap {
     >,
     pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Serialization::EnumMap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Serialization::E
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap")]
 impl std::ops::Deref for crate::System::Xml::Serialization::EnumMap {
     type Target = crate::System::Xml::Serialization::ObjectMap;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap")]
 impl std::ops::DerefMut for crate::System::Xml::Serialization::EnumMap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -314,7 +314,7 @@ impl crate::System::Xml::Serialization::EnumMap {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Serialization::EnumMap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -323,7 +323,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Serialization::En
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap+EnumMapMember")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap+EnumMapMember")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumMap_EnumMapMember {
@@ -332,7 +332,7 @@ pub struct EnumMap_EnumMapMember {
     pub _enumName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _value: i64,
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap+EnumMapMember")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap+EnumMapMember")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::EnumMap_EnumMapMember {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -352,14 +352,14 @@ for crate::System::Xml::Serialization::EnumMap_EnumMapMember {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap+EnumMapMember")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap+EnumMapMember")]
 impl std::ops::Deref for crate::System::Xml::Serialization::EnumMap_EnumMapMember {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap+EnumMapMember")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap+EnumMapMember")]
 impl std::ops::DerefMut for crate::System::Xml::Serialization::EnumMap_EnumMapMember {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -486,7 +486,7 @@ impl crate::System::Xml::Serialization::EnumMap_EnumMapMember {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+EnumMap+EnumMapMember")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap+EnumMapMember")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::EnumMap_EnumMapMember {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

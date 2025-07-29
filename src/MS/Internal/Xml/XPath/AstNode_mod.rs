@@ -1,10 +1,10 @@
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AstNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::AstNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::Ast
         false
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::AstNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::AstNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::MS::Internal::Xml::XPath::AstNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::AstNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -130,7 +130,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::AstN
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode+AstType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AstNode_AstType {
@@ -145,7 +145,7 @@ pub enum AstNode_AstType {
     Root = 6i32,
     Variable = 7i32,
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Held<'a> = Self;
@@ -175,7 +175,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Type = Self;
@@ -186,7 +186,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Actual = Self;
@@ -200,7 +200,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
         self
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Type = Self;
@@ -215,7 +215,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
         }
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Actual = Self;

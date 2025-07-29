@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lightmapping {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -169,7 +169,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -180,7 +180,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -188,7 +188,7 @@ pub struct Lightmapping_RequestLightsDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate {
@@ -210,7 +210,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLi
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate {
@@ -220,7 +220,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLi
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate {
@@ -318,7 +318,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestL
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate {

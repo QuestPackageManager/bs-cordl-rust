@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ParentForeignKeyConstraintEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParentForeignKeyConstraintEnumerator {
     __cordl_parent: crate::System::Data::ForeignKeyConstraintEnumerator,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
 }
-#[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ParentForeignKeyConstraintEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::ParentForeignKeyConstraintEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Data::ParentForeignKeyConstraintEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ParentForeignKeyConstraintEnumerator")]
 impl std::ops::Deref for crate::System::Data::ParentForeignKeyConstraintEnumerator {
     type Target = crate::System::Data::ForeignKeyConstraintEnumerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ParentForeignKeyConstraintEnumerator")]
 impl std::ops::DerefMut for crate::System::Data::ParentForeignKeyConstraintEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -107,7 +107,7 @@ impl crate::System::Data::ParentForeignKeyConstraintEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ParentForeignKeyConstraintEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::ParentForeignKeyConstraintEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

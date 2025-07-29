@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+TransitionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TransitionType {
@@ -7,7 +7,7 @@ pub enum TransitionType {
     Instant = 0i32,
     Interpolate = 1i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::BeatmapSaveDataVersion3::TransitionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BeatmapSaveDataVersion3::TransitionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BeatmapSaveDataVersion3::TransitionType {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BeatmapSaveDataVersion3::TransitionType {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncPreloader")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncPreloader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncPreloader {
     __cordl_parent: crate::Zenject::MonoInstaller,
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncPreloader")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncPreloader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::AppFlow::Initialization::AsyncPreloader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BGLib::AppFlow::Initialization::AsyncPreloader {
         false
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncPreloader")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncPreloader")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncPreloader {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncPreloader")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncPreloader")]
 impl std::ops::DerefMut for crate::BGLib::AppFlow::Initialization::AsyncPreloader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncPreloader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncPreloader")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncPreloader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::AppFlow::Initialization::AsyncPreloader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

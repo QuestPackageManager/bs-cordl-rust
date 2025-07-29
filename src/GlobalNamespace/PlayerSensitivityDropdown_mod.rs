@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerSensitivityDropdown")]
+#[cfg(feature = "cordl_class_PlayerSensitivityDropdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSensitivityDropdown {
@@ -6,7 +6,7 @@ pub struct PlayerSensitivityDropdown {
         crate::GlobalNamespace::PlayerSensitivityFlag,
     >,
 }
-#[cfg(feature = "PlayerSensitivityDropdown")]
+#[cfg(feature = "cordl_class_PlayerSensitivityDropdown")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSensitivityDropdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::PlayerSensitivityDropdown {
         false
     }
 }
-#[cfg(feature = "PlayerSensitivityDropdown")]
+#[cfg(feature = "cordl_class_PlayerSensitivityDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSensitivityDropdown {
     type Target = crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::PlayerSensitivityFlag,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::PlayerSensitivityDropdown {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSensitivityDropdown")]
+#[cfg(feature = "cordl_class_PlayerSensitivityDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSensitivityDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::PlayerSensitivityDropdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSensitivityDropdown")]
+#[cfg(feature = "cordl_class_PlayerSensitivityDropdown")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSensitivityDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

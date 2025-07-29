@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D {
@@ -22,7 +22,7 @@ pub struct Allocator2D {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Allocator2D {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -299,7 +299,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::Allocator2D {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -309,7 +309,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Allocator2D_Alloc2D {
@@ -319,7 +319,7 @@ pub struct Allocator2D_Alloc2D {
     >,
     pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     type Held<'a> = Self;
@@ -349,7 +349,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     type Type = Self;
@@ -360,7 +360,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     type Actual = Self;
@@ -374,7 +374,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     type Type = Self;
@@ -389,7 +389,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     type Actual = Self;
@@ -403,7 +403,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     type Type = Self;
@@ -455,7 +455,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D_Area {
@@ -465,7 +465,7 @@ pub struct Allocator2D_Area {
         crate::UnityEngine::UIElements::UIR::BestFitAllocator,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -485,14 +485,14 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -536,7 +536,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -546,7 +546,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D_Row {
@@ -565,7 +565,7 @@ pub struct Allocator2D_Row {
         crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -585,7 +585,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
@@ -594,7 +594,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -687,7 +687,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

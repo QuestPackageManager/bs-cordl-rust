@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UI+ILayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ILayoutElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ILayoutElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UI+ILayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ILayoutElement")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ILayoutElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ILayoutEleme
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+ILayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ILayoutElement")]
 impl std::ops::Deref for crate::UnityEngine::UI::ILayoutElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ILayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ILayoutElement")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::ILayoutElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -213,7 +213,7 @@ impl crate::UnityEngine::UI::ILayoutElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ILayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ILayoutElement")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ILayoutElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

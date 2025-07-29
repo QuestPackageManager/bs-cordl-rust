@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlEntityReference")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEntityReference")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlEntityReference {
@@ -6,7 +6,7 @@ pub struct XmlEntityReference {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lastChild: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
 }
-#[cfg(feature = "System+Xml+XmlEntityReference")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEntityReference")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlEntityReference {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlEntityReferen
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlEntityReference")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEntityReference")]
 impl std::ops::Deref for crate::System::Xml::XmlEntityReference {
     type Target = crate::System::Xml::XmlLinkedNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlEntityReference")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEntityReference")]
 impl std::ops::DerefMut for crate::System::Xml::XmlEntityReference {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -550,7 +550,7 @@ impl crate::System::Xml::XmlEntityReference {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlEntityReference")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEntityReference")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlEntityReference {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "AuthenticationToken")]
+#[cfg(feature = "cordl_class_AuthenticationToken")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AuthenticationToken {
@@ -7,7 +7,7 @@ pub struct AuthenticationToken {
     pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub sessionToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "AuthenticationToken")]
+#[cfg(feature = "cordl_class_AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AuthenticationToken {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Authenticati
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AuthenticationToken")]
+#[cfg(feature = "cordl_class_AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::AuthenticationToken {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AuthenticationToken")]
+#[cfg(feature = "cordl_class_AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AuthenticationToken {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::AuthenticationToken {
         self
     }
 }
-#[cfg(feature = "AuthenticationToken")]
+#[cfg(feature = "cordl_class_AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::AuthenticationToken {
         }
     }
 }
-#[cfg(feature = "AuthenticationToken")]
+#[cfg(feature = "cordl_class_AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AuthenticationToken {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::GlobalNamespace::AuthenticationToken {
         actual
     }
 }
-#[cfg(feature = "AuthenticationToken")]
+#[cfg(feature = "cordl_class_AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
@@ -391,7 +391,7 @@ impl AsMut<
         todo!()
     }
 }
-#[cfg(feature = "AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AuthenticationToken_Platform {
@@ -407,7 +407,7 @@ pub enum AuthenticationToken_Platform {
     Steam = 3u8,
     Test = 0u8,
 }
-#[cfg(feature = "AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Held<'a> = Self;
@@ -437,7 +437,7 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Type = Self;
@@ -448,7 +448,7 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Actual = Self;
@@ -462,7 +462,7 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         self
     }
 }
-#[cfg(feature = "AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Type = Self;
@@ -477,7 +477,7 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         }
     }
 }
-#[cfg(feature = "AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Actual = Self;

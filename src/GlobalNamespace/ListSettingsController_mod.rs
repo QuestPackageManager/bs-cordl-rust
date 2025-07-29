@@ -1,4 +1,4 @@
-#[cfg(feature = "ListSettingsController")]
+#[cfg(feature = "cordl_class_ListSettingsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListSettingsController {
@@ -6,7 +6,7 @@ pub struct ListSettingsController {
     pub _idx: i32,
     pub _numberOfElements: i32,
 }
-#[cfg(feature = "ListSettingsController")]
+#[cfg(feature = "cordl_class_ListSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ListSettingsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::ListSettingsController {
         false
     }
 }
-#[cfg(feature = "ListSettingsController")]
+#[cfg(feature = "cordl_class_ListSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::ListSettingsController {
     type Target = crate::GlobalNamespace::IncDecSettingsController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ListSettingsController")]
+#[cfg(feature = "cordl_class_ListSettingsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ListSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -272,7 +272,7 @@ impl crate::GlobalNamespace::ListSettingsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ListSettingsController")]
+#[cfg(feature = "cordl_class_ListSettingsController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ListSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

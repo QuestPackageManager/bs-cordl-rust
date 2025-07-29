@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+BinXmlToken")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlToken")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BinXmlToken {
@@ -70,7 +70,7 @@ pub enum BinXmlToken {
     XmlDecl = 254i32,
     XmlText = 237i32,
 }
-#[cfg(feature = "System+Xml+BinXmlToken")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlToken")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::BinXmlToken {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -99,7 +99,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::BinXmlToken {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+BinXmlToken")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlToken")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::BinXmlToken {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -109,7 +109,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::BinXmlToken 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+BinXmlToken")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlToken")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::BinXmlToken {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -122,7 +122,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::BinXmlToken
         self
     }
 }
-#[cfg(feature = "System+Xml+BinXmlToken")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlToken")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::BinXmlToken {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -136,7 +136,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::BinXmlToken 
         }
     }
 }
-#[cfg(feature = "System+Xml+BinXmlToken")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlToken")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::BinXmlToken {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

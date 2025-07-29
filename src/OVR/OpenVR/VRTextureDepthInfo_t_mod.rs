@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+VRTextureDepthInfo_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRTextureDepthInfo_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRTextureDepthInfo_t {
@@ -6,7 +6,7 @@ pub struct VRTextureDepthInfo_t {
     pub mProjection: crate::OVR::OpenVR::HmdMatrix44_t,
     pub vRange: crate::OVR::OpenVR::HmdVector2_t,
 }
-#[cfg(feature = "OVR+OpenVR+VRTextureDepthInfo_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRTextureDepthInfo_t")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VRTextureDepthInfo_t {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VRTextureDepthIn
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRTextureDepthInfo_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRTextureDepthInfo_t")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::VRTextureDepthInfo_t {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::OVR::OpenVR::VRTextureDepthInfo_t {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRTextureDepthInfo_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRTextureDepthInfo_t")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::VRTextureDepthInfo_t {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::OVR::OpenVR::VRTextureDepthInfo_t {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRTextureDepthInfo_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRTextureDepthInfo_t")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::VRTextureDepthInfo_t {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::OVR::OpenVR::VRTextureDepthInfo_t {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRTextureDepthInfo_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRTextureDepthInfo_t")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VRTextureDepthInfo_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VRTextureDepth
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRTextureDepthInfo_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRTextureDepthInfo_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::VRTextureDepthInfo_t {
     type Type = Self;

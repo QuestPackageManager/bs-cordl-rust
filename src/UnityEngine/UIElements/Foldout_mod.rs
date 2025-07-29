@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Foldout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Foldout {
@@ -12,7 +12,7 @@ pub struct Foldout {
         crate::UnityEngine::UIElements::KeyboardNavigationManipulator,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Foldout {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Fold
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout {
     type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Foldout {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -346,7 +346,7 @@ impl crate::UnityEngine::UIElements::Foldout {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Foldout {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -371,7 +371,7 @@ for crate::UnityEngine::UIElements::Foldout {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Foldout_UxmlFactory {
@@ -380,7 +380,7 @@ pub struct Foldout_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -400,7 +400,7 @@ for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout>,
@@ -410,7 +410,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -447,7 +447,7 @@ impl crate::UnityEngine::UIElements::Foldout_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -457,7 +457,7 @@ for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Foldout_UxmlTraits {
@@ -469,7 +469,7 @@ pub struct Foldout_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -489,14 +489,14 @@ for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -569,7 +569,7 @@ impl crate::UnityEngine::UIElements::Foldout_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

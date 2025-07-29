@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JObject {
@@ -13,7 +13,7 @@ pub struct JObject {
         crate::System::ComponentModel::PropertyChangingEventHandler,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JObject {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JObje
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JObject {
     type Target = crate::Newtonsoft::Json::Linq::JContainer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2502,7 +2502,7 @@ impl crate::Newtonsoft::Json::Linq::JObject {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject")]
 impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JObject {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2679,7 +2679,7 @@ for crate::Newtonsoft::Json::Linq::JObject {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JObject_JObjectDynamicProxy {
@@ -2687,7 +2687,7 @@ pub struct JObject_JObjectDynamicProxy {
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2707,7 +2707,7 @@ for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
     type Target = crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
@@ -2716,7 +2716,7 @@ impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicPr
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2875,7 +2875,7 @@ impl crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2885,7 +2885,9 @@ for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JObject___WriteToAsync_g__AwaitProperties_0_0_d {
@@ -2903,7 +2905,9 @@ pub struct JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     >,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Held<'a> = Self;
@@ -2933,7 +2937,9 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Type = Self;
@@ -2944,7 +2950,9 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Actual = Self;
@@ -2958,7 +2966,9 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Type = Self;
@@ -2973,7 +2983,9 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Actual = Self;
@@ -2987,7 +2999,9 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Type = Self;

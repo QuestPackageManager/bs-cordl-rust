@@ -1,10 +1,10 @@
-#[cfg(feature = "MockBeatmapObjectManager")]
+#[cfg(feature = "cordl_class_MockBeatmapObjectManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
 }
-#[cfg(feature = "MockBeatmapObjectManager")]
+#[cfg(feature = "cordl_class_MockBeatmapObjectManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockBeatmapObjectManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::MockBeatmapObjectManager {
         false
     }
 }
-#[cfg(feature = "MockBeatmapObjectManager")]
+#[cfg(feature = "cordl_class_MockBeatmapObjectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapObjectManager {
     type Target = crate::GlobalNamespace::BeatmapObjectManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockBeatmapObjectManager")]
+#[cfg(feature = "cordl_class_MockBeatmapObjectManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapObjectManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -307,7 +307,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockBeatmapObjectManager")]
+#[cfg(feature = "cordl_class_MockBeatmapObjectManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MockBeatmapObjectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

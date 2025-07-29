@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKTransform")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKTransform")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKTransform {
@@ -6,7 +6,7 @@ pub struct SDKTransform {
     pub localRotation: crate::LIV::SDK::Unity::SDKQuaternion,
     pub localScale: crate::LIV::SDK::Unity::SDKVector3,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKTransform")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKTransform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKTransform {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKTransform
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKTransform")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKTransform")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKTransform {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKTrans
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKTransform")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKTransform")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKTransform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKTran
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKTransform")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKTransform")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKTransform {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKTrans
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKTransform")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKTransform")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKTransform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKTransfo
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKTransform")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKTransform")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LIV::SDK::Unity::SDKTransform {
     type Type = Self;

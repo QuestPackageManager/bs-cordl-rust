@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+BuiltinRenderTextureType")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BuiltinRenderTextureType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BuiltinRenderTextureType {
@@ -27,7 +27,7 @@ pub enum BuiltinRenderTextureType {
     RenderTexture = -2i32,
     ResolvedDepth = 5i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+BuiltinRenderTextureType")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BuiltinRenderTextureType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
     type Held<'a> = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BuiltinRenderTextureType")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BuiltinRenderTextureType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
     type Type = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BuiltinRenderTextureType")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BuiltinRenderTextureType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
     type Actual = Self;
@@ -82,7 +82,7 @@ for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BuiltinRenderTextureType")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BuiltinRenderTextureType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
     type Type = Self;
@@ -97,7 +97,7 @@ for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BuiltinRenderTextureType")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BuiltinRenderTextureType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::BuiltinRenderTextureType {
     type Actual = Self;

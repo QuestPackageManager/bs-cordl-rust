@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IEditorPlayerConnection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -181,7 +189,9 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

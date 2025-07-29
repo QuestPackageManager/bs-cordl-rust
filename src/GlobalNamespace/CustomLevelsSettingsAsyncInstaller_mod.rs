@@ -1,11 +1,11 @@
-#[cfg(feature = "CustomLevelsSettingsAsyncInstaller")]
+#[cfg(feature = "cordl_class_CustomLevelsSettingsAsyncInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomLevelsSettingsAsyncInstaller {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
     pub _customLevelsEnabled: bool,
 }
-#[cfg(feature = "CustomLevelsSettingsAsyncInstaller")]
+#[cfg(feature = "cordl_class_CustomLevelsSettingsAsyncInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "CustomLevelsSettingsAsyncInstaller")]
+#[cfg(feature = "cordl_class_CustomLevelsSettingsAsyncInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CustomLevelsSettingsAsyncInstaller")]
+#[cfg(feature = "cordl_class_CustomLevelsSettingsAsyncInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -164,7 +164,7 @@ impl crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CustomLevelsSettingsAsyncInstaller")]
+#[cfg(feature = "cordl_class_CustomLevelsSettingsAsyncInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "PlatformUserModelUtils")]
+#[cfg(feature = "cordl_class_PlatformUserModelUtils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformUserModelUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "PlatformUserModelUtils")]
+#[cfg(feature = "cordl_class_PlatformUserModelUtils")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformUserModelUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PlatformUserModelUtils {
         false
     }
 }
-#[cfg(feature = "PlatformUserModelUtils")]
+#[cfg(feature = "cordl_class_PlatformUserModelUtils")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformUserModelUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformUserModelUtils")]
+#[cfg(feature = "cordl_class_PlatformUserModelUtils")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformUserModelUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::PlatformUserModelUtils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformUserModelUtils")]
+#[cfg(feature = "cordl_class_PlatformUserModelUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformUserModelUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

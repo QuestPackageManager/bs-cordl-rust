@@ -1,4 +1,4 @@
-#[cfg(feature = "MovementHistoryRecorder")]
+#[cfg(feature = "cordl_class_MovementHistoryRecorder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MovementHistoryRecorder {
@@ -10,7 +10,7 @@ pub struct MovementHistoryRecorder {
     pub _decreaseSpeed: f32,
     pub _accum: f32,
 }
-#[cfg(feature = "MovementHistoryRecorder")]
+#[cfg(feature = "cordl_class_MovementHistoryRecorder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MovementHistoryRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::MovementHistoryRecorder {
         false
     }
 }
-#[cfg(feature = "MovementHistoryRecorder")]
+#[cfg(feature = "cordl_class_MovementHistoryRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::MovementHistoryRecorder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MovementHistoryRecorder")]
+#[cfg(feature = "cordl_class_MovementHistoryRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MovementHistoryRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -185,7 +185,7 @@ impl crate::GlobalNamespace::MovementHistoryRecorder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MovementHistoryRecorder")]
+#[cfg(feature = "cordl_class_MovementHistoryRecorder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MovementHistoryRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

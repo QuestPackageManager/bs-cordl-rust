@@ -1,10 +1,10 @@
-#[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
+#[cfg(feature = "cordl_class_AlphabetScrollbarInfoBeatmapLevelHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlphabetScrollbarInfoBeatmapLevelHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
+#[cfg(feature = "cordl_class_AlphabetScrollbarInfoBeatmapLevelHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
         false
     }
 }
-#[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
+#[cfg(feature = "cordl_class_AlphabetScrollbarInfoBeatmapLevelHelper")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
+#[cfg(feature = "cordl_class_AlphabetScrollbarInfoBeatmapLevelHelper")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -150,7 +150,7 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
+#[cfg(feature = "cordl_class_AlphabetScrollbarInfoBeatmapLevelHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

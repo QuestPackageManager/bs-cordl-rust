@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct RightShiftInstruction_RightShiftUInt64 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::RightShiftInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64 {
     type Target = crate::System::Linq::Expressions::Interpreter::RightShiftInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::RightShiftInstruction_RightShif
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64 {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64 {

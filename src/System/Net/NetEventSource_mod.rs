@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetEventSource")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetEventSource {
     __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
 }
-#[cfg(feature = "System+Net+NetEventSource")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NetEventSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NetEventSource {
         false
     }
 }
-#[cfg(feature = "System+Net+NetEventSource")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource")]
 impl std::ops::Deref for crate::System::Net::NetEventSource {
     type Target = crate::System::Diagnostics::Tracing::EventSource;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetEventSource")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource")]
 impl std::ops::DerefMut for crate::System::Net::NetEventSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -900,7 +900,7 @@ impl crate::System::Net::NetEventSource {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetEventSource")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::NetEventSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -909,13 +909,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::NetEventSource {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+NetEventSource+Keywords")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource+Keywords")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetEventSource_Keywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+NetEventSource+Keywords")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource+Keywords")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NetEventSource_Keywords {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -934,14 +934,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NetEventSource_K
         false
     }
 }
-#[cfg(feature = "System+Net+NetEventSource+Keywords")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource+Keywords")]
 impl std::ops::Deref for crate::System::Net::NetEventSource_Keywords {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetEventSource+Keywords")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource+Keywords")]
 impl std::ops::DerefMut for crate::System::Net::NetEventSource_Keywords {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -949,7 +949,7 @@ impl std::ops::DerefMut for crate::System::Net::NetEventSource_Keywords {
 }
 #[cfg(feature = "System+Net+NetEventSource+Keywords")]
 impl crate::System::Net::NetEventSource_Keywords {}
-#[cfg(feature = "System+Net+NetEventSource+Keywords")]
+#[cfg(feature = "cordl_class_System+Net+NetEventSource+Keywords")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::NetEventSource_Keywords {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

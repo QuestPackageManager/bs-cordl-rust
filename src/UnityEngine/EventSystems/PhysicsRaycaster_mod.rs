@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PhysicsRaycaster {
@@ -11,7 +11,7 @@ pub struct PhysicsRaycaster {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PhysicsRaycaster {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::UnityEngine::EventSystems::PhysicsRaycaster {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::PhysicsRaycaster {
     type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::PhysicsRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -317,7 +317,7 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::PhysicsRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -327,13 +327,17 @@ for crate::UnityEngine::EventSystems::PhysicsRaycaster {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PhysicsRaycaster_RaycastHitComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -353,7 +357,9 @@ for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -361,7 +367,9 @@ for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -426,7 +434,9 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BasicLevelParamsPanel")]
+#[cfg(feature = "cordl_class_BasicLevelParamsPanel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicLevelParamsPanel {
@@ -6,7 +6,7 @@ pub struct BasicLevelParamsPanel {
     pub _durationText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _bpmText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
-#[cfg(feature = "BasicLevelParamsPanel")]
+#[cfg(feature = "cordl_class_BasicLevelParamsPanel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BasicLevelParamsPanel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::BasicLevelParamsPanel {
         false
     }
 }
-#[cfg(feature = "BasicLevelParamsPanel")]
+#[cfg(feature = "cordl_class_BasicLevelParamsPanel")]
 impl std::ops::Deref for crate::GlobalNamespace::BasicLevelParamsPanel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BasicLevelParamsPanel")]
+#[cfg(feature = "cordl_class_BasicLevelParamsPanel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BasicLevelParamsPanel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::BasicLevelParamsPanel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BasicLevelParamsPanel")]
+#[cfg(feature = "cordl_class_BasicLevelParamsPanel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BasicLevelParamsPanel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

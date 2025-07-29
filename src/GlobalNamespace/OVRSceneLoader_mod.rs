@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSceneLoader")]
+#[cfg(feature = "cordl_class_OVRSceneLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneLoader {
@@ -25,7 +25,7 @@ pub struct OVRSceneLoader {
     >,
     pub currentSceneInfo: crate::GlobalNamespace::OVRSceneLoader_SceneInfo,
 }
-#[cfg(feature = "OVRSceneLoader")]
+#[cfg(feature = "cordl_class_OVRSceneLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -44,14 +44,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneLoad
         false
     }
 }
-#[cfg(feature = "OVRSceneLoader")]
+#[cfg(feature = "cordl_class_OVRSceneLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneLoader {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSceneLoader")]
+#[cfg(feature = "cordl_class_OVRSceneLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -343,7 +343,7 @@ impl crate::GlobalNamespace::OVRSceneLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSceneLoader")]
+#[cfg(feature = "cordl_class_OVRSceneLoader")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -352,7 +352,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoade
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSceneLoader+SceneInfo")]
+#[cfg(feature = "cordl_class_OVRSceneLoader+SceneInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSceneLoader_SceneInfo {
@@ -363,7 +363,7 @@ pub struct OVRSceneLoader_SceneInfo {
     >,
     pub version: i64,
 }
-#[cfg(feature = "OVRSceneLoader+SceneInfo")]
+#[cfg(feature = "cordl_class_OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Held<'a> = Self;
@@ -393,7 +393,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSceneLoader+SceneInfo")]
+#[cfg(feature = "cordl_class_OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Type = Self;
@@ -404,7 +404,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSceneLoader+SceneInfo")]
+#[cfg(feature = "cordl_class_OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Actual = Self;
@@ -418,7 +418,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
         self
     }
 }
-#[cfg(feature = "OVRSceneLoader+SceneInfo")]
+#[cfg(feature = "cordl_class_OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Type = Self;
@@ -433,7 +433,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
         }
     }
 }
-#[cfg(feature = "OVRSceneLoader+SceneInfo")]
+#[cfg(feature = "cordl_class_OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Actual = Self;
@@ -447,7 +447,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
         actual
     }
 }
-#[cfg(feature = "OVRSceneLoader+SceneInfo")]
+#[cfg(feature = "cordl_class_OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Type = Self;

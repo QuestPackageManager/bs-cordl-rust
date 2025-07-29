@@ -1,11 +1,11 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKOutputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKOutputFrame")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKOutputFrame {
     pub renderingPipeline: crate::LIV::SDK::Unity::RENDERING_PIPELINE,
     pub trackedSpace: crate::LIV::SDK::Unity::SDKTrackedSpace,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKOutputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKOutputFrame")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKOutputFrame {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKOutputFra
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKOutputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKOutputFrame")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKOutputFrame {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKOutpu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKOutputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKOutputFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKOutputFrame {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKOutp
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKOutputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKOutputFrame")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKOutputFrame {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKOutpu
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKOutputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKOutputFrame")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKOutputFrame {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKOutputF
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKOutputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKOutputFrame")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LIV::SDK::Unity::SDKOutputFrame {
     type Type = Self;

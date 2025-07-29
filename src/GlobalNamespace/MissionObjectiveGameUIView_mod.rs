@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionObjectiveGameUIView")]
+#[cfg(feature = "cordl_class_MissionObjectiveGameUIView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjectiveGameUIView {
@@ -20,7 +20,7 @@ pub struct MissionObjectiveGameUIView {
         crate::GlobalNamespace::MissionObjectiveChecker,
     >,
 }
-#[cfg(feature = "MissionObjectiveGameUIView")]
+#[cfg(feature = "cordl_class_MissionObjectiveGameUIView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionObjectiveGameUIView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::GlobalNamespace::MissionObjectiveGameUIView {
         false
     }
 }
-#[cfg(feature = "MissionObjectiveGameUIView")]
+#[cfg(feature = "cordl_class_MissionObjectiveGameUIView")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionObjectiveGameUIView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionObjectiveGameUIView")]
+#[cfg(feature = "cordl_class_MissionObjectiveGameUIView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjectiveGameUIView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -224,7 +224,7 @@ impl crate::GlobalNamespace::MissionObjectiveGameUIView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionObjectiveGameUIView")]
+#[cfg(feature = "cordl_class_MissionObjectiveGameUIView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionObjectiveGameUIView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "ScaleRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_ScaleRectTransformViewStateTransition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScaleRectTransformViewStateTransition {
@@ -10,7 +10,7 @@ pub struct ScaleRectTransformViewStateTransition {
     >,
     pub _vectorTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
 }
-#[cfg(feature = "ScaleRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_ScaleRectTransformViewStateTransition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
         false
     }
 }
-#[cfg(feature = "ScaleRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_ScaleRectTransformViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ScaleRectTransformViewStateTran
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScaleRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_ScaleRectTransformViewStateTransition")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -546,7 +546,7 @@ impl crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScaleRectTransformViewStateTransition")]
+#[cfg(feature = "cordl_class_ScaleRectTransformViewStateTransition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

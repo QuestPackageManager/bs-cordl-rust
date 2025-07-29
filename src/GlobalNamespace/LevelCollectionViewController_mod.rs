@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelCollectionViewController")]
+#[cfg(feature = "cordl_class_LevelCollectionViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelCollectionViewController {
@@ -54,7 +54,7 @@ pub struct LevelCollectionViewController {
         >,
     >,
 }
-#[cfg(feature = "LevelCollectionViewController")]
+#[cfg(feature = "cordl_class_LevelCollectionViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelCollectionViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -74,14 +74,14 @@ for crate::GlobalNamespace::LevelCollectionViewController {
         false
     }
 }
-#[cfg(feature = "LevelCollectionViewController")]
+#[cfg(feature = "cordl_class_LevelCollectionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCollectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelCollectionViewController")]
+#[cfg(feature = "cordl_class_LevelCollectionViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelCollectionViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -698,7 +698,7 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelCollectionViewController")]
+#[cfg(feature = "cordl_class_LevelCollectionViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelCollectionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

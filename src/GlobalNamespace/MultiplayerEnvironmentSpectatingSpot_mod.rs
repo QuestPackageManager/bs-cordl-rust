@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentSpectatingSpot")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerEnvironmentSpectatingSpot {
@@ -18,7 +18,7 @@ pub struct MultiplayerEnvironmentSpectatingSpot {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentSpectatingSpot")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
         false
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentSpectatingSpot")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentSpectatingSpot")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -327,7 +327,7 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentSpectatingSpot")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

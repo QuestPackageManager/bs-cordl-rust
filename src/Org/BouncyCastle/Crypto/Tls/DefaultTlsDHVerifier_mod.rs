@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTlsDHVerifier {
@@ -6,7 +6,7 @@ pub struct DefaultTlsDHVerifier {
     pub mGroups: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub mMinimumPrimeBits: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -349,7 +349,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

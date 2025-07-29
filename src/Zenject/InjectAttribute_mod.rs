@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+InjectAttribute")]
+#[cfg(feature = "cordl_class_Zenject+InjectAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectAttribute {
     __cordl_parent: crate::Zenject::InjectAttributeBase,
 }
-#[cfg(feature = "Zenject+InjectAttribute")]
+#[cfg(feature = "cordl_class_Zenject+InjectAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InjectAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InjectAttribute {
         false
     }
 }
-#[cfg(feature = "Zenject+InjectAttribute")]
+#[cfg(feature = "cordl_class_Zenject+InjectAttribute")]
 impl std::ops::Deref for crate::Zenject::InjectAttribute {
     type Target = crate::Zenject::InjectAttributeBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+InjectAttribute")]
+#[cfg(feature = "cordl_class_Zenject+InjectAttribute")]
 impl std::ops::DerefMut for crate::Zenject::InjectAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::Zenject::InjectAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+InjectAttribute")]
+#[cfg(feature = "cordl_class_Zenject+InjectAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InjectAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

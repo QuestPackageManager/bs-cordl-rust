@@ -1,4 +1,4 @@
-#[cfg(feature = "System+TokenType")]
+#[cfg(feature = "cordl_class_System+TokenType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TokenType {
@@ -36,7 +36,7 @@ pub enum TokenType {
     UnknownToken = 11i32,
     YearNumberToken = 2i32,
 }
-#[cfg(feature = "System+TokenType")]
+#[cfg(feature = "cordl_class_System+TokenType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TokenType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -65,7 +65,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TokenType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TokenType")]
+#[cfg(feature = "cordl_class_System+TokenType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TokenType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TokenType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TokenType")]
+#[cfg(feature = "cordl_class_System+TokenType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TokenType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TokenType {
         self
     }
 }
-#[cfg(feature = "System+TokenType")]
+#[cfg(feature = "cordl_class_System+TokenType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TokenType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -102,7 +102,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TokenType {
         }
     }
 }
-#[cfg(feature = "System+TokenType")]
+#[cfg(feature = "cordl_class_System+TokenType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TokenType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

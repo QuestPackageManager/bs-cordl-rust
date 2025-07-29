@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextStyleSheet")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextStyleSheet {
@@ -15,7 +15,7 @@ pub struct TextStyleSheet {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextStyleSheet")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextStyleSheet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::UnityEngine::TextCore::Text::TextStyleSheet {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextStyleSheet")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextStyleSheet {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextStyleSheet")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextStyleSheet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -249,7 +249,7 @@ impl crate::UnityEngine::TextCore::Text::TextStyleSheet {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextStyleSheet")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextStyleSheet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

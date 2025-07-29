@@ -1,11 +1,11 @@
-#[cfg(feature = "OVRResetOrientation")]
+#[cfg(feature = "cordl_class_OVRResetOrientation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRResetOrientation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub resetButton: crate::GlobalNamespace::OVRInput_RawButton,
 }
-#[cfg(feature = "OVRResetOrientation")]
+#[cfg(feature = "cordl_class_OVRResetOrientation")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRResetOrientation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRResetOrie
         false
     }
 }
-#[cfg(feature = "OVRResetOrientation")]
+#[cfg(feature = "cordl_class_OVRResetOrientation")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRResetOrientation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRResetOrientation")]
+#[cfg(feature = "cordl_class_OVRResetOrientation")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRResetOrientation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::OVRResetOrientation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRResetOrientation")]
+#[cfg(feature = "cordl_class_OVRResetOrientation")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRResetOrientation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

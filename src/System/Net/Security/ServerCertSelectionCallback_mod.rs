@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Security+ServerCertSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+ServerCertSelectionCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerCertSelectionCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Net+Security+ServerCertSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+ServerCertSelectionCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Security::ServerCertSelectionCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Net::Security::ServerCertSelectionCallback {
         false
     }
 }
-#[cfg(feature = "System+Net+Security+ServerCertSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+ServerCertSelectionCallback")]
 impl std::ops::Deref for crate::System::Net::Security::ServerCertSelectionCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Security+ServerCertSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+ServerCertSelectionCallback")]
 impl std::ops::DerefMut for crate::System::Net::Security::ServerCertSelectionCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::System::Net::Security::ServerCertSelectionCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Security+ServerCertSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+ServerCertSelectionCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Security::ServerCertSelectionCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+ForwardAxis")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ForwardAxis")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ForwardAxis {
@@ -9,7 +9,7 @@ pub struct ForwardAxis {
     pub _isDss: bool,
     pub _isSelfAxis: bool,
 }
-#[cfg(feature = "System+Xml+Schema+ForwardAxis")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ForwardAxis")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::ForwardAxis {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::ForwardA
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+ForwardAxis")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ForwardAxis")]
 impl std::ops::Deref for crate::System::Xml::Schema::ForwardAxis {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+ForwardAxis")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ForwardAxis")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::ForwardAxis {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::System::Xml::Schema::ForwardAxis {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+ForwardAxis")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ForwardAxis")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::ForwardAxis {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+Datatype_doubleXdr")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_doubleXdr")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_doubleXdr {
     __cordl_parent: crate::System::Xml::Schema::Datatype_double,
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_doubleXdr")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_doubleXdr")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::Datatype_doubleXdr {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_doubleXdr {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_doubleXdr")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_doubleXdr")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_doubleXdr {
     type Target = crate::System::Xml::Schema::Datatype_double;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_doubleXdr")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_doubleXdr")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_doubleXdr {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -106,7 +106,7 @@ impl crate::System::Xml::Schema::Datatype_doubleXdr {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_doubleXdr")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_doubleXdr")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::Datatype_doubleXdr {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

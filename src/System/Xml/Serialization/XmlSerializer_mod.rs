@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializer {
@@ -23,7 +23,7 @@ pub struct XmlSerializer {
         crate::System::Xml::Serialization::XmlNodeEventHandler,
     >,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::System::Xml::Serialization::XmlSerializer {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlSerializer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer")]
 impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlSerializer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -650,7 +650,7 @@ impl crate::System::Xml::Serialization::XmlSerializer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -660,7 +660,7 @@ for crate::System::Xml::Serialization::XmlSerializer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer+SerializerData")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer+SerializerData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializer_SerializerData {
@@ -672,7 +672,7 @@ pub struct XmlSerializer_SerializerData {
         crate::System::Xml::Serialization::XmlSerializerImplementation,
     >,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer+SerializerData")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer+SerializerData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializer_SerializerData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -692,7 +692,7 @@ for crate::System::Xml::Serialization::XmlSerializer_SerializerData {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer+SerializerData")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer+SerializerData")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializer_SerializerData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -700,7 +700,7 @@ for crate::System::Xml::Serialization::XmlSerializer_SerializerData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer+SerializerData")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer+SerializerData")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializer_SerializerData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -741,7 +741,7 @@ impl crate::System::Xml::Serialization::XmlSerializer_SerializerData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializer+SerializerData")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializer+SerializerData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializer_SerializerData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

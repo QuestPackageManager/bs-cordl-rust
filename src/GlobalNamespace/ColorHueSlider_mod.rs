@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorHueSlider")]
+#[cfg(feature = "cordl_class_ColorHueSlider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorHueSlider {
@@ -13,7 +13,7 @@ pub struct ColorHueSlider {
         >,
     >,
 }
-#[cfg(feature = "ColorHueSlider")]
+#[cfg(feature = "cordl_class_ColorHueSlider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorHueSlider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorHueSlid
         false
     }
 }
-#[cfg(feature = "ColorHueSlider")]
+#[cfg(feature = "cordl_class_ColorHueSlider")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorHueSlider {
     type Target = crate::HMUI::CircleSlider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorHueSlider")]
+#[cfg(feature = "cordl_class_ColorHueSlider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorHueSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -280,7 +280,7 @@ impl crate::GlobalNamespace::ColorHueSlider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorHueSlider")]
+#[cfg(feature = "cordl_class_ColorHueSlider")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorHueSlider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

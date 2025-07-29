@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRInputSubsystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRInputSubsystem {
@@ -17,7 +17,7 @@ pub struct XRInputSubsystem {
         crate::System::Collections::Generic::List_1<u64>,
     >,
 }
-#[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRInputSubsystem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRInputSubsystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRInputSubsy
         false
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRInputSubsystem")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRInputSubsystem {
     type Target = crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRInputSubsystem")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::XRInputSubsystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -291,7 +291,7 @@ impl crate::UnityEngine::XR::XRInputSubsystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRInputSubsystem")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::XRInputSubsystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

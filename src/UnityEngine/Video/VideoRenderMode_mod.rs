@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoRenderMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoRenderMode {
@@ -9,7 +9,7 @@ pub enum VideoRenderMode {
     MaterialOverride = 3i32,
     RenderTexture = 2i32,
 }
-#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Video::VideoRenderMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Video::VideoRend
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Video::VideoRenderMode {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::Video::VideoRenderMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Video::VideoRenderMode {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::Video::VideoRenderMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Video::VideoRenderMode {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::Video::VideoRenderMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Video::VideoRenderMode {
     type Actual = Self;

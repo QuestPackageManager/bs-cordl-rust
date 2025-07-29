@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+LeaderboardEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LeaderboardEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardEntry {
@@ -17,7 +17,7 @@ pub struct LeaderboardEntry {
     pub Timestamp: crate::System::DateTime,
     pub User: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
 }
-#[cfg(feature = "Oculus+Platform+Models+LeaderboardEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LeaderboardEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::LeaderboardEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::Oculus::Platform::Models::LeaderboardEntry {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LeaderboardEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LeaderboardEntry")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::LeaderboardEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LeaderboardEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LeaderboardEntry")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::LeaderboardEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -88,7 +88,7 @@ impl crate::Oculus::Platform::Models::LeaderboardEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LeaderboardEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LeaderboardEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::LeaderboardEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

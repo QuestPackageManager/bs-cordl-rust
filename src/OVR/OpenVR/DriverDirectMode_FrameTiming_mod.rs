@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DriverDirectMode_FrameTiming")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DriverDirectMode_FrameTiming {
@@ -8,7 +8,7 @@ pub struct DriverDirectMode_FrameTiming {
     pub m_nNumDroppedFrames: u32,
     pub m_nReprojectionFlags: u32,
 }
-#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Type = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRProfile")]
+#[cfg(feature = "cordl_class_OVRProfile")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRProfile {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "OVRProfile")]
+#[cfg(feature = "cordl_class_OVRProfile")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRProfile {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRProfile {
         false
     }
 }
-#[cfg(feature = "OVRProfile")]
+#[cfg(feature = "cordl_class_OVRProfile")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRProfile {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRProfile")]
+#[cfg(feature = "cordl_class_OVRProfile")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRProfile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -243,7 +243,7 @@ impl crate::GlobalNamespace::OVRProfile {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRProfile")]
+#[cfg(feature = "cordl_class_OVRProfile")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRProfile {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -252,7 +252,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRProfile {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRProfile+State")]
+#[cfg(feature = "cordl_class_OVRProfile+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRProfile_State {
@@ -262,7 +262,7 @@ pub enum OVRProfile_State {
     NOT_TRIGGERED = 0i32,
     READY = 2i32,
 }
-#[cfg(feature = "OVRProfile+State")]
+#[cfg(feature = "cordl_class_OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRProfile_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -291,7 +291,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRProfile_S
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRProfile+State")]
+#[cfg(feature = "cordl_class_OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRProfile_State {
     type Type = Self;
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::OVRProfile_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRProfile+State")]
+#[cfg(feature = "cordl_class_OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRProfile_State {
     type Actual = Self;
@@ -316,7 +316,7 @@ for crate::GlobalNamespace::OVRProfile_State {
         self
     }
 }
-#[cfg(feature = "OVRProfile+State")]
+#[cfg(feature = "cordl_class_OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRProfile_State {
     type Type = Self;
@@ -331,7 +331,7 @@ for crate::GlobalNamespace::OVRProfile_State {
         }
     }
 }
-#[cfg(feature = "OVRProfile+State")]
+#[cfg(feature = "cordl_class_OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRProfile_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

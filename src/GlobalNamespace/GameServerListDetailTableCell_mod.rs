@@ -1,4 +1,4 @@
-#[cfg(feature = "GameServerListDetailTableCell")]
+#[cfg(feature = "cordl_class_GameServerListDetailTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerListDetailTableCell {
@@ -9,7 +9,7 @@ pub struct GameServerListDetailTableCell {
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
-#[cfg(feature = "GameServerListDetailTableCell")]
+#[cfg(feature = "cordl_class_GameServerListDetailTableCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServerListDetailTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::GameServerListDetailTableCell {
         false
     }
 }
-#[cfg(feature = "GameServerListDetailTableCell")]
+#[cfg(feature = "cordl_class_GameServerListDetailTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerListDetailTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServerListDetailTableCell")]
+#[cfg(feature = "cordl_class_GameServerListDetailTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServerListDetailTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -171,7 +171,7 @@ impl crate::GlobalNamespace::GameServerListDetailTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServerListDetailTableCell")]
+#[cfg(feature = "cordl_class_GameServerListDetailTableCell")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServerListDetailTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+GradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+GradientMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GradientMode {
@@ -7,7 +7,7 @@ pub enum GradientMode {
     Fixed = 1i32,
     PerceptualBlend = 2i32,
 }
-#[cfg(feature = "UnityEngine+GradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+GradientMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GradientMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GradientMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+GradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+GradientMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::GradientMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::GradientMode
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+GradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+GradientMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::GradientMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::GradientMod
         self
     }
 }
-#[cfg(feature = "UnityEngine+GradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+GradientMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::GradientMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::GradientMode
         }
     }
 }
-#[cfg(feature = "UnityEngine+GradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+GradientMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::GradientMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidAssetPackStatus {
@@ -13,7 +13,7 @@ pub enum AndroidAssetPackStatus {
     Unknown = 0i32,
     WaitingForWifi = 7i32,
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Android::AndroidAssetPackStatus {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::UnityEngine::Android::AndroidAssetPackStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Android::AndroidAssetPackStatus {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::UnityEngine::Android::AndroidAssetPackStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Android::AndroidAssetPackStatus {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::Android::AndroidAssetPackStatus {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Android::AndroidAssetPackStatus {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::UnityEngine::Android::AndroidAssetPackStatus {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Android::AndroidAssetPackStatus {
     type Actual = Self;

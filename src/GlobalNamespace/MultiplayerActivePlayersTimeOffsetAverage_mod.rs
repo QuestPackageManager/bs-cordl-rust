@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerActivePlayersTimeOffsetAverage")]
+#[cfg(feature = "cordl_class_MultiplayerActivePlayersTimeOffsetAverage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerActivePlayersTimeOffsetAverage {
@@ -9,7 +9,7 @@ pub struct MultiplayerActivePlayersTimeOffsetAverage {
     pub _lastReturnedOffsetSyncTime: i64,
     pub _timeOfLastValidReturnedTime: i64,
 }
-#[cfg(feature = "MultiplayerActivePlayersTimeOffsetAverage")]
+#[cfg(feature = "cordl_class_MultiplayerActivePlayersTimeOffsetAverage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
         false
     }
 }
-#[cfg(feature = "MultiplayerActivePlayersTimeOffsetAverage")]
+#[cfg(feature = "cordl_class_MultiplayerActivePlayersTimeOffsetAverage")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerActivePlayersTimeOffsetAverage")]
+#[cfg(feature = "cordl_class_MultiplayerActivePlayersTimeOffsetAverage")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerActivePlayersTimeOffsetAverage")]
+#[cfg(feature = "cordl_class_MultiplayerActivePlayersTimeOffsetAverage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

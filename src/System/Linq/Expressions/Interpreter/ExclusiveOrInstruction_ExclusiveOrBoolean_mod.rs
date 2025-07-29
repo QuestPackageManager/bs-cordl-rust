@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct ExclusiveOrInstruction_ExclusiveOrBoolean {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean {

@@ -1,4 +1,4 @@
-#[cfg(feature = "ParticleSystemLightWithIds")]
+#[cfg(feature = "cordl_class_ParticleSystemLightWithIds")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemLightWithIds {
@@ -12,7 +12,7 @@ pub struct ParticleSystemLightWithIds {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ParticleSystem_Particle>,
     >,
 }
-#[cfg(feature = "ParticleSystemLightWithIds")]
+#[cfg(feature = "cordl_class_ParticleSystemLightWithIds")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ParticleSystemLightWithIds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::ParticleSystemLightWithIds {
         false
     }
 }
-#[cfg(feature = "ParticleSystemLightWithIds")]
+#[cfg(feature = "cordl_class_ParticleSystemLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemLightWithIds {
     type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ParticleSystemLightWithIds")]
+#[cfg(feature = "cordl_class_ParticleSystemLightWithIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemLightWithIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::GlobalNamespace::ParticleSystemLightWithIds {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ParticleSystemLightWithIds")]
+#[cfg(feature = "cordl_class_ParticleSystemLightWithIds")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ParticleSystemLightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

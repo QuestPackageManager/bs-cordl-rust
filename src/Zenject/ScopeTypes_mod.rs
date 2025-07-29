@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ScopeTypes")]
+#[cfg(feature = "cordl_class_Zenject+ScopeTypes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScopeTypes {
@@ -7,7 +7,7 @@ pub enum ScopeTypes {
     Transient = 1i32,
     Unset = 0i32,
 }
-#[cfg(feature = "Zenject+ScopeTypes")]
+#[cfg(feature = "cordl_class_Zenject+ScopeTypes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ScopeTypes {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ScopeTypes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+ScopeTypes")]
+#[cfg(feature = "cordl_class_Zenject+ScopeTypes")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::ScopeTypes {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::ScopeTypes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+ScopeTypes")]
+#[cfg(feature = "cordl_class_Zenject+ScopeTypes")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::ScopeTypes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::ScopeTypes {
         self
     }
 }
-#[cfg(feature = "Zenject+ScopeTypes")]
+#[cfg(feature = "cordl_class_Zenject+ScopeTypes")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::ScopeTypes {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::ScopeTypes {
         }
     }
 }
-#[cfg(feature = "Zenject+ScopeTypes")]
+#[cfg(feature = "cordl_class_Zenject+ScopeTypes")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::ScopeTypes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

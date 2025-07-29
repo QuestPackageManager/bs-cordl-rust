@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+MonoInstaller_3")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoInstaller_3<
@@ -11,7 +11,7 @@ pub struct MonoInstaller_3<
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TDerived: std::marker::PhantomData<TDerived>,
 }
-#[cfg(feature = "Zenject+MonoInstaller_3")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_3")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ for crate::Zenject::MonoInstaller_3<TParam1, TParam2, TDerived> {
         false
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller_3")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_3")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller_3")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_3")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -233,7 +233,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller_3")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_3")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessStartInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProcessStartInfo {
@@ -43,7 +43,7 @@ pub struct ProcessStartInfo {
         crate::System::Text::Encoding,
     >,
 }
-#[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessStartInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::ProcessStartInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -63,14 +63,14 @@ for crate::System::Diagnostics::ProcessStartInfo {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessStartInfo")]
 impl std::ops::Deref for crate::System::Diagnostics::ProcessStartInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessStartInfo")]
 impl std::ops::DerefMut for crate::System::Diagnostics::ProcessStartInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -739,7 +739,7 @@ impl crate::System::Diagnostics::ProcessStartInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessStartInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::ProcessStartInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

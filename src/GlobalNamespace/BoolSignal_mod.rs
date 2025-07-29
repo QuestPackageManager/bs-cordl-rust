@@ -1,10 +1,10 @@
-#[cfg(feature = "BoolSignal")]
+#[cfg(feature = "cordl_class_BoolSignal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoolSignal {
     __cordl_parent: crate::GlobalNamespace::GenericSignal_1<bool>,
 }
-#[cfg(feature = "BoolSignal")]
+#[cfg(feature = "cordl_class_BoolSignal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BoolSignal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BoolSignal {
         false
     }
 }
-#[cfg(feature = "BoolSignal")]
+#[cfg(feature = "cordl_class_BoolSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::BoolSignal {
     type Target = crate::GlobalNamespace::GenericSignal_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BoolSignal")]
+#[cfg(feature = "cordl_class_BoolSignal")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BoolSignal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::BoolSignal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BoolSignal")]
+#[cfg(feature = "cordl_class_BoolSignal")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BoolSignal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

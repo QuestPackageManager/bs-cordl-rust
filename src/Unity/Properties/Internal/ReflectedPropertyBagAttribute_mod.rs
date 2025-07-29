@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedPropertyBagAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

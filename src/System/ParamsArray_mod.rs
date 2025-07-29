@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ParamsArray")]
+#[cfg(feature = "cordl_class_System+ParamsArray")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParamsArray {
@@ -11,7 +11,7 @@ pub struct ParamsArray {
         >,
     >,
 }
-#[cfg(feature = "System+ParamsArray")]
+#[cfg(feature = "cordl_class_System+ParamsArray")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ParamsArray {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ParamsArray {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ParamsArray")]
+#[cfg(feature = "cordl_class_System+ParamsArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::ParamsArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::ParamsArray {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ParamsArray")]
+#[cfg(feature = "cordl_class_System+ParamsArray")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ParamsArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ParamsArray {
         self
     }
 }
-#[cfg(feature = "System+ParamsArray")]
+#[cfg(feature = "cordl_class_System+ParamsArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::ParamsArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::ParamsArray {
         }
     }
 }
-#[cfg(feature = "System+ParamsArray")]
+#[cfg(feature = "cordl_class_System+ParamsArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::ParamsArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::ParamsArray {
         actual
     }
 }
-#[cfg(feature = "System+ParamsArray")]
+#[cfg(feature = "cordl_class_System+ParamsArray")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ParamsArray {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

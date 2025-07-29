@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRControllerWithRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRControllerWithRumble")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRControllerWithRumble {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRControllerWithRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRControllerWithRumble")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::XRControllerWithRumble {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::XR::XRControllerWithRumble {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRControllerWithRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRControllerWithRumble")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::XRControllerWithRumble {
     type Target = crate::UnityEngine::InputSystem::XR::XRController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRControllerWithRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRControllerWithRumble")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::XRControllerWithRumble {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::UnityEngine::InputSystem::XR::XRControllerWithRumble {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRControllerWithRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRControllerWithRumble")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::XR::XRControllerWithRumble {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

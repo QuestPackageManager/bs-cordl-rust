@@ -1,11 +1,11 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultReferenceResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _referenceCount: i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -260,7 +260,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

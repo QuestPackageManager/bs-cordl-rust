@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+Polyglot+LocalizationDocument")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationDocument")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizationDocument {
@@ -8,7 +8,7 @@ pub struct LocalizationDocument {
     pub format: crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
     pub textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizationDocument")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationDocument")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::Polyglot::LocalizationDocument {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::BGLib::Polyglot::LocalizationDocument {
         false
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizationDocument")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationDocument")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationDocument {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizationDocument")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationDocument")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizationDocument {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -180,7 +180,7 @@ impl crate::BGLib::Polyglot::LocalizationDocument {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizationDocument")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationDocument")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::LocalizationDocument {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CollisionPairFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairFlags")]
 #[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollisionPairFlags {
@@ -10,7 +10,7 @@ pub enum CollisionPairFlags {
     RemovedOtherShape = 2u16,
     RemovedShape = 1u16,
 }
-#[cfg(feature = "UnityEngine+CollisionPairFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairFlags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CollisionPairFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CollisionPairFla
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CollisionPairFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CollisionPai
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CollisionPairFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CollisionPa
         self
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CollisionPairFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CollisionPai
         }
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CollisionPairFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

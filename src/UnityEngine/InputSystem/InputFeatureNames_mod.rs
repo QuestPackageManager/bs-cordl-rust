@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputFeatureNames")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputFeatureNames")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFeatureNames {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputFeatureNames")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputFeatureNames")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputFeatureNames {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::InputFeatureNames {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputFeatureNames")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputFeatureNames")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputFeatureNames {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputFeatureNames")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputFeatureNames")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputFeatureNames {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -46,7 +46,7 @@ impl crate::UnityEngine::InputSystem::InputFeatureNames {
     pub const kUseReadValueCaching: &'static str = "USE_READ_VALUE_CACHING";
     pub const kUseWindowsGamingInputBackend: &'static str = "USE_WINDOWS_GAMING_INPUT_BACKEND";
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputFeatureNames")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputFeatureNames")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputFeatureNames {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

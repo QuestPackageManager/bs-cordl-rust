@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Exception")]
+#[cfg(feature = "cordl_class_System+Exception")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Exception {
@@ -32,7 +32,7 @@ pub struct Exception {
     >,
     pub caught_in_unmanaged: i32,
 }
-#[cfg(feature = "System+Exception")]
+#[cfg(feature = "cordl_class_System+Exception")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Exception {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -51,14 +51,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Exception {
         false
     }
 }
-#[cfg(feature = "System+Exception")]
+#[cfg(feature = "cordl_class_System+Exception")]
 impl std::ops::Deref for crate::System::Exception {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Exception")]
+#[cfg(feature = "cordl_class_System+Exception")]
 impl std::ops::DerefMut for crate::System::Exception {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -791,7 +791,7 @@ impl crate::System::Exception {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Exception")]
+#[cfg(feature = "cordl_class_System+Exception")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Exception {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -814,7 +814,7 @@ for crate::System::Exception {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Exception+ExceptionMessageKind")]
+#[cfg(feature = "cordl_class_System+Exception+ExceptionMessageKind")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Exception_ExceptionMessageKind {
@@ -823,7 +823,7 @@ pub enum Exception_ExceptionMessageKind {
     ThreadAbort = 1i32,
     ThreadInterrupted = 2i32,
 }
-#[cfg(feature = "System+Exception+ExceptionMessageKind")]
+#[cfg(feature = "cordl_class_System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Exception_ExceptionMessageKind {
     type Held<'a> = Self;
@@ -853,7 +853,7 @@ for crate::System::Exception_ExceptionMessageKind {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Exception+ExceptionMessageKind")]
+#[cfg(feature = "cordl_class_System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Exception_ExceptionMessageKind {
     type Type = Self;
@@ -864,7 +864,7 @@ for crate::System::Exception_ExceptionMessageKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Exception+ExceptionMessageKind")]
+#[cfg(feature = "cordl_class_System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Exception_ExceptionMessageKind {
     type Actual = Self;
@@ -878,7 +878,7 @@ for crate::System::Exception_ExceptionMessageKind {
         self
     }
 }
-#[cfg(feature = "System+Exception+ExceptionMessageKind")]
+#[cfg(feature = "cordl_class_System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Exception_ExceptionMessageKind {
     type Type = Self;
@@ -893,7 +893,7 @@ for crate::System::Exception_ExceptionMessageKind {
         }
     }
 }
-#[cfg(feature = "System+Exception+ExceptionMessageKind")]
+#[cfg(feature = "cordl_class_System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Exception_ExceptionMessageKind {
     type Actual = Self;

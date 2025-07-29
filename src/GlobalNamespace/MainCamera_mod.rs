@@ -1,4 +1,4 @@
-#[cfg(feature = "MainCamera")]
+#[cfg(feature = "cordl_class_MainCamera")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainCamera {
@@ -6,7 +6,7 @@ pub struct MainCamera {
     pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "MainCamera")]
+#[cfg(feature = "cordl_class_MainCamera")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MainCamera {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MainCamera {
         false
     }
 }
-#[cfg(feature = "MainCamera")]
+#[cfg(feature = "cordl_class_MainCamera")]
 impl std::ops::Deref for crate::GlobalNamespace::MainCamera {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainCamera")]
+#[cfg(feature = "cordl_class_MainCamera")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainCamera {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -193,7 +193,7 @@ impl crate::GlobalNamespace::MainCamera {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainCamera")]
+#[cfg(feature = "cordl_class_MainCamera")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainCamera {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

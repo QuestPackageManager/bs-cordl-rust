@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaAttDef {
@@ -14,7 +14,7 @@ pub struct SchemaAttDef {
         crate::System::Xml::Schema::XmlSchemaAttribute,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SchemaAttDef {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SchemaAt
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaAttDef {
     type Target = crate::System::Xml::Schema::SchemaDeclBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaAttDef {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -896,7 +896,7 @@ impl crate::System::Xml::Schema::SchemaAttDef {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaAttDef {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -933,7 +933,7 @@ for crate::System::Xml::Schema::SchemaAttDef {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef+Reserve")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaAttDef_Reserve {
@@ -942,7 +942,7 @@ pub enum SchemaAttDef_Reserve {
     XmlLang = 2i32,
     XmlSpace = 1i32,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Held<'a> = Self;
@@ -972,7 +972,7 @@ for crate::System::Xml::Schema::SchemaAttDef_Reserve {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Type = Self;
@@ -983,7 +983,7 @@ for crate::System::Xml::Schema::SchemaAttDef_Reserve {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Actual = Self;
@@ -997,7 +997,7 @@ for crate::System::Xml::Schema::SchemaAttDef_Reserve {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Type = Self;
@@ -1012,7 +1012,7 @@ for crate::System::Xml::Schema::SchemaAttDef_Reserve {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Actual = Self;

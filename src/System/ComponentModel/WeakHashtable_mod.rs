@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+WeakHashtable")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WeakHashtable {
     __cordl_parent: crate::System::Collections::Hashtable,
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::WeakHashtable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::WeakHashtable {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable")]
 impl std::ops::Deref for crate::System::ComponentModel::WeakHashtable {
     type Target = crate::System::Collections::Hashtable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable")]
 impl std::ops::DerefMut for crate::System::ComponentModel::WeakHashtable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ impl crate::System::ComponentModel::WeakHashtable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::WeakHashtable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -126,13 +126,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::WeakHa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WeakHashtable_WeakKeyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -152,14 +152,14 @@ for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 impl std::ops::Deref for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -257,7 +257,7 @@ impl crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
+#[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

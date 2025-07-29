@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedDecoder {
@@ -9,7 +9,7 @@ pub struct BufferedDecoder {
         crate::Org::BouncyCastle::Utilities::Encoders::ITranslator,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Utilities::Encoders::BufferedDecoder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Org::BouncyCastle::Utilities::Encoders::BufferedDecoder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Encoders::BufferedDecoder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Encoders::BufferedDecoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -167,7 +167,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::BufferedDecoder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Utilities::Encoders::BufferedDecoder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

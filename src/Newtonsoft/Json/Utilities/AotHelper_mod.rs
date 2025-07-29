@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+AotHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AotHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+AotHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::AotHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Utilities::AotHelper {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+AotHelper")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::AotHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+AotHelper")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::AotHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -167,7 +167,7 @@ impl crate::Newtonsoft::Json::Utilities::AotHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+AotHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::AotHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

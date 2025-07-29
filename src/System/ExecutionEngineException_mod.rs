@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ExecutionEngineException")]
+#[cfg(feature = "cordl_class_System+ExecutionEngineException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExecutionEngineException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+ExecutionEngineException")]
+#[cfg(feature = "cordl_class_System+ExecutionEngineException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ExecutionEngineException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ExecutionEngineExcept
         false
     }
 }
-#[cfg(feature = "System+ExecutionEngineException")]
+#[cfg(feature = "cordl_class_System+ExecutionEngineException")]
 impl std::ops::Deref for crate::System::ExecutionEngineException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ExecutionEngineException")]
+#[cfg(feature = "cordl_class_System+ExecutionEngineException")]
 impl std::ops::DerefMut for crate::System::ExecutionEngineException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::ExecutionEngineException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ExecutionEngineException")]
+#[cfg(feature = "cordl_class_System+ExecutionEngineException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ExecutionEngineException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Tilemaps+TileDataNative")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileDataNative")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TileDataNative {
@@ -9,7 +9,7 @@ pub struct TileDataNative {
     pub m_Flags: crate::UnityEngine::Tilemaps::TileFlags,
     pub m_ColliderType: crate::UnityEngine::Tilemaps::Tile_ColliderType,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileDataNative")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileDataNative")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Tilemaps::TileDataNative {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::Tilemaps::TileDataNative {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileDataNative")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileDataNative")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Tilemaps::TileDataNative {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::Tilemaps::TileDataNative {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileDataNative")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileDataNative")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Tilemaps::TileDataNative {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::Tilemaps::TileDataNative {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileDataNative")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileDataNative")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Tilemaps::TileDataNative {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::Tilemaps::TileDataNative {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileDataNative")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileDataNative")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Tilemaps::TileDataNative {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::Tilemaps::TileDataNative {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileDataNative")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileDataNative")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Tilemaps::TileDataNative {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialScenesTransitionSetupDataSO {
@@ -32,7 +32,7 @@ pub struct TutorialScenesTransitionSetupDataSO {
         crate::GlobalNamespace::SceneInfo,
     >,
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,14 +52,14 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -291,7 +291,7 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -301,7 +301,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
@@ -310,7 +310,7 @@ pub enum TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     Restart = 2i32,
     ReturnToMenu = 1i32,
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Held<'a> = Self;
@@ -340,7 +340,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndState
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Type = Self;
@@ -351,7 +351,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndState
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Actual = Self;
@@ -365,7 +365,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndState
         self
     }
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Type = Self;
@@ -380,7 +380,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndState
         }
     }
 }
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
+#[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MACTripleDES")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MACTripleDES {
@@ -15,7 +15,7 @@ pub struct MACTripleDES {
     pub m_bytesPerBlock: i32,
     pub des: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::TripleDES>,
 }
-#[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MACTripleDES")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::MACTripleDES {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::System::Security::Cryptography::MACTripleDES {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MACTripleDES")]
 impl std::ops::Deref for crate::System::Security::Cryptography::MACTripleDES {
     type Target = crate::System::Security::Cryptography::KeyedHashAlgorithm;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MACTripleDES")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::MACTripleDES {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::System::Security::Cryptography::MACTripleDES {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+MACTripleDES")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::MACTripleDES {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

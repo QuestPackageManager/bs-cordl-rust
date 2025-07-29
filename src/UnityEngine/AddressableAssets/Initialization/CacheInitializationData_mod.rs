@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitializationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitializationData"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CacheInitializationData {
@@ -11,7 +13,9 @@ pub struct CacheInitializationData {
     pub m_LimitCacheSize: bool,
     pub m_MaximumCacheSize: i64,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitializationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitializationData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitializationData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +35,9 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitializationDa
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitializationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitializationData"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitializationData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +45,9 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitializationDa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitializationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitializationData"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitializationData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -302,7 +310,9 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitializationD
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitializationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitializationData"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitializationData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

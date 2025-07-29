@@ -1,11 +1,11 @@
-#[cfg(feature = "Zenject+SignalSubscriptionId")]
+#[cfg(feature = "cordl_class_Zenject+SignalSubscriptionId")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SignalSubscriptionId {
     pub _signalId: crate::Zenject::BindingId,
     pub _callback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Zenject+SignalSubscriptionId")]
+#[cfg(feature = "cordl_class_Zenject+SignalSubscriptionId")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalSubscriptionId {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalSubscriptionId
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+SignalSubscriptionId")]
+#[cfg(feature = "cordl_class_Zenject+SignalSubscriptionId")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::SignalSubscriptionId {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::SignalSubscripti
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+SignalSubscriptionId")]
+#[cfg(feature = "cordl_class_Zenject+SignalSubscriptionId")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::SignalSubscriptionId {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::SignalSubscript
         self
     }
 }
-#[cfg(feature = "Zenject+SignalSubscriptionId")]
+#[cfg(feature = "cordl_class_Zenject+SignalSubscriptionId")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::SignalSubscriptionId {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::SignalSubscripti
         }
     }
 }
-#[cfg(feature = "Zenject+SignalSubscriptionId")]
+#[cfg(feature = "cordl_class_Zenject+SignalSubscriptionId")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::SignalSubscriptionId {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::SignalSubscription
         actual
     }
 }
-#[cfg(feature = "Zenject+SignalSubscriptionId")]
+#[cfg(feature = "cordl_class_Zenject+SignalSubscriptionId")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Zenject::SignalSubscriptionId {
     type Type = Self;

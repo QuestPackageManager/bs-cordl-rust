@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+DecoratorToChoiceFromBinder_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DecoratorToChoiceFromBinder_1<TContract: quest_hook::libil2cpp::Type> {
@@ -8,7 +8,7 @@ pub struct DecoratorToChoiceFromBinder_1<TContract: quest_hook::libil2cpp::Type>
     pub _factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
-#[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+DecoratorToChoiceFromBinder_1")]
 unsafe impl<TContract: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +44,7 @@ for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
         false
     }
 }
-#[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+DecoratorToChoiceFromBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -52,7 +52,7 @@ for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+DecoratorToChoiceFromBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -153,7 +153,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+DecoratorToChoiceFromBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

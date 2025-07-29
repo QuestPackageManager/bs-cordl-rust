@@ -1,4 +1,4 @@
-#[cfg(feature = "GameServersFilter")]
+#[cfg(feature = "cordl_class_GameServersFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServersFilter {
@@ -13,7 +13,7 @@ pub struct GameServersFilter {
     pub showProtected: bool,
     pub showInternetGames: bool,
 }
-#[cfg(feature = "GameServersFilter")]
+#[cfg(feature = "cordl_class_GameServersFilter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameServersFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameServersF
         false
     }
 }
-#[cfg(feature = "GameServersFilter")]
+#[cfg(feature = "cordl_class_GameServersFilter")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServersFilter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServersFilter")]
+#[cfg(feature = "cordl_class_GameServersFilter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServersFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::GameServersFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServersFilter")]
+#[cfg(feature = "cordl_class_GameServersFilter")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameServersFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

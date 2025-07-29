@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorArrayLightWithIds")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorArrayLightWithIds {
@@ -32,7 +32,7 @@ pub struct ColorArrayLightWithIds {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
 }
-#[cfg(feature = "ColorArrayLightWithIds")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorArrayLightWithIds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,14 +52,14 @@ for crate::GlobalNamespace::ColorArrayLightWithIds {
         false
     }
 }
-#[cfg(feature = "ColorArrayLightWithIds")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorArrayLightWithIds {
     type Target = crate::GlobalNamespace::LightWithIds;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorArrayLightWithIds")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorArrayLightWithIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -335,7 +335,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorArrayLightWithIds")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorArrayLightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -345,7 +345,7 @@ for crate::GlobalNamespace::ColorArrayLightWithIds {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorArrayLightWithIds_ColorArrayLightWithId {
@@ -355,7 +355,7 @@ pub struct ColorArrayLightWithIds_ColorArrayLightWithId {
         crate::System::Action_2<i32, crate::UnityEngine::Color>,
     >,
 }
-#[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -375,7 +375,7 @@ for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         false
     }
 }
-#[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
     type Target = crate::GlobalNamespace::LightWithIds_LightWithId;
@@ -383,7 +383,7 @@ for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -516,7 +516,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
+#[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OpenProductStoreResult")]
+#[cfg(feature = "cordl_class_OpenProductStoreResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OpenProductStoreResult {
@@ -6,7 +6,7 @@ pub enum OpenProductStoreResult {
     Failed = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "OpenProductStoreResult")]
+#[cfg(feature = "cordl_class_OpenProductStoreResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OpenProductStoreResult {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::OpenProductStoreResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OpenProductStoreResult")]
+#[cfg(feature = "cordl_class_OpenProductStoreResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OpenProductStoreResult {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::OpenProductStoreResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OpenProductStoreResult")]
+#[cfg(feature = "cordl_class_OpenProductStoreResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OpenProductStoreResult {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::OpenProductStoreResult {
         self
     }
 }
-#[cfg(feature = "OpenProductStoreResult")]
+#[cfg(feature = "cordl_class_OpenProductStoreResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OpenProductStoreResult {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::OpenProductStoreResult {
         }
     }
 }
-#[cfg(feature = "OpenProductStoreResult")]
+#[cfg(feature = "cordl_class_OpenProductStoreResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OpenProductStoreResult {
     type Actual = Self;

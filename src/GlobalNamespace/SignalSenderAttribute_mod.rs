@@ -1,10 +1,10 @@
-#[cfg(feature = "SignalSenderAttribute")]
+#[cfg(feature = "cordl_class_SignalSenderAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalSenderAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }
-#[cfg(feature = "SignalSenderAttribute")]
+#[cfg(feature = "cordl_class_SignalSenderAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SignalSenderAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::SignalSenderAttribute {
         false
     }
 }
-#[cfg(feature = "SignalSenderAttribute")]
+#[cfg(feature = "cordl_class_SignalSenderAttribute")]
 impl std::ops::Deref for crate::GlobalNamespace::SignalSenderAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SignalSenderAttribute")]
+#[cfg(feature = "cordl_class_SignalSenderAttribute")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SignalSenderAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::SignalSenderAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SignalSenderAttribute")]
+#[cfg(feature = "cordl_class_SignalSenderAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SignalSenderAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

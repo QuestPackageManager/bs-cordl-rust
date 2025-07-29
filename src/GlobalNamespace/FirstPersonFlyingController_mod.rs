@@ -1,4 +1,4 @@
-#[cfg(feature = "FirstPersonFlyingController")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FirstPersonFlyingController {
@@ -24,7 +24,7 @@ pub struct FirstPersonFlyingController {
     pub _originalCameraFov: f32,
     pub _overrideDisableMovement: bool,
 }
-#[cfg(feature = "FirstPersonFlyingController")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FirstPersonFlyingController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::FirstPersonFlyingController {
         false
     }
 }
-#[cfg(feature = "FirstPersonFlyingController")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingController")]
 impl std::ops::Deref for crate::GlobalNamespace::FirstPersonFlyingController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FirstPersonFlyingController")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FirstPersonFlyingController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -210,7 +210,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FirstPersonFlyingController")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FirstPersonFlyingController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

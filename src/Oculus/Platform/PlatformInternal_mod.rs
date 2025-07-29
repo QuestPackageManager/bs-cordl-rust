@@ -1,10 +1,10 @@
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInternal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::PlatformInternal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::PlatformInt
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal")]
 impl std::ops::Deref for crate::Oculus::Platform::PlatformInternal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal")]
 impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -150,7 +150,7 @@ impl crate::Oculus::Platform::PlatformInternal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInternal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -159,13 +159,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInte
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+HTTP")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInternal_HTTP {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+HTTP")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::PlatformInternal_HTTP {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -185,14 +185,14 @@ for crate::Oculus::Platform::PlatformInternal_HTTP {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+HTTP")]
 impl std::ops::Deref for crate::Oculus::Platform::PlatformInternal_HTTP {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+HTTP")]
 impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal_HTTP {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -238,7 +238,7 @@ impl crate::Oculus::Platform::PlatformInternal_HTTP {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+HTTP")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::PlatformInternal_HTTP {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -248,7 +248,7 @@ for crate::Oculus::Platform::PlatformInternal_HTTP {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformInternal_MessageTypeInternal {
@@ -318,7 +318,7 @@ pub enum PlatformInternal_MessageTypeInternal {
     User_TestUserCreateDeviceManifest = 1701884605u32,
     Voip_ReportAppVoipSessions = 408048078u32,
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Held<'a> = Self;
@@ -348,7 +348,7 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Type = Self;
@@ -359,7 +359,7 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Actual = Self;
@@ -373,7 +373,7 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Type = Self;
@@ -388,7 +388,7 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Actual = Self;
@@ -402,13 +402,13 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
         actual
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+Users")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInternal_Users {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+Users")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::PlatformInternal_Users {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -428,14 +428,14 @@ for crate::Oculus::Platform::PlatformInternal_Users {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+Users")]
 impl std::ops::Deref for crate::Oculus::Platform::PlatformInternal_Users {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+Users")]
 impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal_Users {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -493,7 +493,7 @@ impl crate::Oculus::Platform::PlatformInternal_Users {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+Users")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::PlatformInternal_Users {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

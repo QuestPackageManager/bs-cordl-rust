@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentSpawnRotation")]
+#[cfg(feature = "cordl_class_EnvironmentSpawnRotation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentSpawnRotation {
@@ -15,7 +15,7 @@ pub struct EnvironmentSpawnRotation {
     pub _prevRotation: f32,
     pub _targetRotation: f32,
 }
-#[cfg(feature = "EnvironmentSpawnRotation")]
+#[cfg(feature = "cordl_class_EnvironmentSpawnRotation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentSpawnRotation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::EnvironmentSpawnRotation {
         false
     }
 }
-#[cfg(feature = "EnvironmentSpawnRotation")]
+#[cfg(feature = "cordl_class_EnvironmentSpawnRotation")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentSpawnRotation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentSpawnRotation")]
+#[cfg(feature = "cordl_class_EnvironmentSpawnRotation")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentSpawnRotation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -254,7 +254,7 @@ impl crate::GlobalNamespace::EnvironmentSpawnRotation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentSpawnRotation")]
+#[cfg(feature = "cordl_class_EnvironmentSpawnRotation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentSpawnRotation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

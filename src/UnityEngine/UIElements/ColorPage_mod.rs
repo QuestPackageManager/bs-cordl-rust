@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+ColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColorPage")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorPage {
     pub isValid: bool,
     pub pageAndID: crate::UnityEngine::Color32,
 }
-#[cfg(feature = "UnityEngine+UIElements+ColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColorPage")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::ColorPage {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Colo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColorPage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ColorPage {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::ColorPage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColorPage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ColorPage {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::ColorPage {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColorPage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ColorPage {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::UIElements::ColorPage {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColorPage")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::ColorPage {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Co
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColorPage")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::ColorPage {
     type Type = Self;

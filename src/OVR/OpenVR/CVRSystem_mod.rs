@@ -1,11 +1,11 @@
-#[cfg(feature = "OVR+OpenVR+CVRSystem")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRSystem,
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRSystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRSystem {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1532,7 +1532,7 @@ impl crate::OVR::OpenVR::CVRSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1541,13 +1541,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRSystem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CVRSystem_GetControllerStateUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Held<'a> = Self;
@@ -1577,7 +1577,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Type = Self;
@@ -1588,7 +1588,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Actual = Self;
@@ -1602,7 +1602,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Type = Self;
@@ -1617,7 +1617,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Actual = Self;
@@ -1631,7 +1631,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Type = Self;
@@ -1644,13 +1644,13 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 impl crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {}
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CVRSystem_GetControllerStateWithPoseUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Held<'a> = Self;
@@ -1680,7 +1680,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Type = Self;
@@ -1691,7 +1691,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Actual = Self;
@@ -1705,7 +1705,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Type = Self;
@@ -1720,7 +1720,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Actual = Self;
@@ -1734,7 +1734,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Type = Self;
@@ -1747,13 +1747,13 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 impl crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {}
-#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CVRSystem_PollNextEventUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Held<'a> = Self;
@@ -1783,7 +1783,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Type = Self;
@@ -1794,7 +1794,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Actual = Self;
@@ -1808,7 +1808,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Type = Self;
@@ -1823,7 +1823,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Actual = Self;
@@ -1837,7 +1837,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Type = Self;
@@ -1850,13 +1850,13 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 impl crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {}
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSystem__GetControllerStatePacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1876,14 +1876,14 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2062,7 +2062,7 @@ impl crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2072,13 +2072,13 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSystem__GetControllerStateWithPosePacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2098,7 +2098,7 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
     type Target = crate::System::MulticastDelegate;
@@ -2106,7 +2106,7 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2317,7 +2317,7 @@ impl crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2327,13 +2327,13 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSystem__PollNextEventPacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2353,14 +2353,14 @@ for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2516,7 +2516,7 @@ impl crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "PrivacyPolicyViewController")]
+#[cfg(feature = "cordl_class_PrivacyPolicyViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrivacyPolicyViewController {
@@ -16,7 +16,7 @@ pub struct PrivacyPolicyViewController {
     pub _showUpdate: bool,
     pub _showIAcceptPrompt: bool,
 }
-#[cfg(feature = "PrivacyPolicyViewController")]
+#[cfg(feature = "cordl_class_PrivacyPolicyViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PrivacyPolicyViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::PrivacyPolicyViewController {
         false
     }
 }
-#[cfg(feature = "PrivacyPolicyViewController")]
+#[cfg(feature = "cordl_class_PrivacyPolicyViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::PrivacyPolicyViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PrivacyPolicyViewController")]
+#[cfg(feature = "cordl_class_PrivacyPolicyViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PrivacyPolicyViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::GlobalNamespace::PrivacyPolicyViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PrivacyPolicyViewController")]
+#[cfg(feature = "cordl_class_PrivacyPolicyViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PrivacyPolicyViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

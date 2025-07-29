@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+StencilOp")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilOp")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StencilOp {
@@ -12,7 +12,7 @@ pub enum StencilOp {
     Replace = 2i32,
     Zero = 1i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilOp")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilOp")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::StencilOp {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Stenc
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilOp")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilOp")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::StencilOp {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::Rendering::StencilOp {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilOp")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilOp")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::StencilOp {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::Rendering::StencilOp {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilOp")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilOp")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::StencilOp {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::Rendering::StencilOp {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+StencilOp")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+StencilOp")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::StencilOp {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

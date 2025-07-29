@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+EventHandlerList")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventHandlerList {
@@ -8,7 +8,7 @@ pub struct EventHandlerList {
     >,
     pub _parent: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::Component>,
 }
-#[cfg(feature = "System+ComponentModel+EventHandlerList")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::EventHandlerList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::ComponentModel::EventHandlerList {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+EventHandlerList")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
 impl std::ops::Deref for crate::System::ComponentModel::EventHandlerList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+EventHandlerList")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
 impl std::ops::DerefMut for crate::System::ComponentModel::EventHandlerList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -106,7 +106,7 @@ impl crate::System::ComponentModel::EventHandlerList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+EventHandlerList")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::EventHandlerList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -116,7 +116,7 @@ for crate::System::ComponentModel::EventHandlerList {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventHandlerList_ListEntry {
@@ -127,7 +127,7 @@ pub struct EventHandlerList_ListEntry {
     pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _handler: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
 }
-#[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::EventHandlerList_ListEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -147,14 +147,14 @@ for crate::System::ComponentModel::EventHandlerList_ListEntry {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
 impl std::ops::Deref for crate::System::ComponentModel::EventHandlerList_ListEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
 impl std::ops::DerefMut for crate::System::ComponentModel::EventHandlerList_ListEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -162,7 +162,7 @@ impl std::ops::DerefMut for crate::System::ComponentModel::EventHandlerList_List
 }
 #[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
 impl crate::System::ComponentModel::EventHandlerList_ListEntry {}
-#[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::EventHandlerList_ListEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

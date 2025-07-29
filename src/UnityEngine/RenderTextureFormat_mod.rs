@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RenderTextureFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureFormat")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureFormat {
@@ -32,7 +32,7 @@ pub enum RenderTextureFormat {
     RInt = 19i32,
     Shadowmap = 3i32,
 }
-#[cfg(feature = "UnityEngine+RenderTextureFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureFormat {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureFor
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RenderTextureFormat {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RenderTextur
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RenderTextureFormat {
     type Actual = Self;
@@ -85,7 +85,7 @@ for crate::UnityEngine::RenderTextureFormat {
         self
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RenderTextureFormat {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -99,7 +99,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RenderTextur
         }
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureFormat")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RenderTextureFormat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

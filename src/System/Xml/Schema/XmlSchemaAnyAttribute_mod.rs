@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaAnyAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaAnyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaAnyAttribute {
@@ -9,7 +9,7 @@ pub struct XmlSchemaAnyAttribute {
         crate::System::Xml::Schema::NamespaceList,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaAnyAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaAnyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Xml::Schema::XmlSchemaAnyAttribute {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaAnyAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaAnyAttribute")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     type Target = crate::System::Xml::Schema::XmlSchemaAnnotated;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaAnyAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaAnyAttribute")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -403,7 +403,7 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaAnyAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaAnyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

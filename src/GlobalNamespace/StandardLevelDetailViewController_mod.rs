@@ -1,4 +1,4 @@
-#[cfg(feature = "StandardLevelDetailViewController")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelDetailViewController {
@@ -100,7 +100,7 @@ pub struct StandardLevelDetailViewController {
     >,
     pub _contentIsOwnedAndReady: bool,
 }
-#[cfg(feature = "StandardLevelDetailViewController")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelDetailViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -120,14 +120,14 @@ for crate::GlobalNamespace::StandardLevelDetailViewController {
         false
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelDetailViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelDetailViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1540,7 +1540,7 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardLevelDetailViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1550,7 +1550,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController+ContentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandardLevelDetailViewController_ContentType {
@@ -1564,7 +1564,7 @@ pub enum StandardLevelDetailViewController_ContentType {
     OwnedAndDownloading = 3i32,
     OwnedAndReady = 1i32,
 }
-#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Held<'a> = Self;
@@ -1594,7 +1594,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Type = Self;
@@ -1605,7 +1605,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Actual = Self;
@@ -1619,7 +1619,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
         self
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Type = Self;
@@ -1634,7 +1634,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
         }
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
+#[cfg(feature = "cordl_class_StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Actual = Self;
@@ -1648,7 +1648,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
         actual
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
@@ -1662,7 +1664,9 @@ pub struct StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d
         crate::GlobalNamespace::OpenProductStoreResult,
     >,
 }
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Held<'a> = Self;
@@ -1692,7 +1696,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Type = Self;
@@ -1703,7 +1709,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Actual = Self;
@@ -1717,7 +1725,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
         self
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Type = Self;
@@ -1732,7 +1742,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
         }
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Actual = Self;
@@ -1746,7 +1758,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
         actual
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Type = Self;
@@ -1828,7 +1842,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -1843,7 +1857,7 @@ pub struct StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInf
     >,
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
@@ -1875,7 +1889,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
@@ -1888,7 +1902,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
@@ -1904,7 +1918,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
@@ -1921,7 +1935,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
@@ -1937,7 +1951,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
@@ -2025,7 +2039,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         todo!()
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
@@ -2039,7 +2055,9 @@ pub struct StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
         crate::GlobalNamespace::OpenProductStoreResult,
     >,
 }
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Held<'a> = Self;
@@ -2069,7 +2087,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Type = Self;
@@ -2080,7 +2100,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Actual = Self;
@@ -2094,7 +2116,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         self
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Type = Self;
@@ -2109,7 +2133,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         }
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Actual = Self;
@@ -2123,7 +2149,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         actual
     }
 }
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+#[cfg(
+    feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Type = Self;
@@ -2205,7 +2233,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -2221,7 +2249,7 @@ pub struct StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58
     >,
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
@@ -2253,7 +2281,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
@@ -2266,7 +2294,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
@@ -2282,7 +2310,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
@@ -2299,7 +2327,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
@@ -2315,7 +2343,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
     }
 }
 #[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+    feature = "cordl_class_StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {

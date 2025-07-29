@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+GUIStyleState")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIStyleState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUIStyleState {
@@ -6,7 +6,7 @@ pub struct GUIStyleState {
     pub m_Ptr: crate::System::IntPtr,
     pub m_SourceStyle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
 }
-#[cfg(feature = "UnityEngine+GUIStyleState")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIStyleState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUIStyleState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUIStyleState {
         false
     }
 }
-#[cfg(feature = "UnityEngine+GUIStyleState")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIStyleState")]
 impl std::ops::Deref for crate::UnityEngine::GUIStyleState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GUIStyleState")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIStyleState")]
 impl std::ops::DerefMut for crate::UnityEngine::GUIStyleState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -253,7 +253,7 @@ impl crate::UnityEngine::GUIStyleState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GUIStyleState")]
+#[cfg(feature = "cordl_class_UnityEngine+GUIStyleState")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUIStyleState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

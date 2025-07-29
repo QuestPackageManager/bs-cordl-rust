@@ -1,4 +1,4 @@
-#[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_AlphaFloatFxGroupEffectTarget")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlphaFloatFxGroupEffectTarget {
@@ -15,7 +15,7 @@ pub struct AlphaFloatFxGroupEffectTarget {
     pub _propertyId: i32,
     pub _isInitialized: bool,
 }
-#[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_AlphaFloatFxGroupEffectTarget")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
         false
     }
 }
-#[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_AlphaFloatFxGroupEffectTarget")]
 impl std::ops::Deref for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_AlphaFloatFxGroupEffectTarget")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -207,7 +207,7 @@ impl crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_AlphaFloatFxGroupEffectTarget")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

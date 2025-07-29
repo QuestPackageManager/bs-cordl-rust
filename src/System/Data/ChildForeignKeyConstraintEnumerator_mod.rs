@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Data+ChildForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ChildForeignKeyConstraintEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChildForeignKeyConstraintEnumerator {
     __cordl_parent: crate::System::Data::ForeignKeyConstraintEnumerator,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
 }
-#[cfg(feature = "System+Data+ChildForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ChildForeignKeyConstraintEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::ChildForeignKeyConstraintEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Data::ChildForeignKeyConstraintEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Data+ChildForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ChildForeignKeyConstraintEnumerator")]
 impl std::ops::Deref for crate::System::Data::ChildForeignKeyConstraintEnumerator {
     type Target = crate::System::Data::ForeignKeyConstraintEnumerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+ChildForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ChildForeignKeyConstraintEnumerator")]
 impl std::ops::DerefMut for crate::System::Data::ChildForeignKeyConstraintEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -107,7 +107,7 @@ impl crate::System::Data::ChildForeignKeyConstraintEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+ChildForeignKeyConstraintEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+ChildForeignKeyConstraintEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::ChildForeignKeyConstraintEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

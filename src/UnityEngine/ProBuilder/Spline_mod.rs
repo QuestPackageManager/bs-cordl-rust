@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Spline")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Spline")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Spline {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Spline")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Spline")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Spline {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Spli
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Spline")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Spline")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Spline {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Spline")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Spline")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Spline {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -364,7 +364,7 @@ impl crate::UnityEngine::ProBuilder::Spline {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Spline")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Spline")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Spline {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

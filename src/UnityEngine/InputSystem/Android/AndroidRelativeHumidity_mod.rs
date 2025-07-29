@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidRelativeHumidity {
     __cordl_parent: crate::UnityEngine::InputSystem::HumiditySensor,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
     type Target = crate::UnityEngine::InputSystem::HumiditySensor;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

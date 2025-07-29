@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteCutHapticEffect")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutHapticEffect {
@@ -31,7 +31,7 @@ pub struct NoteCutHapticEffect {
         crate::GlobalNamespace::HapticFeedbackManager,
     >,
 }
-#[cfg(feature = "NoteCutHapticEffect")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutHapticEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -50,14 +50,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutHapti
         false
     }
 }
-#[cfg(feature = "NoteCutHapticEffect")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutHapticEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteCutHapticEffect")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutHapticEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::NoteCutHapticEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteCutHapticEffect")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutHapticEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -135,7 +135,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutHaptic
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "NoteCutHapticEffect+Type")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect+Type")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteCutHapticEffect_Type {
@@ -149,7 +149,7 @@ pub enum NoteCutHapticEffect_Type {
     ChainLink = 2i32,
     Normal = 0i32,
 }
-#[cfg(feature = "NoteCutHapticEffect+Type")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect+Type")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteCutHapticEffect_Type {
     type Held<'a> = Self;
@@ -179,7 +179,7 @@ for crate::GlobalNamespace::NoteCutHapticEffect_Type {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteCutHapticEffect+Type")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteCutHapticEffect_Type {
     type Type = Self;
@@ -190,7 +190,7 @@ for crate::GlobalNamespace::NoteCutHapticEffect_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteCutHapticEffect+Type")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteCutHapticEffect_Type {
     type Actual = Self;
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::NoteCutHapticEffect_Type {
         self
     }
 }
-#[cfg(feature = "NoteCutHapticEffect+Type")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteCutHapticEffect_Type {
     type Type = Self;
@@ -219,7 +219,7 @@ for crate::GlobalNamespace::NoteCutHapticEffect_Type {
         }
     }
 }
-#[cfg(feature = "NoteCutHapticEffect+Type")]
+#[cfg(feature = "cordl_class_NoteCutHapticEffect+Type")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteCutHapticEffect_Type {
     type Actual = Self;

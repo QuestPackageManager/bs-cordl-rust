@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Dns")]
+#[cfg(feature = "cordl_class_System+Net+Dns")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dns {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+Dns")]
+#[cfg(feature = "cordl_class_System+Net+Dns")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Dns {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Dns {
         false
     }
 }
-#[cfg(feature = "System+Net+Dns")]
+#[cfg(feature = "cordl_class_System+Net+Dns")]
 impl std::ops::Deref for crate::System::Net::Dns {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Dns")]
+#[cfg(feature = "cordl_class_System+Net+Dns")]
 impl std::ops::DerefMut for crate::System::Net::Dns {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -603,7 +603,7 @@ impl crate::System::Net::Dns {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Dns")]
+#[cfg(feature = "cordl_class_System+Net+Dns")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Dns {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -612,13 +612,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Dns {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+Dns+GetHostAddressesCallback")]
+#[cfg(feature = "cordl_class_System+Net+Dns+GetHostAddressesCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dns_GetHostAddressesCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Net+Dns+GetHostAddressesCallback")]
+#[cfg(feature = "cordl_class_System+Net+Dns+GetHostAddressesCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Dns_GetHostAddressesCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -638,14 +638,14 @@ for crate::System::Net::Dns_GetHostAddressesCallback {
         false
     }
 }
-#[cfg(feature = "System+Net+Dns+GetHostAddressesCallback")]
+#[cfg(feature = "cordl_class_System+Net+Dns+GetHostAddressesCallback")]
 impl std::ops::Deref for crate::System::Net::Dns_GetHostAddressesCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Dns+GetHostAddressesCallback")]
+#[cfg(feature = "cordl_class_System+Net+Dns+GetHostAddressesCallback")]
 impl std::ops::DerefMut for crate::System::Net::Dns_GetHostAddressesCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -810,7 +810,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Dns+GetHostAddressesCallback")]
+#[cfg(feature = "cordl_class_System+Net+Dns+GetHostAddressesCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Dns_GetHostAddressesCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

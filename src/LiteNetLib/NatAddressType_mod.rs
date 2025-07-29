@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+NatAddressType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatAddressType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NatAddressType {
@@ -6,7 +6,7 @@ pub enum NatAddressType {
     External = 1i32,
     Internal = 0i32,
 }
-#[cfg(feature = "LiteNetLib+NatAddressType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatAddressType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NatAddressType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NatAddressType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+NatAddressType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatAddressType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::NatAddressType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::NatAddressTyp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+NatAddressType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatAddressType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::NatAddressType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::NatAddressTy
         self
     }
 }
-#[cfg(feature = "LiteNetLib+NatAddressType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatAddressType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::NatAddressType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::NatAddressTyp
         }
     }
 }
-#[cfg(feature = "LiteNetLib+NatAddressType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatAddressType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LiteNetLib::NatAddressType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

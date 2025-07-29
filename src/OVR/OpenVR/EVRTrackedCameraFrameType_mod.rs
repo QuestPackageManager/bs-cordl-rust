@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraFrameType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRTrackedCameraFrameType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRTrackedCameraFrameType {
@@ -8,7 +8,7 @@ pub enum EVRTrackedCameraFrameType {
     MaximumUndistorted = 2i32,
     Undistorted = 1i32,
 }
-#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraFrameType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRTrackedCameraFrameType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraFrameType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRTrackedCameraFrameType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraFrameType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRTrackedCameraFrameType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraFrameType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRTrackedCameraFrameType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraFrameType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRTrackedCameraFrameType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::EVRTrackedCameraFrameType {
     type Actual = Self;

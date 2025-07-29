@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AudioRolloffMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioRolloffMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioRolloffMode {
@@ -7,7 +7,7 @@ pub enum AudioRolloffMode {
     Linear = 1i32,
     Logarithmic = 0i32,
 }
-#[cfg(feature = "UnityEngine+AudioRolloffMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioRolloffMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioRolloffMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioRolloffMode
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AudioRolloffMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioRolloffMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AudioRolloffMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AudioRolloff
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AudioRolloffMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioRolloffMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AudioRolloffMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AudioRollof
         self
     }
 }
-#[cfg(feature = "UnityEngine+AudioRolloffMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioRolloffMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AudioRolloffMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AudioRolloff
         }
     }
 }
-#[cfg(feature = "UnityEngine+AudioRolloffMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioRolloffMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AudioRolloffMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

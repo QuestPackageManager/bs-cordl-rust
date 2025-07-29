@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+LogEventName")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LogEventName")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LogEventName {
@@ -42,7 +42,7 @@ pub enum LogEventName {
     VrSpentCredits = 33i32,
     VrTutorialCompletion = 4i32,
 }
-#[cfg(feature = "Oculus+Platform+LogEventName")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LogEventName")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::LogEventName {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::LogEventNam
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+LogEventName")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LogEventName")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::LogEventName {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -81,7 +81,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::LogEven
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+LogEventName")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LogEventName")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::LogEventName {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -94,7 +94,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::LogEve
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+LogEventName")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LogEventName")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::LogEventName {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -108,7 +108,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::LogEven
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+LogEventName")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LogEventName")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::LogEventName {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCurveMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemCurveMode {
@@ -8,7 +8,7 @@ pub enum ParticleSystemCurveMode {
     TwoConstants = 3i32,
     TwoCurves = 2i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCurveMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystemCurveMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystemCu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCurveMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemCurveMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ParticleSystemCurveMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCurveMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemCurveMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ParticleSystemCurveMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCurveMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemCurveMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ParticleSystemCurveMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCurveMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemCurveMode {
     type Actual = Self;

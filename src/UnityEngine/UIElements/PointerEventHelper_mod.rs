@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+PointerEventHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerEventHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerEventHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerEventHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerEventHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PointerEventHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::PointerEventHelper {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerEventHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerEventHelper")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerEventHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerEventHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerEventHelper")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerEventHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -87,7 +87,7 @@ impl crate::UnityEngine::UIElements::PointerEventHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerEventHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerEventHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PointerEventHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

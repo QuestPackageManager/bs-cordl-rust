@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackedDeviceRaycaster {
@@ -15,7 +15,7 @@ pub struct TrackedDeviceRaycaster {
     pub m_BlockingMask: crate::UnityEngine::LayerMask,
     pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
     type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -558,7 +558,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -568,7 +568,9 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrackedDeviceRaycaster_RaycastHitData {
@@ -579,7 +581,9 @@ pub struct TrackedDeviceRaycaster_RaycastHitData {
     pub _screenPosition_k__BackingField: crate::UnityEngine::Vector2,
     pub _distance_k__BackingField: f32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Held<'a> = Self;
@@ -609,7 +613,9 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Type = Self;
@@ -620,7 +626,9 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Actual = Self;
@@ -634,7 +642,9 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Type = Self;
@@ -649,7 +659,9 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Actual = Self;
@@ -663,7 +675,9 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Type = Self;

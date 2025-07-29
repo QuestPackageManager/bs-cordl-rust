@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemVertexStreams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemVertexStreams")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemVertexStreams {
@@ -20,7 +20,7 @@ pub enum ParticleSystemVertexStreams {
     UV2BlendAndFrame = 32i32,
     Velocity = 512i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemVertexStreams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemVertexStreams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemVertexStreams {
     type Held<'a> = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::ParticleSystemVertexStreams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemVertexStreams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemVertexStreams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemVertexStreams {
     type Type = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ParticleSystemVertexStreams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemVertexStreams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemVertexStreams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemVertexStreams {
     type Actual = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::ParticleSystemVertexStreams {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemVertexStreams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemVertexStreams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemVertexStreams {
     type Type = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::ParticleSystemVertexStreams {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemVertexStreams")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemVertexStreams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemVertexStreams {
     type Actual = Self;

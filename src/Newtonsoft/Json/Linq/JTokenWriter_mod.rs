@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JTokenWriter {
@@ -8,7 +8,7 @@ pub struct JTokenWriter {
     pub _value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     pub _current: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenWriter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JTokenWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JToke
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JTokenWriter {
     type Target = crate::Newtonsoft::Json::JsonWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenWriter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JTokenWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1189,7 +1189,7 @@ impl crate::Newtonsoft::Json::Linq::JTokenWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JTokenWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

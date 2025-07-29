@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+PointerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+PointerState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PointerState {
@@ -10,7 +10,7 @@ pub struct PointerState {
     pub buttons: u16,
     pub displayIndex: u16,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+PointerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+PointerState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::PointerState {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::InputSystem::LowLevel::PointerState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+PointerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+PointerState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::PointerState {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::InputSystem::LowLevel::PointerState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+PointerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+PointerState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::PointerState {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::InputSystem::LowLevel::PointerState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+PointerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+PointerState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::PointerState {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::InputSystem::LowLevel::PointerState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+PointerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+PointerState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::PointerState {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::InputSystem::LowLevel::PointerState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+PointerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+PointerState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::PointerState {
     type Type = Self;

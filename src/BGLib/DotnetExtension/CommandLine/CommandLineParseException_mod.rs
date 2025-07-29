@@ -1,10 +1,14 @@
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParseException")]
+#[cfg(
+    feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParseException"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandLineParseException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParseException")]
+#[cfg(
+    feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParseException"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
         false
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParseException")]
+#[cfg(
+    feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParseException"
+)]
 impl std::ops::Deref
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
     type Target = crate::System::Exception;
@@ -32,7 +38,9 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParseException")]
+#[cfg(
+    feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParseException"
+)]
 impl std::ops::DerefMut
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -84,7 +92,9 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParseException")]
+#[cfg(
+    feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParseException"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

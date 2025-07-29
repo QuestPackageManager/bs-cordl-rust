@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameplayAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerGameplayAnimator {
@@ -21,7 +21,7 @@ pub struct MultiplayerConnectedPlayerGameplayAnimator {
         crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameplayAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameplayAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     type Target = crate::GlobalNamespace::MultiplayerGameplayAnimator;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameplayAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -257,7 +257,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameplayAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

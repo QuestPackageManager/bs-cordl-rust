@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Security+AuthenticatedStream")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticatedStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthenticatedStream {
@@ -6,7 +6,7 @@ pub struct AuthenticatedStream {
     pub _InnerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _LeaveStreamOpen: bool,
 }
-#[cfg(feature = "System+Net+Security+AuthenticatedStream")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticatedStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Security::AuthenticatedStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Net::Security::AuthenticatedStream {
         false
     }
 }
-#[cfg(feature = "System+Net+Security+AuthenticatedStream")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticatedStream")]
 impl std::ops::Deref for crate::System::Net::Security::AuthenticatedStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Security+AuthenticatedStream")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticatedStream")]
 impl std::ops::DerefMut for crate::System::Net::Security::AuthenticatedStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -150,7 +150,7 @@ impl crate::System::Net::Security::AuthenticatedStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Security+AuthenticatedStream")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticatedStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Security::AuthenticatedStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

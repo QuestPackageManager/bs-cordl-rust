@@ -1,11 +1,11 @@
-#[cfg(feature = "NoAlphaColorSO")]
+#[cfg(feature = "cordl_class_NoAlphaColorSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoAlphaColorSO {
     __cordl_parent: crate::GlobalNamespace::ColorSO,
     pub _color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "NoAlphaColorSO")]
+#[cfg(feature = "cordl_class_NoAlphaColorSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoAlphaColorSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoAlphaColor
         false
     }
 }
-#[cfg(feature = "NoAlphaColorSO")]
+#[cfg(feature = "cordl_class_NoAlphaColorSO")]
 impl std::ops::Deref for crate::GlobalNamespace::NoAlphaColorSO {
     type Target = crate::GlobalNamespace::ColorSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoAlphaColorSO")]
+#[cfg(feature = "cordl_class_NoAlphaColorSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoAlphaColorSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::NoAlphaColorSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoAlphaColorSO")]
+#[cfg(feature = "cordl_class_NoAlphaColorSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoAlphaColorSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

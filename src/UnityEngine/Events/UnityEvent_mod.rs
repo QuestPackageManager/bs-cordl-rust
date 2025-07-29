@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Events+UnityEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityEvent {
@@ -9,7 +9,7 @@ pub struct UnityEvent {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+Events+UnityEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Events::UnityEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Events::UnityEve
         false
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent")]
 impl std::ops::Deref for crate::UnityEngine::Events::UnityEvent {
     type Target = crate::UnityEngine::Events::UnityEventBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::Events::UnityEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -252,7 +252,7 @@ impl crate::UnityEngine::Events::UnityEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Events::UnityEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+AccessControl+AceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AceType")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AceType {
@@ -21,7 +21,7 @@ pub enum AceType {
     SystemAuditCallbackObject = 15u8,
     SystemAuditObject = 7u8,
 }
-#[cfg(feature = "System+Security+AccessControl+AceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::AceType {
     type Held<'a> = Self;
@@ -51,7 +51,7 @@ for crate::System::Security::AccessControl::AceType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::AccessControl::AceType {
     type Type = Self;
@@ -62,7 +62,7 @@ for crate::System::Security::AccessControl::AceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::AccessControl::AceType {
     type Actual = Self;
@@ -76,7 +76,7 @@ for crate::System::Security::AccessControl::AceType {
         self
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::AccessControl::AceType {
     type Type = Self;
@@ -91,7 +91,7 @@ for crate::System::Security::AccessControl::AceType {
         }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AceType")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::AccessControl::AceType {
     type Actual = Self;

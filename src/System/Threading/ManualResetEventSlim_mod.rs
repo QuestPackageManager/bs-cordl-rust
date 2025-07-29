@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+ManualResetEventSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ManualResetEventSlim")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ManualResetEventSlim {
@@ -9,7 +9,7 @@ pub struct ManualResetEventSlim {
     >,
     pub m_combinedState: i32,
 }
-#[cfg(feature = "System+Threading+ManualResetEventSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ManualResetEventSlim")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ManualResetEventSlim {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Threading::ManualResetEventSlim {
         false
     }
 }
-#[cfg(feature = "System+Threading+ManualResetEventSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ManualResetEventSlim")]
 impl std::ops::Deref for crate::System::Threading::ManualResetEventSlim {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ManualResetEventSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ManualResetEventSlim")]
 impl std::ops::DerefMut for crate::System::Threading::ManualResetEventSlim {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -592,7 +592,7 @@ impl crate::System::Threading::ManualResetEventSlim {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ManualResetEventSlim")]
+#[cfg(feature = "cordl_class_System+Threading+ManualResetEventSlim")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ManualResetEventSlim {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

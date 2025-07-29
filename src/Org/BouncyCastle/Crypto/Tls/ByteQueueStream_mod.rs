@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByteQueueStream {
@@ -7,7 +7,7 @@ pub struct ByteQueueStream {
         crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -485,7 +485,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

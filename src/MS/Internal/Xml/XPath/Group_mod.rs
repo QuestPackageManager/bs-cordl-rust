@@ -1,11 +1,11 @@
-#[cfg(feature = "MS+Internal+Xml+XPath+Group")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Group")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Group {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _groupNode: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Group")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Group")]
 unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::Group {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::Gro
         false
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Group")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Group")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Group {
     type Target = crate::MS::Internal::Xml::XPath::AstNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Group")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Group")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Group {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::MS::Internal::Xml::XPath::Group {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+Group")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Group")]
 impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Group {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

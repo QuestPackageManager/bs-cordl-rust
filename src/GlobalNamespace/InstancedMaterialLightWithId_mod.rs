@@ -1,4 +1,4 @@
-#[cfg(feature = "InstancedMaterialLightWithId")]
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstancedMaterialLightWithId {
@@ -15,7 +15,7 @@ pub struct InstancedMaterialLightWithId {
     pub _color: crate::UnityEngine::Color,
     pub _startColorWasSet: bool,
 }
-#[cfg(feature = "InstancedMaterialLightWithId")]
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::InstancedMaterialLightWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::InstancedMaterialLightWithId {
         false
     }
 }
-#[cfg(feature = "InstancedMaterialLightWithId")]
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::InstancedMaterialLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "InstancedMaterialLightWithId")]
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::InstancedMaterialLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,7 +173,7 @@ impl crate::GlobalNamespace::InstancedMaterialLightWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "InstancedMaterialLightWithId")]
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::InstancedMaterialLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

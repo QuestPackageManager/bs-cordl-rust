@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionMapAnimationController")]
+#[cfg(feature = "cordl_class_MissionMapAnimationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionMapAnimationController {
@@ -16,7 +16,7 @@ pub struct MissionMapAnimationController {
         crate::GlobalNamespace::MenuShockwave,
     >,
 }
-#[cfg(feature = "MissionMapAnimationController")]
+#[cfg(feature = "cordl_class_MissionMapAnimationController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionMapAnimationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::MissionMapAnimationController {
         false
     }
 }
-#[cfg(feature = "MissionMapAnimationController")]
+#[cfg(feature = "cordl_class_MissionMapAnimationController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionMapAnimationController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionMapAnimationController")]
+#[cfg(feature = "cordl_class_MissionMapAnimationController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionMapAnimationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -284,7 +284,7 @@ impl crate::GlobalNamespace::MissionMapAnimationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionMapAnimationController")]
+#[cfg(feature = "cordl_class_MissionMapAnimationController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionMapAnimationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRBounded3D")]
+#[cfg(feature = "cordl_class_OVRBounded3D")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRBounded3D {
     pub _Handle_k__BackingField: u64,
 }
-#[cfg(feature = "OVRBounded3D")]
+#[cfg(feature = "cordl_class_OVRBounded3D")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBounded3D {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBounded3D
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRBounded3D")]
+#[cfg(feature = "cordl_class_OVRBounded3D")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRBounded3D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRBound
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRBounded3D")]
+#[cfg(feature = "cordl_class_OVRBounded3D")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRBounded3D {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRBoun
         self
     }
 }
-#[cfg(feature = "OVRBounded3D")]
+#[cfg(feature = "cordl_class_OVRBounded3D")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRBounded3D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRBound
         }
     }
 }
-#[cfg(feature = "OVRBounded3D")]
+#[cfg(feature = "cordl_class_OVRBounded3D")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRBounded3D {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRBounded
         actual
     }
 }
-#[cfg(feature = "OVRBounded3D")]
+#[cfg(feature = "cordl_class_OVRBounded3D")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRBounded3D {
     type Type = Self;

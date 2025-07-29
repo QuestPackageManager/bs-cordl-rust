@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+InteropServices+ErrorWrapper")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ErrorWrapper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ErrorWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ErrorCode: i32,
 }
-#[cfg(feature = "System+Runtime+InteropServices+ErrorWrapper")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ErrorWrapper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::ErrorWrapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Runtime::InteropServices::ErrorWrapper {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ErrorWrapper")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ErrorWrapper")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::ErrorWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ErrorWrapper")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ErrorWrapper")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::ErrorWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -40,7 +40,7 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::ErrorWrappe
 }
 #[cfg(feature = "System+Runtime+InteropServices+ErrorWrapper")]
 impl crate::System::Runtime::InteropServices::ErrorWrapper {}
-#[cfg(feature = "System+Runtime+InteropServices+ErrorWrapper")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ErrorWrapper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::ErrorWrapper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

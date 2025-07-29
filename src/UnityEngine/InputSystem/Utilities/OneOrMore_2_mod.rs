@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OneOrMore_2<
@@ -11,7 +11,7 @@ pub struct OneOrMore_2<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -91,7 +91,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -109,7 +109,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -126,7 +126,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -493,7 +493,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OneOrMore_2_Enumerator<
@@ -506,7 +506,7 @@ pub struct OneOrMore_2_Enumerator<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -545,7 +545,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -556,7 +556,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -743,7 +743,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,

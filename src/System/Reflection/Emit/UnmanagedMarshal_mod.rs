@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Reflection+Emit+UnmanagedMarshal")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+UnmanagedMarshal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnmanagedMarshal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Reflection+Emit+UnmanagedMarshal")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+UnmanagedMarshal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::Emit::UnmanagedMarshal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Reflection::Emit::UnmanagedMarshal {
         false
     }
 }
-#[cfg(feature = "System+Reflection+Emit+UnmanagedMarshal")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+UnmanagedMarshal")]
 impl std::ops::Deref for crate::System::Reflection::Emit::UnmanagedMarshal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+Emit+UnmanagedMarshal")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+UnmanagedMarshal")]
 impl std::ops::DerefMut for crate::System::Reflection::Emit::UnmanagedMarshal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::System::Reflection::Emit::UnmanagedMarshal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+Emit+UnmanagedMarshal")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+UnmanagedMarshal")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::Emit::UnmanagedMarshal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

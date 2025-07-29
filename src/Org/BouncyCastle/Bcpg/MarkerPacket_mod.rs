@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MarkerPacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MarkerPacket")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MarkerPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub marker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MarkerPacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MarkerPacket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::MarkerPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Bcpg::MarkerPacket {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MarkerPacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MarkerPacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::MarkerPacket {
     type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MarkerPacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MarkerPacket")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::MarkerPacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::Org::BouncyCastle::Bcpg::MarkerPacket {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MarkerPacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MarkerPacket")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Bcpg::MarkerPacket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

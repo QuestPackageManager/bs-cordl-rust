@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshBuilderNative {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshBuilderNative {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::MeshBuilderNative {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MeshBuilderNative {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshBuilderNative {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -560,7 +560,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MeshBuilderNative {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -570,7 +570,9 @@ for crate::UnityEngine::UIElements::MeshBuilderNative {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshBuilderNative_NativeBorderParams {
@@ -592,7 +594,9 @@ pub struct MeshBuilderNative_NativeBorderParams {
     pub rightColorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
     pub bottomColorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Held<'a> = Self;
@@ -622,7 +626,9 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Type = Self;
@@ -633,7 +639,9 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Actual = Self;
@@ -647,7 +655,9 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Type = Self;
@@ -662,7 +672,9 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Actual = Self;
@@ -676,7 +688,9 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Type = Self;
@@ -689,14 +703,14 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 impl crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {}
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshBuilderNative_NativeColorPage {
     pub isValid: i32,
     pub pageAndID: crate::UnityEngine::Color32,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Held<'a> = Self;
@@ -726,7 +740,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Type = Self;
@@ -737,7 +751,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Actual = Self;
@@ -751,7 +765,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Type = Self;
@@ -766,7 +780,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Actual = Self;
@@ -780,7 +794,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Type = Self;
@@ -793,7 +807,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 impl crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {}
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshBuilderNative_NativeRectParams {
@@ -818,7 +832,7 @@ pub struct MeshBuilderNative_NativeRectParams {
     pub rectInset: crate::UnityEngine::Vector4,
     pub colorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Held<'a> = Self;
@@ -848,7 +862,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Type = Self;
@@ -859,7 +873,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Actual = Self;
@@ -873,7 +887,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Type = Self;
@@ -888,7 +902,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Actual = Self;
@@ -902,7 +916,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Type = Self;

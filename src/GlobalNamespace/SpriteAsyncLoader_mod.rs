@@ -1,4 +1,4 @@
-#[cfg(feature = "SpriteAsyncLoader")]
+#[cfg(feature = "cordl_class_SpriteAsyncLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteAsyncLoader {
@@ -34,7 +34,7 @@ pub struct SpriteAsyncLoader {
         crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
     >,
 }
-#[cfg(feature = "SpriteAsyncLoader")]
+#[cfg(feature = "cordl_class_SpriteAsyncLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SpriteAsyncLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SpriteAsyncL
         false
     }
 }
-#[cfg(feature = "SpriteAsyncLoader")]
+#[cfg(feature = "cordl_class_SpriteAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::SpriteAsyncLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpriteAsyncLoader")]
+#[cfg(feature = "cordl_class_SpriteAsyncLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpriteAsyncLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -386,7 +386,7 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpriteAsyncLoader")]
+#[cfg(feature = "cordl_class_SpriteAsyncLoader")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpriteAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

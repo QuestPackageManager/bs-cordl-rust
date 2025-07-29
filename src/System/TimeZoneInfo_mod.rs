@@ -1,4 +1,4 @@
-#[cfg(feature = "System+TimeZoneInfo")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeZoneInfo {
@@ -19,7 +19,7 @@ pub struct TimeZoneInfo {
         >,
     >,
 }
-#[cfg(feature = "System+TimeZoneInfo")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo {
         false
     }
 }
-#[cfg(feature = "System+TimeZoneInfo")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo")]
 impl std::ops::Deref for crate::System::TimeZoneInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3513,7 +3513,7 @@ impl crate::System::TimeZoneInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -3578,7 +3578,7 @@ for crate::System::TimeZoneInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+AdjustmentRule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeZoneInfo_AdjustmentRule {
@@ -3591,7 +3591,7 @@ pub struct TimeZoneInfo_AdjustmentRule {
     pub _baseUtcOffsetDelta: crate::System::TimeSpan,
     pub _noDaylightTransitions: bool,
 }
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+AdjustmentRule")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_AdjustmentRule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -3610,14 +3610,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_Adjustme
         false
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+AdjustmentRule")]
 impl std::ops::Deref for crate::System::TimeZoneInfo_AdjustmentRule {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+AdjustmentRule")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo_AdjustmentRule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4261,7 +4261,7 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+AdjustmentRule")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo_AdjustmentRule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -4330,14 +4330,14 @@ for crate::System::TimeZoneInfo_AdjustmentRule {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+CachedData")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+CachedData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeZoneInfo_CachedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _localTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
 }
-#[cfg(feature = "System+TimeZoneInfo+CachedData")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+CachedData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_CachedData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -4356,14 +4356,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_CachedDa
         false
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+CachedData")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+CachedData")]
 impl std::ops::Deref for crate::System::TimeZoneInfo_CachedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+CachedData")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+CachedData")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo_CachedData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4480,7 +4480,7 @@ impl crate::System::TimeZoneInfo_CachedData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+CachedData")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+CachedData")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo_CachedData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -4489,7 +4489,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo_CachedDat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZVersion")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeZoneInfo_TZVersion {
@@ -4498,7 +4498,7 @@ pub enum TimeZoneInfo_TZVersion {
     V2 = 1u8,
     V3 = 2u8,
 }
-#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZVersion {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -4527,7 +4527,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZVersio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZVersion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4537,7 +4537,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZVe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4550,7 +4550,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZV
         self
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZVersion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4564,7 +4564,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZVe
         }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4577,7 +4577,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZVers
         actual
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifHead")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeZoneInfo_TZifHead {
@@ -4590,7 +4590,7 @@ pub struct TimeZoneInfo_TZifHead {
     pub TypeCount: u32,
     pub CharCount: u32,
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZifHead {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -4619,7 +4619,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZifHead
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZifHead {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4629,7 +4629,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZif
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZifHead {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4642,7 +4642,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZi
         self
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZifHead {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4656,7 +4656,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZif
         }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZifHead {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4669,7 +4669,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZifHe
         actual
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::TimeZoneInfo_TZifHead {
     type Type = Self;
@@ -4715,7 +4715,7 @@ impl crate::System::TimeZoneInfo_TZifHead {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifType")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifType")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeZoneInfo_TZifType {
@@ -4723,7 +4723,7 @@ pub struct TimeZoneInfo_TZifType {
     pub IsDst: bool,
     pub AbbreviationIndex: u8,
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifType")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZifType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -4752,7 +4752,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZifType
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifType")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZifType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4762,7 +4762,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZif
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifType")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZifType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4775,7 +4775,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZi
         self
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifType")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZifType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4789,7 +4789,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZif
         }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifType")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZifType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4802,7 +4802,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZifTy
         actual
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TZifType")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::TimeZoneInfo_TZifType {
     type Type = Self;
@@ -4848,7 +4848,7 @@ impl crate::System::TimeZoneInfo_TZifType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TransitionTime")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeZoneInfo_TransitionTime {
@@ -4859,7 +4859,7 @@ pub struct TimeZoneInfo_TransitionTime {
     pub _dayOfWeek: crate::System::DayOfWeek,
     pub _isFixedDateRule: bool,
 }
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TransitionTime {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -4888,7 +4888,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_Transiti
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::TimeZoneInfo_TransitionTime {
     type Type = Self;
@@ -4899,7 +4899,7 @@ for crate::System::TimeZoneInfo_TransitionTime {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::TimeZoneInfo_TransitionTime {
     type Actual = Self;
@@ -4913,7 +4913,7 @@ for crate::System::TimeZoneInfo_TransitionTime {
         self
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::TimeZoneInfo_TransitionTime {
     type Type = Self;
@@ -4928,7 +4928,7 @@ for crate::System::TimeZoneInfo_TransitionTime {
         }
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::TimeZoneInfo_TransitionTime {
     type Actual = Self;
@@ -4942,7 +4942,7 @@ for crate::System::TimeZoneInfo_TransitionTime {
         actual
     }
 }
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+#[cfg(feature = "cordl_class_System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::TimeZoneInfo_TransitionTime {
     type Type = Self;

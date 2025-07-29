@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EVSync")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVSync")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVSync {
@@ -7,7 +7,7 @@ pub enum EVSync {
     None = 0i32,
     WaitRender = 1i32,
 }
-#[cfg(feature = "OVR+OpenVR+EVSync")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVSync")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EVSync {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EVSync {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVSync")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVSync")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EVSync {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EVSync {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVSync")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVSync")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EVSync {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EVSync {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVSync")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVSync")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EVSync {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EVSync {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVSync")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVSync")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EVSync {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

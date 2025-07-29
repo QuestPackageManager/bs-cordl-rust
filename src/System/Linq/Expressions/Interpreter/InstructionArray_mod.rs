@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InstructionArray {
@@ -30,7 +30,7 @@ pub struct InstructionArray {
         >,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Held<'a> = Self;
@@ -60,7 +60,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Type = Self;
@@ -71,7 +71,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Actual = Self;
@@ -85,7 +85,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
         self
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Type = Self;
@@ -100,7 +100,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
         }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Actual = Self;
@@ -114,7 +114,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
         actual
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Type = Self;
@@ -225,14 +225,18 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray+DebugView"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstructionArray_DebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: crate::System::Linq::Expressions::Interpreter::InstructionArray,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray+DebugView"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -252,7 +256,9 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray+DebugView"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -260,7 +266,9 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray+DebugView"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -365,7 +373,9 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray+DebugView"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

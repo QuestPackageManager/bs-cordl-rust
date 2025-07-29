@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlHash128AttributeDescription")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlHash128AttributeDescription {
@@ -6,7 +6,7 @@ pub struct UxmlHash128AttributeDescription {
         crate::UnityEngine::Hash128,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlHash128AttributeDescription")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlHash128AttributeDescription")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
@@ -36,7 +36,7 @@ for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlHash128AttributeDescription")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -106,7 +106,7 @@ impl crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlHash128AttributeDescription")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

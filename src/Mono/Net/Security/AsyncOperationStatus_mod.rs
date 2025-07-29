@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncOperationStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsyncOperationStatus {
@@ -8,7 +8,7 @@ pub enum AsyncOperationStatus {
     Initialize = 0i32,
     ReadDone = 2i32,
 }
-#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Mono::Net::Security::AsyncOperationStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Mono::Net::Security::AsyncOperationStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Mono::Net::Security::AsyncOperationStatus {
         self
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Mono::Net::Security::AsyncOperationStatus {
         }
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Actual = Self;

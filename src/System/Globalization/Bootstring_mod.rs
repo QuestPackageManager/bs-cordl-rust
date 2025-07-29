@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+Bootstring")]
+#[cfg(feature = "cordl_class_System+Globalization+Bootstring")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Bootstring {
@@ -12,7 +12,7 @@ pub struct Bootstring {
     pub initial_bias: i32,
     pub initial_n: i32,
 }
-#[cfg(feature = "System+Globalization+Bootstring")]
+#[cfg(feature = "cordl_class_System+Globalization+Bootstring")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::Bootstring {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::Bootst
         false
     }
 }
-#[cfg(feature = "System+Globalization+Bootstring")]
+#[cfg(feature = "cordl_class_System+Globalization+Bootstring")]
 impl std::ops::Deref for crate::System::Globalization::Bootstring {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+Bootstring")]
+#[cfg(feature = "cordl_class_System+Globalization+Bootstring")]
 impl std::ops::DerefMut for crate::System::Globalization::Bootstring {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -231,7 +231,7 @@ impl crate::System::Globalization::Bootstring {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+Bootstring")]
+#[cfg(feature = "cordl_class_System+Globalization+Bootstring")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::Bootstring {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

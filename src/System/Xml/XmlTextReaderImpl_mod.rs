@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl {
@@ -118,7 +118,7 @@ pub struct XmlTextReaderImpl {
         >,
     >,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextReaderImpl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -137,14 +137,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextReaderImp
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl {
     type Target = crate::System::Xml::XmlReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7747,7 +7747,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextReaderImpl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -7783,7 +7783,7 @@ for crate::System::Xml::XmlTextReaderImpl {
     }
 }
 #[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7791,7 +7791,7 @@ pub struct XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
@@ -7813,7 +7813,7 @@ for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataCompa
     }
 }
 #[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
 impl std::ops::Deref
 for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
@@ -7823,7 +7823,7 @@ for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataCompa
     }
 }
 #[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
 impl std::ops::DerefMut
 for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
@@ -7936,7 +7936,7 @@ impl crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComp
     }
 }
 #[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
@@ -7979,14 +7979,14 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_DtdParserProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl>,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8006,14 +8006,14 @@ for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8883,7 +8883,7 @@ impl crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8935,7 +8935,7 @@ for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityExpandType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_EntityExpandType {
@@ -8944,7 +8944,7 @@ pub enum XmlTextReaderImpl_EntityExpandType {
     OnlyCharacter = 2i32,
     OnlyGeneral = 1i32,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Held<'a> = Self;
@@ -8974,7 +8974,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Type = Self;
@@ -8985,7 +8985,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Actual = Self;
@@ -8999,7 +8999,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Type = Self;
@@ -9014,7 +9014,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Actual = Self;
@@ -9028,7 +9028,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_EntityType {
@@ -9042,7 +9042,7 @@ pub enum XmlTextReaderImpl_EntityType {
     Skipped = 4i32,
     Unexpanded = 6i32,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Held<'a> = Self;
@@ -9072,7 +9072,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Type = Self;
@@ -9083,7 +9083,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Actual = Self;
@@ -9097,7 +9097,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Type = Self;
@@ -9112,7 +9112,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Actual = Self;
@@ -9126,7 +9126,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_IncrementalReadState {
@@ -9147,7 +9147,7 @@ pub enum XmlTextReaderImpl_IncrementalReadState {
     StartTag = 1i32,
     Text = 0i32,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Held<'a> = Self;
@@ -9177,7 +9177,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Type = Self;
@@ -9188,7 +9188,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Actual = Self;
@@ -9202,7 +9202,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Type = Self;
@@ -9217,7 +9217,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Actual = Self;
@@ -9231,7 +9231,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+InitInputType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_InitInputType {
@@ -9241,7 +9241,7 @@ pub enum XmlTextReaderImpl_InitInputType {
     TextReader = 2i32,
     UriString = 0i32,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Held<'a> = Self;
@@ -9271,7 +9271,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Type = Self;
@@ -9282,7 +9282,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Actual = Self;
@@ -9296,7 +9296,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Type = Self;
@@ -9311,7 +9311,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Actual = Self;
@@ -9325,7 +9325,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+LaterInitParam")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_LaterInitParam {
@@ -9341,7 +9341,7 @@ pub struct XmlTextReaderImpl_LaterInitParam {
     pub inputTextReader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
     pub initType: crate::System::Xml::XmlTextReaderImpl_InitInputType,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+LaterInitParam")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9361,14 +9361,14 @@ for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+LaterInitParam")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+LaterInitParam")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9405,7 +9405,7 @@ impl crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+LaterInitParam")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9415,13 +9415,13 @@ for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_NoNamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9441,14 +9441,14 @@ for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9748,7 +9748,7 @@ impl crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9758,7 +9758,7 @@ for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NodeData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_NodeData {
@@ -9785,7 +9785,7 @@ pub struct XmlTextReaderImpl_NodeData {
     pub schemaType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub typedValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NodeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_NodeData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9805,14 +9805,14 @@ for crate::System::Xml::XmlTextReaderImpl_NodeData {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NodeData")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NodeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NodeData")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_NodeData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -10542,7 +10542,7 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NodeData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlTextReaderImpl_NodeData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10566,13 +10566,17 @@ for crate::System::Xml::XmlTextReaderImpl_NodeData {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10592,7 +10596,9 @@ for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate"
+)]
 impl std::ops::Deref
 for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -10600,7 +10606,9 @@ for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate"
+)]
 impl std::ops::DerefMut
 for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10688,7 +10696,9 @@ impl crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10698,7 +10708,7 @@ for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingFunction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_ParsingFunction {
@@ -10730,7 +10740,7 @@ pub enum XmlTextReaderImpl_ParsingFunction {
     SwitchToInteractiveXmlDecl = 4i32,
     XmlDeclarationFragment = 19i32,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Held<'a> = Self;
@@ -10760,7 +10770,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Type = Self;
@@ -10771,7 +10781,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Actual = Self;
@@ -10785,7 +10795,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Type = Self;
@@ -10800,7 +10810,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Actual = Self;
@@ -10814,7 +10824,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_ParsingMode {
@@ -10823,7 +10833,7 @@ pub enum XmlTextReaderImpl_ParsingMode {
     SkipContent = 2i32,
     SkipNode = 1i32,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Held<'a> = Self;
@@ -10853,7 +10863,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Type = Self;
@@ -10864,7 +10874,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Actual = Self;
@@ -10878,7 +10888,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Type = Self;
@@ -10893,7 +10903,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Actual = Self;
@@ -10907,7 +10917,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlTextReaderImpl_ParsingState {
@@ -10933,7 +10943,7 @@ pub struct XmlTextReaderImpl_ParsingState {
     pub eolNormalized: bool,
     pub entityResolvedManually: bool,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Held<'a> = Self;
@@ -10963,7 +10973,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Type = Self;
@@ -10974,7 +10984,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Actual = Self;
@@ -10988,7 +10998,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Type = Self;
@@ -11003,7 +11013,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Actual = Self;
@@ -11017,7 +11027,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Type = Self;
@@ -11108,7 +11118,7 @@ impl crate::System::Xml::XmlTextReaderImpl_ParsingState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+XmlContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_XmlContext {
@@ -11120,7 +11130,7 @@ pub struct XmlTextReaderImpl_XmlContext {
         crate::System::Xml::XmlTextReaderImpl_XmlContext,
     >,
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+XmlContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextReaderImpl_XmlContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -11140,14 +11150,14 @@ for crate::System::Xml::XmlTextReaderImpl_XmlContext {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+XmlContext")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_XmlContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+XmlContext")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_XmlContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -11225,7 +11235,7 @@ impl crate::System::Xml::XmlTextReaderImpl_XmlContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+XmlContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlTextReaderImpl_XmlContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

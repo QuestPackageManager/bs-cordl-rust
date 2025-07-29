@@ -1,10 +1,14 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X25519KeyGenerationParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::X25519KeyGenerationParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::X25519KeyGenerationParameters 
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::X25519KeyGenerationParameters {
     type Target = crate::Org::BouncyCastle::Crypto::KeyGenerationParameters;
@@ -32,7 +38,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::X25519KeyGenerationParameters 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::X25519KeyGenerationParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -83,7 +91,9 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::X25519KeyGenerationParameters
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+X25519KeyGenerationParameters"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::X25519KeyGenerationParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

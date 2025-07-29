@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameInfo {
@@ -17,7 +17,7 @@ pub struct NameInfo {
     pub NIarrayEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE,
     pub NIsealedStatusChecked: bool,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::NameInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,7 +37,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::NameInfo {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameInfo")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::NameInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -45,7 +45,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::NameInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameInfo")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::NameInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -174,7 +174,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::NameInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::NameInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionCallMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionCallMessage"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IConstructionCallMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionCallMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionCallMessage"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionCallMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionCallMessage"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionCallMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionCallMessage"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -226,7 +234,9 @@ impl crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionCallMessage")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+IConstructionCallMessage"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Activation::IConstructionCallMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

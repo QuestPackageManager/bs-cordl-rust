@@ -1,10 +1,10 @@
-#[cfg(feature = "PerformanceVisualizer")]
+#[cfg(feature = "cordl_class_PerformanceVisualizer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformanceVisualizer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "PerformanceVisualizer")]
+#[cfg(feature = "cordl_class_PerformanceVisualizer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceVisualizer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PerformanceVisualizer {
         false
     }
 }
-#[cfg(feature = "PerformanceVisualizer")]
+#[cfg(feature = "cordl_class_PerformanceVisualizer")]
 impl std::ops::Deref for crate::GlobalNamespace::PerformanceVisualizer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PerformanceVisualizer")]
+#[cfg(feature = "cordl_class_PerformanceVisualizer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceVisualizer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -104,7 +104,7 @@ impl crate::GlobalNamespace::PerformanceVisualizer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PerformanceVisualizer")]
+#[cfg(feature = "cordl_class_PerformanceVisualizer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PerformanceVisualizer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

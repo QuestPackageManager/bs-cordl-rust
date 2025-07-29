@@ -1,4 +1,4 @@
-#[cfg(feature = "FloatArrayMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatArrayMaterialPropertyEffectTarget {
@@ -14,7 +14,7 @@ pub struct FloatArrayMaterialPropertyEffectTarget {
     pub _valueBounds: crate::UnityEngine::Vector2,
     pub _propertyId: i32,
 }
-#[cfg(feature = "FloatArrayMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
         false
     }
 }
-#[cfg(feature = "FloatArrayMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FloatArrayMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -182,7 +182,7 @@ impl crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FloatArrayMaterialPropertyEffectTarget")]
+#[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

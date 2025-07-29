@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnitySynchronizationContext {
@@ -16,7 +16,7 @@ pub struct UnitySynchronizationContext {
     pub m_MainThreadID: i32,
     pub m_TrackedCount: i32,
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UnitySynchronizationContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::UnityEngine::UnitySynchronizationContext {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext")]
 impl std::ops::Deref for crate::UnityEngine::UnitySynchronizationContext {
     type Target = crate::System::Threading::SynchronizationContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext")]
 impl std::ops::DerefMut for crate::UnityEngine::UnitySynchronizationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -395,7 +395,7 @@ impl crate::UnityEngine::UnitySynchronizationContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UnitySynchronizationContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -405,7 +405,7 @@ for crate::UnityEngine::UnitySynchronizationContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext+WorkRequest")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnitySynchronizationContext_WorkRequest {
@@ -417,7 +417,7 @@ pub struct UnitySynchronizationContext_WorkRequest {
         crate::System::Threading::ManualResetEvent,
     >,
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext+WorkRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
     type Held<'a> = Self;
@@ -447,7 +447,7 @@ for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext+WorkRequest")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
     type Type = Self;
@@ -458,7 +458,7 @@ for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext+WorkRequest")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
     type Actual = Self;
@@ -472,7 +472,7 @@ for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext+WorkRequest")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
     type Type = Self;
@@ -487,7 +487,7 @@ for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext+WorkRequest")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
     type Actual = Self;
@@ -501,7 +501,7 @@ for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext+WorkRequest")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
     type Type = Self;

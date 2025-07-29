@@ -1,4 +1,4 @@
-#[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNode")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XPathNode {
@@ -12,7 +12,7 @@ pub struct XPathNode {
     pub _props: u32,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::Cache::XPathNode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::Cache::XPa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::Cache::XPathNode {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::MS::Internal::Xml::Cache::XPathNode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::Cache::XPathNode {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::MS::Internal::Xml::Cache::XPathNode {
         self
     }
 }
-#[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::Cache::XPathNode {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::MS::Internal::Xml::Cache::XPathNode {
         }
     }
 }
-#[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::Cache::XPathNode {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::MS::Internal::Xml::Cache::XPathNode {
         actual
     }
 }
-#[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNode")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::MS::Internal::Xml::Cache::XPathNode {
     type Type = Self;

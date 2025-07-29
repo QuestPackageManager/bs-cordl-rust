@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Collections+ReadOnlyCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+ReadOnlyCollectionBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadOnlyCollectionBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
-#[cfg(feature = "System+Collections+ReadOnlyCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+ReadOnlyCollectionBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::ReadOnlyCollectionBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Collections::ReadOnlyCollectionBase {
         false
     }
 }
-#[cfg(feature = "System+Collections+ReadOnlyCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+ReadOnlyCollectionBase")]
 impl std::ops::Deref for crate::System::Collections::ReadOnlyCollectionBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ReadOnlyCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+ReadOnlyCollectionBase")]
 impl std::ops::DerefMut for crate::System::Collections::ReadOnlyCollectionBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -219,7 +219,7 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+ReadOnlyCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+ReadOnlyCollectionBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::ReadOnlyCollectionBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

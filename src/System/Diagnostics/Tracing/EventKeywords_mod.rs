@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Diagnostics+Tracing+EventKeywords")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventKeywords")]
 #[repr(i64)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventKeywords {
@@ -12,7 +12,7 @@ pub enum EventKeywords {
     Sqm = 2251799813685248i64,
     WdiDiagnostic = 1125899906842624i64,
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventKeywords")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventKeywords")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::Tracing::EventKeywords {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::System::Diagnostics::Tracing::EventKeywords {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventKeywords")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventKeywords")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::Tracing::EventKeywords {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::System::Diagnostics::Tracing::EventKeywords {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventKeywords")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventKeywords")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::Tracing::EventKeywords {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::System::Diagnostics::Tracing::EventKeywords {
         self
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventKeywords")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventKeywords")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::Tracing::EventKeywords {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::System::Diagnostics::Tracing::EventKeywords {
         }
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventKeywords")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventKeywords")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::Tracing::EventKeywords {
     type Actual = Self;

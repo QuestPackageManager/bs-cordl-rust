@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -10,7 +10,7 @@ pub struct ScriptableRuntimeReflectionSystemWrapper {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper {
@@ -32,7 +32,7 @@ for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSyst
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper {
@@ -42,7 +42,7 @@ for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSyst
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper {
@@ -174,7 +174,7 @@ impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSys
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
+    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper {

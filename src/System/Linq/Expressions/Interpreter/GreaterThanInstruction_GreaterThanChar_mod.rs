@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct GreaterThanInstruction_GreaterThanChar {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanChar {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanChar {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanChar {
     type Target = crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::GreaterThanInstruction_GreaterT
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanChar {
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::GreaterThanInstruction_GreaterThanChar {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanChar"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanChar {

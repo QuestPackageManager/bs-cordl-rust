@@ -1,4 +1,4 @@
-#[cfg(feature = "SetPSSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetPSSaberGlowColor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetPSSaberGlowColor {
@@ -7,7 +7,7 @@ pub struct SetPSSaberGlowColor {
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
-#[cfg(feature = "SetPSSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetPSSaberGlowColor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SetPSSaberGlowColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SetPSSaberGl
         false
     }
 }
-#[cfg(feature = "SetPSSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetPSSaberGlowColor")]
 impl std::ops::Deref for crate::GlobalNamespace::SetPSSaberGlowColor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SetPSSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetPSSaberGlowColor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SetPSSaberGlowColor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::SetPSSaberGlowColor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SetPSSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetPSSaberGlowColor")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SetPSSaberGlowColor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

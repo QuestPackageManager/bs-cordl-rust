@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UI+PositionAsUV1")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+PositionAsUV1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PositionAsUV1 {
     __cordl_parent: crate::UnityEngine::UI::BaseMeshEffect,
 }
-#[cfg(feature = "UnityEngine+UI+PositionAsUV1")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+PositionAsUV1")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::PositionAsUV1 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::PositionAsUV
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+PositionAsUV1")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+PositionAsUV1")]
 impl std::ops::Deref for crate::UnityEngine::UI::PositionAsUV1 {
     type Target = crate::UnityEngine::UI::BaseMeshEffect;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+PositionAsUV1")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+PositionAsUV1")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::PositionAsUV1 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::UnityEngine::UI::PositionAsUV1 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+PositionAsUV1")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+PositionAsUV1")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::PositionAsUV1 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

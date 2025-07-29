@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcspReqGenerator {
@@ -11,7 +11,7 @@ pub struct OcspReqGenerator {
         crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -474,7 +474,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -484,7 +484,7 @@ for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcspReqGenerator_RequestObject {
@@ -494,7 +494,7 @@ pub struct OcspReqGenerator_RequestObject {
         crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -514,14 +514,14 @@ for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -608,7 +608,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

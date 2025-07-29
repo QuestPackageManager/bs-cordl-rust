@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddressablesImpl {
@@ -72,7 +72,7 @@ pub struct AddressablesImpl {
     >,
     pub hasStartedInitialization: bool,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::AddressablesImpl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -92,14 +92,14 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AddressablesImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl")]
 impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::AddressablesImpl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5164,7 +5164,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::AddressablesImpl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5211,7 +5211,7 @@ impl AsMut<
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -5239,7 +5239,7 @@ pub struct AddressablesImpl_LoadResourceLocationKeyOp {
     pub m_ResourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp {
@@ -5261,7 +5261,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp {
@@ -5279,7 +5279,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp {
@@ -5424,7 +5424,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp {
@@ -5436,7 +5436,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -5465,7 +5465,7 @@ pub struct AddressablesImpl_LoadResourceLocationKeysOp {
     pub m_ResourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp {
@@ -5487,7 +5487,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp {
@@ -5505,7 +5505,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp {
@@ -5652,7 +5652,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp {

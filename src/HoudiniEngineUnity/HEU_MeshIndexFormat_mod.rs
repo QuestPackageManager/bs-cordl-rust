@@ -1,11 +1,11 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_MeshIndexFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MeshIndexFormat")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_MeshIndexFormat {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _indexFormat: crate::UnityEngine::Rendering::IndexFormat,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MeshIndexFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MeshIndexFormat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_MeshIndexFormat {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::HoudiniEngineUnity::HEU_MeshIndexFormat {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MeshIndexFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MeshIndexFormat")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_MeshIndexFormat {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MeshIndexFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MeshIndexFormat")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_MeshIndexFormat {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::HoudiniEngineUnity::HEU_MeshIndexFormat {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MeshIndexFormat")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MeshIndexFormat")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_MeshIndexFormat {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

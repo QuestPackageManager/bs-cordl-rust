@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+MessageBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+MessageBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageBase {
@@ -6,7 +6,7 @@ pub struct MessageBase {
     pub _type: i32,
     pub _flags: crate::Mono::Security::Protocol::Ntlm::NtlmFlags,
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+MessageBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+MessageBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Protocol::Ntlm::MessageBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Mono::Security::Protocol::Ntlm::MessageBase {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+MessageBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+MessageBase")]
 impl std::ops::Deref for crate::Mono::Security::Protocol::Ntlm::MessageBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+MessageBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+MessageBase")]
 impl std::ops::DerefMut for crate::Mono::Security::Protocol::Ntlm::MessageBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -258,7 +258,7 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+MessageBase")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+MessageBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Protocol::Ntlm::MessageBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

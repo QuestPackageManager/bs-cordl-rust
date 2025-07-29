@@ -1,4 +1,4 @@
-#[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
+#[cfg(feature = "cordl_class_OpenXRRuntimeBasedActionBindingComposite")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenXRRuntimeBasedActionBindingComposite {
@@ -6,7 +6,7 @@ pub struct OpenXRRuntimeBasedActionBindingComposite {
     pub oculusRuntime: i32,
     pub otherRuntimes: i32,
 }
-#[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
+#[cfg(feature = "cordl_class_OpenXRRuntimeBasedActionBindingComposite")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
         false
     }
 }
-#[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
+#[cfg(feature = "cordl_class_OpenXRRuntimeBasedActionBindingComposite")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
+#[cfg(feature = "cordl_class_OpenXRRuntimeBasedActionBindingComposite")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -155,7 +155,7 @@ impl crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
+#[cfg(feature = "cordl_class_OpenXRRuntimeBasedActionBindingComposite")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

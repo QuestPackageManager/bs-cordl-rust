@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XsdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdValidator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdValidator {
@@ -27,7 +27,7 @@ pub struct XsdValidator {
     >,
     pub XsdSchema: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+Schema+XsdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdValidator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XsdValidator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -46,14 +46,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XsdValid
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdValidator {
     type Target = crate::System::Xml::Schema::BaseValidator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdValidator")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XsdValidator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1064,7 +1064,7 @@ impl crate::System::Xml::Schema::XsdValidator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdValidator")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XsdValidator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_Offset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Offset")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Offset {
@@ -7,7 +7,7 @@ pub struct TMP_Offset {
     pub m_Top: f32,
     pub m_Bottom: f32,
 }
-#[cfg(feature = "TMPro+TMP_Offset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Offset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Offset {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Offset {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_Offset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Offset")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Offset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Offset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_Offset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Offset")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Offset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Offset {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_Offset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Offset")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Offset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Offset {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_Offset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Offset")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Offset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Offset {
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_Offset")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Offset")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Offset {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "CustomControlTrack")]
+#[cfg(feature = "cordl_class_CustomControlTrack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomControlTrack {
     __cordl_parent: crate::UnityEngine::Timeline::ControlTrack,
 }
-#[cfg(feature = "CustomControlTrack")]
+#[cfg(feature = "cordl_class_CustomControlTrack")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CustomControlTrack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CustomContro
         false
     }
 }
-#[cfg(feature = "CustomControlTrack")]
+#[cfg(feature = "cordl_class_CustomControlTrack")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomControlTrack {
     type Target = crate::UnityEngine::Timeline::ControlTrack;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CustomControlTrack")]
+#[cfg(feature = "cordl_class_CustomControlTrack")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CustomControlTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::CustomControlTrack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CustomControlTrack")]
+#[cfg(feature = "cordl_class_CustomControlTrack")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomControlTrack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

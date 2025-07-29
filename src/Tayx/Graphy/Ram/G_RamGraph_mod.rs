@@ -1,4 +1,4 @@
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamGraph")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_RamGraph {
@@ -28,7 +28,7 @@ pub struct G_RamGraph {
     pub m_monoArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub m_highestMemory: f32,
 }
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamGraph")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Ram::G_RamGraph {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Ram::G_RamGraph
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamGraph")]
 impl std::ops::Deref for crate::Tayx::Graphy::Ram::G_RamGraph {
     type Target = crate::Tayx::Graphy::Graph::G_Graph;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamGraph")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Ram::G_RamGraph {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -208,7 +208,7 @@ impl crate::Tayx::Graphy::Ram::G_RamGraph {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamGraph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamGraph")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Ram::G_RamGraph {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionLevelModifiersViewController")]
+#[cfg(feature = "cordl_class_MissionLevelModifiersViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelModifiersViewController {
@@ -15,7 +15,7 @@ pub struct MissionLevelModifiersViewController {
         crate::GlobalNamespace::GameplayModifiers,
     >,
 }
-#[cfg(feature = "MissionLevelModifiersViewController")]
+#[cfg(feature = "cordl_class_MissionLevelModifiersViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelModifiersViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::MissionLevelModifiersViewController {
         false
     }
 }
-#[cfg(feature = "MissionLevelModifiersViewController")]
+#[cfg(feature = "cordl_class_MissionLevelModifiersViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelModifiersViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionLevelModifiersViewController")]
+#[cfg(feature = "cordl_class_MissionLevelModifiersViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelModifiersViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::MissionLevelModifiersViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionLevelModifiersViewController")]
+#[cfg(feature = "cordl_class_MissionLevelModifiersViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionLevelModifiersViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

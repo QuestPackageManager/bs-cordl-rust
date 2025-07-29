@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RsaKeyParameters {
@@ -6,7 +6,7 @@ pub struct RsaKeyParameters {
     pub modulus: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub exponent: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters {
     type Target = crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -222,7 +222,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

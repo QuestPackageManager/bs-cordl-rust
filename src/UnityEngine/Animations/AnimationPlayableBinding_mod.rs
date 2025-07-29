@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Animations+AnimationPlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationPlayableBinding")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationPlayableBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Animations+AnimationPlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationPlayableBinding")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Animations::AnimationPlayableBinding {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Animations::AnimationPlayableBinding {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Animations+AnimationPlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationPlayableBinding")]
 impl std::ops::Deref for crate::UnityEngine::Animations::AnimationPlayableBinding {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Animations+AnimationPlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationPlayableBinding")]
 impl std::ops::DerefMut for crate::UnityEngine::Animations::AnimationPlayableBinding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::UnityEngine::Animations::AnimationPlayableBinding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Animations+AnimationPlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimationPlayableBinding")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Animations::AnimationPlayableBinding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+Polyglot+CsvWriter")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CsvWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+Polyglot+CsvWriter")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvWriter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::CsvWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::CsvWriter {
         false
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvWriter")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvWriter")]
 impl std::ops::Deref for crate::BGLib::Polyglot::CsvWriter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvWriter")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvWriter")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::CsvWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -261,7 +261,7 @@ impl crate::BGLib::Polyglot::CsvWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+CsvWriter")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+CsvWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::CsvWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

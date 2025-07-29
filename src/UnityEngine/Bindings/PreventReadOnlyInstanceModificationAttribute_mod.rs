@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PreventReadOnlyInstanceModificationAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +38,9 @@ for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

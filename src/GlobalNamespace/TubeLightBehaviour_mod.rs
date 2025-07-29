@@ -1,4 +1,4 @@
-#[cfg(feature = "TubeLightBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeLightBehaviour {
@@ -22,7 +22,7 @@ pub struct TubeLightBehaviour {
     pub started: bool,
     pub _firstFrameColor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "TubeLightBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TubeLightBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TubeLightBeh
         false
     }
 }
-#[cfg(feature = "TubeLightBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeLightBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TubeLightBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TubeLightBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::TubeLightBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TubeLightBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TubeLightBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -156,7 +156,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TubeLightBeha
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TubeLightBehaviour+ParameterType")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour+ParameterType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TubeLightBehaviour_ParameterType {
@@ -164,7 +164,7 @@ pub enum TubeLightBehaviour_ParameterType {
     References = 1i32,
     Values = 0i32,
 }
-#[cfg(feature = "TubeLightBehaviour+ParameterType")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Held<'a> = Self;
@@ -194,7 +194,7 @@ for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TubeLightBehaviour+ParameterType")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Type = Self;
@@ -205,7 +205,7 @@ for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TubeLightBehaviour+ParameterType")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Actual = Self;
@@ -219,7 +219,7 @@ for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
         self
     }
 }
-#[cfg(feature = "TubeLightBehaviour+ParameterType")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Type = Self;
@@ -234,7 +234,7 @@ for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
         }
     }
 }
-#[cfg(feature = "TubeLightBehaviour+ParameterType")]
+#[cfg(feature = "cordl_class_TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Actual = Self;

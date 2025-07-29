@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+MonoMemoryPool_5")]
+#[cfg(feature = "cordl_class_Zenject+MonoMemoryPool_5")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoMemoryPool_5<
@@ -22,7 +22,7 @@ pub struct MonoMemoryPool_5<
     __cordl_phantom_TParam4: std::marker::PhantomData<TParam4>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Zenject+MonoMemoryPool_5")]
+#[cfg(feature = "cordl_class_Zenject+MonoMemoryPool_5")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -61,7 +61,7 @@ for crate::Zenject::MonoMemoryPool_5<TParam1, TParam2, TParam3, TParam4, TValue>
         false
     }
 }
-#[cfg(feature = "Zenject+MonoMemoryPool_5")]
+#[cfg(feature = "cordl_class_Zenject+MonoMemoryPool_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -81,7 +81,7 @@ for crate::Zenject::MonoMemoryPool_5<TParam1, TParam2, TParam3, TParam4, TValue>
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+MonoMemoryPool_5")]
+#[cfg(feature = "cordl_class_Zenject+MonoMemoryPool_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -391,7 +391,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+MonoMemoryPool_5")]
+#[cfg(feature = "cordl_class_Zenject+MonoMemoryPool_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

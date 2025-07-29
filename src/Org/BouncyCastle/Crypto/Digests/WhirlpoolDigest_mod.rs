@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WhirlpoolDigest {
@@ -13,7 +13,7 @@ pub struct WhirlpoolDigest {
     pub _block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     pub _state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Digests::WhirlpoolDigest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::Org::BouncyCastle::Crypto::Digests::WhirlpoolDigest {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::WhirlpoolDigest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::WhirlpoolDigest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -592,7 +592,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::WhirlpoolDigest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Digests::WhirlpoolDigest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

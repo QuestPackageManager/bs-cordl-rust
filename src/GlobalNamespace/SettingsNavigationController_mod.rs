@@ -1,4 +1,4 @@
-#[cfg(feature = "SettingsNavigationController")]
+#[cfg(feature = "cordl_class_SettingsNavigationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SettingsNavigationController {
@@ -12,7 +12,7 @@ pub struct SettingsNavigationController {
         >,
     >,
 }
-#[cfg(feature = "SettingsNavigationController")]
+#[cfg(feature = "cordl_class_SettingsNavigationController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SettingsNavigationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::SettingsNavigationController {
         false
     }
 }
-#[cfg(feature = "SettingsNavigationController")]
+#[cfg(feature = "cordl_class_SettingsNavigationController")]
 impl std::ops::Deref for crate::GlobalNamespace::SettingsNavigationController {
     type Target = crate::HMUI::NavigationController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SettingsNavigationController")]
+#[cfg(feature = "cordl_class_SettingsNavigationController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SettingsNavigationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -279,7 +279,7 @@ impl crate::GlobalNamespace::SettingsNavigationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SettingsNavigationController")]
+#[cfg(feature = "cordl_class_SettingsNavigationController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SettingsNavigationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -289,7 +289,7 @@ for crate::GlobalNamespace::SettingsNavigationController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SettingsNavigationController+FinishAction")]
+#[cfg(feature = "cordl_class_SettingsNavigationController+FinishAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SettingsNavigationController_FinishAction {
@@ -298,7 +298,7 @@ pub enum SettingsNavigationController_FinishAction {
     Cancel = 1i32,
     _cordl_Ok = 0i32,
 }
-#[cfg(feature = "SettingsNavigationController+FinishAction")]
+#[cfg(feature = "cordl_class_SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Held<'a> = Self;
@@ -328,7 +328,7 @@ for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SettingsNavigationController+FinishAction")]
+#[cfg(feature = "cordl_class_SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Type = Self;
@@ -339,7 +339,7 @@ for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SettingsNavigationController+FinishAction")]
+#[cfg(feature = "cordl_class_SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Actual = Self;
@@ -353,7 +353,7 @@ for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
         self
     }
 }
-#[cfg(feature = "SettingsNavigationController+FinishAction")]
+#[cfg(feature = "cordl_class_SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Type = Self;
@@ -368,7 +368,7 @@ for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
         }
     }
 }
-#[cfg(feature = "SettingsNavigationController+FinishAction")]
+#[cfg(feature = "cordl_class_SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Actual = Self;

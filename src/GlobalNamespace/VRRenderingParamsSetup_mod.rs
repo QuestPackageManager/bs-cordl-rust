@@ -1,4 +1,4 @@
-#[cfg(feature = "VRRenderingParamsSetup")]
+#[cfg(feature = "cordl_class_VRRenderingParamsSetup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRRenderingParamsSetup {
@@ -11,7 +11,7 @@ pub struct VRRenderingParamsSetup {
         crate::GlobalNamespace::GameplayCoreSceneSetupData,
     >,
 }
-#[cfg(feature = "VRRenderingParamsSetup")]
+#[cfg(feature = "cordl_class_VRRenderingParamsSetup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VRRenderingParamsSetup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::VRRenderingParamsSetup {
         false
     }
 }
-#[cfg(feature = "VRRenderingParamsSetup")]
+#[cfg(feature = "cordl_class_VRRenderingParamsSetup")]
 impl std::ops::Deref for crate::GlobalNamespace::VRRenderingParamsSetup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRRenderingParamsSetup")]
+#[cfg(feature = "cordl_class_VRRenderingParamsSetup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRRenderingParamsSetup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::VRRenderingParamsSetup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRRenderingParamsSetup")]
+#[cfg(feature = "cordl_class_VRRenderingParamsSetup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VRRenderingParamsSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

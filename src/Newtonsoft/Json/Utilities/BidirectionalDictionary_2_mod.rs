@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BidirectionalDictionary_2<
@@ -21,7 +21,7 @@ pub struct BidirectionalDictionary_2<
     __cordl_phantom_TFirst: std::marker::PhantomData<TFirst>,
     __cordl_phantom_TSecond: std::marker::PhantomData<TSecond>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
 unsafe impl<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,
@@ -60,7 +60,7 @@ for crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<TFirst, TSecon
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
 impl<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,
@@ -71,7 +71,7 @@ for crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<TFirst, TSecon
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
 impl<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,
@@ -398,7 +398,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
 impl<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,

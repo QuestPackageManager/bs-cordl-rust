@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+JSONTextMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONTextMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JSONTextMode {
@@ -6,7 +6,7 @@ pub enum JSONTextMode {
     Compact = 0i32,
     Indent = 1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONTextMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::JSONTextMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::JSONTextM
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONTextMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::JSONTextMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::JSONT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONTextMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::JSONTextMode {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::HoudiniEngineUnity::JSONTextMode {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONTextMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::JSONTextMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::JSONT
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONTextMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONTextMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::JSONTextMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

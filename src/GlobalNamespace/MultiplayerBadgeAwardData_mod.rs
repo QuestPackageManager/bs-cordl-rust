@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerBadgeAwardData")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeAwardData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeAwardData {
@@ -14,7 +14,7 @@ pub struct MultiplayerBadgeAwardData {
         crate::GlobalNamespace::MultiplayerBadgeDataSO,
     >,
 }
-#[cfg(feature = "MultiplayerBadgeAwardData")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeAwardData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::MultiplayerBadgeAwardData {
         false
     }
 }
-#[cfg(feature = "MultiplayerBadgeAwardData")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeAwardData")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerBadgeAwardData")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeAwardData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -282,7 +282,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerBadgeAwardData")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeAwardData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

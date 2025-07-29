@@ -1,4 +1,4 @@
-#[cfg(feature = "LightGroupRotationSpreadLayouter")]
+#[cfg(feature = "cordl_class_LightGroupRotationSpreadLayouter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupRotationSpreadLayouter {
@@ -6,7 +6,7 @@ pub struct LightGroupRotationSpreadLayouter {
     pub _rotationStep: crate::UnityEngine::Vector3,
     pub _startFromCenter: bool,
 }
-#[cfg(feature = "LightGroupRotationSpreadLayouter")]
+#[cfg(feature = "cordl_class_LightGroupRotationSpreadLayouter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightGroupRotationSpreadLayouter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::LightGroupRotationSpreadLayouter {
         false
     }
 }
-#[cfg(feature = "LightGroupRotationSpreadLayouter")]
+#[cfg(feature = "cordl_class_LightGroupRotationSpreadLayouter")]
 impl std::ops::Deref for crate::GlobalNamespace::LightGroupRotationSpreadLayouter {
     type Target = crate::GlobalNamespace::LightGroupSubsystem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightGroupRotationSpreadLayouter")]
+#[cfg(feature = "cordl_class_LightGroupRotationSpreadLayouter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightGroupRotationSpreadLayouter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::LightGroupRotationSpreadLayouter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightGroupRotationSpreadLayouter")]
+#[cfg(feature = "cordl_class_LightGroupRotationSpreadLayouter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightGroupRotationSpreadLayouter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

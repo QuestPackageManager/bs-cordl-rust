@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MetaRemoteAssetsCatalogUpdater {
@@ -16,7 +16,7 @@ pub struct MetaRemoteAssetsCatalogUpdater {
         crate::System::Threading::Tasks::Task,
     >,
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
         false
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
 impl std::ops::Deref for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
 impl std::ops::DerefMut
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -218,7 +218,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

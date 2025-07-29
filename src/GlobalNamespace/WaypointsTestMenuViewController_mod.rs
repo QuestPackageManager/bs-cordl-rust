@@ -1,4 +1,4 @@
-#[cfg(feature = "WaypointsTestMenuViewController")]
+#[cfg(feature = "cordl_class_WaypointsTestMenuViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaypointsTestMenuViewController {
@@ -44,7 +44,7 @@ pub struct WaypointsTestMenuViewController {
     pub _isCancelled: bool,
     pub _waitingForLevelFinish: bool,
 }
-#[cfg(feature = "WaypointsTestMenuViewController")]
+#[cfg(feature = "cordl_class_WaypointsTestMenuViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::WaypointsTestMenuViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -64,14 +64,14 @@ for crate::GlobalNamespace::WaypointsTestMenuViewController {
         false
     }
 }
-#[cfg(feature = "WaypointsTestMenuViewController")]
+#[cfg(feature = "cordl_class_WaypointsTestMenuViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::WaypointsTestMenuViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "WaypointsTestMenuViewController")]
+#[cfg(feature = "cordl_class_WaypointsTestMenuViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::WaypointsTestMenuViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -293,7 +293,7 @@ impl crate::GlobalNamespace::WaypointsTestMenuViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "WaypointsTestMenuViewController")]
+#[cfg(feature = "cordl_class_WaypointsTestMenuViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::WaypointsTestMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

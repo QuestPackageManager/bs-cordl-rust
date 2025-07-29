@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DHBasicAgreement {
@@ -10,7 +10,7 @@ pub struct DHBasicAgreement {
         crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -156,7 +156,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+DHBasicAgreement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

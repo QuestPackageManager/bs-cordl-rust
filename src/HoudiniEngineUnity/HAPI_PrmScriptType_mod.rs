@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PrmScriptType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PrmScriptType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PrmScriptType {
@@ -50,7 +50,7 @@ pub enum HAPI_PrmScriptType {
     HAPI_PRM_SCRIPT_TYPE_VECTOR3 = 11i32,
     HAPI_PRM_SCRIPT_TYPE_VECTOR4 = 12i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PrmScriptType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PrmScriptType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
     type Held<'a> = Self;
@@ -80,7 +80,7 @@ for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PrmScriptType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PrmScriptType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
     type Type = Self;
@@ -91,7 +91,7 @@ for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PrmScriptType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PrmScriptType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
     type Actual = Self;
@@ -105,7 +105,7 @@ for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PrmScriptType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PrmScriptType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
     type Type = Self;
@@ -120,7 +120,7 @@ for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PrmScriptType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PrmScriptType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_PrmScriptType {
     type Actual = Self;

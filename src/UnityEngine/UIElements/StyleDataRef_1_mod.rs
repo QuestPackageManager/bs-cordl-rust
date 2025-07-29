@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleDataRef_1<T: quest_hook::libil2cpp::Type> {
@@ -7,7 +7,7 @@ pub struct StyleDataRef_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
     type Held<'a> = Self;
@@ -53,7 +53,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
     type Type = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
     type Actual = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
     type Type = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
     type Actual = Self;
@@ -107,7 +107,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
     type Type = Self;
@@ -464,7 +464,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleDataRef_1_RefCounted<T: quest_hook::libil2cpp::Type> {
@@ -474,7 +474,7 @@ pub struct StyleDataRef_1_RefCounted<T: quest_hook::libil2cpp::Type> {
     pub value: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -510,7 +510,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -518,7 +518,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -670,7 +670,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

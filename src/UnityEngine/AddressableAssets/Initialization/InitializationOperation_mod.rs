@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+InitializationOperation"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializationOperation {
@@ -28,7 +30,9 @@ pub struct InitializationOperation {
         crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation,
     >,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+InitializationOperation"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,7 +52,9 @@ for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperati
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+InitializationOperation"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
@@ -60,7 +66,9 @@ for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperati
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+InitializationOperation"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -615,7 +623,9 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+InitializationOperation"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

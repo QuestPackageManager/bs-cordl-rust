@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ColorBlock")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorBlock {
@@ -10,7 +10,7 @@ pub struct ColorBlock {
     pub m_ColorMultiplier: f32,
     pub m_FadeDuration: f32,
 }
-#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ColorBlock")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ColorBlock {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::ColorBlock {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ColorBlock")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::ColorBlock {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::ColorBlo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ColorBlock")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::ColorBlock {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::ColorBl
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ColorBlock")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::ColorBlock {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::ColorBlo
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ColorBlock")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::ColorBlock {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::ColorBlock
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+ColorBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+ColorBlock")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::UI::ColorBlock {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

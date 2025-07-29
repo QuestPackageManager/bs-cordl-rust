@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteSpawnData")]
+#[cfg(feature = "cordl_class_NoteSpawnData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NoteSpawnData {
@@ -7,7 +7,7 @@ pub struct NoteSpawnData {
     pub jumpEndOffset: crate::UnityEngine::Vector3,
     pub gravityBase: f32,
 }
-#[cfg(feature = "NoteSpawnData")]
+#[cfg(feature = "cordl_class_NoteSpawnData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteSpawnData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteSpawnDat
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteSpawnData")]
+#[cfg(feature = "cordl_class_NoteSpawnData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteSpawnData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteSpaw
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteSpawnData")]
+#[cfg(feature = "cordl_class_NoteSpawnData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteSpawnData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteSpa
         self
     }
 }
-#[cfg(feature = "NoteSpawnData")]
+#[cfg(feature = "cordl_class_NoteSpawnData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteSpawnData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteSpaw
         }
     }
 }
-#[cfg(feature = "NoteSpawnData")]
+#[cfg(feature = "cordl_class_NoteSpawnData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteSpawnData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteSpawnD
         actual
     }
 }
-#[cfg(feature = "NoteSpawnData")]
+#[cfg(feature = "cordl_class_NoteSpawnData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::NoteSpawnData {
     type Type = Self;

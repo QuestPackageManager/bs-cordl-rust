@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRVirtualKeyboardHandInputHandler")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardHandInputHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRVirtualKeyboardHandInputHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "OVRVirtualKeyboardHandInputHandler")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardHandInputHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRVirtualKeyboardHandInputHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OVRVirtualKeyboardHandInputHandler {
         false
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardHandInputHandler")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardHandInputHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboardHandInputHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardHandInputHandler")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardHandInputHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboardHandInputHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardHandInputHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardHandInputHandler")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardHandInputHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRVirtualKeyboardHandInputHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

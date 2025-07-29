@@ -1,4 +1,4 @@
-#[cfg(feature = "CreateServerFormData")]
+#[cfg(feature = "cordl_class_CreateServerFormData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CreateServerFormData {
@@ -14,7 +14,7 @@ pub struct CreateServerFormData {
     pub songSelectionMode: crate::GlobalNamespace::SongSelectionMode,
     pub gameplayServerControlSettings: crate::GlobalNamespace::GameplayServerControlSettings,
 }
-#[cfg(feature = "CreateServerFormData")]
+#[cfg(feature = "cordl_class_CreateServerFormData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CreateServerFormData {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::CreateServerFormData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "CreateServerFormData")]
+#[cfg(feature = "cordl_class_CreateServerFormData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CreateServerFormData {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::GlobalNamespace::CreateServerFormData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "CreateServerFormData")]
+#[cfg(feature = "cordl_class_CreateServerFormData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CreateServerFormData {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::GlobalNamespace::CreateServerFormData {
         self
     }
 }
-#[cfg(feature = "CreateServerFormData")]
+#[cfg(feature = "cordl_class_CreateServerFormData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CreateServerFormData {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::GlobalNamespace::CreateServerFormData {
         }
     }
 }
-#[cfg(feature = "CreateServerFormData")]
+#[cfg(feature = "cordl_class_CreateServerFormData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CreateServerFormData {
     type Actual = Self;
@@ -98,7 +98,7 @@ for crate::GlobalNamespace::CreateServerFormData {
         actual
     }
 }
-#[cfg(feature = "CreateServerFormData")]
+#[cfg(feature = "cordl_class_CreateServerFormData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::CreateServerFormData {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+PlatformInitializeResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInitializeResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformInitializeResult {
@@ -14,7 +14,7 @@ pub enum PlatformInitializeResult {
     Unknown = -7i32,
     VersionMismatch = -6i32,
 }
-#[cfg(feature = "Oculus+Platform+PlatformInitializeResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInitializeResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::PlatformInitializeResult {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::Oculus::Platform::PlatformInitializeResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInitializeResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInitializeResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::PlatformInitializeResult {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::Oculus::Platform::PlatformInitializeResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInitializeResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInitializeResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::PlatformInitializeResult {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::Oculus::Platform::PlatformInitializeResult {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInitializeResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInitializeResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::PlatformInitializeResult {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::Oculus::Platform::PlatformInitializeResult {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+PlatformInitializeResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+PlatformInitializeResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::PlatformInitializeResult {
     type Actual = Self;

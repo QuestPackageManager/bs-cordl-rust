@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Profiling+ProfilerCategoryColor")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerCategoryColor")]
 #[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProfilerCategoryColor {
@@ -21,7 +21,7 @@ pub enum ProfilerCategoryColor {
     UI = 14u16,
     VSync = 11u16,
 }
-#[cfg(feature = "Unity+Profiling+ProfilerCategoryColor")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerCategoryColor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Profiling::ProfilerCategoryColor {
     type Held<'a> = Self;
@@ -51,7 +51,7 @@ for crate::Unity::Profiling::ProfilerCategoryColor {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerCategoryColor")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerCategoryColor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::ProfilerCategoryColor {
     type Type = Self;
@@ -62,7 +62,7 @@ for crate::Unity::Profiling::ProfilerCategoryColor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerCategoryColor")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerCategoryColor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::ProfilerCategoryColor {
     type Actual = Self;
@@ -76,7 +76,7 @@ for crate::Unity::Profiling::ProfilerCategoryColor {
         self
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerCategoryColor")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerCategoryColor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::ProfilerCategoryColor {
     type Type = Self;
@@ -91,7 +91,7 @@ for crate::Unity::Profiling::ProfilerCategoryColor {
         }
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerCategoryColor")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerCategoryColor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::ProfilerCategoryColor {
     type Actual = Self;

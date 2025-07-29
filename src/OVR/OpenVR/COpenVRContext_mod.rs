@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+COpenVRContext")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct COpenVRContext {
@@ -19,7 +19,7 @@ pub struct COpenVRContext {
     pub m_pVRIOBuffer: crate::System::IntPtr,
     pub m_pVRSpatialAnchors: crate::System::IntPtr,
 }
-#[cfg(feature = "OVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+COpenVRContext")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::COpenVRContext {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::COpenVRContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+COpenVRContext")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::COpenVRContext {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::COpenVRConte
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+COpenVRContext")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::COpenVRContext {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::COpenVRCont
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+COpenVRContext")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::COpenVRContext {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::COpenVRConte
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+COpenVRContext")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::COpenVRContext {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -98,7 +98,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::COpenVRContext
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+COpenVRContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::COpenVRContext {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

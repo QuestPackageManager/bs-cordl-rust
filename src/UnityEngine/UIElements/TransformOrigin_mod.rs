@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TransformOrigin {
@@ -6,7 +6,7 @@ pub struct TransformOrigin {
     pub m_Y: crate::UnityEngine::UIElements::Length,
     pub m_Z: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TransformOrigin {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::UIElements::TransformOrigin {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TransformOrigin {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::TransformOrigin {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TransformOrigin {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::TransformOrigin {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TransformOrigin {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::TransformOrigin {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::TransformOrigin {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::UIElements::TransformOrigin {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::TransformOrigin {
     type Type = Self;

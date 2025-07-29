@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
+#[cfg(feature = "cordl_class_System+Net+IPAddress+ReadOnlyIPAddress")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPAddress_ReadOnlyIPAddress {
     __cordl_parent: crate::System::Net::IPAddress,
 }
-#[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
+#[cfg(feature = "cordl_class_System+Net+IPAddress+ReadOnlyIPAddress")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
         false
     }
 }
-#[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
+#[cfg(feature = "cordl_class_System+Net+IPAddress+ReadOnlyIPAddress")]
 impl std::ops::Deref for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
     type Target = crate::System::Net::IPAddress;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
+#[cfg(feature = "cordl_class_System+Net+IPAddress+ReadOnlyIPAddress")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
+#[cfg(feature = "cordl_class_System+Net+IPAddress+ReadOnlyIPAddress")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IO+DirectoryInfo")]
+#[cfg(feature = "cordl_class_System+IO+DirectoryInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectoryInfo {
     __cordl_parent: crate::System::IO::FileSystemInfo,
 }
-#[cfg(feature = "System+IO+DirectoryInfo")]
+#[cfg(feature = "cordl_class_System+IO+DirectoryInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::DirectoryInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::DirectoryInfo {
         false
     }
 }
-#[cfg(feature = "System+IO+DirectoryInfo")]
+#[cfg(feature = "cordl_class_System+IO+DirectoryInfo")]
 impl std::ops::Deref for crate::System::IO::DirectoryInfo {
     type Target = crate::System::IO::FileSystemInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+DirectoryInfo")]
+#[cfg(feature = "cordl_class_System+IO+DirectoryInfo")]
 impl std::ops::DerefMut for crate::System::IO::DirectoryInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -383,7 +383,7 @@ impl crate::System::IO::DirectoryInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+DirectoryInfo")]
+#[cfg(feature = "cordl_class_System+IO+DirectoryInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::DirectoryInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

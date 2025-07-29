@@ -1,4 +1,4 @@
-#[cfg(feature = "GameSessionAnalyticsManager")]
+#[cfg(feature = "cordl_class_GameSessionAnalyticsManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameSessionAnalyticsManager {
@@ -13,7 +13,7 @@ pub struct GameSessionAnalyticsManager {
         crate::System::Threading::Tasks::Task,
     >,
 }
-#[cfg(feature = "GameSessionAnalyticsManager")]
+#[cfg(feature = "cordl_class_GameSessionAnalyticsManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameSessionAnalyticsManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::GameSessionAnalyticsManager {
         false
     }
 }
-#[cfg(feature = "GameSessionAnalyticsManager")]
+#[cfg(feature = "cordl_class_GameSessionAnalyticsManager")]
 impl std::ops::Deref for crate::GlobalNamespace::GameSessionAnalyticsManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameSessionAnalyticsManager")]
+#[cfg(feature = "cordl_class_GameSessionAnalyticsManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameSessionAnalyticsManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -207,7 +207,7 @@ impl crate::GlobalNamespace::GameSessionAnalyticsManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameSessionAnalyticsManager")]
+#[cfg(feature = "cordl_class_GameSessionAnalyticsManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameSessionAnalyticsManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

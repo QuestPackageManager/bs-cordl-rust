@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter;
@@ -32,7 +32,7 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -241,7 +241,7 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -251,7 +251,9 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_Union {
@@ -267,7 +269,9 @@ pub struct DiscriminatedUnionConverter_Union {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -287,7 +291,9 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union"
+)]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -295,7 +301,9 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union"
+)]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -369,7 +377,9 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -379,7 +389,9 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_UnionCase {
@@ -398,7 +410,9 @@ pub struct DiscriminatedUnionConverter_UnionCase {
         crate::Newtonsoft::Json::Utilities::FSharpFunction,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -418,7 +432,9 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase"
+)]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -426,7 +442,9 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase"
+)]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -514,7 +532,9 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

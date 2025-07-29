@@ -1,11 +1,11 @@
-#[cfg(feature = "MultiplayerAvatarData")]
+#[cfg(feature = "cordl_class_MultiplayerAvatarData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MultiplayerAvatarData {
     pub avatarTypeIdentifierHash: u32,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "MultiplayerAvatarData")]
+#[cfg(feature = "cordl_class_MultiplayerAvatarData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerAvatarData {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MultiplayerAvatarData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerAvatarData")]
+#[cfg(feature = "cordl_class_MultiplayerAvatarData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerAvatarData {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::MultiplayerAvatarData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerAvatarData")]
+#[cfg(feature = "cordl_class_MultiplayerAvatarData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerAvatarData {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::MultiplayerAvatarData {
         self
     }
 }
-#[cfg(feature = "MultiplayerAvatarData")]
+#[cfg(feature = "cordl_class_MultiplayerAvatarData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerAvatarData {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::MultiplayerAvatarData {
         }
     }
 }
-#[cfg(feature = "MultiplayerAvatarData")]
+#[cfg(feature = "cordl_class_MultiplayerAvatarData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerAvatarData {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::GlobalNamespace::MultiplayerAvatarData {
         actual
     }
 }
-#[cfg(feature = "MultiplayerAvatarData")]
+#[cfg(feature = "cordl_class_MultiplayerAvatarData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::MultiplayerAvatarData {
     type Type = Self;

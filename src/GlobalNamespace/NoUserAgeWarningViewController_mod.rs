@@ -1,4 +1,4 @@
-#[cfg(feature = "NoUserAgeWarningViewController")]
+#[cfg(feature = "cordl_class_NoUserAgeWarningViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoUserAgeWarningViewController {
@@ -6,7 +6,7 @@ pub struct NoUserAgeWarningViewController {
     pub _confirmButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "NoUserAgeWarningViewController")]
+#[cfg(feature = "cordl_class_NoUserAgeWarningViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoUserAgeWarningViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::NoUserAgeWarningViewController {
         false
     }
 }
-#[cfg(feature = "NoUserAgeWarningViewController")]
+#[cfg(feature = "cordl_class_NoUserAgeWarningViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::NoUserAgeWarningViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoUserAgeWarningViewController")]
+#[cfg(feature = "cordl_class_NoUserAgeWarningViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoUserAgeWarningViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -207,7 +207,7 @@ impl crate::GlobalNamespace::NoUserAgeWarningViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoUserAgeWarningViewController")]
+#[cfg(feature = "cordl_class_NoUserAgeWarningViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoUserAgeWarningViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

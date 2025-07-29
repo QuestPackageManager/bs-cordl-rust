@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StringFacetsChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringFacetsChecker {
     __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
 }
-#[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StringFacetsChecker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::StringFacetsChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::StringFacetsChecker {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StringFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::StringFacetsChecker {
     type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StringFacetsChecker")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::StringFacetsChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -327,7 +327,7 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StringFacetsChecker")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::StringFacetsChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

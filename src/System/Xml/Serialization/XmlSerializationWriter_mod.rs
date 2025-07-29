@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationWriter {
@@ -16,7 +16,7 @@ pub struct XmlSerializationWriter {
         crate::System::Collections::Hashtable,
     >,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::System::Xml::Serialization::XmlSerializationWriter {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlSerializationWriter {
     type Target = crate::System::Xml::Serialization::XmlSerializationGeneratedCode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter")]
 impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlSerializationWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1777,7 +1777,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1787,7 +1787,9 @@ for crate::System::Xml::Serialization::XmlSerializationWriter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationWriter_WriteCallbackInfo {
@@ -1799,7 +1801,9 @@ pub struct XmlSerializationWriter_WriteCallbackInfo {
         crate::System::Xml::Serialization::XmlSerializationWriteCallback,
     >,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1819,7 +1823,9 @@ for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo 
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo"
+)]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1827,7 +1833,9 @@ for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo"
+)]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1865,7 +1873,9 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

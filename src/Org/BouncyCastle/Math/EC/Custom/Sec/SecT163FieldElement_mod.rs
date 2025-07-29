@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecT163FieldElement {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -983,7 +983,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

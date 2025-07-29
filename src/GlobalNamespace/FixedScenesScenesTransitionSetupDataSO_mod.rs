@@ -1,4 +1,4 @@
-#[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_FixedScenesScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedScenesScenesTransitionSetupDataSO {
@@ -9,7 +9,7 @@ pub struct FixedScenesScenesTransitionSetupDataSO {
         >,
     >,
 }
-#[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_FixedScenesScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_FixedScenesScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_FixedScenesScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_FixedScenesScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

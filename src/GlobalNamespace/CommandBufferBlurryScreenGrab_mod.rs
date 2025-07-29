@@ -1,4 +1,4 @@
-#[cfg(feature = "CommandBufferBlurryScreenGrab")]
+#[cfg(feature = "cordl_class_CommandBufferBlurryScreenGrab")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandBufferBlurryScreenGrab {
@@ -10,7 +10,7 @@ pub struct CommandBufferBlurryScreenGrab {
     pub _cameraEvent: crate::UnityEngine::Rendering::CameraEvent,
     pub _downsample: i32,
 }
-#[cfg(feature = "CommandBufferBlurryScreenGrab")]
+#[cfg(feature = "cordl_class_CommandBufferBlurryScreenGrab")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
         false
     }
 }
-#[cfg(feature = "CommandBufferBlurryScreenGrab")]
+#[cfg(feature = "cordl_class_CommandBufferBlurryScreenGrab")]
 impl std::ops::Deref for crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
     type Target = crate::GlobalNamespace::CommandBufferGOCore;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CommandBufferBlurryScreenGrab")]
+#[cfg(feature = "cordl_class_CommandBufferBlurryScreenGrab")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -171,7 +171,7 @@ impl crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CommandBufferBlurryScreenGrab")]
+#[cfg(feature = "cordl_class_CommandBufferBlurryScreenGrab")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

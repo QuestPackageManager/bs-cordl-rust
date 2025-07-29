@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsafeUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
 impl std::ops::Deref for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
 impl std::ops::DerefMut for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1065,7 +1065,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1075,7 +1075,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnsafeUtility_AlignOfHelper_1<T: quest_hook::libil2cpp::Type> {
@@ -1083,7 +1085,9 @@ pub struct UnsafeUtility_AlignOfHelper_1<T: quest_hook::libil2cpp::Type> {
     pub data: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T> {
     type Held<'a> = Self;
@@ -1129,7 +1133,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T> {
     type Type = Self;
@@ -1140,7 +1146,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T> {
     type Actual = Self;
@@ -1154,7 +1162,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T
         self
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T> {
     type Type = Self;
@@ -1169,7 +1179,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T
         }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T> {
     type Actual = Self;
@@ -1183,7 +1195,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T
         actual
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T> {
     type Type = Self;
@@ -1198,13 +1212,17 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T> {}
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnsafeUtility_TypeFlagsCache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<T> {
     type Held<'a> = Self;
@@ -1250,7 +1268,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<T> {
     type Type = Self;
@@ -1261,7 +1281,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<T> {
     type Actual = Self;
@@ -1275,7 +1297,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
         self
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<T> {
     type Type = Self;
@@ -1290,7 +1314,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
         }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<T> {
     type Actual = Self;
@@ -1304,7 +1330,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
         actual
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<T> {
     type Type = Self;

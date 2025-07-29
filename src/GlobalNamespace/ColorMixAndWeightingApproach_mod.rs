@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorMixAndWeightingApproach")]
+#[cfg(feature = "cordl_class_ColorMixAndWeightingApproach")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorMixAndWeightingApproach {
@@ -6,7 +6,7 @@ pub enum ColorMixAndWeightingApproach {
     FractionAndSum = 1i32,
     Maximum = 0i32,
 }
-#[cfg(feature = "ColorMixAndWeightingApproach")]
+#[cfg(feature = "cordl_class_ColorMixAndWeightingApproach")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorMixAndWeightingApproach {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::ColorMixAndWeightingApproach {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ColorMixAndWeightingApproach")]
+#[cfg(feature = "cordl_class_ColorMixAndWeightingApproach")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorMixAndWeightingApproach {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::ColorMixAndWeightingApproach {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ColorMixAndWeightingApproach")]
+#[cfg(feature = "cordl_class_ColorMixAndWeightingApproach")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorMixAndWeightingApproach {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::ColorMixAndWeightingApproach {
         self
     }
 }
-#[cfg(feature = "ColorMixAndWeightingApproach")]
+#[cfg(feature = "cordl_class_ColorMixAndWeightingApproach")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorMixAndWeightingApproach {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::ColorMixAndWeightingApproach {
         }
     }
 }
-#[cfg(feature = "ColorMixAndWeightingApproach")]
+#[cfg(feature = "cordl_class_ColorMixAndWeightingApproach")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorMixAndWeightingApproach {
     type Actual = Self;

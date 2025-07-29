@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSceneModelLoader")]
+#[cfg(feature = "cordl_class_OVRSceneModelLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneModelLoader {
@@ -8,7 +8,7 @@ pub struct OVRSceneModelLoader {
     >,
     pub _sceneCaptureRequested: bool,
 }
-#[cfg(feature = "OVRSceneModelLoader")]
+#[cfg(feature = "cordl_class_OVRSceneModelLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneModelLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneMode
         false
     }
 }
-#[cfg(feature = "OVRSceneModelLoader")]
+#[cfg(feature = "cordl_class_OVRSceneModelLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneModelLoader {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSceneModelLoader")]
+#[cfg(feature = "cordl_class_OVRSceneModelLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneModelLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -350,7 +350,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSceneModelLoader")]
+#[cfg(feature = "cordl_class_OVRSceneModelLoader")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneModelLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

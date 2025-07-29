@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+InputSkeletalActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputSkeletalActionData_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputSkeletalActionData_t {
@@ -6,7 +6,7 @@ pub struct InputSkeletalActionData_t {
     pub activeOrigin: u64,
     pub boneCount: u32,
 }
-#[cfg(feature = "OVR+OpenVR+InputSkeletalActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputSkeletalActionData_t")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::InputSkeletalActionData_t {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::OVR::OpenVR::InputSkeletalActionData_t {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputSkeletalActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputSkeletalActionData_t")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::InputSkeletalActionData_t {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::OVR::OpenVR::InputSkeletalActionData_t {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputSkeletalActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputSkeletalActionData_t")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::InputSkeletalActionData_t {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::OVR::OpenVR::InputSkeletalActionData_t {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputSkeletalActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputSkeletalActionData_t")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::InputSkeletalActionData_t {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::OVR::OpenVR::InputSkeletalActionData_t {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputSkeletalActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputSkeletalActionData_t")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::InputSkeletalActionData_t {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::OVR::OpenVR::InputSkeletalActionData_t {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputSkeletalActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputSkeletalActionData_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::InputSkeletalActionData_t {
     type Type = Self;

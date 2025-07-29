@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DllImportAttribute {
@@ -13,7 +13,7 @@ pub struct DllImportAttribute {
     pub BestFitMapping: bool,
     pub ThrowOnUnmappableChar: bool,
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::DllImportAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::System::Runtime::InteropServices::DllImportAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportAttribute")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::DllImportAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportAttribute")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::DllImportAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -259,7 +259,7 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+DllImportAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::DllImportAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

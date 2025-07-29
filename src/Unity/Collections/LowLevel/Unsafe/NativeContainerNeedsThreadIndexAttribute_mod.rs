@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NativeContainerNeedsThreadIndexAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndexAttribute {
@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndex
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndexAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndex
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndexAttribute {
@@ -52,7 +52,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndex
 )]
 impl crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndexAttribute {}
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndexAttribute {

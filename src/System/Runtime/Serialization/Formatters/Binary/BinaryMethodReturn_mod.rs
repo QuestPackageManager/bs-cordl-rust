@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryMethodReturn {
@@ -19,7 +21,9 @@ pub struct BinaryMethodReturn {
     pub messageEnum: crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,
     pub returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodReturn {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,7 +43,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodRetur
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodReturn {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -47,7 +53,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodRetur
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodReturn {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -136,7 +144,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodRetu
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodReturn {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

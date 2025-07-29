@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+XR+Eyes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Eyes")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Eyes {
     pub m_DeviceId: u64,
     pub m_FeatureIndex: u32,
 }
-#[cfg(feature = "UnityEngine+XR+Eyes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Eyes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::Eyes {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::Eyes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+Eyes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Eyes")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::XR::Eyes {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::XR::Eyes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+Eyes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Eyes")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::XR::Eyes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::XR::Eyes {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+Eyes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Eyes")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::XR::Eyes {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::XR::Eyes {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+Eyes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Eyes")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::XR::Eyes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::XR::Eyes {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+XR+Eyes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Eyes")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::XR::Eyes {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpOnePassSignature {
@@ -10,7 +10,7 @@ pub struct PgpOnePassSignature {
     pub sig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     pub lastb: u8,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -498,7 +498,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignature {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

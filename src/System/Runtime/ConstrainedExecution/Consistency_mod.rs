@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Consistency")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Consistency {
@@ -8,7 +8,7 @@ pub enum Consistency {
     MayCorruptProcess = 0i32,
     WillNotCorruptState = 3i32,
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Runtime::ConstrainedExecution::Consistency {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Runtime::ConstrainedExecution::Consistency {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Runtime::ConstrainedExecution::Consistency {
         self
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Runtime::ConstrainedExecution::Consistency {
         }
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Actual = Self;

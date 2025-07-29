@@ -1,4 +1,4 @@
-#[cfg(feature = "MockPlayerMovementType")]
+#[cfg(feature = "cordl_class_MockPlayerMovementType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MockPlayerMovementType {
@@ -7,7 +7,7 @@ pub enum MockPlayerMovementType {
     MirrorPlayer = 1i32,
     Recording = 2i32,
 }
-#[cfg(feature = "MockPlayerMovementType")]
+#[cfg(feature = "cordl_class_MockPlayerMovementType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockPlayerMovementType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::MockPlayerMovementType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MockPlayerMovementType")]
+#[cfg(feature = "cordl_class_MockPlayerMovementType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MockPlayerMovementType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::MockPlayerMovementType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MockPlayerMovementType")]
+#[cfg(feature = "cordl_class_MockPlayerMovementType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MockPlayerMovementType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::MockPlayerMovementType {
         self
     }
 }
-#[cfg(feature = "MockPlayerMovementType")]
+#[cfg(feature = "cordl_class_MockPlayerMovementType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MockPlayerMovementType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::MockPlayerMovementType {
         }
     }
 }
-#[cfg(feature = "MockPlayerMovementType")]
+#[cfg(feature = "cordl_class_MockPlayerMovementType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MockPlayerMovementType {
     type Actual = Self;

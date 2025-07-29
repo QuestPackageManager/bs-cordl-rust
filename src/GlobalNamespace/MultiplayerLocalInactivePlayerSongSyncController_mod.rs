@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerSongSyncController {
@@ -30,7 +30,7 @@ pub struct MultiplayerLocalInactivePlayerSongSyncController {
     >,
     pub _lastLatencyOffsetTime: i64,
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -434,7 +434,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -458,7 +458,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerSongSyncController_InitData {
@@ -468,7 +468,7 @@ pub struct MultiplayerLocalInactivePlayerSongSyncController_InitData {
     pub songTimeOffset: f32,
     pub timeScale: f32,
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -488,7 +488,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_Ini
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -496,7 +496,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_Ini
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -559,7 +559,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_In
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

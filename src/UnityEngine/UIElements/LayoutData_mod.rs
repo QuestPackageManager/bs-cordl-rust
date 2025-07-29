@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+LayoutData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LayoutData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LayoutData {
@@ -36,7 +36,7 @@ pub struct LayoutData {
     pub top: crate::UnityEngine::UIElements::Length,
     pub width: crate::UnityEngine::UIElements::Length,
 }
-#[cfg(feature = "UnityEngine+UIElements+LayoutData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LayoutData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::LayoutData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -65,7 +65,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Layo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LayoutData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LayoutData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::LayoutData {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::LayoutData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LayoutData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LayoutData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::LayoutData {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::UIElements::LayoutData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LayoutData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LayoutData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::LayoutData {
     type Type = Self;
@@ -105,7 +105,7 @@ for crate::UnityEngine::UIElements::LayoutData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LayoutData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LayoutData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::LayoutData {
     type Actual = Self;
@@ -119,7 +119,7 @@ for crate::UnityEngine::UIElements::LayoutData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LayoutData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LayoutData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::LayoutData {
     type Type = Self;

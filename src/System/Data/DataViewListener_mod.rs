@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataViewListener")]
+#[cfg(feature = "cordl_class_System+Data+DataViewListener")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataViewListener {
@@ -8,7 +8,7 @@ pub struct DataViewListener {
     pub _index: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     pub _objectID: i32,
 }
-#[cfg(feature = "System+Data+DataViewListener")]
+#[cfg(feature = "cordl_class_System+Data+DataViewListener")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataViewListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataViewListene
         false
     }
 }
-#[cfg(feature = "System+Data+DataViewListener")]
+#[cfg(feature = "cordl_class_System+Data+DataViewListener")]
 impl std::ops::Deref for crate::System::Data::DataViewListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataViewListener")]
+#[cfg(feature = "cordl_class_System+Data+DataViewListener")]
 impl std::ops::DerefMut for crate::System::Data::DataViewListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -426,7 +426,7 @@ impl crate::System::Data::DataViewListener {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataViewListener")]
+#[cfg(feature = "cordl_class_System+Data+DataViewListener")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataViewListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

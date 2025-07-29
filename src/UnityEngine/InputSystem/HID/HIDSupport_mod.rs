@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HIDSupport {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::HID::HIDSupport {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::HID::HIDSupport {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HIDSupport {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDSupport {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::HID::HIDSupport {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -133,14 +133,14 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HIDSupport_HIDPageUsage {
     pub page: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
     pub usage: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Held<'a> = Self;
@@ -170,7 +170,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Type = Self;
@@ -181,7 +181,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Actual = Self;
@@ -195,7 +195,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Type = Self;
@@ -210,7 +210,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Actual = Self;
@@ -224,7 +224,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Type = Self;

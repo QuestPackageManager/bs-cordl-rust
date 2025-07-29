@@ -1,11 +1,11 @@
-#[cfg(feature = "GetXPlatformAccessTokenResponse")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenResponse")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GetXPlatformAccessTokenResponse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "GetXPlatformAccessTokenResponse")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenResponse")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GetXPlatformAccessTokenResponse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::GetXPlatformAccessTokenResponse {
         false
     }
 }
-#[cfg(feature = "GetXPlatformAccessTokenResponse")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenResponse")]
 impl std::ops::Deref for crate::GlobalNamespace::GetXPlatformAccessTokenResponse {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GetXPlatformAccessTokenResponse")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenResponse")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GetXPlatformAccessTokenResponse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::GetXPlatformAccessTokenResponse {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GetXPlatformAccessTokenResponse")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenResponse")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GetXPlatformAccessTokenResponse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

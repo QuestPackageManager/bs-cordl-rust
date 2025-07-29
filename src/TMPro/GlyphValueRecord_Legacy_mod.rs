@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+GlyphValueRecord_Legacy")]
+#[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphValueRecord_Legacy {
@@ -7,7 +7,7 @@ pub struct GlyphValueRecord_Legacy {
     pub xAdvance: f32,
     pub yAdvance: f32,
 }
-#[cfg(feature = "TMPro+GlyphValueRecord_Legacy")]
+#[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::GlyphValueRecord_Legacy {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::GlyphValueRecord_Legac
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+GlyphValueRecord_Legacy")]
+#[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::GlyphValueRecord_Legacy {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::GlyphValueRecord_L
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+GlyphValueRecord_Legacy")]
+#[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::GlyphValueRecord_Legacy {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::GlyphValueRecord_
         self
     }
 }
-#[cfg(feature = "TMPro+GlyphValueRecord_Legacy")]
+#[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::GlyphValueRecord_Legacy {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::GlyphValueRecord_L
         }
     }
 }
-#[cfg(feature = "TMPro+GlyphValueRecord_Legacy")]
+#[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::GlyphValueRecord_Legacy {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::GlyphValueRecord_Leg
         actual
     }
 }
-#[cfg(feature = "TMPro+GlyphValueRecord_Legacy")]
+#[cfg(feature = "cordl_class_TMPro+GlyphValueRecord_Legacy")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::TMPro::GlyphValueRecord_Legacy {
     type Type = Self;

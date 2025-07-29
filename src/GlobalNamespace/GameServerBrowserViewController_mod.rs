@@ -1,4 +1,4 @@
-#[cfg(feature = "GameServerBrowserViewController")]
+#[cfg(feature = "cordl_class_GameServerBrowserViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerBrowserViewController {
@@ -18,7 +18,7 @@ pub struct GameServerBrowserViewController {
         crate::GlobalNamespace::LoadingControl,
     >,
 }
-#[cfg(feature = "GameServerBrowserViewController")]
+#[cfg(feature = "cordl_class_GameServerBrowserViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServerBrowserViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::GameServerBrowserViewController {
         false
     }
 }
-#[cfg(feature = "GameServerBrowserViewController")]
+#[cfg(feature = "cordl_class_GameServerBrowserViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerBrowserViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServerBrowserViewController")]
+#[cfg(feature = "cordl_class_GameServerBrowserViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServerBrowserViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::GameServerBrowserViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServerBrowserViewController")]
+#[cfg(feature = "cordl_class_GameServerBrowserViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServerBrowserViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

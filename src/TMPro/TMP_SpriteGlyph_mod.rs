@@ -1,11 +1,11 @@
-#[cfg(feature = "TMPro+TMP_SpriteGlyph")]
+#[cfg(feature = "cordl_class_TMPro+TMP_SpriteGlyph")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_SpriteGlyph {
     __cordl_parent: crate::UnityEngine::TextCore::Glyph,
     pub sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
-#[cfg(feature = "TMPro+TMP_SpriteGlyph")]
+#[cfg(feature = "cordl_class_TMPro+TMP_SpriteGlyph")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_SpriteGlyph {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_SpriteGlyph {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_SpriteGlyph")]
+#[cfg(feature = "cordl_class_TMPro+TMP_SpriteGlyph")]
 impl std::ops::Deref for crate::TMPro::TMP_SpriteGlyph {
     type Target = crate::UnityEngine::TextCore::Glyph;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_SpriteGlyph")]
+#[cfg(feature = "cordl_class_TMPro+TMP_SpriteGlyph")]
 impl std::ops::DerefMut for crate::TMPro::TMP_SpriteGlyph {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -177,7 +177,7 @@ impl crate::TMPro::TMP_SpriteGlyph {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_SpriteGlyph")]
+#[cfg(feature = "cordl_class_TMPro+TMP_SpriteGlyph")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_SpriteGlyph {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

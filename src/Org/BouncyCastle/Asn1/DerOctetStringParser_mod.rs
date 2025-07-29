@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerOctetStringParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerOctetStringParser {
@@ -7,7 +7,7 @@ pub struct DerOctetStringParser {
         crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerOctetStringParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerOctetStringParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerOctetStringParser")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -140,7 +140,7 @@ impl crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerOctetStringParser")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::DerOctetStringParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

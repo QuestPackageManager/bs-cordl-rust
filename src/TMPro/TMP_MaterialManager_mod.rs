@@ -1,10 +1,10 @@
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_MaterialManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_MaterialManager {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager")]
 impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -558,7 +558,7 @@ impl crate::TMPro::TMP_MaterialManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -567,7 +567,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+FallbackMaterial")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager_FallbackMaterial {
@@ -578,7 +578,7 @@ pub struct TMP_MaterialManager_FallbackMaterial {
     pub fallbackMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub count: i32,
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+FallbackMaterial")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -598,14 +598,14 @@ for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -642,7 +642,7 @@ impl crate::TMPro::TMP_MaterialManager_FallbackMaterial {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -652,7 +652,7 @@ for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+MaskingMaterial")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager_MaskingMaterial {
@@ -662,7 +662,7 @@ pub struct TMP_MaterialManager_MaskingMaterial {
     pub count: i32,
     pub stencilID: i32,
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+MaskingMaterial")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -682,14 +682,14 @@ for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -726,7 +726,7 @@ impl crate::TMPro::TMP_MaterialManager_MaskingMaterial {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
+#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

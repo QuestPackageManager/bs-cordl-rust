@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PartData {
@@ -34,7 +34,7 @@ pub struct HEU_PartData {
     >,
     pub _volumeLayerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_PartData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_PartD
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PartData {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PartData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2706,7 +2706,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_PartData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2743,7 +2743,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PartData_PartOutputType {
@@ -2754,7 +2754,7 @@ pub enum HEU_PartData_PartOutputType {
     NONE = 0i32,
     VOLUME = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Held<'a> = Self;
@@ -2784,7 +2784,7 @@ for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Type = Self;
@@ -2795,7 +2795,7 @@ for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Actual = Self;
@@ -2809,7 +2809,7 @@ for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Type = Self;
@@ -2824,7 +2824,7 @@ for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Actual = Self;

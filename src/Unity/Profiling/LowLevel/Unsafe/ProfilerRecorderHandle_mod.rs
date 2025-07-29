@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProfilerRecorderHandle {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
         self
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
         }
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
         actual
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     type Type = Self;

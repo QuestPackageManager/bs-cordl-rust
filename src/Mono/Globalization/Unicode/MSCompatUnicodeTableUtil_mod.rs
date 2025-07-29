@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MSCompatUnicodeTableUtil {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::MSCompatUnicodeTableUtil {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Mono::Globalization::Unicode::MSCompatUnicodeTableUtil {
         false
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::MSCompatUnicodeTableUtil {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
 impl std::ops::DerefMut
 for crate::Mono::Globalization::Unicode::MSCompatUnicodeTableUtil {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -40,7 +40,7 @@ for crate::Mono::Globalization::Unicode::MSCompatUnicodeTableUtil {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
 impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTableUtil {}
-#[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+MSCompatUnicodeTableUtil")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Globalization::Unicode::MSCompatUnicodeTableUtil {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

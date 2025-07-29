@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSelectionViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicSelectionViewController {
@@ -21,7 +21,7 @@ pub struct BeatmapCharacteristicSelectionViewController {
         crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
 }
-#[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSelectionViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
         false
     }
 }
-#[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSelectionViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     type Target = crate::HMUI::ViewController;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSelectionViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -313,7 +313,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSelectionViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

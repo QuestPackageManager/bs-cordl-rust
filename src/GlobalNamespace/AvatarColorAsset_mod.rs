@@ -1,4 +1,4 @@
-#[cfg(feature = "AvatarColorAsset")]
+#[cfg(feature = "cordl_class_AvatarColorAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarColorAsset {
@@ -7,7 +7,7 @@ pub struct AvatarColorAsset {
         crate::GlobalNamespace::AvatarColorBehaviour,
     >,
 }
-#[cfg(feature = "AvatarColorAsset")]
+#[cfg(feature = "cordl_class_AvatarColorAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AvatarColorAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AvatarColorA
         false
     }
 }
-#[cfg(feature = "AvatarColorAsset")]
+#[cfg(feature = "cordl_class_AvatarColorAsset")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarColorAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AvatarColorAsset")]
+#[cfg(feature = "cordl_class_AvatarColorAsset")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AvatarColorAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::AvatarColorAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AvatarColorAsset")]
+#[cfg(feature = "cordl_class_AvatarColorAsset")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AvatarColorAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

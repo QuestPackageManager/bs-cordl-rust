@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_VolumeCache {
@@ -27,7 +27,7 @@ pub struct HEU_VolumeCache {
         crate::HoudiniEngineUnity::HEU_DetailProperties,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeCache")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_VolumeCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -46,14 +46,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Volum
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeCache")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_VolumeCache {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeCache")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_VolumeCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1142,7 +1142,7 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VolumeCache")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_VolumeCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

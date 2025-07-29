@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkipLocalsInitAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::CompilerServices::SkipLocalsInitAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Burst::CompilerServices::SkipLocalsInitAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
 impl std::ops::Deref for crate::Unity::Burst::CompilerServices::SkipLocalsInitAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Burst::CompilerServices::SkipLocalsInitAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -69,7 +69,7 @@ impl crate::Unity::Burst::CompilerServices::SkipLocalsInitAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+SkipLocalsInitAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::CompilerServices::SkipLocalsInitAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rect")]
+#[cfg(feature = "cordl_class_UnityEngine+Rect")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Rect {
@@ -7,7 +7,7 @@ pub struct Rect {
     pub m_Width: f32,
     pub m_Height: f32,
 }
-#[cfg(feature = "UnityEngine+Rect")]
+#[cfg(feature = "cordl_class_UnityEngine+Rect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rect {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rect {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rect")]
+#[cfg(feature = "cordl_class_UnityEngine+Rect")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rect {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rect {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rect")]
+#[cfg(feature = "cordl_class_UnityEngine+Rect")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rect {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rect {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rect")]
+#[cfg(feature = "cordl_class_UnityEngine+Rect")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rect {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rect {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rect")]
+#[cfg(feature = "cordl_class_UnityEngine+Rect")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rect {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rect {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rect")]
+#[cfg(feature = "cordl_class_UnityEngine+Rect")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Rect {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

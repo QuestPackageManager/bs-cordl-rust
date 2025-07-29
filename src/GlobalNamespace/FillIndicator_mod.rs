@@ -1,4 +1,4 @@
-#[cfg(feature = "FillIndicator")]
+#[cfg(feature = "cordl_class_FillIndicator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FillIndicator {
@@ -6,7 +6,7 @@ pub struct FillIndicator {
     pub _bgImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
-#[cfg(feature = "FillIndicator")]
+#[cfg(feature = "cordl_class_FillIndicator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FillIndicator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FillIndicato
         false
     }
 }
-#[cfg(feature = "FillIndicator")]
+#[cfg(feature = "cordl_class_FillIndicator")]
 impl std::ops::Deref for crate::GlobalNamespace::FillIndicator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FillIndicator")]
+#[cfg(feature = "cordl_class_FillIndicator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FillIndicator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::FillIndicator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FillIndicator")]
+#[cfg(feature = "cordl_class_FillIndicator")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FillIndicator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

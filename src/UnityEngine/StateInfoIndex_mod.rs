@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+StateInfoIndex")]
+#[cfg(feature = "cordl_class_UnityEngine+StateInfoIndex")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StateInfoIndex {
@@ -8,7 +8,7 @@ pub enum StateInfoIndex {
     InterruptedState = 3i32,
     NextState = 1i32,
 }
-#[cfg(feature = "UnityEngine+StateInfoIndex")]
+#[cfg(feature = "cordl_class_UnityEngine+StateInfoIndex")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::StateInfoIndex {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::StateInfoIndex {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+StateInfoIndex")]
+#[cfg(feature = "cordl_class_UnityEngine+StateInfoIndex")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::StateInfoIndex {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::StateInfoInd
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+StateInfoIndex")]
+#[cfg(feature = "cordl_class_UnityEngine+StateInfoIndex")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::StateInfoIndex {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::StateInfoIn
         self
     }
 }
-#[cfg(feature = "UnityEngine+StateInfoIndex")]
+#[cfg(feature = "cordl_class_UnityEngine+StateInfoIndex")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::StateInfoIndex {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::StateInfoInd
         }
     }
 }
-#[cfg(feature = "UnityEngine+StateInfoIndex")]
+#[cfg(feature = "cordl_class_UnityEngine+StateInfoIndex")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::StateInfoIndex {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicAtlas {
@@ -31,7 +31,7 @@ pub struct DynamicAtlas {
         crate::UnityEngine::UIElements::DynamicAtlasCustomFilter,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DynamicAtlas {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::UnityEngine::UIElements::DynamicAtlas {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas {
     type Target = crate::UnityEngine::UIElements::AtlasBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DynamicAtlas {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -570,7 +570,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlas {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::DynamicAtlas {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -579,7 +579,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Dynam
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicAtlas_TextureInfo {
@@ -595,7 +595,7 @@ pub struct DynamicAtlas_TextureInfo {
     pub alloc: crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
     pub rect: crate::UnityEngine::RectInt,
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -615,7 +615,7 @@ for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
@@ -626,7 +626,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas_TextureInf
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -721,7 +721,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

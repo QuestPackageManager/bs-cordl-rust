@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -19,7 +19,7 @@ pub struct AssetBundleRequestOptions {
     pub m_ClearOtherCachedVersionsWhenLoaded: bool,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
@@ -41,7 +41,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReques
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
@@ -51,7 +51,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReques
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
@@ -685,7 +685,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {

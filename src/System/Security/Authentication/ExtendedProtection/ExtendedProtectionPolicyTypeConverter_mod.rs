@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct ExtendedProtectionPolicyTypeConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicyTypeConverter {
@@ -29,7 +29,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtect
     }
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
 )]
 impl std::ops::Deref
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicyTypeConverter {
@@ -39,7 +39,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtect
     }
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicyTypeConverter {
@@ -162,7 +162,7 @@ impl crate::System::Security::Authentication::ExtendedProtection::ExtendedProtec
     }
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicyTypeConverter {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsNoCloseNotifyException {
     __cordl_parent: crate::System::IO::EndOfStreamException,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
     type Target = crate::System::IO::EndOfStreamException;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

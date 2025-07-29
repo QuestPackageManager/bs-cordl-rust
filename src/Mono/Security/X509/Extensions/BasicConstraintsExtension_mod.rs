@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+X509+Extensions+BasicConstraintsExtension")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicConstraintsExtension {
@@ -6,7 +6,7 @@ pub struct BasicConstraintsExtension {
     pub cA: bool,
     pub pathLenConstraint: i32,
 }
-#[cfg(feature = "Mono+Security+X509+Extensions+BasicConstraintsExtension")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
         false
     }
 }
-#[cfg(feature = "Mono+Security+X509+Extensions+BasicConstraintsExtension")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 impl std::ops::Deref
 for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
     type Target = crate::Mono::Security::X509::X509Extension;
@@ -34,7 +34,7 @@ for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+X509+Extensions+BasicConstraintsExtension")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 impl std::ops::DerefMut
 for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -167,7 +167,7 @@ impl crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+X509+Extensions+BasicConstraintsExtension")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

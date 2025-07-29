@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+Scale")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scale")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Scale {
     pub m_Scale: crate::UnityEngine::Vector3,
     pub m_IsNone: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+Scale")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scale")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Scale {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Scal
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scale")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scale")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::Scale {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scale")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scale")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::Scale {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements:
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scale")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scale")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::Scale {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scale")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scale")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Scale {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Sc
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scale")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scale")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::Scale {
     type Type = Self;

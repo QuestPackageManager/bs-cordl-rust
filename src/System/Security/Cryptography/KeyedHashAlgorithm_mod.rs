@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Security+Cryptography+KeyedHashAlgorithm")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+KeyedHashAlgorithm")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyedHashAlgorithm {
     __cordl_parent: crate::System::Security::Cryptography::HashAlgorithm,
     pub KeyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "System+Security+Cryptography+KeyedHashAlgorithm")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+KeyedHashAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::KeyedHashAlgorithm {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Security::Cryptography::KeyedHashAlgorithm {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+KeyedHashAlgorithm")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+KeyedHashAlgorithm")]
 impl std::ops::Deref for crate::System::Security::Cryptography::KeyedHashAlgorithm {
     type Target = crate::System::Security::Cryptography::HashAlgorithm;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+KeyedHashAlgorithm")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+KeyedHashAlgorithm")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::KeyedHashAlgorithm {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::System::Security::Cryptography::KeyedHashAlgorithm {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+KeyedHashAlgorithm")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+KeyedHashAlgorithm")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::KeyedHashAlgorithm {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

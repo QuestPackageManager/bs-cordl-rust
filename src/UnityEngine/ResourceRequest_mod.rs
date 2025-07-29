@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ResourceRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceRequest {
@@ -6,7 +6,7 @@ pub struct ResourceRequest {
     pub m_Path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "UnityEngine+ResourceRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceRequest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ResourceRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ResourceRequest 
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceRequest")]
 impl std::ops::Deref for crate::UnityEngine::ResourceRequest {
     type Target = crate::UnityEngine::AsyncOperation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceRequest")]
 impl std::ops::DerefMut for crate::UnityEngine::ResourceRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::UnityEngine::ResourceRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceRequest")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ResourceRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

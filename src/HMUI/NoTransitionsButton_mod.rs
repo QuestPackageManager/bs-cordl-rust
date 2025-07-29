@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+NoTransitionsButton")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoTransitionsButton {
@@ -8,7 +8,7 @@ pub struct NoTransitionsButton {
     >,
     pub _selectionState: crate::HMUI::NoTransitionsButton_SelectionState,
 }
-#[cfg(feature = "HMUI+NoTransitionsButton")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NoTransitionsButton {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NoTransitionsButton {
         false
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsButton")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton")]
 impl std::ops::Deref for crate::HMUI::NoTransitionsButton {
     type Target = crate::UnityEngine::UI::Button;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsButton")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton")]
 impl std::ops::DerefMut for crate::HMUI::NoTransitionsButton {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::HMUI::NoTransitionsButton {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsButton")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NoTransitionsButton {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -198,7 +198,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NoTransitionsButton {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton+SelectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoTransitionsButton_SelectionState {
@@ -208,7 +208,7 @@ pub enum NoTransitionsButton_SelectionState {
     Normal = 0i32,
     Pressed = 2i32,
 }
-#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Held<'a> = Self;
@@ -238,7 +238,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Type = Self;
@@ -249,7 +249,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Actual = Self;
@@ -263,7 +263,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
         self
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Type = Self;
@@ -278,7 +278,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
         }
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Actual = Self;

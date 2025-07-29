@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+LateTickablesTaskUpdater")]
+#[cfg(feature = "cordl_class_Zenject+LateTickablesTaskUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LateTickablesTaskUpdater {
@@ -6,7 +6,7 @@ pub struct LateTickablesTaskUpdater {
         quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
     >,
 }
-#[cfg(feature = "Zenject+LateTickablesTaskUpdater")]
+#[cfg(feature = "cordl_class_Zenject+LateTickablesTaskUpdater")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::LateTickablesTaskUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::LateTickablesTaskUpd
         false
     }
 }
-#[cfg(feature = "Zenject+LateTickablesTaskUpdater")]
+#[cfg(feature = "cordl_class_Zenject+LateTickablesTaskUpdater")]
 impl std::ops::Deref for crate::Zenject::LateTickablesTaskUpdater {
     type Target = crate::Zenject::TaskUpdater_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::Zenject::LateTickablesTaskUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+LateTickablesTaskUpdater")]
+#[cfg(feature = "cordl_class_Zenject+LateTickablesTaskUpdater")]
 impl std::ops::DerefMut for crate::Zenject::LateTickablesTaskUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::Zenject::LateTickablesTaskUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+LateTickablesTaskUpdater")]
+#[cfg(feature = "cordl_class_Zenject+LateTickablesTaskUpdater")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::LateTickablesTaskUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

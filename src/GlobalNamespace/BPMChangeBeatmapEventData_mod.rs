@@ -1,11 +1,11 @@
-#[cfg(feature = "BPMChangeBeatmapEventData")]
+#[cfg(feature = "cordl_class_BPMChangeBeatmapEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BPMChangeBeatmapEventData {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub bpm: f32,
 }
-#[cfg(feature = "BPMChangeBeatmapEventData")]
+#[cfg(feature = "cordl_class_BPMChangeBeatmapEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BPMChangeBeatmapEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::BPMChangeBeatmapEventData {
         false
     }
 }
-#[cfg(feature = "BPMChangeBeatmapEventData")]
+#[cfg(feature = "cordl_class_BPMChangeBeatmapEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::BPMChangeBeatmapEventData {
     type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BPMChangeBeatmapEventData")]
+#[cfg(feature = "cordl_class_BPMChangeBeatmapEventData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BPMChangeBeatmapEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::BPMChangeBeatmapEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BPMChangeBeatmapEventData")]
+#[cfg(feature = "cordl_class_BPMChangeBeatmapEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BPMChangeBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
+#[cfg(feature = "cordl_class_BGNet+Core+DefaultTaskUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTaskUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
+#[cfg(feature = "cordl_class_BGNet+Core+DefaultTaskUtility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Core::DefaultTaskUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Core::DefaultTaskUtili
         false
     }
 }
-#[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
+#[cfg(feature = "cordl_class_BGNet+Core+DefaultTaskUtility")]
 impl std::ops::Deref for crate::BGNet::Core::DefaultTaskUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
+#[cfg(feature = "cordl_class_BGNet+Core+DefaultTaskUtility")]
 impl std::ops::DerefMut for crate::BGNet::Core::DefaultTaskUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -361,7 +361,7 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
+#[cfg(feature = "cordl_class_BGNet+Core+DefaultTaskUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Core::DefaultTaskUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
 #[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MarkerFlags {
@@ -13,7 +13,7 @@ pub enum MarkerFlags {
     ScriptInvoke = 32u16,
     Warning = 16u16,
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
         self
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
         }
     }
 }
-#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
+#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithAppDownloadProgressResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAppDownloadProgressResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithAppDownloadProgressResult {
@@ -8,7 +8,7 @@ pub struct MessageWithAppDownloadProgressResult {
         >,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAppDownloadProgressResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAppDownloadProgressResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAppDownloadProgressResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAppDownloadProgressResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithAppDownloadProgress
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAppDownloadProgressResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAppDownloadProgressResult")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -147,7 +147,7 @@ impl crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAppDownloadProgressResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAppDownloadProgressResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

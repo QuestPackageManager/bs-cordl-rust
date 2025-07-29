@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MCMDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MCMDictionary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MCMDictionary {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::MessageDictionary,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MCMDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MCMDictionary")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::MCMDictionary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::Messaging::MCMDictionary {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MCMDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MCMDictionary")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::MCMDictionary {
     type Target = crate::System::Runtime::Remoting::Messaging::MessageDictionary;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MCMDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MCMDictionary")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::MCMDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -81,7 +81,7 @@ impl crate::System::Runtime::Remoting::Messaging::MCMDictionary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MCMDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MCMDictionary")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::MCMDictionary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

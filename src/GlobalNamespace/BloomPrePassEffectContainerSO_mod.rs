@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassEffectContainerSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectContainerSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassEffectContainerSO {
@@ -7,7 +7,7 @@ pub struct BloomPrePassEffectContainerSO {
         crate::GlobalNamespace::BloomPrePassEffectSO,
     >,
 }
-#[cfg(feature = "BloomPrePassEffectContainerSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectContainerSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassEffectContainerSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BloomPrePassEffectContainerSO {
         false
     }
 }
-#[cfg(feature = "BloomPrePassEffectContainerSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectContainerSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassEffectContainerSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassEffectContainerSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectContainerSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassEffectContainerSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::GlobalNamespace::BloomPrePassEffectContainerSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassEffectContainerSO")]
+#[cfg(feature = "cordl_class_BloomPrePassEffectContainerSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassEffectContainerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

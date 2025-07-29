@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayByRefUpdater {
@@ -6,7 +6,7 @@ pub struct ArrayByRefUpdater {
     pub _array: crate::System::Linq::Expressions::Interpreter::LocalDefinition,
     pub _index: crate::System::Linq::Expressions::Interpreter::LocalDefinition,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::ArrayByRefUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::System::Linq::Expressions::Interpreter::ArrayByRefUpdater {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::ArrayByRefUpdater {
     type Target = crate::System::Linq::Expressions::Interpreter::ByRefUpdater;
@@ -34,7 +34,7 @@ for crate::System::Linq::Expressions::Interpreter::ArrayByRefUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::ArrayByRefUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -161,7 +161,7 @@ impl crate::System::Linq::Expressions::Interpreter::ArrayByRefUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ArrayByRefUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

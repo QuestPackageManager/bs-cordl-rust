@@ -1,10 +1,10 @@
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
+#[cfg(feature = "cordl_class_ISonyOnlineServicesAvailabilityModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISonyOnlineServicesAvailabilityModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
+#[cfg(feature = "cordl_class_ISonyOnlineServicesAvailabilityModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
         false
     }
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
+#[cfg(feature = "cordl_class_ISonyOnlineServicesAvailabilityModel")]
 impl std::ops::Deref for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
+#[cfg(feature = "cordl_class_ISonyOnlineServicesAvailabilityModel")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -85,7 +85,7 @@ impl crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
+#[cfg(feature = "cordl_class_ISonyOnlineServicesAvailabilityModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -95,7 +95,9 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
+#[cfg(
+    feature = "cordl_class_ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
@@ -104,7 +106,9 @@ pub enum ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     Unavailable = 1i32,
     UnknownError = 2i32,
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
+#[cfg(
+    feature = "cordl_class_ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Held<'a> = Self;
@@ -134,7 +138,9 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesA
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
+#[cfg(
+    feature = "cordl_class_ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Type = Self;
@@ -145,7 +151,9 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesA
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
+#[cfg(
+    feature = "cordl_class_ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Actual = Self;
@@ -159,7 +167,9 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesA
         self
     }
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
+#[cfg(
+    feature = "cordl_class_ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Type = Self;
@@ -174,7 +184,9 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesA
         }
     }
 }
-#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
+#[cfg(
+    feature = "cordl_class_ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Actual = Self;

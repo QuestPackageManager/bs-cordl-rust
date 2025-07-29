@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle {
     __cordl_parent: crate::UnityEngine::UIElements::BaseBoolField,
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Toggle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Togg
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle {
     type Target = crate::UnityEngine::UIElements::BaseBoolField;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Toggle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::UnityEngine::UIElements::Toggle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Toggle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -161,7 +161,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Toggl
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_UxmlFactory {
@@ -170,7 +170,7 @@ pub struct Toggle_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -190,7 +190,7 @@ for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
@@ -200,7 +200,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -237,7 +237,7 @@ impl crate::UnityEngine::UIElements::Toggle_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -247,7 +247,7 @@ for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_UxmlTraits {
@@ -261,7 +261,7 @@ pub struct Toggle_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -281,7 +281,7 @@ for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
         bool,
@@ -293,7 +293,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -366,7 +366,7 @@ impl crate::UnityEngine::UIElements::Toggle_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

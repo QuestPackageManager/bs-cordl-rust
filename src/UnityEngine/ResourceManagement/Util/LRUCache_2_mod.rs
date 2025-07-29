@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LRUCache_2<
@@ -18,7 +18,7 @@ pub struct LRUCache_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -81,7 +81,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -98,7 +98,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -116,7 +116,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -133,7 +133,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2<TKey, TValue> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -248,7 +248,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LRUCache_2_Entry<
@@ -262,7 +262,7 @@ pub struct LRUCache_2_Entry<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -311,7 +311,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -325,7 +325,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -342,7 +342,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -360,7 +360,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -377,7 +377,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

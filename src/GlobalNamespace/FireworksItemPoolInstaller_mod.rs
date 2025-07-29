@@ -1,4 +1,4 @@
-#[cfg(feature = "FireworksItemPoolInstaller")]
+#[cfg(feature = "cordl_class_FireworksItemPoolInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworksItemPoolInstaller {
@@ -10,7 +10,7 @@ pub struct FireworksItemPoolInstaller {
         crate::GlobalNamespace::FireworkItemController,
     >,
 }
-#[cfg(feature = "FireworksItemPoolInstaller")]
+#[cfg(feature = "cordl_class_FireworksItemPoolInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FireworksItemPoolInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::FireworksItemPoolInstaller {
         false
     }
 }
-#[cfg(feature = "FireworksItemPoolInstaller")]
+#[cfg(feature = "cordl_class_FireworksItemPoolInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworksItemPoolInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FireworksItemPoolInstaller")]
+#[cfg(feature = "cordl_class_FireworksItemPoolInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FireworksItemPoolInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::FireworksItemPoolInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FireworksItemPoolInstaller")]
+#[cfg(feature = "cordl_class_FireworksItemPoolInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FireworksItemPoolInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

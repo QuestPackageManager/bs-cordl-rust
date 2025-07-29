@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CursorMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CursorMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CursorMode {
@@ -6,7 +6,7 @@ pub enum CursorMode {
     Auto = 0i32,
     ForceSoftware = 1i32,
 }
-#[cfg(feature = "UnityEngine+CursorMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CursorMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CursorMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CursorMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CursorMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CursorMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CursorMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CursorMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CursorMode 
         self
     }
 }
-#[cfg(feature = "UnityEngine+CursorMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CursorMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CursorMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+CursorMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CursorMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

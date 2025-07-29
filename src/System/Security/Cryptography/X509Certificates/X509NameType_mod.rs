@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509NameType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509NameType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509NameType {
@@ -10,7 +12,9 @@ pub enum X509NameType {
     UpnName = 2i32,
     UrlName = 5i32,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509NameType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509NameType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509NameType {
     type Held<'a> = Self;
@@ -40,7 +44,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509NameType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509NameType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509NameType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::X509NameType {
     type Type = Self;
@@ -51,7 +57,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509NameType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509NameType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509NameType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::X509NameType {
     type Actual = Self;
@@ -65,7 +73,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509NameType {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509NameType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509NameType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::X509NameType {
     type Type = Self;
@@ -80,7 +90,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509NameType {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509NameType")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509NameType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::X509NameType {
     type Actual = Self;

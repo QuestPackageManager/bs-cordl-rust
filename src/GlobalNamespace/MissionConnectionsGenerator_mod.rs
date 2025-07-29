@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionConnectionsGenerator")]
+#[cfg(feature = "cordl_class_MissionConnectionsGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionConnectionsGenerator {
@@ -16,7 +16,7 @@ pub struct MissionConnectionsGenerator {
         >,
     >,
 }
-#[cfg(feature = "MissionConnectionsGenerator")]
+#[cfg(feature = "cordl_class_MissionConnectionsGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionConnectionsGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::MissionConnectionsGenerator {
         false
     }
 }
-#[cfg(feature = "MissionConnectionsGenerator")]
+#[cfg(feature = "cordl_class_MissionConnectionsGenerator")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionConnectionsGenerator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionConnectionsGenerator")]
+#[cfg(feature = "cordl_class_MissionConnectionsGenerator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionConnectionsGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -242,7 +242,7 @@ impl crate::GlobalNamespace::MissionConnectionsGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionConnectionsGenerator")]
+#[cfg(feature = "cordl_class_MissionConnectionsGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionConnectionsGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

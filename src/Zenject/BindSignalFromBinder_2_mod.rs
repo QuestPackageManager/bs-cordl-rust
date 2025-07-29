@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+BindSignalFromBinder_2")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalFromBinder_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindSignalFromBinder_2<
@@ -20,7 +20,7 @@ pub struct BindSignalFromBinder_2<
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
     __cordl_phantom_TSignal: std::marker::PhantomData<TSignal>,
 }
-#[cfg(feature = "Zenject+BindSignalFromBinder_2")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalFromBinder_2")]
 unsafe impl<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ for crate::Zenject::BindSignalFromBinder_2<TObject, TSignal> {
         false
     }
 }
-#[cfg(feature = "Zenject+BindSignalFromBinder_2")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalFromBinder_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,
@@ -69,7 +69,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+BindSignalFromBinder_2")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalFromBinder_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,
@@ -431,7 +431,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+BindSignalFromBinder_2")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalFromBinder_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerAvatarAudioController {
@@ -8,7 +8,7 @@ pub struct MultiplayerAvatarAudioController {
         crate::GlobalNamespace::IConnectedPlayer,
     >,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 impl std::ops::DerefMut
 for crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -130,7 +130,7 @@ impl crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

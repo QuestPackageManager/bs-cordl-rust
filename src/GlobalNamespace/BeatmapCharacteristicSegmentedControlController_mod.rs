@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSegmentedControlController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicSegmentedControlController {
@@ -21,7 +21,7 @@ pub struct BeatmapCharacteristicSegmentedControlController {
         >,
     >,
 }
-#[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSegmentedControlController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
         false
     }
 }
-#[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSegmentedControlController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSegmentedControlController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -342,7 +342,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicSegmentedControlController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

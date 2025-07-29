@@ -1,4 +1,4 @@
-#[cfg(feature = "CampaignProgressModel")]
+#[cfg(feature = "cordl_class_CampaignProgressModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CampaignProgressModel {
@@ -15,7 +15,7 @@ pub struct CampaignProgressModel {
     pub _numberOfClearedMissionsDirty: bool,
     pub _numberOfClearedMissions: i32,
 }
-#[cfg(feature = "CampaignProgressModel")]
+#[cfg(feature = "cordl_class_CampaignProgressModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CampaignProgressModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::CampaignProgressModel {
         false
     }
 }
-#[cfg(feature = "CampaignProgressModel")]
+#[cfg(feature = "cordl_class_CampaignProgressModel")]
 impl std::ops::Deref for crate::GlobalNamespace::CampaignProgressModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CampaignProgressModel")]
+#[cfg(feature = "cordl_class_CampaignProgressModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CampaignProgressModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -350,7 +350,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CampaignProgressModel")]
+#[cfg(feature = "cordl_class_CampaignProgressModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CampaignProgressModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

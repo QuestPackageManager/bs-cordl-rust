@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithApplicationInviteList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithApplicationInviteList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithApplicationInviteList {
@@ -6,7 +6,7 @@ pub struct MessageWithApplicationInviteList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInviteList>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithApplicationInviteList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithApplicationInviteList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithApplicationInviteList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithApplicationInviteList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithApplicationInviteList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithApplicationInviteList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithApplicationInviteList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInviteList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithApplicationInviteLi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithApplicationInviteList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithApplicationInviteList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithApplicationInviteList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithApplicationInviteList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithApplicationInviteList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithApplicationInviteList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithApplicationInviteList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CollisionDetectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionDetectionMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollisionDetectionMode {
@@ -8,7 +8,7 @@ pub enum CollisionDetectionMode {
     ContinuousSpeculative = 3i32,
     Discrete = 0i32,
 }
-#[cfg(feature = "UnityEngine+CollisionDetectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionDetectionMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CollisionDetectionMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CollisionDetecti
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CollisionDetectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionDetectionMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::CollisionDetectionMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::CollisionDetectionMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CollisionDetectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionDetectionMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::CollisionDetectionMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::CollisionDetectionMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+CollisionDetectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionDetectionMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::CollisionDetectionMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::CollisionDetectionMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+CollisionDetectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionDetectionMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::CollisionDetectionMode {
     type Actual = Self;

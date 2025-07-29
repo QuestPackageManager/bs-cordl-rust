@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+CommandStream")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandStream {
@@ -23,7 +23,7 @@ pub struct CommandStream {
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub _decoder: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
 }
-#[cfg(feature = "System+Net+CommandStream")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CommandStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CommandStream {
         false
     }
 }
-#[cfg(feature = "System+Net+CommandStream")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream")]
 impl std::ops::Deref for crate::System::Net::CommandStream {
     type Target = crate::System::Net::NetworkStreamWrapper;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+CommandStream")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream")]
 impl std::ops::DerefMut for crate::System::Net::CommandStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -795,7 +795,7 @@ impl crate::System::Net::CommandStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+CommandStream")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CommandStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -804,7 +804,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CommandStream {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandStream_PipelineEntry {
@@ -812,7 +812,7 @@ pub struct CommandStream_PipelineEntry {
     pub Command: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Flags: crate::System::Net::CommandStream_PipelineEntryFlags,
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::CommandStream_PipelineEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -832,14 +832,14 @@ for crate::System::Net::CommandStream_PipelineEntry {
         false
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntry")]
 impl std::ops::Deref for crate::System::Net::CommandStream_PipelineEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntry")]
 impl std::ops::DerefMut for crate::System::Net::CommandStream_PipelineEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -951,7 +951,7 @@ impl crate::System::Net::CommandStream_PipelineEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::CommandStream_PipelineEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -961,7 +961,7 @@ for crate::System::Net::CommandStream_PipelineEntry {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntryFlags")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntryFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CommandStream_PipelineEntryFlags {
@@ -971,7 +971,7 @@ pub enum CommandStream_PipelineEntryFlags {
     GiveDataStream = 2i32,
     UserCommand = 1i32,
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntryFlags")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntryFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::CommandStream_PipelineEntryFlags {
     type Held<'a> = Self;
@@ -1001,7 +1001,7 @@ for crate::System::Net::CommandStream_PipelineEntryFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntryFlags")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntryFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::CommandStream_PipelineEntryFlags {
     type Type = Self;
@@ -1012,7 +1012,7 @@ for crate::System::Net::CommandStream_PipelineEntryFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntryFlags")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntryFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::CommandStream_PipelineEntryFlags {
     type Actual = Self;
@@ -1026,7 +1026,7 @@ for crate::System::Net::CommandStream_PipelineEntryFlags {
         self
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntryFlags")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntryFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::CommandStream_PipelineEntryFlags {
     type Type = Self;
@@ -1041,7 +1041,7 @@ for crate::System::Net::CommandStream_PipelineEntryFlags {
         }
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineEntryFlags")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineEntryFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::CommandStream_PipelineEntryFlags {
     type Actual = Self;
@@ -1055,7 +1055,7 @@ for crate::System::Net::CommandStream_PipelineEntryFlags {
         actual
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineInstruction")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineInstruction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CommandStream_PipelineInstruction {
@@ -1066,7 +1066,7 @@ pub enum CommandStream_PipelineInstruction {
     Pause = 2i32,
     Reread = 3i32,
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineInstruction")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineInstruction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::CommandStream_PipelineInstruction {
     type Held<'a> = Self;
@@ -1096,7 +1096,7 @@ for crate::System::Net::CommandStream_PipelineInstruction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineInstruction")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineInstruction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::CommandStream_PipelineInstruction {
     type Type = Self;
@@ -1107,7 +1107,7 @@ for crate::System::Net::CommandStream_PipelineInstruction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineInstruction")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineInstruction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::CommandStream_PipelineInstruction {
     type Actual = Self;
@@ -1121,7 +1121,7 @@ for crate::System::Net::CommandStream_PipelineInstruction {
         self
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineInstruction")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineInstruction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::CommandStream_PipelineInstruction {
     type Type = Self;
@@ -1136,7 +1136,7 @@ for crate::System::Net::CommandStream_PipelineInstruction {
         }
     }
 }
-#[cfg(feature = "System+Net+CommandStream+PipelineInstruction")]
+#[cfg(feature = "cordl_class_System+Net+CommandStream+PipelineInstruction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::CommandStream_PipelineInstruction {
     type Actual = Self;

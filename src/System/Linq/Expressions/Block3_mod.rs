@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Block3")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Block3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Block3 {
@@ -7,7 +7,7 @@ pub struct Block3 {
     pub _arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     pub _arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
-#[cfg(feature = "System+Linq+Expressions+Block3")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Block3")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Linq::Expressions::Block3 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Linq::Expressions::Bl
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Block3")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Block3")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Block3 {
     type Target = crate::System::Linq::Expressions::BlockExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Block3")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Block3")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::Block3 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -233,7 +233,7 @@ impl crate::System::Linq::Expressions::Block3 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Block3")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Block3")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::Block3 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

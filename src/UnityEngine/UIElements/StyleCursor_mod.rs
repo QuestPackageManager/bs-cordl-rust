@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleCursor")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleCursor {
     pub m_Value: crate::UnityEngine::UIElements::Cursor,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleCursor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::StyleCursor {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Styl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleCursor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleCursor {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::StyleCursor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleCursor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleCursor {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::StyleCursor {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleCursor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleCursor {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::UIElements::StyleCursor {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleCursor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleCursor {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::UIElements::StyleCursor {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleCursor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleCursor {
     type Type = Self;

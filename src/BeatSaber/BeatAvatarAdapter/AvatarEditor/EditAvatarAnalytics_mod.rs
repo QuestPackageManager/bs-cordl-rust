@@ -1,4 +1,6 @@
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EditAvatarAnalytics {
@@ -14,7 +16,9 @@ pub struct EditAvatarAnalytics {
     >,
     pub _lastEditMode: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,7 +38,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics"
+)]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -42,7 +48,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics"
+)]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -262,7 +270,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

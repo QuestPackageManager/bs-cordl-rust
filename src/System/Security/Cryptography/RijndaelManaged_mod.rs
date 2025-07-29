@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Security+Cryptography+RijndaelManaged")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManaged")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RijndaelManaged {
     __cordl_parent: crate::System::Security::Cryptography::Rijndael,
 }
-#[cfg(feature = "System+Security+Cryptography+RijndaelManaged")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManaged")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::RijndaelManaged {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Security::Cryptography::RijndaelManaged {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RijndaelManaged")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManaged")]
 impl std::ops::Deref for crate::System::Security::Cryptography::RijndaelManaged {
     type Target = crate::System::Security::Cryptography::Rijndael;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RijndaelManaged")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManaged")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::RijndaelManaged {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -246,7 +246,7 @@ impl crate::System::Security::Cryptography::RijndaelManaged {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RijndaelManaged")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManaged")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::RijndaelManaged {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

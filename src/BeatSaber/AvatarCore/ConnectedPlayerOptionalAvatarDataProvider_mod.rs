@@ -1,4 +1,6 @@
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerOptionalAvatarDataProvider {
@@ -16,7 +18,9 @@ pub struct ConnectedPlayerOptionalAvatarDataProvider {
         crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
     >,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,7 +40,9 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider"
+)]
 impl std::ops::Deref
 for crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -44,7 +50,9 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider"
+)]
 impl std::ops::DerefMut
 for crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -336,7 +344,9 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

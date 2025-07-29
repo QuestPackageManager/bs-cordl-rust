@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_HAPIConstants")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HAPIConstants")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_HAPIConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HAPIConstants")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HAPIConstants")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_HAPIConstants {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::HoudiniEngineUnity::HEU_HAPIConstants {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HAPIConstants")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HAPIConstants")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HAPIConstants {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HAPIConstants")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HAPIConstants")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_HAPIConstants {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -81,7 +81,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIConstants {
     pub const HAPI_UNGROUPED_GROUP_NAME: &'static str = "__ungrouped_group";
     pub const HAPI_UV_VECTOR_SIZE: i32 = 2i32;
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_HAPIConstants")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HAPIConstants")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_HAPIConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

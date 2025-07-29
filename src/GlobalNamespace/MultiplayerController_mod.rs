@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerController")]
+#[cfg(feature = "cordl_class_MultiplayerController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerController {
@@ -64,7 +64,7 @@ pub struct MultiplayerController {
         crate::UnityEngine::Coroutine,
     >,
 }
-#[cfg(feature = "MultiplayerController")]
+#[cfg(feature = "cordl_class_MultiplayerController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -84,14 +84,14 @@ for crate::GlobalNamespace::MultiplayerController {
         false
     }
 }
-#[cfg(feature = "MultiplayerController")]
+#[cfg(feature = "cordl_class_MultiplayerController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerController")]
+#[cfg(feature = "cordl_class_MultiplayerController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -885,7 +885,7 @@ impl crate::GlobalNamespace::MultiplayerController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerController")]
+#[cfg(feature = "cordl_class_MultiplayerController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -895,7 +895,7 @@ for crate::GlobalNamespace::MultiplayerController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerController+State")]
+#[cfg(feature = "cordl_class_MultiplayerController+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerController_State {
@@ -908,7 +908,7 @@ pub enum MultiplayerController_State {
     SongStartSync = 2i32,
     WaitingForPlayers = 1i32,
 }
-#[cfg(feature = "MultiplayerController+State")]
+#[cfg(feature = "cordl_class_MultiplayerController+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerController_State {
     type Held<'a> = Self;
@@ -938,7 +938,7 @@ for crate::GlobalNamespace::MultiplayerController_State {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerController+State")]
+#[cfg(feature = "cordl_class_MultiplayerController+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerController_State {
     type Type = Self;
@@ -949,7 +949,7 @@ for crate::GlobalNamespace::MultiplayerController_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerController+State")]
+#[cfg(feature = "cordl_class_MultiplayerController+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerController_State {
     type Actual = Self;
@@ -963,7 +963,7 @@ for crate::GlobalNamespace::MultiplayerController_State {
         self
     }
 }
-#[cfg(feature = "MultiplayerController+State")]
+#[cfg(feature = "cordl_class_MultiplayerController+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerController_State {
     type Type = Self;
@@ -978,7 +978,7 @@ for crate::GlobalNamespace::MultiplayerController_State {
         }
     }
 }
-#[cfg(feature = "MultiplayerController+State")]
+#[cfg(feature = "cordl_class_MultiplayerController+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerController_State {
     type Actual = Self;

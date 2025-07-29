@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultSignatureCalculator {
@@ -7,7 +9,9 @@ pub struct DefaultSignatureCalculator {
         crate::Org::BouncyCastle::Crypto::IO::SignerSink,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +41,9 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -136,7 +144,9 @@ impl crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

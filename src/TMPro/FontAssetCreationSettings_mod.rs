@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+FontAssetCreationSettings")]
+#[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FontAssetCreationSettings {
@@ -29,7 +29,7 @@ pub struct FontAssetCreationSettings {
     pub renderMode: i32,
     pub includeFontFeatures: bool,
 }
-#[cfg(feature = "TMPro+FontAssetCreationSettings")]
+#[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FontAssetCreationSettings {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FontAssetCreationSetti
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+FontAssetCreationSettings")]
+#[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FontAssetCreationSettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,7 +68,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FontAssetCreationS
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+FontAssetCreationSettings")]
+#[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::FontAssetCreationSettings {
     type Actual = Self;
@@ -82,7 +82,7 @@ for crate::TMPro::FontAssetCreationSettings {
         self
     }
 }
-#[cfg(feature = "TMPro+FontAssetCreationSettings")]
+#[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FontAssetCreationSettings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -96,7 +96,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FontAssetCreationS
         }
     }
 }
-#[cfg(feature = "TMPro+FontAssetCreationSettings")]
+#[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::FontAssetCreationSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -109,7 +109,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::FontAssetCreationSet
         actual
     }
 }
-#[cfg(feature = "TMPro+FontAssetCreationSettings")]
+#[cfg(feature = "cordl_class_TMPro+FontAssetCreationSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::TMPro::FontAssetCreationSettings {
     type Type = Self;

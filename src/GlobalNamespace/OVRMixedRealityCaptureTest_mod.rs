@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRMixedRealityCaptureTest")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMixedRealityCaptureTest {
@@ -8,7 +8,7 @@ pub struct OVRMixedRealityCaptureTest {
     pub defaultExternalCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub defaultFov: crate::GlobalNamespace::OVRPlugin_Fovf,
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
         false
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -162,7 +162,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureTest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -172,7 +172,7 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest+CameraMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRMixedRealityCaptureTest_CameraMode {
@@ -181,7 +181,7 @@ pub enum OVRMixedRealityCaptureTest_CameraMode {
     OverrideFov = 1i32,
     ThirdPerson = 2i32,
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest+CameraMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
     type Held<'a> = Self;
@@ -211,7 +211,7 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest+CameraMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
     type Type = Self;
@@ -222,7 +222,7 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest+CameraMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
     type Actual = Self;
@@ -236,7 +236,7 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
         self
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest+CameraMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
     type Type = Self;
@@ -251,7 +251,7 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
         }
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest+CameraMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode {
     type Actual = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "BeatmapDataCallback_1")]
+#[cfg(feature = "cordl_class_BeatmapDataCallback_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataCallback_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "BeatmapDataCallback_1")]
+#[cfg(feature = "cordl_class_BeatmapDataCallback_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDataCallback_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::BeatmapDataCallback_1<T> {
         false
     }
 }
-#[cfg(feature = "BeatmapDataCallback_1")]
+#[cfg(feature = "cordl_class_BeatmapDataCallback_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::BeatmapDataCallback_1<T> {
     type Target = crate::System::MulticastDelegate;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::BeatmapDataCallback_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataCallback_1")]
+#[cfg(feature = "cordl_class_BeatmapDataCallback_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapDataCallback_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -202,7 +202,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::BeatmapDataCallback
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataCallback_1")]
+#[cfg(feature = "cordl_class_BeatmapDataCallback_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDataCallback_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

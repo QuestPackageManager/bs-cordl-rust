@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Sphere")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Sphere")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Sphere {
@@ -7,7 +7,7 @@ pub struct Sphere {
     pub m_BottomMostVertexIndex: i32,
     pub m_Smooth: bool,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Sphere")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Sphere")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Shapes::Sphere {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::ProBuilder::Shapes::Sphere {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Sphere")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Sphere")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::Sphere {
     type Target = crate::UnityEngine::ProBuilder::Shapes::Shape;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Sphere")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Sphere")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::Sphere {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -213,7 +213,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::Sphere {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Sphere")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Sphere")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Shapes::Sphere {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

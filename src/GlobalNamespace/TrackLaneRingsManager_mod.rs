@@ -1,4 +1,4 @@
-#[cfg(feature = "TrackLaneRingsManager")]
+#[cfg(feature = "cordl_class_TrackLaneRingsManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackLaneRingsManager {
@@ -16,7 +16,7 @@ pub struct TrackLaneRingsManager {
         >,
     >,
 }
-#[cfg(feature = "TrackLaneRingsManager")]
+#[cfg(feature = "cordl_class_TrackLaneRingsManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TrackLaneRingsManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::TrackLaneRingsManager {
         false
     }
 }
-#[cfg(feature = "TrackLaneRingsManager")]
+#[cfg(feature = "cordl_class_TrackLaneRingsManager")]
 impl std::ops::Deref for crate::GlobalNamespace::TrackLaneRingsManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TrackLaneRingsManager")]
+#[cfg(feature = "cordl_class_TrackLaneRingsManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TrackLaneRingsManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -228,7 +228,7 @@ impl crate::GlobalNamespace::TrackLaneRingsManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TrackLaneRingsManager")]
+#[cfg(feature = "cordl_class_TrackLaneRingsManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TrackLaneRingsManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

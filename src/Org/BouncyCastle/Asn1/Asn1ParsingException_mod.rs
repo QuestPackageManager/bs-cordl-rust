@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1ParsingException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1ParsingException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1ParsingException {
     __cordl_parent: crate::System::InvalidOperationException,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1ParsingException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1ParsingException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Asn1ParsingException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::Asn1ParsingException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1ParsingException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1ParsingException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1ParsingException {
     type Target = crate::System::InvalidOperationException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1ParsingException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1ParsingException")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Asn1ParsingException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1ParsingException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1ParsingException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1ParsingException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Asn1ParsingException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

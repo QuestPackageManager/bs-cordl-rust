@@ -1,4 +1,4 @@
-#[cfg(feature = "QuestGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_QuestGraphicSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuestGraphicSettingsViewController {
@@ -13,7 +13,7 @@ pub struct QuestGraphicSettingsViewController {
         >,
     >,
 }
-#[cfg(feature = "QuestGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_QuestGraphicSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::QuestGraphicSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::QuestGraphicSettingsViewController {
         false
     }
 }
-#[cfg(feature = "QuestGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_QuestGraphicSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::QuestGraphicSettingsViewController {
     type Target = crate::GlobalNamespace::GraphicSettingsViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "QuestGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_QuestGraphicSettingsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::QuestGraphicSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::GlobalNamespace::QuestGraphicSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "QuestGraphicSettingsViewController")]
+#[cfg(feature = "cordl_class_QuestGraphicSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::QuestGraphicSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

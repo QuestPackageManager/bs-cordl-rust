@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+DragVisualMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragVisualMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DragVisualMode {
@@ -8,7 +8,7 @@ pub enum DragVisualMode {
     None = 0i32,
     Rejected = 3i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+DragVisualMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragVisualMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DragVisualMode {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::UIElements::DragVisualMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragVisualMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragVisualMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DragVisualMode {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::DragVisualMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragVisualMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragVisualMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DragVisualMode {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::DragVisualMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragVisualMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragVisualMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DragVisualMode {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::DragVisualMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragVisualMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragVisualMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DragVisualMode {
     type Actual = Self;

@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeCompatibilityAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+RuntimeCompatibilityAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeCompatibilityAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _WrapNonExceptionThrows_k__BackingField: bool,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeCompatibilityAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+RuntimeCompatibilityAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::RuntimeCompatibilityAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Runtime::CompilerServices::RuntimeCompatibilityAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeCompatibilityAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+RuntimeCompatibilityAttribute"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::RuntimeCompatibilityAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +39,9 @@ for crate::System::Runtime::CompilerServices::RuntimeCompatibilityAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeCompatibilityAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+RuntimeCompatibilityAttribute"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::RuntimeCompatibilityAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -97,7 +105,9 @@ impl crate::System::Runtime::CompilerServices::RuntimeCompatibilityAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeCompatibilityAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+RuntimeCompatibilityAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::RuntimeCompatibilityAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

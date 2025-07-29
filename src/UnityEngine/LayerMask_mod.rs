@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+LayerMask")]
+#[cfg(feature = "cordl_class_UnityEngine+LayerMask")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LayerMask {
     pub m_Mask: i32,
 }
-#[cfg(feature = "UnityEngine+LayerMask")]
+#[cfg(feature = "cordl_class_UnityEngine+LayerMask")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LayerMask {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LayerMask {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+LayerMask")]
+#[cfg(feature = "cordl_class_UnityEngine+LayerMask")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LayerMask {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LayerMask {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+LayerMask")]
+#[cfg(feature = "cordl_class_UnityEngine+LayerMask")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LayerMask {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LayerMask {
         self
     }
 }
-#[cfg(feature = "UnityEngine+LayerMask")]
+#[cfg(feature = "cordl_class_UnityEngine+LayerMask")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LayerMask {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LayerMask {
         }
     }
 }
-#[cfg(feature = "UnityEngine+LayerMask")]
+#[cfg(feature = "cordl_class_UnityEngine+LayerMask")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LayerMask {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LayerMask {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+LayerMask")]
+#[cfg(feature = "cordl_class_UnityEngine+LayerMask")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::LayerMask {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

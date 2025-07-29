@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRHMD")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WMRHMD {
@@ -7,7 +7,7 @@ pub struct WMRHMD {
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
 }
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRHMD")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::WindowsMR::Input::WMRHMD {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::XR::WindowsMR::Input::WMRHMD {
         false
     }
 }
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRHMD")]
 impl std::ops::Deref for crate::UnityEngine::XR::WindowsMR::Input::WMRHMD {
     type Target = crate::UnityEngine::InputSystem::XR::XRHMD;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRHMD")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::WindowsMR::Input::WMRHMD {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -157,7 +157,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRHMD {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRHMD")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::XR::WindowsMR::Input::WMRHMD {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

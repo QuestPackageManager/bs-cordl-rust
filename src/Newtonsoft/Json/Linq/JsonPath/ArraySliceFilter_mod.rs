@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArraySliceFilter {
@@ -7,7 +7,7 @@ pub struct ArraySliceFilter {
     pub _End_k__BackingField: crate::System::Nullable_1<i32>,
     pub _Step_k__BackingField: crate::System::Nullable_1<i32>,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
     type Target = crate::Newtonsoft::Json::Linq::JsonPath::PathFilter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -308,7 +308,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

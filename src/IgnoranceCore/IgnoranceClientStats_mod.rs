@@ -1,4 +1,4 @@
-#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClientStats")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceClientStats {
@@ -9,7 +9,7 @@ pub struct IgnoranceClientStats {
     pub PacketsSent: u64,
     pub PacketsLost: u64,
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceClientStats {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceClien
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::IgnoranceCore::IgnoranceClientStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::IgnoranceCore::IgnoranceClientStats {
         self
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::IgnoranceCore::IgnoranceClientStats {
         }
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::IgnoranceCore::IgnoranceClientStats {
         actual
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Type = Self;

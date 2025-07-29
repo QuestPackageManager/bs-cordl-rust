@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerGameplayAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerGameplayAnimator {
@@ -28,7 +28,7 @@ pub struct MultiplayerGameplayAnimator {
         crate::GlobalNamespace::IConnectedPlayer,
     >,
 }
-#[cfg(feature = "MultiplayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerGameplayAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerGameplayAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,14 +48,14 @@ for crate::GlobalNamespace::MultiplayerGameplayAnimator {
         false
     }
 }
-#[cfg(feature = "MultiplayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerGameplayAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerGameplayAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerGameplayAnimator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -212,7 +212,7 @@ impl crate::GlobalNamespace::MultiplayerGameplayAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerGameplayAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerGameplayAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerGameplayAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

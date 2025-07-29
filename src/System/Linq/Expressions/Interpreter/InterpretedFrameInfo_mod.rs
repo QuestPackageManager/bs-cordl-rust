@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InterpretedFrameInfo {
@@ -7,7 +7,7 @@ pub struct InterpretedFrameInfo {
         crate::System::Linq::Expressions::Interpreter::DebugInfo,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
         self
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
         }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
         actual
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     type Type = Self;

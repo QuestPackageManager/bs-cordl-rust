@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LogicalCallContext {
@@ -27,7 +27,7 @@ pub struct LogicalCallContext {
         >,
     >,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,7 +47,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -55,7 +55,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -356,7 +356,7 @@ impl crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -394,7 +394,9 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext+Reader"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LogicalCallContext_Reader {
@@ -402,7 +404,9 @@ pub struct LogicalCallContext_Reader {
         crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
     >,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext+Reader"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Held<'a> = Self;
@@ -432,7 +436,9 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext+Reader"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Type = Self;
@@ -443,7 +449,9 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext+Reader"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Actual = Self;
@@ -457,7 +465,9 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         self
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext+Reader"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Type = Self;
@@ -472,7 +482,9 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext+Reader"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Actual = Self;
@@ -486,7 +498,9 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         actual
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext+Reader"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Type = Self;

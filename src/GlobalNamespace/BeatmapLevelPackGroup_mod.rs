@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelPackGroup")]
+#[cfg(feature = "cordl_class_BeatmapLevelPackGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelPackGroup {
@@ -12,7 +12,7 @@ pub struct BeatmapLevelPackGroup {
         >,
     >,
 }
-#[cfg(feature = "BeatmapLevelPackGroup")]
+#[cfg(feature = "cordl_class_BeatmapLevelPackGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelPackGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::BeatmapLevelPackGroup {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelPackGroup")]
+#[cfg(feature = "cordl_class_BeatmapLevelPackGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelPackGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelPackGroup")]
+#[cfg(feature = "cordl_class_BeatmapLevelPackGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelPackGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -242,7 +242,7 @@ impl crate::GlobalNamespace::BeatmapLevelPackGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelPackGroup")]
+#[cfg(feature = "cordl_class_BeatmapLevelPackGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelPackGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

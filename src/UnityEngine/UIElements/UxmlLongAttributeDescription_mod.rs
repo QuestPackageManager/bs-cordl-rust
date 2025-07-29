@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlLongAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlLongAttributeDescription")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlLongAttributeDescription {
     __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<i64>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlLongAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlLongAttributeDescription")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlLongAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlLongAttributeDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<i64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlLongAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlLongAttributeDescription")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -132,7 +132,7 @@ impl crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlLongAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlLongAttributeDescription")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

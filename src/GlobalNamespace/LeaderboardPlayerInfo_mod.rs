@@ -1,4 +1,4 @@
-#[cfg(feature = "LeaderboardPlayerInfo")]
+#[cfg(feature = "cordl_class_LeaderboardPlayerInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardPlayerInfo {
@@ -21,7 +21,7 @@ pub struct LeaderboardPlayerInfo {
     >,
     pub _succeeded_k__BackingField: bool,
 }
-#[cfg(feature = "LeaderboardPlayerInfo")]
+#[cfg(feature = "cordl_class_LeaderboardPlayerInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeaderboardPlayerInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::GlobalNamespace::LeaderboardPlayerInfo {
         false
     }
 }
-#[cfg(feature = "LeaderboardPlayerInfo")]
+#[cfg(feature = "cordl_class_LeaderboardPlayerInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardPlayerInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardPlayerInfo")]
+#[cfg(feature = "cordl_class_LeaderboardPlayerInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardPlayerInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -434,7 +434,7 @@ impl crate::GlobalNamespace::LeaderboardPlayerInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardPlayerInfo")]
+#[cfg(feature = "cordl_class_LeaderboardPlayerInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeaderboardPlayerInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapDifficultyDropdown")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyDropdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDifficultyDropdown {
@@ -19,7 +19,7 @@ pub struct BeatmapDifficultyDropdown {
     >,
     pub _includeAllDifficulties_k__BackingField: bool,
 }
-#[cfg(feature = "BeatmapDifficultyDropdown")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyDropdown")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDifficultyDropdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::BeatmapDifficultyDropdown {
         false
     }
 }
-#[cfg(feature = "BeatmapDifficultyDropdown")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDifficultyDropdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDifficultyDropdown")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDifficultyDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -385,7 +385,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDifficultyDropdown")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyDropdown")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDifficultyDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

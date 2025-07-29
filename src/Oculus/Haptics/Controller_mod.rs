@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Haptics+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Controller")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Controller {
@@ -7,7 +7,7 @@ pub enum Controller {
     Left = 0i32,
     Right = 1i32,
 }
-#[cfg(feature = "Oculus+Haptics+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Controller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Controller {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Controller {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Controller")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Controller {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Controll
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Haptics+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Controller")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Controller {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Control
         self
     }
 }
-#[cfg(feature = "Oculus+Haptics+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Controller")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Controller {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Controll
         }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Controller")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Controller {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

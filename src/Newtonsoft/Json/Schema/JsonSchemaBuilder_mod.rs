@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaBuilder {
@@ -22,7 +22,7 @@ pub struct JsonSchemaBuilder {
     >,
     pub _rootSchema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -606,7 +606,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

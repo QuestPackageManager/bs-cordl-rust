@@ -1,11 +1,11 @@
-#[cfg(feature = "BitMask128")]
+#[cfg(feature = "cordl_class_BitMask128")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BitMask128 {
     pub _d0: u64,
     pub _d1: u64,
 }
-#[cfg(feature = "BitMask128")]
+#[cfg(feature = "cordl_class_BitMask128")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BitMask128 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BitMask128 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BitMask128")]
+#[cfg(feature = "cordl_class_BitMask128")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::BitMask128 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::BitMask1
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BitMask128")]
+#[cfg(feature = "cordl_class_BitMask128")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::BitMask128 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::BitMask
         self
     }
 }
-#[cfg(feature = "BitMask128")]
+#[cfg(feature = "cordl_class_BitMask128")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::BitMask128 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::BitMask1
         }
     }
 }
-#[cfg(feature = "BitMask128")]
+#[cfg(feature = "cordl_class_BitMask128")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BitMask128 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BitMask128
         actual
     }
 }
-#[cfg(feature = "BitMask128")]
+#[cfg(feature = "cordl_class_BitMask128")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::BitMask128 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "ProfanityFilter")]
+#[cfg(feature = "cordl_class_ProfanityFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProfanityFilter {
@@ -7,7 +7,7 @@ pub struct ProfanityFilter {
         crate::GlobalNamespace::ProfanityFilter_TrieNode,
     >,
 }
-#[cfg(feature = "ProfanityFilter")]
+#[cfg(feature = "cordl_class_ProfanityFilter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ProfanityFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ProfanityFil
         false
     }
 }
-#[cfg(feature = "ProfanityFilter")]
+#[cfg(feature = "cordl_class_ProfanityFilter")]
 impl std::ops::Deref for crate::GlobalNamespace::ProfanityFilter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ProfanityFilter")]
+#[cfg(feature = "cordl_class_ProfanityFilter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ProfanityFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::ProfanityFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ProfanityFilter")]
+#[cfg(feature = "cordl_class_ProfanityFilter")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfanityFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -176,7 +176,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfanityFilt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ProfanityFilter+TrieNode")]
+#[cfg(feature = "cordl_class_ProfanityFilter+TrieNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProfanityFilter_TrieNode {
@@ -189,7 +189,7 @@ pub struct ProfanityFilter_TrieNode {
     >,
     pub _shortestWord: i32,
 }
-#[cfg(feature = "ProfanityFilter+TrieNode")]
+#[cfg(feature = "cordl_class_ProfanityFilter+TrieNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ProfanityFilter_TrieNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -209,14 +209,14 @@ for crate::GlobalNamespace::ProfanityFilter_TrieNode {
         false
     }
 }
-#[cfg(feature = "ProfanityFilter+TrieNode")]
+#[cfg(feature = "cordl_class_ProfanityFilter+TrieNode")]
 impl std::ops::Deref for crate::GlobalNamespace::ProfanityFilter_TrieNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ProfanityFilter+TrieNode")]
+#[cfg(feature = "cordl_class_ProfanityFilter+TrieNode")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ProfanityFilter_TrieNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -317,7 +317,7 @@ impl crate::GlobalNamespace::ProfanityFilter_TrieNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ProfanityFilter+TrieNode")]
+#[cfg(feature = "cordl_class_ProfanityFilter+TrieNode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ProfanityFilter_TrieNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

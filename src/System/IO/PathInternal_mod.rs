@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IO+PathInternal")]
+#[cfg(feature = "cordl_class_System+IO+PathInternal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PathInternal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+IO+PathInternal")]
+#[cfg(feature = "cordl_class_System+IO+PathInternal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::PathInternal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::PathInternal {
         false
     }
 }
-#[cfg(feature = "System+IO+PathInternal")]
+#[cfg(feature = "cordl_class_System+IO+PathInternal")]
 impl std::ops::Deref for crate::System::IO::PathInternal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+PathInternal")]
+#[cfg(feature = "cordl_class_System+IO+PathInternal")]
 impl std::ops::DerefMut for crate::System::IO::PathInternal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -267,7 +267,7 @@ impl crate::System::IO::PathInternal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+PathInternal")]
+#[cfg(feature = "cordl_class_System+IO+PathInternal")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::PathInternal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

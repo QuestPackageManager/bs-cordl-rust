@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+NetworkInformation+AixAddressFamily")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixAddressFamily")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AixAddressFamily {
@@ -7,7 +7,7 @@ pub enum AixAddressFamily {
     AF_INET6 = 24i32,
     AF_LINK = 18i32,
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixAddressFamily")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixAddressFamily")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::AixAddressFamily {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Net::NetworkInformation::AixAddressFamily {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixAddressFamily")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixAddressFamily")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixAddressFamily {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Net::NetworkInformation::AixAddressFamily {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixAddressFamily")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixAddressFamily")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixAddressFamily {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Net::NetworkInformation::AixAddressFamily {
         self
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixAddressFamily")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixAddressFamily")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixAddressFamily {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Net::NetworkInformation::AixAddressFamily {
         }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixAddressFamily")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixAddressFamily")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixAddressFamily {
     type Actual = Self;

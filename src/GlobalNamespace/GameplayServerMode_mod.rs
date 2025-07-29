@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayServerMode")]
+#[cfg(feature = "cordl_class_GameplayServerMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayServerMode {
@@ -7,7 +7,7 @@ pub enum GameplayServerMode {
     Managed = 1i32,
     QuickStartOneSong = 2i32,
 }
-#[cfg(feature = "GameplayServerMode")]
+#[cfg(feature = "cordl_class_GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayServerMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayServ
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameplayServerMode")]
+#[cfg(feature = "cordl_class_GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayServerMode {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::GameplayServerMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameplayServerMode")]
+#[cfg(feature = "cordl_class_GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayServerMode {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::GameplayServerMode {
         self
     }
 }
-#[cfg(feature = "GameplayServerMode")]
+#[cfg(feature = "cordl_class_GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayServerMode {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::GameplayServerMode {
         }
     }
 }
-#[cfg(feature = "GameplayServerMode")]
+#[cfg(feature = "cordl_class_GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayServerMode {
     type Actual = Self;

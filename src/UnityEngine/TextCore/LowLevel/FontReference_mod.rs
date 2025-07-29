@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontReference")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FontReference {
@@ -7,7 +7,7 @@ pub struct FontReference {
     pub faceIndex: i32,
     pub filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontReference")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::FontReference {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontReference {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontReference")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::FontReference {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontReference {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontReference")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::FontReference {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontReference {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontReference")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::FontReference {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontReference {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontReference")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::FontReference {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontReference {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontReference")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::LowLevel::FontReference {
     type Type = Self;

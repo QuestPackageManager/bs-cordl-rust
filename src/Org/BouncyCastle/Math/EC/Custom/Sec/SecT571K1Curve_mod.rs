@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecT571K1Curve {
@@ -7,7 +7,7 @@ pub struct SecT571K1Curve {
         crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Point,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -485,7 +485,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -496,7 +496,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -509,7 +509,7 @@ pub struct SecT571K1Curve_SecT571K1LookupTable {
     pub m_size: i32,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve_SecT571K1LookupTable {
@@ -531,7 +531,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve_SecT571K1Loo
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve_SecT571K1LookupTable {
@@ -541,7 +541,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve_SecT571K1Loo
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve_SecT571K1LookupTable {
@@ -721,7 +721,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve_SecT571K1Lo
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve+SecT571K1LookupTable"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve_SecT571K1LookupTable {

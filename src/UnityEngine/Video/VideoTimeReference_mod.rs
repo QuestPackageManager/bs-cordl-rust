@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Video+VideoTimeReference")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeReference")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoTimeReference {
@@ -7,7 +7,7 @@ pub enum VideoTimeReference {
     Freerun = 0i32,
     InternalTime = 1i32,
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeReference")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeReference")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Video::VideoTimeReference {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::Video::VideoTimeReference {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeReference")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeReference")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Video::VideoTimeReference {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Video::VideoTimeReference {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeReference")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeReference")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Video::VideoTimeReference {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::Video::VideoTimeReference {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeReference")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeReference")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Video::VideoTimeReference {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::Video::VideoTimeReference {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeReference")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeReference")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Video::VideoTimeReference {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IO+PathTooLongException")]
+#[cfg(feature = "cordl_class_System+IO+PathTooLongException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PathTooLongException {
     __cordl_parent: crate::System::IO::IOException,
 }
-#[cfg(feature = "System+IO+PathTooLongException")]
+#[cfg(feature = "cordl_class_System+IO+PathTooLongException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::PathTooLongException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::PathTooLongExcept
         false
     }
 }
-#[cfg(feature = "System+IO+PathTooLongException")]
+#[cfg(feature = "cordl_class_System+IO+PathTooLongException")]
 impl std::ops::Deref for crate::System::IO::PathTooLongException {
     type Target = crate::System::IO::IOException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+PathTooLongException")]
+#[cfg(feature = "cordl_class_System+IO+PathTooLongException")]
 impl std::ops::DerefMut for crate::System::IO::PathTooLongException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::IO::PathTooLongException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+PathTooLongException")]
+#[cfg(feature = "cordl_class_System+IO+PathTooLongException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::PathTooLongException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

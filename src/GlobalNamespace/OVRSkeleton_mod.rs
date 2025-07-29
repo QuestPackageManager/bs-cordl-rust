@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSkeleton")]
+#[cfg(feature = "cordl_class_OVRSkeleton")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeleton {
@@ -51,7 +51,7 @@ pub struct OVRSkeleton {
     >,
     pub _SkeletonChangedCount_k__BackingField: i32,
 }
-#[cfg(feature = "OVRSkeleton")]
+#[cfg(feature = "cordl_class_OVRSkeleton")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeleton {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -70,14 +70,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeleton 
         false
     }
 }
-#[cfg(feature = "OVRSkeleton")]
+#[cfg(feature = "cordl_class_OVRSkeleton")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSkeleton {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSkeleton")]
+#[cfg(feature = "cordl_class_OVRSkeleton")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSkeleton {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1065,7 +1065,7 @@ impl crate::GlobalNamespace::OVRSkeleton {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSkeleton")]
+#[cfg(feature = "cordl_class_OVRSkeleton")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeleton {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1074,7 +1074,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeleton {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSkeleton+BoneId")]
+#[cfg(feature = "cordl_class_OVRSkeleton+BoneId")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSkeleton_BoneId {
@@ -1152,7 +1152,7 @@ pub enum OVRSkeleton_BoneId {
     Body_SpineUpper = 4i32,
     Invalid = -1i32,
 }
-#[cfg(feature = "OVRSkeleton+BoneId")]
+#[cfg(feature = "cordl_class_OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1181,7 +1181,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeleton_
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSkeleton+BoneId")]
+#[cfg(feature = "cordl_class_OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Type = Self;
@@ -1192,7 +1192,7 @@ for crate::GlobalNamespace::OVRSkeleton_BoneId {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSkeleton+BoneId")]
+#[cfg(feature = "cordl_class_OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Actual = Self;
@@ -1206,7 +1206,7 @@ for crate::GlobalNamespace::OVRSkeleton_BoneId {
         self
     }
 }
-#[cfg(feature = "OVRSkeleton+BoneId")]
+#[cfg(feature = "cordl_class_OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Type = Self;
@@ -1221,7 +1221,7 @@ for crate::GlobalNamespace::OVRSkeleton_BoneId {
         }
     }
 }
-#[cfg(feature = "OVRSkeleton+BoneId")]
+#[cfg(feature = "cordl_class_OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Actual = Self;
@@ -1235,13 +1235,13 @@ for crate::GlobalNamespace::OVRSkeleton_BoneId {
         actual
     }
 }
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeleton+IOVRSkeletonDataProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeleton_IOVRSkeletonDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeleton+IOVRSkeletonDataProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1261,14 +1261,14 @@ for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
         false
     }
 }
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeleton+IOVRSkeletonDataProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeleton+IOVRSkeletonDataProvider")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1354,7 +1354,7 @@ impl crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeleton+IOVRSkeletonDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1364,7 +1364,7 @@ for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonPoseData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSkeleton_SkeletonPoseData {
@@ -1380,7 +1380,7 @@ pub struct OVRSkeleton_SkeletonPoseData {
     >,
     pub _SkeletonChangedCount_k__BackingField: i32,
 }
-#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Held<'a> = Self;
@@ -1410,7 +1410,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Type = Self;
@@ -1421,7 +1421,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Actual = Self;
@@ -1435,7 +1435,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
         self
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Type = Self;
@@ -1450,7 +1450,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
         }
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Actual = Self;
@@ -1464,7 +1464,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
         actual
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Type = Self;
@@ -1837,7 +1837,7 @@ impl crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonType")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSkeleton_SkeletonType {
@@ -1847,7 +1847,7 @@ pub enum OVRSkeleton_SkeletonType {
     HandRight = 1i32,
     None = -1i32,
 }
-#[cfg(feature = "OVRSkeleton+SkeletonType")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Held<'a> = Self;
@@ -1877,7 +1877,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonType")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Type = Self;
@@ -1888,7 +1888,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonType")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Actual = Self;
@@ -1902,7 +1902,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
         self
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonType")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Type = Self;
@@ -1917,7 +1917,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
         }
     }
 }
-#[cfg(feature = "OVRSkeleton+SkeletonType")]
+#[cfg(feature = "cordl_class_OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Actual = Self;

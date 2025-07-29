@@ -1,10 +1,10 @@
-#[cfg(feature = "TestInvitePlatformHandler")]
+#[cfg(feature = "cordl_class_TestInvitePlatformHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TestInvitePlatformHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "TestInvitePlatformHandler")]
+#[cfg(feature = "cordl_class_TestInvitePlatformHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TestInvitePlatformHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::TestInvitePlatformHandler {
         false
     }
 }
-#[cfg(feature = "TestInvitePlatformHandler")]
+#[cfg(feature = "cordl_class_TestInvitePlatformHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::TestInvitePlatformHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TestInvitePlatformHandler")]
+#[cfg(feature = "cordl_class_TestInvitePlatformHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TestInvitePlatformHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::TestInvitePlatformHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TestInvitePlatformHandler")]
+#[cfg(feature = "cordl_class_TestInvitePlatformHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TestInvitePlatformHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

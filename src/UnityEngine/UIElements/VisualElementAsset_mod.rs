@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementAsset {
@@ -24,7 +24,7 @@ pub struct VisualElementAsset {
     >,
     pub m_SkipClone: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElementAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::UnityEngine::UIElements::VisualElementAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElementAsset {
     type Target = crate::UnityEngine::UIElements::UxmlAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -295,7 +295,7 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElementAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

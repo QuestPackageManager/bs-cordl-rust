@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Internal+DefaultValueAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+DefaultValueAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultValueAttribute {
     __cordl_parent: crate::System::Attribute,
     pub DefaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+Internal+DefaultValueAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+DefaultValueAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Internal::DefaultValueAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Internal::DefaultValueAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Internal+DefaultValueAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+DefaultValueAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Internal::DefaultValueAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Internal+DefaultValueAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+DefaultValueAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Internal::DefaultValueAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::UnityEngine::Internal::DefaultValueAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Internal+DefaultValueAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+DefaultValueAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Internal::DefaultValueAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

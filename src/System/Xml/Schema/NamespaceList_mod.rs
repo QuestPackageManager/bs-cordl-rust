@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+NamespaceList")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamespaceList {
@@ -7,7 +7,7 @@ pub struct NamespaceList {
     pub set: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::NamespaceList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Namespac
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList")]
 impl std::ops::Deref for crate::System::Xml::Schema::NamespaceList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::NamespaceList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -480,7 +480,7 @@ impl crate::System::Xml::Schema::NamespaceList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::NamespaceList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -489,7 +489,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::Namespace
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList+ListType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NamespaceList_ListType {
@@ -498,7 +498,7 @@ pub enum NamespaceList_ListType {
     Other = 1i32,
     Set = 2i32,
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Held<'a> = Self;
@@ -528,7 +528,7 @@ for crate::System::Xml::Schema::NamespaceList_ListType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Type = Self;
@@ -539,7 +539,7 @@ for crate::System::Xml::Schema::NamespaceList_ListType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Actual = Self;
@@ -553,7 +553,7 @@ for crate::System::Xml::Schema::NamespaceList_ListType {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Type = Self;
@@ -568,7 +568,7 @@ for crate::System::Xml::Schema::NamespaceList_ListType {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Actual = Self;

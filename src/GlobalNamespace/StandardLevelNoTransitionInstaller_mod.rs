@@ -1,4 +1,4 @@
-#[cfg(feature = "StandardLevelNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StandardLevelNoTransitionInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelNoTransitionInstaller {
@@ -13,7 +13,7 @@ pub struct StandardLevelNoTransitionInstaller {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "StandardLevelNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StandardLevelNoTransitionInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
         false
     }
 }
-#[cfg(feature = "StandardLevelNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StandardLevelNoTransitionInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardLevelNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StandardLevelNoTransitionInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -134,7 +134,7 @@ impl crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardLevelNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StandardLevelNoTransitionInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

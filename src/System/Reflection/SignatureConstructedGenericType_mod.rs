@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+SignatureConstructedGenericType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureConstructedGenericType")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignatureConstructedGenericType {
@@ -10,7 +10,7 @@ pub struct SignatureConstructedGenericType {
         >,
     >,
 }
-#[cfg(feature = "System+Reflection+SignatureConstructedGenericType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureConstructedGenericType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::SignatureConstructedGenericType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Reflection::SignatureConstructedGenericType {
         false
     }
 }
-#[cfg(feature = "System+Reflection+SignatureConstructedGenericType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureConstructedGenericType")]
 impl std::ops::Deref for crate::System::Reflection::SignatureConstructedGenericType {
     type Target = crate::System::Reflection::SignatureType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+SignatureConstructedGenericType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureConstructedGenericType")]
 impl std::ops::DerefMut for crate::System::Reflection::SignatureConstructedGenericType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -539,7 +539,7 @@ impl crate::System::Reflection::SignatureConstructedGenericType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+SignatureConstructedGenericType")]
+#[cfg(feature = "cordl_class_System+Reflection+SignatureConstructedGenericType")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::SignatureConstructedGenericType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

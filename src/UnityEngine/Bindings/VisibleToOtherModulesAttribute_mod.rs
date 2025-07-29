@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisibleToOtherModulesAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -118,7 +118,7 @@ impl crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

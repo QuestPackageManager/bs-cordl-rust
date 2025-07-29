@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+Image")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Image {
@@ -18,7 +18,7 @@ pub struct Image {
     pub m_PixelsPerUnitMultiplier: f32,
     pub m_CachedReferencePixelsPerUnit: f32,
 }
-#[cfg(feature = "UnityEngine+UI+Image")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image")]
 impl std::ops::Deref for crate::UnityEngine::UI::Image {
     type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Image {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1910,7 +1910,7 @@ impl crate::UnityEngine::UI::Image {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Image {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1957,7 +1957,7 @@ impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::I
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+FillMethod")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_FillMethod {
@@ -1968,7 +1968,7 @@ pub enum Image_FillMethod {
     Radial90 = 2i32,
     Vertical = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_FillMethod {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1997,7 +1997,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_FillMe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Image_FillMethod {
     type Type = Self;
@@ -2008,7 +2008,7 @@ for crate::UnityEngine::UI::Image_FillMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_FillMethod {
     type Actual = Self;
@@ -2022,7 +2022,7 @@ for crate::UnityEngine::UI::Image_FillMethod {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Image_FillMethod {
     type Type = Self;
@@ -2037,7 +2037,7 @@ for crate::UnityEngine::UI::Image_FillMethod {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_FillMethod {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2050,7 +2050,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Fill
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin180")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_Origin180 {
@@ -2060,7 +2060,7 @@ pub enum Image_Origin180 {
     Right = 3i32,
     Top = 2i32,
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin180 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2089,7 +2089,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Origin180 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2099,7 +2099,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Or
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_Origin180 {
     type Actual = Self;
@@ -2113,7 +2113,7 @@ for crate::UnityEngine::UI::Image_Origin180 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Origin180 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2127,7 +2127,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Or
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Origin180 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2140,7 +2140,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Orig
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin360")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_Origin360 {
@@ -2150,7 +2150,7 @@ pub enum Image_Origin360 {
     Right = 1i32,
     Top = 2i32,
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin360 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2179,7 +2179,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Origin360 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2189,7 +2189,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Or
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_Origin360 {
     type Actual = Self;
@@ -2203,7 +2203,7 @@ for crate::UnityEngine::UI::Image_Origin360 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Origin360 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2217,7 +2217,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Or
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Origin360 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2230,7 +2230,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Orig
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin90")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_Origin90 {
@@ -2240,7 +2240,7 @@ pub enum Image_Origin90 {
     TopLeft = 1i32,
     TopRight = 2i32,
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin90 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2269,7 +2269,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Origin90 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2279,7 +2279,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Or
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Image_Origin90 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2292,7 +2292,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Image_O
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Origin90 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2306,7 +2306,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Or
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Origin90 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2319,7 +2319,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Orig
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginHorizontal")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_OriginHorizontal {
@@ -2327,7 +2327,7 @@ pub enum Image_OriginHorizontal {
     Left = 0i32,
     Right = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Held<'a> = Self;
@@ -2357,7 +2357,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Type = Self;
@@ -2368,7 +2368,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Actual = Self;
@@ -2382,7 +2382,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Type = Self;
@@ -2397,7 +2397,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Actual = Self;
@@ -2411,7 +2411,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginVertical")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_OriginVertical {
@@ -2419,7 +2419,7 @@ pub enum Image_OriginVertical {
     Bottom = 0i32,
     Top = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Held<'a> = Self;
@@ -2449,7 +2449,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Type = Self;
@@ -2460,7 +2460,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Actual = Self;
@@ -2474,7 +2474,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Type = Self;
@@ -2489,7 +2489,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Actual = Self;
@@ -2503,7 +2503,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Type")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_Type {
@@ -2513,7 +2513,7 @@ pub enum Image_Type {
     Sliced = 1i32,
     Tiled = 2i32,
 }
-#[cfg(feature = "UnityEngine+UI+Image+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Type {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2542,7 +2542,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Type {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Type {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2552,7 +2552,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Ty
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Image_Type {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2565,7 +2565,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Image_T
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Type {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2579,7 +2579,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Ty
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Image+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Type {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

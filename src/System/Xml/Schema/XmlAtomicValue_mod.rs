@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAtomicValue {
@@ -11,7 +11,7 @@ pub struct XmlAtomicValue {
         crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XmlAtomicValue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XmlAtomi
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlAtomicValue {
     type Target = crate::System::Xml::XPath::XPathItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlAtomicValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -765,7 +765,7 @@ impl crate::System::Xml::Schema::XmlAtomicValue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XmlAtomicValue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -786,7 +786,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Xml::Schema::XmlAtomicV
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAtomicValue_NamespacePrefixForQName {
@@ -794,7 +794,7 @@ pub struct XmlAtomicValue_NamespacePrefixForQName {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -814,7 +814,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -822,7 +822,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -977,7 +977,7 @@ impl crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1001,13 +1001,13 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+Union")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlAtomicValue_Union {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Held<'a> = Self;
@@ -1037,7 +1037,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Type = Self;
@@ -1048,7 +1048,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Actual = Self;
@@ -1062,7 +1062,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Type = Self;
@@ -1077,7 +1077,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Actual = Self;
@@ -1091,7 +1091,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Type = Self;

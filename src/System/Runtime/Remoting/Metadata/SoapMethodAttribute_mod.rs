@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoapMethodAttribute {
@@ -12,7 +12,7 @@ pub struct SoapMethodAttribute {
     pub _useAttribute: bool,
     pub _namespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
     type Target = crate::System::Runtime::Remoting::Metadata::SoapAttribute;
@@ -40,7 +40,7 @@ for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -148,7 +148,7 @@ impl crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

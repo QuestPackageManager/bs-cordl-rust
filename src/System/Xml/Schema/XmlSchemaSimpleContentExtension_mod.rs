@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleContentExtension")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSimpleContentExtension {
@@ -11,7 +11,7 @@ pub struct XmlSchemaSimpleContentExtension {
     >,
     pub baseTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleContentExtension")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleContentExtension")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
     type Target = crate::System::Xml::Schema::XmlSchemaContent;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleContentExtension")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -248,7 +248,7 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentExtension")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleContentExtension")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

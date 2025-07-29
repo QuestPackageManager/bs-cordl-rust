@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+CookieParser")]
+#[cfg(feature = "cordl_class_System+Net+CookieParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookieParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_tokenizer: quest_hook::libil2cpp::Gc<crate::System::Net::CookieTokenizer>,
 }
-#[cfg(feature = "System+Net+CookieParser")]
+#[cfg(feature = "cordl_class_System+Net+CookieParser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieParser {
         false
     }
 }
-#[cfg(feature = "System+Net+CookieParser")]
+#[cfg(feature = "cordl_class_System+Net+CookieParser")]
 impl std::ops::Deref for crate::System::Net::CookieParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+CookieParser")]
+#[cfg(feature = "cordl_class_System+Net+CookieParser")]
 impl std::ops::DerefMut for crate::System::Net::CookieParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::System::Net::CookieParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+CookieParser")]
+#[cfg(feature = "cordl_class_System+Net+CookieParser")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CookieParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

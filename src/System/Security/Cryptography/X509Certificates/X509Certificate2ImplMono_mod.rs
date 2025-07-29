@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -11,7 +11,7 @@ pub struct X509Certificate2ImplMono {
     pub _cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono {
@@ -33,7 +33,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Imp
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono {
@@ -43,7 +43,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Imp
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono {
@@ -597,7 +597,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono {

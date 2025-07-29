@@ -1,10 +1,10 @@
-#[cfg(feature = "EssentialHelpers")]
+#[cfg(feature = "cordl_class_EssentialHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EssentialHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "EssentialHelpers")]
+#[cfg(feature = "cordl_class_EssentialHelpers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EssentialHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EssentialHel
         false
     }
 }
-#[cfg(feature = "EssentialHelpers")]
+#[cfg(feature = "cordl_class_EssentialHelpers")]
 impl std::ops::Deref for crate::GlobalNamespace::EssentialHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EssentialHelpers")]
+#[cfg(feature = "cordl_class_EssentialHelpers")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EssentialHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::EssentialHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EssentialHelpers")]
+#[cfg(feature = "cordl_class_EssentialHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EssentialHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

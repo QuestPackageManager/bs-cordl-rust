@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLeadPlayerProvider")]
+#[cfg(feature = "cordl_class_MultiplayerLeadPlayerProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLeadPlayerProvider {
@@ -24,7 +24,7 @@ pub struct MultiplayerLeadPlayerProvider {
         crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
     >,
 }
-#[cfg(feature = "MultiplayerLeadPlayerProvider")]
+#[cfg(feature = "cordl_class_MultiplayerLeadPlayerProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
         false
     }
 }
-#[cfg(feature = "MultiplayerLeadPlayerProvider")]
+#[cfg(feature = "cordl_class_MultiplayerLeadPlayerProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLeadPlayerProvider")]
+#[cfg(feature = "cordl_class_MultiplayerLeadPlayerProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -329,7 +329,7 @@ impl crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLeadPlayerProvider")]
+#[cfg(feature = "cordl_class_MultiplayerLeadPlayerProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

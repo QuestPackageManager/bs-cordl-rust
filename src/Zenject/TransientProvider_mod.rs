@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+TransientProvider")]
+#[cfg(feature = "cordl_class_Zenject+TransientProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransientProvider {
@@ -18,7 +18,7 @@ pub struct TransientProvider {
         >,
     >,
 }
-#[cfg(feature = "Zenject+TransientProvider")]
+#[cfg(feature = "cordl_class_Zenject+TransientProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::TransientProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::TransientProvider {
         false
     }
 }
-#[cfg(feature = "Zenject+TransientProvider")]
+#[cfg(feature = "cordl_class_Zenject+TransientProvider")]
 impl std::ops::Deref for crate::Zenject::TransientProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+TransientProvider")]
+#[cfg(feature = "cordl_class_Zenject+TransientProvider")]
 impl std::ops::DerefMut for crate::Zenject::TransientProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -306,7 +306,7 @@ impl crate::Zenject::TransientProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+TransientProvider")]
+#[cfg(feature = "cordl_class_Zenject+TransientProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::TransientProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

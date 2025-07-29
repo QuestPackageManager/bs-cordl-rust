@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ScalableImage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ScalableImage")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ScalableImage {
     pub normalImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub highResolutionImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ScalableImage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ScalableImage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ScalableImage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ScalableImage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ScalableImage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ScalableImage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ScalableImage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ScalableImage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ScalableImage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ScalableImage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ScalableImage")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ScalableImage")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::ScalableImage {
     type Type = Self;

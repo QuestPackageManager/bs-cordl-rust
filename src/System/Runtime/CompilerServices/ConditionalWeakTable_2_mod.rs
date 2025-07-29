@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConditionalWeakTable_2<
@@ -16,7 +16,7 @@ pub struct ConditionalWeakTable_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -55,7 +55,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValu
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -66,7 +66,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValu
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -473,7 +473,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -541,7 +541,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValu
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -554,7 +554,7 @@ pub struct ConditionalWeakTable_2_CreateValueCallback<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -598,7 +598,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValue
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -614,7 +614,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValue
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -719,7 +719,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -736,7 +736,9 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValue
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConditionalWeakTable_2_Enumerator<
@@ -752,7 +754,9 @@ pub struct ConditionalWeakTable_2_Enumerator<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -794,7 +798,9 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -808,7 +814,9 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1064,7 +1072,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

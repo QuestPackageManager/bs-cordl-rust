@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IO+InvalidDataException")]
+#[cfg(feature = "cordl_class_System+IO+InvalidDataException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvalidDataException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+IO+InvalidDataException")]
+#[cfg(feature = "cordl_class_System+IO+InvalidDataException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::InvalidDataException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::InvalidDataExcept
         false
     }
 }
-#[cfg(feature = "System+IO+InvalidDataException")]
+#[cfg(feature = "cordl_class_System+IO+InvalidDataException")]
 impl std::ops::Deref for crate::System::IO::InvalidDataException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+InvalidDataException")]
+#[cfg(feature = "cordl_class_System+IO+InvalidDataException")]
 impl std::ops::DerefMut for crate::System::IO::InvalidDataException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::IO::InvalidDataException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+InvalidDataException")]
+#[cfg(feature = "cordl_class_System+IO+InvalidDataException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::InvalidDataException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

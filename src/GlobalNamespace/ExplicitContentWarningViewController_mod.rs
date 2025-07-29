@@ -1,4 +1,4 @@
-#[cfg(feature = "ExplicitContentWarningViewController")]
+#[cfg(feature = "cordl_class_ExplicitContentWarningViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExplicitContentWarningViewController {
@@ -13,7 +13,7 @@ pub struct ExplicitContentWarningViewController {
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "ExplicitContentWarningViewController")]
+#[cfg(feature = "cordl_class_ExplicitContentWarningViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ExplicitContentWarningViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::ExplicitContentWarningViewController {
         false
     }
 }
-#[cfg(feature = "ExplicitContentWarningViewController")]
+#[cfg(feature = "cordl_class_ExplicitContentWarningViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::ExplicitContentWarningViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ExplicitContentWarningViewController")]
+#[cfg(feature = "cordl_class_ExplicitContentWarningViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ExplicitContentWarningViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -215,7 +215,7 @@ impl crate::GlobalNamespace::ExplicitContentWarningViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ExplicitContentWarningViewController")]
+#[cfg(feature = "cordl_class_ExplicitContentWarningViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ExplicitContentWarningViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

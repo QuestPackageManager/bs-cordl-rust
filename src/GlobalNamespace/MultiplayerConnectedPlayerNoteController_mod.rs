@@ -1,11 +1,11 @@
-#[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerNoteController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerNoteController {
     __cordl_parent: crate::GlobalNamespace::NoteController,
     pub _visualsWrapperGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerNoteController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerNoteController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     type Target = crate::GlobalNamespace::NoteController;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerNoteController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerNoteController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

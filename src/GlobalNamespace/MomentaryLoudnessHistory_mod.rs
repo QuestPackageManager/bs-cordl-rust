@@ -1,4 +1,4 @@
-#[cfg(feature = "MomentaryLoudnessHistory")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessHistory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MomentaryLoudnessHistory {
@@ -7,7 +7,7 @@ pub struct MomentaryLoudnessHistory {
     pub _nextRmsIndex: i32,
     pub _historyFull: bool,
 }
-#[cfg(feature = "MomentaryLoudnessHistory")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessHistory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MomentaryLoudnessHistory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MomentaryLoudnessHistory {
         false
     }
 }
-#[cfg(feature = "MomentaryLoudnessHistory")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessHistory")]
 impl std::ops::Deref for crate::GlobalNamespace::MomentaryLoudnessHistory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MomentaryLoudnessHistory")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessHistory")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MomentaryLoudnessHistory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessHistory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MomentaryLoudnessHistory")]
+#[cfg(feature = "cordl_class_MomentaryLoudnessHistory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MomentaryLoudnessHistory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

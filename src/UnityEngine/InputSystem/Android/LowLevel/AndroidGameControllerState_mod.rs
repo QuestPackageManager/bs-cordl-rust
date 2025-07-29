@@ -1,11 +1,15 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidGameControllerState {
     pub buttons: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer,
     pub axis: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
     type Held<'a> = Self;
@@ -35,7 +39,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
     type Type = Self;
@@ -46,7 +52,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
     type Actual = Self;
@@ -60,7 +68,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
     type Type = Self;
@@ -75,7 +85,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
     type Actual = Self;
@@ -89,7 +101,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
     type Type = Self;
@@ -226,7 +240,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -234,7 +248,7 @@ pub struct AndroidGameControllerState_Variants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
@@ -256,7 +270,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
@@ -266,7 +280,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
@@ -312,7 +326,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
@@ -324,7 +338,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -332,7 +346,7 @@ pub struct AndroidGameControllerState__axis_e__FixedBuffer {
     pub FixedElementField: f32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer {
@@ -364,7 +378,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer {
@@ -377,7 +391,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer {
@@ -393,7 +407,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer {
@@ -410,7 +424,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer {
@@ -426,7 +440,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer {
@@ -443,7 +457,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
 )]
 impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer {}
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -451,7 +465,7 @@ pub struct AndroidGameControllerState__buttons_e__FixedBuffer {
     pub FixedElementField: u32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer {
@@ -483,7 +497,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer {
@@ -496,7 +510,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer {
@@ -512,7 +526,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer {
@@ -529,7 +543,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer {
@@ -545,7 +559,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+RenderTextureSubElement")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTextureSubElement")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureSubElement {
@@ -8,7 +8,7 @@ pub enum RenderTextureSubElement {
     Depth = 1i32,
     Stencil = 2i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTextureSubElement")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTextureSubElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::RenderTextureSubElement {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::Rendering::RenderTextureSubElement {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTextureSubElement")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTextureSubElement")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::RenderTextureSubElement {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::Rendering::RenderTextureSubElement {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTextureSubElement")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTextureSubElement")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::RenderTextureSubElement {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::Rendering::RenderTextureSubElement {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTextureSubElement")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTextureSubElement")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::RenderTextureSubElement {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::Rendering::RenderTextureSubElement {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderTextureSubElement")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderTextureSubElement")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::RenderTextureSubElement {
     type Actual = Self;

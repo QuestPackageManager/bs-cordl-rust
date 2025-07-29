@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Events+InvokableCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+InvokableCall")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvokableCall {
     __cordl_parent: crate::UnityEngine::Events::BaseInvokableCall,
     pub Delegate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
 }
-#[cfg(feature = "UnityEngine+Events+InvokableCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+InvokableCall")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Events::InvokableCall {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Events::Invokabl
         false
     }
 }
-#[cfg(feature = "UnityEngine+Events+InvokableCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+InvokableCall")]
 impl std::ops::Deref for crate::UnityEngine::Events::InvokableCall {
     type Target = crate::UnityEngine::Events::BaseInvokableCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Events+InvokableCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+InvokableCall")]
 impl std::ops::DerefMut for crate::UnityEngine::Events::InvokableCall {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -268,7 +268,7 @@ impl crate::UnityEngine::Events::InvokableCall {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Events+InvokableCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+InvokableCall")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Events::InvokableCall {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

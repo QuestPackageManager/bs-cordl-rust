@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlwaysLinkAssemblyAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

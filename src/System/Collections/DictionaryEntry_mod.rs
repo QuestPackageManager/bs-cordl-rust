@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Collections+DictionaryEntry")]
+#[cfg(feature = "cordl_class_System+Collections+DictionaryEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DictionaryEntry {
     pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+DictionaryEntry")]
+#[cfg(feature = "cordl_class_System+Collections+DictionaryEntry")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::DictionaryEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::Dictiona
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+DictionaryEntry")]
+#[cfg(feature = "cordl_class_System+Collections+DictionaryEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Collections::DictionaryEntry {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::System::Collections::DictionaryEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+DictionaryEntry")]
+#[cfg(feature = "cordl_class_System+Collections+DictionaryEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Collections::DictionaryEntry {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::System::Collections::DictionaryEntry {
         self
     }
 }
-#[cfg(feature = "System+Collections+DictionaryEntry")]
+#[cfg(feature = "cordl_class_System+Collections+DictionaryEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Collections::DictionaryEntry {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::System::Collections::DictionaryEntry {
         }
     }
 }
-#[cfg(feature = "System+Collections+DictionaryEntry")]
+#[cfg(feature = "cordl_class_System+Collections+DictionaryEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Collections::DictionaryEntry {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::System::Collections::DictionaryEntry {
         actual
     }
 }
-#[cfg(feature = "System+Collections+DictionaryEntry")]
+#[cfg(feature = "cordl_class_System+Collections+DictionaryEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Collections::DictionaryEntry {
     type Type = Self;

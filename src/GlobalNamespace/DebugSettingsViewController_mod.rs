@@ -1,4 +1,4 @@
-#[cfg(feature = "DebugSettingsViewController")]
+#[cfg(feature = "cordl_class_DebugSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugSettingsViewController {
@@ -13,7 +13,7 @@ pub struct DebugSettingsViewController {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "DebugSettingsViewController")]
+#[cfg(feature = "cordl_class_DebugSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DebugSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::DebugSettingsViewController {
         false
     }
 }
-#[cfg(feature = "DebugSettingsViewController")]
+#[cfg(feature = "cordl_class_DebugSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::DebugSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DebugSettingsViewController")]
+#[cfg(feature = "cordl_class_DebugSettingsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DebugSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::GlobalNamespace::DebugSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DebugSettingsViewController")]
+#[cfg(feature = "cordl_class_DebugSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DebugSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

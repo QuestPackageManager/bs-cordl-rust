@@ -1,4 +1,4 @@
-#[cfg(feature = "System+UriParser")]
+#[cfg(feature = "cordl_class_System+UriParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriParser {
@@ -9,7 +9,7 @@ pub struct UriParser {
     pub m_Port: i32,
     pub m_Scheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+UriParser")]
+#[cfg(feature = "cordl_class_System+UriParser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::UriParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UriParser {
         false
     }
 }
-#[cfg(feature = "System+UriParser")]
+#[cfg(feature = "cordl_class_System+UriParser")]
 impl std::ops::Deref for crate::System::UriParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+UriParser")]
+#[cfg(feature = "cordl_class_System+UriParser")]
 impl std::ops::DerefMut for crate::System::UriParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -741,7 +741,7 @@ impl crate::System::UriParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+UriParser")]
+#[cfg(feature = "cordl_class_System+UriParser")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::UriParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -750,7 +750,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::UriParser {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+UriParser+UriQuirksVersion")]
+#[cfg(feature = "cordl_class_System+UriParser+UriQuirksVersion")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UriParser_UriQuirksVersion {
@@ -758,7 +758,7 @@ pub enum UriParser_UriQuirksVersion {
     V2 = 2i32,
     V3 = 3i32,
 }
-#[cfg(feature = "System+UriParser+UriQuirksVersion")]
+#[cfg(feature = "cordl_class_System+UriParser+UriQuirksVersion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::UriParser_UriQuirksVersion {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -787,7 +787,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UriParser_UriQuirksVe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+UriParser+UriQuirksVersion")]
+#[cfg(feature = "cordl_class_System+UriParser+UriQuirksVersion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::UriParser_UriQuirksVersion {
     type Type = Self;
@@ -798,7 +798,7 @@ for crate::System::UriParser_UriQuirksVersion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+UriParser+UriQuirksVersion")]
+#[cfg(feature = "cordl_class_System+UriParser+UriQuirksVersion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::UriParser_UriQuirksVersion {
     type Actual = Self;
@@ -812,7 +812,7 @@ for crate::System::UriParser_UriQuirksVersion {
         self
     }
 }
-#[cfg(feature = "System+UriParser+UriQuirksVersion")]
+#[cfg(feature = "cordl_class_System+UriParser+UriQuirksVersion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::UriParser_UriQuirksVersion {
     type Type = Self;
@@ -827,7 +827,7 @@ for crate::System::UriParser_UriQuirksVersion {
         }
     }
 }
-#[cfg(feature = "System+UriParser+UriQuirksVersion")]
+#[cfg(feature = "cordl_class_System+UriParser+UriQuirksVersion")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::UriParser_UriQuirksVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

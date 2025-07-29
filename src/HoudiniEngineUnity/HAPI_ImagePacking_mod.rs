@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImagePacking")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImagePacking")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_ImagePacking {
@@ -12,7 +12,7 @@ pub enum HAPI_ImagePacking {
     HAPI_IMAGE_PACKING_SINGLE = 0i32,
     HAPI_IMAGE_PACKING_UNKNOWN = -1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImagePacking")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImagePacking")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_ImagePacking {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::HoudiniEngineUnity::HAPI_ImagePacking {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImagePacking")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImagePacking")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_ImagePacking {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::HoudiniEngineUnity::HAPI_ImagePacking {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImagePacking")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImagePacking")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_ImagePacking {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::HoudiniEngineUnity::HAPI_ImagePacking {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImagePacking")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImagePacking")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_ImagePacking {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::HoudiniEngineUnity::HAPI_ImagePacking {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_ImagePacking")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_ImagePacking")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_ImagePacking {
     type Actual = Self;

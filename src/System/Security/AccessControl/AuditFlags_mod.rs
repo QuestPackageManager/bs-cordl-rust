@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+AccessControl+AuditFlags")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuditFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AuditFlags {
@@ -7,7 +7,7 @@ pub enum AuditFlags {
     None = 0i32,
     Success = 1i32,
 }
-#[cfg(feature = "System+Security+AccessControl+AuditFlags")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuditFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::AuditFlags {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Security::AccessControl::AuditFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AuditFlags")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuditFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::AccessControl::AuditFlags {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Security::AccessControl::AuditFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AuditFlags")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuditFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::AccessControl::AuditFlags {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Security::AccessControl::AuditFlags {
         self
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AuditFlags")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuditFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::AccessControl::AuditFlags {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Security::AccessControl::AuditFlags {
         }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AuditFlags")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuditFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::AccessControl::AuditFlags {
     type Actual = Self;

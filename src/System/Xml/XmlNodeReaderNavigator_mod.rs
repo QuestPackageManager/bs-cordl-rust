@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNodeReaderNavigator {
@@ -29,7 +29,7 @@ pub struct XmlNodeReaderNavigator {
     >,
     pub bOnAttrVal: bool,
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNodeReaderNavigator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -48,14 +48,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNodeReaderNav
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator")]
 impl std::ops::Deref for crate::System::Xml::XmlNodeReaderNavigator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator")]
 impl std::ops::DerefMut for crate::System::Xml::XmlNodeReaderNavigator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1465,7 +1465,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNodeReaderNavigator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1474,14 +1474,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNodeReaderNavi
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlNodeReaderNavigator_VirtualAttribute {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
     type Held<'a> = Self;
@@ -1511,7 +1511,7 @@ for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
     type Type = Self;
@@ -1522,7 +1522,7 @@ for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
     type Actual = Self;
@@ -1536,7 +1536,7 @@ for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
     type Type = Self;
@@ -1551,7 +1551,7 @@ for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
     type Actual = Self;
@@ -1565,7 +1565,7 @@ for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
     type Type = Self;

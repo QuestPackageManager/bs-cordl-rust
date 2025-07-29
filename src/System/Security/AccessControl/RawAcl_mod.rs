@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+AccessControl+RawAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+RawAcl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RawAcl {
@@ -10,7 +10,7 @@ pub struct RawAcl {
         >,
     >,
 }
-#[cfg(feature = "System+Security+AccessControl+RawAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+RawAcl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::RawAcl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Security::AccessControl::RawAcl {
         false
     }
 }
-#[cfg(feature = "System+Security+AccessControl+RawAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+RawAcl")]
 impl std::ops::Deref for crate::System::Security::AccessControl::RawAcl {
     type Target = crate::System::Security::AccessControl::GenericAcl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+RawAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+RawAcl")]
 impl std::ops::DerefMut for crate::System::Security::AccessControl::RawAcl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -224,7 +224,7 @@ impl crate::System::Security::AccessControl::RawAcl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+RawAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+RawAcl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::AccessControl::RawAcl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

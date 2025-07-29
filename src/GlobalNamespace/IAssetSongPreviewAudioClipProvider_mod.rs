@@ -1,10 +1,10 @@
-#[cfg(feature = "IAssetSongPreviewAudioClipProvider")]
+#[cfg(feature = "cordl_class_IAssetSongPreviewAudioClipProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IAssetSongPreviewAudioClipProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IAssetSongPreviewAudioClipProvider")]
+#[cfg(feature = "cordl_class_IAssetSongPreviewAudioClipProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider {
         false
     }
 }
-#[cfg(feature = "IAssetSongPreviewAudioClipProvider")]
+#[cfg(feature = "cordl_class_IAssetSongPreviewAudioClipProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IAssetSongPreviewAudioClipProvider")]
+#[cfg(feature = "cordl_class_IAssetSongPreviewAudioClipProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IAssetSongPreviewAudioClipProvider")]
+#[cfg(feature = "cordl_class_IAssetSongPreviewAudioClipProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

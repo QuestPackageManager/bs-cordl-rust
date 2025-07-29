@@ -1,11 +1,11 @@
-#[cfg(feature = "BeatmapEditorStartTestLevelData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapEditorStartTestLevelData {
     pub fpfc: crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData,
     pub overdrawData: crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData,
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
         self
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
         }
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
         actual
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
     type Type = Self;
@@ -107,13 +107,13 @@ impl crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
     #[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
     pub type OverdrawData = crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData;
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+FpfcData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapEditorStartTestLevelData_FpfcData {
     pub enabled: bool,
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+FpfcData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
     type Held<'a> = Self;
@@ -143,7 +143,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+FpfcData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
     type Type = Self;
@@ -154,7 +154,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+FpfcData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
     type Actual = Self;
@@ -168,7 +168,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
         self
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+FpfcData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
     type Type = Self;
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
         }
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+FpfcData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
     type Actual = Self;
@@ -197,7 +197,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
         actual
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+FpfcData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
     type Type = Self;
@@ -210,7 +210,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
 }
 #[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
 impl crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {}
-#[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+OverdrawData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapEditorStartTestLevelData_OverdrawData {
@@ -219,7 +219,7 @@ pub struct BeatmapEditorStartTestLevelData_OverdrawData {
     pub audioClipFrequency: i32,
     pub samplesPerOverdrawBucket: f32,
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+OverdrawData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
     type Held<'a> = Self;
@@ -249,7 +249,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+OverdrawData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
     type Type = Self;
@@ -260,7 +260,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+OverdrawData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
     type Actual = Self;
@@ -274,7 +274,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
         self
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+OverdrawData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
     type Type = Self;
@@ -289,7 +289,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
         }
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+OverdrawData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
     type Actual = Self;
@@ -303,7 +303,7 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
         actual
     }
 }
-#[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
+#[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+OverdrawData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {
     type Type = Self;

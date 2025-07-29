@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown {
@@ -30,7 +30,7 @@ pub struct Dropdown {
     >,
     pub validTemplate: bool,
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -49,14 +49,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1431,7 +1431,7 @@ impl crate::UnityEngine::UI::Dropdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1496,13 +1496,13 @@ for crate::UnityEngine::UI::Dropdown {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_DropdownEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::Dropdown_DropdownEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1522,14 +1522,14 @@ for crate::UnityEngine::UI::Dropdown_DropdownEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown_DropdownEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1566,7 +1566,7 @@ impl crate::UnityEngine::UI::Dropdown_DropdownEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::Dropdown_DropdownEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1576,7 +1576,7 @@ for crate::UnityEngine::UI::Dropdown_DropdownEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_DropdownItem {
@@ -1586,7 +1586,7 @@ pub struct Dropdown_DropdownItem {
     pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::Dropdown_DropdownItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1606,14 +1606,14 @@ for crate::UnityEngine::UI::Dropdown_DropdownItem {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownItem")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownItem")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown_DropdownItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1922,7 +1922,7 @@ impl crate::UnityEngine::UI::Dropdown_DropdownItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::Dropdown_DropdownItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1974,7 +1974,7 @@ for crate::UnityEngine::UI::Dropdown_DropdownItem {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_OptionData {
@@ -1982,7 +1982,7 @@ pub struct Dropdown_OptionData {
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown_OptionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -2001,14 +2001,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown_Opt
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionData")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_OptionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionData")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown_OptionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2263,7 +2263,7 @@ impl crate::UnityEngine::UI::Dropdown_OptionData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionData")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown_OptionData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2272,7 +2272,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown_Opti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionDataList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_OptionDataList {
@@ -2283,7 +2283,7 @@ pub struct Dropdown_OptionDataList {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionDataList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::Dropdown_OptionDataList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2303,14 +2303,14 @@ for crate::UnityEngine::UI::Dropdown_OptionDataList {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionDataList")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_OptionDataList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionDataList")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown_OptionDataList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2422,7 +2422,7 @@ impl crate::UnityEngine::UI::Dropdown_OptionDataList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionDataList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::Dropdown_OptionDataList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

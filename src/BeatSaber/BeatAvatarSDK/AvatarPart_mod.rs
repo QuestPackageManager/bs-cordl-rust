@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPart")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarPart {
@@ -18,7 +18,7 @@ pub enum AvatarPart {
     SkinColor = 2i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::BeatAvatarSDK::Ava
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Type = Self;
@@ -58,7 +58,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Actual = Self;
@@ -72,7 +72,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
         self
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
         }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Actual = Self;

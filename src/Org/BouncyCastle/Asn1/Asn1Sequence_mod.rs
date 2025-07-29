@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1Sequence {
@@ -9,7 +9,7 @@ pub struct Asn1Sequence {
         >,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -482,7 +482,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -505,7 +505,7 @@ for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1Sequence_Asn1SequenceParserImpl {
@@ -514,7 +514,7 @@ pub struct Asn1Sequence_Asn1SequenceParserImpl {
     pub max: i32,
     pub index: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -534,7 +534,7 @@ for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -542,7 +542,7 @@ for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -647,7 +647,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

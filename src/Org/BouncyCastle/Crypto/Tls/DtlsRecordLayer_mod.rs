@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsRecordLayer {
@@ -45,7 +45,7 @@ pub struct DtlsRecordLayer {
         crate::Org::BouncyCastle::Crypto::Tls::Timeout,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -65,14 +65,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -853,7 +853,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

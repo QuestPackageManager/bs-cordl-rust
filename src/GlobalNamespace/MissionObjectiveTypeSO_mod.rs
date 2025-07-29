@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionObjectiveTypeSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveTypeSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjectiveTypeSO {
@@ -9,7 +9,7 @@ pub struct MissionObjectiveTypeSO {
         crate::GlobalNamespace::ObjectiveValueFormatterSO,
     >,
 }
-#[cfg(feature = "MissionObjectiveTypeSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveTypeSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionObjectiveTypeSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MissionObjectiveTypeSO {
         false
     }
 }
-#[cfg(feature = "MissionObjectiveTypeSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveTypeSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionObjectiveTypeSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionObjectiveTypeSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveTypeSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjectiveTypeSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,7 +173,7 @@ impl crate::GlobalNamespace::MissionObjectiveTypeSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionObjectiveTypeSO")]
+#[cfg(feature = "cordl_class_MissionObjectiveTypeSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionObjectiveTypeSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

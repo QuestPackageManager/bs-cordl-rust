@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TextMeshProUGUI")]
+#[cfg(feature = "cordl_class_TMPro+TextMeshProUGUI")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextMeshProUGUI {
@@ -36,7 +36,7 @@ pub struct TextMeshProUGUI {
     pub m_EnvMapMatrix: crate::UnityEngine::Matrix4x4,
     pub m_isRegisteredForEvents: bool,
 }
-#[cfg(feature = "TMPro+TextMeshProUGUI")]
+#[cfg(feature = "cordl_class_TMPro+TextMeshProUGUI")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextMeshProUGUI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -55,14 +55,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextMeshProUGUI {
         false
     }
 }
-#[cfg(feature = "TMPro+TextMeshProUGUI")]
+#[cfg(feature = "cordl_class_TMPro+TextMeshProUGUI")]
 impl std::ops::Deref for crate::TMPro::TextMeshProUGUI {
     type Target = crate::TMPro::TMP_Text;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TextMeshProUGUI")]
+#[cfg(feature = "cordl_class_TMPro+TextMeshProUGUI")]
 impl std::ops::DerefMut for crate::TMPro::TextMeshProUGUI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1967,7 +1967,7 @@ impl crate::TMPro::TextMeshProUGUI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TextMeshProUGUI")]
+#[cfg(feature = "cordl_class_TMPro+TextMeshProUGUI")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TextMeshProUGUI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

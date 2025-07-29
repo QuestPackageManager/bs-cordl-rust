@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct IncrementInstruction_IncrementInt16 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::IncrementInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IncrementInstruction_IncrementInt16 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::IncrementInstruction_IncrementInt16 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementInt16 {
     type Target = crate::System::Linq::Expressions::Interpreter::IncrementInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementI
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::IncrementInstruction_IncrementInt16 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::IncrementInstruction_IncrementInt16 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IncrementInstruction_IncrementInt16 {

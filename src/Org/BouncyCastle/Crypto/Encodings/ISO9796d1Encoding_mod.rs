@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISO9796d1Encoding {
@@ -11,7 +11,7 @@ pub struct ISO9796d1Encoding {
     pub padBits: i32,
     pub modulus: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -372,7 +372,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

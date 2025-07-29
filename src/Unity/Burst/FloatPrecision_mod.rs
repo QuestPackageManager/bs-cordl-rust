@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Burst+FloatPrecision")]
+#[cfg(feature = "cordl_class_Unity+Burst+FloatPrecision")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FloatPrecision {
@@ -8,7 +8,7 @@ pub enum FloatPrecision {
     Medium = 2i32,
     Standard = 0i32,
 }
-#[cfg(feature = "Unity+Burst+FloatPrecision")]
+#[cfg(feature = "cordl_class_Unity+Burst+FloatPrecision")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::FloatPrecision {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::FloatPrecision 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+FloatPrecision")]
+#[cfg(feature = "cordl_class_Unity+Burst+FloatPrecision")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::FloatPrecision {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::FloatPrecis
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+FloatPrecision")]
+#[cfg(feature = "cordl_class_Unity+Burst+FloatPrecision")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::FloatPrecision {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::FloatPreci
         self
     }
 }
-#[cfg(feature = "Unity+Burst+FloatPrecision")]
+#[cfg(feature = "cordl_class_Unity+Burst+FloatPrecision")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::FloatPrecision {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::FloatPrecis
         }
     }
 }
-#[cfg(feature = "Unity+Burst+FloatPrecision")]
+#[cfg(feature = "cordl_class_Unity+Burst+FloatPrecision")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::FloatPrecision {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

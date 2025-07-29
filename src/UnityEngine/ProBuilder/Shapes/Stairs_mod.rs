@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Stairs")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Stairs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stairs {
@@ -11,7 +11,7 @@ pub struct Stairs {
     pub m_Sides: bool,
     pub m_InnerRadius: f32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Stairs")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Stairs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Shapes::Stairs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::UnityEngine::ProBuilder::Shapes::Stairs {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Stairs")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Stairs")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::Stairs {
     type Target = crate::UnityEngine::ProBuilder::Shapes::Shape;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Stairs")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Stairs")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::Stairs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -285,7 +285,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::Stairs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Stairs")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Stairs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Shapes::Stairs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

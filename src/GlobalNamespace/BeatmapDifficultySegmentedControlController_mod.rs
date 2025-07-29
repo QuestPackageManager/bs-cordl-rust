@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapDifficultySegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySegmentedControlController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDifficultySegmentedControlController {
@@ -21,7 +21,7 @@ pub struct BeatmapDifficultySegmentedControlController {
     >,
     pub _selectedDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
 }
-#[cfg(feature = "BeatmapDifficultySegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySegmentedControlController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
         false
     }
 }
-#[cfg(feature = "BeatmapDifficultySegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySegmentedControlController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDifficultySegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySegmentedControlController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -335,7 +335,7 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDifficultySegmentedControlController")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySegmentedControlController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

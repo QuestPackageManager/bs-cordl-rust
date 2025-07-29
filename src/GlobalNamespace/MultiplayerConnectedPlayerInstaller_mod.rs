@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerInstaller {
@@ -35,7 +35,7 @@ pub struct MultiplayerConnectedPlayerInstaller {
         crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -55,14 +55,14 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

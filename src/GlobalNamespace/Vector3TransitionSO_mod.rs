@@ -1,4 +1,4 @@
-#[cfg(feature = "Vector3TransitionSO")]
+#[cfg(feature = "cordl_class_Vector3TransitionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector3TransitionSO {
@@ -10,7 +10,7 @@ pub struct Vector3TransitionSO {
     pub _selectedState: crate::UnityEngine::Vector3,
     pub _selectedAndHighlightedState: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "Vector3TransitionSO")]
+#[cfg(feature = "cordl_class_Vector3TransitionSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Vector3TransitionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Vector3Trans
         false
     }
 }
-#[cfg(feature = "Vector3TransitionSO")]
+#[cfg(feature = "cordl_class_Vector3TransitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::Vector3TransitionSO {
     type Target = crate::GlobalNamespace::BaseTransitionSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Vector3TransitionSO")]
+#[cfg(feature = "cordl_class_Vector3TransitionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Vector3TransitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::GlobalNamespace::Vector3TransitionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Vector3TransitionSO")]
+#[cfg(feature = "cordl_class_Vector3TransitionSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Vector3TransitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

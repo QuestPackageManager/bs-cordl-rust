@@ -1,4 +1,4 @@
-#[cfg(feature = "LocalizedHoverHint")]
+#[cfg(feature = "cordl_class_LocalizedHoverHint")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedHoverHint {
@@ -6,7 +6,7 @@ pub struct LocalizedHoverHint {
         quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
     >,
 }
-#[cfg(feature = "LocalizedHoverHint")]
+#[cfg(feature = "cordl_class_LocalizedHoverHint")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LocalizedHoverHint {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LocalizedHov
         false
     }
 }
-#[cfg(feature = "LocalizedHoverHint")]
+#[cfg(feature = "cordl_class_LocalizedHoverHint")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalizedHoverHint {
     type Target = crate::BGLib::Polyglot::LocalizedTextComponent_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LocalizedHoverHint {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LocalizedHoverHint")]
+#[cfg(feature = "cordl_class_LocalizedHoverHint")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedHoverHint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::LocalizedHoverHint {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LocalizedHoverHint")]
+#[cfg(feature = "cordl_class_LocalizedHoverHint")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedHoverHint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

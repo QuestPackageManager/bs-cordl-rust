@@ -1,10 +1,10 @@
-#[cfg(feature = "Microsoft+CodeAnalysis+EmbeddedAttribute")]
+#[cfg(feature = "cordl_class_Microsoft+CodeAnalysis+EmbeddedAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EmbeddedAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Microsoft+CodeAnalysis+EmbeddedAttribute")]
+#[cfg(feature = "cordl_class_Microsoft+CodeAnalysis+EmbeddedAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
         false
     }
 }
-#[cfg(feature = "Microsoft+CodeAnalysis+EmbeddedAttribute")]
+#[cfg(feature = "cordl_class_Microsoft+CodeAnalysis+EmbeddedAttribute")]
 impl std::ops::Deref for crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Microsoft+CodeAnalysis+EmbeddedAttribute")]
+#[cfg(feature = "cordl_class_Microsoft+CodeAnalysis+EmbeddedAttribute")]
 impl std::ops::DerefMut for crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Microsoft+CodeAnalysis+EmbeddedAttribute")]
+#[cfg(feature = "cordl_class_Microsoft+CodeAnalysis+EmbeddedAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

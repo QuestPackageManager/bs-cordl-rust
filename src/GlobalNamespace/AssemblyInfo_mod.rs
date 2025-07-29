@@ -1,10 +1,10 @@
-#[cfg(feature = "AssemblyInfo")]
+#[cfg(feature = "cordl_class_AssemblyInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "AssemblyInfo")]
+#[cfg(feature = "cordl_class_AssemblyInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AssemblyInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AssemblyInfo
         false
     }
 }
-#[cfg(feature = "AssemblyInfo")]
+#[cfg(feature = "cordl_class_AssemblyInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::AssemblyInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AssemblyInfo")]
+#[cfg(feature = "cordl_class_AssemblyInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AssemblyInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::AssemblyInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AssemblyInfo")]
+#[cfg(feature = "cordl_class_AssemblyInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AssemblyInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

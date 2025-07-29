@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+OneModifierComposite")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OneModifierComposite {
@@ -10,7 +10,7 @@ pub struct OneModifierComposite {
     pub m_ValueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub m_BindingIsButton: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+OneModifierComposite")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+OneModifierComposite")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite;
@@ -38,7 +38,7 @@ for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+OneModifierComposite")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -325,7 +325,7 @@ impl crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+OneModifierComposite")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

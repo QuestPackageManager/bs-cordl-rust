@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+DSAManaged")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DSAManaged {
@@ -21,7 +21,7 @@ pub struct DSAManaged {
         crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler,
     >,
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+DSAManaged")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Cryptography::DSAManaged {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::Mono::Security::Cryptography::DSAManaged {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+DSAManaged")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::DSAManaged {
     type Target = crate::System::Security::Cryptography::DSA;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+DSAManaged")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::DSAManaged {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -490,7 +490,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+DSAManaged")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Cryptography::DSAManaged {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -500,13 +500,17 @@ for crate::Mono::Security::Cryptography::DSAManaged {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DSAManaged_KeyGeneratedEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -526,7 +530,9 @@ for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler"
+)]
 impl std::ops::Deref
 for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
     type Target = crate::System::MulticastDelegate;
@@ -534,7 +540,9 @@ for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -618,7 +626,9 @@ impl crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

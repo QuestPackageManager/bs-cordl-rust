@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExecuteEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::ExecuteEvents {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::EventSystems::ExecuteEvents {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::ExecuteEvents {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::ExecuteEvents {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1726,7 +1726,7 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::ExecuteEvents {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1736,14 +1736,14 @@ for crate::UnityEngine::EventSystems::ExecuteEvents {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExecuteEvents_EventFunction_1<T1: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
 unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1779,7 +1779,7 @@ for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
 impl<T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
     type Target = crate::System::MulticastDelegate;
@@ -1787,7 +1787,7 @@ for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
 impl<T1: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1964,7 +1964,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
 impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

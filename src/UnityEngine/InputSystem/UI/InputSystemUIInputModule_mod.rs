@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputSystemUIInputModule {
@@ -105,7 +105,7 @@ pub struct InputSystemUIInputModule {
         crate::UnityEngine::GameObject,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -125,14 +125,14 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     type Target = crate::UnityEngine::EventSystems::BaseInputModule;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3000,7 +3000,7 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3011,7 +3011,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -3021,7 +3021,7 @@ pub enum InputSystemUIInputModule_CursorLockBehavior {
     ScreenCenter = 1i32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
@@ -3053,7 +3053,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
@@ -3066,7 +3066,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
@@ -3082,7 +3082,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
@@ -3099,7 +3099,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
@@ -3115,7 +3115,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -3124,7 +3124,7 @@ pub struct InputSystemUIInputModule_InputActionReferenceState {
     pub enabledByInputModule: bool,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
@@ -3156,7 +3156,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
@@ -3169,7 +3169,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
@@ -3185,7 +3185,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
@@ -3202,7 +3202,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
@@ -3218,7 +3218,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+    feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByMethodBase")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethodBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByMethodBase {
@@ -8,7 +8,7 @@ pub struct SubContainerCreatorByMethodBase {
         crate::Zenject::SubContainerCreatorBindInfo,
     >,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByMethodBase")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethodBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SubContainerCreatorByMethodBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Zenject::SubContainerCreatorByMethodBase {
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByMethodBase")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethodBase")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByMethodBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByMethodBase")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethodBase")]
 impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByMethodBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -155,7 +155,7 @@ impl crate::Zenject::SubContainerCreatorByMethodBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByMethodBase")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethodBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SubContainerCreatorByMethodBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

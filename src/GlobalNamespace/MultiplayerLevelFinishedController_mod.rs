@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLevelFinishedController")]
+#[cfg(feature = "cordl_class_MultiplayerLevelFinishedController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelFinishedController {
@@ -44,7 +44,7 @@ pub struct MultiplayerLevelFinishedController {
     pub _gameFinishReported: bool,
     pub _sceneLoadTime: f32,
 }
-#[cfg(feature = "MultiplayerLevelFinishedController")]
+#[cfg(feature = "cordl_class_MultiplayerLevelFinishedController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLevelFinishedController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -64,14 +64,14 @@ for crate::GlobalNamespace::MultiplayerLevelFinishedController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLevelFinishedController")]
+#[cfg(feature = "cordl_class_MultiplayerLevelFinishedController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLevelFinishedController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLevelFinishedController")]
+#[cfg(feature = "cordl_class_MultiplayerLevelFinishedController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLevelFinishedController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -489,7 +489,7 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLevelFinishedController")]
+#[cfg(feature = "cordl_class_MultiplayerLevelFinishedController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLevelFinishedController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalVariable {
@@ -6,7 +6,7 @@ pub struct LocalVariable {
     pub Index: i32,
     pub _flags: i32,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::LocalVariable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Linq::Expressions::Interpreter::LocalVariable {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariable")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LocalVariable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariable")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LocalVariable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -167,7 +167,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::LocalVariable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

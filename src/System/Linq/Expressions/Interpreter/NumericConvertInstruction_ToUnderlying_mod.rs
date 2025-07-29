@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NumericConvertInstruction_ToUnderlying {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
     type Target = crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_ToUnd
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
@@ -144,7 +144,7 @@ impl crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+CancellationTokenSource")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenSource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CancellationTokenSource {
@@ -25,7 +25,7 @@ pub struct CancellationTokenSource {
     >,
     pub _timer: quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>,
 }
-#[cfg(feature = "System+Threading+CancellationTokenSource")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenSource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::CancellationTokenSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::System::Threading::CancellationTokenSource {
         false
     }
 }
-#[cfg(feature = "System+Threading+CancellationTokenSource")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenSource")]
 impl std::ops::Deref for crate::System::Threading::CancellationTokenSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+CancellationTokenSource")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenSource")]
 impl std::ops::DerefMut for crate::System::Threading::CancellationTokenSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -793,7 +793,7 @@ impl crate::System::Threading::CancellationTokenSource {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+CancellationTokenSource")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenSource")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::CancellationTokenSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

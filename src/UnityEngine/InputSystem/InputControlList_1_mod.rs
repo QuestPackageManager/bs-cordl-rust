@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlList_1<TControl: quest_hook::libil2cpp::Type> {
@@ -7,7 +7,7 @@ pub struct InputControlList_1<TControl: quest_hook::libil2cpp::Type> {
     pub m_Allocator: crate::Unity::Collections::Allocator,
     __cordl_phantom_TControl: std::marker::PhantomData<TControl>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Held<'a> = Self;
@@ -53,7 +53,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Type = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Actual = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Type = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Actual = Self;
@@ -107,7 +107,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Type = Self;
@@ -1200,7 +1200,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlList_1_Enumerator<TControl: quest_hook::libil2cpp::Type> {
@@ -1209,7 +1209,7 @@ pub struct InputControlList_1_Enumerator<TControl: quest_hook::libil2cpp::Type> 
     pub m_Current: i32,
     __cordl_phantom_TControl: std::marker::PhantomData<TControl>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Held<'a> = Self;
@@ -1255,7 +1255,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Type = Self;
@@ -1266,7 +1266,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Actual = Self;
@@ -1280,7 +1280,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Type = Self;
@@ -1295,7 +1295,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Actual = Self;
@@ -1309,7 +1309,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Type = Self;

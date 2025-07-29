@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+IInitializableObject")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IInitializableObject")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IInitializableObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+IInitializableObject")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IInitializableObject")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+IInitializableObject")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IInitializableObject")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+IInitializableObject")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IInitializableObject")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -127,7 +127,7 @@ impl crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+IInitializableObject")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IInitializableObject")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

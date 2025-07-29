@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventSystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventSystem {
@@ -23,7 +23,7 @@ pub struct EventSystem {
     pub m_Started: bool,
     pub m_IsTrackingUIToolkitPanels: bool,
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventSystem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::EventSystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::UnityEngine::EventSystems::EventSystem {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventSystem")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventSystem {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventSystem")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::EventSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -993,7 +993,7 @@ impl crate::UnityEngine::EventSystems::EventSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventSystem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::EventSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1003,7 +1003,9 @@ for crate::UnityEngine::EventSystems::EventSystem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventSystem_UIToolkitOverrideConfig {
@@ -1013,7 +1015,9 @@ pub struct EventSystem_UIToolkitOverrideConfig {
     pub sendEvents: bool,
     pub createPanelGameObjectsOnStart: bool,
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
     type Held<'a> = Self;
@@ -1043,7 +1047,9 @@ for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
     type Type = Self;
@@ -1054,7 +1060,9 @@ for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
     type Actual = Self;
@@ -1068,7 +1076,9 @@ for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
     type Type = Self;
@@ -1083,7 +1093,9 @@ for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
     type Actual = Self;
@@ -1097,7 +1109,9 @@ for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig {
     type Type = Self;

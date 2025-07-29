@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRComposition")]
+#[cfg(feature = "cordl_class_OVRComposition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRComposition {
@@ -8,7 +8,7 @@ pub struct OVRComposition {
     pub usingLastAttachedNodePose: bool,
     pub lastAttachedNodePose: crate::GlobalNamespace::OVRPose,
 }
-#[cfg(feature = "OVRComposition")]
+#[cfg(feature = "cordl_class_OVRComposition")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRComposition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRCompositi
         false
     }
 }
-#[cfg(feature = "OVRComposition")]
+#[cfg(feature = "cordl_class_OVRComposition")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRComposition {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRComposition")]
+#[cfg(feature = "cordl_class_OVRComposition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRComposition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -294,7 +294,7 @@ impl crate::GlobalNamespace::OVRComposition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRComposition")]
+#[cfg(feature = "cordl_class_OVRComposition")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRComposition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

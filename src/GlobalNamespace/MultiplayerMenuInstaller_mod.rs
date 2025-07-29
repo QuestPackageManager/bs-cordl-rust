@@ -1,10 +1,10 @@
-#[cfg(feature = "MultiplayerMenuInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerMenuInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerMenuInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
 }
-#[cfg(feature = "MultiplayerMenuInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerMenuInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerMenuInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::MultiplayerMenuInstaller {
         false
     }
 }
-#[cfg(feature = "MultiplayerMenuInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerMenuInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerMenuInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerMenuInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerMenuInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerMenuInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::MultiplayerMenuInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerMenuInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerMenuInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerMenuInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

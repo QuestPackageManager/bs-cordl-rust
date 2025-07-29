@@ -1,10 +1,10 @@
-#[cfg(feature = "TimeExtensions")]
+#[cfg(feature = "cordl_class_TimeExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "TimeExtensions")]
+#[cfg(feature = "cordl_class_TimeExtensions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TimeExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TimeExtensio
         false
     }
 }
-#[cfg(feature = "TimeExtensions")]
+#[cfg(feature = "cordl_class_TimeExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::TimeExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TimeExtensions")]
+#[cfg(feature = "cordl_class_TimeExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TimeExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -493,7 +493,7 @@ impl crate::GlobalNamespace::TimeExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TimeExtensions")]
+#[cfg(feature = "cordl_class_TimeExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TimeExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

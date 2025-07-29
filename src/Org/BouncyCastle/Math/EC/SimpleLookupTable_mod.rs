@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleLookupTable {
@@ -9,7 +9,7 @@ pub struct SimpleLookupTable {
         >,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -234,7 +234,7 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

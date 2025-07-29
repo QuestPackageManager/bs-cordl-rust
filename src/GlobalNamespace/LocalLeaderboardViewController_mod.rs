@@ -1,4 +1,4 @@
-#[cfg(feature = "LocalLeaderboardViewController")]
+#[cfg(feature = "cordl_class_LocalLeaderboardViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalLeaderboardViewController {
@@ -29,7 +29,7 @@ pub struct LocalLeaderboardViewController {
     pub _refreshIsNeeded: bool,
     pub _enableClear: bool,
 }
-#[cfg(feature = "LocalLeaderboardViewController")]
+#[cfg(feature = "cordl_class_LocalLeaderboardViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LocalLeaderboardViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::LocalLeaderboardViewController {
         false
     }
 }
-#[cfg(feature = "LocalLeaderboardViewController")]
+#[cfg(feature = "cordl_class_LocalLeaderboardViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardViewController {
     type Target = crate::GlobalNamespace::LeaderboardViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LocalLeaderboardViewController")]
+#[cfg(feature = "cordl_class_LocalLeaderboardViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -463,7 +463,7 @@ impl crate::GlobalNamespace::LocalLeaderboardViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LocalLeaderboardViewController")]
+#[cfg(feature = "cordl_class_LocalLeaderboardViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LocalLeaderboardViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

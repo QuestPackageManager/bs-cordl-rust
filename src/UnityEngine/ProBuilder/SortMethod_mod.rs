@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+SortMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SortMethod")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SortMethod {
@@ -6,7 +6,7 @@ pub enum SortMethod {
     Clockwise = 0i32,
     CounterClockwise = 1i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SortMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SortMethod")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::SortMethod {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Sort
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SortMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SortMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::SortMethod {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::ProBuilder::SortMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SortMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SortMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::SortMethod {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::ProBuilder::SortMethod {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SortMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SortMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::SortMethod {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::ProBuilder::SortMethod {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SortMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SortMethod")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::SortMethod {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+SqlTypes+SqlBytesCharsState")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytesCharsState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SqlBytesCharsState {
@@ -7,7 +7,7 @@ pub enum SqlBytesCharsState {
     Null = 0i32,
     Stream = 3i32,
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytesCharsState")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytesCharsState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::SqlTypes::SqlBytesCharsState {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Data::SqlTypes::SqlBytesCharsState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytesCharsState")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytesCharsState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::SqlTypes::SqlBytesCharsState {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Data::SqlTypes::SqlBytesCharsState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytesCharsState")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytesCharsState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::SqlTypes::SqlBytesCharsState {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Data::SqlTypes::SqlBytesCharsState {
         self
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytesCharsState")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytesCharsState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::SqlTypes::SqlBytesCharsState {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Data::SqlTypes::SqlBytesCharsState {
         }
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytesCharsState")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytesCharsState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::SqlTypes::SqlBytesCharsState {
     type Actual = Self;

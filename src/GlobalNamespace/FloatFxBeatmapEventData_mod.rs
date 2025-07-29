@@ -1,4 +1,4 @@
-#[cfg(feature = "FloatFxBeatmapEventData")]
+#[cfg(feature = "cordl_class_FloatFxBeatmapEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventData {
@@ -6,7 +6,7 @@ pub struct FloatFxBeatmapEventData {
     pub _value_k__BackingField: f32,
     pub _easeType_k__BackingField: crate::GlobalNamespace::EaseType,
 }
-#[cfg(feature = "FloatFxBeatmapEventData")]
+#[cfg(feature = "cordl_class_FloatFxBeatmapEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FloatFxBeatmapEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::FloatFxBeatmapEventData {
         false
     }
 }
-#[cfg(feature = "FloatFxBeatmapEventData")]
+#[cfg(feature = "cordl_class_FloatFxBeatmapEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventData {
     type Target = crate::GlobalNamespace::FxBeatmapEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FloatFxBeatmapEventData")]
+#[cfg(feature = "cordl_class_FloatFxBeatmapEventData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxBeatmapEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -281,7 +281,7 @@ impl crate::GlobalNamespace::FloatFxBeatmapEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FloatFxBeatmapEventData")]
+#[cfg(feature = "cordl_class_FloatFxBeatmapEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FloatFxBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

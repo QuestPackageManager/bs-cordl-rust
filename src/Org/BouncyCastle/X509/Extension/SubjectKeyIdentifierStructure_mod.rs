@@ -1,10 +1,14 @@
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubjectKeyIdentifierStructure {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
     type Target = crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier;
@@ -32,7 +38,9 @@ for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -157,7 +165,9 @@ impl crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

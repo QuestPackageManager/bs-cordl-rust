@@ -1,4 +1,4 @@
-#[cfg(feature = "FadeOutInstantly")]
+#[cfg(feature = "cordl_class_FadeOutInstantly")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FadeOutInstantly {
@@ -7,7 +7,7 @@ pub struct FadeOutInstantly {
         crate::GlobalNamespace::FadeInOutController,
     >,
 }
-#[cfg(feature = "FadeOutInstantly")]
+#[cfg(feature = "cordl_class_FadeOutInstantly")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FadeOutInstantly {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FadeOutInsta
         false
     }
 }
-#[cfg(feature = "FadeOutInstantly")]
+#[cfg(feature = "cordl_class_FadeOutInstantly")]
 impl std::ops::Deref for crate::GlobalNamespace::FadeOutInstantly {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FadeOutInstantly")]
+#[cfg(feature = "cordl_class_FadeOutInstantly")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FadeOutInstantly {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::FadeOutInstantly {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FadeOutInstantly")]
+#[cfg(feature = "cordl_class_FadeOutInstantly")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FadeOutInstantly {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

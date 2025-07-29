@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsMac")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsMac")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsMac {
@@ -12,7 +12,7 @@ pub struct TlsMac {
     pub digestOverhead: i32,
     pub macLength: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsMac")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsMac")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsMac")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsMac")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsMac")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsMac")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -307,7 +307,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsMac")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsMac")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::TlsMac {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

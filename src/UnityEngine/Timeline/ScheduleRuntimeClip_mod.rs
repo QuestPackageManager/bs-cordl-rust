@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+ScheduleRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ScheduleRuntimeClip")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScheduleRuntimeClip {
@@ -10,7 +10,7 @@ pub struct ScheduleRuntimeClip {
     pub m_FinishTail: f64,
     pub m_Started: bool,
 }
-#[cfg(feature = "UnityEngine+Timeline+ScheduleRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ScheduleRuntimeClip")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::ScheduleRuntimeClip {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::UnityEngine::Timeline::ScheduleRuntimeClip {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ScheduleRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ScheduleRuntimeClip")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ScheduleRuntimeClip {
     type Target = crate::UnityEngine::Timeline::RuntimeClipBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ScheduleRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ScheduleRuntimeClip")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::ScheduleRuntimeClip {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -363,7 +363,7 @@ impl crate::UnityEngine::Timeline::ScheduleRuntimeClip {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ScheduleRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ScheduleRuntimeClip")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::ScheduleRuntimeClip {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

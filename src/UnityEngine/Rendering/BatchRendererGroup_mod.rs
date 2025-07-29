@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BatchRendererGroup {
@@ -8,7 +8,7 @@ pub struct BatchRendererGroup {
         crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling,
     >,
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::BatchRendererGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::UnityEngine::Rendering::BatchRendererGroup {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::BatchRendererGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::Rendering::BatchRendererGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Rendering::BatchRendererGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -102,13 +102,13 @@ for crate::UnityEngine::Rendering::BatchRendererGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BatchRendererGroup_OnPerformCulling {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -128,7 +128,7 @@ for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 impl std::ops::Deref
 for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
     type Target = crate::System::MulticastDelegate;
@@ -136,7 +136,7 @@ for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -230,7 +230,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

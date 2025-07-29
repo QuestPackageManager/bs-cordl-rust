@@ -1,4 +1,4 @@
-#[cfg(feature = "ENet+EventType")]
+#[cfg(feature = "cordl_class_ENet+EventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventType {
@@ -9,7 +9,7 @@ pub enum EventType {
     Receive = 3i32,
     Timeout = 4i32,
 }
-#[cfg(feature = "ENet+EventType")]
+#[cfg(feature = "cordl_class_ENet+EventType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::EventType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::EventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ENet+EventType")]
+#[cfg(feature = "cordl_class_ENet+EventType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::EventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::EventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ENet+EventType")]
+#[cfg(feature = "cordl_class_ENet+EventType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::EventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::EventType {
         self
     }
 }
-#[cfg(feature = "ENet+EventType")]
+#[cfg(feature = "cordl_class_ENet+EventType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::EventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::EventType {
         }
     }
 }
-#[cfg(feature = "ENet+EventType")]
+#[cfg(feature = "cordl_class_ENet+EventType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::EventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

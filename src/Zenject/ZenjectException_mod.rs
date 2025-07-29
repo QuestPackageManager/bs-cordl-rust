@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+ZenjectException")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "Zenject+ZenjectException")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectException {
         false
     }
 }
-#[cfg(feature = "Zenject+ZenjectException")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectException")]
 impl std::ops::Deref for crate::Zenject::ZenjectException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ZenjectException")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectException")]
 impl std::ops::DerefMut for crate::Zenject::ZenjectException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::Zenject::ZenjectException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ZenjectException")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectException")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugInfo {
@@ -9,7 +9,7 @@ pub struct DebugInfo {
     pub FileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub IsClear: bool,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::DebugInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Linq::Expressions::Interpreter::DebugInfo {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::DebugInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::Interpreter::DebugInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::System::Linq::Expressions::Interpreter::DebugInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::DebugInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -159,13 +159,17 @@ for crate::System::Linq::Expressions::Interpreter::DebugInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugInfo_DebugInfoComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -185,7 +189,9 @@ for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -193,7 +199,9 @@ for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -272,7 +280,9 @@ impl crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

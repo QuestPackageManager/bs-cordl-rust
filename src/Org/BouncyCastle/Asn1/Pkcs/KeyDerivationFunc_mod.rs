@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyDerivationFunc {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
     type Target = crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

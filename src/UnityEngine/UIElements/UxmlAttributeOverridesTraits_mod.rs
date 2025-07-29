@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlAttributeOverridesTraits {
@@ -7,7 +7,7 @@ pub struct UxmlAttributeOverridesTraits {
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
     type Target = crate::UnityEngine::UIElements::UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

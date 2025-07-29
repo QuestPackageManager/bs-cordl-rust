@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Focusable")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Focusable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Focusable {
@@ -8,7 +8,7 @@ pub struct Focusable {
     pub m_DelegatesFocus: bool,
     pub m_ExcludeFromFocusRing: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+Focusable")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Focusable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Focusable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Focu
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Focusable")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Focusable")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Focusable {
     type Target = crate::UnityEngine::UIElements::CallbackEventHandler;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Focusable")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Focusable")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Focusable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -500,7 +500,7 @@ impl crate::UnityEngine::UIElements::Focusable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Focusable")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Focusable")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Focusable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

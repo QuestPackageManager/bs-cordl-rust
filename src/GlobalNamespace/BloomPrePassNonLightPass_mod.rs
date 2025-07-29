@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassNonLightPass")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassNonLightPass {
@@ -6,7 +6,7 @@ pub struct BloomPrePassNonLightPass {
     pub _executionTimeType: crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType,
     pub _registeredExecutionTimeType: crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType,
 }
-#[cfg(feature = "BloomPrePassNonLightPass")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassNonLightPass {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass {
         false
     }
 }
-#[cfg(feature = "BloomPrePassNonLightPass")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassNonLightPass {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassNonLightPass")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassNonLightPass {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -319,7 +319,7 @@ impl crate::GlobalNamespace::BloomPrePassNonLightPass {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassNonLightPass")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassNonLightPass {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -329,7 +329,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass+ExecutionTimeType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BloomPrePassNonLightPass_ExecutionTimeType {
@@ -338,7 +338,7 @@ pub enum BloomPrePassNonLightPass_ExecutionTimeType {
     BeforeBlur = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Held<'a> = Self;
@@ -368,7 +368,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Type = Self;
@@ -379,7 +379,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Actual = Self;
@@ -393,7 +393,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
         self
     }
 }
-#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Type = Self;
@@ -408,7 +408,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
         }
     }
 }
-#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
+#[cfg(feature = "cordl_class_BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Actual = Self;

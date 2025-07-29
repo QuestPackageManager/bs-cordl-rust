@@ -1,11 +1,11 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SphereInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_SphereInfo {
     pub center: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub radius: f32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SphereInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_SphereInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Sphe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SphereInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_SphereInfo {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::HoudiniEngineUnity::HAPI_SphereInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SphereInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_SphereInfo {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::HoudiniEngineUnity::HAPI_SphereInfo {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SphereInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_SphereInfo {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::HoudiniEngineUnity::HAPI_SphereInfo {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SphereInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_SphereInfo {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::HoudiniEngineUnity::HAPI_SphereInfo {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SphereInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HAPI_SphereInfo {
     type Type = Self;

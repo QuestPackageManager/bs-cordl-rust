@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HIDParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::HID::HIDParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::HID::HIDParser {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::HID::HIDParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HIDParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -156,7 +156,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::HID::HIDParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -166,7 +166,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HIDParser_HIDItemStateGlobal {
@@ -181,7 +181,7 @@ pub struct HIDParser_HIDItemStateGlobal {
     pub reportCount: crate::System::Nullable_1<i32>,
     pub reportId: crate::System::Nullable_1<i32>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     type Held<'a> = Self;
@@ -211,7 +211,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     type Type = Self;
@@ -222,7 +222,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     type Actual = Self;
@@ -236,7 +236,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     type Type = Self;
@@ -251,7 +251,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     type Actual = Self;
@@ -265,7 +265,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     type Type = Self;
@@ -349,7 +349,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HIDParser_HIDItemStateLocal {
@@ -366,7 +366,7 @@ pub struct HIDParser_HIDItemStateLocal {
         crate::System::Collections::Generic::List_1<i32>,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     type Held<'a> = Self;
@@ -396,7 +396,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     type Type = Self;
@@ -407,7 +407,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     type Actual = Self;
@@ -421,7 +421,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     type Type = Self;
@@ -436,7 +436,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     type Actual = Self;
@@ -450,7 +450,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     type Type = Self;
@@ -538,7 +538,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HIDParser_HIDItemTypeAndTag {
@@ -571,7 +571,7 @@ pub enum HIDParser_HIDItemTypeAndTag {
     UsageMinimum = 24i32,
     UsagePage = 4i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
     type Held<'a> = Self;
@@ -601,7 +601,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
     type Type = Self;
@@ -612,7 +612,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
     type Actual = Self;
@@ -626,7 +626,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
     type Type = Self;
@@ -641,7 +641,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
     type Actual = Self;
@@ -655,7 +655,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HIDParser_HIDReportData {
@@ -663,7 +663,7 @@ pub struct HIDParser_HIDReportData {
     pub reportType: crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
     pub currentBitOffset: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
     type Held<'a> = Self;
@@ -693,7 +693,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
     type Type = Self;
@@ -704,7 +704,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
     type Actual = Self;
@@ -718,7 +718,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
     type Type = Self;
@@ -733,7 +733,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
     type Actual = Self;
@@ -747,7 +747,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
     type Type = Self;

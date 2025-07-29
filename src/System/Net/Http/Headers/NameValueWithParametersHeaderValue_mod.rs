@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
+#[cfg(
+    feature = "cordl_class_System+Net+Http+Headers+NameValueWithParametersHeaderValue"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameValueWithParametersHeaderValue {
@@ -11,7 +13,9 @@ pub struct NameValueWithParametersHeaderValue {
         >,
     >,
 }
-#[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
+#[cfg(
+    feature = "cordl_class_System+Net+Http+Headers+NameValueWithParametersHeaderValue"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +35,9 @@ for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
         false
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
+#[cfg(
+    feature = "cordl_class_System+Net+Http+Headers+NameValueWithParametersHeaderValue"
+)]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
     type Target = crate::System::Net::Http::Headers::NameValueHeaderValue;
@@ -39,7 +45,9 @@ for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
+#[cfg(
+    feature = "cordl_class_System+Net+Http+Headers+NameValueWithParametersHeaderValue"
+)]
 impl std::ops::DerefMut
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -350,7 +358,9 @@ impl crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
+#[cfg(
+    feature = "cordl_class_System+Net+Http+Headers+NameValueWithParametersHeaderValue"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ParsingInfo")]
+#[cfg(feature = "cordl_class_System+ParsingInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParsingInfo {
@@ -14,7 +14,7 @@ pub struct ParsingInfo {
         crate::System::DateTimeParse_MatchNumberDelegate,
     >,
 }
-#[cfg(feature = "System+ParsingInfo")]
+#[cfg(feature = "cordl_class_System+ParsingInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ParsingInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ParsingInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ParsingInfo")]
+#[cfg(feature = "cordl_class_System+ParsingInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::ParsingInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::ParsingInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ParsingInfo")]
+#[cfg(feature = "cordl_class_System+ParsingInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ParsingInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,7 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ParsingInfo {
         self
     }
 }
-#[cfg(feature = "System+ParsingInfo")]
+#[cfg(feature = "cordl_class_System+ParsingInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::ParsingInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,7 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::ParsingInfo {
         }
     }
 }
-#[cfg(feature = "System+ParsingInfo")]
+#[cfg(feature = "cordl_class_System+ParsingInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::ParsingInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -93,7 +93,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::ParsingInfo {
         actual
     }
 }
-#[cfg(feature = "System+ParsingInfo")]
+#[cfg(feature = "cordl_class_System+ParsingInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ParsingInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+IListWrapper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList_IListWrapper {
     __cordl_parent: crate::System::Collections::ArrayList,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+IListWrapper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ArrayList_IListWrapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::ArrayList_IListWrapper {
         false
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+IListWrapper")]
 impl std::ops::Deref for crate::GlobalNamespace::ArrayList_IListWrapper {
     type Target = crate::System::Collections::ArrayList;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+IListWrapper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ArrayList_IListWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -765,7 +765,7 @@ impl crate::GlobalNamespace::ArrayList_IListWrapper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+IListWrapper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ArrayList_IListWrapper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

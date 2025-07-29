@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+LightShadows")]
+#[cfg(feature = "cordl_class_UnityEngine+LightShadows")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightShadows {
@@ -7,7 +7,7 @@ pub enum LightShadows {
     None = 0i32,
     Soft = 2i32,
 }
-#[cfg(feature = "UnityEngine+LightShadows")]
+#[cfg(feature = "cordl_class_UnityEngine+LightShadows")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightShadows {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightShadows {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+LightShadows")]
+#[cfg(feature = "cordl_class_UnityEngine+LightShadows")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LightShadows {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LightShadows
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+LightShadows")]
+#[cfg(feature = "cordl_class_UnityEngine+LightShadows")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LightShadows {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LightShadow
         self
     }
 }
-#[cfg(feature = "UnityEngine+LightShadows")]
+#[cfg(feature = "cordl_class_UnityEngine+LightShadows")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LightShadows {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LightShadows
         }
     }
 }
-#[cfg(feature = "UnityEngine+LightShadows")]
+#[cfg(feature = "cordl_class_UnityEngine+LightShadows")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LightShadows {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

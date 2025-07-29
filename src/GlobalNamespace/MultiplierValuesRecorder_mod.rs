@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplierValuesRecorder")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplierValuesRecorder {
@@ -15,7 +15,7 @@ pub struct MultiplierValuesRecorder {
         >,
     >,
 }
-#[cfg(feature = "MultiplierValuesRecorder")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplierValuesRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::MultiplierValuesRecorder {
         false
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplierValuesRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplierValuesRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -187,7 +187,7 @@ impl crate::GlobalNamespace::MultiplierValuesRecorder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplierValuesRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -197,14 +197,14 @@ for crate::GlobalNamespace::MultiplierValuesRecorder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder+MultiplierValue")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MultiplierValuesRecorder_MultiplierValue {
     pub multiplier: i32,
     pub _cordl_time: f32,
 }
-#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Held<'a> = Self;
@@ -234,7 +234,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Type = Self;
@@ -245,7 +245,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Actual = Self;
@@ -259,7 +259,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
         self
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Type = Self;
@@ -274,7 +274,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
         }
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Actual = Self;
@@ -288,7 +288,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
         actual
     }
 }
-#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
+#[cfg(feature = "cordl_class_MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Type = Self;

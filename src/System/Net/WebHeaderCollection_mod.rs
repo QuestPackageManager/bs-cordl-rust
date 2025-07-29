@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+WebHeaderCollection")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebHeaderCollection {
@@ -14,7 +14,7 @@ pub struct WebHeaderCollection {
     >,
     pub m_Type: crate::System::Net::WebHeaderCollectionType,
 }
-#[cfg(feature = "System+Net+WebHeaderCollection")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebHeaderCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebHeaderCollect
         false
     }
 }
-#[cfg(feature = "System+Net+WebHeaderCollection")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection")]
 impl std::ops::Deref for crate::System::Net::WebHeaderCollection {
     type Target = crate::System::Collections::Specialized::NameValueCollection;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebHeaderCollection")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection")]
 impl std::ops::DerefMut for crate::System::Net::WebHeaderCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -990,7 +990,7 @@ impl crate::System::Net::WebHeaderCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebHeaderCollection")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebHeaderCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1013,7 +1013,7 @@ for crate::System::Net::WebHeaderCollection {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection+RfcChar")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebHeaderCollection_RfcChar {
@@ -1027,7 +1027,7 @@ pub enum WebHeaderCollection_RfcChar {
     Reg = 1u8,
     WS = 5u8,
 }
-#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Held<'a> = Self;
@@ -1057,7 +1057,7 @@ for crate::System::Net::WebHeaderCollection_RfcChar {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Type = Self;
@@ -1068,7 +1068,7 @@ for crate::System::Net::WebHeaderCollection_RfcChar {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Actual = Self;
@@ -1082,7 +1082,7 @@ for crate::System::Net::WebHeaderCollection_RfcChar {
         self
     }
 }
-#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Type = Self;
@@ -1097,7 +1097,7 @@ for crate::System::Net::WebHeaderCollection_RfcChar {
         }
     }
 }
-#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
+#[cfg(feature = "cordl_class_System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Actual = Self;

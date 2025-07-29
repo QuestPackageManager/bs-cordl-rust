@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ViewControllerBase")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewControllerBase {
@@ -10,7 +10,7 @@ pub struct ViewControllerBase {
         crate::HMUI::ViewControllerBase_DidDeactivateDelegate,
     >,
 }
-#[cfg(feature = "HMUI+ViewControllerBase")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewControllerBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewControllerBase {
         false
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase")]
 impl std::ops::DerefMut for crate::HMUI::ViewControllerBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -257,7 +257,7 @@ impl crate::HMUI::ViewControllerBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewControllerBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -266,13 +266,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewControllerBase {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidActivateDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewControllerBase_DidActivateDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidActivateDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::ViewControllerBase_DidActivateDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -292,14 +292,14 @@ for crate::HMUI::ViewControllerBase_DidActivateDelegate {
         false
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidActivateDelegate")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase_DidActivateDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidActivateDelegate")]
 impl std::ops::DerefMut for crate::HMUI::ViewControllerBase_DidActivateDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -458,7 +458,7 @@ impl crate::HMUI::ViewControllerBase_DidActivateDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidActivateDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HMUI::ViewControllerBase_DidActivateDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -468,13 +468,13 @@ for crate::HMUI::ViewControllerBase_DidActivateDelegate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidDeactivateDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewControllerBase_DidDeactivateDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidDeactivateDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -494,14 +494,14 @@ for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
         false
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidDeactivateDelegate")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidDeactivateDelegate")]
 impl std::ops::DerefMut for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -648,7 +648,7 @@ impl crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
+#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidDeactivateDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAsyncCheckReaderWithLineInfo {
@@ -7,7 +7,7 @@ pub struct XmlAsyncCheckReaderWithLineInfo {
         crate::System::Xml::IXmlLineInfo,
     >,
 }
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfo")]
 impl std::ops::Deref for crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
     type Target = crate::System::Xml::XmlAsyncCheckReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfo")]
 impl std::ops::DerefMut for crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlAsyncCheckReaderWithLineInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

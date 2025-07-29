@@ -1,10 +1,10 @@
-#[cfg(feature = "FileStorageExtensions")]
+#[cfg(feature = "cordl_class_FileStorageExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileStorageExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "FileStorageExtensions")]
+#[cfg(feature = "cordl_class_FileStorageExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FileStorageExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::FileStorageExtensions {
         false
     }
 }
-#[cfg(feature = "FileStorageExtensions")]
+#[cfg(feature = "cordl_class_FileStorageExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::FileStorageExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileStorageExtensions")]
+#[cfg(feature = "cordl_class_FileStorageExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FileStorageExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -393,7 +393,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileStorageExtensions")]
+#[cfg(feature = "cordl_class_FileStorageExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FileStorageExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

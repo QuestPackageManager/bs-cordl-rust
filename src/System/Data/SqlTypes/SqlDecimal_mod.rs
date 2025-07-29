@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+SqlTypes+SqlDecimal")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDecimal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlDecimal {
@@ -11,7 +11,7 @@ pub struct SqlDecimal {
     pub _data3: u32,
     pub _data4: u32,
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDecimal")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDecimal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlDecimal {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlDe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDecimal")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDecimal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::SqlTypes::SqlDecimal {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::System::Data::SqlTypes::SqlDecimal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDecimal")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDecimal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::SqlTypes::SqlDecimal {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::System::Data::SqlTypes::SqlDecimal {
         self
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDecimal")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDecimal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::SqlTypes::SqlDecimal {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::System::Data::SqlTypes::SqlDecimal {
         }
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDecimal")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDecimal")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::SqlTypes::SqlDecimal {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -93,7 +93,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::SqlTypes::Sql
         actual
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDecimal")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDecimal")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::SqlTypes::SqlDecimal {
     type Type = Self;

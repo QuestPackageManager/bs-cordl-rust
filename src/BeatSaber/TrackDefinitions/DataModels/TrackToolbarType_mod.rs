@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackToolbarType {
@@ -11,7 +11,7 @@ pub enum TrackToolbarType {
     None = -1i32,
     Toggle = 1i32,
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
         self
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
         }
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType {
     type Actual = Self;

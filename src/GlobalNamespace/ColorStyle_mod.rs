@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorStyle")]
+#[cfg(feature = "cordl_class_ColorStyle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorStyle {
@@ -16,7 +16,7 @@ pub struct ColorStyle {
     pub _gradientDirection: crate::GlobalNamespace::GradientDirection,
     pub _flipGradientColors: bool,
 }
-#[cfg(feature = "ColorStyle")]
+#[cfg(feature = "cordl_class_ColorStyle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorStyle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorStyle {
         false
     }
 }
-#[cfg(feature = "ColorStyle")]
+#[cfg(feature = "cordl_class_ColorStyle")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorStyle {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorStyle")]
+#[cfg(feature = "cordl_class_ColorStyle")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorStyle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -421,7 +421,7 @@ impl crate::GlobalNamespace::ColorStyle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorStyle")]
+#[cfg(feature = "cordl_class_ColorStyle")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorStyle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

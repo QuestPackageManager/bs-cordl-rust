@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XsdBuilder")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdBuilder {
@@ -114,7 +114,7 @@ pub struct XsdBuilder {
     >,
     pub namespaces: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XsdBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -133,14 +133,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XsdBuild
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder {
     type Target = crate::System::Xml::Schema::SchemaBuilder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XsdBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4637,7 +4637,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XsdBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -4646,7 +4646,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XsdBuilde
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdBuilder_BuilderNamespaceManager {
@@ -4654,7 +4654,7 @@ pub struct XsdBuilder_BuilderNamespaceManager {
     pub nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4674,14 +4674,14 @@ for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4761,7 +4761,7 @@ impl crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4771,7 +4771,7 @@ for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdBuilder_State {
@@ -4825,7 +4825,7 @@ pub enum XsdBuilder_State {
     Unique = 28i32,
     WhiteSpace = 44i32,
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Held<'a> = Self;
@@ -4855,7 +4855,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Type = Self;
@@ -4866,7 +4866,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Actual = Self;
@@ -4880,7 +4880,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Type = Self;
@@ -4895,7 +4895,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Actual = Self;
@@ -4909,7 +4909,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdBuilder_XsdAttributeEntry {
@@ -4919,7 +4919,7 @@ pub struct XsdBuilder_XsdAttributeEntry {
         crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4939,14 +4939,14 @@ for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5001,7 +5001,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5011,13 +5011,13 @@ for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdBuilder_XsdBuildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5037,14 +5037,14 @@ for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5129,7 +5129,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5139,13 +5139,13 @@ for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdBuilder_XsdEndChildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5165,14 +5165,14 @@ for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5251,7 +5251,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5261,7 +5261,7 @@ for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdBuilder_XsdEntry {
@@ -5286,7 +5286,7 @@ pub struct XsdBuilder_XsdEntry {
     >,
     pub ParseContent: bool,
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5306,14 +5306,14 @@ for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEntry")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEntry")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5426,7 +5426,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5436,13 +5436,13 @@ for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdInitFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdBuilder_XsdInitFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdInitFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5462,14 +5462,14 @@ for crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdInitFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdInitFunction")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5554,7 +5554,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdInitFunction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

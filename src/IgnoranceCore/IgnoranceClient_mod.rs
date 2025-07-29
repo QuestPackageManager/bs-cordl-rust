@@ -1,4 +1,4 @@
-#[cfg(feature = "IgnoranceCore+IgnoranceClient")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoranceClient {
@@ -50,7 +50,7 @@ pub struct IgnoranceClient {
     pub CeaseOperation: bool,
     pub WorkerThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient")]
 unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceClient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -69,14 +69,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceClien
         false
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient")]
 impl std::ops::Deref for crate::IgnoranceCore::IgnoranceClient {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient")]
 impl std::ops::DerefMut for crate::IgnoranceCore::IgnoranceClient {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -225,7 +225,7 @@ impl crate::IgnoranceCore::IgnoranceClient {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient")]
 impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceCore::IgnoranceClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -234,7 +234,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceCore::IgnoranceClient
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceClient_ThreadParamInfo {
@@ -251,7 +251,7 @@ pub struct IgnoranceClient_ThreadParamInfo {
     >,
     pub RootCertificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
     type Held<'a> = Self;
@@ -281,7 +281,7 @@ for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
     type Type = Self;
@@ -292,7 +292,7 @@ for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
     type Actual = Self;
@@ -306,7 +306,7 @@ for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
         self
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
     type Type = Self;
@@ -321,7 +321,7 @@ for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
         }
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
     type Actual = Self;
@@ -335,7 +335,7 @@ for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
         actual
     }
 }
-#[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
+#[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
     type Type = Self;

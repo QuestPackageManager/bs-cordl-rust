@@ -1,4 +1,4 @@
-#[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
+#[cfg(feature = "cordl_class_FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FadeOutSongPreviewPlayerOnSceneTransitionStart {
@@ -10,7 +10,7 @@ pub struct FadeOutSongPreviewPlayerOnSceneTransitionStart {
         crate::GlobalNamespace::GameScenesManager,
     >,
 }
-#[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
+#[cfg(feature = "cordl_class_FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
         false
     }
 }
-#[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
+#[cfg(feature = "cordl_class_FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
+#[cfg(feature = "cordl_class_FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -148,7 +148,7 @@ impl crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
+#[cfg(feature = "cordl_class_FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

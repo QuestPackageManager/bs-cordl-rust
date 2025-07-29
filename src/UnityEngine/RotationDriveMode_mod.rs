@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RotationDriveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+RotationDriveMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RotationDriveMode {
@@ -6,7 +6,7 @@ pub enum RotationDriveMode {
     Slerp = 1i32,
     XYAndZ = 0i32,
 }
-#[cfg(feature = "UnityEngine+RotationDriveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+RotationDriveMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RotationDriveMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RotationDriveMod
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RotationDriveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+RotationDriveMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RotationDriveMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RotationDriv
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RotationDriveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+RotationDriveMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RotationDriveMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RotationDri
         self
     }
 }
-#[cfg(feature = "UnityEngine+RotationDriveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+RotationDriveMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RotationDriveMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RotationDriv
         }
     }
 }
-#[cfg(feature = "UnityEngine+RotationDriveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+RotationDriveMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RotationDriveMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

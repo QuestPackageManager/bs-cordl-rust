@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConditionalActiveByLayout")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConditionalActiveByLayout {
@@ -9,7 +9,7 @@ pub struct MultiplayerConditionalActiveByLayout {
         crate::GlobalNamespace::MultiplayerLayoutProvider,
     >,
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
         false
     }
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -134,7 +134,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout+Condition")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerConditionalActiveByLayout_Condition {
@@ -142,7 +142,7 @@ pub enum MultiplayerConditionalActiveByLayout_Condition {
     HideIf = 1i32,
     ShowIf = 0i32,
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Held<'a> = Self;
@@ -172,7 +172,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Type = Self;
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Actual = Self;
@@ -197,7 +197,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
         self
     }
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Type = Self;
@@ -212,7 +212,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
         }
     }
 }
-#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
+#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Actual = Self;

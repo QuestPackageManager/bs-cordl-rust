@@ -1,4 +1,4 @@
-#[cfg(feature = "SmoothCameraSettingsViewController")]
+#[cfg(feature = "cordl_class_SmoothCameraSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmoothCameraSettingsViewController {
@@ -11,7 +11,7 @@ pub struct SmoothCameraSettingsViewController {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "SmoothCameraSettingsViewController")]
+#[cfg(feature = "cordl_class_SmoothCameraSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SmoothCameraSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::SmoothCameraSettingsViewController {
         false
     }
 }
-#[cfg(feature = "SmoothCameraSettingsViewController")]
+#[cfg(feature = "cordl_class_SmoothCameraSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SmoothCameraSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SmoothCameraSettingsViewController")]
+#[cfg(feature = "cordl_class_SmoothCameraSettingsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SmoothCameraSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::GlobalNamespace::SmoothCameraSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SmoothCameraSettingsViewController")]
+#[cfg(feature = "cordl_class_SmoothCameraSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SmoothCameraSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

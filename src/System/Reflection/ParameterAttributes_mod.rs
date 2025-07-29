@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+ParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterAttributes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParameterAttributes {
@@ -15,7 +15,7 @@ pub enum ParameterAttributes {
     ReservedMask = 61440i32,
     Retval = 8i32,
 }
-#[cfg(feature = "System+Reflection+ParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::ParameterAttributes {
     type Held<'a> = Self;
@@ -45,7 +45,7 @@ for crate::System::Reflection::ParameterAttributes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+ParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::ParameterAttributes {
     type Type = Self;
@@ -56,7 +56,7 @@ for crate::System::Reflection::ParameterAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+ParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::ParameterAttributes {
     type Actual = Self;
@@ -70,7 +70,7 @@ for crate::System::Reflection::ParameterAttributes {
         self
     }
 }
-#[cfg(feature = "System+Reflection+ParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::ParameterAttributes {
     type Type = Self;
@@ -85,7 +85,7 @@ for crate::System::Reflection::ParameterAttributes {
         }
     }
 }
-#[cfg(feature = "System+Reflection+ParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::ParameterAttributes {
     type Actual = Self;

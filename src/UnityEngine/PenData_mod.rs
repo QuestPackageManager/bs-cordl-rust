@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+PenData")]
+#[cfg(feature = "cordl_class_UnityEngine+PenData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PenData {
@@ -10,7 +10,7 @@ pub struct PenData {
     pub contactType: crate::UnityEngine::PenEventType,
     pub deltaPos: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "UnityEngine+PenData")]
+#[cfg(feature = "cordl_class_UnityEngine+PenData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PenData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PenData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PenData")]
+#[cfg(feature = "cordl_class_UnityEngine+PenData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::PenData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::PenData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PenData")]
+#[cfg(feature = "cordl_class_UnityEngine+PenData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::PenData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::PenData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PenData")]
+#[cfg(feature = "cordl_class_UnityEngine+PenData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::PenData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::PenData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PenData")]
+#[cfg(feature = "cordl_class_UnityEngine+PenData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::PenData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::PenData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PenData")]
+#[cfg(feature = "cordl_class_UnityEngine+PenData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::PenData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

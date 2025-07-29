@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+SelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectMode {
@@ -14,7 +14,7 @@ pub enum SelectMode {
     TextureVertex = 64i32,
     Vertex = 2i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::SelectMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Sele
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::SelectMode {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::UnityEngine::ProBuilder::SelectMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::SelectMode {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::ProBuilder::SelectMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::SelectMode {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::UnityEngine::ProBuilder::SelectMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::SelectMode {
     type Actual = Self;

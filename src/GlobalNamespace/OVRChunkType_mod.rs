@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRChunkType")]
+#[cfg(feature = "cordl_class_OVRChunkType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRChunkType {
@@ -6,7 +6,7 @@ pub enum OVRChunkType {
     BIN = 5130562i32,
     JSON = 1313821514i32,
 }
-#[cfg(feature = "OVRChunkType")]
+#[cfg(feature = "cordl_class_OVRChunkType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRChunkType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRChunkType
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRChunkType")]
+#[cfg(feature = "cordl_class_OVRChunkType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRChunkType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRChunk
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRChunkType")]
+#[cfg(feature = "cordl_class_OVRChunkType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRChunkType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRChun
         self
     }
 }
-#[cfg(feature = "OVRChunkType")]
+#[cfg(feature = "cordl_class_OVRChunkType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRChunkType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRChunk
         }
     }
 }
-#[cfg(feature = "OVRChunkType")]
+#[cfg(feature = "cordl_class_OVRChunkType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRChunkType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

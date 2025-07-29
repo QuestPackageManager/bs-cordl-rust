@@ -1,4 +1,4 @@
-#[cfg(feature = "MoveAndRotateWithMainCamera")]
+#[cfg(feature = "cordl_class_MoveAndRotateWithMainCamera")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MoveAndRotateWithMainCamera {
@@ -8,7 +8,7 @@ pub struct MoveAndRotateWithMainCamera {
     pub _positionOffset: crate::UnityEngine::Vector3,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "MoveAndRotateWithMainCamera")]
+#[cfg(feature = "cordl_class_MoveAndRotateWithMainCamera")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MoveAndRotateWithMainCamera {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::MoveAndRotateWithMainCamera {
         false
     }
 }
-#[cfg(feature = "MoveAndRotateWithMainCamera")]
+#[cfg(feature = "cordl_class_MoveAndRotateWithMainCamera")]
 impl std::ops::Deref for crate::GlobalNamespace::MoveAndRotateWithMainCamera {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MoveAndRotateWithMainCamera")]
+#[cfg(feature = "cordl_class_MoveAndRotateWithMainCamera")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MoveAndRotateWithMainCamera {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::GlobalNamespace::MoveAndRotateWithMainCamera {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MoveAndRotateWithMainCamera")]
+#[cfg(feature = "cordl_class_MoveAndRotateWithMainCamera")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MoveAndRotateWithMainCamera {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

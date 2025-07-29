@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoapTypeAttribute {
@@ -13,7 +13,7 @@ pub struct SoapTypeAttribute {
     pub _isType: bool,
     pub _isElement: bool,
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Metadata::SoapTypeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::System::Runtime::Remoting::Metadata::SoapTypeAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Metadata::SoapTypeAttribute {
     type Target = crate::System::Runtime::Remoting::Metadata::SoapAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Metadata::SoapTypeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -263,7 +263,7 @@ impl crate::System::Runtime::Remoting::Metadata::SoapTypeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapTypeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Metadata::SoapTypeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

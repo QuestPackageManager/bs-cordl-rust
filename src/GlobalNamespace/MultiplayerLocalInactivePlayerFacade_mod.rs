@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerFacade {
@@ -30,7 +30,7 @@ pub struct MultiplayerLocalInactivePlayerFacade {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,14 +50,14 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -454,7 +454,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -512,7 +512,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade+Factory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerFacade_Factory {
@@ -523,7 +523,7 @@ pub struct MultiplayerLocalInactivePlayerFacade_Factory {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade+Factory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -543,7 +543,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
@@ -556,7 +556,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade+Factory")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -594,7 +594,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade+Factory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

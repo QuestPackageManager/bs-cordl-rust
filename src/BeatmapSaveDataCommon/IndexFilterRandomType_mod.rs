@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterRandomType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilterRandomType {
@@ -7,7 +7,7 @@ pub enum IndexFilterRandomType {
     NoRandom = 0i32,
     RandomElements = 2i32,
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::IndexFilterRandomType {
     type Actual = Self;

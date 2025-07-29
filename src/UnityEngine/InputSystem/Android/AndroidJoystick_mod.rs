@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidJoystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidJoystick")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJoystick {
     __cordl_parent: crate::UnityEngine::InputSystem::Joystick,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidJoystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidJoystick")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidJoystick {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Android::AndroidJoystick {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidJoystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidJoystick")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Android::AndroidJoystick {
     type Target = crate::UnityEngine::InputSystem::Joystick;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidJoystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidJoystick")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Android::AndroidJoystick {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::InputSystem::Android::AndroidJoystick {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidJoystick")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidJoystick")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidJoystick {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

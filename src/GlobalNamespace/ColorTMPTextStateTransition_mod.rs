@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorTMPTextStateTransition")]
+#[cfg(feature = "cordl_class_ColorTMPTextStateTransition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorTMPTextStateTransition {
@@ -7,7 +7,7 @@ pub struct ColorTMPTextStateTransition {
     >,
     pub _colorTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
-#[cfg(feature = "ColorTMPTextStateTransition")]
+#[cfg(feature = "cordl_class_ColorTMPTextStateTransition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorTMPTextStateTransition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::ColorTMPTextStateTransition {
         false
     }
 }
-#[cfg(feature = "ColorTMPTextStateTransition")]
+#[cfg(feature = "cordl_class_ColorTMPTextStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorTMPTextStateTransition {
     type Target = crate::GlobalNamespace::ColorStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -36,7 +36,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ColorTMPTextStateTransition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorTMPTextStateTransition")]
+#[cfg(feature = "cordl_class_ColorTMPTextStateTransition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorTMPTextStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -513,7 +513,7 @@ impl crate::GlobalNamespace::ColorTMPTextStateTransition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorTMPTextStateTransition")]
+#[cfg(feature = "cordl_class_ColorTMPTextStateTransition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorTMPTextStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

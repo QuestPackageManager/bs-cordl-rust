@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointOnEdgeException {
@@ -13,7 +13,7 @@ pub struct PointOnEdgeException {
         crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
     >,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
     type Target = crate::System::NotImplementedException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -116,7 +116,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

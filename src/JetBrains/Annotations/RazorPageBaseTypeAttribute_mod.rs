@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+RazorPageBaseTypeAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorPageBaseTypeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RazorPageBaseTypeAttribute {
@@ -10,7 +10,7 @@ pub struct RazorPageBaseTypeAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "JetBrains+Annotations+RazorPageBaseTypeAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorPageBaseTypeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::RazorPageBaseTypeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::JetBrains::Annotations::RazorPageBaseTypeAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorPageBaseTypeAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorPageBaseTypeAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::RazorPageBaseTypeAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorPageBaseTypeAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorPageBaseTypeAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::RazorPageBaseTypeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -231,7 +231,7 @@ impl crate::JetBrains::Annotations::RazorPageBaseTypeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorPageBaseTypeAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorPageBaseTypeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::RazorPageBaseTypeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

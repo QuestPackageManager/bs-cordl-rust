@@ -1,4 +1,4 @@
-#[cfg(feature = "SteamLevelProductPacksSO")]
+#[cfg(feature = "cordl_class_SteamLevelProductPacksSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamLevelProductPacksSO {
@@ -14,7 +14,7 @@ pub struct SteamLevelProductPacksSO {
         >,
     >,
 }
-#[cfg(feature = "SteamLevelProductPacksSO")]
+#[cfg(feature = "cordl_class_SteamLevelProductPacksSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SteamLevelProductPacksSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::SteamLevelProductPacksSO {
         false
     }
 }
-#[cfg(feature = "SteamLevelProductPacksSO")]
+#[cfg(feature = "cordl_class_SteamLevelProductPacksSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SteamLevelProductPacksSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SteamLevelProductPacksSO")]
+#[cfg(feature = "cordl_class_SteamLevelProductPacksSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SteamLevelProductPacksSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -185,7 +185,7 @@ impl crate::GlobalNamespace::SteamLevelProductPacksSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SteamLevelProductPacksSO")]
+#[cfg(feature = "cordl_class_SteamLevelProductPacksSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SteamLevelProductPacksSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

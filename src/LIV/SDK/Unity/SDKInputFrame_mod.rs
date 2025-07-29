@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKInputFrame")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKInputFrame {
@@ -11,7 +11,7 @@ pub struct SDKInputFrame {
     pub referenceframe: u64,
     pub priority: crate::LIV::SDK::Unity::SDKPriority,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKInputFrame")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKInputFrame {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKInputFram
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKInputFrame")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKInputFrame {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKInput
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKInputFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKInputFrame {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKInpu
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKInputFrame")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKInputFrame {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKInput
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKInputFrame")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKInputFrame {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKInputFr
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKInputFrame")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LIV::SDK::Unity::SDKInputFrame {
     type Type = Self;

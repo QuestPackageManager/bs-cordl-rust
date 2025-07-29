@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AxisComposite {
@@ -9,7 +9,7 @@ pub struct AxisComposite {
     pub maxValue: f32,
     pub whichSideWins: crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Composites::AxisComposite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Composites::AxisComposite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Composites::AxisComposite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::UnityEngine::InputSystem::Composites::AxisComposite {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Composites::AxisComposite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -162,7 +162,9 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AxisComposite_WhichSideWins {
@@ -171,7 +173,9 @@ pub enum AxisComposite_WhichSideWins {
     Neither = 0i32,
     Positive = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Held<'a> = Self;
@@ -201,7 +205,9 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Type = Self;
@@ -212,7 +218,9 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Actual = Self;
@@ -226,7 +234,9 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Type = Self;
@@ -241,7 +251,9 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Actual = Self;

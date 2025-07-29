@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Channels+SinkProviderData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+SinkProviderData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SinkProviderData {
@@ -7,7 +7,7 @@ pub struct SinkProviderData {
     pub children: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub properties: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+SinkProviderData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+SinkProviderData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Channels::SinkProviderData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Runtime::Remoting::Channels::SinkProviderData {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+SinkProviderData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+SinkProviderData")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::SinkProviderData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+SinkProviderData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+SinkProviderData")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Channels::SinkProviderData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -135,7 +135,7 @@ impl crate::System::Runtime::Remoting::Channels::SinkProviderData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+SinkProviderData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+SinkProviderData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Channels::SinkProviderData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

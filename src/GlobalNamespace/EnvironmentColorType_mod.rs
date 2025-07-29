@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentColorType")]
+#[cfg(feature = "cordl_class_EnvironmentColorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentColorType {
@@ -8,7 +8,7 @@ pub enum EnvironmentColorType {
     ColorW = 2i32,
     None = -1i32,
 }
-#[cfg(feature = "EnvironmentColorType")]
+#[cfg(feature = "cordl_class_EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentColorType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::EnvironmentColorType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "EnvironmentColorType")]
+#[cfg(feature = "cordl_class_EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentColorType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::EnvironmentColorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "EnvironmentColorType")]
+#[cfg(feature = "cordl_class_EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentColorType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::GlobalNamespace::EnvironmentColorType {
         self
     }
 }
-#[cfg(feature = "EnvironmentColorType")]
+#[cfg(feature = "cordl_class_EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentColorType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::EnvironmentColorType {
         }
     }
 }
-#[cfg(feature = "EnvironmentColorType")]
+#[cfg(feature = "cordl_class_EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentColorType {
     type Actual = Self;

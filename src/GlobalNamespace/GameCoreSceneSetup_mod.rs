@@ -1,4 +1,4 @@
-#[cfg(feature = "GameCoreSceneSetup")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameCoreSceneSetup {
@@ -11,7 +11,7 @@ pub struct GameCoreSceneSetup {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "GameCoreSceneSetup")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameCoreSceneSetup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameCoreScen
         false
     }
 }
-#[cfg(feature = "GameCoreSceneSetup")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetup")]
 impl std::ops::Deref for crate::GlobalNamespace::GameCoreSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameCoreSceneSetup")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameCoreSceneSetup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::GameCoreSceneSetup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameCoreSceneSetup")]
+#[cfg(feature = "cordl_class_GameCoreSceneSetup")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameCoreSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

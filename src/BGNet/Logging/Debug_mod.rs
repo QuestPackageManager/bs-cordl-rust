@@ -1,10 +1,10 @@
-#[cfg(feature = "BGNet+Logging+Debug")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Debug {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGNet+Logging+Debug")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug {
         false
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug")]
 impl std::ops::DerefMut for crate::BGNet::Logging::Debug {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -228,7 +228,7 @@ impl crate::BGNet::Logging::Debug {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -237,13 +237,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug+ILogger")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+ILogger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Debug_ILogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGNet+Logging+Debug+ILogger")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+ILogger")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug_ILogger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -262,14 +262,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug_ILogger
         false
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug+ILogger")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+ILogger")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug_ILogger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug+ILogger")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+ILogger")]
 impl std::ops::DerefMut for crate::BGNet::Logging::Debug_ILogger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -393,7 +393,7 @@ impl crate::BGNet::Logging::Debug_ILogger {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug+ILogger")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+ILogger")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug_ILogger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -402,7 +402,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug_ILogger 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+LoggerLinkedList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Debug_LoggerLinkedList {
@@ -410,7 +410,7 @@ pub struct Debug_LoggerLinkedList {
     pub logger: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger>,
     pub next: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_LoggerLinkedList>,
 }
-#[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+LoggerLinkedList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGNet::Logging::Debug_LoggerLinkedList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -430,14 +430,14 @@ for crate::BGNet::Logging::Debug_LoggerLinkedList {
         false
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+LoggerLinkedList")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug_LoggerLinkedList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+LoggerLinkedList")]
 impl std::ops::DerefMut for crate::BGNet::Logging::Debug_LoggerLinkedList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -483,7 +483,7 @@ impl crate::BGNet::Logging::Debug_LoggerLinkedList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
+#[cfg(feature = "cordl_class_BGNet+Logging+Debug+LoggerLinkedList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGNet::Logging::Debug_LoggerLinkedList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

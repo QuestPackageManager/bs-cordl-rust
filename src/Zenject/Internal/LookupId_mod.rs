@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+Internal+LookupId")]
+#[cfg(feature = "cordl_class_Zenject+Internal+LookupId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LookupId {
@@ -6,7 +6,7 @@ pub struct LookupId {
     pub Provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     pub BindingId: crate::Zenject::BindingId,
 }
-#[cfg(feature = "Zenject+Internal+LookupId")]
+#[cfg(feature = "cordl_class_Zenject+Internal+LookupId")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::Internal::LookupId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::Internal::LookupId {
         false
     }
 }
-#[cfg(feature = "Zenject+Internal+LookupId")]
+#[cfg(feature = "cordl_class_Zenject+Internal+LookupId")]
 impl std::ops::Deref for crate::Zenject::Internal::LookupId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+Internal+LookupId")]
+#[cfg(feature = "cordl_class_Zenject+Internal+LookupId")]
 impl std::ops::DerefMut for crate::Zenject::Internal::LookupId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::Zenject::Internal::LookupId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+Internal+LookupId")]
+#[cfg(feature = "cordl_class_Zenject+Internal+LookupId")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::Internal::LookupId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

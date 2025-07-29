@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+PhysicMaterial")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicMaterial")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PhysicMaterial {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+PhysicMaterial")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicMaterial")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PhysicMaterial {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PhysicMaterial {
         false
     }
 }
-#[cfg(feature = "UnityEngine+PhysicMaterial")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicMaterial")]
 impl std::ops::Deref for crate::UnityEngine::PhysicMaterial {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+PhysicMaterial")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicMaterial")]
 impl std::ops::DerefMut for crate::UnityEngine::PhysicMaterial {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -597,7 +597,7 @@ impl crate::UnityEngine::PhysicMaterial {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+PhysicMaterial")]
+#[cfg(feature = "cordl_class_UnityEngine+PhysicMaterial")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::PhysicMaterial {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

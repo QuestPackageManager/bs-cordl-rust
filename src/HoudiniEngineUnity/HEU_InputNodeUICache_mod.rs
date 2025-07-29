@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputNodeUICache {
@@ -18,7 +18,7 @@ pub struct HEU_InputNodeUICache {
         >,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -86,7 +86,7 @@ impl crate::HoudiniEngineUnity::HEU_InputNodeUICache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -96,13 +96,17 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputNodeUICache_HEU_InputAssetUICache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -122,7 +126,9 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache"
+)]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -130,7 +136,9 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache"
+)]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -168,7 +176,9 @@ impl crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -178,13 +188,17 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputNodeUICache_HEU_InputObjectUICache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -204,7 +218,9 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache"
+)]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -212,7 +228,9 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache"
+)]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -250,7 +268,9 @@ impl crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DpadControl {
@@ -16,7 +16,7 @@ pub struct DpadControl {
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::DpadControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::DpadControl {
     type Target = crate::UnityEngine::InputSystem::Controls::Vector2Control;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::DpadControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -468,7 +468,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::DpadControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -478,7 +478,7 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DpadControl_ButtonBits {
@@ -488,7 +488,7 @@ pub enum DpadControl_ButtonBits {
     Right = 3i32,
     Up = 0i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
     type Held<'a> = Self;
@@ -518,7 +518,7 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
     type Type = Self;
@@ -529,7 +529,7 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
     type Actual = Self;
@@ -543,7 +543,7 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
     type Type = Self;
@@ -558,7 +558,7 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
     type Actual = Self;
@@ -572,14 +572,18 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DpadControl_DpadAxisControl {
     __cordl_parent: crate::UnityEngine::InputSystem::Controls::AxisControl,
     pub _component_k__BackingField: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -599,7 +603,9 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
     type Target = crate::UnityEngine::InputSystem::Controls::AxisControl;
@@ -607,7 +613,9 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -739,7 +747,9 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+VertexAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttribute")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VertexAttribute {
@@ -18,7 +18,7 @@ pub enum VertexAttribute {
     TexCoord6 = 10i32,
     TexCoord7 = 11i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::VertexAttribute {
     type Held<'a> = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Rendering::VertexAttribute {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttribute")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::VertexAttribute {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Rendering::VertexAttribute {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttribute")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::VertexAttribute {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::Rendering::VertexAttribute {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttribute")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::VertexAttribute {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Rendering::VertexAttribute {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttribute")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::VertexAttribute {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+DateTime")]
+#[cfg(feature = "cordl_class_System+DateTime")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DateTime {
     pub _dateData: u64,
 }
-#[cfg(feature = "System+DateTime")]
+#[cfg(feature = "cordl_class_System+DateTime")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTime {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTime {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+DateTime")]
+#[cfg(feature = "cordl_class_System+DateTime")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTime {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTime {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+DateTime")]
+#[cfg(feature = "cordl_class_System+DateTime")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTime {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTime {
         self
     }
 }
-#[cfg(feature = "System+DateTime")]
+#[cfg(feature = "cordl_class_System+DateTime")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTime {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTime {
         }
     }
 }
-#[cfg(feature = "System+DateTime")]
+#[cfg(feature = "cordl_class_System+DateTime")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTime {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTime {
         actual
     }
 }
-#[cfg(feature = "System+DateTime")]
+#[cfg(feature = "cordl_class_System+DateTime")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DateTime {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

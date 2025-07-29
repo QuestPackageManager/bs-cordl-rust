@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBeatmapObjectEventManager {
@@ -52,7 +52,7 @@ pub struct MultiplayerConnectedPlayerBeatmapObjectEventManager {
     >,
     pub _paused: bool,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -72,7 +72,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager 
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -80,7 +80,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -681,7 +681,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -710,7 +710,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager 
     }
 }
 #[cfg(
-    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+    feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -721,7 +721,7 @@ pub struct MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatma
     >,
 }
 #[cfg(
-    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+    feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
@@ -753,7 +753,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
     }
 }
 #[cfg(
-    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+    feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
@@ -766,7 +766,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
     }
 }
 #[cfg(
-    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+    feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
@@ -782,7 +782,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
     }
 }
 #[cfg(
-    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+    feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
@@ -799,7 +799,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
     }
 }
 #[cfg(
-    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+    feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
@@ -815,7 +815,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
     }
 }
 #[cfg(
-    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+    feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {

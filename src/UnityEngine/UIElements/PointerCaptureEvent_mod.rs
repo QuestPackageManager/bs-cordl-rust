@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerCaptureEvent {
@@ -6,7 +6,7 @@ pub struct PointerCaptureEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCaptureEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PointerCaptureEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::PointerCaptureEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCaptureEvent {
     type Target = crate::UnityEngine::UIElements::PointerCaptureEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCaptureEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCaptureEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerCaptureEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerCaptureEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCaptureEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PointerCaptureEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

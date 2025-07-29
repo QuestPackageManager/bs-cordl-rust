@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorBindInfo")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorBindInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorBindInfo {
@@ -9,7 +9,7 @@ pub struct SubContainerCreatorBindInfo {
     pub _CreateKernel_k__BackingField: bool,
     pub _KernelType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorBindInfo")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorBindInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SubContainerCreatorBindInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SubContainerCreatorB
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorBindInfo")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorBindInfo")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorBindInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorBindInfo")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorBindInfo")]
 impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorBindInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -219,7 +219,7 @@ impl crate::Zenject::SubContainerCreatorBindInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorBindInfo")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorBindInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SubContainerCreatorBindInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+CaretPosition")]
+#[cfg(feature = "cordl_class_TMPro+CaretPosition")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CaretPosition {
@@ -7,7 +7,7 @@ pub enum CaretPosition {
     None = 0i32,
     Right = 2i32,
 }
-#[cfg(feature = "TMPro+CaretPosition")]
+#[cfg(feature = "cordl_class_TMPro+CaretPosition")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::CaretPosition {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::CaretPosition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+CaretPosition")]
+#[cfg(feature = "cordl_class_TMPro+CaretPosition")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::CaretPosition {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::CaretPosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+CaretPosition")]
+#[cfg(feature = "cordl_class_TMPro+CaretPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::CaretPosition {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::CaretPosition {
         self
     }
 }
-#[cfg(feature = "TMPro+CaretPosition")]
+#[cfg(feature = "cordl_class_TMPro+CaretPosition")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::CaretPosition {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::CaretPosition {
         }
     }
 }
-#[cfg(feature = "TMPro+CaretPosition")]
+#[cfg(feature = "cordl_class_TMPro+CaretPosition")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::CaretPosition {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

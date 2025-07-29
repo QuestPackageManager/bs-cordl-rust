@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+VRActiveActionSet_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRActiveActionSet_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRActiveActionSet_t {
@@ -8,7 +8,7 @@ pub struct VRActiveActionSet_t {
     pub unPadding: u32,
     pub nPriority: i32,
 }
-#[cfg(feature = "OVR+OpenVR+VRActiveActionSet_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRActiveActionSet_t")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VRActiveActionSet_t {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VRActiveActionSe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRActiveActionSet_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRActiveActionSet_t")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::VRActiveActionSet_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::VRActiveActi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRActiveActionSet_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRActiveActionSet_t")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::VRActiveActionSet_t {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::OVR::OpenVR::VRActiveActionSet_t {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRActiveActionSet_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRActiveActionSet_t")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::VRActiveActionSet_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::VRActiveActi
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRActiveActionSet_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRActiveActionSet_t")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VRActiveActionSet_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VRActiveAction
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRActiveActionSet_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRActiveActionSet_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::VRActiveActionSet_t {
     type Type = Self;

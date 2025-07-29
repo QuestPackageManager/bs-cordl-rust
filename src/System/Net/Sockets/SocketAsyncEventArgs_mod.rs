@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+SocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SocketAsyncEventArgs {
@@ -48,7 +48,7 @@ pub struct SocketAsyncEventArgs {
         crate::System::Collections::Generic::List_1<crate::System::ArraySegment_1<u8>>,
     >,
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::SocketAsyncEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -68,14 +68,14 @@ for crate::System::Net::Sockets::SocketAsyncEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncEventArgs")]
 impl std::ops::Deref for crate::System::Net::Sockets::SocketAsyncEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncEventArgs")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::SocketAsyncEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -871,7 +871,7 @@ impl crate::System::Net::Sockets::SocketAsyncEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Sockets::SocketAsyncEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "IServerSongPackProvider")]
+#[cfg(feature = "cordl_class_IServerSongPackProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IServerSongPackProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IServerSongPackProvider")]
+#[cfg(feature = "cordl_class_IServerSongPackProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IServerSongPackProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IServerSongPackProvider {
         false
     }
 }
-#[cfg(feature = "IServerSongPackProvider")]
+#[cfg(feature = "cordl_class_IServerSongPackProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::IServerSongPackProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IServerSongPackProvider")]
+#[cfg(feature = "cordl_class_IServerSongPackProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IServerSongPackProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::IServerSongPackProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IServerSongPackProvider")]
+#[cfg(feature = "cordl_class_IServerSongPackProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IServerSongPackProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

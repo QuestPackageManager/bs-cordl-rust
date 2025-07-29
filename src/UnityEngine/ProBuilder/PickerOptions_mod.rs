@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PickerOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PickerOptions {
     pub _depthTest_k__BackingField: bool,
     pub _rectSelectMode_k__BackingField: crate::UnityEngine::ProBuilder::RectSelectMode,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Type = Self;

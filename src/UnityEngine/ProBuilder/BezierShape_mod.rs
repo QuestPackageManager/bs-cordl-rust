@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+BezierShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierShape")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BezierShape {
@@ -18,7 +18,7 @@ pub struct BezierShape {
         crate::UnityEngine::ProBuilder::ProBuilderMesh,
     >,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierShape")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::BezierShape {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Bezi
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierShape")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::BezierShape {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierShape")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::BezierShape {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::UnityEngine::ProBuilder::BezierShape {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierShape")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierShape")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::BezierShape {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

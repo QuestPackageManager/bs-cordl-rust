@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+BindSignalToBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalToBinder_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindSignalToBinder_1<TSignal: quest_hook::libil2cpp::Type> {
@@ -10,7 +10,7 @@ pub struct BindSignalToBinder_1<TSignal: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TSignal: std::marker::PhantomData<TSignal>,
 }
-#[cfg(feature = "Zenject+BindSignalToBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalToBinder_1")]
 unsafe impl<TSignal: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Zenject::BindSignalToBinder_1<TSignal> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,7 +46,7 @@ for crate::Zenject::BindSignalToBinder_1<TSignal> {
         false
     }
 }
-#[cfg(feature = "Zenject+BindSignalToBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalToBinder_1")]
 impl<TSignal: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::BindSignalToBinder_1<TSignal> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -54,7 +54,7 @@ for crate::Zenject::BindSignalToBinder_1<TSignal> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+BindSignalToBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalToBinder_1")]
 impl<TSignal: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::BindSignalToBinder_1<TSignal> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -417,7 +417,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+BindSignalToBinder_1")]
+#[cfg(feature = "cordl_class_Zenject+BindSignalToBinder_1")]
 impl<TSignal: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Zenject::BindSignalToBinder_1<TSignal> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

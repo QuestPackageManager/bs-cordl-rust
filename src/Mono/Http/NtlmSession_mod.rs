@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Http+NtlmSession")]
+#[cfg(feature = "cordl_class_Mono+Http+NtlmSession")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NtlmSession {
@@ -7,7 +7,7 @@ pub struct NtlmSession {
         crate::Mono::Security::Protocol::Ntlm::MessageBase,
     >,
 }
-#[cfg(feature = "Mono+Http+NtlmSession")]
+#[cfg(feature = "cordl_class_Mono+Http+NtlmSession")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Http::NtlmSession {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Http::NtlmSession {
         false
     }
 }
-#[cfg(feature = "Mono+Http+NtlmSession")]
+#[cfg(feature = "cordl_class_Mono+Http+NtlmSession")]
 impl std::ops::Deref for crate::Mono::Http::NtlmSession {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Http+NtlmSession")]
+#[cfg(feature = "cordl_class_Mono+Http+NtlmSession")]
 impl std::ops::DerefMut for crate::Mono::Http::NtlmSession {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -107,7 +107,7 @@ impl crate::Mono::Http::NtlmSession {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Http+NtlmSession")]
+#[cfg(feature = "cordl_class_Mono+Http+NtlmSession")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Http::NtlmSession {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

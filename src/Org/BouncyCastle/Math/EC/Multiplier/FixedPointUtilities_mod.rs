@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedPointUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -167,7 +167,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -178,7 +178,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -187,7 +187,7 @@ pub struct FixedPointUtilities_FixedPointCallback {
     pub m_p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPointCallback {
@@ -209,7 +209,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPoi
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPointCallback {
@@ -219,7 +219,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPoi
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPointCallback {
@@ -374,7 +374,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPo
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPointCallback {

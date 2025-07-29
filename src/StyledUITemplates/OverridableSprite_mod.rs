@@ -1,4 +1,4 @@
-#[cfg(feature = "StyledUITemplates+OverridableSprite")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableSprite")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OverridableSprite {
@@ -6,7 +6,7 @@ pub struct OverridableSprite {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >,
 }
-#[cfg(feature = "StyledUITemplates+OverridableSprite")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableSprite")]
 unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::OverridableSprite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::Overridabl
         false
     }
 }
-#[cfg(feature = "StyledUITemplates+OverridableSprite")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableSprite")]
 impl std::ops::Deref for crate::StyledUITemplates::OverridableSprite {
     type Target = crate::StyledUITemplates::OverridableData_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::StyledUITemplates::OverridableSprite {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StyledUITemplates+OverridableSprite")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableSprite")]
 impl std::ops::DerefMut for crate::StyledUITemplates::OverridableSprite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::StyledUITemplates::OverridableSprite {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StyledUITemplates+OverridableSprite")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableSprite")]
 impl quest_hook::libil2cpp::ObjectType for crate::StyledUITemplates::OverridableSprite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

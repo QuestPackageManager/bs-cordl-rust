@@ -1,4 +1,4 @@
-#[cfg(feature = "CubemapCapture")]
+#[cfg(feature = "cordl_class_CubemapCapture")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CubemapCapture {
@@ -19,7 +19,7 @@ pub struct CubemapCapture {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
-#[cfg(feature = "CubemapCapture")]
+#[cfg(feature = "cordl_class_CubemapCapture")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CubemapCapture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CubemapCaptu
         false
     }
 }
-#[cfg(feature = "CubemapCapture")]
+#[cfg(feature = "cordl_class_CubemapCapture")]
 impl std::ops::Deref for crate::GlobalNamespace::CubemapCapture {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CubemapCapture")]
+#[cfg(feature = "cordl_class_CubemapCapture")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CubemapCapture {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -218,7 +218,7 @@ impl crate::GlobalNamespace::CubemapCapture {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CubemapCapture")]
+#[cfg(feature = "cordl_class_CubemapCapture")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CubemapCapture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -227,7 +227,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CubemapCaptur
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "CubemapCapture+ImageType")]
+#[cfg(feature = "cordl_class_CubemapCapture+ImageType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CubemapCapture_ImageType {
@@ -237,7 +237,7 @@ pub enum CubemapCapture_ImageType {
     PNG = 0i32,
     TGA = 2i32,
 }
-#[cfg(feature = "CubemapCapture+ImageType")]
+#[cfg(feature = "cordl_class_CubemapCapture+ImageType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CubemapCapture_ImageType {
     type Held<'a> = Self;
@@ -267,7 +267,7 @@ for crate::GlobalNamespace::CubemapCapture_ImageType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "CubemapCapture+ImageType")]
+#[cfg(feature = "cordl_class_CubemapCapture+ImageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CubemapCapture_ImageType {
     type Type = Self;
@@ -278,7 +278,7 @@ for crate::GlobalNamespace::CubemapCapture_ImageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "CubemapCapture+ImageType")]
+#[cfg(feature = "cordl_class_CubemapCapture+ImageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CubemapCapture_ImageType {
     type Actual = Self;
@@ -292,7 +292,7 @@ for crate::GlobalNamespace::CubemapCapture_ImageType {
         self
     }
 }
-#[cfg(feature = "CubemapCapture+ImageType")]
+#[cfg(feature = "cordl_class_CubemapCapture+ImageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CubemapCapture_ImageType {
     type Type = Self;
@@ -307,7 +307,7 @@ for crate::GlobalNamespace::CubemapCapture_ImageType {
         }
     }
 }
-#[cfg(feature = "CubemapCapture+ImageType")]
+#[cfg(feature = "cordl_class_CubemapCapture+ImageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CubemapCapture_ImageType {
     type Actual = Self;

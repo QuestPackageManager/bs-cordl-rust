@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+HumanBone")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanBone")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HumanBone {
@@ -6,7 +6,7 @@ pub struct HumanBone {
     pub m_HumanName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub limit: crate::UnityEngine::HumanLimit,
 }
-#[cfg(feature = "UnityEngine+HumanBone")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanBone")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HumanBone {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HumanBone {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+HumanBone")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanBone")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::HumanBone {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::HumanBone {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+HumanBone")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanBone")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::HumanBone {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::HumanBone {
         self
     }
 }
-#[cfg(feature = "UnityEngine+HumanBone")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanBone")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::HumanBone {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::HumanBone {
         }
     }
 }
-#[cfg(feature = "UnityEngine+HumanBone")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanBone")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::HumanBone {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::HumanBone {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+HumanBone")]
+#[cfg(feature = "cordl_class_UnityEngine+HumanBone")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::HumanBone {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

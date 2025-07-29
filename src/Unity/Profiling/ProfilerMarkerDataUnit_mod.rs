@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Profiling+ProfilerMarkerDataUnit")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarkerDataUnit")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProfilerMarkerDataUnit {
@@ -10,7 +10,7 @@ pub enum ProfilerMarkerDataUnit {
     TimeNanoseconds = 1u8,
     Undefined = 0u8,
 }
-#[cfg(feature = "Unity+Profiling+ProfilerMarkerDataUnit")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarkerDataUnit")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Profiling::ProfilerMarkerDataUnit {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::Unity::Profiling::ProfilerMarkerDataUnit {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerMarkerDataUnit")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarkerDataUnit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::ProfilerMarkerDataUnit {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::Unity::Profiling::ProfilerMarkerDataUnit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerMarkerDataUnit")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarkerDataUnit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::ProfilerMarkerDataUnit {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::Unity::Profiling::ProfilerMarkerDataUnit {
         self
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerMarkerDataUnit")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarkerDataUnit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::ProfilerMarkerDataUnit {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::Unity::Profiling::ProfilerMarkerDataUnit {
         }
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerMarkerDataUnit")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarkerDataUnit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::ProfilerMarkerDataUnit {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+StreamReader")]
+#[cfg(feature = "cordl_class_System+IO+StreamReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StreamReader {
@@ -19,7 +19,7 @@ pub struct StreamReader {
     pub _closable: bool,
     pub _asyncReadTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
-#[cfg(feature = "System+IO+StreamReader")]
+#[cfg(feature = "cordl_class_System+IO+StreamReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::StreamReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::StreamReader {
         false
     }
 }
-#[cfg(feature = "System+IO+StreamReader")]
+#[cfg(feature = "cordl_class_System+IO+StreamReader")]
 impl std::ops::Deref for crate::System::IO::StreamReader {
     type Target = crate::System::IO::TextReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+StreamReader")]
+#[cfg(feature = "cordl_class_System+IO+StreamReader")]
 impl std::ops::DerefMut for crate::System::IO::StreamReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1194,7 +1194,7 @@ impl crate::System::IO::StreamReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+StreamReader")]
+#[cfg(feature = "cordl_class_System+IO+StreamReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::StreamReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

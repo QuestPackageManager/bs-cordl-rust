@@ -1,4 +1,4 @@
-#[cfg(feature = "GraphAPIClient")]
+#[cfg(feature = "cordl_class_GraphAPIClient")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphAPIClient {
@@ -8,7 +8,7 @@ pub struct GraphAPIClient {
     >,
     pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpClient>,
 }
-#[cfg(feature = "GraphAPIClient")]
+#[cfg(feature = "cordl_class_GraphAPIClient")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GraphAPIClient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GraphAPIClie
         false
     }
 }
-#[cfg(feature = "GraphAPIClient")]
+#[cfg(feature = "cordl_class_GraphAPIClient")]
 impl std::ops::Deref for crate::GlobalNamespace::GraphAPIClient {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GraphAPIClient")]
+#[cfg(feature = "cordl_class_GraphAPIClient")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GraphAPIClient {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -268,7 +268,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GraphAPIClient")]
+#[cfg(feature = "cordl_class_GraphAPIClient")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GraphAPIClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -277,7 +277,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GraphAPIClien
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GraphAPIClient+PostOptions")]
+#[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GraphAPIClient_PostOptions {
@@ -285,7 +285,7 @@ pub struct GraphAPIClient_PostOptions {
     pub MinWaitTimeForRetryMs: i32,
     pub WithExponentialBackoff: bool,
 }
-#[cfg(feature = "GraphAPIClient+PostOptions")]
+#[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Held<'a> = Self;
@@ -315,7 +315,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GraphAPIClient+PostOptions")]
+#[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Type = Self;
@@ -326,7 +326,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GraphAPIClient+PostOptions")]
+#[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Actual = Self;
@@ -340,7 +340,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
         self
     }
 }
-#[cfg(feature = "GraphAPIClient+PostOptions")]
+#[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Type = Self;
@@ -355,7 +355,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
         }
     }
 }
-#[cfg(feature = "GraphAPIClient+PostOptions")]
+#[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Actual = Self;
@@ -369,7 +369,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
         actual
     }
 }
-#[cfg(feature = "GraphAPIClient+PostOptions")]
+#[cfg(feature = "cordl_class_GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Type = Self;

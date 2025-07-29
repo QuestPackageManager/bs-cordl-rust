@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+NtlmClient")]
+#[cfg(feature = "cordl_class_System+Net+NtlmClient")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NtlmClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub authObject: quest_hook::libil2cpp::Gc<crate::System::Net::IAuthenticationModule>,
 }
-#[cfg(feature = "System+Net+NtlmClient")]
+#[cfg(feature = "cordl_class_System+Net+NtlmClient")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NtlmClient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NtlmClient {
         false
     }
 }
-#[cfg(feature = "System+Net+NtlmClient")]
+#[cfg(feature = "cordl_class_System+Net+NtlmClient")]
 impl std::ops::Deref for crate::System::Net::NtlmClient {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NtlmClient")]
+#[cfg(feature = "cordl_class_System+Net+NtlmClient")]
 impl std::ops::DerefMut for crate::System::Net::NtlmClient {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -164,7 +164,7 @@ impl crate::System::Net::NtlmClient {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NtlmClient")]
+#[cfg(feature = "cordl_class_System+Net+NtlmClient")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::NtlmClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

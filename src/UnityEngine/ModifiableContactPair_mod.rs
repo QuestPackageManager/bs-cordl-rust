@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ModifiableContactPair")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPair")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ModifiableContactPair {
@@ -13,7 +13,7 @@ pub struct ModifiableContactPair {
     pub numContacts: i32,
     pub contacts: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPair")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPair")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ModifiableContactPair {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -42,7 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ModifiableContac
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPair")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPair")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ModifiableContactPair {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::UnityEngine::ModifiableContactPair {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPair")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPair")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ModifiableContactPair {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::UnityEngine::ModifiableContactPair {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPair")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPair")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ModifiableContactPair {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::UnityEngine::ModifiableContactPair {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPair")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPair")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ModifiableContactPair {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -95,7 +95,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ModifiableCont
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPair")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPair")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ModifiableContactPair {
     type Type = Self;

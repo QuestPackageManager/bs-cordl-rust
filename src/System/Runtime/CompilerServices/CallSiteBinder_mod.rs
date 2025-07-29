@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CallSiteBinder {
@@ -10,7 +10,7 @@ pub struct CallSiteBinder {
         >,
     >,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::CallSiteBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::CallSiteBinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder")]
 impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::CallSiteBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -375,7 +375,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::CallSiteBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -385,7 +385,9 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CallSiteBinder_LambdaSignature_1<T: quest_hook::libil2cpp::Type> {
@@ -402,7 +404,9 @@ pub struct CallSiteBinder_LambdaSignature_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -438,7 +442,9 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -446,7 +452,9 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -527,7 +535,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

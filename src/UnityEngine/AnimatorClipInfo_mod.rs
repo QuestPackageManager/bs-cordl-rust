@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+AnimatorClipInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorClipInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimatorClipInfo {
     pub m_ClipInstanceID: i32,
     pub m_Weight: f32,
 }
-#[cfg(feature = "UnityEngine+AnimatorClipInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorClipInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimatorClipInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimatorClipInfo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorClipInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorClipInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AnimatorClipInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AnimatorClip
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorClipInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorClipInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AnimatorClipInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AnimatorCli
         self
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorClipInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorClipInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AnimatorClipInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AnimatorClip
         }
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorClipInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorClipInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AnimatorClipInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AnimatorClipIn
         actual
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorClipInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorClipInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::AnimatorClipInfo {
     type Type = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Dynamic+IDynamicMetaObjectProvider")]
+#[cfg(feature = "cordl_class_System+Dynamic+IDynamicMetaObjectProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IDynamicMetaObjectProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Dynamic+IDynamicMetaObjectProvider")]
+#[cfg(feature = "cordl_class_System+Dynamic+IDynamicMetaObjectProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Dynamic::IDynamicMetaObjectProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Dynamic::IDynamicMetaObjectProvider {
         false
     }
 }
-#[cfg(feature = "System+Dynamic+IDynamicMetaObjectProvider")]
+#[cfg(feature = "cordl_class_System+Dynamic+IDynamicMetaObjectProvider")]
 impl std::ops::Deref for crate::System::Dynamic::IDynamicMetaObjectProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+IDynamicMetaObjectProvider")]
+#[cfg(feature = "cordl_class_System+Dynamic+IDynamicMetaObjectProvider")]
 impl std::ops::DerefMut for crate::System::Dynamic::IDynamicMetaObjectProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::System::Dynamic::IDynamicMetaObjectProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Dynamic+IDynamicMetaObjectProvider")]
+#[cfg(feature = "cordl_class_System+Dynamic+IDynamicMetaObjectProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Dynamic::IDynamicMetaObjectProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

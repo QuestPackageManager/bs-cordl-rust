@@ -1,4 +1,4 @@
-#[cfg(feature = "System+DateTimeToken")]
+#[cfg(feature = "cordl_class_System+DateTimeToken")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DateTimeToken {
@@ -6,7 +6,7 @@ pub struct DateTimeToken {
     pub suffix: crate::System::TokenType,
     pub num: i32,
 }
-#[cfg(feature = "System+DateTimeToken")]
+#[cfg(feature = "cordl_class_System+DateTimeToken")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeToken {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeToken {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+DateTimeToken")]
+#[cfg(feature = "cordl_class_System+DateTimeToken")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeToken {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeToken {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+DateTimeToken")]
+#[cfg(feature = "cordl_class_System+DateTimeToken")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeToken {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeToken {
         self
     }
 }
-#[cfg(feature = "System+DateTimeToken")]
+#[cfg(feature = "cordl_class_System+DateTimeToken")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeToken {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeToken {
         }
     }
 }
-#[cfg(feature = "System+DateTimeToken")]
+#[cfg(feature = "cordl_class_System+DateTimeToken")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeToken {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeToken {
         actual
     }
 }
-#[cfg(feature = "System+DateTimeToken")]
+#[cfg(feature = "cordl_class_System+DateTimeToken")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DateTimeToken {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

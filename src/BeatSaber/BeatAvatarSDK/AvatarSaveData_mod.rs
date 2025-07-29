@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarSaveData")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarSaveData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarSaveData {
@@ -20,7 +20,7 @@ pub struct AvatarSaveData {
     pub clothesSecondaryColor: crate::UnityEngine::Color,
     pub clothesDetailColor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarSaveData")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarSaveData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarSDK::AvatarSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarSaveData {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarSaveData")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarSaveData")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarSaveData")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarSaveData")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::AvatarSaveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -84,7 +84,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarSaveData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarSaveData")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarSaveData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::AvatarSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

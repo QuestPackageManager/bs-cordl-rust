@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Parameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_Parameters {
@@ -39,7 +39,7 @@ pub struct HEU_Parameters {
     pub _showParameters: bool,
     pub _recacheUI: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Parameters")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Parameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -58,14 +58,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Param
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Parameters")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_Parameters {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Parameters")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_Parameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1424,7 +1424,7 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Parameters")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Parameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

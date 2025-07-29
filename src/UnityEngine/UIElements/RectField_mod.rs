@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+RectField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectField {
@@ -8,7 +8,7 @@ pub struct RectField {
         f32,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::RectField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Rect
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RectField {
     type Target = crate::UnityEngine::UIElements::BaseCompositeField_3<
         crate::UnityEngine::Rect,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectField {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -169,7 +169,7 @@ impl crate::UnityEngine::UIElements::RectField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::RectField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -178,7 +178,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::RectF
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectField_UxmlFactory {
@@ -187,7 +187,7 @@ pub struct RectField_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RectField_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::RectField_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -207,7 +207,7 @@ for crate::UnityEngine::UIElements::RectField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RectField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RectField>,
@@ -217,7 +217,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectField_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -254,7 +254,7 @@ impl crate::UnityEngine::UIElements::RectField_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::RectField_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -264,7 +264,7 @@ for crate::UnityEngine::UIElements::RectField_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectField_UxmlTraits {
@@ -284,7 +284,7 @@ pub struct RectField_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::RectField_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -304,7 +304,7 @@ for crate::UnityEngine::UIElements::RectField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RectField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Rect,
@@ -313,7 +313,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectField_UxmlTraits {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -386,7 +386,7 @@ impl crate::UnityEngine::UIElements::RectField_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RectField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::RectField_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

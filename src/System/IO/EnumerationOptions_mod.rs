@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+EnumerationOptions")]
+#[cfg(feature = "cordl_class_System+IO+EnumerationOptions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumerationOptions {
@@ -10,7 +10,7 @@ pub struct EnumerationOptions {
     pub _MatchCasing_k__BackingField: crate::System::IO::MatchCasing,
     pub _ReturnSpecialDirectories_k__BackingField: bool,
 }
-#[cfg(feature = "System+IO+EnumerationOptions")]
+#[cfg(feature = "cordl_class_System+IO+EnumerationOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::EnumerationOptions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::EnumerationOption
         false
     }
 }
-#[cfg(feature = "System+IO+EnumerationOptions")]
+#[cfg(feature = "cordl_class_System+IO+EnumerationOptions")]
 impl std::ops::Deref for crate::System::IO::EnumerationOptions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+EnumerationOptions")]
+#[cfg(feature = "cordl_class_System+IO+EnumerationOptions")]
 impl std::ops::DerefMut for crate::System::IO::EnumerationOptions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -407,7 +407,7 @@ impl crate::System::IO::EnumerationOptions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+EnumerationOptions")]
+#[cfg(feature = "cordl_class_System+IO+EnumerationOptions")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::EnumerationOptions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

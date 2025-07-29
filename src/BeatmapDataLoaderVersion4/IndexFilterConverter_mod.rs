@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapDataLoaderVersion4+IndexFilterConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+IndexFilterConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IndexFilterConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+IndexFilterConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+IndexFilterConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
         false
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+IndexFilterConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+IndexFilterConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+IndexFilterConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+IndexFilterConverter")]
 impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+IndexFilterConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+IndexFilterConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

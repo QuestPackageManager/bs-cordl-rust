@@ -1,10 +1,10 @@
-#[cfg(feature = "IDiffieHellmanKeyPair")]
+#[cfg(feature = "cordl_class_IDiffieHellmanKeyPair")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IDiffieHellmanKeyPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IDiffieHellmanKeyPair")]
+#[cfg(feature = "cordl_class_IDiffieHellmanKeyPair")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IDiffieHellmanKeyPair {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IDiffieHellmanKeyPair {
         false
     }
 }
-#[cfg(feature = "IDiffieHellmanKeyPair")]
+#[cfg(feature = "cordl_class_IDiffieHellmanKeyPair")]
 impl std::ops::Deref for crate::GlobalNamespace::IDiffieHellmanKeyPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IDiffieHellmanKeyPair")]
+#[cfg(feature = "cordl_class_IDiffieHellmanKeyPair")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IDiffieHellmanKeyPair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IDiffieHellmanKeyPair")]
+#[cfg(feature = "cordl_class_IDiffieHellmanKeyPair")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IDiffieHellmanKeyPair {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::NativeMethods {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::NativeMeth
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::NativeMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::NativeMethods {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -714,7 +714,7 @@ impl crate::Unity::XR::Oculus::NativeMethods {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::NativeMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -723,13 +723,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::NativeMetho
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+Internal")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+Internal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeMethods_Internal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+Internal")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+Internal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::NativeMethods_Internal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -749,14 +749,14 @@ for crate::Unity::XR::Oculus::NativeMethods_Internal {
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+Internal")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+Internal")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::NativeMethods_Internal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+Internal")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+Internal")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::NativeMethods_Internal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1436,7 +1436,7 @@ impl crate::Unity::XR::Oculus::NativeMethods_Internal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+Internal")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+Internal")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::XR::Oculus::NativeMethods_Internal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1446,7 +1446,7 @@ for crate::Unity::XR::Oculus::NativeMethods_Internal {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeMethods_UserDefinedSettings {
@@ -1466,7 +1466,7 @@ pub struct NativeMethods_UserDefinedSettings {
     pub depthSubmission: u16,
     pub foveatedRenderingMethod: u16,
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Held<'a> = Self;
@@ -1496,7 +1496,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Type = Self;
@@ -1507,7 +1507,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Actual = Self;
@@ -1521,7 +1521,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
         self
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Type = Self;
@@ -1536,7 +1536,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
         }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Actual = Self;
@@ -1550,7 +1550,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
         actual
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeLabel")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeLabel")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeLabel {
@@ -6,7 +6,7 @@ pub struct RuntimeLabel {
     pub StackDepth: i32,
     pub ContinuationStackDepth: i32,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeLabel")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeLabel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeLabel")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeLabel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeLabel")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeLabel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
         self
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeLabel")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeLabel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
         }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeLabel")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeLabel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
         actual
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeLabel")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeLabel")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Linq::Expressions::Interpreter::RuntimeLabel {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightCompiler {
@@ -39,7 +39,7 @@ pub struct LightCompiler {
     >,
     pub _guard: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::StackGuard>,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::LightCompiler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -59,14 +59,14 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LightCompiler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LightCompiler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2937,7 +2937,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::LightCompiler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2947,7 +2947,9 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightCompiler_QuoteVisitor {
@@ -2968,7 +2970,9 @@ pub struct LightCompiler_QuoteVisitor {
         >,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2988,7 +2992,9 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     type Target = crate::System::Linq::Expressions::ExpressionVisitor;
@@ -2996,7 +3002,9 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3248,7 +3256,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

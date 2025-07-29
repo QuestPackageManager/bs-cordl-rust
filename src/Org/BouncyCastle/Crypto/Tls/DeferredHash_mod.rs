@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DeferredHash")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeferredHash {
@@ -12,7 +12,7 @@ pub struct DeferredHash {
     pub mHashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub mPrfHashAlgorithm: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DeferredHash")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DeferredHash")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DeferredHash")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -542,7 +542,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DeferredHash")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

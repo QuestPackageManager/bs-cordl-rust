@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatToTimeConverter")]
+#[cfg(feature = "cordl_class_BeatToTimeConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatToTimeConverter {
@@ -7,7 +7,7 @@ pub struct BeatToTimeConverter {
         crate::GlobalNamespace::IBeatToTimeConverter,
     >,
 }
-#[cfg(feature = "BeatToTimeConverter")]
+#[cfg(feature = "cordl_class_BeatToTimeConverter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatToTimeConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatToTimeCo
         false
     }
 }
-#[cfg(feature = "BeatToTimeConverter")]
+#[cfg(feature = "cordl_class_BeatToTimeConverter")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatToTimeConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatToTimeConverter")]
+#[cfg(feature = "cordl_class_BeatToTimeConverter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatToTimeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::BeatToTimeConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatToTimeConverter")]
+#[cfg(feature = "cordl_class_BeatToTimeConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatToTimeConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

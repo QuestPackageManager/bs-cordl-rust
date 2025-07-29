@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs8EncryptedPrivateKeyInfoBuilder {
@@ -7,7 +7,7 @@ pub struct Pkcs8EncryptedPrivateKeyInfoBuilder {
         crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -159,7 +159,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

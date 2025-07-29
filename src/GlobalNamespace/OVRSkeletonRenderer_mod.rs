@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSkeletonRenderer")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer {
@@ -41,7 +41,7 @@ pub struct OVRSkeletonRenderer {
     pub _IsDataHighConfidence_k__BackingField: bool,
     pub _ShouldUseSystemGestureMaterial_k__BackingField: bool,
 }
-#[cfg(feature = "OVRSkeletonRenderer")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeletonRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -60,14 +60,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeletonR
         false
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSkeletonRenderer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSkeletonRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -417,7 +417,7 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeletonRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -426,7 +426,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeletonRe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+BoneVisualization")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer_BoneVisualization {
@@ -438,7 +438,7 @@ pub struct OVRSkeletonRenderer_BoneVisualization {
     pub RenderMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub SystemGestureMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
-#[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+BoneVisualization")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -458,14 +458,14 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
         false
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+BoneVisualization")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+BoneVisualization")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -580,7 +580,7 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+BoneVisualization")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -590,7 +590,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+CapsuleVisualization")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer_CapsuleVisualization {
@@ -602,7 +602,7 @@ pub struct OVRSkeletonRenderer_CapsuleVisualization {
     pub RenderMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub SystemGestureMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
-#[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+CapsuleVisualization")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -622,7 +622,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         false
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+CapsuleVisualization")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -630,7 +630,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+CapsuleVisualization")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -744,7 +744,7 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+CapsuleVisualization")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -754,7 +754,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSkeletonRenderer_ConfidenceBehavior {
@@ -762,7 +762,7 @@ pub enum OVRSkeletonRenderer_ConfidenceBehavior {
     None = 0i32,
     ToggleRenderer = 1i32,
 }
-#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Held<'a> = Self;
@@ -792,7 +792,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Type = Self;
@@ -803,7 +803,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Actual = Self;
@@ -817,7 +817,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
         self
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Type = Self;
@@ -832,7 +832,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
         }
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Actual = Self;
@@ -846,13 +846,13 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
         actual
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -872,7 +872,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
         false
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -880,7 +880,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -922,7 +922,7 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvide
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -932,7 +932,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSkeletonRenderer_SkeletonRendererData {
@@ -941,7 +941,7 @@ pub struct OVRSkeletonRenderer_SkeletonRendererData {
     pub _IsDataHighConfidence_k__BackingField: bool,
     pub _ShouldUseSystemGestureMaterial_k__BackingField: bool,
 }
-#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Held<'a> = Self;
@@ -971,7 +971,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Type = Self;
@@ -982,7 +982,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Actual = Self;
@@ -996,7 +996,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         self
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Type = Self;
@@ -1011,7 +1011,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         }
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Actual = Self;
@@ -1025,7 +1025,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         actual
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Type = Self;
@@ -1217,7 +1217,7 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSkeletonRenderer_SystemGestureBehavior {
@@ -1225,7 +1225,7 @@ pub enum OVRSkeletonRenderer_SystemGestureBehavior {
     None = 0i32,
     SwapMaterial = 1i32,
 }
-#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Held<'a> = Self;
@@ -1255,7 +1255,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Type = Self;
@@ -1266,7 +1266,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Actual = Self;
@@ -1280,7 +1280,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
         self
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Type = Self;
@@ -1295,7 +1295,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
         }
     }
 }
-#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Actual = Self;

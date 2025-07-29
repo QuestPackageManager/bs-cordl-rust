@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Collider")]
+#[cfg(feature = "cordl_class_UnityEngine+Collider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Collider {
     __cordl_parent: crate::UnityEngine::Component,
 }
-#[cfg(feature = "UnityEngine+Collider")]
+#[cfg(feature = "cordl_class_UnityEngine+Collider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Collider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Collider {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Collider")]
+#[cfg(feature = "cordl_class_UnityEngine+Collider")]
 impl std::ops::Deref for crate::UnityEngine::Collider {
     type Target = crate::UnityEngine::Component;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Collider")]
+#[cfg(feature = "cordl_class_UnityEngine+Collider")]
 impl std::ops::DerefMut for crate::UnityEngine::Collider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -986,7 +986,7 @@ impl crate::UnityEngine::Collider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Collider")]
+#[cfg(feature = "cordl_class_UnityEngine+Collider")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Collider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

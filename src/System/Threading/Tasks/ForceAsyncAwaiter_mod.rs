@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ForceAsyncAwaiter {
     pub _task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
-#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::System::Threading::Tasks::ForceAsyncAwaiter {
         actual
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ForceAsyncAwaiter")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::Tasks::ForceAsyncAwaiter {
     type Type = Self;

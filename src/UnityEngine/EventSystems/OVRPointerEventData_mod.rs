@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+OVRPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRPointerEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPointerEventData {
@@ -6,7 +6,7 @@ pub struct OVRPointerEventData {
     pub worldSpaceRay: crate::UnityEngine::Ray,
     pub swipeStart: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRPointerEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::OVRPointerEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::UnityEngine::EventSystems::OVRPointerEventData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRPointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::OVRPointerEventData {
     type Target = crate::UnityEngine::EventSystems::PointerEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRPointerEventData")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::OVRPointerEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -110,7 +110,7 @@ impl crate::UnityEngine::EventSystems::OVRPointerEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRPointerEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::OVRPointerEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

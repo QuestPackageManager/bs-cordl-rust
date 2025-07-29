@@ -1,10 +1,14 @@
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderPropertyIDFromGameObjectAttribute {
     __cordl_parent: crate::BGLib::UnityExtension::ShaderPropertyIDAttribute,
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute"
+)]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
     type Target = crate::BGLib::UnityExtension::ShaderPropertyIDAttribute;
@@ -32,7 +38,9 @@ for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute"
+)]
 impl std::ops::DerefMut
 for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -112,7 +120,9 @@ impl crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

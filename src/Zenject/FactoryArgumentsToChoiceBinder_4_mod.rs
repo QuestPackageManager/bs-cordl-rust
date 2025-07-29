@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+FactoryArgumentsToChoiceBinder_4")]
+#[cfg(feature = "cordl_class_Zenject+FactoryArgumentsToChoiceBinder_4")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryArgumentsToChoiceBinder_4<
@@ -18,7 +18,7 @@ pub struct FactoryArgumentsToChoiceBinder_4<
     __cordl_phantom_TParam3: std::marker::PhantomData<TParam3>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
-#[cfg(feature = "Zenject+FactoryArgumentsToChoiceBinder_4")]
+#[cfg(feature = "cordl_class_Zenject+FactoryArgumentsToChoiceBinder_4")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -64,7 +64,7 @@ for crate::Zenject::FactoryArgumentsToChoiceBinder_4<
         false
     }
 }
-#[cfg(feature = "Zenject+FactoryArgumentsToChoiceBinder_4")]
+#[cfg(feature = "cordl_class_Zenject+FactoryArgumentsToChoiceBinder_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -87,7 +87,7 @@ for crate::Zenject::FactoryArgumentsToChoiceBinder_4<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+FactoryArgumentsToChoiceBinder_4")]
+#[cfg(feature = "cordl_class_Zenject+FactoryArgumentsToChoiceBinder_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -683,7 +683,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+FactoryArgumentsToChoiceBinder_4")]
+#[cfg(feature = "cordl_class_Zenject+FactoryArgumentsToChoiceBinder_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

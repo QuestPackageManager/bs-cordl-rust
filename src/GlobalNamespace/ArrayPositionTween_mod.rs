@@ -1,4 +1,4 @@
-#[cfg(feature = "ArrayPositionTween")]
+#[cfg(feature = "cordl_class_ArrayPositionTween")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayPositionTween {
@@ -11,7 +11,7 @@ pub struct ArrayPositionTween {
         crate::GlobalNamespace::CustomTweenBehaviour,
     >,
 }
-#[cfg(feature = "ArrayPositionTween")]
+#[cfg(feature = "cordl_class_ArrayPositionTween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ArrayPositionTween {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ArrayPositio
         false
     }
 }
-#[cfg(feature = "ArrayPositionTween")]
+#[cfg(feature = "cordl_class_ArrayPositionTween")]
 impl std::ops::Deref for crate::GlobalNamespace::ArrayPositionTween {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ArrayPositionTween")]
+#[cfg(feature = "cordl_class_ArrayPositionTween")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ArrayPositionTween {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::ArrayPositionTween {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ArrayPositionTween")]
+#[cfg(feature = "cordl_class_ArrayPositionTween")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ArrayPositionTween {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

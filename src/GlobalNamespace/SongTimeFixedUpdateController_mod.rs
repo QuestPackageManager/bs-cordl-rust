@@ -1,4 +1,4 @@
-#[cfg(feature = "SongTimeFixedUpdateController")]
+#[cfg(feature = "cordl_class_SongTimeFixedUpdateController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongTimeFixedUpdateController {
@@ -15,7 +15,7 @@ pub struct SongTimeFixedUpdateController {
     pub _accumulator: f32,
     pub _interpolationFactor: f32,
 }
-#[cfg(feature = "SongTimeFixedUpdateController")]
+#[cfg(feature = "cordl_class_SongTimeFixedUpdateController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongTimeFixedUpdateController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::SongTimeFixedUpdateController {
         false
     }
 }
-#[cfg(feature = "SongTimeFixedUpdateController")]
+#[cfg(feature = "cordl_class_SongTimeFixedUpdateController")]
 impl std::ops::Deref for crate::GlobalNamespace::SongTimeFixedUpdateController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongTimeFixedUpdateController")]
+#[cfg(feature = "cordl_class_SongTimeFixedUpdateController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongTimeFixedUpdateController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -239,7 +239,7 @@ impl crate::GlobalNamespace::SongTimeFixedUpdateController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongTimeFixedUpdateController")]
+#[cfg(feature = "cordl_class_SongTimeFixedUpdateController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SongTimeFixedUpdateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

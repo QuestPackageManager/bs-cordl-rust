@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CastReferenceToEnumInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::CastInstruction,
     pub _t: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstructio
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::CastInstruction;
@@ -33,7 +39,9 @@ for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstructio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -108,7 +116,9 @@ impl crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstructi
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

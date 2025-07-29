@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextShadow")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextShadow {
@@ -6,7 +6,7 @@ pub struct TextShadow {
     pub blurRadius: f32,
     pub color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextShadow")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TextShadow {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Text
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextShadow")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TextShadow {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::TextShadow {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextShadow")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TextShadow {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::TextShadow {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextShadow")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TextShadow {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::TextShadow {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextShadow")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::TextShadow {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::TextShadow {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextShadow")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextShadow")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::TextShadow {
     type Type = Self;

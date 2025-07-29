@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystemDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystemDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRDisplaySubsystemDescriptor {
     __cordl_parent: crate::UnityEngine::IntegratedSubsystemDescriptor_1<Blacklisted>,
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystemDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystemDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::XRDisplaySubsystemDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::XR::XRDisplaySubsystemDescriptor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystemDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystemDescriptor")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRDisplaySubsystemDescriptor {
     type Target = crate::UnityEngine::IntegratedSubsystemDescriptor_1<Blacklisted>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystemDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystemDescriptor")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::XRDisplaySubsystemDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::XR::XRDisplaySubsystemDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRDisplaySubsystemDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystemDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::XR::XRDisplaySubsystemDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

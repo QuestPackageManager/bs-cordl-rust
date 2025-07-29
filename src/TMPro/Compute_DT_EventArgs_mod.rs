@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+Compute_DT_EventArgs")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Compute_DT_EventArgs {
@@ -9,7 +9,7 @@ pub struct Compute_DT_EventArgs {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     >,
 }
-#[cfg(feature = "TMPro+Compute_DT_EventArgs")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::Compute_DT_EventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::Compute_DT_EventArgs {
         false
     }
 }
-#[cfg(feature = "TMPro+Compute_DT_EventArgs")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
 impl std::ops::Deref for crate::TMPro::Compute_DT_EventArgs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+Compute_DT_EventArgs")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
 impl std::ops::DerefMut for crate::TMPro::Compute_DT_EventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::TMPro::Compute_DT_EventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+Compute_DT_EventArgs")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::Compute_DT_EventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

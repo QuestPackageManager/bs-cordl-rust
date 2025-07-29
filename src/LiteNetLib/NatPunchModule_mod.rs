@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NatPunchModule {
@@ -23,7 +23,7 @@ pub struct NatPunchModule {
         crate::LiteNetLib::INatPunchListener,
     >,
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NatPunchModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NatPunchModule {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule")]
 impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -427,7 +427,7 @@ impl crate::LiteNetLib::NatPunchModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NatPunchModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -436,7 +436,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NatPunchModule {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NatPunchModule_NatIntroduceRequestPacket {
@@ -448,7 +448,7 @@ pub struct NatPunchModule_NatIntroduceRequestPacket {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -468,14 +468,14 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -618,7 +618,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -628,7 +628,7 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NatPunchModule_NatIntroduceResponsePacket {
@@ -643,7 +643,7 @@ pub struct NatPunchModule_NatIntroduceResponsePacket {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -663,14 +663,14 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 impl std::ops::DerefMut
 for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -867,7 +867,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -877,7 +877,7 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatPunchPacket")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NatPunchModule_NatPunchPacket {
@@ -887,7 +887,7 @@ pub struct NatPunchModule_NatPunchPacket {
     >,
     pub _IsExternal_k__BackingField: bool,
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatPunchPacket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -907,14 +907,14 @@ for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatPunchPacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatPunchPacket")]
 impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1047,7 +1047,7 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatPunchPacket")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1057,7 +1057,7 @@ for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+RequestEventData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NatPunchModule_RequestEventData {
@@ -1065,7 +1065,7 @@ pub struct NatPunchModule_RequestEventData {
     pub RemoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     pub Token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Held<'a> = Self;
@@ -1095,7 +1095,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Type = Self;
@@ -1106,7 +1106,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Actual = Self;
@@ -1120,7 +1120,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Type = Self;
@@ -1135,7 +1135,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
         }
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Actual = Self;
@@ -1149,7 +1149,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
         actual
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Type = Self;
@@ -1162,7 +1162,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 impl crate::LiteNetLib::NatPunchModule_RequestEventData {}
-#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+SuccessEventData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NatPunchModule_SuccessEventData {
@@ -1170,7 +1170,7 @@ pub struct NatPunchModule_SuccessEventData {
     pub Type: crate::LiteNetLib::NatAddressType,
     pub Token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Held<'a> = Self;
@@ -1200,7 +1200,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Type = Self;
@@ -1211,7 +1211,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Actual = Self;
@@ -1225,7 +1225,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Type = Self;
@@ -1240,7 +1240,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
         }
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Actual = Self;
@@ -1254,7 +1254,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
         actual
     }
 }
-#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Type = Self;

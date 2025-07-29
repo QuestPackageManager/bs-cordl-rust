@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMGUIContainer {
@@ -26,7 +26,7 @@ pub struct IMGUIContainer {
     pub _focusOnlyIfHasFocusableControls_k__BackingField: bool,
     pub m_GUIGlobals: crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals,
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IMGUIContainer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::UnityEngine::UIElements::IMGUIContainer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IMGUIContainer {
     type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IMGUIContainer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1170,7 +1170,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IMGUIContainer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1194,7 +1194,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IMGUIContainer_GUIGlobals {
@@ -1206,7 +1206,7 @@ pub struct IMGUIContainer_GUIGlobals {
     pub changed: bool,
     pub displayIndex: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
     type Held<'a> = Self;
@@ -1236,7 +1236,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
     type Type = Self;
@@ -1247,7 +1247,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
     type Actual = Self;
@@ -1261,7 +1261,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
     type Type = Self;
@@ -1276,7 +1276,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
     type Actual = Self;
@@ -1290,7 +1290,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
     type Type = Self;
@@ -1303,7 +1303,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 impl crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {}
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMGUIContainer_UxmlFactory {
@@ -1314,7 +1314,7 @@ pub struct IMGUIContainer_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1334,7 +1334,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMGUIContainer>,
@@ -1346,7 +1346,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFact
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1383,7 +1383,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1393,13 +1393,13 @@ for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMGUIContainer_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1419,14 +1419,14 @@ for crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1463,7 +1463,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct QuestSettings {
@@ -9,7 +9,7 @@ pub struct QuestSettings {
     pub eyeTrackedFoveatedRendering: bool,
     pub dynamicFoveatedRendering: bool,
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::QuestSettings {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::QuestSet
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QuestSettings {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::BeatSaber::Settings::QuestSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QuestSettings {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::BeatSaber::Settings::QuestSettings {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QuestSettings {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::BeatSaber::Settings::QuestSettings {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::Settings::QuestSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::Settings::QuestS
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Settings::QuestSettings {
     type Type = Self;
@@ -109,7 +109,7 @@ impl crate::BeatSaber::Settings::QuestSettings {
     #[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
     pub type SuggestedPerformanceLevel = crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel;
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QuestSettings_FoveatedRenderingLevel {
@@ -120,7 +120,7 @@ pub enum QuestSettings_FoveatedRenderingLevel {
     Medium = 2i32,
     Off = 0i32,
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Held<'a> = Self;
@@ -150,7 +150,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Type = Self;
@@ -161,7 +161,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Actual = Self;
@@ -175,7 +175,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Type = Self;
@@ -190,7 +190,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Actual = Self;
@@ -204,7 +204,9 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QuestSettings_SuggestedPerformanceLevel {
@@ -215,7 +217,9 @@ pub enum QuestSettings_SuggestedPerformanceLevel {
     SustainedHigh = 3i32,
     SustainedLow = 2i32,
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Held<'a> = Self;
@@ -245,7 +249,9 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Type = Self;
@@ -256,7 +262,9 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Actual = Self;
@@ -270,7 +278,9 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Type = Self;
@@ -285,7 +295,9 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Actual = Self;

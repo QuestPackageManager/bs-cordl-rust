@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeartbeatMessage {
@@ -7,7 +7,7 @@ pub struct HeartbeatMessage {
     pub mPayload: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mPaddingLength: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -156,7 +156,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -166,13 +166,17 @@ for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeartbeatMessage_PayloadBuffer {
     __cordl_parent: crate::System::IO::MemoryStream,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage_PayloadBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -192,7 +196,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage_PayloadBuffer {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage_PayloadBuffer {
     type Target = crate::System::IO::MemoryStream;
@@ -200,7 +206,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage_PayloadBuffer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage_PayloadBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -268,7 +276,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage_PayloadBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+HeartbeatMessage+PayloadBuffer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage_PayloadBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

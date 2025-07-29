@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpLeapIndicator")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NtpLeapIndicator {
@@ -8,7 +8,7 @@ pub enum NtpLeapIndicator {
     LastMinuteHas61Seconds = 1i32,
     NoWarning = 0i32,
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NtpLeapInd
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::LiteNetLib::Utils::NtpLeapIndicator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::LiteNetLib::Utils::NtpLeapIndicator {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::LiteNetLib::Utils::NtpLeapIndicator {
         }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Actual = Self;

@@ -1,4 +1,6 @@
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MulticolorAvatarPartPropertyBlockSetter {
@@ -24,7 +26,9 @@ pub struct MulticolorAvatarPartPropertyBlockSetter {
     pub _highlighted: bool,
     pub _uvSegment: i32,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +48,9 @@ for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter"
+)]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -52,7 +58,9 @@ for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter"
+)]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -197,7 +205,9 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -208,7 +218,7 @@ for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -219,7 +229,7 @@ pub struct MulticolorAvatarPartPropertyBlockSetter_ColorData {
     pub _whiteBoost: f32,
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData {
@@ -241,7 +251,7 @@ for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Col
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData {
@@ -251,7 +261,7 @@ for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Col
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData {
@@ -352,7 +362,7 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Co
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData {

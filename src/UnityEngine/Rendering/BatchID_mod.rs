@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Rendering+BatchID")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchID")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchID {
     pub value: u32,
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchID")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchID")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::BatchID {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Batch
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchID")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchID")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::BatchID {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::B
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchID")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchID")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rendering::BatchID {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Rendering::
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchID")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchID")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::BatchID {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::B
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchID")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchID")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::BatchID {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::Bat
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchID")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchID")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::BatchID {
     type Type = Self;

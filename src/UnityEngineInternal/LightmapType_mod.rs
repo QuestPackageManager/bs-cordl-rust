@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngineInternal+LightmapType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+LightmapType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightmapType {
@@ -7,7 +7,7 @@ pub enum LightmapType {
     NoLightmap = -1i32,
     StaticLightmap = 0i32,
 }
-#[cfg(feature = "UnityEngineInternal+LightmapType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+LightmapType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngineInternal::LightmapType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngineInternal::Lightmap
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngineInternal+LightmapType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+LightmapType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngineInternal::LightmapType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngineInternal::LightmapType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngineInternal+LightmapType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+LightmapType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngineInternal::LightmapType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngineInternal::LightmapType {
         self
     }
 }
-#[cfg(feature = "UnityEngineInternal+LightmapType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+LightmapType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngineInternal::LightmapType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngineInternal::LightmapType {
         }
     }
 }
-#[cfg(feature = "UnityEngineInternal+LightmapType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+LightmapType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngineInternal::LightmapType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TreeInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+TreeInstance")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TreeInstance {
@@ -11,7 +11,7 @@ pub struct TreeInstance {
     pub prototypeIndex: i32,
     pub temporaryDistance: f32,
 }
-#[cfg(feature = "UnityEngine+TreeInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+TreeInstance")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TreeInstance {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TreeInstance {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TreeInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+TreeInstance")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TreeInstance {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TreeInstance
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TreeInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+TreeInstance")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TreeInstance {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TreeInstanc
         self
     }
 }
-#[cfg(feature = "UnityEngine+TreeInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+TreeInstance")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TreeInstance {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TreeInstance
         }
     }
 }
-#[cfg(feature = "UnityEngine+TreeInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+TreeInstance")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TreeInstance {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TreeInstance {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TreeInstance")]
+#[cfg(feature = "cordl_class_UnityEngine+TreeInstance")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::TreeInstance {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

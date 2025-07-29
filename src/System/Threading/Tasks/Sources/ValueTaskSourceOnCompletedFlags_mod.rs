@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ValueTaskSourceOnCompletedFlags {
@@ -7,7 +9,9 @@ pub enum ValueTaskSourceOnCompletedFlags {
     None = 0i32,
     UseSchedulingContext = 1i32,
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
     type Held<'a> = Self;
@@ -37,7 +41,9 @@ for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
     type Type = Self;
@@ -48,7 +54,9 @@ for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
     type Actual = Self;
@@ -62,7 +70,9 @@ for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
     type Type = Self;
@@ -77,7 +87,9 @@ for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags {
     type Actual = Self;

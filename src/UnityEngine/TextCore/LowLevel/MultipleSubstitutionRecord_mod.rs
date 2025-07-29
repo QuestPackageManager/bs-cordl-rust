@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MultipleSubstitutionRecord {
@@ -7,7 +7,7 @@ pub struct MultipleSubstitutionRecord {
         quest_hook::libil2cpp::Il2CppArray<u32>,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord {
     type Type = Self;

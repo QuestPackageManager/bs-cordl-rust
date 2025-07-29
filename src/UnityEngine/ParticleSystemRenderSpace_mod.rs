@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemRenderSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderSpace")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemRenderSpace {
@@ -9,7 +9,7 @@ pub enum ParticleSystemRenderSpace {
     View = 0i32,
     World = 1i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderSpace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemRenderSpace {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::ParticleSystemRenderSpace {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderSpace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemRenderSpace {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::ParticleSystemRenderSpace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemRenderSpace {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::ParticleSystemRenderSpace {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderSpace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemRenderSpace {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::ParticleSystemRenderSpace {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderSpace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemRenderSpace {
     type Actual = Self;

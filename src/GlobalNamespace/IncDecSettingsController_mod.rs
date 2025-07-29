@@ -1,4 +1,4 @@
-#[cfg(feature = "IncDecSettingsController")]
+#[cfg(feature = "cordl_class_IncDecSettingsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IncDecSettingsController {
@@ -7,7 +7,7 @@ pub struct IncDecSettingsController {
         crate::GlobalNamespace::StepValuePicker,
     >,
 }
-#[cfg(feature = "IncDecSettingsController")]
+#[cfg(feature = "cordl_class_IncDecSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IncDecSettingsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::IncDecSettingsController {
         false
     }
 }
-#[cfg(feature = "IncDecSettingsController")]
+#[cfg(feature = "cordl_class_IncDecSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::IncDecSettingsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IncDecSettingsController")]
+#[cfg(feature = "cordl_class_IncDecSettingsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IncDecSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::GlobalNamespace::IncDecSettingsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IncDecSettingsController")]
+#[cfg(feature = "cordl_class_IncDecSettingsController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IncDecSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

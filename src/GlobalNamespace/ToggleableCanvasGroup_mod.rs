@@ -1,4 +1,4 @@
-#[cfg(feature = "ToggleableCanvasGroup")]
+#[cfg(feature = "cordl_class_ToggleableCanvasGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ToggleableCanvasGroup {
@@ -7,7 +7,7 @@ pub struct ToggleableCanvasGroup {
     pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _invertToggle: bool,
 }
-#[cfg(feature = "ToggleableCanvasGroup")]
+#[cfg(feature = "cordl_class_ToggleableCanvasGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ToggleableCanvasGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::ToggleableCanvasGroup {
         false
     }
 }
-#[cfg(feature = "ToggleableCanvasGroup")]
+#[cfg(feature = "cordl_class_ToggleableCanvasGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::ToggleableCanvasGroup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ToggleableCanvasGroup")]
+#[cfg(feature = "cordl_class_ToggleableCanvasGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ToggleableCanvasGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -165,7 +165,7 @@ impl crate::GlobalNamespace::ToggleableCanvasGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ToggleableCanvasGroup")]
+#[cfg(feature = "cordl_class_ToggleableCanvasGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ToggleableCanvasGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

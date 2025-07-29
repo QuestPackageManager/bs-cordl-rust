@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeDirection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementFocusChangeDirection {
     __cordl_parent: crate::UnityEngine::UIElements::FocusChangeDirection,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeDirection")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
     type Target = crate::UnityEngine::UIElements::FocusChangeDirection;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeDirection")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -127,7 +127,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeDirection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CrlException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CrlException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CrlException {
     __cordl_parent: crate::Org::BouncyCastle::Security::GeneralSecurityException,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CrlException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CrlException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::Certificates::CrlException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Security::Certificates::CrlException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CrlException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CrlException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::Certificates::CrlException {
     type Target = crate::Org::BouncyCastle::Security::GeneralSecurityException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CrlException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CrlException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Security::Certificates::CrlException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -146,7 +146,7 @@ impl crate::Org::BouncyCastle::Security::Certificates::CrlException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CrlException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CrlException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Security::Certificates::CrlException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

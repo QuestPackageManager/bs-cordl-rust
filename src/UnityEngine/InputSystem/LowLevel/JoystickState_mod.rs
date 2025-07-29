@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JoystickState {
     pub buttons: i32,
     pub stick: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
     type Type = Self;
@@ -173,7 +173,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JoystickState_Button {
@@ -184,7 +184,7 @@ pub enum JoystickState_Button {
     HatSwitchUp = 0i32,
     Trigger = 4i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
     type Held<'a> = Self;
@@ -214,7 +214,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
     type Type = Self;
@@ -225,7 +225,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
     type Actual = Self;
@@ -239,7 +239,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
     type Type = Self;
@@ -254,7 +254,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
     type Actual = Self;

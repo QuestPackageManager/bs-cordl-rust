@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Security+XmlSyntaxException")]
+#[cfg(feature = "cordl_class_System+Security+XmlSyntaxException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSyntaxException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+Security+XmlSyntaxException")]
+#[cfg(feature = "cordl_class_System+Security+XmlSyntaxException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::XmlSyntaxException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::XmlSyntaxEx
         false
     }
 }
-#[cfg(feature = "System+Security+XmlSyntaxException")]
+#[cfg(feature = "cordl_class_System+Security+XmlSyntaxException")]
 impl std::ops::Deref for crate::System::Security::XmlSyntaxException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+XmlSyntaxException")]
+#[cfg(feature = "cordl_class_System+Security+XmlSyntaxException")]
 impl std::ops::DerefMut for crate::System::Security::XmlSyntaxException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -186,7 +186,7 @@ impl crate::System::Security::XmlSyntaxException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+XmlSyntaxException")]
+#[cfg(feature = "cordl_class_System+Security+XmlSyntaxException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Security::XmlSyntaxException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

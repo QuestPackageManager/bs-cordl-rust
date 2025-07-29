@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputSettings {
@@ -31,7 +31,7 @@ pub struct InputSettings {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::UnityEngine::InputSystem::InputSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1064,7 +1064,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1074,7 +1074,7 @@ for crate::UnityEngine::InputSystem::InputSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputSettings_BackgroundBehavior {
@@ -1083,7 +1083,7 @@ pub enum InputSettings_BackgroundBehavior {
     ResetAndDisableAllDevices = 1i32,
     ResetAndDisableNonBackgroundDevices = 0i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Held<'a> = Self;
@@ -1113,7 +1113,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Type = Self;
@@ -1124,7 +1124,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Actual = Self;
@@ -1138,7 +1138,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Type = Self;
@@ -1153,7 +1153,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Actual = Self;
@@ -1167,7 +1167,9 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputSettings_EditorInputBehaviorInPlayMode {
@@ -1176,7 +1178,9 @@ pub enum InputSettings_EditorInputBehaviorInPlayMode {
     AllDevicesRespectGameViewFocus = 1i32,
     PointersAndKeyboardsRespectGameViewFocus = 0i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Held<'a> = Self;
@@ -1206,7 +1210,9 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Type = Self;
@@ -1217,7 +1223,9 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Actual = Self;
@@ -1231,7 +1239,9 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Type = Self;
@@ -1246,7 +1256,9 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Actual = Self;
@@ -1260,7 +1272,7 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+UpdateMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputSettings_UpdateMode {
@@ -1269,7 +1281,7 @@ pub enum InputSettings_UpdateMode {
     ProcessEventsInFixedUpdate = 2i32,
     ProcessEventsManually = 3i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Held<'a> = Self;
@@ -1299,7 +1311,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Type = Self;
@@ -1310,7 +1322,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Actual = Self;
@@ -1324,7 +1336,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Type = Self;
@@ -1339,7 +1351,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Actual = Self;

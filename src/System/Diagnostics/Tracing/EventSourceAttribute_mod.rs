@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Diagnostics+Tracing+EventSourceAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSourceAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventSourceAttribute {
@@ -10,7 +10,7 @@ pub struct EventSourceAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSourceAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSourceAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::Tracing::EventSourceAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Diagnostics::Tracing::EventSourceAttribute {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSourceAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSourceAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::Tracing::EventSourceAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSourceAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSourceAttribute")]
 impl std::ops::DerefMut for crate::System::Diagnostics::Tracing::EventSourceAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::System::Diagnostics::Tracing::EventSourceAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSourceAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSourceAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::Tracing::EventSourceAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

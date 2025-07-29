@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ImageEffectAllowedInSceneView")]
+#[cfg(feature = "cordl_class_UnityEngine+ImageEffectAllowedInSceneView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageEffectAllowedInSceneView {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+ImageEffectAllowedInSceneView")]
+#[cfg(feature = "cordl_class_UnityEngine+ImageEffectAllowedInSceneView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ImageEffectAllowedInSceneView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ImageEffectAllowedInSceneView {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ImageEffectAllowedInSceneView")]
+#[cfg(feature = "cordl_class_UnityEngine+ImageEffectAllowedInSceneView")]
 impl std::ops::Deref for crate::UnityEngine::ImageEffectAllowedInSceneView {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ImageEffectAllowedInSceneView")]
+#[cfg(feature = "cordl_class_UnityEngine+ImageEffectAllowedInSceneView")]
 impl std::ops::DerefMut for crate::UnityEngine::ImageEffectAllowedInSceneView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::ImageEffectAllowedInSceneView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ImageEffectAllowedInSceneView")]
+#[cfg(feature = "cordl_class_UnityEngine+ImageEffectAllowedInSceneView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ImageEffectAllowedInSceneView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

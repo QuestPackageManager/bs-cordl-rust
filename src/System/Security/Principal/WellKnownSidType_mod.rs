@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Principal+WellKnownSidType")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WellKnownSidType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WellKnownSidType {
@@ -99,7 +99,7 @@ pub enum WellKnownSidType {
     WinWriteRestrictedCodeSid = 70i32,
     WorldSid = 1i32,
 }
-#[cfg(feature = "System+Security+Principal+WellKnownSidType")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WellKnownSidType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Principal::WellKnownSidType {
     type Held<'a> = Self;
@@ -129,7 +129,7 @@ for crate::System::Security::Principal::WellKnownSidType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Principal+WellKnownSidType")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WellKnownSidType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Principal::WellKnownSidType {
     type Type = Self;
@@ -140,7 +140,7 @@ for crate::System::Security::Principal::WellKnownSidType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Principal+WellKnownSidType")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WellKnownSidType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Principal::WellKnownSidType {
     type Actual = Self;
@@ -154,7 +154,7 @@ for crate::System::Security::Principal::WellKnownSidType {
         self
     }
 }
-#[cfg(feature = "System+Security+Principal+WellKnownSidType")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WellKnownSidType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Principal::WellKnownSidType {
     type Type = Self;
@@ -169,7 +169,7 @@ for crate::System::Security::Principal::WellKnownSidType {
         }
     }
 }
-#[cfg(feature = "System+Security+Principal+WellKnownSidType")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WellKnownSidType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Principal::WellKnownSidType {
     type Actual = Self;

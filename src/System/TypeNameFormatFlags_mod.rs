@@ -1,4 +1,4 @@
-#[cfg(feature = "System+TypeNameFormatFlags")]
+#[cfg(feature = "cordl_class_System+TypeNameFormatFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeNameFormatFlags {
@@ -14,7 +14,7 @@ pub enum TypeNameFormatFlags {
     FormatSignature = 8i32,
     FormatStubInfo = 128i32,
 }
-#[cfg(feature = "System+TypeNameFormatFlags")]
+#[cfg(feature = "cordl_class_System+TypeNameFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeNameFormatFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeNameFormatFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TypeNameFormatFlags")]
+#[cfg(feature = "cordl_class_System+TypeNameFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TypeNameFormatFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TypeNameFormatFla
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TypeNameFormatFlags")]
+#[cfg(feature = "cordl_class_System+TypeNameFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TypeNameFormatFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,7 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TypeNameFormatFl
         self
     }
 }
-#[cfg(feature = "System+TypeNameFormatFlags")]
+#[cfg(feature = "cordl_class_System+TypeNameFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TypeNameFormatFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,7 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TypeNameFormatFla
         }
     }
 }
-#[cfg(feature = "System+TypeNameFormatFlags")]
+#[cfg(feature = "cordl_class_System+TypeNameFormatFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TypeNameFormatFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

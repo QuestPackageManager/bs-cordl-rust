@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Data+SqlTypes+SqlNullValueException")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlNullValueException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SqlNullValueException {
     __cordl_parent: crate::System::Data::SqlTypes::SqlTypeException,
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlNullValueException")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlNullValueException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::SqlTypes::SqlNullValueException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Data::SqlTypes::SqlNullValueException {
         false
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlNullValueException")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlNullValueException")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlNullValueException {
     type Target = crate::System::Data::SqlTypes::SqlTypeException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlNullValueException")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlNullValueException")]
 impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlNullValueException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -230,7 +230,7 @@ impl crate::System::Data::SqlTypes::SqlNullValueException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlNullValueException")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlNullValueException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::SqlTypes::SqlNullValueException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

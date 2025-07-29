@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SliderType {
@@ -6,7 +6,7 @@ pub enum SliderType {
     Burst = 1i32,
     Normal = 0i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Actual = Self;

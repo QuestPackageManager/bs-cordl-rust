@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LessThanOrEqualInstruction_LessThanOrEqualSByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LessThanOrEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualSByte {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualSByte {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualSByte {
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSByte"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualSByte {

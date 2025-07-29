@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+ArgumentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArgumentType {
@@ -9,7 +9,7 @@ pub enum ArgumentType {
     String = 1i32,
     StringOptional = 2i32,
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
         self
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
         }
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+StackLayoutGroup")]
+#[cfg(feature = "cordl_class_HMUI+StackLayoutGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StackLayoutGroup {
@@ -6,7 +6,7 @@ pub struct StackLayoutGroup {
     pub m_ChildForceExpandWidth: bool,
     pub m_ChildForceExpandHeight: bool,
 }
-#[cfg(feature = "HMUI+StackLayoutGroup")]
+#[cfg(feature = "cordl_class_HMUI+StackLayoutGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::StackLayoutGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::StackLayoutGroup {
         false
     }
 }
-#[cfg(feature = "HMUI+StackLayoutGroup")]
+#[cfg(feature = "cordl_class_HMUI+StackLayoutGroup")]
 impl std::ops::Deref for crate::HMUI::StackLayoutGroup {
     type Target = crate::UnityEngine::UI::LayoutGroup;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+StackLayoutGroup")]
+#[cfg(feature = "cordl_class_HMUI+StackLayoutGroup")]
 impl std::ops::DerefMut for crate::HMUI::StackLayoutGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -307,7 +307,7 @@ impl crate::HMUI::StackLayoutGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+StackLayoutGroup")]
+#[cfg(feature = "cordl_class_HMUI+StackLayoutGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::StackLayoutGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

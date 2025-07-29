@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRDeviceDescriptor {
@@ -14,7 +14,7 @@ pub struct XRDeviceDescriptor {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -136,7 +136,7 @@ impl crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

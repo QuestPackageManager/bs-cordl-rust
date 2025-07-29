@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelBar")]
+#[cfg(feature = "cordl_class_LevelBar")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelBar {
@@ -31,7 +31,7 @@ pub struct LevelBar {
     >,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
-#[cfg(feature = "LevelBar")]
+#[cfg(feature = "cordl_class_LevelBar")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelBar {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -50,14 +50,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelBar {
         false
     }
 }
-#[cfg(feature = "LevelBar")]
+#[cfg(feature = "cordl_class_LevelBar")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelBar {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelBar")]
+#[cfg(feature = "cordl_class_LevelBar")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelBar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -255,7 +255,7 @@ impl crate::GlobalNamespace::LevelBar {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelBar")]
+#[cfg(feature = "cordl_class_LevelBar")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelBar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

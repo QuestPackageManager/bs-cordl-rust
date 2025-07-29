@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+ColorTween")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorTween {
@@ -9,7 +9,7 @@ pub struct ColorTween {
     pub m_Duration: f32,
     pub m_IgnoreTimeScale: bool,
 }
-#[cfg(feature = "TMPro+ColorTween")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::ColorTween {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::ColorTween {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+ColorTween")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::ColorTween {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::ColorTween {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+ColorTween")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::ColorTween {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::ColorTween {
         self
     }
 }
-#[cfg(feature = "TMPro+ColorTween")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::ColorTween {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::ColorTween {
         }
     }
 }
-#[cfg(feature = "TMPro+ColorTween")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::ColorTween {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::ColorTween {
         actual
     }
 }
-#[cfg(feature = "TMPro+ColorTween")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::ColorTween {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -465,13 +465,13 @@ impl AsMut<crate::TMPro::ITweenValue> for crate::TMPro::ColorTween {
         todo!()
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorTween_ColorTweenCallback {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Color>,
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::ColorTween_ColorTweenCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -490,14 +490,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::ColorTween_ColorTweenC
         false
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenCallback")]
 impl std::ops::Deref for crate::TMPro::ColorTween_ColorTweenCallback {
     type Target = crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Color>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenCallback")]
 impl std::ops::DerefMut for crate::TMPro::ColorTween_ColorTweenCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -534,7 +534,7 @@ impl crate::TMPro::ColorTween_ColorTweenCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::ColorTween_ColorTweenCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -543,7 +543,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::ColorTween_ColorTweenCa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorTween_ColorTweenMode {
@@ -552,7 +552,7 @@ pub enum ColorTween_ColorTweenMode {
     Alpha = 2i32,
     RGB = 1i32,
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::ColorTween_ColorTweenMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -581,7 +581,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::ColorTween_ColorTweenM
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::ColorTween_ColorTweenMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -591,7 +591,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::ColorTween_ColorTw
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::ColorTween_ColorTweenMode {
     type Actual = Self;
@@ -605,7 +605,7 @@ for crate::TMPro::ColorTween_ColorTweenMode {
         self
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::ColorTween_ColorTweenMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -619,7 +619,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::ColorTween_ColorTw
         }
     }
 }
-#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
+#[cfg(feature = "cordl_class_TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::ColorTween_ColorTweenMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

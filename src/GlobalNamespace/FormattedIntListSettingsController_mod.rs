@@ -1,4 +1,4 @@
-#[cfg(feature = "FormattedIntListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedIntListSettingsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormattedIntListSettingsController {
@@ -18,7 +18,7 @@ pub struct FormattedIntListSettingsController {
     >,
     pub _value: i32,
 }
-#[cfg(feature = "FormattedIntListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedIntListSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FormattedIntListSettingsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::FormattedIntListSettingsController {
         false
     }
 }
-#[cfg(feature = "FormattedIntListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedIntListSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::FormattedIntListSettingsController {
     type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FormattedIntListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedIntListSettingsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FormattedIntListSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -273,7 +273,7 @@ impl crate::GlobalNamespace::FormattedIntListSettingsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FormattedIntListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedIntListSettingsController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FormattedIntListSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

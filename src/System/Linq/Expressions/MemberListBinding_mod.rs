@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+MemberListBinding")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberListBinding")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemberListBinding {
@@ -9,7 +9,7 @@ pub struct MemberListBinding {
         >,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+MemberListBinding")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberListBinding")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::MemberListBinding {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Linq::Expressions::MemberListBinding {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MemberListBinding")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberListBinding")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MemberListBinding {
     type Target = crate::System::Linq::Expressions::MemberBinding;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MemberListBinding")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberListBinding")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::MemberListBinding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -84,7 +84,7 @@ impl crate::System::Linq::Expressions::MemberListBinding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MemberListBinding")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberListBinding")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::MemberListBinding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

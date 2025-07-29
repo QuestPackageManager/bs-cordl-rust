@@ -1,11 +1,11 @@
-#[cfg(feature = "SortingLayer")]
+#[cfg(feature = "cordl_class_SortingLayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortingLayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
-#[cfg(feature = "SortingLayer")]
+#[cfg(feature = "cordl_class_SortingLayer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SortingLayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SortingLayer
         false
     }
 }
-#[cfg(feature = "SortingLayer")]
+#[cfg(feature = "cordl_class_SortingLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::SortingLayer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SortingLayer")]
+#[cfg(feature = "cordl_class_SortingLayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SortingLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::SortingLayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SortingLayer")]
+#[cfg(feature = "cordl_class_SortingLayer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SortingLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

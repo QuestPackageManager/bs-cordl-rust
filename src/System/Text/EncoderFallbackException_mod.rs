@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+EncoderFallbackException")]
+#[cfg(feature = "cordl_class_System+Text+EncoderFallbackException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncoderFallbackException {
@@ -8,7 +8,7 @@ pub struct EncoderFallbackException {
     pub _charUnknownLow: char,
     pub _index: i32,
 }
-#[cfg(feature = "System+Text+EncoderFallbackException")]
+#[cfg(feature = "cordl_class_System+Text+EncoderFallbackException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::EncoderFallbackException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Text::EncoderFallbackException {
         false
     }
 }
-#[cfg(feature = "System+Text+EncoderFallbackException")]
+#[cfg(feature = "cordl_class_System+Text+EncoderFallbackException")]
 impl std::ops::Deref for crate::System::Text::EncoderFallbackException {
     type Target = crate::System::ArgumentException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+EncoderFallbackException")]
+#[cfg(feature = "cordl_class_System+Text+EncoderFallbackException")]
 impl std::ops::DerefMut for crate::System::Text::EncoderFallbackException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -216,7 +216,7 @@ impl crate::System::Text::EncoderFallbackException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+EncoderFallbackException")]
+#[cfg(feature = "cordl_class_System+Text+EncoderFallbackException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::EncoderFallbackException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

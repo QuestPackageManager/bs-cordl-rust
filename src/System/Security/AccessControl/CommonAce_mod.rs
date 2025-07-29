@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Security+AccessControl+CommonAce")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAce")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommonAce {
     __cordl_parent: crate::System::Security::AccessControl::QualifiedAce,
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAce")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAce")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::CommonAce {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Security::AccessControl::CommonAce {
         false
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAce")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAce")]
 impl std::ops::Deref for crate::System::Security::AccessControl::CommonAce {
     type Target = crate::System::Security::AccessControl::QualifiedAce;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAce")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAce")]
 impl std::ops::DerefMut for crate::System::Security::AccessControl::CommonAce {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -224,7 +224,7 @@ impl crate::System::Security::AccessControl::CommonAce {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAce")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAce")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::AccessControl::CommonAce {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

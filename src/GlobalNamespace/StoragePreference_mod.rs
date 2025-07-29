@@ -1,4 +1,4 @@
-#[cfg(feature = "StoragePreference")]
+#[cfg(feature = "cordl_class_StoragePreference")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StoragePreference {
@@ -6,7 +6,7 @@ pub enum StoragePreference {
     Cloud = 0i32,
     Local = 1i32,
 }
-#[cfg(feature = "StoragePreference")]
+#[cfg(feature = "cordl_class_StoragePreference")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::StoragePreference {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::StoragePrefe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "StoragePreference")]
+#[cfg(feature = "cordl_class_StoragePreference")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StoragePreference {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::StoragePreference {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "StoragePreference")]
+#[cfg(feature = "cordl_class_StoragePreference")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StoragePreference {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::StoragePreference {
         self
     }
 }
-#[cfg(feature = "StoragePreference")]
+#[cfg(feature = "cordl_class_StoragePreference")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StoragePreference {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::StoragePreference {
         }
     }
 }
-#[cfg(feature = "StoragePreference")]
+#[cfg(feature = "cordl_class_StoragePreference")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::StoragePreference {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

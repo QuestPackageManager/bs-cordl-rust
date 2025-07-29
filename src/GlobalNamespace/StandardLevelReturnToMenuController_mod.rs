@@ -1,4 +1,4 @@
-#[cfg(feature = "StandardLevelReturnToMenuController")]
+#[cfg(feature = "cordl_class_StandardLevelReturnToMenuController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelReturnToMenuController {
@@ -10,7 +10,7 @@ pub struct StandardLevelReturnToMenuController {
         crate::GlobalNamespace::PrepareLevelCompletionResults,
     >,
 }
-#[cfg(feature = "StandardLevelReturnToMenuController")]
+#[cfg(feature = "cordl_class_StandardLevelReturnToMenuController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelReturnToMenuController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::StandardLevelReturnToMenuController {
         false
     }
 }
-#[cfg(feature = "StandardLevelReturnToMenuController")]
+#[cfg(feature = "cordl_class_StandardLevelReturnToMenuController")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelReturnToMenuController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardLevelReturnToMenuController")]
+#[cfg(feature = "cordl_class_StandardLevelReturnToMenuController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelReturnToMenuController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::StandardLevelReturnToMenuController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardLevelReturnToMenuController")]
+#[cfg(feature = "cordl_class_StandardLevelReturnToMenuController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardLevelReturnToMenuController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

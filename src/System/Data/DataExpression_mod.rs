@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataExpression")]
+#[cfg(feature = "cordl_class_System+Data+DataExpression")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataExpression {
@@ -18,7 +18,7 @@ pub struct DataExpression {
         >,
     >,
 }
-#[cfg(feature = "System+Data+DataExpression")]
+#[cfg(feature = "cordl_class_System+Data+DataExpression")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataExpression 
         false
     }
 }
-#[cfg(feature = "System+Data+DataExpression")]
+#[cfg(feature = "cordl_class_System+Data+DataExpression")]
 impl std::ops::Deref for crate::System::Data::DataExpression {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataExpression")]
+#[cfg(feature = "cordl_class_System+Data+DataExpression")]
 impl std::ops::DerefMut for crate::System::Data::DataExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -463,7 +463,7 @@ impl crate::System::Data::DataExpression {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataExpression")]
+#[cfg(feature = "cordl_class_System+Data+DataExpression")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct CustomizableEnvironmentCommandLineArgsProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArgsProvider {
@@ -29,7 +29,7 @@ for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArg
     }
 }
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
 )]
 impl std::ops::Deref
 for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArgsProvider {
@@ -39,7 +39,7 @@ for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArg
     }
 }
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
 )]
 impl std::ops::DerefMut
 for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArgsProvider {
@@ -90,7 +90,7 @@ impl crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineAr
     }
 }
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArgsProvider {

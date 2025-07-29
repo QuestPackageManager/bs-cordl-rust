@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+TypeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::TypeConverter {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::TypeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1356,7 +1356,7 @@ impl crate::System::ComponentModel::TypeConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::TypeConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1365,7 +1365,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::TypeCo
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+SimplePropertyDescriptor"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeConverter_SimplePropertyDescriptor {
@@ -1373,7 +1375,9 @@ pub struct TypeConverter_SimplePropertyDescriptor {
     pub componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+SimplePropertyDescriptor"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1393,7 +1397,9 @@ for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+SimplePropertyDescriptor"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
     type Target = crate::System::ComponentModel::PropertyDescriptor;
@@ -1401,7 +1407,9 @@ for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+SimplePropertyDescriptor"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1663,7 +1671,9 @@ impl crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+SimplePropertyDescriptor"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1673,7 +1683,9 @@ for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+StandardValuesCollection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeConverter_StandardValuesCollection {
@@ -1681,7 +1693,9 @@ pub struct TypeConverter_StandardValuesCollection {
     pub values: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     pub valueArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+StandardValuesCollection"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1701,7 +1715,9 @@ for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+StandardValuesCollection"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1709,7 +1725,9 @@ for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+StandardValuesCollection"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1986,7 +2004,9 @@ impl crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeConverter+StandardValuesCollection"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

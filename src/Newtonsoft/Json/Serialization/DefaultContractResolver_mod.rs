@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultContractResolver {
@@ -24,7 +24,7 @@ pub struct DefaultContractResolver {
         crate::Newtonsoft::Json::Serialization::NamingStrategy,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +44,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -52,7 +52,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2171,7 +2171,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2198,7 +2198,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -2219,7 +2219,7 @@ pub struct DefaultContractResolver_EnumerableDictionaryWrapper_2<
     __cordl_phantom_TEnumeratorValue: std::marker::PhantomData<TEnumeratorValue>,
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
 unsafe impl<
     TEnumeratorKey: quest_hook::libil2cpp::Type,
@@ -2263,7 +2263,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
 impl<
     TEnumeratorKey: quest_hook::libil2cpp::Type,
@@ -2279,7 +2279,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
 impl<
     TEnumeratorKey: quest_hook::libil2cpp::Type,
@@ -2464,7 +2464,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
 impl<
     TEnumeratorKey: quest_hook::libil2cpp::Type,

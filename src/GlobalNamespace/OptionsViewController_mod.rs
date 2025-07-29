@@ -1,4 +1,4 @@
-#[cfg(feature = "OptionsViewController")]
+#[cfg(feature = "cordl_class_OptionsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OptionsViewController {
@@ -12,7 +12,7 @@ pub struct OptionsViewController {
         >,
     >,
 }
-#[cfg(feature = "OptionsViewController")]
+#[cfg(feature = "cordl_class_OptionsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OptionsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::OptionsViewController {
         false
     }
 }
-#[cfg(feature = "OptionsViewController")]
+#[cfg(feature = "cordl_class_OptionsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::OptionsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OptionsViewController")]
+#[cfg(feature = "cordl_class_OptionsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OptionsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -253,7 +253,7 @@ impl crate::GlobalNamespace::OptionsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OptionsViewController")]
+#[cfg(feature = "cordl_class_OptionsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OptionsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -263,7 +263,7 @@ for crate::GlobalNamespace::OptionsViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OptionsViewController+OptionsButton")]
+#[cfg(feature = "cordl_class_OptionsViewController+OptionsButton")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OptionsViewController_OptionsButton {
@@ -272,7 +272,7 @@ pub enum OptionsViewController_OptionsButton {
     PlayerOptions = 1i32,
     Settings = 2i32,
 }
-#[cfg(feature = "OptionsViewController+OptionsButton")]
+#[cfg(feature = "cordl_class_OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Held<'a> = Self;
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OptionsViewController+OptionsButton")]
+#[cfg(feature = "cordl_class_OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Type = Self;
@@ -313,7 +313,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OptionsViewController+OptionsButton")]
+#[cfg(feature = "cordl_class_OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Actual = Self;
@@ -327,7 +327,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
         self
     }
 }
-#[cfg(feature = "OptionsViewController+OptionsButton")]
+#[cfg(feature = "cordl_class_OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Type = Self;
@@ -342,7 +342,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
         }
     }
 }
-#[cfg(feature = "OptionsViewController+OptionsButton")]
+#[cfg(feature = "cordl_class_OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Actual = Self;

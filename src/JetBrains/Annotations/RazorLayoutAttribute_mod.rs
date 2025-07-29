@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+RazorLayoutAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorLayoutAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RazorLayoutAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+RazorLayoutAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorLayoutAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::RazorLayoutAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::RazorLayoutAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorLayoutAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorLayoutAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::RazorLayoutAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorLayoutAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorLayoutAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::RazorLayoutAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::JetBrains::Annotations::RazorLayoutAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorLayoutAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorLayoutAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::RazorLayoutAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+QmarkNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+QmarkNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct QmarkNode {
     __cordl_parent: crate::System::Xml::Schema::InteriorNode,
 }
-#[cfg(feature = "System+Xml+Schema+QmarkNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+QmarkNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::QmarkNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::QmarkNod
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+QmarkNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+QmarkNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::QmarkNode {
     type Target = crate::System::Xml::Schema::InteriorNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+QmarkNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+QmarkNode")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::QmarkNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::System::Xml::Schema::QmarkNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+QmarkNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+QmarkNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::QmarkNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

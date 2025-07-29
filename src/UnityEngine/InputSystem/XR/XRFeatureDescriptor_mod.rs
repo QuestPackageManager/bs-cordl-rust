@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRFeatureDescriptor {
@@ -11,7 +11,7 @@ pub struct XRFeatureDescriptor {
     pub featureType: crate::UnityEngine::InputSystem::XR::FeatureType,
     pub customSize: u32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor {
     type Type = Self;

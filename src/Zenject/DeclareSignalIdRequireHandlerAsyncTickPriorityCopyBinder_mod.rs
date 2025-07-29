@@ -1,10 +1,14 @@
-#[cfg(feature = "Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder {
     __cordl_parent: crate::Zenject::DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder,
 }
-#[cfg(feature = "Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder {
         false
     }
 }
-#[cfg(feature = "Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder"
+)]
 impl std::ops::Deref
 for crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder {
     type Target = crate::Zenject::DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder;
@@ -32,7 +38,9 @@ for crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder"
+)]
 impl std::ops::DerefMut
 for crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -115,7 +123,9 @@ impl crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

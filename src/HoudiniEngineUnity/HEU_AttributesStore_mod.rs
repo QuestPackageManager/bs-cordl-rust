@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AttributesStore {
@@ -34,7 +34,7 @@ pub struct HEU_AttributesStore {
     pub _outputMeshRendererInitiallyEnabled: bool,
     pub _outputMeshColliderInitiallyEnabled: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AttributesStore {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,14 +54,14 @@ for crate::HoudiniEngineUnity::HEU_AttributesStore {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AttributesStore {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AttributesStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1809,7 +1809,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_AttributesStore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1847,13 +1847,17 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AttributesStore_SetAttributeValueFunc {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1873,7 +1877,9 @@ for crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc"
+)]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
     type Target = crate::System::MulticastDelegate;
@@ -1881,7 +1887,9 @@ for crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc"
+)]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2067,7 +2075,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

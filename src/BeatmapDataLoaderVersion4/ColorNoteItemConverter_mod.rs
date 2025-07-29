@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorNoteItemConverter {
@@ -7,7 +7,7 @@ pub struct ColorNoteItemConverter {
         quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::ColorNote>,
     >,
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapDataLoaderVersion4::ColorNoteItemConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::BeatmapDataLoaderVersion4::ColorNoteItemConverter {
         false
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::ColorNoteItemConverter {
     type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
 impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::ColorNoteItemConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -131,7 +131,7 @@ impl crate::BeatmapDataLoaderVersion4::ColorNoteItemConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorNoteItemConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::ColorNoteItemConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

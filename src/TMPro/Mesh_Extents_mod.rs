@@ -1,11 +1,11 @@
-#[cfg(feature = "TMPro+Mesh_Extents")]
+#[cfg(feature = "cordl_class_TMPro+Mesh_Extents")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Mesh_Extents {
     pub min: crate::UnityEngine::Vector2,
     pub max: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "TMPro+Mesh_Extents")]
+#[cfg(feature = "cordl_class_TMPro+Mesh_Extents")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::Mesh_Extents {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::Mesh_Extents {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+Mesh_Extents")]
+#[cfg(feature = "cordl_class_TMPro+Mesh_Extents")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::Mesh_Extents {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::Mesh_Extents {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+Mesh_Extents")]
+#[cfg(feature = "cordl_class_TMPro+Mesh_Extents")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::Mesh_Extents {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::Mesh_Extents {
         self
     }
 }
-#[cfg(feature = "TMPro+Mesh_Extents")]
+#[cfg(feature = "cordl_class_TMPro+Mesh_Extents")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::Mesh_Extents {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::Mesh_Extents {
         }
     }
 }
-#[cfg(feature = "TMPro+Mesh_Extents")]
+#[cfg(feature = "cordl_class_TMPro+Mesh_Extents")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::Mesh_Extents {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::Mesh_Extents {
         actual
     }
 }
-#[cfg(feature = "TMPro+Mesh_Extents")]
+#[cfg(feature = "cordl_class_TMPro+Mesh_Extents")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::Mesh_Extents {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

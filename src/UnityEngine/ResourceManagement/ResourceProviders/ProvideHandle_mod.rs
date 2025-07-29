@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProvideHandle {
@@ -10,7 +12,9 @@ pub struct ProvideHandle {
         crate::UnityEngine::ResourceManagement::ResourceManager,
     >,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
     type Held<'a> = Self;
@@ -40,7 +44,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
     type Type = Self;
@@ -51,7 +57,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
     type Actual = Self;
@@ -65,7 +73,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
     type Type = Self;
@@ -80,7 +90,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
     type Actual = Self;
@@ -94,7 +106,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+InvariantComparer")]
+#[cfg(feature = "cordl_class_System+InvariantComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvariantComparer {
@@ -7,7 +7,7 @@ pub struct InvariantComparer {
         crate::System::Globalization::CompareInfo,
     >,
 }
-#[cfg(feature = "System+InvariantComparer")]
+#[cfg(feature = "cordl_class_System+InvariantComparer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::InvariantComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::InvariantComparer {
         false
     }
 }
-#[cfg(feature = "System+InvariantComparer")]
+#[cfg(feature = "cordl_class_System+InvariantComparer")]
 impl std::ops::Deref for crate::System::InvariantComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+InvariantComparer")]
+#[cfg(feature = "cordl_class_System+InvariantComparer")]
 impl std::ops::DerefMut for crate::System::InvariantComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -104,7 +104,7 @@ impl crate::System::InvariantComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+InvariantComparer")]
+#[cfg(feature = "cordl_class_System+InvariantComparer")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::InvariantComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

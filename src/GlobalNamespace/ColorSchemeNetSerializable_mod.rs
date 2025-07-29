@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorSchemeNetSerializable")]
+#[cfg(feature = "cordl_class_ColorSchemeNetSerializable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorSchemeNetSerializable {
@@ -10,7 +10,7 @@ pub struct ColorSchemeNetSerializable {
     pub environmentColor0Boost: crate::GlobalNamespace::ColorNoAlphaSerializable,
     pub environmentColor1Boost: crate::GlobalNamespace::ColorNoAlphaSerializable,
 }
-#[cfg(feature = "ColorSchemeNetSerializable")]
+#[cfg(feature = "cordl_class_ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ColorSchemeNetSerializable")]
+#[cfg(feature = "cordl_class_ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ColorSchemeNetSerializable")]
+#[cfg(feature = "cordl_class_ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
         self
     }
 }
-#[cfg(feature = "ColorSchemeNetSerializable")]
+#[cfg(feature = "cordl_class_ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
         }
     }
 }
-#[cfg(feature = "ColorSchemeNetSerializable")]
+#[cfg(feature = "cordl_class_ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
         actual
     }
 }
-#[cfg(feature = "ColorSchemeNetSerializable")]
+#[cfg(feature = "cordl_class_ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Type = Self;

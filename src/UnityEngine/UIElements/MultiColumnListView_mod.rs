@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnListView {
@@ -25,7 +25,7 @@ pub struct MultiColumnListView {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MultiColumnListView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::UnityEngine::UIElements::MultiColumnListView {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MultiColumnListView {
     type Target = crate::UnityEngine::UIElements::BaseListView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MultiColumnListView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -450,7 +450,7 @@ impl crate::UnityEngine::UIElements::MultiColumnListView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MultiColumnListView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -460,7 +460,7 @@ for crate::UnityEngine::UIElements::MultiColumnListView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnListView_UxmlFactory {
@@ -471,7 +471,7 @@ pub struct MultiColumnListView_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -491,7 +491,7 @@ for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -504,7 +504,7 @@ for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -542,7 +542,7 @@ impl crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -552,7 +552,7 @@ for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnListView_UxmlTraits {
@@ -573,7 +573,7 @@ pub struct MultiColumnListView_UxmlTraits {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -593,14 +593,14 @@ for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseListView_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -674,7 +674,7 @@ impl crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

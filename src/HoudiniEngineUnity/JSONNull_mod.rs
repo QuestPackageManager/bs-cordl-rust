@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+JSONNull")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNull")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONNull {
     __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNull")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNull")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::JSONNull {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::JSONNull 
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNull")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNull")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::JSONNull {
     type Target = crate::HoudiniEngineUnity::JSONNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNull")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNull")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::JSONNull {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -334,7 +334,7 @@ impl crate::HoudiniEngineUnity::JSONNull {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNull")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNull")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::JSONNull {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

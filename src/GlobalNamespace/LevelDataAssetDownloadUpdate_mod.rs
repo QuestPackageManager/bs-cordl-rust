@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelDataAssetDownloadUpdate")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LevelDataAssetDownloadUpdate {
@@ -7,7 +7,7 @@ pub struct LevelDataAssetDownloadUpdate {
     pub bytesTransferred: u32,
     pub assetDownloadingState: crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState,
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
         self
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
         }
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
         actual
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     type Type = Self;
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate+AssetDownloadingState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelDataAssetDownloadUpdate_AssetDownloadingState {
@@ -156,7 +156,7 @@ pub enum LevelDataAssetDownloadUpdate_AssetDownloadingState {
     Downloading = 1i32,
     PreparingToDownload = 0i32,
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate+AssetDownloadingState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
     type Held<'a> = Self;
@@ -186,7 +186,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate+AssetDownloadingState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
     type Type = Self;
@@ -197,7 +197,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate+AssetDownloadingState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
     type Actual = Self;
@@ -211,7 +211,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
         self
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate+AssetDownloadingState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
     type Type = Self;
@@ -226,7 +226,7 @@ for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
         }
     }
 }
-#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
+#[cfg(feature = "cordl_class_LevelDataAssetDownloadUpdate+AssetDownloadingState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState {
     type Actual = Self;

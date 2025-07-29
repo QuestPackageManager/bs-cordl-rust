@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+RazorDirectiveAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorDirectiveAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RazorDirectiveAttribute {
@@ -7,7 +7,7 @@ pub struct RazorDirectiveAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "JetBrains+Annotations+RazorDirectiveAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorDirectiveAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::RazorDirectiveAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::JetBrains::Annotations::RazorDirectiveAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorDirectiveAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorDirectiveAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::RazorDirectiveAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorDirectiveAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorDirectiveAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::RazorDirectiveAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -131,7 +131,7 @@ impl crate::JetBrains::Annotations::RazorDirectiveAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorDirectiveAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorDirectiveAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::RazorDirectiveAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

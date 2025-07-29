@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationWriterInterpreter {
@@ -8,7 +10,9 @@ pub struct XmlSerializationWriterInterpreter {
     >,
     pub _format: crate::System::Xml::Serialization::SerializationFormat,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +32,9 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter"
+)]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
     type Target = crate::System::Xml::Serialization::XmlSerializationWriter;
@@ -36,7 +42,9 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter"
+)]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1073,7 +1081,9 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1084,7 +1094,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1098,7 +1108,7 @@ pub struct XmlSerializationWriterInterpreter_CallbackInfo {
     >,
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
@@ -1120,7 +1130,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callbac
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
@@ -1130,7 +1140,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callbac
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
 )]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
@@ -1248,7 +1258,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callba
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {

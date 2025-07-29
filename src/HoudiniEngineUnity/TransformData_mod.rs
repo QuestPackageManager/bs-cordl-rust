@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+TransformData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+TransformData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TransformData {
@@ -9,7 +9,7 @@ pub struct TransformData {
     pub localRotation: crate::UnityEngine::Quaternion,
     pub parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "HoudiniEngineUnity+TransformData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+TransformData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::TransformData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::Transform
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+TransformData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+TransformData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::TransformData {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::HoudiniEngineUnity::TransformData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+TransformData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+TransformData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::TransformData {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::HoudiniEngineUnity::TransformData {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+TransformData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+TransformData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::TransformData {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::HoudiniEngineUnity::TransformData {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+TransformData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+TransformData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::TransformData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::Transfo
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+TransformData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+TransformData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::TransformData {
     type Type = Self;

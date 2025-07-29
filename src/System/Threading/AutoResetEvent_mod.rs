@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+AutoResetEvent")]
+#[cfg(feature = "cordl_class_System+Threading+AutoResetEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AutoResetEvent {
     __cordl_parent: crate::System::Threading::EventWaitHandle,
 }
-#[cfg(feature = "System+Threading+AutoResetEvent")]
+#[cfg(feature = "cordl_class_System+Threading+AutoResetEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::AutoResetEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::AutoResetE
         false
     }
 }
-#[cfg(feature = "System+Threading+AutoResetEvent")]
+#[cfg(feature = "cordl_class_System+Threading+AutoResetEvent")]
 impl std::ops::Deref for crate::System::Threading::AutoResetEvent {
     type Target = crate::System::Threading::EventWaitHandle;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+AutoResetEvent")]
+#[cfg(feature = "cordl_class_System+Threading+AutoResetEvent")]
 impl std::ops::DerefMut for crate::System::Threading::AutoResetEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -70,7 +70,7 @@ impl crate::System::Threading::AutoResetEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+AutoResetEvent")]
+#[cfg(feature = "cordl_class_System+Threading+AutoResetEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::AutoResetEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

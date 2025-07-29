@@ -1,10 +1,10 @@
-#[cfg(feature = "IBakedLightWithRenderer")]
+#[cfg(feature = "cordl_class_IBakedLightWithRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IBakedLightWithRenderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IBakedLightWithRenderer")]
+#[cfg(feature = "cordl_class_IBakedLightWithRenderer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IBakedLightWithRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IBakedLightWithRenderer {
         false
     }
 }
-#[cfg(feature = "IBakedLightWithRenderer")]
+#[cfg(feature = "cordl_class_IBakedLightWithRenderer")]
 impl std::ops::Deref for crate::GlobalNamespace::IBakedLightWithRenderer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IBakedLightWithRenderer")]
+#[cfg(feature = "cordl_class_IBakedLightWithRenderer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IBakedLightWithRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::IBakedLightWithRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IBakedLightWithRenderer")]
+#[cfg(feature = "cordl_class_IBakedLightWithRenderer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IBakedLightWithRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

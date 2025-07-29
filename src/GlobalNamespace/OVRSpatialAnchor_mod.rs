@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSpatialAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSpatialAnchor {
@@ -13,7 +13,7 @@ pub struct OVRSpatialAnchor {
     pub _Space_k__BackingField: crate::GlobalNamespace::OVRSpace,
     pub _Uuid_k__BackingField: crate::System::Guid,
 }
-#[cfg(feature = "OVRSpatialAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSpatialAnchor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSpatialAn
         false
     }
 }
-#[cfg(feature = "OVRSpatialAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSpatialAnchor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSpatialAnchor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2075,7 +2075,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpatialAnchor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2084,13 +2084,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpatialAnc
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+Development")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+Development")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSpatialAnchor_Development {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRSpatialAnchor+Development")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+Development")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpatialAnchor_Development {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2110,14 +2110,14 @@ for crate::GlobalNamespace::OVRSpatialAnchor_Development {
         false
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+Development")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+Development")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSpatialAnchor_Development {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+Development")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+Development")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSpatialAnchor_Development {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2273,7 +2273,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+Development")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+Development")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSpatialAnchor_Development {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2283,13 +2283,13 @@ for crate::GlobalNamespace::OVRSpatialAnchor_Development {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+EraseOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpatialAnchor_EraseOptions {
     pub Storage: crate::GlobalNamespace::OVRSpace_StorageLocation,
 }
-#[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+EraseOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     type Held<'a> = Self;
@@ -2319,7 +2319,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+EraseOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     type Type = Self;
@@ -2330,7 +2330,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+EraseOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     type Actual = Self;
@@ -2344,7 +2344,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
         self
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+EraseOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     type Type = Self;
@@ -2359,7 +2359,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
         }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+EraseOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     type Actual = Self;
@@ -2373,7 +2373,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
         actual
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+EraseOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     type Type = Self;
@@ -2386,7 +2386,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
 }
 #[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
 impl crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {}
-#[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+InvertedCapture_2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpatialAnchor_InvertedCapture_2<
@@ -2398,7 +2398,7 @@ pub struct OVRSpatialAnchor_InvertedCapture_2<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
     __cordl_phantom_TCapture: std::marker::PhantomData<TCapture>,
 }
-#[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+InvertedCapture_2")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     TCapture: quest_hook::libil2cpp::Type,
@@ -2447,7 +2447,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+InvertedCapture_2")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     TCapture: quest_hook::libil2cpp::Type,
@@ -2461,7 +2461,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+InvertedCapture_2")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     TCapture: quest_hook::libil2cpp::Type,
@@ -2478,7 +2478,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture
         self
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+InvertedCapture_2")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     TCapture: quest_hook::libil2cpp::Type,
@@ -2496,7 +2496,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture
         }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+InvertedCapture_2")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     TCapture: quest_hook::libil2cpp::Type,
@@ -2513,7 +2513,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture
         actual
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+InvertedCapture_2")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     TCapture: quest_hook::libil2cpp::Type,
@@ -2653,7 +2653,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+LoadOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpatialAnchor_LoadOptions {
@@ -2664,7 +2664,7 @@ pub struct OVRSpatialAnchor_LoadOptions {
         crate::System::Collections::Generic::IReadOnlyList_1<crate::System::Guid>,
     >,
 }
-#[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     type Held<'a> = Self;
@@ -2694,7 +2694,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     type Type = Self;
@@ -2705,7 +2705,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     type Actual = Self;
@@ -2719,7 +2719,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         self
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     type Type = Self;
@@ -2734,7 +2734,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     type Actual = Self;
@@ -2748,7 +2748,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         actual
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     type Type = Self;
@@ -2992,7 +2992,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorActionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSpatialAnchor_MultiAnchorActionType {
@@ -3000,7 +3000,7 @@ pub enum OVRSpatialAnchor_MultiAnchorActionType {
     Save = 0i32,
     Share = 1i32,
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorActionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
     type Held<'a> = Self;
@@ -3030,7 +3030,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorActionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
     type Type = Self;
@@ -3041,7 +3041,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorActionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
     type Actual = Self;
@@ -3055,7 +3055,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
         self
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorActionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
     type Type = Self;
@@ -3070,7 +3070,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
         }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorActionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
     type Actual = Self;
@@ -3084,7 +3084,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
         actual
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorDelegatePair")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpatialAnchor_MultiAnchorDelegatePair {
@@ -3104,7 +3104,7 @@ pub struct OVRSpatialAnchor_MultiAnchorDelegatePair {
         >,
     >,
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorDelegatePair")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     type Held<'a> = Self;
@@ -3134,7 +3134,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorDelegatePair")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     type Type = Self;
@@ -3145,7 +3145,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorDelegatePair")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     type Actual = Self;
@@ -3159,7 +3159,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
         self
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorDelegatePair")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     type Type = Self;
@@ -3174,7 +3174,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
         }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorDelegatePair")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     type Actual = Self;
@@ -3188,7 +3188,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
         actual
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorDelegatePair")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     type Type = Self;
@@ -3201,7 +3201,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
 }
 #[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
 impl crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {}
-#[cfg(feature = "OVRSpatialAnchor+OperationResult")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+OperationResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSpatialAnchor_OperationResult {
@@ -3214,7 +3214,7 @@ pub enum OVRSpatialAnchor_OperationResult {
     Failure_SpaceNetworkTimeout = -2003i32,
     Success = 0i32,
 }
-#[cfg(feature = "OVRSpatialAnchor+OperationResult")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+OperationResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
     type Held<'a> = Self;
@@ -3244,7 +3244,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+OperationResult")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+OperationResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
     type Type = Self;
@@ -3255,7 +3255,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+OperationResult")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+OperationResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
     type Actual = Self;
@@ -3269,7 +3269,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
         self
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+OperationResult")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+OperationResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
     type Type = Self;
@@ -3284,7 +3284,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
         }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+OperationResult")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+OperationResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
     type Actual = Self;
@@ -3298,13 +3298,13 @@ for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
         actual
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+SaveOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpatialAnchor_SaveOptions {
     pub Storage: crate::GlobalNamespace::OVRSpace_StorageLocation,
 }
-#[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     type Held<'a> = Self;
@@ -3334,7 +3334,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     type Type = Self;
@@ -3345,7 +3345,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     type Actual = Self;
@@ -3359,7 +3359,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
         self
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     type Type = Self;
@@ -3374,7 +3374,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
         }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     type Actual = Self;
@@ -3388,7 +3388,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
         actual
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+SaveOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     type Type = Self;
@@ -3401,14 +3401,14 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
 }
 #[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
 impl crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {}
-#[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+UnboundAnchor")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpatialAnchor_UnboundAnchor {
     pub _space: crate::GlobalNamespace::OVRSpace,
     pub _Uuid_k__BackingField: crate::System::Guid,
 }
-#[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+UnboundAnchor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     type Held<'a> = Self;
@@ -3438,7 +3438,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+UnboundAnchor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     type Type = Self;
@@ -3449,7 +3449,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+UnboundAnchor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     type Actual = Self;
@@ -3463,7 +3463,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
         self
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+UnboundAnchor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     type Type = Self;
@@ -3478,7 +3478,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
         }
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+UnboundAnchor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     type Actual = Self;
@@ -3492,7 +3492,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
         actual
     }
 }
-#[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
+#[cfg(feature = "cordl_class_OVRSpatialAnchor+UnboundAnchor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     type Type = Self;

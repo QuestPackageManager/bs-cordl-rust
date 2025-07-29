@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+XmlAnyListConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAnyListConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAnyListConverter {
     __cordl_parent: crate::System::Xml::Schema::XmlListConverter,
 }
-#[cfg(feature = "System+Xml+Schema+XmlAnyListConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAnyListConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlAnyListConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::XmlAnyListConverter {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAnyListConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAnyListConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlAnyListConverter {
     type Target = crate::System::Xml::Schema::XmlListConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAnyListConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAnyListConverter")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlAnyListConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -122,7 +122,7 @@ impl crate::System::Xml::Schema::XmlAnyListConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlAnyListConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAnyListConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlAnyListConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

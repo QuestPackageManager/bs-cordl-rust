@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionCompletionResults")]
+#[cfg(feature = "cordl_class_MissionCompletionResults")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionCompletionResults {
@@ -12,7 +12,7 @@ pub struct MissionCompletionResults {
         >,
     >,
 }
-#[cfg(feature = "MissionCompletionResults")]
+#[cfg(feature = "cordl_class_MissionCompletionResults")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionCompletionResults {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::MissionCompletionResults {
         false
     }
 }
-#[cfg(feature = "MissionCompletionResults")]
+#[cfg(feature = "cordl_class_MissionCompletionResults")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionCompletionResults {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionCompletionResults")]
+#[cfg(feature = "cordl_class_MissionCompletionResults")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionCompletionResults {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::MissionCompletionResults {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionCompletionResults")]
+#[cfg(feature = "cordl_class_MissionCompletionResults")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionCompletionResults {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

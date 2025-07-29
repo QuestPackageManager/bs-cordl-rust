@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Security+LocalCertificateSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+LocalCertificateSelectionCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalCertificateSelectionCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Net+Security+LocalCertificateSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+LocalCertificateSelectionCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Security::LocalCertificateSelectionCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Net::Security::LocalCertificateSelectionCallback {
         false
     }
 }
-#[cfg(feature = "System+Net+Security+LocalCertificateSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+LocalCertificateSelectionCallback")]
 impl std::ops::Deref
 for crate::System::Net::Security::LocalCertificateSelectionCallback {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::System::Net::Security::LocalCertificateSelectionCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Security+LocalCertificateSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+LocalCertificateSelectionCallback")]
 impl std::ops::DerefMut
 for crate::System::Net::Security::LocalCertificateSelectionCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -160,7 +160,7 @@ impl crate::System::Net::Security::LocalCertificateSelectionCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Security+LocalCertificateSelectionCallback")]
+#[cfg(feature = "cordl_class_System+Net+Security+LocalCertificateSelectionCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Security::LocalCertificateSelectionCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

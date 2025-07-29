@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeBuffer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeBuffer {
     __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
     pub _numBytes: crate::System::UIntPtr,
 }
-#[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::SafeBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Runtime::InteropServices::SafeBuffer {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeBuffer")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::SafeBuffer {
     type Target = crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeBuffer")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::SafeBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::System::Runtime::InteropServices::SafeBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeBuffer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::SafeBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

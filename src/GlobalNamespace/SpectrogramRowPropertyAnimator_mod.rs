@@ -1,4 +1,4 @@
-#[cfg(feature = "SpectrogramRowPropertyAnimator")]
+#[cfg(feature = "cordl_class_SpectrogramRowPropertyAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpectrogramRowPropertyAnimator {
@@ -17,7 +17,7 @@ pub struct SpectrogramRowPropertyAnimator {
         crate::GlobalNamespace::BasicSpectrogramData,
     >,
 }
-#[cfg(feature = "SpectrogramRowPropertyAnimator")]
+#[cfg(feature = "cordl_class_SpectrogramRowPropertyAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpectrogramRowPropertyAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::SpectrogramRowPropertyAnimator {
         false
     }
 }
-#[cfg(feature = "SpectrogramRowPropertyAnimator")]
+#[cfg(feature = "cordl_class_SpectrogramRowPropertyAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::SpectrogramRowPropertyAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpectrogramRowPropertyAnimator")]
+#[cfg(feature = "cordl_class_SpectrogramRowPropertyAnimator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpectrogramRowPropertyAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::GlobalNamespace::SpectrogramRowPropertyAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpectrogramRowPropertyAnimator")]
+#[cfg(feature = "cordl_class_SpectrogramRowPropertyAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SpectrogramRowPropertyAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

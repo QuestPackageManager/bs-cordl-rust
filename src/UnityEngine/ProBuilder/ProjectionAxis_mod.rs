@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+ProjectionAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProjectionAxis")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProjectionAxis {
@@ -10,7 +10,7 @@ pub enum ProjectionAxis {
     Z = 2i32,
     ZNegative = 5i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProjectionAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProjectionAxis")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::ProjectionAxis {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::ProBuilder::ProjectionAxis {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProjectionAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProjectionAxis")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::ProjectionAxis {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::ProBuilder::ProjectionAxis {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProjectionAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProjectionAxis")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::ProjectionAxis {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::ProBuilder::ProjectionAxis {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProjectionAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProjectionAxis")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::ProjectionAxis {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::ProBuilder::ProjectionAxis {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ProjectionAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProjectionAxis")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::ProjectionAxis {
     type Actual = Self;

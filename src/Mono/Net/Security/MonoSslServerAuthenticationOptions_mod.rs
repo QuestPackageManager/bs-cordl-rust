@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Net+Security+MonoSslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+MonoSslServerAuthenticationOptions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoSslServerAuthenticationOptions {
@@ -7,7 +7,7 @@ pub struct MonoSslServerAuthenticationOptions {
         crate::System::Net::Security::SslServerAuthenticationOptions,
     >,
 }
-#[cfg(feature = "Mono+Net+Security+MonoSslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+MonoSslServerAuthenticationOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Net::Security::MonoSslServerAuthenticationOptions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Mono::Net::Security::MonoSslServerAuthenticationOptions {
         false
     }
 }
-#[cfg(feature = "Mono+Net+Security+MonoSslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+MonoSslServerAuthenticationOptions")]
 impl std::ops::Deref for crate::Mono::Net::Security::MonoSslServerAuthenticationOptions {
     type Target = crate::Mono::Net::Security::MonoSslAuthenticationOptions;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Net+Security+MonoSslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+MonoSslServerAuthenticationOptions")]
 impl std::ops::DerefMut
 for crate::Mono::Net::Security::MonoSslServerAuthenticationOptions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -445,7 +445,7 @@ impl crate::Mono::Net::Security::MonoSslServerAuthenticationOptions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Net+Security+MonoSslServerAuthenticationOptions")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+MonoSslServerAuthenticationOptions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Net::Security::MonoSslServerAuthenticationOptions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "StandardScoreSyncState")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StandardScoreSyncState {
@@ -8,7 +8,7 @@ pub struct StandardScoreSyncState {
     pub _combo: i32,
     pub _multiplier: i32,
 }
-#[cfg(feature = "StandardScoreSyncState")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "StandardScoreSyncState")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "StandardScoreSyncState")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
         self
     }
 }
-#[cfg(feature = "StandardScoreSyncState")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
         }
     }
 }
-#[cfg(feature = "StandardScoreSyncState")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
         actual
     }
 }
-#[cfg(feature = "StandardScoreSyncState")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Type = Self;
@@ -497,7 +497,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
         todo!()
     }
 }
-#[cfg(feature = "StandardScoreSyncState+Score")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState+Score")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandardScoreSyncState_Score {
@@ -509,7 +509,7 @@ pub enum StandardScoreSyncState_Score {
     MultipliedScore = 1i32,
     Multiplier = 4i32,
 }
-#[cfg(feature = "StandardScoreSyncState+Score")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Held<'a> = Self;
@@ -539,7 +539,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "StandardScoreSyncState+Score")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Type = Self;
@@ -550,7 +550,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "StandardScoreSyncState+Score")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Actual = Self;
@@ -564,7 +564,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
         self
     }
 }
-#[cfg(feature = "StandardScoreSyncState+Score")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Type = Self;
@@ -579,7 +579,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
         }
     }
 }
-#[cfg(feature = "StandardScoreSyncState+Score")]
+#[cfg(feature = "cordl_class_StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Actual = Self;

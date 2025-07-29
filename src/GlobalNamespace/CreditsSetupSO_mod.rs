@@ -1,4 +1,4 @@
-#[cfg(feature = "CreditsSetupSO")]
+#[cfg(feature = "cordl_class_CreditsSetupSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsSetupSO {
@@ -18,7 +18,7 @@ pub struct CreditsSetupSO {
     pub columnCount: i32,
     pub spaceHeight: f32,
 }
-#[cfg(feature = "CreditsSetupSO")]
+#[cfg(feature = "cordl_class_CreditsSetupSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsSetupSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsSetup
         false
     }
 }
-#[cfg(feature = "CreditsSetupSO")]
+#[cfg(feature = "cordl_class_CreditsSetupSO")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsSetupSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CreditsSetupSO")]
+#[cfg(feature = "cordl_class_CreditsSetupSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsSetupSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::CreditsSetupSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CreditsSetupSO")]
+#[cfg(feature = "cordl_class_CreditsSetupSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsSetupSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+RegularExpressions+Match")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Match")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Match {
@@ -21,7 +21,7 @@ pub struct Match {
     pub _matchcount: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _balancing: bool,
 }
-#[cfg(feature = "System+Text+RegularExpressions+Match")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Match")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::Match {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::System::Text::RegularExpressions::Match {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Match")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Match")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Match {
     type Target = crate::System::Text::RegularExpressions::Group;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Match")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Match")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::Match {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -480,7 +480,7 @@ impl crate::System::Text::RegularExpressions::Match {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Match")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Match")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::Match {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

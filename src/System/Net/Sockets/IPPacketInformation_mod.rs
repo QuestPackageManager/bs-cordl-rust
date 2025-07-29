@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IPPacketInformation {
     pub address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     pub networkInterface: i32,
 }
-#[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::IPPacketInformation {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::System::Net::Sockets::IPPacketInformation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::IPPacketInformation {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::System::Net::Sockets::IPPacketInformation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::IPPacketInformation {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::System::Net::Sockets::IPPacketInformation {
         self
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::IPPacketInformation {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::System::Net::Sockets::IPPacketInformation {
         }
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Sockets::IPPacketInformation {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::System::Net::Sockets::IPPacketInformation {
         actual
     }
 }
-#[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IPPacketInformation")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::Sockets::IPPacketInformation {
     type Type = Self;

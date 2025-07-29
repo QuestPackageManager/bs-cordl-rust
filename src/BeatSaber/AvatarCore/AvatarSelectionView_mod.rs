@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSelectionView")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSelectionView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarSelectionView {
@@ -18,7 +18,7 @@ pub struct AvatarSelectionView {
     pub didPressPreferredButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSelectionView")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSelectionView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::AvatarSelectionView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::BeatSaber::AvatarCore::AvatarSelectionView {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSelectionView")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSelectionView")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarSelectionView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSelectionView")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSelectionView")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarSelectionView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -455,7 +455,7 @@ impl crate::BeatSaber::AvatarCore::AvatarSelectionView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSelectionView")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSelectionView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::AvatarSelectionView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

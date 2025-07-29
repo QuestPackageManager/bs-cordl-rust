@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AxisDeadzoneProcessor {
@@ -6,7 +6,7 @@ pub struct AxisDeadzoneProcessor {
     pub min: f32,
     pub max: f32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Processors::AxisDeadzoneProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::InputSystem::Processors::AxisDeadzoneProcessor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::AxisDeadzoneProcessor {
     type Target = crate::UnityEngine::InputSystem::InputProcessor_1<f32>;
@@ -34,7 +34,7 @@ for crate::UnityEngine::InputSystem::Processors::AxisDeadzoneProcessor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Processors::AxisDeadzoneProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -165,7 +165,7 @@ impl crate::UnityEngine::InputSystem::Processors::AxisDeadzoneProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+AxisDeadzoneProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Processors::AxisDeadzoneProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ConfiguredTaskAwaitable_1<TResult: quest_hook::libil2cpp::Type> {
@@ -7,7 +7,7 @@ pub struct ConfiguredTaskAwaitable_1<TResult: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult> {
     type Held<'a> = Self;
@@ -53,7 +53,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult>
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult> {
     type Type = Self;
@@ -64,7 +64,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult>
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult> {
     type Actual = Self;
@@ -78,7 +78,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult>
         self
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult> {
     type Type = Self;
@@ -93,7 +93,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult>
         }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult> {
     type Actual = Self;
@@ -107,7 +107,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult>
         actual
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<TResult> {
     type Type = Self;
@@ -203,7 +203,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -217,7 +217,7 @@ pub struct ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
@@ -267,7 +267,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_Configur
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
@@ -282,7 +282,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_Configur
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
@@ -300,7 +300,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_Configur
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
@@ -319,7 +319,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_Configur
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
@@ -337,7 +337,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_Configur
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
+    feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<

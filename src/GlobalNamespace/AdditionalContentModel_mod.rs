@@ -1,11 +1,11 @@
-#[cfg(feature = "AdditionalContentModel")]
+#[cfg(feature = "cordl_class_AdditionalContentModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AdditionalContentModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didInvalidateDataEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "AdditionalContentModel")]
+#[cfg(feature = "cordl_class_AdditionalContentModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AdditionalContentModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::AdditionalContentModel {
         false
     }
 }
-#[cfg(feature = "AdditionalContentModel")]
+#[cfg(feature = "cordl_class_AdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::AdditionalContentModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AdditionalContentModel")]
+#[cfg(feature = "cordl_class_AdditionalContentModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AdditionalContentModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -647,7 +647,7 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AdditionalContentModel")]
+#[cfg(feature = "cordl_class_AdditionalContentModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -701,7 +701,7 @@ for crate::GlobalNamespace::AdditionalContentModel {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "AdditionalContentModel+UpdateEntitlementsResult")]
+#[cfg(feature = "cordl_class_AdditionalContentModel+UpdateEntitlementsResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AdditionalContentModel_UpdateEntitlementsResult {
@@ -709,7 +709,7 @@ pub enum AdditionalContentModel_UpdateEntitlementsResult {
     Failed = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "AdditionalContentModel+UpdateEntitlementsResult")]
+#[cfg(feature = "cordl_class_AdditionalContentModel+UpdateEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
     type Held<'a> = Self;
@@ -739,7 +739,7 @@ for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AdditionalContentModel+UpdateEntitlementsResult")]
+#[cfg(feature = "cordl_class_AdditionalContentModel+UpdateEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
     type Type = Self;
@@ -750,7 +750,7 @@ for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AdditionalContentModel+UpdateEntitlementsResult")]
+#[cfg(feature = "cordl_class_AdditionalContentModel+UpdateEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
     type Actual = Self;
@@ -764,7 +764,7 @@ for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
         self
     }
 }
-#[cfg(feature = "AdditionalContentModel+UpdateEntitlementsResult")]
+#[cfg(feature = "cordl_class_AdditionalContentModel+UpdateEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
     type Type = Self;
@@ -779,7 +779,7 @@ for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
         }
     }
 }
-#[cfg(feature = "AdditionalContentModel+UpdateEntitlementsResult")]
+#[cfg(feature = "cordl_class_AdditionalContentModel+UpdateEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+SpanHelpers")]
+#[cfg(feature = "cordl_class_System+SpanHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpanHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+SpanHelpers")]
+#[cfg(feature = "cordl_class_System+SpanHelpers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::SpanHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::SpanHelpers {
         false
     }
 }
-#[cfg(feature = "System+SpanHelpers")]
+#[cfg(feature = "cordl_class_System+SpanHelpers")]
 impl std::ops::Deref for crate::System::SpanHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+SpanHelpers")]
+#[cfg(feature = "cordl_class_System+SpanHelpers")]
 impl std::ops::DerefMut for crate::System::SpanHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -568,7 +568,7 @@ impl crate::System::SpanHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+SpanHelpers")]
+#[cfg(feature = "cordl_class_System+SpanHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::SpanHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

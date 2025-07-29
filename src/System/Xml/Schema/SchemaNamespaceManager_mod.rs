@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+Schema+SchemaNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNamespaceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaNamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
     pub node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNamespaceManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::SchemaNamespaceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Xml::Schema::SchemaNamespaceManager {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaNamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNamespaceManager")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaNamespaceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -134,7 +134,7 @@ impl crate::System::Xml::Schema::SchemaNamespaceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNamespaceManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::SchemaNamespaceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

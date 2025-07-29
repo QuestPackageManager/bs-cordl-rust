@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Lookup_2")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lookup_2<
@@ -23,7 +23,7 @@ pub struct Lookup_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "System+Linq+Lookup_2")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "System+Linq+Lookup_2")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -68,7 +68,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Lookup_2")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -380,7 +380,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Lookup_2")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -446,7 +446,7 @@ for crate::System::Linq::Lookup_2<TKey, TElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2+Grouping")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lookup_2_Grouping<
@@ -469,7 +469,7 @@ pub struct Lookup_2_Grouping<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2+Grouping")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -508,7 +508,7 @@ for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
         false
     }
 }
-#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2+Grouping")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -518,7 +518,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2+Grouping")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -1090,7 +1090,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+#[cfg(feature = "cordl_class_System+Linq+Lookup_2+Grouping")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

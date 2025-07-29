@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+Datatype_NOTATION")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_NOTATION")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_NOTATION {
     __cordl_parent: crate::System::Xml::Schema::Datatype_anySimpleType,
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_NOTATION")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_NOTATION")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::Datatype_NOTATION {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_NOTATION {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_NOTATION")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_NOTATION")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_NOTATION {
     type Target = crate::System::Xml::Schema::Datatype_anySimpleType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_NOTATION")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_NOTATION")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_NOTATION {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -361,7 +361,7 @@ impl crate::System::Xml::Schema::Datatype_NOTATION {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_NOTATION")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_NOTATION")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::Datatype_NOTATION {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

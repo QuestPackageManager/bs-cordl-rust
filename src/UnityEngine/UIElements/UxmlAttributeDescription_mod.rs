@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlAttributeDescription {
@@ -22,7 +22,7 @@ pub struct UxmlAttributeDescription {
         crate::UnityEngine::UIElements::UxmlTypeRestriction,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlAttributeDescription {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::UnityEngine::UIElements::UxmlAttributeDescription {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAttributeDescription {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UxmlAttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -437,7 +437,7 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlAttributeDescription {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -447,7 +447,7 @@ for crate::UnityEngine::UIElements::UxmlAttributeDescription {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription+Use")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UxmlAttributeDescription_Use {
@@ -457,7 +457,7 @@ pub enum UxmlAttributeDescription_Use {
     Prohibited = 2i32,
     Required = 3i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription+Use")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
     type Held<'a> = Self;
@@ -487,7 +487,7 @@ for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription+Use")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
     type Type = Self;
@@ -498,7 +498,7 @@ for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription+Use")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
     type Actual = Self;
@@ -512,7 +512,7 @@ for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription+Use")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
     type Type = Self;
@@ -527,7 +527,7 @@ for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeDescription+Use")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UxmlAttributeDescription_Use {
     type Actual = Self;

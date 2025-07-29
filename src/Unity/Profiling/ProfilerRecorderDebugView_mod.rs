@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Profiling+ProfilerRecorderDebugView")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorderDebugView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProfilerRecorderDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Profiling+ProfilerRecorderDebugView")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorderDebugView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Profiling::ProfilerRecorderDebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Profiling::ProfilerRecorderDebugView {
         false
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerRecorderDebugView")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorderDebugView")]
 impl std::ops::Deref for crate::Unity::Profiling::ProfilerRecorderDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Profiling+ProfilerRecorderDebugView")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorderDebugView")]
 impl std::ops::DerefMut for crate::Unity::Profiling::ProfilerRecorderDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::Unity::Profiling::ProfilerRecorderDebugView {
 }
 #[cfg(feature = "Unity+Profiling+ProfilerRecorderDebugView")]
 impl crate::Unity::Profiling::ProfilerRecorderDebugView {}
-#[cfg(feature = "Unity+Profiling+ProfilerRecorderDebugView")]
+#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorderDebugView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Profiling::ProfilerRecorderDebugView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

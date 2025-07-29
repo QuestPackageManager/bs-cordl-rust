@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+DotnetExtension+EnvironmentVariableHelper")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+EnvironmentVariableHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentVariableHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+DotnetExtension+EnvironmentVariableHelper")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+EnvironmentVariableHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
         false
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+EnvironmentVariableHelper")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+EnvironmentVariableHelper")]
 impl std::ops::Deref for crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+EnvironmentVariableHelper")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+EnvironmentVariableHelper")]
 impl std::ops::DerefMut for crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -100,7 +100,7 @@ impl crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+EnvironmentVariableHelper")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+EnvironmentVariableHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

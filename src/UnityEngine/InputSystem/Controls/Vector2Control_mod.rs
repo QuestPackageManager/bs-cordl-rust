@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Controls+Vector2Control")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+Vector2Control")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2Control {
@@ -12,7 +12,7 @@ pub struct Vector2Control {
         crate::UnityEngine::InputSystem::Controls::AxisControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+Vector2Control")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+Vector2Control")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::Vector2Control {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Controls::Vector2Control {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+Vector2Control")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+Vector2Control")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::Vector2Control {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::Vector2,
@@ -41,7 +41,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::Vector2Contr
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+Vector2Control")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+Vector2Control")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::Vector2Control {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -332,7 +332,7 @@ impl crate::UnityEngine::InputSystem::Controls::Vector2Control {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+Vector2Control")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+Vector2Control")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::Vector2Control {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

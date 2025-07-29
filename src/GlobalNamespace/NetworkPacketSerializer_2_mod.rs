@@ -1,4 +1,4 @@
-#[cfg(feature = "NetworkPacketSerializer_2")]
+#[cfg(feature = "cordl_class_NetworkPacketSerializer_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPacketSerializer_2<
@@ -38,7 +38,7 @@ pub struct NetworkPacketSerializer_2<
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TData: std::marker::PhantomData<TData>,
 }
-#[cfg(feature = "NetworkPacketSerializer_2")]
+#[cfg(feature = "cordl_class_NetworkPacketSerializer_2")]
 unsafe impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
         false
     }
 }
-#[cfg(feature = "NetworkPacketSerializer_2")]
+#[cfg(feature = "cordl_class_NetworkPacketSerializer_2")]
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
@@ -84,7 +84,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkPacketSerializer_2")]
+#[cfg(feature = "cordl_class_NetworkPacketSerializer_2")]
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
@@ -890,7 +890,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkPacketSerializer_2")]
+#[cfg(feature = "cordl_class_NetworkPacketSerializer_2")]
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,

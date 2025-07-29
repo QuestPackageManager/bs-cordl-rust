@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+DtdProcessing")]
+#[cfg(feature = "cordl_class_System+Xml+DtdProcessing")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DtdProcessing {
@@ -7,7 +7,7 @@ pub enum DtdProcessing {
     Parse = 2i32,
     Prohibit = 0i32,
 }
-#[cfg(feature = "System+Xml+DtdProcessing")]
+#[cfg(feature = "cordl_class_System+Xml+DtdProcessing")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdProcessing {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdProcessing {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+DtdProcessing")]
+#[cfg(feature = "cordl_class_System+Xml+DtdProcessing")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::DtdProcessing {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::DtdProcessin
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+DtdProcessing")]
+#[cfg(feature = "cordl_class_System+Xml+DtdProcessing")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::DtdProcessing {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::DtdProcessi
         self
     }
 }
-#[cfg(feature = "System+Xml+DtdProcessing")]
+#[cfg(feature = "cordl_class_System+Xml+DtdProcessing")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::DtdProcessing {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::DtdProcessin
         }
     }
 }
-#[cfg(feature = "System+Xml+DtdProcessing")]
+#[cfg(feature = "cordl_class_System+Xml+DtdProcessing")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdProcessing {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlDocumentType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDocumentType")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDocumentType {
@@ -12,7 +12,7 @@ pub struct XmlDocumentType {
     pub notations: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamedNodeMap>,
     pub schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
 }
-#[cfg(feature = "System+Xml+XmlDocumentType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDocumentType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlDocumentType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlDocumentType 
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlDocumentType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDocumentType")]
 impl std::ops::Deref for crate::System::Xml::XmlDocumentType {
     type Target = crate::System::Xml::XmlLinkedNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlDocumentType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDocumentType")]
 impl std::ops::DerefMut for crate::System::Xml::XmlDocumentType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -490,7 +490,7 @@ impl crate::System::Xml::XmlDocumentType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlDocumentType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDocumentType")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlDocumentType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

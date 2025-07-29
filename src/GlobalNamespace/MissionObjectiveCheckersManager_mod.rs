@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionObjectiveCheckersManager")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjectiveCheckersManager {
@@ -23,7 +23,7 @@ pub struct MissionObjectiveCheckersManager {
         >,
     >,
 }
-#[cfg(feature = "MissionObjectiveCheckersManager")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionObjectiveCheckersManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::GlobalNamespace::MissionObjectiveCheckersManager {
         false
     }
 }
-#[cfg(feature = "MissionObjectiveCheckersManager")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionObjectiveCheckersManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionObjectiveCheckersManager")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjectiveCheckersManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -508,7 +508,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionObjectiveCheckersManager")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionObjectiveCheckersManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -518,7 +518,7 @@ for crate::GlobalNamespace::MissionObjectiveCheckersManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjectiveCheckersManager_InitData {
@@ -529,7 +529,7 @@ pub struct MissionObjectiveCheckersManager_InitData {
         >,
     >,
 }
-#[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -549,7 +549,7 @@ for crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
         false
     }
 }
-#[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -557,7 +557,7 @@ for crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -616,7 +616,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
+#[cfg(feature = "cordl_class_MissionObjectiveCheckersManager+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

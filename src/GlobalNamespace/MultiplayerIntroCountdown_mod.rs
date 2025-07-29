@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerIntroCountdown")]
+#[cfg(feature = "cordl_class_MultiplayerIntroCountdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerIntroCountdown {
@@ -32,7 +32,7 @@ pub struct MultiplayerIntroCountdown {
     pub _fontSize: f32,
     pub _alpha: f32,
 }
-#[cfg(feature = "MultiplayerIntroCountdown")]
+#[cfg(feature = "cordl_class_MultiplayerIntroCountdown")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerIntroCountdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,14 +52,14 @@ for crate::GlobalNamespace::MultiplayerIntroCountdown {
         false
     }
 }
-#[cfg(feature = "MultiplayerIntroCountdown")]
+#[cfg(feature = "cordl_class_MultiplayerIntroCountdown")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerIntroCountdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerIntroCountdown")]
+#[cfg(feature = "cordl_class_MultiplayerIntroCountdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerIntroCountdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -291,7 +291,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerIntroCountdown")]
+#[cfg(feature = "cordl_class_MultiplayerIntroCountdown")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerIntroCountdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

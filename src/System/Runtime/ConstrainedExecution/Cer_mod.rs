@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Cer")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Cer")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Cer {
@@ -7,7 +7,7 @@ pub enum Cer {
     None = 0i32,
     Success = 2i32,
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Cer")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Cer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::ConstrainedExecution::Cer {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Runtime::ConstrainedExecution::Cer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Cer")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Cer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::ConstrainedExecution::Cer {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Runtime::ConstrainedExecution::Cer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Cer")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Cer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::ConstrainedExecution::Cer {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Runtime::ConstrainedExecution::Cer {
         self
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Cer")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Cer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::ConstrainedExecution::Cer {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Runtime::ConstrainedExecution::Cer {
         }
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+Cer")]
+#[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+Cer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::ConstrainedExecution::Cer {
     type Actual = Self;

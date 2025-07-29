@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ScrollView")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollView {
@@ -40,7 +40,7 @@ pub struct ScrollView {
     pub _lastJoystickScrollDirection: crate::HMUI::ScrollView_ScrollDirection,
     pub _joystickScrollStartTime: f32,
 }
-#[cfg(feature = "HMUI+ScrollView")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -59,14 +59,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView {
         false
     }
 }
-#[cfg(feature = "HMUI+ScrollView")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView")]
 impl std::ops::Deref for crate::HMUI::ScrollView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ScrollView")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView")]
 impl std::ops::DerefMut for crate::HMUI::ScrollView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -891,7 +891,7 @@ impl crate::HMUI::ScrollView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ScrollView")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ScrollView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -900,7 +900,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ScrollView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_ScrollDirection {
@@ -911,7 +911,7 @@ pub enum ScrollView_ScrollDirection {
     Right = 4i32,
     Up = 1i32,
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollDirection {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -940,7 +940,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollDirect
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::ScrollView_ScrollDirection {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -950,7 +950,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::ScrollView_ScrollDi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ScrollView_ScrollDirection {
     type Actual = Self;
@@ -964,7 +964,7 @@ for crate::HMUI::ScrollView_ScrollDirection {
         self
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::ScrollView_ScrollDirection {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -978,7 +978,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::ScrollView_ScrollDi
         }
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ScrollView_ScrollDirection {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -991,7 +991,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ScrollView_ScrollDire
         actual
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollType")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_ScrollType {
@@ -1000,7 +1000,7 @@ pub enum ScrollView_ScrollType {
     FocusItems = 2i32,
     PageSize = 0i32,
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollType")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1029,7 +1029,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollType")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::ScrollView_ScrollType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1039,7 +1039,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::ScrollView_ScrollTy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollType")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::ScrollView_ScrollType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1052,7 +1052,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::ScrollView_ScrollT
         self
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollType")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::ScrollView_ScrollType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1066,7 +1066,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::ScrollView_ScrollTy
         }
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollType")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ScrollView_ScrollType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1079,7 +1079,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ScrollView_ScrollType
         actual
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollViewDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_ScrollViewDirection {
@@ -1087,7 +1087,7 @@ pub enum ScrollView_ScrollViewDirection {
     Horizontal = 1i32,
     Vertical = 0i32,
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollViewDirection {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1116,7 +1116,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollViewDi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::ScrollView_ScrollViewDirection {
     type Type = Self;
@@ -1127,7 +1127,7 @@ for crate::HMUI::ScrollView_ScrollViewDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ScrollView_ScrollViewDirection {
     type Actual = Self;
@@ -1141,7 +1141,7 @@ for crate::HMUI::ScrollView_ScrollViewDirection {
         self
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::ScrollView_ScrollViewDirection {
     type Type = Self;
@@ -1156,7 +1156,7 @@ for crate::HMUI::ScrollView_ScrollViewDirection {
         }
     }
 }
-#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
+#[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::ScrollView_ScrollViewDirection {
     type Actual = Self;

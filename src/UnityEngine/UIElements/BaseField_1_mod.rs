@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseField_1<TValueType: quest_hook::libil2cpp::Type> {
@@ -36,7 +36,7 @@ pub struct BaseField_1<TValueType: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1")]
 unsafe impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -72,7 +72,7 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     type Target = crate::UnityEngine::UIElements::BindableElement;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1146,7 +1146,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1196,7 +1196,7 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
@@ -1206,7 +1206,7 @@ pub struct BaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 unsafe impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1242,7 +1242,7 @@ for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
@@ -1250,7 +1250,7 @@ for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1379,7 +1379,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1<TResult: quest_hook::libil2cpp::Type> {
@@ -21,7 +21,7 @@ pub struct FileSystemEnumerable_1<TResult: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -57,7 +57,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
         false
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -65,7 +65,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -330,7 +330,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -374,7 +374,9 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1_DelegateEnumerator<
@@ -386,7 +388,9 @@ pub struct FileSystemEnumerable_1_DelegateEnumerator<
     >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator"
+)]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -422,7 +426,9 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
         false
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     type Target = crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult>;
@@ -430,7 +436,9 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -595,7 +603,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -605,14 +615,18 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1_FindPredicate<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate"
+)]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -648,7 +662,9 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
         false
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
     type Target = crate::System::MulticastDelegate;
@@ -656,7 +672,9 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -752,7 +770,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -762,14 +782,18 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindTransform"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1_FindTransform<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindTransform"
+)]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -805,7 +829,9 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult
         false
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindTransform"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
     type Target = crate::System::MulticastDelegate;
@@ -813,7 +839,9 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindTransform"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -909,7 +937,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindTransform"
+)]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

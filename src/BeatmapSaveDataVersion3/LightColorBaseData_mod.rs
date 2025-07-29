@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion3+LightColorBaseData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightColorBaseData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightColorBaseData {
@@ -11,7 +11,7 @@ pub struct LightColorBaseData {
     pub sb: f32,
     pub sf: i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightColorBaseData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightColorBaseData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion3::LightColorBaseData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::BeatmapSaveDataVersion3::LightColorBaseData {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightColorBaseData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightColorBaseData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightColorBaseData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightColorBaseData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightColorBaseData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::LightColorBaseData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -262,7 +262,7 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightColorBaseData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightColorBaseData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion3::LightColorBaseData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

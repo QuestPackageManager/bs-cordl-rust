@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VectorImageRenderInfoPool {
@@ -8,7 +8,7 @@ pub struct VectorImageRenderInfoPool {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPool_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::VectorImageRenderI
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -77,7 +77,7 @@ impl crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

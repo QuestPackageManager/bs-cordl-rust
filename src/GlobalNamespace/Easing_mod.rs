@@ -1,10 +1,10 @@
-#[cfg(feature = "Easing")]
+#[cfg(feature = "cordl_class_Easing")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Easing {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Easing")]
+#[cfg(feature = "cordl_class_Easing")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Easing {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Easing {
         false
     }
 }
-#[cfg(feature = "Easing")]
+#[cfg(feature = "cordl_class_Easing")]
 impl std::ops::Deref for crate::GlobalNamespace::Easing {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Easing")]
+#[cfg(feature = "cordl_class_Easing")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Easing {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -617,7 +617,7 @@ impl crate::GlobalNamespace::Easing {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Easing")]
+#[cfg(feature = "cordl_class_Easing")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Easing {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

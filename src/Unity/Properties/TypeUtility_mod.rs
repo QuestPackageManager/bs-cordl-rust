@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Properties+TypeUtility")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Properties+TypeUtility")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::TypeUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::TypeUtilit
         false
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility")]
 impl std::ops::Deref for crate::Unity::Properties::TypeUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility")]
 impl std::ops::DerefMut for crate::Unity::Properties::TypeUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -643,7 +643,7 @@ impl crate::Unity::Properties::TypeUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -652,13 +652,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+Cache_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeUtility_Cache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+Cache_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Properties::TypeUtility_Cache_1<T> {
     type Held<'a> = Self;
@@ -704,7 +704,7 @@ for crate::Unity::Properties::TypeUtility_Cache_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+Cache_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Properties::TypeUtility_Cache_1<T> {
     type Type = Self;
@@ -715,7 +715,7 @@ for crate::Unity::Properties::TypeUtility_Cache_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+Cache_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Properties::TypeUtility_Cache_1<T> {
     type Actual = Self;
@@ -729,7 +729,7 @@ for crate::Unity::Properties::TypeUtility_Cache_1<T> {
         self
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+Cache_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Properties::TypeUtility_Cache_1<T> {
     type Type = Self;
@@ -744,7 +744,7 @@ for crate::Unity::Properties::TypeUtility_Cache_1<T> {
         }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+Cache_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Properties::TypeUtility_Cache_1<T> {
     type Actual = Self;
@@ -758,7 +758,7 @@ for crate::Unity::Properties::TypeUtility_Cache_1<T> {
         actual
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+Cache_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Properties::TypeUtility_Cache_1<T> {
     type Type = Self;
@@ -771,13 +771,13 @@ for crate::Unity::Properties::TypeUtility_Cache_1<T> {
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Properties::TypeUtility_Cache_1<T> {}
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeUtility_ITypeConstructor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::TypeUtility_ITypeConstructor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -797,14 +797,14 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor")]
 impl std::ops::Deref for crate::Unity::Properties::TypeUtility_ITypeConstructor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor")]
 impl std::ops::DerefMut for crate::Unity::Properties::TypeUtility_ITypeConstructor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -862,7 +862,7 @@ impl crate::Unity::Properties::TypeUtility_ITypeConstructor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::TypeUtility_ITypeConstructor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -872,14 +872,14 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeUtility_ITypeConstructor_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -915,7 +915,7 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -923,7 +923,7 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -991,7 +991,7 @@ impl<
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1019,13 +1019,13 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+NonConstructable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeUtility_NonConstructable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+NonConstructable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::TypeUtility_NonConstructable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1045,14 +1045,14 @@ for crate::Unity::Properties::TypeUtility_NonConstructable {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+NonConstructable")]
 impl std::ops::Deref for crate::Unity::Properties::TypeUtility_NonConstructable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+NonConstructable")]
 impl std::ops::DerefMut for crate::Unity::Properties::TypeUtility_NonConstructable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1142,7 +1142,7 @@ impl crate::Unity::Properties::TypeUtility_NonConstructable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+NonConstructable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::TypeUtility_NonConstructable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1166,7 +1166,7 @@ for crate::Unity::Properties::TypeUtility_NonConstructable {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeUtility_TypeConstructorVisitor {
@@ -1175,7 +1175,7 @@ pub struct TypeUtility_TypeConstructorVisitor {
         crate::Unity::Properties::TypeUtility_ITypeConstructor,
     >,
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1195,14 +1195,14 @@ for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 impl std::ops::Deref for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1265,7 +1265,7 @@ impl crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1289,7 +1289,7 @@ for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructor_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeUtility_TypeConstructor_1<T: quest_hook::libil2cpp::Type> {
@@ -1301,7 +1301,7 @@ pub struct TypeUtility_TypeConstructor_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructor_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1337,7 +1337,7 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1345,7 +1345,7 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1607,7 +1607,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructor_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

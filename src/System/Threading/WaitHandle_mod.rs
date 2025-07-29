@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+WaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+WaitHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaitHandle {
@@ -9,7 +9,7 @@ pub struct WaitHandle {
     >,
     pub hasThreadAffinity: bool,
 }
-#[cfg(feature = "System+Threading+WaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+WaitHandle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::WaitHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::WaitHandle
         false
     }
 }
-#[cfg(feature = "System+Threading+WaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+WaitHandle")]
 impl std::ops::Deref for crate::System::Threading::WaitHandle {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+WaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+WaitHandle")]
 impl std::ops::DerefMut for crate::System::Threading::WaitHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -701,7 +701,7 @@ impl crate::System::Threading::WaitHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+WaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+WaitHandle")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::WaitHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

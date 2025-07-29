@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsSignedDataStreamGenerator {
@@ -16,7 +16,7 @@ pub struct CmsSignedDataStreamGenerator {
     pub _messageDigestsLocked: bool,
     pub _bufferSize: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
     type Target = crate::Org::BouncyCastle::Cms::CmsSignedGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1353,7 +1353,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1364,7 +1364,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1388,7 +1388,7 @@ pub struct CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
     >,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
@@ -1410,7 +1410,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOut
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
@@ -1420,7 +1420,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOut
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
@@ -1651,7 +1651,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOu
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
@@ -1663,7 +1663,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOut
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1675,7 +1675,7 @@ pub struct CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
     pub digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
@@ -1697,7 +1697,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerI
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
@@ -1707,7 +1707,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerI
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
@@ -1800,7 +1800,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSigner
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
@@ -1812,7 +1812,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerI
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1836,7 +1836,7 @@ pub struct CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
     pub _sig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
@@ -1858,7 +1858,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGenera
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
@@ -1868,7 +1868,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGenera
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
@@ -2032,7 +2032,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGener
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {

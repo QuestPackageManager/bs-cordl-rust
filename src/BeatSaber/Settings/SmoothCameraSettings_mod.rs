@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Settings+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SmoothCameraSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SmoothCameraSettings {
@@ -10,7 +10,7 @@ pub struct SmoothCameraSettings {
     pub thirdPersonPosition: crate::Unity::Mathematics::float3,
     pub thirdPersonRotation: crate::Unity::Mathematics::float3,
 }
-#[cfg(feature = "BeatSaber+Settings+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SmoothCameraSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::SmoothCameraSettings {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::BeatSaber::Settings::SmoothCameraSettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SmoothCameraSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::SmoothCameraSettings {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::BeatSaber::Settings::SmoothCameraSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SmoothCameraSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::SmoothCameraSettings {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::BeatSaber::Settings::SmoothCameraSettings {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SmoothCameraSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::SmoothCameraSettings {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::BeatSaber::Settings::SmoothCameraSettings {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SmoothCameraSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::SmoothCameraSettings {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::BeatSaber::Settings::SmoothCameraSettings {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SmoothCameraSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Settings::SmoothCameraSettings {
     type Type = Self;

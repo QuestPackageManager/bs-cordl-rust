@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalMemberValueE {
@@ -9,7 +11,9 @@ pub enum InternalMemberValueE {
     Null = 4i32,
     Reference = 3i32,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
     type Held<'a> = Self;
@@ -39,7 +43,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberVal
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
     type Type = Self;
@@ -50,7 +56,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberVal
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
     type Actual = Self;
@@ -64,7 +72,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberVal
         self
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
     type Type = Self;
@@ -79,7 +89,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberVal
         }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalMemberValueE"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE {
     type Actual = Self;

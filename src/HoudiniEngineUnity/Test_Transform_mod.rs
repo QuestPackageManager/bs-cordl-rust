@@ -1,11 +1,11 @@
-#[cfg(feature = "HoudiniEngineUnity+Test_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_Transform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Test_Transform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_Transform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::Test_Transform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::Test_Tran
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_Transform")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::Test_Transform {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_Transform")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_Transform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -120,7 +120,7 @@ impl crate::HoudiniEngineUnity::Test_Transform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_Transform")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_Transform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

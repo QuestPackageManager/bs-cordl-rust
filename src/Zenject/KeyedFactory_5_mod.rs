@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+KeyedFactory_5")]
+#[cfg(feature = "cordl_class_Zenject+KeyedFactory_5")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyedFactory_5<
@@ -15,7 +15,7 @@ pub struct KeyedFactory_5<
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TParam3: std::marker::PhantomData<TParam3>,
 }
-#[cfg(feature = "Zenject+KeyedFactory_5")]
+#[cfg(feature = "cordl_class_Zenject+KeyedFactory_5")]
 unsafe impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -54,7 +54,7 @@ for crate::Zenject::KeyedFactory_5<TBase, TKey, TParam1, TParam2, TParam3> {
         false
     }
 }
-#[cfg(feature = "Zenject+KeyedFactory_5")]
+#[cfg(feature = "cordl_class_Zenject+KeyedFactory_5")]
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -68,7 +68,7 @@ for crate::Zenject::KeyedFactory_5<TBase, TKey, TParam1, TParam2, TParam3> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+KeyedFactory_5")]
+#[cfg(feature = "cordl_class_Zenject+KeyedFactory_5")]
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -316,7 +316,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+KeyedFactory_5")]
+#[cfg(feature = "cordl_class_Zenject+KeyedFactory_5")]
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeyword")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LocalKeyword {
@@ -6,7 +6,7 @@ pub struct LocalKeyword {
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Index: u32,
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeyword")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::LocalKeyword {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Local
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeyword")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::LocalKeyword {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::Rendering::LocalKeyword {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeyword")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::LocalKeyword {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::Rendering::LocalKeyword {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeyword")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::LocalKeyword {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::Rendering::LocalKeyword {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeyword")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::LocalKeyword {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::Rendering::LocalKeyword {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeyword")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::LocalKeyword {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "ScoreUIController")]
+#[cfg(feature = "cordl_class_ScoreUIController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreUIController {
@@ -12,7 +12,7 @@ pub struct ScoreUIController {
     >,
     pub _stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
-#[cfg(feature = "ScoreUIController")]
+#[cfg(feature = "cordl_class_ScoreUIController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoreUIController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoreUIContr
         false
     }
 }
-#[cfg(feature = "ScoreUIController")]
+#[cfg(feature = "cordl_class_ScoreUIController")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScoreUIController")]
+#[cfg(feature = "cordl_class_ScoreUIController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreUIController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -304,7 +304,7 @@ impl crate::GlobalNamespace::ScoreUIController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScoreUIController")]
+#[cfg(feature = "cordl_class_ScoreUIController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -313,14 +313,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreUIContro
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ScoreUIController+InitData")]
+#[cfg(feature = "cordl_class_ScoreUIController+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreUIController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub scoreDisplayType: crate::GlobalNamespace::ScoreUIController_ScoreDisplayType,
 }
-#[cfg(feature = "ScoreUIController+InitData")]
+#[cfg(feature = "cordl_class_ScoreUIController+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScoreUIController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -340,14 +340,14 @@ for crate::GlobalNamespace::ScoreUIController_InitData {
         false
     }
 }
-#[cfg(feature = "ScoreUIController+InitData")]
+#[cfg(feature = "cordl_class_ScoreUIController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreUIController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScoreUIController+InitData")]
+#[cfg(feature = "cordl_class_ScoreUIController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreUIController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -391,7 +391,7 @@ impl crate::GlobalNamespace::ScoreUIController_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScoreUIController+InitData")]
+#[cfg(feature = "cordl_class_ScoreUIController+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScoreUIController_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -401,7 +401,7 @@ for crate::GlobalNamespace::ScoreUIController_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
+#[cfg(feature = "cordl_class_ScoreUIController+ScoreDisplayType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScoreUIController_ScoreDisplayType {
@@ -409,7 +409,7 @@ pub enum ScoreUIController_ScoreDisplayType {
     ModifiedScore = 1i32,
     MultipliedScore = 0i32,
 }
-#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
+#[cfg(feature = "cordl_class_ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Held<'a> = Self;
@@ -439,7 +439,7 @@ for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
+#[cfg(feature = "cordl_class_ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Type = Self;
@@ -450,7 +450,7 @@ for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
+#[cfg(feature = "cordl_class_ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Actual = Self;
@@ -464,7 +464,7 @@ for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
         self
     }
 }
-#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
+#[cfg(feature = "cordl_class_ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Type = Self;
@@ -479,7 +479,7 @@ for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
         }
     }
 }
-#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
+#[cfg(feature = "cordl_class_ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Actual = Self;

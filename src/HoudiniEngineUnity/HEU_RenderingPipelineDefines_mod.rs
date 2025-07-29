@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_RenderingPipelineDefines {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_RenderingPipelineDefines {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::HoudiniEngineUnity::HEU_RenderingPipelineDefines {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_RenderingPipelineDefines {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_RenderingPipelineDefines {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -240,7 +240,7 @@ impl crate::HoudiniEngineUnity::HEU_RenderingPipelineDefines {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_RenderingPipelineDefines {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

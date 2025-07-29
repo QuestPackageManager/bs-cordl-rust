@@ -1,4 +1,4 @@
-#[cfg(feature = "LightmapDataSO")]
+#[cfg(feature = "cordl_class_LightmapDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightmapDataSO {
@@ -6,7 +6,7 @@ pub struct LightmapDataSO {
     pub _lightmap1: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub _lightmap2: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
-#[cfg(feature = "LightmapDataSO")]
+#[cfg(feature = "cordl_class_LightmapDataSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightmapDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightmapData
         false
     }
 }
-#[cfg(feature = "LightmapDataSO")]
+#[cfg(feature = "cordl_class_LightmapDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::LightmapDataSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightmapDataSO")]
+#[cfg(feature = "cordl_class_LightmapDataSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightmapDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::LightmapDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightmapDataSO")]
+#[cfg(feature = "cordl_class_LightmapDataSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightmapDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

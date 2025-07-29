@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+StringReader")]
+#[cfg(feature = "cordl_class_System+IO+StringReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringReader {
@@ -7,7 +7,7 @@ pub struct StringReader {
     pub _pos: i32,
     pub _length: i32,
 }
-#[cfg(feature = "System+IO+StringReader")]
+#[cfg(feature = "cordl_class_System+IO+StringReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::StringReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::StringReader {
         false
     }
 }
-#[cfg(feature = "System+IO+StringReader")]
+#[cfg(feature = "cordl_class_System+IO+StringReader")]
 impl std::ops::Deref for crate::System::IO::StringReader {
     type Target = crate::System::IO::TextReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+StringReader")]
+#[cfg(feature = "cordl_class_System+IO+StringReader")]
 impl std::ops::DerefMut for crate::System::IO::StringReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -288,7 +288,7 @@ impl crate::System::IO::StringReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+StringReader")]
+#[cfg(feature = "cordl_class_System+IO+StringReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::StringReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

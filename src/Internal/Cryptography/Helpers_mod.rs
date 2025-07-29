@@ -1,10 +1,10 @@
-#[cfg(feature = "Internal+Cryptography+Helpers")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Helpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Helpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Internal+Cryptography+Helpers")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Helpers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Internal::Cryptography::Helpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Internal::Cryptography::Helpe
         false
     }
 }
-#[cfg(feature = "Internal+Cryptography+Helpers")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Helpers")]
 impl std::ops::Deref for crate::Internal::Cryptography::Helpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Internal+Cryptography+Helpers")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Helpers")]
 impl std::ops::DerefMut for crate::Internal::Cryptography::Helpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,7 +147,7 @@ impl crate::Internal::Cryptography::Helpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Internal+Cryptography+Helpers")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Helpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::Internal::Cryptography::Helpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

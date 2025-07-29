@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NullableMethodCallInstruction_GetValueOrDefault1 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
@@ -128,7 +128,7 @@ impl crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {

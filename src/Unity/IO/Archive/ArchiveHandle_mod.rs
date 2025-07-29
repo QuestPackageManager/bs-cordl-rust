@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+IO+Archive+ArchiveHandle")]
+#[cfg(feature = "cordl_class_Unity+IO+Archive+ArchiveHandle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArchiveHandle {
     pub Handle: u64,
 }
-#[cfg(feature = "Unity+IO+Archive+ArchiveHandle")]
+#[cfg(feature = "cordl_class_Unity+IO+Archive+ArchiveHandle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::IO::Archive::ArchiveHandle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::IO::Archive::ArchiveHa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+IO+Archive+ArchiveHandle")]
+#[cfg(feature = "cordl_class_Unity+IO+Archive+ArchiveHandle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::Archive::ArchiveHandle {
     type Type = Self;
@@ -44,7 +44,7 @@ for crate::Unity::IO::Archive::ArchiveHandle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+IO+Archive+ArchiveHandle")]
+#[cfg(feature = "cordl_class_Unity+IO+Archive+ArchiveHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::Archive::ArchiveHandle {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::Unity::IO::Archive::ArchiveHandle {
         self
     }
 }
-#[cfg(feature = "Unity+IO+Archive+ArchiveHandle")]
+#[cfg(feature = "cordl_class_Unity+IO+Archive+ArchiveHandle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::Archive::ArchiveHandle {
     type Type = Self;
@@ -73,7 +73,7 @@ for crate::Unity::IO::Archive::ArchiveHandle {
         }
     }
 }
-#[cfg(feature = "Unity+IO+Archive+ArchiveHandle")]
+#[cfg(feature = "cordl_class_Unity+IO+Archive+ArchiveHandle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::IO::Archive::ArchiveHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::IO::Archive::Archive
         actual
     }
 }
-#[cfg(feature = "Unity+IO+Archive+ArchiveHandle")]
+#[cfg(feature = "cordl_class_Unity+IO+Archive+ArchiveHandle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::IO::Archive::ArchiveHandle {
     type Type = Self;

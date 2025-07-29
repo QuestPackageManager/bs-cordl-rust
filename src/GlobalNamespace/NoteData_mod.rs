@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteData")]
+#[cfg(feature = "cordl_class_NoteData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteData {
@@ -19,7 +19,7 @@ pub struct NoteData {
     pub _isArcHead_k__BackingField: bool,
     pub _isArcTail_k__BackingField: bool,
 }
-#[cfg(feature = "NoteData")]
+#[cfg(feature = "cordl_class_NoteData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteData {
         false
     }
 }
-#[cfg(feature = "NoteData")]
+#[cfg(feature = "cordl_class_NoteData")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteData {
     type Target = crate::GlobalNamespace::BeatmapObjectData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteData")]
+#[cfg(feature = "cordl_class_NoteData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1492,7 +1492,7 @@ impl crate::GlobalNamespace::NoteData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteData")]
+#[cfg(feature = "cordl_class_NoteData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1501,7 +1501,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "NoteData+GameplayType")]
+#[cfg(feature = "cordl_class_NoteData+GameplayType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteData_GameplayType {
@@ -1511,7 +1511,7 @@ pub enum NoteData_GameplayType {
     BurstSliderHead = 2i32,
     Normal = 0i32,
 }
-#[cfg(feature = "NoteData+GameplayType")]
+#[cfg(feature = "cordl_class_NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Held<'a> = Self;
@@ -1541,7 +1541,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteData+GameplayType")]
+#[cfg(feature = "cordl_class_NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Type = Self;
@@ -1552,7 +1552,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteData+GameplayType")]
+#[cfg(feature = "cordl_class_NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Actual = Self;
@@ -1566,7 +1566,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
         self
     }
 }
-#[cfg(feature = "NoteData+GameplayType")]
+#[cfg(feature = "cordl_class_NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Type = Self;
@@ -1581,7 +1581,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
         }
     }
 }
-#[cfg(feature = "NoteData+GameplayType")]
+#[cfg(feature = "cordl_class_NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Actual = Self;
@@ -1595,7 +1595,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
         actual
     }
 }
-#[cfg(feature = "NoteData+ScoringType")]
+#[cfg(feature = "cordl_class_NoteData+ScoringType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteData_ScoringType {
@@ -1611,7 +1611,7 @@ pub enum NoteData_ScoringType {
     NoScore = 0i32,
     Normal = 1i32,
 }
-#[cfg(feature = "NoteData+ScoringType")]
+#[cfg(feature = "cordl_class_NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Held<'a> = Self;
@@ -1641,7 +1641,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteData+ScoringType")]
+#[cfg(feature = "cordl_class_NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Type = Self;
@@ -1652,7 +1652,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteData+ScoringType")]
+#[cfg(feature = "cordl_class_NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Actual = Self;
@@ -1666,7 +1666,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
         self
     }
 }
-#[cfg(feature = "NoteData+ScoringType")]
+#[cfg(feature = "cordl_class_NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Type = Self;
@@ -1681,7 +1681,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
         }
     }
 }
-#[cfg(feature = "NoteData+ScoringType")]
+#[cfg(feature = "cordl_class_NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Actual = Self;

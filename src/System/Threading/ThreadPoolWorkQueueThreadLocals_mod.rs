@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueueThreadLocals")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueueThreadLocals")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueueThreadLocals {
@@ -11,7 +11,7 @@ pub struct ThreadPoolWorkQueueThreadLocals {
     >,
     pub random: quest_hook::libil2cpp::Gc<crate::System::Random>,
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueueThreadLocals")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueueThreadLocals")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueueThreadLocals")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueueThreadLocals")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueueThreadLocals")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueueThreadLocals")]
 impl std::ops::DerefMut for crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadPoolWorkQueueThreadLocals")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueueThreadLocals")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

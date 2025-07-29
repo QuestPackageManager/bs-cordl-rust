@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTerrain {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_InputInterface,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
     type Target = crate::HoudiniEngineUnity::HEU_InputInterface;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -540,7 +540,7 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -550,7 +550,9 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
@@ -569,7 +571,9 @@ pub struct HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
     pub _maskNodeID: i32,
     pub _mergeNodeID: i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -589,7 +593,9 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain"
+)]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
     type Target = crate::HoudiniEngineUnity::HEU_InputData;
@@ -597,7 +603,9 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain"
+)]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -635,7 +643,9 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+SchemaNames")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaNames {
@@ -205,7 +205,7 @@ pub struct SchemaNames {
         >,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SchemaNames {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -224,14 +224,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SchemaNa
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaNames {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaNames {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -404,7 +404,7 @@ impl crate::System::Xml::Schema::SchemaNames {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaNames {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -413,7 +413,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaNam
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames+Token")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaNames_Token {
@@ -542,7 +542,7 @@ pub enum SchemaNames_Token {
     XsdWhitespace = 117i32,
     xsdAttributeGroup = 80i32,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames+Token")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::SchemaNames_Token {
     type Held<'a> = Self;
@@ -572,7 +572,7 @@ for crate::System::Xml::Schema::SchemaNames_Token {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames+Token")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::SchemaNames_Token {
     type Type = Self;
@@ -583,7 +583,7 @@ for crate::System::Xml::Schema::SchemaNames_Token {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames+Token")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::SchemaNames_Token {
     type Actual = Self;
@@ -597,7 +597,7 @@ for crate::System::Xml::Schema::SchemaNames_Token {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames+Token")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::SchemaNames_Token {
     type Type = Self;
@@ -612,7 +612,7 @@ for crate::System::Xml::Schema::SchemaNames_Token {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaNames+Token")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::SchemaNames_Token {
     type Actual = Self;

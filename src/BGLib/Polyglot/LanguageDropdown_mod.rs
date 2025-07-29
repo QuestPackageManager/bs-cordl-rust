@@ -1,11 +1,11 @@
-#[cfg(feature = "BGLib+Polyglot+LanguageDropdown")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LanguageDropdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LanguageDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown>,
 }
-#[cfg(feature = "BGLib+Polyglot+LanguageDropdown")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LanguageDropdown")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::LanguageDropdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::LanguageDrop
         false
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LanguageDropdown")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LanguageDropdown")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LanguageDropdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LanguageDropdown")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LanguageDropdown")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::LanguageDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -165,7 +165,7 @@ impl crate::BGLib::Polyglot::LanguageDropdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LanguageDropdown")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LanguageDropdown")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::LanguageDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

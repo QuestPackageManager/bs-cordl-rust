@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullableMethodCallInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -32,7 +38,9 @@ for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -229,7 +237,9 @@ impl crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstructio
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

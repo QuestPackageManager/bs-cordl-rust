@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeTileInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_VolumeTileInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_VolumeTileInfo {
@@ -7,7 +7,7 @@ pub struct HAPI_VolumeTileInfo {
     pub minZ: i32,
     pub isValid: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeTileInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_VolumeTileInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeTileInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_VolumeTileInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeTileInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_VolumeTileInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeTileInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_VolumeTileInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeTileInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_VolumeTileInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeTileInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_VolumeTileInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HAPI_VolumeTileInfo {
     type Type = Self;

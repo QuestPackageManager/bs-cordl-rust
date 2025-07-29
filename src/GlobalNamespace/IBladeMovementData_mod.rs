@@ -1,10 +1,10 @@
-#[cfg(feature = "IBladeMovementData")]
+#[cfg(feature = "cordl_class_IBladeMovementData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IBladeMovementData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IBladeMovementData")]
+#[cfg(feature = "cordl_class_IBladeMovementData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IBladeMovementData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IBladeMoveme
         false
     }
 }
-#[cfg(feature = "IBladeMovementData")]
+#[cfg(feature = "cordl_class_IBladeMovementData")]
 impl std::ops::Deref for crate::GlobalNamespace::IBladeMovementData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IBladeMovementData")]
+#[cfg(feature = "cordl_class_IBladeMovementData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IBladeMovementData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -115,7 +115,7 @@ impl crate::GlobalNamespace::IBladeMovementData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IBladeMovementData")]
+#[cfg(feature = "cordl_class_IBladeMovementData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IBladeMovementData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

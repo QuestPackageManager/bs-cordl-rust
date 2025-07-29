@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventTrackDefinitionSO {
@@ -8,7 +8,7 @@ pub struct EventTrackDefinitionSO {
     pub _visible: bool,
     pub _needsFiltering: bool,
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         false
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl std::ops::Deref for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl std::ops::DerefMut for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -166,7 +166,7 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -177,7 +177,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -191,7 +191,7 @@ pub enum EventTrackDefinitionSO_DataTransformationType {
     ValueDuration = 5i32,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
@@ -223,7 +223,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
@@ -236,7 +236,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
@@ -252,7 +252,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
@@ -269,7 +269,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
@@ -284,7 +284,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
         actual
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventTrackDefinitionSO_MarkerType {
@@ -295,7 +297,9 @@ pub enum EventTrackDefinitionSO_MarkerType {
     TextMarker = 3i32,
     TooltipMarker = 4i32,
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Held<'a> = Self;
@@ -325,7 +329,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Type = Self;
@@ -336,7 +342,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Actual = Self;
@@ -350,7 +358,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
         self
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Type = Self;
@@ -365,7 +375,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
         }
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Actual = Self;

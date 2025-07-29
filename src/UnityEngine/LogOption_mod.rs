@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+LogOption")]
+#[cfg(feature = "cordl_class_UnityEngine+LogOption")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LogOption {
@@ -6,7 +6,7 @@ pub enum LogOption {
     NoStacktrace = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+LogOption")]
+#[cfg(feature = "cordl_class_UnityEngine+LogOption")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LogOption {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LogOption {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+LogOption")]
+#[cfg(feature = "cordl_class_UnityEngine+LogOption")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LogOption {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LogOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+LogOption")]
+#[cfg(feature = "cordl_class_UnityEngine+LogOption")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LogOption {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LogOption {
         self
     }
 }
-#[cfg(feature = "UnityEngine+LogOption")]
+#[cfg(feature = "cordl_class_UnityEngine+LogOption")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LogOption {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LogOption {
         }
     }
 }
-#[cfg(feature = "UnityEngine+LogOption")]
+#[cfg(feature = "cordl_class_UnityEngine+LogOption")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LogOption {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

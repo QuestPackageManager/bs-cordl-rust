@@ -1,4 +1,4 @@
-#[cfg(feature = "System+RuntimeType")]
+#[cfg(feature = "cordl_class_System+RuntimeType")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeType {
@@ -9,7 +9,7 @@ pub struct RuntimeType {
         crate::System::Reflection::RuntimeConstructorInfo,
     >,
 }
-#[cfg(feature = "System+RuntimeType")]
+#[cfg(feature = "cordl_class_System+RuntimeType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::RuntimeType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::RuntimeType {
         false
     }
 }
-#[cfg(feature = "System+RuntimeType")]
+#[cfg(feature = "cordl_class_System+RuntimeType")]
 impl std::ops::Deref for crate::System::RuntimeType {
     type Target = crate::System::Reflection::TypeInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+RuntimeType")]
+#[cfg(feature = "cordl_class_System+RuntimeType")]
 impl std::ops::DerefMut for crate::System::RuntimeType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4861,7 +4861,7 @@ impl crate::System::RuntimeType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+RuntimeType")]
+#[cfg(feature = "cordl_class_System+RuntimeType")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::RuntimeType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -4896,7 +4896,7 @@ for crate::System::RuntimeType {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
+#[cfg(feature = "cordl_class_System+RuntimeType+ListBuilder_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeType_ListBuilder_1<T: quest_hook::libil2cpp::Type> {
@@ -4906,7 +4906,7 @@ pub struct RuntimeType_ListBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub _capacity: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
+#[cfg(feature = "cordl_class_System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Held<'a> = Self;
@@ -4952,7 +4952,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
+#[cfg(feature = "cordl_class_System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Type = Self;
@@ -4963,7 +4963,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
+#[cfg(feature = "cordl_class_System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Actual = Self;
@@ -4977,7 +4977,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
         self
     }
 }
-#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
+#[cfg(feature = "cordl_class_System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Type = Self;
@@ -4992,7 +4992,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
         }
     }
 }
-#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
+#[cfg(feature = "cordl_class_System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Actual = Self;
@@ -5006,7 +5006,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
         actual
     }
 }
-#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
+#[cfg(feature = "cordl_class_System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Type = Self;
@@ -5191,7 +5191,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::RuntimeType_ListBuilder_1<T>
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+RuntimeType+MemberListType")]
+#[cfg(feature = "cordl_class_System+RuntimeType+MemberListType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RuntimeType_MemberListType {
@@ -5201,7 +5201,7 @@ pub enum RuntimeType_MemberListType {
     CaseSensitive = 1i32,
     HandleToInfo = 3i32,
 }
-#[cfg(feature = "System+RuntimeType+MemberListType")]
+#[cfg(feature = "cordl_class_System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::RuntimeType_MemberListType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -5230,7 +5230,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::RuntimeType_MemberLis
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+RuntimeType+MemberListType")]
+#[cfg(feature = "cordl_class_System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::RuntimeType_MemberListType {
     type Type = Self;
@@ -5241,7 +5241,7 @@ for crate::System::RuntimeType_MemberListType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+RuntimeType+MemberListType")]
+#[cfg(feature = "cordl_class_System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::RuntimeType_MemberListType {
     type Actual = Self;
@@ -5255,7 +5255,7 @@ for crate::System::RuntimeType_MemberListType {
         self
     }
 }
-#[cfg(feature = "System+RuntimeType+MemberListType")]
+#[cfg(feature = "cordl_class_System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::RuntimeType_MemberListType {
     type Type = Self;
@@ -5270,7 +5270,7 @@ for crate::System::RuntimeType_MemberListType {
         }
     }
 }
-#[cfg(feature = "System+RuntimeType+MemberListType")]
+#[cfg(feature = "cordl_class_System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::RuntimeType_MemberListType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

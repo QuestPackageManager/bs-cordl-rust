@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChaCha20Poly1305 {
@@ -17,7 +17,7 @@ pub struct ChaCha20Poly1305 {
     pub mState: crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State,
     pub mBufPos: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -674,7 +674,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -698,7 +698,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChaCha20Poly1305_State {
@@ -713,7 +713,7 @@ pub enum ChaCha20Poly1305_State {
     EncInit = 1i32,
     Uninitialized = 0i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
     type Held<'a> = Self;
@@ -743,7 +743,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
     type Type = Self;
@@ -754,7 +754,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
     type Actual = Self;
@@ -768,7 +768,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
     type Type = Self;
@@ -783,7 +783,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State {
     type Actual = Self;

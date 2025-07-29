@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BcpgInputStream {
@@ -7,7 +7,7 @@ pub struct BcpgInputStream {
     pub next: bool,
     pub nextB: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseInputStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -326,7 +326,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -336,7 +336,7 @@ for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BcpgInputStream_PartialInputStream {
@@ -345,7 +345,7 @@ pub struct BcpgInputStream_PartialInputStream {
     pub partial: bool,
     pub dataLength: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -365,7 +365,7 @@ for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseInputStream;
@@ -373,7 +373,7 @@ for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -500,7 +500,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

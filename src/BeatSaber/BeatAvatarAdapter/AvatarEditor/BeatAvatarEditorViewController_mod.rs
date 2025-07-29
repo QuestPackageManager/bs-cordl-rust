@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -79,7 +79,7 @@ pub struct BeatAvatarEditorViewController {
     pub _lastEditedPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController {
@@ -101,7 +101,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewContr
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController {
@@ -111,7 +111,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewContr
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController {
@@ -1509,7 +1509,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController {

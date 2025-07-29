@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+MeshVertexAttributes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+MeshVertexAttributes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshVertexAttributes {
@@ -9,7 +9,7 @@ pub enum MeshVertexAttributes {
     Tangents = 2i32,
     UVs = 4i32,
 }
-#[cfg(feature = "UnityEngine+XR+MeshVertexAttributes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+MeshVertexAttributes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::MeshVertexAttributes {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::XR::MeshVertexAttributes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+MeshVertexAttributes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+MeshVertexAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::MeshVertexAttributes {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::XR::MeshVertexAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+MeshVertexAttributes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+MeshVertexAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::MeshVertexAttributes {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::XR::MeshVertexAttributes {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+MeshVertexAttributes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+MeshVertexAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::MeshVertexAttributes {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::XR::MeshVertexAttributes {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+MeshVertexAttributes")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+MeshVertexAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::MeshVertexAttributes {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReferenceTexture3D {
@@ -6,7 +6,7 @@ pub struct AssetReferenceTexture3D {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture3D>,
     >,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
     type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture3D>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReferenceTe
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -80,7 +80,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

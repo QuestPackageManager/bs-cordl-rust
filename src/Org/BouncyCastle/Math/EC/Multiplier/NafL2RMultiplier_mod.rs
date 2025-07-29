@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NafL2RMultiplier {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Multiplier::NafL2RMultiplier {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::NafL2RMultiplier {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::NafL2RMultiplier {
     type Target = crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::NafL2RMultiplier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::NafL2RMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -108,7 +108,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::NafL2RMultiplier {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+NafL2RMultiplier")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Multiplier::NafL2RMultiplier {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

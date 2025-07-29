@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+IntegratedSubsystem_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystem_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegratedSubsystem_1<TSubsystemDescriptor: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::IntegratedSubsystem,
     __cordl_phantom_TSubsystemDescriptor: std::marker::PhantomData<TSubsystemDescriptor>,
 }
-#[cfg(feature = "UnityEngine+IntegratedSubsystem_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystem_1")]
 unsafe impl<
     TSubsystemDescriptor: quest_hook::libil2cpp::Type,
 > quest_hook::libil2cpp::Type
@@ -43,7 +43,7 @@ for crate::UnityEngine::IntegratedSubsystem_1<TSubsystemDescriptor> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+IntegratedSubsystem_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystem_1")]
 impl<TSubsystemDescriptor: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::IntegratedSubsystem_1<TSubsystemDescriptor> {
     type Target = crate::UnityEngine::IntegratedSubsystem;
@@ -51,7 +51,7 @@ for crate::UnityEngine::IntegratedSubsystem_1<TSubsystemDescriptor> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+IntegratedSubsystem_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystem_1")]
 impl<TSubsystemDescriptor: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::IntegratedSubsystem_1<TSubsystemDescriptor> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -155,7 +155,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+IntegratedSubsystem_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystem_1")]
 impl<TSubsystemDescriptor: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::IntegratedSubsystem_1<TSubsystemDescriptor> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

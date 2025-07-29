@@ -1,10 +1,10 @@
-#[cfg(feature = "EmptyPosesSerializer")]
+#[cfg(feature = "cordl_class_EmptyPosesSerializer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EmptyPosesSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "EmptyPosesSerializer")]
+#[cfg(feature = "cordl_class_EmptyPosesSerializer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EmptyPosesSerializer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::EmptyPosesSerializer {
         false
     }
 }
-#[cfg(feature = "EmptyPosesSerializer")]
+#[cfg(feature = "cordl_class_EmptyPosesSerializer")]
 impl std::ops::Deref for crate::GlobalNamespace::EmptyPosesSerializer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EmptyPosesSerializer")]
+#[cfg(feature = "cordl_class_EmptyPosesSerializer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EmptyPosesSerializer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -220,7 +220,7 @@ impl crate::GlobalNamespace::EmptyPosesSerializer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EmptyPosesSerializer")]
+#[cfg(feature = "cordl_class_EmptyPosesSerializer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EmptyPosesSerializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

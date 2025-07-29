@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+SchemaSerializationMode")]
+#[cfg(feature = "cordl_class_System+Data+SchemaSerializationMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaSerializationMode {
@@ -6,7 +6,7 @@ pub enum SchemaSerializationMode {
     ExcludeSchema = 2i32,
     IncludeSchema = 1i32,
 }
-#[cfg(feature = "System+Data+SchemaSerializationMode")]
+#[cfg(feature = "cordl_class_System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::SchemaSerializationMode {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::System::Data::SchemaSerializationMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+SchemaSerializationMode")]
+#[cfg(feature = "cordl_class_System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::SchemaSerializationMode {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::Data::SchemaSerializationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+SchemaSerializationMode")]
+#[cfg(feature = "cordl_class_System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::SchemaSerializationMode {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Data::SchemaSerializationMode {
         self
     }
 }
-#[cfg(feature = "System+Data+SchemaSerializationMode")]
+#[cfg(feature = "cordl_class_System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::SchemaSerializationMode {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::Data::SchemaSerializationMode {
         }
     }
 }
-#[cfg(feature = "System+Data+SchemaSerializationMode")]
+#[cfg(feature = "cordl_class_System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::SchemaSerializationMode {
     type Actual = Self;

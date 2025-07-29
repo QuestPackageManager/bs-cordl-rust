@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersMissingEntitlementsNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayersMissingEntitlementsNetSerializable {
@@ -9,7 +9,7 @@ pub struct PlayersMissingEntitlementsNetSerializable {
         >,
     >,
 }
-#[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersMissingEntitlementsNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
         false
     }
 }
-#[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersMissingEntitlementsNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     type Target = crate::GlobalNamespace::PoolableSerializable;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersMissingEntitlementsNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -243,7 +243,7 @@ impl crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersMissingEntitlementsNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

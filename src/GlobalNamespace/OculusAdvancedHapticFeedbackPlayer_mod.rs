@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusAdvancedHapticFeedbackPlayer {
@@ -26,7 +26,7 @@ pub struct OculusAdvancedHapticFeedbackPlayer {
     pub _isLeftHandSupported: crate::System::Nullable_1<bool>,
     pub _isRightHandSupported: crate::System::Nullable_1<bool>,
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         false
     }
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -284,7 +284,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -350,7 +350,7 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
@@ -359,7 +359,7 @@ pub struct OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     pub lastFrameTriggered: i32,
     pub isPlayingLoopingClip: bool,
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -379,7 +379,7 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState
         false
     }
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -387,7 +387,7 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -425,7 +425,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerStat
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
+#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

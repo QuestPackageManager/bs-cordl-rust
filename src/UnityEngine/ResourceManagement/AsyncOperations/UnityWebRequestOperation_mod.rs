@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -12,7 +12,7 @@ pub struct UnityWebRequestOperation {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
@@ -34,7 +34,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOper
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
@@ -46,7 +46,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOper
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
@@ -148,7 +148,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOpe
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {

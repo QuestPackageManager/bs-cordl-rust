@@ -1,4 +1,4 @@
-#[cfg(feature = "ControllersTransformSettingsViewController")]
+#[cfg(feature = "cordl_class_ControllersTransformSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllersTransformSettingsViewController {
@@ -16,7 +16,7 @@ pub struct ControllersTransformSettingsViewController {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "ControllersTransformSettingsViewController")]
+#[cfg(feature = "cordl_class_ControllersTransformSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::ControllersTransformSettingsViewController {
         false
     }
 }
-#[cfg(feature = "ControllersTransformSettingsViewController")]
+#[cfg(feature = "cordl_class_ControllersTransformSettingsViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     type Target = crate::HMUI::ViewController;
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::ControllersTransformSettingsViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ControllersTransformSettingsViewController")]
+#[cfg(feature = "cordl_class_ControllersTransformSettingsViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -202,7 +202,7 @@ impl crate::GlobalNamespace::ControllersTransformSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ControllersTransformSettingsViewController")]
+#[cfg(feature = "cordl_class_ControllersTransformSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

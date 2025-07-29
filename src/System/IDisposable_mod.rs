@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IDisposable")]
+#[cfg(feature = "cordl_class_System+IDisposable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IDisposable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+IDisposable")]
+#[cfg(feature = "cordl_class_System+IDisposable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IDisposable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IDisposable {
         false
     }
 }
-#[cfg(feature = "System+IDisposable")]
+#[cfg(feature = "cordl_class_System+IDisposable")]
 impl std::ops::Deref for crate::System::IDisposable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IDisposable")]
+#[cfg(feature = "cordl_class_System+IDisposable")]
 impl std::ops::DerefMut for crate::System::IDisposable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -65,7 +65,7 @@ impl crate::System::IDisposable {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+IDisposable")]
+#[cfg(feature = "cordl_class_System+IDisposable")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IDisposable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

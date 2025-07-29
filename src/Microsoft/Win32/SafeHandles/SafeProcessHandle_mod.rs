@@ -1,10 +1,10 @@
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeProcessHandle")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeProcessHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeProcessHandle {
     __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeProcessHandle")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeProcessHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Microsoft::Win32::SafeHandles::SafeProcessHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Microsoft::Win32::SafeHandles::SafeProcessHandle {
         false
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeProcessHandle")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeProcessHandle")]
 impl std::ops::Deref for crate::Microsoft::Win32::SafeHandles::SafeProcessHandle {
     type Target = crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeProcessHandle")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeProcessHandle")]
 impl std::ops::DerefMut for crate::Microsoft::Win32::SafeHandles::SafeProcessHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::Microsoft::Win32::SafeHandles::SafeProcessHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeProcessHandle")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeProcessHandle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Microsoft::Win32::SafeHandles::SafeProcessHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

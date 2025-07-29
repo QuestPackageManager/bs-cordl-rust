@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReassembler {
@@ -7,7 +7,7 @@ pub struct DtlsReassembler {
     pub mBody: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mMissing: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -193,7 +193,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -203,7 +203,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReassembler_Range {
@@ -211,7 +211,7 @@ pub struct DtlsReassembler_Range {
     pub mStart: i32,
     pub mEnd: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -231,14 +231,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -367,7 +367,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

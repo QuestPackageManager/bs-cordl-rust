@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+MonoIOStat")]
+#[cfg(feature = "cordl_class_System+IO+MonoIOStat")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MonoIOStat {
@@ -8,7 +8,7 @@ pub struct MonoIOStat {
     pub LastAccessTime: i64,
     pub LastWriteTime: i64,
 }
-#[cfg(feature = "System+IO+MonoIOStat")]
+#[cfg(feature = "cordl_class_System+IO+MonoIOStat")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::MonoIOStat {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::MonoIOStat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+IO+MonoIOStat")]
+#[cfg(feature = "cordl_class_System+IO+MonoIOStat")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::IO::MonoIOStat {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::IO::MonoIOStat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+IO+MonoIOStat")]
+#[cfg(feature = "cordl_class_System+IO+MonoIOStat")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IO::MonoIOStat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IO::MonoIOStat {
         self
     }
 }
-#[cfg(feature = "System+IO+MonoIOStat")]
+#[cfg(feature = "cordl_class_System+IO+MonoIOStat")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::IO::MonoIOStat {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::IO::MonoIOStat {
         }
     }
 }
-#[cfg(feature = "System+IO+MonoIOStat")]
+#[cfg(feature = "cordl_class_System+IO+MonoIOStat")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::IO::MonoIOStat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::IO::MonoIOStat {
         actual
     }
 }
-#[cfg(feature = "System+IO+MonoIOStat")]
+#[cfg(feature = "cordl_class_System+IO+MonoIOStat")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::IO::MonoIOStat {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

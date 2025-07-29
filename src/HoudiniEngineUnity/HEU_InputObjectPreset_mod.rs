@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputObjectPreset")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputObjectPreset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputObjectPreset {
@@ -10,7 +10,7 @@ pub struct HEU_InputObjectPreset {
     pub _rotateOffset: crate::UnityEngine::Vector3,
     pub _scaleOffset: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputObjectPreset")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputObjectPreset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputObjectPreset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::HoudiniEngineUnity::HEU_InputObjectPreset {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputObjectPreset")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputObjectPreset")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputObjectPreset {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputObjectPreset")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputObjectPreset")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputObjectPreset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -74,7 +74,7 @@ impl crate::HoudiniEngineUnity::HEU_InputObjectPreset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputObjectPreset")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputObjectPreset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputObjectPreset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionReference")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionReference")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionReference {
@@ -11,7 +11,7 @@ pub struct InputActionReference {
         crate::UnityEngine::InputSystem::InputAction,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionReference")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionReference")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionReference {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::UnityEngine::InputSystem::InputActionReference {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionReference")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionReference")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionReference {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionReference")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionReference")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionReference {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -413,7 +413,7 @@ impl crate::UnityEngine::InputSystem::InputActionReference {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionReference")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionReference")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputActionReference {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifa_ifu")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ifa_ifu {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifa_ifu")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::ifa_ifu {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::System::Net::NetworkInformation::ifa_ifu {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifa_ifu")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::ifa_ifu {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::System::Net::NetworkInformation::ifa_ifu {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifa_ifu")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::ifa_ifu {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::System::Net::NetworkInformation::ifa_ifu {
         self
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifa_ifu")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::ifa_ifu {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::System::Net::NetworkInformation::ifa_ifu {
         }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifa_ifu")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::ifa_ifu {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::System::Net::NetworkInformation::ifa_ifu {
         actual
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+ifa_ifu")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::NetworkInformation::ifa_ifu {
     type Type = Self;

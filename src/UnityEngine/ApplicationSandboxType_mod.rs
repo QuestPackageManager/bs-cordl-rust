@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ApplicationSandboxType")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationSandboxType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ApplicationSandboxType {
@@ -8,7 +8,7 @@ pub enum ApplicationSandboxType {
     Sandboxed = 2i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "UnityEngine+ApplicationSandboxType")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationSandboxType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ApplicationSandboxType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ApplicationSandb
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationSandboxType")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationSandboxType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ApplicationSandboxType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ApplicationSandboxType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationSandboxType")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationSandboxType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ApplicationSandboxType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ApplicationSandboxType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationSandboxType")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationSandboxType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ApplicationSandboxType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ApplicationSandboxType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationSandboxType")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationSandboxType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ApplicationSandboxType {
     type Actual = Self;

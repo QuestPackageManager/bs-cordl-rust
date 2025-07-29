@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyNameCollection {
@@ -8,7 +8,7 @@ pub struct StylePropertyNameCollection {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StylePropertyNameCollection {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StylePropertyNameCollection {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StylePropertyNameCollection {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StylePropertyNameCollection {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StylePropertyNameCollection {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StylePropertyNameCollection {
     type Type = Self;
@@ -280,7 +280,9 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyNameCollection_Enumerator {
@@ -288,7 +290,9 @@ pub struct StylePropertyNameCollection_Enumerator {
         crate::UnityEngine::UIElements::StylePropertyName,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     type Held<'a> = Self;
@@ -318,7 +322,9 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     type Type = Self;
@@ -329,7 +335,9 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     type Actual = Self;
@@ -343,7 +351,9 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     type Type = Self;
@@ -358,7 +368,9 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     type Actual = Self;
@@ -372,7 +384,9 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     type Type = Self;

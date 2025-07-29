@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceLocationData {
@@ -21,7 +23,9 @@ pub struct ResourceLocationData {
     >,
     pub _Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +45,9 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationDat
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -49,7 +55,9 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationDat
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -349,7 +357,9 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationDa
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

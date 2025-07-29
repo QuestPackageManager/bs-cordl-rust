@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+BinHexDecoder")]
+#[cfg(feature = "cordl_class_System+Xml+BinHexDecoder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinHexDecoder {
@@ -9,7 +9,7 @@ pub struct BinHexDecoder {
     pub hasHalfByteCached: bool,
     pub cachedHalfByte: u8,
 }
-#[cfg(feature = "System+Xml+BinHexDecoder")]
+#[cfg(feature = "cordl_class_System+Xml+BinHexDecoder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::BinHexDecoder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::BinHexDecoder {
         false
     }
 }
-#[cfg(feature = "System+Xml+BinHexDecoder")]
+#[cfg(feature = "cordl_class_System+Xml+BinHexDecoder")]
 impl std::ops::Deref for crate::System::Xml::BinHexDecoder {
     type Target = crate::System::Xml::IncrementalReadDecoder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+BinHexDecoder")]
+#[cfg(feature = "cordl_class_System+Xml+BinHexDecoder")]
 impl std::ops::DerefMut for crate::System::Xml::BinHexDecoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -192,7 +192,7 @@ impl crate::System::Xml::BinHexDecoder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+BinHexDecoder")]
+#[cfg(feature = "cordl_class_System+Xml+BinHexDecoder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::BinHexDecoder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

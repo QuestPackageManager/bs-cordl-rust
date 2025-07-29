@@ -1,4 +1,4 @@
-#[cfg(feature = "StartMiddleEndButtonBackgroundController")]
+#[cfg(feature = "cordl_class_StartMiddleEndButtonBackgroundController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StartMiddleEndButtonBackgroundController {
@@ -8,7 +8,7 @@ pub struct StartMiddleEndButtonBackgroundController {
     pub _endSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _image: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
 }
-#[cfg(feature = "StartMiddleEndButtonBackgroundController")]
+#[cfg(feature = "cordl_class_StartMiddleEndButtonBackgroundController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
         false
     }
 }
-#[cfg(feature = "StartMiddleEndButtonBackgroundController")]
+#[cfg(feature = "cordl_class_StartMiddleEndButtonBackgroundController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StartMiddleEndButtonBackgroundController")]
+#[cfg(feature = "cordl_class_StartMiddleEndButtonBackgroundController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -149,7 +149,7 @@ impl crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StartMiddleEndButtonBackgroundController")]
+#[cfg(feature = "cordl_class_StartMiddleEndButtonBackgroundController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

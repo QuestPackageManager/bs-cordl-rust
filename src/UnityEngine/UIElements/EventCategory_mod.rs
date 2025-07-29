@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EventCategory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategory")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventCategory {
@@ -22,7 +22,7 @@ pub enum EventCategory {
     StyleTransition = 12i32,
     Tooltip = 15i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventCategory {
     type Held<'a> = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::UIElements::EventCategory {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategory")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventCategory {
     type Type = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::EventCategory {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventCategory {
     type Actual = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::UIElements::EventCategory {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategory")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventCategory {
     type Type = Self;
@@ -92,7 +92,7 @@ for crate::UnityEngine::UIElements::EventCategory {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategory")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventCategory {
     type Actual = Self;

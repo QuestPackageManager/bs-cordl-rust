@@ -1,4 +1,4 @@
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawner")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutFloorLightStreakTileEffectSpawner {
@@ -12,7 +12,7 @@ pub struct NoteCutFloorLightStreakTileEffectSpawner {
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _spawnColor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawner")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawner")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::Ice::NoteCutFloorLightStreakTileEffectSpawner {
         false
     }
 }
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawner")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawner")]
 impl std::ops::Deref for crate::Ice::NoteCutFloorLightStreakTileEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawner")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawner")]
 impl std::ops::DerefMut for crate::Ice::NoteCutFloorLightStreakTileEffectSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -205,7 +205,7 @@ impl crate::Ice::NoteCutFloorLightStreakTileEffectSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawner")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawner")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

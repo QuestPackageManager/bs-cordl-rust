@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+CustomRenderTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+CustomRenderTexture")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomRenderTexture {
     __cordl_parent: crate::UnityEngine::RenderTexture,
 }
-#[cfg(feature = "UnityEngine+CustomRenderTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+CustomRenderTexture")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CustomRenderTexture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CustomRenderText
         false
     }
 }
-#[cfg(feature = "UnityEngine+CustomRenderTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+CustomRenderTexture")]
 impl std::ops::Deref for crate::UnityEngine::CustomRenderTexture {
     type Target = crate::UnityEngine::RenderTexture;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+CustomRenderTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+CustomRenderTexture")]
 impl std::ops::DerefMut for crate::UnityEngine::CustomRenderTexture {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -38,7 +38,7 @@ impl std::ops::DerefMut for crate::UnityEngine::CustomRenderTexture {
 }
 #[cfg(feature = "UnityEngine+CustomRenderTexture")]
 impl crate::UnityEngine::CustomRenderTexture {}
-#[cfg(feature = "UnityEngine+CustomRenderTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+CustomRenderTexture")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CustomRenderTexture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

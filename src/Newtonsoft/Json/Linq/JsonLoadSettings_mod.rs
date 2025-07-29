@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonLoadSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonLoadSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonLoadSettings {
@@ -7,7 +7,7 @@ pub struct JsonLoadSettings {
     pub _lineInfoHandling: crate::Newtonsoft::Json::Linq::LineInfoHandling,
     pub _duplicatePropertyNameHandling: crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonLoadSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonLoadSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::JsonLoadSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Newtonsoft::Json::Linq::JsonLoadSettings {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonLoadSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonLoadSettings")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonLoadSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonLoadSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonLoadSettings")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonLoadSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -226,7 +226,7 @@ impl crate::Newtonsoft::Json::Linq::JsonLoadSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonLoadSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonLoadSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Linq::JsonLoadSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

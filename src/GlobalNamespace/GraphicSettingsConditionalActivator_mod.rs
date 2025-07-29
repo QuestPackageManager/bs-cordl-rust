@@ -1,4 +1,4 @@
-#[cfg(feature = "GraphicSettingsConditionalActivator")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphicSettingsConditionalActivator {
@@ -12,7 +12,7 @@ pub struct GraphicSettingsConditionalActivator {
         crate::GlobalNamespace::GameplayCoreSceneSetupData,
     >,
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
         false
     }
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator")]
 impl std::ops::Deref for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::GraphicSettingsConditionalActivator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -126,7 +126,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator+ActivatorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicSettingsConditionalActivator_ActivatorType {
@@ -136,7 +136,7 @@ pub enum GraphicSettingsConditionalActivator_ActivatorType {
     screenDisplacement = 3i32,
     smoke = 0i32,
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Held<'a> = Self;
@@ -166,7 +166,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Type = Self;
@@ -177,7 +177,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Actual = Self;
@@ -191,7 +191,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
         self
     }
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Type = Self;
@@ -206,7 +206,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
         }
     }
 }
-#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
+#[cfg(feature = "cordl_class_GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Actual = Self;

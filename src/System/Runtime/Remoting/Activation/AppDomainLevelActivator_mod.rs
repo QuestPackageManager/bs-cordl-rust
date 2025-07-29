@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppDomainLevelActivator {
@@ -8,7 +10,9 @@ pub struct AppDomainLevelActivator {
         crate::System::Runtime::Remoting::Activation::IActivator,
     >,
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +32,9 @@ for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -36,7 +42,9 @@ for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -161,7 +169,9 @@ impl crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

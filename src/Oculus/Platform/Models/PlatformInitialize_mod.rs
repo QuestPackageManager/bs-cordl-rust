@@ -1,11 +1,11 @@
-#[cfg(feature = "Oculus+Platform+Models+PlatformInitialize")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PlatformInitialize")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInitialize {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Result: crate::Oculus::Platform::PlatformInitializeResult,
 }
-#[cfg(feature = "Oculus+Platform+Models+PlatformInitialize")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PlatformInitialize")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::PlatformInitialize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Oculus::Platform::Models::PlatformInitialize {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+PlatformInitialize")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PlatformInitialize")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::PlatformInitialize {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+PlatformInitialize")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PlatformInitialize")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::PlatformInitialize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::Oculus::Platform::Models::PlatformInitialize {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+PlatformInitialize")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PlatformInitialize")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::PlatformInitialize {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

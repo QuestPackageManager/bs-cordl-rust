@@ -1,11 +1,15 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Curve25519FieldElement {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement;
@@ -33,7 +39,9 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -645,7 +653,9 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519FieldElement"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

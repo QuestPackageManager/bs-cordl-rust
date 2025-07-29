@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+Compression+GZipStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+GZipStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GZipStream {
@@ -7,7 +7,7 @@ pub struct GZipStream {
         crate::System::IO::Compression::DeflateStream,
     >,
 }
-#[cfg(feature = "System+IO+Compression+GZipStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+GZipStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Compression::GZipStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Compression::GZip
         false
     }
 }
-#[cfg(feature = "System+IO+Compression+GZipStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+GZipStream")]
 impl std::ops::Deref for crate::System::IO::Compression::GZipStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Compression+GZipStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+GZipStream")]
 impl std::ops::DerefMut for crate::System::IO::Compression::GZipStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -985,7 +985,7 @@ impl crate::System::IO::Compression::GZipStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Compression+GZipStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+GZipStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Compression::GZipStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

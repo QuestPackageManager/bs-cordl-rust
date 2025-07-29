@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleMath {
     __cordl_parent: crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f64>,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
     type Target = crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -282,7 +282,7 @@ impl crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

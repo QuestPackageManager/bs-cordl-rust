@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerApplicationSpecific")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerApplicationSpecific")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerApplicationSpecific {
@@ -7,7 +7,7 @@ pub struct DerApplicationSpecific {
     pub tag: i32,
     pub octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerApplicationSpecific")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerApplicationSpecific")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerApplicationSpecific")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerApplicationSpecific")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerApplicationSpecific")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerApplicationSpecific")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -524,7 +524,7 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DerApplicationSpecific")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerApplicationSpecific")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

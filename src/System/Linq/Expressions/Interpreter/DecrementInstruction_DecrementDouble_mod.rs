@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct DecrementInstruction_DecrementDouble {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::DecrementInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DecrementInstruction_DecrementDouble {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::DecrementInstruction_DecrementDouble {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::DecrementInstruction_DecrementDouble {
     type Target = crate::System::Linq::Expressions::Interpreter::DecrementInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::DecrementInstruction_DecrementD
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DecrementInstruction_DecrementDouble {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::DecrementInstruction_DecrementDouble {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DecrementInstruction_DecrementDouble {

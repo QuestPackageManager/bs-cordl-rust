@@ -1,4 +1,4 @@
-#[cfg(feature = "CreditsData")]
+#[cfg(feature = "cordl_class_CreditsData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsData {
@@ -11,7 +11,7 @@ pub struct CreditsData {
         >,
     >,
 }
-#[cfg(feature = "CreditsData")]
+#[cfg(feature = "cordl_class_CreditsData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsData 
         false
     }
 }
-#[cfg(feature = "CreditsData")]
+#[cfg(feature = "cordl_class_CreditsData")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CreditsData")]
+#[cfg(feature = "cordl_class_CreditsData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::CreditsData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CreditsData")]
+#[cfg(feature = "cordl_class_CreditsData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -118,7 +118,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "CreditsData+ChildCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+ChildCreditsItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsData_ChildCreditsItem {
@@ -126,7 +126,7 @@ pub struct CreditsData_ChildCreditsItem {
     pub title: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CreditsData_Text>,
     pub text: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CreditsData_Text>,
 }
-#[cfg(feature = "CreditsData+ChildCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+ChildCreditsItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -146,14 +146,14 @@ for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
         false
     }
 }
-#[cfg(feature = "CreditsData+ChildCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+ChildCreditsItem")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CreditsData+ChildCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+ChildCreditsItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -224,7 +224,7 @@ impl crate::GlobalNamespace::CreditsData_ChildCreditsItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CreditsData+ChildCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+ChildCreditsItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -234,7 +234,7 @@ for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "CreditsData+RootCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+RootCreditsItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsData_RootCreditsItem {
@@ -250,7 +250,7 @@ pub struct CreditsData_RootCreditsItem {
         >,
     >,
 }
-#[cfg(feature = "CreditsData+RootCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+RootCreditsItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CreditsData_RootCreditsItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -270,14 +270,14 @@ for crate::GlobalNamespace::CreditsData_RootCreditsItem {
         false
     }
 }
-#[cfg(feature = "CreditsData+RootCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+RootCreditsItem")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_RootCreditsItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CreditsData+RootCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+RootCreditsItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData_RootCreditsItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -365,7 +365,7 @@ impl crate::GlobalNamespace::CreditsData_RootCreditsItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CreditsData+RootCreditsItem")]
+#[cfg(feature = "cordl_class_CreditsData+RootCreditsItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CreditsData_RootCreditsItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -375,7 +375,7 @@ for crate::GlobalNamespace::CreditsData_RootCreditsItem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "CreditsData+Text")]
+#[cfg(feature = "cordl_class_CreditsData+Text")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsData_Text {
@@ -384,7 +384,7 @@ pub struct CreditsData_Text {
     pub localized: bool,
     pub style: crate::GlobalNamespace::CreditsData_TextStyle,
 }
-#[cfg(feature = "CreditsData+Text")]
+#[cfg(feature = "cordl_class_CreditsData+Text")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsData_Text {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -403,14 +403,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsData_
         false
     }
 }
-#[cfg(feature = "CreditsData+Text")]
+#[cfg(feature = "cordl_class_CreditsData+Text")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_Text {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CreditsData+Text")]
+#[cfg(feature = "cordl_class_CreditsData+Text")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData_Text {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -491,7 +491,7 @@ impl crate::GlobalNamespace::CreditsData_Text {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CreditsData+Text")]
+#[cfg(feature = "cordl_class_CreditsData+Text")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData_Text {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -500,7 +500,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData_T
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "CreditsData+TextStyle")]
+#[cfg(feature = "cordl_class_CreditsData+TextStyle")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CreditsData_TextStyle {
@@ -509,7 +509,7 @@ pub enum CreditsData_TextStyle {
     Normal = 0i32,
     Title = 1i32,
 }
-#[cfg(feature = "CreditsData+TextStyle")]
+#[cfg(feature = "cordl_class_CreditsData+TextStyle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CreditsData_TextStyle {
     type Held<'a> = Self;
@@ -539,7 +539,7 @@ for crate::GlobalNamespace::CreditsData_TextStyle {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "CreditsData+TextStyle")]
+#[cfg(feature = "cordl_class_CreditsData+TextStyle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CreditsData_TextStyle {
     type Type = Self;
@@ -550,7 +550,7 @@ for crate::GlobalNamespace::CreditsData_TextStyle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "CreditsData+TextStyle")]
+#[cfg(feature = "cordl_class_CreditsData+TextStyle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CreditsData_TextStyle {
     type Actual = Self;
@@ -564,7 +564,7 @@ for crate::GlobalNamespace::CreditsData_TextStyle {
         self
     }
 }
-#[cfg(feature = "CreditsData+TextStyle")]
+#[cfg(feature = "cordl_class_CreditsData+TextStyle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CreditsData_TextStyle {
     type Type = Self;
@@ -579,7 +579,7 @@ for crate::GlobalNamespace::CreditsData_TextStyle {
         }
     }
 }
-#[cfg(feature = "CreditsData+TextStyle")]
+#[cfg(feature = "cordl_class_CreditsData+TextStyle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CreditsData_TextStyle {
     type Actual = Self;

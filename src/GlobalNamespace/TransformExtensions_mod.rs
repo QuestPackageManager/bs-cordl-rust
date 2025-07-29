@@ -1,10 +1,10 @@
-#[cfg(feature = "TransformExtensions")]
+#[cfg(feature = "cordl_class_TransformExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransformExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "TransformExtensions")]
+#[cfg(feature = "cordl_class_TransformExtensions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TransformExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TransformExt
         false
     }
 }
-#[cfg(feature = "TransformExtensions")]
+#[cfg(feature = "cordl_class_TransformExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::TransformExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TransformExtensions")]
+#[cfg(feature = "cordl_class_TransformExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TransformExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::TransformExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TransformExtensions")]
+#[cfg(feature = "cordl_class_TransformExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TransformExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

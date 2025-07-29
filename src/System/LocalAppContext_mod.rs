@@ -1,10 +1,10 @@
-#[cfg(feature = "System+LocalAppContext")]
+#[cfg(feature = "cordl_class_System+LocalAppContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalAppContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+LocalAppContext")]
+#[cfg(feature = "cordl_class_System+LocalAppContext")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::LocalAppContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::LocalAppContext {
         false
     }
 }
-#[cfg(feature = "System+LocalAppContext")]
+#[cfg(feature = "cordl_class_System+LocalAppContext")]
 impl std::ops::Deref for crate::System::LocalAppContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+LocalAppContext")]
+#[cfg(feature = "cordl_class_System+LocalAppContext")]
 impl std::ops::DerefMut for crate::System::LocalAppContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::System::LocalAppContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+LocalAppContext")]
+#[cfg(feature = "cordl_class_System+LocalAppContext")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::LocalAppContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

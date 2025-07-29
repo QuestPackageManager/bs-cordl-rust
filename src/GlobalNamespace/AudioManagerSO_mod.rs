@@ -1,4 +1,4 @@
-#[cfg(feature = "AudioManagerSO")]
+#[cfg(feature = "cordl_class_AudioManagerSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioManagerSO {
@@ -11,7 +11,7 @@ pub struct AudioManagerSO {
     pub _sfxVolume: f32,
     pub _sfxEnabled: bool,
 }
-#[cfg(feature = "AudioManagerSO")]
+#[cfg(feature = "cordl_class_AudioManagerSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AudioManagerSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AudioManager
         false
     }
 }
-#[cfg(feature = "AudioManagerSO")]
+#[cfg(feature = "cordl_class_AudioManagerSO")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioManagerSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AudioManagerSO")]
+#[cfg(feature = "cordl_class_AudioManagerSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioManagerSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -310,7 +310,7 @@ impl crate::GlobalNamespace::AudioManagerSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AudioManagerSO")]
+#[cfg(feature = "cordl_class_AudioManagerSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioManagerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

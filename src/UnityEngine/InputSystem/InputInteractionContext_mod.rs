@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputInteractionContext+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputInteractionContext+Flags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputInteractionContext_Flags {
     #[default]
     TimerHasExpired = 2i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputInteractionContext+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputInteractionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputInteractionContext+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputInteractionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputInteractionContext+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputInteractionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputInteractionContext+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputInteractionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputInteractionContext+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputInteractionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputInteractionContext_Flags {
     type Actual = Self;

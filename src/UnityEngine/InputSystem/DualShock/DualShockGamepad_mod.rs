@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DualShockGamepad {
@@ -31,7 +31,7 @@ pub struct DualShockGamepad {
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
     type Target = crate::UnityEngine::InputSystem::Gamepad;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -800,7 +800,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

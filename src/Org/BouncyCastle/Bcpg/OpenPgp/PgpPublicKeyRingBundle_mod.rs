@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpPublicKeyRingBundle {
@@ -6,7 +6,7 @@ pub struct PgpPublicKeyRingBundle {
     pub pubRings: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub order: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -586,7 +586,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

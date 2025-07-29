@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_Style")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Style")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Style {
@@ -24,7 +24,7 @@ pub struct TMP_Style {
         quest_hook::libil2cpp::Il2CppArray<u32>,
     >,
 }
-#[cfg(feature = "TMPro+TMP_Style")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Style")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Style {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Style {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_Style")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Style")]
 impl std::ops::Deref for crate::TMPro::TMP_Style {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_Style")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Style")]
 impl std::ops::DerefMut for crate::TMPro::TMP_Style {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -381,7 +381,7 @@ impl crate::TMPro::TMP_Style {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Style")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Style")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Style {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

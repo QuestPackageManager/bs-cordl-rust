@@ -1,8 +1,8 @@
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate {
     type Held<'a> = Self;
@@ -32,7 +32,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate {
     type Type = Self;
@@ -43,7 +43,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate {
     type Actual = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate {
     type Type = Self;
@@ -72,7 +72,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate {
     type Actual = Self;
@@ -86,7 +86,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate {
     type Type = Self;
@@ -212,11 +212,11 @@ impl crate::UnityEngine::PlayerLoop::PostLateUpdate {
     #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
     pub type XRPreEndFrame = crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame;
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_BatchModeUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
     type Held<'a> = Self;
@@ -246,7 +246,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
     type Type = Self;
@@ -257,7 +257,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
     type Actual = Self;
@@ -271,7 +271,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
     type Type = Self;
@@ -286,7 +286,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
     type Actual = Self;
@@ -300,7 +300,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
     type Type = Self;
@@ -313,11 +313,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ClearImmediateRenderers {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
     type Held<'a> = Self;
@@ -347,7 +351,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
     type Type = Self;
@@ -358,7 +364,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
     type Actual = Self;
@@ -372,7 +380,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
     type Type = Self;
@@ -387,7 +397,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
     type Actual = Self;
@@ -401,7 +413,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
     type Type = Self;
@@ -414,11 +428,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_DirectorLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
     type Held<'a> = Self;
@@ -448,7 +462,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
     type Type = Self;
@@ -459,7 +473,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
     type Actual = Self;
@@ -473,7 +487,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
     type Type = Self;
@@ -488,7 +502,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
     type Actual = Self;
@@ -502,7 +516,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
     type Type = Self;
@@ -515,11 +529,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_DirectorRenderImage {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
     type Held<'a> = Self;
@@ -549,7 +563,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
     type Type = Self;
@@ -560,7 +574,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
     type Actual = Self;
@@ -574,7 +588,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
     type Type = Self;
@@ -589,7 +603,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
     type Actual = Self;
@@ -603,7 +617,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
     type Type = Self;
@@ -617,13 +631,13 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {}
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {}
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {
@@ -655,7 +669,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLat
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {
@@ -668,7 +682,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLat
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {
@@ -684,7 +698,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLat
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {
@@ -701,7 +715,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLat
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {
@@ -717,7 +731,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLat
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {
@@ -733,11 +747,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLat
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_EnlightenRuntimeUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
     type Held<'a> = Self;
@@ -767,7 +785,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
     type Type = Self;
@@ -778,7 +798,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
     type Actual = Self;
@@ -792,7 +814,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
     type Type = Self;
@@ -807,7 +831,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
     type Actual = Self;
@@ -821,7 +847,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
     type Type = Self;
@@ -834,11 +862,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ExecuteGameCenterCallbacks {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
     type Held<'a> = Self;
@@ -868,7 +900,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
     type Type = Self;
@@ -879,7 +913,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
     type Actual = Self;
@@ -893,7 +929,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
     type Type = Self;
@@ -908,7 +946,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
     type Actual = Self;
@@ -922,7 +962,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
     type Type = Self;
@@ -935,11 +977,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_FinishFrameRendering {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
     type Held<'a> = Self;
@@ -969,7 +1015,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
     type Type = Self;
@@ -980,7 +1028,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
     type Actual = Self;
@@ -994,7 +1044,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
     type Type = Self;
@@ -1009,7 +1061,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
     type Actual = Self;
@@ -1023,7 +1077,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
     type Type = Self;
@@ -1036,11 +1092,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_GUIClearEvents {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
     type Held<'a> = Self;
@@ -1070,7 +1126,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
     type Type = Self;
@@ -1081,7 +1137,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
     type Actual = Self;
@@ -1095,7 +1151,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
     type Type = Self;
@@ -1110,7 +1166,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
     type Actual = Self;
@@ -1124,7 +1180,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
     type Type = Self;
@@ -1137,11 +1193,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_GraphicsWarmupPreloadedShaders {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders {
     type Held<'a> = Self;
@@ -1171,7 +1231,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShader
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders {
     type Type = Self;
@@ -1182,7 +1244,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShader
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders {
     type Actual = Self;
@@ -1196,7 +1260,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShader
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders {
     type Type = Self;
@@ -1211,7 +1277,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShader
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders {
     type Actual = Self;
@@ -1225,7 +1293,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShader
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders {
     type Type = Self;
@@ -1238,11 +1308,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShader
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_InputEndFrame {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
     type Held<'a> = Self;
@@ -1272,7 +1342,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
     type Type = Self;
@@ -1283,7 +1353,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
     type Actual = Self;
@@ -1297,7 +1367,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
     type Type = Self;
@@ -1312,7 +1382,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
     type Actual = Self;
@@ -1326,7 +1396,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
     type Type = Self;
@@ -1339,11 +1409,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_MemoryFrameMaintenance {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
     type Held<'a> = Self;
@@ -1373,7 +1447,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
     type Type = Self;
@@ -1384,7 +1460,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
     type Actual = Self;
@@ -1398,7 +1476,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
     type Type = Self;
@@ -1413,7 +1493,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
     type Actual = Self;
@@ -1427,7 +1509,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
     type Type = Self;
@@ -1440,11 +1524,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ObjectDispatcherPostLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate {
     type Held<'a> = Self;
@@ -1474,7 +1562,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdat
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate {
     type Type = Self;
@@ -1485,7 +1575,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate {
     type Actual = Self;
@@ -1499,7 +1591,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdat
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate {
     type Type = Self;
@@ -1514,7 +1608,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdat
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate {
     type Actual = Self;
@@ -1528,7 +1624,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdat
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate {
     type Type = Self;
@@ -1541,11 +1639,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdat
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ParticleSystemEndUpdateAll {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
     type Held<'a> = Self;
@@ -1575,7 +1677,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
     type Type = Self;
@@ -1586,7 +1690,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
     type Actual = Self;
@@ -1600,7 +1706,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
     type Type = Self;
@@ -1615,7 +1723,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
     type Actual = Self;
@@ -1629,7 +1739,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
     type Type = Self;
@@ -1642,11 +1754,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PhysicsSkinnedClothBeginUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate {
     type Held<'a> = Self;
@@ -1676,7 +1792,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdat
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate {
     type Type = Self;
@@ -1687,7 +1805,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate {
     type Actual = Self;
@@ -1701,7 +1821,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdat
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate {
     type Type = Self;
@@ -1716,7 +1838,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdat
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate {
     type Actual = Self;
@@ -1730,7 +1854,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdat
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate {
     type Type = Self;
@@ -1743,11 +1869,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdat
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PhysicsSkinnedClothFinishUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate {
     type Held<'a> = Self;
@@ -1777,7 +1907,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpda
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate {
     type Type = Self;
@@ -1788,7 +1920,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpda
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate {
     type Actual = Self;
@@ -1802,7 +1936,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpda
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate {
     type Type = Self;
@@ -1817,7 +1953,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpda
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate {
     type Actual = Self;
@@ -1831,7 +1969,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpda
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate {
     type Type = Self;
@@ -1844,11 +1984,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpda
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerEmitCanvasGeometry {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
     type Held<'a> = Self;
@@ -1878,7 +2022,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
     type Type = Self;
@@ -1889,7 +2035,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
     type Actual = Self;
@@ -1903,7 +2051,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
     type Type = Self;
@@ -1918,7 +2068,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
     type Actual = Self;
@@ -1932,7 +2084,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
     type Type = Self;
@@ -1946,13 +2100,13 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {}
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {}
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {
@@ -1984,7 +2138,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffsc
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {
@@ -1997,7 +2151,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffsc
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {
@@ -2013,7 +2167,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffsc
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {
@@ -2030,7 +2184,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffsc
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {
@@ -2046,7 +2200,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffsc
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {
@@ -2062,11 +2216,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffsc
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerSendFrameComplete {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
     type Held<'a> = Self;
@@ -2096,7 +2254,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
     type Type = Self;
@@ -2107,7 +2267,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
     type Actual = Self;
@@ -2121,7 +2283,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
     type Type = Self;
@@ -2136,7 +2300,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
     type Actual = Self;
@@ -2150,7 +2316,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
     type Type = Self;
@@ -2163,11 +2331,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerSendFramePostPresent {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
     type Held<'a> = Self;
@@ -2197,7 +2369,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
     type Type = Self;
@@ -2208,7 +2382,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
     type Actual = Self;
@@ -2222,7 +2398,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
     type Type = Self;
@@ -2237,7 +2415,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
     type Actual = Self;
@@ -2251,7 +2431,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
     type Type = Self;
@@ -2264,11 +2446,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerSendFrameStarted {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
     type Held<'a> = Self;
@@ -2298,7 +2484,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
     type Type = Self;
@@ -2309,7 +2497,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
     type Actual = Self;
@@ -2323,7 +2513,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
     type Type = Self;
@@ -2338,7 +2530,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
     type Actual = Self;
@@ -2352,7 +2546,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
     type Type = Self;
@@ -2365,11 +2561,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerUpdateCanvases {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
     type Held<'a> = Self;
@@ -2399,7 +2599,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
     type Type = Self;
@@ -2410,7 +2612,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
     type Actual = Self;
@@ -2424,7 +2628,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
     type Type = Self;
@@ -2439,7 +2645,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
     type Actual = Self;
@@ -2453,7 +2661,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
     type Type = Self;
@@ -2466,11 +2676,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PresentAfterDraw {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
     type Held<'a> = Self;
@@ -2500,7 +2710,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
     type Type = Self;
@@ -2511,7 +2721,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
     type Actual = Self;
@@ -2525,7 +2735,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
     type Type = Self;
@@ -2540,7 +2750,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
     type Actual = Self;
@@ -2554,7 +2764,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
     type Type = Self;
@@ -2567,11 +2777,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ProcessWebSendMessages {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
     type Held<'a> = Self;
@@ -2601,7 +2815,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
     type Type = Self;
@@ -2612,7 +2828,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
     type Actual = Self;
@@ -2626,7 +2844,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
     type Type = Self;
@@ -2641,7 +2861,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
     type Actual = Self;
@@ -2655,7 +2877,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
     type Type = Self;
@@ -2668,11 +2892,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ProfilerEndFrame {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
     type Held<'a> = Self;
@@ -2702,7 +2926,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
     type Type = Self;
@@ -2713,7 +2937,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
     type Actual = Self;
@@ -2727,7 +2951,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
     type Type = Self;
@@ -2742,7 +2966,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
     type Actual = Self;
@@ -2756,7 +2980,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
     type Type = Self;
@@ -2769,11 +2993,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ProfilerSynchronizeStats {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
     type Held<'a> = Self;
@@ -2803,7 +3031,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
     type Type = Self;
@@ -2814,7 +3044,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
     type Actual = Self;
@@ -2828,7 +3060,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
     type Type = Self;
@@ -2843,7 +3077,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
     type Actual = Self;
@@ -2857,7 +3093,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
     type Type = Self;
@@ -2870,11 +3108,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ResetInputAxis {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
     type Held<'a> = Self;
@@ -2904,7 +3142,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
     type Type = Self;
@@ -2915,7 +3153,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
     type Actual = Self;
@@ -2929,7 +3167,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
     type Type = Self;
@@ -2944,7 +3182,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
     type Actual = Self;
@@ -2958,7 +3196,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
     type Type = Self;
@@ -2972,13 +3210,13 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {}
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ScriptRunDelayedDynamicFrameRate {}
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate {
@@ -3010,7 +3248,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameR
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate {
@@ -3023,7 +3261,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameR
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate {
@@ -3039,7 +3277,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameR
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate {
@@ -3056,7 +3294,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameR
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate {
@@ -3072,7 +3310,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameR
     }
 }
 #[cfg(
-    feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate {
@@ -3088,11 +3326,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameR
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ShaderHandleErrors {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
     type Held<'a> = Self;
@@ -3122,7 +3360,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
     type Type = Self;
@@ -3133,7 +3371,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
     type Actual = Self;
@@ -3147,7 +3385,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
     type Type = Self;
@@ -3162,7 +3400,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
     type Actual = Self;
@@ -3176,7 +3414,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
     type Type = Self;
@@ -3189,11 +3427,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_SortingGroupsUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
     type Held<'a> = Self;
@@ -3223,7 +3461,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
     type Type = Self;
@@ -3234,7 +3472,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
     type Actual = Self;
@@ -3248,7 +3486,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
     type Type = Self;
@@ -3263,7 +3501,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
     type Actual = Self;
@@ -3277,7 +3515,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
     type Type = Self;
@@ -3290,11 +3528,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ThreadedLoadingDebug {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
     type Held<'a> = Self;
@@ -3324,7 +3566,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
     type Type = Self;
@@ -3335,7 +3579,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
     type Actual = Self;
@@ -3349,7 +3595,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
     type Type = Self;
@@ -3364,7 +3612,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
     type Actual = Self;
@@ -3378,7 +3628,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
     type Type = Self;
@@ -3391,11 +3643,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_TriggerEndOfFrameCallbacks {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
     type Held<'a> = Self;
@@ -3425,7 +3681,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
     type Type = Self;
@@ -3436,7 +3694,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
     type Actual = Self;
@@ -3450,7 +3710,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
     type Type = Self;
@@ -3465,7 +3727,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
     type Actual = Self;
@@ -3479,7 +3743,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
     type Type = Self;
@@ -3492,11 +3758,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateAllRenderers {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
     type Held<'a> = Self;
@@ -3526,7 +3792,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
     type Type = Self;
@@ -3537,7 +3803,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
     type Actual = Self;
@@ -3551,7 +3817,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
     type Type = Self;
@@ -3566,7 +3832,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
     type Actual = Self;
@@ -3580,7 +3846,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
     type Type = Self;
@@ -3593,11 +3859,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateAllSkinnedMeshes {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
     type Held<'a> = Self;
@@ -3627,7 +3897,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
     type Type = Self;
@@ -3638,7 +3910,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
     type Actual = Self;
@@ -3652,7 +3926,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
     type Type = Self;
@@ -3667,7 +3943,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
     type Actual = Self;
@@ -3681,7 +3959,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
     type Type = Self;
@@ -3694,11 +3974,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateAudio {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
     type Held<'a> = Self;
@@ -3728,7 +4008,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
     type Type = Self;
@@ -3739,7 +4019,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
     type Actual = Self;
@@ -3753,7 +4033,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
     type Type = Self;
@@ -3768,7 +4048,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
     type Actual = Self;
@@ -3782,7 +4062,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
     type Type = Self;
@@ -3795,11 +4075,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateCanvasRectTransform {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
     type Held<'a> = Self;
@@ -3829,7 +4113,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
     type Type = Self;
@@ -3840,7 +4126,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
     type Actual = Self;
@@ -3854,7 +4142,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
     type Type = Self;
@@ -3869,7 +4159,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
     type Actual = Self;
@@ -3883,7 +4175,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
     type Type = Self;
@@ -3896,11 +4190,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateCaptureScreenshot {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
     type Held<'a> = Self;
@@ -3930,7 +4228,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
     type Type = Self;
@@ -3941,7 +4241,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
     type Actual = Self;
@@ -3955,7 +4257,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
     type Type = Self;
@@ -3970,7 +4274,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
     type Actual = Self;
@@ -3984,7 +4290,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
     type Type = Self;
@@ -3997,11 +4305,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateCustomRenderTextures {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
     type Held<'a> = Self;
@@ -4031,7 +4343,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
     type Type = Self;
@@ -4042,7 +4356,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
     type Actual = Self;
@@ -4056,7 +4372,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
     type Type = Self;
@@ -4071,7 +4389,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
     type Actual = Self;
@@ -4085,7 +4405,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
     type Type = Self;
@@ -4098,11 +4420,15 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateLightProbeProxyVolumes {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes {
     type Held<'a> = Self;
@@ -4132,7 +4458,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes {
     type Type = Self;
@@ -4143,7 +4471,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes {
     type Actual = Self;
@@ -4157,7 +4487,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes 
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes {
     type Type = Self;
@@ -4172,7 +4504,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes 
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes {
     type Actual = Self;
@@ -4186,7 +4520,9 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes 
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes {
     type Type = Self;
@@ -4199,11 +4535,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes 
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateRectTransform {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
     type Held<'a> = Self;
@@ -4233,7 +4569,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
     type Type = Self;
@@ -4244,7 +4580,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
     type Actual = Self;
@@ -4258,7 +4594,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
     type Type = Self;
@@ -4273,7 +4609,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
     type Actual = Self;
@@ -4287,7 +4623,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
     type Type = Self;
@@ -4300,11 +4636,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateResolution {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
     type Held<'a> = Self;
@@ -4334,7 +4670,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
     type Type = Self;
@@ -4345,7 +4681,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
     type Actual = Self;
@@ -4359,7 +4695,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
     type Type = Self;
@@ -4374,7 +4710,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
     type Actual = Self;
@@ -4388,7 +4724,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
     type Type = Self;
@@ -4401,11 +4737,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateSubstance {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
     type Held<'a> = Self;
@@ -4435,7 +4771,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
     type Type = Self;
@@ -4446,7 +4782,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
     type Actual = Self;
@@ -4460,7 +4796,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
     type Type = Self;
@@ -4475,7 +4811,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
     type Actual = Self;
@@ -4489,7 +4825,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
     type Type = Self;
@@ -4502,11 +4838,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateVideo {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
     type Held<'a> = Self;
@@ -4536,7 +4872,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
     type Type = Self;
@@ -4547,7 +4883,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
     type Actual = Self;
@@ -4561,7 +4897,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
     type Type = Self;
@@ -4576,7 +4912,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
     type Actual = Self;
@@ -4590,7 +4926,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
     type Type = Self;
@@ -4603,11 +4939,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateVideoTextures {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
     type Held<'a> = Self;
@@ -4637,7 +4973,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
     type Type = Self;
@@ -4648,7 +4984,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
     type Actual = Self;
@@ -4662,7 +4998,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
     type Type = Self;
@@ -4677,7 +5013,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
     type Actual = Self;
@@ -4691,7 +5027,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
     type Type = Self;
@@ -4704,11 +5040,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_VFXUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
     type Held<'a> = Self;
@@ -4738,7 +5074,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
     type Type = Self;
@@ -4749,7 +5085,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
     type Actual = Self;
@@ -4763,7 +5099,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
     type Type = Self;
@@ -4778,7 +5114,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
     type Actual = Self;
@@ -4792,7 +5128,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
     type Type = Self;
@@ -4805,11 +5141,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_XRPostLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
     type Held<'a> = Self;
@@ -4839,7 +5175,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
     type Type = Self;
@@ -4850,7 +5186,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
     type Actual = Self;
@@ -4864,7 +5200,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
     type Type = Self;
@@ -4879,7 +5215,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
     type Actual = Self;
@@ -4893,7 +5229,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
     type Type = Self;
@@ -4906,11 +5242,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_XRPostPresent {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
     type Held<'a> = Self;
@@ -4940,7 +5276,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
     type Type = Self;
@@ -4951,7 +5287,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
     type Actual = Self;
@@ -4965,7 +5301,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
     type Type = Self;
@@ -4980,7 +5316,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
     type Actual = Self;
@@ -4994,7 +5330,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
     type Type = Self;
@@ -5007,11 +5343,11 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_XRPreEndFrame {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
     type Held<'a> = Self;
@@ -5041,7 +5377,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
     type Type = Self;
@@ -5052,7 +5388,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
     type Actual = Self;
@@ -5066,7 +5402,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
     type Type = Self;
@@ -5081,7 +5417,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
     type Actual = Self;
@@ -5095,7 +5431,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
     type Type = Self;

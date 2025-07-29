@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NativeSetClassTypeToNullOnScheduleAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnScheduleAttribute {
@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnSched
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnScheduleAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnSched
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnScheduleAttribute {
@@ -52,7 +52,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnSched
 )]
 impl crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnScheduleAttribute {}
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnScheduleAttribute {

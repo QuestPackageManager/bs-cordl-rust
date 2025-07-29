@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+RectangularVertexClipper")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+RectangularVertexClipper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectangularVertexClipper {
@@ -10,7 +10,7 @@ pub struct RectangularVertexClipper {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+RectangularVertexClipper")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+RectangularVertexClipper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::RectangularVertexClipper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::UnityEngine::UI::RectangularVertexClipper {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+RectangularVertexClipper")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+RectangularVertexClipper")]
 impl std::ops::Deref for crate::UnityEngine::UI::RectangularVertexClipper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+RectangularVertexClipper")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+RectangularVertexClipper")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::RectangularVertexClipper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -104,7 +104,7 @@ impl crate::UnityEngine::UI::RectangularVertexClipper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+RectangularVertexClipper")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+RectangularVertexClipper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::RectangularVertexClipper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

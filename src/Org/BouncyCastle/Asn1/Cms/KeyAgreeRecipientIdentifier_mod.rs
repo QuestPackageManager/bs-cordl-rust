@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyAgreeRecipientIdentifier {
@@ -10,7 +10,7 @@ pub struct KeyAgreeRecipientIdentifier {
         crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
@@ -38,7 +38,7 @@ for crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -289,7 +289,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientIdentifier")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

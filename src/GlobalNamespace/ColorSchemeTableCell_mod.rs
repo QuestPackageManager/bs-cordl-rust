@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorSchemeTableCell")]
+#[cfg(feature = "cordl_class_ColorSchemeTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSchemeTableCell {
@@ -9,7 +9,7 @@ pub struct ColorSchemeTableCell {
     >,
     pub _editIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
-#[cfg(feature = "ColorSchemeTableCell")]
+#[cfg(feature = "cordl_class_ColorSchemeTableCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorSchemeTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::ColorSchemeTableCell {
         false
     }
 }
-#[cfg(feature = "ColorSchemeTableCell")]
+#[cfg(feature = "cordl_class_ColorSchemeTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorSchemeTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorSchemeTableCell")]
+#[cfg(feature = "cordl_class_ColorSchemeTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -204,7 +204,7 @@ impl crate::GlobalNamespace::ColorSchemeTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorSchemeTableCell")]
+#[cfg(feature = "cordl_class_ColorSchemeTableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemeTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

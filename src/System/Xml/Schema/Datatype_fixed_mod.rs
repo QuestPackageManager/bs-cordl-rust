@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+Datatype_fixed")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_fixed")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_fixed {
     __cordl_parent: crate::System::Xml::Schema::Datatype_decimal,
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_fixed")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_fixed")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Datatype_fixed {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Datatype
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_fixed")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_fixed")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_fixed {
     type Target = crate::System::Xml::Schema::Datatype_decimal;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_fixed")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_fixed")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_fixed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -151,7 +151,7 @@ impl crate::System::Xml::Schema::Datatype_fixed {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_fixed")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_fixed")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::Datatype_fixed {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

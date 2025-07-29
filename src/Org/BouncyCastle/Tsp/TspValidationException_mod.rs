@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Tsp+TspValidationException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TspValidationException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TspValidationException {
     __cordl_parent: crate::Org::BouncyCastle::Tsp::TspException,
     pub failureCode: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TspValidationException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TspValidationException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Tsp::TspValidationException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Tsp::TspValidationException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TspValidationException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TspValidationException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Tsp::TspValidationException {
     type Target = crate::Org::BouncyCastle::Tsp::TspException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TspValidationException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TspValidationException")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Tsp::TspValidationException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -135,7 +135,7 @@ impl crate::Org::BouncyCastle::Tsp::TspValidationException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TspValidationException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TspValidationException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Tsp::TspValidationException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

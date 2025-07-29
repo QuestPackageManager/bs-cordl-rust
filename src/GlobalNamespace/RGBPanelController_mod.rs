@@ -1,4 +1,4 @@
-#[cfg(feature = "RGBPanelController")]
+#[cfg(feature = "cordl_class_RGBPanelController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RGBPanelController {
@@ -14,7 +14,7 @@ pub struct RGBPanelController {
     >,
     pub _color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "RGBPanelController")]
+#[cfg(feature = "cordl_class_RGBPanelController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RGBPanelController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RGBPanelCont
         false
     }
 }
-#[cfg(feature = "RGBPanelController")]
+#[cfg(feature = "cordl_class_RGBPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::RGBPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RGBPanelController")]
+#[cfg(feature = "cordl_class_RGBPanelController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RGBPanelController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -321,7 +321,7 @@ impl crate::GlobalNamespace::RGBPanelController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RGBPanelController")]
+#[cfg(feature = "cordl_class_RGBPanelController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RGBPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

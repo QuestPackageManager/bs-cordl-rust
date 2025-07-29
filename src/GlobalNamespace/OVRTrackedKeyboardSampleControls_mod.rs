@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRTrackedKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRTrackedKeyboardSampleControls")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTrackedKeyboardSampleControls {
@@ -25,7 +25,7 @@ pub struct OVRTrackedKeyboardSampleControls {
         >,
     >,
 }
-#[cfg(feature = "OVRTrackedKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRTrackedKeyboardSampleControls")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         false
     }
 }
-#[cfg(feature = "OVRTrackedKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRTrackedKeyboardSampleControls")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRTrackedKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRTrackedKeyboardSampleControls")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -331,7 +331,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRTrackedKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRTrackedKeyboardSampleControls")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

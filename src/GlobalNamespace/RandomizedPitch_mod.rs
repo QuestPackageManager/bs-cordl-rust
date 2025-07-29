@@ -1,4 +1,4 @@
-#[cfg(feature = "RandomizedPitch")]
+#[cfg(feature = "cordl_class_RandomizedPitch")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RandomizedPitch {
@@ -10,7 +10,7 @@ pub struct RandomizedPitch {
     pub _originalPitch: f32,
     pub _restoringCoroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
 }
-#[cfg(feature = "RandomizedPitch")]
+#[cfg(feature = "cordl_class_RandomizedPitch")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RandomizedPitch {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RandomizedPi
         false
     }
 }
-#[cfg(feature = "RandomizedPitch")]
+#[cfg(feature = "cordl_class_RandomizedPitch")]
 impl std::ops::Deref for crate::GlobalNamespace::RandomizedPitch {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RandomizedPitch")]
+#[cfg(feature = "cordl_class_RandomizedPitch")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RandomizedPitch {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -201,7 +201,7 @@ impl crate::GlobalNamespace::RandomizedPitch {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RandomizedPitch")]
+#[cfg(feature = "cordl_class_RandomizedPitch")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RandomizedPitch {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

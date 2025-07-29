@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+QueueMode")]
+#[cfg(feature = "cordl_class_UnityEngine+QueueMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QueueMode {
@@ -6,7 +6,7 @@ pub enum QueueMode {
     CompleteOthers = 0i32,
     PlayNow = 2i32,
 }
-#[cfg(feature = "UnityEngine+QueueMode")]
+#[cfg(feature = "cordl_class_UnityEngine+QueueMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::QueueMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::QueueMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+QueueMode")]
+#[cfg(feature = "cordl_class_UnityEngine+QueueMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::QueueMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::QueueMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+QueueMode")]
+#[cfg(feature = "cordl_class_UnityEngine+QueueMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::QueueMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::QueueMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+QueueMode")]
+#[cfg(feature = "cordl_class_UnityEngine+QueueMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::QueueMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::QueueMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+QueueMode")]
+#[cfg(feature = "cordl_class_UnityEngine+QueueMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::QueueMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

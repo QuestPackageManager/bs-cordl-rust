@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -11,7 +11,7 @@ pub struct X509EnhancedKeyUsageExtension {
     pub _status: crate::System::Security::Cryptography::AsnDecodeStatus,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsageExtension {
@@ -33,7 +33,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsag
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsageExtension {
@@ -43,7 +43,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsag
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsageExtension {
@@ -324,7 +324,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsa
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsageExtension {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+PropertyMember")]
+#[cfg(feature = "cordl_class_Unity+Properties+PropertyMember")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PropertyMember {
@@ -9,7 +9,7 @@ pub struct PropertyMember {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "Unity+Properties+PropertyMember")]
+#[cfg(feature = "cordl_class_Unity+Properties+PropertyMember")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::PropertyMember {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::PropertyMe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Properties+PropertyMember")]
+#[cfg(feature = "cordl_class_Unity+Properties+PropertyMember")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Properties::PropertyMember {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Unity::Properties::PropertyMember {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Properties+PropertyMember")]
+#[cfg(feature = "cordl_class_Unity+Properties+PropertyMember")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Properties::PropertyMember {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Unity::Properties::PropertyMember {
         self
     }
 }
-#[cfg(feature = "Unity+Properties+PropertyMember")]
+#[cfg(feature = "cordl_class_Unity+Properties+PropertyMember")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Properties::PropertyMember {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Unity::Properties::PropertyMember {
         }
     }
 }
-#[cfg(feature = "Unity+Properties+PropertyMember")]
+#[cfg(feature = "cordl_class_Unity+Properties+PropertyMember")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Properties::PropertyMember {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Properties::Property
         actual
     }
 }
-#[cfg(feature = "Unity+Properties+PropertyMember")]
+#[cfg(feature = "cordl_class_Unity+Properties+PropertyMember")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Properties::PropertyMember {
     type Type = Self;

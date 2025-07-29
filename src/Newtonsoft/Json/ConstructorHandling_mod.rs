@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+ConstructorHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ConstructorHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConstructorHandling {
@@ -6,7 +6,7 @@ pub enum ConstructorHandling {
     AllowNonPublicDefaultConstructor = 1i32,
     Default = 0i32,
 }
-#[cfg(feature = "Newtonsoft+Json+ConstructorHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ConstructorHandling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::ConstructorHandling {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::Newtonsoft::Json::ConstructorHandling {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ConstructorHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ConstructorHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::ConstructorHandling {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::Newtonsoft::Json::ConstructorHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ConstructorHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ConstructorHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::ConstructorHandling {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::Newtonsoft::Json::ConstructorHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ConstructorHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ConstructorHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::ConstructorHandling {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::Newtonsoft::Json::ConstructorHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ConstructorHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ConstructorHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::ConstructorHandling {
     type Actual = Self;

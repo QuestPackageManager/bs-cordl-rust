@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+PrefabBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+PrefabBindingFinalizer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabBindingFinalizer {
@@ -15,7 +15,7 @@ pub struct PrefabBindingFinalizer {
         >,
     >,
 }
-#[cfg(feature = "Zenject+PrefabBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+PrefabBindingFinalizer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::PrefabBindingFinalizer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::PrefabBindingFinaliz
         false
     }
 }
-#[cfg(feature = "Zenject+PrefabBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+PrefabBindingFinalizer")]
 impl std::ops::Deref for crate::Zenject::PrefabBindingFinalizer {
     type Target = crate::Zenject::ProviderBindingFinalizer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+PrefabBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+PrefabBindingFinalizer")]
 impl std::ops::DerefMut for crate::Zenject::PrefabBindingFinalizer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -219,7 +219,7 @@ impl crate::Zenject::PrefabBindingFinalizer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+PrefabBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+PrefabBindingFinalizer")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PrefabBindingFinalizer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+PacketProperty")]
+#[cfg(feature = "cordl_class_LiteNetLib+PacketProperty")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PacketProperty {
@@ -22,7 +22,7 @@ pub enum PacketProperty {
     UnconnectedMessage = 8u8,
     Unreliable = 0u8,
 }
-#[cfg(feature = "LiteNetLib+PacketProperty")]
+#[cfg(feature = "cordl_class_LiteNetLib+PacketProperty")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::PacketProperty {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -51,7 +51,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::PacketProperty {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+PacketProperty")]
+#[cfg(feature = "cordl_class_LiteNetLib+PacketProperty")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::PacketProperty {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::PacketPropert
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+PacketProperty")]
+#[cfg(feature = "cordl_class_LiteNetLib+PacketProperty")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::PacketProperty {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::PacketProper
         self
     }
 }
-#[cfg(feature = "LiteNetLib+PacketProperty")]
+#[cfg(feature = "cordl_class_LiteNetLib+PacketProperty")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::PacketProperty {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::PacketPropert
         }
     }
 }
-#[cfg(feature = "LiteNetLib+PacketProperty")]
+#[cfg(feature = "cordl_class_LiteNetLib+PacketProperty")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LiteNetLib::PacketProperty {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Prism")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Prism")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Prism {
     __cordl_parent: crate::UnityEngine::ProBuilder::Shapes::Shape,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Prism")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Prism")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Shapes::Prism {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::Shapes::Prism {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Prism")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Prism")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::Prism {
     type Target = crate::UnityEngine::ProBuilder::Shapes::Shape;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Prism")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Prism")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::Prism {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::Prism {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Prism")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Prism")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Shapes::Prism {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

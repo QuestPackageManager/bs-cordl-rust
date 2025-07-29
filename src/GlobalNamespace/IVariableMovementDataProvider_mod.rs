@@ -1,10 +1,10 @@
-#[cfg(feature = "IVariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_IVariableMovementDataProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVariableMovementDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IVariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_IVariableMovementDataProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IVariableMovementDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IVariableMovementDataProvider {
         false
     }
 }
-#[cfg(feature = "IVariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_IVariableMovementDataProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::IVariableMovementDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IVariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_IVariableMovementDataProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IVariableMovementDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -365,7 +365,7 @@ impl crate::GlobalNamespace::IVariableMovementDataProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IVariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_IVariableMovementDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IVariableMovementDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

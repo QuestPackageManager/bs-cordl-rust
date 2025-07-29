@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleBackgroundSize")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleBackgroundSize {
     pub m_Value: crate::UnityEngine::UIElements::BackgroundSize,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleBackgroundSize")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleBackgroundSize {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::StyleBackgroundSize {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleBackgroundSize")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleBackgroundSize {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::StyleBackgroundSize {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleBackgroundSize")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleBackgroundSize {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::StyleBackgroundSize {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleBackgroundSize")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleBackgroundSize {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::StyleBackgroundSize {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleBackgroundSize")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleBackgroundSize {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::StyleBackgroundSize {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleBackgroundSize")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleBackgroundSize {
     type Type = Self;

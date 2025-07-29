@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+JsonPosition")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonPosition")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonPosition {
@@ -7,7 +7,7 @@ pub struct JsonPosition {
     pub PropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub HasIndex: bool,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonPosition")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonPosition")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonPosition {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonPositio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonPosition")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonPosition")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::JsonPosition {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::JsonPos
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonPosition")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Newtonsoft::Json::JsonPosition {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Newtonsoft::Json::JsonPo
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonPosition")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonPosition")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::JsonPosition {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::JsonPos
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonPosition")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonPosition")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::JsonPosition {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::JsonPosit
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonPosition")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonPosition")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::JsonPosition {
     type Type = Self;

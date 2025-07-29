@@ -1,4 +1,4 @@
-#[cfg(feature = "LocalStateBuffer_3")]
+#[cfg(feature = "cordl_class_LocalStateBuffer_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalStateBuffer_3<
@@ -39,7 +39,7 @@ pub struct LocalStateBuffer_3<
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
-#[cfg(feature = "LocalStateBuffer_3")]
+#[cfg(feature = "cordl_class_LocalStateBuffer_3")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
         false
     }
 }
-#[cfg(feature = "LocalStateBuffer_3")]
+#[cfg(feature = "cordl_class_LocalStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -88,7 +88,7 @@ for crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LocalStateBuffer_3")]
+#[cfg(feature = "cordl_class_LocalStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -463,7 +463,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LocalStateBuffer_3")]
+#[cfg(feature = "cordl_class_LocalStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

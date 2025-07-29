@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayModifiers")]
+#[cfg(feature = "cordl_class_GameplayModifiers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiers {
@@ -19,7 +19,7 @@ pub struct GameplayModifiers {
     pub _zenMode: bool,
     pub _smallCubes: bool,
 }
-#[cfg(feature = "GameplayModifiers")]
+#[cfg(feature = "cordl_class_GameplayModifiers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayModifiers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayModi
         false
     }
 }
-#[cfg(feature = "GameplayModifiers")]
+#[cfg(feature = "cordl_class_GameplayModifiers")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplayModifiers")]
+#[cfg(feature = "cordl_class_GameplayModifiers")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -804,7 +804,7 @@ impl crate::GlobalNamespace::GameplayModifiers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplayModifiers")]
+#[cfg(feature = "cordl_class_GameplayModifiers")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayModifiers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -841,7 +841,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_EnabledObstacleType {
@@ -850,7 +850,7 @@ pub enum GameplayModifiers_EnabledObstacleType {
     FullHeightOnly = 1i32,
     NoObstacles = 2i32,
 }
-#[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
     type Held<'a> = Self;
@@ -880,7 +880,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
     type Type = Self;
@@ -891,7 +891,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
     type Actual = Self;
@@ -905,7 +905,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
         self
     }
 }
-#[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
     type Type = Self;
@@ -920,7 +920,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
         }
     }
 }
-#[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
     type Actual = Self;
@@ -934,7 +934,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
         actual
     }
 }
-#[cfg(feature = "GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_EnergyType {
@@ -942,7 +942,7 @@ pub enum GameplayModifiers_EnergyType {
     Bar = 0i32,
     Battery = 1i32,
 }
-#[cfg(feature = "GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     type Held<'a> = Self;
@@ -972,7 +972,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     type Type = Self;
@@ -983,7 +983,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     type Actual = Self;
@@ -997,7 +997,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
         self
     }
 }
-#[cfg(feature = "GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     type Type = Self;
@@ -1012,7 +1012,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
         }
     }
 }
-#[cfg(feature = "GameplayModifiers+EnergyType")]
+#[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     type Actual = Self;
@@ -1026,7 +1026,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
         actual
     }
 }
-#[cfg(feature = "GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_SongSpeed {
@@ -1036,7 +1036,7 @@ pub enum GameplayModifiers_SongSpeed {
     Slower = 2i32,
     SuperFast = 3i32,
 }
-#[cfg(feature = "GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     type Held<'a> = Self;
@@ -1066,7 +1066,7 @@ for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     type Type = Self;
@@ -1077,7 +1077,7 @@ for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     type Actual = Self;
@@ -1091,7 +1091,7 @@ for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
         self
     }
 }
-#[cfg(feature = "GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     type Type = Self;
@@ -1106,7 +1106,7 @@ for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
         }
     }
 }
-#[cfg(feature = "GameplayModifiers+SongSpeed")]
+#[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     type Actual = Self;

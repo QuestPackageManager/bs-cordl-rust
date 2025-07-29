@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle {
@@ -11,7 +11,7 @@ pub struct Toggle {
     >,
     pub m_IsOn: bool,
 }
-#[cfg(feature = "UnityEngine+UI+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Toggle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Toggle {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle")]
 impl std::ops::Deref for crate::UnityEngine::UI::Toggle {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Toggle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -582,7 +582,7 @@ impl crate::UnityEngine::UI::Toggle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Toggle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -645,13 +645,13 @@ impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::T
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_ToggleEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<bool>,
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Toggle_ToggleEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -670,14 +670,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Toggle_Toggl
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Toggle_ToggleEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Toggle_ToggleEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -714,7 +714,7 @@ impl crate::UnityEngine::UI::Toggle_ToggleEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Toggle_ToggleEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -723,7 +723,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Toggle_Toggle
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleTransition")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Toggle_ToggleTransition {
@@ -731,7 +731,7 @@ pub enum Toggle_ToggleTransition {
     Fade = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Held<'a> = Self;
@@ -761,7 +761,7 @@ for crate::UnityEngine::UI::Toggle_ToggleTransition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Type = Self;
@@ -772,7 +772,7 @@ for crate::UnityEngine::UI::Toggle_ToggleTransition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Actual = Self;
@@ -786,7 +786,7 @@ for crate::UnityEngine::UI::Toggle_ToggleTransition {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Type = Self;
@@ -801,7 +801,7 @@ for crate::UnityEngine::UI::Toggle_ToggleTransition {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Actual = Self;

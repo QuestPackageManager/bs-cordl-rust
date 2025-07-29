@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapObjectSpawnController")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectSpawnController {
@@ -37,7 +37,7 @@ pub struct BeatmapObjectSpawnController {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "BeatmapObjectSpawnController")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectSpawnController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -57,14 +57,14 @@ for crate::GlobalNamespace::BeatmapObjectSpawnController {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectSpawnController")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectSpawnController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectSpawnController")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectSpawnController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -399,7 +399,7 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectSpawnController")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectSpawnController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -409,7 +409,7 @@ for crate::GlobalNamespace::BeatmapObjectSpawnController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapObjectSpawnController+InitData")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectSpawnController_InitData {
@@ -420,7 +420,7 @@ pub struct BeatmapObjectSpawnController_InitData {
     pub noteJumpValueType: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteJumpValueType,
     pub noteJumpValue: f32,
 }
-#[cfg(feature = "BeatmapObjectSpawnController+InitData")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectSpawnController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -440,14 +440,14 @@ for crate::GlobalNamespace::BeatmapObjectSpawnController_InitData {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectSpawnController+InitData")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectSpawnController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectSpawnController+InitData")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapObjectSpawnController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -525,7 +525,7 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnController_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectSpawnController+InitData")]
+#[cfg(feature = "cordl_class_BeatmapObjectSpawnController+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectSpawnController_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

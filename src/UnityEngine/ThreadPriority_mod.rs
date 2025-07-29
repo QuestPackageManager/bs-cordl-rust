@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ThreadPriority")]
+#[cfg(feature = "cordl_class_UnityEngine+ThreadPriority")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ThreadPriority {
@@ -8,7 +8,7 @@ pub enum ThreadPriority {
     Low = 0i32,
     Normal = 2i32,
 }
-#[cfg(feature = "UnityEngine+ThreadPriority")]
+#[cfg(feature = "cordl_class_UnityEngine+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ThreadPriority {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ThreadPriority {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ThreadPriority")]
+#[cfg(feature = "cordl_class_UnityEngine+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ThreadPriority {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ThreadPriori
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ThreadPriority")]
+#[cfg(feature = "cordl_class_UnityEngine+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ThreadPriority {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ThreadPrior
         self
     }
 }
-#[cfg(feature = "UnityEngine+ThreadPriority")]
+#[cfg(feature = "cordl_class_UnityEngine+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ThreadPriority {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ThreadPriori
         }
     }
 }
-#[cfg(feature = "UnityEngine+ThreadPriority")]
+#[cfg(feature = "cordl_class_UnityEngine+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ThreadPriority {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

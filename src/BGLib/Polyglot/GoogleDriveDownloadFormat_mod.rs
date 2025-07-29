@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+Polyglot+GoogleDriveDownloadFormat")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+GoogleDriveDownloadFormat")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GoogleDriveDownloadFormat {
@@ -6,7 +6,7 @@ pub enum GoogleDriveDownloadFormat {
     CSV = 0i32,
     TSV = 1i32,
 }
-#[cfg(feature = "BGLib+Polyglot+GoogleDriveDownloadFormat")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+GoogleDriveDownloadFormat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+GoogleDriveDownloadFormat")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+GoogleDriveDownloadFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGLib+Polyglot+GoogleDriveDownloadFormat")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+GoogleDriveDownloadFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
         self
     }
 }
-#[cfg(feature = "BGLib+Polyglot+GoogleDriveDownloadFormat")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+GoogleDriveDownloadFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
         }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+GoogleDriveDownloadFormat")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+GoogleDriveDownloadFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::Polyglot::GoogleDriveDownloadFormat {
     type Actual = Self;

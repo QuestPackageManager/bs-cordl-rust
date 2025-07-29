@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+FixupHolderList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+FixupHolderList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixupHolderList {
@@ -10,7 +10,7 @@ pub struct FixupHolderList {
     >,
     pub m_count: i32,
 }
-#[cfg(feature = "System+Runtime+Serialization+FixupHolderList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+FixupHolderList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::FixupHolderList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Runtime::Serialization::FixupHolderList {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+FixupHolderList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+FixupHolderList")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::FixupHolderList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+FixupHolderList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+FixupHolderList")]
 impl std::ops::DerefMut for crate::System::Runtime::Serialization::FixupHolderList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -160,7 +160,7 @@ impl crate::System::Runtime::Serialization::FixupHolderList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+FixupHolderList")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+FixupHolderList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::FixupHolderList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

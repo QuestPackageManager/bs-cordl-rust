@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_BaseSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_BaseSync")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_BaseSync {
@@ -32,7 +32,7 @@ pub struct HEU_BaseSync {
     pub _totalCookCount: i32,
     pub _firstSyncComplete: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_BaseSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_BaseSync")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_BaseSync {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -51,14 +51,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_BaseS
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_BaseSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_BaseSync")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_BaseSync {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_BaseSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_BaseSync")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_BaseSync {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1164,7 +1164,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_BaseSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_BaseSync")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_BaseSync {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

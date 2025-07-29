@@ -1,4 +1,4 @@
-#[cfg(feature = "MainEffectContainerSO")]
+#[cfg(feature = "cordl_class_MainEffectContainerSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainEffectContainerSO {
@@ -6,7 +6,7 @@ pub struct MainEffectContainerSO {
     pub _mainEffect: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectSO>,
     pub _postProcessEnabled: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
 }
-#[cfg(feature = "MainEffectContainerSO")]
+#[cfg(feature = "cordl_class_MainEffectContainerSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainEffectContainerSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::MainEffectContainerSO {
         false
     }
 }
-#[cfg(feature = "MainEffectContainerSO")]
+#[cfg(feature = "cordl_class_MainEffectContainerSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MainEffectContainerSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainEffectContainerSO")]
+#[cfg(feature = "cordl_class_MainEffectContainerSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainEffectContainerSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::MainEffectContainerSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainEffectContainerSO")]
+#[cfg(feature = "cordl_class_MainEffectContainerSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainEffectContainerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

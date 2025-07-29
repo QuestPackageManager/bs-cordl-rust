@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusDeeplinkManager")]
+#[cfg(feature = "cordl_class_OculusDeeplinkManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusDeeplinkManager {
@@ -11,7 +11,7 @@ pub struct OculusDeeplinkManager {
     pub _currentDeeplink: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
     pub _oculusPlatformWasInitialized: bool,
 }
-#[cfg(feature = "OculusDeeplinkManager")]
+#[cfg(feature = "cordl_class_OculusDeeplinkManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusDeeplinkManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::OculusDeeplinkManager {
         false
     }
 }
-#[cfg(feature = "OculusDeeplinkManager")]
+#[cfg(feature = "cordl_class_OculusDeeplinkManager")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusDeeplinkManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusDeeplinkManager")]
+#[cfg(feature = "cordl_class_OculusDeeplinkManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusDeeplinkManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -343,7 +343,7 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusDeeplinkManager")]
+#[cfg(feature = "cordl_class_OculusDeeplinkManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusDeeplinkManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

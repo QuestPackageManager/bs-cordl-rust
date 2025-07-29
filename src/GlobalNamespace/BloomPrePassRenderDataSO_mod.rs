@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassRenderDataSO")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRenderDataSO {
@@ -7,7 +7,7 @@ pub struct BloomPrePassRenderDataSO {
         crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
     >,
 }
-#[cfg(feature = "BloomPrePassRenderDataSO")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassRenderDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BloomPrePassRenderDataSO {
         false
     }
 }
-#[cfg(feature = "BloomPrePassRenderDataSO")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRenderDataSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassRenderDataSO")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassRenderDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::BloomPrePassRenderDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassRenderDataSO")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassRenderDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -83,7 +83,7 @@ for crate::GlobalNamespace::BloomPrePassRenderDataSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BloomPrePassRenderDataSO+Data")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO+Data")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRenderDataSO_Data {
@@ -97,7 +97,7 @@ pub struct BloomPrePassRenderDataSO_Data {
     pub stereoCameraEyeOffset: f32,
     pub toneMapping: crate::GlobalNamespace::ToneMapping,
 }
-#[cfg(feature = "BloomPrePassRenderDataSO+Data")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO+Data")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassRenderDataSO_Data {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -117,14 +117,14 @@ for crate::GlobalNamespace::BloomPrePassRenderDataSO_Data {
         false
     }
 }
-#[cfg(feature = "BloomPrePassRenderDataSO+Data")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO+Data")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRenderDataSO_Data {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassRenderDataSO+Data")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO+Data")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassRenderDataSO_Data {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -161,7 +161,7 @@ impl crate::GlobalNamespace::BloomPrePassRenderDataSO_Data {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassRenderDataSO+Data")]
+#[cfg(feature = "cordl_class_BloomPrePassRenderDataSO+Data")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassRenderDataSO_Data {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

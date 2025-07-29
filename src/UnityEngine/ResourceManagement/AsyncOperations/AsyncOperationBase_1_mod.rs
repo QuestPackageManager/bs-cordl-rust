@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncOperationBase_1<TObject: quest_hook::libil2cpp::Type> {
@@ -53,7 +55,9 @@ pub struct AsyncOperationBase_1<TObject: quest_hook::libil2cpp::Type> {
     pub m_UpdateCallback: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1"
+)]
 unsafe impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
     TObject,
@@ -91,7 +95,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
     TObject,
@@ -101,7 +107,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
     TObject,
@@ -2467,7 +2475,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
     TObject,

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+EventSystems+IEndDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IEndDragHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IEndDragHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+EventSystems+IEndDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IEndDragHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::IEndDragHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::EventSystems::IEndDragHandler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IEndDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IEndDragHandler")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::IEndDragHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IEndDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IEndDragHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::IEndDragHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::UnityEngine::EventSystems::IEndDragHandler {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IEndDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IEndDragHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::IEndDragHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

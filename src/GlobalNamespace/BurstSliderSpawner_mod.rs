@@ -1,10 +1,10 @@
-#[cfg(feature = "BurstSliderSpawner")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderSpawner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BurstSliderSpawner")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BurstSliderSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BurstSliderS
         false
     }
 }
-#[cfg(feature = "BurstSliderSpawner")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::BurstSliderSpawner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BurstSliderSpawner")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BurstSliderSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::BurstSliderSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BurstSliderSpawner")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BurstSliderSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -146,13 +146,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BurstSliderSp
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BurstSliderSpawner+ProcessNoteDataDelegate")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner+ProcessNoteDataDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderSpawner_ProcessNoteDataDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "BurstSliderSpawner+ProcessNoteDataDelegate")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner+ProcessNoteDataDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -172,7 +172,7 @@ for crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         false
     }
 }
-#[cfg(feature = "BurstSliderSpawner+ProcessNoteDataDelegate")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner+ProcessNoteDataDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -180,7 +180,7 @@ for crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BurstSliderSpawner+ProcessNoteDataDelegate")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner+ProcessNoteDataDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -351,7 +351,7 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BurstSliderSpawner+ProcessNoteDataDelegate")]
+#[cfg(feature = "cordl_class_BurstSliderSpawner+ProcessNoteDataDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaObjectEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Xml::Schema::XmlSchemaObjectEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectEnumerator")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaObjectEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectEnumerator")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaObjectEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -199,7 +199,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaObjectEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

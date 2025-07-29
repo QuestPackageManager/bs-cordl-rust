@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChainCommand")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderChainCommand {
@@ -22,7 +22,7 @@ pub struct RenderChainCommand {
     pub indexCount: i32,
     pub callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChainCommand")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,7 +42,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChainCommand")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
@@ -53,7 +53,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::RenderChainCommand
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChainCommand")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -239,7 +239,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChainCommand")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

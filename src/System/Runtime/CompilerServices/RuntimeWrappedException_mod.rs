@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeWrappedException")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+RuntimeWrappedException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeWrappedException {
@@ -7,7 +7,7 @@ pub struct RuntimeWrappedException {
         quest_hook::libil2cpp::Il2CppObject,
     >,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeWrappedException")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+RuntimeWrappedException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::RuntimeWrappedException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::System::Runtime::CompilerServices::RuntimeWrappedException {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeWrappedException")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+RuntimeWrappedException")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::RuntimeWrappedException {
     type Target = crate::System::Exception;
@@ -35,7 +35,7 @@ for crate::System::Runtime::CompilerServices::RuntimeWrappedException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeWrappedException")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+RuntimeWrappedException")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::RuntimeWrappedException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -215,7 +215,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeWrappedException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+RuntimeWrappedException")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+RuntimeWrappedException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::RuntimeWrappedException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

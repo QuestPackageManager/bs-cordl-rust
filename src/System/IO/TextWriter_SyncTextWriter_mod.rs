@@ -1,11 +1,11 @@
-#[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
+#[cfg(feature = "cordl_class_System+IO+TextWriter+SyncTextWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextWriter_SyncTextWriter {
     __cordl_parent: crate::System::IO::TextWriter,
     pub _out: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
 }
-#[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
+#[cfg(feature = "cordl_class_System+IO+TextWriter+SyncTextWriter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TextWriter_SyncTextWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::TextWriter_SyncTextWriter {
         false
     }
 }
-#[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
+#[cfg(feature = "cordl_class_System+IO+TextWriter+SyncTextWriter")]
 impl std::ops::Deref for crate::GlobalNamespace::TextWriter_SyncTextWriter {
     type Target = crate::System::IO::TextWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
+#[cfg(feature = "cordl_class_System+IO+TextWriter+SyncTextWriter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextWriter_SyncTextWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -645,7 +645,7 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
+#[cfg(feature = "cordl_class_System+IO+TextWriter+SyncTextWriter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TextWriter_SyncTextWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

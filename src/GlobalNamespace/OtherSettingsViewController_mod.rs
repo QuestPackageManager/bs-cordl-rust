@@ -1,4 +1,4 @@
-#[cfg(feature = "OtherSettingsViewController")]
+#[cfg(feature = "cordl_class_OtherSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OtherSettingsViewController {
@@ -16,7 +16,7 @@ pub struct OtherSettingsViewController {
     >,
     pub _explicitToggleAvailable: bool,
 }
-#[cfg(feature = "OtherSettingsViewController")]
+#[cfg(feature = "cordl_class_OtherSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OtherSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::OtherSettingsViewController {
         false
     }
 }
-#[cfg(feature = "OtherSettingsViewController")]
+#[cfg(feature = "cordl_class_OtherSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::OtherSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OtherSettingsViewController")]
+#[cfg(feature = "cordl_class_OtherSettingsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OtherSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -217,7 +217,7 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OtherSettingsViewController")]
+#[cfg(feature = "cordl_class_OtherSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OtherSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

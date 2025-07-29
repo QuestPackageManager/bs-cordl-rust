@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserPairingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserPairingOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputUserPairingOptions {
@@ -8,7 +8,7 @@ pub enum InputUserPairingOptions {
     None = 0i32,
     UnpairCurrentDevicesFromUser = 8i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserPairingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserPairingOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserPairingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserPairingOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserPairingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserPairingOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserPairingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserPairingOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserPairingOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserPairingOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUserPairingOptions {
     type Actual = Self;

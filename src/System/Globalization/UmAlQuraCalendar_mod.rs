@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UmAlQuraCalendar {
     __cordl_parent: crate::System::Globalization::Calendar,
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::UmAlQuraCalendar {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Globalization::UmAlQuraCalendar {
         false
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar")]
 impl std::ops::Deref for crate::System::Globalization::UmAlQuraCalendar {
     type Target = crate::System::Globalization::Calendar;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar")]
 impl std::ops::DerefMut for crate::System::Globalization::UmAlQuraCalendar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -776,7 +776,7 @@ impl crate::System::Globalization::UmAlQuraCalendar {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Globalization::UmAlQuraCalendar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -786,14 +786,14 @@ for crate::System::Globalization::UmAlQuraCalendar {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar+DateMapping")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UmAlQuraCalendar_DateMapping {
     pub HijriMonthsLengthFlags: i32,
     pub GregorianDate: crate::System::DateTime,
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Held<'a> = Self;
@@ -823,7 +823,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Type = Self;
@@ -834,7 +834,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Actual = Self;
@@ -848,7 +848,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
         self
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Type = Self;
@@ -863,7 +863,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
         }
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Actual = Self;
@@ -877,7 +877,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
+#[cfg(feature = "cordl_class_System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Type = Self;

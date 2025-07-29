@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AnimatorRecorderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorRecorderMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimatorRecorderMode {
@@ -7,7 +7,7 @@ pub enum AnimatorRecorderMode {
     Playback = 1i32,
     Record = 2i32,
 }
-#[cfg(feature = "UnityEngine+AnimatorRecorderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorRecorderMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimatorRecorderMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimatorRecorder
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorRecorderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorRecorderMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AnimatorRecorderMode {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::AnimatorRecorderMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorRecorderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorRecorderMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AnimatorRecorderMode {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::AnimatorRecorderMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorRecorderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorRecorderMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AnimatorRecorderMode {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::AnimatorRecorderMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorRecorderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorRecorderMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AnimatorRecorderMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

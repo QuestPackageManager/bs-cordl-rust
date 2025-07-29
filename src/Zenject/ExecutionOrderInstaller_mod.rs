@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ExecutionOrderInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ExecutionOrderInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExecutionOrderInstaller {
@@ -16,7 +16,7 @@ pub struct ExecutionOrderInstaller {
         >,
     >,
 }
-#[cfg(feature = "Zenject+ExecutionOrderInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ExecutionOrderInstaller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ExecutionOrderInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ExecutionOrderInstal
         false
     }
 }
-#[cfg(feature = "Zenject+ExecutionOrderInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ExecutionOrderInstaller")]
 impl std::ops::Deref for crate::Zenject::ExecutionOrderInstaller {
     type Target = crate::Zenject::Installer_2<
         quest_hook::libil2cpp::Gc<
@@ -49,7 +49,7 @@ impl std::ops::Deref for crate::Zenject::ExecutionOrderInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ExecutionOrderInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ExecutionOrderInstaller")]
 impl std::ops::DerefMut for crate::Zenject::ExecutionOrderInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -192,7 +192,7 @@ impl crate::Zenject::ExecutionOrderInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ExecutionOrderInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ExecutionOrderInstaller")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ExecutionOrderInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

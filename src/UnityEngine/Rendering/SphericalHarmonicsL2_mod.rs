@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SphericalHarmonicsL2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SphericalHarmonicsL2 {
@@ -30,7 +30,7 @@ pub struct SphericalHarmonicsL2 {
     pub shb7: f32,
     pub shb8: f32,
 }
-#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SphericalHarmonicsL2")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
     type Held<'a> = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SphericalHarmonicsL2")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
     type Type = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SphericalHarmonicsL2")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
     type Actual = Self;
@@ -85,7 +85,7 @@ for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SphericalHarmonicsL2")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
     type Type = Self;
@@ -100,7 +100,7 @@ for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SphericalHarmonicsL2")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
     type Actual = Self;
@@ -114,7 +114,7 @@ for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SphericalHarmonicsL2")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
     type Type = Self;

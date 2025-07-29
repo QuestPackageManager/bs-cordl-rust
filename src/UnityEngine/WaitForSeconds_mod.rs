@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+WaitForSeconds")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForSeconds")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaitForSeconds {
     __cordl_parent: crate::UnityEngine::YieldInstruction,
     pub m_Seconds: f32,
 }
-#[cfg(feature = "UnityEngine+WaitForSeconds")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForSeconds")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WaitForSeconds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WaitForSeconds {
         false
     }
 }
-#[cfg(feature = "UnityEngine+WaitForSeconds")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForSeconds")]
 impl std::ops::Deref for crate::UnityEngine::WaitForSeconds {
     type Target = crate::UnityEngine::YieldInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+WaitForSeconds")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForSeconds")]
 impl std::ops::DerefMut for crate::UnityEngine::WaitForSeconds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::UnityEngine::WaitForSeconds {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+WaitForSeconds")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForSeconds")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::WaitForSeconds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

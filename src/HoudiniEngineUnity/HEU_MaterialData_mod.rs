@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_MaterialData {
@@ -7,7 +7,7 @@ pub struct HEU_MaterialData {
     pub _materialSource: crate::HoudiniEngineUnity::HEU_MaterialData_Source,
     pub _materialKey: i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_MaterialData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Mater
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_MaterialData {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_MaterialData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -364,7 +364,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_MaterialData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -401,7 +401,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData+Source")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_MaterialData_Source {
@@ -411,7 +411,7 @@ pub enum HEU_MaterialData_Source {
     SUBSTANCE = 3i32,
     UNITY = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData+Source")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
     type Held<'a> = Self;
@@ -441,7 +441,7 @@ for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData+Source")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
     type Type = Self;
@@ -452,7 +452,7 @@ for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData+Source")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
     type Actual = Self;
@@ -466,7 +466,7 @@ for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData+Source")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
     type Type = Self;
@@ -481,7 +481,7 @@ for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_MaterialData+Source")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
     type Actual = Self;

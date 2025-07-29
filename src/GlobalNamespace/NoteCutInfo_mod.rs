@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteCutInfo")]
+#[cfg(feature = "cordl_class_NoteCutInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NoteCutInfo {
@@ -24,7 +24,7 @@ pub struct NoteCutInfo {
         crate::GlobalNamespace::ISaberMovementData,
     >,
 }
-#[cfg(feature = "NoteCutInfo")]
+#[cfg(feature = "cordl_class_NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutInfo 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteCutInfo")]
+#[cfg(feature = "cordl_class_NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteCutInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteCutI
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteCutInfo")]
+#[cfg(feature = "cordl_class_NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteCutInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteCut
         self
     }
 }
-#[cfg(feature = "NoteCutInfo")]
+#[cfg(feature = "cordl_class_NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteCutInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteCutI
         }
     }
 }
-#[cfg(feature = "NoteCutInfo")]
+#[cfg(feature = "cordl_class_NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteCutInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -103,7 +103,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteCutInf
         actual
     }
 }
-#[cfg(feature = "NoteCutInfo")]
+#[cfg(feature = "cordl_class_NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::NoteCutInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -269,7 +269,7 @@ impl crate::GlobalNamespace::NoteCutInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteCutInfo+FailReason")]
+#[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteCutInfo_FailReason {
@@ -280,7 +280,7 @@ pub enum NoteCutInfo_FailReason {
     WrongColor = 2i32,
     WrongDirection = 4i32,
 }
-#[cfg(feature = "NoteCutInfo+FailReason")]
+#[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Held<'a> = Self;
@@ -310,7 +310,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteCutInfo+FailReason")]
+#[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Type = Self;
@@ -321,7 +321,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteCutInfo+FailReason")]
+#[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Actual = Self;
@@ -335,7 +335,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
         self
     }
 }
-#[cfg(feature = "NoteCutInfo+FailReason")]
+#[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Type = Self;
@@ -350,7 +350,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
         }
     }
 }
-#[cfg(feature = "NoteCutInfo+FailReason")]
+#[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Actual = Self;

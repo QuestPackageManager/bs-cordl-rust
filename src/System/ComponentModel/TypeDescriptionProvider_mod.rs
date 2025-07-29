@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+TypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptionProvider {
@@ -10,7 +10,7 @@ pub struct TypeDescriptionProvider {
         crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor,
     >,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptionProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::ComponentModel::TypeDescriptionProvider {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptionProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider")]
 impl std::ops::DerefMut for crate::System::ComponentModel::TypeDescriptionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -393,7 +393,7 @@ impl crate::System::ComponentModel::TypeDescriptionProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptionProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -404,7 +404,7 @@ for crate::System::ComponentModel::TypeDescriptionProvider {
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -412,7 +412,7 @@ pub struct TypeDescriptionProvider_EmptyCustomTypeDescriptor {
     __cordl_parent: crate::System::ComponentModel::CustomTypeDescriptor,
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor {
@@ -434,7 +434,7 @@ for crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescri
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor {
@@ -444,7 +444,7 @@ for crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescri
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor {
@@ -486,7 +486,7 @@ impl crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescr
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor {

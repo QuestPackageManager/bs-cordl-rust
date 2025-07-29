@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteJumpSpeedEventData")]
+#[cfg(feature = "cordl_class_NoteJumpSpeedEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpSpeedEventData {
@@ -7,7 +7,7 @@ pub struct NoteJumpSpeedEventData {
     pub easeType: crate::GlobalNamespace::EaseType,
     pub usePreviousValue: bool,
 }
-#[cfg(feature = "NoteJumpSpeedEventData")]
+#[cfg(feature = "cordl_class_NoteJumpSpeedEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteJumpSpeedEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::NoteJumpSpeedEventData {
         false
     }
 }
-#[cfg(feature = "NoteJumpSpeedEventData")]
+#[cfg(feature = "cordl_class_NoteJumpSpeedEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpSpeedEventData {
     type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteJumpSpeedEventData")]
+#[cfg(feature = "cordl_class_NoteJumpSpeedEventData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteJumpSpeedEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -218,7 +218,7 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteJumpSpeedEventData")]
+#[cfg(feature = "cordl_class_NoteJumpSpeedEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoteJumpSpeedEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

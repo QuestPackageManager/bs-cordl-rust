@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithAbuseReportRecording")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAbuseReportRecording")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithAbuseReportRecording {
@@ -6,7 +6,7 @@ pub struct MessageWithAbuseReportRecording {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AbuseReportRecording>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAbuseReportRecording")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAbuseReportRecording")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithAbuseReportRecording {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithAbuseReportRecording {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAbuseReportRecording")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAbuseReportRecording")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithAbuseReportRecording {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AbuseReportRecording>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithAbuseReportRecordin
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAbuseReportRecording")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAbuseReportRecording")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithAbuseReportRecording {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithAbuseReportRecording {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAbuseReportRecording")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAbuseReportRecording")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithAbuseReportRecording {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

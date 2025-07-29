@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TriangulationContext {
@@ -27,7 +27,7 @@ pub struct TriangulationContext {
     pub _StepCount_k__BackingField: i32,
     pub _IsDebugEnabled_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,14 +47,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -553,7 +553,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

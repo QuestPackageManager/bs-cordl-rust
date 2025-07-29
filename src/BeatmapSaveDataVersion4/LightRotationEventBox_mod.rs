@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEventBox")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LightRotationEventBox {
@@ -11,7 +11,7 @@ pub struct LightRotationEventBox {
     pub a: crate::BeatmapSaveDataCommon::Axis,
     pub f: i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEventBox")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEventBox")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEventBox")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEventBox")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEventBox")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
         actual
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEventBox")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightRotationEventBox")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapSaveDataVersion4::LightRotationEventBox {
     type Type = Self;

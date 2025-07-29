@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithDestinationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithDestinationList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithDestinationList {
@@ -6,7 +6,7 @@ pub struct MessageWithDestinationList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithDestinationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithDestinationList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithDestinationList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithDestinationList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithDestinationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithDestinationList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithDestinationList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithDestinationList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithDestinationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithDestinationList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithDestinationList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithDestinationList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithDestinationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithDestinationList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithDestinationList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

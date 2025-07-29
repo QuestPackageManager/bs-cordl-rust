@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+MatchTargetWeightMask")]
+#[cfg(feature = "cordl_class_UnityEngine+MatchTargetWeightMask")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MatchTargetWeightMask {
     pub m_PositionXYZWeight: crate::UnityEngine::Vector3,
     pub m_RotationWeight: f32,
 }
-#[cfg(feature = "UnityEngine+MatchTargetWeightMask")]
+#[cfg(feature = "cordl_class_UnityEngine+MatchTargetWeightMask")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MatchTargetWeightMask {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MatchTargetWeigh
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+MatchTargetWeightMask")]
+#[cfg(feature = "cordl_class_UnityEngine+MatchTargetWeightMask")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::MatchTargetWeightMask {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::MatchTargetWeightMask {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+MatchTargetWeightMask")]
+#[cfg(feature = "cordl_class_UnityEngine+MatchTargetWeightMask")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::MatchTargetWeightMask {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::MatchTargetWeightMask {
         self
     }
 }
-#[cfg(feature = "UnityEngine+MatchTargetWeightMask")]
+#[cfg(feature = "cordl_class_UnityEngine+MatchTargetWeightMask")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::MatchTargetWeightMask {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::MatchTargetWeightMask {
         }
     }
 }
-#[cfg(feature = "UnityEngine+MatchTargetWeightMask")]
+#[cfg(feature = "cordl_class_UnityEngine+MatchTargetWeightMask")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::MatchTargetWeightMask {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::MatchTargetWei
         actual
     }
 }
-#[cfg(feature = "UnityEngine+MatchTargetWeightMask")]
+#[cfg(feature = "cordl_class_UnityEngine+MatchTargetWeightMask")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::MatchTargetWeightMask {
     type Type = Self;

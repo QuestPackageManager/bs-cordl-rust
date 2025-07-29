@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf12")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DecCalc_Decimal_Buf12 {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf12")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf12 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf12
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf12")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DecCalc_Decimal_Buf12 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DecCalc_Decimal_B
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf12")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DecCalc_Decimal_Buf12 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DecCalc_Decimal_
         self
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf12")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DecCalc_Decimal_Buf12 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DecCalc_Decimal_B
         }
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf12")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_Buf12 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_Buf
         actual
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf12")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::DecCalc_Decimal_Buf12 {
     type Type = Self;
@@ -183,13 +183,13 @@ impl crate::System::DecCalc_Decimal_Buf12 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf16")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DecCalc_Decimal_Buf16 {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf16")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf16 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -218,7 +218,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf16
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf16")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DecCalc_Decimal_Buf16 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -228,7 +228,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DecCalc_Decimal_B
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf16")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DecCalc_Decimal_Buf16 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -241,7 +241,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DecCalc_Decimal_
         self
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf16")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DecCalc_Decimal_Buf16 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -255,7 +255,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DecCalc_Decimal_B
         }
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf16")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_Buf16 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -268,7 +268,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_Buf
         actual
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf16")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::DecCalc_Decimal_Buf16 {
     type Type = Self;
@@ -368,13 +368,13 @@ impl crate::System::DecCalc_Decimal_Buf16 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf24")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf24")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DecCalc_Decimal_Buf24 {
     padding: quest_hook::libil2cpp::ValueTypePadding<24usize>,
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf24")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf24")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf24 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -403,7 +403,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf24
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf24")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf24")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DecCalc_Decimal_Buf24 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -413,7 +413,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DecCalc_Decimal_B
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf24")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf24")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DecCalc_Decimal_Buf24 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -426,7 +426,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DecCalc_Decimal_
         self
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf24")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf24")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DecCalc_Decimal_Buf24 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -440,7 +440,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DecCalc_Decimal_B
         }
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf24")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf24")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_Buf24 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -453,7 +453,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_Buf
         actual
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+Buf24")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf24")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::DecCalc_Decimal_Buf24 {
     type Type = Self;
@@ -562,14 +562,14 @@ impl crate::System::DecCalc_Decimal_Buf24 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+PowerOvfl")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DecCalc_Decimal_PowerOvfl {
     pub Hi: u32,
     pub MidLo: u64,
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+PowerOvfl")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_PowerOvfl {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -598,7 +598,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Power
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+PowerOvfl")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::DecCalc_Decimal_PowerOvfl {
     type Type = Self;
@@ -609,7 +609,7 @@ for crate::System::DecCalc_Decimal_PowerOvfl {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+PowerOvfl")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::DecCalc_Decimal_PowerOvfl {
     type Actual = Self;
@@ -623,7 +623,7 @@ for crate::System::DecCalc_Decimal_PowerOvfl {
         self
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+PowerOvfl")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::DecCalc_Decimal_PowerOvfl {
     type Type = Self;
@@ -638,7 +638,7 @@ for crate::System::DecCalc_Decimal_PowerOvfl {
         }
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+PowerOvfl")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_PowerOvfl {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -651,7 +651,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_Pow
         actual
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+PowerOvfl")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::DecCalc_Decimal_PowerOvfl {
     type Type = Self;
@@ -693,7 +693,7 @@ impl crate::System::DecCalc_Decimal_PowerOvfl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+RoundingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DecCalc_Decimal_RoundingMode {
@@ -704,7 +704,7 @@ pub enum DecCalc_Decimal_RoundingMode {
     ToEven = 0i32,
     Truncate = 2i32,
 }
-#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_RoundingMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -733,7 +733,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Round
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::DecCalc_Decimal_RoundingMode {
     type Type = Self;
@@ -744,7 +744,7 @@ for crate::System::DecCalc_Decimal_RoundingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::DecCalc_Decimal_RoundingMode {
     type Actual = Self;
@@ -758,7 +758,7 @@ for crate::System::DecCalc_Decimal_RoundingMode {
         self
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::DecCalc_Decimal_RoundingMode {
     type Type = Self;
@@ -773,7 +773,7 @@ for crate::System::DecCalc_Decimal_RoundingMode {
         }
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::DecCalc_Decimal_RoundingMode {
     type Actual = Self;
@@ -787,13 +787,13 @@ for crate::System::DecCalc_Decimal_RoundingMode {
         actual
     }
 }
-#[cfg(feature = "System+Decimal")]
+#[cfg(feature = "cordl_class_System+Decimal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Decimal {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "System+Decimal")]
+#[cfg(feature = "cordl_class_System+Decimal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Decimal {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -822,7 +822,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Decimal {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Decimal")]
+#[cfg(feature = "cordl_class_System+Decimal")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Decimal {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -832,7 +832,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Decimal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Decimal")]
+#[cfg(feature = "cordl_class_System+Decimal")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Decimal {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -845,7 +845,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Decimal {
         self
     }
 }
-#[cfg(feature = "System+Decimal")]
+#[cfg(feature = "cordl_class_System+Decimal")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Decimal {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -859,7 +859,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Decimal {
         }
     }
 }
-#[cfg(feature = "System+Decimal")]
+#[cfg(feature = "cordl_class_System+Decimal")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Decimal {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -872,7 +872,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Decimal {
         actual
     }
 }
-#[cfg(feature = "System+Decimal")]
+#[cfg(feature = "cordl_class_System+Decimal")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Decimal {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -3436,13 +3436,13 @@ for crate::System::Decimal {
         todo!()
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Decimal_DecCalc {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Decimal_DecCalc {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3471,7 +3471,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Decimal_DecCalc {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Decimal_DecCalc {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3481,7 +3481,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Decimal_DecCalc {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Decimal_DecCalc {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3494,7 +3494,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Decimal_DecCalc 
         self
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Decimal_DecCalc {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3508,7 +3508,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Decimal_DecCalc {
         }
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Decimal_DecCalc {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3521,7 +3521,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Decimal_DecCalc {
         actual
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "cordl_class_System+Decimal+DecCalc")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Decimal_DecCalc {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

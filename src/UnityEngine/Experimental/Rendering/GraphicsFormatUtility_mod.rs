@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphicsFormatUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -576,7 +576,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

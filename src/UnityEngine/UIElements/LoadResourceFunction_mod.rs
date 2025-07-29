@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+LoadResourceFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LoadResourceFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LoadResourceFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UIElements+LoadResourceFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LoadResourceFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::LoadResourceFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::LoadResourceFunction {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LoadResourceFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LoadResourceFunction")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::LoadResourceFunction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LoadResourceFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LoadResourceFunction")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::LoadResourceFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -119,7 +119,7 @@ impl crate::UnityEngine::UIElements::LoadResourceFunction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LoadResourceFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LoadResourceFunction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::LoadResourceFunction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

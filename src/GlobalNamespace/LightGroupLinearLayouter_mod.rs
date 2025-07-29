@@ -1,4 +1,4 @@
-#[cfg(feature = "LightGroupLinearLayouter")]
+#[cfg(feature = "cordl_class_LightGroupLinearLayouter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupLinearLayouter {
@@ -7,7 +7,7 @@ pub struct LightGroupLinearLayouter {
     pub _defaultRotation: crate::UnityEngine::Vector3,
     pub _startFromCenter: bool,
 }
-#[cfg(feature = "LightGroupLinearLayouter")]
+#[cfg(feature = "cordl_class_LightGroupLinearLayouter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightGroupLinearLayouter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::LightGroupLinearLayouter {
         false
     }
 }
-#[cfg(feature = "LightGroupLinearLayouter")]
+#[cfg(feature = "cordl_class_LightGroupLinearLayouter")]
 impl std::ops::Deref for crate::GlobalNamespace::LightGroupLinearLayouter {
     type Target = crate::GlobalNamespace::LightGroupSubsystem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightGroupLinearLayouter")]
+#[cfg(feature = "cordl_class_LightGroupLinearLayouter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightGroupLinearLayouter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::LightGroupLinearLayouter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightGroupLinearLayouter")]
+#[cfg(feature = "cordl_class_LightGroupLinearLayouter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightGroupLinearLayouter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

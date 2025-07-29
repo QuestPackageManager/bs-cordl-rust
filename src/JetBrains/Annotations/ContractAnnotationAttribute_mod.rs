@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+ContractAnnotationAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ContractAnnotationAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContractAnnotationAttribute {
@@ -8,7 +8,7 @@ pub struct ContractAnnotationAttribute {
     >,
     pub _ForceFullStates_k__BackingField: bool,
 }
-#[cfg(feature = "JetBrains+Annotations+ContractAnnotationAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ContractAnnotationAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::ContractAnnotationAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::JetBrains::Annotations::ContractAnnotationAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ContractAnnotationAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ContractAnnotationAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::ContractAnnotationAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ContractAnnotationAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ContractAnnotationAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::ContractAnnotationAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -217,7 +217,7 @@ impl crate::JetBrains::Annotations::ContractAnnotationAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ContractAnnotationAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ContractAnnotationAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::ContractAnnotationAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

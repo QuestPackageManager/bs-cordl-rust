@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+FlexDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FlexDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FlexDirection {
@@ -8,7 +8,7 @@ pub enum FlexDirection {
     Row = 2i32,
     RowReverse = 3i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+FlexDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FlexDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::FlexDirection {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::UIElements::FlexDirection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FlexDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FlexDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::FlexDirection {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::FlexDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FlexDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FlexDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::FlexDirection {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::FlexDirection {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FlexDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FlexDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::FlexDirection {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::FlexDirection {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FlexDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FlexDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::FlexDirection {
     type Actual = Self;

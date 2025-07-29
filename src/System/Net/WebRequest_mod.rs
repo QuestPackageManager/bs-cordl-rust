@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+WebRequest")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequest {
@@ -15,7 +15,7 @@ pub struct WebRequest {
         crate::System::Net::Cache::RequestCacheBinding,
     >,
 }
-#[cfg(feature = "System+Net+WebRequest")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebRequest {
         false
     }
 }
-#[cfg(feature = "System+Net+WebRequest")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest")]
 impl std::ops::Deref for crate::System::Net::WebRequest {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebRequest")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest")]
 impl std::ops::DerefMut for crate::System::Net::WebRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1237,7 +1237,7 @@ impl crate::System::Net::WebRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebRequest")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1260,13 +1260,13 @@ for crate::System::Net::WebRequest {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest+DesignerWebRequestCreate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequest_DesignerWebRequestCreate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest+DesignerWebRequestCreate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1286,14 +1286,14 @@ for crate::System::Net::WebRequest_DesignerWebRequestCreate {
         false
     }
 }
-#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest+DesignerWebRequestCreate")]
 impl std::ops::Deref for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest+DesignerWebRequestCreate")]
 impl std::ops::DerefMut for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1358,7 +1358,7 @@ impl crate::System::Net::WebRequest_DesignerWebRequestCreate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
+#[cfg(feature = "cordl_class_System+Net+WebRequest+DesignerWebRequestCreate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

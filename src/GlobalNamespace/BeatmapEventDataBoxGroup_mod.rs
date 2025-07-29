@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapEventDataBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEventDataBoxGroup {
@@ -27,7 +27,7 @@ pub struct BeatmapEventDataBoxGroup {
         >,
     >,
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,14 +47,14 @@ for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
         false
     }
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -346,7 +346,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -384,7 +384,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup+ElementData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEventDataBoxGroup_ElementData {
@@ -406,7 +406,7 @@ pub struct BeatmapEventDataBoxGroup_ElementData {
         crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
     >,
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup+ElementData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -426,14 +426,14 @@ for crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
         false
     }
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup+ElementData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup+ElementData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -671,7 +671,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup+ElementData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

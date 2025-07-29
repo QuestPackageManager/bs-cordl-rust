@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithAssetDetailsList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAssetDetailsList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithAssetDetailsList {
@@ -6,7 +6,7 @@ pub struct MessageWithAssetDetailsList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetailsList>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAssetDetailsList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAssetDetailsList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithAssetDetailsList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithAssetDetailsList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAssetDetailsList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAssetDetailsList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithAssetDetailsList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetailsList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithAssetDetailsList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAssetDetailsList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAssetDetailsList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithAssetDetailsList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithAssetDetailsList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithAssetDetailsList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAssetDetailsList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithAssetDetailsList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+RegularExpressions+RegexInterpreter")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexInterpreter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexInterpreter {
@@ -12,7 +12,7 @@ pub struct RegexInterpreter {
     pub _rightToLeft: bool,
     pub _caseInsensitive: bool,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexInterpreter")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexInterpreter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexInterpreter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::System::Text::RegularExpressions::RegexInterpreter {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexInterpreter")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexInterpreter")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexInterpreter {
     type Target = crate::System::Text::RegularExpressions::RegexRunner;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexInterpreter")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexInterpreter")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexInterpreter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -925,7 +925,7 @@ impl crate::System::Text::RegularExpressions::RegexInterpreter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexInterpreter")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexInterpreter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::RegexInterpreter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

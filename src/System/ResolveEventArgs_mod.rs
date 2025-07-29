@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ResolveEventArgs")]
+#[cfg(feature = "cordl_class_System+ResolveEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResolveEventArgs {
@@ -10,7 +10,7 @@ pub struct ResolveEventArgs {
         crate::System::Reflection::Assembly,
     >,
 }
-#[cfg(feature = "System+ResolveEventArgs")]
+#[cfg(feature = "cordl_class_System+ResolveEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ResolveEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ResolveEventArgs {
         false
     }
 }
-#[cfg(feature = "System+ResolveEventArgs")]
+#[cfg(feature = "cordl_class_System+ResolveEventArgs")]
 impl std::ops::Deref for crate::System::ResolveEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ResolveEventArgs")]
+#[cfg(feature = "cordl_class_System+ResolveEventArgs")]
 impl std::ops::DerefMut for crate::System::ResolveEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -155,7 +155,7 @@ impl crate::System::ResolveEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ResolveEventArgs")]
+#[cfg(feature = "cordl_class_System+ResolveEventArgs")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ResolveEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

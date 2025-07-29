@@ -1,10 +1,14 @@
-#[cfg(feature = "Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks")]
+#[cfg(
+    feature = "cordl_class_Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionExecutionDomainCallbacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks")]
+#[cfg(
+    feature = "cordl_class_Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
         false
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks")]
+#[cfg(
+    feature = "cordl_class_Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks"
+)]
 impl std::ops::Deref
 for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks")]
+#[cfg(
+    feature = "cordl_class_Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks"
+)]
 impl std::ops::DerefMut
 for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -98,7 +106,9 @@ impl crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks")]
+#[cfg(
+    feature = "cordl_class_Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

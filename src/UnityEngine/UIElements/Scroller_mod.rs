@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Scroller")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller {
@@ -14,7 +14,7 @@ pub struct Scroller {
         crate::UnityEngine::UIElements::RepeatButton,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Scroller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Scro
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller {
     type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -662,7 +662,7 @@ impl crate::UnityEngine::UIElements::Scroller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scroller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -671,13 +671,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+ScrollerSlider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller_ScrollerSlider {
     __cordl_parent: crate::UnityEngine::UIElements::Slider,
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+ScrollerSlider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -697,14 +697,14 @@ for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+ScrollerSlider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
     type Target = crate::UnityEngine::UIElements::Slider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+ScrollerSlider")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -779,7 +779,7 @@ impl crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+ScrollerSlider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -789,7 +789,7 @@ for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller_UxmlFactory {
@@ -798,7 +798,7 @@ pub struct Scroller_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -818,7 +818,7 @@ for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller>,
@@ -828,7 +828,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -865,7 +865,7 @@ impl crate::UnityEngine::UIElements::Scroller_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -875,7 +875,7 @@ for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller_UxmlTraits {
@@ -895,7 +895,7 @@ pub struct Scroller_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -915,14 +915,14 @@ for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -995,7 +995,7 @@ impl crate::UnityEngine::UIElements::Scroller_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

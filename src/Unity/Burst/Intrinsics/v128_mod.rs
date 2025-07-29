@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+Intrinsics+v128")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+v128")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct v128 {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+v128")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+v128")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::v128 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::v12
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+v128")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+v128")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::Intrinsics::v128 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::Intrinsics:
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+v128")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+v128")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::Intrinsics::v128 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::Intrinsics
         self
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+v128")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+v128")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::Intrinsics::v128 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::Intrinsics:
         }
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+v128")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+v128")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::Intrinsics::v128 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::Intrinsics::v
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+v128")]
+#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+v128")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::Intrinsics::v128 {
     type Type = Self;

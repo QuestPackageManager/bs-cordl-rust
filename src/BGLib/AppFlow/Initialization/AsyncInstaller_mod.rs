@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::AppFlow::Initialization::AsyncInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstaller {
         false
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller")]
 impl std::ops::DerefMut for crate::BGLib::AppFlow::Initialization::AsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -140,7 +140,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::AppFlow::Initialization::AsyncInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -150,13 +150,17 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstaller {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry")]
+#[cfg(
+    feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncInstaller_IInstallerRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry")]
+#[cfg(
+    feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -176,7 +180,9 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
         false
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry")]
+#[cfg(
+    feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry"
+)]
 impl std::ops::Deref
 for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -184,7 +190,9 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry")]
+#[cfg(
+    feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry"
+)]
 impl std::ops::DerefMut
 for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -255,7 +263,9 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry")]
+#[cfg(
+    feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

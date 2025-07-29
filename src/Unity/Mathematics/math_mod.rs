@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Mathematics+math")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct math {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Mathematics+math")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::math {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::math {
         false
     }
 }
-#[cfg(feature = "Unity+Mathematics+math")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math")]
 impl std::ops::Deref for crate::Unity::Mathematics::math {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Mathematics+math")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math")]
 impl std::ops::DerefMut for crate::Unity::Mathematics::math {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -49995,7 +49995,7 @@ impl crate::Unity::Mathematics::math {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Mathematics+math")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Mathematics::math {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -50004,13 +50004,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Mathematics::math {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+IntFloatUnion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct math_IntFloatUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
-#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Held<'a> = Self;
@@ -50040,7 +50040,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Type = Self;
@@ -50051,7 +50051,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Actual = Self;
@@ -50065,7 +50065,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Type = Self;
@@ -50080,7 +50080,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Actual = Self;
@@ -50094,7 +50094,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Type = Self;
@@ -50107,13 +50107,13 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
 }
 #[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
 impl crate::Unity::Mathematics::math_IntFloatUnion {}
-#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+LongDoubleUnion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct math_LongDoubleUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Held<'a> = Self;
@@ -50143,7 +50143,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Type = Self;
@@ -50154,7 +50154,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Actual = Self;
@@ -50168,7 +50168,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Type = Self;
@@ -50183,7 +50183,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Actual = Self;
@@ -50197,7 +50197,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Type = Self;
@@ -50210,7 +50210,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
 }
 #[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
 impl crate::Unity::Mathematics::math_LongDoubleUnion {}
-#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+RotationOrder")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum math_RotationOrder {
@@ -50222,7 +50222,7 @@ pub enum math_RotationOrder {
     YZX = 3u8,
     ZYX = 5u8,
 }
-#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::math_RotationOrder {
     type Held<'a> = Self;
@@ -50252,7 +50252,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::math_RotationOrder {
     type Type = Self;
@@ -50263,7 +50263,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::math_RotationOrder {
     type Actual = Self;
@@ -50277,7 +50277,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::math_RotationOrder {
     type Type = Self;
@@ -50292,7 +50292,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::math_RotationOrder {
     type Actual = Self;
@@ -50306,7 +50306,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+ShuffleComponent")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum math_ShuffleComponent {
@@ -50320,7 +50320,7 @@ pub enum math_ShuffleComponent {
     RightY = 5u8,
     RightZ = 6u8,
 }
-#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Held<'a> = Self;
@@ -50350,7 +50350,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Type = Self;
@@ -50361,7 +50361,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Actual = Self;
@@ -50375,7 +50375,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Type = Self;
@@ -50390,7 +50390,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Actual = Self;

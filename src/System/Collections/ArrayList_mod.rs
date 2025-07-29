@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+ArrayList")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList {
@@ -12,7 +12,7 @@ pub struct ArrayList {
     pub _version: i32,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+ArrayList")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::ArrayList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::ArrayLis
         false
     }
 }
-#[cfg(feature = "System+Collections+ArrayList")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList")]
 impl std::ops::Deref for crate::System::Collections::ArrayList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ArrayList")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList")]
 impl std::ops::DerefMut for crate::System::Collections::ArrayList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -997,7 +997,7 @@ impl crate::System::Collections::ArrayList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+ArrayList")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::ArrayList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1058,13 +1058,13 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::ArrayList 
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListDebugView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList_ArrayListDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListDebugView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::ArrayList_ArrayListDebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1084,14 +1084,14 @@ for crate::System::Collections::ArrayList_ArrayListDebugView {
         false
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListDebugView")]
 impl std::ops::Deref for crate::System::Collections::ArrayList_ArrayListDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListDebugView")]
 impl std::ops::DerefMut for crate::System::Collections::ArrayList_ArrayListDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1099,7 +1099,7 @@ impl std::ops::DerefMut for crate::System::Collections::ArrayList_ArrayListDebug
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
 impl crate::System::Collections::ArrayList_ArrayListDebugView {}
-#[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListDebugView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::ArrayList_ArrayListDebugView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1109,7 +1109,7 @@ for crate::System::Collections::ArrayList_ArrayListDebugView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListEnumeratorSimple")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList_ArrayListEnumeratorSimple {
@@ -1120,7 +1120,7 @@ pub struct ArrayList_ArrayListEnumeratorSimple {
     pub _currentElement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _isArrayList: bool,
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListEnumeratorSimple")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1140,7 +1140,7 @@ for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
         false
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListEnumeratorSimple")]
 impl std::ops::Deref
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1148,7 +1148,7 @@ for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListEnumeratorSimple")]
 impl std::ops::DerefMut
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1287,7 +1287,7 @@ impl crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListEnumeratorSimple")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

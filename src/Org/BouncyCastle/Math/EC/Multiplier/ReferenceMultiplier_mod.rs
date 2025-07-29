@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReferenceMultiplier {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Multiplier::ReferenceMultiplier {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::ReferenceMultiplier {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::ReferenceMultiplier {
     type Target = crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::ReferenceMultiplier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::ReferenceMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -108,7 +108,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::ReferenceMultiplier {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+ReferenceMultiplier")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Multiplier::ReferenceMultiplier {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

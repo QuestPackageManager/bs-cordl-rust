@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnicodeLineBreakingRules {
@@ -16,7 +16,7 @@ pub struct UnicodeLineBreakingRules {
         crate::System::Collections::Generic::HashSet_1<u32>,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 impl std::ops::DerefMut
 for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -300,7 +300,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonValidatingReader {
@@ -22,7 +22,7 @@ pub struct JsonValidatingReader {
         crate::Newtonsoft::Json::Schema::ValidationEventHandler,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonValidatingReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::Newtonsoft::Json::JsonValidatingReader {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonValidatingReader {
     type Target = crate::Newtonsoft::Json::JsonReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1497,7 +1497,7 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::JsonValidatingReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1521,7 +1521,7 @@ for crate::Newtonsoft::Json::JsonValidatingReader {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonValidatingReader_SchemaScope {
@@ -1552,7 +1552,7 @@ pub struct JsonValidatingReader_SchemaScope {
         crate::Newtonsoft::Json::Linq::JTokenWriter,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1572,14 +1572,14 @@ for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2009,7 +2009,7 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

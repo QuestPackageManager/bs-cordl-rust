@@ -1,4 +1,4 @@
-#[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLightCollisionEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightCollisionEffect {
@@ -19,7 +19,7 @@ pub struct TubeBloomPrePassLightCollisionEffect {
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hitPointState: bool,
 }
-#[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLightCollisionEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
         false
     }
 }
-#[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLightCollisionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLightCollisionEffect")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLightCollisionEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

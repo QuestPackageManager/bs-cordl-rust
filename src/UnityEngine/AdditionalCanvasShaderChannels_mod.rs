@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AdditionalCanvasShaderChannels")]
+#[cfg(feature = "cordl_class_UnityEngine+AdditionalCanvasShaderChannels")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AdditionalCanvasShaderChannels {
@@ -10,7 +10,7 @@ pub enum AdditionalCanvasShaderChannels {
     TexCoord2 = 2i32,
     TexCoord3 = 4i32,
 }
-#[cfg(feature = "UnityEngine+AdditionalCanvasShaderChannels")]
+#[cfg(feature = "cordl_class_UnityEngine+AdditionalCanvasShaderChannels")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AdditionalCanvasShaderChannels {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::AdditionalCanvasShaderChannels {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AdditionalCanvasShaderChannels")]
+#[cfg(feature = "cordl_class_UnityEngine+AdditionalCanvasShaderChannels")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AdditionalCanvasShaderChannels {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::AdditionalCanvasShaderChannels {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AdditionalCanvasShaderChannels")]
+#[cfg(feature = "cordl_class_UnityEngine+AdditionalCanvasShaderChannels")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AdditionalCanvasShaderChannels {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::AdditionalCanvasShaderChannels {
         self
     }
 }
-#[cfg(feature = "UnityEngine+AdditionalCanvasShaderChannels")]
+#[cfg(feature = "cordl_class_UnityEngine+AdditionalCanvasShaderChannels")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AdditionalCanvasShaderChannels {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::AdditionalCanvasShaderChannels {
         }
     }
 }
-#[cfg(feature = "UnityEngine+AdditionalCanvasShaderChannels")]
+#[cfg(feature = "cordl_class_UnityEngine+AdditionalCanvasShaderChannels")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AdditionalCanvasShaderChannels {
     type Actual = Self;

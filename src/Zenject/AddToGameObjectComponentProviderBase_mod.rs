@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+AddToGameObjectComponentProviderBase")]
+#[cfg(feature = "cordl_class_Zenject+AddToGameObjectComponentProviderBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddToGameObjectComponentProviderBase {
@@ -18,7 +18,7 @@ pub struct AddToGameObjectComponentProviderBase {
         >,
     >,
 }
-#[cfg(feature = "Zenject+AddToGameObjectComponentProviderBase")]
+#[cfg(feature = "cordl_class_Zenject+AddToGameObjectComponentProviderBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::AddToGameObjectComponentProviderBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::Zenject::AddToGameObjectComponentProviderBase {
         false
     }
 }
-#[cfg(feature = "Zenject+AddToGameObjectComponentProviderBase")]
+#[cfg(feature = "cordl_class_Zenject+AddToGameObjectComponentProviderBase")]
 impl std::ops::Deref for crate::Zenject::AddToGameObjectComponentProviderBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+AddToGameObjectComponentProviderBase")]
+#[cfg(feature = "cordl_class_Zenject+AddToGameObjectComponentProviderBase")]
 impl std::ops::DerefMut for crate::Zenject::AddToGameObjectComponentProviderBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -371,7 +371,7 @@ impl crate::Zenject::AddToGameObjectComponentProviderBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+AddToGameObjectComponentProviderBase")]
+#[cfg(feature = "cordl_class_Zenject+AddToGameObjectComponentProviderBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::AddToGameObjectComponentProviderBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

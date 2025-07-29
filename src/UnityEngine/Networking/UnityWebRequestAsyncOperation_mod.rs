@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequestAsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequestAsyncOperation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityWebRequestAsyncOperation {
@@ -7,7 +7,7 @@ pub struct UnityWebRequestAsyncOperation {
         crate::UnityEngine::Networking::UnityWebRequest,
     >,
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequestAsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequestAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::UnityWebRequestAsyncOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::Networking::UnityWebRequestAsyncOperation {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequestAsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequestAsyncOperation")]
 impl std::ops::Deref for crate::UnityEngine::Networking::UnityWebRequestAsyncOperation {
     type Target = crate::UnityEngine::AsyncOperation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequestAsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequestAsyncOperation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::UnityWebRequestAsyncOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -129,7 +129,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAsyncOperation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequestAsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequestAsyncOperation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::UnityWebRequestAsyncOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaNodeCollection {
@@ -7,7 +7,7 @@ pub struct JsonSchemaNodeCollection {
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaNode>,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
     type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -37,7 +37,7 @@ impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollecti
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -104,7 +104,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

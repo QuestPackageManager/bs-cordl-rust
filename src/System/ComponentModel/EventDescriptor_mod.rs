@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+EventDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventDescriptor {
     __cordl_parent: crate::System::ComponentModel::MemberDescriptor,
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::EventDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::EventDescriptor {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::EventDescriptor {
     type Target = crate::System::ComponentModel::MemberDescriptor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptor")]
 impl std::ops::DerefMut for crate::System::ComponentModel::EventDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::System::ComponentModel::EventDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+EventDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::EventDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

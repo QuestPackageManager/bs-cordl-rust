@@ -1,4 +1,4 @@
-#[cfg(feature = "DrawIfAttribute")]
+#[cfg(feature = "cordl_class_DrawIfAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DrawIfAttribute {
@@ -8,7 +8,7 @@ pub struct DrawIfAttribute {
     pub orValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
 }
-#[cfg(feature = "DrawIfAttribute")]
+#[cfg(feature = "cordl_class_DrawIfAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DrawIfAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DrawIfAttrib
         false
     }
 }
-#[cfg(feature = "DrawIfAttribute")]
+#[cfg(feature = "cordl_class_DrawIfAttribute")]
 impl std::ops::Deref for crate::GlobalNamespace::DrawIfAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DrawIfAttribute")]
+#[cfg(feature = "cordl_class_DrawIfAttribute")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DrawIfAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::DrawIfAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DrawIfAttribute")]
+#[cfg(feature = "cordl_class_DrawIfAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DrawIfAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -155,7 +155,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DrawIfAttribu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "DrawIfAttribute+DisablingType")]
+#[cfg(feature = "cordl_class_DrawIfAttribute+DisablingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DrawIfAttribute_DisablingType {
@@ -163,7 +163,7 @@ pub enum DrawIfAttribute_DisablingType {
     DontDraw = 1i32,
     ReadOnly = 0i32,
 }
-#[cfg(feature = "DrawIfAttribute+DisablingType")]
+#[cfg(feature = "cordl_class_DrawIfAttribute+DisablingType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
     type Held<'a> = Self;
@@ -193,7 +193,7 @@ for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "DrawIfAttribute+DisablingType")]
+#[cfg(feature = "cordl_class_DrawIfAttribute+DisablingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
     type Type = Self;
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "DrawIfAttribute+DisablingType")]
+#[cfg(feature = "cordl_class_DrawIfAttribute+DisablingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
     type Actual = Self;
@@ -218,7 +218,7 @@ for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
         self
     }
 }
-#[cfg(feature = "DrawIfAttribute+DisablingType")]
+#[cfg(feature = "cordl_class_DrawIfAttribute+DisablingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
     type Type = Self;
@@ -233,7 +233,7 @@ for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
         }
     }
 }
-#[cfg(feature = "DrawIfAttribute+DisablingType")]
+#[cfg(feature = "cordl_class_DrawIfAttribute+DisablingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::DrawIfAttribute_DisablingType {
     type Actual = Self;

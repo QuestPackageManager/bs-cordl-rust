@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerResultsData")]
+#[cfg(feature = "cordl_class_MultiplayerResultsData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsData {
@@ -22,7 +22,7 @@ pub struct MultiplayerResultsData {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerResultsData")]
+#[cfg(feature = "cordl_class_MultiplayerResultsData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerResultsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::MultiplayerResultsData {
         false
     }
 }
-#[cfg(feature = "MultiplayerResultsData")]
+#[cfg(feature = "cordl_class_MultiplayerResultsData")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerResultsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerResultsData")]
+#[cfg(feature = "cordl_class_MultiplayerResultsData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerResultsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -311,7 +311,7 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerResultsData")]
+#[cfg(feature = "cordl_class_MultiplayerResultsData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerResultsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

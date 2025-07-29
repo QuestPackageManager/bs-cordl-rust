@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+AsnEncodedData")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+AsnEncodedData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsnEncodedData {
@@ -6,7 +6,7 @@ pub struct AsnEncodedData {
     pub _oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
     pub _raw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "System+Security+Cryptography+AsnEncodedData")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+AsnEncodedData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::AsnEncodedData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Security::Cryptography::AsnEncodedData {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+AsnEncodedData")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+AsnEncodedData")]
 impl std::ops::Deref for crate::System::Security::Cryptography::AsnEncodedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+AsnEncodedData")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+AsnEncodedData")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::AsnEncodedData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -595,7 +595,7 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+AsnEncodedData")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+AsnEncodedData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::AsnEncodedData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

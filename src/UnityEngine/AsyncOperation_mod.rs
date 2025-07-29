@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncOperation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncOperation {
@@ -10,7 +10,7 @@ pub struct AsyncOperation {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+AsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AsyncOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AsyncOperation {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncOperation")]
 impl std::ops::Deref for crate::UnityEngine::AsyncOperation {
     type Target = crate::UnityEngine::YieldInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncOperation")]
 impl std::ops::DerefMut for crate::UnityEngine::AsyncOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -319,7 +319,7 @@ impl crate::UnityEngine::AsyncOperation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AsyncOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncOperation")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AsyncOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

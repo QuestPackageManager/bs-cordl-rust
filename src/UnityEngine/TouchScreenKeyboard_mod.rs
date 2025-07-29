@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchScreenKeyboard {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TouchScreenKeyboard {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TouchScreenKeybo
         false
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard")]
 impl std::ops::Deref for crate::UnityEngine::TouchScreenKeyboard {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard")]
 impl std::ops::DerefMut for crate::UnityEngine::TouchScreenKeyboard {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -730,7 +730,7 @@ impl crate::UnityEngine::TouchScreenKeyboard {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TouchScreenKeyboard {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -739,7 +739,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TouchScreenKeyboa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+Status")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TouchScreenKeyboard_Status {
@@ -749,7 +749,7 @@ pub enum TouchScreenKeyboard_Status {
     LostFocus = 3i32,
     Visible = 0i32,
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Held<'a> = Self;
@@ -779,7 +779,7 @@ for crate::UnityEngine::TouchScreenKeyboard_Status {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Type = Self;
@@ -790,7 +790,7 @@ for crate::UnityEngine::TouchScreenKeyboard_Status {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Actual = Self;
@@ -804,7 +804,7 @@ for crate::UnityEngine::TouchScreenKeyboard_Status {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Type = Self;
@@ -819,7 +819,7 @@ for crate::UnityEngine::TouchScreenKeyboard_Status {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
+#[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Actual = Self;

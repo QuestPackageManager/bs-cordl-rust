@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+XmlCachedStream")]
+#[cfg(feature = "cordl_class_System+Xml+XmlCachedStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlCachedStream {
     __cordl_parent: crate::System::IO::MemoryStream,
     pub uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
 }
-#[cfg(feature = "System+Xml+XmlCachedStream")]
+#[cfg(feature = "cordl_class_System+Xml+XmlCachedStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlCachedStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlCachedStream 
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlCachedStream")]
+#[cfg(feature = "cordl_class_System+Xml+XmlCachedStream")]
 impl std::ops::Deref for crate::System::Xml::XmlCachedStream {
     type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlCachedStream")]
+#[cfg(feature = "cordl_class_System+Xml+XmlCachedStream")]
 impl std::ops::DerefMut for crate::System::Xml::XmlCachedStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -80,7 +80,7 @@ impl crate::System::Xml::XmlCachedStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlCachedStream")]
+#[cfg(feature = "cordl_class_System+Xml+XmlCachedStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlCachedStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

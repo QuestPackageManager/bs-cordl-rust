@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivationControlPlayable {
@@ -7,7 +7,7 @@ pub struct ActivationControlPlayable {
     pub postPlayback: crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState,
     pub m_InitialState: crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState,
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::ActivationControlPlayable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationControlPlayable {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::ActivationControlPlayable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -267,7 +267,7 @@ impl crate::UnityEngine::Timeline::ActivationControlPlayable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::ActivationControlPlayable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -277,7 +277,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+InitialState"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ActivationControlPlayable_InitialState {
@@ -286,7 +288,9 @@ pub enum ActivationControlPlayable_InitialState {
     Inactive = 2i32,
     Unset = 0i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+InitialState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Held<'a> = Self;
@@ -316,7 +320,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+InitialState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Type = Self;
@@ -327,7 +333,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+InitialState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Actual = Self;
@@ -341,7 +349,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+InitialState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Type = Self;
@@ -356,7 +366,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+InitialState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Actual = Self;
@@ -370,7 +382,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ActivationControlPlayable_PostPlaybackState {
@@ -379,7 +393,9 @@ pub enum ActivationControlPlayable_PostPlaybackState {
     Inactive = 1i32,
     Revert = 2i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Held<'a> = Self;
@@ -409,7 +425,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Type = Self;
@@ -420,7 +438,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Actual = Self;
@@ -434,7 +454,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Type = Self;
@@ -449,7 +471,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Actual = Self;

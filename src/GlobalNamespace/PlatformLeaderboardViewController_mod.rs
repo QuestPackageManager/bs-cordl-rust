@@ -1,4 +1,4 @@
-#[cfg(feature = "PlatformLeaderboardViewController")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardViewController {
@@ -48,7 +48,7 @@ pub struct PlatformLeaderboardViewController {
         >,
     >,
 }
-#[cfg(feature = "PlatformLeaderboardViewController")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -68,14 +68,14 @@ for crate::GlobalNamespace::PlatformLeaderboardViewController {
         false
     }
 }
-#[cfg(feature = "PlatformLeaderboardViewController")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformLeaderboardViewController {
     type Target = crate::GlobalNamespace::LeaderboardViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformLeaderboardViewController")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformLeaderboardViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -567,7 +567,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformLeaderboardViewController")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformLeaderboardViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

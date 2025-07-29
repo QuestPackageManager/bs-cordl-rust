@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DTSweepDebugContext {
@@ -19,7 +19,7 @@ pub struct DTSweepDebugContext {
         crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
     >,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext {
     type Target = crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -440,7 +440,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

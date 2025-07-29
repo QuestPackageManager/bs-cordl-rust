@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineAsset {
@@ -33,7 +33,7 @@ pub struct TimelineAsset {
         crate::UnityEngine::Timeline::MarkerTrack,
     >,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::TimelineAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -52,14 +52,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::Timeli
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1365,7 +1365,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::TimelineAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1416,7 +1416,7 @@ for crate::UnityEngine::Timeline::TimelineAsset {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+DurationMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineAsset_DurationMode {
@@ -1424,7 +1424,7 @@ pub enum TimelineAsset_DurationMode {
     BasedOnClips = 0i32,
     FixedLength = 1i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Held<'a> = Self;
@@ -1454,7 +1454,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Type = Self;
@@ -1465,7 +1465,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Actual = Self;
@@ -1479,7 +1479,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Type = Self;
@@ -1494,7 +1494,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Actual = Self;
@@ -1508,7 +1508,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+EditorSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineAsset_EditorSettings {
@@ -1516,7 +1516,7 @@ pub struct TimelineAsset_EditorSettings {
     pub m_Framerate: f64,
     pub m_ScenePreview: bool,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+EditorSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1536,14 +1536,14 @@ for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+EditorSettings")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+EditorSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1731,7 +1731,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+EditorSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1741,7 +1741,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+MediaType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineAsset_MediaType {
@@ -1753,7 +1753,7 @@ pub enum TimelineAsset_MediaType {
     Script = 3i32,
     Texture = 2i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Held<'a> = Self;
@@ -1783,7 +1783,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Type = Self;
@@ -1794,7 +1794,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Actual = Self;
@@ -1808,7 +1808,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Type = Self;
@@ -1823,7 +1823,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Actual = Self;
@@ -1837,13 +1837,13 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineAsset_TimelineAssetUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1863,7 +1863,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1871,7 +1871,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1880,7 +1880,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 impl crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {}
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1890,14 +1890,14 @@ for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+Versions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineAsset_Versions {
     #[default]
     Initial = 0i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Held<'a> = Self;
@@ -1927,7 +1927,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Type = Self;
@@ -1938,7 +1938,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Actual = Self;
@@ -1952,7 +1952,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Type = Self;
@@ -1967,7 +1967,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Actual = Self;

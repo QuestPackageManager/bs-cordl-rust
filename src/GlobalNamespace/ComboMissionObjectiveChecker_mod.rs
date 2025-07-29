@@ -1,4 +1,4 @@
-#[cfg(feature = "ComboMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_ComboMissionObjectiveChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ComboMissionObjectiveChecker {
@@ -7,7 +7,7 @@ pub struct ComboMissionObjectiveChecker {
         crate::GlobalNamespace::ComboController,
     >,
 }
-#[cfg(feature = "ComboMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_ComboMissionObjectiveChecker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ComboMissionObjectiveChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::ComboMissionObjectiveChecker {
         false
     }
 }
-#[cfg(feature = "ComboMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_ComboMissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::ComboMissionObjectiveChecker {
     type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ComboMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_ComboMissionObjectiveChecker")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ComboMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -139,7 +139,7 @@ impl crate::GlobalNamespace::ComboMissionObjectiveChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ComboMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_ComboMissionObjectiveChecker")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ComboMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

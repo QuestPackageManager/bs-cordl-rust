@@ -1,10 +1,10 @@
-#[cfg(feature = "IAsyncComputeManager")]
+#[cfg(feature = "cordl_class_IAsyncComputeManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IAsyncComputeManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IAsyncComputeManager")]
+#[cfg(feature = "cordl_class_IAsyncComputeManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IAsyncComputeManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IAsyncComputeManager {
         false
     }
 }
-#[cfg(feature = "IAsyncComputeManager")]
+#[cfg(feature = "cordl_class_IAsyncComputeManager")]
 impl std::ops::Deref for crate::GlobalNamespace::IAsyncComputeManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IAsyncComputeManager")]
+#[cfg(feature = "cordl_class_IAsyncComputeManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IAsyncComputeManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -115,7 +115,7 @@ impl crate::GlobalNamespace::IAsyncComputeManager {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IAsyncComputeManager")]
+#[cfg(feature = "cordl_class_IAsyncComputeManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IAsyncComputeManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

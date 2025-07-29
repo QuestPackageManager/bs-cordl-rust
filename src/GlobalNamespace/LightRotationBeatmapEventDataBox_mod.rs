@@ -1,4 +1,4 @@
-#[cfg(feature = "LightRotationBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataBox")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationBeatmapEventDataBox {
@@ -13,7 +13,7 @@ pub struct LightRotationBeatmapEventDataBox {
     pub _rotationStep: f32,
     pub _beatStep: f32,
 }
-#[cfg(feature = "LightRotationBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataBox")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
         false
     }
 }
-#[cfg(feature = "LightRotationBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataBox")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
     type Target = crate::GlobalNamespace::BeatmapEventDataBox;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightRotationBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataBox")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -268,7 +268,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightRotationBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataBox")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

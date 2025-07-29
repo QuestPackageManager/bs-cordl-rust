@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultJsonNameTable {
@@ -13,7 +13,7 @@ pub struct DefaultJsonNameTable {
     >,
     pub _mask: i32,
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::DefaultJsonNameTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::Newtonsoft::Json::DefaultJsonNameTable {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable")]
 impl std::ops::Deref for crate::Newtonsoft::Json::DefaultJsonNameTable {
     type Target = crate::Newtonsoft::Json::JsonNameTable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::DefaultJsonNameTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -235,7 +235,7 @@ impl crate::Newtonsoft::Json::DefaultJsonNameTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::DefaultJsonNameTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -245,7 +245,7 @@ for crate::Newtonsoft::Json::DefaultJsonNameTable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultJsonNameTable_Entry {
@@ -256,7 +256,7 @@ pub struct DefaultJsonNameTable_Entry {
         crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -276,14 +276,14 @@ for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 impl std::ops::Deref for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -343,7 +343,7 @@ impl crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

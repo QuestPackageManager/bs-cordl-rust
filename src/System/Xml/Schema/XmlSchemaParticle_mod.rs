@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaParticle {
@@ -7,7 +7,7 @@ pub struct XmlSchemaParticle {
     pub maxOccurs: crate::System::Decimal,
     pub flags: crate::System::Xml::Schema::XmlSchemaParticle_Occurs,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaParticle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Xml::Schema::XmlSchemaParticle {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaParticle {
     type Target = crate::System::Xml::Schema::XmlSchemaAnnotated;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaParticle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -346,7 +346,7 @@ impl crate::System::Xml::Schema::XmlSchemaParticle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaParticle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -356,7 +356,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle+Occurs")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaParticle_Occurs {
@@ -365,7 +365,7 @@ pub enum XmlSchemaParticle_Occurs {
     Min = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Held<'a> = Self;
@@ -395,7 +395,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Type = Self;
@@ -406,7 +406,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Actual = Self;
@@ -420,7 +420,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Type = Self;
@@ -435,7 +435,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Actual = Self;

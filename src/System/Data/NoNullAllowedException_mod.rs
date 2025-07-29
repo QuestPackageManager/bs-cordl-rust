@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Data+NoNullAllowedException")]
+#[cfg(feature = "cordl_class_System+Data+NoNullAllowedException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoNullAllowedException {
     __cordl_parent: crate::System::Data::DataException,
 }
-#[cfg(feature = "System+Data+NoNullAllowedException")]
+#[cfg(feature = "cordl_class_System+Data+NoNullAllowedException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::NoNullAllowedException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::NoNullAllowedEx
         false
     }
 }
-#[cfg(feature = "System+Data+NoNullAllowedException")]
+#[cfg(feature = "cordl_class_System+Data+NoNullAllowedException")]
 impl std::ops::Deref for crate::System::Data::NoNullAllowedException {
     type Target = crate::System::Data::DataException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+NoNullAllowedException")]
+#[cfg(feature = "cordl_class_System+Data+NoNullAllowedException")]
 impl std::ops::DerefMut for crate::System::Data::NoNullAllowedException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::Data::NoNullAllowedException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+NoNullAllowedException")]
+#[cfg(feature = "cordl_class_System+Data+NoNullAllowedException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::NoNullAllowedException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

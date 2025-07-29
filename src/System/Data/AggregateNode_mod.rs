@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+AggregateNode")]
+#[cfg(feature = "cordl_class_System+Data+AggregateNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AggregateNode {
@@ -12,7 +12,7 @@ pub struct AggregateNode {
     pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     pub _relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
 }
-#[cfg(feature = "System+Data+AggregateNode")]
+#[cfg(feature = "cordl_class_System+Data+AggregateNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::AggregateNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::AggregateNode {
         false
     }
 }
-#[cfg(feature = "System+Data+AggregateNode")]
+#[cfg(feature = "cordl_class_System+Data+AggregateNode")]
 impl std::ops::Deref for crate::System::Data::AggregateNode {
     type Target = crate::System::Data::ExpressionNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+AggregateNode")]
+#[cfg(feature = "cordl_class_System+Data+AggregateNode")]
 impl std::ops::DerefMut for crate::System::Data::AggregateNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -437,7 +437,7 @@ impl crate::System::Data::AggregateNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+AggregateNode")]
+#[cfg(feature = "cordl_class_System+Data+AggregateNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::AggregateNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

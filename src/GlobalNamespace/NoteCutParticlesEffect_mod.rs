@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteCutParticlesEffect")]
+#[cfg(feature = "cordl_class_NoteCutParticlesEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutParticlesEffect {
@@ -19,7 +19,7 @@ pub struct NoteCutParticlesEffect {
     pub _explosionCorePSShapeModule: crate::UnityEngine::ParticleSystem_ShapeModule,
     pub _explosionPrePassBloomPSShapeModule: crate::UnityEngine::ParticleSystem_ShapeModule,
 }
-#[cfg(feature = "NoteCutParticlesEffect")]
+#[cfg(feature = "cordl_class_NoteCutParticlesEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteCutParticlesEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::NoteCutParticlesEffect {
         false
     }
 }
-#[cfg(feature = "NoteCutParticlesEffect")]
+#[cfg(feature = "cordl_class_NoteCutParticlesEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutParticlesEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteCutParticlesEffect")]
+#[cfg(feature = "cordl_class_NoteCutParticlesEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutParticlesEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -162,7 +162,7 @@ impl crate::GlobalNamespace::NoteCutParticlesEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteCutParticlesEffect")]
+#[cfg(feature = "cordl_class_NoteCutParticlesEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoteCutParticlesEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

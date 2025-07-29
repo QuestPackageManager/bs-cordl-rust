@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchControl {
@@ -45,7 +45,7 @@ pub struct TouchControl {
         crate::UnityEngine::InputSystem::Controls::Vector2Control,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::TouchControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -65,7 +65,7 @@ for crate::UnityEngine::InputSystem::Controls::TouchControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::TouchControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::LowLevel::TouchState,
@@ -74,7 +74,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::TouchControl
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::TouchControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1004,7 +1004,7 @@ impl crate::UnityEngine::InputSystem::Controls::TouchControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::TouchControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

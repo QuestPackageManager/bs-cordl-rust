@@ -1,4 +1,4 @@
-#[cfg(feature = "MainMenuMissionInstaller")]
+#[cfg(feature = "cordl_class_MainMenuMissionInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainMenuMissionInstaller {
@@ -7,7 +7,7 @@ pub struct MainMenuMissionInstaller {
         crate::GlobalNamespace::MissionNodesManager,
     >,
 }
-#[cfg(feature = "MainMenuMissionInstaller")]
+#[cfg(feature = "cordl_class_MainMenuMissionInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainMenuMissionInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MainMenuMissionInstaller {
         false
     }
 }
-#[cfg(feature = "MainMenuMissionInstaller")]
+#[cfg(feature = "cordl_class_MainMenuMissionInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MainMenuMissionInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainMenuMissionInstaller")]
+#[cfg(feature = "cordl_class_MainMenuMissionInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainMenuMissionInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::MainMenuMissionInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainMenuMissionInstaller")]
+#[cfg(feature = "cordl_class_MainMenuMissionInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainMenuMissionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

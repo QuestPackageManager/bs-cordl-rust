@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsObjectIdentifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Cms::CmsObjectIdentifiers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::Cms::CmsObjectIdentifiers {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cms::CmsObjectIdentifiers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::CmsObjectIdentifiers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::CmsObjectIdentifiers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+CmsObjectIdentifiers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Cms::CmsObjectIdentifiers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

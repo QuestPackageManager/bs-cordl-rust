@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationTrack {
@@ -22,7 +22,7 @@ pub struct AnimationTrack {
     pub m_Rotation: crate::UnityEngine::Quaternion,
     pub m_ApplyOffsets: bool,
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AnimationTrack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::UnityEngine::Timeline::AnimationTrack {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AnimationTrack {
     type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::AnimationTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2250,7 +2250,7 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::AnimationTrack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2273,13 +2273,13 @@ for crate::UnityEngine::Timeline::AnimationTrack {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationTrack_AnimationTrackUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2299,7 +2299,7 @@ for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2307,7 +2307,7 @@ for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2398,7 +2398,7 @@ impl crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

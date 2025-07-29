@@ -1,4 +1,4 @@
-#[cfg(feature = "SonyPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_SonyPlatformAdditionalContentModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyPlatformAdditionalContentModel {
@@ -22,7 +22,7 @@ pub struct SonyPlatformAdditionalContentModel {
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
 }
-#[cfg(feature = "SonyPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_SonyPlatformAdditionalContentModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         false
     }
 }
-#[cfg(feature = "SonyPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_SonyPlatformAdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     type Target = crate::GlobalNamespace::AdditionalContentModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SonyPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_SonyPlatformAdditionalContentModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -783,7 +783,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SonyPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_SonyPlatformAdditionalContentModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

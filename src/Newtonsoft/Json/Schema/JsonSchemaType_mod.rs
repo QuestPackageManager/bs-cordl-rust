@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonSchemaType {
@@ -13,7 +13,7 @@ pub enum JsonSchemaType {
     Object = 16i32,
     String = 1i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Schema::JsonSchemaType {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Schema::JsonSchemaType {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Schema::JsonSchemaType {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaType {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Schema::JsonSchemaType {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaType {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaType")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Schema::JsonSchemaType {
     type Actual = Self;

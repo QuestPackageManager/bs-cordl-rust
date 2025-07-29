@@ -1,4 +1,4 @@
-#[cfg(feature = "QuestAppInit")]
+#[cfg(feature = "cordl_class_QuestAppInit")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuestAppInit {
@@ -13,7 +13,7 @@ pub struct QuestAppInit {
         crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
     >,
 }
-#[cfg(feature = "QuestAppInit")]
+#[cfg(feature = "cordl_class_QuestAppInit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::QuestAppInit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::QuestAppInit
         false
     }
 }
-#[cfg(feature = "QuestAppInit")]
+#[cfg(feature = "cordl_class_QuestAppInit")]
 impl std::ops::Deref for crate::GlobalNamespace::QuestAppInit {
     type Target = crate::BeatSaber::Init::BSAppInit;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "QuestAppInit")]
+#[cfg(feature = "cordl_class_QuestAppInit")]
 impl std::ops::DerefMut for crate::GlobalNamespace::QuestAppInit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::QuestAppInit {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "QuestAppInit")]
+#[cfg(feature = "cordl_class_QuestAppInit")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuestAppInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

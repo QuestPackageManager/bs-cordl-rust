@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRuleCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthorizationRuleCollection {
     __cordl_parent: crate::System::Collections::ReadOnlyCollectionBase,
 }
-#[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRuleCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::AuthorizationRuleCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Security::AccessControl::AuthorizationRuleCollection {
         false
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRuleCollection")]
 impl std::ops::Deref
 for crate::System::Security::AccessControl::AuthorizationRuleCollection {
     type Target = crate::System::Collections::ReadOnlyCollectionBase;
@@ -32,7 +32,7 @@ for crate::System::Security::AccessControl::AuthorizationRuleCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRuleCollection")]
 impl std::ops::DerefMut
 for crate::System::Security::AccessControl::AuthorizationRuleCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -95,7 +95,7 @@ impl crate::System::Security::AccessControl::AuthorizationRuleCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRuleCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::AccessControl::AuthorizationRuleCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Security+Cryptography+RNGCryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RNGCryptoServiceProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RNGCryptoServiceProvider {
     __cordl_parent: crate::System::Security::Cryptography::RandomNumberGenerator,
     pub _handle: crate::System::IntPtr,
 }
-#[cfg(feature = "System+Security+Cryptography+RNGCryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RNGCryptoServiceProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RNGCryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RNGCryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
     type Target = crate::System::Security::Cryptography::RandomNumberGenerator;
@@ -33,7 +33,7 @@ for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RNGCryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RNGCryptoServiceProvider")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -273,7 +273,7 @@ impl crate::System::Security::Cryptography::RNGCryptoServiceProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RNGCryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RNGCryptoServiceProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+JobMerger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+JobMerger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JobMerger {
@@ -7,7 +7,7 @@ pub struct JobMerger {
     pub m_JobCount: i32,
     pub _disposed_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+JobMerger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+JobMerger")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::JobMerger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::UIR::JobMerger {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+JobMerger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+JobMerger")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::JobMerger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+JobMerger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+JobMerger")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::JobMerger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -215,7 +215,7 @@ impl crate::UnityEngine::UIElements::UIR::JobMerger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+JobMerger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+JobMerger")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::JobMerger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,15 @@
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnmodifiableDictionaryProxy {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionary,
     pub d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProx
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProxy {
     type Target = crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionary;
@@ -33,7 +39,9 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProx
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -326,7 +334,9 @@ impl crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryPro
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

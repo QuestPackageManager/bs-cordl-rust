@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Iso9796d2PssSigner {
@@ -27,7 +27,7 @@ pub struct Iso9796d2PssSigner {
     pub preMStart: i32,
     pub preTLength: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2PssSigner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,14 +47,14 @@ for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2PssSigner {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2PssSigner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2PssSigner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -615,7 +615,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2PssSigner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Iso9796d2PssSigner")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2PssSigner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

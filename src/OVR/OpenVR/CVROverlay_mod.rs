@@ -1,11 +1,11 @@
-#[cfg(feature = "OVR+OpenVR+CVROverlay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVROverlay {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVROverlay,
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVROverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVROverlay {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVROverlay {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVROverlay {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2806,7 +2806,7 @@ impl crate::OVR::OpenVR::CVROverlay {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVROverlay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2815,13 +2815,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVROverlay {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CVROverlay_PollNextOverlayEventUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
     type Held<'a> = Self;
@@ -2851,7 +2851,7 @@ for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
     type Type = Self;
@@ -2862,7 +2862,7 @@ for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
     type Actual = Self;
@@ -2876,7 +2876,7 @@ for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
     type Type = Self;
@@ -2891,7 +2891,7 @@ for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
     type Actual = Self;
@@ -2905,7 +2905,7 @@ for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
     type Type = Self;
@@ -2918,13 +2918,13 @@ for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
 }
 #[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 impl crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {}
-#[cfg(feature = "OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVROverlay__PollNextOverlayEventPacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2944,14 +2944,14 @@ for crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3115,7 +3115,7 @@ impl crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

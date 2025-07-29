@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+SdkAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+SdkAccountList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SdkAccountList {
@@ -6,7 +6,7 @@ pub struct SdkAccountList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SdkAccount>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+Models+SdkAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+SdkAccountList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::SdkAccountList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::Models::SdkAccountList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+SdkAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+SdkAccountList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::SdkAccountList {
     type Target = crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SdkAccount>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::Models::SdkAccountList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+SdkAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+SdkAccountList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::SdkAccountList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::Oculus::Platform::Models::SdkAccountList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+SdkAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+SdkAccountList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::SdkAccountList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

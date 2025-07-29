@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+IFunctionPointer")]
+#[cfg(feature = "cordl_class_Unity+Burst+IFunctionPointer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IFunctionPointer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Burst+IFunctionPointer")]
+#[cfg(feature = "cordl_class_Unity+Burst+IFunctionPointer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::IFunctionPointer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::IFunctionPointe
         false
     }
 }
-#[cfg(feature = "Unity+Burst+IFunctionPointer")]
+#[cfg(feature = "cordl_class_Unity+Burst+IFunctionPointer")]
 impl std::ops::Deref for crate::Unity::Burst::IFunctionPointer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+IFunctionPointer")]
+#[cfg(feature = "cordl_class_Unity+Burst+IFunctionPointer")]
 impl std::ops::DerefMut for crate::Unity::Burst::IFunctionPointer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::Unity::Burst::IFunctionPointer {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Unity+Burst+IFunctionPointer")]
+#[cfg(feature = "cordl_class_Unity+Burst+IFunctionPointer")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::IFunctionPointer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+TagAttribute")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TagAttribute {
@@ -6,7 +6,7 @@ pub struct TagAttribute {
     pub length: i32,
     pub hashCode: i32,
 }
-#[cfg(feature = "TMPro+TagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+TagAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TagAttribute {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TagAttribute {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+TagAttribute")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TagAttribute {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TagAttribute {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+TagAttribute")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TagAttribute {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TagAttribute {
         self
     }
 }
-#[cfg(feature = "TMPro+TagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+TagAttribute")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TagAttribute {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TagAttribute {
         }
     }
 }
-#[cfg(feature = "TMPro+TagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+TagAttribute")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TagAttribute {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TagAttribute {
         actual
     }
 }
-#[cfg(feature = "TMPro+TagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+TagAttribute")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TagAttribute {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

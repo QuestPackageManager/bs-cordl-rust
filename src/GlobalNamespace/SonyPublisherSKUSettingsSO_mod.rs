@@ -1,4 +1,4 @@
-#[cfg(feature = "SonyPublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_SonyPublisherSKUSettingsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyPublisherSKUSettingsSO {
@@ -8,7 +8,7 @@ pub struct SonyPublisherSKUSettingsSO {
     pub _titleId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _productLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "SonyPublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_SonyPublisherSKUSettingsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SonyPublisherSKUSettingsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::SonyPublisherSKUSettingsSO {
         false
     }
 }
-#[cfg(feature = "SonyPublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_SonyPublisherSKUSettingsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyPublisherSKUSettingsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SonyPublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_SonyPublisherSKUSettingsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyPublisherSKUSettingsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -180,7 +180,7 @@ impl crate::GlobalNamespace::SonyPublisherSKUSettingsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SonyPublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_SonyPublisherSKUSettingsSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SonyPublisherSKUSettingsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

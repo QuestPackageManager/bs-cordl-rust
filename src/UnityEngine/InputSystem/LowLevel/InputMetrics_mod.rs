@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputMetrics")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputMetrics {
@@ -14,7 +14,7 @@ pub struct InputMetrics {
     pub _totalEventProcessingTime_k__BackingField: f64,
     pub _totalEventLagTime_k__BackingField: f64,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Actual = Self;
@@ -98,7 +98,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Type = Self;

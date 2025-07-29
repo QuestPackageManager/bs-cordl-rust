@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+PlatformMappingService")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+PlatformMappingService")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformMappingService {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+PlatformMappingService")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+PlatformMappingService")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::PlatformMappingService {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::AddressableAssets::PlatformMappingService {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+PlatformMappingService")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+PlatformMappingService")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::PlatformMappingService {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+PlatformMappingService")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+PlatformMappingService")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::PlatformMappingService {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -173,7 +173,7 @@ impl crate::UnityEngine::AddressableAssets::PlatformMappingService {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+PlatformMappingService")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+PlatformMappingService")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::PlatformMappingService {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

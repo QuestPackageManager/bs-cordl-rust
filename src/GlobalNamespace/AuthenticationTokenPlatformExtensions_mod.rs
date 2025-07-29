@@ -1,10 +1,10 @@
-#[cfg(feature = "AuthenticationTokenPlatformExtensions")]
+#[cfg(feature = "cordl_class_AuthenticationTokenPlatformExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthenticationTokenPlatformExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "AuthenticationTokenPlatformExtensions")]
+#[cfg(feature = "cordl_class_AuthenticationTokenPlatformExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
         false
     }
 }
-#[cfg(feature = "AuthenticationTokenPlatformExtensions")]
+#[cfg(feature = "cordl_class_AuthenticationTokenPlatformExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AuthenticationTokenPlatformExtensions")]
+#[cfg(feature = "cordl_class_AuthenticationTokenPlatformExtensions")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AuthenticationTokenPlatformExtensions")]
+#[cfg(feature = "cordl_class_AuthenticationTokenPlatformExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

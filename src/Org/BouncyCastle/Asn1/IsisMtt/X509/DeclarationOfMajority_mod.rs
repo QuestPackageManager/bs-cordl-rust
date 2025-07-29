@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeclarationOfMajority {
@@ -7,7 +7,7 @@ pub struct DeclarationOfMajority {
         crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -360,7 +360,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -384,7 +384,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeclarationOfMajority_Choice {
@@ -393,7 +395,9 @@ pub enum DeclarationOfMajority_Choice {
     FullAgeAtCountry = 1i32,
     NotYoungerThan = 0i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice {
     type Held<'a> = Self;
@@ -423,7 +427,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice {
     type Type = Self;
@@ -434,7 +440,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice {
     type Actual = Self;
@@ -448,7 +456,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice 
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice {
     type Type = Self;
@@ -463,7 +473,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice 
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "LeaderboardTableView")]
+#[cfg(feature = "cordl_class_LeaderboardTableView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardTableView {
@@ -17,7 +17,7 @@ pub struct LeaderboardTableView {
     >,
     pub _specialScorePos: i32,
 }
-#[cfg(feature = "LeaderboardTableView")]
+#[cfg(feature = "cordl_class_LeaderboardTableView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeaderboardTableView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::LeaderboardTableView {
         false
     }
 }
-#[cfg(feature = "LeaderboardTableView")]
+#[cfg(feature = "cordl_class_LeaderboardTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardTableView")]
+#[cfg(feature = "cordl_class_LeaderboardTableView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardTableView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -191,7 +191,7 @@ impl crate::GlobalNamespace::LeaderboardTableView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardTableView")]
+#[cfg(feature = "cordl_class_LeaderboardTableView")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -214,7 +214,7 @@ for crate::GlobalNamespace::LeaderboardTableView {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "LeaderboardTableView+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardTableView+ScoreData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardTableView_ScoreData {
@@ -226,7 +226,7 @@ pub struct LeaderboardTableView_ScoreData {
     pub _rank_k__BackingField: i32,
     pub _fullCombo_k__BackingField: bool,
 }
-#[cfg(feature = "LeaderboardTableView+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardTableView+ScoreData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeaderboardTableView_ScoreData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -246,14 +246,14 @@ for crate::GlobalNamespace::LeaderboardTableView_ScoreData {
         false
     }
 }
-#[cfg(feature = "LeaderboardTableView+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardTableView+ScoreData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardTableView_ScoreData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardTableView+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardTableView+ScoreData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardTableView_ScoreData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -493,7 +493,7 @@ impl crate::GlobalNamespace::LeaderboardTableView_ScoreData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardTableView+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardTableView+ScoreData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeaderboardTableView_ScoreData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

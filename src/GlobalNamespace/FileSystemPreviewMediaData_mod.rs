@@ -1,4 +1,4 @@
-#[cfg(feature = "FileSystemPreviewMediaData")]
+#[cfg(feature = "cordl_class_FileSystemPreviewMediaData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemPreviewMediaData {
@@ -14,7 +14,7 @@ pub struct FileSystemPreviewMediaData {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "FileSystemPreviewMediaData")]
+#[cfg(feature = "cordl_class_FileSystemPreviewMediaData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FileSystemPreviewMediaData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::FileSystemPreviewMediaData {
         false
     }
 }
-#[cfg(feature = "FileSystemPreviewMediaData")]
+#[cfg(feature = "cordl_class_FileSystemPreviewMediaData")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemPreviewMediaData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileSystemPreviewMediaData")]
+#[cfg(feature = "cordl_class_FileSystemPreviewMediaData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FileSystemPreviewMediaData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -264,7 +264,7 @@ impl crate::GlobalNamespace::FileSystemPreviewMediaData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileSystemPreviewMediaData")]
+#[cfg(feature = "cordl_class_FileSystemPreviewMediaData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FileSystemPreviewMediaData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

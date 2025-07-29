@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+GatewayIPAddressInformationCollection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GatewayIPAddressInformationCollection {
@@ -11,7 +13,9 @@ pub struct GatewayIPAddressInformationCollection {
         >,
     >,
 }
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+GatewayIPAddressInformationCollection"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +35,9 @@ for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollectio
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+GatewayIPAddressInformationCollection"
+)]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +45,9 @@ for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollectio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+GatewayIPAddressInformationCollection"
+)]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -366,7 +374,9 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+GatewayIPAddressInformationCollection"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

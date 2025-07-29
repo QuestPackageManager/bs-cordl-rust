@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRBody")]
+#[cfg(feature = "cordl_class_OVRBody")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRBody {
@@ -18,7 +18,7 @@ pub struct OVRBody {
         >,
     >,
 }
-#[cfg(feature = "OVRBody")]
+#[cfg(feature = "cordl_class_OVRBody")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBody {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBody {
         false
     }
 }
-#[cfg(feature = "OVRBody")]
+#[cfg(feature = "cordl_class_OVRBody")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRBody {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRBody")]
+#[cfg(feature = "cordl_class_OVRBody")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRBody {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -393,7 +393,7 @@ impl crate::GlobalNamespace::OVRBody {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRBody")]
+#[cfg(feature = "cordl_class_OVRBody")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBody {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,14 @@
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixNameConstraintValidatorException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidatorException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidatorException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidatorException {
     type Target = crate::System::Exception;
@@ -32,7 +38,9 @@ for crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidatorException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidatorException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -77,7 +85,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidatorException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Pkix+PkixNameConstraintValidatorException"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidatorException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

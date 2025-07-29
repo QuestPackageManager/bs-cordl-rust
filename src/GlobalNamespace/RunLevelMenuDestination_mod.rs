@@ -1,4 +1,4 @@
-#[cfg(feature = "RunLevelMenuDestination")]
+#[cfg(feature = "cordl_class_RunLevelMenuDestination")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RunLevelMenuDestination {
@@ -22,7 +22,7 @@ pub struct RunLevelMenuDestination {
     pub environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub quitAppAfterRun: bool,
 }
-#[cfg(feature = "RunLevelMenuDestination")]
+#[cfg(feature = "cordl_class_RunLevelMenuDestination")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RunLevelMenuDestination {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::RunLevelMenuDestination {
         false
     }
 }
-#[cfg(feature = "RunLevelMenuDestination")]
+#[cfg(feature = "cordl_class_RunLevelMenuDestination")]
 impl std::ops::Deref for crate::GlobalNamespace::RunLevelMenuDestination {
     type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RunLevelMenuDestination")]
+#[cfg(feature = "cordl_class_RunLevelMenuDestination")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RunLevelMenuDestination {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -185,7 +185,7 @@ impl crate::GlobalNamespace::RunLevelMenuDestination {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RunLevelMenuDestination")]
+#[cfg(feature = "cordl_class_RunLevelMenuDestination")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RunLevelMenuDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyName")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyName {
@@ -7,7 +7,7 @@ pub struct StylePropertyName {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyName")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StylePropertyName {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::UIElements::StylePropertyName {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyName")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StylePropertyName {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::UIElements::StylePropertyName {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyName")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StylePropertyName {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::StylePropertyName {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyName")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StylePropertyName {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::UIElements::StylePropertyName {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyName")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StylePropertyName {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::UIElements::StylePropertyName {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyName")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StylePropertyName {
     type Type = Self;

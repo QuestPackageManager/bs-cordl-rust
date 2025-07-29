@@ -1,4 +1,4 @@
-#[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
+#[cfg(feature = "cordl_class_ArcVisibilityTypeSettingsDropdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArcVisibilityTypeSettingsDropdown {
@@ -6,7 +6,7 @@ pub struct ArcVisibilityTypeSettingsDropdown {
         crate::GlobalNamespace::ArcVisibilityType,
     >,
 }
-#[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
+#[cfg(feature = "cordl_class_ArcVisibilityTypeSettingsDropdown")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
         false
     }
 }
-#[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
+#[cfg(feature = "cordl_class_ArcVisibilityTypeSettingsDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
     type Target = crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::ArcVisibilityType,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdo
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
+#[cfg(feature = "cordl_class_ArcVisibilityTypeSettingsDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
+#[cfg(feature = "cordl_class_ArcVisibilityTypeSettingsDropdown")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

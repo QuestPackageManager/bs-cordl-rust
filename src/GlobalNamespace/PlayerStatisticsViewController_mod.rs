@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerStatisticsViewController")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerStatisticsViewController {
@@ -29,7 +29,7 @@ pub struct PlayerStatisticsViewController {
         >,
     >,
 }
-#[cfg(feature = "PlayerStatisticsViewController")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerStatisticsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::PlayerStatisticsViewController {
         false
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerStatisticsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerStatisticsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -367,7 +367,7 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerStatisticsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -377,7 +377,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController+StatsScopeData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerStatisticsViewController_StatsScopeData {
@@ -392,7 +392,7 @@ pub struct PlayerStatisticsViewController_StatsScopeData {
         >,
     >,
 }
-#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Held<'a> = Self;
@@ -422,7 +422,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Type = Self;
@@ -433,7 +433,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Actual = Self;
@@ -447,7 +447,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         self
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Type = Self;
@@ -462,7 +462,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         }
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Actual = Self;
@@ -476,7 +476,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         actual
     }
 }
-#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
+#[cfg(feature = "cordl_class_PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Type = Self;

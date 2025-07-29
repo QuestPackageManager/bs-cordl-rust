@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Utility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Utility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::UIR::Utility {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Utility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Utility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1319,7 +1319,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::Utility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1328,7 +1328,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Utility_GPUBufferType {
@@ -1336,7 +1336,7 @@ pub enum Utility_GPUBufferType {
     Index = 1i32,
     Vertex = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
     type Held<'a> = Self;
@@ -1366,7 +1366,7 @@ for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
     type Type = Self;
@@ -1377,7 +1377,7 @@ for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
     type Actual = Self;
@@ -1391,7 +1391,7 @@ for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
     type Type = Self;
@@ -1406,7 +1406,7 @@ for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
     type Actual = Self;
@@ -1420,7 +1420,7 @@ for crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Utility_GPUBuffer_1<T: quest_hook::libil2cpp::Type> {
@@ -1430,7 +1430,7 @@ pub struct Utility_GPUBuffer_1<T: quest_hook::libil2cpp::Type> {
     pub elemStride: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1466,7 +1466,7 @@ for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1474,7 +1474,7 @@ for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1649,7 +1649,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

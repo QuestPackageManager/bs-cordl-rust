@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionFilter")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExceptionFilter {
@@ -7,7 +7,7 @@ pub struct ExceptionFilter {
     pub StartIndex: i32,
     pub EndIndex: i32,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionFilter")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionFilter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionFilter")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionFilter")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionFilter")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionFilter")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -83,7 +83,7 @@ impl crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionFilter")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ExceptionFilter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ExceptionFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

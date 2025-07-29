@@ -1,11 +1,11 @@
-#[cfg(feature = "SelectSubMenuDestination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectSubMenuDestination {
     __cordl_parent: crate::GlobalNamespace::MenuDestination,
     pub menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
 }
-#[cfg(feature = "SelectSubMenuDestination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectSubMenuDestination {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::SelectSubMenuDestination {
         false
     }
 }
-#[cfg(feature = "SelectSubMenuDestination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectSubMenuDestination {
     type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SelectSubMenuDestination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectSubMenuDestination {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::SelectSubMenuDestination {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SelectSubMenuDestination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SelectSubMenuDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -88,7 +88,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SelectSubMenuDestination+Destination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectSubMenuDestination_Destination {
@@ -101,7 +101,7 @@ pub enum SelectSubMenuDestination_Destination {
     SoloFreePlay = 2i32,
     Tutorial = 5i32,
 }
-#[cfg(feature = "SelectSubMenuDestination+Destination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Held<'a> = Self;
@@ -131,7 +131,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SelectSubMenuDestination+Destination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Type = Self;
@@ -142,7 +142,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SelectSubMenuDestination+Destination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Actual = Self;
@@ -156,7 +156,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
         self
     }
 }
-#[cfg(feature = "SelectSubMenuDestination+Destination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Type = Self;
@@ -171,7 +171,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
         }
     }
 }
-#[cfg(feature = "SelectSubMenuDestination+Destination")]
+#[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Actual = Self;

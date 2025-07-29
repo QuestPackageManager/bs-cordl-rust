@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CullingGroupEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroupEvent")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CullingGroupEvent {
@@ -6,7 +6,7 @@ pub struct CullingGroupEvent {
     pub m_PrevState: u8,
     pub m_ThisState: u8,
 }
-#[cfg(feature = "UnityEngine+CullingGroupEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroupEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CullingGroupEvent {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CullingGroupEven
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroupEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroupEvent")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CullingGroupEvent {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CullingGroup
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroupEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroupEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CullingGroupEvent {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CullingGrou
         self
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroupEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroupEvent")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CullingGroupEvent {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CullingGroup
         }
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroupEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroupEvent")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CullingGroupEvent {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CullingGroupEv
         actual
     }
 }
-#[cfg(feature = "UnityEngine+CullingGroupEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+CullingGroupEvent")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::CullingGroupEvent {
     type Type = Self;

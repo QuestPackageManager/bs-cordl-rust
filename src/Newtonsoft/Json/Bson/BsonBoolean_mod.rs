@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBoolean")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBoolean")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonBoolean {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonValue,
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBoolean")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBoolean")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Bson::BsonBoolean {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Bson::BsonB
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBoolean")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBoolean")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonBoolean {
     type Target = crate::Newtonsoft::Json::Bson::BsonValue;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBoolean")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBoolean")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonBoolean {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -70,7 +70,7 @@ impl crate::Newtonsoft::Json::Bson::BsonBoolean {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBoolean")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBoolean")]
 impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Bson::BsonBoolean {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

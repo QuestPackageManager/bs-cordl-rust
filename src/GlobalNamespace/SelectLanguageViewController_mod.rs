@@ -1,4 +1,4 @@
-#[cfg(feature = "SelectLanguageViewController")]
+#[cfg(feature = "cordl_class_SelectLanguageViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLanguageViewController {
@@ -12,7 +12,7 @@ pub struct SelectLanguageViewController {
     >,
     pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "SelectLanguageViewController")]
+#[cfg(feature = "cordl_class_SelectLanguageViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectLanguageViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::SelectLanguageViewController {
         false
     }
 }
-#[cfg(feature = "SelectLanguageViewController")]
+#[cfg(feature = "cordl_class_SelectLanguageViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectLanguageViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SelectLanguageViewController")]
+#[cfg(feature = "cordl_class_SelectLanguageViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectLanguageViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -292,7 +292,7 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SelectLanguageViewController")]
+#[cfg(feature = "cordl_class_SelectLanguageViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SelectLanguageViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

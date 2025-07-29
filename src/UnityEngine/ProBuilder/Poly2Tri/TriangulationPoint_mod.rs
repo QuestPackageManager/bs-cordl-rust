@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TriangulationPoint {
@@ -14,7 +14,7 @@ pub struct TriangulationPoint {
     pub Y: f64,
     pub Index: i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -325,7 +325,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

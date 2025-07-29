@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputStateHistory {
@@ -34,7 +34,7 @@ pub struct InputStateHistory {
     >,
     pub m_AddNewControls: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,14 +54,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1270,7 +1270,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1354,7 +1354,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateHistory_Enumerator {
@@ -1363,7 +1365,9 @@ pub struct InputStateHistory_Enumerator {
     >,
     pub m_Index: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Held<'a> = Self;
@@ -1393,7 +1397,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Type = Self;
@@ -1404,7 +1410,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Actual = Self;
@@ -1418,7 +1426,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Type = Self;
@@ -1433,7 +1443,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Actual = Self;
@@ -1447,7 +1459,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Type = Self;
@@ -1660,7 +1674,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateHistory_Record {
@@ -1670,7 +1684,7 @@ pub struct InputStateHistory_Record {
     pub m_IndexPlusOne: i32,
     pub m_Version: u32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Held<'a> = Self;
@@ -1700,7 +1714,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Type = Self;
@@ -1711,7 +1725,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Actual = Self;
@@ -1725,7 +1739,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Type = Self;
@@ -1740,7 +1754,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Actual = Self;
@@ -1754,7 +1768,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Type = Self;
@@ -2361,13 +2375,17 @@ impl AsMut<
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateHistory_RecordHeader {
     padding: quest_hook::libil2cpp::ValueTypePadding<17usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Held<'a> = Self;
@@ -2397,7 +2415,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Type = Self;
@@ -2408,7 +2428,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Actual = Self;
@@ -2422,7 +2444,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Type = Self;
@@ -2437,7 +2461,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Actual = Self;
@@ -2451,7 +2477,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Type = Self;
@@ -2530,7 +2558,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -2538,7 +2566,7 @@ pub struct RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffe
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
@@ -2570,7 +2598,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
@@ -2583,7 +2611,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
@@ -2599,7 +2627,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
@@ -2616,7 +2644,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
@@ -2632,7 +2660,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
@@ -2649,7 +2677,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
 )]
 impl crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {}
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -2657,7 +2685,7 @@ pub struct RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBu
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
@@ -2689,7 +2717,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
@@ -2702,7 +2730,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
@@ -2718,7 +2746,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
@@ -2735,7 +2763,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
@@ -2751,7 +2779,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {

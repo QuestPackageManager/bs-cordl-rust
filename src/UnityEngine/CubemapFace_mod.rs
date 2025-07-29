@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CubemapFace")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapFace")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CubemapFace {
@@ -11,7 +11,7 @@ pub enum CubemapFace {
     PositiveZ = 4i32,
     Unknown = -1i32,
 }
-#[cfg(feature = "UnityEngine+CubemapFace")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapFace")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CubemapFace {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CubemapFace {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CubemapFace")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapFace")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CubemapFace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CubemapFace 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CubemapFace")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapFace")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CubemapFace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CubemapFace
         self
     }
 }
-#[cfg(feature = "UnityEngine+CubemapFace")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapFace")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CubemapFace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CubemapFace 
         }
     }
 }
-#[cfg(feature = "UnityEngine+CubemapFace")]
+#[cfg(feature = "cordl_class_UnityEngine+CubemapFace")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CubemapFace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

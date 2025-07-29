@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageEventArgs {
@@ -6,7 +6,7 @@ pub struct MessageEventArgs {
     pub playerId: i32,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -72,7 +72,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

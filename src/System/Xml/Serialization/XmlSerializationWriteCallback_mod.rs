@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriteCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriteCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationWriteCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriteCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriteCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationWriteCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriteCallback {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriteCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriteCallback")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriteCallback {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriteCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriteCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriteCallback")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationWriteCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -110,7 +110,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriteCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriteCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriteCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationWriteCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

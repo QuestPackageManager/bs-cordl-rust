@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
+#[cfg(feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusXPlatformAccessTokenRequestOperation {
@@ -6,7 +6,7 @@ pub struct OculusXPlatformAccessTokenRequestOperation {
     pub _tokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
     pub _operationState: crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState,
 }
-#[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
+#[cfg(feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
         false
     }
 }
-#[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
+#[cfg(feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
+#[cfg(feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -214,7 +214,7 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
+#[cfg(feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -225,7 +225,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     }
 }
 #[cfg(
-    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+    feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -237,7 +237,7 @@ pub enum OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationS
     Succeeded = 2i32,
 }
 #[cfg(
-    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+    feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
@@ -269,7 +269,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTok
     }
 }
 #[cfg(
-    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+    feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
@@ -282,7 +282,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTok
     }
 }
 #[cfg(
-    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+    feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
@@ -298,7 +298,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTok
     }
 }
 #[cfg(
-    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+    feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
@@ -315,7 +315,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTok
     }
 }
 #[cfg(
-    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+    feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {

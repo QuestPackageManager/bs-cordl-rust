@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+CommandType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+CommandType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CommandType {
@@ -16,7 +16,7 @@ pub enum CommandType {
     PushScissor = 5i32,
     PushView = 3i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+CommandType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+CommandType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::CommandType {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::UIR::CommandType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+CommandType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+CommandType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::CommandType {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::UIElements::UIR::CommandType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+CommandType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+CommandType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::CommandType {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngine::UIElements::UIR::CommandType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+CommandType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+CommandType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::CommandType {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::UnityEngine::UIElements::UIR::CommandType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+CommandType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+CommandType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::CommandType {
     type Actual = Self;

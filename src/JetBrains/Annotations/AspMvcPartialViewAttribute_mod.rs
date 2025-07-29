@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+AspMvcPartialViewAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcPartialViewAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspMvcPartialViewAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcPartialViewAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcPartialViewAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::AspMvcPartialViewAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::AspMvcPartialViewAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcPartialViewAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcPartialViewAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AspMvcPartialViewAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcPartialViewAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcPartialViewAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::AspMvcPartialViewAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::JetBrains::Annotations::AspMvcPartialViewAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcPartialViewAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcPartialViewAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::AspMvcPartialViewAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

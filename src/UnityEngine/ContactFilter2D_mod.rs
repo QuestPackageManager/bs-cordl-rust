@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ContactFilter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactFilter2D")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ContactFilter2D {
@@ -14,7 +14,7 @@ pub struct ContactFilter2D {
     pub minNormalAngle: f32,
     pub maxNormalAngle: f32,
 }
-#[cfg(feature = "UnityEngine+ContactFilter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactFilter2D")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ContactFilter2D {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ContactFilter2D 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ContactFilter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactFilter2D")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ContactFilter2D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ContactFilte
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ContactFilter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactFilter2D")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ContactFilter2D {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,7 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ContactFilt
         self
     }
 }
-#[cfg(feature = "UnityEngine+ContactFilter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactFilter2D")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ContactFilter2D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,7 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ContactFilte
         }
     }
 }
-#[cfg(feature = "UnityEngine+ContactFilter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactFilter2D")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ContactFilter2D {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -93,7 +93,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ContactFilter2
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ContactFilter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactFilter2D")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::ContactFilter2D {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

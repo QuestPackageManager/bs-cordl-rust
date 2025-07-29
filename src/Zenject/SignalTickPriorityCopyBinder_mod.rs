@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalTickPriorityCopyBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalTickPriorityCopyBinder {
@@ -7,7 +7,7 @@ pub struct SignalTickPriorityCopyBinder {
         crate::Zenject::SignalDeclarationBindInfo,
     >,
 }
-#[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalTickPriorityCopyBinder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SignalTickPriorityCopyBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Zenject::SignalTickPriorityCopyBinder {
         false
     }
 }
-#[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalTickPriorityCopyBinder")]
 impl std::ops::Deref for crate::Zenject::SignalTickPriorityCopyBinder {
     type Target = crate::Zenject::SignalCopyBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalTickPriorityCopyBinder")]
 impl std::ops::DerefMut for crate::Zenject::SignalTickPriorityCopyBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -169,7 +169,7 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalTickPriorityCopyBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalTickPriorityCopyBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

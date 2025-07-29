@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataRowCollection")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRowCollection {
@@ -9,7 +9,7 @@ pub struct DataRowCollection {
     >,
     pub _nullInList: i32,
 }
-#[cfg(feature = "System+Data+DataRowCollection")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataRowCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataRowCollecti
         false
     }
 }
-#[cfg(feature = "System+Data+DataRowCollection")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection")]
 impl std::ops::Deref for crate::System::Data::DataRowCollection {
     type Target = crate::System::Data::InternalDataCollectionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataRowCollection")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection")]
 impl std::ops::DerefMut for crate::System::Data::DataRowCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -437,7 +437,7 @@ impl crate::System::Data::DataRowCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataRowCollection")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataRowCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -446,7 +446,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataRowCollectio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Data+DataRowCollection+DataRowTree")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection+DataRowTree")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRowCollection_DataRowTree {
@@ -454,7 +454,7 @@ pub struct DataRowCollection_DataRowTree {
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     >,
 }
-#[cfg(feature = "System+Data+DataRowCollection+DataRowTree")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection+DataRowTree")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::DataRowCollection_DataRowTree {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -474,7 +474,7 @@ for crate::System::Data::DataRowCollection_DataRowTree {
         false
     }
 }
-#[cfg(feature = "System+Data+DataRowCollection+DataRowTree")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection+DataRowTree")]
 impl std::ops::Deref for crate::System::Data::DataRowCollection_DataRowTree {
     type Target = crate::System::Data::RBTree_1<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -483,7 +483,7 @@ impl std::ops::Deref for crate::System::Data::DataRowCollection_DataRowTree {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataRowCollection+DataRowTree")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection+DataRowTree")]
 impl std::ops::DerefMut for crate::System::Data::DataRowCollection_DataRowTree {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -580,7 +580,7 @@ impl crate::System::Data::DataRowCollection_DataRowTree {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataRowCollection+DataRowTree")]
+#[cfg(feature = "cordl_class_System+Data+DataRowCollection+DataRowTree")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::DataRowCollection_DataRowTree {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

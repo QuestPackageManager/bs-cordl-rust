@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextGenerationSettings {
@@ -21,7 +21,7 @@ pub struct TextGenerationSettings {
     pub pivot: crate::UnityEngine::Vector2,
     pub generateOutOfBounds: bool,
 }
-#[cfg(feature = "UnityEngine+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextGenerationSettings {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextGenerationSe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextGenerationSettings {
     type Type = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::TextGenerationSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextGenerationSettings {
     type Actual = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::TextGenerationSettings {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextGenerationSettings {
     type Type = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::TextGenerationSettings {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextGenerationSettings {
     type Actual = Self;
@@ -104,7 +104,7 @@ for crate::UnityEngine::TextGenerationSettings {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextGenerationSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextGenerationSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextGenerationSettings {
     type Type = Self;

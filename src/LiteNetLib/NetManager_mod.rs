@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+NetManager")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetManager {
@@ -80,7 +80,7 @@ pub struct NetManager {
     pub IPv6Enabled: bool,
     pub ThreadPriority: crate::System::Threading::ThreadPriority,
 }
-#[cfg(feature = "LiteNetLib+NetManager")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -99,14 +99,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetManager {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager")]
 impl std::ops::Deref for crate::LiteNetLib::NetManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2388,7 +2388,7 @@ impl crate::LiteNetLib::NetManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2449,13 +2449,13 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::LiteNetLib::NetMa
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+IPEndPointComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetManager_IPEndPointComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+IPEndPointComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::NetManager_IPEndPointComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2475,14 +2475,14 @@ for crate::LiteNetLib::NetManager_IPEndPointComparer {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+IPEndPointComparer")]
 impl std::ops::Deref for crate::LiteNetLib::NetManager_IPEndPointComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+IPEndPointComparer")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetManager_IPEndPointComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2575,7 +2575,7 @@ impl crate::LiteNetLib::NetManager_IPEndPointComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+IPEndPointComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::LiteNetLib::NetManager_IPEndPointComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2613,14 +2613,14 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+NetPeerEnumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NetManager_NetPeerEnumerator {
     pub _initialPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     pub _p: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
 }
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Held<'a> = Self;
@@ -2650,7 +2650,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Type = Self;
@@ -2661,7 +2661,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Actual = Self;
@@ -2675,7 +2675,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Type = Self;
@@ -2690,7 +2690,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
         }
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Actual = Self;
@@ -2704,7 +2704,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
         actual
     }
 }
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Type = Self;

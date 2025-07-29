@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -8,7 +8,7 @@ pub struct BinaryAssetProvider_1<TAdapter: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TAdapter: std::marker::PhantomData<TAdapter>,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
 )]
 unsafe impl<TAdapter: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvider_1<
@@ -48,7 +48,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvid
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
 )]
 impl<TAdapter: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvider_1<
@@ -60,7 +60,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvid
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
 )]
 impl<TAdapter: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvider_1<
@@ -152,7 +152,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
 )]
 impl<TAdapter: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvider_1<

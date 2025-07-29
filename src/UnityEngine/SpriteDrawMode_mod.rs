@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+SpriteDrawMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteDrawMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteDrawMode {
@@ -7,7 +7,7 @@ pub enum SpriteDrawMode {
     Sliced = 1i32,
     Tiled = 2i32,
 }
-#[cfg(feature = "UnityEngine+SpriteDrawMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteDrawMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpriteDrawMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpriteDrawMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SpriteDrawMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteDrawMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpriteDrawMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpriteDrawMo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SpriteDrawMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteDrawMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpriteDrawMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpriteDrawM
         self
     }
 }
-#[cfg(feature = "UnityEngine+SpriteDrawMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteDrawMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpriteDrawMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpriteDrawMo
         }
     }
 }
-#[cfg(feature = "UnityEngine+SpriteDrawMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SpriteDrawMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SpriteDrawMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

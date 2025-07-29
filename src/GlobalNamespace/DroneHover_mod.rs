@@ -1,4 +1,4 @@
-#[cfg(feature = "DroneHover")]
+#[cfg(feature = "cordl_class_DroneHover")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DroneHover {
@@ -22,7 +22,7 @@ pub struct DroneHover {
     pub _startPos: crate::UnityEngine::Vector3,
     pub _cloth: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cloth>,
 }
-#[cfg(feature = "DroneHover")]
+#[cfg(feature = "cordl_class_DroneHover")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DroneHover {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DroneHover {
         false
     }
 }
-#[cfg(feature = "DroneHover")]
+#[cfg(feature = "cordl_class_DroneHover")]
 impl std::ops::Deref for crate::GlobalNamespace::DroneHover {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DroneHover")]
+#[cfg(feature = "cordl_class_DroneHover")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DroneHover {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -203,7 +203,7 @@ impl crate::GlobalNamespace::DroneHover {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DroneHover")]
+#[cfg(feature = "cordl_class_DroneHover")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DroneHover {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -212,7 +212,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DroneHover {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "DroneHover+SineLayer")]
+#[cfg(feature = "cordl_class_DroneHover+SineLayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DroneHover_SineLayer {
@@ -220,7 +220,7 @@ pub struct DroneHover_SineLayer {
     pub multiplier: f32,
     pub offset: f32,
 }
-#[cfg(feature = "DroneHover+SineLayer")]
+#[cfg(feature = "cordl_class_DroneHover+SineLayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DroneHover_SineLayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -240,14 +240,14 @@ for crate::GlobalNamespace::DroneHover_SineLayer {
         false
     }
 }
-#[cfg(feature = "DroneHover+SineLayer")]
+#[cfg(feature = "cordl_class_DroneHover+SineLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::DroneHover_SineLayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DroneHover+SineLayer")]
+#[cfg(feature = "cordl_class_DroneHover+SineLayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DroneHover_SineLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -284,7 +284,7 @@ impl crate::GlobalNamespace::DroneHover_SineLayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DroneHover+SineLayer")]
+#[cfg(feature = "cordl_class_DroneHover+SineLayer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DroneHover_SineLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerInternalBase {
@@ -20,7 +20,7 @@ pub struct JsonSerializerInternalBase {
         crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,7 +40,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -48,7 +48,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -307,7 +307,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -318,7 +318,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -326,7 +326,7 @@ pub struct JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
@@ -348,7 +348,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Reference
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
@@ -358,7 +358,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Reference
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
@@ -466,7 +466,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatar {
@@ -63,7 +63,7 @@ pub struct MultiplayerResultsPyramidViewAvatar {
         crate::GlobalNamespace::IConnectedPlayer,
     >,
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -83,14 +83,14 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
         false
     }
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -246,7 +246,7 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -256,7 +256,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar+Factory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatar_Factory {
@@ -267,7 +267,7 @@ pub struct MultiplayerResultsPyramidViewAvatar_Factory {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar+Factory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -287,7 +287,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
         false
     }
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
@@ -300,7 +300,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar+Factory")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -338,7 +338,7 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar+Factory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

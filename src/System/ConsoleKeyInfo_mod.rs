@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ConsoleKeyInfo")]
+#[cfg(feature = "cordl_class_System+ConsoleKeyInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ConsoleKeyInfo {
@@ -6,7 +6,7 @@ pub struct ConsoleKeyInfo {
     pub _key: crate::System::ConsoleKey,
     pub _mods: crate::System::ConsoleModifiers,
 }
-#[cfg(feature = "System+ConsoleKeyInfo")]
+#[cfg(feature = "cordl_class_System+ConsoleKeyInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ConsoleKeyInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ConsoleKeyInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ConsoleKeyInfo")]
+#[cfg(feature = "cordl_class_System+ConsoleKeyInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::ConsoleKeyInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::ConsoleKeyInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ConsoleKeyInfo")]
+#[cfg(feature = "cordl_class_System+ConsoleKeyInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ConsoleKeyInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ConsoleKeyInfo {
         self
     }
 }
-#[cfg(feature = "System+ConsoleKeyInfo")]
+#[cfg(feature = "cordl_class_System+ConsoleKeyInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::ConsoleKeyInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::ConsoleKeyInfo {
         }
     }
 }
-#[cfg(feature = "System+ConsoleKeyInfo")]
+#[cfg(feature = "cordl_class_System+ConsoleKeyInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::ConsoleKeyInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::ConsoleKeyInfo {
         actual
     }
 }
-#[cfg(feature = "System+ConsoleKeyInfo")]
+#[cfg(feature = "cordl_class_System+ConsoleKeyInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ConsoleKeyInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePass")]
+#[cfg(feature = "cordl_class_BloomPrePass")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePass {
@@ -17,7 +17,7 @@ pub struct BloomPrePass {
         crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
     >,
 }
-#[cfg(feature = "BloomPrePass")]
+#[cfg(feature = "cordl_class_BloomPrePass")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomPrePass {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomPrePass
         false
     }
 }
-#[cfg(feature = "BloomPrePass")]
+#[cfg(feature = "cordl_class_BloomPrePass")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePass {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePass")]
+#[cfg(feature = "cordl_class_BloomPrePass")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePass {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -221,7 +221,7 @@ impl crate::GlobalNamespace::BloomPrePass {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePass")]
+#[cfg(feature = "cordl_class_BloomPrePass")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePass {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -230,7 +230,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePass 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BloomPrePass+Mode")]
+#[cfg(feature = "cordl_class_BloomPrePass+Mode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BloomPrePass_Mode {
@@ -238,7 +238,7 @@ pub enum BloomPrePass_Mode {
     RenderAndSetData = 0i32,
     SetDataOnly = 1i32,
 }
-#[cfg(feature = "BloomPrePass+Mode")]
+#[cfg(feature = "cordl_class_BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomPrePass_Mode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -267,7 +267,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomPrePass
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BloomPrePass+Mode")]
+#[cfg(feature = "cordl_class_BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePass_Mode {
     type Type = Self;
@@ -278,7 +278,7 @@ for crate::GlobalNamespace::BloomPrePass_Mode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BloomPrePass+Mode")]
+#[cfg(feature = "cordl_class_BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePass_Mode {
     type Actual = Self;
@@ -292,7 +292,7 @@ for crate::GlobalNamespace::BloomPrePass_Mode {
         self
     }
 }
-#[cfg(feature = "BloomPrePass+Mode")]
+#[cfg(feature = "cordl_class_BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePass_Mode {
     type Type = Self;
@@ -307,7 +307,7 @@ for crate::GlobalNamespace::BloomPrePass_Mode {
         }
     }
 }
-#[cfg(feature = "BloomPrePass+Mode")]
+#[cfg(feature = "cordl_class_BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BloomPrePass_Mode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

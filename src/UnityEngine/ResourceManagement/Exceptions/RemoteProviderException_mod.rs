@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+RemoteProviderException"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteProviderException {
@@ -7,7 +9,9 @@ pub struct RemoteProviderException {
         crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
     >,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+RemoteProviderException"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException 
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+RemoteProviderException"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException {
     type Target = crate::UnityEngine::ResourceManagement::Exceptions::ProviderException;
@@ -35,7 +41,9 @@ for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+RemoteProviderException"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -191,7 +199,9 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+RemoteProviderException"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

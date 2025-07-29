@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+IBindingRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IBindingRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IBindingRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+IBindingRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IBindingRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IBindingRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::IBindingRequest {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IBindingRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IBindingRequest")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IBindingRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IBindingRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IBindingRequest")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IBindingRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -73,7 +73,7 @@ impl crate::UnityEngine::UIElements::IBindingRequest {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IBindingRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IBindingRequest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IBindingRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

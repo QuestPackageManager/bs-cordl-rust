@@ -1,4 +1,4 @@
-#[cfg(feature = "HSVPanelController")]
+#[cfg(feature = "cordl_class_HSVPanelController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HSVPanelController {
@@ -17,7 +17,7 @@ pub struct HSVPanelController {
     >,
     pub _hsvColor: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "HSVPanelController")]
+#[cfg(feature = "cordl_class_HSVPanelController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::HSVPanelController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::HSVPanelCont
         false
     }
 }
-#[cfg(feature = "HSVPanelController")]
+#[cfg(feature = "cordl_class_HSVPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::HSVPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HSVPanelController")]
+#[cfg(feature = "cordl_class_HSVPanelController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HSVPanelController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -366,7 +366,7 @@ impl crate::GlobalNamespace::HSVPanelController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HSVPanelController")]
+#[cfg(feature = "cordl_class_HSVPanelController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HSVPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

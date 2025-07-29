@@ -1,4 +1,4 @@
-#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
+#[cfg(feature = "cordl_class_DeeplinkManagerToDestinationRequestManagerAdapter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeeplinkManagerToDestinationRequestManagerAdapter {
@@ -18,7 +18,7 @@ pub struct DeeplinkManagerToDestinationRequestManagerAdapter {
         crate::GlobalNamespace::MenuDestination,
     >,
 }
-#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
+#[cfg(feature = "cordl_class_DeeplinkManagerToDestinationRequestManagerAdapter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
         false
     }
 }
-#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
+#[cfg(feature = "cordl_class_DeeplinkManagerToDestinationRequestManagerAdapter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
+#[cfg(feature = "cordl_class_DeeplinkManagerToDestinationRequestManagerAdapter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -290,7 +290,7 @@ impl crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
+#[cfg(feature = "cordl_class_DeeplinkManagerToDestinationRequestManagerAdapter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

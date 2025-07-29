@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderDataFlags {
     #[default]
     IsIgnoringDynamicColorHint = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::RenderDataFlags {
     type Actual = Self;

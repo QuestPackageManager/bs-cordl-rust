@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiagnosticInfo {
@@ -7,7 +7,7 @@ pub struct DiagnosticInfo {
     pub ObjectId: i32,
     pub Dependencies: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -110,7 +110,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

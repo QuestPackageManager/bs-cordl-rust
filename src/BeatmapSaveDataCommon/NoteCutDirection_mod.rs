@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteCutDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteCutDirection {
@@ -14,7 +14,7 @@ pub enum NoteCutDirection {
     UpLeft = 4i32,
     UpRight = 5i32,
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::BeatmapSaveDataCommon::NoteCutDirection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::BeatmapSaveDataCommon::NoteCutDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::BeatmapSaveDataCommon::NoteCutDirection {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::BeatmapSaveDataCommon::NoteCutDirection {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Actual = Self;

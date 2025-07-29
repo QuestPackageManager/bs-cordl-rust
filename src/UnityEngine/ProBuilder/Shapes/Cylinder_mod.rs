@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Cylinder")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Cylinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Cylinder {
@@ -7,7 +7,7 @@ pub struct Cylinder {
     pub m_HeightCuts: i32,
     pub m_Smooth: bool,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Cylinder")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Cylinder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Shapes::Cylinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::ProBuilder::Shapes::Cylinder {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Cylinder")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Cylinder")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::Cylinder {
     type Target = crate::UnityEngine::ProBuilder::Shapes::Shape;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Cylinder")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Cylinder")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::Cylinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -170,7 +170,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::Cylinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Cylinder")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Cylinder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Shapes::Cylinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

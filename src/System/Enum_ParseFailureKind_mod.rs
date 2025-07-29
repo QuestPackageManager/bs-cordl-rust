@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Enum+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Enum+ParseFailureKind")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Enum_ParseFailureKind {
@@ -9,7 +9,7 @@ pub enum Enum_ParseFailureKind {
     None = 0i32,
     UnhandledException = 4i32,
 }
-#[cfg(feature = "System+Enum+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Enum+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Enum_ParseFailureKind {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::Enum_ParseFailureKind {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Enum+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Enum+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Enum_ParseFailureKind {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::Enum_ParseFailureKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Enum+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Enum+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Enum_ParseFailureKind {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::GlobalNamespace::Enum_ParseFailureKind {
         self
     }
 }
-#[cfg(feature = "System+Enum+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Enum+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Enum_ParseFailureKind {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::GlobalNamespace::Enum_ParseFailureKind {
         }
     }
 }
-#[cfg(feature = "System+Enum+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Enum+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Enum_ParseFailureKind {
     type Actual = Self;

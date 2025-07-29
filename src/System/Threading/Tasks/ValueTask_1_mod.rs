@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTask_1<TResult: quest_hook::libil2cpp::Type> {
@@ -8,7 +8,7 @@ pub struct ValueTask_1<TResult: quest_hook::libil2cpp::Type> {
     pub _continueOnCapturedContext: bool,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     type Held<'a> = Self;
@@ -54,7 +54,7 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     type Type = Self;
@@ -65,7 +65,7 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     type Actual = Self;
@@ -79,7 +79,7 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     type Type = Self;
@@ -94,7 +94,7 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     type Actual = Self;
@@ -108,7 +108,7 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
         actual
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     type Type = Self;
@@ -618,7 +618,7 @@ impl<
         todo!()
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValueTask_1_ValueTaskSourceAsTask<TResult: quest_hook::libil2cpp::Type> {
@@ -629,7 +629,7 @@ pub struct ValueTask_1_ValueTaskSourceAsTask<TResult: quest_hook::libil2cpp::Typ
     pub _token: i16,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -665,7 +665,7 @@ for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> 
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
     type Target = crate::System::Threading::Tasks::Task_1<TResult>;
@@ -673,7 +673,7 @@ for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -741,7 +741,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

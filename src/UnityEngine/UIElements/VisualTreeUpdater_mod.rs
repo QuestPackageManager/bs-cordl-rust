@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeUpdater {
@@ -10,7 +10,7 @@ pub struct VisualTreeUpdater {
         crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::UnityEngine::UIElements::VisualTreeUpdater {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualTreeUpdater {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -253,7 +253,7 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualTreeUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -277,7 +277,7 @@ for crate::UnityEngine::UIElements::VisualTreeUpdater {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeUpdater_UpdaterArray {
@@ -288,7 +288,7 @@ pub struct VisualTreeUpdater_UpdaterArray {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -308,14 +308,14 @@ for crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -447,7 +447,7 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

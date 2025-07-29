@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationPlayableAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivationPlayableAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationPlayableAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::ActivationPlayableAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Timeline::ActivationPlayableAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationPlayableAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationPlayableAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::ActivationPlayableAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::UnityEngine::Timeline::ActivationPlayableAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationPlayableAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::ActivationPlayableAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

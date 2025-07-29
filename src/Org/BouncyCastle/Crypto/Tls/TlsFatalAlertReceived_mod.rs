@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsFatalAlertReceived {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsException,
     pub alertDescription: u8,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlertReceived {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlertReceived {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlertReceived {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::TlsException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlertReceived {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -90,7 +90,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlertReceived {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlertReceived {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
+#[cfg(feature = "cordl_class_Priority_Queue+IPriorityQueue_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPriorityQueue_2<
@@ -9,7 +9,7 @@ pub struct IPriorityQueue_2<
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
 }
-#[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
+#[cfg(feature = "cordl_class_Priority_Queue+IPriorityQueue_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ for crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority> {
         false
     }
 }
-#[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
+#[cfg(feature = "cordl_class_Priority_Queue+IPriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
+#[cfg(feature = "cordl_class_Priority_Queue+IPriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -299,7 +299,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
+#[cfg(feature = "cordl_class_Priority_Queue+IPriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

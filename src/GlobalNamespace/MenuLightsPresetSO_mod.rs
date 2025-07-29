@@ -1,4 +1,4 @@
-#[cfg(feature = "MenuLightsPresetSO")]
+#[cfg(feature = "cordl_class_MenuLightsPresetSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuLightsPresetSO {
@@ -9,7 +9,7 @@ pub struct MenuLightsPresetSO {
         >,
     >,
 }
-#[cfg(feature = "MenuLightsPresetSO")]
+#[cfg(feature = "cordl_class_MenuLightsPresetSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MenuLightsPresetSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MenuLightsPr
         false
     }
 }
-#[cfg(feature = "MenuLightsPresetSO")]
+#[cfg(feature = "cordl_class_MenuLightsPresetSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuLightsPresetSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuLightsPresetSO")]
+#[cfg(feature = "cordl_class_MenuLightsPresetSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuLightsPresetSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::MenuLightsPresetSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuLightsPresetSO")]
+#[cfg(feature = "cordl_class_MenuLightsPresetSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuLightsPresetSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

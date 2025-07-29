@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ScopableBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+ScopableBindingFinalizer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScopableBindingFinalizer {
@@ -11,7 +11,7 @@ pub struct ScopableBindingFinalizer {
         >,
     >,
 }
-#[cfg(feature = "Zenject+ScopableBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+ScopableBindingFinalizer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ScopableBindingFinalizer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ScopableBindingFinal
         false
     }
 }
-#[cfg(feature = "Zenject+ScopableBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+ScopableBindingFinalizer")]
 impl std::ops::Deref for crate::Zenject::ScopableBindingFinalizer {
     type Target = crate::Zenject::ProviderBindingFinalizer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ScopableBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+ScopableBindingFinalizer")]
 impl std::ops::DerefMut for crate::Zenject::ScopableBindingFinalizer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -194,7 +194,7 @@ impl crate::Zenject::ScopableBindingFinalizer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ScopableBindingFinalizer")]
+#[cfg(feature = "cordl_class_Zenject+ScopableBindingFinalizer")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ScopableBindingFinalizer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

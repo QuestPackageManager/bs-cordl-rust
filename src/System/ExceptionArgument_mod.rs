@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ExceptionArgument")]
+#[cfg(feature = "cordl_class_System+ExceptionArgument")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExceptionArgument {
@@ -55,7 +55,7 @@ pub enum ExceptionArgument {
     values = 46i32,
     view = 22i32,
 }
-#[cfg(feature = "System+ExceptionArgument")]
+#[cfg(feature = "cordl_class_System+ExceptionArgument")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ExceptionArgument {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ExceptionArgument {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ExceptionArgument")]
+#[cfg(feature = "cordl_class_System+ExceptionArgument")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::ExceptionArgument {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -94,7 +94,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::ExceptionArgument
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ExceptionArgument")]
+#[cfg(feature = "cordl_class_System+ExceptionArgument")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ExceptionArgument {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -107,7 +107,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ExceptionArgumen
         self
     }
 }
-#[cfg(feature = "System+ExceptionArgument")]
+#[cfg(feature = "cordl_class_System+ExceptionArgument")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::ExceptionArgument {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -121,7 +121,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::ExceptionArgument
         }
     }
 }
-#[cfg(feature = "System+ExceptionArgument")]
+#[cfg(feature = "cordl_class_System+ExceptionArgument")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::ExceptionArgument {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+IPAddressCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPAddressCollection {
@@ -9,7 +9,7 @@ pub struct IPAddressCollection {
         >,
     >,
 }
-#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+IPAddressCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::IPAddressCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Net::NetworkInformation::IPAddressCollection {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+IPAddressCollection")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::IPAddressCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+IPAddressCollection")]
 impl std::ops::DerefMut for crate::System::Net::NetworkInformation::IPAddressCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -336,7 +336,7 @@ impl crate::System::Net::NetworkInformation::IPAddressCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+IPAddressCollection")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+IPAddressCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::IPAddressCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

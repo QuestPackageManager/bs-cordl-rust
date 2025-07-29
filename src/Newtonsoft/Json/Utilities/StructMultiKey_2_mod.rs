@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StructMultiKey_2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StructMultiKey_2<
@@ -10,7 +10,7 @@ pub struct StructMultiKey_2<
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -73,7 +73,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -90,7 +90,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -108,7 +108,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -125,7 +125,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+HideInInspector")]
+#[cfg(feature = "cordl_class_UnityEngine+HideInInspector")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HideInInspector {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+HideInInspector")]
+#[cfg(feature = "cordl_class_UnityEngine+HideInInspector")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HideInInspector {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HideInInspector 
         false
     }
 }
-#[cfg(feature = "UnityEngine+HideInInspector")]
+#[cfg(feature = "cordl_class_UnityEngine+HideInInspector")]
 impl std::ops::Deref for crate::UnityEngine::HideInInspector {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+HideInInspector")]
+#[cfg(feature = "cordl_class_UnityEngine+HideInInspector")]
 impl std::ops::DerefMut for crate::UnityEngine::HideInInspector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::UnityEngine::HideInInspector {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+HideInInspector")]
+#[cfg(feature = "cordl_class_UnityEngine+HideInInspector")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::HideInInspector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

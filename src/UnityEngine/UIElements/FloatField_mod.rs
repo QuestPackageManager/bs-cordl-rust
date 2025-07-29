@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+FloatField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<f32>,
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::FloatField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Floa
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -256,7 +256,7 @@ impl crate::UnityEngine::UIElements::FloatField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::FloatField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -265,13 +265,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Float
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+FloatInput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatField_FloatInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f32>,
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+FloatInput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::FloatField_FloatInput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -291,14 +291,14 @@ for crate::UnityEngine::UIElements::FloatField_FloatInput {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+FloatInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_FloatInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+FloatInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField_FloatInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -477,7 +477,7 @@ impl crate::UnityEngine::UIElements::FloatField_FloatInput {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+FloatInput")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::FloatField_FloatInput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -487,7 +487,7 @@ for crate::UnityEngine::UIElements::FloatField_FloatInput {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatField_UxmlFactory {
@@ -496,7 +496,7 @@ pub struct FloatField_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -516,7 +516,7 @@ for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField>,
@@ -526,7 +526,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_UxmlFactory 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -563,7 +563,7 @@ impl crate::UnityEngine::UIElements::FloatField_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -573,7 +573,7 @@ for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatField_UxmlTraits {
@@ -584,7 +584,7 @@ pub struct FloatField_UxmlTraits {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -604,7 +604,7 @@ for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         f32,
@@ -616,7 +616,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -653,7 +653,7 @@ impl crate::UnityEngine::UIElements::FloatField_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

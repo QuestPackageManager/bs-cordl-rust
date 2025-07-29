@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LoadCachedObjectInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _index: u32,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -33,7 +39,9 @@ for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -229,7 +237,9 @@ impl crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

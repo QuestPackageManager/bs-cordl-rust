@@ -1,4 +1,4 @@
-#[cfg(feature = "FileBrowserTableCell")]
+#[cfg(feature = "cordl_class_FileBrowserTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileBrowserTableCell {
@@ -7,7 +7,7 @@ pub struct FileBrowserTableCell {
     pub _bgImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _highlightImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
-#[cfg(feature = "FileBrowserTableCell")]
+#[cfg(feature = "cordl_class_FileBrowserTableCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FileBrowserTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::FileBrowserTableCell {
         false
     }
 }
-#[cfg(feature = "FileBrowserTableCell")]
+#[cfg(feature = "cordl_class_FileBrowserTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::FileBrowserTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileBrowserTableCell")]
+#[cfg(feature = "cordl_class_FileBrowserTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FileBrowserTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::FileBrowserTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileBrowserTableCell")]
+#[cfg(feature = "cordl_class_FileBrowserTableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FileBrowserTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+VRMessageOverlayResponse")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRMessageOverlayResponse")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VRMessageOverlayResponse {
@@ -11,7 +11,7 @@ pub enum VRMessageOverlayResponse {
     CouldntFindOrCreateClientOverlay = 5i32,
     CouldntFindSystemOverlay = 4i32,
 }
-#[cfg(feature = "OVR+OpenVR+VRMessageOverlayResponse")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRMessageOverlayResponse")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::VRMessageOverlayResponse {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::OVR::OpenVR::VRMessageOverlayResponse {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRMessageOverlayResponse")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRMessageOverlayResponse")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::VRMessageOverlayResponse {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::OVR::OpenVR::VRMessageOverlayResponse {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRMessageOverlayResponse")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRMessageOverlayResponse")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::VRMessageOverlayResponse {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::OVR::OpenVR::VRMessageOverlayResponse {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRMessageOverlayResponse")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRMessageOverlayResponse")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::VRMessageOverlayResponse {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::OVR::OpenVR::VRMessageOverlayResponse {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+VRMessageOverlayResponse")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VRMessageOverlayResponse")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::VRMessageOverlayResponse {
     type Actual = Self;

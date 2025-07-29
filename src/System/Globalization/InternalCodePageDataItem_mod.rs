@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
+#[cfg(feature = "cordl_class_System+Globalization+InternalCodePageDataItem")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InternalCodePageDataItem {
@@ -7,7 +7,7 @@ pub struct InternalCodePageDataItem {
     pub flags: u32,
     pub Names: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
+#[cfg(feature = "cordl_class_System+Globalization+InternalCodePageDataItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::InternalCodePageDataItem {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Globalization::InternalCodePageDataItem {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
+#[cfg(feature = "cordl_class_System+Globalization+InternalCodePageDataItem")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::InternalCodePageDataItem {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Globalization::InternalCodePageDataItem {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
+#[cfg(feature = "cordl_class_System+Globalization+InternalCodePageDataItem")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::InternalCodePageDataItem {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Globalization::InternalCodePageDataItem {
         self
     }
 }
-#[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
+#[cfg(feature = "cordl_class_System+Globalization+InternalCodePageDataItem")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::InternalCodePageDataItem {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Globalization::InternalCodePageDataItem {
         }
     }
 }
-#[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
+#[cfg(feature = "cordl_class_System+Globalization+InternalCodePageDataItem")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::InternalCodePageDataItem {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::System::Globalization::InternalCodePageDataItem {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
+#[cfg(feature = "cordl_class_System+Globalization+InternalCodePageDataItem")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::InternalCodePageDataItem {
     type Type = Self;

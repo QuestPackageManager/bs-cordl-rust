@@ -1,4 +1,4 @@
-#[cfg(feature = "MockComboController")]
+#[cfg(feature = "cordl_class_MockComboController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockComboController {
@@ -8,7 +8,7 @@ pub struct MockComboController {
         crate::System::Action,
     >,
 }
-#[cfg(feature = "MockComboController")]
+#[cfg(feature = "cordl_class_MockComboController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockComboController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockComboCon
         false
     }
 }
-#[cfg(feature = "MockComboController")]
+#[cfg(feature = "cordl_class_MockComboController")]
 impl std::ops::Deref for crate::GlobalNamespace::MockComboController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockComboController")]
+#[cfg(feature = "cordl_class_MockComboController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockComboController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::MockComboController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockComboController")]
+#[cfg(feature = "cordl_class_MockComboController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockComboController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

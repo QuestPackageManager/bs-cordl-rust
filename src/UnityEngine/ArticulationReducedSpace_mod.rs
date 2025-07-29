@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArticulationReducedSpace {
     pub x: crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer,
     pub dofCount: i32,
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ArticulationReducedSpace {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::ArticulationReducedSpace {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ArticulationReducedSpace {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::ArticulationReducedSpace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ArticulationReducedSpace {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::ArticulationReducedSpace {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ArticulationReducedSpace {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::ArticulationReducedSpace {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ArticulationReducedSpace {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::ArticulationReducedSpace {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ArticulationReducedSpace {
     type Type = Self;
@@ -226,13 +226,13 @@ impl crate::UnityEngine::ArticulationReducedSpace {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArticulationReducedSpace__x_e__FixedBuffer {
     pub FixedElementField: f32,
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
     type Held<'a> = Self;
@@ -262,7 +262,7 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
     type Type = Self;
@@ -273,7 +273,7 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
     type Actual = Self;
@@ -287,7 +287,7 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
     type Type = Self;
@@ -302,7 +302,7 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
     type Actual = Self;
@@ -316,7 +316,7 @@ for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer {
     type Type = Self;

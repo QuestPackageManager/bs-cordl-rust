@@ -1,10 +1,10 @@
-#[cfg(feature = "ENet+ENetAddress")]
+#[cfg(feature = "cordl_class_ENet+ENetAddress")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ENetAddress {
     padding: quest_hook::libil2cpp::ValueTypePadding<18usize>,
 }
-#[cfg(feature = "ENet+ENetAddress")]
+#[cfg(feature = "cordl_class_ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::ENetAddress {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::ENetAddress {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ENet+ENetAddress")]
+#[cfg(feature = "cordl_class_ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::ENetAddress {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::ENetAddress {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ENet+ENetAddress")]
+#[cfg(feature = "cordl_class_ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::ENetAddress {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::ENetAddress {
         self
     }
 }
-#[cfg(feature = "ENet+ENetAddress")]
+#[cfg(feature = "cordl_class_ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::ENetAddress {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::ENetAddress {
         }
     }
 }
-#[cfg(feature = "ENet+ENetAddress")]
+#[cfg(feature = "cordl_class_ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::ENetAddress {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::ENet::ENetAddress {
         actual
     }
 }
-#[cfg(feature = "ENet+ENetAddress")]
+#[cfg(feature = "cordl_class_ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::ENetAddress {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

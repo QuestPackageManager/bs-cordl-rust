@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct GreaterThanOrEqualInstruction_GreaterThanOrEqualInt32 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt32 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt3
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt32 {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt3
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt32 {
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt32 {

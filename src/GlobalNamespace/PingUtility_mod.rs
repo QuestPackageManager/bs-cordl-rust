@@ -1,10 +1,10 @@
-#[cfg(feature = "PingUtility")]
+#[cfg(feature = "cordl_class_PingUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PingUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "PingUtility")]
+#[cfg(feature = "cordl_class_PingUtility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PingUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PingUtility 
         false
     }
 }
-#[cfg(feature = "PingUtility")]
+#[cfg(feature = "cordl_class_PingUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::PingUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PingUtility")]
+#[cfg(feature = "cordl_class_PingUtility")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PingUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::PingUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PingUtility")]
+#[cfg(feature = "cordl_class_PingUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PingUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

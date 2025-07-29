@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LODParameters")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LODParameters {
@@ -8,7 +8,7 @@ pub struct LODParameters {
     pub m_OrthoSize: f32,
     pub m_CameraPixelHeight: i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LODParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::LODParameters {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::Rendering::LODParameters {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LODParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::LODParameters {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::Rendering::LODParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LODParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::LODParameters {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::Rendering::LODParameters {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LODParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::LODParameters {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::Rendering::LODParameters {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LODParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::LODParameters {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::UnityEngine::Rendering::LODParameters {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LODParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LODParameters")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::LODParameters {
     type Type = Self;

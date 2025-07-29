@@ -1,4 +1,4 @@
-#[cfg(feature = "MockLevelEndActions")]
+#[cfg(feature = "cordl_class_MockLevelEndActions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockLevelEndActions {
@@ -6,7 +6,7 @@ pub struct MockLevelEndActions {
     pub levelFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub levelFailedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "MockLevelEndActions")]
+#[cfg(feature = "cordl_class_MockLevelEndActions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockLevelEndActions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockLevelEnd
         false
     }
 }
-#[cfg(feature = "MockLevelEndActions")]
+#[cfg(feature = "cordl_class_MockLevelEndActions")]
 impl std::ops::Deref for crate::GlobalNamespace::MockLevelEndActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockLevelEndActions")]
+#[cfg(feature = "cordl_class_MockLevelEndActions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockLevelEndActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,7 +173,7 @@ impl crate::GlobalNamespace::MockLevelEndActions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockLevelEndActions")]
+#[cfg(feature = "cordl_class_MockLevelEndActions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockLevelEndActions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

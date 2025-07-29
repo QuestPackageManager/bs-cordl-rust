@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+OrderedDictionary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrderedDictionary {
@@ -15,7 +15,7 @@ pub struct OrderedDictionary {
         crate::System::Runtime::Serialization::SerializationInfo,
     >,
 }
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+OrderedDictionary")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::OrderedDictionary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::System::Collections::Specialized::OrderedDictionary {
         false
     }
 }
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+OrderedDictionary")]
 impl std::ops::Deref for crate::System::Collections::Specialized::OrderedDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+OrderedDictionary")]
 impl std::ops::DerefMut for crate::System::Collections::Specialized::OrderedDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -798,7 +798,7 @@ impl crate::System::Collections::Specialized::OrderedDictionary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+OrderedDictionary")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::OrderedDictionary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -883,7 +883,7 @@ for crate::System::Collections::Specialized::OrderedDictionary {
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -895,7 +895,7 @@ pub struct OrderedDictionary_OrderedDictionaryEnumerator {
     >,
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
@@ -917,7 +917,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
@@ -927,7 +927,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
@@ -1127,7 +1127,7 @@ impl crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionar
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
@@ -1175,7 +1175,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1185,7 +1185,7 @@ pub struct OrderedDictionary_OrderedDictionaryKeyValueCollection {
     pub _isKeys: bool,
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
@@ -1207,7 +1207,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
@@ -1217,7 +1217,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
@@ -1402,7 +1402,7 @@ impl crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionar
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
+    feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {

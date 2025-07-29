@@ -1,4 +1,4 @@
-#[cfg(feature = "System+TypeCode")]
+#[cfg(feature = "cordl_class_System+TypeCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeCode {
@@ -22,7 +22,7 @@ pub enum TypeCode {
     UInt32 = 10i32,
     UInt64 = 12i32,
 }
-#[cfg(feature = "System+TypeCode")]
+#[cfg(feature = "cordl_class_System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeCode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -51,7 +51,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TypeCode")]
+#[cfg(feature = "cordl_class_System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TypeCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TypeCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TypeCode")]
+#[cfg(feature = "cordl_class_System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TypeCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TypeCode {
         self
     }
 }
-#[cfg(feature = "System+TypeCode")]
+#[cfg(feature = "cordl_class_System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TypeCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TypeCode {
         }
     }
 }
-#[cfg(feature = "System+TypeCode")]
+#[cfg(feature = "cordl_class_System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TypeCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

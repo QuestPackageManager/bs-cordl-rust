@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NullableMethodCallInstruction_HasValue {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NullableMethodCallInstruction_HasValue {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_HasValue {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NullableMethodCallInstruction_HasValue {
     type Target = crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NullableMethodCallInstruction_H
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NullableMethodCallInstruction_HasValue {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::NullableMethodCallInstruction_HasValue {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NullableMethodCallInstruction_HasValue {

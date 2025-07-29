@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+UTF8Encoding")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UTF8Encoding {
@@ -6,7 +6,7 @@ pub struct UTF8Encoding {
     pub _emitUTF8Identifier: bool,
     pub _isThrowException: bool,
 }
-#[cfg(feature = "System+Text+UTF8Encoding")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF8Encoding {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF8Encoding {
         false
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding {
     type Target = crate::System::Text::Encoding;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding")]
 impl std::ops::DerefMut for crate::System::Text::UTF8Encoding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1134,7 +1134,7 @@ impl crate::System::Text::UTF8Encoding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF8Encoding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1143,14 +1143,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF8Encoding {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Decoder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UTF8Encoding_UTF8Decoder {
     __cordl_parent: crate::System::Text::DecoderNLS,
     pub bits: i32,
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Decoder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::UTF8Encoding_UTF8Decoder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1170,14 +1170,14 @@ for crate::System::Text::UTF8Encoding_UTF8Decoder {
         false
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Decoder")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding_UTF8Decoder {
     type Target = crate::System::Text::DecoderNLS;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Decoder")]
 impl std::ops::DerefMut for crate::System::Text::UTF8Encoding_UTF8Decoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1259,7 +1259,7 @@ impl crate::System::Text::UTF8Encoding_UTF8Decoder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Decoder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::UTF8Encoding_UTF8Decoder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1269,14 +1269,14 @@ for crate::System::Text::UTF8Encoding_UTF8Decoder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Encoder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UTF8Encoding_UTF8Encoder {
     __cordl_parent: crate::System::Text::EncoderNLS,
     pub surrogateChar: i32,
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Encoder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::UTF8Encoding_UTF8Encoder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1296,14 +1296,14 @@ for crate::System::Text::UTF8Encoding_UTF8Encoder {
         false
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Encoder")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding_UTF8Encoder {
     type Target = crate::System::Text::EncoderNLS;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Encoder")]
 impl std::ops::DerefMut for crate::System::Text::UTF8Encoding_UTF8Encoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1385,7 +1385,7 @@ impl crate::System::Text::UTF8Encoding_UTF8Encoder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
+#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Encoder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::UTF8Encoding_UTF8Encoder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

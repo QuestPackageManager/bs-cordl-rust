@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+TextEncodedRawTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+TextEncodedRawTextWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextEncodedRawTextWriter {
     __cordl_parent: crate::System::Xml::XmlEncodedRawTextWriter,
 }
-#[cfg(feature = "System+Xml+TextEncodedRawTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+TextEncodedRawTextWriter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::TextEncodedRawTextWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::TextEncodedRawTextWriter {
         false
     }
 }
-#[cfg(feature = "System+Xml+TextEncodedRawTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+TextEncodedRawTextWriter")]
 impl std::ops::Deref for crate::System::Xml::TextEncodedRawTextWriter {
     type Target = crate::System::Xml::XmlEncodedRawTextWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+TextEncodedRawTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+TextEncodedRawTextWriter")]
 impl std::ops::DerefMut for crate::System::Xml::TextEncodedRawTextWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -788,7 +788,7 @@ impl crate::System::Xml::TextEncodedRawTextWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+TextEncodedRawTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+TextEncodedRawTextWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::TextEncodedRawTextWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

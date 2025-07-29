@@ -1,4 +1,4 @@
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarSystemSelectionFlowCoordinator {
@@ -31,7 +31,7 @@ pub struct AvatarSystemSelectionFlowCoordinator {
     >,
     pub _continueButtonVisible: bool,
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -582,7 +582,7 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -592,7 +592,7 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator+FinishAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarSystemSelectionFlowCoordinator_FinishAction {
@@ -600,7 +600,7 @@ pub enum AvatarSystemSelectionFlowCoordinator_FinishAction {
     Back = 1i32,
     Continue = 0i32,
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
     type Held<'a> = Self;
@@ -630,7 +630,7 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
     type Type = Self;
@@ -641,7 +641,7 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
     type Actual = Self;
@@ -655,7 +655,7 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
         self
     }
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
     type Type = Self;
@@ -670,7 +670,7 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
         }
     }
 }
-#[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
+#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction {
     type Actual = Self;

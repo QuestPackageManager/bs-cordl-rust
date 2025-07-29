@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+EventSystems+UIBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+UIBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIBehaviour {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "UnityEngine+EventSystems+UIBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+UIBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::UIBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::EventSystems::UIBehaviour {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+UIBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+UIBehaviour")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::UIBehaviour {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+UIBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+UIBehaviour")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::UIBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -357,7 +357,7 @@ impl crate::UnityEngine::EventSystems::UIBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+UIBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+UIBehaviour")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::UIBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

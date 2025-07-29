@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerSyncStateManager_5")]
+#[cfg(feature = "cordl_class_MultiplayerSyncStateManager_5")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerSyncStateManager_5<
@@ -43,7 +43,7 @@ pub struct MultiplayerSyncStateManager_5<
     __cordl_phantom_TSerializable: std::marker::PhantomData<TSerializable>,
     __cordl_phantom_TDeltaSerializable: std::marker::PhantomData<TDeltaSerializable>,
 }
-#[cfg(feature = "MultiplayerSyncStateManager_5")]
+#[cfg(feature = "cordl_class_MultiplayerSyncStateManager_5")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -93,7 +93,7 @@ for crate::GlobalNamespace::MultiplayerSyncStateManager_5<
         false
     }
 }
-#[cfg(feature = "MultiplayerSyncStateManager_5")]
+#[cfg(feature = "cordl_class_MultiplayerSyncStateManager_5")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -113,7 +113,7 @@ for crate::GlobalNamespace::MultiplayerSyncStateManager_5<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerSyncStateManager_5")]
+#[cfg(feature = "cordl_class_MultiplayerSyncStateManager_5")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -1223,7 +1223,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerSyncStateManager_5")]
+#[cfg(feature = "cordl_class_MultiplayerSyncStateManager_5")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

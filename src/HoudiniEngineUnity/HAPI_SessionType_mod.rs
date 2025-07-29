@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_SessionType {
@@ -10,7 +10,7 @@ pub enum HAPI_SessionType {
     HAPI_SESSION_MAX = 5i32,
     HAPI_SESSION_THRIFT = 1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_SessionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Sess
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_SessionType {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_SessionType {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_SessionType {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_SessionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_SessionType {
     type Actual = Self;

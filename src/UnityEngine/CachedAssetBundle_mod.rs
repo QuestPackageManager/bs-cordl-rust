@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+CachedAssetBundle")]
+#[cfg(feature = "cordl_class_UnityEngine+CachedAssetBundle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CachedAssetBundle {
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Hash: crate::UnityEngine::Hash128,
 }
-#[cfg(feature = "UnityEngine+CachedAssetBundle")]
+#[cfg(feature = "cordl_class_UnityEngine+CachedAssetBundle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CachedAssetBundle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CachedAssetBundl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CachedAssetBundle")]
+#[cfg(feature = "cordl_class_UnityEngine+CachedAssetBundle")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CachedAssetBundle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CachedAssetB
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CachedAssetBundle")]
+#[cfg(feature = "cordl_class_UnityEngine+CachedAssetBundle")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CachedAssetBundle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CachedAsset
         self
     }
 }
-#[cfg(feature = "UnityEngine+CachedAssetBundle")]
+#[cfg(feature = "cordl_class_UnityEngine+CachedAssetBundle")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CachedAssetBundle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CachedAssetB
         }
     }
 }
-#[cfg(feature = "UnityEngine+CachedAssetBundle")]
+#[cfg(feature = "cordl_class_UnityEngine+CachedAssetBundle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CachedAssetBundle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CachedAssetBun
         actual
     }
 }
-#[cfg(feature = "UnityEngine+CachedAssetBundle")]
+#[cfg(feature = "cordl_class_UnityEngine+CachedAssetBundle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::CachedAssetBundle {
     type Type = Self;

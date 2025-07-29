@@ -1,4 +1,4 @@
-#[cfg(feature = "BTSCharacterDataModel")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterDataModel {
@@ -18,7 +18,7 @@ pub struct BTSCharacterDataModel {
         >,
     >,
 }
-#[cfg(feature = "BTSCharacterDataModel")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BTSCharacterDataModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::BTSCharacterDataModel {
         false
     }
 }
-#[cfg(feature = "BTSCharacterDataModel")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterDataModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BTSCharacterDataModel")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -172,7 +172,7 @@ impl crate::GlobalNamespace::BTSCharacterDataModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BTSCharacterDataModel")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BTSCharacterDataModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -182,7 +182,7 @@ for crate::GlobalNamespace::BTSCharacterDataModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterDataModel_AnimationClipWithId {
@@ -192,7 +192,7 @@ pub struct BTSCharacterDataModel_AnimationClipWithId {
         crate::UnityEngine::AddressableAssets::AssetReference,
     >,
 }
-#[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -212,7 +212,7 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
         false
     }
 }
-#[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -220,7 +220,7 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -304,7 +304,7 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -314,7 +314,7 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterDataModel_PrefabWithId {
@@ -324,7 +324,7 @@ pub struct BTSCharacterDataModel_PrefabWithId {
         crate::UnityEngine::AddressableAssets::AssetReference,
     >,
 }
-#[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -344,14 +344,14 @@ for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
         false
     }
 }
-#[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -434,7 +434,7 @@ impl crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
+#[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

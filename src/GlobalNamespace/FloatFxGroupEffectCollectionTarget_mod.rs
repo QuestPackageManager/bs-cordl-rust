@@ -1,4 +1,4 @@
-#[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
+#[cfg(feature = "cordl_class_FloatFxGroupEffectCollectionTarget")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxGroupEffectCollectionTarget {
@@ -9,7 +9,7 @@ pub struct FloatFxGroupEffectCollectionTarget {
         >,
     >,
 }
-#[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
+#[cfg(feature = "cordl_class_FloatFxGroupEffectCollectionTarget")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
         false
     }
 }
-#[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
+#[cfg(feature = "cordl_class_FloatFxGroupEffectCollectionTarget")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
+#[cfg(feature = "cordl_class_FloatFxGroupEffectCollectionTarget")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
+#[cfg(feature = "cordl_class_FloatFxGroupEffectCollectionTarget")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

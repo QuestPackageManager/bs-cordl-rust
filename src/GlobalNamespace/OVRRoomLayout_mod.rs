@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRRoomLayout")]
+#[cfg(feature = "cordl_class_OVRRoomLayout")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRRoomLayout {
     pub _Handle_k__BackingField: u64,
 }
-#[cfg(feature = "OVRRoomLayout")]
+#[cfg(feature = "cordl_class_OVRRoomLayout")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRRoomLayout {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRRoomLayou
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRRoomLayout")]
+#[cfg(feature = "cordl_class_OVRRoomLayout")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRRoomLayout {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRRoomL
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRRoomLayout")]
+#[cfg(feature = "cordl_class_OVRRoomLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRRoomLayout {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRRoom
         self
     }
 }
-#[cfg(feature = "OVRRoomLayout")]
+#[cfg(feature = "cordl_class_OVRRoomLayout")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRRoomLayout {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRRoomL
         }
     }
 }
-#[cfg(feature = "OVRRoomLayout")]
+#[cfg(feature = "cordl_class_OVRRoomLayout")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRRoomLayout {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRRoomLay
         actual
     }
 }
-#[cfg(feature = "OVRRoomLayout")]
+#[cfg(feature = "cordl_class_OVRRoomLayout")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRRoomLayout {
     type Type = Self;

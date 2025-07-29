@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+SpookyHash")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpookyHash {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+SpookyHash")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpookyHash {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpookyHash {
         false
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash")]
 impl std::ops::Deref for crate::UnityEngine::SpookyHash {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash")]
 impl std::ops::DerefMut for crate::UnityEngine::SpookyHash {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -432,7 +432,7 @@ impl crate::UnityEngine::SpookyHash {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SpookyHash {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -441,13 +441,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SpookyHash {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash+U")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpookyHash_U {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "UnityEngine+SpookyHash+U")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpookyHash_U {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -476,7 +476,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpookyHash_U {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash+U")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpookyHash_U {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -486,7 +486,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpookyHash_U
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash+U")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpookyHash_U {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -499,7 +499,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpookyHash_
         self
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash+U")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpookyHash_U {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -513,7 +513,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpookyHash_U
         }
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash+U")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SpookyHash_U {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -526,7 +526,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SpookyHash_U {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+SpookyHash+U")]
+#[cfg(feature = "cordl_class_UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::SpookyHash_U {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

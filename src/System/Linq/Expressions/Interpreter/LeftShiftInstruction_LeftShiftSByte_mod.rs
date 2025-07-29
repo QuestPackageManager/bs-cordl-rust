@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LeftShiftInstruction_LeftShiftSByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftSByte {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftSByte {
     type Target = crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftS
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftSByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::LeftShiftInstruction_LeftShiftSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftSByte {

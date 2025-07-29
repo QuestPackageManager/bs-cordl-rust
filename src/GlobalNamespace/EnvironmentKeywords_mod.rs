@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentKeywords")]
+#[cfg(feature = "cordl_class_EnvironmentKeywords")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentKeywords {
@@ -14,7 +14,7 @@ pub struct EnvironmentKeywords {
         >,
     >,
 }
-#[cfg(feature = "EnvironmentKeywords")]
+#[cfg(feature = "cordl_class_EnvironmentKeywords")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EnvironmentKeywords {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EnvironmentK
         false
     }
 }
-#[cfg(feature = "EnvironmentKeywords")]
+#[cfg(feature = "cordl_class_EnvironmentKeywords")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentKeywords {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentKeywords")]
+#[cfg(feature = "cordl_class_EnvironmentKeywords")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentKeywords {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -163,7 +163,7 @@ impl crate::GlobalNamespace::EnvironmentKeywords {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentKeywords")]
+#[cfg(feature = "cordl_class_EnvironmentKeywords")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentKeywords {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

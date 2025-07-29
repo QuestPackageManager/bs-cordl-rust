@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider {
     __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1<f32>,
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Slider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Slid
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Slider {
     type Target = crate::UnityEngine::UIElements::BaseSlider_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Slider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -309,7 +309,7 @@ impl crate::UnityEngine::UIElements::Slider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Slider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -318,7 +318,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Slide
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider_UxmlFactory {
@@ -327,7 +327,7 @@ pub struct Slider_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Slider_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -347,7 +347,7 @@ for crate::UnityEngine::UIElements::Slider_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Slider_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider>,
@@ -357,7 +357,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Slider_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Slider_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -394,7 +394,7 @@ impl crate::UnityEngine::UIElements::Slider_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Slider_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -404,7 +404,7 @@ for crate::UnityEngine::UIElements::Slider_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider_UxmlTraits {
@@ -430,7 +430,7 @@ pub struct Slider_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Slider_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -450,14 +450,14 @@ for crate::UnityEngine::UIElements::Slider_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Slider_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Slider_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -530,7 +530,7 @@ impl crate::UnityEngine::UIElements::Slider_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Slider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Slider_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

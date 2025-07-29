@@ -1,4 +1,4 @@
-#[cfg(feature = "RecordingToolLoggingViewController")]
+#[cfg(feature = "cordl_class_RecordingToolLoggingViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolLoggingViewController {
@@ -6,7 +6,7 @@ pub struct RecordingToolLoggingViewController {
     pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,
     pub _listLogger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ListLogger>,
 }
-#[cfg(feature = "RecordingToolLoggingViewController")]
+#[cfg(feature = "cordl_class_RecordingToolLoggingViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RecordingToolLoggingViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::RecordingToolLoggingViewController {
         false
     }
 }
-#[cfg(feature = "RecordingToolLoggingViewController")]
+#[cfg(feature = "cordl_class_RecordingToolLoggingViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolLoggingViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RecordingToolLoggingViewController")]
+#[cfg(feature = "cordl_class_RecordingToolLoggingViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolLoggingViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::RecordingToolLoggingViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RecordingToolLoggingViewController")]
+#[cfg(feature = "cordl_class_RecordingToolLoggingViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RecordingToolLoggingViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DependencyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DependencyAttribute {
@@ -8,7 +8,7 @@ pub struct DependencyAttribute {
     >,
     pub loadHint: crate::System::Runtime::CompilerServices::LoadHint,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DependencyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::DependencyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Runtime::CompilerServices::DependencyAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DependencyAttribute")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::DependencyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DependencyAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::DependencyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -92,7 +92,7 @@ impl crate::System::Runtime::CompilerServices::DependencyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DependencyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::DependencyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

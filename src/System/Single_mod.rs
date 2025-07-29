@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Single")]
+#[cfg(feature = "cordl_class_System+Single")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Single {
     pub m_value: f32,
 }
-#[cfg(feature = "System+Single")]
+#[cfg(feature = "cordl_class_System+Single")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Single {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Single {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Single")]
+#[cfg(feature = "cordl_class_System+Single")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Single {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Single {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Single")]
+#[cfg(feature = "cordl_class_System+Single")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Single {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Single {
         self
     }
 }
-#[cfg(feature = "System+Single")]
+#[cfg(feature = "cordl_class_System+Single")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Single {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Single {
         }
     }
 }
-#[cfg(feature = "System+Single")]
+#[cfg(feature = "cordl_class_System+Single")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Single {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Single {
         actual
     }
 }
-#[cfg(feature = "System+Single")]
+#[cfg(feature = "cordl_class_System+Single")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Single {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

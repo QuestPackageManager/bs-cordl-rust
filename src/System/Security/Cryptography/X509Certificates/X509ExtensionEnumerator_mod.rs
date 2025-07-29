@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ExtensionEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509ExtensionEnumer
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator"
+)]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +39,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509ExtensionEnumer
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator"
+)]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -176,7 +184,9 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ExtensionEnume
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ExtensionEnumerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

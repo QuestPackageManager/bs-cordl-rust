@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RsaPrivateKeyStructure {
@@ -18,7 +18,7 @@ pub struct RsaPrivateKeyStructure {
         crate::Org::BouncyCastle::Math::BigInteger,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -532,7 +532,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

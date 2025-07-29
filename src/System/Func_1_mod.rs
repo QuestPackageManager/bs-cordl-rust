@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Func_1")]
+#[cfg(feature = "cordl_class_System+Func_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Func_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Func_1")]
+#[cfg(feature = "cordl_class_System+Func_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Func_1<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,7 +38,7 @@ for crate::System::Func_1<TResult> {
         false
     }
 }
-#[cfg(feature = "System+Func_1")]
+#[cfg(feature = "cordl_class_System+Func_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Func_1<TResult> {
     type Target = crate::System::MulticastDelegate;
@@ -46,7 +46,7 @@ for crate::System::Func_1<TResult> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Func_1")]
+#[cfg(feature = "cordl_class_System+Func_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Func_1<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -129,7 +129,7 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::System::Func_1<TResult> {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Func_1")]
+#[cfg(feature = "cordl_class_System+Func_1")]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Func_1<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

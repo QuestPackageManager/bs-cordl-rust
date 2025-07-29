@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithInstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithInstalledApplicationList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithInstalledApplicationList {
@@ -8,7 +8,7 @@ pub struct MessageWithInstalledApplicationList {
         >,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithInstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithInstalledApplicationList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithInstalledApplicationList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithInstalledApplicationList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithInstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithInstalledApplicationList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithInstalledApplicationList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithInstalledApplicatio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithInstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithInstalledApplicationList")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithInstalledApplicationList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -147,7 +147,7 @@ impl crate::Oculus::Platform::MessageWithInstalledApplicationList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithInstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithInstalledApplicationList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithInstalledApplicationList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

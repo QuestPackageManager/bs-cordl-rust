@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlEventCache")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlEventCache {
@@ -20,7 +20,7 @@ pub struct XmlEventCache {
     pub singleText: crate::System::Xml::Xsl::Runtime::StringConcat,
     pub baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+XmlEventCache")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlEventCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlEventCache {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache")]
 impl std::ops::Deref for crate::System::Xml::XmlEventCache {
     type Target = crate::System::Xml::XmlRawWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache")]
 impl std::ops::DerefMut for crate::System::Xml::XmlEventCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1240,7 +1240,7 @@ impl crate::System::Xml::XmlEventCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlEventCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1249,7 +1249,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlEventCache {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEvent")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlEventCache_XmlEvent {
@@ -1259,7 +1259,7 @@ pub struct XmlEventCache_XmlEvent {
     pub s3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlEventCache_XmlEvent {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1288,7 +1288,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlEventCache_Xm
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Type = Self;
@@ -1299,7 +1299,7 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Actual = Self;
@@ -1313,7 +1313,7 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Type = Self;
@@ -1328,7 +1328,7 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Actual = Self;
@@ -1342,7 +1342,7 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Type = Self;
@@ -1699,7 +1699,7 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlEventCache_XmlEventType {
@@ -1731,7 +1731,7 @@ pub enum XmlEventCache_XmlEventType {
     XmlDecl1 = 16i32,
     XmlDecl2 = 17i32,
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Held<'a> = Self;
@@ -1761,7 +1761,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Type = Self;
@@ -1772,7 +1772,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Actual = Self;
@@ -1786,7 +1786,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Type = Self;
@@ -1801,7 +1801,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
+#[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Actual = Self;

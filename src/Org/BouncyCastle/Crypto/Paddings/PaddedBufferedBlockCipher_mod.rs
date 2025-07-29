@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PaddedBufferedBlockCipher {
@@ -7,7 +9,9 @@ pub struct PaddedBufferedBlockCipher {
         crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
     type Target = crate::Org::BouncyCastle::Crypto::BufferedBlockCipher;
@@ -35,7 +41,9 @@ for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -316,7 +324,9 @@ impl crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidLinearAccelerationSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::LinearAccelerationSensor,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
     type Target = crate::UnityEngine::InputSystem::LinearAccelerationSensor;
@@ -32,7 +38,9 @@ for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

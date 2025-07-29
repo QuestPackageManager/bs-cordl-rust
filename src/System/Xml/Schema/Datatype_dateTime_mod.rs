@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+Datatype_dateTime")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_dateTime")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_dateTime {
     __cordl_parent: crate::System::Xml::Schema::Datatype_dateTimeBase,
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_dateTime")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_dateTime")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::Datatype_dateTime {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_dateTime {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_dateTime")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_dateTime")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_dateTime {
     type Target = crate::System::Xml::Schema::Datatype_dateTimeBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_dateTime")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_dateTime")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_dateTime {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::System::Xml::Schema::Datatype_dateTime {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_dateTime")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_dateTime")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::Datatype_dateTime {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

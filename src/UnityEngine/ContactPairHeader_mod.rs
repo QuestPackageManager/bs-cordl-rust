@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ContactPairHeader")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactPairHeader")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ContactPairHeader {
@@ -9,7 +9,7 @@ pub struct ContactPairHeader {
     pub m_Flags: crate::UnityEngine::CollisionPairHeaderFlags,
     pub m_RelativeVelocity: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "UnityEngine+ContactPairHeader")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactPairHeader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ContactPairHeader {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ContactPairHeade
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ContactPairHeader")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactPairHeader")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ContactPairHeader {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ContactPairH
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ContactPairHeader")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactPairHeader")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ContactPairHeader {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ContactPair
         self
     }
 }
-#[cfg(feature = "UnityEngine+ContactPairHeader")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactPairHeader")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ContactPairHeader {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ContactPairH
         }
     }
 }
-#[cfg(feature = "UnityEngine+ContactPairHeader")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactPairHeader")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ContactPairHeader {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ContactPairHea
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ContactPairHeader")]
+#[cfg(feature = "cordl_class_UnityEngine+ContactPairHeader")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ContactPairHeader {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "RectangleFakeGlow")]
+#[cfg(feature = "cordl_class_RectangleFakeGlow")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectangleFakeGlow {
@@ -10,7 +10,7 @@ pub struct RectangleFakeGlow {
         crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
 }
-#[cfg(feature = "RectangleFakeGlow")]
+#[cfg(feature = "cordl_class_RectangleFakeGlow")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RectangleFakeGlow {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RectangleFak
         false
     }
 }
-#[cfg(feature = "RectangleFakeGlow")]
+#[cfg(feature = "cordl_class_RectangleFakeGlow")]
 impl std::ops::Deref for crate::GlobalNamespace::RectangleFakeGlow {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RectangleFakeGlow")]
+#[cfg(feature = "cordl_class_RectangleFakeGlow")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RectangleFakeGlow {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -204,7 +204,7 @@ impl crate::GlobalNamespace::RectangleFakeGlow {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RectangleFakeGlow")]
+#[cfg(feature = "cordl_class_RectangleFakeGlow")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RectangleFakeGlow {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

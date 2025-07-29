@@ -1,11 +1,11 @@
-#[cfg(feature = "SteamInit")]
+#[cfg(feature = "cordl_class_SteamInit")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamInit {
     __cordl_parent: crate::GlobalNamespace::BasePlatformInit,
     pub _isInitialized: bool,
 }
-#[cfg(feature = "SteamInit")]
+#[cfg(feature = "cordl_class_SteamInit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SteamInit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SteamInit {
         false
     }
 }
-#[cfg(feature = "SteamInit")]
+#[cfg(feature = "cordl_class_SteamInit")]
 impl std::ops::Deref for crate::GlobalNamespace::SteamInit {
     type Target = crate::GlobalNamespace::BasePlatformInit;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SteamInit")]
+#[cfg(feature = "cordl_class_SteamInit")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SteamInit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::SteamInit {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SteamInit")]
+#[cfg(feature = "cordl_class_SteamInit")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SteamInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

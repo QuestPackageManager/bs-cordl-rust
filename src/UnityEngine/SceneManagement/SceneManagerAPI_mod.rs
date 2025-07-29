@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+SceneManagement+SceneManagerAPI")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+SceneManagerAPI")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneManagerAPI {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+SceneManagement+SceneManagerAPI")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+SceneManagerAPI")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::SceneManagement::SceneManagerAPI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::SceneManagement::SceneManagerAPI {
         false
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+SceneManagerAPI")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+SceneManagerAPI")]
 impl std::ops::Deref for crate::UnityEngine::SceneManagement::SceneManagerAPI {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+SceneManagerAPI")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+SceneManagerAPI")]
 impl std::ops::DerefMut for crate::UnityEngine::SceneManagement::SceneManagerAPI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -209,7 +209,7 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+SceneManagerAPI")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+SceneManagerAPI")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::SceneManagement::SceneManagerAPI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

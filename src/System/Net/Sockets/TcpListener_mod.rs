@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+TcpListener")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+TcpListener")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TcpListener {
@@ -8,7 +8,7 @@ pub struct TcpListener {
     pub m_Active: bool,
     pub m_ExclusiveAddressUse: bool,
 }
-#[cfg(feature = "System+Net+Sockets+TcpListener")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+TcpListener")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::TcpListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::TcpList
         false
     }
 }
-#[cfg(feature = "System+Net+Sockets+TcpListener")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+TcpListener")]
 impl std::ops::Deref for crate::System::Net::Sockets::TcpListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Sockets+TcpListener")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+TcpListener")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::TcpListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -235,7 +235,7 @@ impl crate::System::Net::Sockets::TcpListener {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Sockets+TcpListener")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+TcpListener")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Sockets::TcpListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

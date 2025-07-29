@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -8,7 +8,7 @@ pub struct PgpUserAttributeSubpacketVectorGenerator {
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGenerator {
@@ -30,7 +30,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGene
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGenerator {
@@ -40,7 +40,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGene
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGenerator {
@@ -145,7 +145,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGen
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGenerator {

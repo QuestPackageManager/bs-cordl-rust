@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -27,7 +27,7 @@ pub struct ContentCatalogDataEntry {
     pub _ResourceType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry {
@@ -49,7 +49,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataE
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry {
@@ -59,7 +59,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataE
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry {
@@ -526,7 +526,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry {

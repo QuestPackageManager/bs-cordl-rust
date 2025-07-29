@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Internal+ISubAssetNotDuplicatable")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+ISubAssetNotDuplicatable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISubAssetNotDuplicatable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Internal+ISubAssetNotDuplicatable")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+ISubAssetNotDuplicatable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Internal+ISubAssetNotDuplicatable")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+ISubAssetNotDuplicatable")]
 impl std::ops::Deref for crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Internal+ISubAssetNotDuplicatable")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+ISubAssetNotDuplicatable")]
 impl std::ops::DerefMut for crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -45,7 +45,7 @@ impl crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+Internal+ISubAssetNotDuplicatable")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal+ISubAssetNotDuplicatable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

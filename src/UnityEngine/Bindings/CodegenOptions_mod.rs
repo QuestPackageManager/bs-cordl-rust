@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Bindings+CodegenOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+CodegenOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CodegenOptions {
@@ -7,7 +7,7 @@ pub enum CodegenOptions {
     Custom = 1i32,
     Force = 2i32,
 }
-#[cfg(feature = "UnityEngine+Bindings+CodegenOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+CodegenOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Bindings::CodegenOptions {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::Bindings::CodegenOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+CodegenOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+CodegenOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Bindings::CodegenOptions {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Bindings::CodegenOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+CodegenOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+CodegenOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Bindings::CodegenOptions {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::Bindings::CodegenOptions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+CodegenOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+CodegenOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Bindings::CodegenOptions {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::Bindings::CodegenOptions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+CodegenOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+CodegenOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Bindings::CodegenOptions {
     type Actual = Self;

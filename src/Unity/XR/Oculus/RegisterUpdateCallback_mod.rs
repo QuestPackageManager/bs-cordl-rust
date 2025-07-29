@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+XR+Oculus+RegisterUpdateCallback")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+RegisterUpdateCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegisterUpdateCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+XR+Oculus+RegisterUpdateCallback")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+RegisterUpdateCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::RegisterUpdateCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::XR::Oculus::RegisterUpdateCallback {
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+RegisterUpdateCallback")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+RegisterUpdateCallback")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::RegisterUpdateCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+RegisterUpdateCallback")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+RegisterUpdateCallback")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::RegisterUpdateCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -109,7 +109,7 @@ impl crate::Unity::XR::Oculus::RegisterUpdateCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+RegisterUpdateCallback")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+RegisterUpdateCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::XR::Oculus::RegisterUpdateCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

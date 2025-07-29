@@ -1,4 +1,4 @@
-#[cfg(feature = "System+AggregateException")]
+#[cfg(feature = "cordl_class_System+AggregateException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AggregateException {
@@ -9,7 +9,7 @@ pub struct AggregateException {
         >,
     >,
 }
-#[cfg(feature = "System+AggregateException")]
+#[cfg(feature = "cordl_class_System+AggregateException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::AggregateException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AggregateException {
         false
     }
 }
-#[cfg(feature = "System+AggregateException")]
+#[cfg(feature = "cordl_class_System+AggregateException")]
 impl std::ops::Deref for crate::System::AggregateException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+AggregateException")]
+#[cfg(feature = "cordl_class_System+AggregateException")]
 impl std::ops::DerefMut for crate::System::AggregateException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -699,7 +699,7 @@ impl crate::System::AggregateException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+AggregateException")]
+#[cfg(feature = "cordl_class_System+AggregateException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::AggregateException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeMode {
@@ -7,7 +7,7 @@ pub enum ReflectionProbeMode {
     Custom = 2i32,
     Realtime = 1i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::ReflectionProbeMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ReflectionProbeMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ReflectionProbeMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ReflectionProbeMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ReflectionProbeMode {
     type Actual = Self;

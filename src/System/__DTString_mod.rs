@@ -1,4 +1,4 @@
-#[cfg(feature = "System+__DTString")]
+#[cfg(feature = "cordl_class_System+__DTString")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct __DTString {
@@ -8,7 +8,7 @@ pub struct __DTString {
     pub m_info: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     pub m_checkDigitToken: bool,
 }
-#[cfg(feature = "System+__DTString")]
+#[cfg(feature = "cordl_class_System+__DTString")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::__DTString {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::__DTString {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+__DTString")]
+#[cfg(feature = "cordl_class_System+__DTString")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::__DTString {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::__DTString {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+__DTString")]
+#[cfg(feature = "cordl_class_System+__DTString")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::__DTString {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::__DTString {
         self
     }
 }
-#[cfg(feature = "System+__DTString")]
+#[cfg(feature = "cordl_class_System+__DTString")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::__DTString {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::__DTString {
         }
     }
 }
-#[cfg(feature = "System+__DTString")]
+#[cfg(feature = "cordl_class_System+__DTString")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::__DTString {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::__DTString {
         actual
     }
 }
-#[cfg(feature = "System+__DTString")]
+#[cfg(feature = "cordl_class_System+__DTString")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::__DTString {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

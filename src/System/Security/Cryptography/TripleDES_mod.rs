@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Security+Cryptography+TripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TripleDES")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TripleDES {
     __cordl_parent: crate::System::Security::Cryptography::SymmetricAlgorithm,
 }
-#[cfg(feature = "System+Security+Cryptography+TripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TripleDES")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::TripleDES {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Security::Cryptography::TripleDES {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+TripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TripleDES")]
 impl std::ops::Deref for crate::System::Security::Cryptography::TripleDES {
     type Target = crate::System::Security::Cryptography::SymmetricAlgorithm;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+TripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TripleDES")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::TripleDES {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::System::Security::Cryptography::TripleDES {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+TripleDES")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TripleDES")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::TripleDES {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

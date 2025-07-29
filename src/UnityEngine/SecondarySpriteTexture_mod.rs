@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+SecondarySpriteTexture")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SecondarySpriteTexture {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
-#[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+SecondarySpriteTexture")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SecondarySpriteTexture {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SecondarySpriteT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+SecondarySpriteTexture")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SecondarySpriteTexture {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::SecondarySpriteTexture {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+SecondarySpriteTexture")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SecondarySpriteTexture {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::SecondarySpriteTexture {
         self
     }
 }
-#[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+SecondarySpriteTexture")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SecondarySpriteTexture {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::SecondarySpriteTexture {
         }
     }
 }
-#[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+SecondarySpriteTexture")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SecondarySpriteTexture {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::SecondarySpriteTexture {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
+#[cfg(feature = "cordl_class_UnityEngine+SecondarySpriteTexture")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::SecondarySpriteTexture {
     type Type = Self;

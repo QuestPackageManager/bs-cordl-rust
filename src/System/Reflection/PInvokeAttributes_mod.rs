@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+PInvokeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+PInvokeAttributes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PInvokeAttributes {
@@ -23,7 +23,7 @@ pub enum PInvokeAttributes {
     ThrowOnUnmappableCharEnabled = 4096i32,
     ThrowOnUnmappableCharMask = 12288i32,
 }
-#[cfg(feature = "System+Reflection+PInvokeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+PInvokeAttributes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::PInvokeAttributes {
     type Held<'a> = Self;
@@ -53,7 +53,7 @@ for crate::System::Reflection::PInvokeAttributes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+PInvokeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+PInvokeAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::PInvokeAttributes {
     type Type = Self;
@@ -64,7 +64,7 @@ for crate::System::Reflection::PInvokeAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+PInvokeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+PInvokeAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::PInvokeAttributes {
     type Actual = Self;
@@ -78,7 +78,7 @@ for crate::System::Reflection::PInvokeAttributes {
         self
     }
 }
-#[cfg(feature = "System+Reflection+PInvokeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+PInvokeAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::PInvokeAttributes {
     type Type = Self;
@@ -93,7 +93,7 @@ for crate::System::Reflection::PInvokeAttributes {
         }
     }
 }
-#[cfg(feature = "System+Reflection+PInvokeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+PInvokeAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::PInvokeAttributes {
     type Actual = Self;

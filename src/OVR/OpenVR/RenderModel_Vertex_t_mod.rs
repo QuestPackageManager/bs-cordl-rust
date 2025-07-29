@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+RenderModel_Vertex_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_Vertex_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderModel_Vertex_t {
@@ -7,7 +7,7 @@ pub struct RenderModel_Vertex_t {
     pub rfTextureCoord0: f32,
     pub rfTextureCoord1: f32,
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_Vertex_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_Vertex_t")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::RenderModel_Vertex_t {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::RenderModel_Vert
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_Vertex_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_Vertex_t")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::RenderModel_Vertex_t {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::OVR::OpenVR::RenderModel_Vertex_t {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_Vertex_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_Vertex_t")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::RenderModel_Vertex_t {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::OVR::OpenVR::RenderModel_Vertex_t {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_Vertex_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_Vertex_t")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::RenderModel_Vertex_t {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::OVR::OpenVR::RenderModel_Vertex_t {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_Vertex_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_Vertex_t")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::RenderModel_Vertex_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::RenderModel_Ve
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+RenderModel_Vertex_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+RenderModel_Vertex_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::RenderModel_Vertex_t {
     type Type = Self;

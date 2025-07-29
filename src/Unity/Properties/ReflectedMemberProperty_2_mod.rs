@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedMemberProperty_2<
@@ -39,7 +39,7 @@ pub struct ReflectedMemberProperty_2<
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2")]
 unsafe impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -78,7 +78,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -89,7 +89,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -214,7 +214,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -227,7 +227,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedMemberProperty_2_GetClassValueAction<
@@ -238,7 +240,9 @@ pub struct ReflectedMemberProperty_2_GetClassValueAction<
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction"
+)]
 unsafe impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -280,7 +284,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
         false
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -294,7 +300,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -398,7 +406,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -414,7 +424,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedMemberProperty_2_GetStructValueAction<
@@ -425,7 +437,9 @@ pub struct ReflectedMemberProperty_2_GetStructValueAction<
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction"
+)]
 unsafe impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -467,7 +481,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
         false
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -481,7 +497,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -589,7 +607,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -605,7 +625,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedMemberProperty_2_SetClassValueAction<
@@ -616,7 +638,9 @@ pub struct ReflectedMemberProperty_2_SetClassValueAction<
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction"
+)]
 unsafe impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -658,7 +682,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
         false
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -672,7 +698,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -781,7 +809,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -797,7 +827,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedMemberProperty_2_SetStructValueAction<
@@ -808,7 +840,9 @@ pub struct ReflectedMemberProperty_2_SetStructValueAction<
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction"
+)]
 unsafe impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -850,7 +884,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
         false
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -864,7 +900,9 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -973,7 +1011,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction"
+)]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

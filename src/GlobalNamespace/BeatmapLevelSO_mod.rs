@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSO {
@@ -38,7 +38,7 @@ pub struct BeatmapLevelSO {
     >,
     pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
 }
-#[cfg(feature = "BeatmapLevelSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevelSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -57,14 +57,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevel
         false
     }
 }
-#[cfg(feature = "BeatmapLevelSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -967,7 +967,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -992,7 +992,7 @@ for crate::GlobalNamespace::BeatmapLevelSO {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+ColorScheme")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSO_ColorScheme {
@@ -1008,7 +1008,7 @@ pub struct BeatmapLevelSO_ColorScheme {
     pub _environmentColor0Boost: crate::UnityEngine::Color,
     pub _environmentColor1Boost: crate::UnityEngine::Color,
 }
-#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+ColorScheme")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1028,14 +1028,14 @@ for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+ColorScheme")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+ColorScheme")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1375,7 +1375,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelSO+ColorScheme")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+ColorScheme")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1385,7 +1385,7 @@ for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmap")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSO_PreviewDifficultyBeatmap {
@@ -1400,7 +1400,7 @@ pub struct BeatmapLevelSO_PreviewDifficultyBeatmap {
     pub _bombsCount: i32,
     pub _cuttableBeatmapObjectsCount: i32,
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmap")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1420,7 +1420,7 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1428,7 +1428,7 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1689,7 +1689,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmap")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1699,7 +1699,7 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSO_PreviewDifficultyBeatmapSet {
@@ -1715,7 +1715,7 @@ pub struct BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         >,
     >,
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1735,7 +1735,7 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1743,7 +1743,7 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1964,7 +1964,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
+#[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

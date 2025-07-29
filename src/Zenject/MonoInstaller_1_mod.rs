@@ -1,11 +1,11 @@
-#[cfg(feature = "Zenject+MonoInstaller_1")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoInstaller_1<TDerived: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::MonoInstaller,
     __cordl_phantom_TDerived: std::marker::PhantomData<TDerived>,
 }
-#[cfg(feature = "Zenject+MonoInstaller_1")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_1")]
 unsafe impl<TDerived: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Zenject::MonoInstaller_1<TDerived> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,7 +38,7 @@ for crate::Zenject::MonoInstaller_1<TDerived> {
         false
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller_1")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_1")]
 impl<TDerived: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MonoInstaller_1<TDerived> {
     type Target = crate::Zenject::MonoInstaller;
@@ -46,7 +46,7 @@ for crate::Zenject::MonoInstaller_1<TDerived> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller_1")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_1")]
 impl<TDerived: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::MonoInstaller_1<TDerived> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -273,7 +273,7 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller_1")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller_1")]
 impl<TDerived: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Zenject::MonoInstaller_1<TDerived> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

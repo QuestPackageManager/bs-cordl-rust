@@ -1,4 +1,4 @@
-#[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GetMultiplayerInstanceRequest {
@@ -25,7 +25,7 @@ pub struct GetMultiplayerInstanceRequest {
     pub ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     type Held<'a> = Self;
@@ -55,7 +55,7 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     type Type = Self;
@@ -66,7 +66,7 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     type Actual = Self;
@@ -80,7 +80,7 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         self
     }
 }
-#[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     type Type = Self;
@@ -95,7 +95,7 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         }
     }
 }
-#[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     type Actual = Self;
@@ -109,7 +109,7 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         actual
     }
 }
-#[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Timer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Timer {
@@ -12,7 +12,7 @@ pub struct Timer {
     pub is_dead: bool,
     pub is_added: bool,
 }
-#[cfg(feature = "System+Threading+Timer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Timer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Timer {
         false
     }
 }
-#[cfg(feature = "System+Threading+Timer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer")]
 impl std::ops::Deref for crate::System::Threading::Timer {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Timer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer")]
 impl std::ops::DerefMut for crate::System::Threading::Timer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -379,7 +379,7 @@ impl crate::System::Threading::Timer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Timer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Timer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -412,7 +412,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::Timer {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Threading+Timer+Scheduler")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+Scheduler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Timer_Scheduler {
@@ -426,7 +426,7 @@ pub struct Timer_Scheduler {
     pub current_next_run: i64,
     pub changed: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
 }
-#[cfg(feature = "System+Threading+Timer+Scheduler")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+Scheduler")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Timer_Scheduler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -445,14 +445,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Timer_Sche
         false
     }
 }
-#[cfg(feature = "System+Threading+Timer+Scheduler")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+Scheduler")]
 impl std::ops::Deref for crate::System::Threading::Timer_Scheduler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Timer+Scheduler")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+Scheduler")]
 impl std::ops::DerefMut for crate::System::Threading::Timer_Scheduler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -767,7 +767,7 @@ impl crate::System::Threading::Timer_Scheduler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Timer+Scheduler")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+Scheduler")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Timer_Scheduler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -776,11 +776,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Timer_Sched
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Timer_TimerComparer {}
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Timer_TimerComparer {
     type Held<'a> = Self;
@@ -810,7 +810,7 @@ for crate::System::Threading::Timer_TimerComparer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Timer_TimerComparer {
     type Type = Self;
@@ -821,7 +821,7 @@ for crate::System::Threading::Timer_TimerComparer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Timer_TimerComparer {
     type Actual = Self;
@@ -835,7 +835,7 @@ for crate::System::Threading::Timer_TimerComparer {
         self
     }
 }
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Timer_TimerComparer {
     type Type = Self;
@@ -850,7 +850,7 @@ for crate::System::Threading::Timer_TimerComparer {
         }
     }
 }
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Timer_TimerComparer {
     type Actual = Self;
@@ -864,7 +864,7 @@ for crate::System::Threading::Timer_TimerComparer {
         actual
     }
 }
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
+#[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::Timer_TimerComparer {
     type Type = Self;

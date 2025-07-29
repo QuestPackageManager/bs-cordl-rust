@@ -1,11 +1,11 @@
-#[cfg(feature = "HMUI+TextPageScrollView")]
+#[cfg(feature = "cordl_class_HMUI+TextPageScrollView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextPageScrollView {
     __cordl_parent: crate::HMUI::ScrollView,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
-#[cfg(feature = "HMUI+TextPageScrollView")]
+#[cfg(feature = "cordl_class_HMUI+TextPageScrollView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TextPageScrollView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TextPageScrollView {
         false
     }
 }
-#[cfg(feature = "HMUI+TextPageScrollView")]
+#[cfg(feature = "cordl_class_HMUI+TextPageScrollView")]
 impl std::ops::Deref for crate::HMUI::TextPageScrollView {
     type Target = crate::HMUI::ScrollView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+TextPageScrollView")]
+#[cfg(feature = "cordl_class_HMUI+TextPageScrollView")]
 impl std::ops::DerefMut for crate::HMUI::TextPageScrollView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::HMUI::TextPageScrollView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+TextPageScrollView")]
+#[cfg(feature = "cordl_class_HMUI+TextPageScrollView")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TextPageScrollView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

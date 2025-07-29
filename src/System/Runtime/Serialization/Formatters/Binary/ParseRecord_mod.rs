@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParseRecord {
@@ -66,7 +68,9 @@ pub struct ParseRecord {
     >,
     pub PRnullCount: i32,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -86,7 +90,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -94,7 +100,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -153,7 +161,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ParseRecord"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

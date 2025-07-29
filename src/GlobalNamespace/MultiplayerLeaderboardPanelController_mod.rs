@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLeaderboardPanelController")]
+#[cfg(feature = "cordl_class_MultiplayerLeaderboardPanelController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLeaderboardPanelController {
@@ -14,7 +14,7 @@ pub struct MultiplayerLeaderboardPanelController {
         crate::GlobalNamespace::MultiplayerScoreProvider,
     >,
 }
-#[cfg(feature = "MultiplayerLeaderboardPanelController")]
+#[cfg(feature = "cordl_class_MultiplayerLeaderboardPanelController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLeaderboardPanelController")]
+#[cfg(feature = "cordl_class_MultiplayerLeaderboardPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLeaderboardPanelController")]
+#[cfg(feature = "cordl_class_MultiplayerLeaderboardPanelController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLeaderboardPanelController")]
+#[cfg(feature = "cordl_class_MultiplayerLeaderboardPanelController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

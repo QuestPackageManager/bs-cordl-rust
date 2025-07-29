@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+AssetBundleCreateRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetBundleCreateRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleCreateRequest {
     __cordl_parent: crate::UnityEngine::AsyncOperation,
 }
-#[cfg(feature = "UnityEngine+AssetBundleCreateRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetBundleCreateRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AssetBundleCreateRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::AssetBundleCreateRequest {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AssetBundleCreateRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetBundleCreateRequest")]
 impl std::ops::Deref for crate::UnityEngine::AssetBundleCreateRequest {
     type Target = crate::UnityEngine::AsyncOperation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AssetBundleCreateRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetBundleCreateRequest")]
 impl std::ops::DerefMut for crate::UnityEngine::AssetBundleCreateRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::UnityEngine::AssetBundleCreateRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AssetBundleCreateRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetBundleCreateRequest")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AssetBundleCreateRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

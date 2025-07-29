@@ -1,10 +1,10 @@
-#[cfg(feature = "ObjectsMovementRecorderSerializedMethods")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderSerializedMethods")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectsMovementRecorderSerializedMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ObjectsMovementRecorderSerializedMethods")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderSerializedMethods")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
         false
     }
 }
-#[cfg(feature = "ObjectsMovementRecorderSerializedMethods")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderSerializedMethods")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObjectsMovementRecorderSerializedMethods")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderSerializedMethods")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -235,7 +235,7 @@ impl crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObjectsMovementRecorderSerializedMethods")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorderSerializedMethods")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObjectsMovementRecorderSerializedMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

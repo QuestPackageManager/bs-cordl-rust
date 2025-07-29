@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteDebrisSimplePhysics")]
+#[cfg(feature = "cordl_class_NoteDebrisSimplePhysics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebrisSimplePhysics {
@@ -11,7 +11,7 @@ pub struct NoteDebrisSimplePhysics {
     pub _position: crate::UnityEngine::Vector3,
     pub _rotation: crate::UnityEngine::Quaternion,
 }
-#[cfg(feature = "NoteDebrisSimplePhysics")]
+#[cfg(feature = "cordl_class_NoteDebrisSimplePhysics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteDebrisSimplePhysics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::NoteDebrisSimplePhysics {
         false
     }
 }
-#[cfg(feature = "NoteDebrisSimplePhysics")]
+#[cfg(feature = "cordl_class_NoteDebrisSimplePhysics")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisSimplePhysics {
     type Target = crate::GlobalNamespace::NoteDebrisPhysics;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteDebrisSimplePhysics")]
+#[cfg(feature = "cordl_class_NoteDebrisSimplePhysics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisSimplePhysics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -199,7 +199,7 @@ impl crate::GlobalNamespace::NoteDebrisSimplePhysics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteDebrisSimplePhysics")]
+#[cfg(feature = "cordl_class_NoteDebrisSimplePhysics")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoteDebrisSimplePhysics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

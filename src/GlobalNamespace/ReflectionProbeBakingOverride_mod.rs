@@ -1,4 +1,4 @@
-#[cfg(feature = "ReflectionProbeBakingOverride")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionProbeBakingOverride {
@@ -11,7 +11,7 @@ pub struct ReflectionProbeBakingOverride {
     pub _setScale: bool,
     pub _localScale: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "ReflectionProbeBakingOverride")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ReflectionProbeBakingOverride {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride {
         false
     }
 }
-#[cfg(feature = "ReflectionProbeBakingOverride")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride")]
 impl std::ops::Deref for crate::GlobalNamespace::ReflectionProbeBakingOverride {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ReflectionProbeBakingOverride")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ReflectionProbeBakingOverride {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::ReflectionProbeBakingOverride {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ReflectionProbeBakingOverride")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ReflectionProbeBakingOverride {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -112,7 +112,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride+ActiveStateHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeBakingOverride_ActiveStateHandling {
@@ -121,7 +121,7 @@ pub enum ReflectionProbeBakingOverride_ActiveStateHandling {
     Enable = 1i32,
     LeaveAsIs = 0i32,
 }
-#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Held<'a> = Self;
@@ -151,7 +151,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Type = Self;
@@ -162,7 +162,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Actual = Self;
@@ -176,7 +176,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
         self
     }
 }
-#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Type = Self;
@@ -191,7 +191,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
         }
     }
 }
-#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
+#[cfg(feature = "cordl_class_ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression0")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression0")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodCallExpression0 {
     __cordl_parent: crate::System::Linq::Expressions::MethodCallExpression,
 }
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression0")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression0")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::MethodCallExpression0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Linq::Expressions::MethodCallExpression0 {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression0")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression0")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MethodCallExpression0 {
     type Target = crate::System::Linq::Expressions::MethodCallExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression0")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression0")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::MethodCallExpression0 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -172,7 +172,7 @@ impl crate::System::Linq::Expressions::MethodCallExpression0 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression0")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression0")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::MethodCallExpression0 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

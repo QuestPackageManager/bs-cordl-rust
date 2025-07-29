@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -8,7 +8,7 @@ pub struct CastInstruction_CastInstructionT_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
 )]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
@@ -56,7 +56,7 @@ for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
@@ -140,7 +140,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {

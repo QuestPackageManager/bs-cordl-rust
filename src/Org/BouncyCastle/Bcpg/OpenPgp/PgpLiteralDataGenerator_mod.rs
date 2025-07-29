@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpLiteralDataGenerator {
@@ -8,7 +8,7 @@ pub struct PgpLiteralDataGenerator {
     >,
     pub oldFormat: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -36,7 +36,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -295,7 +295,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tilemap {
     __cordl_parent: crate::UnityEngine::GridLayout,
     pub m_BufferSyncTile: bool,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Tilemaps::Tilemap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Tilemaps::Tilema
         false
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap")]
 impl std::ops::Deref for crate::UnityEngine::Tilemaps::Tilemap {
     type Target = crate::UnityEngine::GridLayout;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap")]
 impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::Tilemap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -991,7 +991,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Tilemaps::Tilemap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1000,7 +1000,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Tilemaps::Tilemap
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTile")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Tilemap_SyncTile {
@@ -1008,7 +1008,7 @@ pub struct Tilemap_SyncTile {
     pub m_Tile: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::TileBase>,
     pub m_TileData: crate::UnityEngine::Tilemaps::TileData,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTile")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
     type Held<'a> = Self;
@@ -1038,7 +1038,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTile")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
     type Type = Self;
@@ -1049,7 +1049,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTile")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
     type Actual = Self;
@@ -1063,7 +1063,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTile")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
     type Type = Self;
@@ -1078,7 +1078,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTile")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
     type Actual = Self;
@@ -1092,7 +1092,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTile")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
     type Type = Self;
@@ -1105,7 +1105,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
 }
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
 impl crate::UnityEngine::Tilemaps::Tilemap_SyncTile {}
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Tilemap_SyncTileCallbackSettings {
@@ -1113,7 +1113,7 @@ pub struct Tilemap_SyncTileCallbackSettings {
     pub hasPositionsChangedCallback: bool,
     pub isBufferSyncTile: bool,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
     type Held<'a> = Self;
@@ -1143,7 +1143,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
     type Type = Self;
@@ -1154,7 +1154,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
     type Actual = Self;
@@ -1168,7 +1168,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
     type Type = Self;
@@ -1183,7 +1183,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
     type Actual = Self;
@@ -1197,7 +1197,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
     type Type = Self;

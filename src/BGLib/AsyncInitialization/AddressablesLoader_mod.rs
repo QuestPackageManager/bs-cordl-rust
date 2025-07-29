@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
+#[cfg(feature = "cordl_class_BGLib+AsyncInitialization+AddressablesLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddressablesLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
+#[cfg(feature = "cordl_class_BGLib+AsyncInitialization+AddressablesLoader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::AsyncInitialization::AddressablesLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BGLib::AsyncInitialization::AddressablesLoader {
         false
     }
 }
-#[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
+#[cfg(feature = "cordl_class_BGLib+AsyncInitialization+AddressablesLoader")]
 impl std::ops::Deref for crate::BGLib::AsyncInitialization::AddressablesLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
+#[cfg(feature = "cordl_class_BGLib+AsyncInitialization+AddressablesLoader")]
 impl std::ops::DerefMut for crate::BGLib::AsyncInitialization::AddressablesLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -83,7 +83,7 @@ impl crate::BGLib::AsyncInitialization::AddressablesLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
+#[cfg(feature = "cordl_class_BGLib+AsyncInitialization+AddressablesLoader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::AsyncInitialization::AddressablesLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+AxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+AxisEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AxisEventData {
@@ -6,7 +6,7 @@ pub struct AxisEventData {
     pub _moveVector_k__BackingField: crate::UnityEngine::Vector2,
     pub _moveDir_k__BackingField: crate::UnityEngine::EventSystems::MoveDirection,
 }
-#[cfg(feature = "UnityEngine+EventSystems+AxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+AxisEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::AxisEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::UnityEngine::EventSystems::AxisEventData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+AxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+AxisEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::AxisEventData {
     type Target = crate::UnityEngine::EventSystems::BaseEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+AxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+AxisEventData")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::AxisEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -185,7 +185,7 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+AxisEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+AxisEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::AxisEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+MethodMultipleProviderUntyped")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodMultipleProviderUntyped {
@@ -15,7 +15,7 @@ pub struct MethodMultipleProviderUntyped {
         >,
     >,
 }
-#[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+MethodMultipleProviderUntyped")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::MethodMultipleProviderUntyped {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::Zenject::MethodMultipleProviderUntyped {
         false
     }
 }
-#[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+MethodMultipleProviderUntyped")]
 impl std::ops::Deref for crate::Zenject::MethodMultipleProviderUntyped {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+MethodMultipleProviderUntyped")]
 impl std::ops::DerefMut for crate::Zenject::MethodMultipleProviderUntyped {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -237,7 +237,7 @@ impl crate::Zenject::MethodMultipleProviderUntyped {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+MethodMultipleProviderUntyped")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::MethodMultipleProviderUntyped {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Tweening+TimeTweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TimeTweeningManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeTweeningManager {
     __cordl_parent: crate::Tweening::TweeningManager,
 }
-#[cfg(feature = "Tweening+TimeTweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TimeTweeningManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::TimeTweeningManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::TimeTweeningManager
         false
     }
 }
-#[cfg(feature = "Tweening+TimeTweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TimeTweeningManager")]
 impl std::ops::Deref for crate::Tweening::TimeTweeningManager {
     type Target = crate::Tweening::TweeningManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tweening+TimeTweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TimeTweeningManager")]
 impl std::ops::DerefMut for crate::Tweening::TimeTweeningManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -84,7 +84,7 @@ impl crate::Tweening::TimeTweeningManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tweening+TimeTweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TimeTweeningManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tweening::TimeTweeningManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+RectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectTransform {
     __cordl_parent: crate::UnityEngine::Transform,
 }
-#[cfg(feature = "UnityEngine+RectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform {
         false
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform")]
 impl std::ops::Deref for crate::UnityEngine::RectTransform {
     type Target = crate::UnityEngine::Transform;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform")]
 impl std::ops::DerefMut for crate::UnityEngine::RectTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1165,7 +1165,7 @@ impl crate::UnityEngine::RectTransform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::RectTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1174,7 +1174,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::RectTransform {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Axis")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RectTransform_Axis {
@@ -1182,7 +1182,7 @@ pub enum RectTransform_Axis {
     Horizontal = 0i32,
     Vertical = 1i32,
 }
-#[cfg(feature = "UnityEngine+RectTransform+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform_Axis {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1211,7 +1211,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform_Ax
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RectTransform_Axis {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1221,7 +1221,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RectTransfor
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RectTransform_Axis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1234,7 +1234,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RectTransfo
         self
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RectTransform_Axis {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1248,7 +1248,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RectTransfor
         }
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Axis")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RectTransform_Axis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1261,7 +1261,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RectTransform_
         actual
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Edge")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Edge")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RectTransform_Edge {
@@ -1271,7 +1271,7 @@ pub enum RectTransform_Edge {
     Right = 1i32,
     Top = 2i32,
 }
-#[cfg(feature = "UnityEngine+RectTransform+Edge")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform_Edge {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1300,7 +1300,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform_Ed
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Edge")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RectTransform_Edge {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1310,7 +1310,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RectTransfor
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Edge")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RectTransform_Edge {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1323,7 +1323,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RectTransfo
         self
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Edge")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RectTransform_Edge {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1337,7 +1337,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RectTransfor
         }
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+Edge")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RectTransform_Edge {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1350,13 +1350,13 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RectTransform_
         actual
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+ReapplyDrivenProperties")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectTransform_ReapplyDrivenProperties {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+ReapplyDrivenProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1376,14 +1376,14 @@ for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
         false
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+ReapplyDrivenProperties")]
 impl std::ops::Deref for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+ReapplyDrivenProperties")]
 impl std::ops::DerefMut for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1460,7 +1460,7 @@ impl crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+RectTransform+ReapplyDrivenProperties")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

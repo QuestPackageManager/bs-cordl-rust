@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+ReportRequestResponse")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ReportRequestResponse")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReportRequestResponse {
@@ -8,7 +8,7 @@ pub enum ReportRequestResponse {
     Unhandled = 2i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "Oculus+Platform+ReportRequestResponse")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ReportRequestResponse")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::ReportRequestResponse {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Oculus::Platform::ReportRequestResponse {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+ReportRequestResponse")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ReportRequestResponse")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::ReportRequestResponse {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Oculus::Platform::ReportRequestResponse {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+ReportRequestResponse")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ReportRequestResponse")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::ReportRequestResponse {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Oculus::Platform::ReportRequestResponse {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+ReportRequestResponse")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ReportRequestResponse")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::ReportRequestResponse {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Oculus::Platform::ReportRequestResponse {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+ReportRequestResponse")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ReportRequestResponse")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::ReportRequestResponse {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AssetLoadingSubsystem {
@@ -14,7 +14,7 @@ pub enum AssetLoadingSubsystem {
     Texture = 1i32,
     VirtualTexture = 2i32,
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
         self
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
         }
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Actual = Self;

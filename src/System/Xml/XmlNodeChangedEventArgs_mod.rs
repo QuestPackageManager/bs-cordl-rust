@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeChangedEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNodeChangedEventArgs {
@@ -10,7 +10,7 @@ pub struct XmlNodeChangedEventArgs {
     pub oldValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub newValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeChangedEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNodeChangedEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNodeChangedEv
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeChangedEventArgs")]
 impl std::ops::Deref for crate::System::Xml::XmlNodeChangedEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeChangedEventArgs")]
 impl std::ops::DerefMut for crate::System::Xml::XmlNodeChangedEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -133,7 +133,7 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNodeChangedEventArgs")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNodeChangedEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

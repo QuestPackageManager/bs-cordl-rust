@@ -1,4 +1,4 @@
-#[cfg(feature = "ListColorController")]
+#[cfg(feature = "cordl_class_ListColorController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListColorController {
@@ -6,7 +6,7 @@ pub struct ListColorController {
     pub _idx: i32,
     pub _numberOfElements: i32,
 }
-#[cfg(feature = "ListColorController")]
+#[cfg(feature = "cordl_class_ListColorController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ListColorController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ListColorCon
         false
     }
 }
-#[cfg(feature = "ListColorController")]
+#[cfg(feature = "cordl_class_ListColorController")]
 impl std::ops::Deref for crate::GlobalNamespace::ListColorController {
     type Target = crate::GlobalNamespace::IncDecColorController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ListColorController")]
+#[cfg(feature = "cordl_class_ListColorController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ListColorController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -269,7 +269,7 @@ impl crate::GlobalNamespace::ListColorController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ListColorController")]
+#[cfg(feature = "cordl_class_ListColorController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ListColorController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

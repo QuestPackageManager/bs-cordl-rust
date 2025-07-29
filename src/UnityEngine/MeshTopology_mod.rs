@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+MeshTopology")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshTopology")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshTopology {
@@ -9,7 +9,7 @@ pub enum MeshTopology {
     Quads = 2i32,
     Triangles = 0i32,
 }
-#[cfg(feature = "UnityEngine+MeshTopology")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshTopology")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MeshTopology {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MeshTopology {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+MeshTopology")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshTopology")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::MeshTopology {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::MeshTopology
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+MeshTopology")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshTopology")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::MeshTopology {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::MeshTopolog
         self
     }
 }
-#[cfg(feature = "UnityEngine+MeshTopology")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshTopology")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::MeshTopology {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::MeshTopology
         }
     }
 }
-#[cfg(feature = "UnityEngine+MeshTopology")]
+#[cfg(feature = "cordl_class_UnityEngine+MeshTopology")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::MeshTopology {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Oculus+Haptics+Utils")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Utils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Utils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Oculus+Haptics+Utils")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Utils")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Utils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Utils {
         false
     }
 }
-#[cfg(feature = "Oculus+Haptics+Utils")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Utils")]
 impl std::ops::Deref for crate::Oculus::Haptics::Utils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Utils")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Utils")]
 impl std::ops::DerefMut for crate::Oculus::Haptics::Utils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -90,7 +90,7 @@ impl crate::Oculus::Haptics::Utils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Utils")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Utils")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Utils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

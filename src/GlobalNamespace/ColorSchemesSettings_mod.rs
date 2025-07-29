@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSchemesSettings {
@@ -21,7 +21,7 @@ pub struct ColorSchemesSettings {
     >,
     pub _overrideDefaultColors: bool,
 }
-#[cfg(feature = "ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorSchemesSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::GlobalNamespace::ColorSchemesSettings {
         false
     }
 }
-#[cfg(feature = "ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorSchemesSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemesSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -547,7 +547,7 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorSchemesSettings")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemesSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -556,7 +556,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemesS
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings+ColorOverrideType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorSchemesSettings_ColorOverrideType {
@@ -564,7 +564,7 @@ pub enum ColorSchemesSettings_ColorOverrideType {
     All = 0i32,
     NotesOnly = 1i32,
 }
-#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Held<'a> = Self;
@@ -594,7 +594,7 @@ for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Type = Self;
@@ -605,7 +605,7 @@ for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Actual = Self;
@@ -619,7 +619,7 @@ for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
         self
     }
 }
-#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Type = Self;
@@ -634,7 +634,7 @@ for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
         }
     }
 }
-#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
+#[cfg(feature = "cordl_class_ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "VariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VariableMovementDataProvider {
@@ -33,7 +33,7 @@ pub struct VariableMovementDataProvider {
     pub _forwardVector: crate::UnityEngine::Vector3,
     pub _relativeNoteJumpSpeedInterpolation: crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData,
 }
-#[cfg(feature = "VariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VariableMovementDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,14 +53,14 @@ for crate::GlobalNamespace::VariableMovementDataProvider {
         false
     }
 }
-#[cfg(feature = "VariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::VariableMovementDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VariableMovementDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -595,7 +595,7 @@ impl crate::GlobalNamespace::VariableMovementDataProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VariableMovementDataProvider")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VariableMovementDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -633,7 +633,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider+InterpolationData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VariableMovementDataProvider_InterpolationData {
@@ -643,7 +643,7 @@ pub struct VariableMovementDataProvider_InterpolationData {
     pub _duration: f32,
     pub _easeType: crate::GlobalNamespace::EaseType,
 }
-#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Held<'a> = Self;
@@ -673,7 +673,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Type = Self;
@@ -684,7 +684,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Actual = Self;
@@ -698,7 +698,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
         self
     }
 }
-#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Type = Self;
@@ -713,7 +713,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
         }
     }
 }
-#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Actual = Self;
@@ -727,7 +727,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
         actual
     }
 }
-#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
+#[cfg(feature = "cordl_class_VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Type = Self;

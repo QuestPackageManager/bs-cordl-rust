@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRManagementAnalytics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::Management::XRManagementAnalytics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics {
         false
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRManagementAnalytics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRManagementAnalytics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -63,7 +63,7 @@ impl crate::UnityEngine::XR::Management::XRManagementAnalytics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::XR::Management::XRManagementAnalytics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -73,7 +73,9 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRManagementAnalytics_BuildEvent {
@@ -86,7 +88,9 @@ pub struct XRManagementAnalytics_BuildEvent {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
     type Held<'a> = Self;
@@ -116,7 +120,9 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
     type Type = Self;
@@ -127,7 +133,9 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
     type Actual = Self;
@@ -141,7 +149,9 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
     type Type = Self;
@@ -156,7 +166,9 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
     type Actual = Self;
@@ -170,7 +182,9 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent {
     type Type = Self;

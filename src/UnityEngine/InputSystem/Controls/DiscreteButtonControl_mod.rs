@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscreteButtonControl {
@@ -9,7 +9,7 @@ pub struct DiscreteButtonControl {
     pub nullValue: i32,
     pub writeMode: crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
     type Target = crate::UnityEngine::InputSystem::Controls::ButtonControl;
@@ -37,7 +37,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -160,7 +160,7 @@ impl crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -170,7 +170,9 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DiscreteButtonControl_WriteMode {
@@ -178,7 +180,9 @@ pub enum DiscreteButtonControl_WriteMode {
     WriteDisabled = 0i32,
     WriteNullAndMaxValue = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Held<'a> = Self;
@@ -208,7 +212,9 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Type = Self;
@@ -219,7 +225,9 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Actual = Self;
@@ -233,7 +241,9 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Type = Self;
@@ -248,7 +258,9 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Actual = Self;

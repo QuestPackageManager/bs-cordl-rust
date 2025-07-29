@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+HttpContinueDelegate")]
+#[cfg(feature = "cordl_class_System+Net+HttpContinueDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpContinueDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Net+HttpContinueDelegate")]
+#[cfg(feature = "cordl_class_System+Net+HttpContinueDelegate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpContinueDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpContinueDele
         false
     }
 }
-#[cfg(feature = "System+Net+HttpContinueDelegate")]
+#[cfg(feature = "cordl_class_System+Net+HttpContinueDelegate")]
 impl std::ops::Deref for crate::System::Net::HttpContinueDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+HttpContinueDelegate")]
+#[cfg(feature = "cordl_class_System+Net+HttpContinueDelegate")]
 impl std::ops::DerefMut for crate::System::Net::HttpContinueDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::System::Net::HttpContinueDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+HttpContinueDelegate")]
+#[cfg(feature = "cordl_class_System+Net+HttpContinueDelegate")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpContinueDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

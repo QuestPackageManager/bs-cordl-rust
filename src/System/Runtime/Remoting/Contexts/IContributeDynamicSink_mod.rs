@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IContributeDynamicSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -78,7 +78,7 @@ impl crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+IContributeDynamicSink")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Contexts::IContributeDynamicSink {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

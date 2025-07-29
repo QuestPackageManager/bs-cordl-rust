@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+TypeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeAttributes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeAttributes {
@@ -30,7 +30,7 @@ pub enum TypeAttributes {
     UnicodeClass = 65536i32,
     WindowsRuntime = 16384i32,
 }
-#[cfg(feature = "System+Reflection+TypeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeAttributes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::TypeAttributes {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::TypeAttri
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+TypeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::TypeAttributes {
     type Type = Self;
@@ -70,7 +70,7 @@ for crate::System::Reflection::TypeAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+TypeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::TypeAttributes {
     type Actual = Self;
@@ -84,7 +84,7 @@ for crate::System::Reflection::TypeAttributes {
         self
     }
 }
-#[cfg(feature = "System+Reflection+TypeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::TypeAttributes {
     type Type = Self;
@@ -99,7 +99,7 @@ for crate::System::Reflection::TypeAttributes {
         }
     }
 }
-#[cfg(feature = "System+Reflection+TypeAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeAttributes")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Reflection::TypeAttributes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayableBinding {
@@ -9,7 +9,7 @@ pub struct PlayableBinding {
         crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod,
     >,
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Playables::PlayableBinding {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::Playables::PlayableBinding {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::PlayableBinding {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::Playables::PlayableBinding {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::PlayableBinding {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::Playables::PlayableBinding {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::PlayableBinding {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::Playables::PlayableBinding {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Playables::PlayableBinding {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::Playables::PlayableBinding {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Playables::PlayableBinding {
     type Type = Self;
@@ -229,13 +229,13 @@ impl crate::UnityEngine::Playables::PlayableBinding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayableBinding_CreateOutputMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -255,7 +255,7 @@ for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
 impl std::ops::Deref
 for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
     type Target = crate::System::MulticastDelegate;
@@ -263,7 +263,7 @@ for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -347,7 +347,7 @@ impl crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

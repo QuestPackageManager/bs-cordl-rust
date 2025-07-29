@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlUnsignedLongAttributeDescription {
     __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<u64>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<u64>;
@@ -32,7 +38,9 @@ for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +141,9 @@ impl crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

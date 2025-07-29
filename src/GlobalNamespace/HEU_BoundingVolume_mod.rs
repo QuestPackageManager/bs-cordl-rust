@@ -1,10 +1,10 @@
-#[cfg(feature = "HEU_BoundingVolume")]
+#[cfg(feature = "cordl_class_HEU_BoundingVolume")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_BoundingVolume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "HEU_BoundingVolume")]
+#[cfg(feature = "cordl_class_HEU_BoundingVolume")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::HEU_BoundingVolume {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::HEU_Bounding
         false
     }
 }
-#[cfg(feature = "HEU_BoundingVolume")]
+#[cfg(feature = "cordl_class_HEU_BoundingVolume")]
 impl std::ops::Deref for crate::GlobalNamespace::HEU_BoundingVolume {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HEU_BoundingVolume")]
+#[cfg(feature = "cordl_class_HEU_BoundingVolume")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HEU_BoundingVolume {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::HEU_BoundingVolume {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HEU_BoundingVolume")]
+#[cfg(feature = "cordl_class_HEU_BoundingVolume")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HEU_BoundingVolume {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AssertionConditionType {
@@ -8,7 +8,7 @@ pub enum AssertionConditionType {
     IS_NULL = 2i32,
     IS_TRUE = 0i32,
 }
-#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::JetBrains::Annotations::AssertionConditionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::JetBrains::Annotations::AssertionConditionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::JetBrains::Annotations::AssertionConditionType {
         self
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::JetBrains::Annotations::AssertionConditionType {
         }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Actual = Self;

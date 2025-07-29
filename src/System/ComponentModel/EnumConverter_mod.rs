@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+EnumConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EnumConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumConverter {
@@ -8,7 +8,7 @@ pub struct EnumConverter {
     >,
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+ComponentModel+EnumConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EnumConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::EnumConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::ComponentModel::EnumConverter {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+EnumConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EnumConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::EnumConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+EnumConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EnumConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::EnumConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -483,7 +483,7 @@ impl crate::System::ComponentModel::EnumConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+EnumConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+EnumConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::EnumConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

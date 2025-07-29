@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiagnosticEventCollector {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollector {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollector {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -223,7 +231,9 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteDebrisPoolInstaller")]
+#[cfg(feature = "cordl_class_NoteDebrisPoolInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebrisPoolInstaller {
@@ -25,7 +25,7 @@ pub struct NoteDebrisPoolInstaller {
         crate::GlobalNamespace::BoolSO,
     >,
 }
-#[cfg(feature = "NoteDebrisPoolInstaller")]
+#[cfg(feature = "cordl_class_NoteDebrisPoolInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteDebrisPoolInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::NoteDebrisPoolInstaller {
         false
     }
 }
-#[cfg(feature = "NoteDebrisPoolInstaller")]
+#[cfg(feature = "cordl_class_NoteDebrisPoolInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisPoolInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteDebrisPoolInstaller")]
+#[cfg(feature = "cordl_class_NoteDebrisPoolInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisPoolInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::GlobalNamespace::NoteDebrisPoolInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteDebrisPoolInstaller")]
+#[cfg(feature = "cordl_class_NoteDebrisPoolInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoteDebrisPoolInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

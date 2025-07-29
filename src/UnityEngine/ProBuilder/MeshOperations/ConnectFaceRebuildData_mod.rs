@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectFaceRebuildData {
@@ -10,7 +12,9 @@ pub struct ConnectFaceRebuildData {
         crate::System::Collections::Generic::List_1<i32>,
     >,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +34,9 @@ for crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,7 +44,9 @@ for crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -101,7 +109,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

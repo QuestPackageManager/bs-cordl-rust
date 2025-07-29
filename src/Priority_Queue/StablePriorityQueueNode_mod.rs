@@ -1,11 +1,11 @@
-#[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
+#[cfg(feature = "cordl_class_Priority_Queue+StablePriorityQueueNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StablePriorityQueueNode {
     __cordl_parent: crate::Priority_Queue::FastPriorityQueueNode,
     pub _InsertionIndex_k__BackingField: i64,
 }
-#[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
+#[cfg(feature = "cordl_class_Priority_Queue+StablePriorityQueueNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Priority_Queue::StablePriorityQueueNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Priority_Queue::StablePriorityQueueNode {
         false
     }
 }
-#[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
+#[cfg(feature = "cordl_class_Priority_Queue+StablePriorityQueueNode")]
 impl std::ops::Deref for crate::Priority_Queue::StablePriorityQueueNode {
     type Target = crate::Priority_Queue::FastPriorityQueueNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
+#[cfg(feature = "cordl_class_Priority_Queue+StablePriorityQueueNode")]
 impl std::ops::DerefMut for crate::Priority_Queue::StablePriorityQueueNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::Priority_Queue::StablePriorityQueueNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
+#[cfg(feature = "cordl_class_Priority_Queue+StablePriorityQueueNode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Priority_Queue::StablePriorityQueueNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

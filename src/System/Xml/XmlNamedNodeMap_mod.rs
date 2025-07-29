@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
@@ -6,7 +8,9 @@ pub struct SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     pub loneValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub position: i32,
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +30,9 @@ for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator 
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
+)]
 impl std::ops::Deref
 for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +40,9 @@ for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
+)]
 impl std::ops::DerefMut
 for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -144,7 +152,9 @@ impl crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -168,7 +178,7 @@ for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator 
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNamedNodeMap {
@@ -176,7 +186,7 @@ pub struct XmlNamedNodeMap {
     pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub nodes: crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList,
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNamedNodeMap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -195,14 +205,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNamedNodeMap 
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap")]
 impl std::ops::Deref for crate::System::Xml::XmlNamedNodeMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap")]
 impl std::ops::DerefMut for crate::System::Xml::XmlNamedNodeMap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -556,7 +566,7 @@ impl crate::System::Xml::XmlNamedNodeMap {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNamedNodeMap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -579,13 +589,13 @@ for crate::System::Xml::XmlNamedNodeMap {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlNamedNodeMap_SmallXmlNodeList {
     pub field: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     type Held<'a> = Self;
@@ -615,7 +625,7 @@ for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     type Type = Self;
@@ -626,7 +636,7 @@ for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     type Actual = Self;
@@ -640,7 +650,7 @@ for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     type Type = Self;
@@ -655,7 +665,7 @@ for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     type Actual = Self;
@@ -669,7 +679,7 @@ for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     type Type = Self;

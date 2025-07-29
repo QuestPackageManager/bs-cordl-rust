@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+NetworkInformation+sockaddr_in")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+sockaddr_in")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct sockaddr_in {
@@ -6,7 +6,7 @@ pub struct sockaddr_in {
     pub sin_port: u16,
     pub sin_addr: u32,
 }
-#[cfg(feature = "System+Net+NetworkInformation+sockaddr_in")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+sockaddr_in")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::sockaddr_in {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::System::Net::NetworkInformation::sockaddr_in {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+sockaddr_in")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+sockaddr_in")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::sockaddr_in {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::Net::NetworkInformation::sockaddr_in {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+sockaddr_in")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+sockaddr_in")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::sockaddr_in {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Net::NetworkInformation::sockaddr_in {
         self
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+sockaddr_in")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+sockaddr_in")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::sockaddr_in {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::Net::NetworkInformation::sockaddr_in {
         }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+sockaddr_in")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+sockaddr_in")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::sockaddr_in {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::System::Net::NetworkInformation::sockaddr_in {
         actual
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+sockaddr_in")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+sockaddr_in")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::NetworkInformation::sockaddr_in {
     type Type = Self;

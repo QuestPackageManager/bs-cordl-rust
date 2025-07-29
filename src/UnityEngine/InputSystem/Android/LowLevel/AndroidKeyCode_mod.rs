@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidKeyCode {
@@ -224,7 +224,7 @@ pub enum AndroidKeyCode {
     ZoomIn = 168i32,
     ZoomOut = 169i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
     type Held<'a> = Self;
@@ -254,7 +254,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
     type Type = Self;
@@ -265,7 +265,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
     type Actual = Self;
@@ -279,7 +279,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
     type Type = Self;
@@ -294,7 +294,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidKeyCode {
     type Actual = Self;

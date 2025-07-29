@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+CryptoStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptoStream {
@@ -22,7 +22,7 @@ pub struct CryptoStream {
     >,
     pub _leaveOpen: bool,
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::CryptoStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::System::Security::Cryptography::CryptoStream {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStream")]
 impl std::ops::Deref for crate::System::Security::Cryptography::CryptoStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStream")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::CryptoStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1095,7 +1095,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptoStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::CryptoStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

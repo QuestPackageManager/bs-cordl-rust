@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
+#[cfg(feature = "cordl_class_System+Xml+Xsl+Runtime+StringConcat")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StringConcat {
@@ -14,7 +14,7 @@ pub struct StringConcat {
     >,
     pub idxStr: i32,
 }
-#[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
+#[cfg(feature = "cordl_class_System+Xml+Xsl+Runtime+StringConcat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Xsl::Runtime::StringConcat {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::System::Xml::Xsl::Runtime::StringConcat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
+#[cfg(feature = "cordl_class_System+Xml+Xsl+Runtime+StringConcat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Xsl::Runtime::StringConcat {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::System::Xml::Xsl::Runtime::StringConcat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
+#[cfg(feature = "cordl_class_System+Xml+Xsl+Runtime+StringConcat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Xsl::Runtime::StringConcat {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::System::Xml::Xsl::Runtime::StringConcat {
         self
     }
 }
-#[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
+#[cfg(feature = "cordl_class_System+Xml+Xsl+Runtime+StringConcat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Xsl::Runtime::StringConcat {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::System::Xml::Xsl::Runtime::StringConcat {
         }
     }
 }
-#[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
+#[cfg(feature = "cordl_class_System+Xml+Xsl+Runtime+StringConcat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Xsl::Runtime::StringConcat {
     type Actual = Self;
@@ -98,7 +98,7 @@ for crate::System::Xml::Xsl::Runtime::StringConcat {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
+#[cfg(feature = "cordl_class_System+Xml+Xsl+Runtime+StringConcat")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Xsl::Runtime::StringConcat {
     type Type = Self;

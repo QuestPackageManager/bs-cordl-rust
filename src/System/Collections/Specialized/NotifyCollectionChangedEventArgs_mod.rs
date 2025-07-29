@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedEventArgs"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotifyCollectionChangedEventArgs {
@@ -9,7 +11,9 @@ pub struct NotifyCollectionChangedEventArgs {
     pub _newStartingIndex: i32,
     pub _oldStartingIndex: i32,
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedEventArgs"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +33,9 @@ for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedEventArgs"
+)]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
     type Target = crate::System::EventArgs;
@@ -37,7 +43,9 @@ for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedEventArgs"
+)]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -363,7 +371,9 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedEventArgs")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedEventArgs"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

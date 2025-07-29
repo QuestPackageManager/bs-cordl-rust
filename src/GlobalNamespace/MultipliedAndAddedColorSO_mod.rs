@@ -1,4 +1,4 @@
-#[cfg(feature = "MultipliedAndAddedColorSO")]
+#[cfg(feature = "cordl_class_MultipliedAndAddedColorSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultipliedAndAddedColorSO {
@@ -7,7 +7,7 @@ pub struct MultipliedAndAddedColorSO {
     pub _multiplierColor: crate::UnityEngine::Color,
     pub _addColor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "MultipliedAndAddedColorSO")]
+#[cfg(feature = "cordl_class_MultipliedAndAddedColorSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultipliedAndAddedColorSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MultipliedAndAddedColorSO {
         false
     }
 }
-#[cfg(feature = "MultipliedAndAddedColorSO")]
+#[cfg(feature = "cordl_class_MultipliedAndAddedColorSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultipliedAndAddedColorSO {
     type Target = crate::GlobalNamespace::ColorSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultipliedAndAddedColorSO")]
+#[cfg(feature = "cordl_class_MultipliedAndAddedColorSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultipliedAndAddedColorSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::MultipliedAndAddedColorSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultipliedAndAddedColorSO")]
+#[cfg(feature = "cordl_class_MultipliedAndAddedColorSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultipliedAndAddedColorSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

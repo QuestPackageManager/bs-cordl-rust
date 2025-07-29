@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KdfFeedbackBytesGenerator {
@@ -15,7 +17,9 @@ pub struct KdfFeedbackBytesGenerator {
     pub generatedBytes: i32,
     pub k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,7 +39,9 @@ for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -43,7 +49,9 @@ for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -237,7 +245,9 @@ impl crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfFeedbackBytesGenerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Generators::KdfFeedbackBytesGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

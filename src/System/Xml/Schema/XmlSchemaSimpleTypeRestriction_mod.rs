@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSimpleTypeRestriction {
@@ -11,7 +11,7 @@ pub struct XmlSchemaSimpleTypeRestriction {
         crate::System::Xml::Schema::XmlSchemaObjectCollection,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction {
     type Target = crate::System::Xml::Schema::XmlSchemaSimpleTypeContent;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -245,7 +245,7 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

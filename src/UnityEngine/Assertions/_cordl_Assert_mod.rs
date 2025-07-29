@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Assertions+Assert")]
+#[cfg(feature = "cordl_class_UnityEngine+Assertions+Assert")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct _cordl_Assert {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Assertions+Assert")]
+#[cfg(feature = "cordl_class_UnityEngine+Assertions+Assert")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Assertions::_cordl_Assert {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Assertions::_cordl_Assert {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Assertions+Assert")]
+#[cfg(feature = "cordl_class_UnityEngine+Assertions+Assert")]
 impl std::ops::Deref for crate::UnityEngine::Assertions::_cordl_Assert {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Assertions+Assert")]
+#[cfg(feature = "cordl_class_UnityEngine+Assertions+Assert")]
 impl std::ops::DerefMut for crate::UnityEngine::Assertions::_cordl_Assert {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -520,7 +520,7 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Assertions+Assert")]
+#[cfg(feature = "cordl_class_UnityEngine+Assertions+Assert")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Assertions::_cordl_Assert {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

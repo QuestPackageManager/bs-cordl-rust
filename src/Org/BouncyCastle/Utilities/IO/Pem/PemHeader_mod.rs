@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PemHeader {
@@ -6,7 +6,7 @@ pub struct PemHeader {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Utilities::IO::Pem::PemHeader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Utilities::IO::Pem::PemHeader {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::IO::Pem::PemHeader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::IO::Pem::PemHeader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -207,7 +207,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemHeader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Utilities::IO::Pem::PemHeader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

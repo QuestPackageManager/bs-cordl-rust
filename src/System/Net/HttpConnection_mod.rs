@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+HttpConnection")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpConnection {
@@ -35,7 +35,7 @@ pub struct HttpConnection {
     pub line_state: crate::System::Net::HttpConnection_LineState,
     pub position: i32,
 }
-#[cfg(feature = "System+Net+HttpConnection")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpConnection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -54,14 +54,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpConnection {
         false
     }
 }
-#[cfg(feature = "System+Net+HttpConnection")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection")]
 impl std::ops::Deref for crate::System::Net::HttpConnection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+HttpConnection")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection")]
 impl std::ops::DerefMut for crate::System::Net::HttpConnection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -652,7 +652,7 @@ impl crate::System::Net::HttpConnection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+HttpConnection")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpConnection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -661,7 +661,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpConnection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+InputState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+InputState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpConnection_InputState {
@@ -669,7 +669,7 @@ pub enum HttpConnection_InputState {
     Headers = 1i32,
     RequestLine = 0i32,
 }
-#[cfg(feature = "System+Net+HttpConnection+InputState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpConnection_InputState {
     type Held<'a> = Self;
@@ -699,7 +699,7 @@ for crate::System::Net::HttpConnection_InputState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+InputState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpConnection_InputState {
     type Type = Self;
@@ -710,7 +710,7 @@ for crate::System::Net::HttpConnection_InputState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+InputState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpConnection_InputState {
     type Actual = Self;
@@ -724,7 +724,7 @@ for crate::System::Net::HttpConnection_InputState {
         self
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+InputState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpConnection_InputState {
     type Type = Self;
@@ -739,7 +739,7 @@ for crate::System::Net::HttpConnection_InputState {
         }
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+InputState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpConnection_InputState {
     type Actual = Self;
@@ -753,7 +753,7 @@ for crate::System::Net::HttpConnection_InputState {
         actual
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+LineState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+LineState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpConnection_LineState {
@@ -762,7 +762,7 @@ pub enum HttpConnection_LineState {
     LF = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Net+HttpConnection+LineState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpConnection_LineState {
     type Held<'a> = Self;
@@ -792,7 +792,7 @@ for crate::System::Net::HttpConnection_LineState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+LineState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpConnection_LineState {
     type Type = Self;
@@ -803,7 +803,7 @@ for crate::System::Net::HttpConnection_LineState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+LineState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpConnection_LineState {
     type Actual = Self;
@@ -817,7 +817,7 @@ for crate::System::Net::HttpConnection_LineState {
         self
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+LineState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpConnection_LineState {
     type Type = Self;
@@ -832,7 +832,7 @@ for crate::System::Net::HttpConnection_LineState {
         }
     }
 }
-#[cfg(feature = "System+Net+HttpConnection+LineState")]
+#[cfg(feature = "cordl_class_System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpConnection_LineState {
     type Actual = Self;

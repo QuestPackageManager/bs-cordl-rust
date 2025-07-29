@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Globalization+Unicode+Level2Map")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+Level2Map")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Level2Map {
@@ -6,7 +6,7 @@ pub struct Level2Map {
     pub Source: u8,
     pub Replace: u8,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+Level2Map")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+Level2Map")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::Level2Map {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Mono::Globalization::Unicode::Level2Map {
         false
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+Level2Map")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+Level2Map")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::Level2Map {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+Level2Map")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+Level2Map")]
 impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::Level2Map {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::Mono::Globalization::Unicode::Level2Map {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+Level2Map")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+Level2Map")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Globalization::Unicode::Level2Map {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

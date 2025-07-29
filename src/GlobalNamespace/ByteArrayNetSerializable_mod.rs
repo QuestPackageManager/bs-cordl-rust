@@ -1,4 +1,4 @@
-#[cfg(feature = "ByteArrayNetSerializable")]
+#[cfg(feature = "cordl_class_ByteArrayNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByteArrayNetSerializable {
@@ -10,7 +10,7 @@ pub struct ByteArrayNetSerializable {
     pub _minLength: i32,
     pub _maxLength: i32,
 }
-#[cfg(feature = "ByteArrayNetSerializable")]
+#[cfg(feature = "cordl_class_ByteArrayNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ByteArrayNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::ByteArrayNetSerializable {
         false
     }
 }
-#[cfg(feature = "ByteArrayNetSerializable")]
+#[cfg(feature = "cordl_class_ByteArrayNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::ByteArrayNetSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ByteArrayNetSerializable")]
+#[cfg(feature = "cordl_class_ByteArrayNetSerializable")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ByteArrayNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -500,7 +500,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ByteArrayNetSerializable")]
+#[cfg(feature = "cordl_class_ByteArrayNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ByteArrayNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

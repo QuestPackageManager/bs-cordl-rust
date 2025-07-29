@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataView")]
+#[cfg(feature = "cordl_class_System+Data+DataView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataView {
@@ -55,7 +55,7 @@ pub struct DataView {
     pub _dvListener: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
     pub _objectID: i32,
 }
-#[cfg(feature = "System+Data+DataView")]
+#[cfg(feature = "cordl_class_System+Data+DataView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -74,14 +74,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataView {
         false
     }
 }
-#[cfg(feature = "System+Data+DataView")]
+#[cfg(feature = "cordl_class_System+Data+DataView")]
 impl std::ops::Deref for crate::System::Data::DataView {
     type Target = crate::System::ComponentModel::MarshalByValueComponent;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataView")]
+#[cfg(feature = "cordl_class_System+Data+DataView")]
 impl std::ops::DerefMut for crate::System::Data::DataView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2378,7 +2378,7 @@ impl crate::System::Data::DataView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataView")]
+#[cfg(feature = "cordl_class_System+Data+DataView")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2449,13 +2449,13 @@ impl AsMut<crate::System::ComponentModel::ITypedList> for crate::System::Data::D
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
+#[cfg(feature = "cordl_class_System+Data+DataView+DataRowReferenceComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataView_DataRowReferenceComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
+#[cfg(feature = "cordl_class_System+Data+DataView+DataRowReferenceComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::DataView_DataRowReferenceComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2475,14 +2475,14 @@ for crate::System::Data::DataView_DataRowReferenceComparer {
         false
     }
 }
-#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
+#[cfg(feature = "cordl_class_System+Data+DataView+DataRowReferenceComparer")]
 impl std::ops::Deref for crate::System::Data::DataView_DataRowReferenceComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
+#[cfg(feature = "cordl_class_System+Data+DataView+DataRowReferenceComparer")]
 impl std::ops::DerefMut for crate::System::Data::DataView_DataRowReferenceComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2575,7 +2575,7 @@ impl crate::System::Data::DataView_DataRowReferenceComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
+#[cfg(feature = "cordl_class_System+Data+DataView+DataRowReferenceComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::DataView_DataRowReferenceComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

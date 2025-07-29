@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dictionary_2<
@@ -29,7 +29,7 @@ pub struct Dictionary_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -68,7 +68,7 @@ for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -78,7 +78,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2101,7 +2101,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2368,7 +2368,7 @@ for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Entry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Dictionary_2_Entry<
@@ -2382,7 +2382,7 @@ pub struct Dictionary_2_Entry<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2431,7 +2431,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2445,7 +2445,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2462,7 +2462,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
         self
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2480,7 +2480,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
         }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2497,7 +2497,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
         actual
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2516,7 +2516,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Dictionary_2_Enumerator<
@@ -2533,7 +2533,7 @@ pub struct Dictionary_2_Enumerator<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2582,7 +2582,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2596,7 +2596,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2613,7 +2613,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         self
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2631,7 +2631,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2648,7 +2648,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         actual
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3053,7 +3053,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         todo!()
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dictionary_2_KeyCollection<
@@ -3067,7 +3067,7 @@ pub struct Dictionary_2_KeyCollection<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3106,7 +3106,7 @@ for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3117,7 +3117,7 @@ for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3621,7 +3621,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3742,7 +3742,7 @@ for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dictionary_2_ValueCollection<
@@ -3756,7 +3756,7 @@ pub struct Dictionary_2_ValueCollection<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3795,7 +3795,7 @@ for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TVal
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3806,7 +3806,7 @@ for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TVal
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4314,7 +4314,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4435,7 +4435,9 @@ for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TVal
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct KeyCollection_Dictionary_2_Enumerator<
@@ -4451,7 +4453,9 @@ pub struct KeyCollection_Dictionary_2_Enumerator<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4503,7 +4507,9 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4520,7 +4526,9 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4540,7 +4548,9 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         self
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4561,7 +4571,9 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4581,7 +4593,9 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         actual
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4863,7 +4877,9 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         todo!()
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueCollection_Dictionary_2_Enumerator<
@@ -4879,7 +4895,9 @@ pub struct ValueCollection_Dictionary_2_Enumerator<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4931,7 +4949,9 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4948,7 +4968,9 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4968,7 +4990,9 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
         self
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4989,7 +5013,9 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
         }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -5009,7 +5035,9 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
         actual
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

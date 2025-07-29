@@ -1,4 +1,4 @@
-#[cfg(feature = "MissedNoteEffectSpawner")]
+#[cfg(feature = "cordl_class_MissedNoteEffectSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissedNoteEffectSpawner {
@@ -17,7 +17,7 @@ pub struct MissedNoteEffectSpawner {
     >,
     pub _spawnPosZ: f32,
 }
-#[cfg(feature = "MissedNoteEffectSpawner")]
+#[cfg(feature = "cordl_class_MissedNoteEffectSpawner")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissedNoteEffectSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::MissedNoteEffectSpawner {
         false
     }
 }
-#[cfg(feature = "MissedNoteEffectSpawner")]
+#[cfg(feature = "cordl_class_MissedNoteEffectSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::MissedNoteEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissedNoteEffectSpawner")]
+#[cfg(feature = "cordl_class_MissedNoteEffectSpawner")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissedNoteEffectSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::MissedNoteEffectSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissedNoteEffectSpawner")]
+#[cfg(feature = "cordl_class_MissedNoteEffectSpawner")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissedNoteEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

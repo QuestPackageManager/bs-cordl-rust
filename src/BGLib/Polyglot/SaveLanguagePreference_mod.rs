@@ -1,11 +1,11 @@
-#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+SaveLanguagePreference")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaveLanguagePreference {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub preferenceKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+SaveLanguagePreference")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::Polyglot::SaveLanguagePreference {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::BGLib::Polyglot::SaveLanguagePreference {
         false
     }
 }
-#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+SaveLanguagePreference")]
 impl std::ops::Deref for crate::BGLib::Polyglot::SaveLanguagePreference {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+SaveLanguagePreference")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::SaveLanguagePreference {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -120,7 +120,7 @@ impl crate::BGLib::Polyglot::SaveLanguagePreference {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+SaveLanguagePreference")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::Polyglot::SaveLanguagePreference {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

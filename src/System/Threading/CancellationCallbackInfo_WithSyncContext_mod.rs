@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationCallbackInfo+WithSyncContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CancellationCallbackInfo_WithSyncContext {
@@ -7,7 +7,7 @@ pub struct CancellationCallbackInfo_WithSyncContext {
         crate::System::Threading::SynchronizationContext,
     >,
 }
-#[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationCallbackInfo+WithSyncContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
         false
     }
 }
-#[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationCallbackInfo+WithSyncContext")]
 impl std::ops::Deref
 for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     type Target = crate::System::Threading::CancellationCallbackInfo;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationCallbackInfo+WithSyncContext")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationCallbackInfo+WithSyncContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

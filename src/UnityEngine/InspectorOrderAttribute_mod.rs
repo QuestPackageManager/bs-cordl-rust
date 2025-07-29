@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InspectorOrderAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+InspectorOrderAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InspectorOrderAttribute {
@@ -6,7 +6,7 @@ pub struct InspectorOrderAttribute {
     pub _m_inspectorSort_k__BackingField: crate::UnityEngine::InspectorSort,
     pub _m_sortDirection_k__BackingField: crate::UnityEngine::InspectorSortDirection,
 }
-#[cfg(feature = "UnityEngine+InspectorOrderAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+InspectorOrderAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InspectorOrderAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InspectorOrderAt
         false
     }
 }
-#[cfg(feature = "UnityEngine+InspectorOrderAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+InspectorOrderAttribute")]
 impl std::ops::Deref for crate::UnityEngine::InspectorOrderAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InspectorOrderAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+InspectorOrderAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::InspectorOrderAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -91,7 +91,7 @@ impl crate::UnityEngine::InspectorOrderAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InspectorOrderAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+InspectorOrderAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InspectorOrderAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

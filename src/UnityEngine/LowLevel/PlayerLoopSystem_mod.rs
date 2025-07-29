@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerLoopSystem {
@@ -14,7 +14,7 @@ pub struct PlayerLoopSystem {
     pub updateFunction: crate::System::IntPtr,
     pub loopConditionFunction: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::LowLevel::PlayerLoopSystem {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystem {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::LowLevel::PlayerLoopSystem {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystem {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::LowLevel::PlayerLoopSystem {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystem {
         self
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::LowLevel::PlayerLoopSystem {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystem {
         }
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::LowLevel::PlayerLoopSystem {
     type Actual = Self;
@@ -98,7 +98,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystem {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::LowLevel::PlayerLoopSystem {
     type Type = Self;
@@ -141,13 +141,13 @@ impl crate::UnityEngine::LowLevel::PlayerLoopSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerLoopSystem_UpdateFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -167,14 +167,14 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
         false
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 impl std::ops::Deref for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 impl std::ops::DerefMut
 for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -247,7 +247,7 @@ impl crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

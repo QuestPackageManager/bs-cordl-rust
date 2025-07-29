@@ -1,4 +1,4 @@
-#[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
+#[cfg(feature = "cordl_class_SongPreviewPlayerPauseOnInputFocusLost")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayerPauseOnInputFocusLost {
@@ -10,7 +10,7 @@ pub struct SongPreviewPlayerPauseOnInputFocusLost {
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
 }
-#[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
+#[cfg(feature = "cordl_class_SongPreviewPlayerPauseOnInputFocusLost")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
         false
     }
 }
-#[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
+#[cfg(feature = "cordl_class_SongPreviewPlayerPauseOnInputFocusLost")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
+#[cfg(feature = "cordl_class_SongPreviewPlayerPauseOnInputFocusLost")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
+#[cfg(feature = "cordl_class_SongPreviewPlayerPauseOnInputFocusLost")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

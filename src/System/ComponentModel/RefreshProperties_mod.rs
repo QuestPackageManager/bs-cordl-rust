@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+RefreshProperties")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshProperties")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RefreshProperties {
@@ -7,7 +7,7 @@ pub enum RefreshProperties {
     None = 0i32,
     Repaint = 2i32,
 }
-#[cfg(feature = "System+ComponentModel+RefreshProperties")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::RefreshProperties {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::ComponentModel::RefreshProperties {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ComponentModel+RefreshProperties")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshProperties")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::ComponentModel::RefreshProperties {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::ComponentModel::RefreshProperties {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ComponentModel+RefreshProperties")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshProperties")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::ComponentModel::RefreshProperties {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::ComponentModel::RefreshProperties {
         self
     }
 }
-#[cfg(feature = "System+ComponentModel+RefreshProperties")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshProperties")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::ComponentModel::RefreshProperties {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::ComponentModel::RefreshProperties {
         }
     }
 }
-#[cfg(feature = "System+ComponentModel+RefreshProperties")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshProperties")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::ComponentModel::RefreshProperties {
     type Actual = Self;

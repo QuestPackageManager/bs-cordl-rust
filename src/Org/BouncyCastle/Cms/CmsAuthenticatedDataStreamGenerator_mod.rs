@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsAuthenticatedDataStreamGenerator {
@@ -6,7 +6,7 @@ pub struct CmsAuthenticatedDataStreamGenerator {
     pub _bufferSize: i32,
     pub _berEncodeRecipientSet: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
     type Target = crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator;
@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -331,7 +331,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -342,7 +342,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -361,7 +361,7 @@ pub struct CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream 
     >,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {
@@ -383,7 +383,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthen
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {
@@ -393,7 +393,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthen
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {
@@ -558,7 +558,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthe
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {

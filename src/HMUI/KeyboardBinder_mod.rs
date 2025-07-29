@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+KeyboardBinder")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardBinder {
@@ -28,7 +28,7 @@ pub struct KeyboardBinder {
         >,
     >,
 }
-#[cfg(feature = "HMUI+KeyboardBinder")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::KeyboardBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::KeyboardBinder {
         false
     }
 }
-#[cfg(feature = "HMUI+KeyboardBinder")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder")]
 impl std::ops::Deref for crate::HMUI::KeyboardBinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+KeyboardBinder")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder")]
 impl std::ops::DerefMut for crate::HMUI::KeyboardBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -393,7 +393,7 @@ impl crate::HMUI::KeyboardBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+KeyboardBinder")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::KeyboardBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -402,7 +402,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::KeyboardBinder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder+KeyBindingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KeyboardBinder_KeyBindingType {
@@ -411,7 +411,7 @@ pub enum KeyboardBinder_KeyBindingType {
     KeyPress = 2i32,
     KeyUp = 1i32,
 }
-#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -440,7 +440,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::KeyboardBinder_KeyBindi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Type = Self;
@@ -451,7 +451,7 @@ for crate::HMUI::KeyboardBinder_KeyBindingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Actual = Self;
@@ -465,7 +465,7 @@ for crate::HMUI::KeyboardBinder_KeyBindingType {
         self
     }
 }
-#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Type = Self;
@@ -480,7 +480,7 @@ for crate::HMUI::KeyboardBinder_KeyBindingType {
         }
     }
 }
-#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
+#[cfg(feature = "cordl_class_HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Actual = Self;

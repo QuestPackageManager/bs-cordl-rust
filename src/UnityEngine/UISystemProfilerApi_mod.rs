@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UISystemProfilerApi")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UISystemProfilerApi {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UISystemProfilerApi {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UISystemProfiler
         false
     }
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi")]
 impl std::ops::Deref for crate::UnityEngine::UISystemProfilerApi {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi")]
 impl std::ops::DerefMut for crate::UnityEngine::UISystemProfilerApi {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -122,7 +122,7 @@ impl crate::UnityEngine::UISystemProfilerApi {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UISystemProfilerApi {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -131,7 +131,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UISystemProfilerA
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi+SampleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UISystemProfilerApi_SampleType {
@@ -139,7 +139,7 @@ pub enum UISystemProfilerApi_SampleType {
     Layout = 0i32,
     Render = 1i32,
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi+SampleType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UISystemProfilerApi_SampleType {
     type Held<'a> = Self;
@@ -169,7 +169,7 @@ for crate::UnityEngine::UISystemProfilerApi_SampleType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi+SampleType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UISystemProfilerApi_SampleType {
     type Type = Self;
@@ -180,7 +180,7 @@ for crate::UnityEngine::UISystemProfilerApi_SampleType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi+SampleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UISystemProfilerApi_SampleType {
     type Actual = Self;
@@ -194,7 +194,7 @@ for crate::UnityEngine::UISystemProfilerApi_SampleType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi+SampleType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UISystemProfilerApi_SampleType {
     type Type = Self;
@@ -209,7 +209,7 @@ for crate::UnityEngine::UISystemProfilerApi_SampleType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
+#[cfg(feature = "cordl_class_UnityEngine+UISystemProfilerApi+SampleType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UISystemProfilerApi_SampleType {
     type Actual = Self;

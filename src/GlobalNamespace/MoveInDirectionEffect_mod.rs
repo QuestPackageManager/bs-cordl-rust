@@ -1,4 +1,4 @@
-#[cfg(feature = "MoveInDirectionEffect")]
+#[cfg(feature = "cordl_class_MoveInDirectionEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MoveInDirectionEffect {
@@ -9,7 +9,7 @@ pub struct MoveInDirectionEffect {
     pub _startPosition: crate::UnityEngine::Vector3,
     pub _moveDirection: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "MoveInDirectionEffect")]
+#[cfg(feature = "cordl_class_MoveInDirectionEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MoveInDirectionEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MoveInDirectionEffect {
         false
     }
 }
-#[cfg(feature = "MoveInDirectionEffect")]
+#[cfg(feature = "cordl_class_MoveInDirectionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::MoveInDirectionEffect {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MoveInDirectionEffect")]
+#[cfg(feature = "cordl_class_MoveInDirectionEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MoveInDirectionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -172,7 +172,7 @@ impl crate::GlobalNamespace::MoveInDirectionEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MoveInDirectionEffect")]
+#[cfg(feature = "cordl_class_MoveInDirectionEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MoveInDirectionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "CommandBufferGrabPass")]
+#[cfg(feature = "cordl_class_CommandBufferGrabPass")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandBufferGrabPass {
@@ -6,7 +6,7 @@ pub struct CommandBufferGrabPass {
     pub _textureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cameraEvent: crate::UnityEngine::Rendering::CameraEvent,
 }
-#[cfg(feature = "CommandBufferGrabPass")]
+#[cfg(feature = "cordl_class_CommandBufferGrabPass")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CommandBufferGrabPass {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::CommandBufferGrabPass {
         false
     }
 }
-#[cfg(feature = "CommandBufferGrabPass")]
+#[cfg(feature = "cordl_class_CommandBufferGrabPass")]
 impl std::ops::Deref for crate::GlobalNamespace::CommandBufferGrabPass {
     type Target = crate::GlobalNamespace::CommandBufferGOCore;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CommandBufferGrabPass")]
+#[cfg(feature = "cordl_class_CommandBufferGrabPass")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CommandBufferGrabPass {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::CommandBufferGrabPass {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CommandBufferGrabPass")]
+#[cfg(feature = "cordl_class_CommandBufferGrabPass")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CommandBufferGrabPass {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

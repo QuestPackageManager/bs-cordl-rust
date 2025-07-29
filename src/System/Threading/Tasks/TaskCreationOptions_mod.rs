@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+TaskCreationOptions")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCreationOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TaskCreationOptions {
@@ -11,7 +11,7 @@ pub enum TaskCreationOptions {
     PreferFairness = 1i32,
     RunContinuationsAsynchronously = 64i32,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCreationOptions")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCreationOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::TaskCreationOptions {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::System::Threading::Tasks::TaskCreationOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCreationOptions")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCreationOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::TaskCreationOptions {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::System::Threading::Tasks::TaskCreationOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCreationOptions")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCreationOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::TaskCreationOptions {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::System::Threading::Tasks::TaskCreationOptions {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCreationOptions")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCreationOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::TaskCreationOptions {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::System::Threading::Tasks::TaskCreationOptions {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskCreationOptions")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCreationOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::TaskCreationOptions {
     type Actual = Self;

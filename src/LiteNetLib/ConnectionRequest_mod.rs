@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+ConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectionRequest {
@@ -11,7 +11,7 @@ pub struct ConnectionRequest {
     pub ConnectionNumber: u8,
     pub RemoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ConnectionRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ConnectionRequest
         false
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequest")]
 impl std::ops::Deref for crate::LiteNetLib::ConnectionRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequest")]
 impl std::ops::DerefMut for crate::LiteNetLib::ConnectionRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -523,7 +523,7 @@ impl crate::LiteNetLib::ConnectionRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectionRequest")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::ConnectionRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Camera")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Camera {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
-#[cfg(feature = "UnityEngine+Camera")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Camera")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera")]
 impl std::ops::Deref for crate::UnityEngine::Camera {
     type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Camera")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera")]
 impl std::ops::DerefMut for crate::UnityEngine::Camera {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7013,7 +7013,7 @@ impl crate::UnityEngine::Camera {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Camera")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Camera {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -7022,13 +7022,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Camera {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Camera+CameraCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+CameraCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Camera_CameraCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Camera+CameraCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+CameraCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_CameraCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -7047,14 +7047,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_CameraCal
         false
     }
 }
-#[cfg(feature = "UnityEngine+Camera+CameraCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+CameraCallback")]
 impl std::ops::Deref for crate::UnityEngine::Camera_CameraCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+CameraCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+CameraCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::Camera_CameraCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7131,7 +7131,7 @@ impl crate::UnityEngine::Camera_CameraCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+CameraCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+CameraCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Camera_CameraCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -7140,7 +7140,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Camera_CameraCall
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_GateFitMode {
@@ -7151,7 +7151,7 @@ pub enum Camera_GateFitMode {
     Overscan = 4i32,
     Vertical = 1i32,
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_GateFitMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -7180,7 +7180,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_GateFitMo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Camera_GateFitMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7190,7 +7190,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Camera_GateF
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Camera_GateFitMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7203,7 +7203,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Camera_Gate
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Camera_GateFitMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7217,7 +7217,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Camera_GateF
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_GateFitMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7230,14 +7230,14 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_GateFit
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitParameters")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Camera_GateFitParameters {
     pub _mode_k__BackingField: crate::UnityEngine::Camera_GateFitMode,
     pub _aspect_k__BackingField: f32,
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Camera_GateFitParameters {
     type Held<'a> = Self;
@@ -7267,7 +7267,7 @@ for crate::UnityEngine::Camera_GateFitParameters {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Camera_GateFitParameters {
     type Type = Self;
@@ -7278,7 +7278,7 @@ for crate::UnityEngine::Camera_GateFitParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Camera_GateFitParameters {
     type Actual = Self;
@@ -7292,7 +7292,7 @@ for crate::UnityEngine::Camera_GateFitParameters {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Camera_GateFitParameters {
     type Type = Self;
@@ -7307,7 +7307,7 @@ for crate::UnityEngine::Camera_GateFitParameters {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Camera_GateFitParameters {
     type Actual = Self;
@@ -7321,7 +7321,7 @@ for crate::UnityEngine::Camera_GateFitParameters {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Camera+GateFitParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitParameters")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Camera_GateFitParameters {
     type Type = Self;
@@ -7377,7 +7377,7 @@ impl crate::UnityEngine::Camera_GateFitParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+MonoOrStereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+MonoOrStereoscopicEye")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_MonoOrStereoscopicEye {
@@ -7386,7 +7386,7 @@ pub enum Camera_MonoOrStereoscopicEye {
     Mono = 2i32,
     Right = 1i32,
 }
-#[cfg(feature = "UnityEngine+Camera+MonoOrStereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+MonoOrStereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
     type Held<'a> = Self;
@@ -7416,7 +7416,7 @@ for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+MonoOrStereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+MonoOrStereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
     type Type = Self;
@@ -7427,7 +7427,7 @@ for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+MonoOrStereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+MonoOrStereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
     type Actual = Self;
@@ -7441,7 +7441,7 @@ for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+MonoOrStereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+MonoOrStereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
     type Type = Self;
@@ -7456,7 +7456,7 @@ for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+MonoOrStereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+MonoOrStereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
     type Actual = Self;
@@ -7470,7 +7470,7 @@ for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Camera+ProjectionMatrixMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+ProjectionMatrixMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_ProjectionMatrixMode {
@@ -7479,7 +7479,7 @@ pub enum Camera_ProjectionMatrixMode {
     Implicit = 1i32,
     PhysicalPropertiesBased = 2i32,
 }
-#[cfg(feature = "UnityEngine+Camera+ProjectionMatrixMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+ProjectionMatrixMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Camera_ProjectionMatrixMode {
     type Held<'a> = Self;
@@ -7509,7 +7509,7 @@ for crate::UnityEngine::Camera_ProjectionMatrixMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+ProjectionMatrixMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+ProjectionMatrixMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Camera_ProjectionMatrixMode {
     type Type = Self;
@@ -7520,7 +7520,7 @@ for crate::UnityEngine::Camera_ProjectionMatrixMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+ProjectionMatrixMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+ProjectionMatrixMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Camera_ProjectionMatrixMode {
     type Actual = Self;
@@ -7534,7 +7534,7 @@ for crate::UnityEngine::Camera_ProjectionMatrixMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+ProjectionMatrixMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+ProjectionMatrixMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Camera_ProjectionMatrixMode {
     type Type = Self;
@@ -7549,7 +7549,7 @@ for crate::UnityEngine::Camera_ProjectionMatrixMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+ProjectionMatrixMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+ProjectionMatrixMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Camera_ProjectionMatrixMode {
     type Actual = Self;
@@ -7563,7 +7563,7 @@ for crate::UnityEngine::Camera_ProjectionMatrixMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequest")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Camera_RenderRequest {
@@ -7571,7 +7571,7 @@ pub struct Camera_RenderRequest {
     pub m_ResultRT: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub m_OutputSpace: crate::UnityEngine::Camera_RenderRequestOutputSpace,
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_RenderRequest {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -7600,7 +7600,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_RenderReq
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequest")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Camera_RenderRequest {
     type Type = Self;
@@ -7611,7 +7611,7 @@ for crate::UnityEngine::Camera_RenderRequest {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequest")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Camera_RenderRequest {
     type Actual = Self;
@@ -7625,7 +7625,7 @@ for crate::UnityEngine::Camera_RenderRequest {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequest")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Camera_RenderRequest {
     type Type = Self;
@@ -7640,7 +7640,7 @@ for crate::UnityEngine::Camera_RenderRequest {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequest")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_RenderRequest {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7653,7 +7653,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_RenderR
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequest")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Camera_RenderRequest {
     type Type = Self;
@@ -7666,7 +7666,7 @@ for crate::UnityEngine::Camera_RenderRequest {
 }
 #[cfg(feature = "UnityEngine+Camera+RenderRequest")]
 impl crate::UnityEngine::Camera_RenderRequest {}
-#[cfg(feature = "UnityEngine+Camera+RenderRequestMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_RenderRequestMode {
@@ -7686,7 +7686,7 @@ pub enum Camera_RenderRequestMode {
     VertexNormal = 3i32,
     WorldPosition = 4i32,
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Camera_RenderRequestMode {
     type Held<'a> = Self;
@@ -7716,7 +7716,7 @@ for crate::UnityEngine::Camera_RenderRequestMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Camera_RenderRequestMode {
     type Type = Self;
@@ -7727,7 +7727,7 @@ for crate::UnityEngine::Camera_RenderRequestMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Camera_RenderRequestMode {
     type Actual = Self;
@@ -7741,7 +7741,7 @@ for crate::UnityEngine::Camera_RenderRequestMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Camera_RenderRequestMode {
     type Type = Self;
@@ -7756,7 +7756,7 @@ for crate::UnityEngine::Camera_RenderRequestMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Camera_RenderRequestMode {
     type Actual = Self;
@@ -7770,7 +7770,7 @@ for crate::UnityEngine::Camera_RenderRequestMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestOutputSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestOutputSpace")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_RenderRequestOutputSpace {
@@ -7786,7 +7786,7 @@ pub enum Camera_RenderRequestOutputSpace {
     UV7 = 7i32,
     UV8 = 8i32,
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestOutputSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestOutputSpace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Camera_RenderRequestOutputSpace {
     type Held<'a> = Self;
@@ -7816,7 +7816,7 @@ for crate::UnityEngine::Camera_RenderRequestOutputSpace {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestOutputSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestOutputSpace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Camera_RenderRequestOutputSpace {
     type Type = Self;
@@ -7827,7 +7827,7 @@ for crate::UnityEngine::Camera_RenderRequestOutputSpace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestOutputSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestOutputSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Camera_RenderRequestOutputSpace {
     type Actual = Self;
@@ -7841,7 +7841,7 @@ for crate::UnityEngine::Camera_RenderRequestOutputSpace {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestOutputSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestOutputSpace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Camera_RenderRequestOutputSpace {
     type Type = Self;
@@ -7856,7 +7856,7 @@ for crate::UnityEngine::Camera_RenderRequestOutputSpace {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+RenderRequestOutputSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestOutputSpace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Camera_RenderRequestOutputSpace {
     type Actual = Self;
@@ -7870,7 +7870,7 @@ for crate::UnityEngine::Camera_RenderRequestOutputSpace {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Camera+SceneViewFilterMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+SceneViewFilterMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_SceneViewFilterMode {
@@ -7878,7 +7878,7 @@ pub enum Camera_SceneViewFilterMode {
     Off = 0i32,
     ShowFiltered = 1i32,
 }
-#[cfg(feature = "UnityEngine+Camera+SceneViewFilterMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+SceneViewFilterMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Camera_SceneViewFilterMode {
     type Held<'a> = Self;
@@ -7908,7 +7908,7 @@ for crate::UnityEngine::Camera_SceneViewFilterMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+SceneViewFilterMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+SceneViewFilterMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Camera_SceneViewFilterMode {
     type Type = Self;
@@ -7919,7 +7919,7 @@ for crate::UnityEngine::Camera_SceneViewFilterMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+SceneViewFilterMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+SceneViewFilterMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Camera_SceneViewFilterMode {
     type Actual = Self;
@@ -7933,7 +7933,7 @@ for crate::UnityEngine::Camera_SceneViewFilterMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+SceneViewFilterMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+SceneViewFilterMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Camera_SceneViewFilterMode {
     type Type = Self;
@@ -7948,7 +7948,7 @@ for crate::UnityEngine::Camera_SceneViewFilterMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+SceneViewFilterMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+SceneViewFilterMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Camera_SceneViewFilterMode {
     type Actual = Self;
@@ -7962,7 +7962,7 @@ for crate::UnityEngine::Camera_SceneViewFilterMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Camera+StereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+StereoscopicEye")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_StereoscopicEye {
@@ -7970,7 +7970,7 @@ pub enum Camera_StereoscopicEye {
     Left = 0i32,
     Right = 1i32,
 }
-#[cfg(feature = "UnityEngine+Camera+StereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+StereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_StereoscopicEye {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -7999,7 +7999,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_Stereosco
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Camera+StereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+StereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Camera_StereoscopicEye {
     type Type = Self;
@@ -8010,7 +8010,7 @@ for crate::UnityEngine::Camera_StereoscopicEye {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Camera+StereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+StereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Camera_StereoscopicEye {
     type Actual = Self;
@@ -8024,7 +8024,7 @@ for crate::UnityEngine::Camera_StereoscopicEye {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Camera+StereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+StereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Camera_StereoscopicEye {
     type Type = Self;
@@ -8039,7 +8039,7 @@ for crate::UnityEngine::Camera_StereoscopicEye {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Camera+StereoscopicEye")]
+#[cfg(feature = "cordl_class_UnityEngine+Camera+StereoscopicEye")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Camera_StereoscopicEye {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "LightTransformGroup_3")]
+#[cfg(feature = "cordl_class_LightTransformGroup_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTransformGroup_3<
@@ -29,7 +29,7 @@ pub struct LightTransformGroup_3<
     __cordl_phantom_TY: std::marker::PhantomData<TY>,
     __cordl_phantom_TZ: std::marker::PhantomData<TZ>,
 }
-#[cfg(feature = "LightTransformGroup_3")]
+#[cfg(feature = "cordl_class_LightTransformGroup_3")]
 unsafe impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,
@@ -66,7 +66,7 @@ for crate::GlobalNamespace::LightTransformGroup_3<TX, TY, TZ> {
         false
     }
 }
-#[cfg(feature = "LightTransformGroup_3")]
+#[cfg(feature = "cordl_class_LightTransformGroup_3")]
 impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,
@@ -77,7 +77,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightTransformGroup_3")]
+#[cfg(feature = "cordl_class_LightTransformGroup_3")]
 impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,
@@ -371,7 +371,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightTransformGroup_3")]
+#[cfg(feature = "cordl_class_LightTransformGroup_3")]
 impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,

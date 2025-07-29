@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshUtility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::MeshUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Mesh
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshUtility")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshUtility")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -644,7 +644,7 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::MeshUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

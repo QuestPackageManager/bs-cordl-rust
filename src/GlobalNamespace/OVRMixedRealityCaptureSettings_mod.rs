@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRMixedRealityCaptureSettings")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMixedRealityCaptureSettings {
@@ -34,7 +34,7 @@ pub struct OVRMixedRealityCaptureSettings {
         crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
     >,
 }
-#[cfg(feature = "OVRMixedRealityCaptureSettings")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,14 +54,14 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         false
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureSettings")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureSettings")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1612,7 +1612,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRMixedRealityCaptureSettings")]
+#[cfg(feature = "cordl_class_OVRMixedRealityCaptureSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

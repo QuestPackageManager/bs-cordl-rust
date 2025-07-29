@@ -1,4 +1,4 @@
-#[cfg(feature = "FakeMirrorSettings")]
+#[cfg(feature = "cordl_class_FakeMirrorSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FakeMirrorSettings {
@@ -10,7 +10,7 @@ pub struct FakeMirrorSettings {
     pub _vertexDistortionDirectionality: crate::UnityEngine::Vector3,
     pub _vertexDistortionZposMultiplier: f32,
 }
-#[cfg(feature = "FakeMirrorSettings")]
+#[cfg(feature = "cordl_class_FakeMirrorSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FakeMirrorSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FakeMirrorSe
         false
     }
 }
-#[cfg(feature = "FakeMirrorSettings")]
+#[cfg(feature = "cordl_class_FakeMirrorSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::FakeMirrorSettings {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FakeMirrorSettings")]
+#[cfg(feature = "cordl_class_FakeMirrorSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FakeMirrorSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -204,7 +204,7 @@ impl crate::GlobalNamespace::FakeMirrorSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FakeMirrorSettings")]
+#[cfg(feature = "cordl_class_FakeMirrorSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FakeMirrorSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

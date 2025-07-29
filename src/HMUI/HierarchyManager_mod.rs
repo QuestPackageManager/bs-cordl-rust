@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+HierarchyManager")]
+#[cfg(feature = "cordl_class_HMUI+HierarchyManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HierarchyManager {
@@ -9,7 +9,7 @@ pub struct HierarchyManager {
     >,
     pub _rootFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
 }
-#[cfg(feature = "HMUI+HierarchyManager")]
+#[cfg(feature = "cordl_class_HMUI+HierarchyManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::HierarchyManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::HierarchyManager {
         false
     }
 }
-#[cfg(feature = "HMUI+HierarchyManager")]
+#[cfg(feature = "cordl_class_HMUI+HierarchyManager")]
 impl std::ops::Deref for crate::HMUI::HierarchyManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+HierarchyManager")]
+#[cfg(feature = "cordl_class_HMUI+HierarchyManager")]
 impl std::ops::DerefMut for crate::HMUI::HierarchyManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -216,7 +216,7 @@ impl crate::HMUI::HierarchyManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+HierarchyManager")]
+#[cfg(feature = "cordl_class_HMUI+HierarchyManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::HierarchyManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+CodeDom+Compiler+GeneratedCodeAttribute")]
+#[cfg(feature = "cordl_class_System+CodeDom+Compiler+GeneratedCodeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GeneratedCodeAttribute {
@@ -6,7 +6,7 @@ pub struct GeneratedCodeAttribute {
     pub tool: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+CodeDom+Compiler+GeneratedCodeAttribute")]
+#[cfg(feature = "cordl_class_System+CodeDom+Compiler+GeneratedCodeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::CodeDom::Compiler::GeneratedCodeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::CodeDom::Compiler::GeneratedCodeAttribute {
         false
     }
 }
-#[cfg(feature = "System+CodeDom+Compiler+GeneratedCodeAttribute")]
+#[cfg(feature = "cordl_class_System+CodeDom+Compiler+GeneratedCodeAttribute")]
 impl std::ops::Deref for crate::System::CodeDom::Compiler::GeneratedCodeAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+CodeDom+Compiler+GeneratedCodeAttribute")]
+#[cfg(feature = "cordl_class_System+CodeDom+Compiler+GeneratedCodeAttribute")]
 impl std::ops::DerefMut for crate::System::CodeDom::Compiler::GeneratedCodeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -86,7 +86,7 @@ impl crate::System::CodeDom::Compiler::GeneratedCodeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+CodeDom+Compiler+GeneratedCodeAttribute")]
+#[cfg(feature = "cordl_class_System+CodeDom+Compiler+GeneratedCodeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::CodeDom::Compiler::GeneratedCodeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCategoryAttribute {
     __cordl_parent: crate::System::Attribute,
     pub category: crate::UnityEngine::UIElements::EventCategory,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventCategoryAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::UIElements::EventCategoryAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryAttribute")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventCategoryAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventCategoryAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::UnityEngine::UIElements::EventCategoryAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EventCategoryAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

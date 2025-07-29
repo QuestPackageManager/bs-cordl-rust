@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+OperationException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+OperationException"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OperationException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+OperationException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+OperationException"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+OperationException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+OperationException"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
     type Target = crate::System::Exception;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+OperationException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+OperationException"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -111,7 +119,9 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+OperationException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+OperationException"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

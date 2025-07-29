@@ -1,4 +1,4 @@
-#[cfg(feature = "TextOnlyTableCell")]
+#[cfg(feature = "cordl_class_TextOnlyTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextOnlyTableCell {
@@ -8,7 +8,7 @@ pub struct TextOnlyTableCell {
     pub _bgImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _highlightImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
 }
-#[cfg(feature = "TextOnlyTableCell")]
+#[cfg(feature = "cordl_class_TextOnlyTableCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TextOnlyTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TextOnlyTabl
         false
     }
 }
-#[cfg(feature = "TextOnlyTableCell")]
+#[cfg(feature = "cordl_class_TextOnlyTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::TextOnlyTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TextOnlyTableCell")]
+#[cfg(feature = "cordl_class_TextOnlyTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextOnlyTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -201,7 +201,7 @@ impl crate::GlobalNamespace::TextOnlyTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TextOnlyTableCell")]
+#[cfg(feature = "cordl_class_TextOnlyTableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextOnlyTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

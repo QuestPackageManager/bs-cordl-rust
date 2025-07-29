@@ -1,4 +1,4 @@
-#[cfg(feature = "AudioClipQueue")]
+#[cfg(feature = "cordl_class_AudioClipQueue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioClipQueue {
@@ -12,7 +12,7 @@ pub struct AudioClipQueue {
         >,
     >,
 }
-#[cfg(feature = "AudioClipQueue")]
+#[cfg(feature = "cordl_class_AudioClipQueue")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AudioClipQueue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AudioClipQue
         false
     }
 }
-#[cfg(feature = "AudioClipQueue")]
+#[cfg(feature = "cordl_class_AudioClipQueue")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioClipQueue {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AudioClipQueue")]
+#[cfg(feature = "cordl_class_AudioClipQueue")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioClipQueue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::AudioClipQueue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AudioClipQueue")]
+#[cfg(feature = "cordl_class_AudioClipQueue")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioClipQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -155,7 +155,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioClipQueu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AudioClipQueue+AudioClipWithDelay")]
+#[cfg(feature = "cordl_class_AudioClipQueue+AudioClipWithDelay")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioClipQueue_AudioClipWithDelay {
@@ -163,7 +163,7 @@ pub struct AudioClipQueue_AudioClipWithDelay {
     pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub delay: f32,
 }
-#[cfg(feature = "AudioClipQueue+AudioClipWithDelay")]
+#[cfg(feature = "cordl_class_AudioClipQueue+AudioClipWithDelay")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -183,14 +183,14 @@ for crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay {
         false
     }
 }
-#[cfg(feature = "AudioClipQueue+AudioClipWithDelay")]
+#[cfg(feature = "cordl_class_AudioClipQueue+AudioClipWithDelay")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AudioClipQueue+AudioClipWithDelay")]
+#[cfg(feature = "cordl_class_AudioClipQueue+AudioClipWithDelay")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -236,7 +236,7 @@ impl crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AudioClipQueue+AudioClipWithDelay")]
+#[cfg(feature = "cordl_class_AudioClipQueue+AudioClipWithDelay")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

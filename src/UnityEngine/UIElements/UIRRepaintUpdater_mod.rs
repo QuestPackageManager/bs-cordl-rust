@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIRRepaintUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRRepaintUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRRepaintUpdater {
@@ -13,7 +13,7 @@ pub struct UIRRepaintUpdater {
     pub _breakBatches_k__BackingField: bool,
     pub _disposed_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRRepaintUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRRepaintUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIRRepaintUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::UnityEngine::UIElements::UIRRepaintUpdater {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRRepaintUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRRepaintUpdater")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRRepaintUpdater {
     type Target = crate::UnityEngine::UIElements::BaseVisualTreeUpdater;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRRepaintUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRRepaintUpdater")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRRepaintUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -577,7 +577,7 @@ impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRRepaintUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRRepaintUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIRRepaintUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

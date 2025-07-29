@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+GUI")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUI {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+GUI")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUI {
         false
     }
 }
-#[cfg(feature = "UnityEngine+GUI")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI")]
 impl std::ops::Deref for crate::UnityEngine::GUI {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GUI")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI")]
 impl std::ops::DerefMut for crate::UnityEngine::GUI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -888,7 +888,7 @@ impl crate::UnityEngine::GUI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GUI")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -897,13 +897,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUI {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+GUI+WindowFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI+WindowFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUI_WindowFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+GUI+WindowFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI+WindowFunction")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUI_WindowFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -922,14 +922,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUI_WindowFuncti
         false
     }
 }
-#[cfg(feature = "UnityEngine+GUI+WindowFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI+WindowFunction")]
 impl std::ops::Deref for crate::UnityEngine::GUI_WindowFunction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GUI+WindowFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI+WindowFunction")]
 impl std::ops::DerefMut for crate::UnityEngine::GUI_WindowFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1002,7 +1002,7 @@ impl crate::UnityEngine::GUI_WindowFunction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GUI+WindowFunction")]
+#[cfg(feature = "cordl_class_UnityEngine+GUI+WindowFunction")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUI_WindowFunction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Tilemaps+TilemapRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TilemapRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TilemapRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TilemapRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TilemapRenderer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Tilemaps::TilemapRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Tilemaps::TilemapRenderer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TilemapRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TilemapRenderer")]
 impl std::ops::Deref for crate::UnityEngine::Tilemaps::TilemapRenderer {
     type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TilemapRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TilemapRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::TilemapRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::UnityEngine::Tilemaps::TilemapRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TilemapRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TilemapRenderer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Tilemaps::TilemapRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

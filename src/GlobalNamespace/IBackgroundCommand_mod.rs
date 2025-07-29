@@ -1,10 +1,10 @@
-#[cfg(feature = "IBackgroundCommand")]
+#[cfg(feature = "cordl_class_IBackgroundCommand")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IBackgroundCommand {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IBackgroundCommand")]
+#[cfg(feature = "cordl_class_IBackgroundCommand")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IBackgroundCommand {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IBackgroundC
         false
     }
 }
-#[cfg(feature = "IBackgroundCommand")]
+#[cfg(feature = "cordl_class_IBackgroundCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::IBackgroundCommand {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IBackgroundCommand")]
+#[cfg(feature = "cordl_class_IBackgroundCommand")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IBackgroundCommand {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::IBackgroundCommand {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IBackgroundCommand")]
+#[cfg(feature = "cordl_class_IBackgroundCommand")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IBackgroundCommand {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

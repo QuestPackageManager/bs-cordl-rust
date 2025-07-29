@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasCustomFilter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasCustomFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicAtlasCustomFilter {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasCustomFilter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasCustomFilter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DynamicAtlasCustomFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::DynamicAtlasCustomFilter {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasCustomFilter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasCustomFilter")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlasCustomFilter {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasCustomFilter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasCustomFilter")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DynamicAtlasCustomFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasCustomFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasCustomFilter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasCustomFilter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::DynamicAtlasCustomFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

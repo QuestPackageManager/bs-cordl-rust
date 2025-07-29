@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Handles")]
+#[cfg(feature = "cordl_class_System+Handles")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Handles {
@@ -7,7 +7,7 @@ pub enum Handles {
     STD_INPUT = -10i32,
     STD_OUTPUT = -11i32,
 }
-#[cfg(feature = "System+Handles")]
+#[cfg(feature = "cordl_class_System+Handles")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Handles {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Handles {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Handles")]
+#[cfg(feature = "cordl_class_System+Handles")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Handles {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Handles {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Handles")]
+#[cfg(feature = "cordl_class_System+Handles")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Handles {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Handles {
         self
     }
 }
-#[cfg(feature = "System+Handles")]
+#[cfg(feature = "cordl_class_System+Handles")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Handles {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Handles {
         }
     }
 }
-#[cfg(feature = "System+Handles")]
+#[cfg(feature = "cordl_class_System+Handles")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Handles {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

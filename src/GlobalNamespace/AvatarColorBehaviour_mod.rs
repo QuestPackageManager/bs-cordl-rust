@@ -1,4 +1,4 @@
-#[cfg(feature = "AvatarColorBehaviour")]
+#[cfg(feature = "cordl_class_AvatarColorBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarColorBehaviour {
@@ -11,7 +11,7 @@ pub struct AvatarColorBehaviour {
     >,
     pub _duration: f32,
 }
-#[cfg(feature = "AvatarColorBehaviour")]
+#[cfg(feature = "cordl_class_AvatarColorBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AvatarColorBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::AvatarColorBehaviour {
         false
     }
 }
-#[cfg(feature = "AvatarColorBehaviour")]
+#[cfg(feature = "cordl_class_AvatarColorBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarColorBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AvatarColorBehaviour")]
+#[cfg(feature = "cordl_class_AvatarColorBehaviour")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AvatarColorBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -161,7 +161,7 @@ impl crate::GlobalNamespace::AvatarColorBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AvatarColorBehaviour")]
+#[cfg(feature = "cordl_class_AvatarColorBehaviour")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AvatarColorBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

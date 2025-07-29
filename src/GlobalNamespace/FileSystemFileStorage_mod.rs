@@ -1,4 +1,4 @@
-#[cfg(feature = "FileSystemFileStorage")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage {
@@ -13,7 +13,7 @@ pub struct FileSystemFileStorage {
         >,
     >,
 }
-#[cfg(feature = "FileSystemFileStorage")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FileSystemFileStorage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::FileSystemFileStorage {
         false
     }
 }
-#[cfg(feature = "FileSystemFileStorage")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileSystemFileStorage")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FileSystemFileStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -367,7 +367,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileSystemFileStorage")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FileSystemFileStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -391,14 +391,14 @@ for crate::GlobalNamespace::FileSystemFileStorage {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+DeleteFileCommand")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_DeleteFileCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+DeleteFileCommand")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -418,7 +418,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
         false
     }
 }
-#[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+DeleteFileCommand")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand;
@@ -426,7 +426,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+DeleteFileCommand")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -496,7 +496,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+DeleteFileCommand")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -506,14 +506,14 @@ for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+FileExistsCommand")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_FileExistsCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<bool>,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+FileExistsCommand")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -533,7 +533,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
         false
     }
 }
-#[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+FileExistsCommand")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<bool>;
@@ -541,7 +541,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+FileExistsCommand")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -603,7 +603,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+FileExistsCommand")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -613,7 +613,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+LoadFileCommand")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_LoadFileCommand {
@@ -622,7 +622,7 @@ pub struct FileSystemFileStorage_LoadFileCommand {
     >,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+LoadFileCommand")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -642,7 +642,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
         false
     }
 }
-#[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+LoadFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -651,7 +651,7 @@ impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_LoadFileC
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+LoadFileCommand")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -723,7 +723,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+LoadFileCommand")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -733,7 +733,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+SaveFileCommand")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_SaveFileCommand {
@@ -741,7 +741,7 @@ pub struct FileSystemFileStorage_SaveFileCommand {
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+SaveFileCommand")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -761,14 +761,14 @@ for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
         false
     }
 }
-#[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+SaveFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+SaveFileCommand")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -847,7 +847,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
+#[cfg(feature = "cordl_class_FileSystemFileStorage+SaveFileCommand")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

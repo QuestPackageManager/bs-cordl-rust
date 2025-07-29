@@ -1,4 +1,4 @@
-#[cfg(feature = "StandardLevelBuyInfoView")]
+#[cfg(feature = "cordl_class_StandardLevelBuyInfoView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelBuyInfoView {
@@ -11,7 +11,7 @@ pub struct StandardLevelBuyInfoView {
         crate::UnityEngine::GameObject,
     >,
 }
-#[cfg(feature = "StandardLevelBuyInfoView")]
+#[cfg(feature = "cordl_class_StandardLevelBuyInfoView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardLevelBuyInfoView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::StandardLevelBuyInfoView {
         false
     }
 }
-#[cfg(feature = "StandardLevelBuyInfoView")]
+#[cfg(feature = "cordl_class_StandardLevelBuyInfoView")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelBuyInfoView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardLevelBuyInfoView")]
+#[cfg(feature = "cordl_class_StandardLevelBuyInfoView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelBuyInfoView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -188,7 +188,7 @@ impl crate::GlobalNamespace::StandardLevelBuyInfoView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardLevelBuyInfoView")]
+#[cfg(feature = "cordl_class_StandardLevelBuyInfoView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardLevelBuyInfoView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "Meta+XR+Samples+SampleMetadata")]
+#[cfg(feature = "cordl_class_Meta+XR+Samples+SampleMetadata")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SampleMetadata {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _timestampOpen: f32,
 }
-#[cfg(feature = "Meta+XR+Samples+SampleMetadata")]
+#[cfg(feature = "cordl_class_Meta+XR+Samples+SampleMetadata")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::Samples::SampleMetadata {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Meta::XR::Samples::SampleMeta
         false
     }
 }
-#[cfg(feature = "Meta+XR+Samples+SampleMetadata")]
+#[cfg(feature = "cordl_class_Meta+XR+Samples+SampleMetadata")]
 impl std::ops::Deref for crate::Meta::XR::Samples::SampleMetadata {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Meta+XR+Samples+SampleMetadata")]
+#[cfg(feature = "cordl_class_Meta+XR+Samples+SampleMetadata")]
 impl std::ops::DerefMut for crate::Meta::XR::Samples::SampleMetadata {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -157,7 +157,7 @@ impl crate::Meta::XR::Samples::SampleMetadata {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Meta+XR+Samples+SampleMetadata")]
+#[cfg(feature = "cordl_class_Meta+XR+Samples+SampleMetadata")]
 impl quest_hook::libil2cpp::ObjectType for crate::Meta::XR::Samples::SampleMetadata {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

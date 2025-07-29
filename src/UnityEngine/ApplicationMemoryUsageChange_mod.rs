@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ApplicationMemoryUsageChange")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ApplicationMemoryUsageChange {
     pub _memoryUsage_k__BackingField: crate::UnityEngine::ApplicationMemoryUsage,
 }
-#[cfg(feature = "UnityEngine+ApplicationMemoryUsageChange")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationMemoryUsageChange")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationMemoryUsageChange")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationMemoryUsageChange")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationMemoryUsageChange")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::ApplicationMemoryUsageChange {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ApplicationMemoryUsageChange")]
+#[cfg(feature = "cordl_class_UnityEngine+ApplicationMemoryUsageChange")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ApplicationMemoryUsageChange {
     type Type = Self;

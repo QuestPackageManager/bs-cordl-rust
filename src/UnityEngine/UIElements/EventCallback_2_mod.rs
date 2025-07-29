@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCallback_2<
@@ -9,7 +9,7 @@ pub struct EventCallback_2<
     __cordl_phantom_TEventType: std::marker::PhantomData<TEventType>,
     __cordl_phantom_TCallbackArgs: std::marker::PhantomData<TCallbackArgs>,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_2")]
 unsafe impl<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ for crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_2")]
 impl<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_2")]
 impl<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,
@@ -162,7 +162,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_2")]
 impl<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,

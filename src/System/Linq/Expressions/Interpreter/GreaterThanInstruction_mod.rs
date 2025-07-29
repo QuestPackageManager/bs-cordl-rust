@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GreaterThanInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _nullValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -33,7 +39,9 @@ for crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -217,7 +225,9 @@ impl crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

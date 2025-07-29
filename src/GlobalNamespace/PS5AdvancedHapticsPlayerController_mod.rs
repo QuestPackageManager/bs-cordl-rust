@@ -1,4 +1,4 @@
-#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+#[cfg(feature = "cordl_class_PS5AdvancedHapticsPlayerController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5AdvancedHapticsPlayerController {
@@ -21,7 +21,7 @@ pub struct PS5AdvancedHapticsPlayerController {
         >,
     >,
 }
-#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+#[cfg(feature = "cordl_class_PS5AdvancedHapticsPlayerController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
         false
     }
 }
-#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+#[cfg(feature = "cordl_class_PS5AdvancedHapticsPlayerController")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+#[cfg(feature = "cordl_class_PS5AdvancedHapticsPlayerController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -270,7 +270,7 @@ impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS5AdvancedHapticsPlayerController")]
+#[cfg(feature = "cordl_class_PS5AdvancedHapticsPlayerController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

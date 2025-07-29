@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRGLTFComponentType")]
+#[cfg(feature = "cordl_class_OVRGLTFComponentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFComponentType {
@@ -10,7 +10,7 @@ pub enum OVRGLTFComponentType {
     UNSIGNED_INT = 5125i32,
     UNSIGNED_SHORT = 5123i32,
 }
-#[cfg(feature = "OVRGLTFComponentType")]
+#[cfg(feature = "cordl_class_OVRGLTFComponentType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRGLTFComponentType {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::OVRGLTFComponentType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRGLTFComponentType")]
+#[cfg(feature = "cordl_class_OVRGLTFComponentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFComponentType {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::OVRGLTFComponentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRGLTFComponentType")]
+#[cfg(feature = "cordl_class_OVRGLTFComponentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFComponentType {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::GlobalNamespace::OVRGLTFComponentType {
         self
     }
 }
-#[cfg(feature = "OVRGLTFComponentType")]
+#[cfg(feature = "cordl_class_OVRGLTFComponentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFComponentType {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::GlobalNamespace::OVRGLTFComponentType {
         }
     }
 }
-#[cfg(feature = "OVRGLTFComponentType")]
+#[cfg(feature = "cordl_class_OVRGLTFComponentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFComponentType {
     type Actual = Self;

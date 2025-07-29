@@ -1,4 +1,4 @@
-#[cfg(feature = "LeaderboardScoreUploader")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader {
@@ -25,7 +25,7 @@ pub struct LeaderboardScoreUploader {
     pub _uploading: bool,
     pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
 }
-#[cfg(feature = "LeaderboardScoreUploader")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeaderboardScoreUploader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::LeaderboardScoreUploader {
         false
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardScoreUploader {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardScoreUploader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -364,7 +364,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeaderboardScoreUploader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -374,7 +374,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoreData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoreData {
@@ -396,7 +396,7 @@ pub struct LeaderboardScoreUploader_ScoreData {
     pub uploadAttemptCount: i32,
     pub currentUploadAttemptCount: i32,
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoreData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -416,14 +416,14 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         false
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoreData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoreData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -997,7 +997,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoreData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1007,7 +1007,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoresToUploadData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoresToUploadData {
@@ -1020,7 +1020,7 @@ pub struct LeaderboardScoreUploader_ScoresToUploadData {
         >,
     >,
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoresToUploadData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1040,7 +1040,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
         false
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoresToUploadData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1048,7 +1048,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoresToUploadData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1086,7 +1086,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoresToUploadData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1096,13 +1096,13 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+UploadScoreCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_UploadScoreCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+UploadScoreCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1122,7 +1122,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         false
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+UploadScoreCallback")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
     type Target = crate::System::MulticastDelegate;
@@ -1130,7 +1130,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+UploadScoreCallback")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1306,7 +1306,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
+#[cfg(feature = "cordl_class_LeaderboardScoreUploader+UploadScoreCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

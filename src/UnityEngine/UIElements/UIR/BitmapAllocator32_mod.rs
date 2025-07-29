@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BitmapAllocator32 {
@@ -14,7 +14,7 @@ pub struct BitmapAllocator32 {
     pub m_EntryWidth: i32,
     pub m_EntryHeight: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     type Actual = Self;
@@ -98,7 +98,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
     type Type = Self;
@@ -309,7 +309,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BitmapAllocator32_Page {
@@ -317,7 +317,7 @@ pub struct BitmapAllocator32_Page {
     pub y: u16,
     pub freeSlots: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
     type Held<'a> = Self;
@@ -347,7 +347,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
     type Type = Self;
@@ -358,7 +358,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
     type Actual = Self;
@@ -372,7 +372,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
     type Type = Self;
@@ -387,7 +387,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
     type Actual = Self;
@@ -401,7 +401,7 @@ for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page {
     type Type = Self;

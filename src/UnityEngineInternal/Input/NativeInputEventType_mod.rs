@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NativeInputEventType {
@@ -9,7 +9,7 @@ pub enum NativeInputEventType {
     State = 1398030676i32,
     Text = 1413830740i32,
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngineInternal::Input::NativeInputEventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngineInternal::Input::NativeInputEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngineInternal::Input::NativeInputEventType {
         self
     }
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngineInternal::Input::NativeInputEventType {
         }
     }
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Actual = Self;

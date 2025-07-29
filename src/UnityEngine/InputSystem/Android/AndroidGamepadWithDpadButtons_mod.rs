@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidGamepadWithDpadButtons {
     __cordl_parent: crate::UnityEngine::InputSystem::Android::AndroidGamepad,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadButtons {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadButtons {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadButtons {
     type Target = crate::UnityEngine::InputSystem::Android::AndroidGamepad;
@@ -32,7 +38,9 @@ for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadButtons {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadButtons {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadButtons {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadButtons"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadButtons {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Interface+MonoTlsConnectionInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsConnectionInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoTlsConnectionInfo {
@@ -9,7 +9,7 @@ pub struct MonoTlsConnectionInfo {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "Mono+Security+Interface+MonoTlsConnectionInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsConnectionInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Interface::MonoTlsConnectionInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoTlsConnectionInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsConnectionInfo")]
 impl std::ops::Deref for crate::Mono::Security::Interface::MonoTlsConnectionInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoTlsConnectionInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsConnectionInfo")]
 impl std::ops::DerefMut for crate::Mono::Security::Interface::MonoTlsConnectionInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -230,7 +230,7 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoTlsConnectionInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsConnectionInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Interface::MonoTlsConnectionInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

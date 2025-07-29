@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+EnumerableSorter_2")]
+#[cfg(feature = "cordl_class_System+Linq+EnumerableSorter_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumerableSorter_2<
@@ -18,7 +18,7 @@ pub struct EnumerableSorter_2<
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
 }
-#[cfg(feature = "System+Linq+EnumerableSorter_2")]
+#[cfg(feature = "cordl_class_System+Linq+EnumerableSorter_2")]
 unsafe impl<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -57,7 +57,7 @@ for crate::System::Linq::EnumerableSorter_2<TElement, TKey> {
         false
     }
 }
-#[cfg(feature = "System+Linq+EnumerableSorter_2")]
+#[cfg(feature = "cordl_class_System+Linq+EnumerableSorter_2")]
 impl<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+EnumerableSorter_2")]
+#[cfg(feature = "cordl_class_System+Linq+EnumerableSorter_2")]
 impl<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -224,7 +224,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+EnumerableSorter_2")]
+#[cfg(feature = "cordl_class_System+Linq+EnumerableSorter_2")]
 impl<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

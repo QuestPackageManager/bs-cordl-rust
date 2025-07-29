@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaberSessionEventType")]
+#[cfg(feature = "cordl_class_BeatSaberSessionEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatSaberSessionEventType {
@@ -6,7 +6,7 @@ pub enum BeatSaberSessionEventType {
     SessionFinish = 2i32,
     SessionStart = 1i32,
 }
-#[cfg(feature = "BeatSaberSessionEventType")]
+#[cfg(feature = "cordl_class_BeatSaberSessionEventType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatSaberSessionEventType {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::BeatSaberSessionEventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaberSessionEventType")]
+#[cfg(feature = "cordl_class_BeatSaberSessionEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatSaberSessionEventType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::BeatSaberSessionEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaberSessionEventType")]
+#[cfg(feature = "cordl_class_BeatSaberSessionEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatSaberSessionEventType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::BeatSaberSessionEventType {
         self
     }
 }
-#[cfg(feature = "BeatSaberSessionEventType")]
+#[cfg(feature = "cordl_class_BeatSaberSessionEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatSaberSessionEventType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::BeatSaberSessionEventType {
         }
     }
 }
-#[cfg(feature = "BeatSaberSessionEventType")]
+#[cfg(feature = "cordl_class_BeatSaberSessionEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatSaberSessionEventType {
     type Actual = Self;

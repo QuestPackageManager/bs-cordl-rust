@@ -1,4 +1,4 @@
-#[cfg(feature = "EnableRendererWithLightId")]
+#[cfg(feature = "cordl_class_EnableRendererWithLightId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnableRendererWithLightId {
@@ -7,7 +7,7 @@ pub struct EnableRendererWithLightId {
     pub _hideAlphaRangeMin: f32,
     pub _hideAlphaRangeMax: f32,
 }
-#[cfg(feature = "EnableRendererWithLightId")]
+#[cfg(feature = "cordl_class_EnableRendererWithLightId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnableRendererWithLightId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::EnableRendererWithLightId {
         false
     }
 }
-#[cfg(feature = "EnableRendererWithLightId")]
+#[cfg(feature = "cordl_class_EnableRendererWithLightId")]
 impl std::ops::Deref for crate::GlobalNamespace::EnableRendererWithLightId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnableRendererWithLightId")]
+#[cfg(feature = "cordl_class_EnableRendererWithLightId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnableRendererWithLightId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::EnableRendererWithLightId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnableRendererWithLightId")]
+#[cfg(feature = "cordl_class_EnableRendererWithLightId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnableRendererWithLightId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

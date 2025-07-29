@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TrickleDown")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TrickleDown")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrickleDown {
@@ -6,7 +6,7 @@ pub enum TrickleDown {
     NoTrickleDown = 0i32,
     TrickleDown = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+TrickleDown")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TrickleDown")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TrickleDown {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Tric
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TrickleDown")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TrickleDown")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TrickleDown {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::TrickleDown {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TrickleDown")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TrickleDown")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TrickleDown {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::TrickleDown {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TrickleDown")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TrickleDown")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TrickleDown {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::TrickleDown {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TrickleDown")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TrickleDown")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::TrickleDown {
     type Actual = Self;

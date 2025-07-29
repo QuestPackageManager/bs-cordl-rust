@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RaycastHit")]
+#[cfg(feature = "cordl_class_UnityEngine+RaycastHit")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RaycastHit {
@@ -9,7 +9,7 @@ pub struct RaycastHit {
     pub m_UV: crate::UnityEngine::Vector2,
     pub m_Collider: i32,
 }
-#[cfg(feature = "UnityEngine+RaycastHit")]
+#[cfg(feature = "cordl_class_UnityEngine+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RaycastHit {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RaycastHit {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RaycastHit")]
+#[cfg(feature = "cordl_class_UnityEngine+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RaycastHit {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RaycastHit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RaycastHit")]
+#[cfg(feature = "cordl_class_UnityEngine+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RaycastHit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RaycastHit 
         self
     }
 }
-#[cfg(feature = "UnityEngine+RaycastHit")]
+#[cfg(feature = "cordl_class_UnityEngine+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RaycastHit {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RaycastHit {
         }
     }
 }
-#[cfg(feature = "UnityEngine+RaycastHit")]
+#[cfg(feature = "cordl_class_UnityEngine+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RaycastHit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RaycastHit {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+RaycastHit")]
+#[cfg(feature = "cordl_class_UnityEngine+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RaycastHit {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+TableCell")]
+#[cfg(feature = "cordl_class_HMUI+TableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableCell {
@@ -7,7 +7,7 @@ pub struct TableCell {
     pub _reuseIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _tableCellOwner: quest_hook::libil2cpp::Gc<crate::HMUI::ITableCellOwner>,
 }
-#[cfg(feature = "HMUI+TableCell")]
+#[cfg(feature = "cordl_class_HMUI+TableCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableCell {
         false
     }
 }
-#[cfg(feature = "HMUI+TableCell")]
+#[cfg(feature = "cordl_class_HMUI+TableCell")]
 impl std::ops::Deref for crate::HMUI::TableCell {
     type Target = crate::HMUI::SelectableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+TableCell")]
+#[cfg(feature = "cordl_class_HMUI+TableCell")]
 impl std::ops::DerefMut for crate::HMUI::TableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -313,7 +313,7 @@ impl crate::HMUI::TableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+TableCell")]
+#[cfg(feature = "cordl_class_HMUI+TableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

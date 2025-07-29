@@ -1,10 +1,10 @@
-#[cfg(feature = "Tweening+FloatTween")]
+#[cfg(feature = "cordl_class_Tweening+FloatTween")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatTween {
     __cordl_parent: crate::Tweening::Tween_1<f32>,
 }
-#[cfg(feature = "Tweening+FloatTween")]
+#[cfg(feature = "cordl_class_Tweening+FloatTween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::FloatTween {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::FloatTween {
         false
     }
 }
-#[cfg(feature = "Tweening+FloatTween")]
+#[cfg(feature = "cordl_class_Tweening+FloatTween")]
 impl std::ops::Deref for crate::Tweening::FloatTween {
     type Target = crate::Tweening::Tween_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tweening+FloatTween")]
+#[cfg(feature = "cordl_class_Tweening+FloatTween")]
 impl std::ops::DerefMut for crate::Tweening::FloatTween {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -143,7 +143,7 @@ impl crate::Tweening::FloatTween {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tweening+FloatTween")]
+#[cfg(feature = "cordl_class_Tweening+FloatTween")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tweening::FloatTween {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

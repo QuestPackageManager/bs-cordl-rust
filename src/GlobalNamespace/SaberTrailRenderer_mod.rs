@@ -1,4 +1,4 @@
-#[cfg(feature = "SaberTrailRenderer")]
+#[cfg(feature = "cordl_class_SaberTrailRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberTrailRenderer {
@@ -22,7 +22,7 @@ pub struct SaberTrailRenderer {
     pub _granularity: i32,
     pub _whiteSectionMaxDuration: f32,
 }
-#[cfg(feature = "SaberTrailRenderer")]
+#[cfg(feature = "cordl_class_SaberTrailRenderer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberTrailRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberTrailRe
         false
     }
 }
-#[cfg(feature = "SaberTrailRenderer")]
+#[cfg(feature = "cordl_class_SaberTrailRenderer")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberTrailRenderer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SaberTrailRenderer")]
+#[cfg(feature = "cordl_class_SaberTrailRenderer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SaberTrailRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -323,7 +323,7 @@ impl crate::GlobalNamespace::SaberTrailRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SaberTrailRenderer")]
+#[cfg(feature = "cordl_class_SaberTrailRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberTrailRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

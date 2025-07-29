@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUserAccountHandle {
     pub m_ApiName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Handle: u64,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphValueRecord {
@@ -7,7 +7,7 @@ pub struct GlyphValueRecord {
     pub m_XAdvance: f32,
     pub m_YAdvance: f32,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphValueRecord")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataError")]
+#[cfg(feature = "cordl_class_System+Data+DataError")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataError {
@@ -9,7 +9,7 @@ pub struct DataError {
         quest_hook::libil2cpp::Il2CppArray<crate::System::Data::DataError_ColumnError>,
     >,
 }
-#[cfg(feature = "System+Data+DataError")]
+#[cfg(feature = "cordl_class_System+Data+DataError")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataError {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataError {
         false
     }
 }
-#[cfg(feature = "System+Data+DataError")]
+#[cfg(feature = "cordl_class_System+Data+DataError")]
 impl std::ops::Deref for crate::System::Data::DataError {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataError")]
+#[cfg(feature = "cordl_class_System+Data+DataError")]
 impl std::ops::DerefMut for crate::System::Data::DataError {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -375,7 +375,7 @@ impl crate::System::Data::DataError {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataError")]
+#[cfg(feature = "cordl_class_System+Data+DataError")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataError {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -384,14 +384,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataError {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Data+DataError+ColumnError")]
+#[cfg(feature = "cordl_class_System+Data+DataError+ColumnError")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DataError_ColumnError {
     pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     pub _error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Data+DataError+ColumnError")]
+#[cfg(feature = "cordl_class_System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataError_ColumnError {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -420,7 +420,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataError_Colum
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+DataError+ColumnError")]
+#[cfg(feature = "cordl_class_System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::DataError_ColumnError {
     type Type = Self;
@@ -431,7 +431,7 @@ for crate::System::Data::DataError_ColumnError {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+DataError+ColumnError")]
+#[cfg(feature = "cordl_class_System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::DataError_ColumnError {
     type Actual = Self;
@@ -445,7 +445,7 @@ for crate::System::Data::DataError_ColumnError {
         self
     }
 }
-#[cfg(feature = "System+Data+DataError+ColumnError")]
+#[cfg(feature = "cordl_class_System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::DataError_ColumnError {
     type Type = Self;
@@ -460,7 +460,7 @@ for crate::System::Data::DataError_ColumnError {
         }
     }
 }
-#[cfg(feature = "System+Data+DataError+ColumnError")]
+#[cfg(feature = "cordl_class_System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::DataError_ColumnError {
     type Actual = Self;
@@ -474,7 +474,7 @@ for crate::System::Data::DataError_ColumnError {
         actual
     }
 }
-#[cfg(feature = "System+Data+DataError+ColumnError")]
+#[cfg(feature = "cordl_class_System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::DataError_ColumnError {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "SpectrogramMultiplierFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_SpectrogramMultiplierFloatFxEffectTarget")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpectrogramMultiplierFloatFxEffectTarget {
@@ -7,7 +7,7 @@ pub struct SpectrogramMultiplierFloatFxEffectTarget {
         crate::GlobalNamespace::SpectrogramRowPropertyAnimator,
     >,
 }
-#[cfg(feature = "SpectrogramMultiplierFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_SpectrogramMultiplierFloatFxEffectTarget")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpectrogramMultiplierFloatFxEffectTarget {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::SpectrogramMultiplierFloatFxEffectTarget {
         false
     }
 }
-#[cfg(feature = "SpectrogramMultiplierFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_SpectrogramMultiplierFloatFxEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SpectrogramMultiplierFloatFxEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::SpectrogramMultiplierFloatFxEffectTarget {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpectrogramMultiplierFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_SpectrogramMultiplierFloatFxEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SpectrogramMultiplierFloatFxEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::SpectrogramMultiplierFloatFxEffectTarget {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpectrogramMultiplierFloatFxEffectTarget")]
+#[cfg(feature = "cordl_class_SpectrogramMultiplierFloatFxEffectTarget")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SpectrogramMultiplierFloatFxEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

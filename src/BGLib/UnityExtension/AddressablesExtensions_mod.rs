@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+UnityExtension+AddressablesExtensions")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+AddressablesExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddressablesExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+UnityExtension+AddressablesExtensions")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+AddressablesExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::AddressablesExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BGLib::UnityExtension::AddressablesExtensions {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+AddressablesExtensions")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+AddressablesExtensions")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::AddressablesExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+AddressablesExtensions")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+AddressablesExtensions")]
 impl std::ops::DerefMut for crate::BGLib::UnityExtension::AddressablesExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -196,7 +196,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+AddressablesExtensions")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+AddressablesExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::AddressablesExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerEffectsSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerEffectsSpawner {
@@ -13,7 +13,7 @@ pub struct MultiplayerConnectedPlayerEffectsSpawner {
         crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerEffectsSpawner")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerEffectsSpawner")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerEffectsSpawner")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerEffectsSpawner")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

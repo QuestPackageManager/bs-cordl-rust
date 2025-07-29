@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+PreferenceKeys")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PreferenceKeys")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PreferenceKeys {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PreferenceKeys")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PreferenceKeys")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::PreferenceKeys {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::PreferenceKeys {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PreferenceKeys")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PreferenceKeys")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::PreferenceKeys {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PreferenceKeys")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PreferenceKeys")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::PreferenceKeys {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,7 +141,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceKeys {
     pub const pbWireframeSize: &'static str = "pbWireframeSize";
     pub const pluginTitle: &'static str = "ProBuilder";
 }
-#[cfg(feature = "UnityEngine+ProBuilder+PreferenceKeys")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PreferenceKeys")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::PreferenceKeys {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

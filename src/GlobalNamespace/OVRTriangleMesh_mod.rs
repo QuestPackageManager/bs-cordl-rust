@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRTriangleMesh")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh {
     pub _Handle_k__BackingField: u64,
 }
-#[cfg(feature = "OVRTriangleMesh")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTriangleMesh {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTriangleM
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRTriangleMesh")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRTriangleMesh {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRTrian
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRTriangleMesh")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTriangleMesh {
     type Actual = Self;
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::OVRTriangleMesh {
         self
     }
 }
-#[cfg(feature = "OVRTriangleMesh")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRTriangleMesh {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRTrian
         }
     }
 }
-#[cfg(feature = "OVRTriangleMesh")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRTriangleMesh {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRTriangl
         actual
     }
 }
-#[cfg(feature = "OVRTriangleMesh")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRTriangleMesh {
     type Type = Self;
@@ -642,7 +642,7 @@ for crate::GlobalNamespace::OVRTriangleMesh {
         todo!()
     }
 }
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+FlipTriangleWindingJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh_FlipTriangleWindingJob {
@@ -650,7 +650,7 @@ pub struct OVRTriangleMesh_FlipTriangleWindingJob {
         crate::GlobalNamespace::OVRTriangleMesh_Triangle,
     >,
 }
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+FlipTriangleWindingJob")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
     type Held<'a> = Self;
@@ -680,7 +680,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+FlipTriangleWindingJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
     type Type = Self;
@@ -691,7 +691,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+FlipTriangleWindingJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
     type Actual = Self;
@@ -705,7 +705,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
         self
     }
 }
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+FlipTriangleWindingJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
     type Type = Self;
@@ -720,7 +720,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
         }
     }
 }
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+FlipTriangleWindingJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
     type Actual = Self;
@@ -734,7 +734,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
         actual
     }
 }
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+FlipTriangleWindingJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
     type Type = Self;
@@ -784,7 +784,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
         todo!()
     }
 }
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+GetMeshJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh_GetMeshJob {
@@ -792,7 +792,7 @@ pub struct OVRTriangleMesh_GetMeshJob {
     pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
     pub Indices: crate::Unity::Collections::NativeArray_1<i32>,
 }
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+GetMeshJob")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
     type Held<'a> = Self;
@@ -822,7 +822,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+GetMeshJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
     type Type = Self;
@@ -833,7 +833,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+GetMeshJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
     type Actual = Self;
@@ -847,7 +847,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
         self
     }
 }
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+GetMeshJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
     type Type = Self;
@@ -862,7 +862,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
         }
     }
 }
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+GetMeshJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
     type Actual = Self;
@@ -876,7 +876,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
         actual
     }
 }
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+GetMeshJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
     type Type = Self;
@@ -925,13 +925,13 @@ for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
         todo!()
     }
 }
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+NegateXJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh_NegateXJob {
     pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
 }
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+NegateXJob")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
     type Held<'a> = Self;
@@ -961,7 +961,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+NegateXJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
     type Type = Self;
@@ -972,7 +972,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+NegateXJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
     type Actual = Self;
@@ -986,7 +986,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
         self
     }
 }
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+NegateXJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
     type Type = Self;
@@ -1001,7 +1001,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
         }
     }
 }
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+NegateXJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
     type Actual = Self;
@@ -1015,7 +1015,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
         actual
     }
 }
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+NegateXJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
     type Type = Self;
@@ -1065,7 +1065,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
         todo!()
     }
 }
-#[cfg(feature = "OVRTriangleMesh+Triangle")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+Triangle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh_Triangle {
@@ -1073,7 +1073,7 @@ pub struct OVRTriangleMesh_Triangle {
     pub B: i32,
     pub C: i32,
 }
-#[cfg(feature = "OVRTriangleMesh+Triangle")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+Triangle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
     type Held<'a> = Self;
@@ -1103,7 +1103,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRTriangleMesh+Triangle")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+Triangle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
     type Type = Self;
@@ -1114,7 +1114,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRTriangleMesh+Triangle")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+Triangle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
     type Actual = Self;
@@ -1128,7 +1128,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
         self
     }
 }
-#[cfg(feature = "OVRTriangleMesh+Triangle")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+Triangle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
     type Type = Self;
@@ -1143,7 +1143,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
         }
     }
 }
-#[cfg(feature = "OVRTriangleMesh+Triangle")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+Triangle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
     type Actual = Self;
@@ -1157,7 +1157,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
         actual
     }
 }
-#[cfg(feature = "OVRTriangleMesh+Triangle")]
+#[cfg(feature = "cordl_class_OVRTriangleMesh+Triangle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
     type Type = Self;

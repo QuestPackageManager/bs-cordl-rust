@@ -1,4 +1,4 @@
-#[cfg(feature = "TubeBloomPrePassLight")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLight")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeBloomPrePassLight {
@@ -63,7 +63,7 @@ pub struct TubeBloomPrePassLight {
     pub _isDirty: bool,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "TubeBloomPrePassLight")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLight")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TubeBloomPrePassLight {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -83,14 +83,14 @@ for crate::GlobalNamespace::TubeBloomPrePassLight {
         false
     }
 }
-#[cfg(feature = "TubeBloomPrePassLight")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLight")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLight {
     type Target = crate::GlobalNamespace::BloomPrePassLight;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TubeBloomPrePassLight")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLight")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TubeBloomPrePassLight {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -917,7 +917,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLight {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TubeBloomPrePassLight")]
+#[cfg(feature = "cordl_class_TubeBloomPrePassLight")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TubeBloomPrePassLight {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

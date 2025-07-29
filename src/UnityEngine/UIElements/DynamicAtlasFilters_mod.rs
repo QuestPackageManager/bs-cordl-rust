@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasFilters")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasFilters")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DynamicAtlasFilters {
@@ -10,7 +10,7 @@ pub enum DynamicAtlasFilters {
     Readability = 1i32,
     Size = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasFilters")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasFilters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DynamicAtlasFilters {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::UIElements::DynamicAtlasFilters {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasFilters")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasFilters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DynamicAtlasFilters {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::UIElements::DynamicAtlasFilters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasFilters")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasFilters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DynamicAtlasFilters {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::UIElements::DynamicAtlasFilters {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasFilters")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasFilters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DynamicAtlasFilters {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UIElements::DynamicAtlasFilters {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DynamicAtlasFilters")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasFilters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DynamicAtlasFilters {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+DistortionCoordinates_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DistortionCoordinates_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DistortionCoordinates_t {
@@ -9,7 +9,7 @@ pub struct DistortionCoordinates_t {
     pub rfBlue0: f32,
     pub rfBlue1: f32,
 }
-#[cfg(feature = "OVR+OpenVR+DistortionCoordinates_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DistortionCoordinates_t")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::DistortionCoordinates_t {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::DistortionCoordi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+DistortionCoordinates_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DistortionCoordinates_t")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::DistortionCoordinates_t {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::OVR::OpenVR::DistortionCoordinates_t {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+DistortionCoordinates_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DistortionCoordinates_t")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::DistortionCoordinates_t {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::OVR::OpenVR::DistortionCoordinates_t {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+DistortionCoordinates_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DistortionCoordinates_t")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::DistortionCoordinates_t {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::OVR::OpenVR::DistortionCoordinates_t {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+DistortionCoordinates_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DistortionCoordinates_t")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::DistortionCoordinates_t {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::OVR::OpenVR::DistortionCoordinates_t {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+DistortionCoordinates_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+DistortionCoordinates_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::DistortionCoordinates_t {
     type Type = Self;

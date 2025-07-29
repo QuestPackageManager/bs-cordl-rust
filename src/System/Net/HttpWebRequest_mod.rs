@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+HttpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpWebRequest {
@@ -73,7 +73,7 @@ pub struct HttpWebRequest {
     pub _ThrowOnError_k__BackingField: bool,
     pub unsafe_auth_blah: bool,
 }
-#[cfg(feature = "System+Net+HttpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpWebRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -92,14 +92,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpWebRequest {
         false
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest")]
 impl std::ops::Deref for crate::System::Net::HttpWebRequest {
     type Target = crate::System::Net::WebRequest;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest")]
 impl std::ops::DerefMut for crate::System::Net::HttpWebRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2881,7 +2881,7 @@ impl crate::System::Net::HttpWebRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpWebRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2904,7 +2904,7 @@ for crate::System::Net::HttpWebRequest {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+AuthorizationState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HttpWebRequest_AuthorizationState {
@@ -2913,7 +2913,7 @@ pub struct HttpWebRequest_AuthorizationState {
     pub isCompleted: bool,
     pub ntlm_auth_state: crate::System::Net::HttpWebRequest_NtlmAuthState,
 }
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+AuthorizationState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpWebRequest_AuthorizationState {
     type Held<'a> = Self;
@@ -2943,7 +2943,7 @@ for crate::System::Net::HttpWebRequest_AuthorizationState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+AuthorizationState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpWebRequest_AuthorizationState {
     type Type = Self;
@@ -2954,7 +2954,7 @@ for crate::System::Net::HttpWebRequest_AuthorizationState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+AuthorizationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpWebRequest_AuthorizationState {
     type Actual = Self;
@@ -2968,7 +2968,7 @@ for crate::System::Net::HttpWebRequest_AuthorizationState {
         self
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+AuthorizationState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpWebRequest_AuthorizationState {
     type Type = Self;
@@ -2983,7 +2983,7 @@ for crate::System::Net::HttpWebRequest_AuthorizationState {
         }
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+AuthorizationState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpWebRequest_AuthorizationState {
     type Actual = Self;
@@ -2997,7 +2997,7 @@ for crate::System::Net::HttpWebRequest_AuthorizationState {
         actual
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+AuthorizationState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::HttpWebRequest_AuthorizationState {
     type Type = Self;
@@ -3182,7 +3182,7 @@ impl crate::System::Net::HttpWebRequest_AuthorizationState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+NtlmAuthState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpWebRequest_NtlmAuthState {
@@ -3191,7 +3191,7 @@ pub enum HttpWebRequest_NtlmAuthState {
     None = 0i32,
     Response = 2i32,
 }
-#[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpWebRequest_NtlmAuthState {
     type Held<'a> = Self;
@@ -3221,7 +3221,7 @@ for crate::System::Net::HttpWebRequest_NtlmAuthState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpWebRequest_NtlmAuthState {
     type Type = Self;
@@ -3232,7 +3232,7 @@ for crate::System::Net::HttpWebRequest_NtlmAuthState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpWebRequest_NtlmAuthState {
     type Actual = Self;
@@ -3246,7 +3246,7 @@ for crate::System::Net::HttpWebRequest_NtlmAuthState {
         self
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpWebRequest_NtlmAuthState {
     type Type = Self;
@@ -3261,7 +3261,7 @@ for crate::System::Net::HttpWebRequest_NtlmAuthState {
         }
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpWebRequest_NtlmAuthState {
     type Actual = Self;
@@ -3275,7 +3275,7 @@ for crate::System::Net::HttpWebRequest_NtlmAuthState {
         actual
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HttpWebRequest___GetRewriteHandler_b__271_0_d {
@@ -3287,7 +3287,7 @@ pub struct HttpWebRequest___GetRewriteHandler_b__271_0_d {
     pub _ms_5__2: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
     type Held<'a> = Self;
@@ -3317,7 +3317,7 @@ for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
     type Type = Self;
@@ -3328,7 +3328,7 @@ for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
     type Actual = Self;
@@ -3342,7 +3342,7 @@ for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
         self
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
     type Type = Self;
@@ -3357,7 +3357,7 @@ for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
         }
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
     type Actual = Self;
@@ -3371,7 +3371,7 @@ for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
         actual
     }
 }
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+#[cfg(feature = "cordl_class_System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
     type Type = Self;

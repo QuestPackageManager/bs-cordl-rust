@@ -1,4 +1,6 @@
-#[cfg(feature = "BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO")]
+#[cfg(
+    feature = "cordl_class_BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
@@ -19,7 +21,9 @@ pub struct BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
         >,
     >,
 }
-#[cfg(feature = "BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO")]
+#[cfg(
+    feature = "cordl_class_BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,7 +43,9 @@ for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataS
         false
     }
 }
-#[cfg(feature = "BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO")]
+#[cfg(
+    feature = "cordl_class_BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO"
+)]
 impl std::ops::Deref
 for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
@@ -47,7 +53,9 @@ for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataS
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO")]
+#[cfg(
+    feature = "cordl_class_BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO"
+)]
 impl std::ops::DerefMut
 for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -323,7 +331,9 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO")]
+#[cfg(
+    feature = "cordl_class_BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Generic+DictionaryDebugView_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+DictionaryDebugView_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DictionaryDebugView_2<
@@ -9,7 +9,7 @@ pub struct DictionaryDebugView_2<
     __cordl_phantom_K: std::marker::PhantomData<K>,
     __cordl_phantom_V: std::marker::PhantomData<V>,
 }
-#[cfg(feature = "System+Collections+Generic+DictionaryDebugView_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+DictionaryDebugView_2")]
 unsafe impl<
     K: quest_hook::libil2cpp::Type,
     V: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ for crate::System::Collections::Generic::DictionaryDebugView_2<K, V> {
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+DictionaryDebugView_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+DictionaryDebugView_2")]
 impl<K: quest_hook::libil2cpp::Type, V: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Generic::DictionaryDebugView_2<K, V> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -56,7 +56,7 @@ for crate::System::Collections::Generic::DictionaryDebugView_2<K, V> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+DictionaryDebugView_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+DictionaryDebugView_2")]
 impl<K: quest_hook::libil2cpp::Type, V: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Collections::Generic::DictionaryDebugView_2<K, V> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -68,7 +68,7 @@ impl<
     K: quest_hook::libil2cpp::Type,
     V: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Generic::DictionaryDebugView_2<K, V> {}
-#[cfg(feature = "System+Collections+Generic+DictionaryDebugView_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+DictionaryDebugView_2")]
 impl<
     K: quest_hook::libil2cpp::Type,
     V: quest_hook::libil2cpp::Type,

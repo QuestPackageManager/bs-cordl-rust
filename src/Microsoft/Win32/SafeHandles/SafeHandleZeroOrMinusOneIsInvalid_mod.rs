@@ -1,10 +1,14 @@
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid")]
+#[cfg(
+    feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeHandleZeroOrMinusOneIsInvalid {
     __cordl_parent: crate::System::Runtime::InteropServices::SafeHandle,
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid")]
+#[cfg(
+    feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid {
         false
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid")]
+#[cfg(
+    feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid"
+)]
 impl std::ops::Deref
 for crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid {
     type Target = crate::System::Runtime::InteropServices::SafeHandle;
@@ -32,7 +38,9 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid")]
+#[cfg(
+    feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid"
+)]
 impl std::ops::DerefMut
 for crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -90,7 +98,9 @@ impl crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid")]
+#[cfg(
+    feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleZeroOrMinusOneIsInvalid"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

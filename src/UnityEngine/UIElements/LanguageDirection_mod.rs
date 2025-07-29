@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+LanguageDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LanguageDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LanguageDirection {
@@ -7,7 +7,7 @@ pub enum LanguageDirection {
     LTR = 1i32,
     RTL = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+LanguageDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::LanguageDirection {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::UIElements::LanguageDirection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LanguageDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::LanguageDirection {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::UIElements::LanguageDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LanguageDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::LanguageDirection {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::LanguageDirection {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LanguageDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::LanguageDirection {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::UIElements::LanguageDirection {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+LanguageDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::LanguageDirection {
     type Actual = Self;

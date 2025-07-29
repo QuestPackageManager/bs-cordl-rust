@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+HttpStatusCode")]
+#[cfg(feature = "cordl_class_System+Net+HttpStatusCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpStatusCode {
@@ -65,7 +65,7 @@ pub enum HttpStatusCode {
     UseProxy = 305i32,
     VariantAlsoNegotiates = 506i32,
 }
-#[cfg(feature = "System+Net+HttpStatusCode")]
+#[cfg(feature = "cordl_class_System+Net+HttpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpStatusCode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -94,7 +94,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::HttpStatusCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+HttpStatusCode")]
+#[cfg(feature = "cordl_class_System+Net+HttpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::HttpStatusCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -104,7 +104,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::HttpStatusCo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+HttpStatusCode")]
+#[cfg(feature = "cordl_class_System+Net+HttpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::HttpStatusCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -117,7 +117,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::HttpStatusC
         self
     }
 }
-#[cfg(feature = "System+Net+HttpStatusCode")]
+#[cfg(feature = "cordl_class_System+Net+HttpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::HttpStatusCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -131,7 +131,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::HttpStatusCo
         }
     }
 }
-#[cfg(feature = "System+Net+HttpStatusCode")]
+#[cfg(feature = "cordl_class_System+Net+HttpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::HttpStatusCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

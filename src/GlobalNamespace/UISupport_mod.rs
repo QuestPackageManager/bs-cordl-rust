@@ -1,10 +1,10 @@
-#[cfg(feature = "UISupport")]
+#[cfg(feature = "cordl_class_UISupport")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UISupport {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UISupport")]
+#[cfg(feature = "cordl_class_UISupport")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UISupport {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UISupport {
         false
     }
 }
-#[cfg(feature = "UISupport")]
+#[cfg(feature = "cordl_class_UISupport")]
 impl std::ops::Deref for crate::GlobalNamespace::UISupport {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UISupport")]
+#[cfg(feature = "cordl_class_UISupport")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UISupport {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::UISupport {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UISupport")]
+#[cfg(feature = "cordl_class_UISupport")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UISupport {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

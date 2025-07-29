@@ -1,4 +1,4 @@
-#[cfg(feature = "EntitlementStatus")]
+#[cfg(feature = "cordl_class_EntitlementStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EntitlementStatus {
@@ -7,7 +7,7 @@ pub enum EntitlementStatus {
     NotOwned = 2i32,
     Owned = 1i32,
 }
-#[cfg(feature = "EntitlementStatus")]
+#[cfg(feature = "cordl_class_EntitlementStatus")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EntitlementStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EntitlementS
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "EntitlementStatus")]
+#[cfg(feature = "cordl_class_EntitlementStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EntitlementStatus {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::EntitlementStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "EntitlementStatus")]
+#[cfg(feature = "cordl_class_EntitlementStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EntitlementStatus {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::EntitlementStatus {
         self
     }
 }
-#[cfg(feature = "EntitlementStatus")]
+#[cfg(feature = "cordl_class_EntitlementStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EntitlementStatus {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::EntitlementStatus {
         }
     }
 }
-#[cfg(feature = "EntitlementStatus")]
+#[cfg(feature = "cordl_class_EntitlementStatus")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::EntitlementStatus {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

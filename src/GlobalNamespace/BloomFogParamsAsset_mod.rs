@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomFogParamsAsset")]
+#[cfg(feature = "cordl_class_BloomFogParamsAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomFogParamsAsset {
@@ -7,7 +7,7 @@ pub struct BloomFogParamsAsset {
         crate::GlobalNamespace::BloomFogParamsBehaviour,
     >,
 }
-#[cfg(feature = "BloomFogParamsAsset")]
+#[cfg(feature = "cordl_class_BloomFogParamsAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomFogParamsAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomFogPara
         false
     }
 }
-#[cfg(feature = "BloomFogParamsAsset")]
+#[cfg(feature = "cordl_class_BloomFogParamsAsset")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomFogParamsAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomFogParamsAsset")]
+#[cfg(feature = "cordl_class_BloomFogParamsAsset")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogParamsAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::BloomFogParamsAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomFogParamsAsset")]
+#[cfg(feature = "cordl_class_BloomFogParamsAsset")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomFogParamsAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

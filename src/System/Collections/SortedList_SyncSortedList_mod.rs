@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SyncSortedList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_SyncSortedList {
@@ -6,7 +6,7 @@ pub struct SortedList_SyncSortedList {
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
     pub _root: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SyncSortedList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SortedList_SyncSortedList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::SortedList_SyncSortedList {
         false
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SyncSortedList")]
 impl std::ops::Deref for crate::GlobalNamespace::SortedList_SyncSortedList {
     type Target = crate::System::Collections::SortedList;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SyncSortedList")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SortedList_SyncSortedList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -666,7 +666,7 @@ impl crate::GlobalNamespace::SortedList_SyncSortedList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SyncSortedList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SortedList_SyncSortedList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

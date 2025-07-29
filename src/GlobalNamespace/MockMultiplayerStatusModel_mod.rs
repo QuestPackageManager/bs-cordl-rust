@@ -1,4 +1,4 @@
-#[cfg(feature = "MockMultiplayerStatusModel")]
+#[cfg(feature = "cordl_class_MockMultiplayerStatusModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockMultiplayerStatusModel {
@@ -7,7 +7,7 @@ pub struct MockMultiplayerStatusModel {
         crate::GlobalNamespace::MultiplayerStatusData,
     >,
 }
-#[cfg(feature = "MockMultiplayerStatusModel")]
+#[cfg(feature = "cordl_class_MockMultiplayerStatusModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockMultiplayerStatusModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MockMultiplayerStatusModel {
         false
     }
 }
-#[cfg(feature = "MockMultiplayerStatusModel")]
+#[cfg(feature = "cordl_class_MockMultiplayerStatusModel")]
 impl std::ops::Deref for crate::GlobalNamespace::MockMultiplayerStatusModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockMultiplayerStatusModel")]
+#[cfg(feature = "cordl_class_MockMultiplayerStatusModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockMultiplayerStatusModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::MockMultiplayerStatusModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockMultiplayerStatusModel")]
+#[cfg(feature = "cordl_class_MockMultiplayerStatusModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MockMultiplayerStatusModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

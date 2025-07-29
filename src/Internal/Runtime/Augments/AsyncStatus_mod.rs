@@ -1,4 +1,4 @@
-#[cfg(feature = "Internal+Runtime+Augments+AsyncStatus")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+AsyncStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsyncStatus {
@@ -8,7 +8,7 @@ pub enum AsyncStatus {
     Error = 3i32,
     Started = 0i32,
 }
-#[cfg(feature = "Internal+Runtime+Augments+AsyncStatus")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+AsyncStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Internal::Runtime::Augments::AsyncStatus {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Internal::Runtime::Augments::AsyncStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+AsyncStatus")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+AsyncStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Internal::Runtime::Augments::AsyncStatus {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Internal::Runtime::Augments::AsyncStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+AsyncStatus")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+AsyncStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Internal::Runtime::Augments::AsyncStatus {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Internal::Runtime::Augments::AsyncStatus {
         self
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+AsyncStatus")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+AsyncStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Internal::Runtime::Augments::AsyncStatus {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Internal::Runtime::Augments::AsyncStatus {
         }
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+AsyncStatus")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+AsyncStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Internal::Runtime::Augments::AsyncStatus {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Tayx+Graphy+GraphyManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphyManager {
@@ -60,7 +60,7 @@ pub struct GraphyManager {
     >,
     pub m_modulePresetState: crate::Tayx::Graphy::GraphyManager_ModulePreset,
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::GraphyManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -79,7 +79,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::GraphyManager {
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager")]
 impl std::ops::Deref for crate::Tayx::Graphy::GraphyManager {
     type Target = crate::Tayx::Graphy::Utils::G_Singleton_1<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
@@ -88,7 +88,7 @@ impl std::ops::Deref for crate::Tayx::Graphy::GraphyManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2143,7 +2143,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::GraphyManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2152,7 +2152,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::GraphyManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+LookForAudioListener")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_LookForAudioListener {
@@ -2161,7 +2161,7 @@ pub enum GraphyManager_LookForAudioListener {
     NEVER = 2i32,
     ON_SCENE_LOAD = 1i32,
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+LookForAudioListener")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
     type Held<'a> = Self;
@@ -2191,7 +2191,7 @@ for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+LookForAudioListener")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
     type Type = Self;
@@ -2202,7 +2202,7 @@ for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+LookForAudioListener")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
     type Actual = Self;
@@ -2216,7 +2216,7 @@ for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
         self
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+LookForAudioListener")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
     type Type = Self;
@@ -2231,7 +2231,7 @@ for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
         }
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+LookForAudioListener")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
     type Actual = Self;
@@ -2245,7 +2245,7 @@ for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
         actual
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+Mode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_Mode {
@@ -2253,7 +2253,7 @@ pub enum GraphyManager_Mode {
     FULL = 0i32,
     LIGHT = 1i32,
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+Mode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::GraphyManager_Mode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2282,7 +2282,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::GraphyManager_M
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Tayx::Graphy::GraphyManager_Mode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2292,7 +2292,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Tayx::Graphy::GraphyManag
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyManager_Mode {
     type Actual = Self;
@@ -2306,7 +2306,7 @@ for crate::Tayx::Graphy::GraphyManager_Mode {
         self
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Tayx::Graphy::GraphyManager_Mode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2320,7 +2320,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Tayx::Graphy::GraphyManag
         }
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+Mode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Tayx::Graphy::GraphyManager_Mode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2333,7 +2333,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Tayx::Graphy::GraphyManager
         actual
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePosition")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_ModulePosition {
@@ -2344,7 +2344,7 @@ pub enum GraphyManager_ModulePosition {
     TOP_LEFT = 1i32,
     TOP_RIGHT = 0i32,
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePosition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Tayx::Graphy::GraphyManager_ModulePosition {
     type Held<'a> = Self;
@@ -2374,7 +2374,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePosition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePosition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyManager_ModulePosition {
     type Type = Self;
@@ -2385,7 +2385,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyManager_ModulePosition {
     type Actual = Self;
@@ -2399,7 +2399,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePosition {
         self
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePosition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyManager_ModulePosition {
     type Type = Self;
@@ -2414,7 +2414,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePosition {
         }
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePosition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyManager_ModulePosition {
     type Actual = Self;
@@ -2428,7 +2428,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePosition {
         actual
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePreset")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_ModulePreset {
@@ -2446,7 +2446,7 @@ pub enum GraphyManager_ModulePreset {
     FPS_TEXT_RAM_TEXT = 3i32,
     FPS_TEXT_RAM_TEXT_AUDIO_TEXT = 6i32,
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePreset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Tayx::Graphy::GraphyManager_ModulePreset {
     type Held<'a> = Self;
@@ -2476,7 +2476,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePreset {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePreset")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyManager_ModulePreset {
     type Type = Self;
@@ -2487,7 +2487,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePreset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePreset")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyManager_ModulePreset {
     type Actual = Self;
@@ -2501,7 +2501,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePreset {
         self
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePreset")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyManager_ModulePreset {
     type Type = Self;
@@ -2516,7 +2516,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePreset {
         }
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePreset")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyManager_ModulePreset {
     type Actual = Self;
@@ -2530,7 +2530,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePreset {
         actual
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_ModuleState {
@@ -2541,7 +2541,7 @@ pub enum GraphyManager_ModuleState {
     OFF = 4i32,
     TEXT = 1i32,
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Tayx::Graphy::GraphyManager_ModuleState {
     type Held<'a> = Self;
@@ -2571,7 +2571,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyManager_ModuleState {
     type Type = Self;
@@ -2582,7 +2582,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyManager_ModuleState {
     type Actual = Self;
@@ -2596,7 +2596,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleState {
         self
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyManager_ModuleState {
     type Type = Self;
@@ -2611,7 +2611,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleState {
         }
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyManager_ModuleState {
     type Actual = Self;
@@ -2625,7 +2625,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleState {
         actual
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_ModuleType {
@@ -2635,7 +2635,7 @@ pub enum GraphyManager_ModuleType {
     FPS = 0i32,
     RAM = 1i32,
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Tayx::Graphy::GraphyManager_ModuleType {
     type Held<'a> = Self;
@@ -2665,7 +2665,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyManager_ModuleType {
     type Type = Self;
@@ -2676,7 +2676,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyManager_ModuleType {
     type Actual = Self;
@@ -2690,7 +2690,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleType {
         self
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyManager_ModuleType {
     type Type = Self;
@@ -2705,7 +2705,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleType {
         }
     }
 }
-#[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyManager_ModuleType {
     type Actual = Self;

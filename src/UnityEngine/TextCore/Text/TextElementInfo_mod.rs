@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextElementInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextElementInfo {
@@ -52,7 +52,7 @@ pub struct TextElementInfo {
     pub style: crate::UnityEngine::TextCore::Text::FontStyles,
     pub isVisible: bool,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextElementInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextElementInfo {
     type Held<'a> = Self;
@@ -82,7 +82,7 @@ for crate::UnityEngine::TextCore::Text::TextElementInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextElementInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::TextElementInfo {
     type Type = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::TextCore::Text::TextElementInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextElementInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::TextElementInfo {
     type Actual = Self;
@@ -107,7 +107,7 @@ for crate::UnityEngine::TextCore::Text::TextElementInfo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextElementInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::TextElementInfo {
     type Type = Self;
@@ -122,7 +122,7 @@ for crate::UnityEngine::TextCore::Text::TextElementInfo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextElementInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::TextElementInfo {
     type Actual = Self;
@@ -136,7 +136,7 @@ for crate::UnityEngine::TextCore::Text::TextElementInfo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextElementInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::TextElementInfo {
     type Type = Self;

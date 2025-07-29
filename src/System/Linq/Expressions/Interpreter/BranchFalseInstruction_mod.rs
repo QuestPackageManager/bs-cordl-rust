@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+BranchFalseInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+BranchFalseInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BranchFalseInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::OffsetInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+BranchFalseInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+BranchFalseInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+BranchFalseInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+BranchFalseInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::OffsetInstruction;
@@ -32,7 +38,9 @@ for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+BranchFalseInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+BranchFalseInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -187,7 +195,9 @@ impl crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+BranchFalseInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+BranchFalseInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

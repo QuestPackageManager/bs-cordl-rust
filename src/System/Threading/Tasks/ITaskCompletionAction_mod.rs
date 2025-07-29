@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+Tasks+ITaskCompletionAction")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ITaskCompletionAction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ITaskCompletionAction {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Threading+Tasks+ITaskCompletionAction")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ITaskCompletionAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::ITaskCompletionAction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Threading::Tasks::ITaskCompletionAction {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ITaskCompletionAction")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ITaskCompletionAction")]
 impl std::ops::Deref for crate::System::Threading::Tasks::ITaskCompletionAction {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ITaskCompletionAction")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ITaskCompletionAction")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::ITaskCompletionAction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::System::Threading::Tasks::ITaskCompletionAction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ITaskCompletionAction")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ITaskCompletionAction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::ITaskCompletionAction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

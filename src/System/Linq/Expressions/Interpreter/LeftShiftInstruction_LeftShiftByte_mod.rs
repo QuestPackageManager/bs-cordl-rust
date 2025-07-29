@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LeftShiftInstruction_LeftShiftByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {
     type Target = crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftB
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {

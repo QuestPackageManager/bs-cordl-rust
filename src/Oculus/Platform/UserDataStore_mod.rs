@@ -1,10 +1,10 @@
-#[cfg(feature = "Oculus+Platform+UserDataStore")]
+#[cfg(feature = "cordl_class_Oculus+Platform+UserDataStore")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UserDataStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Oculus+Platform+UserDataStore")]
+#[cfg(feature = "cordl_class_Oculus+Platform+UserDataStore")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::UserDataStore {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::UserDataSto
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+UserDataStore")]
+#[cfg(feature = "cordl_class_Oculus+Platform+UserDataStore")]
 impl std::ops::Deref for crate::Oculus::Platform::UserDataStore {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+UserDataStore")]
+#[cfg(feature = "cordl_class_Oculus+Platform+UserDataStore")]
 impl std::ops::DerefMut for crate::Oculus::Platform::UserDataStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -479,7 +479,7 @@ impl crate::Oculus::Platform::UserDataStore {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+UserDataStore")]
+#[cfg(feature = "cordl_class_Oculus+Platform+UserDataStore")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::UserDataStore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

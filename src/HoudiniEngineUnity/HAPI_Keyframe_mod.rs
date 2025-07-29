@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Keyframe")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Keyframe")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_Keyframe {
@@ -7,7 +7,7 @@ pub struct HAPI_Keyframe {
     pub inTangent: f32,
     pub outTangent: f32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Keyframe")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Keyframe")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Keyframe {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Keyf
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Keyframe")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Keyframe")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_Keyframe {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::HoudiniEngineUnity::HAPI_Keyframe {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Keyframe")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Keyframe")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_Keyframe {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::HoudiniEngineUnity::HAPI_Keyframe {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Keyframe")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Keyframe")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_Keyframe {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::HoudiniEngineUnity::HAPI_Keyframe {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Keyframe")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Keyframe")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_Keyframe {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_Ke
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Keyframe")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Keyframe")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HAPI_Keyframe {
     type Type = Self;

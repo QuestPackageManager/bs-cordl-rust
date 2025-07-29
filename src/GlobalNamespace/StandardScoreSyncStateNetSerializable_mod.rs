@@ -1,4 +1,4 @@
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardScoreSyncStateNetSerializable {
@@ -7,7 +7,7 @@ pub struct StandardScoreSyncStateNetSerializable {
     pub _id_k__BackingField: crate::GlobalNamespace::SyncStateId,
     pub _time_k__BackingField: i64,
 }
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
         false
     }
 }
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -335,7 +335,7 @@ impl crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

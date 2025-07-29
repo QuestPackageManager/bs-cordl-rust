@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+SimpleBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+SimpleBinaryExpression")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleBinaryExpression {
@@ -6,7 +6,7 @@ pub struct SimpleBinaryExpression {
     pub _NodeType_k__BackingField: crate::System::Linq::Expressions::ExpressionType,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Linq+Expressions+SimpleBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+SimpleBinaryExpression")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::SimpleBinaryExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Linq::Expressions::SimpleBinaryExpression {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+SimpleBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+SimpleBinaryExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::SimpleBinaryExpression {
     type Target = crate::System::Linq::Expressions::BinaryExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+SimpleBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+SimpleBinaryExpression")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::SimpleBinaryExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::System::Linq::Expressions::SimpleBinaryExpression {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+SimpleBinaryExpression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+SimpleBinaryExpression")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::SimpleBinaryExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

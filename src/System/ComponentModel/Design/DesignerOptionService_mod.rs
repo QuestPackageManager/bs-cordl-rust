@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -11,7 +11,7 @@ pub struct DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescrip
     >,
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
@@ -33,7 +33,7 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
@@ -43,7 +43,7 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
@@ -341,7 +341,7 @@ impl crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpt
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
@@ -353,7 +353,7 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -364,7 +364,7 @@ pub struct DesignerOptionConverter_DesignerOptionService_OptionPropertyDescripto
     >,
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
@@ -386,7 +386,7 @@ for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptio
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
@@ -396,7 +396,7 @@ for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptio
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
@@ -658,7 +658,7 @@ impl crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOpti
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
@@ -669,13 +669,13 @@ for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesignerOptionService {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::Design::DesignerOptionService {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -695,14 +695,14 @@ for crate::System::ComponentModel::Design::DesignerOptionService {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService")]
 impl std::ops::Deref for crate::System::ComponentModel::Design::DesignerOptionService {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionService {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -750,7 +750,7 @@ impl crate::System::ComponentModel::Design::DesignerOptionService {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
+#[cfg(feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::Design::DesignerOptionService {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -761,7 +761,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService {
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -778,7 +778,7 @@ pub struct DesignerOptionService_DesignerOptionCollection {
     >,
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
@@ -800,7 +800,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
@@ -810,7 +810,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
@@ -1034,7 +1034,7 @@ impl crate::System::ComponentModel::Design::DesignerOptionService_DesignerOption
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
@@ -1064,7 +1064,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1072,7 +1072,7 @@ pub struct DesignerOptionService_DesignerOptionConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter {
@@ -1094,7 +1094,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter {
@@ -1104,7 +1104,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter {
@@ -1281,7 +1281,7 @@ impl crate::System::ComponentModel::Design::DesignerOptionService_DesignerOption
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
+    feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter {

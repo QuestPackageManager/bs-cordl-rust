@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapData")]
+#[cfg(feature = "cordl_class_BeatmapData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapData {
@@ -64,7 +64,7 @@ pub struct BeatmapData {
     pub _prevAddedBeatmapObjectDataTime: f32,
     pub _isCreatingFilteredCopy: bool,
 }
-#[cfg(feature = "BeatmapData")]
+#[cfg(feature = "cordl_class_BeatmapData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -83,14 +83,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapData 
         false
     }
 }
-#[cfg(feature = "BeatmapData")]
+#[cfg(feature = "cordl_class_BeatmapData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapData")]
+#[cfg(feature = "cordl_class_BeatmapData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1210,7 +1210,7 @@ impl crate::GlobalNamespace::BeatmapData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapData")]
+#[cfg(feature = "cordl_class_BeatmapData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1233,7 +1233,7 @@ for crate::GlobalNamespace::BeatmapData {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
+#[cfg(feature = "cordl_class_BeatmapData+BeatmapDataBinaryHeapItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapData_BeatmapDataBinaryHeapItem {
@@ -1244,7 +1244,7 @@ pub struct BeatmapData_BeatmapDataBinaryHeapItem {
         >,
     >,
 }
-#[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
+#[cfg(feature = "cordl_class_BeatmapData+BeatmapDataBinaryHeapItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1264,14 +1264,14 @@ for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
         false
     }
 }
-#[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
+#[cfg(feature = "cordl_class_BeatmapData+BeatmapDataBinaryHeapItem")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
+#[cfg(feature = "cordl_class_BeatmapData+BeatmapDataBinaryHeapItem")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1360,7 +1360,7 @@ impl crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
+#[cfg(feature = "cordl_class_BeatmapData+BeatmapDataBinaryHeapItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

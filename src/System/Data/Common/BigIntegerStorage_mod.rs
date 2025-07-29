@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+Common+BigIntegerStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+BigIntegerStorage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigIntegerStorage {
@@ -7,7 +7,7 @@ pub struct BigIntegerStorage {
         quest_hook::libil2cpp::Il2CppArray<crate::System::Numerics::BigInteger>,
     >,
 }
-#[cfg(feature = "System+Data+Common+BigIntegerStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+BigIntegerStorage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::Common::BigIntegerStorage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Data::Common::BigIntegerStorage {
         false
     }
 }
-#[cfg(feature = "System+Data+Common+BigIntegerStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+BigIntegerStorage")]
 impl std::ops::Deref for crate::System::Data::Common::BigIntegerStorage {
     type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+Common+BigIntegerStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+BigIntegerStorage")]
 impl std::ops::DerefMut for crate::System::Data::Common::BigIntegerStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -531,7 +531,7 @@ impl crate::System::Data::Common::BigIntegerStorage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+Common+BigIntegerStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+BigIntegerStorage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::Common::BigIntegerStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+TypeIdentifiers")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeIdentifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+TypeIdentifiers")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeIdentifiers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeIdentifiers {
         false
     }
 }
-#[cfg(feature = "System+TypeIdentifiers")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers")]
 impl std::ops::Deref for crate::System::TypeIdentifiers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+TypeIdentifiers")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers")]
 impl std::ops::DerefMut for crate::System::TypeIdentifiers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::System::TypeIdentifiers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TypeIdentifiers")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifiers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -77,7 +77,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifiers {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+TypeIdentifiers+Display")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers+Display")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeIdentifiers_Display {
@@ -85,7 +85,7 @@ pub struct TypeIdentifiers_Display {
     pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub internal_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+TypeIdentifiers+Display")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers+Display")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeIdentifiers_Display {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -104,14 +104,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeIdentifiers_Displ
         false
     }
 }
-#[cfg(feature = "System+TypeIdentifiers+Display")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers+Display")]
 impl std::ops::Deref for crate::System::TypeIdentifiers_Display {
     type Target = crate::System::TypeNames_ATypeName;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+TypeIdentifiers+Display")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers+Display")]
 impl std::ops::DerefMut for crate::System::TypeIdentifiers_Display {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -236,7 +236,7 @@ impl crate::System::TypeIdentifiers_Display {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TypeIdentifiers+Display")]
+#[cfg(feature = "cordl_class_System+TypeIdentifiers+Display")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifiers_Display {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

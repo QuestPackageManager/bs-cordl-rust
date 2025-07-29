@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+IGroupBoxOption")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IGroupBoxOption")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IGroupBoxOption {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+IGroupBoxOption")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IGroupBoxOption")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IGroupBoxOption {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::IGroupBoxOption {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IGroupBoxOption")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IGroupBoxOption")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IGroupBoxOption {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IGroupBoxOption")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IGroupBoxOption")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IGroupBoxOption {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::UnityEngine::UIElements::IGroupBoxOption {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IGroupBoxOption")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IGroupBoxOption")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IGroupBoxOption {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarPoseData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarPoseData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AvatarPoseData {
@@ -6,7 +6,7 @@ pub struct AvatarPoseData {
     pub leftHandPose: crate::UnityEngine::Pose,
     pub rightHandPose: crate::UnityEngine::Pose,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarPoseData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarPoseData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::AvatarPoseData {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::BeatSaber::AvatarCore::AvatarPoseData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarPoseData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarPoseData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::AvatarCore::AvatarPoseData {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::BeatSaber::AvatarCore::AvatarPoseData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarPoseData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarPoseData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::AvatarCore::AvatarPoseData {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::BeatSaber::AvatarCore::AvatarPoseData {
         self
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarPoseData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarPoseData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::AvatarCore::AvatarPoseData {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::BeatSaber::AvatarCore::AvatarPoseData {
         }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarPoseData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarPoseData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::AvatarCore::AvatarPoseData {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::BeatSaber::AvatarCore::AvatarPoseData {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarPoseData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarPoseData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::AvatarCore::AvatarPoseData {
     type Type = Self;

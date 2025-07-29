@@ -1,4 +1,4 @@
-#[cfg(feature = "MenuPlayerController")]
+#[cfg(feature = "cordl_class_MenuPlayerController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuPlayerController {
@@ -9,7 +9,7 @@ pub struct MenuPlayerController {
     >,
     pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "MenuPlayerController")]
+#[cfg(feature = "cordl_class_MenuPlayerController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuPlayerController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MenuPlayerController {
         false
     }
 }
-#[cfg(feature = "MenuPlayerController")]
+#[cfg(feature = "cordl_class_MenuPlayerController")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuPlayerController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuPlayerController")]
+#[cfg(feature = "cordl_class_MenuPlayerController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuPlayerController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -177,7 +177,7 @@ impl crate::GlobalNamespace::MenuPlayerController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuPlayerController")]
+#[cfg(feature = "cordl_class_MenuPlayerController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuPlayerController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

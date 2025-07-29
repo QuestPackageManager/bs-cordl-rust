@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReadCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReadCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReadCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReadCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReadCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationReadCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Xml::Serialization::XmlSerializationReadCallback {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReadCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReadCallback")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReadCallback {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::System::Xml::Serialization::XmlSerializationReadCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReadCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReadCallback")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReadCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -111,7 +111,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReadCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReadCallback")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReadCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationReadCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

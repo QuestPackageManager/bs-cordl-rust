@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Helper")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Helper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Helper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Helper")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Helper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509Helper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Helper {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Helper")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Helper")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Helper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Helper {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Helper")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Helper")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509Helper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -300,7 +300,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Helper")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Helper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509Helper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

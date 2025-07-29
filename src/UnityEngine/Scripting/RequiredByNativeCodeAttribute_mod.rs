@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RequiredByNativeCodeAttribute {
@@ -9,7 +9,7 @@ pub struct RequiredByNativeCodeAttribute {
     pub _Optional_k__BackingField: bool,
     pub _GenerateProxy_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Scripting::RequiredByNativeCodeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::UnityEngine::Scripting::RequiredByNativeCodeAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Scripting::RequiredByNativeCodeAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Scripting::RequiredByNativeCodeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -187,7 +187,7 @@ impl crate::UnityEngine::Scripting::RequiredByNativeCodeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+RequiredByNativeCodeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Scripting::RequiredByNativeCodeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragAndDropArgs")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DragAndDropArgs {
@@ -13,7 +13,7 @@ pub struct DragAndDropArgs {
         crate::UnityEngine::UIElements::DragAndDropData,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragAndDropArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DragAndDropArgs {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::UnityEngine::UIElements::DragAndDropArgs {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragAndDropArgs")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DragAndDropArgs {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::UnityEngine::UIElements::DragAndDropArgs {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragAndDropArgs")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DragAndDropArgs {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::UIElements::DragAndDropArgs {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragAndDropArgs")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DragAndDropArgs {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::UnityEngine::UIElements::DragAndDropArgs {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragAndDropArgs")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DragAndDropArgs {
     type Actual = Self;
@@ -97,7 +97,7 @@ for crate::UnityEngine::UIElements::DragAndDropArgs {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DragAndDropArgs")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::DragAndDropArgs {
     type Type = Self;

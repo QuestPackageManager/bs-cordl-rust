@@ -1,10 +1,10 @@
-#[cfg(feature = "ISonyPSPremiumHelper")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISonyPSPremiumHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ISonyPSPremiumHelper")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyPSPremiumHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper {
         false
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::ISonyPSPremiumHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ISonyPSPremiumHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyPSPremiumHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -160,7 +160,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyPSPremiu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
@@ -168,7 +168,7 @@ pub enum ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
     Failed = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
     type Held<'a> = Self;
@@ -198,7 +198,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
     type Type = Self;
@@ -209,7 +209,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
     type Actual = Self;
@@ -223,7 +223,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult 
         self
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
     type Type = Self;
@@ -238,7 +238,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult 
         }
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
     type Actual = Self;
@@ -252,7 +252,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult 
         actual
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+GetPremiumStatusResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyPSPremiumHelper_GetPremiumStatusResult {
@@ -261,7 +261,7 @@ pub enum ISonyPSPremiumHelper_GetPremiumStatusResult {
     Failed = 2i32,
     Unauthorized = 1i32,
 }
-#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+GetPremiumStatusResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
     type Held<'a> = Self;
@@ -291,7 +291,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+GetPremiumStatusResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
     type Type = Self;
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+GetPremiumStatusResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
     type Actual = Self;
@@ -316,7 +316,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
         self
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+GetPremiumStatusResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
     type Type = Self;
@@ -331,7 +331,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
         }
     }
 }
-#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+#[cfg(feature = "cordl_class_ISonyPSPremiumHelper+GetPremiumStatusResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
     type Actual = Self;

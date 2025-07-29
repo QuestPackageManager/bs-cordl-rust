@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_LoadBufferInstancer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_LoadBufferInstancer {
@@ -25,7 +25,7 @@ pub struct HEU_LoadBufferInstancer {
         >,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_LoadBufferInstancer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_LoadBufferInstancer")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
     type Target = crate::HoudiniEngineUnity::HEU_LoadBufferBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_LoadBufferInstancer")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_LoadBufferInstancer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

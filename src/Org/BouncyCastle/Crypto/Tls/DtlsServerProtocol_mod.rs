@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsServerProtocol {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol,
     pub mVerifyRequests: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -704,7 +704,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -714,7 +714,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsServerProtocol_ServerHandshakeState {
@@ -764,7 +766,9 @@ pub struct DtlsServerProtocol_ServerHandshakeState {
         crate::Org::BouncyCastle::Crypto::Tls::Certificate,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -784,7 +788,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeSta
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -792,7 +798,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeSta
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -830,7 +838,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeSt
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Mathematics+half3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct half3 {
@@ -6,7 +6,7 @@ pub struct half3 {
     pub y: crate::Unity::Mathematics::half,
     pub z: crate::Unity::Mathematics::half,
 }
-#[cfg(feature = "Unity+Mathematics+half3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::half3 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::half3 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::half3 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::half3
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::half3 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::half
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::half3 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::half3
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::half3 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::half3 {
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::half3 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -4089,7 +4089,7 @@ impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::half3 {
         todo!()
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3+DebuggerProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct half3_DebuggerProxy {
@@ -4098,7 +4098,7 @@ pub struct half3_DebuggerProxy {
     pub y: crate::Unity::Mathematics::half,
     pub z: crate::Unity::Mathematics::half,
 }
-#[cfg(feature = "Unity+Mathematics+half3+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3+DebuggerProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::half3_DebuggerProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4118,14 +4118,14 @@ for crate::Unity::Mathematics::half3_DebuggerProxy {
         false
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3+DebuggerProxy")]
 impl std::ops::Deref for crate::Unity::Mathematics::half3_DebuggerProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3+DebuggerProxy")]
 impl std::ops::DerefMut for crate::Unity::Mathematics::half3_DebuggerProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4169,7 +4169,7 @@ impl crate::Unity::Mathematics::half3_DebuggerProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Mathematics+half3+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half3+DebuggerProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Mathematics::half3_DebuggerProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

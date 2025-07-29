@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayModifiersPanelController")]
+#[cfg(feature = "cordl_class_GameplayModifiersPanelController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersPanelController {
@@ -32,7 +32,7 @@ pub struct GameplayModifiersPanelController {
         >,
     >,
 }
-#[cfg(feature = "GameplayModifiersPanelController")]
+#[cfg(feature = "cordl_class_GameplayModifiersPanelController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifiersPanelController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,14 +52,14 @@ for crate::GlobalNamespace::GameplayModifiersPanelController {
         false
     }
 }
-#[cfg(feature = "GameplayModifiersPanelController")]
+#[cfg(feature = "cordl_class_GameplayModifiersPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplayModifiersPanelController")]
+#[cfg(feature = "cordl_class_GameplayModifiersPanelController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersPanelController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -363,7 +363,7 @@ impl crate::GlobalNamespace::GameplayModifiersPanelController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplayModifiersPanelController")]
+#[cfg(feature = "cordl_class_GameplayModifiersPanelController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayModifiersPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

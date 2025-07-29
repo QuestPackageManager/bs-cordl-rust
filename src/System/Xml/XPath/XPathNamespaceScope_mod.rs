@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XPath+XPathNamespaceScope")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathNamespaceScope")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XPathNamespaceScope {
@@ -7,7 +7,7 @@ pub enum XPathNamespaceScope {
     ExcludeXml = 1i32,
     Local = 2i32,
 }
-#[cfg(feature = "System+Xml+XPath+XPathNamespaceScope")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathNamespaceScope")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XPath::XPathNamespaceScope {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Xml::XPath::XPathNamespaceScope {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XPath+XPathNamespaceScope")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathNamespaceScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XPath::XPathNamespaceScope {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Xml::XPath::XPathNamespaceScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XPath+XPathNamespaceScope")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathNamespaceScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XPath::XPathNamespaceScope {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Xml::XPath::XPathNamespaceScope {
         self
     }
 }
-#[cfg(feature = "System+Xml+XPath+XPathNamespaceScope")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathNamespaceScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XPath::XPathNamespaceScope {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Xml::XPath::XPathNamespaceScope {
         }
     }
 }
-#[cfg(feature = "System+Xml+XPath+XPathNamespaceScope")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathNamespaceScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XPath::XPathNamespaceScope {
     type Actual = Self;

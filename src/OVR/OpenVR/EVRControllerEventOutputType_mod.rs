@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EVRControllerEventOutputType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRControllerEventOutputType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRControllerEventOutputType {
@@ -6,7 +6,7 @@ pub enum EVRControllerEventOutputType {
     ControllerEventOutput_OSEvents = 0i32,
     ControllerEventOutput_VREvents = 1i32,
 }
-#[cfg(feature = "OVR+OpenVR+EVRControllerEventOutputType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRControllerEventOutputType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::EVRControllerEventOutputType {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::OVR::OpenVR::EVRControllerEventOutputType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRControllerEventOutputType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRControllerEventOutputType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::EVRControllerEventOutputType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::OVR::OpenVR::EVRControllerEventOutputType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRControllerEventOutputType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRControllerEventOutputType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::EVRControllerEventOutputType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::OVR::OpenVR::EVRControllerEventOutputType {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRControllerEventOutputType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRControllerEventOutputType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::EVRControllerEventOutputType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::OVR::OpenVR::EVRControllerEventOutputType {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRControllerEventOutputType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRControllerEventOutputType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::EVRControllerEventOutputType {
     type Actual = Self;

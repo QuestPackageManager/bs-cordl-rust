@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMethodReturnMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -140,7 +140,7 @@ impl crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+IMethodReturnMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

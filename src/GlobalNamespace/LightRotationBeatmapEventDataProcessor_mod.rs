@@ -1,4 +1,4 @@
-#[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationBeatmapEventDataProcessor {
@@ -6,7 +6,7 @@ pub struct LightRotationBeatmapEventDataProcessor {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBeatmapEventData>,
     >,
 }
-#[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
         false
     }
 }
-#[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
     type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBeatmapEventData>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LightRotationBeatmapEventDataPr
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataProcessor")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightRotationBeatmapEventDataProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

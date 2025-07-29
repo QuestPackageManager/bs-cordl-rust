@@ -1,10 +1,10 @@
-#[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
+#[cfg(feature = "cordl_class_LevelCompletionResultsAnalyticsHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelCompletionResultsAnalyticsHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
+#[cfg(feature = "cordl_class_LevelCompletionResultsAnalyticsHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
         false
     }
 }
-#[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
+#[cfg(feature = "cordl_class_LevelCompletionResultsAnalyticsHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
+#[cfg(feature = "cordl_class_LevelCompletionResultsAnalyticsHelper")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
+#[cfg(feature = "cordl_class_LevelCompletionResultsAnalyticsHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

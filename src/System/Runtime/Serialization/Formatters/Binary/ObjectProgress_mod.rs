@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectProgress")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectProgress"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectProgress {
@@ -43,7 +45,9 @@ pub struct ObjectProgress {
         crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
     >,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectProgress")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectProgress"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -63,7 +67,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectProgress")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectProgress"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -71,7 +77,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectProgress")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectProgress"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -197,7 +205,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectProgress")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectProgress"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightColorEvent")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LightColorEvent {
@@ -10,7 +10,7 @@ pub struct LightColorEvent {
     pub sb: f32,
     pub sf: i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightColorEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion4::LightColorEvent {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEvent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightColorEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::LightColorEvent {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightColorEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::LightColorEvent {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEvent {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightColorEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::LightColorEvent {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEvent {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightColorEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion4::LightColorEvent {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEvent {
         actual
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightColorEvent")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapSaveDataVersion4::LightColorEvent {
     type Type = Self;

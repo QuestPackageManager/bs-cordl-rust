@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MediaTypeWithQualityHeaderValue {
     __cordl_parent: crate::System::Net::Http::Headers::MediaTypeHeaderValue,
 }
-#[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
         false
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
     type Target = crate::System::Net::Http::Headers::MediaTypeHeaderValue;
@@ -32,7 +32,7 @@ for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 impl std::ops::DerefMut
 for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -162,7 +162,7 @@ impl crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

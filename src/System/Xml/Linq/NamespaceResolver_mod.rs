@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NamespaceResolver {
@@ -10,7 +10,7 @@ pub struct NamespaceResolver {
         crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
     >,
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::NamespaceResolver {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::NamespaceR
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Linq::NamespaceResolver {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Xml::Linq::NamespaceResolver {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Linq::NamespaceResolver {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Xml::Linq::NamespaceResolver {
         self
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Linq::NamespaceResolver {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Xml::Linq::NamespaceResolver {
         }
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Linq::NamespaceResolver {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::System::Xml::Linq::NamespaceResolver {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Linq::NamespaceResolver {
     type Type = Self;
@@ -255,7 +255,7 @@ impl crate::System::Xml::Linq::NamespaceResolver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamespaceResolver_NamespaceDeclaration {
@@ -267,7 +267,7 @@ pub struct NamespaceResolver_NamespaceDeclaration {
         crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
     >,
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -287,7 +287,7 @@ for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
         false
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 impl std::ops::Deref
 for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -295,7 +295,7 @@ for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 impl std::ops::DerefMut
 for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -333,7 +333,7 @@ impl crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

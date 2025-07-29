@@ -1,4 +1,4 @@
-#[cfg(feature = "PageControlElement")]
+#[cfg(feature = "cordl_class_PageControlElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PageControlElement {
@@ -8,7 +8,7 @@ pub struct PageControlElement {
     pub _selectedColor: crate::UnityEngine::Color,
     pub _unselectedColor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "PageControlElement")]
+#[cfg(feature = "cordl_class_PageControlElement")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PageControlElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PageControlE
         false
     }
 }
-#[cfg(feature = "PageControlElement")]
+#[cfg(feature = "cordl_class_PageControlElement")]
 impl std::ops::Deref for crate::GlobalNamespace::PageControlElement {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PageControlElement")]
+#[cfg(feature = "cordl_class_PageControlElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PageControlElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::PageControlElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PageControlElement")]
+#[cfg(feature = "cordl_class_PageControlElement")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PageControlElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

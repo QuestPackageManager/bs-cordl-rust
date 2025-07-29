@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_License")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_License")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_License {
@@ -11,7 +11,7 @@ pub enum HAPI_License {
     HAPI_LICENSE_MAX = 6i32,
     HAPI_LICENSE_NONE = 0i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_License")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_License")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_License {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Lice
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_License")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_License")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::HAPI_License {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::HAPI_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_License")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_License")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_License {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::HoudiniEngineUnity::HAPI_License {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_License")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_License")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::HAPI_License {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -78,7 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::HAPI_
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_License")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_License")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_License {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+UriTypeConverter")]
+#[cfg(feature = "cordl_class_System+UriTypeConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriTypeConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }
-#[cfg(feature = "System+UriTypeConverter")]
+#[cfg(feature = "cordl_class_System+UriTypeConverter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::UriTypeConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UriTypeConverter {
         false
     }
 }
-#[cfg(feature = "System+UriTypeConverter")]
+#[cfg(feature = "cordl_class_System+UriTypeConverter")]
 impl std::ops::Deref for crate::System::UriTypeConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+UriTypeConverter")]
+#[cfg(feature = "cordl_class_System+UriTypeConverter")]
 impl std::ops::DerefMut for crate::System::UriTypeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -252,7 +252,7 @@ impl crate::System::UriTypeConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+UriTypeConverter")]
+#[cfg(feature = "cordl_class_System+UriTypeConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::UriTypeConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

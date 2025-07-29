@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ZenjectSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectSettings {
@@ -11,7 +11,7 @@ pub struct ZenjectSettings {
         crate::Zenject::ZenjectSettings_SignalSettings,
     >,
 }
-#[cfg(feature = "Zenject+ZenjectSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectSettings {
         false
     }
 }
-#[cfg(feature = "Zenject+ZenjectSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings")]
 impl std::ops::Deref for crate::Zenject::ZenjectSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ZenjectSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings")]
 impl std::ops::DerefMut for crate::Zenject::ZenjectSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -276,7 +276,7 @@ impl crate::Zenject::ZenjectSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ZenjectSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -285,7 +285,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings+SignalSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectSettings_SignalSettings {
@@ -295,7 +295,7 @@ pub struct ZenjectSettings_SignalSettings {
     pub _requireStrictUnsubscribe: bool,
     pub _defaultAsyncTickPriority: i32,
 }
-#[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings+SignalSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::ZenjectSettings_SignalSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -315,14 +315,14 @@ for crate::Zenject::ZenjectSettings_SignalSettings {
         false
     }
 }
-#[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings+SignalSettings")]
 impl std::ops::Deref for crate::Zenject::ZenjectSettings_SignalSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings+SignalSettings")]
 impl std::ops::DerefMut for crate::Zenject::ZenjectSettings_SignalSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -572,7 +572,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSettings+SignalSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::ZenjectSettings_SignalSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct V1TbsCertificateGenerator {
@@ -24,7 +24,7 @@ pub struct V1TbsCertificateGenerator {
         crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +44,7 @@ for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -52,7 +52,7 @@ for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -381,7 +381,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

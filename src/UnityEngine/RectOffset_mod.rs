@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RectOffset")]
+#[cfg(feature = "cordl_class_UnityEngine+RectOffset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectOffset {
@@ -6,7 +6,7 @@ pub struct RectOffset {
     pub m_Ptr: crate::System::IntPtr,
     pub m_SourceStyle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+RectOffset")]
+#[cfg(feature = "cordl_class_UnityEngine+RectOffset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectOffset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectOffset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+RectOffset")]
+#[cfg(feature = "cordl_class_UnityEngine+RectOffset")]
 impl std::ops::Deref for crate::UnityEngine::RectOffset {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+RectOffset")]
+#[cfg(feature = "cordl_class_UnityEngine+RectOffset")]
 impl std::ops::DerefMut for crate::UnityEngine::RectOffset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -507,7 +507,7 @@ impl crate::UnityEngine::RectOffset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+RectOffset")]
+#[cfg(feature = "cordl_class_UnityEngine+RectOffset")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::RectOffset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+SceneManagement+LocalPhysicsMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LocalPhysicsMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LocalPhysicsMode {
@@ -7,7 +7,7 @@ pub enum LocalPhysicsMode {
     Physics2D = 1i32,
     Physics3D = 2i32,
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LocalPhysicsMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LocalPhysicsMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LocalPhysicsMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LocalPhysicsMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LocalPhysicsMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LocalPhysicsMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LocalPhysicsMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LocalPhysicsMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LocalPhysicsMode")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LocalPhysicsMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SceneManagement::LocalPhysicsMode {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectsInTimeRowProcessor {
@@ -39,7 +39,7 @@ pub struct BeatmapObjectsInTimeRowProcessor {
     >,
     pub _numberOfLines: i32,
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -59,14 +59,14 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -480,7 +480,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -490,14 +490,14 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+SliderTailData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectsInTimeRowProcessor_SliderTailData {
     __cordl_parent: crate::GlobalNamespace::BeatmapDataItem,
     pub slider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+SliderTailData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -517,7 +517,7 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+SliderTailData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
     type Target = crate::GlobalNamespace::BeatmapDataItem;
@@ -525,7 +525,7 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+SliderTailData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -599,7 +599,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+SliderTailData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -609,7 +609,7 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
@@ -652,7 +652,7 @@ pub struct BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -688,7 +688,7 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_
         false
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -696,7 +696,7 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1284,7 +1284,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
+#[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

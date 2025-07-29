@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+Compression+DeflateStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStream {
@@ -11,7 +11,7 @@ pub struct DeflateStream {
         crate::System::IO::Compression::DeflateStreamNative,
     >,
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Compression::DeflateStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::IO::Compression::DeflateStream {
         false
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream")]
 impl std::ops::DerefMut for crate::System::IO::Compression::DeflateStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -904,7 +904,7 @@ impl crate::System::IO::Compression::DeflateStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::IO::Compression::DeflateStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -914,13 +914,13 @@ for crate::System::IO::Compression::DeflateStream {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+ReadMethod")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStream_ReadMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+ReadMethod")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Compression::DeflateStream_ReadMethod {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -940,14 +940,14 @@ for crate::System::IO::Compression::DeflateStream_ReadMethod {
         false
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+ReadMethod")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream_ReadMethod {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+ReadMethod")]
 impl std::ops::DerefMut for crate::System::IO::Compression::DeflateStream_ReadMethod {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1101,7 +1101,7 @@ impl crate::System::IO::Compression::DeflateStream_ReadMethod {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+ReadMethod")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::IO::Compression::DeflateStream_ReadMethod {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1111,13 +1111,13 @@ for crate::System::IO::Compression::DeflateStream_ReadMethod {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+WriteMethod")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStream_WriteMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+WriteMethod")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Compression::DeflateStream_WriteMethod {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1137,14 +1137,14 @@ for crate::System::IO::Compression::DeflateStream_WriteMethod {
         false
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+WriteMethod")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream_WriteMethod {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+WriteMethod")]
 impl std::ops::DerefMut for crate::System::IO::Compression::DeflateStream_WriteMethod {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1298,7 +1298,7 @@ impl crate::System::IO::Compression::DeflateStream_WriteMethod {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
+#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStream+WriteMethod")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::IO::Compression::DeflateStream_WriteMethod {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

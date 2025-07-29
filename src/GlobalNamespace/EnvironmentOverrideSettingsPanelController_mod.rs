@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentOverrideSettingsPanelController {
@@ -27,7 +27,7 @@ pub struct EnvironmentOverrideSettingsPanelController {
     >,
     pub _initialized: bool,
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         false
     }
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -55,7 +55,7 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -253,7 +253,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -277,7 +277,7 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController+Elements")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentOverrideSettingsPanelController_Elements {
@@ -292,7 +292,7 @@ pub struct EnvironmentOverrideSettingsPanelController_Elements {
         >,
     >,
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController+Elements")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -312,7 +312,7 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements 
         false
     }
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController+Elements")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -320,7 +320,7 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController+Elements")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -433,7 +433,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
+#[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController+Elements")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRAtlasAllocator {
@@ -24,7 +24,7 @@ pub struct UIRAtlasAllocator {
     pub m_2SidePadding: i32,
     pub _disposed_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIRAtlasAllocator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -526,7 +526,7 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIRAtlasAllocator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -550,7 +550,7 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRAtlasAllocator_AreaNode {
@@ -563,7 +563,7 @@ pub struct UIRAtlasAllocator_AreaNode {
         crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -583,14 +583,14 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -734,7 +734,7 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -744,7 +744,7 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRAtlasAllocator_Row {
@@ -755,7 +755,7 @@ pub struct UIRAtlasAllocator_Row {
     pub _height_k__BackingField: i32,
     pub Cursor: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -775,14 +775,14 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1029,7 +1029,7 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

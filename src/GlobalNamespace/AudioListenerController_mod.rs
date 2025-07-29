@@ -1,11 +1,11 @@
-#[cfg(feature = "AudioListenerController")]
+#[cfg(feature = "cordl_class_AudioListenerController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioListenerController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _startAudioListenerPauseState: bool,
 }
-#[cfg(feature = "AudioListenerController")]
+#[cfg(feature = "cordl_class_AudioListenerController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AudioListenerController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::AudioListenerController {
         false
     }
 }
-#[cfg(feature = "AudioListenerController")]
+#[cfg(feature = "cordl_class_AudioListenerController")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioListenerController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AudioListenerController")]
+#[cfg(feature = "cordl_class_AudioListenerController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioListenerController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -170,7 +170,7 @@ impl crate::GlobalNamespace::AudioListenerController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AudioListenerController")]
+#[cfg(feature = "cordl_class_AudioListenerController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AudioListenerController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

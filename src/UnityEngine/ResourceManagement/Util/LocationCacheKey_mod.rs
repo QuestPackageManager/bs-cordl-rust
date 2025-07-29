@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LocationCacheKey")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocationCacheKey {
@@ -8,7 +8,7 @@ pub struct LocationCacheKey {
     >,
     pub m_DesiredType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LocationCacheKey")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LocationCacheKey")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LocationCacheKey")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -194,7 +194,7 @@ impl crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LocationCacheKey")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

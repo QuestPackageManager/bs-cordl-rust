@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Serialization+SerializationEventHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializationEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEventHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::SerializationEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Runtime::Serialization::SerializationEventHandler {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEventHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventHandler")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SerializationEventHandler {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Serialization::SerializationEventHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEventHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventHandler")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::SerializationEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -110,7 +110,7 @@ impl crate::System::Runtime::Serialization::SerializationEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SerializationEventHandler")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::SerializationEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

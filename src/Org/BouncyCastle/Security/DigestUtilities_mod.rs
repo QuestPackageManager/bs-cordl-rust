@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DigestUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::DigestUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Security::DigestUtilities {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::DigestUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::DigestUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -363,7 +363,7 @@ impl crate::Org::BouncyCastle::Security::DigestUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Security::DigestUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -373,7 +373,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DigestUtilities_DigestAlgorithm {
@@ -422,7 +422,7 @@ pub enum DigestUtilities_DigestAlgorithm {
     TIGER = 41i32,
     WHIRLPOOL = 42i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Held<'a> = Self;
@@ -452,7 +452,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Type = Self;
@@ -463,7 +463,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Actual = Self;
@@ -477,7 +477,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Type = Self;
@@ -492,7 +492,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+DateTimeStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeStyles")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeStyles {
@@ -14,7 +14,7 @@ pub enum DateTimeStyles {
     None = 0i32,
     RoundtripKind = 128i32,
 }
-#[cfg(feature = "System+Globalization+DateTimeStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::DateTimeStyles {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::System::Globalization::DateTimeStyles {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::DateTimeStyles {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::System::Globalization::DateTimeStyles {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::DateTimeStyles {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::System::Globalization::DateTimeStyles {
         self
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::DateTimeStyles {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::System::Globalization::DateTimeStyles {
         }
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeStyles")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::DateTimeStyles {
     type Actual = Self;

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct ServiceNameCollection {
     __cordl_parent: crate::System::Collections::ReadOnlyCollectionBase,
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection {
@@ -29,7 +29,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ServiceNameColl
     }
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
 )]
 impl std::ops::Deref
 for crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection {
@@ -39,7 +39,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ServiceNameColl
     }
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection {
@@ -52,7 +52,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ServiceNameColl
 )]
 impl crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection {}
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection {

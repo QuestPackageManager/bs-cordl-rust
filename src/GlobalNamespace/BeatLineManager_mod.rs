@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatLineManager")]
+#[cfg(feature = "cordl_class_BeatLineManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatLineManager {
@@ -24,7 +24,7 @@ pub struct BeatLineManager {
     pub _midRotation: f32,
     pub _rotationRange: f32,
 }
-#[cfg(feature = "BeatLineManager")]
+#[cfg(feature = "cordl_class_BeatLineManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatLineManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatLineMana
         false
     }
 }
-#[cfg(feature = "BeatLineManager")]
+#[cfg(feature = "cordl_class_BeatLineManager")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatLineManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatLineManager")]
+#[cfg(feature = "cordl_class_BeatLineManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatLineManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -229,7 +229,7 @@ impl crate::GlobalNamespace::BeatLineManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatLineManager")]
+#[cfg(feature = "cordl_class_BeatLineManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLineManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

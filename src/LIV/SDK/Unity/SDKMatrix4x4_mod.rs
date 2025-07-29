@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKMatrix4x4")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKMatrix4x4")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKMatrix4x4 {
@@ -19,7 +19,7 @@ pub struct SDKMatrix4x4 {
     pub m32: f32,
     pub m33: f32,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKMatrix4x4")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKMatrix4x4")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKMatrix4x4 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKMatrix4x4
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKMatrix4x4")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKMatrix4x4")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKMatrix4x4 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKMatri
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKMatrix4x4")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKMatrix4x4")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKMatrix4x4 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKMatr
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKMatrix4x4")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKMatrix4x4")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKMatrix4x4 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKMatri
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKMatrix4x4")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKMatrix4x4")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKMatrix4x4 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -98,7 +98,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKMatrix4
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKMatrix4x4")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKMatrix4x4")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LIV::SDK::Unity::SDKMatrix4x4 {
     type Type = Self;

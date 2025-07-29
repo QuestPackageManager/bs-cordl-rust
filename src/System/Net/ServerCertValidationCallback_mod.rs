@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+ServerCertValidationCallback")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerCertValidationCallback {
@@ -8,7 +8,7 @@ pub struct ServerCertValidationCallback {
     >,
     pub m_Context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::ServerCertValidationCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Net::ServerCertValidationCallback {
         false
     }
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback")]
 impl std::ops::Deref for crate::System::Net::ServerCertValidationCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback")]
 impl std::ops::DerefMut for crate::System::Net::ServerCertValidationCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::System::Net::ServerCertValidationCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::ServerCertValidationCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -199,7 +199,7 @@ for crate::System::Net::ServerCertValidationCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback+CallbackContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerCertValidationCallback_CallbackContext {
@@ -214,7 +214,7 @@ pub struct ServerCertValidationCallback_CallbackContext {
     pub sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
     pub result: bool,
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback+CallbackContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::ServerCertValidationCallback_CallbackContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -234,7 +234,7 @@ for crate::System::Net::ServerCertValidationCallback_CallbackContext {
         false
     }
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback+CallbackContext")]
 impl std::ops::Deref
 for crate::System::Net::ServerCertValidationCallback_CallbackContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -242,7 +242,7 @@ for crate::System::Net::ServerCertValidationCallback_CallbackContext {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback+CallbackContext")]
 impl std::ops::DerefMut
 for crate::System::Net::ServerCertValidationCallback_CallbackContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -313,7 +313,7 @@ impl crate::System::Net::ServerCertValidationCallback_CallbackContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
+#[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback+CallbackContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::ServerCertValidationCallback_CallbackContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

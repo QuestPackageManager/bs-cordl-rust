@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDeviceChange")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputDeviceChange {
@@ -15,7 +15,7 @@ pub enum InputDeviceChange {
     SoftReset = 8i32,
     UsageChanged = 6i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Held<'a> = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::InputSystem::InputDeviceChange {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Type = Self;
@@ -56,7 +56,7 @@ for crate::UnityEngine::InputSystem::InputDeviceChange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Actual = Self;
@@ -70,7 +70,7 @@ for crate::UnityEngine::InputSystem::InputDeviceChange {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Type = Self;
@@ -85,7 +85,7 @@ for crate::UnityEngine::InputSystem::InputDeviceChange {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Actual = Self;

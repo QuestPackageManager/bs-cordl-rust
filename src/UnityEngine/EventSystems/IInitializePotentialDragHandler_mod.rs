@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+EventSystems+IInitializePotentialDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IInitializePotentialDragHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IInitializePotentialDragHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+EventSystems+IInitializePotentialDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IInitializePotentialDragHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IInitializePotentialDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IInitializePotentialDragHandler")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IInitializePotentialDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IInitializePotentialDragHandler")]
 impl std::ops::DerefMut
 for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -77,7 +77,7 @@ impl crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IInitializePotentialDragHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IInitializePotentialDragHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

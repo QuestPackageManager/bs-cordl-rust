@@ -1,10 +1,10 @@
-#[cfg(feature = "PlatformNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformNetworkPlayerModel {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel,
 }
-#[cfg(feature = "PlatformNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformNetworkPlayerModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel {
         false
     }
 }
-#[cfg(feature = "PlatformNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformNetworkPlayerModel {
     type Target = crate::GlobalNamespace::BaseNetworkPlayerModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -134,7 +134,7 @@ impl crate::GlobalNamespace::PlatformNetworkPlayerModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -144,13 +144,13 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel+CreatePartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformNetworkPlayerModel_CreatePartyConfig {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
 }
-#[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel+CreatePartyConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -170,7 +170,7 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
         false
     }
 }
-#[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel+CreatePartyConfig")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
     type Target = crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig;
@@ -178,7 +178,7 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel+CreatePartyConfig")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -216,7 +216,7 @@ impl crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
+#[cfg(feature = "cordl_class_PlatformNetworkPlayerModel+CreatePartyConfig")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

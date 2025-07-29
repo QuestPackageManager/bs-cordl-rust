@@ -1,10 +1,10 @@
-#[cfg(feature = "PseudoHDREncoding")]
+#[cfg(feature = "cordl_class_PseudoHDREncoding")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PseudoHDREncoding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "PseudoHDREncoding")]
+#[cfg(feature = "cordl_class_PseudoHDREncoding")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PseudoHDREncoding {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PseudoHDREnc
         false
     }
 }
-#[cfg(feature = "PseudoHDREncoding")]
+#[cfg(feature = "cordl_class_PseudoHDREncoding")]
 impl std::ops::Deref for crate::GlobalNamespace::PseudoHDREncoding {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PseudoHDREncoding")]
+#[cfg(feature = "cordl_class_PseudoHDREncoding")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PseudoHDREncoding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::PseudoHDREncoding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PseudoHDREncoding")]
+#[cfg(feature = "cordl_class_PseudoHDREncoding")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PseudoHDREncoding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

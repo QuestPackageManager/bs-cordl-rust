@@ -1,11 +1,11 @@
-#[cfg(feature = "MaterialPropertyBlockFloatAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockFloatAnimator {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _value: f32,
 }
-#[cfg(feature = "MaterialPropertyBlockFloatAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator {
         false
     }
 }
-#[cfg(feature = "MaterialPropertyBlockFloatAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator {
     type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialPropertyBlockFloatAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatAnimator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialPropertyBlockFloatAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockFloatAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

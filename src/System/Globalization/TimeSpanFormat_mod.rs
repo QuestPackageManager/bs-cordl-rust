@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeSpanFormat {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanFormat {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Globalization::TimeSpanFormat {
         false
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat")]
 impl std::ops::Deref for crate::System::Globalization::TimeSpanFormat {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat")]
 impl std::ops::DerefMut for crate::System::Globalization::TimeSpanFormat {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -261,7 +261,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanFormat {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -270,7 +270,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+FormatLiterals")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanFormat_FormatLiterals {
@@ -286,7 +286,7 @@ pub struct TimeSpanFormat_FormatLiterals {
         >,
     >,
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Held<'a> = Self;
@@ -316,7 +316,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Type = Self;
@@ -327,7 +327,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Actual = Self;
@@ -341,7 +341,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Type = Self;
@@ -356,7 +356,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Actual = Self;
@@ -370,7 +370,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Type = Self;
@@ -600,7 +600,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+Pattern")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanFormat_Pattern {
@@ -609,7 +609,7 @@ pub enum TimeSpanFormat_Pattern {
     Minimum = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Held<'a> = Self;
@@ -639,7 +639,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Type = Self;
@@ -650,7 +650,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Actual = Self;
@@ -664,7 +664,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
         self
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Type = Self;
@@ -679,7 +679,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
         }
     }
 }
-#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
+#[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Actual = Self;

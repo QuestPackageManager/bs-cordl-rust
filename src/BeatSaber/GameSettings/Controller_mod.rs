@@ -1,11 +1,11 @@
-#[cfg(feature = "BeatSaber+GameSettings+Controller")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+Controller")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Controller {
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "BeatSaber+GameSettings+Controller")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+Controller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::GameSettings::Controller {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::GameSettings::Cont
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+Controller")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+Controller")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::GameSettings::Controller {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::BeatSaber::GameSettings::Controller {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+Controller")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+Controller")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::GameSettings::Controller {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::BeatSaber::GameSettings::Controller {
         self
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+Controller")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+Controller")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::GameSettings::Controller {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::BeatSaber::GameSettings::Controller {
         }
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+Controller")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+Controller")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::GameSettings::Controller {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::BeatSaber::GameSettings::Controller {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+GameSettings+Controller")]
+#[cfg(feature = "cordl_class_BeatSaber+GameSettings+Controller")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::GameSettings::Controller {
     type Type = Self;

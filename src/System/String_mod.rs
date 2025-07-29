@@ -1,4 +1,4 @@
-#[cfg(feature = "System+String")]
+#[cfg(feature = "cordl_class_System+String")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct String {
@@ -6,7 +6,7 @@ pub struct String {
     pub _stringLength: i32,
     pub _firstChar: char,
 }
-#[cfg(feature = "System+String")]
+#[cfg(feature = "cordl_class_System+String")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::String {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::String {
         false
     }
 }
-#[cfg(feature = "System+String")]
+#[cfg(feature = "cordl_class_System+String")]
 impl std::ops::Deref for crate::System::String {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+String")]
+#[cfg(feature = "cordl_class_System+String")]
 impl std::ops::DerefMut for crate::System::String {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7003,7 +7003,7 @@ impl crate::System::String {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+String")]
+#[cfg(feature = "cordl_class_System+String")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::String {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -7132,11 +7132,11 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+String+ProbabilisticMap")]
+#[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct String_ProbabilisticMap {}
-#[cfg(feature = "System+String+ProbabilisticMap")]
+#[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::String_ProbabilisticMap {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -7165,7 +7165,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::String_ProbabilisticM
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+String+ProbabilisticMap")]
+#[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::String_ProbabilisticMap {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7175,7 +7175,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::String_Probabilis
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+String+ProbabilisticMap")]
+#[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::String_ProbabilisticMap {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7188,7 +7188,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::String_Probabili
         self
     }
 }
-#[cfg(feature = "System+String+ProbabilisticMap")]
+#[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::String_ProbabilisticMap {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7202,7 +7202,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::String_Probabilis
         }
     }
 }
-#[cfg(feature = "System+String+ProbabilisticMap")]
+#[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::String_ProbabilisticMap {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7215,7 +7215,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::String_Probabilisti
         actual
     }
 }
-#[cfg(feature = "System+String+ProbabilisticMap")]
+#[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::String_ProbabilisticMap {
     type Type = Self;
@@ -7228,7 +7228,7 @@ for crate::System::String_ProbabilisticMap {
 }
 #[cfg(feature = "System+String+ProbabilisticMap")]
 impl crate::System::String_ProbabilisticMap {}
-#[cfg(feature = "System+String+TrimType")]
+#[cfg(feature = "cordl_class_System+String+TrimType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum String_TrimType {
@@ -7237,7 +7237,7 @@ pub enum String_TrimType {
     Head = 0i32,
     Tail = 1i32,
 }
-#[cfg(feature = "System+String+TrimType")]
+#[cfg(feature = "cordl_class_System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::String_TrimType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -7266,7 +7266,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::String_TrimType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+String+TrimType")]
+#[cfg(feature = "cordl_class_System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::String_TrimType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7276,7 +7276,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::String_TrimType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+String+TrimType")]
+#[cfg(feature = "cordl_class_System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::String_TrimType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7289,7 +7289,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::String_TrimType 
         self
     }
 }
-#[cfg(feature = "System+String+TrimType")]
+#[cfg(feature = "cordl_class_System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::String_TrimType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -7303,7 +7303,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::String_TrimType {
         }
     }
 }
-#[cfg(feature = "System+String+TrimType")]
+#[cfg(feature = "cordl_class_System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::String_TrimType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

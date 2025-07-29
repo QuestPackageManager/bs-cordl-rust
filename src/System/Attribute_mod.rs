@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Attribute")]
+#[cfg(feature = "cordl_class_System+Attribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Attribute {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Attribute")]
+#[cfg(feature = "cordl_class_System+Attribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Attribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Attribute {
         false
     }
 }
-#[cfg(feature = "System+Attribute")]
+#[cfg(feature = "cordl_class_System+Attribute")]
 impl std::ops::Deref for crate::System::Attribute {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Attribute")]
+#[cfg(feature = "cordl_class_System+Attribute")]
 impl std::ops::DerefMut for crate::System::Attribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1138,7 +1138,7 @@ impl crate::System::Attribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Attribute")]
+#[cfg(feature = "cordl_class_System+Attribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Attribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

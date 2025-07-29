@@ -1,4 +1,4 @@
-#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NodePoseSyncStateNetSerializable {
@@ -7,7 +7,7 @@ pub struct NodePoseSyncStateNetSerializable {
     pub _id_k__BackingField: crate::GlobalNamespace::SyncStateId,
     pub _time_k__BackingField: i64,
 }
-#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         false
     }
 }
-#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateNetSerializable")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -334,7 +334,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NodePoseSyncStateNetSerializable")]
+#[cfg(feature = "cordl_class_NodePoseSyncStateNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

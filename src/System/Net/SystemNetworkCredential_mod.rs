@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+SystemNetworkCredential")]
+#[cfg(feature = "cordl_class_System+Net+SystemNetworkCredential")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemNetworkCredential {
     __cordl_parent: crate::System::Net::NetworkCredential,
 }
-#[cfg(feature = "System+Net+SystemNetworkCredential")]
+#[cfg(feature = "cordl_class_System+Net+SystemNetworkCredential")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::SystemNetworkCredential {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::SystemNetworkCre
         false
     }
 }
-#[cfg(feature = "System+Net+SystemNetworkCredential")]
+#[cfg(feature = "cordl_class_System+Net+SystemNetworkCredential")]
 impl std::ops::Deref for crate::System::Net::SystemNetworkCredential {
     type Target = crate::System::Net::NetworkCredential;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+SystemNetworkCredential")]
+#[cfg(feature = "cordl_class_System+Net+SystemNetworkCredential")]
 impl std::ops::DerefMut for crate::System::Net::SystemNetworkCredential {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::System::Net::SystemNetworkCredential {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+SystemNetworkCredential")]
+#[cfg(feature = "cordl_class_System+Net+SystemNetworkCredential")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::SystemNetworkCredential {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

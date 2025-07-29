@@ -1,4 +1,4 @@
-#[cfg(feature = "SearchFilterParamsViewController")]
+#[cfg(feature = "cordl_class_SearchFilterParamsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SearchFilterParamsViewController {
@@ -56,7 +56,7 @@ pub struct SearchFilterParamsViewController {
         >,
     >,
 }
-#[cfg(feature = "SearchFilterParamsViewController")]
+#[cfg(feature = "cordl_class_SearchFilterParamsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SearchFilterParamsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -76,14 +76,14 @@ for crate::GlobalNamespace::SearchFilterParamsViewController {
         false
     }
 }
-#[cfg(feature = "SearchFilterParamsViewController")]
+#[cfg(feature = "cordl_class_SearchFilterParamsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SearchFilterParamsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SearchFilterParamsViewController")]
+#[cfg(feature = "cordl_class_SearchFilterParamsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SearchFilterParamsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -461,7 +461,7 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SearchFilterParamsViewController")]
+#[cfg(feature = "cordl_class_SearchFilterParamsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SearchFilterParamsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

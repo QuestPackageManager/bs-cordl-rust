@@ -1,10 +1,14 @@
-#[cfg(feature = "Mono+Security+Interface+MonoRemoteCertificateValidationCallback")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Interface+MonoRemoteCertificateValidationCallback"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoRemoteCertificateValidationCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Security+Interface+MonoRemoteCertificateValidationCallback")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Interface+MonoRemoteCertificateValidationCallback"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoRemoteCertificateValidationCallback")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Interface+MonoRemoteCertificateValidationCallback"
+)]
 impl std::ops::Deref
 for crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +38,9 @@ for crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoRemoteCertificateValidationCallback")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Interface+MonoRemoteCertificateValidationCallback"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -132,7 +140,9 @@ impl crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoRemoteCertificateValidationCallback")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+Interface+MonoRemoteCertificateValidationCallback"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

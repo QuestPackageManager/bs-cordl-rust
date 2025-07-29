@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct sockaddr_in6 {
@@ -9,7 +9,7 @@ pub struct sockaddr_in6 {
     pub sin6_addr: crate::System::Net::NetworkInformation::MacOsStructs::in6_addr,
     pub sin6_scope_id: u32,
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
         self
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
         }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
         actual
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::NetworkInformation::MacOsStructs::sockaddr_in6 {
     type Type = Self;

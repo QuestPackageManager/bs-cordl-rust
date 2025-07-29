@@ -1,4 +1,4 @@
-#[cfg(feature = "SpawnRotationChevronManager")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevronManager {
@@ -55,7 +55,7 @@ pub struct SpawnRotationChevronManager {
     >,
     pub _currentSpawnRotation: f32,
 }
-#[cfg(feature = "SpawnRotationChevronManager")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpawnRotationChevronManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -75,14 +75,14 @@ for crate::GlobalNamespace::SpawnRotationChevronManager {
         false
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager")]
 impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevronManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpawnRotationChevronManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -269,7 +269,7 @@ impl crate::GlobalNamespace::SpawnRotationChevronManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SpawnRotationChevronManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -279,7 +279,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+DirectionData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevronManager_DirectionData {
@@ -289,7 +289,7 @@ pub struct SpawnRotationChevronManager_DirectionData {
     pub fadeOutStartTime: f32,
     pub fadeInEndTime: f32,
 }
-#[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+DirectionData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -309,7 +309,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
         false
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+DirectionData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -317,7 +317,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+DirectionData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -355,7 +355,7 @@ impl crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+DirectionData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -365,7 +365,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+QueuedDirectionData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpawnRotationChevronManager_QueuedDirectionData {
@@ -373,7 +373,7 @@ pub struct SpawnRotationChevronManager_QueuedDirectionData {
     pub duration: f32,
     pub rotation: i32,
 }
-#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Held<'a> = Self;
@@ -403,7 +403,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Type = Self;
@@ -414,7 +414,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Actual = Self;
@@ -428,7 +428,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
         self
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Type = Self;
@@ -443,7 +443,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
         }
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Actual = Self;
@@ -457,7 +457,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
         actual
     }
 }
-#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
+#[cfg(feature = "cordl_class_SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Settings+PerformanceToolSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+PerformanceToolSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceToolSettings {
@@ -7,7 +7,7 @@ pub struct PerformanceToolSettings {
     pub showMemory: bool,
     pub saveScreenshot: bool,
 }
-#[cfg(feature = "BeatSaber+Settings+PerformanceToolSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+PerformanceToolSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::PerformanceToolSettings {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::BeatSaber::Settings::PerformanceToolSettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+PerformanceToolSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+PerformanceToolSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::PerformanceToolSettings {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BeatSaber::Settings::PerformanceToolSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+PerformanceToolSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+PerformanceToolSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::PerformanceToolSettings {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BeatSaber::Settings::PerformanceToolSettings {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+PerformanceToolSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+PerformanceToolSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::PerformanceToolSettings {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BeatSaber::Settings::PerformanceToolSettings {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+PerformanceToolSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+PerformanceToolSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::PerformanceToolSettings {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::BeatSaber::Settings::PerformanceToolSettings {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+PerformanceToolSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+PerformanceToolSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Settings::PerformanceToolSettings {
     type Type = Self;

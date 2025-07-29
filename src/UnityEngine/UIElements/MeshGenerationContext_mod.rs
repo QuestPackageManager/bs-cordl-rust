@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshGenerationContext {
@@ -10,7 +10,7 @@ pub struct MeshGenerationContext {
         crate::UnityEngine::UIElements::IStylePainter,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshGenerationContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::UnityEngine::UIElements::MeshGenerationContext {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MeshGenerationContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshGenerationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -131,7 +131,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MeshGenerationContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -141,7 +141,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshGenerationContext_MeshFlags {
@@ -150,7 +150,7 @@ pub enum MeshGenerationContext_MeshFlags {
     SkipDynamicAtlas = 2i32,
     UVisDisplacement = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Held<'a> = Self;
@@ -180,7 +180,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Type = Self;
@@ -191,7 +191,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Actual = Self;
@@ -205,7 +205,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Type = Self;
@@ -220,7 +220,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Actual = Self;

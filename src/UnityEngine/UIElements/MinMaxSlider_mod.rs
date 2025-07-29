@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MinMaxSlider {
@@ -25,7 +25,7 @@ pub struct MinMaxSlider {
     pub m_MinLimit: f32,
     pub m_MaxLimit: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MinMaxSlider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider {
     type Target = crate::UnityEngine::UIElements::BaseField_1<
         crate::UnityEngine::Vector2,
@@ -54,7 +54,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MinMaxSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -982,7 +982,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::MinMaxSlider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -991,7 +991,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::MinMa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+DragState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MinMaxSlider_DragState {
@@ -1001,7 +1001,7 @@ pub enum MinMaxSlider_DragState {
     MinThumb = 1i32,
     NoThumb = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Held<'a> = Self;
@@ -1031,7 +1031,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Type = Self;
@@ -1042,7 +1042,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Actual = Self;
@@ -1056,7 +1056,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Type = Self;
@@ -1071,7 +1071,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Actual = Self;
@@ -1085,7 +1085,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MinMaxSlider_UxmlFactory {
@@ -1096,7 +1096,7 @@ pub struct MinMaxSlider_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1116,7 +1116,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MinMaxSlider>,
@@ -1128,7 +1128,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactor
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1165,7 +1165,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1175,7 +1175,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MinMaxSlider_UxmlTraits {
@@ -1195,7 +1195,7 @@ pub struct MinMaxSlider_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1215,7 +1215,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Vector2,
@@ -1224,7 +1224,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1297,7 +1297,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -25,7 +25,7 @@ pub struct EditAvatarColorViewController {
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController {
@@ -47,7 +47,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContro
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController {
@@ -57,7 +57,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContro
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController {
@@ -462,7 +462,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController {

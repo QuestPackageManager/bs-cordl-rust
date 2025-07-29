@@ -1,10 +1,10 @@
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Volatile {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile")]
 unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceThirdparty::Volatile {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceThirdparty::Volatile
         false
     }
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile")]
 impl std::ops::Deref for crate::IgnoranceThirdparty::Volatile {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile")]
 impl std::ops::DerefMut for crate::IgnoranceThirdparty::Volatile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -42,7 +42,7 @@ impl crate::IgnoranceThirdparty::Volatile {
     #[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
     pub type PaddedLong = crate::IgnoranceThirdparty::Volatile_PaddedLong;
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile")]
 impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceThirdparty::Volatile {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -51,13 +51,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceThirdparty::Volatile 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile+PaddedLong")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Volatile_PaddedLong {
     padding: quest_hook::libil2cpp::ValueTypePadding<72usize>,
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Held<'a> = Self;
@@ -87,7 +87,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Type = Self;
@@ -98,7 +98,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Actual = Self;
@@ -112,7 +112,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
         self
     }
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Type = Self;
@@ -127,7 +127,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
         }
     }
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Actual = Self;
@@ -141,7 +141,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
         actual
     }
 }
-#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
+#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Type = Self;

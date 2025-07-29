@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventSource {
@@ -7,7 +7,7 @@ pub struct EventSource {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::Tracing::EventSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Diagnostics::Tracing::EventSource {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource")]
 impl std::ops::Deref for crate::System::Diagnostics::Tracing::EventSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource")]
 impl std::ops::DerefMut for crate::System::Diagnostics::Tracing::EventSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -608,7 +608,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::Tracing::EventSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -632,7 +632,7 @@ for crate::System::Diagnostics::Tracing::EventSource {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource+EventData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventSource_EventData {
@@ -640,7 +640,7 @@ pub struct EventSource_EventData {
     pub _Size_k__BackingField: i32,
     pub _Reserved_k__BackingField: i32,
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource+EventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::Tracing::EventSource_EventData {
     type Held<'a> = Self;
@@ -670,7 +670,7 @@ for crate::System::Diagnostics::Tracing::EventSource_EventData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource+EventData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::Tracing::EventSource_EventData {
     type Type = Self;
@@ -681,7 +681,7 @@ for crate::System::Diagnostics::Tracing::EventSource_EventData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource+EventData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::Tracing::EventSource_EventData {
     type Actual = Self;
@@ -695,7 +695,7 @@ for crate::System::Diagnostics::Tracing::EventSource_EventData {
         self
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource+EventData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::Tracing::EventSource_EventData {
     type Type = Self;
@@ -710,7 +710,7 @@ for crate::System::Diagnostics::Tracing::EventSource_EventData {
         }
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource+EventData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::Tracing::EventSource_EventData {
     type Actual = Self;
@@ -724,7 +724,7 @@ for crate::System::Diagnostics::Tracing::EventSource_EventData {
         actual
     }
 }
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+#[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource+EventData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Diagnostics::Tracing::EventSource_EventData {
     type Type = Self;

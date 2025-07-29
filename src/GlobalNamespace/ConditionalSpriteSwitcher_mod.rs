@@ -1,4 +1,4 @@
-#[cfg(feature = "ConditionalSpriteSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalSpriteSwitcher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConditionalSpriteSwitcher {
@@ -10,7 +10,7 @@ pub struct ConditionalSpriteSwitcher {
     pub _value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
     pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
 }
-#[cfg(feature = "ConditionalSpriteSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalSpriteSwitcher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ConditionalSpriteSwitcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::ConditionalSpriteSwitcher {
         false
     }
 }
-#[cfg(feature = "ConditionalSpriteSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalSpriteSwitcher")]
 impl std::ops::Deref for crate::GlobalNamespace::ConditionalSpriteSwitcher {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ConditionalSpriteSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalSpriteSwitcher")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ConditionalSpriteSwitcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -222,7 +222,7 @@ impl crate::GlobalNamespace::ConditionalSpriteSwitcher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ConditionalSpriteSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalSpriteSwitcher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ConditionalSpriteSwitcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

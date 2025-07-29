@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IndexedCollectionPropertyBag_2<
@@ -15,7 +15,7 @@ pub struct IndexedCollectionPropertyBag_2<
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2")]
 unsafe impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -54,7 +54,7 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2")]
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -65,7 +65,7 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2")]
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -189,7 +189,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2")]
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -284,7 +284,9 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IndexedCollectionPropertyBag_2_ListElementProperty<
@@ -296,7 +298,9 @@ pub struct IndexedCollectionPropertyBag_2_ListElementProperty<
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty"
+)]
 unsafe impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -338,7 +342,9 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2_ListElementProperty
         false
     }
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty"
+)]
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -352,7 +358,9 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2_ListElementProperty
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty"
+)]
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -468,7 +476,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty"
+)]
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+ThreadSafeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadSafeAttribute {
     __cordl_parent: crate::UnityEngine::Bindings::NativeMethodAttribute,
 }
-#[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+ThreadSafeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Bindings::ThreadSafeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Bindings::ThreadSafeAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+ThreadSafeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::ThreadSafeAttribute {
     type Target = crate::UnityEngine::Bindings::NativeMethodAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+ThreadSafeAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Bindings::ThreadSafeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::Bindings::ThreadSafeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+ThreadSafeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Bindings::ThreadSafeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

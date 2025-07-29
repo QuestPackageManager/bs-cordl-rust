@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+IProvider")]
+#[cfg(feature = "cordl_class_Zenject+IProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Zenject+IProvider")]
+#[cfg(feature = "cordl_class_Zenject+IProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::IProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::IProvider {
         false
     }
 }
-#[cfg(feature = "Zenject+IProvider")]
+#[cfg(feature = "cordl_class_Zenject+IProvider")]
 impl std::ops::Deref for crate::Zenject::IProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+IProvider")]
+#[cfg(feature = "cordl_class_Zenject+IProvider")]
 impl std::ops::DerefMut for crate::Zenject::IProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -161,7 +161,7 @@ impl crate::Zenject::IProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+IProvider")]
+#[cfg(feature = "cordl_class_Zenject+IProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::IProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

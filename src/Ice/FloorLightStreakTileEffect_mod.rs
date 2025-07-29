@@ -1,4 +1,4 @@
-#[cfg(feature = "Ice+FloorLightStreakTileEffect")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightStreakTileEffect {
@@ -14,7 +14,7 @@ pub struct FloorLightStreakTileEffect {
         >,
     >,
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightStreakTileEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightStreakTileEffe
         false
     }
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
 impl std::ops::Deref for crate::Ice::FloorLightStreakTileEffect {
     type Target = crate::GlobalNamespace::AbstractPoolContainer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
 impl std::ops::DerefMut for crate::Ice::FloorLightStreakTileEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -230,7 +230,7 @@ impl crate::Ice::FloorLightStreakTileEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightStreakTileEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -239,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightStreakTileEffec
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect+Element")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightStreakTileEffect_Element {
@@ -255,7 +255,7 @@ pub struct FloorLightStreakTileEffect_Element {
     pub _stayOnTileDuration: f32,
     pub _color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect+Element")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Ice::FloorLightStreakTileEffect_Element {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -275,14 +275,14 @@ for crate::Ice::FloorLightStreakTileEffect_Element {
         false
     }
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect+Element")]
 impl std::ops::Deref for crate::Ice::FloorLightStreakTileEffect_Element {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect+Element")]
 impl std::ops::DerefMut for crate::Ice::FloorLightStreakTileEffect_Element {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -429,7 +429,7 @@ impl crate::Ice::FloorLightStreakTileEffect_Element {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
+#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect+Element")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Ice::FloorLightStreakTileEffect_Element {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

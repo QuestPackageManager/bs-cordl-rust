@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+Unity+UnityTls")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Mono+Unity+UnityTls")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -150,7 +150,7 @@ impl crate::Mono::Unity::UnityTls {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTls {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -159,14 +159,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTls {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_ciphersuite")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_ciphersuite {
     #[default]
     UNITYTLS_CIPHERSUITE_INVALID = 16777215u32,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Held<'a> = Self;
@@ -196,7 +196,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Type = Self;
@@ -207,7 +207,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Actual = Self;
@@ -221,7 +221,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Type = Self;
@@ -236,7 +236,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Actual = Self;
@@ -250,7 +250,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_error_code")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_error_code {
@@ -273,7 +273,7 @@ pub enum UnityTls_unitytls_error_code {
     UNITYTLS_USER_WOULD_BLOCK = 1048577u32,
     UNITYTLS_USER_WRITE_FAILED = 1048579u32,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Held<'a> = Self;
@@ -303,7 +303,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Type = Self;
@@ -314,7 +314,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Actual = Self;
@@ -328,7 +328,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Type = Self;
@@ -343,7 +343,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Actual = Self;
@@ -357,7 +357,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_errorstate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_errorstate {
@@ -365,7 +365,7 @@ pub struct UnityTls_unitytls_errorstate {
     pub code: crate::Mono::Unity::UnityTls_unitytls_error_code,
     pub reserved: u64,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Held<'a> = Self;
@@ -395,7 +395,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Type = Self;
@@ -406,7 +406,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Actual = Self;
@@ -420,7 +420,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Type = Self;
@@ -435,7 +435,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Actual = Self;
@@ -449,7 +449,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Type = Self;
@@ -462,7 +462,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 impl crate::Mono::Unity::UnityTls_unitytls_errorstate {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_interface_struct {
@@ -563,7 +563,7 @@ pub struct UnityTls_unitytls_interface_struct {
         crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t,
     >,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -583,14 +583,14 @@ for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -745,7 +745,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_interface_struct {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -755,11 +755,11 @@ for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_key {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls_unitytls_key {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -788,7 +788,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls_unitytl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_key {
     type Type = Self;
@@ -799,7 +799,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_key {
     type Actual = Self;
@@ -813,7 +813,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_key {
     type Type = Self;
@@ -828,7 +828,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Unity::UnityTls_unitytls_key {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -841,7 +841,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Unity::UnityTls_unity
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_key {
     type Type = Self;
@@ -854,13 +854,13 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 impl crate::Mono::Unity::UnityTls_unitytls_key {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key_ref")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_key_ref {
     pub handle: u64,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Held<'a> = Self;
@@ -890,7 +890,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Type = Self;
@@ -901,7 +901,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Actual = Self;
@@ -915,7 +915,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Type = Self;
@@ -930,7 +930,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Actual = Self;
@@ -944,7 +944,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Type = Self;
@@ -957,7 +957,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 impl crate::Mono::Unity::UnityTls_unitytls_key_ref {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_protocol")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_protocol {
@@ -967,7 +967,7 @@ pub enum UnityTls_unitytls_protocol {
     UNITYTLS_PROTOCOL_TLS_1_1 = 1u32,
     UNITYTLS_PROTOCOL_TLS_1_2 = 2u32,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Held<'a> = Self;
@@ -997,7 +997,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Type = Self;
@@ -1008,7 +1008,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Actual = Self;
@@ -1022,7 +1022,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Type = Self;
@@ -1037,7 +1037,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Actual = Self;
@@ -1051,11 +1051,11 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_tlsctx {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Held<'a> = Self;
@@ -1085,7 +1085,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Type = Self;
@@ -1096,7 +1096,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Actual = Self;
@@ -1110,7 +1110,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Type = Self;
@@ -1125,7 +1125,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Actual = Self;
@@ -1139,7 +1139,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Type = Self;
@@ -1152,7 +1152,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_tlsctx_callbacks {
@@ -1164,7 +1164,7 @@ pub struct UnityTls_unitytls_tlsctx_callbacks {
     >,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Held<'a> = Self;
@@ -1194,7 +1194,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Type = Self;
@@ -1205,7 +1205,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Actual = Self;
@@ -1219,7 +1219,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Type = Self;
@@ -1234,7 +1234,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Actual = Self;
@@ -1248,7 +1248,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Type = Self;
@@ -1261,13 +1261,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_certificate_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1287,7 +1287,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     type Target = crate::System::MulticastDelegate;
@@ -1295,7 +1295,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1409,7 +1409,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1419,14 +1419,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_tlsctx_protocolrange {
     pub min: crate::Mono::Unity::UnityTls_unitytls_protocol,
     pub max: crate::Mono::Unity::UnityTls_unitytls_protocol,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Held<'a> = Self;
@@ -1456,7 +1456,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Type = Self;
@@ -1467,7 +1467,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Actual = Self;
@@ -1481,7 +1481,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Type = Self;
@@ -1496,7 +1496,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Actual = Self;
@@ -1510,7 +1510,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Type = Self;
@@ -1523,13 +1523,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_read_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1549,14 +1549,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1648,7 +1648,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1658,13 +1658,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_trace_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1684,14 +1684,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1783,7 +1783,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1793,13 +1793,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_write_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1819,14 +1819,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1918,7 +1918,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1928,13 +1928,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_x509verify_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1954,7 +1954,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
     type Target = crate::System::MulticastDelegate;
@@ -1962,7 +1962,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2052,7 +2052,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2062,13 +2062,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509_ref")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509_ref {
     pub handle: u64,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Held<'a> = Self;
@@ -2098,7 +2098,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Type = Self;
@@ -2109,7 +2109,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Actual = Self;
@@ -2123,7 +2123,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Type = Self;
@@ -2138,7 +2138,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Actual = Self;
@@ -2152,7 +2152,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Type = Self;
@@ -2165,11 +2165,11 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 impl crate::Mono::Unity::UnityTls_unitytls_x509_ref {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509list {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Held<'a> = Self;
@@ -2199,7 +2199,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Type = Self;
@@ -2210,7 +2210,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Actual = Self;
@@ -2224,7 +2224,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Type = Self;
@@ -2239,7 +2239,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Actual = Self;
@@ -2253,7 +2253,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Type = Self;
@@ -2266,13 +2266,13 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 impl crate::Mono::Unity::UnityTls_unitytls_x509list {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list_ref")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509list_ref {
     pub handle: u64,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Held<'a> = Self;
@@ -2302,7 +2302,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Type = Self;
@@ -2313,7 +2313,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Actual = Self;
@@ -2327,7 +2327,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Type = Self;
@@ -2342,7 +2342,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Actual = Self;
@@ -2356,7 +2356,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Type = Self;
@@ -2369,11 +2369,11 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 impl crate::Mono::Unity::UnityTls_unitytls_x509list_ref {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509name {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Held<'a> = Self;
@@ -2403,7 +2403,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Type = Self;
@@ -2414,7 +2414,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Actual = Self;
@@ -2428,7 +2428,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Type = Self;
@@ -2443,7 +2443,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Actual = Self;
@@ -2457,7 +2457,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
         actual
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Type = Self;
@@ -2470,13 +2470,13 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 impl crate::Mono::Unity::UnityTls_unitytls_x509name {}
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_x509verify_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2496,14 +2496,14 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2595,7 +2595,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2605,7 +2605,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_result")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_x509verify_result {
@@ -2627,7 +2627,7 @@ pub enum UnityTls_unitytls_x509verify_result {
     UNITYTLS_X509VERIFY_NOT_DONE = 2147483648u32,
     UNITYTLS_X509VERIFY_SUCCESS = 0u32,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Held<'a> = Self;
@@ -2657,7 +2657,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Type = Self;
@@ -2668,7 +2668,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Actual = Self;
@@ -2682,7 +2682,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
         self
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Type = Self;
@@ -2697,7 +2697,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
         }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Actual = Self;
@@ -2712,7 +2712,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -2720,7 +2720,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
@@ -2742,7 +2742,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
@@ -2752,7 +2752,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
@@ -2835,7 +2835,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
@@ -2847,7 +2847,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -2855,7 +2855,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t 
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
@@ -2877,7 +2877,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
@@ -2887,7 +2887,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
@@ -2975,7 +2975,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
@@ -2986,13 +2986,17 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3012,7 +3016,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t"
+)]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     type Target = crate::System::MulticastDelegate;
@@ -3020,7 +3026,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3098,7 +3106,9 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3108,13 +3118,17 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3134,7 +3148,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
+)]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     type Target = crate::System::MulticastDelegate;
@@ -3142,7 +3158,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3228,7 +3246,9 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3239,7 +3259,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -3247,7 +3267,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
@@ -3269,7 +3289,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
@@ -3279,7 +3299,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
@@ -3385,7 +3405,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_d
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
@@ -3397,7 +3417,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -3405,7 +3425,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
@@ -3427,7 +3447,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
@@ -3437,7 +3457,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
@@ -3543,7 +3563,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_p
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
@@ -3555,7 +3575,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -3563,7 +3583,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
@@ -3585,7 +3605,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
@@ -3595,7 +3615,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
@@ -3687,7 +3707,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gene
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
@@ -3699,7 +3719,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -3707,7 +3727,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
@@ -3729,7 +3749,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
@@ -3739,7 +3759,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
@@ -3843,7 +3863,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_crea
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
@@ -3855,7 +3875,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -3863,7 +3883,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
@@ -3885,7 +3905,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
@@ -3895,7 +3915,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
@@ -4003,7 +4023,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_crea
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
@@ -4014,13 +4034,17 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4040,7 +4064,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t"
+)]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     type Target = crate::System::MulticastDelegate;
@@ -4048,7 +4074,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4126,7 +4154,9 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4137,7 +4167,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -4145,7 +4175,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t 
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
@@ -4167,7 +4197,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
@@ -4177,7 +4207,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
@@ -4269,7 +4299,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
@@ -4281,7 +4311,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -4289,7 +4319,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
@@ -4311,7 +4341,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
@@ -4321,7 +4351,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
@@ -4411,7 +4441,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
@@ -4423,7 +4453,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -4431,7 +4461,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
@@ -4453,7 +4483,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
@@ -4463,7 +4493,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
@@ -4553,7 +4583,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_noti
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
@@ -4565,7 +4595,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -4573,7 +4603,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
@@ -4595,7 +4625,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
@@ -4605,7 +4635,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
@@ -4697,7 +4727,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proc
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
@@ -4708,13 +4738,17 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4734,7 +4768,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
+)]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     type Target = crate::System::MulticastDelegate;
@@ -4742,7 +4778,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4835,7 +4873,9 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4846,7 +4886,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -4854,7 +4894,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_cli
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
@@ -4876,7 +4916,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
@@ -4886,7 +4926,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
@@ -4979,7 +5019,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serv
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
@@ -4991,7 +5031,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -4999,7 +5039,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_ca
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
@@ -5021,7 +5061,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
@@ -5031,7 +5071,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
@@ -5131,7 +5171,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
@@ -5143,7 +5183,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -5151,7 +5191,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciph
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
@@ -5173,7 +5213,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
@@ -5183,7 +5223,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
@@ -5285,7 +5325,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
@@ -5297,7 +5337,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -5305,7 +5345,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
@@ -5327,7 +5367,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
@@ -5337,7 +5377,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
@@ -5437,7 +5477,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
@@ -5449,7 +5489,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -5457,7 +5497,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_cal
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
@@ -5479,7 +5519,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
@@ -5489,7 +5529,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
@@ -5589,7 +5629,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
@@ -5600,13 +5640,17 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5626,7 +5670,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write
         false
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
+)]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     type Target = crate::System::MulticastDelegate;
@@ -5634,7 +5680,9 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5726,7 +5774,9 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_writ
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5737,7 +5787,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -5745,7 +5795,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
@@ -5767,7 +5817,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
@@ -5777,7 +5827,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
@@ -5872,7 +5922,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
@@ -5884,7 +5934,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -5892,7 +5942,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
@@ -5914,7 +5964,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
@@ -5924,7 +5974,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
@@ -6021,7 +6071,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_ap
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
@@ -6033,7 +6083,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -6041,7 +6091,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
@@ -6063,7 +6113,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
@@ -6073,7 +6123,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
@@ -6165,7 +6215,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_ap
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
@@ -6177,7 +6227,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -6185,7 +6235,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
@@ -6207,7 +6257,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
@@ -6217,7 +6267,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
@@ -6301,7 +6351,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cr
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
@@ -6313,7 +6363,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -6321,7 +6371,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
@@ -6343,7 +6393,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
@@ -6353,7 +6403,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
@@ -6435,7 +6485,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fr
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
@@ -6447,7 +6497,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -6455,7 +6505,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
@@ -6477,7 +6527,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
@@ -6487,7 +6537,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
@@ -6579,7 +6629,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_ge
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
@@ -6591,7 +6641,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -6599,7 +6649,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
@@ -6621,7 +6671,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
@@ -6631,7 +6681,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
@@ -6721,7 +6771,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_ge
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
@@ -6733,7 +6783,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -6741,7 +6791,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
@@ -6763,7 +6813,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
@@ -6773,7 +6823,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
@@ -6880,7 +6930,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
@@ -6892,7 +6942,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -6900,7 +6950,7 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t 
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
@@ -6922,7 +6972,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_e
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
@@ -6932,7 +6982,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_e
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
@@ -7044,7 +7094,7 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_
     }
 }
 #[cfg(
-    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {

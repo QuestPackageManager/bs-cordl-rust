@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NegateInstruction_NegateDouble {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NegateInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NegateInstruction_NegateDouble {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +28,18 @@ for crate::GlobalNamespace::NegateInstruction_NegateDouble {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble"
+)]
 impl std::ops::Deref for crate::GlobalNamespace::NegateInstruction_NegateDouble {
     type Target = crate::System::Linq::Expressions::Interpreter::NegateInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble"
+)]
 impl std::ops::DerefMut for crate::GlobalNamespace::NegateInstruction_NegateDouble {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +106,9 @@ impl crate::GlobalNamespace::NegateInstruction_NegateDouble {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NegateInstruction_NegateDouble {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

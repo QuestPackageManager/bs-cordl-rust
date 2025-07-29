@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnixNetworkInterfaceAPI {
     __cordl_parent: crate::System::Net::NetworkInformation::NetworkInterfaceFactory,
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
     type Target = crate::System::Net::NetworkInformation::NetworkInterfaceFactory;
@@ -32,7 +32,7 @@ for crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -120,7 +120,7 @@ impl crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

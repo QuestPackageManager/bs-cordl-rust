@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+CultureInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureInfo {
@@ -47,7 +47,7 @@ pub struct CultureInfo {
     >,
     pub m_isInherited: bool,
 }
-#[cfg(feature = "System+Globalization+CultureInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::CultureInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -66,14 +66,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::Cultur
         false
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo")]
 impl std::ops::Deref for crate::System::Globalization::CultureInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo")]
 impl std::ops::DerefMut for crate::System::Globalization::CultureInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2029,7 +2029,7 @@ impl crate::System::Globalization::CultureInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::CultureInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2064,7 +2064,7 @@ for crate::System::Globalization::CultureInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+Data")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo+Data")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CultureInfo_Data {
@@ -2075,7 +2075,7 @@ pub struct CultureInfo_Data {
     pub right_to_left: bool,
     pub list_sep: u8,
 }
-#[cfg(feature = "System+Globalization+CultureInfo+Data")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::CultureInfo_Data {
     type Held<'a> = Self;
@@ -2105,7 +2105,7 @@ for crate::System::Globalization::CultureInfo_Data {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+Data")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::CultureInfo_Data {
     type Type = Self;
@@ -2116,7 +2116,7 @@ for crate::System::Globalization::CultureInfo_Data {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+Data")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::CultureInfo_Data {
     type Actual = Self;
@@ -2130,7 +2130,7 @@ for crate::System::Globalization::CultureInfo_Data {
         self
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+Data")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::CultureInfo_Data {
     type Type = Self;
@@ -2145,7 +2145,7 @@ for crate::System::Globalization::CultureInfo_Data {
         }
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+Data")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::CultureInfo_Data {
     type Actual = Self;
@@ -2159,7 +2159,7 @@ for crate::System::Globalization::CultureInfo_Data {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+Data")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::CultureInfo_Data {
     type Type = Self;
@@ -2172,13 +2172,17 @@ for crate::System::Globalization::CultureInfo_Data {
 }
 #[cfg(feature = "System+Globalization+CultureInfo+Data")]
 impl crate::System::Globalization::CultureInfo_Data {}
-#[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Globalization+CultureInfo+OnCultureInfoChangedDelegate"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureInfo_OnCultureInfoChangedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Globalization+CultureInfo+OnCultureInfoChangedDelegate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2198,7 +2202,9 @@ for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
         false
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Globalization+CultureInfo+OnCultureInfoChangedDelegate"
+)]
 impl std::ops::Deref
 for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -2206,7 +2212,9 @@ for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Globalization+CultureInfo+OnCultureInfoChangedDelegate"
+)]
 impl std::ops::DerefMut
 for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2284,7 +2292,9 @@ impl crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
+#[cfg(
+    feature = "cordl_class_System+Globalization+CultureInfo+OnCultureInfoChangedDelegate"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

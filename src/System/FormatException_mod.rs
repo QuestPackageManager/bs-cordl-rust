@@ -1,10 +1,10 @@
-#[cfg(feature = "System+FormatException")]
+#[cfg(feature = "cordl_class_System+FormatException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormatException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+FormatException")]
+#[cfg(feature = "cordl_class_System+FormatException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::FormatException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::FormatException {
         false
     }
 }
-#[cfg(feature = "System+FormatException")]
+#[cfg(feature = "cordl_class_System+FormatException")]
 impl std::ops::Deref for crate::System::FormatException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+FormatException")]
+#[cfg(feature = "cordl_class_System+FormatException")]
 impl std::ops::DerefMut for crate::System::FormatException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -190,7 +190,7 @@ impl crate::System::FormatException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+FormatException")]
+#[cfg(feature = "cordl_class_System+FormatException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::FormatException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MarkPositionAdjustment {
     pub m_XPositionAdjustment: f32,
     pub m_YPositionAdjustment: f32,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::LowLevel::MarkPositionAdjustment {
     type Type = Self;

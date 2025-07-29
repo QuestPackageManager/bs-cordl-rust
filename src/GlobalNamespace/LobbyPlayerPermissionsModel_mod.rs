@@ -1,4 +1,4 @@
-#[cfg(feature = "LobbyPlayerPermissionsModel")]
+#[cfg(feature = "cordl_class_LobbyPlayerPermissionsModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyPlayerPermissionsModel {
@@ -16,7 +16,7 @@ pub struct LobbyPlayerPermissionsModel {
     pub _hasInvitePermission_k__BackingField: bool,
     pub permissionsChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "LobbyPlayerPermissionsModel")]
+#[cfg(feature = "cordl_class_LobbyPlayerPermissionsModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LobbyPlayerPermissionsModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         false
     }
 }
-#[cfg(feature = "LobbyPlayerPermissionsModel")]
+#[cfg(feature = "cordl_class_LobbyPlayerPermissionsModel")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyPlayerPermissionsModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LobbyPlayerPermissionsModel")]
+#[cfg(feature = "cordl_class_LobbyPlayerPermissionsModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LobbyPlayerPermissionsModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -475,7 +475,7 @@ impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LobbyPlayerPermissionsModel")]
+#[cfg(feature = "cordl_class_LobbyPlayerPermissionsModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LobbyPlayerPermissionsModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

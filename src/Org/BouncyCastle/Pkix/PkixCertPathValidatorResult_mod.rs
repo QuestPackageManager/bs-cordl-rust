@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixCertPathValidatorResult {
@@ -13,7 +13,7 @@ pub struct PkixCertPathValidatorResult {
         crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorResult {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -254,7 +254,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

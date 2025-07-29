@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncMethodBuilderAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _BuilderType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderAttribute"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +39,9 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderAttribute"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -78,7 +86,9 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Column")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Column {
@@ -72,7 +72,7 @@ pub struct Column {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Column")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Column {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -91,14 +91,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Colu
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Column {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Column {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1420,7 +1420,7 @@ impl crate::UnityEngine::UIElements::Column {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Column {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1429,7 +1429,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Colum
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Column_UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> {
@@ -1441,7 +1441,7 @@ pub struct Column_UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1477,7 +1477,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
     type Target = crate::UnityEngine::UIElements::UxmlObjectFactory_2<
@@ -1490,7 +1490,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1536,7 +1536,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1546,7 +1546,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Column_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
@@ -1589,7 +1589,7 @@ pub struct Column_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1625,7 +1625,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
     type Target = crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>;
@@ -1633,7 +1633,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1752,7 +1752,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Column+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

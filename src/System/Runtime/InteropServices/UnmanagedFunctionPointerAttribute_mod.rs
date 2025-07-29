@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnmanagedFunctionPointerAttribute {
     __cordl_parent: crate::System::Attribute,
     pub m_callingConvention: crate::System::Runtime::InteropServices::CallingConvention,
 }
-#[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +39,9 @@ for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -105,7 +113,9 @@ impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

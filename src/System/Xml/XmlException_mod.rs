@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlException")]
+#[cfg(feature = "cordl_class_System+Xml+XmlException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlException {
@@ -14,7 +14,7 @@ pub struct XmlException {
     pub sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+XmlException")]
+#[cfg(feature = "cordl_class_System+Xml+XmlException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlException {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlException")]
+#[cfg(feature = "cordl_class_System+Xml+XmlException")]
 impl std::ops::Deref for crate::System::Xml::XmlException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlException")]
+#[cfg(feature = "cordl_class_System+Xml+XmlException")]
 impl std::ops::DerefMut for crate::System::Xml::XmlException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1364,7 +1364,7 @@ impl crate::System::Xml::XmlException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlException")]
+#[cfg(feature = "cordl_class_System+Xml+XmlException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

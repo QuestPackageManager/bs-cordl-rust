@@ -1,11 +1,11 @@
-#[cfg(feature = "AchievementSO")]
+#[cfg(feature = "cordl_class_AchievementSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AchievementSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _achievementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "AchievementSO")]
+#[cfg(feature = "cordl_class_AchievementSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AchievementSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AchievementS
         false
     }
 }
-#[cfg(feature = "AchievementSO")]
+#[cfg(feature = "cordl_class_AchievementSO")]
 impl std::ops::Deref for crate::GlobalNamespace::AchievementSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AchievementSO")]
+#[cfg(feature = "cordl_class_AchievementSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AchievementSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::AchievementSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AchievementSO")]
+#[cfg(feature = "cordl_class_AchievementSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AchievementSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

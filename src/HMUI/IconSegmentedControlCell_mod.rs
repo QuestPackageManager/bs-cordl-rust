@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+IconSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControlCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IconSegmentedControlCell {
@@ -7,7 +7,7 @@ pub struct IconSegmentedControlCell {
     pub _hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
     pub _backgroundGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "HMUI+IconSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControlCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconSegmentedControlCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconSegmentedControlCel
         false
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControlCell")]
 impl std::ops::Deref for crate::HMUI::IconSegmentedControlCell {
     type Target = crate::HMUI::SegmentedControlCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControlCell")]
 impl std::ops::DerefMut for crate::HMUI::IconSegmentedControlCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -201,7 +201,7 @@ impl crate::HMUI::IconSegmentedControlCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+IconSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+IconSegmentedControlCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::IconSegmentedControlCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

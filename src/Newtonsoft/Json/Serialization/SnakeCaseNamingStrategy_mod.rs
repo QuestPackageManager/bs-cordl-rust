@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SnakeCaseNamingStrategy {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::NamingStrategy,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::SnakeCaseNamingStrategy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Newtonsoft::Json::Serialization::SnakeCaseNamingStrategy {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::SnakeCaseNamingStrategy {
     type Target = crate::Newtonsoft::Json::Serialization::NamingStrategy;
@@ -32,7 +32,7 @@ for crate::Newtonsoft::Json::Serialization::SnakeCaseNamingStrategy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::SnakeCaseNamingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -190,7 +190,7 @@ impl crate::Newtonsoft::Json::Serialization::SnakeCaseNamingStrategy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::SnakeCaseNamingStrategy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_GeoType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_GeoType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_GeoType {
@@ -10,7 +10,7 @@ pub enum HAPI_GeoType {
     HAPI_GEOTYPE_INVALID = -1i32,
     HAPI_GEOTYPE_MAX = 4i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_GeoType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_GeoType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_GeoType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_GeoT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_GeoType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_GeoType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::HAPI_GeoType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::HAPI_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_GeoType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_GeoType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_GeoType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::HoudiniEngineUnity::HAPI_GeoType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_GeoType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_GeoType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::HAPI_GeoType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::HAPI_
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_GeoType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_GeoType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_GeoType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

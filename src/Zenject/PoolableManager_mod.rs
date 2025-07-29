@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+PoolableManager")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PoolableManager {
@@ -10,7 +10,7 @@ pub struct PoolableManager {
     >,
     pub _isSpawned: bool,
 }
-#[cfg(feature = "Zenject+PoolableManager")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::PoolableManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::PoolableManager {
         false
     }
 }
-#[cfg(feature = "Zenject+PoolableManager")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager")]
 impl std::ops::Deref for crate::Zenject::PoolableManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+PoolableManager")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager")]
 impl std::ops::DerefMut for crate::Zenject::PoolableManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -286,7 +286,7 @@ impl crate::Zenject::PoolableManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+PoolableManager")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PoolableManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -295,14 +295,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PoolableManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager+PoolableInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PoolableManager_PoolableInfo {
     pub Poolable: quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
     pub Priority: i32,
 }
-#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Held<'a> = Self;
@@ -332,7 +332,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Type = Self;
@@ -343,7 +343,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Actual = Self;
@@ -357,7 +357,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
         self
     }
 }
-#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Type = Self;
@@ -372,7 +372,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
         }
     }
 }
-#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Actual = Self;
@@ -386,7 +386,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
         actual
     }
 }
-#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
+#[cfg(feature = "cordl_class_Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Type = Self;

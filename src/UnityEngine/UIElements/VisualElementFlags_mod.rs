@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VisualElementFlags {
@@ -19,7 +19,7 @@ pub enum VisualElementFlags {
     WorldTransformDirty = 1i32,
     WorldTransformInverseDirty = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElementFlags {
     type Held<'a> = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::VisualElementFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualElementFlags {
     type Type = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::VisualElementFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualElementFlags {
     type Actual = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::UIElements::VisualElementFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualElementFlags {
     type Type = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::VisualElementFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualElementFlags {
     type Actual = Self;

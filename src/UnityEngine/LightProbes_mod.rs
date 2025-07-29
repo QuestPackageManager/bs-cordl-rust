@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+LightProbes")]
+#[cfg(feature = "cordl_class_UnityEngine+LightProbes")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightProbes {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+LightProbes")]
+#[cfg(feature = "cordl_class_UnityEngine+LightProbes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightProbes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightProbes {
         false
     }
 }
-#[cfg(feature = "UnityEngine+LightProbes")]
+#[cfg(feature = "cordl_class_UnityEngine+LightProbes")]
 impl std::ops::Deref for crate::UnityEngine::LightProbes {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+LightProbes")]
+#[cfg(feature = "cordl_class_UnityEngine+LightProbes")]
 impl std::ops::DerefMut for crate::UnityEngine::LightProbes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -845,7 +845,7 @@ impl crate::UnityEngine::LightProbes {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+LightProbes")]
+#[cfg(feature = "cordl_class_UnityEngine+LightProbes")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::LightProbes {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

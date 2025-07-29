@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Permissions+SecurityAction")]
+#[cfg(feature = "cordl_class_System+Security+Permissions+SecurityAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SecurityAction {
@@ -13,7 +13,7 @@ pub enum SecurityAction {
     RequestOptional = 9i32,
     RequestRefuse = 10i32,
 }
-#[cfg(feature = "System+Security+Permissions+SecurityAction")]
+#[cfg(feature = "cordl_class_System+Security+Permissions+SecurityAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Permissions::SecurityAction {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::System::Security::Permissions::SecurityAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Permissions+SecurityAction")]
+#[cfg(feature = "cordl_class_System+Security+Permissions+SecurityAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Permissions::SecurityAction {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::System::Security::Permissions::SecurityAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Permissions+SecurityAction")]
+#[cfg(feature = "cordl_class_System+Security+Permissions+SecurityAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Permissions::SecurityAction {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::System::Security::Permissions::SecurityAction {
         self
     }
 }
-#[cfg(feature = "System+Security+Permissions+SecurityAction")]
+#[cfg(feature = "cordl_class_System+Security+Permissions+SecurityAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Permissions::SecurityAction {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::System::Security::Permissions::SecurityAction {
         }
     }
 }
-#[cfg(feature = "System+Security+Permissions+SecurityAction")]
+#[cfg(feature = "cordl_class_System+Security+Permissions+SecurityAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Permissions::SecurityAction {
     type Actual = Self;

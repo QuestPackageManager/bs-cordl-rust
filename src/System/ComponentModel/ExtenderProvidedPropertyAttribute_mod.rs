@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+ExtenderProvidedPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExtenderProvidedPropertyAttribute {
@@ -11,7 +11,7 @@ pub struct ExtenderProvidedPropertyAttribute {
     >,
     pub _ReceiverType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+ComponentModel+ExtenderProvidedPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+ExtenderProvidedPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 impl std::ops::Deref
 for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
     type Target = crate::System::Attribute;
@@ -39,7 +39,7 @@ for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+ExtenderProvidedPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -354,7 +354,7 @@ impl crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+ExtenderProvidedPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

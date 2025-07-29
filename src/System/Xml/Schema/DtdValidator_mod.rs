@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+DtdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdValidator {
@@ -10,7 +10,7 @@ pub struct DtdValidator {
     pub idRefListHead: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IdRefNode>,
     pub processIdentityConstraints: bool,
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::DtdValidator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::DtdValid
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::DtdValidator {
     type Target = crate::System::Xml::Schema::BaseValidator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::DtdValidator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -719,7 +719,7 @@ impl crate::System::Xml::Schema::DtdValidator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::DtdValidator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -728,13 +728,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::DtdValida
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator+NamespaceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdValidator_NamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator+NamespaceManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -754,14 +754,14 @@ for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator+NamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator+NamespaceManager")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -826,7 +826,7 @@ impl crate::System::Xml::Schema::DtdValidator_NamespaceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator+NamespaceManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

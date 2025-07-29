@@ -1,4 +1,4 @@
-#[cfg(feature = "ObstacleSpawnData")]
+#[cfg(feature = "cordl_class_ObstacleSpawnData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ObstacleSpawnData {
@@ -6,7 +6,7 @@ pub struct ObstacleSpawnData {
     pub obstacleWidth: f32,
     pub obstacleHeight: f32,
 }
-#[cfg(feature = "ObstacleSpawnData")]
+#[cfg(feature = "cordl_class_ObstacleSpawnData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ObstacleSpawnData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ObstacleSpaw
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ObstacleSpawnData")]
+#[cfg(feature = "cordl_class_ObstacleSpawnData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ObstacleSpawnData {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::ObstacleSpawnData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ObstacleSpawnData")]
+#[cfg(feature = "cordl_class_ObstacleSpawnData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ObstacleSpawnData {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::ObstacleSpawnData {
         self
     }
 }
-#[cfg(feature = "ObstacleSpawnData")]
+#[cfg(feature = "cordl_class_ObstacleSpawnData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ObstacleSpawnData {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::ObstacleSpawnData {
         }
     }
 }
-#[cfg(feature = "ObstacleSpawnData")]
+#[cfg(feature = "cordl_class_ObstacleSpawnData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::ObstacleSpawnData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::ObstacleSp
         actual
     }
 }
-#[cfg(feature = "ObstacleSpawnData")]
+#[cfg(feature = "cordl_class_ObstacleSpawnData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::ObstacleSpawnData {
     type Type = Self;

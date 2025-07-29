@@ -1,10 +1,10 @@
-#[cfg(feature = "UseOnlyForReflectionProbeBaking")]
+#[cfg(feature = "cordl_class_UseOnlyForReflectionProbeBaking")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UseOnlyForReflectionProbeBaking {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "UseOnlyForReflectionProbeBaking")]
+#[cfg(feature = "cordl_class_UseOnlyForReflectionProbeBaking")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
         false
     }
 }
-#[cfg(feature = "UseOnlyForReflectionProbeBaking")]
+#[cfg(feature = "cordl_class_UseOnlyForReflectionProbeBaking")]
 impl std::ops::Deref for crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UseOnlyForReflectionProbeBaking")]
+#[cfg(feature = "cordl_class_UseOnlyForReflectionProbeBaking")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UseOnlyForReflectionProbeBaking")]
+#[cfg(feature = "cordl_class_UseOnlyForReflectionProbeBaking")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

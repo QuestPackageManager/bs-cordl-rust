@@ -1,4 +1,6 @@
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarTweenController {
@@ -74,7 +76,9 @@ pub struct AvatarTweenController {
     pub _avatarLocalPosition: crate::UnityEngine::Vector3,
     pub _avatarLocalScale: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -94,7 +98,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController"
+)]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -102,7 +108,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController"
+)]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -867,7 +875,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

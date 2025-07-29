@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+FileOptions")]
+#[cfg(feature = "cordl_class_System+IO+FileOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileOptions {
@@ -11,7 +11,7 @@ pub enum FileOptions {
     SequentialScan = 134217728i32,
     WriteThrough = -2147483648i32,
 }
-#[cfg(feature = "System+IO+FileOptions")]
+#[cfg(feature = "cordl_class_System+IO+FileOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+IO+FileOptions")]
+#[cfg(feature = "cordl_class_System+IO+FileOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::IO::FileOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::IO::FileOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+IO+FileOptions")]
+#[cfg(feature = "cordl_class_System+IO+FileOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IO::FileOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IO::FileOptions 
         self
     }
 }
-#[cfg(feature = "System+IO+FileOptions")]
+#[cfg(feature = "cordl_class_System+IO+FileOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::IO::FileOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::IO::FileOptions {
         }
     }
 }
-#[cfg(feature = "System+IO+FileOptions")]
+#[cfg(feature = "cordl_class_System+IO+FileOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::IO::FileOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

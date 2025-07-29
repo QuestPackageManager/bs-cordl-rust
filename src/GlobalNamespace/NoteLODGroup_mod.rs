@@ -1,11 +1,11 @@
-#[cfg(feature = "NoteLODGroup")]
+#[cfg(feature = "cordl_class_NoteLODGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteLODGroup {
     __cordl_parent: crate::GlobalNamespace::CustomLODGroup,
     pub _postProcessEnabled: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
 }
-#[cfg(feature = "NoteLODGroup")]
+#[cfg(feature = "cordl_class_NoteLODGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteLODGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteLODGroup
         false
     }
 }
-#[cfg(feature = "NoteLODGroup")]
+#[cfg(feature = "cordl_class_NoteLODGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteLODGroup {
     type Target = crate::GlobalNamespace::CustomLODGroup;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteLODGroup")]
+#[cfg(feature = "cordl_class_NoteLODGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteLODGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -139,7 +139,7 @@ impl crate::GlobalNamespace::NoteLODGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteLODGroup")]
+#[cfg(feature = "cordl_class_NoteLODGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteLODGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+CompatibleComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompatibleComparer {
@@ -6,7 +6,7 @@ pub struct CompatibleComparer {
     pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _hcp: quest_hook::libil2cpp::Gc<crate::System::Collections::IHashCodeProvider>,
 }
-#[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+CompatibleComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::CompatibleComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Collections::Specialized::CompatibleComparer {
         false
     }
 }
-#[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+CompatibleComparer")]
 impl std::ops::Deref for crate::System::Collections::Specialized::CompatibleComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+CompatibleComparer")]
 impl std::ops::DerefMut for crate::System::Collections::Specialized::CompatibleComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -258,7 +258,7 @@ impl crate::System::Collections::Specialized::CompatibleComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+CompatibleComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::CompatibleComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

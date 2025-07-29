@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ImageView")]
+#[cfg(feature = "cordl_class_HMUI+ImageView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageView {
@@ -17,7 +17,7 @@ pub struct ImageView {
         crate::HMUI::CurvedCanvasSettingsHelper,
     >,
 }
-#[cfg(feature = "HMUI+ImageView")]
+#[cfg(feature = "cordl_class_HMUI+ImageView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ImageView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ImageView {
         false
     }
 }
-#[cfg(feature = "HMUI+ImageView")]
+#[cfg(feature = "cordl_class_HMUI+ImageView")]
 impl std::ops::Deref for crate::HMUI::ImageView {
     type Target = crate::HMUI::ImageViewBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ImageView")]
+#[cfg(feature = "cordl_class_HMUI+ImageView")]
 impl std::ops::DerefMut for crate::HMUI::ImageView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1008,7 +1008,7 @@ impl crate::HMUI::ImageView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ImageView")]
+#[cfg(feature = "cordl_class_HMUI+ImageView")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ImageView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1029,7 +1029,7 @@ impl AsMut<crate::GlobalNamespace::IComponentRefresher> for crate::HMUI::ImageVi
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HMUI+ImageView+GradientDirection")]
+#[cfg(feature = "cordl_class_HMUI+ImageView+GradientDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ImageView_GradientDirection {
@@ -1037,7 +1037,7 @@ pub enum ImageView_GradientDirection {
     Horizontal = 0i32,
     Vertical = 1i32,
 }
-#[cfg(feature = "HMUI+ImageView+GradientDirection")]
+#[cfg(feature = "cordl_class_HMUI+ImageView+GradientDirection")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ImageView_GradientDirection {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1066,7 +1066,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ImageView_GradientDirec
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+ImageView+GradientDirection")]
+#[cfg(feature = "cordl_class_HMUI+ImageView+GradientDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::ImageView_GradientDirection {
     type Type = Self;
@@ -1077,7 +1077,7 @@ for crate::HMUI::ImageView_GradientDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+ImageView+GradientDirection")]
+#[cfg(feature = "cordl_class_HMUI+ImageView+GradientDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ImageView_GradientDirection {
     type Actual = Self;
@@ -1091,7 +1091,7 @@ for crate::HMUI::ImageView_GradientDirection {
         self
     }
 }
-#[cfg(feature = "HMUI+ImageView+GradientDirection")]
+#[cfg(feature = "cordl_class_HMUI+ImageView+GradientDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::ImageView_GradientDirection {
     type Type = Self;
@@ -1106,7 +1106,7 @@ for crate::HMUI::ImageView_GradientDirection {
         }
     }
 }
-#[cfg(feature = "HMUI+ImageView+GradientDirection")]
+#[cfg(feature = "cordl_class_HMUI+ImageView+GradientDirection")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ImageView_GradientDirection {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

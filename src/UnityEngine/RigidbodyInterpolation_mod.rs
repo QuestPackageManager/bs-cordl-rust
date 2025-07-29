@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyInterpolation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RigidbodyInterpolation {
@@ -7,7 +7,7 @@ pub enum RigidbodyInterpolation {
     Interpolate = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RigidbodyInterpolation {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RigidbodyInterpo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RigidbodyInterpolation {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::RigidbodyInterpolation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RigidbodyInterpolation {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::RigidbodyInterpolation {
         self
     }
 }
-#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RigidbodyInterpolation {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::RigidbodyInterpolation {
         }
     }
 }
-#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
+#[cfg(feature = "cordl_class_UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RigidbodyInterpolation {
     type Actual = Self;

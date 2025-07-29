@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+ValidationEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationEventArgs {
@@ -6,7 +6,7 @@ pub struct ValidationEventArgs {
     pub ex: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
     pub severity: crate::System::Xml::Schema::XmlSeverityType,
 }
-#[cfg(feature = "System+Xml+Schema+ValidationEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::ValidationEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Xml::Schema::ValidationEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+ValidationEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationEventArgs")]
 impl std::ops::Deref for crate::System::Xml::Schema::ValidationEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+ValidationEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationEventArgs")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::ValidationEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -175,7 +175,7 @@ impl crate::System::Xml::Schema::ValidationEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+ValidationEventArgs")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::ValidationEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

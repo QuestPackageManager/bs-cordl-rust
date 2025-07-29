@@ -1,11 +1,11 @@
-#[cfg(feature = "PoseSerializable")]
+#[cfg(feature = "cordl_class_PoseSerializable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PoseSerializable {
     pub position: crate::GlobalNamespace::Vector3Serializable,
     pub rotation: crate::GlobalNamespace::QuaternionSerializable,
 }
-#[cfg(feature = "PoseSerializable")]
+#[cfg(feature = "cordl_class_PoseSerializable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PoseSerializable {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PoseSerializ
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PoseSerializable")]
+#[cfg(feature = "cordl_class_PoseSerializable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PoseSerializable {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::PoseSerializable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PoseSerializable")]
+#[cfg(feature = "cordl_class_PoseSerializable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PoseSerializable {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::GlobalNamespace::PoseSerializable {
         self
     }
 }
-#[cfg(feature = "PoseSerializable")]
+#[cfg(feature = "cordl_class_PoseSerializable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PoseSerializable {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::PoseSerializable {
         }
     }
 }
-#[cfg(feature = "PoseSerializable")]
+#[cfg(feature = "cordl_class_PoseSerializable")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PoseSerializable {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PoseSerial
         actual
     }
 }
-#[cfg(feature = "PoseSerializable")]
+#[cfg(feature = "cordl_class_PoseSerializable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PoseSerializable {
     type Type = Self;

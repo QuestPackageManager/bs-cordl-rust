@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MovedFromAttributeData {
@@ -10,7 +10,7 @@ pub struct MovedFromAttributeData {
     pub assemblyHasChanged: bool,
     pub autoUdpateAPI: bool,
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Type = Self;

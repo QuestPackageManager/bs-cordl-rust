@@ -1,4 +1,4 @@
-#[cfg(feature = "VRTextEntryController")]
+#[cfg(feature = "cordl_class_VRTextEntryController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRTextEntryController {
@@ -17,7 +17,7 @@ pub struct VRTextEntryController {
     pub cancelButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _stopBlinkingCursor: bool,
 }
-#[cfg(feature = "VRTextEntryController")]
+#[cfg(feature = "cordl_class_VRTextEntryController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VRTextEntryController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::VRTextEntryController {
         false
     }
 }
-#[cfg(feature = "VRTextEntryController")]
+#[cfg(feature = "cordl_class_VRTextEntryController")]
 impl std::ops::Deref for crate::GlobalNamespace::VRTextEntryController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRTextEntryController")]
+#[cfg(feature = "cordl_class_VRTextEntryController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRTextEntryController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -529,7 +529,7 @@ impl crate::GlobalNamespace::VRTextEntryController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRTextEntryController")]
+#[cfg(feature = "cordl_class_VRTextEntryController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VRTextEntryController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

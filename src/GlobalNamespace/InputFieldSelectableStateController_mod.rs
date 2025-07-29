@@ -1,4 +1,4 @@
-#[cfg(feature = "InputFieldSelectableStateController")]
+#[cfg(feature = "cordl_class_InputFieldSelectableStateController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldSelectableStateController {
@@ -6,7 +6,7 @@ pub struct InputFieldSelectableStateController {
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >,
 }
-#[cfg(feature = "InputFieldSelectableStateController")]
+#[cfg(feature = "cordl_class_InputFieldSelectableStateController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::InputFieldSelectableStateController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::InputFieldSelectableStateController {
         false
     }
 }
-#[cfg(feature = "InputFieldSelectableStateController")]
+#[cfg(feature = "cordl_class_InputFieldSelectableStateController")]
 impl std::ops::Deref for crate::GlobalNamespace::InputFieldSelectableStateController {
     type Target = crate::GlobalNamespace::SelectableStateController_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::InputFieldSelectableStateContro
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "InputFieldSelectableStateController")]
+#[cfg(feature = "cordl_class_InputFieldSelectableStateController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::InputFieldSelectableStateController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::InputFieldSelectableStateController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "InputFieldSelectableStateController")]
+#[cfg(feature = "cordl_class_InputFieldSelectableStateController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::InputFieldSelectableStateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "SliderSpawnData")]
+#[cfg(feature = "cordl_class_SliderSpawnData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SliderSpawnData {
@@ -7,7 +7,7 @@ pub struct SliderSpawnData {
     pub tailNoteOffset: crate::UnityEngine::Vector3,
     pub tailGravityBase: f32,
 }
-#[cfg(feature = "SliderSpawnData")]
+#[cfg(feature = "cordl_class_SliderSpawnData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderSpawnData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderSpawnD
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SliderSpawnData")]
+#[cfg(feature = "cordl_class_SliderSpawnData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SliderSpawnData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SliderSp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SliderSpawnData")]
+#[cfg(feature = "cordl_class_SliderSpawnData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SliderSpawnData {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::SliderSpawnData {
         self
     }
 }
-#[cfg(feature = "SliderSpawnData")]
+#[cfg(feature = "cordl_class_SliderSpawnData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SliderSpawnData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SliderSp
         }
     }
 }
-#[cfg(feature = "SliderSpawnData")]
+#[cfg(feature = "cordl_class_SliderSpawnData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::SliderSpawnData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::SliderSpaw
         actual
     }
 }
-#[cfg(feature = "SliderSpawnData")]
+#[cfg(feature = "cordl_class_SliderSpawnData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::SliderSpawnData {
     type Type = Self;

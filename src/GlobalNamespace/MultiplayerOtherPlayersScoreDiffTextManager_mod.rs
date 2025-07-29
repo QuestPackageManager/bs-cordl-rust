@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]
+#[cfg(feature = "cordl_class_MultiplayerOtherPlayersScoreDiffTextManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerOtherPlayersScoreDiffTextManager {
@@ -23,7 +23,7 @@ pub struct MultiplayerOtherPlayersScoreDiffTextManager {
     >,
     pub _timeToNextUpdate: f32,
 }
-#[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]
+#[cfg(feature = "cordl_class_MultiplayerOtherPlayersScoreDiffTextManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
         false
     }
 }
-#[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]
+#[cfg(feature = "cordl_class_MultiplayerOtherPlayersScoreDiffTextManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]
+#[cfg(feature = "cordl_class_MultiplayerOtherPlayersScoreDiffTextManager")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -225,7 +225,7 @@ impl crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]
+#[cfg(feature = "cordl_class_MultiplayerOtherPlayersScoreDiffTextManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

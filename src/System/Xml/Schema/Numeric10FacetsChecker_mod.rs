@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+Numeric10FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Numeric10FacetsChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Numeric10FacetsChecker {
@@ -6,7 +6,7 @@ pub struct Numeric10FacetsChecker {
     pub maxValue: crate::System::Decimal,
     pub minValue: crate::System::Decimal,
 }
-#[cfg(feature = "System+Xml+Schema+Numeric10FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Numeric10FacetsChecker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::Numeric10FacetsChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Xml::Schema::Numeric10FacetsChecker {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+Numeric10FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Numeric10FacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::Numeric10FacetsChecker {
     type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+Numeric10FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Numeric10FacetsChecker")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Numeric10FacetsChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -376,7 +376,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+Numeric10FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Numeric10FacetsChecker")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::Numeric10FacetsChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

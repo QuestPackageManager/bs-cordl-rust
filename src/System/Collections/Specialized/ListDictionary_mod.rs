@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListDictionary {
@@ -11,7 +11,7 @@ pub struct ListDictionary {
     pub comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::ListDictionary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Collections::Specialized::ListDictionary {
         false
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary")]
 impl std::ops::Deref for crate::System::Collections::Specialized::ListDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary")]
 impl std::ops::DerefMut for crate::System::Collections::Specialized::ListDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -527,7 +527,7 @@ impl crate::System::Collections::Specialized::ListDictionary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::ListDictionary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -579,7 +579,9 @@ for crate::System::Collections::Specialized::ListDictionary {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+DictionaryNode"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListDictionary_DictionaryNode {
@@ -590,7 +592,9 @@ pub struct ListDictionary_DictionaryNode {
         crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
     >,
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+DictionaryNode"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -610,7 +614,9 @@ for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
         false
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+DictionaryNode"
+)]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -618,7 +624,9 @@ for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+DictionaryNode"
+)]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -656,7 +664,9 @@ impl crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+DictionaryNode"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -666,7 +676,9 @@ for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeEnumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListDictionary_NodeEnumerator {
@@ -680,7 +692,9 @@ pub struct ListDictionary_NodeEnumerator {
     pub _version: i32,
     pub _start: bool,
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -700,7 +714,9 @@ for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeEnumerator"
+)]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -708,7 +724,9 @@ for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeEnumerator"
+)]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -903,7 +921,9 @@ impl crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeEnumerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -941,7 +961,9 @@ for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListDictionary_NodeKeyValueCollection {
@@ -951,7 +973,9 @@ pub struct ListDictionary_NodeKeyValueCollection {
     >,
     pub _isKeys: bool,
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -971,7 +995,9 @@ for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollecti
         false
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection"
+)]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -979,7 +1005,9 @@ for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollecti
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection"
+)]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1168,7 +1196,9 @@ impl crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollect
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1207,7 +1237,7 @@ for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollecti
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1224,7 +1254,7 @@ pub struct NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
     pub _start: bool,
 }
 #[cfg(
-    feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
@@ -1246,7 +1276,7 @@ for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictiona
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
@@ -1256,7 +1286,7 @@ for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictiona
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
@@ -1381,7 +1411,7 @@ impl crate::System::Collections::Specialized::NodeKeyValueCollection_ListDiction
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {

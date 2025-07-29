@@ -1,10 +1,10 @@
-#[cfg(feature = "System+UnauthorizedAccessException")]
+#[cfg(feature = "cordl_class_System+UnauthorizedAccessException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnauthorizedAccessException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+UnauthorizedAccessException")]
+#[cfg(feature = "cordl_class_System+UnauthorizedAccessException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::UnauthorizedAccessException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UnauthorizedAccessExc
         false
     }
 }
-#[cfg(feature = "System+UnauthorizedAccessException")]
+#[cfg(feature = "cordl_class_System+UnauthorizedAccessException")]
 impl std::ops::Deref for crate::System::UnauthorizedAccessException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+UnauthorizedAccessException")]
+#[cfg(feature = "cordl_class_System+UnauthorizedAccessException")]
 impl std::ops::DerefMut for crate::System::UnauthorizedAccessException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -190,7 +190,7 @@ impl crate::System::UnauthorizedAccessException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+UnauthorizedAccessException")]
+#[cfg(feature = "cordl_class_System+UnauthorizedAccessException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::UnauthorizedAccessException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

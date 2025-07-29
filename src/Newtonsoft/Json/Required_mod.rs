@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Required")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Required")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Required {
@@ -8,7 +8,7 @@ pub enum Required {
     Default = 0i32,
     DisallowNull = 3i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Required")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Required")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Required {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Required {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Required")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Required")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::Required {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::Require
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Required")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Required")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Newtonsoft::Json::Required {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Newtonsoft::Json::Requir
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Required")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Required")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::Required {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::Require
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Required")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Required")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::Required {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

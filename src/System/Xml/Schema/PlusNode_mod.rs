@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+PlusNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+PlusNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlusNode {
     __cordl_parent: crate::System::Xml::Schema::InteriorNode,
 }
-#[cfg(feature = "System+Xml+Schema+PlusNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+PlusNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::PlusNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::PlusNode
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+PlusNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+PlusNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::PlusNode {
     type Target = crate::System::Xml::Schema::InteriorNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+PlusNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+PlusNode")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::PlusNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::System::Xml::Schema::PlusNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+PlusNode")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+PlusNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::PlusNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

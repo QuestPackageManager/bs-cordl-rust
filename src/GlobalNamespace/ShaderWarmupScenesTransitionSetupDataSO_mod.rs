@@ -1,10 +1,10 @@
-#[cfg(feature = "ShaderWarmupScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ShaderWarmupScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderWarmupScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
 }
-#[cfg(feature = "ShaderWarmupScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ShaderWarmupScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "ShaderWarmupScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ShaderWarmupScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ShaderWarmupScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ShaderWarmupScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ShaderWarmupScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ShaderWarmupScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

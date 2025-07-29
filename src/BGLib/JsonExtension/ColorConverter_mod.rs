@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+ColorConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Color>,
 }
-#[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+ColorConverter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::JsonExtension::ColorConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::JsonExtension::ColorCo
         false
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+ColorConverter")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::ColorConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Color>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+ColorConverter")]
 impl std::ops::DerefMut for crate::BGLib::JsonExtension::ColorConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,7 +147,7 @@ impl crate::BGLib::JsonExtension::ColorConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+ColorConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::JsonExtension::ColorConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

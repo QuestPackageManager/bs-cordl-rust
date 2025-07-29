@@ -1,4 +1,4 @@
-#[cfg(feature = "FixedUpdateVector3SmoothValue")]
+#[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedUpdateVector3SmoothValue {
@@ -6,7 +6,7 @@ pub struct FixedUpdateVector3SmoothValue {
         crate::UnityEngine::Vector3,
     >,
 }
-#[cfg(feature = "FixedUpdateVector3SmoothValue")]
+#[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
         false
     }
 }
-#[cfg(feature = "FixedUpdateVector3SmoothValue")]
+#[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
 impl std::ops::Deref for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     type Target = crate::GlobalNamespace::FixedUpdateSmoothValue_1<
         crate::UnityEngine::Vector3,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FixedUpdateVector3SmoothValue")]
+#[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FixedUpdateVector3SmoothValue")]
+#[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+TermInfoNumbers")]
+#[cfg(feature = "cordl_class_System+TermInfoNumbers")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TermInfoNumbers {
@@ -38,7 +38,7 @@ pub enum TermInfoNumbers {
     WideCharSize = 29i32,
     WidthStatusLine = 7i32,
 }
-#[cfg(feature = "System+TermInfoNumbers")]
+#[cfg(feature = "cordl_class_System+TermInfoNumbers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TermInfoNumbers {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -67,7 +67,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TermInfoNumbers {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TermInfoNumbers")]
+#[cfg(feature = "cordl_class_System+TermInfoNumbers")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TermInfoNumbers {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TermInfoNumbers {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TermInfoNumbers")]
+#[cfg(feature = "cordl_class_System+TermInfoNumbers")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TermInfoNumbers {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TermInfoNumbers 
         self
     }
 }
-#[cfg(feature = "System+TermInfoNumbers")]
+#[cfg(feature = "cordl_class_System+TermInfoNumbers")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TermInfoNumbers {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -104,7 +104,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TermInfoNumbers {
         }
     }
 }
-#[cfg(feature = "System+TermInfoNumbers")]
+#[cfg(feature = "cordl_class_System+TermInfoNumbers")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TermInfoNumbers {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "CustomNetworkConfig")]
+#[cfg(feature = "cordl_class_CustomNetworkConfig")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNetworkConfig {
@@ -22,7 +22,7 @@ pub struct CustomNetworkConfig {
     pub _forceGameLift_k__BackingField: bool,
     pub _serviceEnvironment_k__BackingField: crate::GlobalNamespace::ServiceEnvironment,
 }
-#[cfg(feature = "CustomNetworkConfig")]
+#[cfg(feature = "cordl_class_CustomNetworkConfig")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CustomNetworkConfig {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CustomNetwor
         false
     }
 }
-#[cfg(feature = "CustomNetworkConfig")]
+#[cfg(feature = "cordl_class_CustomNetworkConfig")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomNetworkConfig {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CustomNetworkConfig")]
+#[cfg(feature = "cordl_class_CustomNetworkConfig")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CustomNetworkConfig {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -394,7 +394,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CustomNetworkConfig")]
+#[cfg(feature = "cordl_class_CustomNetworkConfig")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomNetworkConfig {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

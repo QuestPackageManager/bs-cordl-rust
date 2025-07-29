@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerName")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerName")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerName {
@@ -8,7 +8,7 @@ pub struct ConnectedPlayerName {
         crate::GlobalNamespace::IConnectedPlayer,
     >,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerName")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerName")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::ConnectedPlayerName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerName {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerName")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerName")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::ConnectedPlayerName {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerName")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerName")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::ConnectedPlayerName {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerName {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerName")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerName")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::ConnectedPlayerName {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

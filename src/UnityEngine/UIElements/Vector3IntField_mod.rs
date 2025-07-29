@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector3IntField {
@@ -8,7 +8,7 @@ pub struct Vector3IntField {
         i32,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Vector3IntField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::Vector3IntField {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3IntField {
     type Target = crate::UnityEngine::UIElements::BaseCompositeField_3<
         crate::UnityEngine::Vector3Int,
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3IntField {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector3IntField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -170,7 +170,7 @@ impl crate::UnityEngine::UIElements::Vector3IntField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Vector3IntField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -180,7 +180,7 @@ for crate::UnityEngine::UIElements::Vector3IntField {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector3IntField_UxmlFactory {
@@ -191,7 +191,7 @@ pub struct Vector3IntField_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Vector3IntField_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -211,7 +211,7 @@ for crate::UnityEngine::UIElements::Vector3IntField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3IntField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vector3IntField>,
@@ -223,7 +223,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3IntField_UxmlFac
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector3IntField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -260,7 +260,7 @@ impl crate::UnityEngine::UIElements::Vector3IntField_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Vector3IntField_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -270,7 +270,7 @@ for crate::UnityEngine::UIElements::Vector3IntField_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector3IntField_UxmlTraits {
@@ -287,7 +287,7 @@ pub struct Vector3IntField_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Vector3IntField_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -307,7 +307,7 @@ for crate::UnityEngine::UIElements::Vector3IntField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3IntField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Vector3Int,
@@ -316,7 +316,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3IntField_UxmlTra
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector3IntField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -389,7 +389,7 @@ impl crate::UnityEngine::UIElements::Vector3IntField_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Vector3IntField_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

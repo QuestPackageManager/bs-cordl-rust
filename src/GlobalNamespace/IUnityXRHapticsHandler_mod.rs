@@ -1,10 +1,10 @@
-#[cfg(feature = "IUnityXRHapticsHandler")]
+#[cfg(feature = "cordl_class_IUnityXRHapticsHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IUnityXRHapticsHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IUnityXRHapticsHandler")]
+#[cfg(feature = "cordl_class_IUnityXRHapticsHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IUnityXRHapticsHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IUnityXRHapticsHandler {
         false
     }
 }
-#[cfg(feature = "IUnityXRHapticsHandler")]
+#[cfg(feature = "cordl_class_IUnityXRHapticsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::IUnityXRHapticsHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IUnityXRHapticsHandler")]
+#[cfg(feature = "cordl_class_IUnityXRHapticsHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IUnityXRHapticsHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::IUnityXRHapticsHandler {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IUnityXRHapticsHandler")]
+#[cfg(feature = "cordl_class_IUnityXRHapticsHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IUnityXRHapticsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

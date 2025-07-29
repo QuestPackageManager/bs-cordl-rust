@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputMeshUtility")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputMeshUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputMeshUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputMeshUtility")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputMeshUtility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputMeshUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::HoudiniEngineUnity::HEU_InputMeshUtility {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputMeshUtility")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputMeshUtility")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputMeshUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputMeshUtility")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputMeshUtility")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputMeshUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -509,7 +509,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputMeshUtility")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputMeshUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputMeshUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

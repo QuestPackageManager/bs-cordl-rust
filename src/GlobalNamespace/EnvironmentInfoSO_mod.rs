@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentInfoSO")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentInfoSO {
@@ -26,7 +26,7 @@ pub struct EnvironmentInfoSO {
     pub _defaultLightshowAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub _order: i32,
 }
-#[cfg(feature = "EnvironmentInfoSO")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EnvironmentInfoSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EnvironmentI
         false
     }
 }
-#[cfg(feature = "EnvironmentInfoSO")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentInfoSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentInfoSO")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentInfoSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -431,7 +431,7 @@ impl crate::GlobalNamespace::EnvironmentInfoSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentInfoSO")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentInfoSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -454,7 +454,7 @@ for crate::GlobalNamespace::EnvironmentInfoSO {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "EnvironmentInfoSO+Tags")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO+Tags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentInfoSO_Tags {
@@ -462,7 +462,7 @@ pub enum EnvironmentInfoSO_Tags {
     Branded = 1i32,
     InDevelopment = 2i32,
 }
-#[cfg(feature = "EnvironmentInfoSO+Tags")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
     type Held<'a> = Self;
@@ -492,7 +492,7 @@ for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "EnvironmentInfoSO+Tags")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
     type Type = Self;
@@ -503,7 +503,7 @@ for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "EnvironmentInfoSO+Tags")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
     type Actual = Self;
@@ -517,7 +517,7 @@ for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
         self
     }
 }
-#[cfg(feature = "EnvironmentInfoSO+Tags")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
     type Type = Self;
@@ -532,7 +532,7 @@ for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
         }
     }
 }
-#[cfg(feature = "EnvironmentInfoSO+Tags")]
+#[cfg(feature = "cordl_class_EnvironmentInfoSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentInfoSO_Tags {
     type Actual = Self;

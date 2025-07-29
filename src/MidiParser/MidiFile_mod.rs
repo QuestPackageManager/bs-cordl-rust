@@ -1,4 +1,4 @@
-#[cfg(feature = "MidiParser+MidiFile")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MidiFile {
@@ -12,7 +12,7 @@ pub struct MidiFile {
     >,
     pub tracksCount: i32,
 }
-#[cfg(feature = "MidiParser+MidiFile")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile")]
 unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MidiFile {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MidiFile {
         false
     }
 }
-#[cfg(feature = "MidiParser+MidiFile")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile")]
 impl std::ops::Deref for crate::MidiParser::MidiFile {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MidiParser+MidiFile")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile")]
 impl std::ops::DerefMut for crate::MidiParser::MidiFile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -194,7 +194,7 @@ impl crate::MidiParser::MidiFile {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MidiParser+MidiFile")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile")]
 impl quest_hook::libil2cpp::ObjectType for crate::MidiParser::MidiFile {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -203,13 +203,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::MidiParser::MidiFile {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MidiParser+MidiFile+Reader")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile+Reader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MidiFile_Reader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "MidiParser+MidiFile+Reader")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile+Reader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MidiFile_Reader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -228,14 +228,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MidiFile_Reader {
         false
     }
 }
-#[cfg(feature = "MidiParser+MidiFile+Reader")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile+Reader")]
 impl std::ops::Deref for crate::MidiParser::MidiFile_Reader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MidiParser+MidiFile+Reader")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile+Reader")]
 impl std::ops::DerefMut for crate::MidiParser::MidiFile_Reader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -432,7 +432,7 @@ impl crate::MidiParser::MidiFile_Reader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MidiParser+MidiFile+Reader")]
+#[cfg(feature = "cordl_class_MidiParser+MidiFile+Reader")]
 impl quest_hook::libil2cpp::ObjectType for crate::MidiParser::MidiFile_Reader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

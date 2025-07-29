@@ -1,4 +1,4 @@
-#[cfg(feature = "StateBuffer_3")]
+#[cfg(feature = "cordl_class_StateBuffer_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StateBuffer_3<
@@ -35,7 +35,7 @@ pub struct StateBuffer_3<
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
-#[cfg(feature = "StateBuffer_3")]
+#[cfg(feature = "cordl_class_StateBuffer_3")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -72,7 +72,7 @@ for crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState> {
         false
     }
 }
-#[cfg(feature = "StateBuffer_3")]
+#[cfg(feature = "cordl_class_StateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -83,7 +83,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StateBuffer_3")]
+#[cfg(feature = "cordl_class_StateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -390,7 +390,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StateBuffer_3")]
+#[cfg(feature = "cordl_class_StateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -404,7 +404,7 @@ for crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "StateBuffer_3+InterpolationDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+InterpolationDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StateBuffer_3_InterpolationDelegate<
@@ -417,7 +417,7 @@ pub struct StateBuffer_3_InterpolationDelegate<
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
-#[cfg(feature = "StateBuffer_3+InterpolationDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+InterpolationDelegate")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -461,7 +461,7 @@ for crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
         false
     }
 }
-#[cfg(feature = "StateBuffer_3+InterpolationDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+InterpolationDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -477,7 +477,7 @@ for crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StateBuffer_3+InterpolationDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+InterpolationDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -689,7 +689,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StateBuffer_3+InterpolationDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+InterpolationDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -707,7 +707,7 @@ for crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "StateBuffer_3+SmoothingDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+SmoothingDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StateBuffer_3_SmoothingDelegate<
@@ -720,7 +720,7 @@ pub struct StateBuffer_3_SmoothingDelegate<
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
-#[cfg(feature = "StateBuffer_3+SmoothingDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+SmoothingDelegate")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -760,7 +760,7 @@ for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, 
         false
     }
 }
-#[cfg(feature = "StateBuffer_3+SmoothingDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+SmoothingDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -772,7 +772,7 @@ for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StateBuffer_3+SmoothingDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+SmoothingDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -962,7 +962,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StateBuffer_3+SmoothingDelegate")]
+#[cfg(feature = "cordl_class_StateBuffer_3+SmoothingDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -976,7 +976,7 @@ for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+#[cfg(feature = "cordl_class_StateBuffer_3+TimestampedStateTable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StateBuffer_3_TimestampedStateTable<
@@ -992,7 +992,7 @@ pub struct StateBuffer_3_TimestampedStateTable<
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
-#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+#[cfg(feature = "cordl_class_StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -1046,7 +1046,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+#[cfg(feature = "cordl_class_StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -1065,7 +1065,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+#[cfg(feature = "cordl_class_StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -1087,7 +1087,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
         self
     }
 }
-#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+#[cfg(feature = "cordl_class_StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -1110,7 +1110,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
         }
     }
 }
-#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+#[cfg(feature = "cordl_class_StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -1132,7 +1132,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
         actual
     }
 }
-#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
+#[cfg(feature = "cordl_class_StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

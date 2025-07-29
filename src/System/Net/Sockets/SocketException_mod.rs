@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+Sockets+SocketException")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SocketException {
     __cordl_parent: crate::System::ComponentModel::Win32Exception,
     pub m_EndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
 }
-#[cfg(feature = "System+Net+Sockets+SocketException")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::SocketException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Net::Sockets::SocketException {
         false
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketException")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketException")]
 impl std::ops::Deref for crate::System::Net::Sockets::SocketException {
     type Target = crate::System::ComponentModel::Win32Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketException")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketException")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::SocketException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -310,7 +310,7 @@ impl crate::System::Net::Sockets::SocketException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketException")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Sockets::SocketException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+JointProjectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+JointProjectionMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JointProjectionMode {
@@ -7,7 +7,7 @@ pub enum JointProjectionMode {
     PositionAndRotation = 1i32,
     PositionOnly = 2i32,
 }
-#[cfg(feature = "UnityEngine+JointProjectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+JointProjectionMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::JointProjectionMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::JointProjectionM
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+JointProjectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+JointProjectionMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::JointProjectionMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::JointProject
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+JointProjectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+JointProjectionMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::JointProjectionMode {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::JointProjectionMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+JointProjectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+JointProjectionMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::JointProjectionMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::JointProject
         }
     }
 }
-#[cfg(feature = "UnityEngine+JointProjectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+JointProjectionMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::JointProjectionMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

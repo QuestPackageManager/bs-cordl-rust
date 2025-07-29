@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexFCD")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RegexFCD {
@@ -12,7 +12,7 @@ pub struct RegexFCD {
     pub _skipchild: bool,
     pub _failed: bool,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexFCD")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexFCD {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::System::Text::RegularExpressions::RegexFCD {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexFCD")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::RegexFCD {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::System::Text::RegularExpressions::RegexFCD {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexFCD")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::RegexFCD {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::System::Text::RegularExpressions::RegexFCD {
         self
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexFCD")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::RegexFCD {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::System::Text::RegularExpressions::RegexFCD {
         }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexFCD")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::RegexFCD {
     type Actual = Self;
@@ -96,7 +96,7 @@ for crate::System::Text::RegularExpressions::RegexFCD {
         actual
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexFCD")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Text::RegularExpressions::RegexFCD {
     type Type = Self;

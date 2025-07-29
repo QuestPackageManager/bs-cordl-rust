@@ -1,4 +1,4 @@
-#[cfg(feature = "SaberSwingRatingCounter")]
+#[cfg(feature = "cordl_class_SaberSwingRatingCounter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberSwingRatingCounter {
@@ -39,7 +39,7 @@ pub struct SaberSwingRatingCounter {
     pub _cutBottomPos: crate::UnityEngine::Vector3,
     pub _finished: bool,
 }
-#[cfg(feature = "SaberSwingRatingCounter")]
+#[cfg(feature = "cordl_class_SaberSwingRatingCounter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SaberSwingRatingCounter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -59,14 +59,14 @@ for crate::GlobalNamespace::SaberSwingRatingCounter {
         false
     }
 }
-#[cfg(feature = "SaberSwingRatingCounter")]
+#[cfg(feature = "cordl_class_SaberSwingRatingCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberSwingRatingCounter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SaberSwingRatingCounter")]
+#[cfg(feature = "cordl_class_SaberSwingRatingCounter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SaberSwingRatingCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -382,7 +382,7 @@ impl crate::GlobalNamespace::SaberSwingRatingCounter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SaberSwingRatingCounter")]
+#[cfg(feature = "cordl_class_SaberSwingRatingCounter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SaberSwingRatingCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

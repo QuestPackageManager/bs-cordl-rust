@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct EqualInstruction_EqualDoubleLiftedToNull {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::EqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {

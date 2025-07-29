@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemReader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PemReader {
@@ -7,7 +7,7 @@ pub struct PemReader {
         crate::Org::BouncyCastle::OpenSsl::IPasswordFinder,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemReader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemReader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::OpenSsl::PemReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::OpenSsl::PemReader {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemReader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemReader")]
 impl std::ops::Deref for crate::Org::BouncyCastle::OpenSsl::PemReader {
     type Target = crate::Org::BouncyCastle::Utilities::IO::Pem::PemReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemReader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemReader")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::OpenSsl::PemReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -458,7 +458,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemReader")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::OpenSsl::PemReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

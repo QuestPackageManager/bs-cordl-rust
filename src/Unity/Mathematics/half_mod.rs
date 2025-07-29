@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Mathematics+half")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct half {
     pub value: u16,
 }
-#[cfg(feature = "Unity+Mathematics+half")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::half {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::half {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+half")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::half {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::half 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+half")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::half {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::half
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+half")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::half {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::half 
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+half")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::half {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::half {
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+half")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+half")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::half {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

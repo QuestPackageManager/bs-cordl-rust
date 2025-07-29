@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NumericConvertInstruction_Checked {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NumericConvertInstruction_Checked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +28,18 @@ for crate::GlobalNamespace::NumericConvertInstruction_Checked {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
+)]
 impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_Checked {
     type Target = crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
+)]
 impl std::ops::DerefMut for crate::GlobalNamespace::NumericConvertInstruction_Checked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -246,7 +254,9 @@ impl crate::GlobalNamespace::NumericConvertInstruction_Checked {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NumericConvertInstruction_Checked {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

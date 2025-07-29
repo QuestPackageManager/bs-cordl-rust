@@ -1,4 +1,4 @@
-#[cfg(feature = "GameLiftNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_GameLiftNetworkPlayerModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftNetworkPlayerModel {
@@ -15,7 +15,7 @@ pub struct GameLiftNetworkPlayerModel {
         crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams,
     >,
 }
-#[cfg(feature = "GameLiftNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_GameLiftNetworkPlayerModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         false
     }
 }
-#[cfg(feature = "GameLiftNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_GameLiftNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
     type Target = crate::GlobalNamespace::NetworkPlayerModel_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
@@ -44,7 +44,7 @@ impl std::ops::Deref for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameLiftNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_GameLiftNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -406,7 +406,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameLiftNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_GameLiftNetworkPlayerModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

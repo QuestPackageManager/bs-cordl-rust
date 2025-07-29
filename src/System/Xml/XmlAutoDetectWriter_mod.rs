@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlAutoDetectWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAutoDetectWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAutoDetectWriter {
@@ -10,7 +10,7 @@ pub struct XmlAutoDetectWriter {
     pub textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     pub strm: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
-#[cfg(feature = "System+Xml+XmlAutoDetectWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAutoDetectWriter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlAutoDetectWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlAutoDetectWri
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlAutoDetectWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAutoDetectWriter")]
 impl std::ops::Deref for crate::System::Xml::XmlAutoDetectWriter {
     type Target = crate::System::Xml::XmlRawWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlAutoDetectWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAutoDetectWriter")]
 impl std::ops::DerefMut for crate::System::Xml::XmlAutoDetectWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1148,7 +1148,7 @@ impl crate::System::Xml::XmlAutoDetectWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlAutoDetectWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAutoDetectWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlAutoDetectWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

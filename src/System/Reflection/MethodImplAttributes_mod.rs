@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+MethodImplAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodImplAttributes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MethodImplAttributes {
@@ -18,7 +18,7 @@ pub enum MethodImplAttributes {
     SecurityMitigations = 1024i32,
     Synchronized = 32i32,
 }
-#[cfg(feature = "System+Reflection+MethodImplAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodImplAttributes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::MethodImplAttributes {
     type Held<'a> = Self;
@@ -48,7 +48,7 @@ for crate::System::Reflection::MethodImplAttributes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+MethodImplAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodImplAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::MethodImplAttributes {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::System::Reflection::MethodImplAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+MethodImplAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodImplAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::MethodImplAttributes {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::System::Reflection::MethodImplAttributes {
         self
     }
 }
-#[cfg(feature = "System+Reflection+MethodImplAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodImplAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::MethodImplAttributes {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::System::Reflection::MethodImplAttributes {
         }
     }
 }
-#[cfg(feature = "System+Reflection+MethodImplAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+MethodImplAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::MethodImplAttributes {
     type Actual = Self;

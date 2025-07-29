@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Space")]
+#[cfg(feature = "cordl_class_UnityEngine+Space")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Space {
@@ -6,7 +6,7 @@ pub enum Space {
     _cordl_Self = 1i32,
     World = 0i32,
 }
-#[cfg(feature = "UnityEngine+Space")]
+#[cfg(feature = "cordl_class_UnityEngine+Space")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Space {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Space {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Space")]
+#[cfg(feature = "cordl_class_UnityEngine+Space")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Space {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Space {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Space")]
+#[cfg(feature = "cordl_class_UnityEngine+Space")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Space {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Space {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Space")]
+#[cfg(feature = "cordl_class_UnityEngine+Space")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Space {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Space {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Space")]
+#[cfg(feature = "cordl_class_UnityEngine+Space")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Space {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

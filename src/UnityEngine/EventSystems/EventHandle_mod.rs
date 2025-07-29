@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+EventHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventHandle")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventHandle {
@@ -6,7 +6,7 @@ pub enum EventHandle {
     Unused = 0i32,
     Used = 1i32,
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::EventHandle {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::EventSystems::EventHandle {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventHandle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::EventHandle {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::EventSystems::EventHandle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::EventHandle {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::EventSystems::EventHandle {
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventHandle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::EventHandle {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::EventSystems::EventHandle {
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+EventHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventHandle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::EventHandle {
     type Actual = Self;

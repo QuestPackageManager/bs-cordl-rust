@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Reflection+PropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+PropertyInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyInfo {
     __cordl_parent: crate::System::Reflection::MemberInfo,
 }
-#[cfg(feature = "System+Reflection+PropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+PropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::PropertyInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::PropertyI
         false
     }
 }
-#[cfg(feature = "System+Reflection+PropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+PropertyInfo")]
 impl std::ops::Deref for crate::System::Reflection::PropertyInfo {
     type Target = crate::System::Reflection::MemberInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+PropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+PropertyInfo")]
 impl std::ops::DerefMut for crate::System::Reflection::PropertyInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -701,7 +701,7 @@ impl crate::System::Reflection::PropertyInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+PropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+PropertyInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::PropertyInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

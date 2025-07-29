@@ -1,4 +1,4 @@
-#[cfg(feature = "FloatTransitionSO")]
+#[cfg(feature = "cordl_class_FloatTransitionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatTransitionSO {
@@ -10,7 +10,7 @@ pub struct FloatTransitionSO {
     pub _selectedState: f32,
     pub _selectedAndHighlightedState: f32,
 }
-#[cfg(feature = "FloatTransitionSO")]
+#[cfg(feature = "cordl_class_FloatTransitionSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FloatTransitionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FloatTransit
         false
     }
 }
-#[cfg(feature = "FloatTransitionSO")]
+#[cfg(feature = "cordl_class_FloatTransitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatTransitionSO {
     type Target = crate::GlobalNamespace::BaseTransitionSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FloatTransitionSO")]
+#[cfg(feature = "cordl_class_FloatTransitionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FloatTransitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -177,7 +177,7 @@ impl crate::GlobalNamespace::FloatTransitionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FloatTransitionSO")]
+#[cfg(feature = "cordl_class_FloatTransitionSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FloatTransitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

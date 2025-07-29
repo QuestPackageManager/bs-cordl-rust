@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRLayoutBuilder")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRLayoutBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRLayoutBuilder {
@@ -9,7 +9,7 @@ pub struct XRLayoutBuilder {
         crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRLayoutBuilder")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRLayoutBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRLayoutBuilder")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRLayoutBuilder")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRLayoutBuilder")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRLayoutBuilder")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -340,7 +340,7 @@ impl crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRLayoutBuilder")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRLayoutBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

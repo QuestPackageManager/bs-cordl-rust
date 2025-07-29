@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+FtpMethodFlags")]
+#[cfg(feature = "cordl_class_System+Net+FtpMethodFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FtpMethodFlags {
@@ -14,7 +14,7 @@ pub enum FtpMethodFlags {
     ShouldParseForResponseUri = 64i32,
     TakesParameter = 4i32,
 }
-#[cfg(feature = "System+Net+FtpMethodFlags")]
+#[cfg(feature = "cordl_class_System+Net+FtpMethodFlags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpMethodFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpMethodFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+FtpMethodFlags")]
+#[cfg(feature = "cordl_class_System+Net+FtpMethodFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::FtpMethodFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::FtpMethodFla
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+FtpMethodFlags")]
+#[cfg(feature = "cordl_class_System+Net+FtpMethodFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::FtpMethodFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,7 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::FtpMethodFl
         self
     }
 }
-#[cfg(feature = "System+Net+FtpMethodFlags")]
+#[cfg(feature = "cordl_class_System+Net+FtpMethodFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::FtpMethodFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,7 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::FtpMethodFla
         }
     }
 }
-#[cfg(feature = "System+Net+FtpMethodFlags")]
+#[cfg(feature = "cordl_class_System+Net+FtpMethodFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::FtpMethodFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

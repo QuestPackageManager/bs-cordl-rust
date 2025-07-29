@@ -1,10 +1,10 @@
-#[cfg(feature = "MockBeatmapDataConverter")]
+#[cfg(feature = "cordl_class_MockBeatmapDataConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockBeatmapDataConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "MockBeatmapDataConverter")]
+#[cfg(feature = "cordl_class_MockBeatmapDataConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockBeatmapDataConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::MockBeatmapDataConverter {
         false
     }
 }
-#[cfg(feature = "MockBeatmapDataConverter")]
+#[cfg(feature = "cordl_class_MockBeatmapDataConverter")]
 impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapDataConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockBeatmapDataConverter")]
+#[cfg(feature = "cordl_class_MockBeatmapDataConverter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapDataConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockBeatmapDataConverter")]
+#[cfg(feature = "cordl_class_MockBeatmapDataConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MockBeatmapDataConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticAccessorAttribute {
@@ -8,7 +8,7 @@ pub struct StaticAccessorAttribute {
     >,
     pub _Type_k__BackingField: crate::UnityEngine::Bindings::StaticAccessorType,
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Bindings::StaticAccessorAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::UnityEngine::Bindings::StaticAccessorAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::StaticAccessorAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Bindings::StaticAccessorAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,7 +173,7 @@ impl crate::UnityEngine::Bindings::StaticAccessorAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Bindings::StaticAccessorAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

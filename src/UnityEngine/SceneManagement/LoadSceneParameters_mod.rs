@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LoadSceneParameters")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LoadSceneParameters {
     pub m_LoadSceneMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
     pub m_LocalPhysicsMode: crate::UnityEngine::SceneManagement::LocalPhysicsMode,
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LoadSceneParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::SceneManagement::LoadSceneParameters {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneParameters {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LoadSceneParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SceneManagement::LoadSceneParameters {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LoadSceneParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SceneManagement::LoadSceneParameters {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneParameters {
         self
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LoadSceneParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SceneManagement::LoadSceneParameters {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneParameters {
         }
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LoadSceneParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SceneManagement::LoadSceneParameters {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneParameters {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+LoadSceneParameters")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::SceneManagement::LoadSceneParameters {
     type Type = Self;

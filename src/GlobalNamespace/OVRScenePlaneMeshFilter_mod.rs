@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRScenePlaneMeshFilter")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRScenePlaneMeshFilter {
@@ -10,7 +10,7 @@ pub struct OVRScenePlaneMeshFilter {
     pub _boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
     pub _triangles: crate::Unity::Collections::NativeArray_1<i32>,
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         false
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -199,14 +199,14 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     pub Boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
     pub Triangles: crate::Unity::Collections::NativeArray_1<i32>,
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Held<'a> = Self;
@@ -236,7 +236,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Type = Self;
@@ -247,7 +247,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Actual = Self;
@@ -261,7 +261,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         self
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Type = Self;
@@ -276,7 +276,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         }
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Actual = Self;
@@ -290,7 +290,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         actual
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Type = Self;
@@ -400,14 +400,14 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         todo!()
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     pub _Count_k__BackingField: i32,
     pub _data: crate::Unity::Collections::NativeArray_1<i32>,
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Held<'a> = Self;
@@ -437,7 +437,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Type = Self;
@@ -448,7 +448,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Actual = Self;
@@ -462,7 +462,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
         self
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Type = Self;
@@ -477,7 +477,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
         }
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Actual = Self;
@@ -491,7 +491,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
         actual
     }
 }
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+#[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Type = Self;

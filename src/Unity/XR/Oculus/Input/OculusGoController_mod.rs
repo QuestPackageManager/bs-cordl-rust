@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusGoController")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusGoController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusGoController {
     __cordl_parent: crate::Unity::XR::Oculus::Input::GearVRTrackedController,
 }
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusGoController")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusGoController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::Input::OculusGoController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::XR::Oculus::Input::OculusGoController {
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusGoController")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusGoController")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Input::OculusGoController {
     type Target = crate::Unity::XR::Oculus::Input::GearVRTrackedController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusGoController")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusGoController")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Input::OculusGoController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Unity::XR::Oculus::Input::OculusGoController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusGoController")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusGoController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::XR::Oculus::Input::OculusGoController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

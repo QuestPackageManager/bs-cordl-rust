@@ -1,11 +1,11 @@
-#[cfg(feature = "CustomLevelsSettings")]
+#[cfg(feature = "cordl_class_CustomLevelsSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomLevelsSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enabled: bool,
 }
-#[cfg(feature = "CustomLevelsSettings")]
+#[cfg(feature = "cordl_class_CustomLevelsSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CustomLevelsSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::CustomLevelsSettings {
         false
     }
 }
-#[cfg(feature = "CustomLevelsSettings")]
+#[cfg(feature = "cordl_class_CustomLevelsSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomLevelsSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CustomLevelsSettings")]
+#[cfg(feature = "cordl_class_CustomLevelsSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CustomLevelsSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::CustomLevelsSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CustomLevelsSettings")]
+#[cfg(feature = "cordl_class_CustomLevelsSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomLevelsSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

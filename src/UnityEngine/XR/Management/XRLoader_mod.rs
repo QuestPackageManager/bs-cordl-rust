@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRLoader {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::Management::XRLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::XR::Management::XRLoader {
         false
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoader")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRLoader {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoader")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::UnityEngine::XR::Management::XRLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoader")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::Management::XRLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+PrivateKey")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrivateKey {
@@ -8,7 +8,7 @@ pub struct PrivateKey {
     pub weak: bool,
     pub keyType: i32,
 }
-#[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+PrivateKey")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Authenticode::PrivateKey {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Mono::Security::Authenticode::PrivateKey {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+PrivateKey")]
 impl std::ops::Deref for crate::Mono::Security::Authenticode::PrivateKey {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+PrivateKey")]
 impl std::ops::DerefMut for crate::Mono::Security::Authenticode::PrivateKey {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -255,7 +255,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+PrivateKey")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Authenticode::PrivateKey {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

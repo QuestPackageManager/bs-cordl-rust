@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+ExceptionHandlingClause")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClause")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExceptionHandlingClause {
@@ -11,7 +11,7 @@ pub struct ExceptionHandlingClause {
     pub handler_offset: i32,
     pub handler_length: i32,
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClause")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClause")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::ExceptionHandlingClause {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Reflection::ExceptionHandlingClause {
         false
     }
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClause")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClause")]
 impl std::ops::Deref for crate::System::Reflection::ExceptionHandlingClause {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClause")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClause")]
 impl std::ops::DerefMut for crate::System::Reflection::ExceptionHandlingClause {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::System::Reflection::ExceptionHandlingClause {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClause")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClause")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::ExceptionHandlingClause {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

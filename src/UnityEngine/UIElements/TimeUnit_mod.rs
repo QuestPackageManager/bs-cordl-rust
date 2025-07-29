@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimeUnit")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeUnit {
@@ -6,7 +6,7 @@ pub enum TimeUnit {
     Millisecond = 1i32,
     Second = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TimeUnit {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Time
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TimeUnit {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::TimeUnit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TimeUnit {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::TimeUnit {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TimeUnit {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::TimeUnit {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::TimeUnit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

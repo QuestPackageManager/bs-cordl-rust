@@ -1,10 +1,10 @@
-#[cfg(feature = "HMUI+ImageViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ImageViewBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageViewBase {
     __cordl_parent: crate::UnityEngine::UI::Image,
 }
-#[cfg(feature = "HMUI+ImageViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ImageViewBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ImageViewBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ImageViewBase {
         false
     }
 }
-#[cfg(feature = "HMUI+ImageViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ImageViewBase")]
 impl std::ops::Deref for crate::HMUI::ImageViewBase {
     type Target = crate::UnityEngine::UI::Image;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ImageViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ImageViewBase")]
 impl std::ops::DerefMut for crate::HMUI::ImageViewBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -204,7 +204,7 @@ impl crate::HMUI::ImageViewBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ImageViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ImageViewBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ImageViewBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

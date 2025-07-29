@@ -1,4 +1,4 @@
-#[cfg(feature = "SmallBufferPool")]
+#[cfg(feature = "cordl_class_SmallBufferPool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmallBufferPool {
@@ -24,7 +24,7 @@ pub struct SmallBufferPool {
         >,
     >,
 }
-#[cfg(feature = "SmallBufferPool")]
+#[cfg(feature = "cordl_class_SmallBufferPool")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SmallBufferPool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SmallBufferP
         false
     }
 }
-#[cfg(feature = "SmallBufferPool")]
+#[cfg(feature = "cordl_class_SmallBufferPool")]
 impl std::ops::Deref for crate::GlobalNamespace::SmallBufferPool {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SmallBufferPool")]
+#[cfg(feature = "cordl_class_SmallBufferPool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SmallBufferPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -213,7 +213,7 @@ impl crate::GlobalNamespace::SmallBufferPool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SmallBufferPool")]
+#[cfg(feature = "cordl_class_SmallBufferPool")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SmallBufferPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

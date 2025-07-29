@@ -1,10 +1,10 @@
-#[cfg(feature = "TupleListExtensions")]
+#[cfg(feature = "cordl_class_TupleListExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TupleListExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "TupleListExtensions")]
+#[cfg(feature = "cordl_class_TupleListExtensions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TupleListExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TupleListExt
         false
     }
 }
-#[cfg(feature = "TupleListExtensions")]
+#[cfg(feature = "cordl_class_TupleListExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::TupleListExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TupleListExtensions")]
+#[cfg(feature = "cordl_class_TupleListExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TupleListExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -190,7 +190,7 @@ impl crate::GlobalNamespace::TupleListExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TupleListExtensions")]
+#[cfg(feature = "cordl_class_TupleListExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TupleListExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

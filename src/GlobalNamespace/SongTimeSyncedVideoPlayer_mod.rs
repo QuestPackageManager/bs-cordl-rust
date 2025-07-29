@@ -1,4 +1,4 @@
-#[cfg(feature = "SongTimeSyncedVideoPlayer")]
+#[cfg(feature = "cordl_class_SongTimeSyncedVideoPlayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongTimeSyncedVideoPlayer {
@@ -17,7 +17,7 @@ pub struct SongTimeSyncedVideoPlayer {
         crate::UnityEngine::Coroutine,
     >,
 }
-#[cfg(feature = "SongTimeSyncedVideoPlayer")]
+#[cfg(feature = "cordl_class_SongTimeSyncedVideoPlayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
         false
     }
 }
-#[cfg(feature = "SongTimeSyncedVideoPlayer")]
+#[cfg(feature = "cordl_class_SongTimeSyncedVideoPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongTimeSyncedVideoPlayer")]
+#[cfg(feature = "cordl_class_SongTimeSyncedVideoPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -372,7 +372,7 @@ impl crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongTimeSyncedVideoPlayer")]
+#[cfg(feature = "cordl_class_SongTimeSyncedVideoPlayer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

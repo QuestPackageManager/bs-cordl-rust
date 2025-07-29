@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexCharClass {
@@ -15,7 +15,7 @@ pub struct RegexCharClass {
         crate::System::Text::RegularExpressions::RegexCharClass,
     >,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexCharClass {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::System::Text::RegularExpressions::RegexCharClass {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexCharClass {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexCharClass {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1167,7 +1167,7 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::RegexCharClass {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1177,7 +1177,9 @@ for crate::System::Text::RegularExpressions::RegexCharClass {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RegexCharClass_LowerCaseMapping {
@@ -1186,7 +1188,9 @@ pub struct RegexCharClass_LowerCaseMapping {
     pub LcOp: i32,
     pub Data: i32,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Held<'a> = Self;
@@ -1216,7 +1220,9 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Type = Self;
@@ -1227,7 +1233,9 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Actual = Self;
@@ -1241,7 +1249,9 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
         self
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Type = Self;
@@ -1256,7 +1266,9 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
         }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Actual = Self;
@@ -1270,7 +1282,9 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
         actual
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Type = Self;
@@ -1313,14 +1327,14 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RegexCharClass_SingleRange {
     pub First: char,
     pub Last: char,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Held<'a> = Self;
@@ -1350,7 +1364,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Type = Self;
@@ -1361,7 +1375,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Actual = Self;
@@ -1375,7 +1389,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
         self
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Type = Self;
@@ -1390,7 +1404,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
         }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Actual = Self;
@@ -1404,7 +1418,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
         actual
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Type = Self;
@@ -1445,13 +1459,17 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexCharClass_SingleRangeComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1471,7 +1489,9 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer 
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer"
+)]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1479,7 +1499,9 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer"
+)]
 impl std::ops::DerefMut
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1547,7 +1569,9 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
+#[cfg(
+    feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

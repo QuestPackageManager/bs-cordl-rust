@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+SupportsChildTracksAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SupportsChildTracksAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SupportsChildTracksAttribute {
@@ -6,7 +6,7 @@ pub struct SupportsChildTracksAttribute {
     pub childType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub levels: i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+SupportsChildTracksAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SupportsChildTracksAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::SupportsChildTracksAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::UnityEngine::Timeline::SupportsChildTracksAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SupportsChildTracksAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SupportsChildTracksAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::SupportsChildTracksAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SupportsChildTracksAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SupportsChildTracksAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::SupportsChildTracksAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::UnityEngine::Timeline::SupportsChildTracksAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SupportsChildTracksAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SupportsChildTracksAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::SupportsChildTracksAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

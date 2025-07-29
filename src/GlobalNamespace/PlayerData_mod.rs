@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerData")]
+#[cfg(feature = "cordl_class_PlayerData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerData {
@@ -85,7 +85,7 @@ pub struct PlayerData {
         crate::System::Action,
     >,
 }
-#[cfg(feature = "PlayerData")]
+#[cfg(feature = "cordl_class_PlayerData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -104,14 +104,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerData {
         false
     }
 }
-#[cfg(feature = "PlayerData")]
+#[cfg(feature = "cordl_class_PlayerData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerData")]
+#[cfg(feature = "cordl_class_PlayerData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3055,7 +3055,7 @@ impl crate::GlobalNamespace::PlayerData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerData")]
+#[cfg(feature = "cordl_class_PlayerData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

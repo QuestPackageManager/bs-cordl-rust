@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed25519ctxSigner {
@@ -15,7 +15,7 @@ pub struct Ed25519ctxSigner {
         crate::Org::BouncyCastle::Crypto::Parameters::Ed25519PublicKeyParameters,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -285,7 +285,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -309,13 +309,13 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed25519ctxSigner_Buffer {
     __cordl_parent: crate::System::IO::MemoryStream,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -335,7 +335,7 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
     type Target = crate::System::IO::MemoryStream;
@@ -343,7 +343,7 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -482,7 +482,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

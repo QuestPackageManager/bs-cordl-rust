@@ -1,4 +1,4 @@
-#[cfg(feature = "HEU_ScriptParameterExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptParameterExample")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ScriptParameterExample {
@@ -10,7 +10,7 @@ pub struct HEU_ScriptParameterExample {
     pub _updateRate: f32,
     pub _scale: f32,
 }
-#[cfg(feature = "HEU_ScriptParameterExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptParameterExample")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HEU_ScriptParameterExample {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::HEU_ScriptParameterExample {
         false
     }
 }
-#[cfg(feature = "HEU_ScriptParameterExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptParameterExample")]
 impl std::ops::Deref for crate::GlobalNamespace::HEU_ScriptParameterExample {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HEU_ScriptParameterExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptParameterExample")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HEU_ScriptParameterExample {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::HEU_ScriptParameterExample {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HEU_ScriptParameterExample")]
+#[cfg(feature = "cordl_class_HEU_ScriptParameterExample")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HEU_ScriptParameterExample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

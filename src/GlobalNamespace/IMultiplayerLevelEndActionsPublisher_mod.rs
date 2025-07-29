@@ -1,10 +1,10 @@
-#[cfg(feature = "IMultiplayerLevelEndActionsPublisher")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsPublisher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMultiplayerLevelEndActionsPublisher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IMultiplayerLevelEndActionsPublisher")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsPublisher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
         false
     }
 }
-#[cfg(feature = "IMultiplayerLevelEndActionsPublisher")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsPublisher")]
 impl std::ops::Deref for crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IMultiplayerLevelEndActionsPublisher")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsPublisher")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -198,7 +198,7 @@ impl crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IMultiplayerLevelEndActionsPublisher")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsPublisher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

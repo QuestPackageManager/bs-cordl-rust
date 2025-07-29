@@ -1,4 +1,4 @@
-#[cfg(feature = "BufferedLightColorGroupEffect")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffect {
@@ -29,7 +29,7 @@ pub struct BufferedLightColorGroupEffect {
     pub _useBoostColors: bool,
     pub _didReceiveEventThisFrame: bool,
 }
-#[cfg(feature = "BufferedLightColorGroupEffect")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BufferedLightColorGroupEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::BufferedLightColorGroupEffect {
         false
     }
 }
-#[cfg(feature = "BufferedLightColorGroupEffect")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::BufferedLightColorGroupEffect {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BufferedLightColorGroupEffect")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BufferedLightColorGroupEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -265,7 +265,7 @@ impl crate::GlobalNamespace::BufferedLightColorGroupEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BufferedLightColorGroupEffect")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BufferedLightColorGroupEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -275,7 +275,7 @@ for crate::GlobalNamespace::BufferedLightColorGroupEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffect_InitData {
@@ -285,7 +285,7 @@ pub struct BufferedLightColorGroupEffect_InitData {
         crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
 }
-#[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -305,14 +305,14 @@ for crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
         false
     }
 }
-#[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -371,7 +371,7 @@ impl crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
+#[cfg(feature = "cordl_class_BufferedLightColorGroupEffect+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

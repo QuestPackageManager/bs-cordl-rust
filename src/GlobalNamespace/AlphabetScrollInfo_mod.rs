@@ -1,10 +1,10 @@
-#[cfg(feature = "AlphabetScrollInfo")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlphabetScrollInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "AlphabetScrollInfo")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AlphabetScrollInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AlphabetScro
         false
     }
 }
-#[cfg(feature = "AlphabetScrollInfo")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::AlphabetScrollInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AlphabetScrollInfo")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AlphabetScrollInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::AlphabetScrollInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AlphabetScrollInfo")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AlphabetScrollInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -78,7 +78,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AlphabetScrol
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AlphabetScrollInfo+Data")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo+Data")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlphabetScrollInfo_Data {
@@ -86,7 +86,7 @@ pub struct AlphabetScrollInfo_Data {
     pub character: char,
     pub cellIdx: i32,
 }
-#[cfg(feature = "AlphabetScrollInfo+Data")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AlphabetScrollInfo_Data {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -106,14 +106,14 @@ for crate::GlobalNamespace::AlphabetScrollInfo_Data {
         false
     }
 }
-#[cfg(feature = "AlphabetScrollInfo+Data")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo+Data")]
 impl std::ops::Deref for crate::GlobalNamespace::AlphabetScrollInfo_Data {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AlphabetScrollInfo+Data")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo+Data")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AlphabetScrollInfo_Data {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::GlobalNamespace::AlphabetScrollInfo_Data {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AlphabetScrollInfo+Data")]
+#[cfg(feature = "cordl_class_AlphabetScrollInfo+Data")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AlphabetScrollInfo_Data {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

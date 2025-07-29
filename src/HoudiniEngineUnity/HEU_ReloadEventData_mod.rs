@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_ReloadEventData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ReloadEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ReloadEventData {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_AssetEventData,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ReloadEventData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ReloadEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_ReloadEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::HoudiniEngineUnity::HEU_ReloadEventData {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ReloadEventData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ReloadEventData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ReloadEventData {
     type Target = crate::HoudiniEngineUnity::HEU_AssetEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ReloadEventData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ReloadEventData")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_ReloadEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::HoudiniEngineUnity::HEU_ReloadEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_ReloadEventData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ReloadEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_ReloadEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

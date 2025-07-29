@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Threading+SynchronizationContext")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SynchronizationContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _props: crate::System::Threading::SynchronizationContextProperties,
 }
-#[cfg(feature = "System+Threading+SynchronizationContext")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::SynchronizationContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Threading::SynchronizationContext {
         false
     }
 }
-#[cfg(feature = "System+Threading+SynchronizationContext")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationContext")]
 impl std::ops::Deref for crate::System::Threading::SynchronizationContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+SynchronizationContext")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationContext")]
 impl std::ops::DerefMut for crate::System::Threading::SynchronizationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -443,7 +443,7 @@ impl crate::System::Threading::SynchronizationContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+SynchronizationContext")]
+#[cfg(feature = "cordl_class_System+Threading+SynchronizationContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::SynchronizationContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

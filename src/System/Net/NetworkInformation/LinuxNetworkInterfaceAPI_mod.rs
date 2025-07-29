@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LinuxNetworkInterfaceAPI {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI,
 }
-#[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
     type Target = crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI;
@@ -32,7 +32,7 @@ for crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -163,7 +163,7 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

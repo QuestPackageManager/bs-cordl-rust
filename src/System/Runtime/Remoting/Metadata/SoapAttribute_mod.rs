@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoapAttribute {
@@ -7,7 +7,7 @@ pub struct SoapAttribute {
     pub ProtXmlNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ReflectInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Metadata::SoapAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Runtime::Remoting::Metadata::SoapAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapAttribute")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Metadata::SoapAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapAttribute")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Metadata::SoapAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,7 +141,7 @@ impl crate::System::Runtime::Remoting::Metadata::SoapAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Metadata::SoapAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

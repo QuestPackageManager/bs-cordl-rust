@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapEventTransitionType")]
+#[cfg(feature = "cordl_class_BeatmapEventTransitionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapEventTransitionType {
@@ -7,7 +7,7 @@ pub enum BeatmapEventTransitionType {
     Instant = 0i32,
     Interpolate = 1i32,
 }
-#[cfg(feature = "BeatmapEventTransitionType")]
+#[cfg(feature = "cordl_class_BeatmapEventTransitionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEventTransitionType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::BeatmapEventTransitionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapEventTransitionType")]
+#[cfg(feature = "cordl_class_BeatmapEventTransitionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapEventTransitionType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::BeatmapEventTransitionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapEventTransitionType")]
+#[cfg(feature = "cordl_class_BeatmapEventTransitionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapEventTransitionType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::BeatmapEventTransitionType {
         self
     }
 }
-#[cfg(feature = "BeatmapEventTransitionType")]
+#[cfg(feature = "cordl_class_BeatmapEventTransitionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapEventTransitionType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::BeatmapEventTransitionType {
         }
     }
 }
-#[cfg(feature = "BeatmapEventTransitionType")]
+#[cfg(feature = "cordl_class_BeatmapEventTransitionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapEventTransitionType {
     type Actual = Self;

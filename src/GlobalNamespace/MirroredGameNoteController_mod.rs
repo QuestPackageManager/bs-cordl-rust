@@ -1,4 +1,4 @@
-#[cfg(feature = "MirroredGameNoteController")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredGameNoteController {
@@ -15,7 +15,7 @@ pub struct MirroredGameNoteController {
         >,
     >,
 }
-#[cfg(feature = "MirroredGameNoteController")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MirroredGameNoteController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MirroredGameNoteController {
         false
     }
 }
-#[cfg(feature = "MirroredGameNoteController")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredGameNoteController {
     type Target = crate::GlobalNamespace::MirroredNoteController_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable>,
@@ -44,7 +44,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MirroredGameNoteController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MirroredGameNoteController")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredGameNoteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::GlobalNamespace::MirroredGameNoteController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MirroredGameNoteController")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MirroredGameNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -309,7 +309,7 @@ for crate::GlobalNamespace::MirroredGameNoteController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MirroredGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredGameNoteController_Pool {
@@ -317,7 +317,7 @@ pub struct MirroredGameNoteController_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
     >,
 }
-#[cfg(feature = "MirroredGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MirroredGameNoteController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -337,7 +337,7 @@ for crate::GlobalNamespace::MirroredGameNoteController_Pool {
         false
     }
 }
-#[cfg(feature = "MirroredGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredGameNoteController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
@@ -346,7 +346,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MirroredGameNoteController_Pool
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MirroredGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredGameNoteController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -383,7 +383,7 @@ impl crate::GlobalNamespace::MirroredGameNoteController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MirroredGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MirroredGameNoteController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MirroredGameNoteController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

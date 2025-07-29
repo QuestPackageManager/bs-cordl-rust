@@ -1,10 +1,10 @@
-#[cfg(feature = "System+AppDomainUnloadedException")]
+#[cfg(feature = "cordl_class_System+AppDomainUnloadedException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppDomainUnloadedException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+AppDomainUnloadedException")]
+#[cfg(feature = "cordl_class_System+AppDomainUnloadedException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::AppDomainUnloadedException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AppDomainUnloadedExce
         false
     }
 }
-#[cfg(feature = "System+AppDomainUnloadedException")]
+#[cfg(feature = "cordl_class_System+AppDomainUnloadedException")]
 impl std::ops::Deref for crate::System::AppDomainUnloadedException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+AppDomainUnloadedException")]
+#[cfg(feature = "cordl_class_System+AppDomainUnloadedException")]
 impl std::ops::DerefMut for crate::System::AppDomainUnloadedException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::System::AppDomainUnloadedException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+AppDomainUnloadedException")]
+#[cfg(feature = "cordl_class_System+AppDomainUnloadedException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::AppDomainUnloadedException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

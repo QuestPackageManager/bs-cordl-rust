@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+NoTransitionsToggle")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsToggle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoTransitionsToggle {
@@ -8,7 +8,7 @@ pub struct NoTransitionsToggle {
     >,
     pub _selectionState: crate::HMUI::UISelectionState,
 }
-#[cfg(feature = "HMUI+NoTransitionsToggle")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsToggle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NoTransitionsToggle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NoTransitionsToggle {
         false
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsToggle")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsToggle")]
 impl std::ops::Deref for crate::HMUI::NoTransitionsToggle {
     type Target = crate::UnityEngine::UI::Toggle;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsToggle")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsToggle")]
 impl std::ops::DerefMut for crate::HMUI::NoTransitionsToggle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -256,7 +256,7 @@ impl crate::HMUI::NoTransitionsToggle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+NoTransitionsToggle")]
+#[cfg(feature = "cordl_class_HMUI+NoTransitionsToggle")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NoTransitionsToggle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

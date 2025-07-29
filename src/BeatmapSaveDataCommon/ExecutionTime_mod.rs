@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataCommon+ExecutionTime")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+ExecutionTime")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExecutionTime {
@@ -6,7 +6,7 @@ pub enum ExecutionTime {
     Early = 0i32,
     Late = 1i32,
 }
-#[cfg(feature = "BeatmapSaveDataCommon+ExecutionTime")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+ExecutionTime")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataCommon::ExecutionTime {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataCommon::Execut
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+ExecutionTime")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+ExecutionTime")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::ExecutionTime {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::BeatmapSaveDataCommon::ExecutionTime {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+ExecutionTime")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+ExecutionTime")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::ExecutionTime {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::BeatmapSaveDataCommon::ExecutionTime {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+ExecutionTime")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+ExecutionTime")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::ExecutionTime {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::BeatmapSaveDataCommon::ExecutionTime {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+ExecutionTime")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+ExecutionTime")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::ExecutionTime {
     type Actual = Self;

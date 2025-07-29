@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+FastAction_1")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FastAction_1<A: quest_hook::libil2cpp::Type> {
@@ -20,7 +20,7 @@ pub struct FastAction_1<A: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_A: std::marker::PhantomData<A>,
 }
-#[cfg(feature = "TMPro+FastAction_1")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_1")]
 unsafe impl<A: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::TMPro::FastAction_1<A> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,14 +53,14 @@ for crate::TMPro::FastAction_1<A> {
         false
     }
 }
-#[cfg(feature = "TMPro+FastAction_1")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_1")]
 impl<A: quest_hook::libil2cpp::Type> std::ops::Deref for crate::TMPro::FastAction_1<A> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+FastAction_1")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_1")]
 impl<A: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::TMPro::FastAction_1<A> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -190,7 +190,7 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+FastAction_1")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_1")]
 impl<A: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::TMPro::FastAction_1<A> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerBasicIdentity")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerBasicIdentity {
     __cordl_parent: crate::System::Security::Principal::GenericIdentity,
     pub password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerBasicIdentity")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::HttpListenerBasicIdentity {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Net::HttpListenerBasicIdentity {
         false
     }
 }
-#[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerBasicIdentity")]
 impl std::ops::Deref for crate::System::Net::HttpListenerBasicIdentity {
     type Target = crate::System::Security::Principal::GenericIdentity;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerBasicIdentity")]
 impl std::ops::DerefMut for crate::System::Net::HttpListenerBasicIdentity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -85,7 +85,7 @@ impl crate::System::Net::HttpListenerBasicIdentity {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
+#[cfg(feature = "cordl_class_System+Net+HttpListenerBasicIdentity")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::HttpListenerBasicIdentity {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

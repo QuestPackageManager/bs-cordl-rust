@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackClipTypeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackClipTypeAttribute {
@@ -6,7 +6,7 @@ pub struct TrackClipTypeAttribute {
     pub inspectedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub allowAutoCreate: bool,
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackClipTypeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TrackClipTypeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::UnityEngine::Timeline::TrackClipTypeAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackClipTypeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TrackClipTypeAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackClipTypeAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackClipTypeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::UnityEngine::Timeline::TrackClipTypeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackClipTypeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TrackClipTypeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

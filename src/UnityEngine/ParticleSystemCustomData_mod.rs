@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemCustomData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCustomData")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemCustomData {
@@ -6,7 +6,7 @@ pub enum ParticleSystemCustomData {
     Custom1 = 0i32,
     Custom2 = 1i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCustomData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCustomData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemCustomData {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::ParticleSystemCustomData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCustomData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCustomData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemCustomData {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::ParticleSystemCustomData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCustomData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCustomData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemCustomData {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ParticleSystemCustomData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCustomData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCustomData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemCustomData {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::ParticleSystemCustomData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemCustomData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemCustomData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemCustomData {
     type Actual = Self;

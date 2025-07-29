@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnCollectionHeader {
@@ -57,7 +59,9 @@ pub struct MultiColumnCollectionHeader {
     >,
     pub viewDataRestored: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -77,7 +81,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     type Target = crate::UnityEngine::UIElements::VisualElement;
@@ -85,7 +91,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1452,7 +1460,9 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1477,7 +1487,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1491,7 +1501,7 @@ pub struct MultiColumnCollectionHeader_ColumnData {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
@@ -1513,7 +1523,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
@@ -1523,7 +1533,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
@@ -1687,7 +1697,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Colum
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
@@ -1699,7 +1709,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -1710,7 +1720,7 @@ pub struct MultiColumnCollectionHeader_SortedColumnState {
     pub direction: crate::UnityEngine::UIElements::SortDirection,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
@@ -1742,7 +1752,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
@@ -1755,7 +1765,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
@@ -1771,7 +1781,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
@@ -1788,7 +1798,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
@@ -1804,7 +1814,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
@@ -1855,7 +1865,9 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorte
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnCollectionHeader_ViewState {
@@ -1874,7 +1886,9 @@ pub struct MultiColumnCollectionHeader_ViewState {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1894,7 +1908,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1902,7 +1918,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2004,7 +2022,9 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewS
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2015,7 +2035,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -2027,7 +2047,7 @@ pub struct ViewState_MultiColumnCollectionHeader_ColumnState {
     pub visible: bool,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
@@ -2059,7 +2079,7 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
@@ -2072,7 +2092,7 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
@@ -2088,7 +2108,7 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
@@ -2105,7 +2125,7 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
@@ -2121,7 +2141,7 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {

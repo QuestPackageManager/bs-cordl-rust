@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+CompilerServices+CustomConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CustomConstantAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomConstantAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CustomConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CustomConstantAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CustomConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CustomConstantAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CustomConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CustomConstantAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -97,7 +97,7 @@ impl crate::System::Runtime::CompilerServices::CustomConstantAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CustomConstantAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CustomConstantAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

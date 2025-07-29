@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTlsSignerCredentials {
@@ -19,7 +19,7 @@ pub struct DefaultTlsSignerCredentials {
         crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,7 +39,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials;
@@ -47,7 +47,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -287,7 +287,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

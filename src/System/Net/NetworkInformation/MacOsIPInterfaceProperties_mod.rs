@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MacOsIPInterfaceProperties {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixIPInterfaceProperties,
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
     type Target = crate::System::Net::NetworkInformation::UnixIPInterfaceProperties;
@@ -32,7 +32,7 @@ for crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -176,7 +176,7 @@ impl crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

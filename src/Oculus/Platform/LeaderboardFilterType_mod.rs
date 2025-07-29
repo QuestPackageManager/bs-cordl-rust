@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+LeaderboardFilterType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LeaderboardFilterType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LeaderboardFilterType {
@@ -8,7 +8,7 @@ pub enum LeaderboardFilterType {
     Unknown = 2i32,
     UserIds = 3i32,
 }
-#[cfg(feature = "Oculus+Platform+LeaderboardFilterType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LeaderboardFilterType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::LeaderboardFilterType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Oculus::Platform::LeaderboardFilterType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+LeaderboardFilterType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LeaderboardFilterType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::LeaderboardFilterType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Oculus::Platform::LeaderboardFilterType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+LeaderboardFilterType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LeaderboardFilterType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::LeaderboardFilterType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Oculus::Platform::LeaderboardFilterType {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+LeaderboardFilterType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LeaderboardFilterType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::LeaderboardFilterType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Oculus::Platform::LeaderboardFilterType {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+LeaderboardFilterType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+LeaderboardFilterType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::LeaderboardFilterType {
     type Actual = Self;

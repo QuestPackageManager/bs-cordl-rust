@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+ColliderBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ColliderBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColliderBehaviour {
     __cordl_parent: crate::UnityEngine::ProBuilder::EntityBehaviour,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ColliderBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ColliderBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::ColliderBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::ColliderBehaviour {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ColliderBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ColliderBehaviour")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::ColliderBehaviour {
     type Target = crate::UnityEngine::ProBuilder::EntityBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ColliderBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ColliderBehaviour")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ColliderBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::UnityEngine::ProBuilder::ColliderBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ColliderBehaviour")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ColliderBehaviour")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::ColliderBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

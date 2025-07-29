@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactory_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlObjectFactory_2<
@@ -12,7 +12,7 @@ pub struct UxmlObjectFactory_2<
     __cordl_phantom_TCreatedType: std::marker::PhantomData<TCreatedType>,
     __cordl_phantom_TTraits: std::marker::PhantomData<TTraits>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactory_2")]
 unsafe impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
@@ -51,7 +51,7 @@ for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactory_2")]
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
@@ -65,7 +65,7 @@ for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactory_2")]
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
@@ -157,7 +157,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactory_2")]
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,

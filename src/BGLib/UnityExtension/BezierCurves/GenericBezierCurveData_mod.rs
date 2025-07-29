@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericBezierCurveData {
@@ -6,7 +6,7 @@ pub struct GenericBezierCurveData {
     pub _startPoint: crate::UnityEngine::Vector3,
     pub _endPoint: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData {
     type Target = crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData;
@@ -34,7 +34,7 @@ for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
 impl std::ops::DerefMut
 for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -238,7 +238,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

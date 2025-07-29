@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+AtlasPopulationMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AtlasPopulationMode {
@@ -7,7 +7,7 @@ pub enum AtlasPopulationMode {
     DynamicOS = 2i32,
     Static = 0i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+AtlasPopulationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+AtlasPopulationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::AtlasPopulationMode {
     type Actual = Self;

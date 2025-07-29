@@ -1,4 +1,4 @@
-#[cfg(feature = "MaterialSwapGraphicViewStateTransition")]
+#[cfg(feature = "cordl_class_MaterialSwapGraphicViewStateTransition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialSwapGraphicViewStateTransition {
@@ -9,7 +9,7 @@ pub struct MaterialSwapGraphicViewStateTransition {
         crate::GlobalNamespace::MaterialSwapTransitionSO,
     >,
 }
-#[cfg(feature = "MaterialSwapGraphicViewStateTransition")]
+#[cfg(feature = "cordl_class_MaterialSwapGraphicViewStateTransition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
         false
     }
 }
-#[cfg(feature = "MaterialSwapGraphicViewStateTransition")]
+#[cfg(feature = "cordl_class_MaterialSwapGraphicViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MaterialSwapGraphicViewStateTra
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialSwapGraphicViewStateTransition")]
+#[cfg(feature = "cordl_class_MaterialSwapGraphicViewStateTransition")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -435,7 +435,7 @@ impl crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialSwapGraphicViewStateTransition")]
+#[cfg(feature = "cordl_class_MaterialSwapGraphicViewStateTransition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

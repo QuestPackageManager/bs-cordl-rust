@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithPartyUnderCurrentParty")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyUnderCurrentParty")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithPartyUnderCurrentParty {
@@ -6,7 +6,7 @@ pub struct MessageWithPartyUnderCurrentParty {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithPartyUnderCurrentParty")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyUnderCurrentParty")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithPartyUnderCurrentParty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithPartyUnderCurrentParty {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithPartyUnderCurrentParty")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyUnderCurrentParty")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithPartyUnderCurrentParty {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithPartyUnderCurrentPa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithPartyUnderCurrentParty")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyUnderCurrentParty")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithPartyUnderCurrentParty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithPartyUnderCurrentParty {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithPartyUnderCurrentParty")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyUnderCurrentParty")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithPartyUnderCurrentParty {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

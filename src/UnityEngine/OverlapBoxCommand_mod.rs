@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+OverlapBoxCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapBoxCommand")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OverlapBoxCommand {
@@ -8,7 +8,7 @@ pub struct OverlapBoxCommand {
     pub _physicsScene_k__BackingField: crate::UnityEngine::PhysicsScene,
     pub queryParameters: crate::UnityEngine::QueryParameters,
 }
-#[cfg(feature = "UnityEngine+OverlapBoxCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapBoxCommand")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::OverlapBoxCommand {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::OverlapBoxComman
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+OverlapBoxCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapBoxCommand")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::OverlapBoxCommand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::OverlapBoxCo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+OverlapBoxCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapBoxCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::OverlapBoxCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::OverlapBoxC
         self
     }
 }
-#[cfg(feature = "UnityEngine+OverlapBoxCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapBoxCommand")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::OverlapBoxCommand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::OverlapBoxCo
         }
     }
 }
-#[cfg(feature = "UnityEngine+OverlapBoxCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapBoxCommand")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::OverlapBoxCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::OverlapBoxComm
         actual
     }
 }
-#[cfg(feature = "UnityEngine+OverlapBoxCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapBoxCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::OverlapBoxCommand {
     type Type = Self;

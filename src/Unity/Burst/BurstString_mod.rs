@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+BurstString")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstString {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Burst+BurstString")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString")]
 impl std::ops::Deref for crate::Unity::Burst::BurstString {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstString {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1987,7 +1987,7 @@ impl crate::Unity::Burst::BurstString {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1996,7 +1996,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstString_CutoffMode {
@@ -2005,7 +2005,7 @@ pub enum BurstString_CutoffMode {
     TotalLength = 1i32,
     Unique = 0i32,
 }
-#[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_CutoffMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2034,7 +2034,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_Cut
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_CutoffMode {
     type Type = Self;
@@ -2045,7 +2045,7 @@ for crate::Unity::Burst::BurstString_CutoffMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_CutoffMode {
     type Actual = Self;
@@ -2059,7 +2059,7 @@ for crate::Unity::Burst::BurstString_CutoffMode {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_CutoffMode {
     type Type = Self;
@@ -2074,7 +2074,7 @@ for crate::Unity::Burst::BurstString_CutoffMode {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstString_CutoffMode {
     type Actual = Self;
@@ -2088,7 +2088,7 @@ for crate::Unity::Burst::BurstString_CutoffMode {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstString_FormatOptions {
@@ -2097,7 +2097,7 @@ pub struct BurstString_FormatOptions {
     pub Specifier: u8,
     pub Lowercase: bool,
 }
-#[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstString_FormatOptions {
     type Held<'a> = Self;
@@ -2127,7 +2127,7 @@ for crate::Unity::Burst::BurstString_FormatOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_FormatOptions {
     type Type = Self;
@@ -2138,7 +2138,7 @@ for crate::Unity::Burst::BurstString_FormatOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_FormatOptions {
     type Actual = Self;
@@ -2152,7 +2152,7 @@ for crate::Unity::Burst::BurstString_FormatOptions {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_FormatOptions {
     type Type = Self;
@@ -2167,7 +2167,7 @@ for crate::Unity::Burst::BurstString_FormatOptions {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstString_FormatOptions {
     type Actual = Self;
@@ -2181,7 +2181,7 @@ for crate::Unity::Burst::BurstString_FormatOptions {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::BurstString_FormatOptions {
     type Type = Self;
@@ -2308,7 +2308,7 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstString_NumberBuffer {
@@ -2318,7 +2318,7 @@ pub struct BurstString_NumberBuffer {
     pub Scale: i32,
     pub IsNegative: bool,
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstString_NumberBuffer {
     type Held<'a> = Self;
@@ -2348,7 +2348,7 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_NumberBuffer {
     type Type = Self;
@@ -2359,7 +2359,7 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_NumberBuffer {
     type Actual = Self;
@@ -2373,7 +2373,7 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_NumberBuffer {
     type Type = Self;
@@ -2388,7 +2388,7 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstString_NumberBuffer {
     type Actual = Self;
@@ -2402,7 +2402,7 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::BurstString_NumberBuffer {
     type Type = Self;
@@ -2482,7 +2482,7 @@ impl crate::Unity::Burst::BurstString_NumberBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstString_NumberBufferKind {
@@ -2490,7 +2490,7 @@ pub enum BurstString_NumberBufferKind {
     Float = 1i32,
     Integer = 0i32,
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Held<'a> = Self;
@@ -2520,7 +2520,7 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Type = Self;
@@ -2531,7 +2531,7 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Actual = Self;
@@ -2545,7 +2545,7 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Type = Self;
@@ -2560,7 +2560,7 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Actual = Self;
@@ -2574,7 +2574,7 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstString_NumberFormatKind {
@@ -2584,7 +2584,7 @@ pub enum BurstString_NumberFormatKind {
     General = 0u8,
     Hexadecimal = 3u8,
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Held<'a> = Self;
@@ -2614,7 +2614,7 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Type = Self;
@@ -2625,7 +2625,7 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Actual = Self;
@@ -2639,7 +2639,7 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Type = Self;
@@ -2654,7 +2654,7 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Actual = Self;
@@ -2668,13 +2668,13 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PreserveAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstString_PreserveAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PreserveAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstString_PreserveAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2694,14 +2694,14 @@ for crate::Unity::Burst::BurstString_PreserveAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PreserveAttribute")]
 impl std::ops::Deref for crate::Unity::Burst::BurstString_PreserveAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PreserveAttribute")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstString_PreserveAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2738,7 +2738,7 @@ impl crate::Unity::Burst::BurstString_PreserveAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PreserveAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::BurstString_PreserveAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2748,7 +2748,7 @@ for crate::Unity::Burst::BurstString_PreserveAttribute {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstString_PrintFloatFormat {
@@ -2756,7 +2756,7 @@ pub enum BurstString_PrintFloatFormat {
     Positional = 0i32,
     Scientific = 1i32,
 }
-#[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Held<'a> = Self;
@@ -2786,7 +2786,7 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Type = Self;
@@ -2797,7 +2797,7 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Actual = Self;
@@ -2811,7 +2811,7 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Type = Self;
@@ -2826,7 +2826,7 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Actual = Self;
@@ -2840,14 +2840,14 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstString_tBigInt {
     pub m_length: i32,
     pub m_blocks: crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer,
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_tBigInt {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2876,7 +2876,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_tBi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_tBigInt {
     type Type = Self;
@@ -2887,7 +2887,7 @@ for crate::Unity::Burst::BurstString_tBigInt {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_tBigInt {
     type Actual = Self;
@@ -2901,7 +2901,7 @@ for crate::Unity::Burst::BurstString_tBigInt {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_tBigInt {
     type Type = Self;
@@ -2916,7 +2916,7 @@ for crate::Unity::Burst::BurstString_tBigInt {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_tBigInt {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2929,7 +2929,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_t
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::BurstString_tBigInt {
     type Type = Self;
@@ -3081,13 +3081,13 @@ impl crate::Unity::Burst::BurstString_tBigInt {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstString_tFloatUnion32 {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Held<'a> = Self;
@@ -3117,7 +3117,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Type = Self;
@@ -3128,7 +3128,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Actual = Self;
@@ -3142,7 +3142,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Type = Self;
@@ -3157,7 +3157,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Actual = Self;
@@ -3171,7 +3171,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Type = Self;
@@ -3236,13 +3236,13 @@ impl crate::Unity::Burst::BurstString_tFloatUnion32 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstString_tFloatUnion64 {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Held<'a> = Self;
@@ -3272,7 +3272,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Type = Self;
@@ -3283,7 +3283,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Actual = Self;
@@ -3297,7 +3297,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Type = Self;
@@ -3312,7 +3312,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Actual = Self;
@@ -3326,7 +3326,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Type = Self;
@@ -3391,13 +3391,13 @@ impl crate::Unity::Burst::BurstString_tFloatUnion64 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct tBigInt_BurstString__m_blocks_e__FixedBuffer {
     pub FixedElementField: u32,
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
     type Held<'a> = Self;
@@ -3427,7 +3427,7 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
     type Type = Self;
@@ -3438,7 +3438,7 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
     type Actual = Self;
@@ -3452,7 +3452,7 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
     type Type = Self;
@@ -3467,7 +3467,7 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
     type Actual = Self;
@@ -3481,7 +3481,7 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
     type Type = Self;

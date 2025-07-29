@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionProperty")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionProperty {
@@ -10,7 +10,7 @@ pub struct InputActionProperty {
         crate::UnityEngine::InputSystem::InputActionReference,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionProperty")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionProperty {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::InputSystem::InputActionProperty {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionProperty")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionProperty {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::InputSystem::InputActionProperty {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionProperty")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionProperty {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::InputSystem::InputActionProperty {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionProperty")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionProperty {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::InputSystem::InputActionProperty {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionProperty")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionProperty {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::InputSystem::InputActionProperty {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionProperty")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionProperty {
     type Type = Self;

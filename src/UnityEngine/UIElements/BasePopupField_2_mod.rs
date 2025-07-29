@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasePopupField_2<
@@ -35,7 +35,7 @@ pub struct BasePopupField_2<
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TValueChoice: std::marker::PhantomData<TValueChoice>,
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2")]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -74,7 +74,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2<TValueType, TValueChoice> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -85,7 +85,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2<TValueType, TValueChoice> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -585,7 +585,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -598,7 +598,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2<TValueType, TValueChoice> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasePopupField_2_PopupTextElement<
@@ -609,7 +609,7 @@ pub struct BasePopupField_2_PopupTextElement<
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TValueChoice: std::marker::PhantomData<TValueChoice>,
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -651,7 +651,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2_PopupTextElement<
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -665,7 +665,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2_PopupTextElement<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -769,7 +769,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,

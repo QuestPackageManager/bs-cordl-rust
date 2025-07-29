@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGyroscope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGyroscope")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidGyroscope {
     __cordl_parent: crate::UnityEngine::InputSystem::Gyroscope,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGyroscope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGyroscope")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidGyroscope {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Android::AndroidGyroscope {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGyroscope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGyroscope")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Android::AndroidGyroscope {
     type Target = crate::UnityEngine::InputSystem::Gyroscope;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGyroscope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGyroscope")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Android::AndroidGyroscope {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::InputSystem::Android::AndroidGyroscope {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGyroscope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGyroscope")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidGyroscope {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

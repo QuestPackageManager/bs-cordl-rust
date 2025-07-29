@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+NativeOverlapped")]
+#[cfg(feature = "cordl_class_System+Threading+NativeOverlapped")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeOverlapped {
@@ -8,7 +8,7 @@ pub struct NativeOverlapped {
     pub OffsetHigh: i32,
     pub EventHandle: crate::System::IntPtr,
 }
-#[cfg(feature = "System+Threading+NativeOverlapped")]
+#[cfg(feature = "cordl_class_System+Threading+NativeOverlapped")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::NativeOverlapped {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::NativeOver
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+NativeOverlapped")]
+#[cfg(feature = "cordl_class_System+Threading+NativeOverlapped")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::NativeOverlapped {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Threading::NativeOverlapped {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+NativeOverlapped")]
+#[cfg(feature = "cordl_class_System+Threading+NativeOverlapped")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::NativeOverlapped {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Threading::NativeOverlapped {
         self
     }
 }
-#[cfg(feature = "System+Threading+NativeOverlapped")]
+#[cfg(feature = "cordl_class_System+Threading+NativeOverlapped")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::NativeOverlapped {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Threading::NativeOverlapped {
         }
     }
 }
-#[cfg(feature = "System+Threading+NativeOverlapped")]
+#[cfg(feature = "cordl_class_System+Threading+NativeOverlapped")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::NativeOverlapped {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::System::Threading::NativeOverlapped {
         actual
     }
 }
-#[cfg(feature = "System+Threading+NativeOverlapped")]
+#[cfg(feature = "cordl_class_System+Threading+NativeOverlapped")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::NativeOverlapped {
     type Type = Self;

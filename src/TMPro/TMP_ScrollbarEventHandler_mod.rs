@@ -1,11 +1,11 @@
-#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+#[cfg(feature = "cordl_class_TMPro+TMP_ScrollbarEventHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_ScrollbarEventHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub isSelected: bool,
 }
-#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+#[cfg(feature = "cordl_class_TMPro+TMP_ScrollbarEventHandler")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_ScrollbarEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_ScrollbarEventHand
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+#[cfg(feature = "cordl_class_TMPro+TMP_ScrollbarEventHandler")]
 impl std::ops::Deref for crate::TMPro::TMP_ScrollbarEventHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+#[cfg(feature = "cordl_class_TMPro+TMP_ScrollbarEventHandler")]
 impl std::ops::DerefMut for crate::TMPro::TMP_ScrollbarEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::TMPro::TMP_ScrollbarEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
+#[cfg(feature = "cordl_class_TMPro+TMP_ScrollbarEventHandler")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_ScrollbarEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

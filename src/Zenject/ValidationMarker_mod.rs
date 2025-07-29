@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ValidationMarker")]
+#[cfg(feature = "cordl_class_Zenject+ValidationMarker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationMarker {
@@ -6,7 +6,7 @@ pub struct ValidationMarker {
     pub _InstantiateFailed_k__BackingField: bool,
     pub _MarkedType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "Zenject+ValidationMarker")]
+#[cfg(feature = "cordl_class_Zenject+ValidationMarker")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ValidationMarker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ValidationMarker {
         false
     }
 }
-#[cfg(feature = "Zenject+ValidationMarker")]
+#[cfg(feature = "cordl_class_Zenject+ValidationMarker")]
 impl std::ops::Deref for crate::Zenject::ValidationMarker {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ValidationMarker")]
+#[cfg(feature = "cordl_class_Zenject+ValidationMarker")]
 impl std::ops::DerefMut for crate::Zenject::ValidationMarker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -207,7 +207,7 @@ impl crate::Zenject::ValidationMarker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ValidationMarker")]
+#[cfg(feature = "cordl_class_Zenject+ValidationMarker")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ValidationMarker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

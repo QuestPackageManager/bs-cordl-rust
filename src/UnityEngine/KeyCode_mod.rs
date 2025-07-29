@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+KeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+KeyCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KeyCode {
@@ -328,7 +328,7 @@ pub enum KeyCode {
     Y = 121i32,
     Z = 122i32,
 }
-#[cfg(feature = "UnityEngine+KeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+KeyCode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::KeyCode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -357,7 +357,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::KeyCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+KeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+KeyCode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::KeyCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -367,7 +367,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::KeyCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+KeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+KeyCode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::KeyCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -380,7 +380,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::KeyCode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+KeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+KeyCode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::KeyCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -394,7 +394,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::KeyCode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+KeyCode")]
+#[cfg(feature = "cordl_class_UnityEngine+KeyCode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::KeyCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

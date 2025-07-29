@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompressionAlgorithmTag {
@@ -8,7 +8,7 @@ pub enum CompressionAlgorithmTag {
     ZLib = 2i32,
     Zip = 1i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag {
     type Actual = Self;

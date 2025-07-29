@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskExceptionHolder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskExceptionHolder {
@@ -16,7 +16,7 @@ pub struct TaskExceptionHolder {
     >,
     pub m_isHandled: bool,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskExceptionHolder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::TaskExceptionHolder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::System::Threading::Tasks::TaskExceptionHolder {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskExceptionHolder")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskExceptionHolder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskExceptionHolder")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskExceptionHolder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -388,7 +388,7 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskExceptionHolder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::TaskExceptionHolder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

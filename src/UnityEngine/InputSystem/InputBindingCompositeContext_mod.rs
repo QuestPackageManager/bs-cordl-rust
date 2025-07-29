@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputBindingCompositeContext {
@@ -7,7 +7,7 @@ pub struct InputBindingCompositeContext {
     >,
     pub m_BindingIndex: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     type Type = Self;
@@ -419,7 +419,7 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -429,7 +429,7 @@ pub struct InputBindingCompositeContext_DefaultComparer_1<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
@@ -479,7 +479,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
@@ -494,7 +494,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
@@ -512,7 +512,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
@@ -531,7 +531,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
@@ -549,7 +549,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
@@ -623,7 +623,9 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputBindingCompositeContext_PartBinding {
@@ -632,7 +634,9 @@ pub struct InputBindingCompositeContext_PartBinding {
         crate::UnityEngine::InputSystem::InputControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
     type Held<'a> = Self;
@@ -662,7 +666,9 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
     type Type = Self;
@@ -673,7 +679,9 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
     type Actual = Self;
@@ -687,7 +695,9 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
     type Type = Self;
@@ -702,7 +712,9 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
     type Actual = Self;
@@ -716,7 +728,9 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
     type Type = Self;

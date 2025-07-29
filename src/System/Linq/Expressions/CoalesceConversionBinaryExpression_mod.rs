@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Linq+Expressions+CoalesceConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+CoalesceConversionBinaryExpression"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CoalesceConversionBinaryExpression {
@@ -7,7 +9,9 @@ pub struct CoalesceConversionBinaryExpression {
         crate::System::Linq::Expressions::LambdaExpression,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+CoalesceConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+CoalesceConversionBinaryExpression"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::CoalesceConversionBinaryExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::System::Linq::Expressions::CoalesceConversionBinaryExpression {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+CoalesceConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+CoalesceConversionBinaryExpression"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::CoalesceConversionBinaryExpression {
     type Target = crate::System::Linq::Expressions::BinaryExpression;
@@ -35,7 +41,9 @@ for crate::System::Linq::Expressions::CoalesceConversionBinaryExpression {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+CoalesceConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+CoalesceConversionBinaryExpression"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::CoalesceConversionBinaryExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -179,7 +187,9 @@ impl crate::System::Linq::Expressions::CoalesceConversionBinaryExpression {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+CoalesceConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+CoalesceConversionBinaryExpression"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::CoalesceConversionBinaryExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+PropagationPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PropagationPhase")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PropagationPhase {
@@ -10,7 +10,7 @@ pub enum PropagationPhase {
     None = 0i32,
     TrickleDown = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+PropagationPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PropagationPhase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PropagationPhase {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::UIElements::PropagationPhase {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PropagationPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PropagationPhase")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::PropagationPhase {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::UIElements::PropagationPhase {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PropagationPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PropagationPhase")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::PropagationPhase {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::UIElements::PropagationPhase {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PropagationPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PropagationPhase")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::PropagationPhase {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UIElements::PropagationPhase {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PropagationPhase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PropagationPhase")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::PropagationPhase {
     type Actual = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+EventHandler_1")]
+#[cfg(feature = "cordl_class_System+EventHandler_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventHandler_1<TEventArgs: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TEventArgs: std::marker::PhantomData<TEventArgs>,
 }
-#[cfg(feature = "System+EventHandler_1")]
+#[cfg(feature = "cordl_class_System+EventHandler_1")]
 unsafe impl<TEventArgs: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::EventHandler_1<TEventArgs> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,7 +38,7 @@ for crate::System::EventHandler_1<TEventArgs> {
         false
     }
 }
-#[cfg(feature = "System+EventHandler_1")]
+#[cfg(feature = "cordl_class_System+EventHandler_1")]
 impl<TEventArgs: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::EventHandler_1<TEventArgs> {
     type Target = crate::System::MulticastDelegate;
@@ -46,7 +46,7 @@ for crate::System::EventHandler_1<TEventArgs> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+EventHandler_1")]
+#[cfg(feature = "cordl_class_System+EventHandler_1")]
 impl<TEventArgs: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::EventHandler_1<TEventArgs> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -142,7 +142,7 @@ impl<TEventArgs: quest_hook::libil2cpp::Type> crate::System::EventHandler_1<TEve
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+EventHandler_1")]
+#[cfg(feature = "cordl_class_System+EventHandler_1")]
 impl<TEventArgs: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::EventHandler_1<TEventArgs> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

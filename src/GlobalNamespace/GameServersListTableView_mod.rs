@@ -1,4 +1,4 @@
-#[cfg(feature = "GameServersListTableView")]
+#[cfg(feature = "cordl_class_GameServersListTableView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServersListTableView {
@@ -28,7 +28,7 @@ pub struct GameServersListTableView {
         crate::GlobalNamespace::INetworkPlayer,
     >,
 }
-#[cfg(feature = "GameServersListTableView")]
+#[cfg(feature = "cordl_class_GameServersListTableView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServersListTableView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,14 +48,14 @@ for crate::GlobalNamespace::GameServersListTableView {
         false
     }
 }
-#[cfg(feature = "GameServersListTableView")]
+#[cfg(feature = "cordl_class_GameServersListTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServersListTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServersListTableView")]
+#[cfg(feature = "cordl_class_GameServersListTableView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServersListTableView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -441,7 +441,7 @@ impl crate::GlobalNamespace::GameServersListTableView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServersListTableView")]
+#[cfg(feature = "cordl_class_GameServersListTableView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServersListTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

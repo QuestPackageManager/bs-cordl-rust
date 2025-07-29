@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+BaseInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseInputModule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseInputModule {
@@ -25,7 +25,7 @@ pub struct BaseInputModule {
         crate::UnityEngine::EventSystems::BaseInput,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseInputModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::BaseInputModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::UnityEngine::EventSystems::BaseInputModule {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::BaseInputModule {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseInputModule")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::BaseInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -686,7 +686,7 @@ impl crate::UnityEngine::EventSystems::BaseInputModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseInputModule")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::BaseInputModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

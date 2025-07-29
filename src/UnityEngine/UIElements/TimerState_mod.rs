@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimerState {
     pub _start_k__BackingField: i64,
     pub _now_k__BackingField: i64,
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TimerState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Time
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TimerState {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::TimerState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TimerState {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::TimerState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TimerState {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::UIElements::TimerState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::TimerState {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::UIElements::TimerState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TimerState")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TimerState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::TimerState {
     type Type = Self;

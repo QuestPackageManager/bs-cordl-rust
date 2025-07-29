@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaDeclBase {
@@ -23,7 +23,7 @@ pub struct SchemaDeclBase {
         >,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SchemaDeclBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::SchemaDe
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaDeclBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaDeclBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -793,7 +793,7 @@ impl crate::System::Xml::Schema::SchemaDeclBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaDeclBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -802,7 +802,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaDec
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase+Use")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaDeclBase_Use {
@@ -813,7 +813,7 @@ pub enum SchemaDeclBase_Use {
     Required = 1i32,
     RequiredFixed = 4i32,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Held<'a> = Self;
@@ -843,7 +843,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Type = Self;
@@ -854,7 +854,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Actual = Self;
@@ -868,7 +868,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Type = Self;
@@ -883,7 +883,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Actual = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "BeatSaber+RecPlay+PoseFrame")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseFrame")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PoseFrame {
     pub _cordl_time: f32,
     pub pose: crate::UnityEngine::Pose,
 }
-#[cfg(feature = "BeatSaber+RecPlay+PoseFrame")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseFrame")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::RecPlay::PoseFrame {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::RecPlay::PoseFrame
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PoseFrame")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseFrame")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::RecPlay::PoseFrame {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::RecPlay::PoseF
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PoseFrame")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::RecPlay::PoseFrame {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::RecPlay::Pose
         self
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PoseFrame")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseFrame")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::RecPlay::PoseFrame {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::RecPlay::PoseF
         }
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PoseFrame")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseFrame")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::RecPlay::PoseFrame {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::RecPlay::PoseFra
         actual
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PoseFrame")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseFrame")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::RecPlay::PoseFrame {
     type Type = Self;

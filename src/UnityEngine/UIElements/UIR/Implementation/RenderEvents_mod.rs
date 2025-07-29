@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1053,7 +1053,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+RenderEvents")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

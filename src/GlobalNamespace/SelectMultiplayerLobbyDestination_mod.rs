@@ -1,4 +1,4 @@
-#[cfg(feature = "SelectMultiplayerLobbyDestination")]
+#[cfg(feature = "cordl_class_SelectMultiplayerLobbyDestination")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectMultiplayerLobbyDestination {
@@ -6,7 +6,7 @@ pub struct SelectMultiplayerLobbyDestination {
     pub lobbySecret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lobbyCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "SelectMultiplayerLobbyDestination")]
+#[cfg(feature = "cordl_class_SelectMultiplayerLobbyDestination")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
         false
     }
 }
-#[cfg(feature = "SelectMultiplayerLobbyDestination")]
+#[cfg(feature = "cordl_class_SelectMultiplayerLobbyDestination")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SelectMultiplayerLobbyDestination")]
+#[cfg(feature = "cordl_class_SelectMultiplayerLobbyDestination")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SelectMultiplayerLobbyDestination")]
+#[cfg(feature = "cordl_class_SelectMultiplayerLobbyDestination")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

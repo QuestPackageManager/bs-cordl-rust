@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorSaturationValueSlider")]
+#[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSaturationValueSlider {
@@ -21,7 +21,7 @@ pub struct ColorSaturationValueSlider {
         >,
     >,
 }
-#[cfg(feature = "ColorSaturationValueSlider")]
+#[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorSaturationValueSlider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::GlobalNamespace::ColorSaturationValueSlider {
         false
     }
 }
-#[cfg(feature = "ColorSaturationValueSlider")]
+#[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorSaturationValueSlider {
     type Target = crate::HMUI::Slider2D;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorSaturationValueSlider")]
+#[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorSaturationValueSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -318,7 +318,7 @@ impl crate::GlobalNamespace::ColorSaturationValueSlider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorSaturationValueSlider")]
+#[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorSaturationValueSlider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "AudioFading")]
+#[cfg(feature = "cordl_class_AudioFading")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioFading {
@@ -8,7 +8,7 @@ pub struct AudioFading {
     pub _fadeInOnStart: bool,
     pub _targetVolume: f32,
 }
-#[cfg(feature = "AudioFading")]
+#[cfg(feature = "cordl_class_AudioFading")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AudioFading {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AudioFading 
         false
     }
 }
-#[cfg(feature = "AudioFading")]
+#[cfg(feature = "cordl_class_AudioFading")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioFading {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AudioFading")]
+#[cfg(feature = "cordl_class_AudioFading")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioFading {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -155,7 +155,7 @@ impl crate::GlobalNamespace::AudioFading {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AudioFading")]
+#[cfg(feature = "cordl_class_AudioFading")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioFading {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

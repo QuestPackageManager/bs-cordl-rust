@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+JapaneseCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+JapaneseCalendar")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JapaneseCalendar {
@@ -7,7 +7,7 @@ pub struct JapaneseCalendar {
         crate::System::Globalization::GregorianCalendarHelper,
     >,
 }
-#[cfg(feature = "System+Globalization+JapaneseCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+JapaneseCalendar")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::JapaneseCalendar {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Globalization::JapaneseCalendar {
         false
     }
 }
-#[cfg(feature = "System+Globalization+JapaneseCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+JapaneseCalendar")]
 impl std::ops::Deref for crate::System::Globalization::JapaneseCalendar {
     type Target = crate::System::Globalization::Calendar;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+JapaneseCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+JapaneseCalendar")]
 impl std::ops::DerefMut for crate::System::Globalization::JapaneseCalendar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -675,7 +675,7 @@ impl crate::System::Globalization::JapaneseCalendar {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+JapaneseCalendar")]
+#[cfg(feature = "cordl_class_System+Globalization+JapaneseCalendar")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Globalization::JapaneseCalendar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

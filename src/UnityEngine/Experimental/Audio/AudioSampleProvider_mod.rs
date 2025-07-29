@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioSampleProvider {
@@ -10,7 +10,7 @@ pub struct AudioSampleProvider {
         crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler,
     >,
 }
-#[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider")]
 impl std::ops::Deref for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -103,7 +103,7 @@ impl crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -114,7 +114,7 @@ for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
+    feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -122,7 +122,7 @@ pub struct AudioSampleProvider_SampleFramesHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
+    feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
@@ -144,7 +144,7 @@ for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHan
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
+    feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
@@ -154,7 +154,7 @@ for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHan
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
+    feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
@@ -244,7 +244,7 @@ impl crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHa
     }
 }
 #[cfg(
-    feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
+    feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {

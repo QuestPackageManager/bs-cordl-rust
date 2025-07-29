@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -12,7 +12,7 @@ pub struct X509SubjectKeyIdentifierExtension {
     pub _status: crate::System::Security::Cryptography::AsnDecodeStatus,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension {
@@ -34,7 +34,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdent
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension {
@@ -44,7 +44,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdent
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension {
@@ -531,7 +531,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIden
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierExtension"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension {

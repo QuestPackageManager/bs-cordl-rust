@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityXRHelper")]
+#[cfg(feature = "cordl_class_UnityXRHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityXRHelper {
@@ -55,7 +55,7 @@ pub struct UnityXRHelper {
     pub _isPausePressed: bool,
     pub _wasPausePressedThisFrame: bool,
 }
-#[cfg(feature = "UnityXRHelper")]
+#[cfg(feature = "cordl_class_UnityXRHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityXRHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -74,14 +74,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityXRHelpe
         false
     }
 }
-#[cfg(feature = "UnityXRHelper")]
+#[cfg(feature = "cordl_class_UnityXRHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityXRHelper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityXRHelper")]
+#[cfg(feature = "cordl_class_UnityXRHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnityXRHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1564,7 +1564,7 @@ impl crate::GlobalNamespace::UnityXRHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityXRHelper")]
+#[cfg(feature = "cordl_class_UnityXRHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1601,7 +1601,7 @@ for crate::GlobalNamespace::UnityXRHelper {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
+#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityXRHelper_VRControllerManufacturerName {
@@ -1613,7 +1613,7 @@ pub enum UnityXRHelper_VRControllerManufacturerName {
     Unknown = 5i32,
     Valve = 3i32,
 }
-#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
+#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Held<'a> = Self;
@@ -1643,7 +1643,7 @@ for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
+#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Type = Self;
@@ -1654,7 +1654,7 @@ for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
+#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Actual = Self;
@@ -1668,7 +1668,7 @@ for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
         self
     }
 }
-#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
+#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Type = Self;
@@ -1683,7 +1683,7 @@ for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
         }
     }
 }
-#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
+#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Actual = Self;

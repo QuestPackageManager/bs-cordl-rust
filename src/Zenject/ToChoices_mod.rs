@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ToChoices")]
+#[cfg(feature = "cordl_class_Zenject+ToChoices")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ToChoices {
@@ -6,7 +6,7 @@ pub enum ToChoices {
     Concrete = 1i32,
     _cordl_Self = 0i32,
 }
-#[cfg(feature = "Zenject+ToChoices")]
+#[cfg(feature = "cordl_class_Zenject+ToChoices")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ToChoices {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ToChoices {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+ToChoices")]
+#[cfg(feature = "cordl_class_Zenject+ToChoices")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::ToChoices {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::ToChoices {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+ToChoices")]
+#[cfg(feature = "cordl_class_Zenject+ToChoices")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::ToChoices {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::ToChoices {
         self
     }
 }
-#[cfg(feature = "Zenject+ToChoices")]
+#[cfg(feature = "cordl_class_Zenject+ToChoices")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::ToChoices {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::ToChoices {
         }
     }
 }
-#[cfg(feature = "Zenject+ToChoices")]
+#[cfg(feature = "cordl_class_Zenject+ToChoices")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::ToChoices {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

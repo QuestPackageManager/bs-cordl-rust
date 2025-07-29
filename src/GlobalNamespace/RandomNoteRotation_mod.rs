@@ -1,4 +1,4 @@
-#[cfg(feature = "RandomNoteRotation")]
+#[cfg(feature = "cordl_class_RandomNoteRotation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RandomNoteRotation {
@@ -8,7 +8,7 @@ pub struct RandomNoteRotation {
     >,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "RandomNoteRotation")]
+#[cfg(feature = "cordl_class_RandomNoteRotation")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RandomNoteRotation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RandomNoteRo
         false
     }
 }
-#[cfg(feature = "RandomNoteRotation")]
+#[cfg(feature = "cordl_class_RandomNoteRotation")]
 impl std::ops::Deref for crate::GlobalNamespace::RandomNoteRotation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RandomNoteRotation")]
+#[cfg(feature = "cordl_class_RandomNoteRotation")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RandomNoteRotation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::RandomNoteRotation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RandomNoteRotation")]
+#[cfg(feature = "cordl_class_RandomNoteRotation")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RandomNoteRotation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

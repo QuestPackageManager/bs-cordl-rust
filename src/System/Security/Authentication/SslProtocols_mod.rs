@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Authentication+SslProtocols")]
+#[cfg(feature = "cordl_class_System+Security+Authentication+SslProtocols")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SslProtocols {
@@ -12,7 +12,7 @@ pub enum SslProtocols {
     Tls12 = 3072i32,
     Tls13 = 12288i32,
 }
-#[cfg(feature = "System+Security+Authentication+SslProtocols")]
+#[cfg(feature = "cordl_class_System+Security+Authentication+SslProtocols")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Authentication::SslProtocols {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::System::Security::Authentication::SslProtocols {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Authentication+SslProtocols")]
+#[cfg(feature = "cordl_class_System+Security+Authentication+SslProtocols")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Authentication::SslProtocols {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::System::Security::Authentication::SslProtocols {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Authentication+SslProtocols")]
+#[cfg(feature = "cordl_class_System+Security+Authentication+SslProtocols")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Authentication::SslProtocols {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::System::Security::Authentication::SslProtocols {
         self
     }
 }
-#[cfg(feature = "System+Security+Authentication+SslProtocols")]
+#[cfg(feature = "cordl_class_System+Security+Authentication+SslProtocols")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Authentication::SslProtocols {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::System::Security::Authentication::SslProtocols {
         }
     }
 }
-#[cfg(feature = "System+Security+Authentication+SslProtocols")]
+#[cfg(feature = "cordl_class_System+Security+Authentication+SslProtocols")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Authentication::SslProtocols {
     type Actual = Self;

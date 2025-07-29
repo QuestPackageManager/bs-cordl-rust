@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRFaceExpressions")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRFaceExpressions {
@@ -12,7 +12,7 @@ pub struct OVRFaceExpressions {
         >,
     >,
 }
-#[cfg(feature = "OVRFaceExpressions")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRFaceExpressions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRFaceExpre
         false
     }
 }
-#[cfg(feature = "OVRFaceExpressions")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRFaceExpressions {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRFaceExpressions")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRFaceExpressions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -641,7 +641,7 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRFaceExpressions")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRFaceExpressions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -714,7 +714,7 @@ for crate::GlobalNamespace::OVRFaceExpressions {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpression")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRFaceExpressions_FaceExpression {
@@ -785,7 +785,7 @@ pub enum OVRFaceExpressions_FaceExpression {
     UpperLipRaiserL = 61i32,
     UpperLipRaiserR = 62i32,
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpression")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
     type Held<'a> = Self;
@@ -815,7 +815,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpression")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
     type Type = Self;
@@ -826,7 +826,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpression")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
     type Actual = Self;
@@ -840,7 +840,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
         self
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpression")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
     type Type = Self;
@@ -855,7 +855,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
         }
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpression")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
     type Actual = Self;
@@ -869,7 +869,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
         actual
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRFaceExpressions_FaceExpressionsEnumerator {
@@ -879,7 +879,7 @@ pub struct OVRFaceExpressions_FaceExpressionsEnumerator {
     pub _index: i32,
     pub _count: i32,
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     type Held<'a> = Self;
@@ -909,7 +909,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     type Type = Self;
@@ -920,7 +920,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     type Actual = Self;
@@ -934,7 +934,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
         self
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     type Type = Self;
@@ -949,7 +949,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
         }
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     type Actual = Self;
@@ -963,7 +963,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
         actual
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     type Type = Self;
@@ -1152,7 +1152,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
         todo!()
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRFaceExpressions_FaceRegionConfidence {
@@ -1161,7 +1161,7 @@ pub enum OVRFaceExpressions_FaceRegionConfidence {
     Max = 2i32,
     Upper = 1i32,
 }
-#[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
     type Held<'a> = Self;
@@ -1191,7 +1191,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
     type Type = Self;
@@ -1202,7 +1202,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
     type Actual = Self;
@@ -1216,7 +1216,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
         self
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
     type Type = Self;
@@ -1231,7 +1231,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
         }
     }
 }
-#[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
     type Actual = Self;
@@ -1245,13 +1245,13 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
         actual
     }
 }
-#[cfg(feature = "OVRFaceExpressions+WeightProvider")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRFaceExpressions_WeightProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRFaceExpressions+WeightProvider")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1271,14 +1271,14 @@ for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
         false
     }
 }
-#[cfg(feature = "OVRFaceExpressions+WeightProvider")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRFaceExpressions+WeightProvider")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1318,7 +1318,7 @@ impl crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "OVRFaceExpressions+WeightProvider")]
+#[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRFaceExpressions_WeightProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

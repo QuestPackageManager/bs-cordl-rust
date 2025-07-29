@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SetIMECursorPositionCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
     type Held<'a> = Self;
@@ -34,7 +38,9 @@ for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
     type Type = Self;
@@ -45,7 +51,9 @@ for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
     type Actual = Self;
@@ -59,7 +67,9 @@ for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
     type Type = Self;
@@ -74,7 +84,9 @@ for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
     type Actual = Self;
@@ -88,7 +100,9 @@ for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
     type Type = Self;

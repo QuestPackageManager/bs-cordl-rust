@@ -1,4 +1,4 @@
-#[cfg(feature = "BakedReflectionProbe")]
+#[cfg(feature = "cordl_class_BakedReflectionProbe")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BakedReflectionProbe {
@@ -12,7 +12,7 @@ pub struct BakedReflectionProbe {
     >,
     pub _blackCubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
 }
-#[cfg(feature = "BakedReflectionProbe")]
+#[cfg(feature = "cordl_class_BakedReflectionProbe")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BakedReflectionProbe {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::BakedReflectionProbe {
         false
     }
 }
-#[cfg(feature = "BakedReflectionProbe")]
+#[cfg(feature = "cordl_class_BakedReflectionProbe")]
 impl std::ops::Deref for crate::GlobalNamespace::BakedReflectionProbe {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BakedReflectionProbe")]
+#[cfg(feature = "cordl_class_BakedReflectionProbe")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BakedReflectionProbe {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -240,7 +240,7 @@ impl crate::GlobalNamespace::BakedReflectionProbe {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BakedReflectionProbe")]
+#[cfg(feature = "cordl_class_BakedReflectionProbe")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BakedReflectionProbe {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

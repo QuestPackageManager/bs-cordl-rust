@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+MemberSerialization")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MemberSerialization")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MemberSerialization {
@@ -7,7 +7,7 @@ pub enum MemberSerialization {
     OptIn = 1i32,
     OptOut = 0i32,
 }
-#[cfg(feature = "Newtonsoft+Json+MemberSerialization")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MemberSerialization")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::MemberSerialization {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Newtonsoft::Json::MemberSerialization {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+MemberSerialization")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MemberSerialization")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::MemberSerialization {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Newtonsoft::Json::MemberSerialization {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+MemberSerialization")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MemberSerialization")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::MemberSerialization {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Newtonsoft::Json::MemberSerialization {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+MemberSerialization")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MemberSerialization")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::MemberSerialization {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Newtonsoft::Json::MemberSerialization {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+MemberSerialization")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MemberSerialization")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::MemberSerialization {
     type Actual = Self;

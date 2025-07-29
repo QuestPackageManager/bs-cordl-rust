@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRNotifications")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRNotifications {
@@ -9,7 +9,7 @@ pub struct IVRNotifications {
         crate::OVR::OpenVR::IVRNotifications__RemoveNotification,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRNotifications {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRNotifications
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRNotifications {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRNotificat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRNotifications {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRNotifica
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRNotifications {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRNotificat
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRNotifications {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRNotificatio
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::IVRNotifications {
     type Type = Self;
@@ -106,13 +106,13 @@ impl crate::OVR::OpenVR::IVRNotifications {
     #[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
     pub type _RemoveNotification = crate::OVR::OpenVR::IVRNotifications__RemoveNotification;
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_CreateNotification")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRNotifications__CreateNotification {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_CreateNotification")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -132,14 +132,14 @@ for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_CreateNotification")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_CreateNotification")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -352,7 +352,7 @@ impl crate::OVR::OpenVR::IVRNotifications__CreateNotification {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_CreateNotification")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -362,13 +362,13 @@ for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRNotifications__RemoveNotification {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -388,14 +388,14 @@ for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -534,7 +534,7 @@ impl crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

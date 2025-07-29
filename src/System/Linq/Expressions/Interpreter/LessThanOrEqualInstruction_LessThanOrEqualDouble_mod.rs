@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LessThanOrEqualInstruction_LessThanOrEqualDouble {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LessThanOrEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualDouble"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualDouble {

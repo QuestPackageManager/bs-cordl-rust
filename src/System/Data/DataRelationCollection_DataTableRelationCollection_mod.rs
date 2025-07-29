@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Data+DataRelationCollection+DataTableRelationCollection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRelationCollection_DataTableRelationCollection {
@@ -10,7 +12,9 @@ pub struct DataRelationCollection_DataTableRelationCollection {
         crate::System::ComponentModel::CollectionChangeEventHandler,
     >,
 }
-#[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Data+DataRelationCollection+DataTableRelationCollection"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +34,9 @@ for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
         false
     }
 }
-#[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Data+DataRelationCollection+DataTableRelationCollection"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
     type Target = crate::System::Data::DataRelationCollection;
@@ -38,7 +44,9 @@ for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Data+DataRelationCollection+DataTableRelationCollection"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -387,7 +395,9 @@ impl crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
+#[cfg(
+    feature = "cordl_class_System+Data+DataRelationCollection+DataTableRelationCollection"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

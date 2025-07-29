@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Guid")]
+#[cfg(feature = "cordl_class_System+Guid")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Guid {
@@ -14,7 +14,7 @@ pub struct Guid {
     pub _j: u8,
     pub _k: u8,
 }
-#[cfg(feature = "System+Guid")]
+#[cfg(feature = "cordl_class_System+Guid")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Guid")]
+#[cfg(feature = "cordl_class_System+Guid")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Guid")]
+#[cfg(feature = "cordl_class_System+Guid")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Guid {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,7 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Guid {
         self
     }
 }
-#[cfg(feature = "System+Guid")]
+#[cfg(feature = "cordl_class_System+Guid")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,7 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid {
         }
     }
 }
-#[cfg(feature = "System+Guid")]
+#[cfg(feature = "cordl_class_System+Guid")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -93,7 +93,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid {
         actual
     }
 }
-#[cfg(feature = "System+Guid")]
+#[cfg(feature = "cordl_class_System+Guid")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Guid {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -1381,7 +1381,7 @@ impl AsMut<crate::System::ISpanFormattable> for crate::System::Guid {
         todo!()
     }
 }
-#[cfg(feature = "System+Guid+GuidParseThrowStyle")]
+#[cfg(feature = "cordl_class_System+Guid+GuidParseThrowStyle")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Guid_GuidParseThrowStyle {
@@ -1390,7 +1390,7 @@ pub enum Guid_GuidParseThrowStyle {
     AllButOverflow = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Guid+GuidParseThrowStyle")]
+#[cfg(feature = "cordl_class_System+Guid+GuidParseThrowStyle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidParseThrowStyle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1419,7 +1419,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidParseThrowSt
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Guid+GuidParseThrowStyle")]
+#[cfg(feature = "cordl_class_System+Guid+GuidParseThrowStyle")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid_GuidParseThrowStyle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1429,7 +1429,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid_GuidParseThr
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Guid+GuidParseThrowStyle")]
+#[cfg(feature = "cordl_class_System+Guid+GuidParseThrowStyle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Guid_GuidParseThrowStyle {
     type Actual = Self;
@@ -1443,7 +1443,7 @@ for crate::System::Guid_GuidParseThrowStyle {
         self
     }
 }
-#[cfg(feature = "System+Guid+GuidParseThrowStyle")]
+#[cfg(feature = "cordl_class_System+Guid+GuidParseThrowStyle")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid_GuidParseThrowStyle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1457,7 +1457,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid_GuidParseThr
         }
     }
 }
-#[cfg(feature = "System+Guid+GuidParseThrowStyle")]
+#[cfg(feature = "cordl_class_System+Guid+GuidParseThrowStyle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_GuidParseThrowStyle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1470,7 +1470,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_GuidParseThrow
         actual
     }
 }
-#[cfg(feature = "System+Guid+GuidResult")]
+#[cfg(feature = "cordl_class_System+Guid+GuidResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Guid_GuidResult {
@@ -1488,7 +1488,7 @@ pub struct Guid_GuidResult {
     >,
     pub _innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
-#[cfg(feature = "System+Guid+GuidResult")]
+#[cfg(feature = "cordl_class_System+Guid+GuidResult")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1517,7 +1517,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Guid+GuidResult")]
+#[cfg(feature = "cordl_class_System+Guid+GuidResult")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid_GuidResult {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1527,7 +1527,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid_GuidResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Guid+GuidResult")]
+#[cfg(feature = "cordl_class_System+Guid+GuidResult")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Guid_GuidResult {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1540,7 +1540,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Guid_GuidResult 
         self
     }
 }
-#[cfg(feature = "System+Guid+GuidResult")]
+#[cfg(feature = "cordl_class_System+Guid+GuidResult")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid_GuidResult {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1554,7 +1554,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid_GuidResult {
         }
     }
 }
-#[cfg(feature = "System+Guid+GuidResult")]
+#[cfg(feature = "cordl_class_System+Guid+GuidResult")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_GuidResult {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1567,7 +1567,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_GuidResult {
         actual
     }
 }
-#[cfg(feature = "System+Guid+GuidResult")]
+#[cfg(feature = "cordl_class_System+Guid+GuidResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Guid_GuidResult {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -1789,7 +1789,7 @@ impl crate::System::Guid_GuidResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Guid+GuidStyles")]
+#[cfg(feature = "cordl_class_System+Guid+GuidStyles")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Guid_GuidStyles {
@@ -1808,7 +1808,7 @@ pub enum Guid_GuidStyles {
     RequireHexPrefix = 128i32,
     RequireParenthesis = 16i32,
 }
-#[cfg(feature = "System+Guid+GuidStyles")]
+#[cfg(feature = "cordl_class_System+Guid+GuidStyles")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidStyles {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1837,7 +1837,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidStyles {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Guid+GuidStyles")]
+#[cfg(feature = "cordl_class_System+Guid+GuidStyles")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid_GuidStyles {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1847,7 +1847,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid_GuidStyles {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Guid+GuidStyles")]
+#[cfg(feature = "cordl_class_System+Guid+GuidStyles")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Guid_GuidStyles {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1860,7 +1860,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Guid_GuidStyles 
         self
     }
 }
-#[cfg(feature = "System+Guid+GuidStyles")]
+#[cfg(feature = "cordl_class_System+Guid+GuidStyles")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid_GuidStyles {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1874,7 +1874,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid_GuidStyles {
         }
     }
 }
-#[cfg(feature = "System+Guid+GuidStyles")]
+#[cfg(feature = "cordl_class_System+Guid+GuidStyles")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_GuidStyles {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1887,7 +1887,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_GuidStyles {
         actual
     }
 }
-#[cfg(feature = "System+Guid+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Guid+ParseFailureKind")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Guid_ParseFailureKind {
@@ -1899,7 +1899,7 @@ pub enum Guid_ParseFailureKind {
     NativeException = 4i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Guid+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Guid+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_ParseFailureKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1928,7 +1928,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_ParseFailureKind
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Guid+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Guid+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid_ParseFailureKind {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1938,7 +1938,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Guid_ParseFailure
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Guid+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Guid+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Guid_ParseFailureKind {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1951,7 +1951,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Guid_ParseFailur
         self
     }
 }
-#[cfg(feature = "System+Guid+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Guid+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid_ParseFailureKind {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1965,7 +1965,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Guid_ParseFailure
         }
     }
 }
-#[cfg(feature = "System+Guid+ParseFailureKind")]
+#[cfg(feature = "cordl_class_System+Guid+ParseFailureKind")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_ParseFailureKind {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

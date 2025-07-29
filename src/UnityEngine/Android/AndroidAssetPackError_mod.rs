@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackError")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackError")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidAssetPackError {
@@ -17,7 +17,7 @@ pub enum AndroidAssetPackError {
     PackUnavailable = -2i32,
     PlayStoreNotFound = -11i32,
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackError")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackError")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Android::AndroidAssetPackError {
     type Held<'a> = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::Android::AndroidAssetPackError {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackError")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackError")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Android::AndroidAssetPackError {
     type Type = Self;
@@ -58,7 +58,7 @@ for crate::UnityEngine::Android::AndroidAssetPackError {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackError")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackError")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Android::AndroidAssetPackError {
     type Actual = Self;
@@ -72,7 +72,7 @@ for crate::UnityEngine::Android::AndroidAssetPackError {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackError")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackError")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Android::AndroidAssetPackError {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::UnityEngine::Android::AndroidAssetPackError {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackError")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackError")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Android::AndroidAssetPackError {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlyphLoadFlags {
@@ -15,7 +15,7 @@ pub enum GlyphLoadFlags {
     LOAD_NO_SCALE = 1i32,
     LOAD_RENDER = 4i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
     type Held<'a> = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
     type Type = Self;
@@ -56,7 +56,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
     type Actual = Self;
@@ -70,7 +70,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
     type Type = Self;
@@ -85,7 +85,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags {
     type Actual = Self;

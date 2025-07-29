@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlyphPackingMode {
@@ -9,7 +9,7 @@ pub enum GlyphPackingMode {
     BottomLeftRule = 3i32,
     ContactPointRule = 4i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode {
     type Actual = Self;

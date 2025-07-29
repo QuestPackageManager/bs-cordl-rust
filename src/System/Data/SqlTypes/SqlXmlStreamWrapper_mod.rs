@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+SqlTypes+SqlXmlStreamWrapper")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlXmlStreamWrapper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SqlXmlStreamWrapper {
@@ -7,7 +7,7 @@ pub struct SqlXmlStreamWrapper {
     pub _lPosition: i64,
     pub _isClosed: bool,
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlXmlStreamWrapper")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlXmlStreamWrapper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
         false
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlXmlStreamWrapper")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlXmlStreamWrapper")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlXmlStreamWrapper")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlXmlStreamWrapper")]
 impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -521,7 +521,7 @@ impl crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlXmlStreamWrapper")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlXmlStreamWrapper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

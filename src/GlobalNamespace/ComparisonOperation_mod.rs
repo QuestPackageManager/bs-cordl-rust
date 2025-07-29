@@ -1,4 +1,4 @@
-#[cfg(feature = "ComparisonOperation")]
+#[cfg(feature = "cordl_class_ComparisonOperation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ComparisonOperation {
@@ -6,7 +6,7 @@ pub enum ComparisonOperation {
     Equal = 0i32,
     NotEqual = 1i32,
 }
-#[cfg(feature = "ComparisonOperation")]
+#[cfg(feature = "cordl_class_ComparisonOperation")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ComparisonOperation {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ComparisonOp
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ComparisonOperation")]
+#[cfg(feature = "cordl_class_ComparisonOperation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ComparisonOperation {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::ComparisonOperation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ComparisonOperation")]
+#[cfg(feature = "cordl_class_ComparisonOperation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ComparisonOperation {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::ComparisonOperation {
         self
     }
 }
-#[cfg(feature = "ComparisonOperation")]
+#[cfg(feature = "cordl_class_ComparisonOperation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ComparisonOperation {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::ComparisonOperation {
         }
     }
 }
-#[cfg(feature = "ComparisonOperation")]
+#[cfg(feature = "cordl_class_ComparisonOperation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ComparisonOperation {
     type Actual = Self;

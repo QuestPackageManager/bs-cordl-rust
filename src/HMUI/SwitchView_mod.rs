@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+SwitchView")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SwitchView {
@@ -26,7 +26,7 @@ pub struct SwitchView {
     >,
     pub _toggle: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleWithCallbacks>,
 }
-#[cfg(feature = "HMUI+SwitchView")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SwitchView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SwitchView {
         false
     }
 }
-#[cfg(feature = "HMUI+SwitchView")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView")]
 impl std::ops::Deref for crate::HMUI::SwitchView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+SwitchView")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView")]
 impl std::ops::DerefMut for crate::HMUI::SwitchView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -231,7 +231,7 @@ impl crate::HMUI::SwitchView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+SwitchView")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SwitchView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -240,7 +240,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SwitchView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+SwitchView+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView+AnimationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SwitchView_AnimationType {
@@ -248,7 +248,7 @@ pub enum SwitchView_AnimationType {
     OnOff = 0i32,
     SelectedState = 1i32,
 }
-#[cfg(feature = "HMUI+SwitchView+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SwitchView_AnimationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -277,7 +277,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SwitchView_AnimationTyp
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+SwitchView+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::SwitchView_AnimationType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -287,7 +287,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::SwitchView_Animatio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+SwitchView+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::SwitchView_AnimationType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -300,7 +300,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::SwitchView_Animati
         self
     }
 }
-#[cfg(feature = "HMUI+SwitchView+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::SwitchView_AnimationType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -314,7 +314,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::SwitchView_Animatio
         }
     }
 }
-#[cfg(feature = "HMUI+SwitchView+AnimationType")]
+#[cfg(feature = "cordl_class_HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::SwitchView_AnimationType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+MemberDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MemberDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemberDescriptor {
@@ -26,7 +26,7 @@ pub struct MemberDescriptor {
     pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lockCookie: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+ComponentModel+MemberDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MemberDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::MemberDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::System::ComponentModel::MemberDescriptor {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+MemberDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MemberDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::MemberDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+MemberDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MemberDescriptor")]
 impl std::ops::DerefMut for crate::System::ComponentModel::MemberDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -658,7 +658,7 @@ impl crate::System::ComponentModel::MemberDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+MemberDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MemberDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::MemberDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

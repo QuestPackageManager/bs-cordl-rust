@@ -1,4 +1,4 @@
-#[cfg(feature = "DifficultyTableCell")]
+#[cfg(feature = "cordl_class_DifficultyTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DifficultyTableCell {
@@ -8,7 +8,7 @@ pub struct DifficultyTableCell {
     pub _highlightImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _fillIndicator: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FillIndicator>,
 }
-#[cfg(feature = "DifficultyTableCell")]
+#[cfg(feature = "cordl_class_DifficultyTableCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DifficultyTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DifficultyTa
         false
     }
 }
-#[cfg(feature = "DifficultyTableCell")]
+#[cfg(feature = "cordl_class_DifficultyTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::DifficultyTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DifficultyTableCell")]
+#[cfg(feature = "cordl_class_DifficultyTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DifficultyTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -202,7 +202,7 @@ impl crate::GlobalNamespace::DifficultyTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DifficultyTableCell")]
+#[cfg(feature = "cordl_class_DifficultyTableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DifficultyTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

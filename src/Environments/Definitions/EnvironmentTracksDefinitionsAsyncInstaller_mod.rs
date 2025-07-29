@@ -1,4 +1,6 @@
-#[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
+#[cfg(
+    feature = "cordl_class_Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionsAsyncInstaller {
@@ -15,7 +17,9 @@ pub struct EnvironmentTracksDefinitionsAsyncInstaller {
         >,
     >,
 }
-#[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
+#[cfg(
+    feature = "cordl_class_Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,7 +39,9 @@ for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller
         false
     }
 }
-#[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
+#[cfg(
+    feature = "cordl_class_Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller"
+)]
 impl std::ops::Deref
 for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
@@ -47,7 +53,9 @@ for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
+#[cfg(
+    feature = "cordl_class_Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller"
+)]
 impl std::ops::DerefMut
 for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -183,7 +191,9 @@ impl crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstalle
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
+#[cfg(
+    feature = "cordl_class_Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

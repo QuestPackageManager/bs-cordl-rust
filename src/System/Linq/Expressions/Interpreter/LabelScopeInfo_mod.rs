@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LabelScopeInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LabelScopeInfo {
@@ -16,7 +16,7 @@ pub struct LabelScopeInfo {
         crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LabelScopeInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LabelScopeInfo")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LabelScopeInfo")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -220,7 +220,7 @@ impl crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LabelScopeInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::LabelScopeInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

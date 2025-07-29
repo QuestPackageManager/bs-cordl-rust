@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+RENDERING_PIPELINE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+RENDERING_PIPELINE")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RENDERING_PIPELINE {
@@ -10,7 +10,7 @@ pub enum RENDERING_PIPELINE {
     UNIVERSAL = 4u32,
     VERTEX_LIT = 3u32,
 }
-#[cfg(feature = "LIV+SDK+Unity+RENDERING_PIPELINE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+RENDERING_PIPELINE")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::RENDERING_PIPELINE {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::RENDERING_PI
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+RENDERING_PIPELINE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+RENDERING_PIPELINE")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LIV::SDK::Unity::RENDERING_PIPELINE {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::LIV::SDK::Unity::RENDERING_PIPELINE {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+RENDERING_PIPELINE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+RENDERING_PIPELINE")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LIV::SDK::Unity::RENDERING_PIPELINE {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::LIV::SDK::Unity::RENDERING_PIPELINE {
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+RENDERING_PIPELINE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+RENDERING_PIPELINE")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LIV::SDK::Unity::RENDERING_PIPELINE {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::LIV::SDK::Unity::RENDERING_PIPELINE {
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+RENDERING_PIPELINE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+RENDERING_PIPELINE")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LIV::SDK::Unity::RENDERING_PIPELINE {
     type Actual = Self;

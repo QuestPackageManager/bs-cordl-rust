@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+PointerManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerManipulator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::MouseManipulator,
     pub m_CurrentPointerId: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerManipulator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::PointerManipulator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::UIElements::PointerManipulator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerManipulator {
     type Target = crate::UnityEngine::UIElements::MouseManipulator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerManipulator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerManipulator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::UnityEngine::UIElements::PointerManipulator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+PointerManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerManipulator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PointerManipulator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

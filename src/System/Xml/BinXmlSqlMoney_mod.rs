@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+BinXmlSqlMoney")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlSqlMoney")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BinXmlSqlMoney {
     pub data: i64,
 }
-#[cfg(feature = "System+Xml+BinXmlSqlMoney")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlSqlMoney")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::BinXmlSqlMoney {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::BinXmlSqlMoney {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+BinXmlSqlMoney")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlSqlMoney")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::BinXmlSqlMoney {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::BinXmlSqlMon
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+BinXmlSqlMoney")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlSqlMoney")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::BinXmlSqlMoney {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::BinXmlSqlMo
         self
     }
 }
-#[cfg(feature = "System+Xml+BinXmlSqlMoney")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlSqlMoney")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::BinXmlSqlMoney {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::BinXmlSqlMon
         }
     }
 }
-#[cfg(feature = "System+Xml+BinXmlSqlMoney")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlSqlMoney")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::BinXmlSqlMoney {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::BinXmlSqlMoney
         actual
     }
 }
-#[cfg(feature = "System+Xml+BinXmlSqlMoney")]
+#[cfg(feature = "cordl_class_System+Xml+BinXmlSqlMoney")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Xml::BinXmlSqlMoney {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

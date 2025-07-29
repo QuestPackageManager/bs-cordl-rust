@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+SelectMode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SelectMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectMode {
@@ -7,7 +7,7 @@ pub enum SelectMode {
     SelectRead = 0i32,
     SelectWrite = 1i32,
 }
-#[cfg(feature = "System+Net+Sockets+SelectMode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::SelectMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::SelectM
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Sockets+SelectMode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::Sockets::SelectMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::Sockets::Sel
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Sockets+SelectMode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::SelectMode {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::System::Net::Sockets::SelectMode {
         self
     }
 }
-#[cfg(feature = "System+Net+Sockets+SelectMode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::Sockets::SelectMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::Sockets::Sel
         }
     }
 }
-#[cfg(feature = "System+Net+Sockets+SelectMode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::Sockets::SelectMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MPInteger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MPInteger {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
     pub val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MPInteger")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Bcpg::MPInteger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Bcpg::MPIn
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MPInteger")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::MPInteger {
     type Target = crate::Org::BouncyCastle::Bcpg::BcpgObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MPInteger")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::MPInteger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -212,7 +212,7 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+MPInteger")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Bcpg::MPInteger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

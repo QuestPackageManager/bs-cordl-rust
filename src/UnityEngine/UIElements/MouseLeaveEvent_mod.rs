@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+MouseLeaveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseLeaveEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseLeaveEvent {
@@ -6,7 +6,7 @@ pub struct MouseLeaveEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseLeaveEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseLeaveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseLeaveEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MouseLeaveEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::MouseLeaveEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseLeaveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseLeaveEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseLeaveEvent {
     type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseLeaveEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::MouseLeaveEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseLeaveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseLeaveEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseLeaveEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::UnityEngine::UIElements::MouseLeaveEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseLeaveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseLeaveEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MouseLeaveEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

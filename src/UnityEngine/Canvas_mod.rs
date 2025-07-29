@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Canvas")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Canvas {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
-#[cfg(feature = "UnityEngine+Canvas")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Canvas {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Canvas {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Canvas")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas")]
 impl std::ops::Deref for crate::UnityEngine::Canvas {
     type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Canvas")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas")]
 impl std::ops::DerefMut for crate::UnityEngine::Canvas {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1563,7 +1563,7 @@ impl crate::UnityEngine::Canvas {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Canvas")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Canvas {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1572,13 +1572,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Canvas {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas+WillRenderCanvases")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Canvas_WillRenderCanvases {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas+WillRenderCanvases")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Canvas_WillRenderCanvases {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1598,14 +1598,14 @@ for crate::UnityEngine::Canvas_WillRenderCanvases {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas+WillRenderCanvases")]
 impl std::ops::Deref for crate::UnityEngine::Canvas_WillRenderCanvases {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas+WillRenderCanvases")]
 impl std::ops::DerefMut for crate::UnityEngine::Canvas_WillRenderCanvases {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1677,7 +1677,7 @@ impl crate::UnityEngine::Canvas_WillRenderCanvases {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
+#[cfg(feature = "cordl_class_UnityEngine+Canvas+WillRenderCanvases")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Canvas_WillRenderCanvases {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

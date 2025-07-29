@@ -1,4 +1,4 @@
-#[cfg(feature = "VRPlatformEventsDebugger")]
+#[cfg(feature = "cordl_class_VRPlatformEventsDebugger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRPlatformEventsDebugger {
@@ -7,7 +7,7 @@ pub struct VRPlatformEventsDebugger {
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
 }
-#[cfg(feature = "VRPlatformEventsDebugger")]
+#[cfg(feature = "cordl_class_VRPlatformEventsDebugger")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VRPlatformEventsDebugger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::VRPlatformEventsDebugger {
         false
     }
 }
-#[cfg(feature = "VRPlatformEventsDebugger")]
+#[cfg(feature = "cordl_class_VRPlatformEventsDebugger")]
 impl std::ops::Deref for crate::GlobalNamespace::VRPlatformEventsDebugger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRPlatformEventsDebugger")]
+#[cfg(feature = "cordl_class_VRPlatformEventsDebugger")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRPlatformEventsDebugger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -290,7 +290,7 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRPlatformEventsDebugger")]
+#[cfg(feature = "cordl_class_VRPlatformEventsDebugger")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VRPlatformEventsDebugger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

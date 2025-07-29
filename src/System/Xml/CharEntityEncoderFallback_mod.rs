@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+CharEntityEncoderFallback")]
+#[cfg(feature = "cordl_class_System+Xml+CharEntityEncoderFallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CharEntityEncoderFallback {
@@ -13,7 +13,7 @@ pub struct CharEntityEncoderFallback {
     pub curMarkPos: i32,
     pub startOffset: i32,
 }
-#[cfg(feature = "System+Xml+CharEntityEncoderFallback")]
+#[cfg(feature = "cordl_class_System+Xml+CharEntityEncoderFallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::CharEntityEncoderFallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::System::Xml::CharEntityEncoderFallback {
         false
     }
 }
-#[cfg(feature = "System+Xml+CharEntityEncoderFallback")]
+#[cfg(feature = "cordl_class_System+Xml+CharEntityEncoderFallback")]
 impl std::ops::Deref for crate::System::Xml::CharEntityEncoderFallback {
     type Target = crate::System::Text::EncoderFallback;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+CharEntityEncoderFallback")]
+#[cfg(feature = "cordl_class_System+Xml+CharEntityEncoderFallback")]
 impl std::ops::DerefMut for crate::System::Xml::CharEntityEncoderFallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -202,7 +202,7 @@ impl crate::System::Xml::CharEntityEncoderFallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+CharEntityEncoderFallback")]
+#[cfg(feature = "cordl_class_System+Xml+CharEntityEncoderFallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::CharEntityEncoderFallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

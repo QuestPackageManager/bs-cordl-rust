@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MarshalByValueComponent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MarshalByValueComponent {
@@ -8,7 +8,7 @@ pub struct MarshalByValueComponent {
         crate::System::ComponentModel::EventHandlerList,
     >,
 }
-#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MarshalByValueComponent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::MarshalByValueComponent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::ComponentModel::MarshalByValueComponent {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MarshalByValueComponent")]
 impl std::ops::Deref for crate::System::ComponentModel::MarshalByValueComponent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MarshalByValueComponent")]
 impl std::ops::DerefMut for crate::System::ComponentModel::MarshalByValueComponent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -222,7 +222,7 @@ impl crate::System::ComponentModel::MarshalByValueComponent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
+#[cfg(feature = "cordl_class_System+ComponentModel+MarshalByValueComponent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::MarshalByValueComponent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

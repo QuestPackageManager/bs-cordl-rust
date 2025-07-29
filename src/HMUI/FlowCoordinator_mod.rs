@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+FlowCoordinator")]
+#[cfg(feature = "cordl_class_HMUI+FlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlowCoordinator {
@@ -50,7 +50,7 @@ pub struct FlowCoordinator {
         crate::UnityEngine::EventSystems::EventSystem,
     >,
 }
-#[cfg(feature = "HMUI+FlowCoordinator")]
+#[cfg(feature = "cordl_class_HMUI+FlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::FlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -69,14 +69,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::FlowCoordinator {
         false
     }
 }
-#[cfg(feature = "HMUI+FlowCoordinator")]
+#[cfg(feature = "cordl_class_HMUI+FlowCoordinator")]
 impl std::ops::Deref for crate::HMUI::FlowCoordinator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+FlowCoordinator")]
+#[cfg(feature = "cordl_class_HMUI+FlowCoordinator")]
 impl std::ops::DerefMut for crate::HMUI::FlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1555,7 +1555,7 @@ impl crate::HMUI::FlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+FlowCoordinator")]
+#[cfg(feature = "cordl_class_HMUI+FlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::FlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

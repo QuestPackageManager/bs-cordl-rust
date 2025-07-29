@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemScalingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemScalingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemScalingMode {
@@ -7,7 +7,7 @@ pub enum ParticleSystemScalingMode {
     Local = 1i32,
     Shape = 2i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemScalingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemScalingMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemScalingMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::ParticleSystemScalingMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemScalingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemScalingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemScalingMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ParticleSystemScalingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemScalingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemScalingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemScalingMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ParticleSystemScalingMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemScalingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemScalingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemScalingMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ParticleSystemScalingMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemScalingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemScalingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemScalingMode {
     type Actual = Self;

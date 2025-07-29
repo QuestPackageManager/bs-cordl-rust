@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AsyncValueTaskMethodBuilder {
@@ -6,7 +8,9 @@ pub struct AsyncValueTaskMethodBuilder {
     pub _haveResult: bool,
     pub _useBuilder: bool,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
     type Held<'a> = Self;
@@ -36,7 +40,9 @@ for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
     type Type = Self;
@@ -47,7 +53,9 @@ for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
     type Actual = Self;
@@ -61,7 +69,9 @@ for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
         self
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
     type Type = Self;
@@ -76,7 +86,9 @@ for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
         }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
     type Actual = Self;
@@ -90,7 +102,9 @@ for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
         actual
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
     type Type = Self;

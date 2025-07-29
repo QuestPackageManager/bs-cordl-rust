@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509CrlParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CrlParser {
@@ -8,7 +8,7 @@ pub struct X509CrlParser {
     pub sCrlDataObjectCount: i32,
     pub currentCrlStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
-#[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509CrlParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::X509::X509CrlParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Org::BouncyCastle::X509::X509CrlParser {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509CrlParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509CrlParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509CrlParser")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::X509CrlParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -352,7 +352,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509CrlParser")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::X509::X509CrlParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

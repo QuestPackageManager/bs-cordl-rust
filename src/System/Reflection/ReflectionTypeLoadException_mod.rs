@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+ReflectionTypeLoadException")]
+#[cfg(feature = "cordl_class_System+Reflection+ReflectionTypeLoadException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionTypeLoadException {
@@ -14,7 +14,7 @@ pub struct ReflectionTypeLoadException {
         >,
     >,
 }
-#[cfg(feature = "System+Reflection+ReflectionTypeLoadException")]
+#[cfg(feature = "cordl_class_System+Reflection+ReflectionTypeLoadException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::ReflectionTypeLoadException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::System::Reflection::ReflectionTypeLoadException {
         false
     }
 }
-#[cfg(feature = "System+Reflection+ReflectionTypeLoadException")]
+#[cfg(feature = "cordl_class_System+Reflection+ReflectionTypeLoadException")]
 impl std::ops::Deref for crate::System::Reflection::ReflectionTypeLoadException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+ReflectionTypeLoadException")]
+#[cfg(feature = "cordl_class_System+Reflection+ReflectionTypeLoadException")]
 impl std::ops::DerefMut for crate::System::Reflection::ReflectionTypeLoadException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -313,7 +313,7 @@ impl crate::System::Reflection::ReflectionTypeLoadException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+ReflectionTypeLoadException")]
+#[cfg(feature = "cordl_class_System+Reflection+ReflectionTypeLoadException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::ReflectionTypeLoadException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

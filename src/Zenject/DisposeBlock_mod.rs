@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+DisposeBlock")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposeBlock {
@@ -14,7 +14,7 @@ pub struct DisposeBlock {
         >,
     >,
 }
-#[cfg(feature = "Zenject+DisposeBlock")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::DisposeBlock {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::DisposeBlock {
         false
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock")]
 impl std::ops::Deref for crate::Zenject::DisposeBlock {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock")]
 impl std::ops::DerefMut for crate::Zenject::DisposeBlock {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -879,7 +879,7 @@ impl crate::Zenject::DisposeBlock {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::DisposeBlock {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -900,14 +900,14 @@ impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposeBlock {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DisposeBlock_SpawnedObjectPoolPair {
     pub Pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
     pub Object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Held<'a> = Self;
@@ -937,7 +937,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Type = Self;
@@ -948,7 +948,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Actual = Self;
@@ -962,7 +962,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
         self
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Type = Self;
@@ -977,7 +977,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
         }
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Actual = Self;
@@ -991,7 +991,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
         actual
     }
 }
-#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
+#[cfg(feature = "cordl_class_Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Type = Self;

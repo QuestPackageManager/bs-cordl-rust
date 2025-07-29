@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+PropertyChangingEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyChangingEventHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyChangingEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+ComponentModel+PropertyChangingEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyChangingEventHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::PropertyChangingEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::PropertyChangingEventHandler {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+PropertyChangingEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyChangingEventHandler")]
 impl std::ops::Deref for crate::System::ComponentModel::PropertyChangingEventHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+PropertyChangingEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyChangingEventHandler")]
 impl std::ops::DerefMut for crate::System::ComponentModel::PropertyChangingEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::System::ComponentModel::PropertyChangingEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+PropertyChangingEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+PropertyChangingEventHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::PropertyChangingEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

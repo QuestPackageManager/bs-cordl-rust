@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspMvcSuppressViewErrorAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

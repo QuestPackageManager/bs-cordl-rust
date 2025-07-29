@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusHMDExtended")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusHMDExtended")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusHMDExtended {
@@ -10,7 +10,7 @@ pub struct OculusHMDExtended {
         crate::UnityEngine::InputSystem::Controls::Vector2Control,
     >,
 }
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusHMDExtended")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusHMDExtended")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::Input::OculusHMDExtended {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Unity::XR::Oculus::Input::OculusHMDExtended {
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusHMDExtended")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusHMDExtended")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Input::OculusHMDExtended {
     type Target = crate::Unity::XR::Oculus::Input::OculusHMD;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusHMDExtended")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusHMDExtended")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Input::OculusHMDExtended {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -221,7 +221,7 @@ impl crate::Unity::XR::Oculus::Input::OculusHMDExtended {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Input+OculusHMDExtended")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusHMDExtended")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::XR::Oculus::Input::OculusHMDExtended {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

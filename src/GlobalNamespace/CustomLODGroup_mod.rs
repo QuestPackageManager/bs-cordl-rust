@@ -1,4 +1,4 @@
-#[cfg(feature = "CustomLODGroup")]
+#[cfg(feature = "cordl_class_CustomLODGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomLODGroup {
@@ -10,7 +10,7 @@ pub struct CustomLODGroup {
     >,
     pub _activeLevel: i32,
 }
-#[cfg(feature = "CustomLODGroup")]
+#[cfg(feature = "cordl_class_CustomLODGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CustomLODGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CustomLODGro
         false
     }
 }
-#[cfg(feature = "CustomLODGroup")]
+#[cfg(feature = "cordl_class_CustomLODGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomLODGroup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CustomLODGroup")]
+#[cfg(feature = "cordl_class_CustomLODGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CustomLODGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -286,7 +286,7 @@ impl crate::GlobalNamespace::CustomLODGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CustomLODGroup")]
+#[cfg(feature = "cordl_class_CustomLODGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomLODGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

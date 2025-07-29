@@ -1,4 +1,4 @@
-#[cfg(feature = "RichPresenceManager")]
+#[cfg(feature = "cordl_class_RichPresenceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RichPresenceManager {
@@ -51,7 +51,7 @@ pub struct RichPresenceManager {
         crate::GlobalNamespace::IRichPresenceData,
     >,
 }
-#[cfg(feature = "RichPresenceManager")]
+#[cfg(feature = "cordl_class_RichPresenceManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RichPresenceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -70,14 +70,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RichPresence
         false
     }
 }
-#[cfg(feature = "RichPresenceManager")]
+#[cfg(feature = "cordl_class_RichPresenceManager")]
 impl std::ops::Deref for crate::GlobalNamespace::RichPresenceManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RichPresenceManager")]
+#[cfg(feature = "cordl_class_RichPresenceManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RichPresenceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -349,7 +349,7 @@ impl crate::GlobalNamespace::RichPresenceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RichPresenceManager")]
+#[cfg(feature = "cordl_class_RichPresenceManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RichPresenceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

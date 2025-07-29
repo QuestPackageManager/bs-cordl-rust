@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryWriter")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryWriter"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct __BinaryWriter {
@@ -51,7 +53,9 @@ pub struct __BinaryWriter {
         crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssembly,
     >,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryWriter")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryWriter"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -71,7 +75,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryWriter")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryWriter"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -79,7 +85,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryWriter")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryWriter"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1698,7 +1706,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryWriter")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryWriter"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

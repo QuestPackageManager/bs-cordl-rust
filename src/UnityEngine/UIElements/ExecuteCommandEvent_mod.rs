@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ExecuteCommandEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ExecuteCommandEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExecuteCommandEvent {
@@ -6,7 +6,7 @@ pub struct ExecuteCommandEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ExecuteCommandEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ExecuteCommandEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ExecuteCommandEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ExecuteCommandEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::ExecuteCommandEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ExecuteCommandEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ExecuteCommandEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ExecuteCommandEvent {
     type Target = crate::UnityEngine::UIElements::CommandEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ExecuteCommandEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::ExecuteCommandEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ExecuteCommandEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ExecuteCommandEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ExecuteCommandEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::ExecuteCommandEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ExecuteCommandEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ExecuteCommandEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ExecuteCommandEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

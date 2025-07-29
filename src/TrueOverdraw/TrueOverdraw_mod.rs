@@ -1,4 +1,4 @@
-#[cfg(feature = "TrueOverdraw+TrueOverdraw")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrueOverdraw {
@@ -28,7 +28,7 @@ pub struct TrueOverdraw {
         >,
     >,
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TrueOverdraw::TrueOverdraw {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TrueOverdraw::TrueOverdraw {
         false
     }
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw")]
 impl std::ops::Deref for crate::TrueOverdraw::TrueOverdraw {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw")]
 impl std::ops::DerefMut for crate::TrueOverdraw::TrueOverdraw {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -430,7 +430,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw")]
 impl quest_hook::libil2cpp::ObjectType for crate::TrueOverdraw::TrueOverdraw {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -451,7 +451,7 @@ impl AsMut<crate::System::IDisposable> for crate::TrueOverdraw::TrueOverdraw {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw+OverdrawType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrueOverdraw_OverdrawType {
@@ -461,7 +461,7 @@ pub enum TrueOverdraw_OverdrawType {
     Opaque = 2i32,
     Transparent = 1i32,
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Held<'a> = Self;
@@ -491,7 +491,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Type = Self;
@@ -502,7 +502,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Actual = Self;
@@ -516,7 +516,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
         self
     }
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Type = Self;
@@ -531,7 +531,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
         }
     }
 }
-#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
+#[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Actual = Self;

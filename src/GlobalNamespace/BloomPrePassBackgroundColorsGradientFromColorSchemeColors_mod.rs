@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientFromColorSchemeColors {
@@ -17,7 +17,7 @@ pub struct BloomPrePassBackgroundColorsGradientFromColorSchemeColors {
         crate::GlobalNamespace::IEnvironmentColorProvider,
     >,
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -156,7 +156,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorScheme
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -166,7 +166,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element {
@@ -176,7 +178,9 @@ pub struct BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element {
     pub intensity: f32,
     pub color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -196,7 +200,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -204,7 +210,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -242,7 +250,9 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorScheme
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element")]
+#[cfg(
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+Element"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -253,7 +263,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
     }
 }
 #[cfg(
-    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -265,7 +275,7 @@ pub enum BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentCo
     Color1Boost = 3i32,
 }
 #[cfg(
-    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
@@ -297,7 +307,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
     }
 }
 #[cfg(
-    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
@@ -310,7 +320,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
     }
 }
 #[cfg(
-    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
@@ -326,7 +336,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
     }
 }
 #[cfg(
-    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
@@ -343,7 +353,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
     }
 }
 #[cfg(
-    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+    feature = "cordl_class_BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {

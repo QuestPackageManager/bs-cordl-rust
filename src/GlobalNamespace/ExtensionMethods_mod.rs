@@ -1,10 +1,10 @@
-#[cfg(feature = "ExtensionMethods")]
+#[cfg(feature = "cordl_class_ExtensionMethods")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExtensionMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ExtensionMethods")]
+#[cfg(feature = "cordl_class_ExtensionMethods")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ExtensionMethods {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ExtensionMet
         false
     }
 }
-#[cfg(feature = "ExtensionMethods")]
+#[cfg(feature = "cordl_class_ExtensionMethods")]
 impl std::ops::Deref for crate::GlobalNamespace::ExtensionMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ExtensionMethods")]
+#[cfg(feature = "cordl_class_ExtensionMethods")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ExtensionMethods {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -514,7 +514,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ExtensionMethods")]
+#[cfg(feature = "cordl_class_ExtensionMethods")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ExtensionMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "OnWillRenderObjectTrigger")]
+#[cfg(feature = "cordl_class_OnWillRenderObjectTrigger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OnWillRenderObjectTrigger {
@@ -10,7 +10,7 @@ pub struct OnWillRenderObjectTrigger {
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
 }
-#[cfg(feature = "OnWillRenderObjectTrigger")]
+#[cfg(feature = "cordl_class_OnWillRenderObjectTrigger")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OnWillRenderObjectTrigger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::OnWillRenderObjectTrigger {
         false
     }
 }
-#[cfg(feature = "OnWillRenderObjectTrigger")]
+#[cfg(feature = "cordl_class_OnWillRenderObjectTrigger")]
 impl std::ops::Deref for crate::GlobalNamespace::OnWillRenderObjectTrigger {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OnWillRenderObjectTrigger")]
+#[cfg(feature = "cordl_class_OnWillRenderObjectTrigger")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OnWillRenderObjectTrigger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::OnWillRenderObjectTrigger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OnWillRenderObjectTrigger")]
+#[cfg(feature = "cordl_class_OnWillRenderObjectTrigger")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OnWillRenderObjectTrigger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

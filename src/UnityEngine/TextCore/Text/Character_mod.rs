@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+Character")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Character")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Character {
     __cordl_parent: crate::UnityEngine::TextCore::Text::TextElement,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Character")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Character")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::Character {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::TextCore::Text::Character {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Character")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Character")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::Character {
     type Target = crate::UnityEngine::TextCore::Text::TextElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Character")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Character")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::Character {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -156,7 +156,7 @@ impl crate::UnityEngine::TextCore::Text::Character {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Character")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Character")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::Character {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

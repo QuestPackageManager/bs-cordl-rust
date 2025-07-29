@@ -1,4 +1,4 @@
-#[cfg(feature = "WaypointsTestGameplayManager")]
+#[cfg(feature = "cordl_class_WaypointsTestGameplayManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaypointsTestGameplayManager {
@@ -31,7 +31,7 @@ pub struct WaypointsTestGameplayManager {
     pub _biggestAcceleration: f32,
     pub _biggestAccelerationSongTime: f32,
 }
-#[cfg(feature = "WaypointsTestGameplayManager")]
+#[cfg(feature = "cordl_class_WaypointsTestGameplayManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::WaypointsTestGameplayManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::GlobalNamespace::WaypointsTestGameplayManager {
         false
     }
 }
-#[cfg(feature = "WaypointsTestGameplayManager")]
+#[cfg(feature = "cordl_class_WaypointsTestGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::WaypointsTestGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "WaypointsTestGameplayManager")]
+#[cfg(feature = "cordl_class_WaypointsTestGameplayManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::WaypointsTestGameplayManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -211,7 +211,7 @@ impl crate::GlobalNamespace::WaypointsTestGameplayManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "WaypointsTestGameplayManager")]
+#[cfg(feature = "cordl_class_WaypointsTestGameplayManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::WaypointsTestGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

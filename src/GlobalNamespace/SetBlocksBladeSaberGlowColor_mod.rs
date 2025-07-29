@@ -1,4 +1,4 @@
-#[cfg(feature = "SetBlocksBladeSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetBlocksBladeSaberGlowColor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetBlocksBladeSaberGlowColor {
@@ -7,7 +7,7 @@ pub struct SetBlocksBladeSaberGlowColor {
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _blocksBlade: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BlocksBlade>,
 }
-#[cfg(feature = "SetBlocksBladeSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetBlocksBladeSaberGlowColor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SetBlocksBladeSaberGlowColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::SetBlocksBladeSaberGlowColor {
         false
     }
 }
-#[cfg(feature = "SetBlocksBladeSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetBlocksBladeSaberGlowColor")]
 impl std::ops::Deref for crate::GlobalNamespace::SetBlocksBladeSaberGlowColor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SetBlocksBladeSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetBlocksBladeSaberGlowColor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SetBlocksBladeSaberGlowColor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::SetBlocksBladeSaberGlowColor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SetBlocksBladeSaberGlowColor")]
+#[cfg(feature = "cordl_class_SetBlocksBladeSaberGlowColor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SetBlocksBladeSaberGlowColor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

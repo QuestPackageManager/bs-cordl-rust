@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+XRNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XRNode {
@@ -13,7 +13,7 @@ pub enum XRNode {
     RightHand = 5i32,
     TrackingReference = 7i32,
 }
-#[cfg(feature = "UnityEngine+XR+XRNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRNode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -42,7 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRNode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::XR::XRNode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -52,7 +52,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::XR::XRNode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::XR::XRNode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -65,7 +65,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::XR::XRNode 
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::XR::XRNode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -79,7 +79,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::XR::XRNode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNode")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::XR::XRNode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

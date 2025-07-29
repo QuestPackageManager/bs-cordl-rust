@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrInstruction_OrSByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::OrInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OrInstruction_OrSByte {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OrInstruction_OrSByte {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
 impl std::ops::Deref for crate::GlobalNamespace::OrInstruction_OrSByte {
     type Target = crate::System::Linq::Expressions::Interpreter::OrInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OrInstruction_OrSByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::OrInstruction_OrSByte {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OrInstruction_OrSByte {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

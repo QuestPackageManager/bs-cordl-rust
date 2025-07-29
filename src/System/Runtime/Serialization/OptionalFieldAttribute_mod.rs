@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+Serialization+OptionalFieldAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+OptionalFieldAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OptionalFieldAttribute {
     __cordl_parent: crate::System::Attribute,
     pub versionAdded: i32,
 }
-#[cfg(feature = "System+Runtime+Serialization+OptionalFieldAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+OptionalFieldAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::OptionalFieldAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Runtime::Serialization::OptionalFieldAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+OptionalFieldAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+OptionalFieldAttribute")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::OptionalFieldAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+OptionalFieldAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+OptionalFieldAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::OptionalFieldAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -96,7 +96,7 @@ impl crate::System::Runtime::Serialization::OptionalFieldAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+OptionalFieldAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+OptionalFieldAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::OptionalFieldAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

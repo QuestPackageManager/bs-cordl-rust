@@ -1,8 +1,8 @@
-#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventDebuggerLogIMGUICall {}
-#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
     type Held<'a> = Self;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
     type Type = Self;
@@ -43,7 +43,7 @@ for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
     type Actual = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
     type Type = Self;
@@ -72,7 +72,7 @@ for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
     type Actual = Self;
@@ -86,7 +86,7 @@ for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
     type Type = Self;

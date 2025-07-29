@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReference")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReference {
@@ -8,7 +8,7 @@ pub struct AssetReference {
     pub m_SubObjectType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Operation: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReference")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::AssetReference {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::UnityEngine::AddressableAssets::AssetReference {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReference")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReference {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReference")]
 impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::AssetReference {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -852,7 +852,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReference")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::AssetReference {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

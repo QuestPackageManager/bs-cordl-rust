@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+CullingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+CullingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CullingMode {
@@ -8,7 +8,7 @@ pub enum CullingMode {
     FrontBack = 3i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+CullingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+CullingMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::CullingMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Cull
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+CullingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+CullingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::CullingMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ProBuilder::CullingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+CullingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+CullingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::CullingMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ProBuilder::CullingMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+CullingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+CullingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::CullingMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ProBuilder::CullingMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+CullingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+CullingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::CullingMode {
     type Actual = Self;

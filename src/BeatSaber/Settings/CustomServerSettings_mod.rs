@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+CustomServerSettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CustomServerSettings {
@@ -6,7 +6,7 @@ pub struct CustomServerSettings {
     pub forceGameLiftEnvironment: bool,
     pub hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+CustomServerSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::CustomServerSettings {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::BeatSaber::Settings::CustomServerSettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+CustomServerSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::CustomServerSettings {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::BeatSaber::Settings::CustomServerSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+CustomServerSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::CustomServerSettings {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::BeatSaber::Settings::CustomServerSettings {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+CustomServerSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::CustomServerSettings {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::BeatSaber::Settings::CustomServerSettings {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+CustomServerSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::CustomServerSettings {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::BeatSaber::Settings::CustomServerSettings {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+CustomServerSettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Settings::CustomServerSettings {
     type Type = Self;

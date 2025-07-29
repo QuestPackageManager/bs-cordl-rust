@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+ShutdownResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ShutdownResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShutdownResult {
@@ -7,7 +7,7 @@ pub enum ShutdownResult {
     Success = 1i32,
     WasConnected = 2i32,
 }
-#[cfg(feature = "LiteNetLib+ShutdownResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ShutdownResult")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ShutdownResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ShutdownResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+ShutdownResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ShutdownResult")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::ShutdownResult {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::ShutdownResul
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+ShutdownResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ShutdownResult")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::ShutdownResult {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::ShutdownResu
         self
     }
 }
-#[cfg(feature = "LiteNetLib+ShutdownResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ShutdownResult")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::ShutdownResult {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::ShutdownResul
         }
     }
 }
-#[cfg(feature = "LiteNetLib+ShutdownResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ShutdownResult")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LiteNetLib::ShutdownResult {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSceneAnchor")]
+#[cfg(feature = "cordl_class_OVRSceneAnchor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneAnchor {
@@ -9,7 +9,7 @@ pub struct OVRSceneAnchor {
     pub _IsTracked_k__BackingField: bool,
     pub _pose: crate::System::Nullable_1<crate::GlobalNamespace::OVRPlugin_Posef>,
 }
-#[cfg(feature = "OVRSceneAnchor")]
+#[cfg(feature = "cordl_class_OVRSceneAnchor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneAnchor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneAnch
         false
     }
 }
-#[cfg(feature = "OVRSceneAnchor")]
+#[cfg(feature = "cordl_class_OVRSceneAnchor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneAnchor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSceneAnchor")]
+#[cfg(feature = "cordl_class_OVRSceneAnchor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneAnchor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -475,7 +475,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSceneAnchor")]
+#[cfg(feature = "cordl_class_OVRSceneAnchor")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneAnchor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

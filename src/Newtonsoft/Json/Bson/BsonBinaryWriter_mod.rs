@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBinaryWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonBinaryWriter {
@@ -9,7 +9,7 @@ pub struct BsonBinaryWriter {
     >,
     pub _DateTimeKindHandling_k__BackingField: crate::System::DateTimeKind,
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBinaryWriter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBinaryWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBinaryWriter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -367,7 +367,7 @@ impl crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBinaryWriter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

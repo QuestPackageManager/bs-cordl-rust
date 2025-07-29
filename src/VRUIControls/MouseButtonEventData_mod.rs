@@ -1,4 +1,4 @@
-#[cfg(feature = "VRUIControls+MouseButtonEventData")]
+#[cfg(feature = "cordl_class_VRUIControls+MouseButtonEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseButtonEventData {
@@ -8,7 +8,7 @@ pub struct MouseButtonEventData {
         crate::UnityEngine::EventSystems::PointerEventData,
     >,
 }
-#[cfg(feature = "VRUIControls+MouseButtonEventData")]
+#[cfg(feature = "cordl_class_VRUIControls+MouseButtonEventData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::MouseButtonEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::MouseButtonEven
         false
     }
 }
-#[cfg(feature = "VRUIControls+MouseButtonEventData")]
+#[cfg(feature = "cordl_class_VRUIControls+MouseButtonEventData")]
 impl std::ops::Deref for crate::VRUIControls::MouseButtonEventData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRUIControls+MouseButtonEventData")]
+#[cfg(feature = "cordl_class_VRUIControls+MouseButtonEventData")]
 impl std::ops::DerefMut for crate::VRUIControls::MouseButtonEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -105,7 +105,7 @@ impl crate::VRUIControls::MouseButtonEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRUIControls+MouseButtonEventData")]
+#[cfg(feature = "cordl_class_VRUIControls+MouseButtonEventData")]
 impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::MouseButtonEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

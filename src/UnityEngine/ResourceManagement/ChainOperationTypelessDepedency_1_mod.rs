@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChainOperationTypelessDepedency_1<TObject: quest_hook::libil2cpp::Type> {
@@ -29,7 +31,9 @@ pub struct ChainOperationTypelessDepedency_1<TObject: quest_hook::libil2cpp::Typ
     pub m_ReleaseDependenciesOnFailure: bool,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1"
+)]
 unsafe impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TObject> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -65,7 +69,9 @@ for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TO
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TObject> {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
@@ -75,7 +81,9 @@ for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TO
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TObject> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -516,7 +524,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TObject> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

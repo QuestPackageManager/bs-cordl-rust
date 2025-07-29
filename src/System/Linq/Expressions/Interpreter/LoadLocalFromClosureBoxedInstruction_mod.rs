@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LoadLocalFromClosureBoxedInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInstruction {
@@ -29,7 +29,7 @@ for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInst
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
 )]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInstruction {
@@ -39,7 +39,7 @@ for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInst
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
 )]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInstruction {
@@ -158,7 +158,7 @@ impl crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedIns
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInstruction {

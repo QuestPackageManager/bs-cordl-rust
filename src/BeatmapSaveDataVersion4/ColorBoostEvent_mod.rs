@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorBoostEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorBoostEvent")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorBoostEvent {
     pub b: i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorBoostEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorBoostEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorBoostEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorBoostEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorBoostEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorBoostEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorBoostEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorBoostEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorBoostEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorBoostEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
         actual
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorBoostEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorBoostEvent")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapSaveDataVersion4::ColorBoostEvent {
     type Type = Self;

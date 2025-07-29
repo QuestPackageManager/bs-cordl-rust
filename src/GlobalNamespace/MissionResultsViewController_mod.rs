@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionResultsViewController")]
+#[cfg(feature = "cordl_class_MissionResultsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionResultsViewController {
@@ -50,7 +50,7 @@ pub struct MissionResultsViewController {
         crate::UnityEngine::Coroutine,
     >,
 }
-#[cfg(feature = "MissionResultsViewController")]
+#[cfg(feature = "cordl_class_MissionResultsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionResultsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -70,14 +70,14 @@ for crate::GlobalNamespace::MissionResultsViewController {
         false
     }
 }
-#[cfg(feature = "MissionResultsViewController")]
+#[cfg(feature = "cordl_class_MissionResultsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionResultsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionResultsViewController")]
+#[cfg(feature = "cordl_class_MissionResultsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionResultsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -468,7 +468,7 @@ impl crate::GlobalNamespace::MissionResultsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionResultsViewController")]
+#[cfg(feature = "cordl_class_MissionResultsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionResultsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

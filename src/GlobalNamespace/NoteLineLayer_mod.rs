@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteLineLayer")]
+#[cfg(feature = "cordl_class_NoteLineLayer")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteLineLayer {
@@ -7,7 +7,7 @@ pub enum NoteLineLayer {
     Top = 2i32,
     Upper = 1i32,
 }
-#[cfg(feature = "NoteLineLayer")]
+#[cfg(feature = "cordl_class_NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteLineLayer {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteLineLaye
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteLineLayer")]
+#[cfg(feature = "cordl_class_NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteLineLayer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteLine
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteLineLayer")]
+#[cfg(feature = "cordl_class_NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteLineLayer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteLin
         self
     }
 }
-#[cfg(feature = "NoteLineLayer")]
+#[cfg(feature = "cordl_class_NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteLineLayer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteLine
         }
     }
 }
-#[cfg(feature = "NoteLineLayer")]
+#[cfg(feature = "cordl_class_NoteLineLayer")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteLineLayer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteExecutionRating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteExecutionRating {
@@ -10,7 +10,7 @@ pub struct NoteExecutionRating {
     pub afterCutScore: i32,
     pub scoringType: crate::GlobalNamespace::NoteData_ScoringType,
 }
-#[cfg(feature = "NoteExecutionRating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteExecutionRating {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteExecutio
         false
     }
 }
-#[cfg(feature = "NoteExecutionRating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteExecutionRating {
     type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteExecutionRating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteExecutionRating {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::NoteExecutionRating {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteExecutionRating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteExecutionRating {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -134,7 +134,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteExecution
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "NoteExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating+Rating")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteExecutionRating_Rating {
@@ -143,7 +143,7 @@ pub enum NoteExecutionRating_Rating {
     GoodCut = 0i32,
     Miss = 1i32,
 }
-#[cfg(feature = "NoteExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Held<'a> = Self;
@@ -173,7 +173,7 @@ for crate::GlobalNamespace::NoteExecutionRating_Rating {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Type = Self;
@@ -184,7 +184,7 @@ for crate::GlobalNamespace::NoteExecutionRating_Rating {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Actual = Self;
@@ -198,7 +198,7 @@ for crate::GlobalNamespace::NoteExecutionRating_Rating {
         self
     }
 }
-#[cfg(feature = "NoteExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Type = Self;
@@ -213,7 +213,7 @@ for crate::GlobalNamespace::NoteExecutionRating_Rating {
         }
     }
 }
-#[cfg(feature = "NoteExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Actual = Self;

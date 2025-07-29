@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+JsonExtension+Vector3Converter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector3Converter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector3Converter {
@@ -6,7 +6,7 @@ pub struct Vector3Converter {
         crate::UnityEngine::Vector3,
     >,
 }
-#[cfg(feature = "BGLib+JsonExtension+Vector3Converter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector3Converter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::JsonExtension::Vector3Converter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::BGLib::JsonExtension::Vector3Converter {
         false
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+Vector3Converter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector3Converter")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::Vector3Converter {
     type Target = crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Vector3>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+Vector3Converter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector3Converter")]
 impl std::ops::DerefMut for crate::BGLib::JsonExtension::Vector3Converter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -150,7 +150,7 @@ impl crate::BGLib::JsonExtension::Vector3Converter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+Vector3Converter")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector3Converter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::JsonExtension::Vector3Converter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

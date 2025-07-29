@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+PkcsException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkcsException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+PkcsException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Pkcs::PkcsException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Pkcs::PkcsException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+PkcsException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::PkcsException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+PkcsException")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::PkcsException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::Pkcs::PkcsException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+PkcsException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Pkcs::PkcsException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

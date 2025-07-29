@@ -1,4 +1,4 @@
-#[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
+#[cfg(feature = "cordl_class_MockPlayerAuthenticationTokenProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerAuthenticationTokenProvider {
@@ -14,7 +14,7 @@ pub struct MockPlayerAuthenticationTokenProvider {
     pub _platform_k__BackingField: crate::GlobalNamespace::AuthenticationToken_Platform,
     pub _mockTokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
 }
-#[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
+#[cfg(feature = "cordl_class_MockPlayerAuthenticationTokenProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
         false
     }
 }
-#[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
+#[cfg(feature = "cordl_class_MockPlayerAuthenticationTokenProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
+#[cfg(feature = "cordl_class_MockPlayerAuthenticationTokenProvider")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -291,7 +291,7 @@ impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
+#[cfg(feature = "cordl_class_MockPlayerAuthenticationTokenProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

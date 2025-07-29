@@ -1,10 +1,10 @@
-#[cfg(feature = "IFileStorage")]
+#[cfg(feature = "cordl_class_IFileStorage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IFileStorage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IFileStorage")]
+#[cfg(feature = "cordl_class_IFileStorage")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IFileStorage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IFileStorage
         false
     }
 }
-#[cfg(feature = "IFileStorage")]
+#[cfg(feature = "cordl_class_IFileStorage")]
 impl std::ops::Deref for crate::GlobalNamespace::IFileStorage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IFileStorage")]
+#[cfg(feature = "cordl_class_IFileStorage")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IFileStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -206,7 +206,7 @@ impl crate::GlobalNamespace::IFileStorage {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IFileStorage")]
+#[cfg(feature = "cordl_class_IFileStorage")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IFileStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -11,7 +11,7 @@ pub struct ScriptableObjectReferenceAsyncInstaller_1<T: quest_hook::libil2cpp::T
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
 )]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<T> {
@@ -49,7 +49,7 @@ for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstall
     }
 }
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<T> {
@@ -59,7 +59,7 @@ for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstall
     }
 }
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<T> {
@@ -307,7 +307,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
+    feature = "cordl_class_BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<T> {

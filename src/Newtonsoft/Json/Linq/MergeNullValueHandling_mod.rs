@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+MergeNullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+MergeNullValueHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MergeNullValueHandling {
@@ -6,7 +6,7 @@ pub enum MergeNullValueHandling {
     Ignore = 0i32,
     Merge = 1i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+MergeNullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+MergeNullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+MergeNullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+MergeNullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+MergeNullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+MergeNullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+MergeNullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+MergeNullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+MergeNullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+MergeNullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Linq::MergeNullValueHandling {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Numerics+DoubleUlong")]
+#[cfg(feature = "cordl_class_System+Numerics+DoubleUlong")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DoubleUlong {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "System+Numerics+DoubleUlong")]
+#[cfg(feature = "cordl_class_System+Numerics+DoubleUlong")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Numerics::DoubleUlong {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Numerics::DoubleUlong
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Numerics+DoubleUlong")]
+#[cfg(feature = "cordl_class_System+Numerics+DoubleUlong")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Numerics::DoubleUlong {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Numerics::DoubleU
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Numerics+DoubleUlong")]
+#[cfg(feature = "cordl_class_System+Numerics+DoubleUlong")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Numerics::DoubleUlong {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Numerics::Double
         self
     }
 }
-#[cfg(feature = "System+Numerics+DoubleUlong")]
+#[cfg(feature = "cordl_class_System+Numerics+DoubleUlong")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Numerics::DoubleUlong {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Numerics::DoubleU
         }
     }
 }
-#[cfg(feature = "System+Numerics+DoubleUlong")]
+#[cfg(feature = "cordl_class_System+Numerics+DoubleUlong")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Numerics::DoubleUlong {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Numerics::DoubleUlo
         actual
     }
 }
-#[cfg(feature = "System+Numerics+DoubleUlong")]
+#[cfg(feature = "cordl_class_System+Numerics+DoubleUlong")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Numerics::DoubleUlong {
     type Type = Self;

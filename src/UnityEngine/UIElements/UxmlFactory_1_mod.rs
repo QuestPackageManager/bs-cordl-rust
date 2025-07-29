@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFactory_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlFactory_1<TCreatedType: quest_hook::libil2cpp::Type> {
@@ -10,7 +10,7 @@ pub struct UxmlFactory_1<TCreatedType: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TCreatedType: std::marker::PhantomData<TCreatedType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFactory_1")]
 unsafe impl<TCreatedType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFactory_1")]
 impl<TCreatedType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFactory_1")]
 impl<TCreatedType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -105,7 +105,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlFactory_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFactory_1")]
 impl<TCreatedType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

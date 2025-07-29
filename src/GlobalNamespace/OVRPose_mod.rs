@@ -1,11 +1,11 @@
-#[cfg(feature = "OVRPose")]
+#[cfg(feature = "cordl_class_OVRPose")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPose {
     pub position: crate::UnityEngine::Vector3,
     pub orientation: crate::UnityEngine::Quaternion,
 }
-#[cfg(feature = "OVRPose")]
+#[cfg(feature = "cordl_class_OVRPose")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPose {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPose {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPose")]
+#[cfg(feature = "cordl_class_OVRPose")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRPose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRPose 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPose")]
+#[cfg(feature = "cordl_class_OVRPose")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRPose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRPose
         self
     }
 }
-#[cfg(feature = "OVRPose")]
+#[cfg(feature = "cordl_class_OVRPose")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRPose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRPose 
         }
     }
 }
-#[cfg(feature = "OVRPose")]
+#[cfg(feature = "cordl_class_OVRPose")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPose {
         actual
     }
 }
-#[cfg(feature = "OVRPose")]
+#[cfg(feature = "cordl_class_OVRPose")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRPose {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

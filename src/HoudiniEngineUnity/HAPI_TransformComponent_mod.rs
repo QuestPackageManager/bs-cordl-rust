@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_TransformComponent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_TransformComponent")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_TransformComponent {
@@ -17,7 +17,7 @@ pub enum HAPI_TransformComponent {
     HAPI_TRANSFORM_TY = 1i32,
     HAPI_TRANSFORM_TZ = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_TransformComponent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_TransformComponent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_TransformComponent {
     type Held<'a> = Self;
@@ -47,7 +47,7 @@ for crate::HoudiniEngineUnity::HAPI_TransformComponent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_TransformComponent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_TransformComponent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_TransformComponent {
     type Type = Self;
@@ -58,7 +58,7 @@ for crate::HoudiniEngineUnity::HAPI_TransformComponent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_TransformComponent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_TransformComponent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_TransformComponent {
     type Actual = Self;
@@ -72,7 +72,7 @@ for crate::HoudiniEngineUnity::HAPI_TransformComponent {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_TransformComponent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_TransformComponent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_TransformComponent {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::HoudiniEngineUnity::HAPI_TransformComponent {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_TransformComponent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_TransformComponent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_TransformComponent {
     type Actual = Self;

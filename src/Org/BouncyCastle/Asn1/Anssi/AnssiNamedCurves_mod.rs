@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnssiNamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -357,7 +357,7 @@ impl crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -367,13 +367,17 @@ for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnssiNamedCurves_Frp256v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -393,7 +397,9 @@ for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -401,7 +407,9 @@ for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -468,7 +476,9 @@ impl crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Anssi::AnssiNamedCurves_Frp256v1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

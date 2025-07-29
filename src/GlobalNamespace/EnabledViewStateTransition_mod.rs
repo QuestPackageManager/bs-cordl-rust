@@ -1,4 +1,4 @@
-#[cfg(feature = "EnabledViewStateTransition")]
+#[cfg(feature = "cordl_class_EnabledViewStateTransition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnabledViewStateTransition {
@@ -9,7 +9,7 @@ pub struct EnabledViewStateTransition {
         crate::GlobalNamespace::EnabledTransitionSO,
     >,
 }
-#[cfg(feature = "EnabledViewStateTransition")]
+#[cfg(feature = "cordl_class_EnabledViewStateTransition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnabledViewStateTransition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::EnabledViewStateTransition {
         false
     }
 }
-#[cfg(feature = "EnabledViewStateTransition")]
+#[cfg(feature = "cordl_class_EnabledViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::EnabledViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::EnabledViewStateTransition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnabledViewStateTransition")]
+#[cfg(feature = "cordl_class_EnabledViewStateTransition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnabledViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -434,7 +434,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnabledViewStateTransition")]
+#[cfg(feature = "cordl_class_EnabledViewStateTransition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnabledViewStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

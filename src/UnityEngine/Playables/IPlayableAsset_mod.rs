@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Playables+IPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+IPlayableAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPlayableAsset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Playables+IPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+IPlayableAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Playables::IPlayableAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Playables::IPlayableAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Playables+IPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+IPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Playables::IPlayableAsset {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+IPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+IPlayableAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Playables::IPlayableAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::UnityEngine::Playables::IPlayableAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+IPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+IPlayableAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Playables::IPlayableAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

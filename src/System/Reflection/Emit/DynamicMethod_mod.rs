@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Reflection+Emit+DynamicMethod")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+DynamicMethod")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicMethod {
     __cordl_parent: crate::System::Reflection::MethodInfo,
 }
-#[cfg(feature = "System+Reflection+Emit+DynamicMethod")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+DynamicMethod")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::Emit::DynamicMethod {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Reflection::Emit::DynamicMethod {
         false
     }
 }
-#[cfg(feature = "System+Reflection+Emit+DynamicMethod")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+DynamicMethod")]
 impl std::ops::Deref for crate::System::Reflection::Emit::DynamicMethod {
     type Target = crate::System::Reflection::MethodInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+Emit+DynamicMethod")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+DynamicMethod")]
 impl std::ops::DerefMut for crate::System::Reflection::Emit::DynamicMethod {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -423,7 +423,7 @@ impl crate::System::Reflection::Emit::DynamicMethod {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+Emit+DynamicMethod")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+DynamicMethod")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::Emit::DynamicMethod {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "IStateTable_3")]
+#[cfg(feature = "cordl_class_IStateTable_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IStateTable_3<
@@ -11,7 +11,7 @@ pub struct IStateTable_3<
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
-#[cfg(feature = "IStateTable_3")]
+#[cfg(feature = "cordl_class_IStateTable_3")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
         false
     }
 }
-#[cfg(feature = "IStateTable_3")]
+#[cfg(feature = "cordl_class_IStateTable_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IStateTable_3")]
+#[cfg(feature = "cordl_class_IStateTable_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -240,7 +240,7 @@ impl<
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IStateTable_3")]
+#[cfg(feature = "cordl_class_IStateTable_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

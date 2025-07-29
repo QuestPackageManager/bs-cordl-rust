@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+RaycastUITopLevelChecker")]
+#[cfg(feature = "cordl_class_HMUI+RaycastUITopLevelChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RaycastUITopLevelChecker {
@@ -10,7 +10,7 @@ pub struct RaycastUITopLevelChecker {
     >,
     pub _canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
 }
-#[cfg(feature = "HMUI+RaycastUITopLevelChecker")]
+#[cfg(feature = "cordl_class_HMUI+RaycastUITopLevelChecker")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::RaycastUITopLevelChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::RaycastUITopLevelChecke
         false
     }
 }
-#[cfg(feature = "HMUI+RaycastUITopLevelChecker")]
+#[cfg(feature = "cordl_class_HMUI+RaycastUITopLevelChecker")]
 impl std::ops::Deref for crate::HMUI::RaycastUITopLevelChecker {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+RaycastUITopLevelChecker")]
+#[cfg(feature = "cordl_class_HMUI+RaycastUITopLevelChecker")]
 impl std::ops::DerefMut for crate::HMUI::RaycastUITopLevelChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -111,7 +111,7 @@ impl crate::HMUI::RaycastUITopLevelChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+RaycastUITopLevelChecker")]
+#[cfg(feature = "cordl_class_HMUI+RaycastUITopLevelChecker")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::RaycastUITopLevelChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

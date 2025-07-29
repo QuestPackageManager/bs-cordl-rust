@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_Text")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Text {
@@ -250,7 +250,7 @@ pub struct TMP_Text {
         quest_hook::libil2cpp::Il2CppArray<crate::System::Decimal>,
     >,
 }
-#[cfg(feature = "TMPro+TMP_Text")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -269,14 +269,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_Text")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text")]
 impl std::ops::Deref for crate::TMPro::TMP_Text {
     type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_Text")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text")]
 impl std::ops::DerefMut for crate::TMPro::TMP_Text {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8323,7 +8323,7 @@ impl crate::TMPro::TMP_Text {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Text {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -8332,14 +8332,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Text {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+CharacterSubstitution")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_CharacterSubstitution {
     pub index: i32,
     pub unicode: u32,
 }
-#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Held<'a> = Self;
@@ -8369,7 +8369,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Type = Self;
@@ -8380,7 +8380,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Actual = Self;
@@ -8394,7 +8394,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Type = Self;
@@ -8409,7 +8409,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Actual = Self;
@@ -8423,7 +8423,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Type = Self;
@@ -8464,7 +8464,7 @@ impl crate::TMPro::TMP_Text_CharacterSubstitution {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_SpecialCharacter {
@@ -8473,7 +8473,7 @@ pub struct TMP_Text_SpecialCharacter {
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialIndex: i32,
 }
-#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_SpecialCharacter {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -8502,7 +8502,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_SpecialCharac
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_SpecialCharacter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -8512,7 +8512,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_SpecialCh
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Text_SpecialCharacter {
     type Actual = Self;
@@ -8526,7 +8526,7 @@ for crate::TMPro::TMP_Text_SpecialCharacter {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_SpecialCharacter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -8540,7 +8540,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_SpecialCh
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_SpecialCharacter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -8553,7 +8553,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_SpecialChar
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::TMPro::TMP_Text_SpecialCharacter {
     type Type = Self;
@@ -8594,14 +8594,14 @@ impl crate::TMPro::TMP_Text_SpecialCharacter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_TextBackingContainer {
     pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub m_Count: i32,
 }
-#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextBackingContainer {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -8630,7 +8630,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextBackingCo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Type = Self;
@@ -8641,7 +8641,7 @@ for crate::TMPro::TMP_Text_TextBackingContainer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Actual = Self;
@@ -8655,7 +8655,7 @@ for crate::TMPro::TMP_Text_TextBackingContainer {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Type = Self;
@@ -8670,7 +8670,7 @@ for crate::TMPro::TMP_Text_TextBackingContainer {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Actual = Self;
@@ -8684,7 +8684,7 @@ for crate::TMPro::TMP_Text_TextBackingContainer {
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Type = Self;
@@ -8848,7 +8848,7 @@ impl crate::TMPro::TMP_Text_TextBackingContainer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextInputSources")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_Text_TextInputSources {
@@ -8858,7 +8858,7 @@ pub enum TMP_Text_TextInputSources {
     TextInputBox = 0i32,
     TextString = 3i32,
 }
-#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextInputSources {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -8887,7 +8887,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextInputSour
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_TextInputSources {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -8897,7 +8897,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_TextInput
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Text_TextInputSources {
     type Actual = Self;
@@ -8911,7 +8911,7 @@ for crate::TMPro::TMP_Text_TextInputSources {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_TextInputSources {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -8925,7 +8925,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_TextInput
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_TextInputSources {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -8938,7 +8938,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_TextInputSo
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_UnicodeChar {
@@ -8946,7 +8946,7 @@ pub struct TMP_Text_UnicodeChar {
     pub stringIndex: i32,
     pub length: i32,
 }
-#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_UnicodeChar {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -8975,7 +8975,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_UnicodeChar {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_UnicodeChar {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -8985,7 +8985,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_UnicodeCh
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Text_UnicodeChar {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -8998,7 +8998,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Text_UnicodeC
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_UnicodeChar {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -9012,7 +9012,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_UnicodeCh
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_UnicodeChar {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -9025,7 +9025,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_UnicodeChar
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Text_UnicodeChar {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

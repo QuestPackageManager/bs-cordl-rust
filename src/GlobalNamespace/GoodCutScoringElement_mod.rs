@@ -1,4 +1,4 @@
-#[cfg(feature = "GoodCutScoringElement")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GoodCutScoringElement {
@@ -9,7 +9,7 @@ pub struct GoodCutScoringElement {
     pub _multiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
     pub _wouldBeCorrectCutBestPossibleMultiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
 }
-#[cfg(feature = "GoodCutScoringElement")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GoodCutScoringElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::GoodCutScoringElement {
         false
     }
 }
-#[cfg(feature = "GoodCutScoringElement")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement")]
 impl std::ops::Deref for crate::GlobalNamespace::GoodCutScoringElement {
     type Target = crate::GlobalNamespace::ScoringElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GoodCutScoringElement")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GoodCutScoringElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -272,7 +272,7 @@ impl crate::GlobalNamespace::GoodCutScoringElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GoodCutScoringElement")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GoodCutScoringElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -298,7 +298,7 @@ for crate::GlobalNamespace::GoodCutScoringElement {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "GoodCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GoodCutScoringElement_Pool {
@@ -306,7 +306,7 @@ pub struct GoodCutScoringElement_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GoodCutScoringElement>,
     >,
 }
-#[cfg(feature = "GoodCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GoodCutScoringElement_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -326,7 +326,7 @@ for crate::GlobalNamespace::GoodCutScoringElement_Pool {
         false
     }
 }
-#[cfg(feature = "GoodCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::GoodCutScoringElement_Pool {
     type Target = crate::GlobalNamespace::ScoringElement_Pool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GoodCutScoringElement>,
@@ -335,7 +335,7 @@ impl std::ops::Deref for crate::GlobalNamespace::GoodCutScoringElement_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GoodCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GoodCutScoringElement_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -372,7 +372,7 @@ impl crate::GlobalNamespace::GoodCutScoringElement_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GoodCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_GoodCutScoringElement+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GoodCutScoringElement_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

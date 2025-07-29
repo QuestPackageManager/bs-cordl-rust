@@ -1,4 +1,4 @@
-#[cfg(feature = "OneTimeLightColorEffect")]
+#[cfg(feature = "cordl_class_OneTimeLightColorEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OneTimeLightColorEffect {
@@ -10,7 +10,7 @@ pub struct OneTimeLightColorEffect {
         crate::GlobalNamespace::LightWithIdManager,
     >,
 }
-#[cfg(feature = "OneTimeLightColorEffect")]
+#[cfg(feature = "cordl_class_OneTimeLightColorEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OneTimeLightColorEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::OneTimeLightColorEffect {
         false
     }
 }
-#[cfg(feature = "OneTimeLightColorEffect")]
+#[cfg(feature = "cordl_class_OneTimeLightColorEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::OneTimeLightColorEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OneTimeLightColorEffect")]
+#[cfg(feature = "cordl_class_OneTimeLightColorEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OneTimeLightColorEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::OneTimeLightColorEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OneTimeLightColorEffect")]
+#[cfg(feature = "cordl_class_OneTimeLightColorEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OneTimeLightColorEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

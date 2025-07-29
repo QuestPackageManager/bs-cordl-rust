@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+RC2Transform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RC2Transform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RC2Transform {
@@ -10,7 +10,7 @@ pub struct RC2Transform {
     pub K: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
     pub j: i32,
 }
-#[cfg(feature = "System+Security+Cryptography+RC2Transform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RC2Transform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::RC2Transform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Security::Cryptography::RC2Transform {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RC2Transform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RC2Transform")]
 impl std::ops::Deref for crate::System::Security::Cryptography::RC2Transform {
     type Target = crate::Mono::Security::Cryptography::SymmetricTransform;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RC2Transform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RC2Transform")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::RC2Transform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -132,7 +132,7 @@ impl crate::System::Security::Cryptography::RC2Transform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RC2Transform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RC2Transform")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::RC2Transform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

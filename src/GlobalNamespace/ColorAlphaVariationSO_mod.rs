@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorAlphaVariationSO")]
+#[cfg(feature = "cordl_class_ColorAlphaVariationSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorAlphaVariationSO {
@@ -6,7 +6,7 @@ pub struct ColorAlphaVariationSO {
     pub _baseColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoAlphaColorSO>,
     pub _alpha: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphaSO>,
 }
-#[cfg(feature = "ColorAlphaVariationSO")]
+#[cfg(feature = "cordl_class_ColorAlphaVariationSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorAlphaVariationSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::ColorAlphaVariationSO {
         false
     }
 }
-#[cfg(feature = "ColorAlphaVariationSO")]
+#[cfg(feature = "cordl_class_ColorAlphaVariationSO")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorAlphaVariationSO {
     type Target = crate::GlobalNamespace::ColorSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorAlphaVariationSO")]
+#[cfg(feature = "cordl_class_ColorAlphaVariationSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorAlphaVariationSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::ColorAlphaVariationSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorAlphaVariationSO")]
+#[cfg(feature = "cordl_class_ColorAlphaVariationSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorAlphaVariationSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

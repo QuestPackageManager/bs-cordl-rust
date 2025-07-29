@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Rotate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Rotate {
@@ -6,7 +6,7 @@ pub struct Rotate {
     pub m_Axis: crate::UnityEngine::Vector3,
     pub m_IsNone: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Rotate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Rotate {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Rota
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Rotate")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::Rotate {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Rotate")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::Rotate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements:
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Rotate")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::Rotate {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Rotate")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Rotate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Ro
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Rotate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Rotate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::Rotate {
     type Type = Self;

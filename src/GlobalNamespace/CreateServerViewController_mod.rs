@@ -1,4 +1,4 @@
-#[cfg(feature = "CreateServerViewController")]
+#[cfg(feature = "cordl_class_CreateServerViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreateServerViewController {
@@ -17,7 +17,7 @@ pub struct CreateServerViewController {
         crate::GlobalNamespace::MultiplayerModeSettings,
     >,
 }
-#[cfg(feature = "CreateServerViewController")]
+#[cfg(feature = "cordl_class_CreateServerViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CreateServerViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::CreateServerViewController {
         false
     }
 }
-#[cfg(feature = "CreateServerViewController")]
+#[cfg(feature = "cordl_class_CreateServerViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::CreateServerViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CreateServerViewController")]
+#[cfg(feature = "cordl_class_CreateServerViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreateServerViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -313,7 +313,7 @@ impl crate::GlobalNamespace::CreateServerViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CreateServerViewController")]
+#[cfg(feature = "cordl_class_CreateServerViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CreateServerViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

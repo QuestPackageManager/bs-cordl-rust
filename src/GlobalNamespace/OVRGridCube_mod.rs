@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRGridCube")]
+#[cfg(feature = "cordl_class_OVRGridCube")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGridCube {
@@ -17,7 +17,7 @@ pub struct OVRGridCube {
         crate::GlobalNamespace::OVRCameraRig,
     >,
 }
-#[cfg(feature = "OVRGridCube")]
+#[cfg(feature = "cordl_class_OVRGridCube")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGridCube {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGridCube 
         false
     }
 }
-#[cfg(feature = "OVRGridCube")]
+#[cfg(feature = "cordl_class_OVRGridCube")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGridCube {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRGridCube")]
+#[cfg(feature = "cordl_class_OVRGridCube")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRGridCube {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -209,7 +209,7 @@ impl crate::GlobalNamespace::OVRGridCube {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRGridCube")]
+#[cfg(feature = "cordl_class_OVRGridCube")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGridCube {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

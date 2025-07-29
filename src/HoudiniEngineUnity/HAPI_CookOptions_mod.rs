@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CookOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_CookOptions {
@@ -18,7 +18,7 @@ pub struct HAPI_CookOptions {
     pub cacheMeshTopology: bool,
     pub extraFlags: i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Cook
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Type = Self;
@@ -58,7 +58,7 @@ for crate::HoudiniEngineUnity::HAPI_CookOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Actual = Self;
@@ -72,7 +72,7 @@ for crate::HoudiniEngineUnity::HAPI_CookOptions {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::HoudiniEngineUnity::HAPI_CookOptions {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Actual = Self;
@@ -101,7 +101,7 @@ for crate::HoudiniEngineUnity::HAPI_CookOptions {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Type = Self;

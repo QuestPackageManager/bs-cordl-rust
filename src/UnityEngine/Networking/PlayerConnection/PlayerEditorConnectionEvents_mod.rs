@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerEditorConnectionEvents {
@@ -17,7 +19,9 @@ pub struct PlayerEditorConnectionEvents {
         crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent,
     >,
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,7 +41,9 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
         false
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -45,7 +51,9 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -215,7 +223,9 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -226,7 +236,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -234,7 +244,7 @@ pub struct PlayerEditorConnectionEvents_ConnectionChangeEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent {
@@ -256,7 +266,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent {
@@ -266,7 +276,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent {
@@ -308,7 +318,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent {
@@ -320,7 +330,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -332,7 +342,7 @@ pub struct PlayerEditorConnectionEvents_MessageEvent {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
@@ -354,7 +364,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
@@ -368,7 +378,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
@@ -410,7 +420,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
@@ -422,7 +432,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -435,7 +445,7 @@ pub struct PlayerEditorConnectionEvents_MessageTypeSubscribers {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers {
@@ -457,7 +467,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers {
@@ -467,7 +477,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers {
@@ -556,7 +566,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
     }
 }
 #[cfg(
-    feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
+    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers {

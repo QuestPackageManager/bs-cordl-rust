@@ -1,4 +1,4 @@
-#[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_SinglePlayerLevelSelectionFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SinglePlayerLevelSelectionFlowCoordinator {
@@ -38,7 +38,7 @@ pub struct SinglePlayerLevelSelectionFlowCoordinator {
         >,
     >,
 }
-#[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_SinglePlayerLevelSelectionFlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_SinglePlayerLevelSelectionFlowCoordinator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     type Target = crate::GlobalNamespace::LevelSelectionFlowCoordinator;
@@ -66,7 +66,7 @@ for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_SinglePlayerLevelSelectionFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -939,7 +939,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_SinglePlayerLevelSelectionFlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

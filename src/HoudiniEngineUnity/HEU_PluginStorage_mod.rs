@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PluginStorage {
@@ -19,7 +19,7 @@ pub struct HEU_PluginStorage {
     >,
     pub _requiresSave: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_PluginStorage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PluginStorage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PluginStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1075,7 +1075,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_PluginStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1084,7 +1084,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Plugin
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PluginStorage_DataType {
@@ -1095,7 +1095,7 @@ pub enum HEU_PluginStorage_DataType {
     LONG = 2i32,
     STRING = 4i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Held<'a> = Self;
@@ -1125,7 +1125,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Type = Self;
@@ -1136,7 +1136,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Actual = Self;
@@ -1150,7 +1150,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Type = Self;
@@ -1165,7 +1165,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Actual = Self;
@@ -1179,7 +1179,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PluginStorage_StoreData {
@@ -1187,7 +1187,7 @@ pub struct HEU_PluginStorage_StoreData {
     pub _type: crate::HoudiniEngineUnity::HEU_PluginStorage_DataType,
     pub _valueStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1207,14 +1207,14 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1251,7 +1251,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1261,7 +1261,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PluginStorage_StoreDataArray_1<T: quest_hook::libil2cpp::Type> {
@@ -1269,7 +1269,7 @@ pub struct HEU_PluginStorage_StoreDataArray_1<T: quest_hook::libil2cpp::Type> {
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1305,7 +1305,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1313,7 +1313,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1359,7 +1359,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

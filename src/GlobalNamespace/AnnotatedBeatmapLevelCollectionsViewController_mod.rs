@@ -1,4 +1,4 @@
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionsViewController {
@@ -30,7 +30,7 @@ pub struct AnnotatedBeatmapLevelCollectionsViewController {
         >,
     >,
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
         false
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     type Target = crate::HMUI::ViewController;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -584,7 +584,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

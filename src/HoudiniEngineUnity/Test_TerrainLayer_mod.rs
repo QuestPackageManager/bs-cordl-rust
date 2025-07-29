@@ -1,11 +1,11 @@
-#[cfg(feature = "HoudiniEngineUnity+Test_TerrainLayer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_TerrainLayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Test_TerrainLayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_TerrainLayer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_TerrainLayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::Test_TerrainLayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::HoudiniEngineUnity::Test_TerrainLayer {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_TerrainLayer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_TerrainLayer")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::Test_TerrainLayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_TerrainLayer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_TerrainLayer")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_TerrainLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::HoudiniEngineUnity::Test_TerrainLayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_TerrainLayer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_TerrainLayer")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_TerrainLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

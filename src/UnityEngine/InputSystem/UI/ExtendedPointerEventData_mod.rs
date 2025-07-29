@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExtendedPointerEventData {
@@ -15,7 +15,7 @@ pub struct ExtendedPointerEventData {
     pub _trackedDevicePosition_k__BackingField: crate::UnityEngine::Vector3,
     pub _trackedDeviceOrientation_k__BackingField: crate::UnityEngine::Quaternion,
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     type Target = crate::UnityEngine::EventSystems::PointerEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -599,7 +599,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

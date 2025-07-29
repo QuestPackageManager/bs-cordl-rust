@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeaderInfo_HeaderTypeInfo_2<
@@ -12,7 +12,7 @@ pub struct HeaderInfo_HeaderTypeInfo_2<
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_U: std::marker::PhantomData<U>,
 }
-#[cfg(feature = "System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
 unsafe impl<
     T: quest_hook::libil2cpp::Type,
     U: quest_hook::libil2cpp::Type,
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U> {
         false
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
 impl<T: quest_hook::libil2cpp::Type, U: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U> {
     type Target = crate::System::Net::Http::Headers::HeaderInfo;
@@ -59,7 +59,7 @@ for crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
 impl<T: quest_hook::libil2cpp::Type, U: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -311,7 +311,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     U: quest_hook::libil2cpp::Type,

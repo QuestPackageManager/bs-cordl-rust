@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemBakeTextureOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemBakeTextureOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemBakeTextureOptions {
@@ -9,7 +9,7 @@ pub enum ParticleSystemBakeTextureOptions {
     IncludeParticleIndices = 16i32,
     PerParticle = 8i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemBakeTextureOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemBakeTextureOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemBakeTextureOptions {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::ParticleSystemBakeTextureOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemBakeTextureOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemBakeTextureOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemBakeTextureOptions {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::ParticleSystemBakeTextureOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemBakeTextureOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemBakeTextureOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemBakeTextureOptions {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::ParticleSystemBakeTextureOptions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemBakeTextureOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemBakeTextureOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemBakeTextureOptions {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::ParticleSystemBakeTextureOptions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemBakeTextureOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemBakeTextureOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemBakeTextureOptions {
     type Actual = Self;

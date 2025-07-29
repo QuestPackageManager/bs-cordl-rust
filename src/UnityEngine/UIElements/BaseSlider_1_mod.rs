@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseSlider_1<TValueType: quest_hook::libil2cpp::Type> {
@@ -32,7 +32,7 @@ pub struct BaseSlider_1<TValueType: quest_hook::libil2cpp::Type> {
     pub m_Inverted: bool,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1")]
 unsafe impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -68,7 +68,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
     type Target = crate::UnityEngine::UIElements::BaseField_1<TValueType>;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2093,7 +2093,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2123,7 +2123,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BaseSlider_1_SliderKey {
@@ -2136,7 +2136,7 @@ pub enum BaseSlider_1_SliderKey {
     Lowest = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Held<'a> = Self;
@@ -2166,7 +2166,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Type = Self;
@@ -2177,7 +2177,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Actual = Self;
@@ -2191,7 +2191,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Type = Self;
@@ -2206,7 +2206,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Actual = Self;
@@ -2220,14 +2220,14 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseSlider_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType>,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
 unsafe impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2263,7 +2263,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType>;
@@ -2271,7 +2271,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2317,7 +2317,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

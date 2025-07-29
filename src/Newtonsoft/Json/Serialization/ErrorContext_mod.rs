@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+ErrorContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ErrorContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ErrorContext {
@@ -16,7 +16,7 @@ pub struct ErrorContext {
     >,
     pub _Handled_k__BackingField: bool,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ErrorContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ErrorContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::ErrorContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::Newtonsoft::Json::Serialization::ErrorContext {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ErrorContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ErrorContext")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::ErrorContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ErrorContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ErrorContext")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::ErrorContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -299,7 +299,7 @@ impl crate::Newtonsoft::Json::Serialization::ErrorContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ErrorContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ErrorContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::ErrorContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+#[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CalculateRmsJob {
@@ -8,7 +8,7 @@ pub struct CalculateRmsJob {
     pub timeGate: f32,
     pub rate: i32,
 }
-#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+#[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::CalculateRmsJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::CalculateRmsJob
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+#[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LufsMetering::CalculateRmsJob {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LufsMetering::CalculateRm
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+#[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LufsMetering::CalculateRmsJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LufsMetering::CalculateR
         self
     }
 }
-#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+#[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::CalculateRmsJob {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::CalculateRm
         }
     }
 }
-#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+#[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::CalculateRmsJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::CalculateRmsJ
         actual
     }
 }
-#[cfg(feature = "LufsMetering+CalculateRmsJob")]
+#[cfg(feature = "cordl_class_LufsMetering+CalculateRmsJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LufsMetering::CalculateRmsJob {
     type Type = Self;

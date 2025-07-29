@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IconAndTextSegmentedControl {
@@ -22,7 +22,7 @@ pub struct IconAndTextSegmentedControl {
     >,
     pub _isInitialized: bool,
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconAndTextSegmentedControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconAndTextSegmentedCon
         false
     }
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl")]
 impl std::ops::Deref for crate::HMUI::IconAndTextSegmentedControl {
     type Target = crate::HMUI::SegmentedControl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl")]
 impl std::ops::DerefMut for crate::HMUI::IconAndTextSegmentedControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -217,7 +217,7 @@ impl crate::HMUI::IconAndTextSegmentedControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::IconAndTextSegmentedControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -240,7 +240,7 @@ for crate::HMUI::IconAndTextSegmentedControl {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl+DataItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IconAndTextSegmentedControl_DataItem {
@@ -251,7 +251,7 @@ pub struct IconAndTextSegmentedControl_DataItem {
     >,
     pub _interactable_k__BackingField: bool,
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl+DataItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::IconAndTextSegmentedControl_DataItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -271,14 +271,14 @@ for crate::HMUI::IconAndTextSegmentedControl_DataItem {
         false
     }
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl+DataItem")]
 impl std::ops::Deref for crate::HMUI::IconAndTextSegmentedControl_DataItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl+DataItem")]
 impl std::ops::DerefMut for crate::HMUI::IconAndTextSegmentedControl_DataItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -481,7 +481,7 @@ impl crate::HMUI::IconAndTextSegmentedControl_DataItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]
+#[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl+DataItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HMUI::IconAndTextSegmentedControl_DataItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

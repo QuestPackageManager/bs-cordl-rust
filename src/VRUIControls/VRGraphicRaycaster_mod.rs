@@ -1,4 +1,4 @@
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRGraphicRaycaster {
@@ -17,7 +17,7 @@ pub struct VRGraphicRaycaster {
         crate::HMUI::CurvedCanvasSettingsHelper,
     >,
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRGraphicRaycaster {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRGraphicRaycas
         false
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster")]
 impl std::ops::Deref for crate::VRUIControls::VRGraphicRaycaster {
     type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster")]
 impl std::ops::DerefMut for crate::VRUIControls::VRGraphicRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -220,7 +220,7 @@ impl crate::VRUIControls::VRGraphicRaycaster {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster")]
 impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRGraphicRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -229,7 +229,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRGraphicRaycast
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
@@ -238,7 +238,7 @@ pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
     pub position: crate::UnityEngine::Vector3,
     pub insideRootCanvasPosition: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Held<'a> = Self;
@@ -268,7 +268,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Type = Self;
@@ -279,7 +279,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Actual = Self;
@@ -293,7 +293,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
         self
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Type = Self;
@@ -308,7 +308,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
         }
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Actual = Self;
@@ -322,7 +322,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
         actual
     }
 }
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+#[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Type = Self;

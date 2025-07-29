@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState+Flags"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BindingState_InputActionState_Flags {
@@ -10,7 +12,9 @@ pub enum BindingState_InputActionState_Flags {
     PartOfComposite = 8i32,
     WantsInitialStateCheck = 32i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
     type Held<'a> = Self;
@@ -40,7 +44,9 @@ for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
     type Type = Self;
@@ -51,7 +57,9 @@ for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
     type Actual = Self;
@@ -65,7 +73,9 @@ for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
     type Type = Self;
@@ -80,7 +90,9 @@ for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
     type Actual = Self;
@@ -94,7 +106,7 @@ for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionState {
@@ -133,7 +145,7 @@ pub struct InputActionState {
     pub m_OnBeforeUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_OnAfterUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -153,14 +165,14 @@ for crate::UnityEngine::InputSystem::InputActionState {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3494,7 +3506,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputActionState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3550,7 +3562,7 @@ for crate::UnityEngine::InputSystem::InputActionState {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_ActionMapIndices {
@@ -3567,7 +3579,7 @@ pub struct InputActionState_ActionMapIndices {
     pub compositeStartIndex: i32,
     pub compositeCount: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
     type Held<'a> = Self;
@@ -3597,7 +3609,7 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
     type Type = Self;
@@ -3608,7 +3620,7 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
     type Actual = Self;
@@ -3622,7 +3634,7 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
     type Type = Self;
@@ -3637,7 +3649,7 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
     type Actual = Self;
@@ -3651,7 +3663,7 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
     type Type = Self;
@@ -3664,13 +3676,13 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 impl crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_BindingState {
     padding: quest_hook::libil2cpp::ValueTypePadding<32usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionState_BindingState {
     type Held<'a> = Self;
@@ -3700,7 +3712,7 @@ for crate::UnityEngine::InputSystem::InputActionState_BindingState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionState_BindingState {
     type Type = Self;
@@ -3711,7 +3723,7 @@ for crate::UnityEngine::InputSystem::InputActionState_BindingState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionState_BindingState {
     type Actual = Self;
@@ -3725,7 +3737,7 @@ for crate::UnityEngine::InputSystem::InputActionState_BindingState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionState_BindingState {
     type Type = Self;
@@ -3740,7 +3752,7 @@ for crate::UnityEngine::InputSystem::InputActionState_BindingState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionState_BindingState {
     type Actual = Self;
@@ -3754,7 +3766,7 @@ for crate::UnityEngine::InputSystem::InputActionState_BindingState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionState_BindingState {
     type Type = Self;
@@ -4624,7 +4636,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+GlobalState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_GlobalState {
@@ -4647,7 +4659,7 @@ pub struct InputActionState_GlobalState {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
     type Held<'a> = Self;
@@ -4677,7 +4689,7 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
     type Type = Self;
@@ -4688,7 +4700,7 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
     type Actual = Self;
@@ -4702,7 +4714,7 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
     type Type = Self;
@@ -4717,7 +4729,7 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
     type Actual = Self;
@@ -4731,7 +4743,7 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+GlobalState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
     type Type = Self;
@@ -4744,13 +4756,13 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
 impl crate::UnityEngine::InputSystem::InputActionState_GlobalState {}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_InteractionState {
     padding: quest_hook::libil2cpp::ValueTypePadding<48usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     type Held<'a> = Self;
@@ -4780,7 +4792,7 @@ for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     type Type = Self;
@@ -4791,7 +4803,7 @@ for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     type Actual = Self;
@@ -4805,7 +4817,7 @@ for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     type Type = Self;
@@ -4820,7 +4832,7 @@ for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     type Actual = Self;
@@ -4834,7 +4846,7 @@ for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     type Type = Self;
@@ -5298,13 +5310,13 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_TriggerState {
     padding: quest_hook::libil2cpp::ValueTypePadding<48usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     type Held<'a> = Self;
@@ -5334,7 +5346,7 @@ for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     type Type = Self;
@@ -5345,7 +5357,7 @@ for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     type Actual = Self;
@@ -5359,7 +5371,7 @@ for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     type Type = Self;
@@ -5374,7 +5386,7 @@ for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     type Actual = Self;
@@ -5388,7 +5400,7 @@ for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     type Type = Self;
@@ -6354,7 +6366,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_UnmanagedMemory {
@@ -6392,7 +6404,7 @@ pub struct InputActionState_UnmanagedMemory {
     pub controlGroupingInitialized: bool,
     pub mapIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
     type Held<'a> = Self;
@@ -6422,7 +6434,7 @@ for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
     type Type = Self;
@@ -6433,7 +6445,7 @@ for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
     type Actual = Self;
@@ -6447,7 +6459,7 @@ for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
     type Type = Self;
@@ -6462,7 +6474,7 @@ for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
     type Actual = Self;
@@ -6476,7 +6488,7 @@ for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
     type Type = Self;
@@ -6654,14 +6666,18 @@ for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState+Flags"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InteractionState_InputActionState_Flags {
     #[default]
     TimerRunning = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
     type Held<'a> = Self;
@@ -6691,7 +6707,9 @@ for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
     type Type = Self;
@@ -6702,7 +6720,9 @@ for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
     type Actual = Self;
@@ -6716,7 +6736,9 @@ for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
     type Type = Self;
@@ -6731,7 +6753,9 @@ for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
     type Actual = Self;
@@ -6745,7 +6769,9 @@ for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState+Flags"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TriggerState_InputActionState_Flags {
@@ -6758,7 +6784,9 @@ pub enum TriggerState_InputActionState_Flags {
     PassThrough = 2i32,
     Pressed = 64i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
     type Held<'a> = Self;
@@ -6788,7 +6816,9 @@ for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
     type Type = Self;
@@ -6799,7 +6829,9 @@ for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
     type Actual = Self;
@@ -6813,7 +6845,9 @@ for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
     type Type = Self;
@@ -6828,7 +6862,9 @@ for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
     type Actual = Self;

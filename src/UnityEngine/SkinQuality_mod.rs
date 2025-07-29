@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+SkinQuality")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinQuality")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SkinQuality {
@@ -8,7 +8,7 @@ pub enum SkinQuality {
     Bone2 = 2i32,
     Bone4 = 4i32,
 }
-#[cfg(feature = "UnityEngine+SkinQuality")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinQuality")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SkinQuality {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SkinQuality {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SkinQuality")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinQuality")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SkinQuality {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SkinQuality 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SkinQuality")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SkinQuality {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SkinQuality
         self
     }
 }
-#[cfg(feature = "UnityEngine+SkinQuality")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinQuality")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SkinQuality {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SkinQuality 
         }
     }
 }
-#[cfg(feature = "UnityEngine+SkinQuality")]
+#[cfg(feature = "cordl_class_UnityEngine+SkinQuality")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SkinQuality {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonDynamicContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonDynamicContract")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonDynamicContract {
@@ -60,7 +60,7 @@ pub struct JsonDynamicContract {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonDynamicContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonDynamicContract")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -80,14 +80,14 @@ for crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonDynamicContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonDynamicContract")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
     type Target = crate::Newtonsoft::Json::Serialization::JsonContainerContract;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonDynamicContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonDynamicContract")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -465,7 +465,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonDynamicContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonDynamicContract")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

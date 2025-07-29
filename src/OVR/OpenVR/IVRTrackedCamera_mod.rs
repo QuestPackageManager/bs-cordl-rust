@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRTrackedCamera {
@@ -39,7 +39,7 @@ pub struct IVRTrackedCamera {
         crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRTrackedCamera {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -68,7 +68,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRTrackedCamera
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRTrackedCamera {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -78,7 +78,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRTrackedCa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRTrackedCamera {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRTrackedC
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRTrackedCamera {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -105,7 +105,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRTrackedCa
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRTrackedCamera {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -118,7 +118,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRTrackedCame
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::IVRTrackedCamera {
     type Type = Self;
@@ -156,13 +156,13 @@ impl crate::OVR::OpenVR::IVRTrackedCamera {
     #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
     pub type _ReleaseVideoStreamingService = crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService;
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__AcquireVideoStreamingService {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -182,7 +182,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
     type Target = crate::System::MulticastDelegate;
@@ -190,7 +190,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -338,7 +338,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -348,13 +348,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetCameraErrorNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -374,7 +374,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
     type Target = crate::System::MulticastDelegate;
@@ -382,7 +382,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -522,7 +522,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -532,13 +532,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetCameraFrameSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -558,14 +558,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -747,7 +747,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -757,13 +757,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetCameraIntrinsics {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -783,14 +783,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -969,7 +969,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -979,13 +979,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetCameraProjection {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1005,14 +1005,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1195,7 +1195,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1205,13 +1205,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetVideoStreamFrameBuffer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1231,7 +1231,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
     type Target = crate::System::MulticastDelegate;
@@ -1239,7 +1239,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1441,7 +1441,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1451,13 +1451,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetVideoStreamTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1477,7 +1477,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
     type Target = crate::System::MulticastDelegate;
@@ -1485,7 +1485,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1699,7 +1699,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1709,13 +1709,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetVideoStreamTextureGL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1735,14 +1735,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1941,7 +1941,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1951,13 +1951,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetVideoStreamTextureSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1977,7 +1977,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
     type Target = crate::System::MulticastDelegate;
@@ -1985,7 +1985,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2180,7 +2180,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2190,13 +2190,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__HasCamera {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2216,14 +2216,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2370,7 +2370,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2380,13 +2380,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__ReleaseVideoStreamTextureGL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2406,7 +2406,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
     type Target = crate::System::MulticastDelegate;
@@ -2414,7 +2414,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2558,7 +2558,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2568,13 +2568,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__ReleaseVideoStreamingService {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2594,7 +2594,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
     type Target = crate::System::MulticastDelegate;
@@ -2602,7 +2602,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2742,7 +2742,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

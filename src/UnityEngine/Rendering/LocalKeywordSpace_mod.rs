@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeywordSpace")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LocalKeywordSpace {
     pub m_KeywordSpace: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeywordSpace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::LocalKeywordSpace {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::Rendering::LocalKeywordSpace {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeywordSpace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::LocalKeywordSpace {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::Rendering::LocalKeywordSpace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeywordSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::LocalKeywordSpace {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Rendering::LocalKeywordSpace {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeywordSpace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::LocalKeywordSpace {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::Rendering::LocalKeywordSpace {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeywordSpace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::LocalKeywordSpace {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Rendering::LocalKeywordSpace {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+LocalKeywordSpace")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::LocalKeywordSpace {
     type Type = Self;

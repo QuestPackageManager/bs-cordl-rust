@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchQueryJob_2<
@@ -10,7 +10,7 @@ pub struct BatchQueryJob_2<
     __cordl_phantom_CommandT: std::marker::PhantomData<CommandT>,
     __cordl_phantom_ResultT: std::marker::PhantomData<ResultT>,
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,
@@ -73,7 +73,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,
@@ -90,7 +90,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
         self
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,
@@ -108,7 +108,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
         }
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,
@@ -125,7 +125,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
         actual
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,

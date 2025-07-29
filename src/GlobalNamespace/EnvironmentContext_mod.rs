@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentContext")]
+#[cfg(feature = "cordl_class_EnvironmentContext")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentContext {
@@ -6,7 +6,7 @@ pub enum EnvironmentContext {
     BeatmapEditor = 1i32,
     Gameplay = 0i32,
 }
-#[cfg(feature = "EnvironmentContext")]
+#[cfg(feature = "cordl_class_EnvironmentContext")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EnvironmentContext {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EnvironmentC
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "EnvironmentContext")]
+#[cfg(feature = "cordl_class_EnvironmentContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentContext {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::EnvironmentContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "EnvironmentContext")]
+#[cfg(feature = "cordl_class_EnvironmentContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentContext {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::EnvironmentContext {
         self
     }
 }
-#[cfg(feature = "EnvironmentContext")]
+#[cfg(feature = "cordl_class_EnvironmentContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentContext {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::EnvironmentContext {
         }
     }
 }
-#[cfg(feature = "EnvironmentContext")]
+#[cfg(feature = "cordl_class_EnvironmentContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentContext {
     type Actual = Self;

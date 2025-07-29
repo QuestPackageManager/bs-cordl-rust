@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_t_Packed")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_t_Packed {
@@ -7,7 +7,7 @@ pub struct VREvent_t_Packed {
     pub eventAgeSeconds: f32,
     pub data: crate::OVR::OpenVR::VREvent_Data_t,
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VREvent_t_Packed {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VREvent_t_Packed
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::VREvent_t_Packed {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::VREvent_t_Pa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::VREvent_t_Packed {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::VREvent_t_P
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::VREvent_t_Packed {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::VREvent_t_Pa
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_t_Packed")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VREvent_t_Packed {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VREvent_t_Pack
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_t_Packed")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::VREvent_t_Packed {
     type Type = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Data+SqlTypes+SqlInt32")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlInt32")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlInt32 {
     pub m_fNotNull: bool,
     pub m_value: i32,
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlInt32")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlInt32")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlInt32 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlIn
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlInt32")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlInt32")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::SqlTypes::SqlInt32 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::SqlTypes::S
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlInt32")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlInt32")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::SqlTypes::SqlInt32 {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::System::Data::SqlTypes::SqlInt32 {
         self
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlInt32")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlInt32")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::SqlTypes::SqlInt32 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::SqlTypes::S
         }
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlInt32")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlInt32")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::SqlTypes::SqlInt32 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::SqlTypes::Sql
         actual
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlInt32")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlInt32")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::SqlTypes::SqlInt32 {
     type Type = Self;

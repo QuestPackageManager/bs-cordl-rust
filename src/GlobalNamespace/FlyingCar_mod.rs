@@ -1,4 +1,4 @@
-#[cfg(feature = "FlyingCar")]
+#[cfg(feature = "cordl_class_FlyingCar")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingCar {
@@ -9,7 +9,7 @@ pub struct FlyingCar {
     pub _progress: f32,
     pub _pos: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "FlyingCar")]
+#[cfg(feature = "cordl_class_FlyingCar")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingCar {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingCar {
         false
     }
 }
-#[cfg(feature = "FlyingCar")]
+#[cfg(feature = "cordl_class_FlyingCar")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingCar {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FlyingCar")]
+#[cfg(feature = "cordl_class_FlyingCar")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FlyingCar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::FlyingCar {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FlyingCar")]
+#[cfg(feature = "cordl_class_FlyingCar")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingCar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

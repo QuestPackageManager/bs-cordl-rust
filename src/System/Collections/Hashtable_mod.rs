@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Hashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable {
@@ -19,7 +19,7 @@ pub struct Hashtable {
     >,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+Hashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::Hashtable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::Hashtabl
         false
     }
 }
-#[cfg(feature = "System+Collections+Hashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable")]
 impl std::ops::Deref for crate::System::Collections::Hashtable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1460,7 +1460,7 @@ impl crate::System::Collections::Hashtable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Hashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Hashtable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1555,13 +1555,13 @@ for crate::System::Collections::Hashtable {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableDebugView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_HashtableDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableDebugView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Hashtable_HashtableDebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1581,14 +1581,14 @@ for crate::System::Collections::Hashtable_HashtableDebugView {
         false
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableDebugView")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_HashtableDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableDebugView")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable_HashtableDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1596,7 +1596,7 @@ impl std::ops::DerefMut for crate::System::Collections::Hashtable_HashtableDebug
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
 impl crate::System::Collections::Hashtable_HashtableDebugView {}
-#[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableDebugView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Hashtable_HashtableDebugView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1606,7 +1606,7 @@ for crate::System::Collections::Hashtable_HashtableDebugView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_HashtableEnumerator {
@@ -1619,7 +1619,7 @@ pub struct Hashtable_HashtableEnumerator {
     pub _currentKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _currentValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Hashtable_HashtableEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1639,14 +1639,14 @@ for crate::System::Collections::Hashtable_HashtableEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableEnumerator")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_HashtableEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableEnumerator")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable_HashtableEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1868,7 +1868,7 @@ impl crate::System::Collections::Hashtable_HashtableEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Hashtable_HashtableEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1920,14 +1920,14 @@ for crate::System::Collections::Hashtable_HashtableEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+KeyCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_KeyCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
-#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+KeyCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Hashtable_KeyCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1947,14 +1947,14 @@ for crate::System::Collections::Hashtable_KeyCollection {
         false
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+KeyCollection")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_KeyCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+KeyCollection")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable_KeyCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2117,7 +2117,7 @@ impl crate::System::Collections::Hashtable_KeyCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+KeyCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Hashtable_KeyCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2155,14 +2155,14 @@ for crate::System::Collections::Hashtable_KeyCollection {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+ValueCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_ValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
-#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+ValueCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Hashtable_ValueCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2182,14 +2182,14 @@ for crate::System::Collections::Hashtable_ValueCollection {
         false
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+ValueCollection")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_ValueCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+ValueCollection")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable_ValueCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2352,7 +2352,7 @@ impl crate::System::Collections::Hashtable_ValueCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+ValueCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Hashtable_ValueCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2390,7 +2390,7 @@ for crate::System::Collections::Hashtable_ValueCollection {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+bucket")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+bucket")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Hashtable_bucket {
@@ -2398,7 +2398,7 @@ pub struct Hashtable_bucket {
     pub val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub hash_coll: i32,
 }
-#[cfg(feature = "System+Collections+Hashtable+bucket")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Hashtable_bucket {
     type Held<'a> = Self;
@@ -2428,7 +2428,7 @@ for crate::System::Collections::Hashtable_bucket {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+bucket")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Collections::Hashtable_bucket {
     type Type = Self;
@@ -2439,7 +2439,7 @@ for crate::System::Collections::Hashtable_bucket {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+bucket")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Collections::Hashtable_bucket {
     type Actual = Self;
@@ -2453,7 +2453,7 @@ for crate::System::Collections::Hashtable_bucket {
         self
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+bucket")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Collections::Hashtable_bucket {
     type Type = Self;
@@ -2468,7 +2468,7 @@ for crate::System::Collections::Hashtable_bucket {
         }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+bucket")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Collections::Hashtable_bucket {
     type Actual = Self;
@@ -2482,7 +2482,7 @@ for crate::System::Collections::Hashtable_bucket {
         actual
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+bucket")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Collections::Hashtable_bucket {
     type Type = Self;

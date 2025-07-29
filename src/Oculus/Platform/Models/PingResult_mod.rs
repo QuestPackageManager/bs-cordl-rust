@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+PingResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PingResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PingResult {
@@ -6,7 +6,7 @@ pub struct PingResult {
     pub _ID_k__BackingField: u64,
     pub pingTimeUsec: crate::System::Nullable_1<u64>,
 }
-#[cfg(feature = "Oculus+Platform+Models+PingResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PingResult")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Models::PingResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Models::Pin
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+PingResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PingResult")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::PingResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+PingResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PingResult")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::PingResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -151,7 +151,7 @@ impl crate::Oculus::Platform::Models::PingResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+PingResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+PingResult")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Models::PingResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

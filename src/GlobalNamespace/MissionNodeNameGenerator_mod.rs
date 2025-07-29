@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionNodeNameGenerator")]
+#[cfg(feature = "cordl_class_MissionNodeNameGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionNodeNameGenerator {
@@ -7,7 +7,7 @@ pub struct MissionNodeNameGenerator {
         crate::GlobalNamespace::MissionNodesManager,
     >,
 }
-#[cfg(feature = "MissionNodeNameGenerator")]
+#[cfg(feature = "cordl_class_MissionNodeNameGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionNodeNameGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MissionNodeNameGenerator {
         false
     }
 }
-#[cfg(feature = "MissionNodeNameGenerator")]
+#[cfg(feature = "cordl_class_MissionNodeNameGenerator")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodeNameGenerator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionNodeNameGenerator")]
+#[cfg(feature = "cordl_class_MissionNodeNameGenerator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodeNameGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::MissionNodeNameGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionNodeNameGenerator")]
+#[cfg(feature = "cordl_class_MissionNodeNameGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionNodeNameGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

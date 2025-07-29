@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AudioDataLoadState")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioDataLoadState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioDataLoadState {
@@ -8,7 +8,7 @@ pub enum AudioDataLoadState {
     Loading = 1i32,
     Unloaded = 0i32,
 }
-#[cfg(feature = "UnityEngine+AudioDataLoadState")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioDataLoadState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioDataLoadState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioDataLoadSta
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AudioDataLoadState")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioDataLoadState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AudioDataLoadState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AudioDataLoa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AudioDataLoadState")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioDataLoadState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AudioDataLoadState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AudioDataLo
         self
     }
 }
-#[cfg(feature = "UnityEngine+AudioDataLoadState")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioDataLoadState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AudioDataLoadState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AudioDataLoa
         }
     }
 }
-#[cfg(feature = "UnityEngine+AudioDataLoadState")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioDataLoadState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AudioDataLoadState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

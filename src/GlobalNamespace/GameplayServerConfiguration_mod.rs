@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayServerConfiguration")]
+#[cfg(feature = "cordl_class_GameplayServerConfiguration")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GameplayServerConfiguration {
@@ -9,7 +9,7 @@ pub struct GameplayServerConfiguration {
     pub songSelectionMode: crate::GlobalNamespace::SongSelectionMode,
     pub gameplayServerControlSettings: crate::GlobalNamespace::GameplayServerControlSettings,
 }
-#[cfg(feature = "GameplayServerConfiguration")]
+#[cfg(feature = "cordl_class_GameplayServerConfiguration")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayServerConfiguration {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::GameplayServerConfiguration {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameplayServerConfiguration")]
+#[cfg(feature = "cordl_class_GameplayServerConfiguration")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayServerConfiguration {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::GameplayServerConfiguration {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameplayServerConfiguration")]
+#[cfg(feature = "cordl_class_GameplayServerConfiguration")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayServerConfiguration {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::GlobalNamespace::GameplayServerConfiguration {
         self
     }
 }
-#[cfg(feature = "GameplayServerConfiguration")]
+#[cfg(feature = "cordl_class_GameplayServerConfiguration")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayServerConfiguration {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::GlobalNamespace::GameplayServerConfiguration {
         }
     }
 }
-#[cfg(feature = "GameplayServerConfiguration")]
+#[cfg(feature = "cordl_class_GameplayServerConfiguration")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayServerConfiguration {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::GlobalNamespace::GameplayServerConfiguration {
         actual
     }
 }
-#[cfg(feature = "GameplayServerConfiguration")]
+#[cfg(feature = "cordl_class_GameplayServerConfiguration")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::GameplayServerConfiguration {
     type Type = Self;

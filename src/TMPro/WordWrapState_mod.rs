@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+WordWrapState")]
+#[cfg(feature = "cordl_class_TMPro+WordWrapState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct WordWrapState {
@@ -84,7 +84,7 @@ pub struct WordWrapState {
     pub tagNoParsing: bool,
     pub isNonBreakingSpace: bool,
 }
-#[cfg(feature = "TMPro+WordWrapState")]
+#[cfg(feature = "cordl_class_TMPro+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::WordWrapState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -113,7 +113,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::WordWrapState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+WordWrapState")]
+#[cfg(feature = "cordl_class_TMPro+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::WordWrapState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -123,7 +123,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::WordWrapState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+WordWrapState")]
+#[cfg(feature = "cordl_class_TMPro+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::WordWrapState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -136,7 +136,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::WordWrapState {
         self
     }
 }
-#[cfg(feature = "TMPro+WordWrapState")]
+#[cfg(feature = "cordl_class_TMPro+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::WordWrapState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -150,7 +150,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::WordWrapState {
         }
     }
 }
-#[cfg(feature = "TMPro+WordWrapState")]
+#[cfg(feature = "cordl_class_TMPro+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::WordWrapState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -163,7 +163,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::WordWrapState {
         actual
     }
 }
-#[cfg(feature = "TMPro+WordWrapState")]
+#[cfg(feature = "cordl_class_TMPro+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::WordWrapState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+SceneManagement+Scene")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+Scene")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Scene {
     pub m_Handle: i32,
 }
-#[cfg(feature = "UnityEngine+SceneManagement+Scene")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+Scene")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SceneManagement::Scene {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SceneManagement:
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+Scene")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+Scene")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SceneManagement::Scene {
     type Type = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::SceneManagement::Scene {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+Scene")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+Scene")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SceneManagement::Scene {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::UnityEngine::SceneManagement::Scene {
         self
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+Scene")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+Scene")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SceneManagement::Scene {
     type Type = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::SceneManagement::Scene {
         }
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+Scene")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+Scene")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SceneManagement::Scene {
     type Actual = Self;
@@ -87,7 +87,7 @@ for crate::UnityEngine::SceneManagement::Scene {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+SceneManagement+Scene")]
+#[cfg(feature = "cordl_class_UnityEngine+SceneManagement+Scene")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::SceneManagement::Scene {
     type Type = Self;

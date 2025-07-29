@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Terrain")]
+#[cfg(feature = "cordl_class_UnityEngine+Terrain")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Terrain {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
-#[cfg(feature = "UnityEngine+Terrain")]
+#[cfg(feature = "cordl_class_UnityEngine+Terrain")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Terrain {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Terrain {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Terrain")]
+#[cfg(feature = "cordl_class_UnityEngine+Terrain")]
 impl std::ops::Deref for crate::UnityEngine::Terrain {
     type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Terrain")]
+#[cfg(feature = "cordl_class_UnityEngine+Terrain")]
 impl std::ops::DerefMut for crate::UnityEngine::Terrain {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -401,7 +401,7 @@ impl crate::UnityEngine::Terrain {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Terrain")]
+#[cfg(feature = "cordl_class_UnityEngine+Terrain")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Terrain {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

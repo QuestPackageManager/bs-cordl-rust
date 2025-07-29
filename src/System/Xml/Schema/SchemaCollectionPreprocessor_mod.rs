@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaCollectionPreprocessor {
@@ -19,7 +19,7 @@ pub struct SchemaCollectionPreprocessor {
     pub Xmlns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     type Target = crate::System::Xml::Schema::BaseProcessor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1139,7 +1139,7 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1149,7 +1149,7 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaCollectionPreprocessor_Compositor {
@@ -1158,7 +1158,7 @@ pub enum SchemaCollectionPreprocessor_Compositor {
     Include = 1i32,
     Root = 0i32,
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
     type Held<'a> = Self;
@@ -1188,7 +1188,7 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
     type Type = Self;
@@ -1199,7 +1199,7 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
     type Actual = Self;
@@ -1213,7 +1213,7 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
     type Type = Self;
@@ -1228,7 +1228,7 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
     type Actual = Self;

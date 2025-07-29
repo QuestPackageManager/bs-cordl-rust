@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewGameObjectInstaller {
@@ -8,7 +8,7 @@ pub struct SubContainerCreatorByNewGameObjectInstaller {
         crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SubContainerCreatorByNewGameObjectInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Zenject::SubContainerCreatorByNewGameObjectInstaller {
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectInstaller")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewGameObjectInstaller {
     type Target = crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectInstaller")]
 impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewGameObjectInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,7 +147,7 @@ impl crate::Zenject::SubContainerCreatorByNewGameObjectInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectInstaller")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SubContainerCreatorByNewGameObjectInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

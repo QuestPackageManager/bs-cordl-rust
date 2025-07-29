@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenEqualityComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JTokenEqualityComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenEqualityComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenEqualityComparer")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenEqualityComparer")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenEqualityComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

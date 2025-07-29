@@ -1,10 +1,10 @@
-#[cfg(feature = "HMUI+ModalViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ModalViewBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ModalViewBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "HMUI+ModalViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ModalViewBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ModalViewBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ModalViewBase {
         false
     }
 }
-#[cfg(feature = "HMUI+ModalViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ModalViewBase")]
 impl std::ops::Deref for crate::HMUI::ModalViewBase {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ModalViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ModalViewBase")]
 impl std::ops::DerefMut for crate::HMUI::ModalViewBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -175,7 +175,7 @@ impl crate::HMUI::ModalViewBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ModalViewBase")]
+#[cfg(feature = "cordl_class_HMUI+ModalViewBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ModalViewBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

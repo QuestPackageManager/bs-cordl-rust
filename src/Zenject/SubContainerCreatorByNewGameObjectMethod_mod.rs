@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewGameObjectMethod {
@@ -7,7 +7,7 @@ pub struct SubContainerCreatorByNewGameObjectMethod {
         crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>>,
     >,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SubContainerCreatorByNewGameObjectMethod {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Zenject::SubContainerCreatorByNewGameObjectMethod {
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewGameObjectMethod {
     type Target = crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod")]
 impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewGameObjectMethod {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::Zenject::SubContainerCreatorByNewGameObjectMethod {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SubContainerCreatorByNewGameObjectMethod {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+BakedEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+BakedEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BakedEvent {
@@ -12,7 +12,7 @@ pub struct BakedEvent {
         >,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+BakedEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+BakedEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::BakedEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::BakedEven
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+BakedEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+BakedEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::BakedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_3<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
@@ -46,7 +46,7 @@ impl std::ops::Deref for crate::HoudiniEngineUnity::BakedEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+BakedEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+BakedEvent")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::BakedEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -83,7 +83,7 @@ impl crate::HoudiniEngineUnity::BakedEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+BakedEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+BakedEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::BakedEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

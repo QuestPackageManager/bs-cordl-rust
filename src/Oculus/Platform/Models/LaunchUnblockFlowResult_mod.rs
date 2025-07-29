@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+LaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LaunchUnblockFlowResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LaunchUnblockFlowResult {
@@ -6,7 +6,7 @@ pub struct LaunchUnblockFlowResult {
     pub DidCancel: bool,
     pub DidUnblock: bool,
 }
-#[cfg(feature = "Oculus+Platform+Models+LaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LaunchUnblockFlowResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::LaunchUnblockFlowResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Oculus::Platform::Models::LaunchUnblockFlowResult {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LaunchUnblockFlowResult")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::LaunchUnblockFlowResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LaunchUnblockFlowResult")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::LaunchUnblockFlowResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -77,7 +77,7 @@ impl crate::Oculus::Platform::Models::LaunchUnblockFlowResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+LaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+LaunchUnblockFlowResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::LaunchUnblockFlowResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

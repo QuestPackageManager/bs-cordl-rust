@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseFrames")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerPoseFrames {
@@ -12,7 +12,7 @@ pub struct PlayerPoseFrames {
         quest_hook::libil2cpp::Il2CppArray<crate::BeatSaber::RecPlay::PoseFrame>,
     >,
 }
-#[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseFrames")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::RecPlay::PlayerPoseFrames {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::RecPlay::PlayerPos
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseFrames")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::RecPlay::PlayerPoseFrames {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::BeatSaber::RecPlay::PlayerPoseFrames {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseFrames")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::RecPlay::PlayerPoseFrames {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::BeatSaber::RecPlay::PlayerPoseFrames {
         self
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseFrames")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::RecPlay::PlayerPoseFrames {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::BeatSaber::RecPlay::PlayerPoseFrames {
         }
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseFrames")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::RecPlay::PlayerPoseFrames {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::BeatSaber::RecPlay::PlayerPoseFrames {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]
+#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseFrames")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::RecPlay::PlayerPoseFrames {
     type Type = Self;

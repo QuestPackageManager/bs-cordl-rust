@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSimpleJSON+JSONLazyCreator")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONLazyCreator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONLazyCreator {
@@ -6,7 +6,7 @@ pub struct JSONLazyCreator {
     pub m_Node: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     pub m_Key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "OVRSimpleJSON+JSONLazyCreator")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONLazyCreator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONLazyCreator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONLazyCreato
         false
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONLazyCreator")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONLazyCreator")]
 impl std::ops::Deref for crate::OVRSimpleJSON::JSONLazyCreator {
     type Target = crate::OVRSimpleJSON::JSONNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONLazyCreator")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONLazyCreator")]
 impl std::ops::DerefMut for crate::OVRSimpleJSON::JSONLazyCreator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -778,7 +778,7 @@ impl crate::OVRSimpleJSON::JSONLazyCreator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONLazyCreator")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONLazyCreator")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVRSimpleJSON::JSONLazyCreator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLevelLoader")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelLoader {
@@ -37,7 +37,7 @@ pub struct MultiplayerLevelLoader {
     pub _startTime: i64,
     pub _stillDownloadingCalled: bool,
 }
-#[cfg(feature = "MultiplayerLevelLoader")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLevelLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -57,14 +57,14 @@ for crate::GlobalNamespace::MultiplayerLevelLoader {
         false
     }
 }
-#[cfg(feature = "MultiplayerLevelLoader")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLevelLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLevelLoader")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLevelLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -388,7 +388,7 @@ impl crate::GlobalNamespace::MultiplayerLevelLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLevelLoader")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLevelLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -412,7 +412,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
@@ -421,7 +421,7 @@ pub enum MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     NotLoading = 0i32,
     WaitingForCountdown = 2i32,
 }
-#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Held<'a> = Self;
@@ -451,7 +451,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Type = Self;
@@ -462,7 +462,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Actual = Self;
@@ -476,7 +476,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState
         self
     }
 }
-#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Type = Self;
@@ -491,7 +491,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState
         }
     }
 }
-#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
+#[cfg(feature = "cordl_class_MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Actual = Self;

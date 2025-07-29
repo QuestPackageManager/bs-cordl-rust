@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder {
@@ -15,7 +15,7 @@ pub struct SP800SecureRandomBuilder {
     pub mSecurityStrength: i32,
     pub mEntropyBitsRequired: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -43,7 +43,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -424,7 +424,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -434,7 +434,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder_CtrDrbgProvider {
@@ -449,7 +451,9 @@ pub struct SP800SecureRandomBuilder_CtrDrbgProvider {
     >,
     pub mSecurityStrength: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -469,7 +473,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -477,7 +483,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -605,7 +613,9 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgPro
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -630,7 +640,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -644,7 +654,7 @@ pub struct SP800SecureRandomBuilder_HMacDrbgProvider {
     pub mSecurityStrength: i32,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
@@ -666,7 +676,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
@@ -676,7 +686,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
@@ -789,7 +799,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPr
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
@@ -819,7 +829,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -833,7 +843,7 @@ pub struct SP800SecureRandomBuilder_HashDrbgProvider {
     pub mSecurityStrength: i32,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
@@ -855,7 +865,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
@@ -865,7 +875,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
@@ -978,7 +988,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPr
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {

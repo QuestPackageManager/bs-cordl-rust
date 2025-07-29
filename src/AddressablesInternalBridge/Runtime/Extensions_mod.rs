@@ -1,10 +1,10 @@
-#[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+Extensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Extensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+Extensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::AddressablesInternalBridge::Runtime::Extensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::AddressablesInternalBridge::Runtime::Extensions {
         false
     }
 }
-#[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+Extensions")]
 impl std::ops::Deref for crate::AddressablesInternalBridge::Runtime::Extensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+Extensions")]
 impl std::ops::DerefMut for crate::AddressablesInternalBridge::Runtime::Extensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::AddressablesInternalBridge::Runtime::Extensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+Extensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::AddressablesInternalBridge::Runtime::Extensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

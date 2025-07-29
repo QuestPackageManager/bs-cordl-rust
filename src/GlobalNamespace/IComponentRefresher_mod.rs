@@ -1,10 +1,10 @@
-#[cfg(feature = "IComponentRefresher")]
+#[cfg(feature = "cordl_class_IComponentRefresher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IComponentRefresher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IComponentRefresher")]
+#[cfg(feature = "cordl_class_IComponentRefresher")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IComponentRefresher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IComponentRe
         false
     }
 }
-#[cfg(feature = "IComponentRefresher")]
+#[cfg(feature = "cordl_class_IComponentRefresher")]
 impl std::ops::Deref for crate::GlobalNamespace::IComponentRefresher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IComponentRefresher")]
+#[cfg(feature = "cordl_class_IComponentRefresher")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IComponentRefresher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::IComponentRefresher {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IComponentRefresher")]
+#[cfg(feature = "cordl_class_IComponentRefresher")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IComponentRefresher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

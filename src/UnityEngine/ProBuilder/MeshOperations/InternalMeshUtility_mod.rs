@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalMeshUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -171,7 +171,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

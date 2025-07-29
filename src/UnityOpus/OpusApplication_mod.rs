@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityOpus+OpusApplication")]
+#[cfg(feature = "cordl_class_UnityOpus+OpusApplication")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OpusApplication {
@@ -7,7 +7,7 @@ pub enum OpusApplication {
     RestrictedLowDelay = 2051i32,
     VoIP = 2048i32,
 }
-#[cfg(feature = "UnityOpus+OpusApplication")]
+#[cfg(feature = "cordl_class_UnityOpus+OpusApplication")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityOpus::OpusApplication {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityOpus::OpusApplication {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityOpus+OpusApplication")]
+#[cfg(feature = "cordl_class_UnityOpus+OpusApplication")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityOpus::OpusApplication {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityOpus::OpusApplicatio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityOpus+OpusApplication")]
+#[cfg(feature = "cordl_class_UnityOpus+OpusApplication")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityOpus::OpusApplication {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityOpus::OpusApplicati
         self
     }
 }
-#[cfg(feature = "UnityOpus+OpusApplication")]
+#[cfg(feature = "cordl_class_UnityOpus+OpusApplication")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityOpus::OpusApplication {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityOpus::OpusApplicatio
         }
     }
 }
-#[cfg(feature = "UnityOpus+OpusApplication")]
+#[cfg(feature = "cordl_class_UnityOpus+OpusApplication")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityOpus::OpusApplication {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

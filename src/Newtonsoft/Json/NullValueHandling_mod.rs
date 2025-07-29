@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+NullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+NullValueHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NullValueHandling {
@@ -6,7 +6,7 @@ pub enum NullValueHandling {
     Ignore = 1i32,
     Include = 0i32,
 }
-#[cfg(feature = "Newtonsoft+Json+NullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+NullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::NullValueHandling {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::NullValueHa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+NullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+NullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::NullValueHandling {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::Newtonsoft::Json::NullValueHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+NullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+NullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::NullValueHandling {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::Newtonsoft::Json::NullValueHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+NullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+NullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::NullValueHandling {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::Newtonsoft::Json::NullValueHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+NullValueHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+NullValueHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::NullValueHandling {
     type Actual = Self;

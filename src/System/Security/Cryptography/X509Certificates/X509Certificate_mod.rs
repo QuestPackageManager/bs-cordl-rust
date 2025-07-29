@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Certificate {
@@ -20,7 +22,9 @@ pub struct X509Certificate {
     pub lazyNotBefore: crate::System::DateTime,
     pub lazyNotAfter: crate::System::DateTime,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,7 +44,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate"
+)]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -48,7 +54,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate"
+)]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1129,7 +1137,9 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

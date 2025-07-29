@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Properties+Internal+ReflectionUtilities")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectionUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectionUtilities")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectionUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::ReflectionUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Properties::Internal::ReflectionUtilities {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectionUtilities")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectionUtilities")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ReflectionUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectionUtilities")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectionUtilities")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::ReflectionUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -69,7 +69,7 @@ impl crate::Unity::Properties::Internal::ReflectionUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+ReflectionUtilities")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectionUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::ReflectionUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

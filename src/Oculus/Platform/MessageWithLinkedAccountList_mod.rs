@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithLinkedAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLinkedAccountList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLinkedAccountList {
@@ -6,7 +6,7 @@ pub struct MessageWithLinkedAccountList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LinkedAccountList>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLinkedAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLinkedAccountList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithLinkedAccountList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithLinkedAccountList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLinkedAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLinkedAccountList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLinkedAccountList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LinkedAccountList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithLinkedAccountList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLinkedAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLinkedAccountList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithLinkedAccountList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithLinkedAccountList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLinkedAccountList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLinkedAccountList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithLinkedAccountList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

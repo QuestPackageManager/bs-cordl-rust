@@ -1,4 +1,4 @@
-#[cfg(feature = "BaseNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseNetworkPlayerModel {
@@ -23,7 +23,7 @@ pub struct BaseNetworkPlayerModel {
         >,
     >,
 }
-#[cfg(feature = "BaseNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BaseNetworkPlayerModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::GlobalNamespace::BaseNetworkPlayerModel {
         false
     }
 }
-#[cfg(feature = "BaseNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BaseNetworkPlayerModel {
     type Target = crate::GlobalNamespace::StandaloneMonobehavior;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BaseNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BaseNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1357,7 +1357,7 @@ impl crate::GlobalNamespace::BaseNetworkPlayerModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BaseNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BaseNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1381,7 +1381,7 @@ for crate::GlobalNamespace::BaseNetworkPlayerModel {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel+PartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseNetworkPlayerModel_PartyConfig {
@@ -1392,7 +1392,7 @@ pub struct BaseNetworkPlayerModel_PartyConfig {
         crate::GlobalNamespace::INetworkPlayerModel,
     >,
 }
-#[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel+PartyConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1412,14 +1412,14 @@ for crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig {
         false
     }
 }
-#[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel+PartyConfig")]
 impl std::ops::Deref for crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel+PartyConfig")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1456,7 +1456,7 @@ impl crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
+#[cfg(feature = "cordl_class_BaseNetworkPlayerModel+PartyConfig")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

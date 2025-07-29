@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPGlobalPropertiesFactoryPal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal"
+)]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal"
+)]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -71,7 +79,9 @@ impl crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal")]
+#[cfg(
+    feature = "cordl_class_System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

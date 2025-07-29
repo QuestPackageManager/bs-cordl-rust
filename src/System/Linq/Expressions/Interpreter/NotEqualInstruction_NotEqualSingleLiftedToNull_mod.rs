@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NotEqualInstruction_NotEqualSingleLiftedToNull {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingleLiftedToNull {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingleLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingleLiftedToNull {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingleLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingleLiftedToNull {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::NotEqualInstruction_NotEqualSingleLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingleLiftedToNull"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingleLiftedToNull {

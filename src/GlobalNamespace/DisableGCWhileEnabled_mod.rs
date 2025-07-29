@@ -1,10 +1,10 @@
-#[cfg(feature = "DisableGCWhileEnabled")]
+#[cfg(feature = "cordl_class_DisableGCWhileEnabled")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisableGCWhileEnabled {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "DisableGCWhileEnabled")]
+#[cfg(feature = "cordl_class_DisableGCWhileEnabled")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DisableGCWhileEnabled {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::DisableGCWhileEnabled {
         false
     }
 }
-#[cfg(feature = "DisableGCWhileEnabled")]
+#[cfg(feature = "cordl_class_DisableGCWhileEnabled")]
 impl std::ops::Deref for crate::GlobalNamespace::DisableGCWhileEnabled {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DisableGCWhileEnabled")]
+#[cfg(feature = "cordl_class_DisableGCWhileEnabled")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DisableGCWhileEnabled {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::DisableGCWhileEnabled {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DisableGCWhileEnabled")]
+#[cfg(feature = "cordl_class_DisableGCWhileEnabled")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DisableGCWhileEnabled {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

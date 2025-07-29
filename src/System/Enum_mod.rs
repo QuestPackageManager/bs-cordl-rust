@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Enum")]
+#[cfg(feature = "cordl_class_System+Enum")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enum {
     __cordl_parent: crate::System::ValueType,
 }
-#[cfg(feature = "System+Enum")]
+#[cfg(feature = "cordl_class_System+Enum")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Enum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Enum {
         false
     }
 }
-#[cfg(feature = "System+Enum")]
+#[cfg(feature = "cordl_class_System+Enum")]
 impl std::ops::Deref for crate::System::Enum {
     type Target = crate::System::ValueType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Enum")]
+#[cfg(feature = "cordl_class_System+Enum")]
 impl std::ops::DerefMut for crate::System::Enum {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1847,7 +1847,7 @@ impl crate::System::Enum {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Enum")]
+#[cfg(feature = "cordl_class_System+Enum")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Enum {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1892,7 +1892,7 @@ impl AsMut<crate::System::IFormattable> for crate::System::Enum {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Enum+EnumResult")]
+#[cfg(feature = "cordl_class_System+Enum+EnumResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Enum_EnumResult {
@@ -1910,7 +1910,7 @@ pub struct Enum_EnumResult {
     >,
     pub m_innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
-#[cfg(feature = "System+Enum+EnumResult")]
+#[cfg(feature = "cordl_class_System+Enum+EnumResult")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Enum_EnumResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1939,7 +1939,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Enum_EnumResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Enum+EnumResult")]
+#[cfg(feature = "cordl_class_System+Enum+EnumResult")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Enum_EnumResult {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1949,7 +1949,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Enum_EnumResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Enum+EnumResult")]
+#[cfg(feature = "cordl_class_System+Enum+EnumResult")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Enum_EnumResult {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1962,7 +1962,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Enum_EnumResult 
         self
     }
 }
-#[cfg(feature = "System+Enum+EnumResult")]
+#[cfg(feature = "cordl_class_System+Enum+EnumResult")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Enum_EnumResult {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1976,7 +1976,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Enum_EnumResult {
         }
     }
 }
-#[cfg(feature = "System+Enum+EnumResult")]
+#[cfg(feature = "cordl_class_System+Enum+EnumResult")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Enum_EnumResult {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1989,7 +1989,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Enum_EnumResult {
         actual
     }
 }
-#[cfg(feature = "System+Enum+EnumResult")]
+#[cfg(feature = "cordl_class_System+Enum+EnumResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Enum_EnumResult {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -2151,7 +2151,7 @@ impl crate::System::Enum_EnumResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Enum+ValuesAndNames")]
+#[cfg(feature = "cordl_class_System+Enum+ValuesAndNames")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enum_ValuesAndNames {
@@ -2163,7 +2163,7 @@ pub struct Enum_ValuesAndNames {
         >,
     >,
 }
-#[cfg(feature = "System+Enum+ValuesAndNames")]
+#[cfg(feature = "cordl_class_System+Enum+ValuesAndNames")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Enum_ValuesAndNames {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -2182,14 +2182,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Enum_ValuesAndNames {
         false
     }
 }
-#[cfg(feature = "System+Enum+ValuesAndNames")]
+#[cfg(feature = "cordl_class_System+Enum+ValuesAndNames")]
 impl std::ops::Deref for crate::System::Enum_ValuesAndNames {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Enum+ValuesAndNames")]
+#[cfg(feature = "cordl_class_System+Enum+ValuesAndNames")]
 impl std::ops::DerefMut for crate::System::Enum_ValuesAndNames {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2254,7 +2254,7 @@ impl crate::System::Enum_ValuesAndNames {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Enum+ValuesAndNames")]
+#[cfg(feature = "cordl_class_System+Enum+ValuesAndNames")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Enum_ValuesAndNames {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+AlphabetScrollbar")]
+#[cfg(feature = "cordl_class_HMUI+AlphabetScrollbar")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlphabetScrollbar {
@@ -26,7 +26,7 @@ pub struct AlphabetScrollbar {
     pub _highlightedCharacterIndex: i32,
     pub _pointerIsDown: bool,
 }
-#[cfg(feature = "HMUI+AlphabetScrollbar")]
+#[cfg(feature = "cordl_class_HMUI+AlphabetScrollbar")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AlphabetScrollbar {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AlphabetScrollbar {
         false
     }
 }
-#[cfg(feature = "HMUI+AlphabetScrollbar")]
+#[cfg(feature = "cordl_class_HMUI+AlphabetScrollbar")]
 impl std::ops::Deref for crate::HMUI::AlphabetScrollbar {
     type Target = crate::HMUI::Interactable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+AlphabetScrollbar")]
+#[cfg(feature = "cordl_class_HMUI+AlphabetScrollbar")]
 impl std::ops::DerefMut for crate::HMUI::AlphabetScrollbar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -409,7 +409,7 @@ impl crate::HMUI::AlphabetScrollbar {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+AlphabetScrollbar")]
+#[cfg(feature = "cordl_class_HMUI+AlphabetScrollbar")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AlphabetScrollbar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

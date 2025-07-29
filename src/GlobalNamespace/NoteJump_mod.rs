@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteJump")]
+#[cfg(feature = "cordl_class_NoteJump")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJump {
@@ -59,7 +59,7 @@ pub struct NoteJump {
     pub _inverseWorldRotation: crate::UnityEngine::Quaternion,
     pub _rotateTowardsPlayer: bool,
 }
-#[cfg(feature = "NoteJump")]
+#[cfg(feature = "cordl_class_NoteJump")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteJump {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -78,14 +78,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteJump {
         false
     }
 }
-#[cfg(feature = "NoteJump")]
+#[cfg(feature = "cordl_class_NoteJump")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJump {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteJump")]
+#[cfg(feature = "cordl_class_NoteJump")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteJump {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -643,7 +643,7 @@ impl crate::GlobalNamespace::NoteJump {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteJump")]
+#[cfg(feature = "cordl_class_NoteJump")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteJump {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

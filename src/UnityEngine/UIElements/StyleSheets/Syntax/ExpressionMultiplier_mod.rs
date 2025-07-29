@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExpressionMultiplier {
@@ -6,7 +8,9 @@ pub struct ExpressionMultiplier {
     pub min: i32,
     pub max: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
     type Held<'a> = Self;
@@ -36,7 +40,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
     type Type = Self;
@@ -47,7 +53,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
     type Actual = Self;
@@ -61,7 +69,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
     type Type = Self;
@@ -76,7 +86,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
     type Actual = Self;
@@ -90,7 +102,9 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier {
     type Type = Self;

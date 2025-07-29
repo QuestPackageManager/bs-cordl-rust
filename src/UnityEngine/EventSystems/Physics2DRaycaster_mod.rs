@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+Physics2DRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Physics2DRaycaster {
@@ -7,7 +7,7 @@ pub struct Physics2DRaycaster {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+Physics2DRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::Physics2DRaycaster {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::EventSystems::Physics2DRaycaster {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+Physics2DRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::Physics2DRaycaster {
     type Target = crate::UnityEngine::EventSystems::PhysicsRaycaster;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+Physics2DRaycaster")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::Physics2DRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::UnityEngine::EventSystems::Physics2DRaycaster {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+Physics2DRaycaster")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::Physics2DRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

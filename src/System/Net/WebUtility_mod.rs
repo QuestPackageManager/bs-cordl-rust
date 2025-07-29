@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+WebUtility")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+WebUtility")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebUtility {
         false
     }
 }
-#[cfg(feature = "System+Net+WebUtility")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility")]
 impl std::ops::Deref for crate::System::Net::WebUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebUtility")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility")]
 impl std::ops::DerefMut for crate::System::Net::WebUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -267,7 +267,7 @@ impl crate::System::Net::WebUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebUtility")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -276,7 +276,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebUtility {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility+UrlDecoder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebUtility_UrlDecoder {
@@ -288,7 +288,7 @@ pub struct WebUtility_UrlDecoder {
     pub _byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
 }
-#[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility+UrlDecoder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebUtility_UrlDecoder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -307,14 +307,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebUtility_UrlDe
         false
     }
 }
-#[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility+UrlDecoder")]
 impl std::ops::Deref for crate::System::Net::WebUtility_UrlDecoder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility+UrlDecoder")]
 impl std::ops::DerefMut for crate::System::Net::WebUtility_UrlDecoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -456,7 +456,7 @@ impl crate::System::Net::WebUtility_UrlDecoder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
+#[cfg(feature = "cordl_class_System+Net+WebUtility+UrlDecoder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebUtility_UrlDecoder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

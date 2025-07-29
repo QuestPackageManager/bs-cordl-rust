@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerBigAvatarInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerBigAvatarInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBigAvatarInstaller {
@@ -13,7 +13,7 @@ pub struct MultiplayerBigAvatarInstaller {
         crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     >,
 }
-#[cfg(feature = "MultiplayerBigAvatarInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerBigAvatarInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
         false
     }
 }
-#[cfg(feature = "MultiplayerBigAvatarInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerBigAvatarInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerBigAvatarInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerBigAvatarInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerBigAvatarInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerBigAvatarInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

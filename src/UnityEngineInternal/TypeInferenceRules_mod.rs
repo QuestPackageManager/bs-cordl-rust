@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRules")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeInferenceRules {
@@ -8,7 +8,7 @@ pub enum TypeInferenceRules {
     TypeReferencedByFirstArgument = 0i32,
     TypeReferencedBySecondArgument = 1i32,
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngineInternal::TypeInferenceRules {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngineInternal::TypeInferenceRules {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngineInternal::TypeInferenceRules {
         self
     }
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngineInternal::TypeInferenceRules {
         }
     }
 }
-#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Actual = Self;

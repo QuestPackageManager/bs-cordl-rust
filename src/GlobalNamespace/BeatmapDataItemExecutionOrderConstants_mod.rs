@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
+#[cfg(feature = "cordl_class_BeatmapDataItemExecutionOrderConstants")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataItemExecutionOrderConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
+#[cfg(feature = "cordl_class_BeatmapDataItemExecutionOrderConstants")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
         false
     }
 }
-#[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
+#[cfg(feature = "cordl_class_BeatmapDataItemExecutionOrderConstants")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
+#[cfg(feature = "cordl_class_BeatmapDataItemExecutionOrderConstants")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
+#[cfg(feature = "cordl_class_BeatmapDataItemExecutionOrderConstants")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

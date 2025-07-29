@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+DefaultReflectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+DefaultReflectionMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DefaultReflectionMode {
@@ -6,7 +6,7 @@ pub enum DefaultReflectionMode {
     Custom = 1i32,
     Skybox = 0i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+DefaultReflectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+DefaultReflectionMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::DefaultReflectionMode {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::Rendering::DefaultReflectionMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+DefaultReflectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+DefaultReflectionMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::DefaultReflectionMode {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::Rendering::DefaultReflectionMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+DefaultReflectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+DefaultReflectionMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::DefaultReflectionMode {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::Rendering::DefaultReflectionMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+DefaultReflectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+DefaultReflectionMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::DefaultReflectionMode {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::Rendering::DefaultReflectionMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+DefaultReflectionMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+DefaultReflectionMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::DefaultReflectionMode {
     type Actual = Self;

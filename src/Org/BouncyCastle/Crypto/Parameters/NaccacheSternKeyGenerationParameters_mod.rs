@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -9,7 +9,7 @@ pub struct NaccacheSternKeyGenerationParameters {
     pub countSmallPrimes: i32,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {
@@ -31,7 +31,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPara
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {
@@ -41,7 +41,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPara
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {
@@ -221,7 +221,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPar
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {

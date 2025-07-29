@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelSelectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelSelectionNavigationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelSelectionNavigationController {
@@ -62,7 +62,7 @@ pub struct LevelSelectionNavigationController {
         >,
     >,
 }
-#[cfg(feature = "LevelSelectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelSelectionNavigationController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelSelectionNavigationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -82,14 +82,14 @@ for crate::GlobalNamespace::LevelSelectionNavigationController {
         false
     }
 }
-#[cfg(feature = "LevelSelectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelSelectionNavigationController")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionNavigationController {
     type Target = crate::HMUI::NavigationController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelSelectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelSelectionNavigationController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelSelectionNavigationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1210,7 +1210,7 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelSelectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelSelectionNavigationController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelSelectionNavigationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

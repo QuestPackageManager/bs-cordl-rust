@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WMRSpatialController {
@@ -55,7 +55,7 @@ pub struct WMRSpatialController {
         crate::UnityEngine::InputSystem::Controls::QuaternionControl,
     >,
 }
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -75,14 +75,14 @@ for crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         false
     }
 }
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
 impl std::ops::Deref for crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
     type Target = crate::UnityEngine::InputSystem::XR::XRControllerWithRumble;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1174,7 +1174,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

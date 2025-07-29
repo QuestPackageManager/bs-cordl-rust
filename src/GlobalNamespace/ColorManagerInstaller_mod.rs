@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorManagerInstaller")]
+#[cfg(feature = "cordl_class_ColorManagerInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorManagerInstaller {
@@ -7,7 +7,7 @@ pub struct ColorManagerInstaller {
         crate::GlobalNamespace::ColorSchemeSO,
     >,
 }
-#[cfg(feature = "ColorManagerInstaller")]
+#[cfg(feature = "cordl_class_ColorManagerInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorManagerInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::ColorManagerInstaller {
         false
     }
 }
-#[cfg(feature = "ColorManagerInstaller")]
+#[cfg(feature = "cordl_class_ColorManagerInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorManagerInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorManagerInstaller")]
+#[cfg(feature = "cordl_class_ColorManagerInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorManagerInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::ColorManagerInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorManagerInstaller")]
+#[cfg(feature = "cordl_class_ColorManagerInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorManagerInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

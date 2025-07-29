@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterFaultInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -178,7 +178,7 @@ impl crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

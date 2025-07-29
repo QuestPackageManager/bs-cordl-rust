@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+FactoryFromBinder_5")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder_5")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryFromBinder_5<
@@ -15,7 +15,7 @@ pub struct FactoryFromBinder_5<
     __cordl_phantom_TParam4: std::marker::PhantomData<TParam4>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
-#[cfg(feature = "Zenject+FactoryFromBinder_5")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder_5")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -57,7 +57,7 @@ for crate::Zenject::FactoryFromBinder_5<TParam1, TParam2, TParam3, TParam4, TCon
         false
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinder_5")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -71,7 +71,7 @@ for crate::Zenject::FactoryFromBinder_5<TParam1, TParam2, TParam3, TParam4, TCon
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinder_5")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -387,7 +387,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinder_5")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Networking+UploadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UploadHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UploadHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+Networking+UploadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UploadHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::UploadHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Networking::UploadHandler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UploadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UploadHandler")]
 impl std::ops::Deref for crate::UnityEngine::Networking::UploadHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UploadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UploadHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::Networking::UploadHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -83,7 +83,7 @@ impl crate::UnityEngine::Networking::UploadHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UploadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UploadHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::UploadHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

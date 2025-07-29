@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetRes")]
+#[cfg(feature = "cordl_class_System+Net+NetRes")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetRes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+NetRes")]
+#[cfg(feature = "cordl_class_System+Net+NetRes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NetRes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NetRes {
         false
     }
 }
-#[cfg(feature = "System+Net+NetRes")]
+#[cfg(feature = "cordl_class_System+Net+NetRes")]
 impl std::ops::Deref for crate::System::Net::NetRes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetRes")]
+#[cfg(feature = "cordl_class_System+Net+NetRes")]
 impl std::ops::DerefMut for crate::System::Net::NetRes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -134,7 +134,7 @@ impl crate::System::Net::NetRes {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetRes")]
+#[cfg(feature = "cordl_class_System+Net+NetRes")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::NetRes {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

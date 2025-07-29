@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSaveData {
@@ -32,7 +32,7 @@ pub struct BeatmapLevelSaveData {
         >,
     >,
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,14 +52,14 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl std::ops::Deref for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl std::ops::DerefMut for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -109,7 +109,7 @@ impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -119,7 +119,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelSaveData_AudioData {
@@ -133,7 +135,9 @@ pub struct BeatmapLevelSaveData_AudioData {
     pub previewStartTime: f32,
     pub previewDuration: f32,
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Held<'a> = Self;
@@ -163,7 +167,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Type = Self;
@@ -174,7 +180,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Actual = Self;
@@ -188,7 +196,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
         self
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Type = Self;
@@ -203,7 +213,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
         }
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Actual = Self;
@@ -217,7 +229,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
         actual
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Type = Self;
@@ -230,7 +244,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
 impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {}
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelSaveData_BeatmapAuthors {
@@ -245,7 +261,9 @@ pub struct BeatmapLevelSaveData_BeatmapAuthors {
         >,
     >,
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Held<'a> = Self;
@@ -275,7 +293,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Type = Self;
@@ -286,7 +306,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Actual = Self;
@@ -300,7 +322,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
         self
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Type = Self;
@@ -315,7 +339,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
         }
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Actual = Self;
@@ -329,7 +355,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
         actual
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Type = Self;
@@ -342,7 +370,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
 impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {}
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSaveData_ColorScheme {
@@ -366,7 +396,9 @@ pub struct BeatmapLevelSaveData_ColorScheme {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -386,7 +418,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme"
+)]
 impl std::ops::Deref
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -394,7 +428,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme"
+)]
 impl std::ops::DerefMut
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -432,7 +468,9 @@ impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -442,7 +480,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSaveData_DifficultyBeatmap {
@@ -461,7 +501,9 @@ pub struct BeatmapLevelSaveData_DifficultyBeatmap {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -481,7 +523,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
         false
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap"
+)]
 impl std::ops::Deref
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -489,7 +533,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap"
+)]
 impl std::ops::DerefMut
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -527,7 +573,9 @@ impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -537,7 +585,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelSaveData_SongData {
@@ -545,7 +595,9 @@ pub struct BeatmapLevelSaveData_SongData {
     pub subTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub author: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Held<'a> = Self;
@@ -575,7 +627,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Type = Self;
@@ -586,7 +640,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Actual = Self;
@@ -600,7 +656,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
         self
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Type = Self;
@@ -615,7 +673,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
         }
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Actual = Self;
@@ -629,7 +689,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
         actual
     }
 }
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Type = Self;

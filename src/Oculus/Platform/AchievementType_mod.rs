@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+AchievementType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AchievementType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AchievementType {
@@ -8,7 +8,7 @@ pub enum AchievementType {
     Simple = 1i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "Oculus+Platform+AchievementType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AchievementType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AchievementType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Achievement
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+AchievementType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AchievementType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::AchievementType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Oculus::Platform::AchievementType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+AchievementType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AchievementType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::AchievementType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Oculus::Platform::AchievementType {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+AchievementType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AchievementType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::AchievementType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Oculus::Platform::AchievementType {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+AchievementType")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AchievementType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::AchievementType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

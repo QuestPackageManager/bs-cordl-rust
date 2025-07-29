@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Vector2Int")]
+#[cfg(feature = "cordl_class_UnityEngine+Vector2Int")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Vector2Int {
     pub m_X: i32,
     pub m_Y: i32,
 }
-#[cfg(feature = "UnityEngine+Vector2Int")]
+#[cfg(feature = "cordl_class_UnityEngine+Vector2Int")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Vector2Int {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Vector2Int {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Vector2Int")]
+#[cfg(feature = "cordl_class_UnityEngine+Vector2Int")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Vector2Int {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Vector2Int {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Vector2Int")]
+#[cfg(feature = "cordl_class_UnityEngine+Vector2Int")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Vector2Int {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Vector2Int 
         self
     }
 }
-#[cfg(feature = "UnityEngine+Vector2Int")]
+#[cfg(feature = "cordl_class_UnityEngine+Vector2Int")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Vector2Int {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Vector2Int {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Vector2Int")]
+#[cfg(feature = "cordl_class_UnityEngine+Vector2Int")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Vector2Int {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Vector2Int {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Vector2Int")]
+#[cfg(feature = "cordl_class_UnityEngine+Vector2Int")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Vector2Int {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

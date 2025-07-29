@@ -1,4 +1,4 @@
-#[cfg(feature = "HowToPlayViewController")]
+#[cfg(feature = "cordl_class_HowToPlayViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HowToPlayViewController {
@@ -11,7 +11,7 @@ pub struct HowToPlayViewController {
         >,
     >,
 }
-#[cfg(feature = "HowToPlayViewController")]
+#[cfg(feature = "cordl_class_HowToPlayViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HowToPlayViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::HowToPlayViewController {
         false
     }
 }
-#[cfg(feature = "HowToPlayViewController")]
+#[cfg(feature = "cordl_class_HowToPlayViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::HowToPlayViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HowToPlayViewController")]
+#[cfg(feature = "cordl_class_HowToPlayViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HowToPlayViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -227,7 +227,7 @@ impl crate::GlobalNamespace::HowToPlayViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HowToPlayViewController")]
+#[cfg(feature = "cordl_class_HowToPlayViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HowToPlayViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -237,7 +237,7 @@ for crate::GlobalNamespace::HowToPlayViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
+#[cfg(feature = "cordl_class_HowToPlayViewController+HowToPlayOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HowToPlayViewController_HowToPlayOptions {
@@ -245,7 +245,7 @@ pub enum HowToPlayViewController_HowToPlayOptions {
     Credits = 1i32,
     HowToPlay = 0i32,
 }
-#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
+#[cfg(feature = "cordl_class_HowToPlayViewController+HowToPlayOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
     type Held<'a> = Self;
@@ -275,7 +275,7 @@ for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
+#[cfg(feature = "cordl_class_HowToPlayViewController+HowToPlayOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
     type Type = Self;
@@ -286,7 +286,7 @@ for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
+#[cfg(feature = "cordl_class_HowToPlayViewController+HowToPlayOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
     type Actual = Self;
@@ -300,7 +300,7 @@ for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
         self
     }
 }
-#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
+#[cfg(feature = "cordl_class_HowToPlayViewController+HowToPlayOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
     type Type = Self;
@@ -315,7 +315,7 @@ for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
         }
     }
 }
-#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
+#[cfg(feature = "cordl_class_HowToPlayViewController+HowToPlayOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions {
     type Actual = Self;

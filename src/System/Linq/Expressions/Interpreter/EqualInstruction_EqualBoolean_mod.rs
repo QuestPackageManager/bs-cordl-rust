@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EqualInstruction_EqualBoolean {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::EqualInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EqualInstruction_EqualBoolean {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +28,18 @@ for crate::GlobalNamespace::EqualInstruction_EqualBoolean {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean"
+)]
 impl std::ops::Deref for crate::GlobalNamespace::EqualInstruction_EqualBoolean {
     type Target = crate::System::Linq::Expressions::Interpreter::EqualInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean"
+)]
 impl std::ops::DerefMut for crate::GlobalNamespace::EqualInstruction_EqualBoolean {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +106,9 @@ impl crate::GlobalNamespace::EqualInstruction_EqualBoolean {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EqualInstruction_EqualBoolean {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

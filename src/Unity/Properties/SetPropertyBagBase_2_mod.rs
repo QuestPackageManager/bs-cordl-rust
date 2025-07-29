@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetPropertyBagBase_2<
@@ -12,7 +12,7 @@ pub struct SetPropertyBagBase_2<
     __cordl_phantom_TSet: std::marker::PhantomData<TSet>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2")]
 unsafe impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -51,7 +51,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -61,7 +61,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -119,7 +119,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -172,7 +172,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetPropertyBagBase_2_SetElementProperty<
@@ -184,7 +184,7 @@ pub struct SetPropertyBagBase_2_SetElementProperty<
     __cordl_phantom_TSet: std::marker::PhantomData<TSet>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 unsafe impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -223,7 +223,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TEle
         false
     }
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -234,7 +234,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TEle
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -321,7 +321,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
+#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

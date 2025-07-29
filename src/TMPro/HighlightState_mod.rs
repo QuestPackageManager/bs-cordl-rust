@@ -1,11 +1,11 @@
-#[cfg(feature = "TMPro+HighlightState")]
+#[cfg(feature = "cordl_class_TMPro+HighlightState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HighlightState {
     pub color: crate::UnityEngine::Color32,
     pub padding: crate::TMPro::TMP_Offset,
 }
-#[cfg(feature = "TMPro+HighlightState")]
+#[cfg(feature = "cordl_class_TMPro+HighlightState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::HighlightState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::HighlightState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+HighlightState")]
+#[cfg(feature = "cordl_class_TMPro+HighlightState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::HighlightState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::HighlightState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+HighlightState")]
+#[cfg(feature = "cordl_class_TMPro+HighlightState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::HighlightState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::HighlightState {
         self
     }
 }
-#[cfg(feature = "TMPro+HighlightState")]
+#[cfg(feature = "cordl_class_TMPro+HighlightState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::HighlightState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::HighlightState {
         }
     }
 }
-#[cfg(feature = "TMPro+HighlightState")]
+#[cfg(feature = "cordl_class_TMPro+HighlightState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::HighlightState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::HighlightState {
         actual
     }
 }
-#[cfg(feature = "TMPro+HighlightState")]
+#[cfg(feature = "cordl_class_TMPro+HighlightState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::HighlightState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

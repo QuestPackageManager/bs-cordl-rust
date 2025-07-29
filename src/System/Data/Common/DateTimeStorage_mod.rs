@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+Common+DateTimeStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+DateTimeStorage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeStorage {
@@ -7,7 +7,7 @@ pub struct DateTimeStorage {
         quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
     >,
 }
-#[cfg(feature = "System+Data+Common+DateTimeStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+DateTimeStorage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::Common::DateTimeStorage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Data::Common::DateTimeStorage {
         false
     }
 }
-#[cfg(feature = "System+Data+Common+DateTimeStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+DateTimeStorage")]
 impl std::ops::Deref for crate::System::Data::Common::DateTimeStorage {
     type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+Common+DateTimeStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+DateTimeStorage")]
 impl std::ops::DerefMut for crate::System::Data::Common::DateTimeStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -465,7 +465,7 @@ impl crate::System::Data::Common::DateTimeStorage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+Common+DateTimeStorage")]
+#[cfg(feature = "cordl_class_System+Data+Common+DateTimeStorage")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Common::DateTimeStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

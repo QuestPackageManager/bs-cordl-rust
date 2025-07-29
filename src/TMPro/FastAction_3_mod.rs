@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+FastAction_3")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FastAction_3<
@@ -26,7 +26,7 @@ pub struct FastAction_3<
     __cordl_phantom_B: std::marker::PhantomData<B>,
     __cordl_phantom_C: std::marker::PhantomData<C>,
 }
-#[cfg(feature = "TMPro+FastAction_3")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_3")]
 unsafe impl<
     A: quest_hook::libil2cpp::Type,
     B: quest_hook::libil2cpp::Type,
@@ -62,7 +62,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "TMPro+FastAction_3")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_3")]
 impl<
     A: quest_hook::libil2cpp::Type,
     B: quest_hook::libil2cpp::Type,
@@ -73,7 +73,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+FastAction_3")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_3")]
 impl<
     A: quest_hook::libil2cpp::Type,
     B: quest_hook::libil2cpp::Type,
@@ -236,7 +236,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+FastAction_3")]
+#[cfg(feature = "cordl_class_TMPro+FastAction_3")]
 impl<
     A: quest_hook::libil2cpp::Type,
     B: quest_hook::libil2cpp::Type,

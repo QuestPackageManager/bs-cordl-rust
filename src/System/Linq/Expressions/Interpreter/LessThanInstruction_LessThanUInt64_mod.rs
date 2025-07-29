@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct LessThanInstruction_LessThanUInt64 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LessThanInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     type Target = crate::System::Linq::Expressions::Interpreter::LessThanInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LessThanInstruction_LessThanUIn
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {

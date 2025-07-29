@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+SimpleTextDropdown")]
+#[cfg(feature = "cordl_class_HMUI+SimpleTextDropdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleTextDropdown {
@@ -15,7 +15,7 @@ pub struct SimpleTextDropdown {
     >,
     pub _initialized: bool,
 }
-#[cfg(feature = "HMUI+SimpleTextDropdown")]
+#[cfg(feature = "cordl_class_HMUI+SimpleTextDropdown")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SimpleTextDropdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SimpleTextDropdown {
         false
     }
 }
-#[cfg(feature = "HMUI+SimpleTextDropdown")]
+#[cfg(feature = "cordl_class_HMUI+SimpleTextDropdown")]
 impl std::ops::Deref for crate::HMUI::SimpleTextDropdown {
     type Target = crate::HMUI::DropdownWithTableView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+SimpleTextDropdown")]
+#[cfg(feature = "cordl_class_HMUI+SimpleTextDropdown")]
 impl std::ops::DerefMut for crate::HMUI::SimpleTextDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -282,7 +282,7 @@ impl crate::HMUI::SimpleTextDropdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+SimpleTextDropdown")]
+#[cfg(feature = "cordl_class_HMUI+SimpleTextDropdown")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SimpleTextDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

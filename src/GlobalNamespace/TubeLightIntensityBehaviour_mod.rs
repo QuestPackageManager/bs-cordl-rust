@@ -1,4 +1,4 @@
-#[cfg(feature = "TubeLightIntensityBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightIntensityBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeLightIntensityBehaviour {
@@ -28,7 +28,7 @@ pub struct TubeLightIntensityBehaviour {
     pub _firstFrameLightIntensity: f32,
     pub _firstFrameLaserIntensity: f32,
 }
-#[cfg(feature = "TubeLightIntensityBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightIntensityBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TubeLightIntensityBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,14 +48,14 @@ for crate::GlobalNamespace::TubeLightIntensityBehaviour {
         false
     }
 }
-#[cfg(feature = "TubeLightIntensityBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightIntensityBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeLightIntensityBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TubeLightIntensityBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightIntensityBehaviour")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TubeLightIntensityBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::TubeLightIntensityBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TubeLightIntensityBehaviour")]
+#[cfg(feature = "cordl_class_TubeLightIntensityBehaviour")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TubeLightIntensityBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

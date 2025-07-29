@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -10,7 +10,7 @@ pub struct UnknownResourceProviderException {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderException {
@@ -32,7 +32,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderE
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderException {
@@ -42,7 +42,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderE
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderException {
@@ -363,7 +363,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderException {

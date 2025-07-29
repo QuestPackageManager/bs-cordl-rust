@@ -1,4 +1,4 @@
-#[cfg(feature = "WaypointData")]
+#[cfg(feature = "cordl_class_WaypointData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaypointData {
@@ -7,7 +7,7 @@ pub struct WaypointData {
     pub _lineIndex_k__BackingField: i32,
     pub _lineLayer_k__BackingField: crate::GlobalNamespace::NoteLineLayer,
 }
-#[cfg(feature = "WaypointData")]
+#[cfg(feature = "cordl_class_WaypointData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::WaypointData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::WaypointData
         false
     }
 }
-#[cfg(feature = "WaypointData")]
+#[cfg(feature = "cordl_class_WaypointData")]
 impl std::ops::Deref for crate::GlobalNamespace::WaypointData {
     type Target = crate::GlobalNamespace::BeatmapObjectData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "WaypointData")]
+#[cfg(feature = "cordl_class_WaypointData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::WaypointData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -322,7 +322,7 @@ impl crate::GlobalNamespace::WaypointData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "WaypointData")]
+#[cfg(feature = "cordl_class_WaypointData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::WaypointData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

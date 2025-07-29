@@ -1,10 +1,10 @@
-#[cfg(feature = "BloomPrePassLightsUpdateSystem")]
+#[cfg(feature = "cordl_class_BloomPrePassLightsUpdateSystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassLightsUpdateSystem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "BloomPrePassLightsUpdateSystem")]
+#[cfg(feature = "cordl_class_BloomPrePassLightsUpdateSystem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
         false
     }
 }
-#[cfg(feature = "BloomPrePassLightsUpdateSystem")]
+#[cfg(feature = "cordl_class_BloomPrePassLightsUpdateSystem")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassLightsUpdateSystem")]
+#[cfg(feature = "cordl_class_BloomPrePassLightsUpdateSystem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassLightsUpdateSystem")]
+#[cfg(feature = "cordl_class_BloomPrePassLightsUpdateSystem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

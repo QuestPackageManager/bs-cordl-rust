@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderData {
@@ -16,7 +16,7 @@ pub struct SliderData {
     pub _tailCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
     pub _sliderMidAnchorMode: crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData {
     type Target = crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -423,7 +423,7 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SliderData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

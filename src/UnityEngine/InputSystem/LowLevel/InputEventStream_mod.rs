@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventStream")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventStream {
@@ -22,7 +22,7 @@ pub struct InputEventStream {
     pub m_NumEventsRetainedInBuffer: i32,
     pub m_IsOpen: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
     type Held<'a> = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventStream")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
     type Type = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventStream")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
     type Actual = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventStream")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
     type Type = Self;
@@ -92,7 +92,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventStream")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
     type Actual = Self;
@@ -106,7 +106,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventStream")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventStream {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "GradientImageViewStateTransition")]
+#[cfg(feature = "cordl_class_GradientImageViewStateTransition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientImageViewStateTransition {
@@ -11,7 +11,7 @@ pub struct GradientImageViewStateTransition {
     pub _colorTweenA: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
     pub _colorTweenB: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
-#[cfg(feature = "GradientImageViewStateTransition")]
+#[cfg(feature = "cordl_class_GradientImageViewStateTransition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GradientImageViewStateTransition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::GradientImageViewStateTransition {
         false
     }
 }
-#[cfg(feature = "GradientImageViewStateTransition")]
+#[cfg(feature = "cordl_class_GradientImageViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::GradientImageViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
@@ -40,7 +40,7 @@ impl std::ops::Deref for crate::GlobalNamespace::GradientImageViewStateTransitio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GradientImageViewStateTransition")]
+#[cfg(feature = "cordl_class_GradientImageViewStateTransition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GradientImageViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -688,7 +688,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GradientImageViewStateTransition")]
+#[cfg(feature = "cordl_class_GradientImageViewStateTransition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GradientImageViewStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

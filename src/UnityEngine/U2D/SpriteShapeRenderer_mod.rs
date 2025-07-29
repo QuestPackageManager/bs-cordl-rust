@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+U2D+SpriteShapeRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteShapeRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteShapeRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteShapeRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteShapeRenderer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::U2D::SpriteShapeRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::U2D::SpriteShapeRenderer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteShapeRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteShapeRenderer")]
 impl std::ops::Deref for crate::UnityEngine::U2D::SpriteShapeRenderer {
     type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteShapeRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteShapeRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::U2D::SpriteShapeRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::UnityEngine::U2D::SpriteShapeRenderer {
 }
 #[cfg(feature = "UnityEngine+U2D+SpriteShapeRenderer")]
 impl crate::UnityEngine::U2D::SpriteShapeRenderer {}
-#[cfg(feature = "UnityEngine+U2D+SpriteShapeRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteShapeRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::U2D::SpriteShapeRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

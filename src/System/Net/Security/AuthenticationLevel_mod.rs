@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Security+AuthenticationLevel")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticationLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AuthenticationLevel {
@@ -7,7 +7,7 @@ pub enum AuthenticationLevel {
     MutualAuthRequired = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Net+Security+AuthenticationLevel")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticationLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Security::AuthenticationLevel {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Net::Security::AuthenticationLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Security+AuthenticationLevel")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticationLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Security::AuthenticationLevel {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Net::Security::AuthenticationLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Security+AuthenticationLevel")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticationLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Security::AuthenticationLevel {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Net::Security::AuthenticationLevel {
         self
     }
 }
-#[cfg(feature = "System+Net+Security+AuthenticationLevel")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticationLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Security::AuthenticationLevel {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Net::Security::AuthenticationLevel {
         }
     }
 }
-#[cfg(feature = "System+Net+Security+AuthenticationLevel")]
+#[cfg(feature = "cordl_class_System+Net+Security+AuthenticationLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Security::AuthenticationLevel {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FacetsChecker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::FacetsChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::FacetsCh
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::FacetsChecker {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::FacetsChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -741,7 +741,7 @@ impl crate::System::Xml::Schema::FacetsChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::FacetsChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -750,7 +750,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::FacetsChe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FacetsChecker_FacetsCompiler {
@@ -776,7 +776,7 @@ pub struct FacetsChecker_FacetsCompiler {
         crate::System::Xml::Schema::XmlSchemaPatternFacet,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Held<'a> = Self;
@@ -806,7 +806,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Type = Self;
@@ -817,7 +817,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Actual = Self;
@@ -831,7 +831,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Type = Self;
@@ -846,7 +846,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Actual = Self;
@@ -860,7 +860,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Type = Self;
@@ -1577,14 +1577,14 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FacetsCompiler_FacetsChecker_Map {
     pub _cordl_match: char,
     pub replacement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Held<'a> = Self;
@@ -1614,7 +1614,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Type = Self;
@@ -1625,7 +1625,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Actual = Self;
@@ -1639,7 +1639,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Type = Self;
@@ -1654,7 +1654,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Actual = Self;
@@ -1668,7 +1668,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Type = Self;

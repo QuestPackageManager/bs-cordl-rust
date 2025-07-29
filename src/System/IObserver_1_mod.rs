@@ -1,11 +1,11 @@
-#[cfg(feature = "System+IObserver_1")]
+#[cfg(feature = "cordl_class_System+IObserver_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IObserver_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+IObserver_1")]
+#[cfg(feature = "cordl_class_System+IObserver_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::IObserver_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::System::IObserver_1<T> {
         false
     }
 }
-#[cfg(feature = "System+IObserver_1")]
+#[cfg(feature = "cordl_class_System+IObserver_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for crate::System::IObserver_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IObserver_1")]
+#[cfg(feature = "cordl_class_System+IObserver_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IObserver_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -145,7 +145,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::IObserver_1<T> {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+IObserver_1")]
+#[cfg(feature = "cordl_class_System+IObserver_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::IObserver_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

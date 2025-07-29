@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+Text")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Text")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Text {
@@ -14,7 +14,7 @@ pub struct Text {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIVertex>,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+Text")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Text")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Text {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Text {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+Text")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Text")]
 impl std::ops::Deref for crate::UnityEngine::UI::Text {
     type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+Text")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Text")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Text {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1176,7 +1176,7 @@ impl crate::UnityEngine::UI::Text {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+Text")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+Text")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Text {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

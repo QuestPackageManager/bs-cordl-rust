@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderDataDirtyTypeClasses {
@@ -10,7 +10,7 @@ pub enum RenderDataDirtyTypeClasses {
     TransformSize = 3i32,
     Visuals = 4i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses {
     type Actual = Self;

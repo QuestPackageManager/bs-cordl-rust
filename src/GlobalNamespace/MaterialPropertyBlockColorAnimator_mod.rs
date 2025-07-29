@@ -1,11 +1,11 @@
-#[cfg(feature = "MaterialPropertyBlockColorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockColorAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockColorAnimator {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "MaterialPropertyBlockColorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockColorAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialPropertyBlockColorAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::MaterialPropertyBlockColorAnimator {
         false
     }
 }
-#[cfg(feature = "MaterialPropertyBlockColorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockColorAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockColorAnimator {
     type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialPropertyBlockColorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockColorAnimator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyBlockColorAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,7 +141,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockColorAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialPropertyBlockColorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockColorAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialPropertyBlockColorAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

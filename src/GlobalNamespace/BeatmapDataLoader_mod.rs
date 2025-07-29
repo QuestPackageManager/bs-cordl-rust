@@ -1,11 +1,11 @@
-#[cfg(feature = "BeatmapDataLoader")]
+#[cfg(feature = "cordl_class_BeatmapDataLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lastUsedBeatmapDataCache: crate::GlobalNamespace::LastUsedBeatmapDataCache,
 }
-#[cfg(feature = "BeatmapDataLoader")]
+#[cfg(feature = "cordl_class_BeatmapDataLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataL
         false
     }
 }
-#[cfg(feature = "BeatmapDataLoader")]
+#[cfg(feature = "cordl_class_BeatmapDataLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataLoader")]
+#[cfg(feature = "cordl_class_BeatmapDataLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -371,7 +371,7 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataLoader")]
+#[cfg(feature = "cordl_class_BeatmapDataLoader")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

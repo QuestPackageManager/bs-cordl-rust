@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobRanges")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JobRanges {
@@ -7,7 +7,7 @@ pub struct JobRanges {
     pub TotalIterationCount: i32,
     pub StartEndIndex: crate::System::IntPtr,
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobRanges")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobRanges")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobRanges")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
         self
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobRanges")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
         }
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobRanges")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
         actual
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobRanges")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Jobs::LowLevel::Unsafe::JobRanges {
     type Type = Self;

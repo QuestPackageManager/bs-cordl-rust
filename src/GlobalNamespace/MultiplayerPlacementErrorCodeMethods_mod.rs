@@ -1,10 +1,10 @@
-#[cfg(feature = "MultiplayerPlacementErrorCodeMethods")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCodeMethods")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerPlacementErrorCodeMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "MultiplayerPlacementErrorCodeMethods")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCodeMethods")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
         false
     }
 }
-#[cfg(feature = "MultiplayerPlacementErrorCodeMethods")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCodeMethods")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerPlacementErrorCodeMethods")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCodeMethods")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerPlacementErrorCodeMethods")]
+#[cfg(feature = "cordl_class_MultiplayerPlacementErrorCodeMethods")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

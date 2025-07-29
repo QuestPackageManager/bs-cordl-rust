@@ -1,11 +1,11 @@
-#[cfg(feature = "NullAllowed")]
+#[cfg(feature = "cordl_class_NullAllowed")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullAllowed {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub _context: crate::GlobalNamespace::NullAllowed_Context,
 }
-#[cfg(feature = "NullAllowed")]
+#[cfg(feature = "cordl_class_NullAllowed")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NullAllowed {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NullAllowed 
         false
     }
 }
-#[cfg(feature = "NullAllowed")]
+#[cfg(feature = "cordl_class_NullAllowed")]
 impl std::ops::Deref for crate::GlobalNamespace::NullAllowed {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NullAllowed")]
+#[cfg(feature = "cordl_class_NullAllowed")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NullAllowed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::NullAllowed {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NullAllowed")]
+#[cfg(feature = "cordl_class_NullAllowed")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NullAllowed {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -112,7 +112,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NullAllowed {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "NullAllowed+Context")]
+#[cfg(feature = "cordl_class_NullAllowed+Context")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NullAllowed_Context {
@@ -120,7 +120,7 @@ pub enum NullAllowed_Context {
     Everywhere = 0i32,
     Prefab = 1i32,
 }
-#[cfg(feature = "NullAllowed+Context")]
+#[cfg(feature = "cordl_class_NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NullAllowed_Context {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -149,7 +149,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NullAllowed_
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NullAllowed+Context")]
+#[cfg(feature = "cordl_class_NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NullAllowed_Context {
     type Type = Self;
@@ -160,7 +160,7 @@ for crate::GlobalNamespace::NullAllowed_Context {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NullAllowed+Context")]
+#[cfg(feature = "cordl_class_NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NullAllowed_Context {
     type Actual = Self;
@@ -174,7 +174,7 @@ for crate::GlobalNamespace::NullAllowed_Context {
         self
     }
 }
-#[cfg(feature = "NullAllowed+Context")]
+#[cfg(feature = "cordl_class_NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NullAllowed_Context {
     type Type = Self;
@@ -189,7 +189,7 @@ for crate::GlobalNamespace::NullAllowed_Context {
         }
     }
 }
-#[cfg(feature = "NullAllowed+Context")]
+#[cfg(feature = "cordl_class_NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NullAllowed_Context {
     type Actual = Self;

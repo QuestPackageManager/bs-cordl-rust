@@ -1,4 +1,4 @@
-#[cfg(feature = "NamedIntListSettingsController")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedIntListSettingsController {
@@ -13,7 +13,7 @@ pub struct NamedIntListSettingsController {
     pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     pub _selectedIndex: i32,
 }
-#[cfg(feature = "NamedIntListSettingsController")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NamedIntListSettingsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::NamedIntListSettingsController {
         false
     }
 }
-#[cfg(feature = "NamedIntListSettingsController")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedIntListSettingsController {
     type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NamedIntListSettingsController")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NamedIntListSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -242,7 +242,7 @@ impl crate::GlobalNamespace::NamedIntListSettingsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NamedIntListSettingsController")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NamedIntListSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -252,7 +252,7 @@ for crate::GlobalNamespace::NamedIntListSettingsController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "NamedIntListSettingsController+TextValuePair")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController+TextValuePair")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedIntListSettingsController_TextValuePair {
@@ -260,7 +260,7 @@ pub struct NamedIntListSettingsController_TextValuePair {
     pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: i32,
 }
-#[cfg(feature = "NamedIntListSettingsController+TextValuePair")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController+TextValuePair")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -280,7 +280,7 @@ for crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair {
         false
     }
 }
-#[cfg(feature = "NamedIntListSettingsController+TextValuePair")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController+TextValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -288,7 +288,7 @@ for crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NamedIntListSettingsController+TextValuePair")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController+TextValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -353,7 +353,7 @@ impl crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NamedIntListSettingsController+TextValuePair")]
+#[cfg(feature = "cordl_class_NamedIntListSettingsController+TextValuePair")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

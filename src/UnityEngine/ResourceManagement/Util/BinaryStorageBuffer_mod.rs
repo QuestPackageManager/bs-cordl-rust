@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryStorageBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -241,7 +241,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -252,7 +252,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -260,7 +260,7 @@ pub struct BinaryStorageBuffer_BuiltinTypesSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
@@ -282,7 +282,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
@@ -292,7 +292,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
@@ -489,7 +489,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
@@ -696,14 +696,18 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BinaryStorageBuffer_DynamicString {
     pub stringId: u32,
     pub nextId: u32,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Held<'a> = Self;
@@ -733,7 +737,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Type = Self;
@@ -744,7 +750,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Actual = Self;
@@ -758,7 +766,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Type = Self;
@@ -773,7 +783,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Actual = Self;
@@ -787,7 +799,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Type = Self;
@@ -801,7 +815,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {}
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -809,7 +823,7 @@ pub struct BinaryStorageBuffer_ISerializationAdapter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
@@ -831,7 +845,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
@@ -841,7 +855,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
@@ -977,7 +991,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter {
@@ -989,7 +1003,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -998,7 +1012,7 @@ pub struct BinaryStorageBuffer_ISerializationAdapter_1<T: quest_hook::libil2cpp:
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
@@ -1038,7 +1052,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
@@ -1050,7 +1064,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
@@ -1075,7 +1089,7 @@ impl<
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
@@ -1123,7 +1137,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -1132,7 +1146,7 @@ pub struct BinaryStorageBuffer_ObjectTypeData {
     pub objectId: u32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
@@ -1164,7 +1178,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
@@ -1177,7 +1191,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
@@ -1193,7 +1207,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
@@ -1210,7 +1224,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
@@ -1226,7 +1240,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
@@ -1242,7 +1256,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryStorageBuffer_Reader {
@@ -1262,7 +1278,9 @@ pub struct BinaryStorageBuffer_Reader {
     >,
     pub stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1282,7 +1300,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1290,7 +1310,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1951,7 +1973,9 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1962,7 +1986,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1970,7 +1994,7 @@ pub struct BinaryStorageBuffer_TypeSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
@@ -1992,7 +2016,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerial
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
@@ -2002,7 +2026,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerial
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
@@ -2167,7 +2191,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
@@ -2234,7 +2258,9 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryStorageBuffer_Writer {
@@ -2263,7 +2289,9 @@ pub struct BinaryStorageBuffer_Writer {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2283,7 +2311,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2291,7 +2321,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3109,7 +3141,9 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3120,7 +3154,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -3129,7 +3163,7 @@ pub struct BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
     pub separator: char,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
@@ -3161,7 +3195,7 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
@@ -3174,7 +3208,7 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
@@ -3190,7 +3224,7 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
@@ -3207,7 +3241,7 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
@@ -3223,7 +3257,7 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
@@ -3240,7 +3274,7 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
 )]
 impl crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {}
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -3249,7 +3283,7 @@ pub struct TypeSerializer_BinaryStorageBuffer_Data {
     pub classId: u32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
@@ -3281,7 +3315,7 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
@@ -3294,7 +3328,7 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
@@ -3310,7 +3344,7 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
@@ -3327,7 +3361,7 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
@@ -3343,7 +3377,7 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
@@ -3359,7 +3393,9 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 impl crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Writer_BinaryStorageBuffer_Chunk {
@@ -3367,7 +3403,9 @@ pub struct Writer_BinaryStorageBuffer_Chunk {
     pub position: u32,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3387,7 +3425,9 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3395,7 +3435,9 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3433,7 +3475,9 @@ impl crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Ch
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3444,7 +3488,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -3454,7 +3498,7 @@ pub struct Writer_BinaryStorageBuffer_StringParts {
     pub isUnicode: bool,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
@@ -3486,7 +3530,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
@@ -3499,7 +3543,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
@@ -3515,7 +3559,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
@@ -3532,7 +3576,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
@@ -3548,7 +3592,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {

@@ -1,11 +1,11 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKPlane")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPlane")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKPlane {
     pub distance: f32,
     pub normal: crate::LIV::SDK::Unity::SDKVector3,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPlane")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPlane")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKPlane {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKPlane {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPlane")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPlane")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKPlane {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKPlane
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPlane")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPlane")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKPlane {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKPlan
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPlane")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPlane")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKPlane {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKPlane
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPlane")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPlane")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKPlane {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKPlane {
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKPlane")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKPlane")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LIV::SDK::Unity::SDKPlane {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

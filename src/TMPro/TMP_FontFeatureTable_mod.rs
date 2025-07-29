@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_FontFeatureTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontFeatureTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_FontFeatureTable {
@@ -15,7 +15,7 @@ pub struct TMP_FontFeatureTable {
         >,
     >,
 }
-#[cfg(feature = "TMPro+TMP_FontFeatureTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontFeatureTable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_FontFeatureTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_FontFeatureTable {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_FontFeatureTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontFeatureTable")]
 impl std::ops::Deref for crate::TMPro::TMP_FontFeatureTable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_FontFeatureTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontFeatureTable")]
 impl std::ops::DerefMut for crate::TMPro::TMP_FontFeatureTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::TMPro::TMP_FontFeatureTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_FontFeatureTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_FontFeatureTable")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_FontFeatureTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

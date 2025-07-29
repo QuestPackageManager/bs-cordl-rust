@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+ProximitySensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+ProximitySensor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProximitySensor {
@@ -7,7 +7,7 @@ pub struct ProximitySensor {
         crate::UnityEngine::InputSystem::Controls::AxisControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+ProximitySensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+ProximitySensor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::ProximitySensor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::InputSystem::ProximitySensor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+ProximitySensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+ProximitySensor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::ProximitySensor {
     type Target = crate::UnityEngine::InputSystem::Sensor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+ProximitySensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+ProximitySensor")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::ProximitySensor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -257,7 +257,7 @@ impl crate::UnityEngine::InputSystem::ProximitySensor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+ProximitySensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+ProximitySensor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::ProximitySensor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

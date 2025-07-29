@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+ListenerAsyncResult")]
+#[cfg(feature = "cordl_class_System+Net+ListenerAsyncResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListenerAsyncResult {
@@ -15,7 +15,7 @@ pub struct ListenerAsyncResult {
     pub EndCalled: bool,
     pub InGet: bool,
 }
-#[cfg(feature = "System+Net+ListenerAsyncResult")]
+#[cfg(feature = "cordl_class_System+Net+ListenerAsyncResult")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::ListenerAsyncResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::ListenerAsyncRes
         false
     }
 }
-#[cfg(feature = "System+Net+ListenerAsyncResult")]
+#[cfg(feature = "cordl_class_System+Net+ListenerAsyncResult")]
 impl std::ops::Deref for crate::System::Net::ListenerAsyncResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+ListenerAsyncResult")]
+#[cfg(feature = "cordl_class_System+Net+ListenerAsyncResult")]
 impl std::ops::DerefMut for crate::System::Net::ListenerAsyncResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -320,7 +320,7 @@ impl crate::System::Net::ListenerAsyncResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+ListenerAsyncResult")]
+#[cfg(feature = "cordl_class_System+Net+ListenerAsyncResult")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ListenerAsyncResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

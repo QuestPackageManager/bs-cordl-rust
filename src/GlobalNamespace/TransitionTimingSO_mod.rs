@@ -1,4 +1,4 @@
-#[cfg(feature = "TransitionTimingSO")]
+#[cfg(feature = "cordl_class_TransitionTimingSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransitionTimingSO {
@@ -6,7 +6,7 @@ pub struct TransitionTimingSO {
     pub _easeType: crate::GlobalNamespace::EaseType,
     pub _easeDuration: f32,
 }
-#[cfg(feature = "TransitionTimingSO")]
+#[cfg(feature = "cordl_class_TransitionTimingSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TransitionTimingSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TransitionTi
         false
     }
 }
-#[cfg(feature = "TransitionTimingSO")]
+#[cfg(feature = "cordl_class_TransitionTimingSO")]
 impl std::ops::Deref for crate::GlobalNamespace::TransitionTimingSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TransitionTimingSO")]
+#[cfg(feature = "cordl_class_TransitionTimingSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TransitionTimingSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::TransitionTimingSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TransitionTimingSO")]
+#[cfg(feature = "cordl_class_TransitionTimingSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TransitionTimingSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

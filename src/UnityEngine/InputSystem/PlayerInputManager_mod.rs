@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerInputManager {
@@ -47,7 +47,7 @@ pub struct PlayerInputManager {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::PlayerInputManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -67,14 +67,14 @@ for crate::UnityEngine::InputSystem::PlayerInputManager {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInputManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::PlayerInputManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1254,7 +1254,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::PlayerInputManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1264,7 +1264,9 @@ for crate::UnityEngine::InputSystem::PlayerInputManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerInputManager_PlayerJoinedEvent {
@@ -1272,7 +1274,9 @@ pub struct PlayerInputManager_PlayerJoinedEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1292,7 +1296,9 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
@@ -1302,7 +1308,9 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1340,7 +1348,9 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1350,7 +1360,9 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerInputManager_PlayerLeftEvent {
@@ -1358,7 +1370,9 @@ pub struct PlayerInputManager_PlayerLeftEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1378,7 +1392,9 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
@@ -1388,7 +1404,9 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1426,7 +1444,9 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

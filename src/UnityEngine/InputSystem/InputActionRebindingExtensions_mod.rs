@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionRebindingExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1798,7 +1798,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1809,7 +1809,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1817,7 +1817,7 @@ pub struct InputActionRebindingExtensions_DeferBindingResolutionWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
@@ -1839,7 +1839,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
@@ -1849,7 +1849,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
@@ -1933,7 +1933,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindin
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
@@ -1962,7 +1962,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionRebindingExtensions_Parameter {
@@ -1970,7 +1972,9 @@ pub struct InputActionRebindingExtensions_Parameter {
     pub field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
     pub bindingIndex: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Held<'a> = Self;
@@ -2000,7 +2004,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Type = Self;
@@ -2011,7 +2017,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Actual = Self;
@@ -2025,7 +2033,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Type = Self;
@@ -2040,7 +2050,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Actual = Self;
@@ -2054,7 +2066,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Type = Self;
@@ -2068,7 +2082,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
 #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
 impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {}
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -2080,7 +2094,7 @@ pub struct InputActionRebindingExtensions_ParameterEnumerable {
     pub m_MapIndex: i32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
@@ -2112,7 +2126,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
@@ -2125,7 +2139,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
@@ -2141,7 +2155,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
@@ -2158,7 +2172,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
@@ -2174,7 +2188,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
@@ -2376,7 +2390,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -2404,7 +2418,7 @@ pub struct InputActionRebindingExtensions_ParameterEnumerator {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
@@ -2436,7 +2450,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
@@ -2449,7 +2463,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
@@ -2465,7 +2479,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
@@ -2482,7 +2496,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
@@ -2498,7 +2512,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
@@ -2812,7 +2826,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -2825,7 +2839,7 @@ pub struct InputActionRebindingExtensions_ParameterOverride {
     pub value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
@@ -2857,7 +2871,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
@@ -2870,7 +2884,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
@@ -2886,7 +2900,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
@@ -2903,7 +2917,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
@@ -2919,7 +2933,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
@@ -3214,7 +3228,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -3315,7 +3329,7 @@ pub struct InputActionRebindingExtensions_RebindingOperation {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
@@ -3337,7 +3351,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
@@ -3347,7 +3361,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
@@ -5096,7 +5110,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
@@ -5126,7 +5140,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -5143,7 +5157,7 @@ pub enum RebindingOperation_InputActionRebindingExtensions_Flags {
     SuppressMatchingEvents = 512i32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {
@@ -5175,7 +5189,7 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {
@@ -5188,7 +5202,7 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {
@@ -5204,7 +5218,7 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {
@@ -5221,7 +5235,7 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {

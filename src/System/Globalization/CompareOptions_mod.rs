@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+CompareOptions")]
+#[cfg(feature = "cordl_class_System+Globalization+CompareOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompareOptions {
@@ -13,7 +13,7 @@ pub enum CompareOptions {
     OrdinalIgnoreCase = 268435456i32,
     StringSort = 536870912i32,
 }
-#[cfg(feature = "System+Globalization+CompareOptions")]
+#[cfg(feature = "cordl_class_System+Globalization+CompareOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::CompareOptions {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::System::Globalization::CompareOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+CompareOptions")]
+#[cfg(feature = "cordl_class_System+Globalization+CompareOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::CompareOptions {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::System::Globalization::CompareOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+CompareOptions")]
+#[cfg(feature = "cordl_class_System+Globalization+CompareOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::CompareOptions {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::System::Globalization::CompareOptions {
         self
     }
 }
-#[cfg(feature = "System+Globalization+CompareOptions")]
+#[cfg(feature = "cordl_class_System+Globalization+CompareOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::CompareOptions {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::System::Globalization::CompareOptions {
         }
     }
 }
-#[cfg(feature = "System+Globalization+CompareOptions")]
+#[cfg(feature = "cordl_class_System+Globalization+CompareOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::CompareOptions {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "ConnectedPlayerHelpers")]
+#[cfg(feature = "cordl_class_ConnectedPlayerHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ConnectedPlayerHelpers")]
+#[cfg(feature = "cordl_class_ConnectedPlayerHelpers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ConnectedPlayerHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ConnectedPlayerHelpers {
         false
     }
 }
-#[cfg(feature = "ConnectedPlayerHelpers")]
+#[cfg(feature = "cordl_class_ConnectedPlayerHelpers")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ConnectedPlayerHelpers")]
+#[cfg(feature = "cordl_class_ConnectedPlayerHelpers")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ConnectedPlayerHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -214,7 +214,7 @@ impl crate::GlobalNamespace::ConnectedPlayerHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ConnectedPlayerHelpers")]
+#[cfg(feature = "cordl_class_ConnectedPlayerHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ConnectedPlayerHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

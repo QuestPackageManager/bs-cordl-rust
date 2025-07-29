@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+Internal+IDecoratorProvider")]
+#[cfg(feature = "cordl_class_Zenject+Internal+IDecoratorProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IDecoratorProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Zenject+Internal+IDecoratorProvider")]
+#[cfg(feature = "cordl_class_Zenject+Internal+IDecoratorProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::Internal::IDecoratorProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Zenject::Internal::IDecoratorProvider {
         false
     }
 }
-#[cfg(feature = "Zenject+Internal+IDecoratorProvider")]
+#[cfg(feature = "cordl_class_Zenject+Internal+IDecoratorProvider")]
 impl std::ops::Deref for crate::Zenject::Internal::IDecoratorProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+Internal+IDecoratorProvider")]
+#[cfg(feature = "cordl_class_Zenject+Internal+IDecoratorProvider")]
 impl std::ops::DerefMut for crate::Zenject::Internal::IDecoratorProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -87,7 +87,7 @@ impl crate::Zenject::Internal::IDecoratorProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Zenject+Internal+IDecoratorProvider")]
+#[cfg(feature = "cordl_class_Zenject+Internal+IDecoratorProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::Internal::IDecoratorProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

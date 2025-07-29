@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+DeltaSpeed")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DeltaSpeed")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeltaSpeed {
@@ -7,7 +7,7 @@ pub enum DeltaSpeed {
     Normal = 1i32,
     Slow = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+DeltaSpeed")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DeltaSpeed")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::DeltaSpeed {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Delt
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DeltaSpeed")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DeltaSpeed")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DeltaSpeed {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::DeltaSpeed {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DeltaSpeed")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DeltaSpeed")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DeltaSpeed {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::DeltaSpeed {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DeltaSpeed")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DeltaSpeed")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DeltaSpeed {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::DeltaSpeed {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DeltaSpeed")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DeltaSpeed")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DeltaSpeed {
     type Actual = Self;

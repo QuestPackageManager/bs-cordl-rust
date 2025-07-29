@@ -1,4 +1,4 @@
-#[cfg(feature = "Parametric3SliceSpriteController")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parametric3SliceSpriteController {
@@ -20,7 +20,7 @@ pub struct Parametric3SliceSpriteController {
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _isInitialized: bool,
 }
-#[cfg(feature = "Parametric3SliceSpriteController")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Parametric3SliceSpriteController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::GlobalNamespace::Parametric3SliceSpriteController {
         false
     }
 }
-#[cfg(feature = "Parametric3SliceSpriteController")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteController")]
 impl std::ops::Deref for crate::GlobalNamespace::Parametric3SliceSpriteController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Parametric3SliceSpriteController")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Parametric3SliceSpriteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -350,7 +350,7 @@ impl crate::GlobalNamespace::Parametric3SliceSpriteController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Parametric3SliceSpriteController")]
+#[cfg(feature = "cordl_class_Parametric3SliceSpriteController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::Parametric3SliceSpriteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

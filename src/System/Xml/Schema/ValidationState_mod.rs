@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+ValidationState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationState {
@@ -38,7 +38,7 @@ pub struct ValidationState {
     >,
     pub TooComplex: bool,
 }
-#[cfg(feature = "System+Xml+Schema+ValidationState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::ValidationState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -57,14 +57,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Validati
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+ValidationState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationState")]
 impl std::ops::Deref for crate::System::Xml::Schema::ValidationState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+ValidationState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationState")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::ValidationState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -101,7 +101,7 @@ impl crate::System::Xml::Schema::ValidationState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+ValidationState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+ValidationState")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::ValidationState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

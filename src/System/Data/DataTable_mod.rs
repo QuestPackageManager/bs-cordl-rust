@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataTable")]
+#[cfg(feature = "cordl_class_System+Data+DataTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTable {
@@ -156,7 +156,7 @@ pub struct DataTable {
     pub _remotingFormat: crate::System::Data::SerializationFormat,
     pub _objectID: i32,
 }
-#[cfg(feature = "System+Data+DataTable")]
+#[cfg(feature = "cordl_class_System+Data+DataTable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -175,14 +175,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataTable {
         false
     }
 }
-#[cfg(feature = "System+Data+DataTable")]
+#[cfg(feature = "cordl_class_System+Data+DataTable")]
 impl std::ops::Deref for crate::System::Data::DataTable {
     type Target = crate::System::ComponentModel::MarshalByValueComponent;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataTable")]
+#[cfg(feature = "cordl_class_System+Data+DataTable")]
 impl std::ops::DerefMut for crate::System::Data::DataTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6241,7 +6241,7 @@ impl crate::System::Data::DataTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataTable")]
+#[cfg(feature = "cordl_class_System+Data+DataTable")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -6278,13 +6278,13 @@ for crate::System::Data::DataTable {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+DSRowDiffIdUsageSection")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DataTable_DSRowDiffIdUsageSection {
     pub _targetDS: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
 }
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Held<'a> = Self;
@@ -6314,7 +6314,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Type = Self;
@@ -6325,7 +6325,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Actual = Self;
@@ -6339,7 +6339,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
         self
     }
 }
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Type = Self;
@@ -6354,7 +6354,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
         }
     }
 }
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Actual = Self;
@@ -6368,7 +6368,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
         actual
     }
 }
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Type = Self;
@@ -6408,13 +6408,13 @@ impl crate::System::Data::DataTable_DSRowDiffIdUsageSection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+RowDiffIdUsageSection")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DataTable_RowDiffIdUsageSection {
     pub _targetTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
 }
-#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Held<'a> = Self;
@@ -6444,7 +6444,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Type = Self;
@@ -6455,7 +6455,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Actual = Self;
@@ -6469,7 +6469,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
         self
     }
 }
-#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Type = Self;
@@ -6484,7 +6484,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
         }
     }
 }
-#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Actual = Self;
@@ -6498,7 +6498,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
         actual
     }
 }
-#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
+#[cfg(feature = "cordl_class_System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Type = Self;

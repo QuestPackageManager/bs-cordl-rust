@@ -1,4 +1,4 @@
-#[cfg(feature = "TutorialSceneSetupData")]
+#[cfg(feature = "cordl_class_TutorialSceneSetupData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSceneSetupData {
@@ -8,7 +8,7 @@ pub struct TutorialSceneSetupData {
         crate::GlobalNamespace::PlayerSpecificSettings,
     >,
 }
-#[cfg(feature = "TutorialSceneSetupData")]
+#[cfg(feature = "cordl_class_TutorialSceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TutorialSceneSetupData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::TutorialSceneSetupData {
         false
     }
 }
-#[cfg(feature = "TutorialSceneSetupData")]
+#[cfg(feature = "cordl_class_TutorialSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TutorialSceneSetupData")]
+#[cfg(feature = "cordl_class_TutorialSceneSetupData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialSceneSetupData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::TutorialSceneSetupData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TutorialSceneSetupData")]
+#[cfg(feature = "cordl_class_TutorialSceneSetupData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TutorialSceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

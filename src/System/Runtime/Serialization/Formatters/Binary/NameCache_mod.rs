@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameCache")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameCache")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameCache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::NameCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::NameCache {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameCache")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameCache")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::NameCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::NameCache {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameCache")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameCache")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::NameCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -125,7 +125,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::NameCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+NameCache")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameCache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::NameCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

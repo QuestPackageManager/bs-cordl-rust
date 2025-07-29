@@ -1,10 +1,10 @@
-#[cfg(feature = "OVROnCompleteListener")]
+#[cfg(feature = "cordl_class_OVROnCompleteListener")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVROnCompleteListener {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
 }
-#[cfg(feature = "OVROnCompleteListener")]
+#[cfg(feature = "cordl_class_OVROnCompleteListener")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVROnCompleteListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OVROnCompleteListener {
         false
     }
 }
-#[cfg(feature = "OVROnCompleteListener")]
+#[cfg(feature = "cordl_class_OVROnCompleteListener")]
 impl std::ops::Deref for crate::GlobalNamespace::OVROnCompleteListener {
     type Target = crate::UnityEngine::AndroidJavaProxy;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVROnCompleteListener")]
+#[cfg(feature = "cordl_class_OVROnCompleteListener")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVROnCompleteListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::OVROnCompleteListener {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVROnCompleteListener")]
+#[cfg(feature = "cordl_class_OVROnCompleteListener")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVROnCompleteListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

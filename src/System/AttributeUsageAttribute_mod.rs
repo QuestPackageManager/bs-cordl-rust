@@ -1,4 +1,4 @@
-#[cfg(feature = "System+AttributeUsageAttribute")]
+#[cfg(feature = "cordl_class_System+AttributeUsageAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttributeUsageAttribute {
@@ -7,7 +7,7 @@ pub struct AttributeUsageAttribute {
     pub _allowMultiple: bool,
     pub _inherited: bool,
 }
-#[cfg(feature = "System+AttributeUsageAttribute")]
+#[cfg(feature = "cordl_class_System+AttributeUsageAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::AttributeUsageAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AttributeUsageAttribu
         false
     }
 }
-#[cfg(feature = "System+AttributeUsageAttribute")]
+#[cfg(feature = "cordl_class_System+AttributeUsageAttribute")]
 impl std::ops::Deref for crate::System::AttributeUsageAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+AttributeUsageAttribute")]
+#[cfg(feature = "cordl_class_System+AttributeUsageAttribute")]
 impl std::ops::DerefMut for crate::System::AttributeUsageAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -163,7 +163,7 @@ impl crate::System::AttributeUsageAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+AttributeUsageAttribute")]
+#[cfg(feature = "cordl_class_System+AttributeUsageAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::AttributeUsageAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

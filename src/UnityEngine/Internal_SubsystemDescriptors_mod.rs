@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Internal_SubsystemDescriptors")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal_SubsystemDescriptors")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Internal_SubsystemDescriptors {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Internal_SubsystemDescriptors")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal_SubsystemDescriptors")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Internal_SubsystemDescriptors {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Internal_SubsystemDescriptors {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Internal_SubsystemDescriptors")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal_SubsystemDescriptors")]
 impl std::ops::Deref for crate::UnityEngine::Internal_SubsystemDescriptors {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Internal_SubsystemDescriptors")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal_SubsystemDescriptors")]
 impl std::ops::DerefMut for crate::UnityEngine::Internal_SubsystemDescriptors {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::UnityEngine::Internal_SubsystemDescriptors {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Internal_SubsystemDescriptors")]
+#[cfg(feature = "cordl_class_UnityEngine+Internal_SubsystemDescriptors")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Internal_SubsystemDescriptors {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,15 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tables1kGcmExponentiator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lookupPowX2: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables1kGcmExponentiator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables1kGcmExponentiator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables1kGcmExponentiator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +39,9 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables1kGcmExponentiator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables1kGcmExponentiator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -157,7 +165,9 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables1kGcmExponentiator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables1kGcmExponentiator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

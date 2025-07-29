@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReference")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StringReference {
@@ -6,7 +6,7 @@ pub struct StringReference {
     pub _startIndex: i32,
     pub _length: i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReference")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::StringReference {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::Newtonsoft::Json::Utilities::StringReference {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReference")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::StringReference {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::Newtonsoft::Json::Utilities::StringReference {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReference")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::StringReference {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::Newtonsoft::Json::Utilities::StringReference {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReference")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::StringReference {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::Newtonsoft::Json::Utilities::StringReference {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReference")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::StringReference {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::Newtonsoft::Json::Utilities::StringReference {
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringReference")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::Utilities::StringReference {
     type Type = Self;

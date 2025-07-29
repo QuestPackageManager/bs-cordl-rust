@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Translate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Translate {
@@ -7,7 +7,7 @@ pub struct Translate {
     pub m_Z: f32,
     pub m_isNone: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+Translate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Translate {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Tran
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Translate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Translate {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::Translate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Translate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Translate {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::Translate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Translate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Translate {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::Translate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Translate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Translate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Tr
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Translate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::Translate {
     type Type = Self;

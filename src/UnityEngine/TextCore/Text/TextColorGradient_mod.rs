@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextColorGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextColorGradient")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextColorGradient {
@@ -9,7 +9,7 @@ pub struct TextColorGradient {
     pub bottomLeft: crate::UnityEngine::Color,
     pub bottomRight: crate::UnityEngine::Color,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextColorGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextColorGradient")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextColorGradient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::UnityEngine::TextCore::Text::TextColorGradient {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextColorGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextColorGradient")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextColorGradient {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextColorGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextColorGradient")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextColorGradient {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -154,7 +154,7 @@ impl crate::UnityEngine::TextCore::Text::TextColorGradient {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextColorGradient")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextColorGradient")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextColorGradient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

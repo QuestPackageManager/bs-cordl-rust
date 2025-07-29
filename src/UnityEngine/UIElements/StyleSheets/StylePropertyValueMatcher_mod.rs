@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyValueMatcher {
@@ -9,7 +11,9 @@ pub struct StylePropertyValueMatcher {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +33,9 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
     type Target = crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher;
@@ -37,7 +43,9 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -393,7 +401,9 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

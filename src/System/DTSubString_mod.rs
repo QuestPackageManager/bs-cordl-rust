@@ -1,4 +1,4 @@
-#[cfg(feature = "System+DTSubString")]
+#[cfg(feature = "cordl_class_System+DTSubString")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DTSubString {
@@ -8,7 +8,7 @@ pub struct DTSubString {
     pub _cordl_type: crate::System::DTSubStringType,
     pub value: i32,
 }
-#[cfg(feature = "System+DTSubString")]
+#[cfg(feature = "cordl_class_System+DTSubString")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DTSubString {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DTSubString {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+DTSubString")]
+#[cfg(feature = "cordl_class_System+DTSubString")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DTSubString {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DTSubString {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+DTSubString")]
+#[cfg(feature = "cordl_class_System+DTSubString")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DTSubString {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DTSubString {
         self
     }
 }
-#[cfg(feature = "System+DTSubString")]
+#[cfg(feature = "cordl_class_System+DTSubString")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DTSubString {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DTSubString {
         }
     }
 }
-#[cfg(feature = "System+DTSubString")]
+#[cfg(feature = "cordl_class_System+DTSubString")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DTSubString {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DTSubString {
         actual
     }
 }
-#[cfg(feature = "System+DTSubString")]
+#[cfg(feature = "cordl_class_System+DTSubString")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DTSubString {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

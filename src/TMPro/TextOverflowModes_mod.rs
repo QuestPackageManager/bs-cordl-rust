@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TextOverflowModes")]
+#[cfg(feature = "cordl_class_TMPro+TextOverflowModes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextOverflowModes {
@@ -11,7 +11,7 @@ pub enum TextOverflowModes {
     ScrollRect = 4i32,
     Truncate = 3i32,
 }
-#[cfg(feature = "TMPro+TextOverflowModes")]
+#[cfg(feature = "cordl_class_TMPro+TextOverflowModes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextOverflowModes {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextOverflowModes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TextOverflowModes")]
+#[cfg(feature = "cordl_class_TMPro+TextOverflowModes")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextOverflowModes {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextOverflowModes 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TextOverflowModes")]
+#[cfg(feature = "cordl_class_TMPro+TextOverflowModes")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextOverflowModes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextOverflowModes
         self
     }
 }
-#[cfg(feature = "TMPro+TextOverflowModes")]
+#[cfg(feature = "cordl_class_TMPro+TextOverflowModes")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextOverflowModes {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextOverflowModes 
         }
     }
 }
-#[cfg(feature = "TMPro+TextOverflowModes")]
+#[cfg(feature = "cordl_class_TMPro+TextOverflowModes")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TextOverflowModes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

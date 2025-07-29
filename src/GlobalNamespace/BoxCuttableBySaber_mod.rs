@@ -1,4 +1,4 @@
-#[cfg(feature = "BoxCuttableBySaber")]
+#[cfg(feature = "cordl_class_BoxCuttableBySaber")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoxCuttableBySaber {
@@ -7,7 +7,7 @@ pub struct BoxCuttableBySaber {
     pub _canBeCut: bool,
     pub _radius: f32,
 }
-#[cfg(feature = "BoxCuttableBySaber")]
+#[cfg(feature = "cordl_class_BoxCuttableBySaber")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BoxCuttableBySaber {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BoxCuttableB
         false
     }
 }
-#[cfg(feature = "BoxCuttableBySaber")]
+#[cfg(feature = "cordl_class_BoxCuttableBySaber")]
 impl std::ops::Deref for crate::GlobalNamespace::BoxCuttableBySaber {
     type Target = crate::GlobalNamespace::CuttableBySaber;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BoxCuttableBySaber")]
+#[cfg(feature = "cordl_class_BoxCuttableBySaber")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BoxCuttableBySaber {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -340,7 +340,7 @@ impl crate::GlobalNamespace::BoxCuttableBySaber {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BoxCuttableBySaber")]
+#[cfg(feature = "cordl_class_BoxCuttableBySaber")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BoxCuttableBySaber {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

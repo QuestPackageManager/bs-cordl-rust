@@ -1,10 +1,14 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultSignatureAlgorithmIdentifierFinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -174,7 +182,9 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

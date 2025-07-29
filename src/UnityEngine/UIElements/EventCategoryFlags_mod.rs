@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventCategoryFlags {
@@ -8,7 +8,7 @@ pub enum EventCategoryFlags {
     TargetOnly = 2768i32,
     TriggeredByOS = 81974i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventCategoryFlags {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::UIElements::EventCategoryFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventCategoryFlags {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::EventCategoryFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventCategoryFlags {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::EventCategoryFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventCategoryFlags {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::EventCategoryFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCategoryFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventCategoryFlags {
     type Actual = Self;

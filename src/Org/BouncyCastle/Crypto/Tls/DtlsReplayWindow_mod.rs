@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReplayWindow {
@@ -6,7 +6,7 @@ pub struct DtlsReplayWindow {
     pub mLatestConfirmedSeq: i64,
     pub mBitmap: i64,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReplayWindow {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReplayWindow {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsReplayWindow {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DtlsReplayWindow {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReplayWindow {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReplayWindow")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReplayWindow {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

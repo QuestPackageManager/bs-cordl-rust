@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+RegularExpressions+RegexOptions")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RegexOptions {
@@ -14,7 +14,7 @@ pub enum RegexOptions {
     RightToLeft = 64i32,
     Singleline = 16i32,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexOptions")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexOptions {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::System::Text::RegularExpressions::RegexOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexOptions")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::RegexOptions {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::System::Text::RegularExpressions::RegexOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexOptions")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::RegexOptions {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::System::Text::RegularExpressions::RegexOptions {
         self
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexOptions")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::RegexOptions {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::System::Text::RegularExpressions::RegexOptions {
         }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexOptions")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::RegexOptions {
     type Actual = Self;

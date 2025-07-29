@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+MemberBindingType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberBindingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MemberBindingType {
@@ -7,7 +7,7 @@ pub enum MemberBindingType {
     ListBinding = 2i32,
     MemberBinding = 1i32,
 }
-#[cfg(feature = "System+Linq+Expressions+MemberBindingType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberBindingType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::MemberBindingType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Linq::Expressions::MemberBindingType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MemberBindingType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberBindingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::MemberBindingType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Linq::Expressions::MemberBindingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MemberBindingType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberBindingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::MemberBindingType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Linq::Expressions::MemberBindingType {
         self
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MemberBindingType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberBindingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::MemberBindingType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Linq::Expressions::MemberBindingType {
         }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MemberBindingType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MemberBindingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::MemberBindingType {
     type Actual = Self;

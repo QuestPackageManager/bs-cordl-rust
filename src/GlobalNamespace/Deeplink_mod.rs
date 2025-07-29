@@ -1,4 +1,4 @@
-#[cfg(feature = "Deeplink")]
+#[cfg(feature = "cordl_class_Deeplink")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Deeplink {
@@ -15,7 +15,7 @@ pub struct Deeplink {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "Deeplink")]
+#[cfg(feature = "cordl_class_Deeplink")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Deeplink {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Deeplink {
         false
     }
 }
-#[cfg(feature = "Deeplink")]
+#[cfg(feature = "cordl_class_Deeplink")]
 impl std::ops::Deref for crate::GlobalNamespace::Deeplink {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Deeplink")]
+#[cfg(feature = "cordl_class_Deeplink")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Deeplink {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::Deeplink {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Deeplink")]
+#[cfg(feature = "cordl_class_Deeplink")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Deeplink {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

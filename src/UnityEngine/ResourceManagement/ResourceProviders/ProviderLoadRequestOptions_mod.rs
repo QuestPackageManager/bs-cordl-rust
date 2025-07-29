@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -9,7 +9,7 @@ pub struct ProviderLoadRequestOptions {
     pub m_WebRequestTimeout: i32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions {
@@ -31,7 +31,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadReque
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions {
@@ -41,7 +41,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadReque
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions {
@@ -200,7 +200,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequ
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions {

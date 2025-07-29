@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemMeshDistribution")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemMeshDistribution")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemMeshDistribution {
@@ -6,7 +6,7 @@ pub enum ParticleSystemMeshDistribution {
     NonUniformRandom = 1i32,
     UniformRandom = 0i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemMeshDistribution")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemMeshDistribution")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemMeshDistribution {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::ParticleSystemMeshDistribution {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemMeshDistribution")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemMeshDistribution")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemMeshDistribution {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::ParticleSystemMeshDistribution {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemMeshDistribution")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemMeshDistribution")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemMeshDistribution {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ParticleSystemMeshDistribution {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemMeshDistribution")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemMeshDistribution")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemMeshDistribution {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::ParticleSystemMeshDistribution {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemMeshDistribution")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemMeshDistribution")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemMeshDistribution {
     type Actual = Self;

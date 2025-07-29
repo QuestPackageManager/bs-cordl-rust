@@ -1,10 +1,10 @@
-#[cfg(feature = "LobbyDataModelInstaller")]
+#[cfg(feature = "cordl_class_LobbyDataModelInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyDataModelInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
 }
-#[cfg(feature = "LobbyDataModelInstaller")]
+#[cfg(feature = "cordl_class_LobbyDataModelInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LobbyDataModelInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::LobbyDataModelInstaller {
         false
     }
 }
-#[cfg(feature = "LobbyDataModelInstaller")]
+#[cfg(feature = "cordl_class_LobbyDataModelInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyDataModelInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LobbyDataModelInstaller")]
+#[cfg(feature = "cordl_class_LobbyDataModelInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LobbyDataModelInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::LobbyDataModelInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LobbyDataModelInstaller")]
+#[cfg(feature = "cordl_class_LobbyDataModelInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LobbyDataModelInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

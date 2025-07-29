@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemWithProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubsystemWithProvider {
@@ -8,7 +10,9 @@ pub struct SubsystemWithProvider {
         crate::UnityEngine::SubsystemsImplementation::SubsystemProvider,
     >,
 }
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemWithProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +32,9 @@ for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
         false
     }
 }
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemWithProvider"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -36,7 +42,9 @@ for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemWithProvider"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -274,7 +282,9 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemWithProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

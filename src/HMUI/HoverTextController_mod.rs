@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+HoverTextController")]
+#[cfg(feature = "cordl_class_HMUI+HoverTextController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HoverTextController {
@@ -10,7 +10,7 @@ pub struct HoverTextController {
     pub _isFadingOut: bool,
     pub _isFadingIn: bool,
 }
-#[cfg(feature = "HMUI+HoverTextController")]
+#[cfg(feature = "cordl_class_HMUI+HoverTextController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::HoverTextController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::HoverTextController {
         false
     }
 }
-#[cfg(feature = "HMUI+HoverTextController")]
+#[cfg(feature = "cordl_class_HMUI+HoverTextController")]
 impl std::ops::Deref for crate::HMUI::HoverTextController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+HoverTextController")]
+#[cfg(feature = "cordl_class_HMUI+HoverTextController")]
 impl std::ops::DerefMut for crate::HMUI::HoverTextController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -246,7 +246,7 @@ impl crate::HMUI::HoverTextController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+HoverTextController")]
+#[cfg(feature = "cordl_class_HMUI+HoverTextController")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::HoverTextController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

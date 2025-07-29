@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+CurvedCanvasSettingsHelper")]
+#[cfg(feature = "cordl_class_HMUI+CurvedCanvasSettingsHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurvedCanvasSettingsHelper {
@@ -10,7 +10,7 @@ pub struct CurvedCanvasSettingsHelper {
     >,
     pub _hasCachedData: bool,
 }
-#[cfg(feature = "HMUI+CurvedCanvasSettingsHelper")]
+#[cfg(feature = "cordl_class_HMUI+CurvedCanvasSettingsHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CurvedCanvasSettingsHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CurvedCanvasSettingsHel
         false
     }
 }
-#[cfg(feature = "HMUI+CurvedCanvasSettingsHelper")]
+#[cfg(feature = "cordl_class_HMUI+CurvedCanvasSettingsHelper")]
 impl std::ops::Deref for crate::HMUI::CurvedCanvasSettingsHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+CurvedCanvasSettingsHelper")]
+#[cfg(feature = "cordl_class_HMUI+CurvedCanvasSettingsHelper")]
 impl std::ops::DerefMut for crate::HMUI::CurvedCanvasSettingsHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::HMUI::CurvedCanvasSettingsHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+CurvedCanvasSettingsHelper")]
+#[cfg(feature = "cordl_class_HMUI+CurvedCanvasSettingsHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::CurvedCanvasSettingsHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "SongStartHandler")]
+#[cfg(feature = "cordl_class_SongStartHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongStartHandler {
@@ -23,7 +23,7 @@ pub struct SongStartHandler {
         crate::System::Action_1<i64>,
     >,
 }
-#[cfg(feature = "SongStartHandler")]
+#[cfg(feature = "cordl_class_SongStartHandler")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongStartHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongStartHan
         false
     }
 }
-#[cfg(feature = "SongStartHandler")]
+#[cfg(feature = "cordl_class_SongStartHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::SongStartHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongStartHandler")]
+#[cfg(feature = "cordl_class_SongStartHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongStartHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -403,7 +403,7 @@ impl crate::GlobalNamespace::SongStartHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongStartHandler")]
+#[cfg(feature = "cordl_class_SongStartHandler")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongStartHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

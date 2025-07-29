@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MatchResult {
     pub errorCode: crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode,
     pub errorValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::MatchResult {
     type Type = Self;

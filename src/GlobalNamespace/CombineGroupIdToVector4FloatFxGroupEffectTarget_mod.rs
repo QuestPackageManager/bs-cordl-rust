@@ -1,4 +1,4 @@
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
@@ -23,7 +23,7 @@ pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
     pub _propertyId: i32,
     pub _data: crate::UnityEngine::Vector4,
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
         false
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -238,7 +238,7 @@ impl crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
+#[cfg(feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -248,14 +248,18 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
+#[cfg(
+    feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
     pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub index: i32,
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
+#[cfg(
+    feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
     type Held<'a> = Self;
@@ -285,7 +289,9 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_Ligh
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
+#[cfg(
+    feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
     type Type = Self;
@@ -296,7 +302,9 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_Ligh
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
+#[cfg(
+    feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
     type Actual = Self;
@@ -310,7 +318,9 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_Ligh
         self
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
+#[cfg(
+    feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
     type Type = Self;
@@ -325,7 +335,9 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_Ligh
         }
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
+#[cfg(
+    feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
     type Actual = Self;
@@ -339,7 +351,9 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_Ligh
         actual
     }
 }
-#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
+#[cfg(
+    feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
     type Type = Self;

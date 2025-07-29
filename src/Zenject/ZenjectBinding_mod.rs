@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ZenjectBinding")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectBinding {
@@ -14,7 +14,7 @@ pub struct ZenjectBinding {
     pub _context: quest_hook::libil2cpp::Gc<crate::Zenject::Context>,
     pub _bindType: crate::Zenject::ZenjectBinding_BindTypes,
 }
-#[cfg(feature = "Zenject+ZenjectBinding")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectBinding {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectBinding {
         false
     }
 }
-#[cfg(feature = "Zenject+ZenjectBinding")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding")]
 impl std::ops::Deref for crate::Zenject::ZenjectBinding {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ZenjectBinding")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding")]
 impl std::ops::DerefMut for crate::Zenject::ZenjectBinding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -301,7 +301,7 @@ impl crate::Zenject::ZenjectBinding {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ZenjectBinding")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectBinding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -310,7 +310,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectBinding {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding+BindTypes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ZenjectBinding_BindTypes {
@@ -320,7 +320,7 @@ pub enum ZenjectBinding_BindTypes {
     BaseType = 3i32,
     _cordl_Self = 0i32,
 }
-#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectBinding_BindTypes {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -349,7 +349,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectBinding_BindT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::ZenjectBinding_BindTypes {
     type Type = Self;
@@ -360,7 +360,7 @@ for crate::Zenject::ZenjectBinding_BindTypes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::ZenjectBinding_BindTypes {
     type Actual = Self;
@@ -374,7 +374,7 @@ for crate::Zenject::ZenjectBinding_BindTypes {
         self
     }
 }
-#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::ZenjectBinding_BindTypes {
     type Type = Self;
@@ -389,7 +389,7 @@ for crate::Zenject::ZenjectBinding_BindTypes {
         }
     }
 }
-#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::ZenjectBinding_BindTypes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

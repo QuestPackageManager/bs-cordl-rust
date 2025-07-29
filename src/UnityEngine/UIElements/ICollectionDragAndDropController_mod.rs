@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+ICollectionDragAndDropController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ICollectionDragAndDropController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ICollectionDragAndDropController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+ICollectionDragAndDropController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ICollectionDragAndDropController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ICollectionDragAndDropController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ICollectionDragAndDropController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ICollectionDragAndDropController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ICollectionDragAndDropController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::ICollectionDragAndDropController {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ICollectionDragAndDropController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ICollectionDragAndDropController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

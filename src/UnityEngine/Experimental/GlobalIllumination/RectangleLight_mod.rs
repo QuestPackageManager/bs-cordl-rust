@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+RectangleLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+RectangleLight"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RectangleLight {
@@ -14,7 +16,9 @@ pub struct RectangleLight {
     pub height: f32,
     pub falloff: crate::UnityEngine::Experimental::GlobalIllumination::FalloffType,
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+RectangleLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+RectangleLight"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
     type Held<'a> = Self;
@@ -44,7 +48,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+RectangleLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+RectangleLight"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
     type Type = Self;
@@ -55,7 +61,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+RectangleLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+RectangleLight"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
     type Actual = Self;
@@ -69,7 +77,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+RectangleLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+RectangleLight"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
     type Type = Self;
@@ -84,7 +94,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+RectangleLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+RectangleLight"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
     type Actual = Self;
@@ -98,7 +110,9 @@ for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+RectangleLight")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+RectangleLight"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight {
     type Type = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LoadObjectInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::LoadObjectInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Linq::Expressions::Interpreter::LoadObjectInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LoadObjectInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -33,7 +33,7 @@ for crate::System::Linq::Expressions::Interpreter::LoadObjectInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LoadObjectInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -179,7 +179,7 @@ impl crate::System::Linq::Expressions::Interpreter::LoadObjectInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::LoadObjectInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

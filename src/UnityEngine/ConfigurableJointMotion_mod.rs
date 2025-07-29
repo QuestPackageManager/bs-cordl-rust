@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
+#[cfg(feature = "cordl_class_UnityEngine+ConfigurableJointMotion")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConfigurableJointMotion {
@@ -7,7 +7,7 @@ pub enum ConfigurableJointMotion {
     Limited = 1i32,
     Locked = 0i32,
 }
-#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
+#[cfg(feature = "cordl_class_UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ConfigurableJointMotion {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ConfigurableJoin
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
+#[cfg(feature = "cordl_class_UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ConfigurableJointMotion {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::ConfigurableJointMotion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
+#[cfg(feature = "cordl_class_UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ConfigurableJointMotion {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ConfigurableJointMotion {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
+#[cfg(feature = "cordl_class_UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ConfigurableJointMotion {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::ConfigurableJointMotion {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
+#[cfg(feature = "cordl_class_UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ConfigurableJointMotion {
     type Actual = Self;

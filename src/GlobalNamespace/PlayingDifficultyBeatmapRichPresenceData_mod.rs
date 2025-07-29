@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingDifficultyBeatmapRichPresenceData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayingDifficultyBeatmapRichPresenceData {
@@ -12,7 +12,7 @@ pub struct PlayingDifficultyBeatmapRichPresenceData {
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
-#[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingDifficultyBeatmapRichPresenceData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
         false
     }
 }
-#[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingDifficultyBeatmapRichPresenceData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingDifficultyBeatmapRichPresenceData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -185,7 +185,7 @@ impl crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingDifficultyBeatmapRichPresenceData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

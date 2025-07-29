@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TransitionCancelEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionCancelEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransitionCancelEvent {
@@ -6,7 +6,7 @@ pub struct TransitionCancelEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionCancelEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TransitionCancelEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionCancelEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TransitionCancelEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::TransitionCancelEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransitionCancelEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionCancelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TransitionCancelEvent {
     type Target = crate::UnityEngine::UIElements::TransitionEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionCancelEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TransitionCancelEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransitionCancelEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionCancelEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TransitionCancelEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::TransitionCancelEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TransitionCancelEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionCancelEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TransitionCancelEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

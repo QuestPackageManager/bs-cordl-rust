@@ -1,4 +1,4 @@
-#[cfg(feature = "GameScenesManager")]
+#[cfg(feature = "cordl_class_GameScenesManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameScenesManager {
@@ -63,7 +63,7 @@ pub struct GameScenesManager {
         >,
     >,
 }
-#[cfg(feature = "GameScenesManager")]
+#[cfg(feature = "cordl_class_GameScenesManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameScenesManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -82,14 +82,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameScenesMa
         false
     }
 }
-#[cfg(feature = "GameScenesManager")]
+#[cfg(feature = "cordl_class_GameScenesManager")]
 impl std::ops::Deref for crate::GlobalNamespace::GameScenesManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameScenesManager")]
+#[cfg(feature = "cordl_class_GameScenesManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameScenesManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1858,7 +1858,7 @@ impl crate::GlobalNamespace::GameScenesManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameScenesManager")]
+#[cfg(feature = "cordl_class_GameScenesManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameScenesManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1867,7 +1867,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameScenesMan
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GameScenesManager+SceneDismissType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneDismissType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameScenesManager_SceneDismissType {
@@ -1876,7 +1876,7 @@ pub enum GameScenesManager_SceneDismissType {
     DoNotUnload = 0i32,
     Unload = 1i32,
 }
-#[cfg(feature = "GameScenesManager+SceneDismissType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Held<'a> = Self;
@@ -1906,7 +1906,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameScenesManager+SceneDismissType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Type = Self;
@@ -1917,7 +1917,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameScenesManager+SceneDismissType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Actual = Self;
@@ -1931,7 +1931,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
         self
     }
 }
-#[cfg(feature = "GameScenesManager+SceneDismissType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Type = Self;
@@ -1946,7 +1946,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
         }
     }
 }
-#[cfg(feature = "GameScenesManager+SceneDismissType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Actual = Self;
@@ -1960,7 +1960,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
         actual
     }
 }
-#[cfg(feature = "GameScenesManager+ScenePresentType")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenePresentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameScenesManager_ScenePresentType {
@@ -1970,7 +1970,7 @@ pub enum GameScenesManager_ScenePresentType {
     Load = 1i32,
     LoadAndDoNotActivate = 2i32,
 }
-#[cfg(feature = "GameScenesManager+ScenePresentType")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Held<'a> = Self;
@@ -2000,7 +2000,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameScenesManager+ScenePresentType")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Type = Self;
@@ -2011,7 +2011,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameScenesManager+ScenePresentType")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Actual = Self;
@@ -2025,7 +2025,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
         self
     }
 }
-#[cfg(feature = "GameScenesManager+ScenePresentType")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Type = Self;
@@ -2040,7 +2040,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
         }
     }
 }
-#[cfg(feature = "GameScenesManager+ScenePresentType")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Actual = Self;
@@ -2054,7 +2054,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
         actual
     }
 }
-#[cfg(feature = "GameScenesManager+SceneTransitionType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneTransitionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameScenesManager_SceneTransitionType {
@@ -2069,7 +2069,7 @@ pub enum GameScenesManager_SceneTransitionType {
     Remove = 7i32,
     Replace = 3i32,
 }
-#[cfg(feature = "GameScenesManager+SceneTransitionType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Held<'a> = Self;
@@ -2099,7 +2099,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameScenesManager+SceneTransitionType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Type = Self;
@@ -2110,7 +2110,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameScenesManager+SceneTransitionType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Actual = Self;
@@ -2124,7 +2124,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
         self
     }
 }
-#[cfg(feature = "GameScenesManager+SceneTransitionType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Type = Self;
@@ -2139,7 +2139,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
         }
     }
 }
-#[cfg(feature = "GameScenesManager+SceneTransitionType")]
+#[cfg(feature = "cordl_class_GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Actual = Self;
@@ -2153,7 +2153,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
         actual
     }
 }
-#[cfg(feature = "GameScenesManager+ScenesStackData")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenesStackData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameScenesManager_ScenesStackData {
@@ -2167,7 +2167,7 @@ pub struct GameScenesManager_ScenesStackData {
         crate::Zenject::DiContainer,
     >,
 }
-#[cfg(feature = "GameScenesManager+ScenesStackData")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenesStackData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameScenesManager_ScenesStackData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2187,14 +2187,14 @@ for crate::GlobalNamespace::GameScenesManager_ScenesStackData {
         false
     }
 }
-#[cfg(feature = "GameScenesManager+ScenesStackData")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenesStackData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameScenesManager_ScenesStackData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameScenesManager+ScenesStackData")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenesStackData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameScenesManager_ScenesStackData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2406,7 +2406,7 @@ impl crate::GlobalNamespace::GameScenesManager_ScenesStackData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameScenesManager+ScenesStackData")]
+#[cfg(feature = "cordl_class_GameScenesManager+ScenesStackData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameScenesManager_ScenesStackData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UvUnwrapping {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::UvUnwrapping {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::UvUnwrapping {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::UvUnwrapping {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -586,7 +586,7 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::UvUnwrapping {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -595,7 +595,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::UvUnw
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UvUnwrapping_UVTransform {
@@ -603,7 +603,7 @@ pub struct UvUnwrapping_UVTransform {
     pub rotation: f32,
     pub scale: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Held<'a> = Self;
@@ -633,7 +633,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Type = Self;
@@ -644,7 +644,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Actual = Self;
@@ -658,7 +658,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Type = Self;
@@ -673,7 +673,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Actual = Self;
@@ -687,7 +687,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Type = Self;

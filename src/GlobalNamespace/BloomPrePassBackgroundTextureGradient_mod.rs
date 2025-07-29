@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundTextureGradient")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundTextureGradient {
@@ -7,7 +7,7 @@ pub struct BloomPrePassBackgroundTextureGradient {
     pub _texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
-#[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundTextureGradient")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundTextureGradient")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
     type Target = crate::GlobalNamespace::BloomPrePassNonLightPass;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundTextureGradient")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -304,7 +304,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundTextureGradient")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

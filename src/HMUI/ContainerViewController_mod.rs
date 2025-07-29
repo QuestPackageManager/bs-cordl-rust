@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+ContainerViewController")]
+#[cfg(feature = "cordl_class_HMUI+ContainerViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContainerViewController {
@@ -12,7 +12,7 @@ pub struct ContainerViewController {
         >,
     >,
 }
-#[cfg(feature = "HMUI+ContainerViewController")]
+#[cfg(feature = "cordl_class_HMUI+ContainerViewController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ContainerViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ContainerViewController
         false
     }
 }
-#[cfg(feature = "HMUI+ContainerViewController")]
+#[cfg(feature = "cordl_class_HMUI+ContainerViewController")]
 impl std::ops::Deref for crate::HMUI::ContainerViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+ContainerViewController")]
+#[cfg(feature = "cordl_class_HMUI+ContainerViewController")]
 impl std::ops::DerefMut for crate::HMUI::ContainerViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -722,7 +722,7 @@ impl crate::HMUI::ContainerViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+ContainerViewController")]
+#[cfg(feature = "cordl_class_HMUI+ContainerViewController")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ContainerViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

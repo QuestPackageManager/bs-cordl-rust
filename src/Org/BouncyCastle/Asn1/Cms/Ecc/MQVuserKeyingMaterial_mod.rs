@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MQVuserKeyingMaterial {
@@ -10,7 +10,7 @@ pub struct MQVuserKeyingMaterial {
         crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Cms::Ecc::MQVuserKeyingMaterial {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::Org::BouncyCastle::Asn1::Cms::Ecc::MQVuserKeyingMaterial {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::Cms::Ecc::MQVuserKeyingMaterial {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
@@ -38,7 +38,7 @@ for crate::Org::BouncyCastle::Asn1::Cms::Ecc::MQVuserKeyingMaterial {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::Cms::Ecc::MQVuserKeyingMaterial {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -294,7 +294,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::Ecc::MQVuserKeyingMaterial {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Cms::Ecc::MQVuserKeyingMaterial {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

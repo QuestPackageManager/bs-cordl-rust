@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NullableMethodCallInstruction_GetValue {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
     type Target = crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NullableMethodCallInstruction_G
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {

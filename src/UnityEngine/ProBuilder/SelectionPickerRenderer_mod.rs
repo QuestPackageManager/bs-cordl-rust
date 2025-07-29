@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectionPickerRenderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1084,7 +1084,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1095,7 +1095,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1103,7 +1103,7 @@ pub struct SelectionPickerRenderer_ISelectionPickerRenderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
@@ -1125,7 +1125,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRend
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
@@ -1135,7 +1135,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRend
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
@@ -1195,7 +1195,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRen
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
@@ -1207,7 +1207,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRend
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1215,7 +1215,7 @@ pub struct SelectionPickerRenderer_SelectionPickerRendererHDRP {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
@@ -1237,7 +1237,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
@@ -1247,7 +1247,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
@@ -1330,7 +1330,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
@@ -1368,7 +1368,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1376,7 +1376,7 @@ pub struct SelectionPickerRenderer_SelectionPickerRendererStandard {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
@@ -1398,7 +1398,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
@@ -1408,7 +1408,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
@@ -1491,7 +1491,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
+    feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {

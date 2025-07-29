@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+AccessControl+CommonAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAcl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommonAcl {
@@ -11,7 +11,7 @@ pub struct CommonAcl {
         crate::System::Security::AccessControl::RawAcl,
     >,
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAcl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::CommonAcl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Security::AccessControl::CommonAcl {
         false
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAcl")]
 impl std::ops::Deref for crate::System::Security::AccessControl::CommonAcl {
     type Target = crate::System::Security::AccessControl::GenericAcl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAcl")]
 impl std::ops::DerefMut for crate::System::Security::AccessControl::CommonAcl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -888,7 +888,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAcl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::AccessControl::CommonAcl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -898,14 +898,18 @@ for crate::System::Security::AccessControl::CommonAcl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]
+#[cfg(
+    feature = "cordl_class_System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommonAcl_RemoveAcesCallback_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]
+#[cfg(
+    feature = "cordl_class_System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -941,7 +945,9 @@ for crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T> {
         false
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]
+#[cfg(
+    feature = "cordl_class_System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T> {
     type Target = crate::System::MulticastDelegate;
@@ -949,7 +955,9 @@ for crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]
+#[cfg(
+    feature = "cordl_class_System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1034,7 +1042,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]
+#[cfg(
+    feature = "cordl_class_System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

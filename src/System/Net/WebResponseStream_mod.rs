@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+WebResponseStream")]
+#[cfg(feature = "cordl_class_System+Net+WebResponseStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebResponseStream {
@@ -24,7 +24,7 @@ pub struct WebResponseStream {
     pub _KeepAlive_k__BackingField: bool,
     pub _ChunkedRead_k__BackingField: bool,
 }
-#[cfg(feature = "System+Net+WebResponseStream")]
+#[cfg(feature = "cordl_class_System+Net+WebResponseStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebResponseStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebResponseStrea
         false
     }
 }
-#[cfg(feature = "System+Net+WebResponseStream")]
+#[cfg(feature = "cordl_class_System+Net+WebResponseStream")]
 impl std::ops::Deref for crate::System::Net::WebResponseStream {
     type Target = crate::System::Net::WebConnectionStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebResponseStream")]
+#[cfg(feature = "cordl_class_System+Net+WebResponseStream")]
 impl std::ops::DerefMut for crate::System::Net::WebResponseStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -865,7 +865,7 @@ impl crate::System::Net::WebResponseStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebResponseStream")]
+#[cfg(feature = "cordl_class_System+Net+WebResponseStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebResponseStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

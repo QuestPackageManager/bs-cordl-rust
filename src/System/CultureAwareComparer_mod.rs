@@ -1,4 +1,4 @@
-#[cfg(feature = "System+CultureAwareComparer")]
+#[cfg(feature = "cordl_class_System+CultureAwareComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureAwareComparer {
@@ -8,7 +8,7 @@ pub struct CultureAwareComparer {
     >,
     pub _options: crate::System::Globalization::CompareOptions,
 }
-#[cfg(feature = "System+CultureAwareComparer")]
+#[cfg(feature = "cordl_class_System+CultureAwareComparer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::CultureAwareComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::CultureAwareComparer 
         false
     }
 }
-#[cfg(feature = "System+CultureAwareComparer")]
+#[cfg(feature = "cordl_class_System+CultureAwareComparer")]
 impl std::ops::Deref for crate::System::CultureAwareComparer {
     type Target = crate::System::StringComparer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+CultureAwareComparer")]
+#[cfg(feature = "cordl_class_System+CultureAwareComparer")]
 impl std::ops::DerefMut for crate::System::CultureAwareComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -348,7 +348,7 @@ impl crate::System::CultureAwareComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+CultureAwareComparer")]
+#[cfg(feature = "cordl_class_System+CultureAwareComparer")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::CultureAwareComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

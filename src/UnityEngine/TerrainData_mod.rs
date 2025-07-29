@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+TerrainData")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TerrainData {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+TerrainData")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TerrainData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TerrainData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TerrainData")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData")]
 impl std::ops::Deref for crate::UnityEngine::TerrainData {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TerrainData")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData")]
 impl std::ops::DerefMut for crate::UnityEngine::TerrainData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1239,7 +1239,7 @@ impl crate::UnityEngine::TerrainData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TerrainData")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TerrainData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1248,7 +1248,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TerrainData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData+BoundaryValueType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TerrainData_BoundaryValueType {
@@ -1263,7 +1263,7 @@ pub enum TerrainData_BoundaryValueType {
     MinBaseMapRes = 7i32,
     MinDetailResPerPatch = 1i32,
 }
-#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Held<'a> = Self;
@@ -1293,7 +1293,7 @@ for crate::UnityEngine::TerrainData_BoundaryValueType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Type = Self;
@@ -1304,7 +1304,7 @@ for crate::UnityEngine::TerrainData_BoundaryValueType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Actual = Self;
@@ -1318,7 +1318,7 @@ for crate::UnityEngine::TerrainData_BoundaryValueType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Type = Self;
@@ -1333,7 +1333,7 @@ for crate::UnityEngine::TerrainData_BoundaryValueType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
+#[cfg(feature = "cordl_class_UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Actual = Self;

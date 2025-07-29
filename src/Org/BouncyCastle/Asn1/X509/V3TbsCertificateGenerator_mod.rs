@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct V3TbsCertificateGenerator {
@@ -34,7 +34,7 @@ pub struct V3TbsCertificateGenerator {
         crate::Org::BouncyCastle::Asn1::DerBitString,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::X509::V3TbsCertificateGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,7 +54,7 @@ for crate::Org::BouncyCastle::Asn1::X509::V3TbsCertificateGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::V3TbsCertificateGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -62,7 +62,7 @@ for crate::Org::BouncyCastle::Asn1::X509::V3TbsCertificateGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::X509::V3TbsCertificateGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -477,7 +477,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::V3TbsCertificateGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+V3TbsCertificateGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::X509::V3TbsCertificateGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

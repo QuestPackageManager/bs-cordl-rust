@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+CookieTokenizer")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookieTokenizer {
@@ -14,7 +14,7 @@ pub struct CookieTokenizer {
     pub m_tokenStream: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Net+CookieTokenizer")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieTokenizer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieTokenizer 
         false
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer")]
 impl std::ops::Deref for crate::System::Net::CookieTokenizer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer")]
 impl std::ops::DerefMut for crate::System::Net::CookieTokenizer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -474,7 +474,7 @@ impl crate::System::Net::CookieTokenizer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CookieTokenizer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -483,14 +483,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CookieTokenizer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer+RecognizedAttribute")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CookieTokenizer_RecognizedAttribute {
     pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_token: crate::System::Net::CookieToken,
 }
-#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Held<'a> = Self;
@@ -520,7 +520,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Type = Self;
@@ -531,7 +531,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Actual = Self;
@@ -545,7 +545,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
         self
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Type = Self;
@@ -560,7 +560,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
         }
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Actual = Self;
@@ -574,7 +574,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
         actual
     }
 }
-#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
+#[cfg(feature = "cordl_class_System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Type = Self;

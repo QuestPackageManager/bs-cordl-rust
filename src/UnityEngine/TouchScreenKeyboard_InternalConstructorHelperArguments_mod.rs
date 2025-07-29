@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TouchScreenKeyboard_InternalConstructorHelperArguments {
@@ -9,7 +11,9 @@ pub struct TouchScreenKeyboard_InternalConstructorHelperArguments {
     pub alert: u32,
     pub characterLimit: i32,
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
     type Held<'a> = Self;
@@ -39,7 +43,9 @@ for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
     type Type = Self;
@@ -50,7 +56,9 @@ for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
     type Actual = Self;
@@ -64,7 +72,9 @@ for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
     type Type = Self;
@@ -79,7 +89,9 @@ for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
     type Actual = Self;
@@ -93,7 +105,9 @@ for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments {
     type Type = Self;

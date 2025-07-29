@@ -1,10 +1,10 @@
-#[cfg(feature = "Oculus+Platform+AssetFile")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AssetFile")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetFile {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Oculus+Platform+AssetFile")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AssetFile")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AssetFile {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AssetFile {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+AssetFile")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AssetFile")]
 impl std::ops::Deref for crate::Oculus::Platform::AssetFile {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+AssetFile")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AssetFile")]
 impl std::ops::DerefMut for crate::Oculus::Platform::AssetFile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -621,7 +621,7 @@ impl crate::Oculus::Platform::AssetFile {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+AssetFile")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AssetFile")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::AssetFile {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

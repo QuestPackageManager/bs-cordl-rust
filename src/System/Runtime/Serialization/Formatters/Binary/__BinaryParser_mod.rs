@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryParser"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct __BinaryParser {
@@ -61,7 +63,9 @@ pub struct __BinaryParser {
         crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull,
     >,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryParser"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -81,7 +85,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryParser"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -89,7 +95,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryParser"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1224,7 +1232,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+__BinaryParser"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

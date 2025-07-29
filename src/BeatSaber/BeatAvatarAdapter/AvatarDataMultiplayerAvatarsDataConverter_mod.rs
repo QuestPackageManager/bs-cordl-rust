@@ -1,10 +1,14 @@
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarDataMultiplayerAvatarsDataConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConvert
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter"
+)]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConvert
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter"
+)]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -100,7 +108,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

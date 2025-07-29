@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+SecurityElement")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecurityElement {
@@ -8,7 +8,7 @@ pub struct SecurityElement {
     pub attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub children: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
-#[cfg(feature = "System+Security+SecurityElement")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::SecurityElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::SecurityEle
         false
     }
 }
-#[cfg(feature = "System+Security+SecurityElement")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement")]
 impl std::ops::Deref for crate::System::Security::SecurityElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+SecurityElement")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement")]
 impl std::ops::DerefMut for crate::System::Security::SecurityElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -599,7 +599,7 @@ impl crate::System::Security::SecurityElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+SecurityElement")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Security::SecurityElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -608,7 +608,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::SecurityElem
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Security+SecurityElement+SecurityAttribute")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement+SecurityAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecurityElement_SecurityAttribute {
@@ -616,7 +616,7 @@ pub struct SecurityElement_SecurityAttribute {
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Security+SecurityElement+SecurityAttribute")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement+SecurityAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::SecurityElement_SecurityAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -636,14 +636,14 @@ for crate::System::Security::SecurityElement_SecurityAttribute {
         false
     }
 }
-#[cfg(feature = "System+Security+SecurityElement+SecurityAttribute")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement+SecurityAttribute")]
 impl std::ops::Deref for crate::System::Security::SecurityElement_SecurityAttribute {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+SecurityElement+SecurityAttribute")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement+SecurityAttribute")]
 impl std::ops::DerefMut for crate::System::Security::SecurityElement_SecurityAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -750,7 +750,7 @@ impl crate::System::Security::SecurityElement_SecurityAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+SecurityElement+SecurityAttribute")]
+#[cfg(feature = "cordl_class_System+Security+SecurityElement+SecurityAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::SecurityElement_SecurityAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

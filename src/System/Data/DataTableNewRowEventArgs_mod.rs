@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Data+DataTableNewRowEventArgs")]
+#[cfg(feature = "cordl_class_System+Data+DataTableNewRowEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTableNewRowEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _Row_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
 }
-#[cfg(feature = "System+Data+DataTableNewRowEventArgs")]
+#[cfg(feature = "cordl_class_System+Data+DataTableNewRowEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::DataTableNewRowEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Data::DataTableNewRowEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Data+DataTableNewRowEventArgs")]
+#[cfg(feature = "cordl_class_System+Data+DataTableNewRowEventArgs")]
 impl std::ops::Deref for crate::System::Data::DataTableNewRowEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataTableNewRowEventArgs")]
+#[cfg(feature = "cordl_class_System+Data+DataTableNewRowEventArgs")]
 impl std::ops::DerefMut for crate::System::Data::DataTableNewRowEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::System::Data::DataTableNewRowEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataTableNewRowEventArgs")]
+#[cfg(feature = "cordl_class_System+Data+DataTableNewRowEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::DataTableNewRowEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

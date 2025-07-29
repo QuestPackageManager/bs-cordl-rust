@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -499,7 +499,7 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -509,13 +509,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_Curve25519Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -535,7 +539,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -543,7 +549,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -610,7 +618,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -620,13 +630,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SM2P256V1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -646,7 +660,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -654,7 +670,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -721,7 +739,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -731,13 +751,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP128R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -757,7 +781,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -765,7 +791,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -832,7 +860,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -842,13 +872,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP160K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -868,7 +902,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -876,7 +912,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -943,7 +981,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -953,13 +993,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP160R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -979,7 +1023,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -987,7 +1033,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1054,7 +1102,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1064,13 +1114,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP160R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1090,7 +1144,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1098,7 +1154,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1165,7 +1223,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1175,13 +1235,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP192K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1201,7 +1265,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1209,7 +1275,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1276,7 +1344,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1286,13 +1356,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP192R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1312,7 +1386,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1320,7 +1396,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1387,7 +1465,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1397,13 +1477,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP224K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1423,7 +1507,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1431,7 +1517,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1498,7 +1586,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1508,13 +1598,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP224R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1534,7 +1628,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1542,7 +1638,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1609,7 +1707,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1619,13 +1719,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP256K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1645,7 +1749,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1653,7 +1759,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1720,7 +1828,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1730,13 +1840,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP256R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1756,7 +1870,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1764,7 +1880,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1831,7 +1949,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1841,13 +1961,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP384R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1867,7 +1991,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1875,7 +2001,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1942,7 +2070,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1952,13 +2082,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecP521R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1978,7 +2112,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -1986,7 +2122,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2053,7 +2191,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2063,13 +2203,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT113R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2089,7 +2233,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2097,7 +2243,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2164,7 +2312,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2174,13 +2324,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT113R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2200,7 +2354,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2208,7 +2364,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2275,7 +2433,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2285,13 +2445,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT131R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2311,7 +2475,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2319,7 +2485,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2386,7 +2554,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2396,13 +2566,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT131R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2422,7 +2596,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2430,7 +2606,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2497,7 +2675,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2507,13 +2687,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT163K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2533,7 +2717,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2541,7 +2727,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2608,7 +2796,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2618,13 +2808,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT163R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2644,7 +2838,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2652,7 +2848,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2719,7 +2917,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2729,13 +2929,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT163R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2755,7 +2959,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2763,7 +2969,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2830,7 +3038,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2840,13 +3050,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT193R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2866,7 +3080,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2874,7 +3090,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2941,7 +3159,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2951,13 +3171,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT193R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2977,7 +3201,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -2985,7 +3211,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3052,7 +3280,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3062,13 +3292,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT233K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3088,7 +3322,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3096,7 +3332,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3163,7 +3401,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3173,13 +3413,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT233R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3199,7 +3443,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3207,7 +3453,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3274,7 +3522,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3284,13 +3534,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT239K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3310,7 +3564,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3318,7 +3574,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3385,7 +3643,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3395,13 +3655,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT283K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3421,7 +3685,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3429,7 +3695,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3496,7 +3764,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3506,13 +3776,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT283R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3532,7 +3806,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3540,7 +3816,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3607,7 +3885,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3617,13 +3897,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT409K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3643,7 +3927,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3651,7 +3937,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3718,7 +4006,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3728,13 +4018,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT409R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3754,7 +4048,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3762,7 +4058,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3829,7 +4127,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3839,13 +4139,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT571K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3865,7 +4169,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3873,7 +4179,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3940,7 +4248,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3950,13 +4260,17 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNamedCurves_SecT571R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3976,7 +4290,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -3984,7 +4300,9 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4051,7 +4369,9 @@ impl crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

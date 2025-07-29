@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WrapperUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::WrapperUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::WrapperUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::WrapperUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -165,7 +165,7 @@ impl crate::Org::BouncyCastle::Security::WrapperUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Security::WrapperUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -175,7 +175,9 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WrapperUtilities_BufferedCipherWrapper {
@@ -185,7 +187,9 @@ pub struct WrapperUtilities_BufferedCipherWrapper {
     >,
     pub forWrapping: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -205,7 +209,9 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -213,7 +219,9 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -401,7 +409,9 @@ impl crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -425,7 +435,7 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WrapperUtilities_WrapAlgorithm {
@@ -439,7 +449,7 @@ pub enum WrapperUtilities_WrapAlgorithm {
     RC2WRAP = 3i32,
     SEEDWRAP = 4i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
     type Held<'a> = Self;
@@ -469,7 +479,7 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
     type Type = Self;
@@ -480,7 +490,7 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
     type Actual = Self;
@@ -494,7 +504,7 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
     type Type = Self;
@@ -509,7 +519,7 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackedPoseDriver {
@@ -23,7 +23,7 @@ pub struct TrackedPoseDriver {
         crate::UnityEngine::InputSystem::InputAction,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1206,7 +1206,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1230,7 +1230,9 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackedPoseDriver_TrackingStates {
@@ -1239,7 +1241,9 @@ pub enum TrackedPoseDriver_TrackingStates {
     Position = 1i32,
     Rotation = 2i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Held<'a> = Self;
@@ -1269,7 +1273,9 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Type = Self;
@@ -1280,7 +1286,9 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Actual = Self;
@@ -1294,7 +1302,9 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Type = Self;
@@ -1309,7 +1319,9 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Actual = Self;
@@ -1323,7 +1335,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackedPoseDriver_TrackingType {
@@ -1332,7 +1344,7 @@ pub enum TrackedPoseDriver_TrackingType {
     RotationAndPosition = 0i32,
     RotationOnly = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Held<'a> = Self;
@@ -1362,7 +1374,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Type = Self;
@@ -1373,7 +1385,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Actual = Self;
@@ -1387,7 +1399,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Type = Self;
@@ -1402,7 +1414,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Actual = Self;
@@ -1416,7 +1428,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackedPoseDriver_UpdateType {
@@ -1425,7 +1437,7 @@ pub enum TrackedPoseDriver_UpdateType {
     Update = 1i32,
     UpdateAndBeforeRender = 0i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Held<'a> = Self;
@@ -1455,7 +1467,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Type = Self;
@@ -1466,7 +1478,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Actual = Self;
@@ -1480,7 +1492,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Type = Self;
@@ -1495,7 +1507,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Actual = Self;

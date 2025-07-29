@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontFeatureTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FontFeatureTable {
@@ -57,7 +57,7 @@ pub struct FontFeatureTable {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontFeatureTable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::FontFeatureTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -77,14 +77,14 @@ for crate::UnityEngine::TextCore::Text::FontFeatureTable {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontFeatureTable")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::FontFeatureTable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontFeatureTable")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::FontFeatureTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -196,7 +196,7 @@ impl crate::UnityEngine::TextCore::Text::FontFeatureTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontFeatureTable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::FontFeatureTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

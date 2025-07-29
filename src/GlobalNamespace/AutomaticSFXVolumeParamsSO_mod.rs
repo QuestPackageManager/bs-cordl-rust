@@ -1,4 +1,4 @@
-#[cfg(feature = "AutomaticSFXVolumeParamsSO")]
+#[cfg(feature = "cordl_class_AutomaticSFXVolumeParamsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AutomaticSFXVolumeParamsSO {
@@ -12,7 +12,7 @@ pub struct AutomaticSFXVolumeParamsSO {
     pub _maxVolume: f32,
     pub _volumeSmooth: f32,
 }
-#[cfg(feature = "AutomaticSFXVolumeParamsSO")]
+#[cfg(feature = "cordl_class_AutomaticSFXVolumeParamsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         false
     }
 }
-#[cfg(feature = "AutomaticSFXVolumeParamsSO")]
+#[cfg(feature = "cordl_class_AutomaticSFXVolumeParamsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AutomaticSFXVolumeParamsSO")]
+#[cfg(feature = "cordl_class_AutomaticSFXVolumeParamsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -212,7 +212,7 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AutomaticSFXVolumeParamsSO")]
+#[cfg(feature = "cordl_class_AutomaticSFXVolumeParamsSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

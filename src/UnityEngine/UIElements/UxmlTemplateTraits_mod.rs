@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlTemplateTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlTemplateTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlTemplateTraits {
@@ -13,7 +13,7 @@ pub struct UxmlTemplateTraits {
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlTemplateTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlTemplateTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlTemplateTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::UnityEngine::UIElements::UxmlTemplateTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlTemplateTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlTemplateTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlTemplateTraits {
     type Target = crate::UnityEngine::UIElements::UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlTemplateTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlTemplateTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UxmlTemplateTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -77,7 +77,7 @@ impl crate::UnityEngine::UIElements::UxmlTemplateTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlTemplateTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlTemplateTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlTemplateTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

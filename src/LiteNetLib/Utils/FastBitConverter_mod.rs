@@ -1,10 +1,10 @@
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FastBitConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::FastBitConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::FastBitCon
         false
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::FastBitConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter")]
 impl std::ops::DerefMut for crate::LiteNetLib::Utils::FastBitConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -406,7 +406,7 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::FastBitConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -415,13 +415,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::FastBitConv
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FastBitConverter_ConverterHelperDouble {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Held<'a> = Self;
@@ -451,7 +451,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Type = Self;
@@ -462,7 +462,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Actual = Self;
@@ -476,7 +476,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Type = Self;
@@ -491,7 +491,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
         }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Actual = Self;
@@ -505,7 +505,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
         actual
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Type = Self;
@@ -518,13 +518,13 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
 }
 #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 impl crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {}
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FastBitConverter_ConverterHelperFloat {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Held<'a> = Self;
@@ -554,7 +554,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Type = Self;
@@ -565,7 +565,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Actual = Self;
@@ -579,7 +579,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Type = Self;
@@ -594,7 +594,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
         }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Actual = Self;
@@ -608,7 +608,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
         actual
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatLine")]
+#[cfg(feature = "cordl_class_BeatLine")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatLine {
@@ -19,7 +19,7 @@ pub struct BeatLine {
     pub _color: crate::UnityEngine::Color,
     pub _rotation: f32,
 }
-#[cfg(feature = "BeatLine")]
+#[cfg(feature = "cordl_class_BeatLine")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatLine {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatLine {
         false
     }
 }
-#[cfg(feature = "BeatLine")]
+#[cfg(feature = "cordl_class_BeatLine")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatLine {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatLine")]
+#[cfg(feature = "cordl_class_BeatLine")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatLine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::GlobalNamespace::BeatLine {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatLine")]
+#[cfg(feature = "cordl_class_BeatLine")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -232,7 +232,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLine {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatLine+Pool")]
+#[cfg(feature = "cordl_class_BeatLine+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatLine_Pool {
@@ -240,7 +240,7 @@ pub struct BeatLine_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine>,
     >,
 }
-#[cfg(feature = "BeatLine+Pool")]
+#[cfg(feature = "cordl_class_BeatLine+Pool")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatLine_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -259,7 +259,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatLine_Poo
         false
     }
 }
-#[cfg(feature = "BeatLine+Pool")]
+#[cfg(feature = "cordl_class_BeatLine+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatLine_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine>,
@@ -268,7 +268,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BeatLine_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatLine+Pool")]
+#[cfg(feature = "cordl_class_BeatLine+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatLine_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -305,7 +305,7 @@ impl crate::GlobalNamespace::BeatLine_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatLine+Pool")]
+#[cfg(feature = "cordl_class_BeatLine+Pool")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLine_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

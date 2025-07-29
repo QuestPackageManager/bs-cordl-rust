@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IDualMotorRumble {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

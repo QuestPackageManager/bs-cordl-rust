@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapDataObstaclesMergingTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesMergingTransform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataObstaclesMergingTransform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDataObstaclesMergingTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesMergingTransform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
         false
     }
 }
-#[cfg(feature = "BeatmapDataObstaclesMergingTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesMergingTransform")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataObstaclesMergingTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesMergingTransform")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataObstaclesMergingTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesMergingTransform")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

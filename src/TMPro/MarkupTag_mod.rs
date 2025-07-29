@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+MarkupTag")]
+#[cfg(feature = "cordl_class_TMPro+MarkupTag")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MarkupTag {
@@ -130,7 +130,7 @@ pub enum MarkupTag {
     YELLOW = -882444668i32,
     ZWSP = 3288238i32,
 }
-#[cfg(feature = "TMPro+MarkupTag")]
+#[cfg(feature = "cordl_class_TMPro+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::MarkupTag {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -159,7 +159,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::MarkupTag {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+MarkupTag")]
+#[cfg(feature = "cordl_class_TMPro+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::MarkupTag {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -169,7 +169,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::MarkupTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+MarkupTag")]
+#[cfg(feature = "cordl_class_TMPro+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::MarkupTag {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -182,7 +182,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::MarkupTag {
         self
     }
 }
-#[cfg(feature = "TMPro+MarkupTag")]
+#[cfg(feature = "cordl_class_TMPro+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::MarkupTag {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -196,7 +196,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::MarkupTag {
         }
     }
 }
-#[cfg(feature = "TMPro+MarkupTag")]
+#[cfg(feature = "cordl_class_TMPro+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::MarkupTag {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

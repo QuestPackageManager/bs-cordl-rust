@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedBitArray3 {
@@ -6,7 +6,7 @@ pub struct FixedBitArray3 {
     pub _1: bool,
     pub _2: bool,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
     type Type = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Diagnostics+DebuggerStepThroughAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerStepThroughAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebuggerStepThroughAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+Diagnostics+DebuggerStepThroughAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerStepThroughAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::DebuggerStepThroughAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Diagnostics::DebuggerStepThroughAttribute {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggerStepThroughAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerStepThroughAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::DebuggerStepThroughAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggerStepThroughAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerStepThroughAttribute")]
 impl std::ops::DerefMut for crate::System::Diagnostics::DebuggerStepThroughAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::System::Diagnostics::DebuggerStepThroughAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggerStepThroughAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggerStepThroughAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::DebuggerStepThroughAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

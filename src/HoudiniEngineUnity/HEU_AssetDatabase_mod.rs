@@ -1,10 +1,10 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AssetDatabase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AssetDatabase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetDatabase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AssetDatabase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2009,7 +2009,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetDatabase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetDatabase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2018,7 +2018,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetD
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AssetDatabase_HEU_ImportAssetOptions {
@@ -2030,7 +2032,9 @@ pub enum HEU_AssetDatabase_HEU_ImportAssetOptions {
     ForceUpdate = 1i32,
     ImportRecursive = 256i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Held<'a> = Self;
@@ -2060,7 +2064,9 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Type = Self;
@@ -2071,7 +2077,9 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Actual = Self;
@@ -2085,7 +2093,9 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Type = Self;
@@ -2100,7 +2110,9 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Actual = Self;

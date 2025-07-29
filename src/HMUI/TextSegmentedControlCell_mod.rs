@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+TextSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+TextSegmentedControlCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextSegmentedControlCell {
@@ -6,7 +6,7 @@ pub struct TextSegmentedControlCell {
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _backgroundGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "HMUI+TextSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+TextSegmentedControlCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TextSegmentedControlCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TextSegmentedControlCel
         false
     }
 }
-#[cfg(feature = "HMUI+TextSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+TextSegmentedControlCell")]
 impl std::ops::Deref for crate::HMUI::TextSegmentedControlCell {
     type Target = crate::HMUI::SegmentedControlCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+TextSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+TextSegmentedControlCell")]
 impl std::ops::DerefMut for crate::HMUI::TextSegmentedControlCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -208,7 +208,7 @@ impl crate::HMUI::TextSegmentedControlCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+TextSegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+TextSegmentedControlCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TextSegmentedControlCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

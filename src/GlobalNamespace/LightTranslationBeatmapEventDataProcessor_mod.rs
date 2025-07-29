@@ -1,4 +1,4 @@
-#[cfg(feature = "LightTranslationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightTranslationBeatmapEventDataProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationBeatmapEventDataProcessor {
@@ -8,7 +8,7 @@ pub struct LightTranslationBeatmapEventDataProcessor {
         >,
     >,
 }
-#[cfg(feature = "LightTranslationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightTranslationBeatmapEventDataProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
         false
     }
 }
-#[cfg(feature = "LightTranslationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightTranslationBeatmapEventDataProcessor")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
     type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightTranslationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightTranslationBeatmapEventDataProcessor")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -150,7 +150,7 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightTranslationBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_LightTranslationBeatmapEventDataProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

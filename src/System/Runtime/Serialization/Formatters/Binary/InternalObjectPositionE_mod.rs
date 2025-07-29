@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -11,7 +11,7 @@ pub enum InternalObjectPositionE {
     Top = 1i32,
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE {
@@ -43,7 +43,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPos
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE {
@@ -56,7 +56,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPos
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE {
@@ -72,7 +72,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPos
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE {
@@ -89,7 +89,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPos
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE {

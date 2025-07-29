@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilterLimitAlsoAffectsType {
@@ -7,7 +7,7 @@ pub enum IndexFilterLimitAlsoAffectsType {
     Duration = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType {
     type Actual = Self;

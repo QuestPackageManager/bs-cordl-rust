@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRScenePlane")]
+#[cfg(feature = "cordl_class_OVRScenePlane")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRScenePlane {
@@ -22,7 +22,7 @@ pub struct OVRScenePlane {
         crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
     >,
 }
-#[cfg(feature = "OVRScenePlane")]
+#[cfg(feature = "cordl_class_OVRScenePlane")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRScenePlane {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRScenePlan
         false
     }
 }
-#[cfg(feature = "OVRScenePlane")]
+#[cfg(feature = "cordl_class_OVRScenePlane")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRScenePlane {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRScenePlane")]
+#[cfg(feature = "cordl_class_OVRScenePlane")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRScenePlane {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -604,7 +604,7 @@ impl crate::GlobalNamespace::OVRScenePlane {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRScenePlane")]
+#[cfg(feature = "cordl_class_OVRScenePlane")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRScenePlane {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -627,7 +627,7 @@ for crate::GlobalNamespace::OVRScenePlane {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRScenePlane_GetBoundaryJob {
@@ -637,7 +637,7 @@ pub struct OVRScenePlane_GetBoundaryJob {
         crate::UnityEngine::Vector2,
     >,
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Held<'a> = Self;
@@ -667,7 +667,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Type = Self;
@@ -678,7 +678,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Actual = Self;
@@ -692,7 +692,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         self
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Type = Self;
@@ -707,7 +707,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         }
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Actual = Self;
@@ -721,7 +721,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         actual
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Type = Self;
@@ -814,14 +814,14 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         todo!()
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryLengthJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRScenePlane_GetBoundaryLengthJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
     pub Length: crate::Unity::Collections::NativeArray_1<i32>,
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Held<'a> = Self;
@@ -851,7 +851,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Type = Self;
@@ -862,7 +862,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Actual = Self;
@@ -876,7 +876,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
         self
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Type = Self;
@@ -891,7 +891,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
         }
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Actual = Self;
@@ -905,7 +905,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
         actual
     }
 }
-#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
+#[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "SignalListener")]
+#[cfg(feature = "cordl_class_SignalListener")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalListener {
@@ -6,7 +6,7 @@ pub struct SignalListener {
     pub _signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
     pub _unityEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
 }
-#[cfg(feature = "SignalListener")]
+#[cfg(feature = "cordl_class_SignalListener")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SignalListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SignalListen
         false
     }
 }
-#[cfg(feature = "SignalListener")]
+#[cfg(feature = "cordl_class_SignalListener")]
 impl std::ops::Deref for crate::GlobalNamespace::SignalListener {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SignalListener")]
+#[cfg(feature = "cordl_class_SignalListener")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SignalListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::SignalListener {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SignalListener")]
+#[cfg(feature = "cordl_class_SignalListener")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SignalListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

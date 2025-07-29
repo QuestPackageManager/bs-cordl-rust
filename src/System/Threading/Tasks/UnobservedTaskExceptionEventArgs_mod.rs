@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnobservedTaskExceptionEventArgs {
@@ -6,7 +6,7 @@ pub struct UnobservedTaskExceptionEventArgs {
     pub m_exception: quest_hook::libil2cpp::Gc<crate::System::AggregateException>,
     pub m_observed: bool,
 }
-#[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
     type Target = crate::System::EventArgs;
@@ -34,7 +34,7 @@ for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 impl std::ops::DerefMut
 for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -79,7 +79,7 @@ impl crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolSettingsFlowCoordinator {
@@ -19,7 +19,7 @@ pub struct RecordingToolSettingsFlowCoordinator {
         crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData,
     >,
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -217,7 +217,7 @@ impl crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -227,7 +227,7 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolSettingsFlowCoordinator_InitData {
@@ -236,7 +236,7 @@ pub struct RecordingToolSettingsFlowCoordinator_InitData {
         crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     >,
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -256,7 +256,7 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
         false
     }
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -264,7 +264,7 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -315,7 +315,7 @@ impl crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
+#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

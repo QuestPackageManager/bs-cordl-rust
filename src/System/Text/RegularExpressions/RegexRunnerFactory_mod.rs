@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Text+RegularExpressions+RegexRunnerFactory")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexRunnerFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexRunnerFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexRunnerFactory")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexRunnerFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexRunnerFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Text::RegularExpressions::RegexRunnerFactory {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexRunnerFactory")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexRunnerFactory")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexRunnerFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexRunnerFactory")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexRunnerFactory")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexRunnerFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -69,7 +69,7 @@ impl crate::System::Text::RegularExpressions::RegexRunnerFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexRunnerFactory")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexRunnerFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::RegexRunnerFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRTelemetryMarker")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTelemetryMarker {
@@ -9,7 +9,7 @@ pub struct OVRTelemetryMarker {
         crate::GlobalNamespace::OVRTelemetry_TelemetryClient,
     >,
 }
-#[cfg(feature = "OVRTelemetryMarker")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetryMarker {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTelemetry
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRTelemetryMarker")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTelemetryMarker {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRTelemetryMarker")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTelemetryMarker {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker {
         self
     }
 }
-#[cfg(feature = "OVRTelemetryMarker")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTelemetryMarker {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker {
         }
     }
 }
-#[cfg(feature = "OVRTelemetryMarker")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTelemetryMarker {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker {
         actual
     }
 }
-#[cfg(feature = "OVRTelemetryMarker")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRTelemetryMarker {
     type Type = Self;
@@ -477,14 +477,14 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetryM
         todo!()
     }
 }
-#[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker+OVRTelemetryMarkerState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTelemetryMarker_OVRTelemetryMarkerState {
     pub _Sent_k__BackingField: bool,
     pub _Result_k__BackingField: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
 }
-#[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker+OVRTelemetryMarkerState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     type Held<'a> = Self;
@@ -514,7 +514,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker+OVRTelemetryMarkerState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     type Type = Self;
@@ -525,7 +525,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker+OVRTelemetryMarkerState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     type Actual = Self;
@@ -539,7 +539,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         self
     }
 }
-#[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker+OVRTelemetryMarkerState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     type Type = Self;
@@ -554,7 +554,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         }
     }
 }
-#[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker+OVRTelemetryMarkerState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     type Actual = Self;
@@ -568,7 +568,7 @@ for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         actual
     }
 }
-#[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
+#[cfg(feature = "cordl_class_OVRTelemetryMarker+OVRTelemetryMarkerState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     type Type = Self;

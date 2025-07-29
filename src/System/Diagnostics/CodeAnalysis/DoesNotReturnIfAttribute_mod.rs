@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoesNotReturnIfAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ParameterValue_k__BackingField: bool,
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 impl std::ops::Deref
 for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 impl std::ops::DerefMut
 for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -91,7 +91,7 @@ impl crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

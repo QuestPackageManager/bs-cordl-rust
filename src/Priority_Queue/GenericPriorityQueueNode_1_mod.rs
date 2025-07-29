@@ -1,4 +1,4 @@
-#[cfg(feature = "Priority_Queue+GenericPriorityQueueNode_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+GenericPriorityQueueNode_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericPriorityQueueNode_1<TPriority: quest_hook::libil2cpp::Type> {
@@ -8,7 +8,7 @@ pub struct GenericPriorityQueueNode_1<TPriority: quest_hook::libil2cpp::Type> {
     pub _InsertionIndex_k__BackingField: i64,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
 }
-#[cfg(feature = "Priority_Queue+GenericPriorityQueueNode_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+GenericPriorityQueueNode_1")]
 unsafe impl<TPriority: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +44,7 @@ for crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
         false
     }
 }
-#[cfg(feature = "Priority_Queue+GenericPriorityQueueNode_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+GenericPriorityQueueNode_1")]
 impl<TPriority: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -52,7 +52,7 @@ for crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Priority_Queue+GenericPriorityQueueNode_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+GenericPriorityQueueNode_1")]
 impl<TPriority: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -253,7 +253,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Priority_Queue+GenericPriorityQueueNode_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+GenericPriorityQueueNode_1")]
 impl<TPriority: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

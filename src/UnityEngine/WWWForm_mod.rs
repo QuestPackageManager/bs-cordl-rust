@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+WWWForm")]
+#[cfg(feature = "cordl_class_UnityEngine+WWWForm")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WWWForm {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+WWWForm")]
+#[cfg(feature = "cordl_class_UnityEngine+WWWForm")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WWWForm {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WWWForm {
         false
     }
 }
-#[cfg(feature = "UnityEngine+WWWForm")]
+#[cfg(feature = "cordl_class_UnityEngine+WWWForm")]
 impl std::ops::Deref for crate::UnityEngine::WWWForm {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+WWWForm")]
+#[cfg(feature = "cordl_class_UnityEngine+WWWForm")]
 impl std::ops::DerefMut for crate::UnityEngine::WWWForm {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -64,7 +64,7 @@ impl crate::UnityEngine::WWWForm {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+WWWForm")]
+#[cfg(feature = "cordl_class_UnityEngine+WWWForm")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::WWWForm {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

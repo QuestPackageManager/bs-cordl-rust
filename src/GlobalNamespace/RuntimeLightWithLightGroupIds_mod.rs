@@ -1,4 +1,4 @@
-#[cfg(feature = "RuntimeLightWithLightGroupIds")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeLightWithLightGroupIds {
@@ -19,7 +19,7 @@ pub struct RuntimeLightWithLightGroupIds {
         >,
     >,
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
         false
     }
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds")]
 impl std::ops::Deref for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
     type Target = crate::GlobalNamespace::LightWithIds;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -227,7 +227,7 @@ impl crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -237,14 +237,14 @@ for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeLightWithLightGroupIds_LightIntensitiesWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIds_LightWithId,
     pub _intensity: f32,
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -264,7 +264,7 @@ for crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId
         false
     }
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId {
     type Target = crate::GlobalNamespace::LightWithIds_LightWithId;
@@ -272,7 +272,7 @@ for crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -362,7 +362,7 @@ impl crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithI
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

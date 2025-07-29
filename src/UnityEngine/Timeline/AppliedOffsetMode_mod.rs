@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+AppliedOffsetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AppliedOffsetMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppliedOffsetMode {
@@ -11,7 +11,7 @@ pub enum AppliedOffsetMode {
     TransformOffset = 1i32,
     TransformOffsetLegacy = 3i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+AppliedOffsetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AppliedOffsetMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AppliedOffsetMode {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::UnityEngine::Timeline::AppliedOffsetMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AppliedOffsetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AppliedOffsetMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::AppliedOffsetMode {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::Timeline::AppliedOffsetMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AppliedOffsetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AppliedOffsetMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::AppliedOffsetMode {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::Timeline::AppliedOffsetMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AppliedOffsetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AppliedOffsetMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::AppliedOffsetMode {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::Timeline::AppliedOffsetMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AppliedOffsetMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AppliedOffsetMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::AppliedOffsetMode {
     type Actual = Self;

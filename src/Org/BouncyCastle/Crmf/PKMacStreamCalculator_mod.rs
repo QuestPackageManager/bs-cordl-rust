@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKMacStreamCalculator {
@@ -7,7 +7,7 @@ pub struct PKMacStreamCalculator {
         crate::Org::BouncyCastle::Crypto::IO::MacSink,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -134,7 +134,7 @@ impl crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

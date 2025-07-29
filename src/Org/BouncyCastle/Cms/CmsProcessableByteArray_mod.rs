@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsProcessableByteArray")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsProcessableByteArray {
@@ -8,7 +8,7 @@ pub struct CmsProcessableByteArray {
     >,
     pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsProcessableByteArray")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsProcessableByteArray")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsProcessableByteArray")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -238,7 +238,7 @@ impl crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsProcessableByteArray")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+InteropServices+ICustomMarshaler")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ICustomMarshaler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ICustomMarshaler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+InteropServices+ICustomMarshaler")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ICustomMarshaler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::ICustomMarshaler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::InteropServices::ICustomMarshaler {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ICustomMarshaler")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ICustomMarshaler")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::ICustomMarshaler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ICustomMarshaler")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ICustomMarshaler")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::ICustomMarshaler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -168,7 +168,7 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ICustomMarshaler")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ICustomMarshaler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::ICustomMarshaler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

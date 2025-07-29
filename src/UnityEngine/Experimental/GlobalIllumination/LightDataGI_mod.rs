@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LightDataGI {
@@ -19,7 +19,7 @@ pub struct LightDataGI {
     pub shadow: u8,
     pub falloff: crate::UnityEngine::Experimental::GlobalIllumination::FalloffType,
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
     type Held<'a> = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
     type Type = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
     type Actual = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
     type Type = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
     type Actual = Self;
@@ -103,7 +103,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
     type Type = Self;

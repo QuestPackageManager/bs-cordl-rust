@@ -1,10 +1,10 @@
-#[cfg(feature = "System+__ComObject")]
+#[cfg(feature = "cordl_class_System+__ComObject")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct __ComObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+__ComObject")]
+#[cfg(feature = "cordl_class_System+__ComObject")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::__ComObject {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::__ComObject {
         false
     }
 }
-#[cfg(feature = "System+__ComObject")]
+#[cfg(feature = "cordl_class_System+__ComObject")]
 impl std::ops::Deref for crate::System::__ComObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+__ComObject")]
+#[cfg(feature = "cordl_class_System+__ComObject")]
 impl std::ops::DerefMut for crate::System::__ComObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::System::__ComObject {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+__ComObject")]
+#[cfg(feature = "cordl_class_System+__ComObject")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::__ComObject {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "SliderSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_SliderSpawnInfoNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderSpawnInfoNetSerializable {
@@ -31,7 +31,7 @@ pub struct SliderSpawnInfoNetSerializable {
     pub tailGravityBase: f32,
     pub rotation: f32,
 }
-#[cfg(feature = "SliderSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_SliderSpawnInfoNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
         false
     }
 }
-#[cfg(feature = "SliderSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_SliderSpawnInfoNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
     type Target = crate::GlobalNamespace::PoolableSerializable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_SliderSpawnInfoNetSerializable")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -296,7 +296,7 @@ impl crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_SliderSpawnInfoNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

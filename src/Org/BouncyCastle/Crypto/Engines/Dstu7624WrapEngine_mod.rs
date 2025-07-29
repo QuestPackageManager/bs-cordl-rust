@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dstu7624WrapEngine {
@@ -12,7 +12,7 @@ pub struct Dstu7624WrapEngine {
     pub forWrapping: bool,
     pub blockSize: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Engines::Dstu7624WrapEngine {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::Org::BouncyCastle::Crypto::Engines::Dstu7624WrapEngine {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::Dstu7624WrapEngine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Engines::Dstu7624WrapEngine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -217,7 +217,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Dstu7624WrapEngine {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+Dstu7624WrapEngine")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Engines::Dstu7624WrapEngine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

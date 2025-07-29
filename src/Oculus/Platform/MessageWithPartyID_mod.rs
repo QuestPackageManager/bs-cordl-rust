@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithPartyID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyID")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithPartyID {
@@ -6,7 +6,7 @@ pub struct MessageWithPartyID {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PartyID>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithPartyID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyID")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::MessageWithPartyID {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::MessageWith
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithPartyID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyID")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithPartyID {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PartyID>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithPartyID {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithPartyID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyID")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithPartyID {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -137,7 +137,7 @@ impl crate::Oculus::Platform::MessageWithPartyID {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithPartyID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithPartyID")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::MessageWithPartyID {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

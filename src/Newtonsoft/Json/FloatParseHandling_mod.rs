@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+FloatParseHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+FloatParseHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FloatParseHandling {
@@ -6,7 +6,7 @@ pub enum FloatParseHandling {
     Decimal = 1i32,
     Double = 0i32,
 }
-#[cfg(feature = "Newtonsoft+Json+FloatParseHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+FloatParseHandling")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::FloatParseHandling {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::FloatParseH
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+FloatParseHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+FloatParseHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::FloatParseHandling {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::Newtonsoft::Json::FloatParseHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+FloatParseHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+FloatParseHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::FloatParseHandling {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::Newtonsoft::Json::FloatParseHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+FloatParseHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+FloatParseHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::FloatParseHandling {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::Newtonsoft::Json::FloatParseHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+FloatParseHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+FloatParseHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::FloatParseHandling {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+KerningPairKey")]
+#[cfg(feature = "cordl_class_TMPro+KerningPairKey")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct KerningPairKey {
@@ -6,7 +6,7 @@ pub struct KerningPairKey {
     pub ascii_Right: u32,
     pub key: u32,
 }
-#[cfg(feature = "TMPro+KerningPairKey")]
+#[cfg(feature = "cordl_class_TMPro+KerningPairKey")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::KerningPairKey {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::KerningPairKey {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+KerningPairKey")]
+#[cfg(feature = "cordl_class_TMPro+KerningPairKey")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::KerningPairKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::KerningPairKey {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+KerningPairKey")]
+#[cfg(feature = "cordl_class_TMPro+KerningPairKey")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::KerningPairKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::KerningPairKey {
         self
     }
 }
-#[cfg(feature = "TMPro+KerningPairKey")]
+#[cfg(feature = "cordl_class_TMPro+KerningPairKey")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::KerningPairKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::KerningPairKey {
         }
     }
 }
-#[cfg(feature = "TMPro+KerningPairKey")]
+#[cfg(feature = "cordl_class_TMPro+KerningPairKey")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::KerningPairKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::KerningPairKey {
         actual
     }
 }
-#[cfg(feature = "TMPro+KerningPairKey")]
+#[cfg(feature = "cordl_class_TMPro+KerningPairKey")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::KerningPairKey {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

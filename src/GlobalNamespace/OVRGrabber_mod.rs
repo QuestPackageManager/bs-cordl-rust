@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRGrabber")]
+#[cfg(feature = "cordl_class_OVRGrabber")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGrabber {
@@ -33,7 +33,7 @@ pub struct OVRGrabber {
     >,
     pub m_operatingWithoutOVRCameraRig: bool,
 }
-#[cfg(feature = "OVRGrabber")]
+#[cfg(feature = "cordl_class_OVRGrabber")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGrabber {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -52,14 +52,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGrabber {
         false
     }
 }
-#[cfg(feature = "OVRGrabber")]
+#[cfg(feature = "cordl_class_OVRGrabber")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGrabber {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRGrabber")]
+#[cfg(feature = "cordl_class_OVRGrabber")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRGrabber {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -551,7 +551,7 @@ impl crate::GlobalNamespace::OVRGrabber {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRGrabber")]
+#[cfg(feature = "cordl_class_OVRGrabber")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGrabber {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

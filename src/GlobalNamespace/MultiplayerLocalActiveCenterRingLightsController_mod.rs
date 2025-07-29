@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveCenterRingLightsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalActiveCenterRingLightsController {
@@ -23,7 +23,7 @@ pub struct MultiplayerLocalActiveCenterRingLightsController {
     pub _edgeDistanceFromCenterCalculated: bool,
     pub _spawnCenterDistanceFound: bool,
 }
-#[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveCenterRingLightsController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveCenterRingLightsController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveCenterRingLightsController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -225,7 +225,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActiveCenterRingLightsController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

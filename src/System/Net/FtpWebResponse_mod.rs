@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+FtpWebResponse")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpWebResponse {
@@ -16,7 +16,7 @@ pub struct FtpWebResponse {
     pub _welcomeMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _exitMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Net+FtpWebResponse")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpWebResponse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpWebResponse {
         false
     }
 }
-#[cfg(feature = "System+Net+FtpWebResponse")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse")]
 impl std::ops::Deref for crate::System::Net::FtpWebResponse {
     type Target = crate::System::Net::WebResponse;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+FtpWebResponse")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse")]
 impl std::ops::DerefMut for crate::System::Net::FtpWebResponse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -339,7 +339,7 @@ impl crate::System::Net::FtpWebResponse {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+FtpWebResponse")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpWebResponse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -360,13 +360,13 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::FtpWebResponse {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse+EmptyStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpWebResponse_EmptyStream {
     __cordl_parent: crate::System::IO::MemoryStream,
 }
-#[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse+EmptyStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::FtpWebResponse_EmptyStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -386,14 +386,14 @@ for crate::System::Net::FtpWebResponse_EmptyStream {
         false
     }
 }
-#[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse+EmptyStream")]
 impl std::ops::Deref for crate::System::Net::FtpWebResponse_EmptyStream {
     type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse+EmptyStream")]
 impl std::ops::DerefMut for crate::System::Net::FtpWebResponse_EmptyStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -430,7 +430,7 @@ impl crate::System::Net::FtpWebResponse_EmptyStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpWebResponse+EmptyStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::FtpWebResponse_EmptyStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

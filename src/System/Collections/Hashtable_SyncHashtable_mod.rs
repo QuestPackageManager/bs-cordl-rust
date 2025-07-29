@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+SyncHashtable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_SyncHashtable {
     __cordl_parent: crate::System::Collections::Hashtable,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
-#[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+SyncHashtable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Hashtable_SyncHashtable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::Hashtable_SyncHashtable {
         false
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+SyncHashtable")]
 impl std::ops::Deref for crate::GlobalNamespace::Hashtable_SyncHashtable {
     type Target = crate::System::Collections::Hashtable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+SyncHashtable")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Hashtable_SyncHashtable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -644,7 +644,7 @@ impl crate::GlobalNamespace::Hashtable_SyncHashtable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
+#[cfg(feature = "cordl_class_System+Collections+Hashtable+SyncHashtable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::Hashtable_SyncHashtable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

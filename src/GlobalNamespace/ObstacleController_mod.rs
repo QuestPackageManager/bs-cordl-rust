@@ -1,4 +1,4 @@
-#[cfg(feature = "ObstacleController")]
+#[cfg(feature = "cordl_class_ObstacleController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleController {
@@ -65,7 +65,7 @@ pub struct ObstacleController {
     pub _finishMovementTime: f32,
     pub _worldRotation: crate::UnityEngine::Quaternion,
 }
-#[cfg(feature = "ObstacleController")]
+#[cfg(feature = "cordl_class_ObstacleController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ObstacleController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -84,14 +84,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ObstacleCont
         false
     }
 }
-#[cfg(feature = "ObstacleController")]
+#[cfg(feature = "cordl_class_ObstacleController")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleController {
     type Target = crate::GlobalNamespace::ObstacleControllerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObstacleController")]
+#[cfg(feature = "cordl_class_ObstacleController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -900,7 +900,7 @@ impl crate::GlobalNamespace::ObstacleController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObstacleController")]
+#[cfg(feature = "cordl_class_ObstacleController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObstacleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -923,7 +923,7 @@ for crate::GlobalNamespace::ObstacleController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "ObstacleController+Pool")]
+#[cfg(feature = "cordl_class_ObstacleController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleController_Pool {
@@ -934,7 +934,7 @@ pub struct ObstacleController_Pool {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "ObstacleController+Pool")]
+#[cfg(feature = "cordl_class_ObstacleController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObstacleController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -954,7 +954,7 @@ for crate::GlobalNamespace::ObstacleController_Pool {
         false
     }
 }
-#[cfg(feature = "ObstacleController+Pool")]
+#[cfg(feature = "cordl_class_ObstacleController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
@@ -963,7 +963,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ObstacleController_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObstacleController+Pool")]
+#[cfg(feature = "cordl_class_ObstacleController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1028,7 +1028,7 @@ impl crate::GlobalNamespace::ObstacleController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObstacleController+Pool")]
+#[cfg(feature = "cordl_class_ObstacleController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObstacleController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

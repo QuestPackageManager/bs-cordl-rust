@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Interface+ValidationResult")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+ValidationResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationResult {
@@ -10,7 +10,7 @@ pub struct ValidationResult {
         crate::Mono::Security::Interface::MonoSslPolicyErrors,
     >,
 }
-#[cfg(feature = "Mono+Security+Interface+ValidationResult")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+ValidationResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Interface::ValidationResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Mono::Security::Interface::ValidationResult {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Interface+ValidationResult")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+ValidationResult")]
 impl std::ops::Deref for crate::Mono::Security::Interface::ValidationResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Interface+ValidationResult")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+ValidationResult")]
 impl std::ops::DerefMut for crate::Mono::Security::Interface::ValidationResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -136,7 +136,7 @@ impl crate::Mono::Security::Interface::ValidationResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Interface+ValidationResult")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+ValidationResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Interface::ValidationResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,15 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryDataProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
     pub _IgnoreFailures_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -33,7 +39,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -178,7 +186,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -189,7 +199,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -210,7 +220,7 @@ pub struct BinaryDataProvider_InternalOp {
     pub m_Timeout: i32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider_InternalOp {
@@ -232,7 +242,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider_InternalOp {
@@ -242,7 +252,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider_InternalOp {
@@ -496,7 +506,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider_InternalOp {

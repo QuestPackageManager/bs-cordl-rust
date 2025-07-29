@@ -1,4 +1,4 @@
-#[cfg(feature = "System+TypeSpec")]
+#[cfg(feature = "cordl_class_System+TypeSpec")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeSpec {
@@ -23,7 +23,7 @@ pub struct TypeSpec {
     pub is_byref: bool,
     pub display_fullname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+TypeSpec")]
+#[cfg(feature = "cordl_class_System+TypeSpec")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeSpec {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeSpec {
         false
     }
 }
-#[cfg(feature = "System+TypeSpec")]
+#[cfg(feature = "cordl_class_System+TypeSpec")]
 impl std::ops::Deref for crate::System::TypeSpec {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+TypeSpec")]
+#[cfg(feature = "cordl_class_System+TypeSpec")]
 impl std::ops::DerefMut for crate::System::TypeSpec {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -496,7 +496,7 @@ impl crate::System::TypeSpec {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TypeSpec")]
+#[cfg(feature = "cordl_class_System+TypeSpec")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TypeSpec {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -505,7 +505,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeSpec {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
+#[cfg(feature = "cordl_class_System+TypeSpec+DisplayNameFormat")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeSpec_DisplayNameFormat {
@@ -514,7 +514,7 @@ pub enum TypeSpec_DisplayNameFormat {
     NO_MODIFIERS = 2i32,
     WANT_ASSEMBLY = 1i32,
 }
-#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
+#[cfg(feature = "cordl_class_System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeSpec_DisplayNameFormat {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -543,7 +543,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeSpec_DisplayNameF
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
+#[cfg(feature = "cordl_class_System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::TypeSpec_DisplayNameFormat {
     type Type = Self;
@@ -554,7 +554,7 @@ for crate::System::TypeSpec_DisplayNameFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
+#[cfg(feature = "cordl_class_System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::TypeSpec_DisplayNameFormat {
     type Actual = Self;
@@ -568,7 +568,7 @@ for crate::System::TypeSpec_DisplayNameFormat {
         self
     }
 }
-#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
+#[cfg(feature = "cordl_class_System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::TypeSpec_DisplayNameFormat {
     type Type = Self;
@@ -583,7 +583,7 @@ for crate::System::TypeSpec_DisplayNameFormat {
         }
     }
 }
-#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
+#[cfg(feature = "cordl_class_System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TypeSpec_DisplayNameFormat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

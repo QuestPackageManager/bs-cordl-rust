@@ -1,10 +1,10 @@
-#[cfg(feature = "System+DateTimeParse")]
+#[cfg(feature = "cordl_class_System+DateTimeParse")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeParse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+DateTimeParse")]
+#[cfg(feature = "cordl_class_System+DateTimeParse")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse {
         false
     }
 }
-#[cfg(feature = "System+DateTimeParse")]
+#[cfg(feature = "cordl_class_System+DateTimeParse")]
 impl std::ops::Deref for crate::System::DateTimeParse {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+DateTimeParse")]
+#[cfg(feature = "cordl_class_System+DateTimeParse")]
 impl std::ops::DerefMut for crate::System::DateTimeParse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2933,7 +2933,7 @@ impl crate::System::DateTimeParse {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+DateTimeParse")]
+#[cfg(feature = "cordl_class_System+DateTimeParse")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::DateTimeParse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2942,7 +2942,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DateTimeParse {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+DateTimeParse+DS")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DS")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeParse_DS {
@@ -2987,7 +2987,7 @@ pub enum DateTimeParse_DS {
     T_Nt = 18i32,
     T_S = 17i32,
 }
-#[cfg(feature = "System+DateTimeParse+DS")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_DS {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3016,7 +3016,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_DS {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+DateTimeParse+DS")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_DS {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3026,7 +3026,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_DS 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+DateTimeParse+DS")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_DS {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3039,7 +3039,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_DS
         self
     }
 }
-#[cfg(feature = "System+DateTimeParse+DS")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_DS {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3053,7 +3053,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_DS 
         }
     }
 }
-#[cfg(feature = "System+DateTimeParse+DS")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_DS {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3066,7 +3066,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_DS {
         actual
     }
 }
-#[cfg(feature = "System+DateTimeParse+DTT")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DTT")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeParse_DTT {
@@ -3093,7 +3093,7 @@ pub enum DateTimeParse_DTT {
     YearEnd = 14i32,
     YearSpace = 12i32,
 }
-#[cfg(feature = "System+DateTimeParse+DTT")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_DTT {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3122,7 +3122,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_DTT {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+DateTimeParse+DTT")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_DTT {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3132,7 +3132,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_DTT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+DateTimeParse+DTT")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_DTT {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3145,7 +3145,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_DT
         self
     }
 }
-#[cfg(feature = "System+DateTimeParse+DTT")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_DTT {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3159,7 +3159,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_DTT
         }
     }
 }
-#[cfg(feature = "System+DateTimeParse+DTT")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_DTT {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3172,13 +3172,13 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_DTT {
         actual
     }
 }
-#[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+MatchNumberDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeParse_MatchNumberDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+MatchNumberDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::DateTimeParse_MatchNumberDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3198,14 +3198,14 @@ for crate::System::DateTimeParse_MatchNumberDelegate {
         false
     }
 }
-#[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+MatchNumberDelegate")]
 impl std::ops::Deref for crate::System::DateTimeParse_MatchNumberDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+MatchNumberDelegate")]
 impl std::ops::DerefMut for crate::System::DateTimeParse_MatchNumberDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3288,7 +3288,7 @@ impl crate::System::DateTimeParse_MatchNumberDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+MatchNumberDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::DateTimeParse_MatchNumberDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3298,7 +3298,7 @@ for crate::System::DateTimeParse_MatchNumberDelegate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+DateTimeParse+TM")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+TM")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeParse_TM {
@@ -3307,7 +3307,7 @@ pub enum DateTimeParse_TM {
     NotSet = -1i32,
     PM = 1i32,
 }
-#[cfg(feature = "System+DateTimeParse+TM")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_TM {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3336,7 +3336,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_TM {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+DateTimeParse+TM")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_TM {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3346,7 +3346,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_TM 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+DateTimeParse+TM")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_TM {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3359,7 +3359,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_TM
         self
     }
 }
-#[cfg(feature = "System+DateTimeParse+TM")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_TM {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3373,7 +3373,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_TM 
         }
     }
 }
-#[cfg(feature = "System+DateTimeParse+TM")]
+#[cfg(feature = "cordl_class_System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_TM {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

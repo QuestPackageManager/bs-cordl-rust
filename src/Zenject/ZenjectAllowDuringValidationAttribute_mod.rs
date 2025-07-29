@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+ZenjectAllowDuringValidationAttribute")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectAllowDuringValidationAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectAllowDuringValidationAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Zenject+ZenjectAllowDuringValidationAttribute")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectAllowDuringValidationAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::ZenjectAllowDuringValidationAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Zenject::ZenjectAllowDuringValidationAttribute {
         false
     }
 }
-#[cfg(feature = "Zenject+ZenjectAllowDuringValidationAttribute")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectAllowDuringValidationAttribute")]
 impl std::ops::Deref for crate::Zenject::ZenjectAllowDuringValidationAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ZenjectAllowDuringValidationAttribute")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectAllowDuringValidationAttribute")]
 impl std::ops::DerefMut for crate::Zenject::ZenjectAllowDuringValidationAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Zenject::ZenjectAllowDuringValidationAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ZenjectAllowDuringValidationAttribute")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectAllowDuringValidationAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::ZenjectAllowDuringValidationAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

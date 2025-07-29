@@ -1,4 +1,4 @@
-#[cfg(feature = "StartupErrorNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StartupErrorNoTransitionInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StartupErrorNoTransitionInstaller {
@@ -10,7 +10,7 @@ pub struct StartupErrorNoTransitionInstaller {
         crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
     >,
 }
-#[cfg(feature = "StartupErrorNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StartupErrorNoTransitionInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
         false
     }
 }
-#[cfg(feature = "StartupErrorNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StartupErrorNoTransitionInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StartupErrorNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StartupErrorNoTransitionInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StartupErrorNoTransitionInstaller")]
+#[cfg(feature = "cordl_class_StartupErrorNoTransitionInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

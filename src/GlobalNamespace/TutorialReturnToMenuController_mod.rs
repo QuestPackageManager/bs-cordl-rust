@@ -1,4 +1,4 @@
-#[cfg(feature = "TutorialReturnToMenuController")]
+#[cfg(feature = "cordl_class_TutorialReturnToMenuController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialReturnToMenuController {
@@ -7,7 +7,7 @@ pub struct TutorialReturnToMenuController {
         crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
     >,
 }
-#[cfg(feature = "TutorialReturnToMenuController")]
+#[cfg(feature = "cordl_class_TutorialReturnToMenuController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TutorialReturnToMenuController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::TutorialReturnToMenuController {
         false
     }
 }
-#[cfg(feature = "TutorialReturnToMenuController")]
+#[cfg(feature = "cordl_class_TutorialReturnToMenuController")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialReturnToMenuController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TutorialReturnToMenuController")]
+#[cfg(feature = "cordl_class_TutorialReturnToMenuController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialReturnToMenuController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::TutorialReturnToMenuController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TutorialReturnToMenuController")]
+#[cfg(feature = "cordl_class_TutorialReturnToMenuController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TutorialReturnToMenuController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

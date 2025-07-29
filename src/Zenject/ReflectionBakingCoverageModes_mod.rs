@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ReflectionBakingCoverageModes")]
+#[cfg(feature = "cordl_class_Zenject+ReflectionBakingCoverageModes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionBakingCoverageModes {
@@ -7,7 +7,7 @@ pub enum ReflectionBakingCoverageModes {
     FallbackToDirectReflectionWithWarning = 2i32,
     NoCheckAssumeFullCoverage = 1i32,
 }
-#[cfg(feature = "Zenject+ReflectionBakingCoverageModes")]
+#[cfg(feature = "cordl_class_Zenject+ReflectionBakingCoverageModes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::ReflectionBakingCoverageModes {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Zenject::ReflectionBakingCoverageModes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+ReflectionBakingCoverageModes")]
+#[cfg(feature = "cordl_class_Zenject+ReflectionBakingCoverageModes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::ReflectionBakingCoverageModes {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Zenject::ReflectionBakingCoverageModes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+ReflectionBakingCoverageModes")]
+#[cfg(feature = "cordl_class_Zenject+ReflectionBakingCoverageModes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::ReflectionBakingCoverageModes {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Zenject::ReflectionBakingCoverageModes {
         self
     }
 }
-#[cfg(feature = "Zenject+ReflectionBakingCoverageModes")]
+#[cfg(feature = "cordl_class_Zenject+ReflectionBakingCoverageModes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::ReflectionBakingCoverageModes {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Zenject::ReflectionBakingCoverageModes {
         }
     }
 }
-#[cfg(feature = "Zenject+ReflectionBakingCoverageModes")]
+#[cfg(feature = "cordl_class_Zenject+ReflectionBakingCoverageModes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::ReflectionBakingCoverageModes {
     type Actual = Self;

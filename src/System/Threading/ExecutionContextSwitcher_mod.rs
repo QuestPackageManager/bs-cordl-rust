@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExecutionContextSwitcher {
@@ -7,7 +7,7 @@ pub struct ExecutionContextSwitcher {
     pub hecsw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub thread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
 }
-#[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ExecutionContextSwitcher {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Threading::ExecutionContextSwitcher {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ExecutionContextSwitcher {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Threading::ExecutionContextSwitcher {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ExecutionContextSwitcher {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Threading::ExecutionContextSwitcher {
         self
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ExecutionContextSwitcher {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Threading::ExecutionContextSwitcher {
         }
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ExecutionContextSwitcher {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::System::Threading::ExecutionContextSwitcher {
         actual
     }
 }
-#[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
+#[cfg(feature = "cordl_class_System+Threading+ExecutionContextSwitcher")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::ExecutionContextSwitcher {
     type Type = Self;

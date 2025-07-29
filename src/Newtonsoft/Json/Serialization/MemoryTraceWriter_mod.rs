@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+MemoryTraceWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryTraceWriter {
@@ -11,7 +11,7 @@ pub struct MemoryTraceWriter {
     pub _lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _LevelFilter_k__BackingField: crate::System::Diagnostics::TraceLevel,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+MemoryTraceWriter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+MemoryTraceWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+MemoryTraceWriter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -226,7 +226,7 @@ impl crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+MemoryTraceWriter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

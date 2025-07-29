@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchFlags")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TouchFlags {
@@ -10,7 +10,7 @@ pub enum TouchFlags {
     TapPress = 16u8,
     TapRelease = 32u8,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::TouchFlags {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+TryFaultHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+TryFaultHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TryFaultHandler {
@@ -8,7 +8,7 @@ pub struct TryFaultHandler {
     pub FinallyStartIndex: i32,
     pub FinallyEndIndex: i32,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+TryFaultHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+TryFaultHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::TryFaultHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Linq::Expressions::Interpreter::TryFaultHandler {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+TryFaultHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+TryFaultHandler")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::TryFaultHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+TryFaultHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+TryFaultHandler")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::TryFaultHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -87,7 +87,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryFaultHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+TryFaultHandler")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+TryFaultHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::TryFaultHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

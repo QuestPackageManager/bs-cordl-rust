@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchPressControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchPressControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchPressControl {
     __cordl_parent: crate::UnityEngine::InputSystem::Controls::ButtonControl,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchPressControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchPressControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::TouchPressControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Controls::TouchPressControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchPressControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchPressControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::TouchPressControl {
     type Target = crate::UnityEngine::InputSystem::Controls::ButtonControl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchPressControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchPressControl")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Controls::TouchPressControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -152,7 +152,7 @@ impl crate::UnityEngine::InputSystem::Controls::TouchPressControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchPressControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchPressControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::TouchPressControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

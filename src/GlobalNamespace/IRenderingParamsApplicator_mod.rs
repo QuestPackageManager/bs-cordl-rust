@@ -1,10 +1,10 @@
-#[cfg(feature = "IRenderingParamsApplicator")]
+#[cfg(feature = "cordl_class_IRenderingParamsApplicator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IRenderingParamsApplicator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IRenderingParamsApplicator")]
+#[cfg(feature = "cordl_class_IRenderingParamsApplicator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IRenderingParamsApplicator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IRenderingParamsApplicator {
         false
     }
 }
-#[cfg(feature = "IRenderingParamsApplicator")]
+#[cfg(feature = "cordl_class_IRenderingParamsApplicator")]
 impl std::ops::Deref for crate::GlobalNamespace::IRenderingParamsApplicator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IRenderingParamsApplicator")]
+#[cfg(feature = "cordl_class_IRenderingParamsApplicator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IRenderingParamsApplicator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::IRenderingParamsApplicator {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IRenderingParamsApplicator")]
+#[cfg(feature = "cordl_class_IRenderingParamsApplicator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IRenderingParamsApplicator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

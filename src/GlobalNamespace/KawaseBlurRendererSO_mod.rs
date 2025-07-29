@@ -1,4 +1,4 @@
-#[cfg(feature = "KawaseBlurRendererSO")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KawaseBlurRendererSO {
@@ -28,7 +28,7 @@ pub struct KawaseBlurRendererSO {
         >,
     >,
 }
-#[cfg(feature = "KawaseBlurRendererSO")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::KawaseBlurRendererSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,14 +48,14 @@ for crate::GlobalNamespace::KawaseBlurRendererSO {
         false
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO")]
 impl std::ops::Deref for crate::GlobalNamespace::KawaseBlurRendererSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::KawaseBlurRendererSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -510,7 +510,7 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::KawaseBlurRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -519,7 +519,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::KawaseBlurRen
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+BloomKernel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KawaseBlurRendererSO_BloomKernel {
@@ -527,7 +527,7 @@ pub struct KawaseBlurRendererSO_BloomKernel {
     pub kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
     pub sharedPartWithNext: i32,
 }
-#[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+BloomKernel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -547,14 +547,14 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
         false
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+BloomKernel")]
 impl std::ops::Deref for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+BloomKernel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -591,7 +591,7 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+BloomKernel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -601,7 +601,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KawaseBlurRendererSO_KernelSize {
@@ -615,7 +615,7 @@ pub enum KawaseBlurRendererSO_KernelSize {
     Kernel63 = 4i32,
     Kernel7 = 0i32,
 }
-#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Held<'a> = Self;
@@ -645,7 +645,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Type = Self;
@@ -656,7 +656,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Actual = Self;
@@ -670,7 +670,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
         self
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Type = Self;
@@ -685,7 +685,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
         }
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Actual = Self;
@@ -699,7 +699,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
         actual
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+Pass")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KawaseBlurRendererSO_Pass {
@@ -712,7 +712,7 @@ pub enum KawaseBlurRendererSO_Pass {
     BlurGammaAndAdd = 6i32,
     BlurWithAlphaWeights = 3i32,
 }
-#[cfg(feature = "KawaseBlurRendererSO+Pass")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Held<'a> = Self;
@@ -742,7 +742,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+Pass")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Type = Self;
@@ -753,7 +753,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+Pass")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Actual = Self;
@@ -767,7 +767,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
         self
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+Pass")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Type = Self;
@@ -782,7 +782,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
         }
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+Pass")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Actual = Self;
@@ -796,7 +796,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
         actual
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KawaseBlurRendererSO_WeightsType {
@@ -805,7 +805,7 @@ pub enum KawaseBlurRendererSO_WeightsType {
     AlphaWeights = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Held<'a> = Self;
@@ -835,7 +835,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Type = Self;
@@ -846,7 +846,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Actual = Self;
@@ -860,7 +860,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
         self
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Type = Self;
@@ -875,7 +875,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
         }
     }
 }
-#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
+#[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Actual = Self;

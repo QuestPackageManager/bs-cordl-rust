@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+CollectionConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }
-#[cfg(feature = "System+ComponentModel+CollectionConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::CollectionConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::CollectionConverter {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+CollectionConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::CollectionConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+CollectionConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::CollectionConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -199,7 +199,7 @@ impl crate::System::ComponentModel::CollectionConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+CollectionConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::CollectionConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

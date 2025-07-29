@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::InputProcessor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -194,7 +194,7 @@ impl crate::UnityEngine::InputSystem::InputProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -204,7 +204,7 @@ for crate::UnityEngine::InputSystem::InputProcessor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputProcessor_CachingPolicy {
@@ -212,7 +212,7 @@ pub enum InputProcessor_CachingPolicy {
     CacheResult = 0i32,
     EvaluateOnEveryRead = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Held<'a> = Self;
@@ -242,7 +242,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Type = Self;
@@ -253,7 +253,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Actual = Self;
@@ -267,7 +267,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Type = Self;
@@ -282,7 +282,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Actual = Self;

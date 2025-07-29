@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Color32")]
+#[cfg(feature = "cordl_class_UnityEngine+Color32")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Color32 {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
-#[cfg(feature = "UnityEngine+Color32")]
+#[cfg(feature = "cordl_class_UnityEngine+Color32")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Color32 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Color32 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Color32")]
+#[cfg(feature = "cordl_class_UnityEngine+Color32")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Color32 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Color32 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Color32")]
+#[cfg(feature = "cordl_class_UnityEngine+Color32")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Color32 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Color32 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Color32")]
+#[cfg(feature = "cordl_class_UnityEngine+Color32")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Color32 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Color32 {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Color32")]
+#[cfg(feature = "cordl_class_UnityEngine+Color32")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Color32 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Color32 {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Color32")]
+#[cfg(feature = "cordl_class_UnityEngine+Color32")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Color32 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

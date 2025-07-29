@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+TextAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextAsset {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+TextAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset")]
 impl std::ops::Deref for crate::UnityEngine::TextAsset {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::TextAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -433,7 +433,7 @@ impl crate::UnityEngine::TextAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -442,7 +442,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+CreateOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextAsset_CreateOptions {
@@ -450,7 +450,7 @@ pub enum TextAsset_CreateOptions {
     CreateNativeObject = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextAsset_CreateOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -479,7 +479,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextAsset_Create
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextAsset_CreateOptions {
     type Type = Self;
@@ -490,7 +490,7 @@ for crate::UnityEngine::TextAsset_CreateOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextAsset_CreateOptions {
     type Actual = Self;
@@ -504,7 +504,7 @@ for crate::UnityEngine::TextAsset_CreateOptions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextAsset_CreateOptions {
     type Type = Self;
@@ -519,7 +519,7 @@ for crate::UnityEngine::TextAsset_CreateOptions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextAsset_CreateOptions {
     type Actual = Self;
@@ -533,13 +533,13 @@ for crate::UnityEngine::TextAsset_CreateOptions {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+EncodingUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextAsset_EncodingUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+EncodingUtility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextAsset_EncodingUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -559,14 +559,14 @@ for crate::UnityEngine::TextAsset_EncodingUtility {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+EncodingUtility")]
 impl std::ops::Deref for crate::UnityEngine::TextAsset_EncodingUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+EncodingUtility")]
 impl std::ops::DerefMut for crate::UnityEngine::TextAsset_EncodingUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -574,7 +574,7 @@ impl std::ops::DerefMut for crate::UnityEngine::TextAsset_EncodingUtility {
 }
 #[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
 impl crate::UnityEngine::TextAsset_EncodingUtility {}
-#[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+TextAsset+EncodingUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextAsset_EncodingUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

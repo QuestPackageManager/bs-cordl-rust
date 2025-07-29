@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ArgInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ArgInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArgInfo {
@@ -7,7 +7,7 @@ pub struct ArgInfo {
     pub _inoutArgCount: i32,
     pub _method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ArgInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ArgInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::ArgInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Runtime::Remoting::Messaging::ArgInfo {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ArgInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ArgInfo")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::ArgInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ArgInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ArgInfo")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::ArgInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -135,7 +135,7 @@ impl crate::System::Runtime::Remoting::Messaging::ArgInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ArgInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ArgInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::ArgInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

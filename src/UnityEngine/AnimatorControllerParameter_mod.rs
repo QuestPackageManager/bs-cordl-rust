@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AnimatorControllerParameter")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatorControllerParameter {
@@ -9,7 +9,7 @@ pub struct AnimatorControllerParameter {
     pub m_DefaultInt: i32,
     pub m_DefaultBool: bool,
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameter")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AnimatorControllerParameter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::UnityEngine::AnimatorControllerParameter {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameter")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameter")]
 impl std::ops::Deref for crate::UnityEngine::AnimatorControllerParameter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameter")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameter")]
 impl std::ops::DerefMut for crate::UnityEngine::AnimatorControllerParameter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -143,7 +143,7 @@ impl crate::UnityEngine::AnimatorControllerParameter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameter")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AnimatorControllerParameter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

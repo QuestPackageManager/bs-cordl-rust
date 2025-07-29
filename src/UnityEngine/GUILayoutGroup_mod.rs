@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+GUILayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUILayoutGroup {
@@ -28,7 +28,7 @@ pub struct GUILayoutGroup {
     pub m_MarginTop: i32,
     pub m_MarginBottom: i32,
 }
-#[cfg(feature = "UnityEngine+GUILayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUILayoutGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUILayoutGroup {
         false
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutGroup")]
 impl std::ops::Deref for crate::UnityEngine::GUILayoutGroup {
     type Target = crate::UnityEngine::GUILayoutEntry;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::GUILayoutGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -422,7 +422,7 @@ impl crate::UnityEngine::GUILayoutGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUILayoutGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

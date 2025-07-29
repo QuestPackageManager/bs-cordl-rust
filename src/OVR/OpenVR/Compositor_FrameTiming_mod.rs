@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+Compositor_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_FrameTiming")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Compositor_FrameTiming {
@@ -27,7 +27,7 @@ pub struct Compositor_FrameTiming {
     pub m_flCompositorRenderStartMs: f32,
     pub m_HmdPose: crate::OVR::OpenVR::TrackedDevicePose_t,
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::Compositor_FrameTiming {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::Compositor_Frame
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::Compositor_FrameTiming {
     type Type = Self;
@@ -67,7 +67,7 @@ for crate::OVR::OpenVR::Compositor_FrameTiming {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::Compositor_FrameTiming {
     type Actual = Self;
@@ -81,7 +81,7 @@ for crate::OVR::OpenVR::Compositor_FrameTiming {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::Compositor_FrameTiming {
     type Type = Self;
@@ -96,7 +96,7 @@ for crate::OVR::OpenVR::Compositor_FrameTiming {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::Compositor_FrameTiming {
     type Actual = Self;
@@ -110,7 +110,7 @@ for crate::OVR::OpenVR::Compositor_FrameTiming {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_FrameTiming")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::Compositor_FrameTiming {
     type Type = Self;

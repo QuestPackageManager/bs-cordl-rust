@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventInterests")]
+#[cfg(feature = "cordl_class_UnityEngine+EventInterests")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventInterests {
@@ -6,7 +6,7 @@ pub struct EventInterests {
     pub _wantsMouseEnterLeaveWindow_k__BackingField: bool,
     pub _wantsLessLayoutEvents_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+EventInterests")]
+#[cfg(feature = "cordl_class_UnityEngine+EventInterests")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::EventInterests {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::EventInterests {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventInterests")]
+#[cfg(feature = "cordl_class_UnityEngine+EventInterests")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::EventInterests {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::EventInteres
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventInterests")]
+#[cfg(feature = "cordl_class_UnityEngine+EventInterests")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::EventInterests {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::EventIntere
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventInterests")]
+#[cfg(feature = "cordl_class_UnityEngine+EventInterests")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::EventInterests {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::EventInteres
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventInterests")]
+#[cfg(feature = "cordl_class_UnityEngine+EventInterests")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::EventInterests {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::EventInterests
         actual
     }
 }
-#[cfg(feature = "UnityEngine+EventInterests")]
+#[cfg(feature = "cordl_class_UnityEngine+EventInterests")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::EventInterests {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionSO {
@@ -21,7 +21,7 @@ pub struct EnvironmentTracksDefinitionSO {
         >,
     >,
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
         false
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -49,7 +49,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -222,7 +222,7 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -233,7 +233,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -248,7 +248,7 @@ pub struct EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
     pub _basicEventTrackPage: crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
@@ -270,7 +270,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
@@ -280,7 +280,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
@@ -459,7 +459,7 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEven
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
@@ -471,7 +471,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -482,7 +482,7 @@ pub enum EnvironmentTracksDefinitionSO_BasicEventTrackPage {
     Page2 = 1i32,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
@@ -514,7 +514,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
@@ -527,7 +527,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
@@ -543,7 +543,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
@@ -560,7 +560,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
@@ -576,7 +576,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -594,7 +594,7 @@ pub struct EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
     >,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
@@ -616,7 +616,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
@@ -626,7 +626,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
@@ -738,7 +738,7 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxG
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
@@ -750,7 +750,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -779,7 +779,7 @@ pub struct EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
     >,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
@@ -801,7 +801,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
@@ -811,7 +811,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
@@ -1241,7 +1241,7 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxG
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
@@ -1253,7 +1253,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -1265,7 +1265,7 @@ pub enum EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
     Z = 3i32,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
@@ -1297,7 +1297,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
@@ -1310,7 +1310,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
@@ -1326,7 +1326,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
@@ -1343,7 +1343,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {

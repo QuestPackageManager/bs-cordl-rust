@@ -1,4 +1,4 @@
-#[cfg(feature = "TrackLaneRingsRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackLaneRingsRotationEffect {
@@ -28,7 +28,7 @@ pub struct TrackLaneRingsRotationEffect {
         crate::System::Collections::Generic::List_1<i32>,
     >,
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,14 +48,14 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
         false
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -292,7 +292,7 @@ impl crate::GlobalNamespace::TrackLaneRingsRotationEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect+RingRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect+RingRotationEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackLaneRingsRotationEffect_RingRotationEffect {
@@ -313,7 +313,7 @@ pub struct TrackLaneRingsRotationEffect_RingRotationEffect {
     pub rotationPropagationSpeed: i32,
     pub progressPos: i32,
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect+RingRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect+RingRotationEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -333,7 +333,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect {
         false
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect+RingRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect+RingRotationEffect")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -341,7 +341,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect+RingRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect+RingRotationEffect")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -379,7 +379,7 @@ impl crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffect+RingRotationEffect")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect+RingRotationEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

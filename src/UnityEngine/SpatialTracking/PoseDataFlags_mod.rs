@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+SpatialTracking+PoseDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+SpatialTracking+PoseDataFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PoseDataFlags {
@@ -7,7 +7,7 @@ pub enum PoseDataFlags {
     Position = 1i32,
     Rotation = 2i32,
 }
-#[cfg(feature = "UnityEngine+SpatialTracking+PoseDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+SpatialTracking+PoseDataFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::SpatialTracking::PoseDataFlags {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::SpatialTracking::PoseDataFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SpatialTracking+PoseDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+SpatialTracking+PoseDataFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SpatialTracking::PoseDataFlags {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::SpatialTracking::PoseDataFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SpatialTracking+PoseDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+SpatialTracking+PoseDataFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SpatialTracking::PoseDataFlags {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::SpatialTracking::PoseDataFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+SpatialTracking+PoseDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+SpatialTracking+PoseDataFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SpatialTracking::PoseDataFlags {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::SpatialTracking::PoseDataFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+SpatialTracking+PoseDataFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+SpatialTracking+PoseDataFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SpatialTracking::PoseDataFlags {
     type Actual = Self;

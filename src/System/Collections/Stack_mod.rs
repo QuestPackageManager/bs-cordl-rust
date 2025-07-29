@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Stack")]
+#[cfg(feature = "cordl_class_System+Collections+Stack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stack {
@@ -12,7 +12,7 @@ pub struct Stack {
     pub _version: i32,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+Stack")]
+#[cfg(feature = "cordl_class_System+Collections+Stack")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::Stack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::Stack {
         false
     }
 }
-#[cfg(feature = "System+Collections+Stack")]
+#[cfg(feature = "cordl_class_System+Collections+Stack")]
 impl std::ops::Deref for crate::System::Collections::Stack {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Stack")]
+#[cfg(feature = "cordl_class_System+Collections+Stack")]
 impl std::ops::DerefMut for crate::System::Collections::Stack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -356,7 +356,7 @@ impl crate::System::Collections::Stack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Stack")]
+#[cfg(feature = "cordl_class_System+Collections+Stack")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Stack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -405,13 +405,13 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::Stack {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Stack+StackDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackDebugView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stack_StackDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Collections+Stack+StackDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackDebugView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Stack_StackDebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -431,14 +431,14 @@ for crate::System::Collections::Stack_StackDebugView {
         false
     }
 }
-#[cfg(feature = "System+Collections+Stack+StackDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackDebugView")]
 impl std::ops::Deref for crate::System::Collections::Stack_StackDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Stack+StackDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackDebugView")]
 impl std::ops::DerefMut for crate::System::Collections::Stack_StackDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -446,7 +446,7 @@ impl std::ops::DerefMut for crate::System::Collections::Stack_StackDebugView {
 }
 #[cfg(feature = "System+Collections+Stack+StackDebugView")]
 impl crate::System::Collections::Stack_StackDebugView {}
-#[cfg(feature = "System+Collections+Stack+StackDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackDebugView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Stack_StackDebugView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -456,7 +456,7 @@ for crate::System::Collections::Stack_StackDebugView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Collections+Stack+StackEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stack_StackEnumerator {
@@ -466,7 +466,7 @@ pub struct Stack_StackEnumerator {
     pub _version: i32,
     pub _currentElement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+Stack+StackEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Stack_StackEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -486,14 +486,14 @@ for crate::System::Collections::Stack_StackEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Collections+Stack+StackEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackEnumerator")]
 impl std::ops::Deref for crate::System::Collections::Stack_StackEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Stack+StackEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackEnumerator")]
 impl std::ops::DerefMut for crate::System::Collections::Stack_StackEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -629,7 +629,7 @@ impl crate::System::Collections::Stack_StackEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Stack+StackEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Stack+StackEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Stack_StackEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

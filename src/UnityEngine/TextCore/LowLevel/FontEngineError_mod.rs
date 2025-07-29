@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineError")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontEngineError")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FontEngineError {
@@ -19,7 +19,7 @@ pub enum FontEngineError {
     OpenTypeLayoutLookup_Mismatch = 116i32,
     Success = 0i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineError")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontEngineError")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
     type Held<'a> = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineError")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontEngineError")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
     type Type = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineError")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontEngineError")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
     type Actual = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineError")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontEngineError")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
     type Type = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineError")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+FontEngineError")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::FontEngineError {
     type Actual = Self;

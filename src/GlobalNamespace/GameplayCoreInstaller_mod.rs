@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayCoreInstaller")]
+#[cfg(feature = "cordl_class_GameplayCoreInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayCoreInstaller {
@@ -42,7 +42,7 @@ pub struct GameplayCoreInstaller {
         crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
     >,
 }
-#[cfg(feature = "GameplayCoreInstaller")]
+#[cfg(feature = "cordl_class_GameplayCoreInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayCoreInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -62,14 +62,14 @@ for crate::GlobalNamespace::GameplayCoreInstaller {
         false
     }
 }
-#[cfg(feature = "GameplayCoreInstaller")]
+#[cfg(feature = "cordl_class_GameplayCoreInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayCoreInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplayCoreInstaller")]
+#[cfg(feature = "cordl_class_GameplayCoreInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayCoreInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::GameplayCoreInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplayCoreInstaller")]
+#[cfg(feature = "cordl_class_GameplayCoreInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayCoreInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

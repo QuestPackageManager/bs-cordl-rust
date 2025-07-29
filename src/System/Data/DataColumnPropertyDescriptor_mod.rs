@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataColumnPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataColumnPropertyDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataColumnPropertyDescriptor {
@@ -7,7 +7,7 @@ pub struct DataColumnPropertyDescriptor {
         crate::System::Data::DataColumn,
     >,
 }
-#[cfg(feature = "System+Data+DataColumnPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataColumnPropertyDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::DataColumnPropertyDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Data::DataColumnPropertyDescriptor {
         false
     }
 }
-#[cfg(feature = "System+Data+DataColumnPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataColumnPropertyDescriptor")]
 impl std::ops::Deref for crate::System::Data::DataColumnPropertyDescriptor {
     type Target = crate::System::ComponentModel::PropertyDescriptor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataColumnPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataColumnPropertyDescriptor")]
 impl std::ops::DerefMut for crate::System::Data::DataColumnPropertyDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -384,7 +384,7 @@ impl crate::System::Data::DataColumnPropertyDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataColumnPropertyDescriptor")]
+#[cfg(feature = "cordl_class_System+Data+DataColumnPropertyDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::DataColumnPropertyDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

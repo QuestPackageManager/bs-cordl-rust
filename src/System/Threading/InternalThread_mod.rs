@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+InternalThread")]
+#[cfg(feature = "cordl_class_System+Threading+InternalThread")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalThread {
@@ -50,7 +50,7 @@ pub struct InternalThread {
     pub netcore2: crate::System::IntPtr,
     pub last: crate::System::IntPtr,
 }
-#[cfg(feature = "System+Threading+InternalThread")]
+#[cfg(feature = "cordl_class_System+Threading+InternalThread")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::InternalThread {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -69,14 +69,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::InternalTh
         false
     }
 }
-#[cfg(feature = "System+Threading+InternalThread")]
+#[cfg(feature = "cordl_class_System+Threading+InternalThread")]
 impl std::ops::Deref for crate::System::Threading::InternalThread {
     type Target = crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+InternalThread")]
+#[cfg(feature = "cordl_class_System+Threading+InternalThread")]
 impl std::ops::DerefMut for crate::System::Threading::InternalThread {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::System::Threading::InternalThread {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+InternalThread")]
+#[cfg(feature = "cordl_class_System+Threading+InternalThread")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::InternalThread {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

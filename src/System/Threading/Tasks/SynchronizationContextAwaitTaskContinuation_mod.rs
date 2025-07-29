@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SynchronizationContextAwaitTaskContinuation {
@@ -7,7 +9,9 @@ pub struct SynchronizationContextAwaitTaskContinuation {
         crate::System::Threading::SynchronizationContext,
     >,
 }
-#[cfg(feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation"
+)]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation {
     type Target = crate::System::Threading::Tasks::AwaitTaskContinuation;
@@ -35,7 +41,9 @@ for crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation"
+)]
 impl std::ops::DerefMut
 for crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -180,7 +188,9 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

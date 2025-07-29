@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MetaRemoteAssetsManager {
@@ -26,7 +26,7 @@ pub struct MetaRemoteAssetsManager {
     >,
     pub didCatalogLoadOrUpdateEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         false
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 impl std::ops::Deref for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 impl std::ops::DerefMut for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -568,7 +568,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
+#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -607,7 +607,7 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     }
 }
 #[cfg(
-    feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
+    feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -622,7 +622,7 @@ pub struct MetaRemoteAssetsManager_AddResourceLocatorInput {
     >,
 }
 #[cfg(
-    feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
+    feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
@@ -644,7 +644,7 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorIn
     }
 }
 #[cfg(
-    feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
+    feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]
 impl std::ops::Deref
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
@@ -654,7 +654,7 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorIn
     }
 }
 #[cfg(
-    feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
+    feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]
 impl std::ops::DerefMut
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
@@ -726,7 +726,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorI
     }
 }
 #[cfg(
-    feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
+    feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {

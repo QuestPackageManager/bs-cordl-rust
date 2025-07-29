@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProofOfPossessionSigningKeyBuilder {
@@ -16,7 +16,7 @@ pub struct ProofOfPossessionSigningKeyBuilder {
         crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,7 +36,7 @@ for crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -44,7 +44,7 @@ for crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -248,7 +248,7 @@ impl crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

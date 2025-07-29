@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DiscreteTime")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DiscreteTime {
     pub m_DiscreteTime: i64,
 }
-#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DiscreteTime")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::DiscreteTime {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::Discre
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DiscreteTime")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::DiscreteTime {
     type Type = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::Timeline::DiscreteTime {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DiscreteTime")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::DiscreteTime {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::UnityEngine::Timeline::DiscreteTime {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DiscreteTime")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::DiscreteTime {
     type Type = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::Timeline::DiscreteTime {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DiscreteTime")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::DiscreteTime {
     type Actual = Self;
@@ -87,7 +87,7 @@ for crate::UnityEngine::Timeline::DiscreteTime {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DiscreteTime")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Timeline::DiscreteTime {
     type Type = Self;

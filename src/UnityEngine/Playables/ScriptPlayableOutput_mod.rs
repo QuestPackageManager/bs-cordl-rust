@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayableOutput")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ScriptPlayableOutput {
     pub m_Handle: crate::UnityEngine::Playables::PlayableOutputHandle,
 }
-#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Type = Self;

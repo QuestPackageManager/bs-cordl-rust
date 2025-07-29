@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XsdDuration")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XsdDuration {
@@ -10,7 +10,7 @@ pub struct XsdDuration {
     pub seconds: i32,
     pub nanoseconds: u32,
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XsdDuration {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XsdDurat
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Schema::XsdDuration {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Schema::XsdD
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdDuration {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Xml::Schema::XsdDuration {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Schema::XsdDuration {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Schema::XsdD
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Schema::XsdDuration {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Schema::XsdDur
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Schema::XsdDuration {
     type Type = Self;
@@ -680,7 +680,7 @@ impl crate::System::Xml::Schema::XsdDuration {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+DurationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdDuration_DurationType {
@@ -689,7 +689,7 @@ pub enum XsdDuration_DurationType {
     Duration = 0i32,
     YearMonthDuration = 1i32,
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+DurationType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdDuration_DurationType {
     type Held<'a> = Self;
@@ -719,7 +719,7 @@ for crate::System::Xml::Schema::XsdDuration_DurationType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+DurationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XsdDuration_DurationType {
     type Type = Self;
@@ -730,7 +730,7 @@ for crate::System::Xml::Schema::XsdDuration_DurationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+DurationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdDuration_DurationType {
     type Actual = Self;
@@ -744,7 +744,7 @@ for crate::System::Xml::Schema::XsdDuration_DurationType {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+DurationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XsdDuration_DurationType {
     type Type = Self;
@@ -759,7 +759,7 @@ for crate::System::Xml::Schema::XsdDuration_DurationType {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+DurationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XsdDuration_DurationType {
     type Actual = Self;
@@ -773,7 +773,7 @@ for crate::System::Xml::Schema::XsdDuration_DurationType {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+Parts")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdDuration_Parts {
@@ -786,7 +786,7 @@ pub enum XsdDuration_Parts {
     HasSeconds = 32i32,
     HasYears = 1i32,
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+Parts")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XsdDuration_Parts {
     type Held<'a> = Self;
@@ -816,7 +816,7 @@ for crate::System::Xml::Schema::XsdDuration_Parts {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+Parts")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XsdDuration_Parts {
     type Type = Self;
@@ -827,7 +827,7 @@ for crate::System::Xml::Schema::XsdDuration_Parts {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+Parts")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdDuration_Parts {
     type Actual = Self;
@@ -841,7 +841,7 @@ for crate::System::Xml::Schema::XsdDuration_Parts {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+Parts")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XsdDuration_Parts {
     type Type = Self;
@@ -856,7 +856,7 @@ for crate::System::Xml::Schema::XsdDuration_Parts {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+Parts")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XsdDuration_Parts {
     type Actual = Self;

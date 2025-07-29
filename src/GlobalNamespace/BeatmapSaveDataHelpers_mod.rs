@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapSaveDataHelpers")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapSaveDataHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapSaveDataHelpers")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapSaveDataHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapSaveDataHelpers {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataHelpers")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapSaveDataHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataHelpers")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapSaveDataHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::BeatmapSaveDataHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataHelpers")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapSaveDataHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -116,7 +116,7 @@ for crate::GlobalNamespace::BeatmapSaveDataHelpers {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers+VersionSerializedData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapSaveDataHelpers_VersionSerializedData {
@@ -124,7 +124,7 @@ pub struct BeatmapSaveDataHelpers_VersionSerializedData {
     pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers+VersionSerializedData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -144,7 +144,7 @@ for crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers+VersionSerializedData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -152,7 +152,7 @@ for crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers+VersionSerializedData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -217,7 +217,7 @@ impl crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataHelpers+VersionSerializedData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

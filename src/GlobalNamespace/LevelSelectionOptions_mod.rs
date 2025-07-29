@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelSelectionOptions")]
+#[cfg(feature = "cordl_class_LevelSelectionOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LevelSelectionOptions {
@@ -11,7 +11,7 @@ pub struct LevelSelectionOptions {
     pub sortAlphabetically: bool,
     pub isFiltered: bool,
 }
-#[cfg(feature = "LevelSelectionOptions")]
+#[cfg(feature = "cordl_class_LevelSelectionOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelSelectionOptions {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::LevelSelectionOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LevelSelectionOptions")]
+#[cfg(feature = "cordl_class_LevelSelectionOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelSelectionOptions {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::GlobalNamespace::LevelSelectionOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LevelSelectionOptions")]
+#[cfg(feature = "cordl_class_LevelSelectionOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelSelectionOptions {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::GlobalNamespace::LevelSelectionOptions {
         self
     }
 }
-#[cfg(feature = "LevelSelectionOptions")]
+#[cfg(feature = "cordl_class_LevelSelectionOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelSelectionOptions {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::GlobalNamespace::LevelSelectionOptions {
         }
     }
 }
-#[cfg(feature = "LevelSelectionOptions")]
+#[cfg(feature = "cordl_class_LevelSelectionOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelSelectionOptions {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::GlobalNamespace::LevelSelectionOptions {
         actual
     }
 }
-#[cfg(feature = "LevelSelectionOptions")]
+#[cfg(feature = "cordl_class_LevelSelectionOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::LevelSelectionOptions {
     type Type = Self;

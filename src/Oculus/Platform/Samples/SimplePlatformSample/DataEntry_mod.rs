@@ -1,11 +1,11 @@
-#[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub dataOutput: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
 }
-#[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -33,7 +33,7 @@ for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -877,7 +877,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+MotionVectorGenerationMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MotionVectorGenerationMode {
@@ -7,7 +7,7 @@ pub enum MotionVectorGenerationMode {
     ForceNoMotion = 2i32,
     Object = 1i32,
 }
-#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::MotionVectorGenerationMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::MotionVectorGenerationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::MotionVectorGenerationMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::MotionVectorGenerationMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
+#[cfg(feature = "cordl_class_UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Actual = Self;

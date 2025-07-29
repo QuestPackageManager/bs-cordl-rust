@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeVariables")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeVariables {
@@ -11,7 +11,7 @@ pub struct RuntimeVariables {
         >,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeVariables")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeVariables")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +39,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeVariables")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -145,7 +145,7 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeVariables")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

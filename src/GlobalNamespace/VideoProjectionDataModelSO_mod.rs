@@ -1,4 +1,4 @@
-#[cfg(feature = "VideoProjectionDataModelSO")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionDataModelSO {
@@ -11,7 +11,7 @@ pub struct VideoProjectionDataModelSO {
         >,
     >,
 }
-#[cfg(feature = "VideoProjectionDataModelSO")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VideoProjectionDataModelSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::VideoProjectionDataModelSO {
         false
     }
 }
-#[cfg(feature = "VideoProjectionDataModelSO")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionDataModelSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VideoProjectionDataModelSO")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VideoProjectionDataModelSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::VideoProjectionDataModelSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VideoProjectionDataModelSO")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VideoProjectionDataModelSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -130,7 +130,7 @@ for crate::GlobalNamespace::VideoProjectionDataModelSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO+VideoClipWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionDataModelSO_VideoClipWithId {
@@ -140,7 +140,7 @@ pub struct VideoProjectionDataModelSO_VideoClipWithId {
         crate::UnityEngine::AddressableAssets::AssetReference,
     >,
 }
-#[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO+VideoClipWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -160,7 +160,7 @@ for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
         false
     }
 }
-#[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO+VideoClipWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -168,7 +168,7 @@ for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO+VideoClipWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -252,7 +252,7 @@ impl crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
+#[cfg(feature = "cordl_class_VideoProjectionDataModelSO+VideoClipWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

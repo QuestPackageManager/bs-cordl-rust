@@ -1,4 +1,4 @@
-#[cfg(feature = "InputActions")]
+#[cfg(feature = "cordl_class_InputActions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActions {
@@ -7,7 +7,7 @@ pub struct InputActions {
         crate::GlobalNamespace::UIKeyboardManager,
     >,
 }
-#[cfg(feature = "InputActions")]
+#[cfg(feature = "cordl_class_InputActions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::InputActions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::InputActions
         false
     }
 }
-#[cfg(feature = "InputActions")]
+#[cfg(feature = "cordl_class_InputActions")]
 impl std::ops::Deref for crate::GlobalNamespace::InputActions {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "InputActions")]
+#[cfg(feature = "cordl_class_InputActions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::InputActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -203,7 +203,7 @@ impl crate::GlobalNamespace::InputActions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "InputActions")]
+#[cfg(feature = "cordl_class_InputActions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::InputActions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

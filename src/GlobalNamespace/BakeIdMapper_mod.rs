@@ -1,10 +1,10 @@
-#[cfg(feature = "BakeIdMapper")]
+#[cfg(feature = "cordl_class_BakeIdMapper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BakeIdMapper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "BakeIdMapper")]
+#[cfg(feature = "cordl_class_BakeIdMapper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BakeIdMapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BakeIdMapper
         false
     }
 }
-#[cfg(feature = "BakeIdMapper")]
+#[cfg(feature = "cordl_class_BakeIdMapper")]
 impl std::ops::Deref for crate::GlobalNamespace::BakeIdMapper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BakeIdMapper")]
+#[cfg(feature = "cordl_class_BakeIdMapper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BakeIdMapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::BakeIdMapper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BakeIdMapper")]
+#[cfg(feature = "cordl_class_BakeIdMapper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BakeIdMapper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

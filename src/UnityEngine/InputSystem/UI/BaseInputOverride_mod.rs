@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+BaseInputOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+BaseInputOverride")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseInputOverride {
@@ -7,7 +7,7 @@ pub struct BaseInputOverride {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+BaseInputOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+BaseInputOverride")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::BaseInputOverride {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::InputSystem::UI::BaseInputOverride {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+BaseInputOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+BaseInputOverride")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::BaseInputOverride {
     type Target = crate::UnityEngine::EventSystems::BaseInput;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+BaseInputOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+BaseInputOverride")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::UI::BaseInputOverride {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::UnityEngine::InputSystem::UI::BaseInputOverride {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+BaseInputOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+BaseInputOverride")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::UI::BaseInputOverride {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

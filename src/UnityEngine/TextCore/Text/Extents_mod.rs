@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+Extents")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Extents")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Extents {
     pub min: crate::UnityEngine::Vector2,
     pub max: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Extents")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Extents")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::Text::Extents {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::Text::
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Extents")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Extents")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::Extents {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::TextCore::Text::Extents {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Extents")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Extents")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::Extents {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::TextCore::Text::Extents {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Extents")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Extents")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::Extents {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::TextCore::Text::Extents {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Extents")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Extents")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::Extents {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::TextCore::Text::Extents {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Extents")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Extents")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::Extents {
     type Type = Self;

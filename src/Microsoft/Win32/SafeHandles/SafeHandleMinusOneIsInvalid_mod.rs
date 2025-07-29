@@ -1,10 +1,10 @@
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeHandleMinusOneIsInvalid {
     __cordl_parent: crate::System::Runtime::InteropServices::SafeHandle,
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
         false
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
 impl std::ops::Deref
 for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
     type Target = crate::System::Runtime::InteropServices::SafeHandle;
@@ -32,7 +32,7 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
 impl std::ops::DerefMut
 for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -90,7 +90,7 @@ impl crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
+#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+SavePersistentViewData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SavePersistentViewData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SavePersistentViewData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UIElements+SavePersistentViewData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SavePersistentViewData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::SavePersistentViewData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::SavePersistentViewData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SavePersistentViewData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SavePersistentViewData")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SavePersistentViewData {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SavePersistentViewData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SavePersistentViewData")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::SavePersistentViewData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -103,7 +103,7 @@ impl crate::UnityEngine::UIElements::SavePersistentViewData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SavePersistentViewData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SavePersistentViewData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::SavePersistentViewData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

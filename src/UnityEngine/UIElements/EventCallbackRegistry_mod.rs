@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EventCallbackRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackRegistry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCallbackRegistry {
@@ -11,7 +11,7 @@ pub struct EventCallbackRegistry {
     >,
     pub m_IsInvoking: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallbackRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackRegistry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventCallbackRegistry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::UnityEngine::UIElements::EventCallbackRegistry {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallbackRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackRegistry")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventCallbackRegistry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallbackRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackRegistry")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventCallbackRegistry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -427,7 +427,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallbackRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackRegistry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EventCallbackRegistry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

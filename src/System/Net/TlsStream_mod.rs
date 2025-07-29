@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+TlsStream")]
+#[cfg(feature = "cordl_class_System+Net+TlsStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsStream {
@@ -9,7 +9,7 @@ pub struct TlsStream {
         crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
     >,
 }
-#[cfg(feature = "System+Net+TlsStream")]
+#[cfg(feature = "cordl_class_System+Net+TlsStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TlsStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TlsStream {
         false
     }
 }
-#[cfg(feature = "System+Net+TlsStream")]
+#[cfg(feature = "cordl_class_System+Net+TlsStream")]
 impl std::ops::Deref for crate::System::Net::TlsStream {
     type Target = crate::System::Net::Sockets::NetworkStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+TlsStream")]
+#[cfg(feature = "cordl_class_System+Net+TlsStream")]
 impl std::ops::DerefMut for crate::System::Net::TlsStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -415,7 +415,7 @@ impl crate::System::Net::TlsStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+TlsStream")]
+#[cfg(feature = "cordl_class_System+Net+TlsStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TlsStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

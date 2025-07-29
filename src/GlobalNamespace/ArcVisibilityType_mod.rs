@@ -1,4 +1,4 @@
-#[cfg(feature = "ArcVisibilityType")]
+#[cfg(feature = "cordl_class_ArcVisibilityType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArcVisibilityType {
@@ -8,7 +8,7 @@ pub enum ArcVisibilityType {
     None = 0i32,
     Standard = 2i32,
 }
-#[cfg(feature = "ArcVisibilityType")]
+#[cfg(feature = "cordl_class_ArcVisibilityType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ArcVisibilityType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ArcVisibilit
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ArcVisibilityType")]
+#[cfg(feature = "cordl_class_ArcVisibilityType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ArcVisibilityType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::ArcVisibilityType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ArcVisibilityType")]
+#[cfg(feature = "cordl_class_ArcVisibilityType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ArcVisibilityType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::ArcVisibilityType {
         self
     }
 }
-#[cfg(feature = "ArcVisibilityType")]
+#[cfg(feature = "cordl_class_ArcVisibilityType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ArcVisibilityType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::ArcVisibilityType {
         }
     }
 }
-#[cfg(feature = "ArcVisibilityType")]
+#[cfg(feature = "cordl_class_ArcVisibilityType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::ArcVisibilityType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

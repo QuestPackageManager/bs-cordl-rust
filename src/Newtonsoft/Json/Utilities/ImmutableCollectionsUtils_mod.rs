@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImmutableCollectionsUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -189,7 +189,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -200,7 +200,7 @@ for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
+    feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -217,7 +217,7 @@ pub struct ImmutableCollectionsUtils_ImmutableCollectionTypeInfo {
     >,
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
+    feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableCollectionTypeInfo {
@@ -239,7 +239,7 @@ for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColle
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
+    feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
 )]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableCollectionTypeInfo {
@@ -249,7 +249,7 @@ for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColle
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
+    feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
 )]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableCollectionTypeInfo {
@@ -475,7 +475,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
+    feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableCollectionTypeInfo {

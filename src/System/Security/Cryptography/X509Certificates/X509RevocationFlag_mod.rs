@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509RevocationFlag")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509RevocationFlag"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509RevocationFlag {
@@ -7,7 +9,9 @@ pub enum X509RevocationFlag {
     EntireChain = 1i32,
     ExcludeRoot = 2i32,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509RevocationFlag")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509RevocationFlag"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag {
     type Held<'a> = Self;
@@ -37,7 +41,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509RevocationFlag")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509RevocationFlag"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag {
     type Type = Self;
@@ -48,7 +54,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509RevocationFlag")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509RevocationFlag"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag {
     type Actual = Self;
@@ -62,7 +70,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag 
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509RevocationFlag")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509RevocationFlag"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag {
     type Type = Self;
@@ -77,7 +87,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag 
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509RevocationFlag")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509RevocationFlag"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag {
     type Actual = Self;

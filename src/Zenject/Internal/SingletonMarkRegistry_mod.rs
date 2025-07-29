@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+Internal+SingletonMarkRegistry")]
+#[cfg(feature = "cordl_class_Zenject+Internal+SingletonMarkRegistry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SingletonMarkRegistry {
@@ -14,7 +14,7 @@ pub struct SingletonMarkRegistry {
         >,
     >,
 }
-#[cfg(feature = "Zenject+Internal+SingletonMarkRegistry")]
+#[cfg(feature = "cordl_class_Zenject+Internal+SingletonMarkRegistry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::Internal::SingletonMarkRegistry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::Zenject::Internal::SingletonMarkRegistry {
         false
     }
 }
-#[cfg(feature = "Zenject+Internal+SingletonMarkRegistry")]
+#[cfg(feature = "cordl_class_Zenject+Internal+SingletonMarkRegistry")]
 impl std::ops::Deref for crate::Zenject::Internal::SingletonMarkRegistry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+Internal+SingletonMarkRegistry")]
+#[cfg(feature = "cordl_class_Zenject+Internal+SingletonMarkRegistry")]
 impl std::ops::DerefMut for crate::Zenject::Internal::SingletonMarkRegistry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -156,7 +156,7 @@ impl crate::Zenject::Internal::SingletonMarkRegistry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+Internal+SingletonMarkRegistry")]
+#[cfg(feature = "cordl_class_Zenject+Internal+SingletonMarkRegistry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::Internal::SingletonMarkRegistry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

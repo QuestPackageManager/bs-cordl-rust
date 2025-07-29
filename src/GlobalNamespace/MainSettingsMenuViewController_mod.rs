@@ -1,4 +1,4 @@
-#[cfg(feature = "MainSettingsMenuViewController")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainSettingsMenuViewController {
@@ -22,7 +22,7 @@ pub struct MainSettingsMenuViewController {
     >,
     pub _selectedSubMenuInfoIdx: i32,
 }
-#[cfg(feature = "MainSettingsMenuViewController")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainSettingsMenuViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::MainSettingsMenuViewController {
         false
     }
 }
-#[cfg(feature = "MainSettingsMenuViewController")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MainSettingsMenuViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainSettingsMenuViewController")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainSettingsMenuViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -289,7 +289,7 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainSettingsMenuViewController")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainSettingsMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

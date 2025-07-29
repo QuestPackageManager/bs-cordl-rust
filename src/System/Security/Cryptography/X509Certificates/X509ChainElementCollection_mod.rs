@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -8,7 +8,7 @@ pub struct X509ChainElementCollection {
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {
@@ -30,7 +30,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCol
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {
@@ -40,7 +40,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCol
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {
@@ -343,7 +343,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainElementCo
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {

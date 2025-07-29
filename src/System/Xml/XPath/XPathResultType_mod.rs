@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XPath+XPathResultType")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathResultType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XPathResultType {
@@ -10,7 +10,7 @@ pub enum XPathResultType {
     NodeSet = 3i32,
     Number = 0i32,
 }
-#[cfg(feature = "System+Xml+XPath+XPathResultType")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathResultType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XPath::XPathResultType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XPath::XPathResu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XPath+XPathResultType")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathResultType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XPath::XPathResultType {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Xml::XPath::XPathResultType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XPath+XPathResultType")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathResultType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XPath::XPathResultType {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Xml::XPath::XPathResultType {
         self
     }
 }
-#[cfg(feature = "System+Xml+XPath+XPathResultType")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathResultType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XPath::XPathResultType {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Xml::XPath::XPathResultType {
         }
     }
 }
-#[cfg(feature = "System+Xml+XPath+XPathResultType")]
+#[cfg(feature = "cordl_class_System+Xml+XPath+XPathResultType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XPath::XPathResultType {
     type Actual = Self;

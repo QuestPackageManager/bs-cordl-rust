@@ -1,11 +1,11 @@
-#[cfg(feature = "JetBrains+Annotations+CollectionAccessAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+CollectionAccessAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionAccessAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _CollectionAccessType_k__BackingField: crate::JetBrains::Annotations::CollectionAccessType,
 }
-#[cfg(feature = "JetBrains+Annotations+CollectionAccessAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+CollectionAccessAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::CollectionAccessAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::JetBrains::Annotations::CollectionAccessAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+CollectionAccessAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+CollectionAccessAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::CollectionAccessAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+CollectionAccessAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+CollectionAccessAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::CollectionAccessAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::JetBrains::Annotations::CollectionAccessAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+CollectionAccessAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+CollectionAccessAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::CollectionAccessAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

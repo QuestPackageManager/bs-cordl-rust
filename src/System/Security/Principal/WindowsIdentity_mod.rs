@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsIdentity")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WindowsIdentity {
@@ -12,7 +12,7 @@ pub struct WindowsIdentity {
         crate::System::Runtime::Serialization::SerializationInfo,
     >,
 }
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsIdentity")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Principal::WindowsIdentity {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::System::Security::Principal::WindowsIdentity {
         false
     }
 }
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsIdentity")]
 impl std::ops::Deref for crate::System::Security::Principal::WindowsIdentity {
     type Target = crate::System::Security::Claims::ClaimsIdentity;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsIdentity")]
 impl std::ops::DerefMut for crate::System::Security::Principal::WindowsIdentity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -515,7 +515,7 @@ impl crate::System::Security::Principal::WindowsIdentity {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+#[cfg(feature = "cordl_class_System+Security+Principal+WindowsIdentity")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Principal::WindowsIdentity {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

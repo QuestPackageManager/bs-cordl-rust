@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Globalization+FormatProvider")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormatProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Globalization+FormatProvider")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::FormatProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Globalization::FormatProvider {
         false
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider")]
 impl std::ops::Deref for crate::System::Globalization::FormatProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider")]
 impl std::ops::DerefMut for crate::System::Globalization::FormatProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -153,7 +153,7 @@ impl crate::System::Globalization::FormatProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::FormatProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -162,13 +162,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::FormatP
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormatProvider_Number {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::FormatProvider_Number {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -188,14 +188,14 @@ for crate::System::Globalization::FormatProvider_Number {
         false
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number")]
 impl std::ops::Deref for crate::System::Globalization::FormatProvider_Number {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number")]
 impl std::ops::DerefMut for crate::System::Globalization::FormatProvider_Number {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1022,7 +1022,7 @@ impl crate::System::Globalization::FormatProvider_Number {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Globalization::FormatProvider_Number {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1032,7 +1032,7 @@ for crate::System::Globalization::FormatProvider_Number {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number+NumberBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Number_FormatProvider_NumberBuffer {
@@ -1041,7 +1041,7 @@ pub struct Number_FormatProvider_NumberBuffer {
     pub sign: bool,
     pub overrideDigits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     type Held<'a> = Self;
@@ -1071,7 +1071,7 @@ for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     type Type = Self;
@@ -1082,7 +1082,7 @@ for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     type Actual = Self;
@@ -1096,7 +1096,7 @@ for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
         self
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     type Type = Self;
@@ -1111,7 +1111,7 @@ for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
         }
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     type Actual = Self;
@@ -1125,7 +1125,7 @@ for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Globalization+FormatProvider+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     type Type = Self;

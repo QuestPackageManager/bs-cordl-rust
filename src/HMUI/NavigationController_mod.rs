@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+NavigationController")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigationController {
@@ -9,7 +9,7 @@ pub struct NavigationController {
     pub _edgeSize: f32,
     pub _viewControllersSeparator: f32,
 }
-#[cfg(feature = "HMUI+NavigationController")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NavigationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NavigationController {
         false
     }
 }
-#[cfg(feature = "HMUI+NavigationController")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController")]
 impl std::ops::Deref for crate::HMUI::NavigationController {
     type Target = crate::HMUI::ContainerViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+NavigationController")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController")]
 impl std::ops::DerefMut for crate::HMUI::NavigationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -312,7 +312,7 @@ impl crate::HMUI::NavigationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+NavigationController")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NavigationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -321,7 +321,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NavigationController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Alignment")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Alignment")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NavigationController_Alignment {
@@ -330,7 +330,7 @@ pub enum NavigationController_Alignment {
     End = 2i32,
     Middle = 1i32,
 }
-#[cfg(feature = "HMUI+NavigationController+Alignment")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NavigationController_Alignment {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -359,7 +359,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NavigationController_Al
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Alignment")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::NavigationController_Alignment {
     type Type = Self;
@@ -370,7 +370,7 @@ for crate::HMUI::NavigationController_Alignment {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Alignment")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::NavigationController_Alignment {
     type Actual = Self;
@@ -384,7 +384,7 @@ for crate::HMUI::NavigationController_Alignment {
         self
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Alignment")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::NavigationController_Alignment {
     type Type = Self;
@@ -399,7 +399,7 @@ for crate::HMUI::NavigationController_Alignment {
         }
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Alignment")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::NavigationController_Alignment {
     type Actual = Self;
@@ -413,7 +413,7 @@ for crate::HMUI::NavigationController_Alignment {
         actual
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Orientation")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Orientation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NavigationController_Orientation {
@@ -421,7 +421,7 @@ pub enum NavigationController_Orientation {
     Horizontal = 0i32,
     Vertical = 1i32,
 }
-#[cfg(feature = "HMUI+NavigationController+Orientation")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::NavigationController_Orientation {
     type Held<'a> = Self;
@@ -451,7 +451,7 @@ for crate::HMUI::NavigationController_Orientation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Orientation")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::NavigationController_Orientation {
     type Type = Self;
@@ -462,7 +462,7 @@ for crate::HMUI::NavigationController_Orientation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Orientation")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::NavigationController_Orientation {
     type Actual = Self;
@@ -476,7 +476,7 @@ for crate::HMUI::NavigationController_Orientation {
         self
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Orientation")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::NavigationController_Orientation {
     type Type = Self;
@@ -491,7 +491,7 @@ for crate::HMUI::NavigationController_Orientation {
         }
     }
 }
-#[cfg(feature = "HMUI+NavigationController+Orientation")]
+#[cfg(feature = "cordl_class_HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::NavigationController_Orientation {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeFormatInfo {
@@ -138,7 +138,7 @@ pub struct DateTimeFormatInfo {
         >,
     >,
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::DateTimeFormatInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -158,14 +158,14 @@ for crate::System::Globalization::DateTimeFormatInfo {
         false
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo")]
 impl std::ops::Deref for crate::System::Globalization::DateTimeFormatInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo")]
 impl std::ops::DerefMut for crate::System::Globalization::DateTimeFormatInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3340,7 +3340,7 @@ impl crate::System::Globalization::DateTimeFormatInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Globalization::DateTimeFormatInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3378,7 +3378,7 @@ for crate::System::Globalization::DateTimeFormatInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo+TokenHashValue")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo+TokenHashValue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeFormatInfo_TokenHashValue {
@@ -3387,7 +3387,7 @@ pub struct DateTimeFormatInfo_TokenHashValue {
     pub tokenType: crate::System::TokenType,
     pub tokenValue: i32,
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo+TokenHashValue")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo+TokenHashValue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::DateTimeFormatInfo_TokenHashValue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3407,7 +3407,7 @@ for crate::System::Globalization::DateTimeFormatInfo_TokenHashValue {
         false
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo+TokenHashValue")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo+TokenHashValue")]
 impl std::ops::Deref
 for crate::System::Globalization::DateTimeFormatInfo_TokenHashValue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3415,7 +3415,7 @@ for crate::System::Globalization::DateTimeFormatInfo_TokenHashValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo+TokenHashValue")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo+TokenHashValue")]
 impl std::ops::DerefMut
 for crate::System::Globalization::DateTimeFormatInfo_TokenHashValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3471,7 +3471,7 @@ impl crate::System::Globalization::DateTimeFormatInfo_TokenHashValue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+DateTimeFormatInfo+TokenHashValue")]
+#[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo+TokenHashValue")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Globalization::DateTimeFormatInfo_TokenHashValue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

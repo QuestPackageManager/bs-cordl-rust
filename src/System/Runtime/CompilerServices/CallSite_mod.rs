@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSite")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CallSite {
@@ -8,7 +8,7 @@ pub struct CallSite {
     >,
     pub _match: bool,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSite")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::CallSite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Runtime::CompilerServices::CallSite {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSite")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::CallSite {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSite")]
 impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::CallSite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::System::Runtime::CompilerServices::CallSite {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSite")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::CallSite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

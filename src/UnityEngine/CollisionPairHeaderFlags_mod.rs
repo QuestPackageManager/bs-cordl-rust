@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+CollisionPairHeaderFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairHeaderFlags")]
 #[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollisionPairHeaderFlags {
@@ -6,7 +6,7 @@ pub enum CollisionPairHeaderFlags {
     RemovedActor = 1u16,
     RemovedOtherActor = 2u16,
 }
-#[cfg(feature = "UnityEngine+CollisionPairHeaderFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairHeaderFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::CollisionPairHeaderFlags {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::CollisionPairHeaderFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairHeaderFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairHeaderFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::CollisionPairHeaderFlags {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::CollisionPairHeaderFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairHeaderFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairHeaderFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::CollisionPairHeaderFlags {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::CollisionPairHeaderFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairHeaderFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairHeaderFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::CollisionPairHeaderFlags {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::CollisionPairHeaderFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+CollisionPairHeaderFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+CollisionPairHeaderFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::CollisionPairHeaderFlags {
     type Actual = Self;

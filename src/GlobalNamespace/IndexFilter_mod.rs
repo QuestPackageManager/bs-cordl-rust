@@ -1,4 +1,4 @@
-#[cfg(feature = "IndexFilter")]
+#[cfg(feature = "cordl_class_IndexFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IndexFilter {
@@ -13,7 +13,7 @@ pub struct IndexFilter {
     pub _step: i32,
     pub _count: i32,
 }
-#[cfg(feature = "IndexFilter")]
+#[cfg(feature = "cordl_class_IndexFilter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IndexFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::IndexFilter 
         false
     }
 }
-#[cfg(feature = "IndexFilter")]
+#[cfg(feature = "cordl_class_IndexFilter")]
 impl std::ops::Deref for crate::GlobalNamespace::IndexFilter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IndexFilter")]
+#[cfg(feature = "cordl_class_IndexFilter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IndexFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -415,7 +415,7 @@ impl crate::GlobalNamespace::IndexFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IndexFilter")]
+#[cfg(feature = "cordl_class_IndexFilter")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IndexFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -494,7 +494,7 @@ for crate::GlobalNamespace::IndexFilter {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterLimitAlsoAffectType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilter_IndexFilterLimitAlsoAffectType {
@@ -503,7 +503,7 @@ pub enum IndexFilter_IndexFilterLimitAlsoAffectType {
     Duration = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Held<'a> = Self;
@@ -533,7 +533,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Type = Self;
@@ -544,7 +544,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Actual = Self;
@@ -558,7 +558,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
         self
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Type = Self;
@@ -573,7 +573,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
         }
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Actual = Self;
@@ -587,7 +587,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
         actual
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterRandomType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilter_IndexFilterRandomType {
@@ -596,7 +596,7 @@ pub enum IndexFilter_IndexFilterRandomType {
     NoRandom = 0i32,
     RandomElements = 2i32,
 }
-#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Held<'a> = Self;
@@ -626,7 +626,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Type = Self;
@@ -637,7 +637,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Actual = Self;
@@ -651,7 +651,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
         self
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Type = Self;
@@ -666,7 +666,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
         }
     }
 }
-#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
+#[cfg(feature = "cordl_class_IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Actual = Self;

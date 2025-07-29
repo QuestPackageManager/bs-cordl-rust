@@ -1,4 +1,4 @@
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EditAvatarFlowCoordinatorHelper {
@@ -24,7 +24,7 @@ pub struct EditAvatarFlowCoordinatorHelper {
         crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
     >,
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         false
     }
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -370,7 +370,7 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -380,7 +380,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EditAvatarFlowCoordinatorHelper_FinishAction {
@@ -388,7 +388,7 @@ pub enum EditAvatarFlowCoordinatorHelper_FinishAction {
     Back = 1i32,
     Continue = 0i32,
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Held<'a> = Self;
@@ -418,7 +418,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Type = Self;
@@ -429,7 +429,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Actual = Self;
@@ -443,7 +443,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
         self
     }
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Type = Self;
@@ -458,7 +458,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
         }
     }
 }
-#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
+#[cfg(feature = "cordl_class_EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Actual = Self;

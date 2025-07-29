@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+InteropServices+VarEnum")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+VarEnum")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VarEnum {
@@ -48,7 +48,7 @@ pub enum VarEnum {
     VT_VECTOR = 4096i32,
     VT_VOID = 24i32,
 }
-#[cfg(feature = "System+Runtime+InteropServices+VarEnum")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+VarEnum")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::VarEnum {
     type Held<'a> = Self;
@@ -78,7 +78,7 @@ for crate::System::Runtime::InteropServices::VarEnum {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+VarEnum")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+VarEnum")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::InteropServices::VarEnum {
     type Type = Self;
@@ -89,7 +89,7 @@ for crate::System::Runtime::InteropServices::VarEnum {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+VarEnum")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+VarEnum")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::InteropServices::VarEnum {
     type Actual = Self;
@@ -103,7 +103,7 @@ for crate::System::Runtime::InteropServices::VarEnum {
         self
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+VarEnum")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+VarEnum")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::InteropServices::VarEnum {
     type Type = Self;
@@ -118,7 +118,7 @@ for crate::System::Runtime::InteropServices::VarEnum {
         }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+VarEnum")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+VarEnum")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::InteropServices::VarEnum {
     type Actual = Self;

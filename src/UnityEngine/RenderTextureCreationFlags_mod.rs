@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureCreationFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureCreationFlags {
@@ -14,7 +14,7 @@ pub enum RenderTextureCreationFlags {
     NoResolvedColorSurface = 256i32,
     SRGB = 4i32,
 }
-#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::RenderTextureCreationFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::UnityEngine::RenderTextureCreationFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::RenderTextureCreationFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::RenderTextureCreationFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Actual = Self;

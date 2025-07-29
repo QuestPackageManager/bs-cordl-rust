@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstLike {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike")]
 impl std::ops::Deref for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike")]
 impl std::ops::DerefMut for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -46,7 +46,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
         T,
     >;
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -56,13 +56,13 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstLike_SharedStatic {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -82,7 +82,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -90,7 +90,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -136,7 +136,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -146,14 +146,18 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstLike_SharedStatic_1<T: quest_hook::libil2cpp::Type> {
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     type Held<'a> = Self;
@@ -199,7 +203,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     type Type = Self;
@@ -210,7 +216,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     type Actual = Self;
@@ -224,7 +232,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
         self
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     type Type = Self;
@@ -239,7 +249,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
         }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     type Actual = Self;
@@ -253,7 +265,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
         actual
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
     type Type = Self;

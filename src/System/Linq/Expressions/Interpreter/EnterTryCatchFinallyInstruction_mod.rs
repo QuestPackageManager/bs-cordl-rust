@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterTryCatchFinallyInstruction {
@@ -8,7 +10,9 @@ pub struct EnterTryCatchFinallyInstruction {
         crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +32,9 @@ for crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstructi
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction;
@@ -36,7 +42,9 @@ for crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstructi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -305,7 +313,9 @@ impl crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruct
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

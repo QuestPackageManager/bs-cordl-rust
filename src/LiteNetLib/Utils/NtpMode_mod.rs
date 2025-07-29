@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+Utils+NtpMode")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NtpMode {
@@ -6,7 +6,7 @@ pub enum NtpMode {
     Client = 3i32,
     Server = 4i32,
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpMode")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NtpMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NtpMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpMode")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::Utils::NtpMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::Utils::NtpMod
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpMode")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::Utils::NtpMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::Utils::NtpMo
         self
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpMode")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::Utils::NtpMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::Utils::NtpMod
         }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NtpMode")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NtpMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LiteNetLib::Utils::NtpMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NtlmFlags {
@@ -14,7 +14,7 @@ pub enum NtlmFlags {
     NegotiateWorkstationSupplied = 8192i32,
     RequestTarget = 4i32,
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
         self
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
         }
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmFlags")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Security::Protocol::Ntlm::NtlmFlags {
     type Actual = Self;

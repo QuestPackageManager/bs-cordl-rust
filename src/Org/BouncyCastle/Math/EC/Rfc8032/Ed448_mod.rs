@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed448 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2047,7 +2047,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2057,7 +2057,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ed448_Algorithm {
@@ -2065,7 +2065,7 @@ pub enum Ed448_Algorithm {
     Ed448 = 0i32,
     Ed448ph = 1i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
     type Held<'a> = Self;
@@ -2095,7 +2095,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
     type Type = Self;
@@ -2106,7 +2106,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
     type Actual = Self;
@@ -2120,7 +2120,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
     type Type = Self;
@@ -2135,7 +2135,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
     type Actual = Self;
@@ -2149,7 +2149,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm {
         actual
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed448_PointExt {
@@ -2158,7 +2158,7 @@ pub struct Ed448_PointExt {
     pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2178,14 +2178,14 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2222,7 +2222,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2232,7 +2232,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed448_PointPrecomp {
@@ -2240,7 +2240,7 @@ pub struct Ed448_PointPrecomp {
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2260,7 +2260,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2268,7 +2268,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2306,7 +2306,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

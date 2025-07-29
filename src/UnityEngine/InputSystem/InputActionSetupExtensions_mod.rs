@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionSetupExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1362,7 +1362,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1372,7 +1372,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionSetupExtensions_BindingSyntax {
@@ -1384,7 +1386,9 @@ pub struct InputActionSetupExtensions_BindingSyntax {
     >,
     pub m_BindingIndexInMap: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     type Held<'a> = Self;
@@ -1414,7 +1418,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     type Type = Self;
@@ -1425,7 +1431,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     type Actual = Self;
@@ -1439,7 +1447,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     type Type = Self;
@@ -1454,7 +1464,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     type Actual = Self;
@@ -1468,7 +1480,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     type Type = Self;
@@ -2240,7 +2254,9 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionSetupExtensions_CompositeSyntax {
@@ -2252,7 +2268,9 @@ pub struct InputActionSetupExtensions_CompositeSyntax {
     >,
     pub m_BindingIndexInMap: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax {
     type Held<'a> = Self;
@@ -2282,7 +2300,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax {
     type Type = Self;
@@ -2293,7 +2313,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax {
     type Actual = Self;
@@ -2307,7 +2329,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax 
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax {
     type Type = Self;
@@ -2322,7 +2346,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax 
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax {
     type Actual = Self;
@@ -2336,7 +2362,9 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax 
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax {
     type Type = Self;
@@ -2449,7 +2477,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -2461,7 +2489,7 @@ pub struct InputActionSetupExtensions_ControlSchemeSyntax {
     pub m_ControlScheme: crate::UnityEngine::InputSystem::InputControlScheme,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax {
@@ -2493,7 +2521,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyn
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax {
@@ -2506,7 +2534,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyn
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax {
@@ -2522,7 +2550,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyn
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax {
@@ -2539,7 +2567,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyn
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax {
@@ -2555,7 +2583,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyn
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    feature = "cordl_class_UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax {

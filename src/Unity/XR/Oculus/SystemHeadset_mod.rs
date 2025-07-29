@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+XR+Oculus+SystemHeadset")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+SystemHeadset")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SystemHeadset {
@@ -24,7 +24,7 @@ pub enum SystemHeadset {
     Rift_DK2 = 4097i32,
     Rift_S = 4100i32,
 }
-#[cfg(feature = "Unity+XR+Oculus+SystemHeadset")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+SystemHeadset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::SystemHeadset {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::SystemHead
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+SystemHeadset")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+SystemHeadset")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::XR::Oculus::SystemHeadset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::XR::Oculus::System
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+SystemHeadset")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+SystemHeadset")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::SystemHeadset {
     type Actual = Self;
@@ -77,7 +77,7 @@ for crate::Unity::XR::Oculus::SystemHeadset {
         self
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+SystemHeadset")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+SystemHeadset")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::XR::Oculus::SystemHeadset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::XR::Oculus::System
         }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+SystemHeadset")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+SystemHeadset")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::XR::Oculus::SystemHeadset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

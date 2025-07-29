@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrePrepareMethodAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +38,9 @@ for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

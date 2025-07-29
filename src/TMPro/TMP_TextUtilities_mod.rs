@@ -1,10 +1,10 @@
-#[cfg(feature = "TMPro+TMP_TextUtilities")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_TextUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_TextUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_TextUtilities {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities")]
 impl std::ops::Deref for crate::TMPro::TMP_TextUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities")]
 impl std::ops::DerefMut for crate::TMPro::TMP_TextUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -723,7 +723,7 @@ impl crate::TMPro::TMP_TextUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_TextUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -732,14 +732,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_TextUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_TextUtilities_LineSegment {
     pub Point1: crate::UnityEngine::Vector3,
     pub Point2: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -768,7 +768,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_TextUtilities_Line
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Type = Self;
@@ -779,7 +779,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Actual = Self;
@@ -793,7 +793,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Type = Self;
@@ -808,7 +808,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Actual = Self;
@@ -822,7 +822,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
+#[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Type = Self;

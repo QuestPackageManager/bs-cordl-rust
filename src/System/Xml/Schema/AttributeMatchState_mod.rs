@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+AttributeMatchState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+AttributeMatchState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AttributeMatchState {
@@ -14,7 +14,7 @@ pub enum AttributeMatchState {
     UndeclaredElementAndAttribute = 2i32,
     ValidateAttributeInvalidCall = 9i32,
 }
-#[cfg(feature = "System+Xml+Schema+AttributeMatchState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+AttributeMatchState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::AttributeMatchState {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::System::Xml::Schema::AttributeMatchState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+AttributeMatchState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+AttributeMatchState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::AttributeMatchState {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::System::Xml::Schema::AttributeMatchState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+AttributeMatchState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+AttributeMatchState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::AttributeMatchState {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::System::Xml::Schema::AttributeMatchState {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+AttributeMatchState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+AttributeMatchState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::AttributeMatchState {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::System::Xml::Schema::AttributeMatchState {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+AttributeMatchState")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+AttributeMatchState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::AttributeMatchState {
     type Actual = Self;

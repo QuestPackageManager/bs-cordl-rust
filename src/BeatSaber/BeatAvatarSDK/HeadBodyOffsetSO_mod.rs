@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeadBodyOffsetSO {
@@ -6,7 +6,7 @@ pub struct HeadBodyOffsetSO {
     pub _headNeckOffset: crate::UnityEngine::Vector3,
     pub _verticalOffset: f32,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarSDK::HeadBodyOffsetSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::BeatSaber::BeatAvatarSDK::HeadBodyOffsetSO {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::HeadBodyOffsetSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::HeadBodyOffsetSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::BeatSaber::BeatAvatarSDK::HeadBodyOffsetSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::HeadBodyOffsetSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

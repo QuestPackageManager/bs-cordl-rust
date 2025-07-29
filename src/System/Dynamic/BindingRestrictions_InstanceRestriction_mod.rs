@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+InstanceRestriction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions_InstanceRestriction {
@@ -8,7 +8,7 @@ pub struct BindingRestrictions_InstanceRestriction {
     >,
     pub _instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+InstanceRestriction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
         false
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+InstanceRestriction")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
     type Target = crate::System::Dynamic::BindingRestrictions;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+InstanceRestriction")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
+#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+InstanceRestriction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

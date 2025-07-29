@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedName"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X500DistinguishedName {
@@ -6,7 +8,9 @@ pub struct X500DistinguishedName {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub canonEncoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedName"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +30,9 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedName"
+)]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName {
     type Target = crate::System::Security::Cryptography::AsnEncodedData;
@@ -34,7 +40,9 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedName"
+)]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -284,7 +292,9 @@ impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedN
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedName"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

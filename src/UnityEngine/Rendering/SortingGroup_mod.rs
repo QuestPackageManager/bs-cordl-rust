@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Rendering+SortingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SortingGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortingGroup {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
-#[cfg(feature = "UnityEngine+Rendering+SortingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SortingGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::SortingGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Sorti
         false
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SortingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SortingGroup")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::SortingGroup {
     type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SortingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SortingGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::Rendering::SortingGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -388,7 +388,7 @@ impl crate::UnityEngine::Rendering::SortingGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SortingGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SortingGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::SortingGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

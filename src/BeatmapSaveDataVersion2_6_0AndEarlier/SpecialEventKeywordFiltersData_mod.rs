@@ -1,4 +1,6 @@
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData")]
+#[cfg(
+    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpecialEventKeywordFiltersData {
@@ -11,7 +13,9 @@ pub struct SpecialEventKeywordFiltersData {
         >,
     >,
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData")]
+#[cfg(
+    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +35,9 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData")]
+#[cfg(
+    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData"
+)]
 impl std::ops::Deref
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +45,9 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData")]
+#[cfg(
+    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData"
+)]
 impl std::ops::DerefMut
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -145,7 +153,9 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData")]
+#[cfg(
+    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

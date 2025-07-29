@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaGenerator {
@@ -21,7 +21,7 @@ pub struct JsonSchemaGenerator {
         crate::Newtonsoft::Json::Schema::JsonSchema,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -754,7 +754,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -764,7 +764,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaGenerator_TypeSchema {
@@ -774,7 +774,7 @@ pub struct JsonSchemaGenerator_TypeSchema {
         crate::Newtonsoft::Json::Schema::JsonSchema,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -794,7 +794,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -802,7 +802,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -908,7 +908,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "ENet+InterceptCallback")]
+#[cfg(feature = "cordl_class_ENet+InterceptCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InterceptCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "ENet+InterceptCallback")]
+#[cfg(feature = "cordl_class_ENet+InterceptCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::InterceptCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::InterceptCallback {
         false
     }
 }
-#[cfg(feature = "ENet+InterceptCallback")]
+#[cfg(feature = "cordl_class_ENet+InterceptCallback")]
 impl std::ops::Deref for crate::ENet::InterceptCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ENet+InterceptCallback")]
+#[cfg(feature = "cordl_class_ENet+InterceptCallback")]
 impl std::ops::DerefMut for crate::ENet::InterceptCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -197,7 +197,7 @@ impl crate::ENet::InterceptCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ENet+InterceptCallback")]
+#[cfg(feature = "cordl_class_ENet+InterceptCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::ENet::InterceptCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

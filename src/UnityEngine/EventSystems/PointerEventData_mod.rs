@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerEventData {
@@ -52,7 +52,7 @@ pub struct PointerEventData {
     pub _fullyExited_k__BackingField: bool,
     pub _reentered_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PointerEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -72,14 +72,14 @@ for crate::UnityEngine::EventSystems::PointerEventData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::PointerEventData {
     type Target = crate::UnityEngine::EventSystems::BaseEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::PointerEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1821,7 +1821,7 @@ impl crate::UnityEngine::EventSystems::PointerEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::PointerEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1831,7 +1831,7 @@ for crate::UnityEngine::EventSystems::PointerEventData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+FramePressState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PointerEventData_FramePressState {
@@ -1841,7 +1841,7 @@ pub enum PointerEventData_FramePressState {
     PressedAndReleased = 2i32,
     Released = 1i32,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Held<'a> = Self;
@@ -1871,7 +1871,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Type = Self;
@@ -1882,7 +1882,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Actual = Self;
@@ -1896,7 +1896,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Type = Self;
@@ -1911,7 +1911,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Actual = Self;
@@ -1925,7 +1925,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+InputButton")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PointerEventData_InputButton {
@@ -1934,7 +1934,7 @@ pub enum PointerEventData_InputButton {
     Middle = 2i32,
     Right = 1i32,
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Held<'a> = Self;
@@ -1964,7 +1964,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Type = Self;
@@ -1975,7 +1975,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Actual = Self;
@@ -1989,7 +1989,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Type = Self;
@@ -2004,7 +2004,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Actual = Self;

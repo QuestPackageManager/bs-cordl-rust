@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayServerFiniteStateMachine")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayServerFiniteStateMachine {
@@ -26,7 +26,7 @@ pub struct GameplayServerFiniteStateMachine {
     pub state: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameState>,
     pub enteringState: bool,
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         false
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -541,7 +541,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -551,7 +551,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine+InitParams")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GameplayServerFiniteStateMachine_InitParams {
@@ -566,7 +566,7 @@ pub struct GameplayServerFiniteStateMachine_InitParams {
         crate::GlobalNamespace::IServerBeatmapProvider,
     >,
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Held<'a> = Self;
@@ -596,7 +596,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Type = Self;
@@ -607,7 +607,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Actual = Self;
@@ -621,7 +621,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         self
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Type = Self;
@@ -636,7 +636,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         }
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Actual = Self;
@@ -650,7 +650,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         actual
     }
 }
-#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
+#[cfg(feature = "cordl_class_GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Type = Self;

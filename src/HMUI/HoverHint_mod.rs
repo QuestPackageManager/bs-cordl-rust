@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+HoverHint")]
+#[cfg(feature = "cordl_class_HMUI+HoverHint")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HoverHint {
@@ -11,7 +11,7 @@ pub struct HoverHint {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
-#[cfg(feature = "HMUI+HoverHint")]
+#[cfg(feature = "cordl_class_HMUI+HoverHint")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::HoverHint {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::HoverHint {
         false
     }
 }
-#[cfg(feature = "HMUI+HoverHint")]
+#[cfg(feature = "cordl_class_HMUI+HoverHint")]
 impl std::ops::Deref for crate::HMUI::HoverHint {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+HoverHint")]
+#[cfg(feature = "cordl_class_HMUI+HoverHint")]
 impl std::ops::DerefMut for crate::HMUI::HoverHint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -254,7 +254,7 @@ impl crate::HMUI::HoverHint {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+HoverHint")]
+#[cfg(feature = "cordl_class_HMUI+HoverHint")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::HoverHint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

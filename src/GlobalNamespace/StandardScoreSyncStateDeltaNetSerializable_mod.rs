@@ -1,4 +1,4 @@
-#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateDeltaNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardScoreSyncStateDeltaNetSerializable {
@@ -7,7 +7,7 @@ pub struct StandardScoreSyncStateDeltaNetSerializable {
     pub _baseId_k__BackingField: crate::GlobalNamespace::SyncStateId,
     pub _timeOffsetMs_k__BackingField: i32,
 }
-#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateDeltaNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
         false
     }
 }
-#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateDeltaNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateDeltaNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -336,7 +336,7 @@ impl crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
+#[cfg(feature = "cordl_class_StandardScoreSyncStateDeltaNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

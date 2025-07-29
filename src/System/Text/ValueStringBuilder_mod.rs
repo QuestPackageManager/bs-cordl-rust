@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+ValueStringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+ValueStringBuilder")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueStringBuilder {
@@ -8,7 +8,7 @@ pub struct ValueStringBuilder {
     pub _chars: crate::System::Span_1<char>,
     pub _pos: i32,
 }
-#[cfg(feature = "System+Text+ValueStringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::ValueStringBuilder {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::ValueStringBuil
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Text+ValueStringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Text::ValueStringBuilder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Text::ValueString
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Text+ValueStringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::ValueStringBuilder {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Text::ValueStringBuilder {
         self
     }
 }
-#[cfg(feature = "System+Text+ValueStringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Text::ValueStringBuilder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Text::ValueString
         }
     }
 }
-#[cfg(feature = "System+Text+ValueStringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Text::ValueStringBuilder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Text::ValueStringBu
         actual
     }
 }
-#[cfg(feature = "System+Text+ValueStringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Text::ValueStringBuilder {
     type Type = Self;

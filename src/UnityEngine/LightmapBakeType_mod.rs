@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+LightmapBakeType")]
+#[cfg(feature = "cordl_class_UnityEngine+LightmapBakeType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightmapBakeType {
@@ -7,7 +7,7 @@ pub enum LightmapBakeType {
     Mixed = 1i32,
     Realtime = 4i32,
 }
-#[cfg(feature = "UnityEngine+LightmapBakeType")]
+#[cfg(feature = "cordl_class_UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightmapBakeType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightmapBakeType
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+LightmapBakeType")]
+#[cfg(feature = "cordl_class_UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LightmapBakeType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LightmapBake
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+LightmapBakeType")]
+#[cfg(feature = "cordl_class_UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LightmapBakeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LightmapBak
         self
     }
 }
-#[cfg(feature = "UnityEngine+LightmapBakeType")]
+#[cfg(feature = "cordl_class_UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LightmapBakeType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LightmapBake
         }
     }
 }
-#[cfg(feature = "UnityEngine+LightmapBakeType")]
+#[cfg(feature = "cordl_class_UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LightmapBakeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

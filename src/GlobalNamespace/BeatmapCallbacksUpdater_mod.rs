@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapCallbacksUpdater")]
+#[cfg(feature = "cordl_class_BeatmapCallbacksUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCallbacksUpdater {
@@ -11,7 +11,7 @@ pub struct BeatmapCallbacksUpdater {
     >,
     pub _prevSongTime: f32,
 }
-#[cfg(feature = "BeatmapCallbacksUpdater")]
+#[cfg(feature = "cordl_class_BeatmapCallbacksUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapCallbacksUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::BeatmapCallbacksUpdater {
         false
     }
 }
-#[cfg(feature = "BeatmapCallbacksUpdater")]
+#[cfg(feature = "cordl_class_BeatmapCallbacksUpdater")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCallbacksUpdater {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapCallbacksUpdater")]
+#[cfg(feature = "cordl_class_BeatmapCallbacksUpdater")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCallbacksUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::GlobalNamespace::BeatmapCallbacksUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapCallbacksUpdater")]
+#[cfg(feature = "cordl_class_BeatmapCallbacksUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapCallbacksUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

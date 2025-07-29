@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MessageDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageDictionary {
@@ -16,7 +16,7 @@ pub struct MessageDictionary {
     >,
     pub _ownProperties: bool,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MessageDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MessageDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MessageDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -733,7 +733,7 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MessageDictionary")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -786,7 +786,7 @@ for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
     }
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -801,7 +801,7 @@ pub struct MessageDictionary_DictionaryEnumerator {
     pub _posMethod: i32,
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnumerator {
@@ -823,7 +823,7 @@ for crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnu
     }
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnumerator {
@@ -833,7 +833,7 @@ for crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnu
     }
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnumerator {
@@ -1032,7 +1032,7 @@ impl crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEn
     }
 }
 #[cfg(
-    feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnumerator {

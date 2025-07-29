@@ -1,4 +1,4 @@
-#[cfg(feature = "CommandBufferGOCore")]
+#[cfg(feature = "cordl_class_CommandBufferGOCore")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandBufferGOCore {
@@ -11,7 +11,7 @@ pub struct CommandBufferGOCore {
     >,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
-#[cfg(feature = "CommandBufferGOCore")]
+#[cfg(feature = "cordl_class_CommandBufferGOCore")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CommandBufferGOCore {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CommandBuffe
         false
     }
 }
-#[cfg(feature = "CommandBufferGOCore")]
+#[cfg(feature = "cordl_class_CommandBufferGOCore")]
 impl std::ops::Deref for crate::GlobalNamespace::CommandBufferGOCore {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CommandBufferGOCore")]
+#[cfg(feature = "cordl_class_CommandBufferGOCore")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CommandBufferGOCore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -238,7 +238,7 @@ impl crate::GlobalNamespace::CommandBufferGOCore {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CommandBufferGOCore")]
+#[cfg(feature = "cordl_class_CommandBufferGOCore")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CommandBufferGOCore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

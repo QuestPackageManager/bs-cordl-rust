@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Byte")]
+#[cfg(feature = "cordl_class_System+Byte")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Byte {
     pub m_value: u8,
 }
-#[cfg(feature = "System+Byte")]
+#[cfg(feature = "cordl_class_System+Byte")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Byte {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Byte {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Byte")]
+#[cfg(feature = "cordl_class_System+Byte")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Byte {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Byte {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Byte")]
+#[cfg(feature = "cordl_class_System+Byte")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Byte {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Byte {
         self
     }
 }
-#[cfg(feature = "System+Byte")]
+#[cfg(feature = "cordl_class_System+Byte")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Byte {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Byte {
         }
     }
 }
-#[cfg(feature = "System+Byte")]
+#[cfg(feature = "cordl_class_System+Byte")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Byte {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Byte {
         actual
     }
 }
-#[cfg(feature = "System+Byte")]
+#[cfg(feature = "cordl_class_System+Byte")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Byte {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspMvcEditorTemplateAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -69,7 +69,7 @@ impl crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesAndBombsTransform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataObstaclesAndBombsTransform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesAndBombsTransform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
         false
     }
 }
-#[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesAndBombsTransform")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesAndBombsTransform")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
+#[cfg(feature = "cordl_class_BeatmapDataObstaclesAndBombsTransform")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

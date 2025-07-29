@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Profiling+Memory+MemorySnapshotMetadata")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemorySnapshotMetadata")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemorySnapshotMetadata {
@@ -10,7 +10,7 @@ pub struct MemorySnapshotMetadata {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
 }
-#[cfg(feature = "Unity+Profiling+Memory+MemorySnapshotMetadata")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemorySnapshotMetadata")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Profiling::Memory::MemorySnapshotMetadata {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Unity::Profiling::Memory::MemorySnapshotMetadata {
         false
     }
 }
-#[cfg(feature = "Unity+Profiling+Memory+MemorySnapshotMetadata")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemorySnapshotMetadata")]
 impl std::ops::Deref for crate::Unity::Profiling::Memory::MemorySnapshotMetadata {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Profiling+Memory+MemorySnapshotMetadata")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemorySnapshotMetadata")]
 impl std::ops::DerefMut for crate::Unity::Profiling::Memory::MemorySnapshotMetadata {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -156,7 +156,7 @@ impl crate::Unity::Profiling::Memory::MemorySnapshotMetadata {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Profiling+Memory+MemorySnapshotMetadata")]
+#[cfg(feature = "cordl_class_Unity+Profiling+Memory+MemorySnapshotMetadata")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Profiling::Memory::MemorySnapshotMetadata {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

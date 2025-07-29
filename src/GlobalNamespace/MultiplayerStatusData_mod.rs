@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerStatusData")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerStatusData {
@@ -15,7 +15,7 @@ pub struct MultiplayerStatusData {
     pub use_gamelift: bool,
     pub use_xplatform_auth: bool,
 }
-#[cfg(feature = "MultiplayerStatusData")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerStatusData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::MultiplayerStatusData {
         false
     }
 }
-#[cfg(feature = "MultiplayerStatusData")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerStatusData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerStatusData")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerStatusData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -369,7 +369,7 @@ impl crate::GlobalNamespace::MultiplayerStatusData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerStatusData")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerStatusData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -379,7 +379,7 @@ for crate::GlobalNamespace::MultiplayerStatusData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+AvailabilityStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerStatusData_AvailabilityStatus {
@@ -388,7 +388,7 @@ pub enum MultiplayerStatusData_AvailabilityStatus {
     Offline = 2i32,
     Online = 0i32,
 }
-#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Held<'a> = Self;
@@ -418,7 +418,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Type = Self;
@@ -429,7 +429,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Actual = Self;
@@ -443,7 +443,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
         self
     }
 }
-#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Type = Self;
@@ -458,7 +458,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
         }
     }
 }
-#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Actual = Self;
@@ -472,7 +472,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
         actual
     }
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerStatusData_UserMessage {
@@ -485,7 +485,7 @@ pub struct MultiplayerStatusData_UserMessage {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -505,14 +505,14 @@ for crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
         false
     }
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -551,7 +551,7 @@ impl crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -561,7 +561,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage+LocalizedMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UserMessage_MultiplayerStatusData_LocalizedMessage {
@@ -569,7 +569,7 @@ pub struct UserMessage_MultiplayerStatusData_LocalizedMessage {
     pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage+LocalizedMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -589,7 +589,7 @@ for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
         false
     }
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage+LocalizedMessage")]
 impl std::ops::Deref
 for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -597,7 +597,7 @@ for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage+LocalizedMessage")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -635,7 +635,7 @@ impl crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+#[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage+LocalizedMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

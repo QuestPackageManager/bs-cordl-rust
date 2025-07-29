@@ -1,10 +1,10 @@
-#[cfg(feature = "ENet+AllocCallback")]
+#[cfg(feature = "cordl_class_ENet+AllocCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AllocCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "ENet+AllocCallback")]
+#[cfg(feature = "cordl_class_ENet+AllocCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::AllocCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::AllocCallback {
         false
     }
 }
-#[cfg(feature = "ENet+AllocCallback")]
+#[cfg(feature = "cordl_class_ENet+AllocCallback")]
 impl std::ops::Deref for crate::ENet::AllocCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ENet+AllocCallback")]
+#[cfg(feature = "cordl_class_ENet+AllocCallback")]
 impl std::ops::DerefMut for crate::ENet::AllocCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -169,7 +169,7 @@ impl crate::ENet::AllocCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ENet+AllocCallback")]
+#[cfg(feature = "cordl_class_ENet+AllocCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::ENet::AllocCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

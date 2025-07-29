@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsKeyTransRecipientInfoGenerator {
@@ -7,7 +9,9 @@ pub struct CmsKeyTransRecipientInfoGenerator {
         crate::Org::BouncyCastle::Crypto::IKeyWrapper,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
     type Target = crate::Org::BouncyCastle::Cms::KeyTransRecipientInfoGenerator;
@@ -35,7 +41,9 @@ for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -210,7 +218,9 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "IBeatmapObjectSpawner")]
+#[cfg(feature = "cordl_class_IBeatmapObjectSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IBeatmapObjectSpawner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IBeatmapObjectSpawner")]
+#[cfg(feature = "cordl_class_IBeatmapObjectSpawner")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IBeatmapObjectSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IBeatmapObjectSpawner {
         false
     }
 }
-#[cfg(feature = "IBeatmapObjectSpawner")]
+#[cfg(feature = "cordl_class_IBeatmapObjectSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::IBeatmapObjectSpawner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IBeatmapObjectSpawner")]
+#[cfg(feature = "cordl_class_IBeatmapObjectSpawner")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IBeatmapObjectSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -157,7 +157,7 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IBeatmapObjectSpawner")]
+#[cfg(feature = "cordl_class_IBeatmapObjectSpawner")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IBeatmapObjectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

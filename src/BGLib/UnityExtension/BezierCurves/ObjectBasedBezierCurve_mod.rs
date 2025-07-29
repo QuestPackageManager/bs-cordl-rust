@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectBasedBezierCurve {
@@ -8,7 +8,7 @@ pub struct ObjectBasedBezierCurve {
         >,
     >,
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
     type Target = crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve_1<
@@ -40,7 +40,7 @@ for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
 impl std::ops::DerefMut
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -148,7 +148,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

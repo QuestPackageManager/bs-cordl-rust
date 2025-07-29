@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionHelpViewController")]
+#[cfg(feature = "cordl_class_MissionHelpViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionHelpViewController {
@@ -18,7 +18,7 @@ pub struct MissionHelpViewController {
     >,
     pub _missionHelp: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpSO>,
 }
-#[cfg(feature = "MissionHelpViewController")]
+#[cfg(feature = "cordl_class_MissionHelpViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionHelpViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::MissionHelpViewController {
         false
     }
 }
-#[cfg(feature = "MissionHelpViewController")]
+#[cfg(feature = "cordl_class_MissionHelpViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionHelpViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionHelpViewController")]
+#[cfg(feature = "cordl_class_MissionHelpViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionHelpViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -270,7 +270,7 @@ impl crate::GlobalNamespace::MissionHelpViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionHelpViewController")]
+#[cfg(feature = "cordl_class_MissionHelpViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionHelpViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -280,7 +280,7 @@ for crate::GlobalNamespace::MissionHelpViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
+#[cfg(feature = "cordl_class_MissionHelpViewController+MissionHelpGameObjectPair")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionHelpViewController_MissionHelpGameObjectPair {
@@ -288,7 +288,7 @@ pub struct MissionHelpViewController_MissionHelpGameObjectPair {
     pub missionHelp: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpSO>,
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
+#[cfg(feature = "cordl_class_MissionHelpViewController+MissionHelpGameObjectPair")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -308,7 +308,7 @@ for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair 
         false
     }
 }
-#[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
+#[cfg(feature = "cordl_class_MissionHelpViewController+MissionHelpGameObjectPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -316,7 +316,7 @@ for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
+#[cfg(feature = "cordl_class_MissionHelpViewController+MissionHelpGameObjectPair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -354,7 +354,7 @@ impl crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
+#[cfg(feature = "cordl_class_MissionHelpViewController+MissionHelpGameObjectPair")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

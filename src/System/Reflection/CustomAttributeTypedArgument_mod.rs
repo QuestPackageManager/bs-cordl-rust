@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
+#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeTypedArgument")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CustomAttributeTypedArgument {
@@ -7,7 +7,7 @@ pub struct CustomAttributeTypedArgument {
         quest_hook::libil2cpp::Il2CppObject,
     >,
 }
-#[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
+#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeTypedArgument")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::CustomAttributeTypedArgument {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Reflection::CustomAttributeTypedArgument {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
+#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeTypedArgument")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::CustomAttributeTypedArgument {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Reflection::CustomAttributeTypedArgument {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
+#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeTypedArgument")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::CustomAttributeTypedArgument {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Reflection::CustomAttributeTypedArgument {
         self
     }
 }
-#[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
+#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeTypedArgument")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::CustomAttributeTypedArgument {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Reflection::CustomAttributeTypedArgument {
         }
     }
 }
-#[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
+#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeTypedArgument")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::CustomAttributeTypedArgument {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::System::Reflection::CustomAttributeTypedArgument {
         actual
     }
 }
-#[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
+#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeTypedArgument")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Reflection::CustomAttributeTypedArgument {
     type Type = Self;

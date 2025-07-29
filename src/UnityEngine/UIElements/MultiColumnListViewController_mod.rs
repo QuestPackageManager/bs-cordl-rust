@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnListViewController {
@@ -7,7 +7,7 @@ pub struct MultiColumnListViewController {
         crate::UnityEngine::UIElements::MultiColumnController,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MultiColumnListViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::MultiColumnListViewController {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListViewController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MultiColumnListViewController {
     type Target = crate::UnityEngine::UIElements::BaseListViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListViewController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::MultiColumnListViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -400,7 +400,7 @@ impl crate::UnityEngine::UIElements::MultiColumnListViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MultiColumnListViewController")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MultiColumnListViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

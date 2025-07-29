@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventBuffer {
@@ -7,7 +7,7 @@ pub struct InputEventBuffer {
     pub m_EventCount: i32,
     pub m_WeOwnTheBuffer: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     type Type = Self;
@@ -671,7 +671,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventBuffer_Enumerator {
@@ -680,7 +682,9 @@ pub struct InputEventBuffer_Enumerator {
     pub m_CurrentEvent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_CurrentIndex: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     type Held<'a> = Self;
@@ -710,7 +714,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     type Type = Self;
@@ -721,7 +727,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     type Actual = Self;
@@ -735,7 +743,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     type Type = Self;
@@ -750,7 +760,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     type Actual = Self;
@@ -764,7 +776,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     type Type = Self;

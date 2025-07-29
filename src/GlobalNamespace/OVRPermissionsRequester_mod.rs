@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRPermissionsRequester")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPermissionsRequester {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRPermissionsRequester")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPermissionsRequester {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OVRPermissionsRequester {
         false
     }
 }
-#[cfg(feature = "OVRPermissionsRequester")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPermissionsRequester {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPermissionsRequester")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPermissionsRequester {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -311,7 +311,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPermissionsRequester")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPermissionsRequester {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -321,7 +321,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPermissionsRequester+Permission")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester+Permission")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPermissionsRequester_Permission {
@@ -331,7 +331,7 @@ pub enum OVRPermissionsRequester_Permission {
     FaceTracking = 0i32,
     Scene = 3i32,
 }
-#[cfg(feature = "OVRPermissionsRequester+Permission")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Held<'a> = Self;
@@ -361,7 +361,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPermissionsRequester+Permission")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Type = Self;
@@ -372,7 +372,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPermissionsRequester+Permission")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Actual = Self;
@@ -386,7 +386,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
         self
     }
 }
-#[cfg(feature = "OVRPermissionsRequester+Permission")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Type = Self;
@@ -401,7 +401,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
         }
     }
 }
-#[cfg(feature = "OVRPermissionsRequester+Permission")]
+#[cfg(feature = "cordl_class_OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Actual = Self;

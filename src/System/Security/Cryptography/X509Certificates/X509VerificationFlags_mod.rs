@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509VerificationFlags")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509VerificationFlags"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509VerificationFlags {
@@ -18,7 +20,9 @@ pub enum X509VerificationFlags {
     IgnoreWrongUsage = 32i32,
     NoFlag = 0i32,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509VerificationFlags")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509VerificationFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509VerificationFlags {
     type Held<'a> = Self;
@@ -48,7 +52,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509VerificationFla
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509VerificationFlags")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509VerificationFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::X509VerificationFlags {
     type Type = Self;
@@ -59,7 +65,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509VerificationFla
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509VerificationFlags")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509VerificationFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::X509VerificationFlags {
     type Actual = Self;
@@ -73,7 +81,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509VerificationFla
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509VerificationFlags")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509VerificationFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::X509VerificationFlags {
     type Type = Self;
@@ -88,7 +98,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509VerificationFla
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509VerificationFlags")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509VerificationFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::X509VerificationFlags {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "VertexPath")]
+#[cfg(feature = "cordl_class_VertexPath")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VertexPath {
@@ -15,7 +15,7 @@ pub struct VertexPath {
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
 }
-#[cfg(feature = "VertexPath")]
+#[cfg(feature = "cordl_class_VertexPath")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VertexPath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VertexPath {
         false
     }
 }
-#[cfg(feature = "VertexPath")]
+#[cfg(feature = "cordl_class_VertexPath")]
 impl std::ops::Deref for crate::GlobalNamespace::VertexPath {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VertexPath")]
+#[cfg(feature = "cordl_class_VertexPath")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VertexPath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -303,7 +303,7 @@ impl crate::GlobalNamespace::VertexPath {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VertexPath")]
+#[cfg(feature = "cordl_class_VertexPath")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VertexPath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -312,7 +312,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VertexPath {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "VertexPath+Vertex")]
+#[cfg(feature = "cordl_class_VertexPath+Vertex")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VertexPath_Vertex {
@@ -320,7 +320,7 @@ pub struct VertexPath_Vertex {
     pub tangent: crate::UnityEngine::Vector3,
     pub normal: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "VertexPath+Vertex")]
+#[cfg(feature = "cordl_class_VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VertexPath_Vertex {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -349,7 +349,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VertexPath_V
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "VertexPath+Vertex")]
+#[cfg(feature = "cordl_class_VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::VertexPath_Vertex {
     type Type = Self;
@@ -360,7 +360,7 @@ for crate::GlobalNamespace::VertexPath_Vertex {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "VertexPath+Vertex")]
+#[cfg(feature = "cordl_class_VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::VertexPath_Vertex {
     type Actual = Self;
@@ -374,7 +374,7 @@ for crate::GlobalNamespace::VertexPath_Vertex {
         self
     }
 }
-#[cfg(feature = "VertexPath+Vertex")]
+#[cfg(feature = "cordl_class_VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::VertexPath_Vertex {
     type Type = Self;
@@ -389,7 +389,7 @@ for crate::GlobalNamespace::VertexPath_Vertex {
         }
     }
 }
-#[cfg(feature = "VertexPath+Vertex")]
+#[cfg(feature = "cordl_class_VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::VertexPath_Vertex {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -402,7 +402,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::VertexPath
         actual
     }
 }
-#[cfg(feature = "VertexPath+Vertex")]
+#[cfg(feature = "cordl_class_VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::VertexPath_Vertex {
     type Type = Self;

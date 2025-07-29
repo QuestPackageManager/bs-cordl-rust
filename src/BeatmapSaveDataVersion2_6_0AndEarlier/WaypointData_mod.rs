@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaypointData {
@@ -8,7 +8,7 @@ pub struct WaypointData {
     pub _lineLayer: crate::BeatmapSaveDataCommon::NoteLineLayer,
     pub _offsetDirection: crate::BeatmapSaveDataCommon::OffsetDirection,
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
     type Target = crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

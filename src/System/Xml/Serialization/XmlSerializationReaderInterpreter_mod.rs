@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReaderInterpreter {
@@ -8,7 +10,9 @@ pub struct XmlSerializationReaderInterpreter {
     >,
     pub _format: crate::System::Xml::Serialization::SerializationFormat,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +32,9 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter"
+)]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     type Target = crate::System::Xml::Serialization::XmlSerializationReader;
@@ -36,7 +42,9 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter"
+)]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1384,7 +1392,9 @@ impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1395,7 +1405,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1408,7 +1418,7 @@ pub struct XmlSerializationReaderInterpreter_FixupCallbackInfo {
     pub _isValueList: bool,
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo {
@@ -1430,7 +1440,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCa
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo {
@@ -1440,7 +1450,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCa
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo {
@@ -1531,7 +1541,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupC
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo {
@@ -1543,7 +1553,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCa
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1557,7 +1567,7 @@ pub struct XmlSerializationReaderInterpreter_ReaderCallbackInfo {
     >,
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo {
@@ -1579,7 +1589,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderC
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo {
@@ -1589,7 +1599,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderC
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo {
@@ -1682,7 +1692,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_Reader
     }
 }
 #[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
+    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo {

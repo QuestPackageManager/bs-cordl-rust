@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeAsset {
@@ -44,7 +44,7 @@ pub struct VisualTreeAsset {
     pub m_ContentContainerId: i32,
     pub m_ContentHash: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -64,14 +64,14 @@ for crate::UnityEngine::UIElements::VisualTreeAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualTreeAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1462,7 +1462,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualTreeAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1472,7 +1472,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_AssetEntry {
@@ -1481,7 +1481,7 @@ pub struct VisualTreeAsset_AssetEntry {
     pub asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     pub m_CachedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Held<'a> = Self;
@@ -1511,7 +1511,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Type = Self;
@@ -1522,7 +1522,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Actual = Self;
@@ -1536,7 +1536,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Type = Self;
@@ -1551,7 +1551,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Actual = Self;
@@ -1565,7 +1565,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Type = Self;
@@ -1638,14 +1638,14 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_SlotDefinition {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub insertionPointId: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Held<'a> = Self;
@@ -1675,7 +1675,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Type = Self;
@@ -1686,7 +1686,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Actual = Self;
@@ -1700,7 +1700,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Type = Self;
@@ -1715,7 +1715,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Actual = Self;
@@ -1729,7 +1729,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Type = Self;
@@ -1742,14 +1742,14 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_SlotUsageEntry {
     pub slotName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub assetId: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Held<'a> = Self;
@@ -1779,7 +1779,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Type = Self;
@@ -1790,7 +1790,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Actual = Self;
@@ -1804,7 +1804,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Type = Self;
@@ -1819,7 +1819,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Actual = Self;
@@ -1833,7 +1833,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Type = Self;
@@ -1846,7 +1846,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_UsingEntry {
@@ -1856,7 +1856,7 @@ pub struct VisualTreeAsset_UsingEntry {
         crate::UnityEngine::UIElements::VisualTreeAsset,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Held<'a> = Self;
@@ -1886,7 +1886,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Type = Self;
@@ -1897,7 +1897,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Actual = Self;
@@ -1911,7 +1911,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Type = Self;
@@ -1926,7 +1926,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Actual = Self;
@@ -1940,7 +1940,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Type = Self;
@@ -1988,13 +1988,13 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeAsset_UsingEntryComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2014,7 +2014,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2022,7 +2022,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2090,7 +2090,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2128,7 +2128,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_UxmlObjectEntry {
@@ -2139,7 +2139,7 @@ pub struct VisualTreeAsset_UxmlObjectEntry {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Held<'a> = Self;
@@ -2169,7 +2169,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Type = Self;
@@ -2180,7 +2180,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Actual = Self;
@@ -2194,7 +2194,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Type = Self;
@@ -2209,7 +2209,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Actual = Self;
@@ -2223,7 +2223,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Type = Self;

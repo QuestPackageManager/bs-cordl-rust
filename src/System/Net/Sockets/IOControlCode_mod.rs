@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+IOControlCode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IOControlCode")]
 #[repr(i64)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IOControlCode {
@@ -38,7 +38,7 @@ pub enum IOControlCode {
     TranslateHandle = 3355443213i64,
     UnicastInterface = 2550136838i64,
 }
-#[cfg(feature = "System+Net+Sockets+IOControlCode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IOControlCode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::IOControlCode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -67,7 +67,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::IOContr
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Sockets+IOControlCode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IOControlCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::IOControlCode {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Net::Sockets::IOControlCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Sockets+IOControlCode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IOControlCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::IOControlCode {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::System::Net::Sockets::IOControlCode {
         self
     }
 }
-#[cfg(feature = "System+Net+Sockets+IOControlCode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IOControlCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::IOControlCode {
     type Type = Self;
@@ -107,7 +107,7 @@ for crate::System::Net::Sockets::IOControlCode {
         }
     }
 }
-#[cfg(feature = "System+Net+Sockets+IOControlCode")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+IOControlCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Sockets::IOControlCode {
     type Actual = Self;

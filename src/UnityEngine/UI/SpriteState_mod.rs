@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+SpriteState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+SpriteState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpriteState {
@@ -7,7 +7,7 @@ pub struct SpriteState {
     pub m_SelectedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub m_DisabledSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
-#[cfg(feature = "UnityEngine+UI+SpriteState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+SpriteState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::SpriteState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::SpriteState 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+SpriteState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+SpriteState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::SpriteState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::SpriteSt
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+SpriteState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+SpriteState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::SpriteState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::SpriteS
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+SpriteState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+SpriteState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::SpriteState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::SpriteSt
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+SpriteState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+SpriteState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::SpriteState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::SpriteStat
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+SpriteState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+SpriteState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::UI::SpriteState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

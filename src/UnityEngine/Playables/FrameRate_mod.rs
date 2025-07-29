@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameRate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FrameRate {
     pub m_Rate: i32,
 }
-#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameRate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Playables::FrameRate {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Playables::Frame
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameRate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::FrameRate {
     type Type = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::Playables::FrameRate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameRate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::FrameRate {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::UnityEngine::Playables::FrameRate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameRate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::FrameRate {
     type Type = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::Playables::FrameRate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameRate")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Playables::FrameRate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Playables::Fra
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameRate")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameRate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Playables::FrameRate {
     type Type = Self;

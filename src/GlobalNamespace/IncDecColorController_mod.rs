@@ -1,4 +1,4 @@
-#[cfg(feature = "IncDecColorController")]
+#[cfg(feature = "cordl_class_IncDecColorController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IncDecColorController {
@@ -7,7 +7,7 @@ pub struct IncDecColorController {
         crate::GlobalNamespace::ColorStepValuePicker,
     >,
 }
-#[cfg(feature = "IncDecColorController")]
+#[cfg(feature = "cordl_class_IncDecColorController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IncDecColorController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::IncDecColorController {
         false
     }
 }
-#[cfg(feature = "IncDecColorController")]
+#[cfg(feature = "cordl_class_IncDecColorController")]
 impl std::ops::Deref for crate::GlobalNamespace::IncDecColorController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IncDecColorController")]
+#[cfg(feature = "cordl_class_IncDecColorController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IncDecColorController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::GlobalNamespace::IncDecColorController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IncDecColorController")]
+#[cfg(feature = "cordl_class_IncDecColorController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IncDecColorController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

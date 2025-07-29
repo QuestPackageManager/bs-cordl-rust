@@ -1,4 +1,4 @@
-#[cfg(feature = "System+AppDomain")]
+#[cfg(feature = "cordl_class_System+AppDomain")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppDomain {
@@ -37,7 +37,7 @@ pub struct AppDomain {
         >,
     >,
 }
-#[cfg(feature = "System+AppDomain")]
+#[cfg(feature = "cordl_class_System+AppDomain")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::AppDomain {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -56,14 +56,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AppDomain {
         false
     }
 }
-#[cfg(feature = "System+AppDomain")]
+#[cfg(feature = "cordl_class_System+AppDomain")]
 impl std::ops::Deref for crate::System::AppDomain {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+AppDomain")]
+#[cfg(feature = "cordl_class_System+AppDomain")]
 impl std::ops::DerefMut for crate::System::AppDomain {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1240,7 +1240,7 @@ impl crate::System::AppDomain {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+AppDomain")]
+#[cfg(feature = "cordl_class_System+AppDomain")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::AppDomain {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

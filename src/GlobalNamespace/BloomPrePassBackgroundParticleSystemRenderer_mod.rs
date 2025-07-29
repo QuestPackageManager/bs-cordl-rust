@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundParticleSystemRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundParticleSystemRenderer {
@@ -6,7 +6,7 @@ pub struct BloomPrePassBackgroundParticleSystemRenderer {
     pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
-#[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundParticleSystemRenderer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundParticleSystemRenderer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundParticleSystemRenderer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundParticleSystemRenderer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

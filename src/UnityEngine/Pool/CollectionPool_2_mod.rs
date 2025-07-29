@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Pool+CollectionPool_2")]
+#[cfg(feature = "cordl_class_UnityEngine+Pool+CollectionPool_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionPool_2<
@@ -9,7 +9,7 @@ pub struct CollectionPool_2<
     __cordl_phantom_TCollection: std::marker::PhantomData<TCollection>,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
 }
-#[cfg(feature = "UnityEngine+Pool+CollectionPool_2")]
+#[cfg(feature = "cordl_class_UnityEngine+Pool+CollectionPool_2")]
 unsafe impl<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ for crate::UnityEngine::Pool::CollectionPool_2<TCollection, TItem> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Pool+CollectionPool_2")]
+#[cfg(feature = "cordl_class_UnityEngine+Pool+CollectionPool_2")]
 impl<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Pool+CollectionPool_2")]
+#[cfg(feature = "cordl_class_UnityEngine+Pool+CollectionPool_2")]
 impl<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
@@ -162,7 +162,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Pool+CollectionPool_2")]
+#[cfg(feature = "cordl_class_UnityEngine+Pool+CollectionPool_2")]
 impl<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,

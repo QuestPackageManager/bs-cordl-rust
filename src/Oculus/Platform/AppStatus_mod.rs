@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+AppStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AppStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppStatus {
@@ -11,7 +11,7 @@ pub enum AppStatus {
     Uninstalling = 6i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "Oculus+Platform+AppStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AppStatus")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AppStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AppStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+AppStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AppStatus")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::AppStatus {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::AppStat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+AppStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AppStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::AppStatus {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::AppSta
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+AppStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AppStatus")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::AppStatus {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::AppStat
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+AppStatus")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AppStatus")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::AppStatus {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

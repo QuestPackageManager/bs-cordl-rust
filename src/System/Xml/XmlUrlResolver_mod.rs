@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlUrlResolver")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUrlResolver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlUrlResolver {
@@ -9,7 +9,7 @@ pub struct XmlUrlResolver {
         crate::System::Net::Cache::RequestCachePolicy,
     >,
 }
-#[cfg(feature = "System+Xml+XmlUrlResolver")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUrlResolver")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlUrlResolver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlUrlResolver {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlUrlResolver")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUrlResolver")]
 impl std::ops::Deref for crate::System::Xml::XmlUrlResolver {
     type Target = crate::System::Xml::XmlResolver;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlUrlResolver")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUrlResolver")]
 impl std::ops::DerefMut for crate::System::Xml::XmlUrlResolver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -221,7 +221,7 @@ impl crate::System::Xml::XmlUrlResolver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlUrlResolver")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUrlResolver")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlUrlResolver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

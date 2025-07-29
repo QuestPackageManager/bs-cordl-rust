@@ -1,4 +1,4 @@
-#[cfg(feature = "FirstPersonFlyingControllerEnableHandler")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingControllerEnableHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FirstPersonFlyingControllerEnableHandler {
@@ -8,7 +8,7 @@ pub struct FirstPersonFlyingControllerEnableHandler {
     >,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
 }
-#[cfg(feature = "FirstPersonFlyingControllerEnableHandler")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingControllerEnableHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
         false
     }
 }
-#[cfg(feature = "FirstPersonFlyingControllerEnableHandler")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingControllerEnableHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FirstPersonFlyingControllerEnableHandler")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingControllerEnableHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FirstPersonFlyingControllerEnableHandler")]
+#[cfg(feature = "cordl_class_FirstPersonFlyingControllerEnableHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

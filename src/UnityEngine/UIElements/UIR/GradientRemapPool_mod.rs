@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemapPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+GradientRemapPool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientRemapPool {
@@ -6,7 +6,7 @@ pub struct GradientRemapPool {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::GradientRemap>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemapPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+GradientRemapPool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemapPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+GradientRemapPool")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPool_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::GradientRemap>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::GradientRemapPool 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemapPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+GradientRemapPool")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::UIR::GradientRemapPool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemapPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+GradientRemapPool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

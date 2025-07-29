@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerResultsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerResultsController {
@@ -7,7 +7,7 @@ pub struct MultiplayerLocalInactivePlayerResultsController {
         crate::GlobalNamespace::MultiplayerController,
     >,
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerResultsController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerResultsController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerResultsController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerResultsController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

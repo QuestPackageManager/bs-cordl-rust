@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+BezierTangentMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierTangentMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BezierTangentMode {
@@ -7,7 +7,7 @@ pub enum BezierTangentMode {
     Free = 0i32,
     Mirrored = 2i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierTangentMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierTangentMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::BezierTangentMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::ProBuilder::BezierTangentMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierTangentMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierTangentMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::BezierTangentMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ProBuilder::BezierTangentMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierTangentMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierTangentMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::BezierTangentMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ProBuilder::BezierTangentMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierTangentMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierTangentMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::BezierTangentMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ProBuilder::BezierTangentMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+BezierTangentMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierTangentMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::BezierTangentMode {
     type Actual = Self;

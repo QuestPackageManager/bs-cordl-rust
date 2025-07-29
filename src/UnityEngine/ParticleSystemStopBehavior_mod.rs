@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemStopBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemStopBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemStopBehavior {
@@ -6,7 +6,7 @@ pub enum ParticleSystemStopBehavior {
     StopEmitting = 1i32,
     StopEmittingAndClear = 0i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemStopBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemStopBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemStopBehavior {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::ParticleSystemStopBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemStopBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemStopBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemStopBehavior {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::ParticleSystemStopBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemStopBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemStopBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemStopBehavior {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ParticleSystemStopBehavior {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemStopBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemStopBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemStopBehavior {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::ParticleSystemStopBehavior {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemStopBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemStopBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemStopBehavior {
     type Actual = Self;

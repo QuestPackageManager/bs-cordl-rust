@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Mathematics+PostNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+PostNormalizeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PostNormalizeAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }
-#[cfg(feature = "Unity+Mathematics+PostNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+PostNormalizeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::PostNormalizeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Mathematics::PostNormalizeAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Mathematics+PostNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+PostNormalizeAttribute")]
 impl std::ops::Deref for crate::Unity::Mathematics::PostNormalizeAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Mathematics+PostNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+PostNormalizeAttribute")]
 impl std::ops::DerefMut for crate::Unity::Mathematics::PostNormalizeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Unity::Mathematics::PostNormalizeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Mathematics+PostNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+PostNormalizeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Mathematics::PostNormalizeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

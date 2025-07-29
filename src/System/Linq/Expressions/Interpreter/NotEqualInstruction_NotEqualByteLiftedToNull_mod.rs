@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NotEqualInstruction_NotEqualByteLiftedToNull {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualByteLiftedToNull {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualByteLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualByteLiftedToNull {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualByteLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualByteLiftedToNull {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::NotEqualInstruction_NotEqualByteLiftedToNull {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualByteLiftedToNull"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualByteLiftedToNull {

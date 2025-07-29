@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEventTrace {
@@ -36,7 +36,7 @@ pub struct InputEventTrace {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -56,14 +56,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1272,7 +1272,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1338,7 +1338,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventTrace_DeviceInfo {
@@ -1348,7 +1350,9 @@ pub struct InputEventTrace_DeviceInfo {
     pub m_StateSizeInBytes: i32,
     pub m_FullLayoutJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Held<'a> = Self;
@@ -1378,7 +1382,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Type = Self;
@@ -1389,7 +1395,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Actual = Self;
@@ -1403,7 +1411,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Type = Self;
@@ -1418,7 +1428,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Actual = Self;
@@ -1432,7 +1444,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Type = Self;
@@ -1638,7 +1652,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEventTrace_Enumerator {
@@ -1649,7 +1665,9 @@ pub struct InputEventTrace_Enumerator {
     pub m_ChangeCounter: i32,
     pub m_Current: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1669,7 +1687,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1677,7 +1697,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1841,7 +1863,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1907,14 +1931,18 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputEventTrace_FileFlags {
     #[default]
     FixedUpdate = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Held<'a> = Self;
@@ -1944,7 +1972,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Type = Self;
@@ -1955,7 +1985,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Actual = Self;
@@ -1969,7 +2001,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Type = Self;
@@ -1984,7 +2018,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Actual = Self;
@@ -1998,7 +2034,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEventTrace_ReplayController {
@@ -2032,7 +2070,9 @@ pub struct InputEventTrace_ReplayController {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2052,7 +2092,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController 
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2060,7 +2102,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2799,7 +2843,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

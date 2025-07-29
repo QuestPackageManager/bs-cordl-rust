@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -11,7 +11,7 @@ pub struct InstantiationParameters {
     pub m_SetPositionRotation: bool,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters {
@@ -43,7 +43,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPara
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters {
@@ -56,7 +56,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPara
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters {
@@ -72,7 +72,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPara
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters {
@@ -89,7 +89,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPara
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters {
@@ -105,7 +105,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPara
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters {

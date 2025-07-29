@@ -1,4 +1,4 @@
-#[cfg(feature = "TextMeshProAutosizeGroup")]
+#[cfg(feature = "cordl_class_TextMeshProAutosizeGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextMeshProAutosizeGroup {
@@ -9,7 +9,7 @@ pub struct TextMeshProAutosizeGroup {
         >,
     >,
 }
-#[cfg(feature = "TextMeshProAutosizeGroup")]
+#[cfg(feature = "cordl_class_TextMeshProAutosizeGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TextMeshProAutosizeGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::TextMeshProAutosizeGroup {
         false
     }
 }
-#[cfg(feature = "TextMeshProAutosizeGroup")]
+#[cfg(feature = "cordl_class_TextMeshProAutosizeGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::TextMeshProAutosizeGroup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TextMeshProAutosizeGroup")]
+#[cfg(feature = "cordl_class_TextMeshProAutosizeGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextMeshProAutosizeGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::TextMeshProAutosizeGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TextMeshProAutosizeGroup")]
+#[cfg(feature = "cordl_class_TextMeshProAutosizeGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TextMeshProAutosizeGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ClipMethod {
@@ -9,7 +9,7 @@ pub enum ClipMethod {
     Stencil = 4i32,
     Undetermined = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod {
     type Actual = Self;

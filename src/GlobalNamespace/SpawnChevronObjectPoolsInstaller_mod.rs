@@ -1,4 +1,4 @@
-#[cfg(feature = "SpawnChevronObjectPoolsInstaller")]
+#[cfg(feature = "cordl_class_SpawnChevronObjectPoolsInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnChevronObjectPoolsInstaller {
@@ -7,7 +7,7 @@ pub struct SpawnChevronObjectPoolsInstaller {
         crate::GlobalNamespace::SpawnRotationChevron,
     >,
 }
-#[cfg(feature = "SpawnChevronObjectPoolsInstaller")]
+#[cfg(feature = "cordl_class_SpawnChevronObjectPoolsInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
         false
     }
 }
-#[cfg(feature = "SpawnChevronObjectPoolsInstaller")]
+#[cfg(feature = "cordl_class_SpawnChevronObjectPoolsInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpawnChevronObjectPoolsInstaller")]
+#[cfg(feature = "cordl_class_SpawnChevronObjectPoolsInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpawnChevronObjectPoolsInstaller")]
+#[cfg(feature = "cordl_class_SpawnChevronObjectPoolsInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

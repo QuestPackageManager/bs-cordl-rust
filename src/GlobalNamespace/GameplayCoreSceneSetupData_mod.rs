@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameplayCoreSceneSetupData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayCoreSceneSetupData {
@@ -58,7 +58,7 @@ pub struct GameplayCoreSceneSetupData {
     pub _allowNullBeatmapLevelData: bool,
     pub _enableBeatmapDataCaching: bool,
 }
-#[cfg(feature = "GameplayCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameplayCoreSceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayCoreSceneSetupData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -78,14 +78,14 @@ for crate::GlobalNamespace::GameplayCoreSceneSetupData {
         false
     }
 }
-#[cfg(feature = "GameplayCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameplayCoreSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayCoreSceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplayCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameplayCoreSceneSetupData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayCoreSceneSetupData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1221,7 +1221,7 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplayCoreSceneSetupData")]
+#[cfg(feature = "cordl_class_GameplayCoreSceneSetupData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayCoreSceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

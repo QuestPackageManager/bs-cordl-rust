@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Permissions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Permissions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_Permissions {
@@ -9,7 +9,7 @@ pub enum HAPI_Permissions {
     HAPI_PERMISSIONS_READ_WRITE = 1i32,
     HAPI_PERMISSIONS_WRITE_ONLY = 3i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Permissions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Permissions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Permissions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Perm
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Permissions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Permissions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_Permissions {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::HoudiniEngineUnity::HAPI_Permissions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Permissions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Permissions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_Permissions {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::HoudiniEngineUnity::HAPI_Permissions {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Permissions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Permissions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_Permissions {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::HoudiniEngineUnity::HAPI_Permissions {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Permissions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Permissions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_Permissions {
     type Actual = Self;

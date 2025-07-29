@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Mouse")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Mouse")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Mouse {
@@ -25,7 +25,7 @@ pub struct Mouse {
         crate::UnityEngine::InputSystem::Controls::IntegerControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Mouse")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Mouse")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Mouse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -44,14 +44,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Mou
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Mouse")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Mouse")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Mouse {
     type Target = crate::UnityEngine::InputSystem::Pointer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Mouse")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Mouse")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Mouse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -795,7 +795,7 @@ impl crate::UnityEngine::InputSystem::Mouse {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Mouse")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Mouse")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Mouse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

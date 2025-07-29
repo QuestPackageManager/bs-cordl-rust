@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+WingedEdge")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WingedEdge {
@@ -17,7 +17,7 @@ pub struct WingedEdge {
         crate::UnityEngine::ProBuilder::WingedEdge,
     >,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+WingedEdge")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::WingedEdge {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Wing
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+WingedEdge")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::WingedEdge {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+WingedEdge")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::WingedEdge {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -830,7 +830,7 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+WingedEdge")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::WingedEdge {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

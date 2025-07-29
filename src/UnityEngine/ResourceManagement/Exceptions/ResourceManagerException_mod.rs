@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ResourceManagerException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ResourceManagerException"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManagerException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ResourceManagerException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ResourceManagerException"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ResourceManagerException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ResourceManagerException"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException {
     type Target = crate::System::Exception;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ResourceManagerException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ResourceManagerException"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -220,7 +228,9 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerExceptio
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ResourceManagerException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ResourceManagerException"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+TEXTURE_TYPE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+TEXTURE_TYPE")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_TYPE {
@@ -6,7 +6,7 @@ pub enum TEXTURE_TYPE {
     COLOR_BUFFER = 1u32,
     UNDEFINED = 0u32,
 }
-#[cfg(feature = "LIV+SDK+Unity+TEXTURE_TYPE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+TEXTURE_TYPE")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::TEXTURE_TYPE {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::TEXTURE_TYPE
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+TEXTURE_TYPE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+TEXTURE_TYPE")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::TEXTURE_TYPE {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::TEXTURE_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+TEXTURE_TYPE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+TEXTURE_TYPE")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::TEXTURE_TYPE {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::TEXTURE
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+TEXTURE_TYPE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+TEXTURE_TYPE")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::TEXTURE_TYPE {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::TEXTURE_
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+TEXTURE_TYPE")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+TEXTURE_TYPE")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::TEXTURE_TYPE {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

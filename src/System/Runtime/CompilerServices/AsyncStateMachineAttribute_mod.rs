@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncStateMachineAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncStateMachineAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncStateMachineAttribute {
     __cordl_parent: crate::System::Runtime::CompilerServices::StateMachineAttribute,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncStateMachineAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncStateMachineAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncStateMachineAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncStateMachineAttribute"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
     type Target = crate::System::Runtime::CompilerServices::StateMachineAttribute;
@@ -32,7 +38,9 @@ for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncStateMachineAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncStateMachineAttribute"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -77,7 +85,9 @@ impl crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+AsyncStateMachineAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+AsyncStateMachineAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

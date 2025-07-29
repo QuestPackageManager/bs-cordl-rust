@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+CipherSuiteCode")]
 #[repr(u16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherSuiteCode {
@@ -270,7 +270,7 @@ pub enum CipherSuiteCode {
     TLS_SRP_SHA_WITH_AES_128_CBC_SHA = 49181u16,
     TLS_SRP_SHA_WITH_AES_256_CBC_SHA = 49184u16,
 }
-#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Held<'a> = Self;
@@ -300,7 +300,7 @@ for crate::Mono::Security::Interface::CipherSuiteCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Type = Self;
@@ -311,7 +311,7 @@ for crate::Mono::Security::Interface::CipherSuiteCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Actual = Self;
@@ -325,7 +325,7 @@ for crate::Mono::Security::Interface::CipherSuiteCode {
         self
     }
 }
-#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Type = Self;
@@ -340,7 +340,7 @@ for crate::Mono::Security::Interface::CipherSuiteCode {
         }
     }
 }
-#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Actual = Self;

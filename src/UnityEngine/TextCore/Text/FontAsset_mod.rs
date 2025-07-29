@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+FontAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FontAsset {
@@ -118,7 +118,7 @@ pub struct FontAsset {
         crate::System::Collections::Generic::HashSet_1<u32>,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::FontAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -138,14 +138,14 @@ for crate::UnityEngine::TextCore::Text::FontAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontAsset")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::FontAsset {
     type Target = crate::UnityEngine::TextCore::Text::TextAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::FontAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3640,7 +3640,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::FontAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

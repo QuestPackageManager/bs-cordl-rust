@@ -1,4 +1,4 @@
-#[cfg(feature = "CuttingManager")]
+#[cfg(feature = "cordl_class_CuttingManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CuttingManager {
@@ -6,7 +6,7 @@ pub struct CuttingManager {
     pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
     pub _noteCutter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutter>,
 }
-#[cfg(feature = "CuttingManager")]
+#[cfg(feature = "cordl_class_CuttingManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CuttingManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CuttingManag
         false
     }
 }
-#[cfg(feature = "CuttingManager")]
+#[cfg(feature = "cordl_class_CuttingManager")]
 impl std::ops::Deref for crate::GlobalNamespace::CuttingManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CuttingManager")]
+#[cfg(feature = "cordl_class_CuttingManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CuttingManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,7 +141,7 @@ impl crate::GlobalNamespace::CuttingManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CuttingManager")]
+#[cfg(feature = "cordl_class_CuttingManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CuttingManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

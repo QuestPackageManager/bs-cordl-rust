@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NativeContainerSupportsDeferredConvertListToArray {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferredConvertListToArray {
@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferred
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferredConvertListToArray {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferred
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferredConvertListToArray {
@@ -81,7 +81,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferre
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferredConvertListToArray {

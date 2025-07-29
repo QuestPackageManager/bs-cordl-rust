@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PriorityQueue_2<
@@ -19,7 +19,7 @@ pub struct PriorityQueue_2<
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -69,7 +69,7 @@ for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -340,7 +340,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

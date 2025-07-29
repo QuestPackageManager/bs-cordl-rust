@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationEventBoxGroup {
@@ -6,7 +6,7 @@ pub struct LightRotationEventBoxGroup {
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationEventBox>,
     >,
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
     type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationEventBox>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGr
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

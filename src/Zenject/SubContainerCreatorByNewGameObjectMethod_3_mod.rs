@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewGameObjectMethod_3<
@@ -19,7 +19,7 @@ pub struct SubContainerCreatorByNewGameObjectMethod_3<
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TParam3: std::marker::PhantomData<TParam3>,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -63,7 +63,7 @@ for crate::Zenject::SubContainerCreatorByNewGameObjectMethod_3<
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -79,7 +79,7 @@ for crate::Zenject::SubContainerCreatorByNewGameObjectMethod_3<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -235,7 +235,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod_3")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

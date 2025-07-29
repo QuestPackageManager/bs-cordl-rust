@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_StatusType {
@@ -8,7 +8,7 @@ pub enum HAPI_StatusType {
     HAPI_STATUS_COOK_STATE = 2i32,
     HAPI_STATUS_MAX = 3i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_StatusType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Stat
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_StatusType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::HoudiniEngineUnity::HAPI_StatusType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_StatusType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::HoudiniEngineUnity::HAPI_StatusType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_StatusType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::HoudiniEngineUnity::HAPI_StatusType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_StatusType {
     type Actual = Self;

@@ -1,4 +1,6 @@
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
@@ -6,7 +8,9 @@ pub struct ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     pub target: crate::Unity::Collections::NativeArray_1<u8>,
     pub source: crate::Unity::Collections::NativeArray_1<u8>,
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     type Held<'a> = Self;
@@ -36,7 +40,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     type Type = Self;
@@ -47,7 +53,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     type Actual = Self;
@@ -61,7 +69,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
         self
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     type Type = Self;
@@ -76,7 +86,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
         }
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     type Actual = Self;
@@ -90,7 +102,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     type Type = Self;
@@ -140,7 +154,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
         todo!()
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
@@ -151,7 +167,9 @@ pub struct ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     pub _ChannelCount_k__BackingField: i32,
     pub _FlipY_k__BackingField: bool,
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     type Held<'a> = Self;
@@ -181,7 +199,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Text
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     type Type = Self;
@@ -192,7 +212,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Text
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     type Actual = Self;
@@ -206,7 +228,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Text
         self
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     type Type = Self;
@@ -221,7 +245,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Text
         }
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     type Actual = Self;
@@ -235,7 +261,9 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Text
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
+#[cfg(
+    feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     type Type = Self;
@@ -386,7 +414,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughColorLut {
@@ -401,7 +429,7 @@ pub struct OVRPassthroughColorLut {
     pub _colorBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "OVRPassthroughColorLut")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughColorLut {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -421,14 +449,14 @@ for crate::GlobalNamespace::OVRPassthroughColorLut {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughColorLut {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughColorLut {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1554,7 +1582,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughColorLut {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1578,7 +1606,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorChannels")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorChannels")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPassthroughColorLut_ColorChannels {
@@ -1586,7 +1614,7 @@ pub enum OVRPassthroughColorLut_ColorChannels {
     Rgb = 1i32,
     Rgba = 2i32,
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorChannels")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorChannels")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
     type Held<'a> = Self;
@@ -1616,7 +1644,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorChannels")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorChannels")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
     type Type = Self;
@@ -1627,7 +1655,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorChannels")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorChannels")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
     type Actual = Self;
@@ -1641,7 +1669,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
         self
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorChannels")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorChannels")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
     type Type = Self;
@@ -1656,7 +1684,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
         }
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorChannels")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorChannels")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
     type Actual = Self;
@@ -1670,13 +1698,13 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughColorLut_ColorLutTextureConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1696,7 +1724,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         false
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1704,7 +1732,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1864,7 +1892,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1874,7 +1902,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughColorLut_WriteColorsAsBytesJob {
@@ -1882,7 +1910,7 @@ pub struct OVRPassthroughColorLut_WriteColorsAsBytesJob {
     pub source: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Color>,
     pub channelCount: i32,
 }
-#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
     type Held<'a> = Self;
@@ -1912,7 +1940,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
     type Type = Self;
@@ -1923,7 +1951,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
     type Actual = Self;
@@ -1937,7 +1965,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
         self
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
     type Type = Self;
@@ -1952,7 +1980,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
         }
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
     type Actual = Self;
@@ -1966,7 +1994,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
         actual
     }
 }
-#[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
+#[cfg(feature = "cordl_class_OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
     type Type = Self;

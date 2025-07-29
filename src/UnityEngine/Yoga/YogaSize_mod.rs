@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Yoga+YogaSize")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaSize")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct YogaSize {
     pub width: f32,
     pub height: f32,
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaSize")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaSize")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::YogaSize {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::YogaSize {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaSize")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaSize")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Yoga::YogaSize {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Yoga::YogaSi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaSize")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaSize")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Yoga::YogaSize {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Yoga::YogaS
         self
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaSize")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaSize")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Yoga::YogaSize {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Yoga::YogaSi
         }
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaSize")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaSize")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Yoga::YogaSize {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Yoga::YogaSize
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaSize")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaSize")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Yoga::YogaSize {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

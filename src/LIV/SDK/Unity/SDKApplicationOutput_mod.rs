@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKApplicationOutput")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKApplicationOutput {
@@ -14,7 +14,7 @@ pub struct SDKApplicationOutput {
     pub sdkID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub sdkVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Actual = Self;
@@ -98,7 +98,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Type = Self;

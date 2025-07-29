@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointSet {
@@ -18,7 +18,7 @@ pub struct PointSet {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -419,7 +419,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

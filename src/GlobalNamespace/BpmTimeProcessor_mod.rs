@@ -1,4 +1,4 @@
-#[cfg(feature = "BpmTimeProcessor")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BpmTimeProcessor {
@@ -10,7 +10,7 @@ pub struct BpmTimeProcessor {
     >,
     pub currentBpmChangesDataIdx: i32,
 }
-#[cfg(feature = "BpmTimeProcessor")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BpmTimeProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BpmTimeProce
         false
     }
 }
-#[cfg(feature = "BpmTimeProcessor")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::BpmTimeProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BpmTimeProcessor")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BpmTimeProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -273,7 +273,7 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BpmTimeProcessor")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BpmTimeProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -296,7 +296,7 @@ for crate::GlobalNamespace::BpmTimeProcessor {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor+BpmChangeData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BpmTimeProcessor_BpmChangeData {
@@ -304,7 +304,7 @@ pub struct BpmTimeProcessor_BpmChangeData {
     pub bpmChangeStartBpmTime: f32,
     pub bpm: f32,
 }
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor+BpmChangeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
     type Held<'a> = Self;
@@ -334,7 +334,7 @@ for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor+BpmChangeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
     type Type = Self;
@@ -345,7 +345,7 @@ for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor+BpmChangeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
     type Actual = Self;
@@ -359,7 +359,7 @@ for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
         self
     }
 }
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor+BpmChangeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
     type Type = Self;
@@ -374,7 +374,7 @@ for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
         }
     }
 }
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor+BpmChangeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
     type Actual = Self;
@@ -388,7 +388,7 @@ for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
         actual
     }
 }
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+#[cfg(feature = "cordl_class_BpmTimeProcessor+BpmChangeData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
     type Type = Self;

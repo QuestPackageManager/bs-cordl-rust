@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightType")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightType")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightType {
@@ -11,7 +11,7 @@ pub enum LightType {
     SpotBoxShape = 6u8,
     SpotPyramidShape = 5u8,
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightType")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightType")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightType")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightType")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightType")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::GlobalIllumination::LightType {
     type Actual = Self;

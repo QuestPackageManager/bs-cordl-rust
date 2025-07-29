@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityOpus+NumChannels")]
+#[cfg(feature = "cordl_class_UnityOpus+NumChannels")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NumChannels {
@@ -6,7 +6,7 @@ pub enum NumChannels {
     Mono = 1i32,
     Stereo = 2i32,
 }
-#[cfg(feature = "UnityOpus+NumChannels")]
+#[cfg(feature = "cordl_class_UnityOpus+NumChannels")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityOpus::NumChannels {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityOpus::NumChannels {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityOpus+NumChannels")]
+#[cfg(feature = "cordl_class_UnityOpus+NumChannels")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityOpus::NumChannels {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityOpus::NumChannels {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityOpus+NumChannels")]
+#[cfg(feature = "cordl_class_UnityOpus+NumChannels")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityOpus::NumChannels {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityOpus::NumChannels {
         self
     }
 }
-#[cfg(feature = "UnityOpus+NumChannels")]
+#[cfg(feature = "cordl_class_UnityOpus+NumChannels")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityOpus::NumChannels {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityOpus::NumChannels {
         }
     }
 }
-#[cfg(feature = "UnityOpus+NumChannels")]
+#[cfg(feature = "cordl_class_UnityOpus+NumChannels")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityOpus::NumChannels {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

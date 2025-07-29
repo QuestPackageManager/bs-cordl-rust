@@ -1,10 +1,10 @@
-#[cfg(feature = "OVR+OpenVR+OpenVR")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenVR {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::OpenVR {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::OpenVR {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR")]
 impl std::ops::Deref for crate::OVR::OpenVR::OpenVR {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::OpenVR {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -978,7 +978,7 @@ impl crate::OVR::OpenVR::OpenVR {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::OpenVR {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -987,7 +987,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::OpenVR {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR+COpenVRContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenVR_COpenVRContext {
@@ -1018,7 +1018,7 @@ pub struct OpenVR_COpenVRContext {
         crate::OVR::OpenVR::CVRSpatialAnchors,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR+COpenVRContext")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::OpenVR_COpenVRContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1037,14 +1037,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::OpenVR_COpenVRCo
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR+COpenVRContext")]
 impl std::ops::Deref for crate::OVR::OpenVR::OpenVR_COpenVRContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR+COpenVRContext")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::OpenVR_COpenVRContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1476,7 +1476,7 @@ impl crate::OVR::OpenVR::OpenVR_COpenVRContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR+COpenVRContext")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::OpenVR_COpenVRContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

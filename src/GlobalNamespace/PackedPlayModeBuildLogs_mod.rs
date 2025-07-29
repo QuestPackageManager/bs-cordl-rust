@@ -1,4 +1,4 @@
-#[cfg(feature = "PackedPlayModeBuildLogs")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackedPlayModeBuildLogs {
@@ -9,7 +9,7 @@ pub struct PackedPlayModeBuildLogs {
         >,
     >,
 }
-#[cfg(feature = "PackedPlayModeBuildLogs")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs {
         false
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
 impl std::ops::Deref for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -156,14 +156,14 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PackedPlayModeBuildLogs_RuntimeBuildLog {
     pub Type: crate::UnityEngine::LogType,
     pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Held<'a> = Self;
@@ -193,7 +193,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Type = Self;
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Actual = Self;
@@ -218,7 +218,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
         self
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Type = Self;
@@ -233,7 +233,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
         }
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Actual = Self;
@@ -247,7 +247,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
         actual
     }
 }
-#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
+#[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Type = Self;

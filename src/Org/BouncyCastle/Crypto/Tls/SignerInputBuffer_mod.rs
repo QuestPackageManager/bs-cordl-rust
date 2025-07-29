@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerInputBuffer {
     __cordl_parent: crate::System::IO::MemoryStream,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
     type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -108,14 +108,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerInputBuffer_SigStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer_SigStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -135,7 +135,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer_SigStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer_SigStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
@@ -143,7 +143,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer_SigStream {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer_SigStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -250,7 +250,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer_SigStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer_SigStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

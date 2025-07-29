@@ -1,4 +1,4 @@
-#[cfg(feature = "BezierPath")]
+#[cfg(feature = "cordl_class_BezierPath")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BezierPath {
@@ -15,7 +15,7 @@ pub struct BezierPath {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
 }
-#[cfg(feature = "BezierPath")]
+#[cfg(feature = "cordl_class_BezierPath")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BezierPath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BezierPath {
         false
     }
 }
-#[cfg(feature = "BezierPath")]
+#[cfg(feature = "cordl_class_BezierPath")]
 impl std::ops::Deref for crate::GlobalNamespace::BezierPath {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BezierPath")]
+#[cfg(feature = "cordl_class_BezierPath")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BezierPath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -688,7 +688,7 @@ impl crate::GlobalNamespace::BezierPath {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BezierPath")]
+#[cfg(feature = "cordl_class_BezierPath")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BezierPath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -697,7 +697,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BezierPath {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BezierPath+ControlMode")]
+#[cfg(feature = "cordl_class_BezierPath+ControlMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BezierPath_ControlMode {
@@ -707,7 +707,7 @@ pub enum BezierPath_ControlMode {
     Free = 2i32,
     Mirrored = 1i32,
 }
-#[cfg(feature = "BezierPath+ControlMode")]
+#[cfg(feature = "cordl_class_BezierPath+ControlMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BezierPath_ControlMode {
     type Held<'a> = Self;
@@ -737,7 +737,7 @@ for crate::GlobalNamespace::BezierPath_ControlMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BezierPath+ControlMode")]
+#[cfg(feature = "cordl_class_BezierPath+ControlMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BezierPath_ControlMode {
     type Type = Self;
@@ -748,7 +748,7 @@ for crate::GlobalNamespace::BezierPath_ControlMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BezierPath+ControlMode")]
+#[cfg(feature = "cordl_class_BezierPath+ControlMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BezierPath_ControlMode {
     type Actual = Self;
@@ -762,7 +762,7 @@ for crate::GlobalNamespace::BezierPath_ControlMode {
         self
     }
 }
-#[cfg(feature = "BezierPath+ControlMode")]
+#[cfg(feature = "cordl_class_BezierPath+ControlMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BezierPath_ControlMode {
     type Type = Self;
@@ -777,7 +777,7 @@ for crate::GlobalNamespace::BezierPath_ControlMode {
         }
     }
 }
-#[cfg(feature = "BezierPath+ControlMode")]
+#[cfg(feature = "cordl_class_BezierPath+ControlMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BezierPath_ControlMode {
     type Actual = Self;

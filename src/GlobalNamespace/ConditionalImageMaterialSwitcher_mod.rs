@@ -1,4 +1,4 @@
-#[cfg(feature = "ConditionalImageMaterialSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalImageMaterialSwitcher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConditionalImageMaterialSwitcher {
@@ -8,7 +8,7 @@ pub struct ConditionalImageMaterialSwitcher {
     pub _value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
     pub _image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
-#[cfg(feature = "ConditionalImageMaterialSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalImageMaterialSwitcher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
         false
     }
 }
-#[cfg(feature = "ConditionalImageMaterialSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalImageMaterialSwitcher")]
 impl std::ops::Deref for crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ConditionalImageMaterialSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalImageMaterialSwitcher")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ConditionalImageMaterialSwitcher")]
+#[cfg(feature = "cordl_class_ConditionalImageMaterialSwitcher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

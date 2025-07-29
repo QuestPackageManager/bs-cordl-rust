@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_OculusPlatformAdditionalContentModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusPlatformAdditionalContentModel {
@@ -16,7 +16,7 @@ pub struct OculusPlatformAdditionalContentModel {
     >,
     pub _isDataValid: bool,
 }
-#[cfg(feature = "OculusPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_OculusPlatformAdditionalContentModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         false
     }
 }
-#[cfg(feature = "OculusPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_OculusPlatformAdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     type Target = crate::GlobalNamespace::AdditionalContentModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_OculusPlatformAdditionalContentModel")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -780,7 +780,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusPlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_OculusPlatformAdditionalContentModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

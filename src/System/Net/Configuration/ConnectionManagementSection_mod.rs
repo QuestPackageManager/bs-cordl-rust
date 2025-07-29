@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ConnectionManagementSection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectionManagementSection {
     __cordl_parent: crate::System::Configuration::ConfigurationSection,
 }
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ConnectionManagementSection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Configuration::ConnectionManagementSection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Net::Configuration::ConnectionManagementSection {
         false
     }
 }
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ConnectionManagementSection")]
 impl std::ops::Deref for crate::System::Net::Configuration::ConnectionManagementSection {
     type Target = crate::System::Configuration::ConfigurationSection;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ConnectionManagementSection")]
 impl std::ops::DerefMut
 for crate::System::Net::Configuration::ConnectionManagementSection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -100,7 +100,7 @@ impl crate::System::Net::Configuration::ConnectionManagementSection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Configuration+ConnectionManagementSection")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ConnectionManagementSection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Configuration::ConnectionManagementSection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

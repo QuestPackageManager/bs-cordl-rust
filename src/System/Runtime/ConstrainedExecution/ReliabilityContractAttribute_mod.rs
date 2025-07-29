@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+ReliabilityContractAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReliabilityContractAttribute {
@@ -6,7 +8,9 @@ pub struct ReliabilityContractAttribute {
     pub _ConsistencyGuarantee_k__BackingField: crate::System::Runtime::ConstrainedExecution::Consistency,
     pub _Cer_k__BackingField: crate::System::Runtime::ConstrainedExecution::Cer,
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+ReliabilityContractAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +30,9 @@ for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+ReliabilityContractAttribute"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
     type Target = crate::System::Attribute;
@@ -34,7 +40,9 @@ for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+ReliabilityContractAttribute"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -84,7 +92,9 @@ impl crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+ConstrainedExecution+ReliabilityContractAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "LiteNetLib+InvalidPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+InvalidPacketException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvalidPacketException {
     __cordl_parent: crate::System::ArgumentException,
 }
-#[cfg(feature = "LiteNetLib+InvalidPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+InvalidPacketException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::InvalidPacketException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::InvalidPacketExce
         false
     }
 }
-#[cfg(feature = "LiteNetLib+InvalidPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+InvalidPacketException")]
 impl std::ops::Deref for crate::LiteNetLib::InvalidPacketException {
     type Target = crate::System::ArgumentException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+InvalidPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+InvalidPacketException")]
 impl std::ops::DerefMut for crate::LiteNetLib::InvalidPacketException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::LiteNetLib::InvalidPacketException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+InvalidPacketException")]
+#[cfg(feature = "cordl_class_LiteNetLib+InvalidPacketException")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::InvalidPacketException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

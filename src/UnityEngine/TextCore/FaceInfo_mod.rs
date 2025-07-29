@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+FaceInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FaceInfo {
@@ -24,7 +24,7 @@ pub struct FaceInfo {
     pub m_StrikethroughThickness: f32,
     pub m_TabWidth: f32,
 }
-#[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+FaceInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::FaceInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::FaceIn
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+FaceInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextCore::FaceInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextCore::Fa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+FaceInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextCore::FaceInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextCore::F
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+FaceInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextCore::FaceInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextCore::Fa
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+FaceInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextCore::FaceInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -103,7 +103,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextCore::Face
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+FaceInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::FaceInfo {
     type Type = Self;

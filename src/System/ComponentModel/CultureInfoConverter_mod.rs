@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CultureInfoConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureInfoConverter {
@@ -7,7 +7,7 @@ pub struct CultureInfoConverter {
         crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
     >,
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CultureInfoConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::CultureInfoConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::ComponentModel::CultureInfoConverter {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CultureInfoConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::CultureInfoConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CultureInfoConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::CultureInfoConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -388,7 +388,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CultureInfoConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::CultureInfoConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -398,7 +398,9 @@ for crate::System::ComponentModel::CultureInfoConverter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureComparer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureInfoConverter_CultureComparer {
@@ -407,7 +409,9 @@ pub struct CultureInfoConverter_CultureComparer {
         crate::System::ComponentModel::CultureInfoConverter,
     >,
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureComparer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -427,7 +431,9 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureComparer"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -435,7 +441,9 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureComparer"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -520,7 +528,9 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureComparer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -544,13 +554,17 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureInfoMapper"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureInfoConverter_CultureInfoMapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureInfoMapper"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -570,7 +584,9 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureInfoMapper"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -578,7 +594,9 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureInfoMapper"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -659,7 +677,9 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureInfoMapper"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

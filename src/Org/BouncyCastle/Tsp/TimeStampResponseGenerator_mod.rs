@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeStampResponseGenerator {
@@ -15,7 +15,7 @@ pub struct TimeStampResponseGenerator {
     pub acceptedPolicies: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub acceptedExtensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -440,7 +440,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -450,13 +450,13 @@ for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeStampResponseGenerator_FailInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerBitString,
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -476,7 +476,7 @@ for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
     type Target = crate::Org::BouncyCastle::Asn1::DerBitString;
@@ -484,7 +484,7 @@ for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -525,7 +525,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

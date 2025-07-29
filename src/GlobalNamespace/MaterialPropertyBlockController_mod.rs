@@ -1,4 +1,4 @@
-#[cfg(feature = "MaterialPropertyBlockController")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockController {
@@ -12,7 +12,7 @@ pub struct MaterialPropertyBlockController {
         crate::UnityEngine::MaterialPropertyBlock,
     >,
 }
-#[cfg(feature = "MaterialPropertyBlockController")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialPropertyBlockController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::MaterialPropertyBlockController {
         false
     }
 }
-#[cfg(feature = "MaterialPropertyBlockController")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockController")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialPropertyBlockController")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyBlockController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -193,7 +193,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialPropertyBlockController")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialPropertyBlockController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

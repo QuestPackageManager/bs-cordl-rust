@@ -1,4 +1,4 @@
-#[cfg(feature = "LineLightManager")]
+#[cfg(feature = "cordl_class_LineLightManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LineLightManager {
@@ -14,7 +14,7 @@ pub struct LineLightManager {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
 }
-#[cfg(feature = "LineLightManager")]
+#[cfg(feature = "cordl_class_LineLightManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LineLightManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LineLightMan
         false
     }
 }
-#[cfg(feature = "LineLightManager")]
+#[cfg(feature = "cordl_class_LineLightManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LineLightManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LineLightManager")]
+#[cfg(feature = "cordl_class_LineLightManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LineLightManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::LineLightManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LineLightManager")]
+#[cfg(feature = "cordl_class_LineLightManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LineLightManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

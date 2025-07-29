@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel {
@@ -34,7 +34,7 @@ pub struct OculusLevelProductCollectionModel {
         >,
     >,
 }
-#[cfg(feature = "OculusLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusLevelProductCollectionModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,14 +54,14 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel {
         false
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusLevelProductCollectionModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusLevelProductCollectionModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -292,7 +292,7 @@ impl crate::GlobalNamespace::OculusLevelProductCollectionModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusLevelProductCollectionModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+AdditionalSkus")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+AdditionalSkus")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel_AdditionalSkus {
@@ -312,7 +312,7 @@ pub struct OculusLevelProductCollectionModel_AdditionalSkus {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+AdditionalSkus")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+AdditionalSkus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -332,7 +332,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
         false
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+AdditionalSkus")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+AdditionalSkus")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -340,7 +340,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+AdditionalSkus")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+AdditionalSkus")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -378,7 +378,7 @@ impl crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+AdditionalSkus")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+AdditionalSkus")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -388,7 +388,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackProductData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel_LevelPackProductData {
@@ -406,7 +406,7 @@ pub struct OculusLevelProductCollectionModel_LevelPackProductData {
         >,
     >,
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackProductData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -426,7 +426,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductDa
         false
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -434,7 +434,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductDa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -638,7 +638,7 @@ impl crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductD
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackProductData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -684,7 +684,9 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(
+    feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackRedirectionData"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel_LevelPackRedirectionData {
@@ -698,7 +700,9 @@ pub struct OculusLevelProductCollectionModel_LevelPackRedirectionData {
     pub _redirectedSku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(
+    feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackRedirectionData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -718,7 +722,9 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirecti
         false
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(
+    feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackRedirectionData"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -726,7 +732,9 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirecti
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(
+    feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackRedirectionData"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -872,7 +880,9 @@ impl crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirect
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(
+    feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackRedirectionData"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -882,7 +892,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirecti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelProductData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel_LevelProductData {
@@ -893,7 +903,7 @@ pub struct OculusLevelProductCollectionModel_LevelProductData {
         crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
     >,
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelProductData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -913,7 +923,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
         false
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -921,7 +931,7 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1044,7 +1054,7 @@ impl crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelProductData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionLevelGameplayManager")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelGameplayManager {
@@ -29,7 +29,7 @@ pub struct MissionLevelGameplayManager {
     pub _prePauseGameState: crate::GlobalNamespace::MissionLevelGameplayManager_GameState,
     pub _levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
 }
-#[cfg(feature = "MissionLevelGameplayManager")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelGameplayManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::MissionLevelGameplayManager {
         false
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelGameplayManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -580,7 +580,7 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionLevelGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -618,7 +618,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+GameState")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+GameState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MissionLevelGameplayManager_GameState {
@@ -630,7 +630,7 @@ pub enum MissionLevelGameplayManager_GameState {
     Playing = 1i32,
     Resuming = 3i32,
 }
-#[cfg(feature = "MissionLevelGameplayManager+GameState")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Held<'a> = Self;
@@ -660,7 +660,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+GameState")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Type = Self;
@@ -671,7 +671,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+GameState")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Actual = Self;
@@ -685,7 +685,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
         self
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+GameState")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Type = Self;
@@ -700,7 +700,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
         }
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+GameState")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Actual = Self;
@@ -714,14 +714,14 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
         actual
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelGameplayManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub failOn0Energy: bool,
 }
-#[cfg(feature = "MissionLevelGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -741,14 +741,14 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
         false
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -789,7 +789,7 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionLevelGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelGameplayManager+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

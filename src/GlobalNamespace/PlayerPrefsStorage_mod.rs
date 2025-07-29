@@ -1,10 +1,10 @@
-#[cfg(feature = "PlayerPrefsStorage")]
+#[cfg(feature = "cordl_class_PlayerPrefsStorage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerPrefsStorage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "PlayerPrefsStorage")]
+#[cfg(feature = "cordl_class_PlayerPrefsStorage")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerPrefsStorage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerPrefsS
         false
     }
 }
-#[cfg(feature = "PlayerPrefsStorage")]
+#[cfg(feature = "cordl_class_PlayerPrefsStorage")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerPrefsStorage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerPrefsStorage")]
+#[cfg(feature = "cordl_class_PlayerPrefsStorage")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerPrefsStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::PlayerPrefsStorage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerPrefsStorage")]
+#[cfg(feature = "cordl_class_PlayerPrefsStorage")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerPrefsStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

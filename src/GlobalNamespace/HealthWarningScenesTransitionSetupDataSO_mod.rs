@@ -1,10 +1,10 @@
-#[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_HealthWarningScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
 }
-#[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_HealthWarningScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_HealthWarningScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_HealthWarningScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_HealthWarningScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

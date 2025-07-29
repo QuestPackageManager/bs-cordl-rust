@@ -1,4 +1,4 @@
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackLaneRingsRotationEffectSpawner {
@@ -20,7 +20,7 @@ pub struct TrackLaneRingsRotationEffectSpawner {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
         false
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -168,7 +168,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackLaneRingsRotationEffectSpawner_RotationStepType {
@@ -177,7 +177,7 @@ pub enum TrackLaneRingsRotationEffectSpawner_RotationStepType {
     Range = 1i32,
     Range0ToMax = 0i32,
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
     type Held<'a> = Self;
@@ -207,7 +207,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
     type Type = Self;
@@ -218,7 +218,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
     type Actual = Self;
@@ -232,7 +232,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
         self
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
     type Type = Self;
@@ -247,7 +247,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType
         }
     }
 }
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
+#[cfg(feature = "cordl_class_TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType {
     type Actual = Self;

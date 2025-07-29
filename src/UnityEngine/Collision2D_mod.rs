@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Collision2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Collision2D")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Collision2D {
@@ -17,7 +17,7 @@ pub struct Collision2D {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ContactPoint2D>,
     >,
 }
-#[cfg(feature = "UnityEngine+Collision2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Collision2D")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Collision2D {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Collision2D {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Collision2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Collision2D")]
 impl std::ops::Deref for crate::UnityEngine::Collision2D {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Collision2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Collision2D")]
 impl std::ops::DerefMut for crate::UnityEngine::Collision2D {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -51,7 +51,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Collision2D {
 }
 #[cfg(feature = "UnityEngine+Collision2D")]
 impl crate::UnityEngine::Collision2D {}
-#[cfg(feature = "UnityEngine+Collision2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Collision2D")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Collision2D {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

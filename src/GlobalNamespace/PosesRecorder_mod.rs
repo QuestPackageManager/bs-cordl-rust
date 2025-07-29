@@ -1,4 +1,4 @@
-#[cfg(feature = "PosesRecorder")]
+#[cfg(feature = "cordl_class_PosesRecorder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecorder {
@@ -13,7 +13,7 @@ pub struct PosesRecorder {
     >,
     pub _data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
 }
-#[cfg(feature = "PosesRecorder")]
+#[cfg(feature = "cordl_class_PosesRecorder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosesRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosesRecorde
         false
     }
 }
-#[cfg(feature = "PosesRecorder")]
+#[cfg(feature = "cordl_class_PosesRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PosesRecorder")]
+#[cfg(feature = "cordl_class_PosesRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -247,7 +247,7 @@ impl crate::GlobalNamespace::PosesRecorder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PosesRecorder")]
+#[cfg(feature = "cordl_class_PosesRecorder")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

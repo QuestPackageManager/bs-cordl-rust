@@ -1,4 +1,4 @@
-#[cfg(feature = "NetworkStatisticsDelta")]
+#[cfg(feature = "cordl_class_NetworkStatisticsDelta")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NetworkStatisticsDelta {
@@ -16,7 +16,7 @@ pub struct NetworkStatisticsDelta {
     pub encryptionProcessingTimeDelta: i64,
     pub decryptionProcessingTimeDelta: i64,
 }
-#[cfg(feature = "NetworkStatisticsDelta")]
+#[cfg(feature = "cordl_class_NetworkStatisticsDelta")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkStatisticsDelta {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::NetworkStatisticsDelta {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NetworkStatisticsDelta")]
+#[cfg(feature = "cordl_class_NetworkStatisticsDelta")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NetworkStatisticsDelta {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::NetworkStatisticsDelta {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NetworkStatisticsDelta")]
+#[cfg(feature = "cordl_class_NetworkStatisticsDelta")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NetworkStatisticsDelta {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::GlobalNamespace::NetworkStatisticsDelta {
         self
     }
 }
-#[cfg(feature = "NetworkStatisticsDelta")]
+#[cfg(feature = "cordl_class_NetworkStatisticsDelta")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NetworkStatisticsDelta {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::GlobalNamespace::NetworkStatisticsDelta {
         }
     }
 }
-#[cfg(feature = "NetworkStatisticsDelta")]
+#[cfg(feature = "cordl_class_NetworkStatisticsDelta")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NetworkStatisticsDelta {
     type Actual = Self;
@@ -100,7 +100,7 @@ for crate::GlobalNamespace::NetworkStatisticsDelta {
         actual
     }
 }
-#[cfg(feature = "NetworkStatisticsDelta")]
+#[cfg(feature = "cordl_class_NetworkStatisticsDelta")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::NetworkStatisticsDelta {
     type Type = Self;

@@ -1,4 +1,6 @@
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspMvcAreaMasterLocationFormatAttribute {
@@ -7,7 +9,9 @@ pub struct AspMvcAreaMasterLocationFormatAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute"
+)]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
     type Target = crate::System::Attribute;
@@ -35,7 +41,9 @@ for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute"
+)]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +141,9 @@ impl crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

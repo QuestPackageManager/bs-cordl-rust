@@ -1,10 +1,10 @@
-#[cfg(feature = "Internal+Runtime+Augments+TaskTraceCallbacks")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+TaskTraceCallbacks")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskTraceCallbacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Internal+Runtime+Augments+TaskTraceCallbacks")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+TaskTraceCallbacks")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
         false
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+TaskTraceCallbacks")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+TaskTraceCallbacks")]
 impl std::ops::Deref for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+TaskTraceCallbacks")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+TaskTraceCallbacks")]
 impl std::ops::DerefMut for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -193,7 +193,7 @@ impl crate::Internal::Runtime::Augments::TaskTraceCallbacks {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Internal+Runtime+Augments+TaskTraceCallbacks")]
+#[cfg(feature = "cordl_class_Internal+Runtime+Augments+TaskTraceCallbacks")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Internal::Runtime::Augments::TaskTraceCallbacks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

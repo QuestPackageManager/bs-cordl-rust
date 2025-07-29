@@ -1,4 +1,4 @@
-#[cfg(feature = "HeadsetHapticSettingsSampleController")]
+#[cfg(feature = "cordl_class_HeadsetHapticSettingsSampleController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeadsetHapticSettingsSampleController {
@@ -17,7 +17,7 @@ pub struct HeadsetHapticSettingsSampleController {
     pub _nextHapticSamplePlayTime: f32,
     pub _nextHapticSamplePlayTimeEnd: f32,
 }
-#[cfg(feature = "HeadsetHapticSettingsSampleController")]
+#[cfg(feature = "cordl_class_HeadsetHapticSettingsSampleController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
         false
     }
 }
-#[cfg(feature = "HeadsetHapticSettingsSampleController")]
+#[cfg(feature = "cordl_class_HeadsetHapticSettingsSampleController")]
 impl std::ops::Deref for crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HeadsetHapticSettingsSampleController")]
+#[cfg(feature = "cordl_class_HeadsetHapticSettingsSampleController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -179,7 +179,7 @@ impl crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HeadsetHapticSettingsSampleController")]
+#[cfg(feature = "cordl_class_HeadsetHapticSettingsSampleController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

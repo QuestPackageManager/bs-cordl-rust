@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+HorizontalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+HorizontalWrapMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HorizontalWrapMode {
@@ -6,7 +6,7 @@ pub enum HorizontalWrapMode {
     Overflow = 1i32,
     Wrap = 0i32,
 }
-#[cfg(feature = "UnityEngine+HorizontalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+HorizontalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HorizontalWrapMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HorizontalWrapMo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+HorizontalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+HorizontalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::HorizontalWrapMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::HorizontalWr
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+HorizontalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+HorizontalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::HorizontalWrapMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::HorizontalW
         self
     }
 }
-#[cfg(feature = "UnityEngine+HorizontalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+HorizontalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::HorizontalWrapMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::HorizontalWr
         }
     }
 }
-#[cfg(feature = "UnityEngine+HorizontalWrapMode")]
+#[cfg(feature = "cordl_class_UnityEngine+HorizontalWrapMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::HorizontalWrapMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

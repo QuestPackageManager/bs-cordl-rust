@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonWithTwoModifiers {
@@ -8,7 +8,7 @@ pub struct ButtonWithTwoModifiers {
     pub button: i32,
     pub overrideModifiersNeedToBePressedFirst: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Composites::ButtonWithTwoModifiers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::UnityEngine::InputSystem::Composites::ButtonWithTwoModifiers {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Composites::ButtonWithTwoModifiers {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
@@ -36,7 +36,7 @@ for crate::UnityEngine::InputSystem::Composites::ButtonWithTwoModifiers {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Composites::ButtonWithTwoModifiers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -194,7 +194,7 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithTwoModifiers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+ButtonWithTwoModifiers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Composites::ButtonWithTwoModifiers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

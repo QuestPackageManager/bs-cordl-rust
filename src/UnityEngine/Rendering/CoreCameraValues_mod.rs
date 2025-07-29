@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreCameraValues")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CoreCameraValues {
@@ -6,7 +6,7 @@ pub struct CoreCameraValues {
     pub cullingMask: u32,
     pub instanceID: i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreCameraValues")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::CoreCameraValues {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::Rendering::CoreCameraValues {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreCameraValues")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::CoreCameraValues {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::Rendering::CoreCameraValues {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreCameraValues")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::CoreCameraValues {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::Rendering::CoreCameraValues {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreCameraValues")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::CoreCameraValues {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::Rendering::CoreCameraValues {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreCameraValues")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::CoreCameraValues {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::Rendering::CoreCameraValues {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreCameraValues")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::CoreCameraValues {
     type Type = Self;

@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MulInstruction+MulDouble"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MulInstruction_MulDouble {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::MulInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MulInstruction+MulDouble"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MulInstruction_MulDouble {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +28,18 @@ for crate::GlobalNamespace::MulInstruction_MulDouble {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MulInstruction+MulDouble"
+)]
 impl std::ops::Deref for crate::GlobalNamespace::MulInstruction_MulDouble {
     type Target = crate::System::Linq::Expressions::Interpreter::MulInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MulInstruction+MulDouble"
+)]
 impl std::ops::DerefMut for crate::GlobalNamespace::MulInstruction_MulDouble {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +106,9 @@ impl crate::GlobalNamespace::MulInstruction_MulDouble {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulDouble")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+MulInstruction+MulDouble"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MulInstruction_MulDouble {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

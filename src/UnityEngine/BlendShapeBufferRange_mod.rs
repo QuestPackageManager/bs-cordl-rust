@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+BlendShapeBufferRange")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BlendShapeBufferRange {
     pub m_StartIndex: u32,
     pub m_EndIndex: u32,
 }
-#[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+BlendShapeBufferRange")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::BlendShapeBufferRange {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::BlendShapeBuffer
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+BlendShapeBufferRange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::BlendShapeBufferRange {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::BlendShapeBufferRange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+BlendShapeBufferRange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::BlendShapeBufferRange {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::BlendShapeBufferRange {
         self
     }
 }
-#[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+BlendShapeBufferRange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::BlendShapeBufferRange {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::BlendShapeBufferRange {
         }
     }
 }
-#[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+BlendShapeBufferRange")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::BlendShapeBufferRange {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::BlendShapeBuff
         actual
     }
 }
-#[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+BlendShapeBufferRange")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::BlendShapeBufferRange {
     type Type = Self;

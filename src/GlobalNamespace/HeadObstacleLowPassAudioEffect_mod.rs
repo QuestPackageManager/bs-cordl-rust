@@ -1,4 +1,4 @@
-#[cfg(feature = "HeadObstacleLowPassAudioEffect")]
+#[cfg(feature = "cordl_class_HeadObstacleLowPassAudioEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeadObstacleLowPassAudioEffect {
@@ -11,7 +11,7 @@ pub struct HeadObstacleLowPassAudioEffect {
     >,
     pub _headWasInObstacle: bool,
 }
-#[cfg(feature = "HeadObstacleLowPassAudioEffect")]
+#[cfg(feature = "cordl_class_HeadObstacleLowPassAudioEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
         false
     }
 }
-#[cfg(feature = "HeadObstacleLowPassAudioEffect")]
+#[cfg(feature = "cordl_class_HeadObstacleLowPassAudioEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HeadObstacleLowPassAudioEffect")]
+#[cfg(feature = "cordl_class_HeadObstacleLowPassAudioEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HeadObstacleLowPassAudioEffect")]
+#[cfg(feature = "cordl_class_HeadObstacleLowPassAudioEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

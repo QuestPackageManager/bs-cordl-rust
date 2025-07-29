@@ -1,4 +1,4 @@
-#[cfg(feature = "PlaybackScreenshotRecorder")]
+#[cfg(feature = "cordl_class_PlaybackScreenshotRecorder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlaybackScreenshotRecorder {
@@ -9,7 +9,7 @@ pub struct PlaybackScreenshotRecorder {
     >,
     pub _frameNumber: i32,
 }
-#[cfg(feature = "PlaybackScreenshotRecorder")]
+#[cfg(feature = "cordl_class_PlaybackScreenshotRecorder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlaybackScreenshotRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::PlaybackScreenshotRecorder {
         false
     }
 }
-#[cfg(feature = "PlaybackScreenshotRecorder")]
+#[cfg(feature = "cordl_class_PlaybackScreenshotRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::PlaybackScreenshotRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlaybackScreenshotRecorder")]
+#[cfg(feature = "cordl_class_PlaybackScreenshotRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlaybackScreenshotRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -265,7 +265,7 @@ impl crate::GlobalNamespace::PlaybackScreenshotRecorder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlaybackScreenshotRecorder")]
+#[cfg(feature = "cordl_class_PlaybackScreenshotRecorder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlaybackScreenshotRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

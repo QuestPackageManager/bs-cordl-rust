@@ -1,4 +1,4 @@
-#[cfg(feature = "MockPlayerLobbyPoseGeneratorAI")]
+#[cfg(feature = "cordl_class_MockPlayerLobbyPoseGeneratorAI")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerLobbyPoseGeneratorAI {
@@ -16,7 +16,7 @@ pub struct MockPlayerLobbyPoseGeneratorAI {
     pub _rightHandPoseTarget: crate::UnityEngine::Pose,
     pub _nextTargetTime: i64,
 }
-#[cfg(feature = "MockPlayerLobbyPoseGeneratorAI")]
+#[cfg(feature = "cordl_class_MockPlayerLobbyPoseGeneratorAI")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorAI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorAI {
         false
     }
 }
-#[cfg(feature = "MockPlayerLobbyPoseGeneratorAI")]
+#[cfg(feature = "cordl_class_MockPlayerLobbyPoseGeneratorAI")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorAI {
     type Target = crate::GlobalNamespace::MockPlayerLobbyPoseGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockPlayerLobbyPoseGeneratorAI")]
+#[cfg(feature = "cordl_class_MockPlayerLobbyPoseGeneratorAI")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorAI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorAI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockPlayerLobbyPoseGeneratorAI")]
+#[cfg(feature = "cordl_class_MockPlayerLobbyPoseGeneratorAI")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorAI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

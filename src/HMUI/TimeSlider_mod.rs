@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+TimeSlider")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeSlider {
@@ -8,7 +8,7 @@ pub struct TimeSlider {
     pub _lowerValue: f32,
     pub _upperValue: f32,
 }
-#[cfg(feature = "HMUI+TimeSlider")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TimeSlider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TimeSlider {
         false
     }
 }
-#[cfg(feature = "HMUI+TimeSlider")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider")]
 impl std::ops::Deref for crate::HMUI::TimeSlider {
     type Target = crate::HMUI::RangeValuesTextSlider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+TimeSlider")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider")]
 impl std::ops::DerefMut for crate::HMUI::TimeSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -157,7 +157,7 @@ impl crate::HMUI::TimeSlider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+TimeSlider")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TimeSlider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -166,7 +166,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TimeSlider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+TimeSlider+TimeType")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider+TimeType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSlider_TimeType {
@@ -175,7 +175,7 @@ pub enum TimeSlider_TimeType {
     Milliseconds = 1i32,
     Normalized = 2i32,
 }
-#[cfg(feature = "HMUI+TimeSlider+TimeType")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider+TimeType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TimeSlider_TimeType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -204,7 +204,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TimeSlider_TimeType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+TimeSlider+TimeType")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider+TimeType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::TimeSlider_TimeType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -214,7 +214,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::TimeSlider_TimeType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+TimeSlider+TimeType")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider+TimeType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::TimeSlider_TimeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -227,7 +227,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::TimeSlider_TimeTyp
         self
     }
 }
-#[cfg(feature = "HMUI+TimeSlider+TimeType")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider+TimeType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::TimeSlider_TimeType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -241,7 +241,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::TimeSlider_TimeType
         }
     }
 }
-#[cfg(feature = "HMUI+TimeSlider+TimeType")]
+#[cfg(feature = "cordl_class_HMUI+TimeSlider+TimeType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::TimeSlider_TimeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

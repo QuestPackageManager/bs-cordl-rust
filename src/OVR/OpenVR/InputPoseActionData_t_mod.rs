@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+InputPoseActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputPoseActionData_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputPoseActionData_t {
@@ -6,7 +6,7 @@ pub struct InputPoseActionData_t {
     pub activeOrigin: u64,
     pub pose: crate::OVR::OpenVR::TrackedDevicePose_t,
 }
-#[cfg(feature = "OVR+OpenVR+InputPoseActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputPoseActionData_t")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::InputPoseActionData_t {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::InputPoseActionD
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputPoseActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputPoseActionData_t")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::InputPoseActionData_t {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::OVR::OpenVR::InputPoseActionData_t {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputPoseActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputPoseActionData_t")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::InputPoseActionData_t {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::OVR::OpenVR::InputPoseActionData_t {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputPoseActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputPoseActionData_t")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::InputPoseActionData_t {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::OVR::OpenVR::InputPoseActionData_t {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputPoseActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputPoseActionData_t")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::InputPoseActionData_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::InputPoseActio
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+InputPoseActionData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+InputPoseActionData_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::InputPoseActionData_t {
     type Type = Self;

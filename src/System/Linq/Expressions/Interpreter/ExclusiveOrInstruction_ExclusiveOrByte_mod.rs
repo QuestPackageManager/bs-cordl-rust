@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct ExclusiveOrInstruction_ExclusiveOrByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrByte {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrByte {
     type Target = crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ExclusiveOrInstruction_Exclusiv
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrByte {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrByte {

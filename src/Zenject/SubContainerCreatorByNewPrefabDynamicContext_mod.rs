@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabDynamicContext {
@@ -8,7 +8,7 @@ pub struct SubContainerCreatorByNewPrefabDynamicContext {
         crate::Zenject::GameObjectCreationParameters,
     >,
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
         false
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
     type Target = crate::Zenject::SubContainerCreatorDynamicContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 impl std::ops::DerefMut
 for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -123,7 +123,7 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
+#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

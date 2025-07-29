@@ -1,11 +1,11 @@
-#[cfg(feature = "System+DateTimeOffset")]
+#[cfg(feature = "cordl_class_System+DateTimeOffset")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DateTimeOffset {
     pub _dateTime: crate::System::DateTime,
     pub _offsetMinutes: i16,
 }
-#[cfg(feature = "System+DateTimeOffset")]
+#[cfg(feature = "cordl_class_System+DateTimeOffset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeOffset {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeOffset {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+DateTimeOffset")]
+#[cfg(feature = "cordl_class_System+DateTimeOffset")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeOffset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeOffset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+DateTimeOffset")]
+#[cfg(feature = "cordl_class_System+DateTimeOffset")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeOffset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeOffset {
         self
     }
 }
-#[cfg(feature = "System+DateTimeOffset")]
+#[cfg(feature = "cordl_class_System+DateTimeOffset")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeOffset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeOffset {
         }
     }
 }
-#[cfg(feature = "System+DateTimeOffset")]
+#[cfg(feature = "cordl_class_System+DateTimeOffset")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeOffset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeOffset {
         actual
     }
 }
-#[cfg(feature = "System+DateTimeOffset")]
+#[cfg(feature = "cordl_class_System+DateTimeOffset")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DateTimeOffset {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

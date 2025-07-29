@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorType")]
+#[cfg(feature = "cordl_class_ColorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorType {
@@ -7,7 +7,7 @@ pub enum ColorType {
     ColorB = 1i32,
     None = -1i32,
 }
-#[cfg(feature = "ColorType")]
+#[cfg(feature = "cordl_class_ColorType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ColorType")]
+#[cfg(feature = "cordl_class_ColorType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::ColorType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::ColorTyp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ColorType")]
+#[cfg(feature = "cordl_class_ColorType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::ColorType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::ColorTy
         self
     }
 }
-#[cfg(feature = "ColorType")]
+#[cfg(feature = "cordl_class_ColorType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::ColorType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::ColorTyp
         }
     }
 }
-#[cfg(feature = "ColorType")]
+#[cfg(feature = "cordl_class_ColorType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::ColorType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

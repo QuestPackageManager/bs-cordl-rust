@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CastInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::CastInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Linq::Expressions::Interpreter::CastInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::CastInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::CastInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -171,7 +171,7 @@ impl crate::System::Linq::Expressions::Interpreter::CastInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+CastInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::CastInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

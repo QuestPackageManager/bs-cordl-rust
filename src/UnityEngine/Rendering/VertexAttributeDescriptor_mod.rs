@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttributeDescriptor")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VertexAttributeDescriptor {
@@ -7,7 +7,7 @@ pub struct VertexAttributeDescriptor {
     pub _dimension_k__BackingField: i32,
     pub _stream_k__BackingField: i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttributeDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttributeDescriptor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttributeDescriptor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttributeDescriptor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttributeDescriptor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+VertexAttributeDescriptor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     type Type = Self;

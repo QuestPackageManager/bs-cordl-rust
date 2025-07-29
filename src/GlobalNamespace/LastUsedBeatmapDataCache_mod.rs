@@ -1,4 +1,4 @@
-#[cfg(feature = "LastUsedBeatmapDataCache")]
+#[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LastUsedBeatmapDataCache {
@@ -16,7 +16,7 @@ pub struct LastUsedBeatmapDataCache {
         crate::GlobalNamespace::PlayerSpecificSettings,
     >,
 }
-#[cfg(feature = "LastUsedBeatmapDataCache")]
+#[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LastUsedBeatmapDataCache")]
+#[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LastUsedBeatmapDataCache")]
+#[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
         self
     }
 }
-#[cfg(feature = "LastUsedBeatmapDataCache")]
+#[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
         }
     }
 }
-#[cfg(feature = "LastUsedBeatmapDataCache")]
+#[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Actual = Self;
@@ -100,7 +100,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
         actual
     }
 }
-#[cfg(feature = "LastUsedBeatmapDataCache")]
+#[cfg(feature = "cordl_class_LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Type = Self;

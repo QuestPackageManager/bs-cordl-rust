@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+DisposableManager")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposableManager {
@@ -18,7 +18,7 @@ pub struct DisposableManager {
     pub _disposed: bool,
     pub _lateDisposed: bool,
 }
-#[cfg(feature = "Zenject+DisposableManager")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::DisposableManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::DisposableManager {
         false
     }
 }
-#[cfg(feature = "Zenject+DisposableManager")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager")]
 impl std::ops::Deref for crate::Zenject::DisposableManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+DisposableManager")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager")]
 impl std::ops::DerefMut for crate::Zenject::DisposableManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -431,7 +431,7 @@ impl crate::Zenject::DisposableManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+DisposableManager")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::DisposableManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -452,14 +452,14 @@ impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposableManager {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+DisposableInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DisposableManager_DisposableInfo {
     pub Disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     pub Priority: i32,
 }
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Held<'a> = Self;
@@ -489,7 +489,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Type = Self;
@@ -500,7 +500,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Actual = Self;
@@ -514,7 +514,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
         self
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Type = Self;
@@ -529,7 +529,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
         }
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Actual = Self;
@@ -543,7 +543,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
         actual
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Type = Self;
@@ -584,7 +584,7 @@ impl crate::Zenject::DisposableManager_DisposableInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+LateDisposableInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposableManager_LateDisposableInfo {
@@ -592,7 +592,7 @@ pub struct DisposableManager_LateDisposableInfo {
     pub LateDisposable: quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
     pub Priority: i32,
 }
-#[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+LateDisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::DisposableManager_LateDisposableInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -612,14 +612,14 @@ for crate::Zenject::DisposableManager_LateDisposableInfo {
         false
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+LateDisposableInfo")]
 impl std::ops::Deref for crate::Zenject::DisposableManager_LateDisposableInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+LateDisposableInfo")]
 impl std::ops::DerefMut for crate::Zenject::DisposableManager_LateDisposableInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -730,7 +730,7 @@ impl crate::Zenject::DisposableManager_LateDisposableInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
+#[cfg(feature = "cordl_class_Zenject+DisposableManager+LateDisposableInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::DisposableManager_LateDisposableInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

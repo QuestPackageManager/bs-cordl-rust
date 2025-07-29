@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+DataRowState")]
+#[cfg(feature = "cordl_class_System+Data+DataRowState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DataRowState {
@@ -9,7 +9,7 @@ pub enum DataRowState {
     Modified = 16i32,
     Unchanged = 2i32,
 }
-#[cfg(feature = "System+Data+DataRowState")]
+#[cfg(feature = "cordl_class_System+Data+DataRowState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataRowState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataRowState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+DataRowState")]
+#[cfg(feature = "cordl_class_System+Data+DataRowState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::DataRowState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::DataRowStat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+DataRowState")]
+#[cfg(feature = "cordl_class_System+Data+DataRowState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::DataRowState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::DataRowSta
         self
     }
 }
-#[cfg(feature = "System+Data+DataRowState")]
+#[cfg(feature = "cordl_class_System+Data+DataRowState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::DataRowState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::DataRowStat
         }
     }
 }
-#[cfg(feature = "System+Data+DataRowState")]
+#[cfg(feature = "cordl_class_System+Data+DataRowState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::DataRowState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

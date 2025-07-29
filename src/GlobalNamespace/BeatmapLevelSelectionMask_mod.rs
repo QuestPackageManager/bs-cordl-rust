@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelSelectionMask")]
+#[cfg(feature = "cordl_class_BeatmapLevelSelectionMask")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelSelectionMask {
@@ -6,7 +6,7 @@ pub struct BeatmapLevelSelectionMask {
     pub modifiers: crate::GlobalNamespace::GameplayModifierMask,
     pub songPacks: crate::GlobalNamespace::SongPackMask,
 }
-#[cfg(feature = "BeatmapLevelSelectionMask")]
+#[cfg(feature = "cordl_class_BeatmapLevelSelectionMask")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::BeatmapLevelSelectionMask {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapLevelSelectionMask")]
+#[cfg(feature = "cordl_class_BeatmapLevelSelectionMask")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::BeatmapLevelSelectionMask {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapLevelSelectionMask")]
+#[cfg(feature = "cordl_class_BeatmapLevelSelectionMask")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::BeatmapLevelSelectionMask {
         self
     }
 }
-#[cfg(feature = "BeatmapLevelSelectionMask")]
+#[cfg(feature = "cordl_class_BeatmapLevelSelectionMask")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::BeatmapLevelSelectionMask {
         }
     }
 }
-#[cfg(feature = "BeatmapLevelSelectionMask")]
+#[cfg(feature = "cordl_class_BeatmapLevelSelectionMask")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::GlobalNamespace::BeatmapLevelSelectionMask {
         actual
     }
 }
-#[cfg(feature = "BeatmapLevelSelectionMask")]
+#[cfg(feature = "cordl_class_BeatmapLevelSelectionMask")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     type Type = Self;

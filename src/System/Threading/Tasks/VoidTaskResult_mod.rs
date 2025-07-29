@@ -1,8 +1,8 @@
-#[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+VoidTaskResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VoidTaskResult {}
-#[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+VoidTaskResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::VoidTaskResult {
     type Held<'a> = Self;
@@ -32,7 +32,7 @@ for crate::System::Threading::Tasks::VoidTaskResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+VoidTaskResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::VoidTaskResult {
     type Type = Self;
@@ -43,7 +43,7 @@ for crate::System::Threading::Tasks::VoidTaskResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+VoidTaskResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::VoidTaskResult {
     type Actual = Self;
@@ -57,7 +57,7 @@ for crate::System::Threading::Tasks::VoidTaskResult {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+VoidTaskResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::VoidTaskResult {
     type Type = Self;
@@ -72,7 +72,7 @@ for crate::System::Threading::Tasks::VoidTaskResult {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+VoidTaskResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::VoidTaskResult {
     type Actual = Self;
@@ -86,7 +86,7 @@ for crate::System::Threading::Tasks::VoidTaskResult {
         actual
     }
 }
-#[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+VoidTaskResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::Tasks::VoidTaskResult {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigateFocusRing {
@@ -8,7 +8,7 @@ pub struct NavigateFocusRing {
         crate::UnityEngine::UIElements::VisualElementFocusRing,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::NavigateFocusRing {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::UnityEngine::UIElements::NavigateFocusRing {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::NavigateFocusRing {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::NavigateFocusRing {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -296,7 +296,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::NavigateFocusRing {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -320,13 +320,13 @@ for crate::UnityEngine::UIElements::NavigateFocusRing {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigateFocusRing_ChangeDirection {
     __cordl_parent: crate::UnityEngine::UIElements::FocusChangeDirection,
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -346,7 +346,7 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
     type Target = crate::UnityEngine::UIElements::FocusChangeDirection;
@@ -354,7 +354,7 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -395,7 +395,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -405,7 +405,9 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NavigateFocusRing_FocusableHierarchyTraversal {
@@ -418,7 +420,9 @@ pub struct NavigateFocusRing_FocusableHierarchyTraversal {
         crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Held<'a> = Self;
@@ -448,7 +452,9 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Type = Self;
@@ -459,7 +465,9 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Actual = Self;
@@ -473,7 +481,9 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Type = Self;
@@ -488,7 +498,9 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Actual = Self;
@@ -502,7 +514,9 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Type = Self;

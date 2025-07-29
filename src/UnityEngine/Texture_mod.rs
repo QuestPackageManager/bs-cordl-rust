@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Texture")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Texture {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+Texture")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Texture")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture")]
 impl std::ops::Deref for crate::UnityEngine::Texture {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Texture")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture")]
 impl std::ops::DerefMut for crate::UnityEngine::Texture {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -725,7 +725,7 @@ impl crate::UnityEngine::Texture {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Texture")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Texture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

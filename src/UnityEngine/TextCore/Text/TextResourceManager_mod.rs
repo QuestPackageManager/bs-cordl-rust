@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextResourceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextResourceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextResourceManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextResourceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -71,7 +71,7 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextResourceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -81,7 +81,9 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextResourceManager_FontAssetRef {
@@ -93,7 +95,9 @@ pub struct TextResourceManager_FontAssetRef {
         crate::UnityEngine::TextCore::Text::FontAsset,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
     type Held<'a> = Self;
@@ -123,7 +127,9 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
     type Type = Self;
@@ -134,7 +140,9 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
     type Actual = Self;
@@ -148,7 +156,9 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
     type Type = Self;
@@ -163,7 +173,9 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
     type Actual = Self;
@@ -177,7 +189,9 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
     type Type = Self;

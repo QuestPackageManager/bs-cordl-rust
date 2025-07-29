@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DuplicateNodeError {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

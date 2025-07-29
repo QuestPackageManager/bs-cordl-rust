@@ -1,11 +1,11 @@
-#[cfg(feature = "TimeHelper")]
+#[cfg(feature = "cordl_class_TimeHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _accumulator: f32,
 }
-#[cfg(feature = "TimeHelper")]
+#[cfg(feature = "cordl_class_TimeHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TimeHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TimeHelper {
         false
     }
 }
-#[cfg(feature = "TimeHelper")]
+#[cfg(feature = "cordl_class_TimeHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::TimeHelper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TimeHelper")]
+#[cfg(feature = "cordl_class_TimeHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TimeHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -328,7 +328,7 @@ impl crate::GlobalNamespace::TimeHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TimeHelper")]
+#[cfg(feature = "cordl_class_TimeHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TimeHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "BasicBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventDataProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicBeatmapEventDataProcessor {
@@ -6,7 +6,7 @@ pub struct BasicBeatmapEventDataProcessor {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasicBeatmapEventData>,
     >,
 }
-#[cfg(feature = "BasicBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventDataProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
         false
     }
 }
-#[cfg(feature = "BasicBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
     type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasicBeatmapEventData>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BasicBeatmapEventDataProcessor 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BasicBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventDataProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BasicBeatmapEventDataProcessor")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventDataProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct RSACertificateExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::RSACertificateExtensions {
@@ -29,7 +29,7 @@ for crate::System::Security::Cryptography::X509Certificates::RSACertificateExten
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::RSACertificateExtensions {
@@ -39,7 +39,7 @@ for crate::System::Security::Cryptography::X509Certificates::RSACertificateExten
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::RSACertificateExtensions {
@@ -86,7 +86,7 @@ impl crate::System::Security::Cryptography::X509Certificates::RSACertificateExte
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::RSACertificateExtensions {

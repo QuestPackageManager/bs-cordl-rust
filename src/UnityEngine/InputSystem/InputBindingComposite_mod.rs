@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingComposite")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputBindingComposite {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingComposite")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputBindingComposite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::InputBindingComposite {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingComposite")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputBindingComposite {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingComposite")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputBindingComposite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -396,7 +396,7 @@ impl crate::UnityEngine::InputSystem::InputBindingComposite {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingComposite")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputBindingComposite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+LockHolder")]
+#[cfg(feature = "cordl_class_System+Threading+LockHolder")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LockHolder {
     pub _lock: quest_hook::libil2cpp::Gc<crate::System::Threading::Lock>,
 }
-#[cfg(feature = "System+Threading+LockHolder")]
+#[cfg(feature = "cordl_class_System+Threading+LockHolder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::LockHolder {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::LockHolder
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+LockHolder")]
+#[cfg(feature = "cordl_class_System+Threading+LockHolder")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::LockHolder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Threading::LockHo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+LockHolder")]
+#[cfg(feature = "cordl_class_System+Threading+LockHolder")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Threading::LockHolder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Threading::LockH
         self
     }
 }
-#[cfg(feature = "System+Threading+LockHolder")]
+#[cfg(feature = "cordl_class_System+Threading+LockHolder")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::LockHolder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Threading::LockHo
         }
     }
 }
-#[cfg(feature = "System+Threading+LockHolder")]
+#[cfg(feature = "cordl_class_System+Threading+LockHolder")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::LockHolder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::LockHold
         actual
     }
 }
-#[cfg(feature = "System+Threading+LockHolder")]
+#[cfg(feature = "cordl_class_System+Threading+LockHolder")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::LockHolder {
     type Type = Self;

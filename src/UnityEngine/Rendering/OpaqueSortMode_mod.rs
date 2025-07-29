@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+OpaqueSortMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OpaqueSortMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OpaqueSortMode {
@@ -7,7 +7,7 @@ pub enum OpaqueSortMode {
     FrontToBack = 1i32,
     NoDistanceSort = 2i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+OpaqueSortMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OpaqueSortMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::OpaqueSortMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::Rendering::OpaqueSortMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+OpaqueSortMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OpaqueSortMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::OpaqueSortMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Rendering::OpaqueSortMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+OpaqueSortMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OpaqueSortMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::OpaqueSortMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::Rendering::OpaqueSortMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+OpaqueSortMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OpaqueSortMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::OpaqueSortMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::Rendering::OpaqueSortMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+OpaqueSortMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+OpaqueSortMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::OpaqueSortMode {
     type Actual = Self;

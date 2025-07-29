@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerSettingsPanelController")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSettingsPanelController {
@@ -75,7 +75,7 @@ pub struct PlayerSettingsPanelController {
     pub _refreshed: bool,
     pub _eventBinder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EventBinder>,
 }
-#[cfg(feature = "PlayerSettingsPanelController")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSettingsPanelController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -95,14 +95,14 @@ for crate::GlobalNamespace::PlayerSettingsPanelController {
         false
     }
 }
-#[cfg(feature = "PlayerSettingsPanelController")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSettingsPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSettingsPanelController")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSettingsPanelController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1070,7 +1070,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSettingsPanelController")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSettingsPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1094,7 +1094,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSettingsPanelController_PlayerSettingsPanelLayout {
@@ -1103,7 +1103,7 @@ pub enum PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     Multiplayer = 2i32,
     Singleplayer = 1i32,
 }
-#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Held<'a> = Self;
@@ -1133,7 +1133,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLay
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Type = Self;
@@ -1144,7 +1144,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLay
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Actual = Self;
@@ -1158,7 +1158,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLay
         self
     }
 }
-#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Type = Self;
@@ -1173,7 +1173,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLay
         }
     }
 }
-#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
+#[cfg(feature = "cordl_class_PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Actual = Self;

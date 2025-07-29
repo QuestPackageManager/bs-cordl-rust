@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcherGate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventDispatcherGate {
@@ -6,7 +6,7 @@ pub struct EventDispatcherGate {
         crate::UnityEngine::UIElements::EventDispatcher,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcherGate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventDispatcherGate {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::UIElements::EventDispatcherGate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcherGate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventDispatcherGate {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::EventDispatcherGate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcherGate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventDispatcherGate {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::EventDispatcherGate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcherGate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventDispatcherGate {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::EventDispatcherGate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcherGate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventDispatcherGate {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::UIElements::EventDispatcherGate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcherGate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::EventDispatcherGate {
     type Type = Self;

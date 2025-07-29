@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+SecureRandom")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureRandom {
@@ -7,7 +7,7 @@ pub struct SecureRandom {
         crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+SecureRandom")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::SecureRandom {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Security::SecureRandom {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+SecureRandom")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::SecureRandom {
     type Target = crate::System::Random;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+SecureRandom")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::SecureRandom {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -612,7 +612,7 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+SecureRandom")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Security::SecureRandom {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

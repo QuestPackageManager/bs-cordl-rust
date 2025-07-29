@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelDataVersion")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataVersion")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapLevelDataVersion {
@@ -6,7 +6,7 @@ pub enum BeatmapLevelDataVersion {
     NoEnvironmentKeywords = 1i32,
     Original = 0i32,
 }
-#[cfg(feature = "BeatmapLevelDataVersion")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataVersion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelDataVersion {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::BeatmapLevelDataVersion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapLevelDataVersion")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataVersion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapLevelDataVersion {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::BeatmapLevelDataVersion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapLevelDataVersion")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataVersion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapLevelDataVersion {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::BeatmapLevelDataVersion {
         self
     }
 }
-#[cfg(feature = "BeatmapLevelDataVersion")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataVersion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapLevelDataVersion {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::BeatmapLevelDataVersion {
         }
     }
 }
-#[cfg(feature = "BeatmapLevelDataVersion")]
+#[cfg(feature = "cordl_class_BeatmapLevelDataVersion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapLevelDataVersion {
     type Actual = Self;

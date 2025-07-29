@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+Arc")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Arc")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Arc {
@@ -6,7 +6,7 @@ pub struct Arc {
     pub tm: f32,
     pub a: crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Arc")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Arc")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Arc {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Arc 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Arc")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Arc")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::BeatmapSaveDataVersion4::Arc {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::BeatmapSaveDataVersion4::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Arc")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Arc")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatmapSaveDataVersion4::Arc {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatmapSaveDataVersion4:
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Arc")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Arc")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::BeatmapSaveDataVersion4::Arc {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::BeatmapSaveDataVersion4::
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Arc")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Arc")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::Arc {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::Ar
         actual
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Arc")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Arc")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::BeatmapSaveDataVersion4::Arc {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

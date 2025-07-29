@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+GUILayoutOption")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUILayoutOption {
@@ -6,7 +6,7 @@ pub struct GUILayoutOption {
     pub _cordl_type: crate::UnityEngine::GUILayoutOption_Type,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUILayoutOption {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUILayoutOption 
         false
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption")]
 impl std::ops::Deref for crate::UnityEngine::GUILayoutOption {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption")]
 impl std::ops::DerefMut for crate::UnityEngine::GUILayoutOption {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -85,7 +85,7 @@ impl crate::UnityEngine::GUILayoutOption {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUILayoutOption {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -94,7 +94,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUILayoutOption {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption+Type")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GUILayoutOption_Type {
@@ -114,7 +114,7 @@ pub enum GUILayoutOption_Type {
     stretchHeight = 7i32,
     stretchWidth = 6i32,
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUILayoutOption_Type {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -143,7 +143,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUILayoutOption_
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::GUILayoutOption_Type {
     type Type = Self;
@@ -154,7 +154,7 @@ for crate::UnityEngine::GUILayoutOption_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::GUILayoutOption_Type {
     type Actual = Self;
@@ -168,7 +168,7 @@ for crate::UnityEngine::GUILayoutOption_Type {
         self
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::GUILayoutOption_Type {
     type Type = Self;
@@ -183,7 +183,7 @@ for crate::UnityEngine::GUILayoutOption_Type {
         }
     }
 }
-#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
+#[cfg(feature = "cordl_class_UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::GUILayoutOption_Type {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

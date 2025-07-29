@@ -1,4 +1,4 @@
-#[cfg(feature = "StretchableObstacle")]
+#[cfg(feature = "cordl_class_StretchableObstacle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StretchableObstacle {
@@ -25,7 +25,7 @@ pub struct StretchableObstacle {
     pub _manualUVOffsetMultiplier: f32,
     pub _bounds: crate::UnityEngine::Bounds,
 }
-#[cfg(feature = "StretchableObstacle")]
+#[cfg(feature = "cordl_class_StretchableObstacle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::StretchableObstacle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -44,14 +44,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::StretchableO
         false
     }
 }
-#[cfg(feature = "StretchableObstacle")]
+#[cfg(feature = "cordl_class_StretchableObstacle")]
 impl std::ops::Deref for crate::GlobalNamespace::StretchableObstacle {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StretchableObstacle")]
+#[cfg(feature = "cordl_class_StretchableObstacle")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StretchableObstacle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -265,7 +265,7 @@ impl crate::GlobalNamespace::StretchableObstacle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StretchableObstacle")]
+#[cfg(feature = "cordl_class_StretchableObstacle")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StretchableObstacle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

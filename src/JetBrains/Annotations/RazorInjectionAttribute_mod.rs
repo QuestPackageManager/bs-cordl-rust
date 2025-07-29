@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+RazorInjectionAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorInjectionAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RazorInjectionAttribute {
@@ -10,7 +10,7 @@ pub struct RazorInjectionAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "JetBrains+Annotations+RazorInjectionAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorInjectionAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::RazorInjectionAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::JetBrains::Annotations::RazorInjectionAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorInjectionAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorInjectionAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::RazorInjectionAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorInjectionAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorInjectionAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::RazorInjectionAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -196,7 +196,7 @@ impl crate::JetBrains::Annotations::RazorInjectionAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+RazorInjectionAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorInjectionAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::RazorInjectionAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

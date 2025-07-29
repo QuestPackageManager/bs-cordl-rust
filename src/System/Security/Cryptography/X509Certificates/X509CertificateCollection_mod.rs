@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct X509CertificateCollection {
     __cordl_parent: crate::System::Collections::CollectionBase,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection {
@@ -29,7 +29,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection {
@@ -39,7 +39,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection {
@@ -236,7 +236,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509CertificateCol
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection {
@@ -248,7 +248,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -257,7 +257,7 @@ pub struct X509CertificateCollection_X509CertificateEnumerator {
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {
@@ -279,7 +279,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {
@@ -289,7 +289,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {
@@ -467,7 +467,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509CertificateCol
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {

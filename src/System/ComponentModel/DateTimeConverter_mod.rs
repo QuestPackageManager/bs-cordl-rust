@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+DateTimeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DateTimeConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }
-#[cfg(feature = "System+ComponentModel+DateTimeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DateTimeConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::DateTimeConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::DateTimeConverter {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+DateTimeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DateTimeConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::DateTimeConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+DateTimeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DateTimeConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::DateTimeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -227,7 +227,7 @@ impl crate::System::ComponentModel::DateTimeConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+DateTimeConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DateTimeConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::DateTimeConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

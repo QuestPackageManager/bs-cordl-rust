@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+Activation+IActivator")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+IActivator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IActivator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IActivator")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+IActivator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Activation::IActivator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::Activation::IActivator {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IActivator")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+IActivator")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Activation::IActivator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IActivator")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+IActivator")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Activation::IActivator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::System::Runtime::Remoting::Activation::IActivator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Activation+IActivator")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+IActivator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Activation::IActivator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

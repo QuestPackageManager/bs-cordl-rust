@@ -1,4 +1,4 @@
-#[cfg(feature = "System+StringSplitOptions")]
+#[cfg(feature = "cordl_class_System+StringSplitOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StringSplitOptions {
@@ -6,7 +6,7 @@ pub enum StringSplitOptions {
     None = 0i32,
     RemoveEmptyEntries = 1i32,
 }
-#[cfg(feature = "System+StringSplitOptions")]
+#[cfg(feature = "cordl_class_System+StringSplitOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::StringSplitOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::StringSplitOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+StringSplitOptions")]
+#[cfg(feature = "cordl_class_System+StringSplitOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::StringSplitOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::StringSplitOption
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+StringSplitOptions")]
+#[cfg(feature = "cordl_class_System+StringSplitOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::StringSplitOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::StringSplitOptio
         self
     }
 }
-#[cfg(feature = "System+StringSplitOptions")]
+#[cfg(feature = "cordl_class_System+StringSplitOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::StringSplitOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::StringSplitOption
         }
     }
 }
-#[cfg(feature = "System+StringSplitOptions")]
+#[cfg(feature = "cordl_class_System+StringSplitOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::StringSplitOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,8 +1,8 @@
-#[cfg(feature = "Mono+ValueTuple")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTuple {}
-#[cfg(feature = "Mono+ValueTuple")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::ValueTuple {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::ValueTuple {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+ValueTuple")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::ValueTuple {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::ValueTuple {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+ValueTuple")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::ValueTuple {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,7 +54,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::ValueTuple {
         self
     }
 }
-#[cfg(feature = "Mono+ValueTuple")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::ValueTuple {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,7 +68,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::ValueTuple {
         }
     }
 }
-#[cfg(feature = "Mono+ValueTuple")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::ValueTuple {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -81,7 +81,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::ValueTuple {
         actual
     }
 }
-#[cfg(feature = "Mono+ValueTuple")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::ValueTuple {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

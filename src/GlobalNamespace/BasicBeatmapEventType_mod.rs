@@ -1,4 +1,4 @@
-#[cfg(feature = "BasicBeatmapEventType")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BasicBeatmapEventType {
@@ -33,7 +33,7 @@ pub enum BasicBeatmapEventType {
     Special3 = 43i32,
     VoidEvent = -1i32,
 }
-#[cfg(feature = "BasicBeatmapEventType")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BasicBeatmapEventType {
     type Held<'a> = Self;
@@ -63,7 +63,7 @@ for crate::GlobalNamespace::BasicBeatmapEventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BasicBeatmapEventType")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BasicBeatmapEventType {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::BasicBeatmapEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BasicBeatmapEventType")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BasicBeatmapEventType {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::GlobalNamespace::BasicBeatmapEventType {
         self
     }
 }
-#[cfg(feature = "BasicBeatmapEventType")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BasicBeatmapEventType {
     type Type = Self;
@@ -103,7 +103,7 @@ for crate::GlobalNamespace::BasicBeatmapEventType {
         }
     }
 }
-#[cfg(feature = "BasicBeatmapEventType")]
+#[cfg(feature = "cordl_class_BasicBeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BasicBeatmapEventType {
     type Actual = Self;

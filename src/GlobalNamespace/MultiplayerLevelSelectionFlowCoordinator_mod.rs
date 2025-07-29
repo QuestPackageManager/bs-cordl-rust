@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_MultiplayerLevelSelectionFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelSelectionFlowCoordinator {
@@ -30,7 +30,7 @@ pub struct MultiplayerLevelSelectionFlowCoordinator {
     >,
     pub _isBeingFinished: bool,
 }
-#[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_MultiplayerLevelSelectionFlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_MultiplayerLevelSelectionFlowCoordinator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     type Target = crate::GlobalNamespace::LevelSelectionFlowCoordinator;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_MultiplayerLevelSelectionFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -717,7 +717,7 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_MultiplayerLevelSelectionFlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

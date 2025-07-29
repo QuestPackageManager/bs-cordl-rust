@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+DtdParser")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdParser {
@@ -50,7 +50,7 @@ pub struct DtdParser {
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
 }
-#[cfg(feature = "System+Xml+DtdParser")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -69,14 +69,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser {
         false
     }
 }
-#[cfg(feature = "System+Xml+DtdParser")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser")]
 impl std::ops::Deref for crate::System::Xml::DtdParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+DtdParser")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser")]
 impl std::ops::DerefMut for crate::System::Xml::DtdParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2909,7 +2909,7 @@ impl crate::System::Xml::DtdParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+DtdParser")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::DtdParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2930,7 +2930,7 @@ impl AsMut<crate::System::Xml::IDtdParser> for crate::System::Xml::DtdParser {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+LiteralType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DtdParser_LiteralType {
@@ -2939,7 +2939,7 @@ pub enum DtdParser_LiteralType {
     EntityReplText = 1i32,
     SystemOrPublicID = 2i32,
 }
-#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser_LiteralType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2968,7 +2968,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser_Litera
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::DtdParser_LiteralType {
     type Type = Self;
@@ -2979,7 +2979,7 @@ for crate::System::Xml::DtdParser_LiteralType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::DtdParser_LiteralType {
     type Actual = Self;
@@ -2993,7 +2993,7 @@ for crate::System::Xml::DtdParser_LiteralType {
         self
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::DtdParser_LiteralType {
     type Type = Self;
@@ -3008,7 +3008,7 @@ for crate::System::Xml::DtdParser_LiteralType {
         }
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_LiteralType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3021,7 +3021,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_Lite
         actual
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdParser_ParseElementOnlyContent_LocalFrame {
@@ -3029,7 +3029,7 @@ pub struct DtdParser_ParseElementOnlyContent_LocalFrame {
     pub startParenEntityId: i32,
     pub parsingSchema: crate::System::Xml::DtdParser_Token,
 }
-#[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3049,7 +3049,7 @@ for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
         false
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 impl std::ops::Deref
 for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3057,7 +3057,7 @@ for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 impl std::ops::DerefMut
 for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3098,7 +3098,7 @@ impl crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3108,7 +3108,7 @@ for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ScanningFunction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DtdParser_ScanningFunction {
@@ -3148,7 +3148,7 @@ pub enum DtdParser_ScanningFunction {
     SubsetContent = 0i32,
     SystemId = 28i32,
 }
-#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Held<'a> = Self;
@@ -3178,7 +3178,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Type = Self;
@@ -3189,7 +3189,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Actual = Self;
@@ -3203,7 +3203,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
         self
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Type = Self;
@@ -3218,7 +3218,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
         }
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Actual = Self;
@@ -3232,7 +3232,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
         actual
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+Token")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+Token")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DtdParser_Token {
@@ -3286,7 +3286,7 @@ pub enum DtdParser_Token {
     SYSTEM = 34i32,
     Star = 39i32,
 }
-#[cfg(feature = "System+Xml+DtdParser+Token")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser_Token {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3315,7 +3315,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser_Token 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+Token")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::DtdParser_Token {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3325,7 +3325,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::DtdParser_To
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+Token")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::DtdParser_Token {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3338,7 +3338,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::DtdParser_T
         self
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+Token")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::DtdParser_Token {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3352,7 +3352,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::DtdParser_To
         }
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+Token")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_Token {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3365,7 +3365,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_Toke
         actual
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+UndeclaredNotation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdParser_UndeclaredNotation {
@@ -3377,7 +3377,7 @@ pub struct DtdParser_UndeclaredNotation {
         crate::System::Xml::DtdParser_UndeclaredNotation,
     >,
 }
-#[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+UndeclaredNotation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::DtdParser_UndeclaredNotation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3397,14 +3397,14 @@ for crate::System::Xml::DtdParser_UndeclaredNotation {
         false
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+UndeclaredNotation")]
 impl std::ops::Deref for crate::System::Xml::DtdParser_UndeclaredNotation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+UndeclaredNotation")]
 impl std::ops::DerefMut for crate::System::Xml::DtdParser_UndeclaredNotation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3458,7 +3458,7 @@ impl crate::System::Xml::DtdParser_UndeclaredNotation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
+#[cfg(feature = "cordl_class_System+Xml+DtdParser+UndeclaredNotation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::DtdParser_UndeclaredNotation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGPtrArrayHandle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeGPtrArrayHandle {
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeGPtrArrayHandle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeGPtrArrayHandle 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeGPtrArrayHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeGPtrArrayHan
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeGPtrArrayHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeGPtrArrayHa
         self
     }
 }
-#[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeGPtrArrayHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeGPtrArrayHan
         }
     }
 }
-#[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeGPtrArrayHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeGPtrArrayHandl
         actual
     }
 }
-#[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::RuntimeGPtrArrayHandle {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

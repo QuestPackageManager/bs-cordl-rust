@@ -1,10 +1,10 @@
-#[cfg(feature = "Tayx+Graphy+Graph+G_Graph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Graph+G_Graph")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_Graph {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "Tayx+Graphy+Graph+G_Graph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Graph+G_Graph")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Graph::G_Graph {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Graph::G_Graph 
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+Graph+G_Graph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Graph+G_Graph")]
 impl std::ops::Deref for crate::Tayx::Graphy::Graph::G_Graph {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+Graph+G_Graph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Graph+G_Graph")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Graph::G_Graph {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ impl crate::Tayx::Graphy::Graph::G_Graph {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+Graph+G_Graph")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Graph+G_Graph")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Graph::G_Graph {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

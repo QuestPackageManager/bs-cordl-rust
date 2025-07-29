@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRResources {
@@ -9,7 +9,7 @@ pub struct IVRResources {
         crate::OVR::OpenVR::IVRResources__GetResourceFullPath,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRResources {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRResources {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRResources {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRResources
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRResources {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRResource
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRResources {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRResources
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRResources {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRResources {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRResources {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -105,13 +105,13 @@ impl crate::OVR::OpenVR::IVRResources {
     #[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
     pub type _LoadSharedResource = crate::OVR::OpenVR::IVRResources__LoadSharedResource;
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRResources__GetResourceFullPath {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -131,14 +131,14 @@ for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -327,7 +327,7 @@ impl crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -337,13 +337,13 @@ for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_LoadSharedResource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRResources__LoadSharedResource {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_LoadSharedResource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -363,14 +363,14 @@ for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_LoadSharedResource")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_LoadSharedResource")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -532,7 +532,7 @@ impl crate::OVR::OpenVR::IVRResources__LoadSharedResource {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_LoadSharedResource")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

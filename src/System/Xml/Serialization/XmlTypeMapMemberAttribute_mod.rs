@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTypeMapMemberAttribute {
@@ -10,7 +10,7 @@ pub struct XmlTypeMapMemberAttribute {
         crate::System::Xml::Serialization::XmlTypeMapping,
     >,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberAttribute")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
     type Target = crate::System::Xml::Serialization::XmlTypeMapMember;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberAttribute")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -266,7 +266,7 @@ impl crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

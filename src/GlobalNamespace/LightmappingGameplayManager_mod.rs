@@ -1,4 +1,4 @@
-#[cfg(feature = "LightmappingGameplayManager")]
+#[cfg(feature = "cordl_class_LightmappingGameplayManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightmappingGameplayManager {
@@ -7,7 +7,7 @@ pub struct LightmappingGameplayManager {
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
 }
-#[cfg(feature = "LightmappingGameplayManager")]
+#[cfg(feature = "cordl_class_LightmappingGameplayManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightmappingGameplayManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::LightmappingGameplayManager {
         false
     }
 }
-#[cfg(feature = "LightmappingGameplayManager")]
+#[cfg(feature = "cordl_class_LightmappingGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LightmappingGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightmappingGameplayManager")]
+#[cfg(feature = "cordl_class_LightmappingGameplayManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightmappingGameplayManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::LightmappingGameplayManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightmappingGameplayManager")]
+#[cfg(feature = "cordl_class_LightmappingGameplayManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightmappingGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

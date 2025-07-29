@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+INVALIDATION_FLAGS")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+INVALIDATION_FLAGS")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum INVALIDATION_FLAGS {
@@ -9,7 +9,7 @@ pub enum INVALIDATION_FLAGS {
     NONE = 0u32,
     STAGE = 2u32,
 }
-#[cfg(feature = "LIV+SDK+Unity+INVALIDATION_FLAGS")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+INVALIDATION_FLAGS")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::INVALIDATION
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+INVALIDATION_FLAGS")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+INVALIDATION_FLAGS")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+INVALIDATION_FLAGS")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+INVALIDATION_FLAGS")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+INVALIDATION_FLAGS")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+INVALIDATION_FLAGS")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+INVALIDATION_FLAGS")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+INVALIDATION_FLAGS")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {
     type Actual = Self;

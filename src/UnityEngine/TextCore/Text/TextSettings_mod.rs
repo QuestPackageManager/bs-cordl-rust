@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextSettings {
@@ -56,7 +56,7 @@ pub struct TextSettings {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -76,14 +76,14 @@ for crate::UnityEngine::TextCore::Text::TextSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1121,7 +1121,7 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1131,7 +1131,7 @@ for crate::UnityEngine::TextCore::Text::TextSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextSettings_FontReferenceMap {
@@ -1140,7 +1140,7 @@ pub struct TextSettings_FontReferenceMap {
         crate::UnityEngine::TextCore::Text::FontAsset,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
     type Held<'a> = Self;
@@ -1170,7 +1170,7 @@ for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
     type Type = Self;
@@ -1181,7 +1181,7 @@ for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
     type Actual = Self;
@@ -1195,7 +1195,7 @@ for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
     type Type = Self;
@@ -1210,7 +1210,7 @@ for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
     type Actual = Self;
@@ -1224,7 +1224,7 @@ for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
     type Type = Self;

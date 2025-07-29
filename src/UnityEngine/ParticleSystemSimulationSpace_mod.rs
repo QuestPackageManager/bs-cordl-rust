@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemSimulationSpace")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemSimulationSpace {
@@ -7,7 +7,7 @@ pub enum ParticleSystemSimulationSpace {
     Local = 0i32,
     World = 1i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::ParticleSystemSimulationSpace {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ParticleSystemSimulationSpace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ParticleSystemSimulationSpace {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ParticleSystemSimulationSpace {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Actual = Self;

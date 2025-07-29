@@ -1,4 +1,4 @@
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PhysicsRaycasterWithCache {
@@ -10,7 +10,7 @@ pub struct PhysicsRaycasterWithCache {
     >,
     pub _lastFrameCount: i32,
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::VRUIControls::PhysicsRaycasterWithCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::VRUIControls::PhysicsRaycasterWithCache {
         false
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache")]
 impl std::ops::Deref for crate::VRUIControls::PhysicsRaycasterWithCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache")]
 impl std::ops::DerefMut for crate::VRUIControls::PhysicsRaycasterWithCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::VRUIControls::PhysicsRaycasterWithCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::VRUIControls::PhysicsRaycasterWithCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -123,7 +123,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PhysicsRaycasterWithCache_CachedRaycast {
@@ -133,7 +133,7 @@ pub struct PhysicsRaycasterWithCache_CachedRaycast {
     pub maxDistance: f32,
     pub layerMask: i32,
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Held<'a> = Self;
@@ -163,7 +163,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Type = Self;
@@ -174,7 +174,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Actual = Self;
@@ -188,7 +188,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
         self
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Type = Self;
@@ -203,7 +203,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
         }
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Actual = Self;
@@ -217,7 +217,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
         actual
     }
 }
-#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
+#[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Type = Self;

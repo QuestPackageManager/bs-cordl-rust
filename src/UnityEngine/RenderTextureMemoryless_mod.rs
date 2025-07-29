@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+RenderTextureMemoryless")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureMemoryless")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureMemoryless {
@@ -8,7 +8,7 @@ pub enum RenderTextureMemoryless {
     MSAA = 4i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+RenderTextureMemoryless")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureMemoryless")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureMemoryless {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureMem
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureMemoryless")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureMemoryless")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RenderTextureMemoryless {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::RenderTextureMemoryless {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureMemoryless")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureMemoryless")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RenderTextureMemoryless {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::RenderTextureMemoryless {
         self
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureMemoryless")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureMemoryless")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RenderTextureMemoryless {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::RenderTextureMemoryless {
         }
     }
 }
-#[cfg(feature = "UnityEngine+RenderTextureMemoryless")]
+#[cfg(feature = "cordl_class_UnityEngine+RenderTextureMemoryless")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RenderTextureMemoryless {
     type Actual = Self;

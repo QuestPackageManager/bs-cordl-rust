@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+MaterialPropertyType")]
+#[cfg(feature = "cordl_class_UnityEngine+MaterialPropertyType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MaterialPropertyType {
@@ -11,7 +11,7 @@ pub enum MaterialPropertyType {
     Texture = 4i32,
     Vector = 2i32,
 }
-#[cfg(feature = "UnityEngine+MaterialPropertyType")]
+#[cfg(feature = "cordl_class_UnityEngine+MaterialPropertyType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MaterialPropertyType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MaterialProperty
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+MaterialPropertyType")]
+#[cfg(feature = "cordl_class_UnityEngine+MaterialPropertyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::MaterialPropertyType {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::MaterialPropertyType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+MaterialPropertyType")]
+#[cfg(feature = "cordl_class_UnityEngine+MaterialPropertyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::MaterialPropertyType {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::MaterialPropertyType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+MaterialPropertyType")]
+#[cfg(feature = "cordl_class_UnityEngine+MaterialPropertyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::MaterialPropertyType {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::MaterialPropertyType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+MaterialPropertyType")]
+#[cfg(feature = "cordl_class_UnityEngine+MaterialPropertyType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::MaterialPropertyType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

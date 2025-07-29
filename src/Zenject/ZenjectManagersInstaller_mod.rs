@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ZenjectManagersInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectManagersInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectManagersInstaller {
@@ -6,7 +6,7 @@ pub struct ZenjectManagersInstaller {
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectManagersInstaller>,
     >,
 }
-#[cfg(feature = "Zenject+ZenjectManagersInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectManagersInstaller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectManagersInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectManagersInsta
         false
     }
 }
-#[cfg(feature = "Zenject+ZenjectManagersInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectManagersInstaller")]
 impl std::ops::Deref for crate::Zenject::ZenjectManagersInstaller {
     type Target = crate::Zenject::Installer_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectManagersInstaller>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::Zenject::ZenjectManagersInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ZenjectManagersInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectManagersInstaller")]
 impl std::ops::DerefMut for crate::Zenject::ZenjectManagersInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::Zenject::ZenjectManagersInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ZenjectManagersInstaller")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectManagersInstaller")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectManagersInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

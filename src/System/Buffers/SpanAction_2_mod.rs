@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Buffers+SpanAction_2")]
+#[cfg(feature = "cordl_class_System+Buffers+SpanAction_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpanAction_2<
@@ -9,7 +9,7 @@ pub struct SpanAction_2<
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TArg: std::marker::PhantomData<TArg>,
 }
-#[cfg(feature = "System+Buffers+SpanAction_2")]
+#[cfg(feature = "cordl_class_System+Buffers+SpanAction_2")]
 unsafe impl<
     T: quest_hook::libil2cpp::Type,
     TArg: quest_hook::libil2cpp::Type,
@@ -47,7 +47,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "System+Buffers+SpanAction_2")]
+#[cfg(feature = "cordl_class_System+Buffers+SpanAction_2")]
 impl<T: quest_hook::libil2cpp::Type, TArg: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::SpanAction_2<T, TArg> {
     type Target = crate::System::MulticastDelegate;
@@ -55,7 +55,7 @@ for crate::System::Buffers::SpanAction_2<T, TArg> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Buffers+SpanAction_2")]
+#[cfg(feature = "cordl_class_System+Buffers+SpanAction_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TArg: quest_hook::libil2cpp::Type,
@@ -157,7 +157,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Buffers+SpanAction_2")]
+#[cfg(feature = "cordl_class_System+Buffers+SpanAction_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TArg: quest_hook::libil2cpp::Type,

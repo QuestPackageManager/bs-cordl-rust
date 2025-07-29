@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+WriteState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+WriteState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WriteState {
@@ -11,7 +11,7 @@ pub enum WriteState {
     Property = 5i32,
     Start = 6i32,
 }
-#[cfg(feature = "Newtonsoft+Json+WriteState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+WriteState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::WriteState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::WriteState 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+WriteState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+WriteState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::WriteState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::WriteSt
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+WriteState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+WriteState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Newtonsoft::Json::WriteState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Newtonsoft::Json::WriteS
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+WriteState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+WriteState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::WriteState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::WriteSt
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+WriteState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+WriteState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::WriteState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

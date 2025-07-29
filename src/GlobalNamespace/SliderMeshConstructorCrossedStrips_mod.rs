@@ -1,11 +1,11 @@
-#[cfg(feature = "SliderMeshConstructorCrossedStrips")]
+#[cfg(feature = "cordl_class_SliderMeshConstructorCrossedStrips")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderMeshConstructorCrossedStrips {
     __cordl_parent: crate::GlobalNamespace::SliderMeshConstructor,
     pub _triangleMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
-#[cfg(feature = "SliderMeshConstructorCrossedStrips")]
+#[cfg(feature = "cordl_class_SliderMeshConstructorCrossedStrips")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
         false
     }
 }
-#[cfg(feature = "SliderMeshConstructorCrossedStrips")]
+#[cfg(feature = "cordl_class_SliderMeshConstructorCrossedStrips")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     type Target = crate::GlobalNamespace::SliderMeshConstructor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderMeshConstructorCrossedStrips")]
+#[cfg(feature = "cordl_class_SliderMeshConstructorCrossedStrips")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -156,7 +156,7 @@ impl crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderMeshConstructorCrossedStrips")]
+#[cfg(feature = "cordl_class_SliderMeshConstructorCrossedStrips")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

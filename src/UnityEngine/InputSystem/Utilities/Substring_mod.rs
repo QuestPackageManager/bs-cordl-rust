@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+Substring")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Substring {
@@ -6,7 +6,7 @@ pub struct Substring {
     pub m_Index: i32,
     pub m_Length: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+Substring")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::Substring {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::InputSystem::Utilities::Substring {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+Substring")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::Substring {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::InputSystem::Utilities::Substring {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+Substring")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::Substring {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::InputSystem::Utilities::Substring {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+Substring")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::Substring {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::InputSystem::Utilities::Substring {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+Substring")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::Substring {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::InputSystem::Utilities::Substring {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+Substring")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Utilities::Substring {
     type Type = Self;

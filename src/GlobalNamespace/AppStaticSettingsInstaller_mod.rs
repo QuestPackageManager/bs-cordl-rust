@@ -1,4 +1,4 @@
-#[cfg(feature = "AppStaticSettingsInstaller")]
+#[cfg(feature = "cordl_class_AppStaticSettingsInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppStaticSettingsInstaller {
@@ -7,7 +7,7 @@ pub struct AppStaticSettingsInstaller {
         crate::GlobalNamespace::AppStaticSettingsSO,
     >,
 }
-#[cfg(feature = "AppStaticSettingsInstaller")]
+#[cfg(feature = "cordl_class_AppStaticSettingsInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AppStaticSettingsInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::AppStaticSettingsInstaller {
         false
     }
 }
-#[cfg(feature = "AppStaticSettingsInstaller")]
+#[cfg(feature = "cordl_class_AppStaticSettingsInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::AppStaticSettingsInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AppStaticSettingsInstaller")]
+#[cfg(feature = "cordl_class_AppStaticSettingsInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AppStaticSettingsInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::AppStaticSettingsInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AppStaticSettingsInstaller")]
+#[cfg(feature = "cordl_class_AppStaticSettingsInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AppStaticSettingsInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

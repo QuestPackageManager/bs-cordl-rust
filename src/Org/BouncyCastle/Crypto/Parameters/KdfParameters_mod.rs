@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KdfParameters {
@@ -6,7 +6,7 @@ pub struct KdfParameters {
     pub iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub shared: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::KdfParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Parameters::KdfParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::KdfParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

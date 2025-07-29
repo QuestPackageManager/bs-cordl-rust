@@ -1,10 +1,10 @@
-#[cfg(feature = "LiteNetLib+INetSocketListener")]
+#[cfg(feature = "cordl_class_LiteNetLib+INetSocketListener")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct INetSocketListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "LiteNetLib+INetSocketListener")]
+#[cfg(feature = "cordl_class_LiteNetLib+INetSocketListener")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::INetSocketListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::INetSocketListene
         false
     }
 }
-#[cfg(feature = "LiteNetLib+INetSocketListener")]
+#[cfg(feature = "cordl_class_LiteNetLib+INetSocketListener")]
 impl std::ops::Deref for crate::LiteNetLib::INetSocketListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+INetSocketListener")]
+#[cfg(feature = "cordl_class_LiteNetLib+INetSocketListener")]
 impl std::ops::DerefMut for crate::LiteNetLib::INetSocketListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -81,7 +81,7 @@ impl crate::LiteNetLib::INetSocketListener {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "LiteNetLib+INetSocketListener")]
+#[cfg(feature = "cordl_class_LiteNetLib+INetSocketListener")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::INetSocketListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

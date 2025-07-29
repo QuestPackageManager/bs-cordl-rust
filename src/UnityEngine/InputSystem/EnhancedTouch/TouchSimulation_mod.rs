@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchSimulation {
@@ -40,7 +40,7 @@ pub struct TouchSimulation {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -68,7 +68,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -639,7 +639,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+OptionalAvatarData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OptionalAvatarData {
@@ -6,7 +6,7 @@ pub struct OptionalAvatarData {
     pub length: i32,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+OptionalAvatarData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::OptionalAvatarData {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::BeatSaber::AvatarCore::OptionalAvatarData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+OptionalAvatarData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::AvatarCore::OptionalAvatarData {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::BeatSaber::AvatarCore::OptionalAvatarData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+OptionalAvatarData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::AvatarCore::OptionalAvatarData {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::BeatSaber::AvatarCore::OptionalAvatarData {
         self
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+OptionalAvatarData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::AvatarCore::OptionalAvatarData {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::BeatSaber::AvatarCore::OptionalAvatarData {
         }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+OptionalAvatarData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::AvatarCore::OptionalAvatarData {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::BeatSaber::AvatarCore::OptionalAvatarData {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+OptionalAvatarData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::AvatarCore::OptionalAvatarData {
     type Type = Self;

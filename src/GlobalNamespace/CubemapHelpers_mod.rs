@@ -1,10 +1,10 @@
-#[cfg(feature = "CubemapHelpers")]
+#[cfg(feature = "cordl_class_CubemapHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CubemapHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "CubemapHelpers")]
+#[cfg(feature = "cordl_class_CubemapHelpers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CubemapHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CubemapHelpe
         false
     }
 }
-#[cfg(feature = "CubemapHelpers")]
+#[cfg(feature = "cordl_class_CubemapHelpers")]
 impl std::ops::Deref for crate::GlobalNamespace::CubemapHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CubemapHelpers")]
+#[cfg(feature = "cordl_class_CubemapHelpers")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CubemapHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -183,7 +183,7 @@ impl crate::GlobalNamespace::CubemapHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CubemapHelpers")]
+#[cfg(feature = "cordl_class_CubemapHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CubemapHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

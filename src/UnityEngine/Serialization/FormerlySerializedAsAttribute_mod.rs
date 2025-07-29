@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormerlySerializedAsAttribute {
     __cordl_parent: crate::System::Attribute,
     pub m_oldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 impl std::ops::Deref
 for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -78,7 +78,7 @@ impl crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

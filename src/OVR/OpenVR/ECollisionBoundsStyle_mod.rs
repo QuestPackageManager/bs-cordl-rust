@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+ECollisionBoundsStyle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ECollisionBoundsStyle")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ECollisionBoundsStyle {
@@ -10,7 +10,7 @@ pub enum ECollisionBoundsStyle {
     COLLISION_BOUNDS_STYLE_NONE = 4i32,
     COLLISION_BOUNDS_STYLE_SQUARES = 2i32,
 }
-#[cfg(feature = "OVR+OpenVR+ECollisionBoundsStyle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ECollisionBoundsStyle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::ECollisionBoundsStyle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::ECollisionBounds
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+ECollisionBoundsStyle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ECollisionBoundsStyle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::ECollisionBoundsStyle {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::OVR::OpenVR::ECollisionBoundsStyle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+ECollisionBoundsStyle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ECollisionBoundsStyle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::ECollisionBoundsStyle {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::OVR::OpenVR::ECollisionBoundsStyle {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+ECollisionBoundsStyle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ECollisionBoundsStyle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::ECollisionBoundsStyle {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::OVR::OpenVR::ECollisionBoundsStyle {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+ECollisionBoundsStyle")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ECollisionBoundsStyle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::ECollisionBoundsStyle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

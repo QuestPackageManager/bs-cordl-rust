@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+AudioTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioTrack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioTrack {
@@ -7,7 +7,7 @@ pub struct AudioTrack {
         crate::UnityEngine::Timeline::AudioMixerProperties,
     >,
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioTrack")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::AudioTrack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::AudioT
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioTrack")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AudioTrack {
     type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioTrack")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::AudioTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -212,7 +212,7 @@ impl crate::UnityEngine::Timeline::AudioTrack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AudioTrack")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioTrack")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::AudioTrack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

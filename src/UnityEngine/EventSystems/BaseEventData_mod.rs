@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseEventData {
@@ -7,7 +7,7 @@ pub struct BaseEventData {
         crate::UnityEngine::EventSystems::EventSystem,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::BaseEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::EventSystems::BaseEventData {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::BaseEventData {
     type Target = crate::UnityEngine::EventSystems::AbstractEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseEventData")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::BaseEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -166,7 +166,7 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::BaseEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

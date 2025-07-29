@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StaticAccessorType {
@@ -8,7 +8,7 @@ pub enum StaticAccessorType {
     Dot = 0i32,
     DoubleColon = 2i32,
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Bindings::StaticAccessorType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::Bindings::StaticAccessorType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Bindings::StaticAccessorType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::Bindings::StaticAccessorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Bindings::StaticAccessorType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::Bindings::StaticAccessorType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Bindings::StaticAccessorType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::Bindings::StaticAccessorType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+StaticAccessorType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+StaticAccessorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Bindings::StaticAccessorType {
     type Actual = Self;

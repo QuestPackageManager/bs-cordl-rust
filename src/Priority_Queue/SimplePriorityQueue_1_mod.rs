@@ -1,11 +1,11 @@
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimplePriorityQueue_1<TItem: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Priority_Queue::SimplePriorityQueue_2<TItem, f32>,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
 }
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_1")]
 unsafe impl<TItem: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
         false
     }
 }
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_1")]
 impl<TItem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
     type Target = crate::Priority_Queue::SimplePriorityQueue_2<TItem, f32>;
@@ -49,7 +49,7 @@ for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_1")]
 impl<TItem: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -189,7 +189,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
+#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_1")]
 impl<TItem: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

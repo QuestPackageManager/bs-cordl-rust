@@ -1,4 +1,4 @@
-#[cfg(feature = "SelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableStateController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectableStateController {
@@ -14,7 +14,7 @@ pub struct SelectableStateController {
     >,
     pub _currentViewState_k__BackingField: crate::GlobalNamespace::SelectableStateController_ViewState,
 }
-#[cfg(feature = "SelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableStateController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectableStateController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::SelectableStateController {
         false
     }
 }
-#[cfg(feature = "SelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableStateController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectableStateController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableStateController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectableStateController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -262,7 +262,7 @@ impl crate::GlobalNamespace::SelectableStateController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableStateController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SelectableStateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -272,7 +272,7 @@ for crate::GlobalNamespace::SelectableStateController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SelectableStateController+ViewState")]
+#[cfg(feature = "cordl_class_SelectableStateController+ViewState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectableStateController_ViewState {
@@ -284,7 +284,7 @@ pub enum SelectableStateController_ViewState {
     Selected = 4i32,
     SelectedAndHighlighted = 5i32,
 }
-#[cfg(feature = "SelectableStateController+ViewState")]
+#[cfg(feature = "cordl_class_SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Held<'a> = Self;
@@ -314,7 +314,7 @@ for crate::GlobalNamespace::SelectableStateController_ViewState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SelectableStateController+ViewState")]
+#[cfg(feature = "cordl_class_SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Type = Self;
@@ -325,7 +325,7 @@ for crate::GlobalNamespace::SelectableStateController_ViewState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SelectableStateController+ViewState")]
+#[cfg(feature = "cordl_class_SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Actual = Self;
@@ -339,7 +339,7 @@ for crate::GlobalNamespace::SelectableStateController_ViewState {
         self
     }
 }
-#[cfg(feature = "SelectableStateController+ViewState")]
+#[cfg(feature = "cordl_class_SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Type = Self;
@@ -354,7 +354,7 @@ for crate::GlobalNamespace::SelectableStateController_ViewState {
         }
     }
 }
-#[cfg(feature = "SelectableStateController+ViewState")]
+#[cfg(feature = "cordl_class_SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Actual = Self;

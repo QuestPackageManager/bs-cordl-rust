@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Bindings+TargetType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+TargetType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TargetType {
@@ -6,7 +6,7 @@ pub enum TargetType {
     Field = 1i32,
     Function = 0i32,
 }
-#[cfg(feature = "UnityEngine+Bindings+TargetType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+TargetType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Bindings::TargetType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Bindings::Target
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+TargetType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+TargetType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Bindings::TargetType {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::Bindings::TargetType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+TargetType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+TargetType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Bindings::TargetType {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::Bindings::TargetType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+TargetType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+TargetType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Bindings::TargetType {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::Bindings::TargetType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+TargetType")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+TargetType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Bindings::TargetType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

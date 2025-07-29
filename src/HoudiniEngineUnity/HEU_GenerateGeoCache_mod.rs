@@ -1,4 +1,6 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
@@ -11,7 +13,9 @@ pub enum HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     SIMPLE_SPHERE = 5i32,
     SPHERE = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Held<'a> = Self;
@@ -41,7 +45,9 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Type = Self;
@@ -52,7 +58,9 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Actual = Self;
@@ -66,7 +74,9 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Type = Self;
@@ -81,7 +91,9 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Actual = Self;
@@ -95,7 +107,7 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GenerateGeoCache {
@@ -225,7 +237,7 @@ pub struct HEU_GenerateGeoCache {
         crate::HoudiniEngineUnity::HEU_MeshIndexFormat,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -245,14 +257,14 @@ for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1442,7 +1454,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1452,7 +1464,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GenerateGeoCache_HEU_ColliderInfo {
@@ -1474,7 +1486,7 @@ pub struct HEU_GenerateGeoCache_HEU_ColliderInfo {
     pub _meshTopology: crate::UnityEngine::MeshTopology,
     pub _isTrigger: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1494,7 +1506,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1502,7 +1514,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1544,7 +1556,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerFacade {
@@ -25,7 +25,7 @@ pub struct MultiplayerConnectedPlayerFacade {
         crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -331,7 +331,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -341,7 +341,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade+Factory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerFacade_Factory {
@@ -353,7 +353,7 @@ pub struct MultiplayerConnectedPlayerFacade_Factory {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade+Factory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -373,7 +373,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
     type Target = crate::Zenject::PlaceholderFactory_3<
@@ -387,7 +387,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade+Factory")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -425,7 +425,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade+Factory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

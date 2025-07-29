@@ -1,11 +1,11 @@
-#[cfg(feature = "Zenject+TypeValuePair")]
+#[cfg(feature = "cordl_class_Zenject+TypeValuePair")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeValuePair {
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Zenject+TypeValuePair")]
+#[cfg(feature = "cordl_class_Zenject+TypeValuePair")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::TypeValuePair {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::TypeValuePair {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+TypeValuePair")]
+#[cfg(feature = "cordl_class_Zenject+TypeValuePair")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::TypeValuePair {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::TypeValuePair {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+TypeValuePair")]
+#[cfg(feature = "cordl_class_Zenject+TypeValuePair")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::TypeValuePair {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::TypeValuePair {
         self
     }
 }
-#[cfg(feature = "Zenject+TypeValuePair")]
+#[cfg(feature = "cordl_class_Zenject+TypeValuePair")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::TypeValuePair {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::TypeValuePair {
         }
     }
 }
-#[cfg(feature = "Zenject+TypeValuePair")]
+#[cfg(feature = "cordl_class_Zenject+TypeValuePair")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::TypeValuePair {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::TypeValuePair {
         actual
     }
 }
-#[cfg(feature = "Zenject+TypeValuePair")]
+#[cfg(feature = "cordl_class_Zenject+TypeValuePair")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Zenject::TypeValuePair {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

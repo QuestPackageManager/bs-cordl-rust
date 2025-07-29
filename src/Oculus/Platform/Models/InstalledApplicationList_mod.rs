@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+InstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+InstalledApplicationList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstalledApplicationList {
@@ -6,7 +6,7 @@ pub struct InstalledApplicationList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::InstalledApplication>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+Models+InstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+InstalledApplicationList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::InstalledApplicationList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::Models::InstalledApplicationList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+InstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+InstalledApplicationList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::InstalledApplicationList {
     type Target = crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::InstalledApplication>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::Models::InstalledApplicationLi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+InstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+InstalledApplicationList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::InstalledApplicationList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::Oculus::Platform::Models::InstalledApplicationList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+InstalledApplicationList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+InstalledApplicationList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::InstalledApplicationList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

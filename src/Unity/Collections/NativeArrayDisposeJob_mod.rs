@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayDisposeJob")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeArrayDisposeJob {
     pub Data: crate::Unity::Collections::NativeArrayDispose,
 }
-#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayDisposeJob")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::NativeArrayDisposeJob {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::Unity::Collections::NativeArrayDisposeJob {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayDisposeJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Collections::NativeArrayDisposeJob {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::Unity::Collections::NativeArrayDisposeJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayDisposeJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::NativeArrayDisposeJob {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::Unity::Collections::NativeArrayDisposeJob {
         self
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayDisposeJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Collections::NativeArrayDisposeJob {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::Unity::Collections::NativeArrayDisposeJob {
         }
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayDisposeJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Collections::NativeArrayDisposeJob {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::Unity::Collections::NativeArrayDisposeJob {
         actual
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayDisposeJob")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Collections::NativeArrayDisposeJob {
     type Type = Self;

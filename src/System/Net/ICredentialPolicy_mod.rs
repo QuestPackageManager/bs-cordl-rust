@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+ICredentialPolicy")]
+#[cfg(feature = "cordl_class_System+Net+ICredentialPolicy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ICredentialPolicy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Net+ICredentialPolicy")]
+#[cfg(feature = "cordl_class_System+Net+ICredentialPolicy")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::ICredentialPolicy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::ICredentialPolic
         false
     }
 }
-#[cfg(feature = "System+Net+ICredentialPolicy")]
+#[cfg(feature = "cordl_class_System+Net+ICredentialPolicy")]
 impl std::ops::Deref for crate::System::Net::ICredentialPolicy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+ICredentialPolicy")]
+#[cfg(feature = "cordl_class_System+Net+ICredentialPolicy")]
 impl std::ops::DerefMut for crate::System::Net::ICredentialPolicy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -44,7 +44,7 @@ impl crate::System::Net::ICredentialPolicy {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Net+ICredentialPolicy")]
+#[cfg(feature = "cordl_class_System+Net+ICredentialPolicy")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ICredentialPolicy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+CookieToken")]
+#[cfg(feature = "cordl_class_System+Net+CookieToken")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CookieToken {
@@ -24,7 +24,7 @@ pub enum CookieToken {
     Unknown = 18i32,
     Version = 19i32,
 }
-#[cfg(feature = "System+Net+CookieToken")]
+#[cfg(feature = "cordl_class_System+Net+CookieToken")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieToken {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieToken {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+CookieToken")]
+#[cfg(feature = "cordl_class_System+Net+CookieToken")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::CookieToken {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::CookieToken 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+CookieToken")]
+#[cfg(feature = "cordl_class_System+Net+CookieToken")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::CookieToken {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::CookieToken
         self
     }
 }
-#[cfg(feature = "System+Net+CookieToken")]
+#[cfg(feature = "cordl_class_System+Net+CookieToken")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::CookieToken {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::CookieToken 
         }
     }
 }
-#[cfg(feature = "System+Net+CookieToken")]
+#[cfg(feature = "cordl_class_System+Net+CookieToken")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::CookieToken {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

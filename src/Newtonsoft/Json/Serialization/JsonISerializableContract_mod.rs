@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonISerializableContract")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonISerializableContract {
@@ -9,7 +9,7 @@ pub struct JsonISerializableContract {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonISerializableContract")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonISerializableContract")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
     type Target = crate::Newtonsoft::Json::Serialization::JsonContainerContract;
@@ -37,7 +37,7 @@ for crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonISerializableContract")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -157,7 +157,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonISerializableContract")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarDataModel {
@@ -19,7 +19,7 @@ pub struct AvatarDataModel {
         crate::System::Threading::Tasks::Task_1<bool>,
     >,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -622,7 +622,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

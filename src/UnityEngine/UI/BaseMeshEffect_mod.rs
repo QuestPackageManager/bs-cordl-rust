@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+BaseMeshEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseMeshEffect {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_Graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
 }
-#[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+BaseMeshEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::BaseMeshEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::BaseMeshEffe
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+BaseMeshEffect")]
 impl std::ops::Deref for crate::UnityEngine::UI::BaseMeshEffect {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+BaseMeshEffect")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::BaseMeshEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -216,7 +216,7 @@ impl crate::UnityEngine::UI::BaseMeshEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+BaseMeshEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::BaseMeshEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

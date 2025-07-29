@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+RegularExpressions+Regex")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Regex {
@@ -32,7 +32,7 @@ pub struct Regex {
     >,
     pub _refsInitialized: bool,
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::Regex {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,14 +52,14 @@ for crate::System::Text::RegularExpressions::Regex {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Regex {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::Regex {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1392,7 +1392,7 @@ impl crate::System::Text::RegularExpressions::Regex {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::Regex {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1416,7 +1416,7 @@ for crate::System::Text::RegularExpressions::Regex {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Regex_CachedCodeEntry {
@@ -1450,7 +1450,7 @@ pub struct Regex_CachedCodeEntry {
         >,
     >,
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1470,14 +1470,14 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 impl std::ops::DerefMut
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1600,7 +1600,7 @@ impl crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1610,7 +1610,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Regex_CachedCodeEntryKey {
@@ -1618,7 +1618,7 @@ pub struct Regex_CachedCodeEntryKey {
     pub _cultureKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Held<'a> = Self;
@@ -1648,7 +1648,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Type = Self;
@@ -1659,7 +1659,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Actual = Self;
@@ -1673,7 +1673,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
         self
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Type = Self;
@@ -1688,7 +1688,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
         }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Actual = Self;
@@ -1702,7 +1702,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
         actual
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Type = Self;

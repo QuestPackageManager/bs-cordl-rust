@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRHMD")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRHMD {
@@ -22,7 +22,7 @@ pub struct XRHMD {
         crate::UnityEngine::InputSystem::Controls::QuaternionControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRHMD")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::XR::XRHMD {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::XR:
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRHMD")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::XRHMD {
     type Target = crate::UnityEngine::InputSystem::TrackedDevice;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRHMD")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::XRHMD {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -476,7 +476,7 @@ impl crate::UnityEngine::InputSystem::XR::XRHMD {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRHMD")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::XR::XRHMD {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

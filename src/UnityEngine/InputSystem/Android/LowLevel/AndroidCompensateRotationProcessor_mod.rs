@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct AndroidCompensateRotationProcessor {
     __cordl_parent: crate::UnityEngine::InputSystem::Processors::CompensateRotationProcessor,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotationProcessor {
@@ -29,7 +29,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotatio
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotationProcessor {
@@ -39,7 +39,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotatio
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotationProcessor {
@@ -113,7 +113,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotati
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotationProcessor {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotEqualInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::NotEqualInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::NotEqualInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::NotEqualInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::NotEqualInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::NotEqualInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -261,7 +261,7 @@ impl crate::System::Linq::Expressions::Interpreter::NotEqualInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::NotEqualInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

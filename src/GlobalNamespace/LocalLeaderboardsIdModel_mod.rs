@@ -1,10 +1,10 @@
-#[cfg(feature = "LocalLeaderboardsIdModel")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsIdModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalLeaderboardsIdModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "LocalLeaderboardsIdModel")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsIdModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LocalLeaderboardsIdModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::LocalLeaderboardsIdModel {
         false
     }
 }
-#[cfg(feature = "LocalLeaderboardsIdModel")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsIdModel")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsIdModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LocalLeaderboardsIdModel")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsIdModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardsIdModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsIdModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LocalLeaderboardsIdModel")]
+#[cfg(feature = "cordl_class_LocalLeaderboardsIdModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LocalLeaderboardsIdModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

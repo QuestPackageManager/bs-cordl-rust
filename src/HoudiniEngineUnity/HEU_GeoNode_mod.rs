@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GeoNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GeoNode {
@@ -24,7 +24,7 @@ pub struct HEU_GeoNode {
         >,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GeoNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_GeoNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_GeoNo
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GeoNode")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeoNode {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GeoNode")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_GeoNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1621,7 +1621,7 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GeoNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_GeoNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

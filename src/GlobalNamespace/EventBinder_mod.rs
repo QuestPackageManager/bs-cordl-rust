@@ -1,4 +1,4 @@
-#[cfg(feature = "EventBinder")]
+#[cfg(feature = "cordl_class_EventBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBinder {
@@ -9,7 +9,7 @@ pub struct EventBinder {
         >,
     >,
 }
-#[cfg(feature = "EventBinder")]
+#[cfg(feature = "cordl_class_EventBinder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EventBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EventBinder 
         false
     }
 }
-#[cfg(feature = "EventBinder")]
+#[cfg(feature = "cordl_class_EventBinder")]
 impl std::ops::Deref for crate::GlobalNamespace::EventBinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EventBinder")]
+#[cfg(feature = "cordl_class_EventBinder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EventBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::EventBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EventBinder")]
+#[cfg(feature = "cordl_class_EventBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EventBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

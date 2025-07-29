@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandLineParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         false
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParser")]
 impl std::ops::Deref for crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParser")]
 impl std::ops::DerefMut
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -456,7 +456,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser")]
+#[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParser")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

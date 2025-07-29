@@ -1,4 +1,4 @@
-#[cfg(feature = "GameObjectIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObjectIntSwitchEventEffect {
@@ -28,7 +28,7 @@ pub struct GameObjectIntSwitchEventEffect {
     >,
     pub _previousActiveIdx: i32,
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,14 +48,14 @@ for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
         false
     }
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,7 +173,7 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect+GameObjectValueList")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect+GameObjectValueList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObjectIntSwitchEventEffect_GameObjectValueList {
@@ -196,7 +196,7 @@ pub struct GameObjectIntSwitchEventEffect_GameObjectValueList {
     >,
     pub _isActive_k__BackingField: bool,
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect+GameObjectValueList")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect+GameObjectValueList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -216,7 +216,7 @@ for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {
         false
     }
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect+GameObjectValueList")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect+GameObjectValueList")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -224,7 +224,7 @@ for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect+GameObjectValueList")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect+GameObjectValueList")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -331,7 +331,7 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameObjectIntSwitchEventEffect+GameObjectValueList")]
+#[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect+GameObjectValueList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

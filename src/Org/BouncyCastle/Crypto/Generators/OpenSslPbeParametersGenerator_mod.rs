@@ -1,11 +1,15 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenSslPbeParametersGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator 
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator {
     type Target = crate::Org::BouncyCastle::Crypto::PbeParametersGenerator;
@@ -33,7 +39,9 @@ for crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -338,7 +346,9 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Security+Cryptography+CryptographicException")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptographicException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptographicException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+Security+Cryptography+CryptographicException")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptographicException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::CryptographicException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Security::Cryptography::CryptographicException {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptographicException")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptographicException")]
 impl std::ops::Deref for crate::System::Security::Cryptography::CryptographicException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptographicException")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptographicException")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::CryptographicException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -236,7 +236,7 @@ impl crate::System::Security::Cryptography::CryptographicException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CryptographicException")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CryptographicException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::CryptographicException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

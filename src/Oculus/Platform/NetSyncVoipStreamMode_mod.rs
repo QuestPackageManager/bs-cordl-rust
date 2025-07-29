@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+NetSyncVoipStreamMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncVoipStreamMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetSyncVoipStreamMode {
@@ -7,7 +7,7 @@ pub enum NetSyncVoipStreamMode {
     Mono = 2i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "Oculus+Platform+NetSyncVoipStreamMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncVoipStreamMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::NetSyncVoipStreamMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Oculus::Platform::NetSyncVoipStreamMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+NetSyncVoipStreamMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncVoipStreamMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::NetSyncVoipStreamMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Oculus::Platform::NetSyncVoipStreamMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+NetSyncVoipStreamMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncVoipStreamMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::NetSyncVoipStreamMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Oculus::Platform::NetSyncVoipStreamMode {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+NetSyncVoipStreamMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncVoipStreamMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::NetSyncVoipStreamMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Oculus::Platform::NetSyncVoipStreamMode {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+NetSyncVoipStreamMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncVoipStreamMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::NetSyncVoipStreamMode {
     type Actual = Self;

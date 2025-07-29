@@ -1,11 +1,11 @@
-#[cfg(feature = "System+OperationCanceledException")]
+#[cfg(feature = "cordl_class_System+OperationCanceledException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OperationCanceledException {
     __cordl_parent: crate::System::SystemException,
     pub _cancellationToken: crate::System::Threading::CancellationToken,
 }
-#[cfg(feature = "System+OperationCanceledException")]
+#[cfg(feature = "cordl_class_System+OperationCanceledException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::OperationCanceledException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::OperationCanceledExce
         false
     }
 }
-#[cfg(feature = "System+OperationCanceledException")]
+#[cfg(feature = "cordl_class_System+OperationCanceledException")]
 impl std::ops::Deref for crate::System::OperationCanceledException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+OperationCanceledException")]
+#[cfg(feature = "cordl_class_System+OperationCanceledException")]
 impl std::ops::DerefMut for crate::System::OperationCanceledException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -242,7 +242,7 @@ impl crate::System::OperationCanceledException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+OperationCanceledException")]
+#[cfg(feature = "cordl_class_System+OperationCanceledException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::OperationCanceledException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "ColorNoAlphaSerializable")]
+#[cfg(feature = "cordl_class_ColorNoAlphaSerializable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorNoAlphaSerializable {
     pub _color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "ColorNoAlphaSerializable")]
+#[cfg(feature = "cordl_class_ColorNoAlphaSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorNoAlphaSerializable {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::ColorNoAlphaSerializable {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ColorNoAlphaSerializable")]
+#[cfg(feature = "cordl_class_ColorNoAlphaSerializable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorNoAlphaSerializable {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::ColorNoAlphaSerializable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ColorNoAlphaSerializable")]
+#[cfg(feature = "cordl_class_ColorNoAlphaSerializable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorNoAlphaSerializable {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::GlobalNamespace::ColorNoAlphaSerializable {
         self
     }
 }
-#[cfg(feature = "ColorNoAlphaSerializable")]
+#[cfg(feature = "cordl_class_ColorNoAlphaSerializable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorNoAlphaSerializable {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::ColorNoAlphaSerializable {
         }
     }
 }
-#[cfg(feature = "ColorNoAlphaSerializable")]
+#[cfg(feature = "cordl_class_ColorNoAlphaSerializable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorNoAlphaSerializable {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::GlobalNamespace::ColorNoAlphaSerializable {
         actual
     }
 }
-#[cfg(feature = "ColorNoAlphaSerializable")]
+#[cfg(feature = "cordl_class_ColorNoAlphaSerializable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::ColorNoAlphaSerializable {
     type Type = Self;

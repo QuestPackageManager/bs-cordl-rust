@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
+#[cfg(
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+PolicyEnforcement"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PolicyEnforcement {
@@ -7,7 +9,9 @@ pub enum PolicyEnforcement {
     Never = 0i32,
     WhenSupported = 1i32,
 }
-#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
+#[cfg(
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+PolicyEnforcement"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Held<'a> = Self;
@@ -37,7 +41,9 @@ for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforceme
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
+#[cfg(
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+PolicyEnforcement"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Type = Self;
@@ -48,7 +54,9 @@ for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforceme
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
+#[cfg(
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+PolicyEnforcement"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Actual = Self;
@@ -62,7 +70,9 @@ for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforceme
         self
     }
 }
-#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
+#[cfg(
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+PolicyEnforcement"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Type = Self;
@@ -77,7 +87,9 @@ for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforceme
         }
     }
 }
-#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
+#[cfg(
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+PolicyEnforcement"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Actual = Self;

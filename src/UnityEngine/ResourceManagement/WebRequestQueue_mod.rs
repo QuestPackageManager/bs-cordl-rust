@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueue")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+WebRequestQueue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequestQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueue")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+WebRequestQueue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::WebRequestQueue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ResourceManagement::WebRequestQueue {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueue")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+WebRequestQueue")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::WebRequestQueue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueue")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+WebRequestQueue")]
 impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::WebRequestQueue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -245,7 +245,7 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueue")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+WebRequestQueue")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::WebRequestQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

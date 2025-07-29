@@ -1,4 +1,4 @@
-#[cfg(feature = "PracticeSettings")]
+#[cfg(feature = "cordl_class_PracticeSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PracticeSettings {
@@ -7,7 +7,7 @@ pub struct PracticeSettings {
     pub _songSpeedMul: f32,
     pub _startInAdvanceAndClearNotes: bool,
 }
-#[cfg(feature = "PracticeSettings")]
+#[cfg(feature = "cordl_class_PracticeSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PracticeSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PracticeSett
         false
     }
 }
-#[cfg(feature = "PracticeSettings")]
+#[cfg(feature = "cordl_class_PracticeSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::PracticeSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PracticeSettings")]
+#[cfg(feature = "cordl_class_PracticeSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PracticeSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -332,7 +332,7 @@ impl crate::GlobalNamespace::PracticeSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PracticeSettings")]
+#[cfg(feature = "cordl_class_PracticeSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PracticeSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

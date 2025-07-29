@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+D3D12TextureData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+D3D12TextureData_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct D3D12TextureData_t {
@@ -6,7 +6,7 @@ pub struct D3D12TextureData_t {
     pub m_pCommandQueue: crate::System::IntPtr,
     pub m_nNodeMask: u32,
 }
-#[cfg(feature = "OVR+OpenVR+D3D12TextureData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+D3D12TextureData_t")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::D3D12TextureData_t {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::D3D12TextureData
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+D3D12TextureData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+D3D12TextureData_t")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::D3D12TextureData_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::D3D12Texture
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+D3D12TextureData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+D3D12TextureData_t")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::D3D12TextureData_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::D3D12Textur
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+D3D12TextureData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+D3D12TextureData_t")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::D3D12TextureData_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::D3D12Texture
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+D3D12TextureData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+D3D12TextureData_t")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::D3D12TextureData_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::D3D12TextureDa
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+D3D12TextureData_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+D3D12TextureData_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::D3D12TextureData_t {
     type Type = Self;

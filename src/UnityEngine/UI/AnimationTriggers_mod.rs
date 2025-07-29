@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+AnimationTriggers")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AnimationTriggers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationTriggers {
@@ -15,7 +15,7 @@ pub struct AnimationTriggers {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+AnimationTriggers")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AnimationTriggers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::AnimationTriggers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::AnimationTri
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+AnimationTriggers")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AnimationTriggers")]
 impl std::ops::Deref for crate::UnityEngine::UI::AnimationTriggers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+AnimationTriggers")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AnimationTriggers")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::AnimationTriggers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -348,7 +348,7 @@ impl crate::UnityEngine::UI::AnimationTriggers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+AnimationTriggers")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AnimationTriggers")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::AnimationTriggers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

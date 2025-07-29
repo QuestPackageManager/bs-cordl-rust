@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RuntimePanel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePanel {
@@ -7,7 +7,7 @@ pub struct RuntimePanel {
         crate::UnityEngine::UIElements::PanelSettings,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RuntimePanel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::RuntimePanel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::RuntimePanel {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RuntimePanel")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RuntimePanel {
     type Target = crate::UnityEngine::UIElements::BaseRuntimePanel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RuntimePanel")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RuntimePanel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::UnityEngine::UIElements::RuntimePanel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+RuntimePanel")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::RuntimePanel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

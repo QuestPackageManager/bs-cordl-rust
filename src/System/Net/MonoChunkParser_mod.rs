@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+MonoChunkParser")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoChunkParser {
@@ -14,7 +14,7 @@ pub struct MonoChunkParser {
     pub trailerState: i32,
     pub chunks: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
-#[cfg(feature = "System+Net+MonoChunkParser")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkParser 
         false
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser")]
 impl std::ops::Deref for crate::System::Net::MonoChunkParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser")]
 impl std::ops::DerefMut for crate::System::Net::MonoChunkParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -465,7 +465,7 @@ impl crate::System::Net::MonoChunkParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::MonoChunkParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -474,7 +474,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::MonoChunkParser {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+Chunk")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+Chunk")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoChunkParser_Chunk {
@@ -482,7 +482,7 @@ pub struct MonoChunkParser_Chunk {
     pub Bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Offset: i32,
 }
-#[cfg(feature = "System+Net+MonoChunkParser+Chunk")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+Chunk")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkParser_Chunk {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -501,14 +501,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkParser_
         false
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+Chunk")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+Chunk")]
 impl std::ops::Deref for crate::System::Net::MonoChunkParser_Chunk {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+Chunk")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+Chunk")]
 impl std::ops::DerefMut for crate::System::Net::MonoChunkParser_Chunk {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -588,7 +588,7 @@ impl crate::System::Net::MonoChunkParser_Chunk {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+Chunk")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+Chunk")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::MonoChunkParser_Chunk {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -597,7 +597,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::MonoChunkParser_C
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+State")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MonoChunkParser_State {
@@ -608,7 +608,7 @@ pub enum MonoChunkParser_State {
     PartialSize = 1i32,
     Trailer = 4i32,
 }
-#[cfg(feature = "System+Net+MonoChunkParser+State")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkParser_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -637,7 +637,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkParser_
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+State")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::MonoChunkParser_State {
     type Type = Self;
@@ -648,7 +648,7 @@ for crate::System::Net::MonoChunkParser_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+State")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::MonoChunkParser_State {
     type Actual = Self;
@@ -662,7 +662,7 @@ for crate::System::Net::MonoChunkParser_State {
         self
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+State")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::MonoChunkParser_State {
     type Type = Self;
@@ -677,7 +677,7 @@ for crate::System::Net::MonoChunkParser_State {
         }
     }
 }
-#[cfg(feature = "System+Net+MonoChunkParser+State")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::MonoChunkParser_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Resources+ResourceManager")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager {
@@ -28,7 +28,7 @@ pub struct ResourceManager {
         crate::System::Resources::IResourceGroveler,
     >,
 }
-#[cfg(feature = "System+Resources+ResourceManager")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Resources::ResourceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Resources::ResourceMa
         false
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager")]
 impl std::ops::Deref for crate::System::Resources::ResourceManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager")]
 impl std::ops::DerefMut for crate::System::Resources::ResourceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -231,7 +231,7 @@ impl crate::System::Resources::ResourceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Resources::ResourceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -240,13 +240,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Resources::ResourceMan
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
+#[cfg(
+    feature = "cordl_class_System+Resources+ResourceManager+CultureNameResourceSetPair"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager_CultureNameResourceSetPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
+#[cfg(
+    feature = "cordl_class_System+Resources+ResourceManager+CultureNameResourceSetPair"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -266,7 +270,9 @@ for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
         false
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
+#[cfg(
+    feature = "cordl_class_System+Resources+ResourceManager+CultureNameResourceSetPair"
+)]
 impl std::ops::Deref
 for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -274,7 +280,9 @@ for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
+#[cfg(
+    feature = "cordl_class_System+Resources+ResourceManager+CultureNameResourceSetPair"
+)]
 impl std::ops::DerefMut
 for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -312,7 +320,9 @@ impl crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
+#[cfg(
+    feature = "cordl_class_System+Resources+ResourceManager+CultureNameResourceSetPair"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -322,14 +332,14 @@ for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager+ResourceManagerMediator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager_ResourceManagerMediator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rm: quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceManager>,
 }
-#[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager+ResourceManagerMediator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Resources::ResourceManager_ResourceManagerMediator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -349,7 +359,7 @@ for crate::System::Resources::ResourceManager_ResourceManagerMediator {
         false
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager+ResourceManagerMediator")]
 impl std::ops::Deref
 for crate::System::Resources::ResourceManager_ResourceManagerMediator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -357,7 +367,7 @@ for crate::System::Resources::ResourceManager_ResourceManagerMediator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager+ResourceManagerMediator")]
 impl std::ops::DerefMut
 for crate::System::Resources::ResourceManager_ResourceManagerMediator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -404,7 +414,7 @@ impl crate::System::Resources::ResourceManager_ResourceManagerMediator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceManager+ResourceManagerMediator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Resources::ResourceManager_ResourceManagerMediator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

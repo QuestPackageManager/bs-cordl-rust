@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBaseDataConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {
         false
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
 impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -70,7 +70,7 @@ impl crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

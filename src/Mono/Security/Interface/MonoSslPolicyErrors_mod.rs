@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Interface+MonoSslPolicyErrors")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MonoSslPolicyErrors {
@@ -8,7 +8,7 @@ pub enum MonoSslPolicyErrors {
     RemoteCertificateNameMismatch = 2i32,
     RemoteCertificateNotAvailable = 1i32,
 }
-#[cfg(feature = "Mono+Security+Interface+MonoSslPolicyErrors")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Interface::MonoSslPolicyErrors {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Mono::Security::Interface::MonoSslPolicyErrors {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoSslPolicyErrors")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Security::Interface::MonoSslPolicyErrors {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Mono::Security::Interface::MonoSslPolicyErrors {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoSslPolicyErrors")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Security::Interface::MonoSslPolicyErrors {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Mono::Security::Interface::MonoSslPolicyErrors {
         self
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoSslPolicyErrors")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Security::Interface::MonoSslPolicyErrors {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Mono::Security::Interface::MonoSslPolicyErrors {
         }
     }
 }
-#[cfg(feature = "Mono+Security+Interface+MonoSslPolicyErrors")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+MonoSslPolicyErrors")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Security::Interface::MonoSslPolicyErrors {
     type Actual = Self;

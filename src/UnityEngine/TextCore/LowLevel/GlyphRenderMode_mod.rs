@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlyphRenderMode {
@@ -16,7 +16,7 @@ pub enum GlyphRenderMode {
     SMOOTH = 4117i32,
     SMOOTH_HINTED = 4121i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+SocketShutdown")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketShutdown")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketShutdown {
@@ -7,7 +7,7 @@ pub enum SocketShutdown {
     Receive = 0i32,
     Send = 1i32,
 }
-#[cfg(feature = "System+Net+Sockets+SocketShutdown")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketShutdown")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::SocketShutdown {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::SocketS
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketShutdown")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketShutdown")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::SocketShutdown {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::Net::Sockets::SocketShutdown {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketShutdown")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketShutdown")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::SocketShutdown {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Net::Sockets::SocketShutdown {
         self
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketShutdown")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketShutdown")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::SocketShutdown {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::Net::Sockets::SocketShutdown {
         }
     }
 }
-#[cfg(feature = "System+Net+Sockets+SocketShutdown")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+SocketShutdown")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Sockets::SocketShutdown {
     type Actual = Self;

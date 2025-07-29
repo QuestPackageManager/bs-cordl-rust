@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+CompilerServices+IAsyncStateMachine")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IAsyncStateMachine")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IAsyncStateMachine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+IAsyncStateMachine")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IAsyncStateMachine")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+IAsyncStateMachine")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IAsyncStateMachine")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+IAsyncStateMachine")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IAsyncStateMachine")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -97,7 +97,7 @@ impl crate::System::Runtime::CompilerServices::IAsyncStateMachine {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+IAsyncStateMachine")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IAsyncStateMachine")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Oculus+Platform+WindowsPlatform")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WindowsPlatform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::WindowsPlatform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::WindowsPlat
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform")]
 impl std::ops::Deref for crate::Oculus::Platform::WindowsPlatform {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform")]
 impl std::ops::DerefMut for crate::Oculus::Platform::WindowsPlatform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -191,7 +191,7 @@ impl crate::Oculus::Platform::WindowsPlatform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::WindowsPlatform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -200,13 +200,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::WindowsPlatf
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WindowsPlatform_UnityLogDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -226,14 +226,14 @@ for crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
 impl std::ops::Deref for crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
 impl std::ops::DerefMut for crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -375,7 +375,7 @@ impl crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::WindowsPlatform_UnityLogDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

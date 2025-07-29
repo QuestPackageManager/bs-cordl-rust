@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Expression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Linq::Expressions::Expression {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::Expression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9140,7 +9140,7 @@ impl crate::System::Linq::Expressions::Expression {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::Expression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -9149,13 +9149,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::Exp
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_BinaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9175,7 +9175,7 @@ for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9183,7 +9183,7 @@ for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9192,7 +9192,7 @@ for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9202,13 +9202,13 @@ for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BlockExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_BlockExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BlockExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9228,7 +9228,7 @@ for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BlockExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9236,7 +9236,7 @@ for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BlockExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9245,7 +9245,7 @@ for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_BlockExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BlockExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9255,13 +9255,13 @@ for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+CatchBlockProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_CatchBlockProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+CatchBlockProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9281,14 +9281,14 @@ for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+CatchBlockProxy")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+CatchBlockProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9297,7 +9297,7 @@ for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
 impl crate::System::Linq::Expressions::Expression_CatchBlockProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+CatchBlockProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9307,13 +9307,17 @@ for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConditionalExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ConditionalExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConditionalExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9333,7 +9337,9 @@ for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConditionalExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9341,7 +9347,9 @@ for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConditionalExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9350,7 +9358,9 @@ for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConditionalExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9360,13 +9370,17 @@ for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConstantExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ConstantExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConstantExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9386,7 +9400,9 @@ for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConstantExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9394,7 +9410,9 @@ for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConstantExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9403,7 +9421,9 @@ for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ConstantExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9413,13 +9433,17 @@ for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+DebugInfoExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_DebugInfoExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+DebugInfoExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9439,7 +9463,9 @@ for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+DebugInfoExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9447,7 +9473,9 @@ for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+DebugInfoExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9456,7 +9484,9 @@ for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+DebugInfoExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9466,13 +9496,13 @@ for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_DefaultExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9492,7 +9522,7 @@ for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9500,7 +9530,7 @@ for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9509,7 +9539,7 @@ for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9519,7 +9549,7 @@ for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ExtensionInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ExtensionInfo {
@@ -9527,7 +9557,7 @@ pub struct Expression_ExtensionInfo {
     pub NodeType: crate::System::Linq::Expressions::ExpressionType,
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ExtensionInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_ExtensionInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9547,14 +9577,14 @@ for crate::System::Linq::Expressions::Expression_ExtensionInfo {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ExtensionInfo")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_ExtensionInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ExtensionInfo")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::Expression_ExtensionInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9562,7 +9592,7 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::Expression_Extensi
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
 impl crate::System::Linq::Expressions::Expression_ExtensionInfo {}
-#[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ExtensionInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_ExtensionInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9572,13 +9602,13 @@ for crate::System::Linq::Expressions::Expression_ExtensionInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+GotoExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_GotoExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+GotoExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9598,7 +9628,7 @@ for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+GotoExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9606,7 +9636,7 @@ for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+GotoExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9615,7 +9645,7 @@ for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_GotoExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+GotoExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9625,13 +9655,13 @@ for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+IndexExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_IndexExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+IndexExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9651,7 +9681,7 @@ for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+IndexExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9659,7 +9689,7 @@ for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+IndexExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9668,7 +9698,7 @@ for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_IndexExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+IndexExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9678,13 +9708,17 @@ for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+InvocationExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_InvocationExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+InvocationExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9704,7 +9738,9 @@ for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+InvocationExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9712,7 +9748,9 @@ for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+InvocationExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9721,7 +9759,9 @@ for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+InvocationExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9731,13 +9771,13 @@ for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LabelExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_LabelExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LabelExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9757,7 +9797,7 @@ for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LabelExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9765,7 +9805,7 @@ for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LabelExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9774,7 +9814,7 @@ for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_LabelExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LabelExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9784,13 +9824,13 @@ for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_LambdaExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9810,7 +9850,7 @@ for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9818,7 +9858,7 @@ for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9827,7 +9867,7 @@ for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9837,13 +9877,17 @@ for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ListInitExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ListInitExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ListInitExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9863,7 +9907,9 @@ for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ListInitExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9871,7 +9917,9 @@ for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ListInitExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9880,7 +9928,9 @@ for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ListInitExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9890,13 +9940,13 @@ for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LoopExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_LoopExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LoopExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9916,7 +9966,7 @@ for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LoopExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9924,7 +9974,7 @@ for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LoopExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9933,7 +9983,7 @@ for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_LoopExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LoopExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9943,13 +9993,13 @@ for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+MemberExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_MemberExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+MemberExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9969,7 +10019,7 @@ for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+MemberExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -9977,7 +10027,7 @@ for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+MemberExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9986,7 +10036,7 @@ for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_MemberExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+MemberExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9996,13 +10046,17 @@ for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MemberInitExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_MemberInitExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MemberInitExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10022,7 +10076,9 @@ for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MemberInitExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10030,7 +10086,9 @@ for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MemberInitExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10039,7 +10097,9 @@ for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MemberInitExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10049,13 +10109,17 @@ for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MethodCallExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_MethodCallExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MethodCallExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10075,7 +10139,9 @@ for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MethodCallExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10083,7 +10149,9 @@ for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MethodCallExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10092,7 +10160,9 @@ for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+MethodCallExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10102,13 +10172,17 @@ for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+NewArrayExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_NewArrayExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+NewArrayExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10128,7 +10202,9 @@ for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+NewArrayExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10136,7 +10212,9 @@ for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+NewArrayExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10145,7 +10223,9 @@ for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+NewArrayExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10155,13 +10235,13 @@ for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+NewExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_NewExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+NewExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10181,7 +10261,7 @@ for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+NewExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10189,7 +10269,7 @@ for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+NewExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10198,7 +10278,7 @@ for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_NewExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+NewExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10208,13 +10288,17 @@ for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ParameterExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ParameterExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ParameterExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10234,7 +10318,9 @@ for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ParameterExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10242,7 +10328,9 @@ for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ParameterExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10251,7 +10339,9 @@ for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+ParameterExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10261,13 +10351,17 @@ for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_RuntimeVariablesExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10287,7 +10381,9 @@ for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10295,7 +10391,9 @@ for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10304,7 +10402,9 @@ for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10314,13 +10414,13 @@ for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchCaseProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_SwitchCaseProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchCaseProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10340,14 +10440,14 @@ for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchCaseProxy")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchCaseProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10356,7 +10456,7 @@ for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
 impl crate::System::Linq::Expressions::Expression_SwitchCaseProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchCaseProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10366,13 +10466,13 @@ for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_SwitchExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10392,7 +10492,7 @@ for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10400,7 +10500,7 @@ for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10409,7 +10509,7 @@ for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10419,13 +10519,13 @@ for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+TryExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_TryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+TryExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10445,7 +10545,7 @@ for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+TryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10453,7 +10553,7 @@ for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+TryExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10462,7 +10562,7 @@ for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_TryExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+TryExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10472,13 +10572,17 @@ for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+TypeBinaryExpressionProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_TypeBinaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+TypeBinaryExpressionProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10498,7 +10602,9 @@ for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+TypeBinaryExpressionProxy"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10506,7 +10612,9 @@ for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+TypeBinaryExpressionProxy"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10515,7 +10623,9 @@ for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Expression+TypeBinaryExpressionProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -10525,13 +10635,13 @@ for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_UnaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10551,7 +10661,7 @@ for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -10559,7 +10669,7 @@ for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -10568,7 +10678,7 @@ for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 impl crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {}
-#[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

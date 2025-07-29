@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+SpherecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+SpherecastCommand")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpherecastCommand {
@@ -9,7 +9,7 @@ pub struct SpherecastCommand {
     pub _physicsScene_k__BackingField: crate::UnityEngine::PhysicsScene,
     pub queryParameters: crate::UnityEngine::QueryParameters,
 }
-#[cfg(feature = "UnityEngine+SpherecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+SpherecastCommand")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpherecastCommand {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpherecastComman
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+SpherecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+SpherecastCommand")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpherecastCommand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpherecastCo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+SpherecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+SpherecastCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpherecastCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpherecastC
         self
     }
 }
-#[cfg(feature = "UnityEngine+SpherecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+SpherecastCommand")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpherecastCommand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpherecastCo
         }
     }
 }
-#[cfg(feature = "UnityEngine+SpherecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+SpherecastCommand")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SpherecastCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SpherecastComm
         actual
     }
 }
-#[cfg(feature = "UnityEngine+SpherecastCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+SpherecastCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::SpherecastCommand {
     type Type = Self;

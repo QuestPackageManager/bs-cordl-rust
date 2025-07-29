@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+SymmetricTransform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SymmetricTransform {
@@ -20,7 +20,7 @@ pub struct SymmetricTransform {
         crate::System::Security::Cryptography::RandomNumberGenerator,
     >,
 }
-#[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+SymmetricTransform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Cryptography::SymmetricTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::Mono::Security::Cryptography::SymmetricTransform {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+SymmetricTransform")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::SymmetricTransform {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+SymmetricTransform")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::SymmetricTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -761,7 +761,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+SymmetricTransform")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Cryptography::SymmetricTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

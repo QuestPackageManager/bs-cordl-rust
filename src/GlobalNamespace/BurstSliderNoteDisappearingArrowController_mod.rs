@@ -1,4 +1,4 @@
-#[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
+#[cfg(feature = "cordl_class_BurstSliderNoteDisappearingArrowController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderNoteDisappearingArrowController {
@@ -9,7 +9,7 @@ pub struct BurstSliderNoteDisappearingArrowController {
         crate::GlobalNamespace::BurstSliderGameNoteController,
     >,
 }
-#[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
+#[cfg(feature = "cordl_class_BurstSliderNoteDisappearingArrowController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
         false
     }
 }
-#[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
+#[cfg(feature = "cordl_class_BurstSliderNoteDisappearingArrowController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
+#[cfg(feature = "cordl_class_BurstSliderNoteDisappearingArrowController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
+#[cfg(feature = "cordl_class_BurstSliderNoteDisappearingArrowController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerPositionHUDController")]
+#[cfg(feature = "cordl_class_MultiplayerPositionHUDController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerPositionHUDController {
@@ -20,7 +20,7 @@ pub struct MultiplayerPositionHUDController {
     >,
     pub _prevPosition: i32,
 }
-#[cfg(feature = "MultiplayerPositionHUDController")]
+#[cfg(feature = "cordl_class_MultiplayerPositionHUDController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerPositionHUDController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::GlobalNamespace::MultiplayerPositionHUDController {
         false
     }
 }
-#[cfg(feature = "MultiplayerPositionHUDController")]
+#[cfg(feature = "cordl_class_MultiplayerPositionHUDController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPositionHUDController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerPositionHUDController")]
+#[cfg(feature = "cordl_class_MultiplayerPositionHUDController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPositionHUDController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::GlobalNamespace::MultiplayerPositionHUDController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerPositionHUDController")]
+#[cfg(feature = "cordl_class_MultiplayerPositionHUDController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerPositionHUDController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

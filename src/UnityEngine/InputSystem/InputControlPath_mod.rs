@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControlPath {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlPath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::InputControlPath {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControlPath {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputControlPath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1190,7 +1190,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputControlPath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1200,7 +1200,9 @@ for crate::UnityEngine::InputSystem::InputControlPath {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControlPath_HumanReadableStringOptions {
@@ -1209,7 +1211,9 @@ pub enum InputControlPath_HumanReadableStringOptions {
     OmitDevice = 2i32,
     UseShortNames = 4i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Held<'a> = Self;
@@ -1239,7 +1243,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Type = Self;
@@ -1250,7 +1256,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Actual = Self;
@@ -1264,7 +1272,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Type = Self;
@@ -1279,7 +1289,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Actual = Self;
@@ -1293,7 +1305,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+ParsedPathComponent"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlPath_ParsedPathComponent {
@@ -1304,7 +1318,9 @@ pub struct InputControlPath_ParsedPathComponent {
     pub m_Name: crate::UnityEngine::InputSystem::Utilities::Substring,
     pub m_DisplayName: crate::UnityEngine::InputSystem::Utilities::Substring,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+ParsedPathComponent"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Held<'a> = Self;
@@ -1334,7 +1350,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+ParsedPathComponent"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Type = Self;
@@ -1345,7 +1363,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+ParsedPathComponent"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Actual = Self;
@@ -1359,7 +1379,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+ParsedPathComponent"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Type = Self;
@@ -1374,7 +1396,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+ParsedPathComponent"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Actual = Self;
@@ -1388,7 +1412,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+ParsedPathComponent"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Type = Self;
@@ -1710,7 +1736,9 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathComponentType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControlPath_PathComponentType {
@@ -1720,7 +1748,9 @@ pub enum InputControlPath_PathComponentType {
     Name = 0i32,
     Usage = 2i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathComponentType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Held<'a> = Self;
@@ -1750,7 +1780,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathComponentType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Type = Self;
@@ -1761,7 +1793,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathComponentType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Actual = Self;
@@ -1775,7 +1809,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathComponentType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Type = Self;
@@ -1790,7 +1826,9 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathComponentType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Actual = Self;
@@ -1804,7 +1842,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathParser")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlPath_PathParser {
@@ -1814,7 +1852,7 @@ pub struct InputControlPath_PathParser {
     pub rightIndexInPath: i32,
     pub current: crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Held<'a> = Self;
@@ -1844,7 +1882,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Type = Self;
@@ -1855,7 +1893,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Actual = Self;
@@ -1869,7 +1907,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Type = Self;
@@ -1884,7 +1922,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Actual = Self;
@@ -1898,7 +1936,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Type = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Ray2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Ray2D")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Ray2D {
     pub m_Origin: crate::UnityEngine::Vector2,
     pub m_Direction: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "UnityEngine+Ray2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Ray2D")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Ray2D {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Ray2D {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Ray2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Ray2D")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Ray2D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Ray2D {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Ray2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Ray2D")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Ray2D {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Ray2D {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Ray2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Ray2D")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Ray2D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Ray2D {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Ray2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Ray2D")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Ray2D {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Ray2D {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Ray2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Ray2D")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Ray2D {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

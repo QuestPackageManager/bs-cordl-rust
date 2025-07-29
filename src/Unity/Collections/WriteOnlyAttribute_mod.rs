@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Collections+WriteOnlyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+WriteOnlyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WriteOnlyAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Collections+WriteOnlyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+WriteOnlyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::WriteOnlyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Collections::WriteOnlyAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+WriteOnlyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+WriteOnlyAttribute")]
 impl std::ops::Deref for crate::Unity::Collections::WriteOnlyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+WriteOnlyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+WriteOnlyAttribute")]
 impl std::ops::DerefMut for crate::Unity::Collections::WriteOnlyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Unity::Collections::WriteOnlyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Collections+WriteOnlyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+WriteOnlyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::WriteOnlyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

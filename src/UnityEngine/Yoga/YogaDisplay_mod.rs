@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Yoga+YogaDisplay")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaDisplay")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum YogaDisplay {
@@ -6,7 +6,7 @@ pub enum YogaDisplay {
     Flex = 0i32,
     None = 1i32,
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaDisplay")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaDisplay")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::YogaDisplay {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::YogaDispla
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaDisplay")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaDisplay")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Yoga::YogaDisplay {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Yoga::YogaDi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaDisplay")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaDisplay")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Yoga::YogaDisplay {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Yoga::YogaD
         self
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaDisplay")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaDisplay")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Yoga::YogaDisplay {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Yoga::YogaDi
         }
     }
 }
-#[cfg(feature = "UnityEngine+Yoga+YogaDisplay")]
+#[cfg(feature = "cordl_class_UnityEngine+Yoga+YogaDisplay")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Yoga::YogaDisplay {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

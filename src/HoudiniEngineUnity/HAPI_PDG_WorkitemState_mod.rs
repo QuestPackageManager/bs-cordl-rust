@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PDG_WorkitemState {
@@ -14,7 +14,7 @@ pub enum HAPI_PDG_WorkitemState {
     HAPI_PDG_WORKITEM_UNDEFINED = 0i32,
     HAPI_PDG_WORKITEM_WAITING = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_PDG_WorkitemState {
     type Actual = Self;

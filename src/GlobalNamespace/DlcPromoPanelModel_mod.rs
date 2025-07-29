@@ -1,4 +1,4 @@
-#[cfg(feature = "DlcPromoPanelModel")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DlcPromoPanelModel {
@@ -75,7 +75,7 @@ pub struct DlcPromoPanelModel {
     pub hotReloadDidStart: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub hotReloadDidFinish: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "DlcPromoPanelModel")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DlcPromoPanelModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -94,14 +94,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DlcPromoPane
         false
     }
 }
-#[cfg(feature = "DlcPromoPanelModel")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DlcPromoPanelModel")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -989,7 +989,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DlcPromoPanelModel")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanelModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1012,7 +1012,7 @@ for crate::GlobalNamespace::DlcPromoPanelModel {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DlcPromoPanelModel_PromoInfo {
@@ -1024,7 +1024,7 @@ pub struct DlcPromoPanelModel_PromoInfo {
     pub bannerPromoText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub bannerPromoTextPosition: f32,
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1044,14 +1044,14 @@ for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         false
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1163,7 +1163,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1173,7 +1173,7 @@ for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo+PromoType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PromoInfo_DlcPromoPanelModel_PromoType {
@@ -1182,7 +1182,7 @@ pub enum PromoInfo_DlcPromoPanelModel_PromoType {
     Pack = 0i32,
     Store = 2i32,
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo+PromoType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
     type Held<'a> = Self;
@@ -1212,7 +1212,7 @@ for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo+PromoType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
     type Type = Self;
@@ -1223,7 +1223,7 @@ for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo+PromoType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
     type Actual = Self;
@@ -1237,7 +1237,7 @@ for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
         self
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo+PromoType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
     type Type = Self;
@@ -1252,7 +1252,7 @@ for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
         }
     }
 }
-#[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
+#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo+PromoType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
     type Actual = Self;

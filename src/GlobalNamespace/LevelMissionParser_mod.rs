@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelMissionParser")]
+#[cfg(feature = "cordl_class_LevelMissionParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelMissionParser {
@@ -12,7 +12,7 @@ pub struct LevelMissionParser {
         >,
     >,
 }
-#[cfg(feature = "LevelMissionParser")]
+#[cfg(feature = "cordl_class_LevelMissionParser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelMissionParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelMission
         false
     }
 }
-#[cfg(feature = "LevelMissionParser")]
+#[cfg(feature = "cordl_class_LevelMissionParser")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelMissionParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelMissionParser")]
+#[cfg(feature = "cordl_class_LevelMissionParser")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelMissionParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -207,7 +207,7 @@ impl crate::GlobalNamespace::LevelMissionParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelMissionParser")]
+#[cfg(feature = "cordl_class_LevelMissionParser")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelMissionParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -216,13 +216,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelMissionP
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LevelMissionParser+ParserFunction")]
+#[cfg(feature = "cordl_class_LevelMissionParser+ParserFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelMissionParser_ParserFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "LevelMissionParser+ParserFunction")]
+#[cfg(feature = "cordl_class_LevelMissionParser+ParserFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelMissionParser_ParserFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -242,14 +242,14 @@ for crate::GlobalNamespace::LevelMissionParser_ParserFunction {
         false
     }
 }
-#[cfg(feature = "LevelMissionParser+ParserFunction")]
+#[cfg(feature = "cordl_class_LevelMissionParser+ParserFunction")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelMissionParser_ParserFunction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelMissionParser+ParserFunction")]
+#[cfg(feature = "cordl_class_LevelMissionParser+ParserFunction")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelMissionParser_ParserFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -403,7 +403,7 @@ impl crate::GlobalNamespace::LevelMissionParser_ParserFunction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelMissionParser+ParserFunction")]
+#[cfg(feature = "cordl_class_LevelMissionParser+ParserFunction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelMissionParser_ParserFunction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stack_1<T: quest_hook::libil2cpp::Type> {
@@ -9,7 +9,7 @@ pub struct Stack_1<T: quest_hook::libil2cpp::Type> {
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Collections::Generic::Stack_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,7 +45,7 @@ for crate::System::Collections::Generic::Stack_1<T> {
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Generic::Stack_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -53,7 +53,7 @@ for crate::System::Collections::Generic::Stack_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Collections::Generic::Stack_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -522,7 +522,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Generic::Stack_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -598,7 +598,7 @@ for crate::System::Collections::Generic::Stack_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Stack_1_Enumerator<T: quest_hook::libil2cpp::Type> {
@@ -610,7 +610,7 @@ pub struct Stack_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _currentElement: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
     type Held<'a> = Self;
@@ -656,7 +656,7 @@ for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
     type Type = Self;
@@ -667,7 +667,7 @@ for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
     type Actual = Self;
@@ -681,7 +681,7 @@ for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
         self
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
     type Type = Self;
@@ -696,7 +696,7 @@ for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
         }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
     type Actual = Self;
@@ -710,7 +710,7 @@ for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
         actual
     }
 }
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
     type Type = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Curve25519Field {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -813,7 +813,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

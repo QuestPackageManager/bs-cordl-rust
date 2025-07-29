@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationEventBoxGroup {
@@ -8,7 +8,7 @@ pub struct LightTranslationEventBoxGroup {
         >,
     >,
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
     type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightTranslationEventBo
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
 impl std::ops::DerefMut
 for crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -143,7 +143,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+DllNotFoundException")]
+#[cfg(feature = "cordl_class_System+DllNotFoundException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DllNotFoundException {
     __cordl_parent: crate::System::TypeLoadException,
 }
-#[cfg(feature = "System+DllNotFoundException")]
+#[cfg(feature = "cordl_class_System+DllNotFoundException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DllNotFoundException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DllNotFoundException 
         false
     }
 }
-#[cfg(feature = "System+DllNotFoundException")]
+#[cfg(feature = "cordl_class_System+DllNotFoundException")]
 impl std::ops::Deref for crate::System::DllNotFoundException {
     type Target = crate::System::TypeLoadException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+DllNotFoundException")]
+#[cfg(feature = "cordl_class_System+DllNotFoundException")]
 impl std::ops::DerefMut for crate::System::DllNotFoundException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::DllNotFoundException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+DllNotFoundException")]
+#[cfg(feature = "cordl_class_System+DllNotFoundException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::DllNotFoundException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

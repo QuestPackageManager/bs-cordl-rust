@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputDeviceCommandDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommandDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommandDelegate {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommandDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +38,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommandDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommandDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -187,7 +195,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommandDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommandDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

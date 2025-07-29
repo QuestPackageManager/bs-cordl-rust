@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+CultureData")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureData {
@@ -36,7 +36,7 @@ pub struct CultureData {
     pub isRightToLeft: bool,
     pub sListSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Globalization+CultureData")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::CultureData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -55,14 +55,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::Cultur
         false
     }
 }
-#[cfg(feature = "System+Globalization+CultureData")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData")]
 impl std::ops::Deref for crate::System::Globalization::CultureData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+CultureData")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData")]
 impl std::ops::DerefMut for crate::System::Globalization::CultureData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1637,7 +1637,7 @@ impl crate::System::Globalization::CultureData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+CultureData")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::CultureData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1646,7 +1646,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::Culture
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData+NumberFormatEntryManaged")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CultureData_NumberFormatEntryManaged {
@@ -1674,7 +1674,7 @@ pub struct CultureData_NumberFormatEntryManaged {
     pub positive_infinity_symbol: i32,
     pub positive_sign: i32,
 }
-#[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData+NumberFormatEntryManaged")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
     type Held<'a> = Self;
@@ -1704,7 +1704,7 @@ for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData+NumberFormatEntryManaged")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
     type Type = Self;
@@ -1715,7 +1715,7 @@ for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData+NumberFormatEntryManaged")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
     type Actual = Self;
@@ -1729,7 +1729,7 @@ for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
         self
     }
 }
-#[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData+NumberFormatEntryManaged")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
     type Type = Self;
@@ -1744,7 +1744,7 @@ for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
         }
     }
 }
-#[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData+NumberFormatEntryManaged")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
     type Actual = Self;
@@ -1758,7 +1758,7 @@ for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
         actual
     }
 }
-#[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureData+NumberFormatEntryManaged")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Globalization::CultureData_NumberFormatEntryManaged {
     type Type = Self;

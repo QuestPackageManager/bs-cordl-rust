@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+SourceTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+SourceTemplateAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SourceTemplateAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+SourceTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+SourceTemplateAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::SourceTemplateAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::SourceTemplateAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+SourceTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+SourceTemplateAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::SourceTemplateAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+SourceTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+SourceTemplateAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::SourceTemplateAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::JetBrains::Annotations::SourceTemplateAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+SourceTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+SourceTemplateAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::SourceTemplateAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

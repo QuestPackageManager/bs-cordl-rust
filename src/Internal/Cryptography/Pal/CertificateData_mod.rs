@@ -1,4 +1,4 @@
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CertificateData {
@@ -37,7 +37,7 @@ pub struct CertificateData {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Held<'a> = Self;
@@ -67,7 +67,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
         self
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Type = Self;
@@ -107,7 +107,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
         }
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Actual = Self;
@@ -121,7 +121,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
         actual
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
+#[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Type = Self;
@@ -324,14 +324,18 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+#[cfg(
+    feature = "cordl_class_Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CertificateData_AlgorithmIdentifier {
     pub AlgorithmId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Parameters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+#[cfg(
+    feature = "cordl_class_Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Held<'a> = Self;
@@ -361,7 +365,9 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+#[cfg(
+    feature = "cordl_class_Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Type = Self;
@@ -372,7 +378,9 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+#[cfg(
+    feature = "cordl_class_Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Actual = Self;
@@ -386,7 +394,9 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
         self
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+#[cfg(
+    feature = "cordl_class_Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Type = Self;
@@ -401,7 +411,9 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
         }
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+#[cfg(
+    feature = "cordl_class_Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Actual = Self;
@@ -415,7 +427,9 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
         actual
     }
 }
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+#[cfg(
+    feature = "cordl_class_Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Type = Self;

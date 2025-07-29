@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+ThreadAbortException")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadAbortException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadAbortException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+Threading+ThreadAbortException")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadAbortException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::ThreadAbortException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Threading::ThreadAbortException {
         false
     }
 }
-#[cfg(feature = "System+Threading+ThreadAbortException")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadAbortException")]
 impl std::ops::Deref for crate::System::Threading::ThreadAbortException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+ThreadAbortException")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadAbortException")]
 impl std::ops::DerefMut for crate::System::Threading::ThreadAbortException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::System::Threading::ThreadAbortException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+ThreadAbortException")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadAbortException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::ThreadAbortException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

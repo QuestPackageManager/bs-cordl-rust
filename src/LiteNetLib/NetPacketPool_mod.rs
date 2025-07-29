@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+NetPacketPool")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketPool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetPacketPool {
@@ -11,7 +11,7 @@ pub struct NetPacketPool {
     pub _lock: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterLockSlim>,
     pub _count: i32,
 }
-#[cfg(feature = "LiteNetLib+NetPacketPool")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketPool")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetPacketPool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetPacketPool {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NetPacketPool")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketPool")]
 impl std::ops::Deref for crate::LiteNetLib::NetPacketPool {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NetPacketPool")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketPool")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetPacketPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::LiteNetLib::NetPacketPool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NetPacketPool")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetPacketPool")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetPacketPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerGameplayManager {
@@ -33,7 +33,7 @@ pub struct MultiplayerLocalActivePlayerGameplayManager {
     >,
     pub _levelFinishedOrQuit: bool,
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,7 +53,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -419,7 +419,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -429,14 +429,14 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerGameplayManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub continueGameplayWith0Energy: bool,
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -456,7 +456,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -464,7 +464,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -505,7 +505,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitDat
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

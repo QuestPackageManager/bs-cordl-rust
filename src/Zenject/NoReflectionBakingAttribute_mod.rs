@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+NoReflectionBakingAttribute")]
+#[cfg(feature = "cordl_class_Zenject+NoReflectionBakingAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoReflectionBakingAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Zenject+NoReflectionBakingAttribute")]
+#[cfg(feature = "cordl_class_Zenject+NoReflectionBakingAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::NoReflectionBakingAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::NoReflectionBakingAt
         false
     }
 }
-#[cfg(feature = "Zenject+NoReflectionBakingAttribute")]
+#[cfg(feature = "cordl_class_Zenject+NoReflectionBakingAttribute")]
 impl std::ops::Deref for crate::Zenject::NoReflectionBakingAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+NoReflectionBakingAttribute")]
+#[cfg(feature = "cordl_class_Zenject+NoReflectionBakingAttribute")]
 impl std::ops::DerefMut for crate::Zenject::NoReflectionBakingAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::Zenject::NoReflectionBakingAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+NoReflectionBakingAttribute")]
+#[cfg(feature = "cordl_class_Zenject+NoReflectionBakingAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::NoReflectionBakingAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

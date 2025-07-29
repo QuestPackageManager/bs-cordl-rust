@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerEnvironmentResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerEnvironmentResizeController {
@@ -22,7 +22,7 @@ pub struct MultiplayerEnvironmentResizeController {
     pub _edgeDistanceFromCenterFound: bool,
     pub _spawnCenterDistanceFound: bool,
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
         false
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -296,7 +296,7 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -306,7 +306,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerEnvironmentResizeController_ResizeData {
@@ -324,7 +324,7 @@ pub struct MultiplayerEnvironmentResizeController_ResizeData {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -344,7 +344,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
         false
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -352,7 +352,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -510,7 +510,7 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -520,7 +520,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerEnvironmentResizeController_ResizeType {
@@ -529,7 +529,7 @@ pub enum MultiplayerEnvironmentResizeController_ResizeType {
     None = 0i32,
     Position = 1i32,
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Held<'a> = Self;
@@ -559,7 +559,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Type = Self;
@@ -570,7 +570,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Actual = Self;
@@ -584,7 +584,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
         self
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Type = Self;
@@ -599,7 +599,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
         }
     }
 }
-#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
+#[cfg(feature = "cordl_class_MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Actual = Self;

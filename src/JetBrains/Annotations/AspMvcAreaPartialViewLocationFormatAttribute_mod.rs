@@ -1,4 +1,6 @@
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspMvcAreaPartialViewLocationFormatAttribute {
@@ -7,7 +9,9 @@ pub struct AspMvcAreaPartialViewLocationFormatAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::AspMvcAreaPartialViewLocationFormatAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::JetBrains::Annotations::AspMvcAreaPartialViewLocationFormatAttribute 
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute"
+)]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::AspMvcAreaPartialViewLocationFormatAttribute {
     type Target = crate::System::Attribute;
@@ -35,7 +41,9 @@ for crate::JetBrains::Annotations::AspMvcAreaPartialViewLocationFormatAttribute 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute"
+)]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcAreaPartialViewLocationFormatAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +141,9 @@ impl crate::JetBrains::Annotations::AspMvcAreaPartialViewLocationFormatAttribute
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaPartialViewLocationFormatAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::AspMvcAreaPartialViewLocationFormatAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

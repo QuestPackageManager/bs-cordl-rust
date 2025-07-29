@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct ExclusiveOrInstruction_ExclusiveOrSByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte {
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrSByte"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonStringContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonStringContract")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonStringContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonPrimitiveContract,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonStringContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonStringContract")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonStringContract {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Serialization::JsonStringContract {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonStringContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonStringContract")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonStringContract {
     type Target = crate::Newtonsoft::Json::Serialization::JsonPrimitiveContract;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonStringContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonStringContract")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::JsonStringContract {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonStringContract {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonStringContract")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonStringContract")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::JsonStringContract {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

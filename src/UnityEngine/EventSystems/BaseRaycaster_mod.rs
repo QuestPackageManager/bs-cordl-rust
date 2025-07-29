@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+BaseRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseRaycaster {
@@ -7,7 +7,7 @@ pub struct BaseRaycaster {
         crate::UnityEngine::EventSystems::BaseRaycaster,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::BaseRaycaster {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::EventSystems::BaseRaycaster {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::BaseRaycaster {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseRaycaster")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::BaseRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -339,7 +339,7 @@ impl crate::UnityEngine::EventSystems::BaseRaycaster {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+BaseRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseRaycaster")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::BaseRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

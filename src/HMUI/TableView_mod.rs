@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+TableView")]
+#[cfg(feature = "cordl_class_HMUI+TableView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableView {
@@ -63,7 +63,7 @@ pub struct TableView {
     pub _isInitialized: bool,
     pub _refreshCellsOnEnable: bool,
 }
-#[cfg(feature = "HMUI+TableView")]
+#[cfg(feature = "cordl_class_HMUI+TableView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -82,14 +82,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView {
         false
     }
 }
-#[cfg(feature = "HMUI+TableView")]
+#[cfg(feature = "cordl_class_HMUI+TableView")]
 impl std::ops::Deref for crate::HMUI::TableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+TableView")]
+#[cfg(feature = "cordl_class_HMUI+TableView")]
 impl std::ops::DerefMut for crate::HMUI::TableView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1709,7 +1709,7 @@ impl crate::HMUI::TableView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+TableView")]
+#[cfg(feature = "cordl_class_HMUI+TableView")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1730,7 +1730,7 @@ impl AsMut<crate::HMUI::ITableCellOwner> for crate::HMUI::TableView {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
+#[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableView_CellsGroup {
@@ -1742,7 +1742,7 @@ pub struct TableView_CellsGroup {
         >,
     >,
 }
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
+#[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_CellsGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1761,14 +1761,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_CellsGroup {
         false
     }
 }
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
+#[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
 impl std::ops::Deref for crate::HMUI::TableView_CellsGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
+#[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
 impl std::ops::DerefMut for crate::HMUI::TableView_CellsGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1869,7 +1869,7 @@ impl crate::HMUI::TableView_CellsGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
+#[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_CellsGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1878,13 +1878,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_CellsGroup {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+TableView+IDataSource")]
+#[cfg(feature = "cordl_class_HMUI+TableView+IDataSource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableView_IDataSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HMUI+TableView+IDataSource")]
+#[cfg(feature = "cordl_class_HMUI+TableView+IDataSource")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_IDataSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1903,14 +1903,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_IDataSource {
         false
     }
 }
-#[cfg(feature = "HMUI+TableView+IDataSource")]
+#[cfg(feature = "cordl_class_HMUI+TableView+IDataSource")]
 impl std::ops::Deref for crate::HMUI::TableView_IDataSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+TableView+IDataSource")]
+#[cfg(feature = "cordl_class_HMUI+TableView+IDataSource")]
 impl std::ops::DerefMut for crate::HMUI::TableView_IDataSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1989,7 +1989,7 @@ impl crate::HMUI::TableView_IDataSource {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "HMUI+TableView+IDataSource")]
+#[cfg(feature = "cordl_class_HMUI+TableView+IDataSource")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_IDataSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1998,7 +1998,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_IDataSource {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+ScrollPositionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TableView_ScrollPositionType {
@@ -2007,7 +2007,7 @@ pub enum TableView_ScrollPositionType {
     Center = 1i32,
     End = 2i32,
 }
-#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_ScrollPositionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2036,7 +2036,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_ScrollPositio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::TableView_ScrollPositionType {
     type Type = Self;
@@ -2047,7 +2047,7 @@ for crate::HMUI::TableView_ScrollPositionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::TableView_ScrollPositionType {
     type Actual = Self;
@@ -2061,7 +2061,7 @@ for crate::HMUI::TableView_ScrollPositionType {
         self
     }
 }
-#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::TableView_ScrollPositionType {
     type Type = Self;
@@ -2076,7 +2076,7 @@ for crate::HMUI::TableView_ScrollPositionType {
         }
     }
 }
-#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::TableView_ScrollPositionType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2089,7 +2089,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::TableView_ScrollPosit
         actual
     }
 }
-#[cfg(feature = "HMUI+TableView+TableType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+TableType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TableView_TableType {
@@ -2097,7 +2097,7 @@ pub enum TableView_TableType {
     Horizontal = 1i32,
     Vertical = 0i32,
 }
-#[cfg(feature = "HMUI+TableView+TableType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_TableType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2126,7 +2126,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_TableType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+TableView+TableType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::TableView_TableType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2136,7 +2136,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::TableView_TableType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+TableView+TableType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::TableView_TableType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2149,7 +2149,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::TableView_TableTyp
         self
     }
 }
-#[cfg(feature = "HMUI+TableView+TableType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::TableView_TableType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2163,7 +2163,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::TableView_TableType
         }
     }
 }
-#[cfg(feature = "HMUI+TableView+TableType")]
+#[cfg(feature = "cordl_class_HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::TableView_TableType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

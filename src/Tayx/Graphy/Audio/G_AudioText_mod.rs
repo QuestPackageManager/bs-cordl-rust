@@ -1,4 +1,4 @@
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioText")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_AudioText {
@@ -11,7 +11,7 @@ pub struct G_AudioText {
     pub m_updateRate: i32,
     pub m_deltaTimeOffset: f32,
 }
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioText")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Audio::G_AudioText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Audio::G_AudioT
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioText")]
 impl std::ops::Deref for crate::Tayx::Graphy::Audio::G_AudioText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioText")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Audio::G_AudioText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -162,7 +162,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioText")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioText")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Audio::G_AudioText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigationMoveEvent {
@@ -8,7 +8,7 @@ pub struct NavigationMoveEvent {
     pub _direction_k__BackingField: crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
     pub _move_k__BackingField: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::NavigationMoveEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::NavigationMoveEvent {
     type Target = crate::UnityEngine::UIElements::NavigationEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
@@ -37,7 +37,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::NavigationMoveEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::NavigationMoveEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -366,7 +366,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::NavigationMoveEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -376,7 +376,7 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent+Direction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NavigationMoveEvent_Direction {
@@ -389,7 +389,7 @@ pub enum NavigationMoveEvent_Direction {
     Right = 3i32,
     Up = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent+Direction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
     type Held<'a> = Self;
@@ -419,7 +419,7 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent+Direction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
     type Type = Self;
@@ -430,7 +430,7 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent+Direction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
     type Actual = Self;
@@ -444,7 +444,7 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent+Direction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
     type Type = Self;
@@ -459,7 +459,7 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationMoveEvent+Direction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::NavigationMoveEvent_Direction {
     type Actual = Self;

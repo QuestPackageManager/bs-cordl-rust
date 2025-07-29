@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MatchResultErrorCode {
@@ -8,7 +8,7 @@ pub enum MatchResultErrorCode {
     None = 0i32,
     Syntax = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode {
     type Actual = Self;

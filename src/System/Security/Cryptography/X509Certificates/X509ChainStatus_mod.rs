@@ -1,11 +1,15 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainStatus"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct X509ChainStatus {
     pub status: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
     type Held<'a> = Self;
@@ -35,7 +39,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
     type Type = Self;
@@ -46,7 +52,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
     type Actual = Self;
@@ -60,7 +68,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
     type Type = Self;
@@ -75,7 +85,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
     type Actual = Self;
@@ -89,7 +101,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
         actual
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
+#[cfg(
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainStatus"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
     type Type = Self;

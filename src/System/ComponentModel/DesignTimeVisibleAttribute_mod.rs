@@ -1,11 +1,11 @@
-#[cfg(feature = "System+ComponentModel+DesignTimeVisibleAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DesignTimeVisibleAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesignTimeVisibleAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Visible_k__BackingField: bool,
 }
-#[cfg(feature = "System+ComponentModel+DesignTimeVisibleAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DesignTimeVisibleAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::DesignTimeVisibleAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::ComponentModel::DesignTimeVisibleAttribute {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+DesignTimeVisibleAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DesignTimeVisibleAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::DesignTimeVisibleAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+DesignTimeVisibleAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DesignTimeVisibleAttribute")]
 impl std::ops::DerefMut for crate::System::ComponentModel::DesignTimeVisibleAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::System::ComponentModel::DesignTimeVisibleAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+DesignTimeVisibleAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+DesignTimeVisibleAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::DesignTimeVisibleAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

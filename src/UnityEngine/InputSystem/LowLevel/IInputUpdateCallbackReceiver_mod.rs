@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IInputUpdateCallbackReceiver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::IInputUpdateCallbackReceiver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputUpdateCallbackReceiver {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::IInputUpdateCallbackReceiver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputUpdateCallbackReceiver {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::IInputUpdateCallbackReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -68,7 +76,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputUpdateCallbackReceiver {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputUpdateCallbackReceiver"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::IInputUpdateCallbackReceiver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

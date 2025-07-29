@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Number")]
+#[cfg(feature = "cordl_class_System+Number")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Number {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Number")]
+#[cfg(feature = "cordl_class_System+Number")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Number {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Number {
         false
     }
 }
-#[cfg(feature = "System+Number")]
+#[cfg(feature = "cordl_class_System+Number")]
 impl std::ops::Deref for crate::System::Number {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Number")]
+#[cfg(feature = "cordl_class_System+Number")]
 impl std::ops::DerefMut for crate::System::Number {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3203,7 +3203,7 @@ impl crate::System::Number {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Number")]
+#[cfg(feature = "cordl_class_System+Number")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Number {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -3212,11 +3212,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Number {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer+DigitsAndNullTerminator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NumberBuffer_Number_DigitsAndNullTerminator {}
-#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Held<'a> = Self;
@@ -3246,7 +3246,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Type = Self;
@@ -3257,7 +3257,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Actual = Self;
@@ -3271,7 +3271,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
         self
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Type = Self;
@@ -3286,7 +3286,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
         }
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Actual = Self;
@@ -3300,7 +3300,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
         actual
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Type = Self;
@@ -3313,7 +3313,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
 }
 #[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
 impl crate::System::NumberBuffer_Number_DigitsAndNullTerminator {}
-#[cfg(feature = "System+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Number_NumberBuffer {
@@ -3323,7 +3323,7 @@ pub struct Number_NumberBuffer {
     pub _digits: crate::System::NumberBuffer_Number_DigitsAndNullTerminator,
     pub _allDigits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Number_NumberBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3352,7 +3352,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Number_NumberBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Number_NumberBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3362,7 +3362,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Number_NumberBuff
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Number_NumberBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3375,7 +3375,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Number_NumberBuf
         self
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Number_NumberBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3389,7 +3389,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Number_NumberBuff
         }
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Number_NumberBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3402,7 +3402,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Number_NumberBuffer
         actual
     }
 }
-#[cfg(feature = "System+Number+NumberBuffer")]
+#[cfg(feature = "cordl_class_System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Number_NumberBuffer {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

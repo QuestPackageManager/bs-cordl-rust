@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+AutoIncrementBigInteger")]
+#[cfg(feature = "cordl_class_System+Data+AutoIncrementBigInteger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AutoIncrementBigInteger {
@@ -7,7 +7,7 @@ pub struct AutoIncrementBigInteger {
     pub _seed: i64,
     pub _step: crate::System::Numerics::BigInteger,
 }
-#[cfg(feature = "System+Data+AutoIncrementBigInteger")]
+#[cfg(feature = "cordl_class_System+Data+AutoIncrementBigInteger")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::AutoIncrementBigInteger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Data::AutoIncrementBigInteger {
         false
     }
 }
-#[cfg(feature = "System+Data+AutoIncrementBigInteger")]
+#[cfg(feature = "cordl_class_System+Data+AutoIncrementBigInteger")]
 impl std::ops::Deref for crate::System::Data::AutoIncrementBigInteger {
     type Target = crate::System::Data::AutoIncrementValue;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+AutoIncrementBigInteger")]
+#[cfg(feature = "cordl_class_System+Data+AutoIncrementBigInteger")]
 impl std::ops::DerefMut for crate::System::Data::AutoIncrementBigInteger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -340,7 +340,7 @@ impl crate::System::Data::AutoIncrementBigInteger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+AutoIncrementBigInteger")]
+#[cfg(feature = "cordl_class_System+Data+AutoIncrementBigInteger")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::AutoIncrementBigInteger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

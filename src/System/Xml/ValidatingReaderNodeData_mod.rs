@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+ValidatingReaderNodeData")]
+#[cfg(feature = "cordl_class_System+Xml+ValidatingReaderNodeData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidatingReaderNodeData {
@@ -19,7 +19,7 @@ pub struct ValidatingReaderNodeData {
     pub lineNo: i32,
     pub linePos: i32,
 }
-#[cfg(feature = "System+Xml+ValidatingReaderNodeData")]
+#[cfg(feature = "cordl_class_System+Xml+ValidatingReaderNodeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::ValidatingReaderNodeData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::System::Xml::ValidatingReaderNodeData {
         false
     }
 }
-#[cfg(feature = "System+Xml+ValidatingReaderNodeData")]
+#[cfg(feature = "cordl_class_System+Xml+ValidatingReaderNodeData")]
 impl std::ops::Deref for crate::System::Xml::ValidatingReaderNodeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+ValidatingReaderNodeData")]
+#[cfg(feature = "cordl_class_System+Xml+ValidatingReaderNodeData")]
 impl std::ops::DerefMut for crate::System::Xml::ValidatingReaderNodeData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -749,7 +749,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+ValidatingReaderNodeData")]
+#[cfg(feature = "cordl_class_System+Xml+ValidatingReaderNodeData")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::ValidatingReaderNodeData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

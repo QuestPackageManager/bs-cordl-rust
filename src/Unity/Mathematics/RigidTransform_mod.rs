@@ -1,11 +1,11 @@
-#[cfg(feature = "Unity+Mathematics+RigidTransform")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+RigidTransform")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RigidTransform {
     pub rot: crate::Unity::Mathematics::quaternion,
     pub pos: crate::Unity::Mathematics::float3,
 }
-#[cfg(feature = "Unity+Mathematics+RigidTransform")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+RigidTransform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::RigidTransform {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::RigidTran
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+RigidTransform")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+RigidTransform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::RigidTransform {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::Unity::Mathematics::RigidTransform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+RigidTransform")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+RigidTransform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::RigidTransform {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::Unity::Mathematics::RigidTransform {
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+RigidTransform")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+RigidTransform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::RigidTransform {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::Unity::Mathematics::RigidTransform {
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+RigidTransform")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+RigidTransform")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::RigidTransform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::RigidTr
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+RigidTransform")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+RigidTransform")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Mathematics::RigidTransform {
     type Type = Self;

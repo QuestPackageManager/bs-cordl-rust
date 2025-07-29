@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshGenerationContextUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -216,7 +216,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -226,7 +226,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshGenerationContextUtils_BorderParams {
@@ -250,7 +252,9 @@ pub struct MeshGenerationContextUtils_BorderParams {
     pub rightColorPage: crate::UnityEngine::UIElements::ColorPage,
     pub bottomColorPage: crate::UnityEngine::UIElements::ColorPage,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
     type Held<'a> = Self;
@@ -280,7 +284,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
     type Type = Self;
@@ -291,7 +297,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
     type Actual = Self;
@@ -305,7 +313,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
     type Type = Self;
@@ -320,7 +330,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
     type Actual = Self;
@@ -334,7 +346,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
     type Type = Self;
@@ -375,7 +389,9 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshGenerationContextUtils_RectangleParams {
@@ -411,7 +427,9 @@ pub struct MeshGenerationContextUtils_RectangleParams {
     pub colorPage: crate::UnityEngine::UIElements::ColorPage,
     pub meshFlags: crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags,
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
     type Held<'a> = Self;
@@ -441,7 +459,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
     type Type = Self;
@@ -452,7 +472,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
     type Actual = Self;
@@ -466,7 +488,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
     type Type = Self;
@@ -481,7 +505,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
     type Actual = Self;
@@ -495,7 +521,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
     type Type = Self;

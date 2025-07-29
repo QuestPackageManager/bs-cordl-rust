@@ -1,4 +1,4 @@
-#[cfg(feature = "MainMenuViewController")]
+#[cfg(feature = "cordl_class_MainMenuViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainMenuViewController {
@@ -36,7 +36,7 @@ pub struct MainMenuViewController {
     >,
     pub _isLoadingPackPromoData: bool,
 }
-#[cfg(feature = "MainMenuViewController")]
+#[cfg(feature = "cordl_class_MainMenuViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainMenuViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -56,14 +56,14 @@ for crate::GlobalNamespace::MainMenuViewController {
         false
     }
 }
-#[cfg(feature = "MainMenuViewController")]
+#[cfg(feature = "cordl_class_MainMenuViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MainMenuViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainMenuViewController")]
+#[cfg(feature = "cordl_class_MainMenuViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainMenuViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -566,7 +566,7 @@ impl crate::GlobalNamespace::MainMenuViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainMenuViewController")]
+#[cfg(feature = "cordl_class_MainMenuViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -576,7 +576,7 @@ for crate::GlobalNamespace::MainMenuViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MainMenuViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MainMenuViewController+MenuButton")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MainMenuViewController_MenuButton {
@@ -591,7 +591,7 @@ pub enum MainMenuViewController_MenuButton {
     SoloCampaign = 3i32,
     SoloFreePlay = 0i32,
 }
-#[cfg(feature = "MainMenuViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Held<'a> = Self;
@@ -621,7 +621,7 @@ for crate::GlobalNamespace::MainMenuViewController_MenuButton {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MainMenuViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Type = Self;
@@ -632,7 +632,7 @@ for crate::GlobalNamespace::MainMenuViewController_MenuButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MainMenuViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Actual = Self;
@@ -646,7 +646,7 @@ for crate::GlobalNamespace::MainMenuViewController_MenuButton {
         self
     }
 }
-#[cfg(feature = "MainMenuViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Type = Self;
@@ -661,7 +661,7 @@ for crate::GlobalNamespace::MainMenuViewController_MenuButton {
         }
     }
 }
-#[cfg(feature = "MainMenuViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "SongProfilingController")]
+#[cfg(feature = "cordl_class_SongProfilingController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongProfilingController {
@@ -8,7 +8,7 @@ pub struct SongProfilingController {
     >,
     pub _fps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
-#[cfg(feature = "SongProfilingController")]
+#[cfg(feature = "cordl_class_SongProfilingController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongProfilingController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::SongProfilingController {
         false
     }
 }
-#[cfg(feature = "SongProfilingController")]
+#[cfg(feature = "cordl_class_SongProfilingController")]
 impl std::ops::Deref for crate::GlobalNamespace::SongProfilingController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongProfilingController")]
+#[cfg(feature = "cordl_class_SongProfilingController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongProfilingController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -283,7 +283,7 @@ impl crate::GlobalNamespace::SongProfilingController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongProfilingController")]
+#[cfg(feature = "cordl_class_SongProfilingController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SongProfilingController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

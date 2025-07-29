@@ -1,4 +1,4 @@
-#[cfg(feature = "ENet+ENetSslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+ENetSslConfiguration")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ENetSslConfiguration {
@@ -14,7 +14,7 @@ pub struct ENetSslConfiguration {
     pub rootCertificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "ENet+ENetSslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+ENetSslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::ENetSslConfiguration {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::ENetSslConfiguration {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ENet+ENetSslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+ENetSslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::ENetSslConfiguration {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -53,7 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::ENetSslConfiguratio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ENet+ENetSslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+ENetSslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::ENetSslConfiguration {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,7 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::ENetSslConfigurati
         self
     }
 }
-#[cfg(feature = "ENet+ENetSslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+ENetSslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::ENetSslConfiguration {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,7 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::ENetSslConfiguratio
         }
     }
 }
-#[cfg(feature = "ENet+ENetSslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+ENetSslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::ENetSslConfiguration {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -93,7 +93,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::ENet::ENetSslConfiguration 
         actual
     }
 }
-#[cfg(feature = "ENet+ENetSslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+ENetSslConfiguration")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::ENetSslConfiguration {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+FactoryFromBinder6Extensions")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder6Extensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryFromBinder6Extensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Zenject+FactoryFromBinder6Extensions")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder6Extensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::FactoryFromBinder6Extensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Zenject::FactoryFromBinder6Extensions {
         false
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinder6Extensions")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder6Extensions")]
 impl std::ops::Deref for crate::Zenject::FactoryFromBinder6Extensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinder6Extensions")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder6Extensions")]
 impl std::ops::DerefMut for crate::Zenject::FactoryFromBinder6Extensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -651,7 +651,7 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinder6Extensions")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinder6Extensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::FactoryFromBinder6Extensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

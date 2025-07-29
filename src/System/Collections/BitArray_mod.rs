@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+BitArray")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BitArray {
@@ -8,7 +8,7 @@ pub struct BitArray {
     pub _version: i32,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+BitArray")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::BitArray {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::BitArray
         false
     }
 }
-#[cfg(feature = "System+Collections+BitArray")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray")]
 impl std::ops::Deref for crate::System::Collections::BitArray {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+BitArray")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray")]
 impl std::ops::DerefMut for crate::System::Collections::BitArray {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -448,7 +448,7 @@ impl crate::System::Collections::BitArray {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+BitArray")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::BitArray {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -497,7 +497,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::BitArray {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray+BitArrayEnumeratorSimple")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BitArray_BitArrayEnumeratorSimple {
@@ -507,7 +507,7 @@ pub struct BitArray_BitArrayEnumeratorSimple {
     pub version: i32,
     pub currentElement: bool,
 }
-#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray+BitArrayEnumeratorSimple")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -527,14 +527,14 @@ for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
         false
     }
 }
-#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray+BitArrayEnumeratorSimple")]
 impl std::ops::Deref for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray+BitArrayEnumeratorSimple")]
 impl std::ops::DerefMut
 for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -673,7 +673,7 @@ impl crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
+#[cfg(feature = "cordl_class_System+Collections+BitArray+BitArrayEnumeratorSimple")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

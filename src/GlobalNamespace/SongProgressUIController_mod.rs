@@ -1,4 +1,4 @@
-#[cfg(feature = "SongProgressUIController")]
+#[cfg(feature = "cordl_class_SongProgressUIController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongProgressUIController {
@@ -32,7 +32,7 @@ pub struct SongProgressUIController {
     >,
     pub _songDidFinish: bool,
 }
-#[cfg(feature = "SongProgressUIController")]
+#[cfg(feature = "cordl_class_SongProgressUIController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongProgressUIController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,14 +52,14 @@ for crate::GlobalNamespace::SongProgressUIController {
         false
     }
 }
-#[cfg(feature = "SongProgressUIController")]
+#[cfg(feature = "cordl_class_SongProgressUIController")]
 impl std::ops::Deref for crate::GlobalNamespace::SongProgressUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongProgressUIController")]
+#[cfg(feature = "cordl_class_SongProgressUIController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongProgressUIController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -211,7 +211,7 @@ impl crate::GlobalNamespace::SongProgressUIController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongProgressUIController")]
+#[cfg(feature = "cordl_class_SongProgressUIController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SongProgressUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

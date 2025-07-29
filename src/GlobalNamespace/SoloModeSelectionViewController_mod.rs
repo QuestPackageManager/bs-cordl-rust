@@ -1,4 +1,4 @@
-#[cfg(feature = "SoloModeSelectionViewController")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoloModeSelectionViewController {
@@ -16,7 +16,7 @@ pub struct SoloModeSelectionViewController {
         >,
     >,
 }
-#[cfg(feature = "SoloModeSelectionViewController")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SoloModeSelectionViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::SoloModeSelectionViewController {
         false
     }
 }
-#[cfg(feature = "SoloModeSelectionViewController")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SoloModeSelectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SoloModeSelectionViewController")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SoloModeSelectionViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -320,7 +320,7 @@ impl crate::GlobalNamespace::SoloModeSelectionViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SoloModeSelectionViewController")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SoloModeSelectionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -330,7 +330,7 @@ for crate::GlobalNamespace::SoloModeSelectionViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController+MenuType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SoloModeSelectionViewController_MenuType {
@@ -340,7 +340,7 @@ pub enum SoloModeSelectionViewController_MenuType {
     NoArrowsMode = 1i32,
     OneSaberMode = 2i32,
 }
-#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController+MenuType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
     type Held<'a> = Self;
@@ -370,7 +370,7 @@ for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController+MenuType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
     type Type = Self;
@@ -381,7 +381,7 @@ for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController+MenuType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
     type Actual = Self;
@@ -395,7 +395,7 @@ for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
         self
     }
 }
-#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController+MenuType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
     type Type = Self;
@@ -410,7 +410,7 @@ for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
         }
     }
 }
-#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
+#[cfg(feature = "cordl_class_SoloModeSelectionViewController+MenuType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SoloModeSelectionViewController_MenuType {
     type Actual = Self;

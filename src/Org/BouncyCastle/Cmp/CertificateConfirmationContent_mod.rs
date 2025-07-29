@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateConfirmationContent {
@@ -10,7 +10,7 @@ pub struct CertificateConfirmationContent {
         crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -214,7 +214,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

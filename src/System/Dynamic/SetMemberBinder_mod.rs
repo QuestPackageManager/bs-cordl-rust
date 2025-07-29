@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Dynamic+SetMemberBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+SetMemberBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetMemberBinder {
@@ -8,7 +8,7 @@ pub struct SetMemberBinder {
     >,
     pub _IgnoreCase_k__BackingField: bool,
 }
-#[cfg(feature = "System+Dynamic+SetMemberBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+SetMemberBinder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::SetMemberBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::SetMemberBin
         false
     }
 }
-#[cfg(feature = "System+Dynamic+SetMemberBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+SetMemberBinder")]
 impl std::ops::Deref for crate::System::Dynamic::SetMemberBinder {
     type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+SetMemberBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+SetMemberBinder")]
 impl std::ops::DerefMut for crate::System::Dynamic::SetMemberBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -301,7 +301,7 @@ impl crate::System::Dynamic::SetMemberBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Dynamic+SetMemberBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+SetMemberBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::SetMemberBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

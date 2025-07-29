@@ -1,4 +1,4 @@
-#[cfg(feature = "RoomAdjustSettingsViewController")]
+#[cfg(feature = "cordl_class_RoomAdjustSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RoomAdjustSettingsViewController {
@@ -23,7 +23,7 @@ pub struct RoomAdjustSettingsViewController {
         crate::GlobalNamespace::SettingsApplicatorSO,
     >,
 }
-#[cfg(feature = "RoomAdjustSettingsViewController")]
+#[cfg(feature = "cordl_class_RoomAdjustSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RoomAdjustSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::GlobalNamespace::RoomAdjustSettingsViewController {
         false
     }
 }
-#[cfg(feature = "RoomAdjustSettingsViewController")]
+#[cfg(feature = "cordl_class_RoomAdjustSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::RoomAdjustSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RoomAdjustSettingsViewController")]
+#[cfg(feature = "cordl_class_RoomAdjustSettingsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RoomAdjustSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -475,7 +475,7 @@ impl crate::GlobalNamespace::RoomAdjustSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RoomAdjustSettingsViewController")]
+#[cfg(feature = "cordl_class_RoomAdjustSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RoomAdjustSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

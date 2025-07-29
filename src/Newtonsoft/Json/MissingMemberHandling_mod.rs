@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+MissingMemberHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MissingMemberHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MissingMemberHandling {
@@ -6,7 +6,7 @@ pub enum MissingMemberHandling {
     Error = 1i32,
     Ignore = 0i32,
 }
-#[cfg(feature = "Newtonsoft+Json+MissingMemberHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MissingMemberHandling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::MissingMemberHandling {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::Newtonsoft::Json::MissingMemberHandling {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+MissingMemberHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MissingMemberHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::MissingMemberHandling {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::Newtonsoft::Json::MissingMemberHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+MissingMemberHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MissingMemberHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::MissingMemberHandling {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::Newtonsoft::Json::MissingMemberHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+MissingMemberHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MissingMemberHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::MissingMemberHandling {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::Newtonsoft::Json::MissingMemberHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+MissingMemberHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+MissingMemberHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::MissingMemberHandling {
     type Actual = Self;

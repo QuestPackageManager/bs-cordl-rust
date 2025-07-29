@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubsystemDescriptorStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         false
     }
 }
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -267,7 +275,9 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

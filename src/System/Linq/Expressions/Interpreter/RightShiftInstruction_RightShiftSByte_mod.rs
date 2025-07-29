@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct RightShiftInstruction_RightShiftSByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::RightShiftInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte {
     type Target = crate::System::Linq::Expressions::Interpreter::RightShiftInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::RightShiftInstruction_RightShif
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte {

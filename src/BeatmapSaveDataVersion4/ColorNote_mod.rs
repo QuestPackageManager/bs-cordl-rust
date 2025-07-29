@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorNote")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorNote")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorNote {
@@ -8,7 +8,7 @@ pub struct ColorNote {
     pub c: crate::BeatmapSaveDataCommon::NoteColorType,
     pub d: crate::BeatmapSaveDataCommon::NoteCutDirection,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorNote")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorNote")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::ColorNote {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Colo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorNote")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorNote")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::ColorNote {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BeatmapSaveDataVersion4::ColorNote {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorNote")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorNote")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::ColorNote {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BeatmapSaveDataVersion4::ColorNote {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorNote")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorNote")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::ColorNote {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BeatmapSaveDataVersion4::ColorNote {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorNote")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorNote")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::ColorNote {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::Co
         actual
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+ColorNote")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+ColorNote")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapSaveDataVersion4::ColorNote {
     type Type = Self;

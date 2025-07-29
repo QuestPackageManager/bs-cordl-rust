@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLibConnectionManager")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager {
@@ -90,7 +90,7 @@ pub struct LiteNetLibConnectionManager {
         crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate,
     >,
 }
-#[cfg(feature = "LiteNetLibConnectionManager")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -110,14 +110,14 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager {
         false
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LiteNetLibConnectionManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2434,7 +2434,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LiteNetLibConnectionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2500,7 +2500,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectToServerParams")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_ConnectToServerParams {
@@ -2512,7 +2512,7 @@ pub struct LiteNetLibConnectionManager_ConnectToServerParams {
     pub serverUserName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub serverIsConnectionOwner: bool,
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectToServerParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2532,7 +2532,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
         false
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectToServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
     type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
@@ -2540,7 +2540,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectToServerParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2578,7 +2578,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectToServerParams")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2588,7 +2588,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LiteNetLibConnectionManager_ConnectionState {
@@ -2598,7 +2598,7 @@ pub enum LiteNetLibConnectionManager_ConnectionState {
     Disconnecting = 3i32,
     Unconnected = 0i32,
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Held<'a> = Self;
@@ -2628,7 +2628,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Type = Self;
@@ -2639,7 +2639,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Actual = Self;
@@ -2653,7 +2653,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
         self
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Type = Self;
@@ -2668,7 +2668,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
         }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Actual = Self;
@@ -2682,7 +2682,9 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
         actual
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
+#[cfg(
+    feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
@@ -2697,7 +2699,9 @@ pub struct LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     pub enableStatistics: bool,
     pub disconnectTimeoutMs: i32,
 }
-#[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
+#[cfg(
+    feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2717,7 +2721,9 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
         false
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
+#[cfg(
+    feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2725,7 +2731,9 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
+#[cfg(
+    feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2763,7 +2771,9 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPar
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
+#[cfg(
+    feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2803,7 +2813,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_NetPeerConnection {
@@ -2813,7 +2823,7 @@ pub struct LiteNetLibConnectionManager_NetPeerConnection {
     pub _isConnectionOwner: bool,
     pub netPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2833,7 +2843,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         false
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnection")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2841,7 +2851,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnection")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3099,7 +3109,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3159,7 +3169,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_NetPeerConnectionRequest {
@@ -3169,7 +3179,7 @@ pub struct LiteNetLibConnectionManager_NetPeerConnectionRequest {
     pub _isConnectionOwner: bool,
     pub _request: quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3189,7 +3199,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
         false
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3197,7 +3207,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3385,7 +3395,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3395,7 +3405,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LiteNetLibConnectionManager_NetworkMode {
@@ -3404,7 +3414,7 @@ pub enum LiteNetLibConnectionManager_NetworkMode {
     None = 0i32,
     Server = 2i32,
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Held<'a> = Self;
@@ -3434,7 +3444,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Type = Self;
@@ -3445,7 +3455,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Actual = Self;
@@ -3459,7 +3469,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
         self
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Type = Self;
@@ -3474,7 +3484,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
         }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Actual = Self;
@@ -3488,13 +3498,13 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
         actual
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartClientParams")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_StartClientParams {
     __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartClientParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3514,7 +3524,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
         false
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartClientParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
     type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
@@ -3522,7 +3532,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartClientParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3560,7 +3570,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartClientParams")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3570,7 +3580,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartServerParams")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_StartServerParams {
@@ -3578,7 +3588,7 @@ pub struct LiteNetLibConnectionManager_StartServerParams {
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartServerParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3598,7 +3608,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
         false
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
     type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
@@ -3606,7 +3616,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartServerParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3644,7 +3654,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
+#[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartServerParams")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

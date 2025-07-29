@@ -1,4 +1,4 @@
-#[cfg(feature = "EventsTestGameplayManager")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestGameplayManager {
@@ -48,7 +48,7 @@ pub struct EventsTestGameplayManager {
     >,
     pub _rotatingLasers: bool,
 }
-#[cfg(feature = "EventsTestGameplayManager")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EventsTestGameplayManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -68,14 +68,14 @@ for crate::GlobalNamespace::EventsTestGameplayManager {
         false
     }
 }
-#[cfg(feature = "EventsTestGameplayManager")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::EventsTestGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EventsTestGameplayManager")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EventsTestGameplayManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -257,7 +257,7 @@ impl crate::GlobalNamespace::EventsTestGameplayManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EventsTestGameplayManager")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EventsTestGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -267,14 +267,14 @@ for crate::GlobalNamespace::EventsTestGameplayManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager+MockBeatToTimeConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestGameplayManager_MockBeatToTimeConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bpm: f32,
 }
-#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager+MockBeatToTimeConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -294,7 +294,7 @@ for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
         false
     }
 }
-#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -365,7 +365,7 @@ impl crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
+#[cfg(feature = "cordl_class_EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

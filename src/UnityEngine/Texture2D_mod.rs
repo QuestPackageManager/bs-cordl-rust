@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Texture2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Texture2D {
     __cordl_parent: crate::UnityEngine::Texture,
 }
-#[cfg(feature = "UnityEngine+Texture2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture2D {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture2D {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Texture2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D")]
 impl std::ops::Deref for crate::UnityEngine::Texture2D {
     type Target = crate::UnityEngine::Texture;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Texture2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D")]
 impl std::ops::DerefMut for crate::UnityEngine::Texture2D {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3946,7 +3946,7 @@ impl crate::UnityEngine::Texture2D {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Texture2D")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Texture2D {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -3955,7 +3955,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Texture2D {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D+EXRFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Texture2D_EXRFlags {
@@ -3966,7 +3966,7 @@ pub enum Texture2D_EXRFlags {
     None = 0i32,
     OutputAsFloat = 1i32,
 }
-#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture2D_EXRFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -3995,7 +3995,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture2D_EXRFla
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Texture2D_EXRFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4005,7 +4005,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Texture2D_EX
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Texture2D_EXRFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4018,7 +4018,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Texture2D_E
         self
     }
 }
-#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Texture2D_EXRFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4032,7 +4032,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Texture2D_EX
         }
     }
 }
-#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Texture2D_EXRFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

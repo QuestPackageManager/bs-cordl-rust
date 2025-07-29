@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersionProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameVersionProvider {
@@ -10,7 +10,7 @@ pub struct GameVersionProvider {
     >,
     pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
 }
-#[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersionProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::GameVersionProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::GameVersionP
         false
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersionProvider")]
 impl std::ops::Deref for crate::BeatSaber::Init::GameVersionProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersionProvider")]
 impl std::ops::DerefMut for crate::BeatSaber::Init::GameVersionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -264,7 +264,7 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+GameVersionProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Init::GameVersionProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

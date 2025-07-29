@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderChain {
@@ -72,7 +72,7 @@ pub struct RenderChain {
     pub _drawStats_k__BackingField: bool,
     pub _drawInCameras_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::RenderChain {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -92,14 +92,14 @@ for crate::UnityEngine::UIElements::UIR::RenderChain {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::RenderChain {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::RenderChain {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1851,7 +1851,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::RenderChain {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1875,7 +1875,9 @@ for crate::UnityEngine::UIElements::UIR::RenderChain {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderChain_DepthOrderedDirtyTracking {
@@ -1893,7 +1895,9 @@ pub struct RenderChain_DepthOrderedDirtyTracking {
     pub maxDepths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub dirtyID: u32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
     type Held<'a> = Self;
@@ -1923,7 +1927,9 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
     type Type = Self;
@@ -1934,7 +1940,9 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
     type Actual = Self;
@@ -1948,7 +1956,9 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
     type Type = Self;
@@ -1963,7 +1973,9 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
     type Actual = Self;
@@ -1977,7 +1989,9 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
     type Type = Self;
@@ -2105,13 +2119,13 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking 
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderChain_RenderChainStaticIndexAllocator {}
 #[cfg(
-    feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator {
@@ -2143,7 +2157,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAlloc
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator {
@@ -2156,7 +2170,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAlloc
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator {
@@ -2172,7 +2186,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAlloc
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator {
@@ -2189,7 +2203,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAlloc
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator {
@@ -2205,7 +2219,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAlloc
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
+    feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator {
@@ -2305,7 +2319,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllo
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderChain_RenderNodeData {
@@ -2330,7 +2344,7 @@ pub struct RenderChain_RenderNodeData {
         crate::UnityEngine::Vector4,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
     type Held<'a> = Self;
@@ -2360,7 +2374,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
     type Type = Self;
@@ -2371,7 +2385,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
     type Actual = Self;
@@ -2385,7 +2399,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
     type Type = Self;
@@ -2400,7 +2414,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
     type Actual = Self;
@@ -2414,7 +2428,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
     type Type = Self;

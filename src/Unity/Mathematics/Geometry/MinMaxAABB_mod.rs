@@ -1,11 +1,11 @@
-#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+MinMaxAABB")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MinMaxAABB {
     pub Min: crate::Unity::Mathematics::float3,
     pub Max: crate::Unity::Mathematics::float3,
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+MinMaxAABB")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::Geometry::MinMaxAABB {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::Unity::Mathematics::Geometry::MinMaxAABB {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+MinMaxAABB")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::Geometry::MinMaxAABB {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::Unity::Mathematics::Geometry::MinMaxAABB {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+MinMaxAABB")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::Geometry::MinMaxAABB {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::Unity::Mathematics::Geometry::MinMaxAABB {
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+MinMaxAABB")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::Geometry::MinMaxAABB {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::Unity::Mathematics::Geometry::MinMaxAABB {
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+MinMaxAABB")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::Geometry::MinMaxAABB {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::Unity::Mathematics::Geometry::MinMaxAABB {
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+Geometry+MinMaxAABB")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Mathematics::Geometry::MinMaxAABB {
     type Type = Self;

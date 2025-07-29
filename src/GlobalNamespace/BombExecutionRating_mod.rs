@@ -1,11 +1,11 @@
-#[cfg(feature = "BombExecutionRating")]
+#[cfg(feature = "cordl_class_BombExecutionRating")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombExecutionRating {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectExecutionRating,
     pub _rating_k__BackingField: crate::GlobalNamespace::BombExecutionRating_Rating,
 }
-#[cfg(feature = "BombExecutionRating")]
+#[cfg(feature = "cordl_class_BombExecutionRating")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BombExecutionRating {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BombExecutio
         false
     }
 }
-#[cfg(feature = "BombExecutionRating")]
+#[cfg(feature = "cordl_class_BombExecutionRating")]
 impl std::ops::Deref for crate::GlobalNamespace::BombExecutionRating {
     type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BombExecutionRating")]
+#[cfg(feature = "cordl_class_BombExecutionRating")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BombExecutionRating {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::BombExecutionRating {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BombExecutionRating")]
+#[cfg(feature = "cordl_class_BombExecutionRating")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombExecutionRating {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -115,7 +115,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombExecution
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BombExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_BombExecutionRating+Rating")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BombExecutionRating_Rating {
@@ -123,7 +123,7 @@ pub enum BombExecutionRating_Rating {
     NotGood = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "BombExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Held<'a> = Self;
@@ -153,7 +153,7 @@ for crate::GlobalNamespace::BombExecutionRating_Rating {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BombExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Type = Self;
@@ -164,7 +164,7 @@ for crate::GlobalNamespace::BombExecutionRating_Rating {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BombExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Actual = Self;
@@ -178,7 +178,7 @@ for crate::GlobalNamespace::BombExecutionRating_Rating {
         self
     }
 }
-#[cfg(feature = "BombExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Type = Self;
@@ -193,7 +193,7 @@ for crate::GlobalNamespace::BombExecutionRating_Rating {
         }
     }
 }
-#[cfg(feature = "BombExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Actual = Self;

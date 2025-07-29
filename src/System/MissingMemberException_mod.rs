@@ -1,4 +1,4 @@
-#[cfg(feature = "System+MissingMemberException")]
+#[cfg(feature = "cordl_class_System+MissingMemberException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissingMemberException {
@@ -7,7 +7,7 @@ pub struct MissingMemberException {
     pub MemberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "System+MissingMemberException")]
+#[cfg(feature = "cordl_class_System+MissingMemberException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::MissingMemberException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::MissingMemberExceptio
         false
     }
 }
-#[cfg(feature = "System+MissingMemberException")]
+#[cfg(feature = "cordl_class_System+MissingMemberException")]
 impl std::ops::Deref for crate::System::MissingMemberException {
     type Target = crate::System::MemberAccessException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+MissingMemberException")]
+#[cfg(feature = "cordl_class_System+MissingMemberException")]
 impl std::ops::DerefMut for crate::System::MissingMemberException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::System::MissingMemberException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+MissingMemberException")]
+#[cfg(feature = "cordl_class_System+MissingMemberException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::MissingMemberException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

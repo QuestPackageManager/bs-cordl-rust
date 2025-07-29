@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlParserContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlParserContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlParserContext {
@@ -14,7 +14,7 @@ pub struct XmlParserContext {
     pub _baseURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
 }
-#[cfg(feature = "System+Xml+XmlParserContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlParserContext")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlParserContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlParserContext
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlParserContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlParserContext")]
 impl std::ops::Deref for crate::System::Xml::XmlParserContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlParserContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlParserContext")]
 impl std::ops::DerefMut for crate::System::Xml::XmlParserContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -595,7 +595,7 @@ impl crate::System::Xml::XmlParserContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlParserContext")]
+#[cfg(feature = "cordl_class_System+Xml+XmlParserContext")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlParserContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

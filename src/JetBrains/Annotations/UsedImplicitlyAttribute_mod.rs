@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+UsedImplicitlyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UsedImplicitlyAttribute {
@@ -6,7 +6,7 @@ pub struct UsedImplicitlyAttribute {
     pub _UseKindFlags_k__BackingField: crate::JetBrains::Annotations::ImplicitUseKindFlags,
     pub _TargetFlags_k__BackingField: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
 }
-#[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+UsedImplicitlyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+UsedImplicitlyAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+UsedImplicitlyAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -286,7 +286,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+UsedImplicitlyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

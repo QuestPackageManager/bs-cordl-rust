@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AssetFileNameExtensionAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetFileNameExtensionAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetFileNameExtensionAttribute {
@@ -12,7 +12,7 @@ pub struct AssetFileNameExtensionAttribute {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+AssetFileNameExtensionAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetFileNameExtensionAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AssetFileNameExtensionAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::UnityEngine::AssetFileNameExtensionAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AssetFileNameExtensionAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetFileNameExtensionAttribute")]
 impl std::ops::Deref for crate::UnityEngine::AssetFileNameExtensionAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AssetFileNameExtensionAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetFileNameExtensionAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::AssetFileNameExtensionAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -109,7 +109,7 @@ impl crate::UnityEngine::AssetFileNameExtensionAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AssetFileNameExtensionAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+AssetFileNameExtensionAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AssetFileNameExtensionAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

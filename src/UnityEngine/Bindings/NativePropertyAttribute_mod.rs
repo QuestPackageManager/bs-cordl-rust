@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativePropertyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativePropertyAttribute {
     __cordl_parent: crate::UnityEngine::Bindings::NativeMethodAttribute,
     pub _TargetType_k__BackingField: crate::UnityEngine::Bindings::TargetType,
 }
-#[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativePropertyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Bindings::NativePropertyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Bindings::NativePropertyAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativePropertyAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::NativePropertyAttribute {
     type Target = crate::UnityEngine::Bindings::NativeMethodAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativePropertyAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Bindings::NativePropertyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -224,7 +224,7 @@ impl crate::UnityEngine::Bindings::NativePropertyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativePropertyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Bindings::NativePropertyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

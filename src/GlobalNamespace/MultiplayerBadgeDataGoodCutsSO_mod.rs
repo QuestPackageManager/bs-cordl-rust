@@ -1,10 +1,10 @@
-#[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeDataGoodCutsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataGoodCutsSO {
     __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO,
 }
-#[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeDataGoodCutsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
         false
     }
 }
-#[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeDataGoodCutsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
     type Target = crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeDataGoodCutsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
+#[cfg(feature = "cordl_class_MultiplayerBadgeDataGoodCutsSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "NoRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_NoRichPresencePlatformHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoRichPresencePlatformHandler {
@@ -7,7 +7,7 @@ pub struct NoRichPresencePlatformHandler {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "NoRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_NoRichPresencePlatformHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoRichPresencePlatformHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::NoRichPresencePlatformHandler {
         false
     }
 }
-#[cfg(feature = "NoRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_NoRichPresencePlatformHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::NoRichPresencePlatformHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_NoRichPresencePlatformHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoRichPresencePlatformHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::NoRichPresencePlatformHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_NoRichPresencePlatformHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoRichPresencePlatformHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

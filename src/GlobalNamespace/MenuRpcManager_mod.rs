@@ -1,4 +1,4 @@
-#[cfg(feature = "MenuRpcManager")]
+#[cfg(feature = "cordl_class_MenuRpcManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager {
@@ -239,7 +239,7 @@ pub struct MenuRpcManager {
         >,
     >,
 }
-#[cfg(feature = "MenuRpcManager")]
+#[cfg(feature = "cordl_class_MenuRpcManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MenuRpcManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -258,14 +258,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MenuRpcManag
         false
     }
 }
-#[cfg(feature = "MenuRpcManager")]
+#[cfg(feature = "cordl_class_MenuRpcManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager")]
+#[cfg(feature = "cordl_class_MenuRpcManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5874,7 +5874,7 @@ impl crate::GlobalNamespace::MenuRpcManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager")]
+#[cfg(feature = "cordl_class_MenuRpcManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuRpcManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -5909,13 +5909,13 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::MenuRpcManage
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelCountdownRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_CancelCountdownRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelCountdownRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5935,14 +5935,14 @@ for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelCountdownRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelCountdownRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5979,7 +5979,7 @@ impl crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelCountdownRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5989,13 +5989,13 @@ for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelLevelStartRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_CancelLevelStartRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelLevelStartRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6015,14 +6015,14 @@ for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelLevelStartRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelLevelStartRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6059,7 +6059,7 @@ impl crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelLevelStartRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6069,13 +6069,13 @@ for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelStartGameTimeRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_CancelStartGameTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelStartGameTimeRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6095,14 +6095,14 @@ for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelStartGameTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelStartGameTimeRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6140,7 +6140,7 @@ impl crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+CancelStartGameTimeRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6150,13 +6150,13 @@ for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedBeatmapRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_ClearRecommendedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedBeatmapRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6176,7 +6176,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedBeatmapRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -6184,7 +6184,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6222,7 +6222,7 @@ impl crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedBeatmapRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6232,13 +6232,13 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6258,7 +6258,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc 
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -6266,7 +6266,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6304,7 +6304,7 @@ impl crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6314,13 +6314,13 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedBeatmapRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_ClearSelectedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedBeatmapRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6340,14 +6340,14 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6385,7 +6385,7 @@ impl crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedBeatmapRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6395,13 +6395,13 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_ClearSelectedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6421,7 +6421,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -6429,7 +6429,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6467,7 +6467,7 @@ impl crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6477,13 +6477,13 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetCountdownEndTimeRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetCountdownEndTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetCountdownEndTimeRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6503,14 +6503,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetCountdownEndTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetCountdownEndTimeRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6548,7 +6548,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetCountdownEndTimeRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6558,7 +6558,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsEntitledToLevelRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetIsEntitledToLevelRpc {
@@ -6566,7 +6566,7 @@ pub struct MenuRpcManager_GetIsEntitledToLevelRpc {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsEntitledToLevelRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6586,7 +6586,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsEntitledToLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6595,7 +6595,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToL
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsEntitledToLevelRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6633,7 +6633,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsEntitledToLevelRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6643,13 +6643,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsInLobbyRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetIsInLobbyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsInLobbyRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6669,14 +6669,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsInLobbyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsInLobbyRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6713,7 +6713,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsInLobbyRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6723,13 +6723,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsReadyRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetIsReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsReadyRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6749,14 +6749,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsReadyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsReadyRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6793,7 +6793,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsReadyRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6803,13 +6803,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsStartButtonEnabledRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetIsStartButtonEnabledRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsStartButtonEnabledRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6829,7 +6829,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsStartButtonEnabledRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -6837,7 +6837,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsStartButtonEnabledRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6875,7 +6875,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetIsStartButtonEnabledRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6885,13 +6885,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetMultiplayerGameStateRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetMultiplayerGameStateRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetMultiplayerGameStateRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6911,7 +6911,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetMultiplayerGameStateRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -6919,7 +6919,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetMultiplayerGameStateRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6957,7 +6957,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetMultiplayerGameStateRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6967,13 +6967,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetOwnedSongPacksRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetOwnedSongPacksRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetOwnedSongPacksRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6993,14 +6993,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetOwnedSongPacksRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetOwnedSongPacksRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7037,7 +7037,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetOwnedSongPacksRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7047,13 +7047,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetPlayersPermissionConfigurationRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7073,7 +7073,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc 
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -7081,7 +7081,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7119,7 +7119,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7129,13 +7129,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedBeatmapRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetRecommendedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedBeatmapRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7155,7 +7155,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedBeatmapRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -7163,7 +7163,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7201,7 +7201,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedBeatmapRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7211,13 +7211,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetRecommendedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7237,7 +7237,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -7245,7 +7245,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7283,7 +7283,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7293,13 +7293,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedBeatmapRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetSelectedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedBeatmapRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7319,14 +7319,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7364,7 +7364,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedBeatmapRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7374,13 +7374,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetSelectedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7400,7 +7400,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -7408,7 +7408,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7446,7 +7446,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7456,13 +7456,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetStartedLevelRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetStartedLevelRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetStartedLevelRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7482,14 +7482,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetStartedLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetStartedLevelRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7526,7 +7526,7 @@ impl crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+GetStartedLevelRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7536,13 +7536,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
-#[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7562,7 +7562,7 @@ for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -7570,7 +7570,7 @@ for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7608,7 +7608,7 @@ impl crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRp
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7618,7 +7618,7 @@ for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadErrorRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_LevelLoadErrorRpc {
@@ -7626,7 +7626,7 @@ pub struct MenuRpcManager_LevelLoadErrorRpc {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadErrorRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7646,7 +7646,7 @@ for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadErrorRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7655,7 +7655,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRp
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadErrorRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7692,7 +7692,7 @@ impl crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadErrorRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7702,7 +7702,7 @@ for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadSuccessRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_LevelLoadSuccessRpc {
@@ -7710,7 +7710,7 @@ pub struct MenuRpcManager_LevelLoadSuccessRpc {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadSuccessRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7730,7 +7730,7 @@ for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadSuccessRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7739,7 +7739,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccess
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadSuccessRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7776,7 +7776,7 @@ impl crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadSuccessRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7786,7 +7786,7 @@ for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendBeatmapRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_RecommendBeatmapRpc {
@@ -7794,7 +7794,7 @@ pub struct MenuRpcManager_RecommendBeatmapRpc {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendBeatmapRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7814,7 +7814,7 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
@@ -7823,7 +7823,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmap
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendBeatmapRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7860,7 +7860,7 @@ impl crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendBeatmapRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7870,7 +7870,7 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendGameplayModifiersRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_RecommendGameplayModifiersRpc {
@@ -7878,7 +7878,7 @@ pub struct MenuRpcManager_RecommendGameplayModifiersRpc {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendGameplayModifiersRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7898,7 +7898,7 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
@@ -7908,7 +7908,7 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7946,7 +7946,7 @@ impl crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RecommendGameplayModifiersRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -7956,7 +7956,7 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RequestKickPlayerRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_RequestKickPlayerRpc {
@@ -7964,7 +7964,7 @@ pub struct MenuRpcManager_RequestKickPlayerRpc {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RequestKickPlayerRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -7984,7 +7984,7 @@ for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RequestKickPlayerRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7993,7 +7993,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_RequestKickPlaye
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RequestKickPlayerRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8030,7 +8030,7 @@ impl crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RequestKickPlayerRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8040,7 +8040,7 @@ for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+RpcType")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RpcType")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MenuRpcManager_RpcType {
@@ -8086,7 +8086,7 @@ pub enum MenuRpcManager_RpcType {
     SetStartGameTime = 24u8,
     StartLevel = 17u8,
 }
-#[cfg(feature = "MenuRpcManager+RpcType")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RpcType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_RpcType {
     type Held<'a> = Self;
@@ -8116,7 +8116,7 @@ for crate::GlobalNamespace::MenuRpcManager_RpcType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MenuRpcManager+RpcType")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RpcType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MenuRpcManager_RpcType {
     type Type = Self;
@@ -8127,7 +8127,7 @@ for crate::GlobalNamespace::MenuRpcManager_RpcType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MenuRpcManager+RpcType")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RpcType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MenuRpcManager_RpcType {
     type Actual = Self;
@@ -8141,7 +8141,7 @@ for crate::GlobalNamespace::MenuRpcManager_RpcType {
         self
     }
 }
-#[cfg(feature = "MenuRpcManager+RpcType")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RpcType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MenuRpcManager_RpcType {
     type Type = Self;
@@ -8156,7 +8156,7 @@ for crate::GlobalNamespace::MenuRpcManager_RpcType {
         }
     }
 }
-#[cfg(feature = "MenuRpcManager+RpcType")]
+#[cfg(feature = "cordl_class_MenuRpcManager+RpcType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MenuRpcManager_RpcType {
     type Actual = Self;
@@ -8170,7 +8170,7 @@ for crate::GlobalNamespace::MenuRpcManager_RpcType {
         actual
     }
 }
-#[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SelectLevelPackRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SelectLevelPackRpc {
@@ -8178,7 +8178,7 @@ pub struct MenuRpcManager_SelectLevelPackRpc {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SelectLevelPackRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8198,7 +8198,7 @@ for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SelectLevelPackRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -8207,7 +8207,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackR
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SelectLevelPackRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8244,7 +8244,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SelectLevelPackRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8254,13 +8254,13 @@ for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetCountdownEndTimeRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetCountdownEndTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<i64>,
 }
-#[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetCountdownEndTimeRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8280,14 +8280,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetCountdownEndTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<i64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetCountdownEndTimeRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -8325,7 +8325,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetCountdownEndTimeRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8335,7 +8335,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsEntitledToLevelRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetIsEntitledToLevelRpc {
@@ -8344,7 +8344,7 @@ pub struct MenuRpcManager_SetIsEntitledToLevelRpc {
         i32,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsEntitledToLevelRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8364,7 +8364,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsEntitledToLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -8374,7 +8374,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToL
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsEntitledToLevelRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -8412,7 +8412,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsEntitledToLevelRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8422,13 +8422,13 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsInLobbyRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetIsInLobbyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<bool>,
 }
-#[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsInLobbyRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8448,14 +8448,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsInLobbyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsInLobbyRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8492,7 +8492,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsInLobbyRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8502,13 +8502,13 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsReadyRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetIsReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<bool>,
 }
-#[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsReadyRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8528,14 +8528,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsReadyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsReadyRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8572,7 +8572,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsReadyRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8582,7 +8582,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsStartButtonEnabledRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetIsStartButtonEnabledRpc {
@@ -8590,7 +8590,7 @@ pub struct MenuRpcManager_SetIsStartButtonEnabledRpc {
         crate::GlobalNamespace::CannotStartGameReason,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsStartButtonEnabledRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8610,7 +8610,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsStartButtonEnabledRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
@@ -8620,7 +8620,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsStartButtonEnabledRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -8658,7 +8658,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetIsStartButtonEnabledRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8668,7 +8668,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetMultiplayerGameStateRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetMultiplayerGameStateRpc {
@@ -8676,7 +8676,7 @@ pub struct MenuRpcManager_SetMultiplayerGameStateRpc {
         crate::GlobalNamespace::MultiplayerGameState,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetMultiplayerGameStateRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8696,7 +8696,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetMultiplayerGameStateRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
@@ -8706,7 +8706,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetMultiplayerGameStateRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -8744,7 +8744,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetMultiplayerGameStateRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8754,7 +8754,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetOwnedSongPacksRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetOwnedSongPacksRpc {
@@ -8762,7 +8762,7 @@ pub struct MenuRpcManager_SetOwnedSongPacksRpc {
         crate::GlobalNamespace::SongPackMask,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetOwnedSongPacksRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8782,7 +8782,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetOwnedSongPacksRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         crate::GlobalNamespace::SongPackMask,
@@ -8791,7 +8791,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPack
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetOwnedSongPacksRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8828,7 +8828,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetOwnedSongPacksRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8838,7 +8838,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
@@ -8848,7 +8848,7 @@ pub struct MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
         >,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8868,7 +8868,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelR
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
@@ -8880,7 +8880,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelR
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -8918,7 +8918,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevel
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -8928,7 +8928,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelR
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetPlayersPermissionConfigurationRpc {
@@ -8938,7 +8938,7 @@ pub struct MenuRpcManager_SetPlayersPermissionConfigurationRpc {
         >,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -8958,7 +8958,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc 
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
@@ -8970,7 +8970,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9008,7 +9008,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9018,7 +9018,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedBeatmapRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetSelectedBeatmapRpc {
@@ -9026,7 +9026,7 @@ pub struct MenuRpcManager_SetSelectedBeatmapRpc {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedBeatmapRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9046,7 +9046,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
@@ -9055,7 +9055,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatm
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9093,7 +9093,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedBeatmapRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9103,7 +9103,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetSelectedGameplayModifiersRpc {
@@ -9111,7 +9111,7 @@ pub struct MenuRpcManager_SetSelectedGameplayModifiersRpc {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     >,
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9131,7 +9131,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
@@ -9141,7 +9141,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9179,7 +9179,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9189,13 +9189,13 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetStartGameTimeRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetStartGameTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<i64>,
 }
-#[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetStartGameTimeRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9215,14 +9215,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetStartGameTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<i64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetStartGameTimeRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9259,7 +9259,7 @@ impl crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+SetStartGameTimeRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -9269,7 +9269,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuRpcManager+StartLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+StartLevelRpc")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_StartLevelRpc {
@@ -9279,7 +9279,7 @@ pub struct MenuRpcManager_StartLevelRpc {
         i64,
     >,
 }
-#[cfg(feature = "MenuRpcManager+StartLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+StartLevelRpc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -9299,7 +9299,7 @@ for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
         false
     }
 }
-#[cfg(feature = "MenuRpcManager+StartLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+StartLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
@@ -9310,7 +9310,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuRpcManager+StartLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+StartLevelRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9347,7 +9347,7 @@ impl crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuRpcManager+StartLevelRpc")]
+#[cfg(feature = "cordl_class_MenuRpcManager+StartLevelRpc")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+TraceJsonReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TraceJsonReader {
@@ -7,7 +7,7 @@ pub struct TraceJsonReader {
     pub _textWriter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
     pub _sw: quest_hook::libil2cpp::Gc<crate::System::IO::StringWriter>,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+TraceJsonReader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+TraceJsonReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
     type Target = crate::Newtonsoft::Json::JsonReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+TraceJsonReader")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -613,7 +613,7 @@ impl crate::Newtonsoft::Json::Serialization::TraceJsonReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+TraceJsonReader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

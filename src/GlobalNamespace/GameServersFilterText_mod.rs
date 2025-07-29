@@ -1,4 +1,4 @@
-#[cfg(feature = "GameServersFilterText")]
+#[cfg(feature = "cordl_class_GameServersFilterText")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServersFilterText {
@@ -9,7 +9,7 @@ pub struct GameServersFilterText {
     >,
     pub _stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
-#[cfg(feature = "GameServersFilterText")]
+#[cfg(feature = "cordl_class_GameServersFilterText")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServersFilterText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::GameServersFilterText {
         false
     }
 }
-#[cfg(feature = "GameServersFilterText")]
+#[cfg(feature = "cordl_class_GameServersFilterText")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServersFilterText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServersFilterText")]
+#[cfg(feature = "cordl_class_GameServersFilterText")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServersFilterText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::GlobalNamespace::GameServersFilterText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServersFilterText")]
+#[cfg(feature = "cordl_class_GameServersFilterText")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServersFilterText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

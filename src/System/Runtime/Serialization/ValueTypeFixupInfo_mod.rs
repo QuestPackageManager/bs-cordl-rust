@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+ValueTypeFixupInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ValueTypeFixupInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValueTypeFixupInfo {
@@ -7,7 +7,7 @@ pub struct ValueTypeFixupInfo {
     pub _parentField: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
     pub _parentIndex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
-#[cfg(feature = "System+Runtime+Serialization+ValueTypeFixupInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ValueTypeFixupInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::ValueTypeFixupInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Runtime::Serialization::ValueTypeFixupInfo {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+ValueTypeFixupInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ValueTypeFixupInfo")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::ValueTypeFixupInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+ValueTypeFixupInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ValueTypeFixupInfo")]
 impl std::ops::DerefMut for crate::System::Runtime::Serialization::ValueTypeFixupInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -163,7 +163,7 @@ impl crate::System::Runtime::Serialization::ValueTypeFixupInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+ValueTypeFixupInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+ValueTypeFixupInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::ValueTypeFixupInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "Oculus+Platform+Models+OrgScopedID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+OrgScopedID")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrgScopedID {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_ID: u64,
 }
-#[cfg(feature = "Oculus+Platform+Models+OrgScopedID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+OrgScopedID")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::OrgScopedID {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Oculus::Platform::Models::OrgScopedID {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+OrgScopedID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+OrgScopedID")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::OrgScopedID {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+OrgScopedID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+OrgScopedID")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::OrgScopedID {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::Oculus::Platform::Models::OrgScopedID {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+OrgScopedID")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+OrgScopedID")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Models::OrgScopedID {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

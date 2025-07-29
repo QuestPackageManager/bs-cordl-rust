@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapEditorGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_BeatmapEditorGameplaySceneSetupData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEditorGameplaySceneSetupData {
@@ -7,7 +7,7 @@ pub struct BeatmapEditorGameplaySceneSetupData {
     pub recordVRMovement: bool,
     pub playVRMovement: bool,
 }
-#[cfg(feature = "BeatmapEditorGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_BeatmapEditorGameplaySceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
         false
     }
 }
-#[cfg(feature = "BeatmapEditorGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_BeatmapEditorGameplaySceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapEditorGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_BeatmapEditorGameplaySceneSetupData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapEditorGameplaySceneSetupData")]
+#[cfg(feature = "cordl_class_BeatmapEditorGameplaySceneSetupData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "GameServerBrowserStackedController")]
+#[cfg(feature = "cordl_class_GameServerBrowserStackedController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerBrowserStackedController {
     __cordl_parent: crate::HMUI::StackedController,
 }
-#[cfg(feature = "GameServerBrowserStackedController")]
+#[cfg(feature = "cordl_class_GameServerBrowserStackedController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServerBrowserStackedController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::GameServerBrowserStackedController {
         false
     }
 }
-#[cfg(feature = "GameServerBrowserStackedController")]
+#[cfg(feature = "cordl_class_GameServerBrowserStackedController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerBrowserStackedController {
     type Target = crate::HMUI::StackedController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServerBrowserStackedController")]
+#[cfg(feature = "cordl_class_GameServerBrowserStackedController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServerBrowserStackedController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -128,7 +128,7 @@ impl crate::GlobalNamespace::GameServerBrowserStackedController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServerBrowserStackedController")]
+#[cfg(feature = "cordl_class_GameServerBrowserStackedController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServerBrowserStackedController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

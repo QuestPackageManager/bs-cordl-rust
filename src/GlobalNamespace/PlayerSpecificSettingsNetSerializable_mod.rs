@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSpecificSettingsNetSerializable {
@@ -11,7 +11,7 @@ pub struct PlayerSpecificSettingsNetSerializable {
     pub headPosToPlayerHeightOffset: f32,
     pub colorScheme: crate::GlobalNamespace::ColorSchemeNetSerializable,
 }
-#[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
         false
     }
 }
-#[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -244,7 +244,7 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
+#[cfg(feature = "cordl_class_PlayerSpecificSettingsNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

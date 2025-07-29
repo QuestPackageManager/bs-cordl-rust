@@ -1,4 +1,4 @@
-#[cfg(feature = "ImageEffectController")]
+#[cfg(feature = "cordl_class_ImageEffectController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageEffectController {
@@ -7,7 +7,7 @@ pub struct ImageEffectController {
         crate::GlobalNamespace::ImageEffectController_RenderImageCallback,
     >,
 }
-#[cfg(feature = "ImageEffectController")]
+#[cfg(feature = "cordl_class_ImageEffectController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ImageEffectController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::ImageEffectController {
         false
     }
 }
-#[cfg(feature = "ImageEffectController")]
+#[cfg(feature = "cordl_class_ImageEffectController")]
 impl std::ops::Deref for crate::GlobalNamespace::ImageEffectController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ImageEffectController")]
+#[cfg(feature = "cordl_class_ImageEffectController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ImageEffectController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::ImageEffectController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ImageEffectController")]
+#[cfg(feature = "cordl_class_ImageEffectController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ImageEffectController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -143,13 +143,13 @@ for crate::GlobalNamespace::ImageEffectController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ImageEffectController+RenderImageCallback")]
+#[cfg(feature = "cordl_class_ImageEffectController+RenderImageCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageEffectController_RenderImageCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "ImageEffectController+RenderImageCallback")]
+#[cfg(feature = "cordl_class_ImageEffectController+RenderImageCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -169,7 +169,7 @@ for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
         false
     }
 }
-#[cfg(feature = "ImageEffectController+RenderImageCallback")]
+#[cfg(feature = "cordl_class_ImageEffectController+RenderImageCallback")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
     type Target = crate::System::MulticastDelegate;
@@ -177,7 +177,7 @@ for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ImageEffectController+RenderImageCallback")]
+#[cfg(feature = "cordl_class_ImageEffectController+RenderImageCallback")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -323,7 +323,7 @@ impl crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ImageEffectController+RenderImageCallback")]
+#[cfg(feature = "cordl_class_ImageEffectController+RenderImageCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

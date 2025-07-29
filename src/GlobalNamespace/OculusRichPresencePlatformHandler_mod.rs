@@ -1,10 +1,10 @@
-#[cfg(feature = "OculusRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_OculusRichPresencePlatformHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusRichPresencePlatformHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OculusRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_OculusRichPresencePlatformHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
         false
     }
 }
-#[cfg(feature = "OculusRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_OculusRichPresencePlatformHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_OculusRichPresencePlatformHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::OculusRichPresencePlatformHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusRichPresencePlatformHandler")]
+#[cfg(feature = "cordl_class_OculusRichPresencePlatformHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

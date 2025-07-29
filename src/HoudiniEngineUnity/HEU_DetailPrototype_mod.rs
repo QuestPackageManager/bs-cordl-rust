@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_DetailPrototype")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_DetailPrototype")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_DetailPrototype {
@@ -17,7 +17,7 @@ pub struct HEU_DetailPrototype {
     pub _noiseSpread: f32,
     pub _renderMode: i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_DetailPrototype")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_DetailPrototype")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_DetailPrototype {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::HoudiniEngineUnity::HEU_DetailPrototype {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_DetailPrototype")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_DetailPrototype")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_DetailPrototype {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_DetailPrototype")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_DetailPrototype")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_DetailPrototype {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -109,7 +109,7 @@ impl crate::HoudiniEngineUnity::HEU_DetailPrototype {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_DetailPrototype")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_DetailPrototype")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_DetailPrototype {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

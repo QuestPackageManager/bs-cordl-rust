@@ -1,4 +1,4 @@
-#[cfg(feature = "ClothRandomFluctuation")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClothRandomFluctuation {
@@ -18,7 +18,7 @@ pub struct ClothRandomFluctuation {
     >,
     pub _speed: f32,
 }
-#[cfg(feature = "ClothRandomFluctuation")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ClothRandomFluctuation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::ClothRandomFluctuation {
         false
     }
 }
-#[cfg(feature = "ClothRandomFluctuation")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation")]
 impl std::ops::Deref for crate::GlobalNamespace::ClothRandomFluctuation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ClothRandomFluctuation")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ClothRandomFluctuation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::ClothRandomFluctuation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ClothRandomFluctuation")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ClothRandomFluctuation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -164,7 +164,7 @@ for crate::GlobalNamespace::ClothRandomFluctuation {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ClothRandomFluctuation+SineLayer")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation+SineLayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClothRandomFluctuation_SineLayer {
@@ -172,7 +172,7 @@ pub struct ClothRandomFluctuation_SineLayer {
     pub multiplier: f32,
     pub offset: f32,
 }
-#[cfg(feature = "ClothRandomFluctuation+SineLayer")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation+SineLayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -192,14 +192,14 @@ for crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
         false
     }
 }
-#[cfg(feature = "ClothRandomFluctuation+SineLayer")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation+SineLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ClothRandomFluctuation+SineLayer")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation+SineLayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -236,7 +236,7 @@ impl crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ClothRandomFluctuation+SineLayer")]
+#[cfg(feature = "cordl_class_ClothRandomFluctuation+SineLayer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

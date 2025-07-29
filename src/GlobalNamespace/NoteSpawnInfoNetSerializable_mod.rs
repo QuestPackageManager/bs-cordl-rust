@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_NoteSpawnInfoNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteSpawnInfoNetSerializable {
@@ -24,7 +24,7 @@ pub struct NoteSpawnInfoNetSerializable {
     pub cutDirectionAngleOffset: f32,
     pub cutSfxVolumeMultiplier: f32,
 }
-#[cfg(feature = "NoteSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_NoteSpawnInfoNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
         false
     }
 }
-#[cfg(feature = "NoteSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_NoteSpawnInfoNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
     type Target = crate::GlobalNamespace::PoolableSerializable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_NoteSpawnInfoNetSerializable")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -268,7 +268,7 @@ impl crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteSpawnInfoNetSerializable")]
+#[cfg(feature = "cordl_class_NoteSpawnInfoNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

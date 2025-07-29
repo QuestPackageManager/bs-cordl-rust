@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+PreferBinarySerialization")]
+#[cfg(feature = "cordl_class_UnityEngine+PreferBinarySerialization")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PreferBinarySerialization {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+PreferBinarySerialization")]
+#[cfg(feature = "cordl_class_UnityEngine+PreferBinarySerialization")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PreferBinarySerialization {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::PreferBinarySerialization {
         false
     }
 }
-#[cfg(feature = "UnityEngine+PreferBinarySerialization")]
+#[cfg(feature = "cordl_class_UnityEngine+PreferBinarySerialization")]
 impl std::ops::Deref for crate::UnityEngine::PreferBinarySerialization {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+PreferBinarySerialization")]
+#[cfg(feature = "cordl_class_UnityEngine+PreferBinarySerialization")]
 impl std::ops::DerefMut for crate::UnityEngine::PreferBinarySerialization {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::UnityEngine::PreferBinarySerialization {
 }
 #[cfg(feature = "UnityEngine+PreferBinarySerialization")]
 impl crate::UnityEngine::PreferBinarySerialization {}
-#[cfg(feature = "UnityEngine+PreferBinarySerialization")]
+#[cfg(feature = "cordl_class_UnityEngine+PreferBinarySerialization")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::PreferBinarySerialization {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

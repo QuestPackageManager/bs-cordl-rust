@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Http+HttpRequestException")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpRequestException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpRequestException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "System+Net+Http+HttpRequestException")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpRequestException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::HttpRequestException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Net::Http::HttpRequestException {
         false
     }
 }
-#[cfg(feature = "System+Net+Http+HttpRequestException")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpRequestException")]
 impl std::ops::Deref for crate::System::Net::Http::HttpRequestException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Http+HttpRequestException")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpRequestException")]
 impl std::ops::DerefMut for crate::System::Net::Http::HttpRequestException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -145,7 +145,7 @@ impl crate::System::Net::Http::HttpRequestException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Http+HttpRequestException")]
+#[cfg(feature = "cordl_class_System+Net+Http+HttpRequestException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::HttpRequestException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

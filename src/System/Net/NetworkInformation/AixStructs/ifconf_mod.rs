@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifconf")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifconf")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ifconf {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifconf")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifconf")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::AixStructs::ifconf {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifconf {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifconf")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifconf")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixStructs::ifconf {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifconf {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifconf")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifconf")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixStructs::ifconf {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifconf {
         self
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifconf")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifconf")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixStructs::ifconf {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifconf {
         }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifconf")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifconf")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixStructs::ifconf {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifconf {
         actual
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifconf")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixStructs+ifconf")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::NetworkInformation::AixStructs::ifconf {
     type Type = Self;

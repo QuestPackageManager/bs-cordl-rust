@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+ICustomTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ICustomTypeDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ICustomTypeDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+ICustomTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ICustomTypeDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::ICustomTypeDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::ICustomTypeDescriptor {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+ICustomTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ICustomTypeDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::ICustomTypeDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+ICustomTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ICustomTypeDescriptor")]
 impl std::ops::DerefMut for crate::System::ComponentModel::ICustomTypeDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -415,7 +415,7 @@ impl crate::System::ComponentModel::ICustomTypeDescriptor {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+ComponentModel+ICustomTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ICustomTypeDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::ICustomTypeDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

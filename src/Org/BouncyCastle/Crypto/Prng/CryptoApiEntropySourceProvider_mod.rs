@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptoApiEntropySourceProvider {
@@ -8,7 +10,9 @@ pub struct CryptoApiEntropySourceProvider {
     >,
     pub mPredictionResistant: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +32,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -36,7 +42,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -154,7 +162,9 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -181,7 +191,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -194,7 +204,7 @@ pub struct CryptoApiEntropySourceProvider_CryptoApiEntropySource {
     pub mEntropySize: i32,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
@@ -216,7 +226,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Crypt
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
@@ -226,7 +236,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Crypt
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
@@ -367,7 +377,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Cryp
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {

@@ -1,4 +1,4 @@
-#[cfg(feature = "SyncTimeProvider")]
+#[cfg(feature = "cordl_class_SyncTimeProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SyncTimeProvider {
@@ -7,7 +7,7 @@ pub struct SyncTimeProvider {
         crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
 }
-#[cfg(feature = "SyncTimeProvider")]
+#[cfg(feature = "cordl_class_SyncTimeProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SyncTimeProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SyncTimeProv
         false
     }
 }
-#[cfg(feature = "SyncTimeProvider")]
+#[cfg(feature = "cordl_class_SyncTimeProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::SyncTimeProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SyncTimeProvider")]
+#[cfg(feature = "cordl_class_SyncTimeProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SyncTimeProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::SyncTimeProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SyncTimeProvider")]
+#[cfg(feature = "cordl_class_SyncTimeProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SyncTimeProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

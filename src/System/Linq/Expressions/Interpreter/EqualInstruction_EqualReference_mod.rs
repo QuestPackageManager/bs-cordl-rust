@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EqualInstruction_EqualReference {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::EqualInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EqualInstruction_EqualReference {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +28,18 @@ for crate::GlobalNamespace::EqualInstruction_EqualReference {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference"
+)]
 impl std::ops::Deref for crate::GlobalNamespace::EqualInstruction_EqualReference {
     type Target = crate::System::Linq::Expressions::Interpreter::EqualInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference"
+)]
 impl std::ops::DerefMut for crate::GlobalNamespace::EqualInstruction_EqualReference {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +106,9 @@ impl crate::GlobalNamespace::EqualInstruction_EqualReference {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EqualInstruction_EqualReference {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_PipelineType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PipelineType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PipelineType {
@@ -8,7 +8,7 @@ pub enum HEU_PipelineType {
     URP = 2i32,
     Unsupported = 0i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PipelineType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PipelineType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_PipelineType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Pipel
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PipelineType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PipelineType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_PipelineType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::HoudiniEngineUnity::HEU_PipelineType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PipelineType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PipelineType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_PipelineType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::HoudiniEngineUnity::HEU_PipelineType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PipelineType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PipelineType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_PipelineType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::HoudiniEngineUnity::HEU_PipelineType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_PipelineType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PipelineType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_PipelineType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "QuaternionSerializable")]
+#[cfg(feature = "cordl_class_QuaternionSerializable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct QuaternionSerializable {
@@ -6,7 +6,7 @@ pub struct QuaternionSerializable {
     pub _b: i32,
     pub _c: i32,
 }
-#[cfg(feature = "QuaternionSerializable")]
+#[cfg(feature = "cordl_class_QuaternionSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::QuaternionSerializable {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::QuaternionSerializable {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "QuaternionSerializable")]
+#[cfg(feature = "cordl_class_QuaternionSerializable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::QuaternionSerializable {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::QuaternionSerializable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "QuaternionSerializable")]
+#[cfg(feature = "cordl_class_QuaternionSerializable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::QuaternionSerializable {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::QuaternionSerializable {
         self
     }
 }
-#[cfg(feature = "QuaternionSerializable")]
+#[cfg(feature = "cordl_class_QuaternionSerializable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::QuaternionSerializable {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::QuaternionSerializable {
         }
     }
 }
-#[cfg(feature = "QuaternionSerializable")]
+#[cfg(feature = "cordl_class_QuaternionSerializable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::QuaternionSerializable {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::GlobalNamespace::QuaternionSerializable {
         actual
     }
 }
-#[cfg(feature = "QuaternionSerializable")]
+#[cfg(feature = "cordl_class_QuaternionSerializable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::QuaternionSerializable {
     type Type = Self;

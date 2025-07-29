@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+InputFieldView")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldView {
@@ -27,7 +27,7 @@ pub struct InputFieldView {
         crate::UnityEngine::YieldInstruction,
     >,
 }
-#[cfg(feature = "HMUI+InputFieldView")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InputFieldView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -46,14 +46,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InputFieldView {
         false
     }
 }
-#[cfg(feature = "HMUI+InputFieldView")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView")]
 impl std::ops::Deref for crate::HMUI::InputFieldView {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+InputFieldView")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView")]
 impl std::ops::DerefMut for crate::HMUI::InputFieldView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -684,7 +684,7 @@ impl crate::HMUI::InputFieldView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+InputFieldView")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::InputFieldView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -693,7 +693,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::InputFieldView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+InputFieldChanged")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldView_InputFieldChanged {
@@ -701,7 +701,7 @@ pub struct InputFieldView_InputFieldChanged {
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >,
 }
-#[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+InputFieldChanged")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::InputFieldView_InputFieldChanged {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -721,7 +721,7 @@ for crate::HMUI::InputFieldView_InputFieldChanged {
         false
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+InputFieldChanged")]
 impl std::ops::Deref for crate::HMUI::InputFieldView_InputFieldChanged {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
@@ -730,7 +730,7 @@ impl std::ops::Deref for crate::HMUI::InputFieldView_InputFieldChanged {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+InputFieldChanged")]
 impl std::ops::DerefMut for crate::HMUI::InputFieldView_InputFieldChanged {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -767,7 +767,7 @@ impl crate::HMUI::InputFieldView_InputFieldChanged {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+InputFieldChanged")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HMUI::InputFieldView_InputFieldChanged {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -777,7 +777,7 @@ for crate::HMUI::InputFieldView_InputFieldChanged {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+SelectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputFieldView_SelectionState {
@@ -788,7 +788,7 @@ pub enum InputFieldView_SelectionState {
     Pressed = 2i32,
     Selected = 4i32,
 }
-#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InputFieldView_SelectionState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -817,7 +817,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InputFieldView_Selectio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::InputFieldView_SelectionState {
     type Type = Self;
@@ -828,7 +828,7 @@ for crate::HMUI::InputFieldView_SelectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::InputFieldView_SelectionState {
     type Actual = Self;
@@ -842,7 +842,7 @@ for crate::HMUI::InputFieldView_SelectionState {
         self
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::InputFieldView_SelectionState {
     type Type = Self;
@@ -857,7 +857,7 @@ for crate::HMUI::InputFieldView_SelectionState {
         }
     }
 }
-#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
+#[cfg(feature = "cordl_class_HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::InputFieldView_SelectionState {
     type Actual = Self;

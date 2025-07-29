@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Data+ZeroOpNode")]
+#[cfg(feature = "cordl_class_System+Data+ZeroOpNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZeroOpNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
     pub _op: i32,
 }
-#[cfg(feature = "System+Data+ZeroOpNode")]
+#[cfg(feature = "cordl_class_System+Data+ZeroOpNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::ZeroOpNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::ZeroOpNode {
         false
     }
 }
-#[cfg(feature = "System+Data+ZeroOpNode")]
+#[cfg(feature = "cordl_class_System+Data+ZeroOpNode")]
 impl std::ops::Deref for crate::System::Data::ZeroOpNode {
     type Target = crate::System::Data::ExpressionNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+ZeroOpNode")]
+#[cfg(feature = "cordl_class_System+Data+ZeroOpNode")]
 impl std::ops::DerefMut for crate::System::Data::ZeroOpNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -293,7 +293,7 @@ impl crate::System::Data::ZeroOpNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+ZeroOpNode")]
+#[cfg(feature = "cordl_class_System+Data+ZeroOpNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::ZeroOpNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

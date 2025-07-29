@@ -1,10 +1,10 @@
-#[cfg(feature = "PS4PlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_PS4PlatformAdditionalContentModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4PlatformAdditionalContentModel {
     __cordl_parent: crate::GlobalNamespace::SonyPlatformAdditionalContentModel,
 }
-#[cfg(feature = "PS4PlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_PS4PlatformAdditionalContentModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
         false
     }
 }
-#[cfg(feature = "PS4PlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_PS4PlatformAdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
     type Target = crate::GlobalNamespace::SonyPlatformAdditionalContentModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS4PlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_PS4PlatformAdditionalContentModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS4PlatformAdditionalContentModel")]
+#[cfg(feature = "cordl_class_PS4PlatformAdditionalContentModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

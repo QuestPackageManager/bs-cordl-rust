@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Rendering+RenderPipelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipelineAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderPipelineAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderPipelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipelineAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::RenderPipelineAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Rendering::RenderPipelineAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderPipelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipelineAsset")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::RenderPipelineAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderPipelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipelineAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Rendering::RenderPipelineAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -759,7 +759,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+RenderPipelineAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipelineAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Rendering::RenderPipelineAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

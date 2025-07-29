@@ -1,4 +1,4 @@
-#[cfg(feature = "ImageWithHintItemsList")]
+#[cfg(feature = "cordl_class_ImageWithHintItemsList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageWithHintItemsList {
@@ -6,7 +6,7 @@ pub struct ImageWithHintItemsList {
         quest_hook::libil2cpp::Gc<crate::HMUI::ImageWithHint>,
     >,
 }
-#[cfg(feature = "ImageWithHintItemsList")]
+#[cfg(feature = "cordl_class_ImageWithHintItemsList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ImageWithHintItemsList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::ImageWithHintItemsList {
         false
     }
 }
-#[cfg(feature = "ImageWithHintItemsList")]
+#[cfg(feature = "cordl_class_ImageWithHintItemsList")]
 impl std::ops::Deref for crate::GlobalNamespace::ImageWithHintItemsList {
     type Target = crate::HMUI::UIItemsList_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::ImageWithHint>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ImageWithHintItemsList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ImageWithHintItemsList")]
+#[cfg(feature = "cordl_class_ImageWithHintItemsList")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ImageWithHintItemsList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::ImageWithHintItemsList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ImageWithHintItemsList")]
+#[cfg(feature = "cordl_class_ImageWithHintItemsList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ImageWithHintItemsList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotNullWhenAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ReturnValue_k__BackingField: bool,
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::CodeAnalysis::NotNullWhenAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Diagnostics::CodeAnalysis::NotNullWhenAttribute {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::CodeAnalysis::NotNullWhenAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
 impl std::ops::DerefMut
 for crate::System::Diagnostics::CodeAnalysis::NotNullWhenAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -90,7 +90,7 @@ impl crate::System::Diagnostics::CodeAnalysis::NotNullWhenAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+NotNullWhenAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::CodeAnalysis::NotNullWhenAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

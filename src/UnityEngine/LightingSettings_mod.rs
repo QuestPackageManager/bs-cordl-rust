@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+LightingSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+LightingSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightingSettings {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+LightingSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+LightingSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightingSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightingSettings
         false
     }
 }
-#[cfg(feature = "UnityEngine+LightingSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+LightingSettings")]
 impl std::ops::Deref for crate::UnityEngine::LightingSettings {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+LightingSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+LightingSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::LightingSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -250,7 +250,7 @@ impl crate::UnityEngine::LightingSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+LightingSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+LightingSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::LightingSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

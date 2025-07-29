@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceProviderBase {
@@ -6,7 +8,9 @@ pub struct ResourceProviderBase {
     pub m_ProviderId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_BehaviourFlags: crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +30,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +40,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -366,7 +374,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -413,7 +423,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -424,7 +434,7 @@ pub struct ResourceProviderBase_BaseInitAsyncOp {
     pub m_CallBack: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {
@@ -446,7 +456,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {
@@ -458,7 +468,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {
@@ -564,7 +574,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {

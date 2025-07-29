@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Animations+AnimatorControllerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimatorControllerPlayable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimatorControllerPlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }
-#[cfg(feature = "UnityEngine+Animations+AnimatorControllerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimatorControllerPlayable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Animations::AnimatorControllerPlayable {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::Animations::AnimatorControllerPlayable {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Animations+AnimatorControllerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimatorControllerPlayable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Animations::AnimatorControllerPlayable {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::Animations::AnimatorControllerPlayable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Animations+AnimatorControllerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimatorControllerPlayable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Animations::AnimatorControllerPlayable {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Animations::AnimatorControllerPlayable {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Animations+AnimatorControllerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimatorControllerPlayable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Animations::AnimatorControllerPlayable {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::Animations::AnimatorControllerPlayable {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Animations+AnimatorControllerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimatorControllerPlayable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Animations::AnimatorControllerPlayable {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Animations::AnimatorControllerPlayable {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Animations+AnimatorControllerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Animations+AnimatorControllerPlayable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Animations::AnimatorControllerPlayable {
     type Type = Self;

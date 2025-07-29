@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Buffers+Binary+BinaryPrimitives")]
+#[cfg(feature = "cordl_class_System+Buffers+Binary+BinaryPrimitives")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryPrimitives {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Buffers+Binary+BinaryPrimitives")]
+#[cfg(feature = "cordl_class_System+Buffers+Binary+BinaryPrimitives")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Buffers::Binary::BinaryPrimitives {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Buffers::Binary::BinaryPrimitives {
         false
     }
 }
-#[cfg(feature = "System+Buffers+Binary+BinaryPrimitives")]
+#[cfg(feature = "cordl_class_System+Buffers+Binary+BinaryPrimitives")]
 impl std::ops::Deref for crate::System::Buffers::Binary::BinaryPrimitives {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Buffers+Binary+BinaryPrimitives")]
+#[cfg(feature = "cordl_class_System+Buffers+Binary+BinaryPrimitives")]
 impl std::ops::DerefMut for crate::System::Buffers::Binary::BinaryPrimitives {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -135,7 +135,7 @@ impl crate::System::Buffers::Binary::BinaryPrimitives {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Buffers+Binary+BinaryPrimitives")]
+#[cfg(feature = "cordl_class_System+Buffers+Binary+BinaryPrimitives")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Buffers::Binary::BinaryPrimitives {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

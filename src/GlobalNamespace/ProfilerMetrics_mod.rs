@@ -1,4 +1,4 @@
-#[cfg(feature = "ProfilerMetrics")]
+#[cfg(feature = "cordl_class_ProfilerMetrics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProfilerMetrics {
@@ -15,7 +15,7 @@ pub struct ProfilerMetrics {
         crate::System::Collections::Generic::List_1<i64>,
     >,
 }
-#[cfg(feature = "ProfilerMetrics")]
+#[cfg(feature = "cordl_class_ProfilerMetrics")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ProfilerMetrics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ProfilerMetr
         false
     }
 }
-#[cfg(feature = "ProfilerMetrics")]
+#[cfg(feature = "cordl_class_ProfilerMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::ProfilerMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ProfilerMetrics")]
+#[cfg(feature = "cordl_class_ProfilerMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ProfilerMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -446,7 +446,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ProfilerMetrics")]
+#[cfg(feature = "cordl_class_ProfilerMetrics")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfilerMetrics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -467,14 +467,14 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::ProfilerMetri
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
+#[cfg(feature = "cordl_class_ProfilerMetrics+ProfilerMetric")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProfilerMetrics_ProfilerMetric {
     pub category: crate::Unity::Profiling::ProfilerCategory,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
+#[cfg(feature = "cordl_class_ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Held<'a> = Self;
@@ -504,7 +504,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
+#[cfg(feature = "cordl_class_ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Type = Self;
@@ -515,7 +515,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
+#[cfg(feature = "cordl_class_ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Actual = Self;
@@ -529,7 +529,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
         self
     }
 }
-#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
+#[cfg(feature = "cordl_class_ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Type = Self;
@@ -544,7 +544,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
         }
     }
 }
-#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
+#[cfg(feature = "cordl_class_ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Actual = Self;
@@ -558,7 +558,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
         actual
     }
 }
-#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
+#[cfg(feature = "cordl_class_ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Type = Self;

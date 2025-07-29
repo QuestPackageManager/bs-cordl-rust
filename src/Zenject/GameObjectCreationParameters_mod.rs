@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+GameObjectCreationParameters")]
+#[cfg(feature = "cordl_class_Zenject+GameObjectCreationParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObjectCreationParameters {
@@ -25,7 +25,7 @@ pub struct GameObjectCreationParameters {
         crate::UnityEngine::Quaternion,
     >,
 }
-#[cfg(feature = "Zenject+GameObjectCreationParameters")]
+#[cfg(feature = "cordl_class_Zenject+GameObjectCreationParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::GameObjectCreationParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::Zenject::GameObjectCreationParameters {
         false
     }
 }
-#[cfg(feature = "Zenject+GameObjectCreationParameters")]
+#[cfg(feature = "cordl_class_Zenject+GameObjectCreationParameters")]
 impl std::ops::Deref for crate::Zenject::GameObjectCreationParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+GameObjectCreationParameters")]
+#[cfg(feature = "cordl_class_Zenject+GameObjectCreationParameters")]
 impl std::ops::DerefMut for crate::Zenject::GameObjectCreationParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -567,7 +567,7 @@ impl crate::Zenject::GameObjectCreationParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+GameObjectCreationParameters")]
+#[cfg(feature = "cordl_class_Zenject+GameObjectCreationParameters")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::GameObjectCreationParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

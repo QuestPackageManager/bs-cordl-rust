@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+TrackBindingTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackBindingTypeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackBindingTypeAttribute {
@@ -6,7 +6,7 @@ pub struct TrackBindingTypeAttribute {
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub flags: crate::UnityEngine::Timeline::TrackBindingFlags,
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackBindingTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackBindingTypeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TrackBindingTypeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::UnityEngine::Timeline::TrackBindingTypeAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackBindingTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackBindingTypeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TrackBindingTypeAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackBindingTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackBindingTypeAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackBindingTypeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ impl crate::UnityEngine::Timeline::TrackBindingTypeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackBindingTypeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackBindingTypeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TrackBindingTypeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

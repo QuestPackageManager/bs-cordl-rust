@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedType")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SerializedType {
@@ -7,7 +7,7 @@ pub struct SerializedType {
     pub m_CachedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _ValueChanged_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Type = Self;

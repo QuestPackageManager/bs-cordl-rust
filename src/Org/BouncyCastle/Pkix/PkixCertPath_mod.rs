@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPath")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixCertPath {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certificates: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPath")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Pkix::PkixCertPath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Pkix::PkixCertPath {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPath")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixCertPath {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPath")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::PkixCertPath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -404,7 +404,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPath")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Pkix::PkixCertPath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

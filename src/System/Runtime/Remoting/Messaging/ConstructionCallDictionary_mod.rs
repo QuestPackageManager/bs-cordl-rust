@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstructionCallDictionary {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::MessageDictionary,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     type Target = crate::System::Runtime::Remoting::Messaging::MessageDictionary;
@@ -32,7 +38,9 @@ for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -145,7 +153,9 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

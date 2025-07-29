@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+Polyglot+LocalizedText")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedText")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedText {
@@ -6,7 +6,7 @@ pub struct LocalizedText {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     >,
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizedText")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedText")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::LocalizedText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::LocalizedTex
         false
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizedText")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedText")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedText {
     type Target = crate::BGLib::Polyglot::LocalizedTextComponent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedText {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizedText")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedText")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizedText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -213,7 +213,7 @@ impl crate::BGLib::Polyglot::LocalizedText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+LocalizedText")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedText")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::LocalizedText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

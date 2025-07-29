@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Transform")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Transform {
     __cordl_parent: crate::UnityEngine::Component,
 }
-#[cfg(feature = "UnityEngine+Transform")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Transform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Transform {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Transform")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform")]
 impl std::ops::Deref for crate::UnityEngine::Transform {
     type Target = crate::UnityEngine::Component;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Transform")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform")]
 impl std::ops::DerefMut for crate::UnityEngine::Transform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4135,7 +4135,7 @@ impl crate::UnityEngine::Transform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Transform")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Transform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -4156,7 +4156,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::UnityEngine::Tran
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+Transform+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform+Enumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Transform_Enumerator {
@@ -4164,7 +4164,7 @@ pub struct Transform_Enumerator {
     pub outer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub currentIndex: i32,
 }
-#[cfg(feature = "UnityEngine+Transform+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Transform_Enumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -4183,14 +4183,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Transform_Enumer
         false
     }
 }
-#[cfg(feature = "UnityEngine+Transform+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform+Enumerator")]
 impl std::ops::Deref for crate::UnityEngine::Transform_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Transform+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform+Enumerator")]
 impl std::ops::DerefMut for crate::UnityEngine::Transform_Enumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4299,7 +4299,7 @@ impl crate::UnityEngine::Transform_Enumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Transform+Enumerator")]
+#[cfg(feature = "cordl_class_UnityEngine+Transform+Enumerator")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Transform_Enumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

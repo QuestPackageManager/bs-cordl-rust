@@ -1,4 +1,4 @@
-#[cfg(feature = "CustomTimelineTween")]
+#[cfg(feature = "cordl_class_CustomTimelineTween")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomTimelineTween {
@@ -12,7 +12,7 @@ pub struct CustomTimelineTween {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
-#[cfg(feature = "CustomTimelineTween")]
+#[cfg(feature = "cordl_class_CustomTimelineTween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CustomTimelineTween {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CustomTimeli
         false
     }
 }
-#[cfg(feature = "CustomTimelineTween")]
+#[cfg(feature = "cordl_class_CustomTimelineTween")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomTimelineTween {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CustomTimelineTween")]
+#[cfg(feature = "cordl_class_CustomTimelineTween")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CustomTimelineTween {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::CustomTimelineTween {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CustomTimelineTween")]
+#[cfg(feature = "cordl_class_CustomTimelineTween")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomTimelineTween {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

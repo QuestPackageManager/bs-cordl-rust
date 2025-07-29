@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+AssemblyMetadataAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyMetadataAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyMetadataAttribute {
@@ -10,7 +10,7 @@ pub struct AssemblyMetadataAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+Reflection+AssemblyMetadataAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyMetadataAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::AssemblyMetadataAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Reflection::AssemblyMetadataAttribute {
         false
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyMetadataAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyMetadataAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyMetadataAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyMetadataAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyMetadataAttribute")]
 impl std::ops::DerefMut for crate::System::Reflection::AssemblyMetadataAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -90,7 +90,7 @@ impl crate::System::Reflection::AssemblyMetadataAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyMetadataAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyMetadataAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::AssemblyMetadataAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

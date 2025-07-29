@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelCollectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelCollectionNavigationController {
@@ -82,7 +82,7 @@ pub struct LevelCollectionNavigationController {
     >,
     pub _floatTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
 }
-#[cfg(feature = "LevelCollectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelCollectionNavigationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -102,14 +102,14 @@ for crate::GlobalNamespace::LevelCollectionNavigationController {
         false
     }
 }
-#[cfg(feature = "LevelCollectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCollectionNavigationController {
     type Target = crate::HMUI::NavigationController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelCollectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelCollectionNavigationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1499,7 +1499,7 @@ impl crate::GlobalNamespace::LevelCollectionNavigationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelCollectionNavigationController")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelCollectionNavigationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1509,7 +1509,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController+AlphaAnimationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelCollectionNavigationController_AlphaAnimationType {
@@ -1517,7 +1517,7 @@ pub enum LevelCollectionNavigationController_AlphaAnimationType {
     In = 0i32,
     Out = 1i32,
 }
-#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Held<'a> = Self;
@@ -1547,7 +1547,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationTy
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Type = Self;
@@ -1558,7 +1558,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationTy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Actual = Self;
@@ -1572,7 +1572,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationTy
         self
     }
 }
-#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Type = Self;
@@ -1587,7 +1587,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationTy
         }
     }
 }
-#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
+#[cfg(feature = "cordl_class_LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Actual = Self;

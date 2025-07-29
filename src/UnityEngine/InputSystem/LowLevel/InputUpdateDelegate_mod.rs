@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputUpdateDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -194,7 +194,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdateDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

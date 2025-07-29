@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecP160R2Point {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpPoint,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R2Point {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R2Point {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R2Point {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpPoint;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R2Point {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R2Point {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -396,7 +396,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R2Point {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R2Point")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R2Point {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

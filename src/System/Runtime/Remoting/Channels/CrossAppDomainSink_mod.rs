@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CrossAppDomainSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _domainID: i32,
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -292,7 +292,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -318,7 +318,9 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CrossAppDomainSink_ProcessMessageRes {
@@ -327,7 +329,9 @@ pub struct CrossAppDomainSink_ProcessMessageRes {
         crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage,
     >,
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
     type Held<'a> = Self;
@@ -357,7 +361,9 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
     type Type = Self;
@@ -368,7 +374,9 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
     type Actual = Self;
@@ -382,7 +390,9 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
         self
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
     type Type = Self;
@@ -397,7 +407,9 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
         }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
     type Actual = Self;
@@ -411,7 +423,9 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessag
         actual
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes {
     type Type = Self;

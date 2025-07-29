@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerPlayerLayout")]
+#[cfg(feature = "cordl_class_MultiplayerPlayerLayout")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerPlayerLayout {
@@ -7,7 +7,7 @@ pub enum MultiplayerPlayerLayout {
     Duel = 2i32,
     NotDetermined = 0i32,
 }
-#[cfg(feature = "MultiplayerPlayerLayout")]
+#[cfg(feature = "cordl_class_MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::MultiplayerPlayerLayout {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerPlayerLayout")]
+#[cfg(feature = "cordl_class_MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::MultiplayerPlayerLayout {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerPlayerLayout")]
+#[cfg(feature = "cordl_class_MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::MultiplayerPlayerLayout {
         self
     }
 }
-#[cfg(feature = "MultiplayerPlayerLayout")]
+#[cfg(feature = "cordl_class_MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::MultiplayerPlayerLayout {
         }
     }
 }
-#[cfg(feature = "MultiplayerPlayerLayout")]
+#[cfg(feature = "cordl_class_MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Actual = Self;

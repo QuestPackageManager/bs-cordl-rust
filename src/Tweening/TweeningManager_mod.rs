@@ -1,4 +1,4 @@
-#[cfg(feature = "Tweening+TweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TweeningManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TweeningManager {
@@ -40,7 +40,7 @@ pub struct TweeningManager {
     >,
     pub _parityOfNextNewTween: crate::Tweening::FrameParity,
 }
-#[cfg(feature = "Tweening+TweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TweeningManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::TweeningManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -59,14 +59,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::TweeningManager {
         false
     }
 }
-#[cfg(feature = "Tweening+TweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TweeningManager")]
 impl std::ops::Deref for crate::Tweening::TweeningManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tweening+TweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TweeningManager")]
 impl std::ops::DerefMut for crate::Tweening::TweeningManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -392,7 +392,7 @@ impl crate::Tweening::TweeningManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tweening+TweeningManager")]
+#[cfg(feature = "cordl_class_Tweening+TweeningManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tweening::TweeningManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

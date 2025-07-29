@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+PreserveReferencesHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+PreserveReferencesHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PreserveReferencesHandling {
@@ -8,7 +8,7 @@ pub enum PreserveReferencesHandling {
     None = 0i32,
     Objects = 1i32,
 }
-#[cfg(feature = "Newtonsoft+Json+PreserveReferencesHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+PreserveReferencesHandling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::PreserveReferencesHandling {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Newtonsoft::Json::PreserveReferencesHandling {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+PreserveReferencesHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+PreserveReferencesHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::PreserveReferencesHandling {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Newtonsoft::Json::PreserveReferencesHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+PreserveReferencesHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+PreserveReferencesHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::PreserveReferencesHandling {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Newtonsoft::Json::PreserveReferencesHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+PreserveReferencesHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+PreserveReferencesHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::PreserveReferencesHandling {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Newtonsoft::Json::PreserveReferencesHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+PreserveReferencesHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+PreserveReferencesHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::PreserveReferencesHandling {
     type Actual = Self;

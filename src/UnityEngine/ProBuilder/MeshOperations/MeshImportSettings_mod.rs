@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshImportSettings {
@@ -7,7 +7,7 @@ pub struct MeshImportSettings {
     pub m_Smoothing: bool,
     pub m_SmoothingThreshold: f32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -229,7 +229,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

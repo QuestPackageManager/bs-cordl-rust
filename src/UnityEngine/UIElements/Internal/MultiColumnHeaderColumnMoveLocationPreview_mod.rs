@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct MultiColumnHeaderColumnMoveLocationPreview {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview {
@@ -29,7 +29,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocatio
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview {
@@ -39,7 +39,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocatio
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview {
@@ -81,7 +81,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocati
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview {

@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+StringSwitchInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringSwitchInstruction {
@@ -13,7 +15,9 @@ pub struct StringSwitchInstruction {
         crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+StringSwitchInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +37,9 @@ for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+StringSwitchInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -41,7 +47,9 @@ for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+StringSwitchInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -188,7 +196,9 @@ impl crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+StringSwitchInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

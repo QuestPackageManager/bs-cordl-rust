@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_BeatmapEditorScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEditorScenesTransitionSetupDataSO {
@@ -12,7 +12,7 @@ pub struct BeatmapEditorScenesTransitionSetupDataSO {
     >,
     pub _goStraightToEditor_k__BackingField: bool,
 }
-#[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_BeatmapEditorScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_BeatmapEditorScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_BeatmapEditorScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -240,7 +240,7 @@ impl crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_BeatmapEditorScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

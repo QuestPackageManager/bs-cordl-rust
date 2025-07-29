@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+FSharpFunction")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+FSharpFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FSharpFunction {
@@ -11,7 +11,7 @@ pub struct FSharpFunction {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+FSharpFunction")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+FSharpFunction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::FSharpFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::Newtonsoft::Json::Utilities::FSharpFunction {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+FSharpFunction")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+FSharpFunction")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::FSharpFunction {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+FSharpFunction")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+FSharpFunction")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::FSharpFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::Newtonsoft::Json::Utilities::FSharpFunction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+FSharpFunction")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+FSharpFunction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::FSharpFunction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

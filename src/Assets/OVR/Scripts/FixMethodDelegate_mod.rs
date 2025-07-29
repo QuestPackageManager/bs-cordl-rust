@@ -1,10 +1,10 @@
-#[cfg(feature = "Assets+OVR+Scripts+FixMethodDelegate")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+FixMethodDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixMethodDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Assets+OVR+Scripts+FixMethodDelegate")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+FixMethodDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Assets::OVR::Scripts::FixMethodDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Assets::OVR::Scripts::FixMethodDelegate {
         false
     }
 }
-#[cfg(feature = "Assets+OVR+Scripts+FixMethodDelegate")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+FixMethodDelegate")]
 impl std::ops::Deref for crate::Assets::OVR::Scripts::FixMethodDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Assets+OVR+Scripts+FixMethodDelegate")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+FixMethodDelegate")]
 impl std::ops::DerefMut for crate::Assets::OVR::Scripts::FixMethodDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -184,7 +184,7 @@ impl crate::Assets::OVR::Scripts::FixMethodDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Assets+OVR+Scripts+FixMethodDelegate")]
+#[cfg(feature = "cordl_class_Assets+OVR+Scripts+FixMethodDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Assets::OVR::Scripts::FixMethodDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

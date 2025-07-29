@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+ETextureType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ETextureType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ETextureType {
@@ -12,7 +12,7 @@ pub enum ETextureType {
     OpenGL = 1i32,
     Vulkan = 2i32,
 }
-#[cfg(feature = "OVR+OpenVR+ETextureType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ETextureType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::ETextureType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::ETextureType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+ETextureType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ETextureType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::ETextureType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -51,7 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::ETextureType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+ETextureType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ETextureType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::ETextureType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -64,7 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::ETextureTyp
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+ETextureType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ETextureType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::ETextureType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -78,7 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::ETextureType
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+ETextureType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ETextureType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::ETextureType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

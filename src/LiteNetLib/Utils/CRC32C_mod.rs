@@ -1,10 +1,10 @@
-#[cfg(feature = "LiteNetLib+Utils+CRC32C")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+CRC32C")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CRC32C {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "LiteNetLib+Utils+CRC32C")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+CRC32C")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::CRC32C {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::CRC32C {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+CRC32C")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+CRC32C")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::CRC32C {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+CRC32C")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+CRC32C")]
 impl std::ops::DerefMut for crate::LiteNetLib::Utils::CRC32C {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -74,7 +74,7 @@ impl crate::LiteNetLib::Utils::CRC32C {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+CRC32C")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+CRC32C")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::CRC32C {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

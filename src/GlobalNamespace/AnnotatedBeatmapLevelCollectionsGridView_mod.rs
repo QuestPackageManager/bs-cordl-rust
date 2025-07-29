@@ -1,4 +1,4 @@
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsGridView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionsGridView {
@@ -49,7 +49,7 @@ pub struct AnnotatedBeatmapLevelCollectionsGridView {
     >,
     pub _selectedCellIndex: i32,
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsGridView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -69,7 +69,7 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
         false
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsGridView")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsGridView")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -759,7 +759,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
+#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsGridView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

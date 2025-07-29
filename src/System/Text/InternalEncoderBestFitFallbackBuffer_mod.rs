@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+InternalEncoderBestFitFallbackBuffer")]
+#[cfg(feature = "cordl_class_System+Text+InternalEncoderBestFitFallbackBuffer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalEncoderBestFitFallbackBuffer {
@@ -10,7 +10,7 @@ pub struct InternalEncoderBestFitFallbackBuffer {
     pub _iCount: i32,
     pub _iSize: i32,
 }
-#[cfg(feature = "System+Text+InternalEncoderBestFitFallbackBuffer")]
+#[cfg(feature = "cordl_class_System+Text+InternalEncoderBestFitFallbackBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::InternalEncoderBestFitFallbackBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Text::InternalEncoderBestFitFallbackBuffer {
         false
     }
 }
-#[cfg(feature = "System+Text+InternalEncoderBestFitFallbackBuffer")]
+#[cfg(feature = "cordl_class_System+Text+InternalEncoderBestFitFallbackBuffer")]
 impl std::ops::Deref for crate::System::Text::InternalEncoderBestFitFallbackBuffer {
     type Target = crate::System::Text::EncoderFallbackBuffer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+InternalEncoderBestFitFallbackBuffer")]
+#[cfg(feature = "cordl_class_System+Text+InternalEncoderBestFitFallbackBuffer")]
 impl std::ops::DerefMut for crate::System::Text::InternalEncoderBestFitFallbackBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -251,7 +251,7 @@ impl crate::System::Text::InternalEncoderBestFitFallbackBuffer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+InternalEncoderBestFitFallbackBuffer")]
+#[cfg(feature = "cordl_class_System+Text+InternalEncoderBestFitFallbackBuffer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::InternalEncoderBestFitFallbackBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

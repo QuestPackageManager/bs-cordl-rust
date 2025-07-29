@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPInterfaceProperties")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnixIPInterfaceProperties {
@@ -12,7 +12,7 @@ pub struct UnixIPInterfaceProperties {
         >,
     >,
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPInterfaceProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,7 +32,7 @@ for crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPInterfaceProperties")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
     type Target = crate::System::Net::NetworkInformation::IPInterfaceProperties;
@@ -40,7 +40,7 @@ for crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPInterfaceProperties")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -139,7 +139,7 @@ impl crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPInterfaceProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPInterfaceProperties")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

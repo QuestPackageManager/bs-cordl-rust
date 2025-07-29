@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+WebConnectionTunnel")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebConnectionTunnel {
@@ -28,7 +28,7 @@ pub struct WebConnectionTunnel {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebConnectionTunnel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebConnectionTun
         false
     }
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel")]
 impl std::ops::Deref for crate::System::Net::WebConnectionTunnel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel")]
 impl std::ops::DerefMut for crate::System::Net::WebConnectionTunnel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -677,7 +677,7 @@ impl crate::System::Net::WebConnectionTunnel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebConnectionTunnel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -686,7 +686,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebConnectionTunn
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel+NtlmAuthState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebConnectionTunnel_NtlmAuthState {
@@ -695,7 +695,7 @@ pub enum WebConnectionTunnel_NtlmAuthState {
     None = 0i32,
     Response = 2i32,
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Held<'a> = Self;
@@ -725,7 +725,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Type = Self;
@@ -736,7 +736,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Actual = Self;
@@ -750,7 +750,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
         self
     }
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Type = Self;
@@ -765,7 +765,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
         }
     }
 }
-#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+#[cfg(feature = "cordl_class_System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Actual = Self;

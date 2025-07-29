@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Collections+LeakCategory")]
+#[cfg(feature = "cordl_class_Unity+Collections+LeakCategory")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LeakCategory {
@@ -13,7 +13,7 @@ pub enum LeakCategory {
     TempJob = 2i32,
     TransformAccessArray = 7i32,
 }
-#[cfg(feature = "Unity+Collections+LeakCategory")]
+#[cfg(feature = "cordl_class_Unity+Collections+LeakCategory")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::LeakCategory {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -42,7 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::LeakCateg
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Collections+LeakCategory")]
+#[cfg(feature = "cordl_class_Unity+Collections+LeakCategory")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Collections::LeakCategory {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -52,7 +52,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Collections::LeakC
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Collections+LeakCategory")]
+#[cfg(feature = "cordl_class_Unity+Collections+LeakCategory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::LeakCategory {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::Unity::Collections::LeakCategory {
         self
     }
 }
-#[cfg(feature = "Unity+Collections+LeakCategory")]
+#[cfg(feature = "cordl_class_Unity+Collections+LeakCategory")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Collections::LeakCategory {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,7 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Collections::LeakC
         }
     }
 }
-#[cfg(feature = "Unity+Collections+LeakCategory")]
+#[cfg(feature = "cordl_class_Unity+Collections+LeakCategory")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Collections::LeakCategory {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

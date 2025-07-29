@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Data+DataTableTypeConverter")]
+#[cfg(feature = "cordl_class_System+Data+DataTableTypeConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTableTypeConverter {
     __cordl_parent: crate::System::ComponentModel::ReferenceConverter,
 }
-#[cfg(feature = "System+Data+DataTableTypeConverter")]
+#[cfg(feature = "cordl_class_System+Data+DataTableTypeConverter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataTableTypeConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataTableTypeCo
         false
     }
 }
-#[cfg(feature = "System+Data+DataTableTypeConverter")]
+#[cfg(feature = "cordl_class_System+Data+DataTableTypeConverter")]
 impl std::ops::Deref for crate::System::Data::DataTableTypeConverter {
     type Target = crate::System::ComponentModel::ReferenceConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataTableTypeConverter")]
+#[cfg(feature = "cordl_class_System+Data+DataTableTypeConverter")]
 impl std::ops::DerefMut for crate::System::Data::DataTableTypeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::System::Data::DataTableTypeConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataTableTypeConverter")]
+#[cfg(feature = "cordl_class_System+Data+DataTableTypeConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataTableTypeConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

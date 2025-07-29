@@ -1,10 +1,10 @@
-#[cfg(feature = "IRemoteProcedureCall")]
+#[cfg(feature = "cordl_class_IRemoteProcedureCall")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IRemoteProcedureCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IRemoteProcedureCall")]
+#[cfg(feature = "cordl_class_IRemoteProcedureCall")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IRemoteProcedureCall {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IRemoteProcedureCall {
         false
     }
 }
-#[cfg(feature = "IRemoteProcedureCall")]
+#[cfg(feature = "cordl_class_IRemoteProcedureCall")]
 impl std::ops::Deref for crate::GlobalNamespace::IRemoteProcedureCall {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IRemoteProcedureCall")]
+#[cfg(feature = "cordl_class_IRemoteProcedureCall")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IRemoteProcedureCall {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::IRemoteProcedureCall {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IRemoteProcedureCall")]
+#[cfg(feature = "cordl_class_IRemoteProcedureCall")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IRemoteProcedureCall {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

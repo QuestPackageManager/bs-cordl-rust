@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractFpFieldElement {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::ECFieldElement,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement {
     type Target = crate::Org::BouncyCastle::Math::EC::ECFieldElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+AbstractFpFieldElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

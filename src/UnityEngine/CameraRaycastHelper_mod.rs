@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+CameraRaycastHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+CameraRaycastHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CameraRaycastHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+CameraRaycastHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+CameraRaycastHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CameraRaycastHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CameraRaycastHel
         false
     }
 }
-#[cfg(feature = "UnityEngine+CameraRaycastHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+CameraRaycastHelper")]
 impl std::ops::Deref for crate::UnityEngine::CameraRaycastHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+CameraRaycastHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+CameraRaycastHelper")]
 impl std::ops::DerefMut for crate::UnityEngine::CameraRaycastHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -179,7 +179,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+CameraRaycastHelper")]
+#[cfg(feature = "cordl_class_UnityEngine+CameraRaycastHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CameraRaycastHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

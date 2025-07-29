@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+ExpressionParser")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionParser {
@@ -29,7 +29,7 @@ pub struct ExpressionParser {
     pub _prevOperand: i32,
     pub _expression: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
 }
-#[cfg(feature = "System+Data+ExpressionParser")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::ExpressionParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -48,14 +48,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::ExpressionParse
         false
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser")]
 impl std::ops::Deref for crate::System::Data::ExpressionParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser")]
 impl std::ops::DerefMut for crate::System::Data::ExpressionParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -656,7 +656,7 @@ impl crate::System::Data::ExpressionParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::ExpressionParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -665,7 +665,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::ExpressionParser
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser+ReservedWords")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExpressionParser_ReservedWords {
@@ -673,7 +673,7 @@ pub struct ExpressionParser_ReservedWords {
     pub _token: crate::System::Data::Tokens,
     pub _op: i32,
 }
-#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Held<'a> = Self;
@@ -703,7 +703,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Type = Self;
@@ -714,7 +714,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Actual = Self;
@@ -728,7 +728,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
         self
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Type = Self;
@@ -743,7 +743,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
         }
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Actual = Self;
@@ -757,7 +757,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
         actual
     }
 }
-#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
+#[cfg(feature = "cordl_class_System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Type = Self;

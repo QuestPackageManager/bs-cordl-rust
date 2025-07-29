@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AsyncReadManagerRequestMetric {
@@ -22,7 +22,7 @@ pub struct AsyncReadManagerRequestMetric {
     pub _TimeInQueueMicroseconds_k__BackingField: f64,
     pub _TotalTimeMicroseconds_k__BackingField: f64,
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
     type Held<'a> = Self;
@@ -52,7 +52,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
     type Type = Self;
@@ -63,7 +63,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
     type Actual = Self;
@@ -77,7 +77,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
         self
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
     type Type = Self;
@@ -92,7 +92,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
         }
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
     type Actual = Self;
@@ -106,7 +106,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
         actual
     }
 }
-#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
+#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerRequestMetric {
     type Type = Self;

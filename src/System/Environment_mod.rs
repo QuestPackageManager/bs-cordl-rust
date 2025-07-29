@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Environment")]
+#[cfg(feature = "cordl_class_System+Environment")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Environment {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Environment")]
+#[cfg(feature = "cordl_class_System+Environment")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Environment {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Environment {
         false
     }
 }
-#[cfg(feature = "System+Environment")]
+#[cfg(feature = "cordl_class_System+Environment")]
 impl std::ops::Deref for crate::System::Environment {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Environment")]
+#[cfg(feature = "cordl_class_System+Environment")]
 impl std::ops::DerefMut for crate::System::Environment {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1273,7 +1273,7 @@ impl crate::System::Environment {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Environment")]
+#[cfg(feature = "cordl_class_System+Environment")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Environment {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1282,7 +1282,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Environment {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolder")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolder")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Environment_SpecialFolder {
@@ -1334,7 +1334,7 @@ pub enum Environment_SpecialFolder {
     UserProfile = 40i32,
     Windows = 36i32,
 }
-#[cfg(feature = "System+Environment+SpecialFolder")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Environment_SpecialFolder {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1363,7 +1363,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Environment_SpecialFo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolder")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Environment_SpecialFolder {
     type Type = Self;
@@ -1374,7 +1374,7 @@ for crate::System::Environment_SpecialFolder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolder")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Environment_SpecialFolder {
     type Actual = Self;
@@ -1388,7 +1388,7 @@ for crate::System::Environment_SpecialFolder {
         self
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolder")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Environment_SpecialFolder {
     type Type = Self;
@@ -1403,7 +1403,7 @@ for crate::System::Environment_SpecialFolder {
         }
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolder")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Environment_SpecialFolder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1416,7 +1416,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Environment_Special
         actual
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolderOption")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolderOption")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Environment_SpecialFolderOption {
@@ -1425,7 +1425,7 @@ pub enum Environment_SpecialFolderOption {
     DoNotVerify = 16384i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Environment+SpecialFolderOption")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Environment_SpecialFolderOption {
     type Held<'a> = Self;
@@ -1455,7 +1455,7 @@ for crate::System::Environment_SpecialFolderOption {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolderOption")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Environment_SpecialFolderOption {
     type Type = Self;
@@ -1466,7 +1466,7 @@ for crate::System::Environment_SpecialFolderOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolderOption")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Environment_SpecialFolderOption {
     type Actual = Self;
@@ -1480,7 +1480,7 @@ for crate::System::Environment_SpecialFolderOption {
         self
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolderOption")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Environment_SpecialFolderOption {
     type Type = Self;
@@ -1495,7 +1495,7 @@ for crate::System::Environment_SpecialFolderOption {
         }
     }
 }
-#[cfg(feature = "System+Environment+SpecialFolderOption")]
+#[cfg(feature = "cordl_class_System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Environment_SpecialFolderOption {
     type Actual = Self;

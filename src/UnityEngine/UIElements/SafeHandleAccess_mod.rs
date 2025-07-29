@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SafeHandleAccess")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SafeHandleAccess {
     pub m_Handle: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SafeHandleAccess")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::SafeHandleAccess {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::UIElements::SafeHandleAccess {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SafeHandleAccess")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::SafeHandleAccess {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::SafeHandleAccess {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SafeHandleAccess")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::SafeHandleAccess {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::SafeHandleAccess {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SafeHandleAccess")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::SafeHandleAccess {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::UIElements::SafeHandleAccess {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SafeHandleAccess")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::SafeHandleAccess {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::UIElements::SafeHandleAccess {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SafeHandleAccess")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::SafeHandleAccess {
     type Type = Self;

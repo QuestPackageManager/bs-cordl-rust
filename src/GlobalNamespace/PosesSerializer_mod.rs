@@ -1,4 +1,4 @@
-#[cfg(feature = "PosesSerializer")]
+#[cfg(feature = "cordl_class_PosesSerializer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesSerializer {
@@ -8,7 +8,7 @@ pub struct PosesSerializer {
         crate::GlobalNamespace::RecordingConverter,
     >,
 }
-#[cfg(feature = "PosesSerializer")]
+#[cfg(feature = "cordl_class_PosesSerializer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosesSerializer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosesSeriali
         false
     }
 }
-#[cfg(feature = "PosesSerializer")]
+#[cfg(feature = "cordl_class_PosesSerializer")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesSerializer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PosesSerializer")]
+#[cfg(feature = "cordl_class_PosesSerializer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PosesSerializer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -438,7 +438,7 @@ impl crate::GlobalNamespace::PosesSerializer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PosesSerializer")]
+#[cfg(feature = "cordl_class_PosesSerializer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesSerializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

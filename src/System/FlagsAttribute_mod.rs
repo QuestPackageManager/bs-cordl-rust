@@ -1,10 +1,10 @@
-#[cfg(feature = "System+FlagsAttribute")]
+#[cfg(feature = "cordl_class_System+FlagsAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlagsAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+FlagsAttribute")]
+#[cfg(feature = "cordl_class_System+FlagsAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::FlagsAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::FlagsAttribute {
         false
     }
 }
-#[cfg(feature = "System+FlagsAttribute")]
+#[cfg(feature = "cordl_class_System+FlagsAttribute")]
 impl std::ops::Deref for crate::System::FlagsAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+FlagsAttribute")]
+#[cfg(feature = "cordl_class_System+FlagsAttribute")]
 impl std::ops::DerefMut for crate::System::FlagsAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::System::FlagsAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+FlagsAttribute")]
+#[cfg(feature = "cordl_class_System+FlagsAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::FlagsAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

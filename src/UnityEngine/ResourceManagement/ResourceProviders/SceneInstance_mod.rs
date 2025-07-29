@@ -1,11 +1,15 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneInstance"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SceneInstance {
     pub m_Scene: crate::UnityEngine::SceneManagement::Scene,
     pub m_Operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneInstance"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
     type Held<'a> = Self;
@@ -35,7 +39,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneInstance"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
     type Type = Self;
@@ -46,7 +52,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneInstance"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
     type Actual = Self;
@@ -60,7 +68,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneInstance"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
     type Type = Self;
@@ -75,7 +85,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneInstance"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
     type Actual = Self;
@@ -89,7 +101,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneInstance"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance {
     type Type = Self;

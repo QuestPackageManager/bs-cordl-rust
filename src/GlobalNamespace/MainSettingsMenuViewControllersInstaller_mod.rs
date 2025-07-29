@@ -1,4 +1,4 @@
-#[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewControllersInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainSettingsMenuViewControllersInstaller {
@@ -22,7 +22,7 @@ pub struct MainSettingsMenuViewControllersInstaller {
         crate::GlobalNamespace::TabBarViewController,
     >,
 }
-#[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewControllersInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,7 +42,7 @@ for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
         false
     }
 }
-#[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewControllersInstaller")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     type Target = crate::Zenject::MonoInstaller;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewControllersInstaller")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
+#[cfg(feature = "cordl_class_MainSettingsMenuViewControllersInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

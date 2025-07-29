@@ -1,11 +1,11 @@
-#[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightDynamicRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightDynamicRenderer {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
-#[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightDynamicRenderer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightDynamicRenderer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightDynamicRenderer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightDynamicRenderer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Font")]
+#[cfg(feature = "cordl_class_UnityEngine+Font")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Font {
@@ -7,7 +7,7 @@ pub struct Font {
         crate::UnityEngine::Font_FontTextureRebuildCallback,
     >,
 }
-#[cfg(feature = "UnityEngine+Font")]
+#[cfg(feature = "cordl_class_UnityEngine+Font")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Font {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Font {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Font")]
+#[cfg(feature = "cordl_class_UnityEngine+Font")]
 impl std::ops::Deref for crate::UnityEngine::Font {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Font")]
+#[cfg(feature = "cordl_class_UnityEngine+Font")]
 impl std::ops::DerefMut for crate::UnityEngine::Font {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1162,7 +1162,7 @@ impl crate::UnityEngine::Font {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Font")]
+#[cfg(feature = "cordl_class_UnityEngine+Font")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Font {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1171,13 +1171,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Font {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Font+FontTextureRebuildCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Font_FontTextureRebuildCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Font+FontTextureRebuildCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Font_FontTextureRebuildCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1197,14 +1197,14 @@ for crate::UnityEngine::Font_FontTextureRebuildCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Font+FontTextureRebuildCallback")]
 impl std::ops::Deref for crate::UnityEngine::Font_FontTextureRebuildCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Font+FontTextureRebuildCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::Font_FontTextureRebuildCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1276,7 +1276,7 @@ impl crate::UnityEngine::Font_FontTextureRebuildCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Font+FontTextureRebuildCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Font_FontTextureRebuildCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

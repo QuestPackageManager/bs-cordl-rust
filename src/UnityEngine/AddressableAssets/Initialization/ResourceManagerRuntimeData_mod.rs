@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -31,7 +31,7 @@ pub struct ResourceManagerRuntimeData {
     pub m_CatalogRequestsTimeout: i32,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData {
@@ -53,7 +53,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntim
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData {
@@ -63,7 +63,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntim
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData {
@@ -660,7 +660,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRunti
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData {

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectTypeDescriptionProvider {
     __cordl_parent: crate::System::ComponentModel::TypeDescriptionProvider,
     pub _typeData: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
-#[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider")]
 impl std::ops::Deref for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     type Target = crate::System::ComponentModel::TypeDescriptionProvider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1458,7 +1458,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1469,7 +1469,7 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
+    feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1501,7 +1501,7 @@ pub struct ReflectTypeDescriptionProvider_ReflectedTypeData {
     pub _editorCount: i32,
 }
 #[cfg(
-    feature = "System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
+    feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData {
@@ -1523,7 +1523,7 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeD
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
+    feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData {
@@ -1533,7 +1533,7 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeD
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
+    feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData {
@@ -1958,7 +1958,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedType
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
+    feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData {

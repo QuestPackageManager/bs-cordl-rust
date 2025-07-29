@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelFilter")]
+#[cfg(feature = "cordl_class_LevelFilter")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LevelFilter {
@@ -20,7 +20,7 @@ pub struct LevelFilter {
         >,
     >,
 }
-#[cfg(feature = "LevelFilter")]
+#[cfg(feature = "cordl_class_LevelFilter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelFilter {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelFilter 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LevelFilter")]
+#[cfg(feature = "cordl_class_LevelFilter")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::LevelFilter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::LevelFil
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LevelFilter")]
+#[cfg(feature = "cordl_class_LevelFilter")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::LevelFilter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::LevelFi
         self
     }
 }
-#[cfg(feature = "LevelFilter")]
+#[cfg(feature = "cordl_class_LevelFilter")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::LevelFilter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::LevelFil
         }
     }
 }
-#[cfg(feature = "LevelFilter")]
+#[cfg(feature = "cordl_class_LevelFilter")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::LevelFilter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -99,7 +99,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::LevelFilte
         actual
     }
 }
-#[cfg(feature = "LevelFilter")]
+#[cfg(feature = "cordl_class_LevelFilter")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::LevelFilter {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

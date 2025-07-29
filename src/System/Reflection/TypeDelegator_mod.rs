@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Reflection+TypeDelegator")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeDelegator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDelegator {
     __cordl_parent: crate::System::Reflection::TypeInfo,
     pub typeImpl: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Reflection+TypeDelegator")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeDelegator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::TypeDelegator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::TypeDeleg
         false
     }
 }
-#[cfg(feature = "System+Reflection+TypeDelegator")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeDelegator")]
 impl std::ops::Deref for crate::System::Reflection::TypeDelegator {
     type Target = crate::System::Reflection::TypeInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+TypeDelegator")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeDelegator")]
 impl std::ops::DerefMut for crate::System::Reflection::TypeDelegator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1411,7 +1411,7 @@ impl crate::System::Reflection::TypeDelegator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+TypeDelegator")]
+#[cfg(feature = "cordl_class_System+Reflection+TypeDelegator")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::TypeDelegator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

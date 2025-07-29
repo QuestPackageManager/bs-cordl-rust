@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ControllerColliderHit")]
+#[cfg(feature = "cordl_class_UnityEngine+ControllerColliderHit")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllerColliderHit {
@@ -11,7 +11,7 @@ pub struct ControllerColliderHit {
     pub m_MoveLength: f32,
     pub m_Push: i32,
 }
-#[cfg(feature = "UnityEngine+ControllerColliderHit")]
+#[cfg(feature = "cordl_class_UnityEngine+ControllerColliderHit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ControllerColliderHit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ControllerCollid
         false
     }
 }
-#[cfg(feature = "UnityEngine+ControllerColliderHit")]
+#[cfg(feature = "cordl_class_UnityEngine+ControllerColliderHit")]
 impl std::ops::Deref for crate::UnityEngine::ControllerColliderHit {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ControllerColliderHit")]
+#[cfg(feature = "cordl_class_UnityEngine+ControllerColliderHit")]
 impl std::ops::DerefMut for crate::UnityEngine::ControllerColliderHit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -338,7 +338,7 @@ impl crate::UnityEngine::ControllerColliderHit {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ControllerColliderHit")]
+#[cfg(feature = "cordl_class_UnityEngine+ControllerColliderHit")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ControllerColliderHit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

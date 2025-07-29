@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+EventSystems+IUpdateSelectedHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IUpdateSelectedHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IUpdateSelectedHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+EventSystems+IUpdateSelectedHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IUpdateSelectedHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IUpdateSelectedHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IUpdateSelectedHandler")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IUpdateSelectedHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IUpdateSelectedHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+IUpdateSelectedHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IUpdateSelectedHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

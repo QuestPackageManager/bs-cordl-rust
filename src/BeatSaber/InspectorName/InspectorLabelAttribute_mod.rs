@@ -1,11 +1,11 @@
-#[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
+#[cfg(feature = "cordl_class_BeatSaber+InspectorName+InspectorLabelAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InspectorLabelAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub CustomLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
+#[cfg(feature = "cordl_class_BeatSaber+InspectorName+InspectorLabelAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::InspectorName::InspectorLabelAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::BeatSaber::InspectorName::InspectorLabelAttribute {
         false
     }
 }
-#[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
+#[cfg(feature = "cordl_class_BeatSaber+InspectorName+InspectorLabelAttribute")]
 impl std::ops::Deref for crate::BeatSaber::InspectorName::InspectorLabelAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
+#[cfg(feature = "cordl_class_BeatSaber+InspectorName+InspectorLabelAttribute")]
 impl std::ops::DerefMut for crate::BeatSaber::InspectorName::InspectorLabelAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::BeatSaber::InspectorName::InspectorLabelAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
+#[cfg(feature = "cordl_class_BeatSaber+InspectorName+InspectorLabelAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::InspectorName::InspectorLabelAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

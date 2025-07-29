@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+ChallengeViewerFilter")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeViewerFilter")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChallengeViewerFilter {
@@ -9,7 +9,7 @@ pub enum ChallengeViewerFilter {
     ParticipatingOrInvited = 4i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "Oculus+Platform+ChallengeViewerFilter")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeViewerFilter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::ChallengeViewerFilter {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::Oculus::Platform::ChallengeViewerFilter {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+ChallengeViewerFilter")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeViewerFilter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::ChallengeViewerFilter {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::Oculus::Platform::ChallengeViewerFilter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+ChallengeViewerFilter")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeViewerFilter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::ChallengeViewerFilter {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::Oculus::Platform::ChallengeViewerFilter {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+ChallengeViewerFilter")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeViewerFilter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::ChallengeViewerFilter {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::Oculus::Platform::ChallengeViewerFilter {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+ChallengeViewerFilter")]
+#[cfg(feature = "cordl_class_Oculus+Platform+ChallengeViewerFilter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::ChallengeViewerFilter {
     type Actual = Self;

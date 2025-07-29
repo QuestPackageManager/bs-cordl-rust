@@ -1,4 +1,4 @@
-#[cfg(feature = "PauseController")]
+#[cfg(feature = "cordl_class_PauseController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PauseController {
@@ -39,7 +39,7 @@ pub struct PauseController {
     pub _wantsToPause: bool,
     pub _paused: crate::GlobalNamespace::PauseController_PauseState,
 }
-#[cfg(feature = "PauseController")]
+#[cfg(feature = "cordl_class_PauseController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PauseController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -58,14 +58,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PauseControl
         false
     }
 }
-#[cfg(feature = "PauseController")]
+#[cfg(feature = "cordl_class_PauseController")]
 impl std::ops::Deref for crate::GlobalNamespace::PauseController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PauseController")]
+#[cfg(feature = "cordl_class_PauseController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PauseController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -861,7 +861,7 @@ impl crate::GlobalNamespace::PauseController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PauseController")]
+#[cfg(feature = "cordl_class_PauseController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -870,14 +870,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseControll
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PauseController+InitData")]
+#[cfg(feature = "cordl_class_PauseController+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PauseController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startPaused: bool,
 }
-#[cfg(feature = "PauseController+InitData")]
+#[cfg(feature = "cordl_class_PauseController+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PauseController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -897,14 +897,14 @@ for crate::GlobalNamespace::PauseController_InitData {
         false
     }
 }
-#[cfg(feature = "PauseController+InitData")]
+#[cfg(feature = "cordl_class_PauseController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::PauseController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PauseController+InitData")]
+#[cfg(feature = "cordl_class_PauseController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PauseController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -944,7 +944,7 @@ impl crate::GlobalNamespace::PauseController_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PauseController+InitData")]
+#[cfg(feature = "cordl_class_PauseController+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PauseController_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -954,7 +954,7 @@ for crate::GlobalNamespace::PauseController_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PauseController+PauseState")]
+#[cfg(feature = "cordl_class_PauseController+PauseState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PauseController_PauseState {
@@ -963,7 +963,7 @@ pub enum PauseController_PauseState {
     Playing = 2i32,
     Resuming = 1i32,
 }
-#[cfg(feature = "PauseController+PauseState")]
+#[cfg(feature = "cordl_class_PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PauseController_PauseState {
     type Held<'a> = Self;
@@ -993,7 +993,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PauseController+PauseState")]
+#[cfg(feature = "cordl_class_PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PauseController_PauseState {
     type Type = Self;
@@ -1004,7 +1004,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PauseController+PauseState")]
+#[cfg(feature = "cordl_class_PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PauseController_PauseState {
     type Actual = Self;
@@ -1018,7 +1018,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
         self
     }
 }
-#[cfg(feature = "PauseController+PauseState")]
+#[cfg(feature = "cordl_class_PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PauseController_PauseState {
     type Type = Self;
@@ -1033,7 +1033,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
         }
     }
 }
-#[cfg(feature = "PauseController+PauseState")]
+#[cfg(feature = "cordl_class_PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PauseController_PauseState {
     type Actual = Self;

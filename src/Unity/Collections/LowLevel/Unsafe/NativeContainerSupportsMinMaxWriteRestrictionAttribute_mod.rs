@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NativeContainerSupportsMinMaxWriteRestrictionAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWriteRestrictionAttribute {
@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWr
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWriteRestrictionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWr
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWriteRestrictionAttribute {
@@ -81,7 +81,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxW
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWriteRestrictionAttribute {

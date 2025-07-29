@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DHValidationParameters {
@@ -6,7 +6,7 @@ pub struct DHValidationParameters {
     pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub counter: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -205,7 +205,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

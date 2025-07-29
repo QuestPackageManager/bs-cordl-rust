@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_InputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_InputType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_InputType {
@@ -8,7 +8,7 @@ pub enum HAPI_InputType {
     HAPI_INPUT_MAX = 2i32,
     HAPI_INPUT_TRANSFORM = 0i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_InputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_InputType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_InputType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Inpu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_InputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_InputType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_InputType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::HoudiniEngineUnity::HAPI_InputType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_InputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_InputType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_InputType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::HoudiniEngineUnity::HAPI_InputType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_InputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_InputType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_InputType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::HoudiniEngineUnity::HAPI_InputType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_InputType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_InputType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_InputType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

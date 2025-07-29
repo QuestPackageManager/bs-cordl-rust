@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateOptions")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HEU_GenerateOptions {
@@ -8,7 +8,7 @@ pub struct HEU_GenerateOptions {
     pub _useLODGroups: bool,
     pub _splitPoints: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+InjectSources")]
+#[cfg(feature = "cordl_class_Zenject+InjectSources")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InjectSources {
@@ -8,7 +8,7 @@ pub enum InjectSources {
     Local = 1i32,
     Parent = 2i32,
 }
-#[cfg(feature = "Zenject+InjectSources")]
+#[cfg(feature = "cordl_class_Zenject+InjectSources")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InjectSources {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InjectSources {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+InjectSources")]
+#[cfg(feature = "cordl_class_Zenject+InjectSources")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::InjectSources {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::InjectSources {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+InjectSources")]
+#[cfg(feature = "cordl_class_Zenject+InjectSources")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::InjectSources {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::InjectSources {
         self
     }
 }
-#[cfg(feature = "Zenject+InjectSources")]
+#[cfg(feature = "cordl_class_Zenject+InjectSources")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::InjectSources {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::InjectSources {
         }
     }
 }
-#[cfg(feature = "Zenject+InjectSources")]
+#[cfg(feature = "cordl_class_Zenject+InjectSources")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::InjectSources {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

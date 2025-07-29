@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+GravityState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+GravityState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GravityState {
     pub gravity: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+GravityState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+GravityState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::GravityState {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::GravityState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+GravityState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+GravityState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::GravityState {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::GravityState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+GravityState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+GravityState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::GravityState {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::GravityState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+GravityState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+GravityState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::GravityState {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::GravityState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+GravityState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+GravityState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::GravityState {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::InputSystem::LowLevel::GravityState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+GravityState")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+GravityState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::GravityState {
     type Type = Self;

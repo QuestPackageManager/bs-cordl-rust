@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+ThreadPriority")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPriority")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ThreadPriority {
@@ -9,7 +9,7 @@ pub enum ThreadPriority {
     Lowest = 0i32,
     Normal = 2i32,
 }
-#[cfg(feature = "System+Threading+ThreadPriority")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::ThreadPriority {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::ThreadPrio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+ThreadPriority")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ThreadPriority {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Threading::ThreadPriority {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+ThreadPriority")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ThreadPriority {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Threading::ThreadPriority {
         self
     }
 }
-#[cfg(feature = "System+Threading+ThreadPriority")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ThreadPriority {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Threading::ThreadPriority {
         }
     }
 }
-#[cfg(feature = "System+Threading+ThreadPriority")]
+#[cfg(feature = "cordl_class_System+Threading+ThreadPriority")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::ThreadPriority {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

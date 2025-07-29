@@ -1,4 +1,4 @@
-#[cfg(feature = "FPSCounter")]
+#[cfg(feature = "cordl_class_FPSCounter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FPSCounter {
@@ -11,7 +11,7 @@ pub struct FPSCounter {
     pub _frameCounter: i32,
     pub _minDeltaTime: f32,
 }
-#[cfg(feature = "FPSCounter")]
+#[cfg(feature = "cordl_class_FPSCounter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FPSCounter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FPSCounter {
         false
     }
 }
-#[cfg(feature = "FPSCounter")]
+#[cfg(feature = "cordl_class_FPSCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::FPSCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FPSCounter")]
+#[cfg(feature = "cordl_class_FPSCounter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FPSCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -288,7 +288,7 @@ impl crate::GlobalNamespace::FPSCounter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FPSCounter")]
+#[cfg(feature = "cordl_class_FPSCounter")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FPSCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

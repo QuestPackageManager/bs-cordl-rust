@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+VoipBitrate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipBitrate")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VoipBitrate {
@@ -11,7 +11,7 @@ pub enum VoipBitrate {
     B96000 = 5i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "Oculus+Platform+VoipBitrate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipBitrate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::VoipBitrate {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::VoipBitrate
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipBitrate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipBitrate")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::VoipBitrate {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::VoipBit
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipBitrate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipBitrate")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::VoipBitrate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::VoipBi
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipBitrate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipBitrate")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::VoipBitrate {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::VoipBit
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipBitrate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipBitrate")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::VoipBitrate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

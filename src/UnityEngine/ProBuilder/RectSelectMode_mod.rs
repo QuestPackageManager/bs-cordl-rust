@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+RectSelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RectSelectMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RectSelectMode {
@@ -6,7 +6,7 @@ pub enum RectSelectMode {
     Complete = 1i32,
     Partial = 0i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RectSelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RectSelectMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::RectSelectMode {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::ProBuilder::RectSelectMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RectSelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RectSelectMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::RectSelectMode {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::ProBuilder::RectSelectMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RectSelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RectSelectMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::RectSelectMode {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ProBuilder::RectSelectMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RectSelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RectSelectMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::RectSelectMode {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::ProBuilder::RectSelectMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RectSelectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RectSelectMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::RectSelectMode {
     type Actual = Self;

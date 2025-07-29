@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEntry")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FileSystemEntry {
@@ -13,7 +13,7 @@ pub struct FileSystemEntry {
     pub _RootDirectory_k__BackingField: crate::System::ReadOnlySpan_1<char>,
     pub _OriginalRootDirectory_k__BackingField: crate::System::ReadOnlySpan_1<char>,
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Enumeration::FileSystemEntry {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::System::IO::Enumeration::FileSystemEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::IO::Enumeration::FileSystemEntry {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::System::IO::Enumeration::FileSystemEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::IO::Enumeration::FileSystemEntry {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::System::IO::Enumeration::FileSystemEntry {
         self
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::IO::Enumeration::FileSystemEntry {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::System::IO::Enumeration::FileSystemEntry {
         }
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::IO::Enumeration::FileSystemEntry {
     type Actual = Self;
@@ -97,7 +97,7 @@ for crate::System::IO::Enumeration::FileSystemEntry {
         actual
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
+#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEntry")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::IO::Enumeration::FileSystemEntry {
     type Type = Self;
@@ -493,13 +493,17 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     pub FixedElementField: char,
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     type Held<'a> = Self;
@@ -529,7 +533,9 @@ for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuf
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     type Type = Self;
@@ -540,7 +546,9 @@ for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuf
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     type Actual = Self;
@@ -554,7 +562,9 @@ for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuf
         self
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     type Type = Self;
@@ -569,7 +579,9 @@ for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuf
         }
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     type Actual = Self;
@@ -583,7 +595,9 @@ for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuf
         actual
     }
 }
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     type Type = Self;

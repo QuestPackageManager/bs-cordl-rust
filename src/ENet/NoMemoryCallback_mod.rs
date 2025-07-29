@@ -1,10 +1,10 @@
-#[cfg(feature = "ENet+NoMemoryCallback")]
+#[cfg(feature = "cordl_class_ENet+NoMemoryCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoMemoryCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "ENet+NoMemoryCallback")]
+#[cfg(feature = "cordl_class_ENet+NoMemoryCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::NoMemoryCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::NoMemoryCallback {
         false
     }
 }
-#[cfg(feature = "ENet+NoMemoryCallback")]
+#[cfg(feature = "cordl_class_ENet+NoMemoryCallback")]
 impl std::ops::Deref for crate::ENet::NoMemoryCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ENet+NoMemoryCallback")]
+#[cfg(feature = "cordl_class_ENet+NoMemoryCallback")]
 impl std::ops::DerefMut for crate::ENet::NoMemoryCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -162,7 +162,7 @@ impl crate::ENet::NoMemoryCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ENet+NoMemoryCallback")]
+#[cfg(feature = "cordl_class_ENet+NoMemoryCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::ENet::NoMemoryCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "FriendsViewController")]
+#[cfg(feature = "cordl_class_FriendsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FriendsViewController {
@@ -15,7 +15,7 @@ pub struct FriendsViewController {
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub _allowAnyoneToJoin: bool,
 }
-#[cfg(feature = "FriendsViewController")]
+#[cfg(feature = "cordl_class_FriendsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FriendsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::FriendsViewController {
         false
     }
 }
-#[cfg(feature = "FriendsViewController")]
+#[cfg(feature = "cordl_class_FriendsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::FriendsViewController {
     type Target = crate::GlobalNamespace::NetworkPlayersViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FriendsViewController")]
+#[cfg(feature = "cordl_class_FriendsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FriendsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -291,7 +291,7 @@ impl crate::GlobalNamespace::FriendsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FriendsViewController")]
+#[cfg(feature = "cordl_class_FriendsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FriendsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

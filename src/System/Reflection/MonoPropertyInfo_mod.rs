@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoPropertyInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MonoPropertyInfo {
@@ -9,7 +9,7 @@ pub struct MonoPropertyInfo {
     pub set_method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub attrs: crate::System::Reflection::PropertyAttributes,
 }
-#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::MonoPropertyInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::MonoPrope
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::MonoPropertyInfo {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Reflection::MonoPropertyInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::MonoPropertyInfo {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Reflection::MonoPropertyInfo {
         self
     }
 }
-#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::MonoPropertyInfo {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Reflection::MonoPropertyInfo {
         }
     }
 }
-#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::MonoPropertyInfo {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::System::Reflection::MonoPropertyInfo {
         actual
     }
 }
-#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Reflection::MonoPropertyInfo {
     type Type = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+PS4+XR+PSVRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+PS4+XR+PSVRSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PSVRSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
 }
-#[cfg(feature = "UnityEngine+PS4+XR+PSVRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+PS4+XR+PSVRSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PS4::XR::PSVRSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PS4::XR::PSVRSet
         false
     }
 }
-#[cfg(feature = "UnityEngine+PS4+XR+PSVRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+PS4+XR+PSVRSettings")]
 impl std::ops::Deref for crate::UnityEngine::PS4::XR::PSVRSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+PS4+XR+PSVRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+PS4+XR+PSVRSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::PS4::XR::PSVRSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::UnityEngine::PS4::XR::PSVRSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+PS4+XR+PSVRSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+PS4+XR+PSVRSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::PS4::XR::PSVRSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

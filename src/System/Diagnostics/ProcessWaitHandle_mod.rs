@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Diagnostics+ProcessWaitHandle")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessWaitHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProcessWaitHandle {
     __cordl_parent: crate::System::Threading::WaitHandle,
 }
-#[cfg(feature = "System+Diagnostics+ProcessWaitHandle")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessWaitHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::ProcessWaitHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Diagnostics::ProcessWaitHandle {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+ProcessWaitHandle")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessWaitHandle")]
 impl std::ops::Deref for crate::System::Diagnostics::ProcessWaitHandle {
     type Target = crate::System::Threading::WaitHandle;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+ProcessWaitHandle")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessWaitHandle")]
 impl std::ops::DerefMut for crate::System::Diagnostics::ProcessWaitHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -81,7 +81,7 @@ impl crate::System::Diagnostics::ProcessWaitHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+ProcessWaitHandle")]
+#[cfg(feature = "cordl_class_System+Diagnostics+ProcessWaitHandle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::ProcessWaitHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

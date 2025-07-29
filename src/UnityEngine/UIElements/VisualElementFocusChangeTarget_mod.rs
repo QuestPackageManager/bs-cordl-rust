@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeTarget")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeTarget")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementFocusChangeTarget {
@@ -7,7 +7,7 @@ pub struct VisualElementFocusChangeTarget {
         crate::UnityEngine::UIElements::Focusable,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeTarget")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeTarget")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeTarget")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeTarget")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
     type Target = crate::UnityEngine::UIElements::FocusChangeDirection;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeTarget")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeTarget")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -219,7 +219,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeTarget")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeTarget")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

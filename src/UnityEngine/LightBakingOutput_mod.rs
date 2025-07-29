@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+LightBakingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+LightBakingOutput")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LightBakingOutput {
@@ -8,7 +8,7 @@ pub struct LightBakingOutput {
     pub mixedLightingMode: crate::UnityEngine::MixedLightingMode,
     pub isBaked: bool,
 }
-#[cfg(feature = "UnityEngine+LightBakingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+LightBakingOutput")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightBakingOutput {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightBakingOutpu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+LightBakingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+LightBakingOutput")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LightBakingOutput {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LightBakingO
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+LightBakingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+LightBakingOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LightBakingOutput {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LightBaking
         self
     }
 }
-#[cfg(feature = "UnityEngine+LightBakingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+LightBakingOutput")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LightBakingOutput {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LightBakingO
         }
     }
 }
-#[cfg(feature = "UnityEngine+LightBakingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+LightBakingOutput")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LightBakingOutput {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LightBakingOut
         actual
     }
 }
-#[cfg(feature = "UnityEngine+LightBakingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+LightBakingOutput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::LightBakingOutput {
     type Type = Self;

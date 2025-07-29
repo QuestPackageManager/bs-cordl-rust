@@ -1,4 +1,4 @@
-#[cfg(feature = "ILevelPackProductDataContainer_2")]
+#[cfg(feature = "cordl_class_ILevelPackProductDataContainer_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ILevelPackProductDataContainer_2<
@@ -11,7 +11,7 @@ pub struct ILevelPackProductDataContainer_2<
     >,
     __cordl_phantom_TLevelProductData: std::marker::PhantomData<TLevelProductData>,
 }
-#[cfg(feature = "ILevelPackProductDataContainer_2")]
+#[cfg(feature = "cordl_class_ILevelPackProductDataContainer_2")]
 unsafe impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
@@ -53,7 +53,7 @@ for crate::GlobalNamespace::ILevelPackProductDataContainer_2<
         false
     }
 }
-#[cfg(feature = "ILevelPackProductDataContainer_2")]
+#[cfg(feature = "cordl_class_ILevelPackProductDataContainer_2")]
 impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ for crate::GlobalNamespace::ILevelPackProductDataContainer_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ILevelPackProductDataContainer_2")]
+#[cfg(feature = "cordl_class_ILevelPackProductDataContainer_2")]
 impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
@@ -157,7 +157,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ILevelPackProductDataContainer_2")]
+#[cfg(feature = "cordl_class_ILevelPackProductDataContainer_2")]
 impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,

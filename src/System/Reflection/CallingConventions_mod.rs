@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+CallingConventions")]
+#[cfg(feature = "cordl_class_System+Reflection+CallingConventions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CallingConventions {
@@ -9,7 +9,7 @@ pub enum CallingConventions {
     Standard = 1i32,
     VarArgs = 2i32,
 }
-#[cfg(feature = "System+Reflection+CallingConventions")]
+#[cfg(feature = "cordl_class_System+Reflection+CallingConventions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::CallingConventions {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::System::Reflection::CallingConventions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+CallingConventions")]
+#[cfg(feature = "cordl_class_System+Reflection+CallingConventions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::CallingConventions {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Reflection::CallingConventions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+CallingConventions")]
+#[cfg(feature = "cordl_class_System+Reflection+CallingConventions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::CallingConventions {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Reflection::CallingConventions {
         self
     }
 }
-#[cfg(feature = "System+Reflection+CallingConventions")]
+#[cfg(feature = "cordl_class_System+Reflection+CallingConventions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::CallingConventions {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Reflection::CallingConventions {
         }
     }
 }
-#[cfg(feature = "System+Reflection+CallingConventions")]
+#[cfg(feature = "cordl_class_System+Reflection+CallingConventions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::CallingConventions {
     type Actual = Self;

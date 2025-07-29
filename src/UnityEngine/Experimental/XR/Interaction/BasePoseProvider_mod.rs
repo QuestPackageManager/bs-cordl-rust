@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasePoseProvider {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -32,7 +32,7 @@ for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -124,7 +124,7 @@ impl crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

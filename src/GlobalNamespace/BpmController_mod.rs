@@ -1,4 +1,4 @@
-#[cfg(feature = "BpmController")]
+#[cfg(feature = "cordl_class_BpmController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BpmController {
@@ -11,7 +11,7 @@ pub struct BpmController {
     >,
     pub _currentBpm: f32,
 }
-#[cfg(feature = "BpmController")]
+#[cfg(feature = "cordl_class_BpmController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BpmController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BpmControlle
         false
     }
 }
-#[cfg(feature = "BpmController")]
+#[cfg(feature = "cordl_class_BpmController")]
 impl std::ops::Deref for crate::GlobalNamespace::BpmController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BpmController")]
+#[cfg(feature = "cordl_class_BpmController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BpmController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::BpmController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BpmController")]
+#[cfg(feature = "cordl_class_BpmController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BpmController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -221,14 +221,14 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BpmController
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BpmController+InitData")]
+#[cfg(feature = "cordl_class_BpmController+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BpmController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startBpm: f32,
 }
-#[cfg(feature = "BpmController+InitData")]
+#[cfg(feature = "cordl_class_BpmController+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BpmController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -248,14 +248,14 @@ for crate::GlobalNamespace::BpmController_InitData {
         false
     }
 }
-#[cfg(feature = "BpmController+InitData")]
+#[cfg(feature = "cordl_class_BpmController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BpmController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BpmController+InitData")]
+#[cfg(feature = "cordl_class_BpmController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BpmController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -295,7 +295,7 @@ impl crate::GlobalNamespace::BpmController_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BpmController+InitData")]
+#[cfg(feature = "cordl_class_BpmController+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BpmController_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

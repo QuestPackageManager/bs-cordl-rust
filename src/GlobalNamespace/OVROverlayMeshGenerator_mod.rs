@@ -1,4 +1,4 @@
-#[cfg(feature = "OVROverlayMeshGenerator")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVROverlayMeshGenerator {
@@ -29,7 +29,7 @@ pub struct OVROverlayMeshGenerator {
     pub _LastTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub _Awake: bool,
 }
-#[cfg(feature = "OVROverlayMeshGenerator")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVROverlayMeshGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator {
         false
     }
 }
-#[cfg(feature = "OVROverlayMeshGenerator")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator")]
 impl std::ops::Deref for crate::GlobalNamespace::OVROverlayMeshGenerator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVROverlayMeshGenerator")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVROverlayMeshGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -700,7 +700,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVROverlayMeshGenerator")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVROverlayMeshGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -710,7 +710,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator+CubeFace")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVROverlayMeshGenerator_CubeFace {
@@ -723,7 +723,7 @@ pub enum OVROverlayMeshGenerator_CubeFace {
     Right = 0i32,
     Top = 2i32,
 }
-#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Held<'a> = Self;
@@ -753,7 +753,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Type = Self;
@@ -764,7 +764,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Actual = Self;
@@ -778,7 +778,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
         self
     }
 }
-#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Type = Self;
@@ -793,7 +793,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
         }
     }
 }
-#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
+#[cfg(feature = "cordl_class_OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Actual = Self;

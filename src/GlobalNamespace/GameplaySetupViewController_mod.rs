@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplaySetupViewController")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplaySetupViewController {
@@ -39,7 +39,7 @@ pub struct GameplaySetupViewController {
     pub _shouldRefreshContent: bool,
     pub _isInitialized: bool,
 }
-#[cfg(feature = "GameplaySetupViewController")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplaySetupViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -59,14 +59,14 @@ for crate::GlobalNamespace::GameplaySetupViewController {
         false
     }
 }
-#[cfg(feature = "GameplaySetupViewController")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplaySetupViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplaySetupViewController")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplaySetupViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -522,7 +522,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplaySetupViewController")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplaySetupViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -532,7 +532,7 @@ for crate::GlobalNamespace::GameplaySetupViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GameplaySetupViewController+Panel")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController+Panel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplaySetupViewController_Panel {
@@ -541,7 +541,7 @@ pub struct GameplaySetupViewController_Panel {
     pub refreshable: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>,
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "GameplaySetupViewController+Panel")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController+Panel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplaySetupViewController_Panel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -561,14 +561,14 @@ for crate::GlobalNamespace::GameplaySetupViewController_Panel {
         false
     }
 }
-#[cfg(feature = "GameplaySetupViewController+Panel")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController+Panel")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplaySetupViewController_Panel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplaySetupViewController+Panel")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController+Panel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplaySetupViewController_Panel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -624,7 +624,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController_Panel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplaySetupViewController+Panel")]
+#[cfg(feature = "cordl_class_GameplaySetupViewController+Panel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplaySetupViewController_Panel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

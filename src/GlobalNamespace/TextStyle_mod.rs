@@ -1,4 +1,4 @@
-#[cfg(feature = "TextStyle")]
+#[cfg(feature = "cordl_class_TextStyle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextStyle {
@@ -11,7 +11,7 @@ pub struct TextStyle {
     pub _charWidthMaxAdj: f32,
     pub _lineSpacingMax: f32,
 }
-#[cfg(feature = "TextStyle")]
+#[cfg(feature = "cordl_class_TextStyle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TextStyle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TextStyle {
         false
     }
 }
-#[cfg(feature = "TextStyle")]
+#[cfg(feature = "cordl_class_TextStyle")]
 impl std::ops::Deref for crate::GlobalNamespace::TextStyle {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TextStyle")]
+#[cfg(feature = "cordl_class_TextStyle")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextStyle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::GlobalNamespace::TextStyle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TextStyle")]
+#[cfg(feature = "cordl_class_TextStyle")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextStyle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

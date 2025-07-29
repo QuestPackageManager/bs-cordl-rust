@@ -1,11 +1,11 @@
-#[cfg(feature = "HMAutoincrementedRequestId")]
+#[cfg(feature = "cordl_class_HMAutoincrementedRequestId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMAutoincrementedRequestId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _requestId: u64,
 }
-#[cfg(feature = "HMAutoincrementedRequestId")]
+#[cfg(feature = "cordl_class_HMAutoincrementedRequestId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HMAutoincrementedRequestId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::HMAutoincrementedRequestId {
         false
     }
 }
-#[cfg(feature = "HMAutoincrementedRequestId")]
+#[cfg(feature = "cordl_class_HMAutoincrementedRequestId")]
 impl std::ops::Deref for crate::GlobalNamespace::HMAutoincrementedRequestId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMAutoincrementedRequestId")]
+#[cfg(feature = "cordl_class_HMAutoincrementedRequestId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HMAutoincrementedRequestId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::GlobalNamespace::HMAutoincrementedRequestId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMAutoincrementedRequestId")]
+#[cfg(feature = "cordl_class_HMAutoincrementedRequestId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HMAutoincrementedRequestId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

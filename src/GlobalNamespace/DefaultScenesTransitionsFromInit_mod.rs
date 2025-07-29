@@ -1,4 +1,4 @@
-#[cfg(feature = "DefaultScenesTransitionsFromInit")]
+#[cfg(feature = "cordl_class_DefaultScenesTransitionsFromInit")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultScenesTransitionsFromInit {
@@ -25,7 +25,7 @@ pub struct DefaultScenesTransitionsFromInit {
         crate::GlobalNamespace::GameScenesManager,
     >,
 }
-#[cfg(feature = "DefaultScenesTransitionsFromInit")]
+#[cfg(feature = "cordl_class_DefaultScenesTransitionsFromInit")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
         false
     }
 }
-#[cfg(feature = "DefaultScenesTransitionsFromInit")]
+#[cfg(feature = "cordl_class_DefaultScenesTransitionsFromInit")]
 impl std::ops::Deref for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DefaultScenesTransitionsFromInit")]
+#[cfg(feature = "cordl_class_DefaultScenesTransitionsFromInit")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -197,7 +197,7 @@ impl crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DefaultScenesTransitionsFromInit")]
+#[cfg(feature = "cordl_class_DefaultScenesTransitionsFromInit")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -208,7 +208,7 @@ for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
     }
 }
 #[cfg(
-    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+    feature = "cordl_class_DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -219,7 +219,7 @@ pub struct __c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToN
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter,
 }
 #[cfg(
-    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+    feature = "cordl_class_DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
@@ -251,7 +251,7 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
     }
 }
 #[cfg(
-    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+    feature = "cordl_class_DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
@@ -264,7 +264,7 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
     }
 }
 #[cfg(
-    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+    feature = "cordl_class_DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
@@ -280,7 +280,7 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
     }
 }
 #[cfg(
-    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+    feature = "cordl_class_DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
@@ -297,7 +297,7 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
     }
 }
 #[cfg(
-    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+    feature = "cordl_class_DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
@@ -313,7 +313,7 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
     }
 }
 #[cfg(
-    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+    feature = "cordl_class_DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {

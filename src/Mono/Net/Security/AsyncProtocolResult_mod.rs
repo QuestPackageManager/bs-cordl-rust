@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncProtocolResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncProtocolResult {
@@ -8,7 +8,7 @@ pub struct AsyncProtocolResult {
         crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
     >,
 }
-#[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncProtocolResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Net::Security::AsyncProtocolResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Mono::Net::Security::AsyncProtocolResult {
         false
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncProtocolResult")]
 impl std::ops::Deref for crate::Mono::Net::Security::AsyncProtocolResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncProtocolResult")]
 impl std::ops::DerefMut for crate::Mono::Net::Security::AsyncProtocolResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -164,7 +164,7 @@ impl crate::Mono::Net::Security::AsyncProtocolResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncProtocolResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Net::Security::AsyncProtocolResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

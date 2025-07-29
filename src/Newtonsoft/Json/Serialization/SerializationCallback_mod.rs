@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationCallback")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializationCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationCallback")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::SerializationCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Serialization::SerializationCallback {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationCallback")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationCallback")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::SerializationCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationCallback")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationCallback")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::SerializationCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -181,7 +181,7 @@ impl crate::Newtonsoft::Json::Serialization::SerializationCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationCallback")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::SerializationCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

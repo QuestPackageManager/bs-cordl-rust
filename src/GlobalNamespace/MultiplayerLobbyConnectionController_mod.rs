@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLobbyConnectionController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyConnectionController {
@@ -24,7 +24,7 @@ pub struct MultiplayerLobbyConnectionController {
     >,
     pub _retryAttemptsLeft: i32,
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         false
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -650,7 +650,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -660,7 +660,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLobbyConnectionController_LobbyConnectionState {
@@ -670,7 +670,7 @@ pub enum MultiplayerLobbyConnectionController_LobbyConnectionState {
     ConnectionFailed = 3i32,
     None = 0i32,
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState {
     type Held<'a> = Self;
@@ -700,7 +700,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState {
     type Type = Self;
@@ -711,7 +711,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState {
     type Actual = Self;
@@ -725,7 +725,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
         self
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState {
     type Type = Self;
@@ -740,7 +740,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
         }
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState {
     type Actual = Self;
@@ -754,7 +754,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
         actual
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLobbyConnectionController_LobbyConnectionType {
@@ -764,7 +764,7 @@ pub enum MultiplayerLobbyConnectionController_LobbyConnectionType {
     PartyHost = 1i32,
     QuickPlay = 3i32,
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType {
     type Held<'a> = Self;
@@ -794,7 +794,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType {
     type Type = Self;
@@ -805,7 +805,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType {
     type Actual = Self;
@@ -819,7 +819,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
         self
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType {
     type Type = Self;
@@ -834,7 +834,7 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnection
         }
     }
 }
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyConnectionController+LobbyConnectionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType {
     type Actual = Self;

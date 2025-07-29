@@ -1,4 +1,4 @@
-#[cfg(feature = "OvrToolMetrics")]
+#[cfg(feature = "cordl_class_OvrToolMetrics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OvrToolMetrics {
@@ -13,7 +13,7 @@ pub struct OvrToolMetrics {
         crate::System::Collections::Generic::List_1<i64>,
     >,
 }
-#[cfg(feature = "OvrToolMetrics")]
+#[cfg(feature = "cordl_class_OvrToolMetrics")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OvrToolMetrics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OvrToolMetri
         false
     }
 }
-#[cfg(feature = "OvrToolMetrics")]
+#[cfg(feature = "cordl_class_OvrToolMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OvrToolMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OvrToolMetrics")]
+#[cfg(feature = "cordl_class_OvrToolMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OvrToolMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -205,7 +205,7 @@ impl crate::GlobalNamespace::OvrToolMetrics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OvrToolMetrics")]
+#[cfg(feature = "cordl_class_OvrToolMetrics")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OvrToolMetrics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

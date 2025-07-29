@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct SceneProviderExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExtensions {
@@ -29,7 +29,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExte
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExtensions {
@@ -39,7 +39,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExte
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExtensions {
@@ -110,7 +110,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExt
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExtensions {

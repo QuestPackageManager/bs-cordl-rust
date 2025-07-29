@@ -1,10 +1,10 @@
-#[cfg(feature = "IMultiplayerObservable")]
+#[cfg(feature = "cordl_class_IMultiplayerObservable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMultiplayerObservable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IMultiplayerObservable")]
+#[cfg(feature = "cordl_class_IMultiplayerObservable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IMultiplayerObservable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IMultiplayerObservable {
         false
     }
 }
-#[cfg(feature = "IMultiplayerObservable")]
+#[cfg(feature = "cordl_class_IMultiplayerObservable")]
 impl std::ops::Deref for crate::GlobalNamespace::IMultiplayerObservable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IMultiplayerObservable")]
+#[cfg(feature = "cordl_class_IMultiplayerObservable")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IMultiplayerObservable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::IMultiplayerObservable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IMultiplayerObservable")]
+#[cfg(feature = "cordl_class_IMultiplayerObservable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IMultiplayerObservable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

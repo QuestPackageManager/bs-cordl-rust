@@ -1,4 +1,4 @@
-#[cfg(feature = "AnniversaryManager")]
+#[cfg(feature = "cordl_class_AnniversaryManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnniversaryManager {
@@ -10,7 +10,7 @@ pub struct AnniversaryManager {
         crate::GlobalNamespace::MainMenuViewController,
     >,
 }
-#[cfg(feature = "AnniversaryManager")]
+#[cfg(feature = "cordl_class_AnniversaryManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AnniversaryManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AnniversaryM
         false
     }
 }
-#[cfg(feature = "AnniversaryManager")]
+#[cfg(feature = "cordl_class_AnniversaryManager")]
 impl std::ops::Deref for crate::GlobalNamespace::AnniversaryManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AnniversaryManager")]
+#[cfg(feature = "cordl_class_AnniversaryManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AnniversaryManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -230,7 +230,7 @@ impl crate::GlobalNamespace::AnniversaryManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AnniversaryManager")]
+#[cfg(feature = "cordl_class_AnniversaryManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AnniversaryManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

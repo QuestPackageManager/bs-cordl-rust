@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ScrollView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollView {
@@ -71,7 +71,7 @@ pub struct ScrollView {
         crate::UnityEngine::UIElements::IVisualElementScheduledItem,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::ScrollView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -90,14 +90,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Scro
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ScrollView {
     type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ScrollView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2124,7 +2124,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ScrollView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2133,7 +2133,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_NestedInteractionKind {
@@ -2142,7 +2142,7 @@ pub enum ScrollView_NestedInteractionKind {
     ForwardScrolling = 2i32,
     StopScrolling = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Held<'a> = Self;
@@ -2172,7 +2172,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Type = Self;
@@ -2183,7 +2183,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Actual = Self;
@@ -2197,7 +2197,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Type = Self;
@@ -2212,7 +2212,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Actual = Self;
@@ -2226,7 +2226,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_TouchScrollBehavior {
@@ -2235,7 +2235,7 @@ pub enum ScrollView_TouchScrollBehavior {
     Elastic = 1i32,
     Unrestricted = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Held<'a> = Self;
@@ -2265,7 +2265,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Type = Self;
@@ -2276,7 +2276,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Actual = Self;
@@ -2290,7 +2290,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Type = Self;
@@ -2305,7 +2305,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Actual = Self;
@@ -2319,7 +2319,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_TouchScrollingResult {
@@ -2328,7 +2328,7 @@ pub enum ScrollView_TouchScrollingResult {
     Block = 2i32,
     Forward = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Held<'a> = Self;
@@ -2358,7 +2358,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Type = Self;
@@ -2369,7 +2369,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Actual = Self;
@@ -2383,7 +2383,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Type = Self;
@@ -2398,7 +2398,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Actual = Self;
@@ -2412,7 +2412,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollView_UxmlFactory {
@@ -2421,7 +2421,7 @@ pub struct ScrollView_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2441,7 +2441,7 @@ for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
@@ -2451,7 +2451,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::ScrollView_UxmlFactory 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2488,7 +2488,7 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2498,7 +2498,7 @@ for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollView_UxmlTraits {
@@ -2553,7 +2553,7 @@ pub struct ScrollView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2573,14 +2573,14 @@ for crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2653,7 +2653,7 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

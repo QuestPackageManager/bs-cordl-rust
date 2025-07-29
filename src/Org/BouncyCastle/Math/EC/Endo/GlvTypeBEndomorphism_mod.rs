@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GlvTypeBEndomorphism {
@@ -10,7 +10,7 @@ pub struct GlvTypeBEndomorphism {
         crate::Org::BouncyCastle::Math::EC::ECPointMap,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBEndomorphism {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBEndomorphism {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBEndomorphism {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBEndomorphism {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -183,7 +183,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBEndomorphism {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBEndomorphism {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

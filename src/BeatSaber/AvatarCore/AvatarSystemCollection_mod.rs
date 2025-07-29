@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarSystemCollection {
@@ -26,7 +26,7 @@ pub struct AvatarSystemCollection {
         >,
     >,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         false
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -552,7 +552,7 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

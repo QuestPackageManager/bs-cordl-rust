@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+DictionaryPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+DictionaryPropertyBag_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DictionaryPropertyBag_2<
@@ -15,7 +15,7 @@ pub struct DictionaryPropertyBag_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Unity+Properties+DictionaryPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+DictionaryPropertyBag_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -54,7 +54,7 @@ for crate::Unity::Properties::DictionaryPropertyBag_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+DictionaryPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+DictionaryPropertyBag_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -70,7 +70,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+DictionaryPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+DictionaryPropertyBag_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -195,7 +195,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+DictionaryPropertyBag_2")]
+#[cfg(feature = "cordl_class_Unity+Properties+DictionaryPropertyBag_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+SHA1Internal")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA1Internal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SHA1Internal {
@@ -11,7 +11,7 @@ pub struct SHA1Internal {
     pub _ProcessingBufferCount: i32,
     pub buff: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
-#[cfg(feature = "System+Security+Cryptography+SHA1Internal")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA1Internal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::SHA1Internal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Security::Cryptography::SHA1Internal {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+SHA1Internal")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA1Internal")]
 impl std::ops::Deref for crate::System::Security::Cryptography::SHA1Internal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+SHA1Internal")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA1Internal")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::SHA1Internal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -322,7 +322,7 @@ impl crate::System::Security::Cryptography::SHA1Internal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+SHA1Internal")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+SHA1Internal")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::SHA1Internal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

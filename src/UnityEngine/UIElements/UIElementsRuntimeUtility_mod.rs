@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIElementsRuntimeUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -872,7 +872,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -883,7 +883,7 @@ for crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -891,7 +891,7 @@ pub struct UIElementsRuntimeUtility_CreateRuntimePanelDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelDelegate {
@@ -913,7 +913,7 @@ for crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelD
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelDelegate {
@@ -923,7 +923,7 @@ for crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelD
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelDelegate {
@@ -1011,7 +1011,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanel
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
+    feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelDelegate {

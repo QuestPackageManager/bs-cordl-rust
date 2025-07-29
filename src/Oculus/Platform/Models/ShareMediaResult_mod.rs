@@ -1,11 +1,11 @@
-#[cfg(feature = "Oculus+Platform+Models+ShareMediaResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ShareMediaResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShareMediaResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Status: crate::Oculus::Platform::ShareMediaStatus,
 }
-#[cfg(feature = "Oculus+Platform+Models+ShareMediaResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ShareMediaResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::ShareMediaResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Oculus::Platform::Models::ShareMediaResult {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+ShareMediaResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ShareMediaResult")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::ShareMediaResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+ShareMediaResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ShareMediaResult")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::ShareMediaResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::Oculus::Platform::Models::ShareMediaResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+ShareMediaResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ShareMediaResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::ShareMediaResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

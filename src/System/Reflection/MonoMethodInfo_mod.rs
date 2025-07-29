@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+MonoMethodInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoMethodInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MonoMethodInfo {
@@ -8,7 +8,7 @@ pub struct MonoMethodInfo {
     pub iattrs: crate::System::Reflection::MethodImplAttributes,
     pub callconv: crate::System::Reflection::CallingConventions,
 }
-#[cfg(feature = "System+Reflection+MonoMethodInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoMethodInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::MonoMethodInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::MonoMetho
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+MonoMethodInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoMethodInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::MonoMethodInfo {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Reflection::MonoMethodInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+MonoMethodInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoMethodInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::MonoMethodInfo {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Reflection::MonoMethodInfo {
         self
     }
 }
-#[cfg(feature = "System+Reflection+MonoMethodInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoMethodInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::MonoMethodInfo {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Reflection::MonoMethodInfo {
         }
     }
 }
-#[cfg(feature = "System+Reflection+MonoMethodInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoMethodInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Reflection::MonoMethodInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Reflection::MonoMet
         actual
     }
 }
-#[cfg(feature = "System+Reflection+MonoMethodInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+MonoMethodInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Reflection::MonoMethodInfo {
     type Type = Self;

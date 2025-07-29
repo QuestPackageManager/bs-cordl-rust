@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRMaterialData")]
+#[cfg(feature = "cordl_class_OVRMaterialData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRMaterialData {
@@ -7,7 +7,7 @@ pub struct OVRMaterialData {
     pub texture: crate::GlobalNamespace::OVRTextureData,
     pub baseColorFactor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "OVRMaterialData")]
+#[cfg(feature = "cordl_class_OVRMaterialData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMaterialData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMaterialD
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRMaterialData")]
+#[cfg(feature = "cordl_class_OVRMaterialData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRMaterialData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRMater
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRMaterialData")]
+#[cfg(feature = "cordl_class_OVRMaterialData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMaterialData {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::OVRMaterialData {
         self
     }
 }
-#[cfg(feature = "OVRMaterialData")]
+#[cfg(feature = "cordl_class_OVRMaterialData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRMaterialData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRMater
         }
     }
 }
-#[cfg(feature = "OVRMaterialData")]
+#[cfg(feature = "cordl_class_OVRMaterialData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRMaterialData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRMateria
         actual
     }
 }
-#[cfg(feature = "OVRMaterialData")]
+#[cfg(feature = "cordl_class_OVRMaterialData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRMaterialData {
     type Type = Self;

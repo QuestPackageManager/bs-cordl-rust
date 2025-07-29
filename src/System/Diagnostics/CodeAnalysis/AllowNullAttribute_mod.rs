@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AllowNullAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
 impl std::ops::DerefMut
 for crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -69,7 +69,7 @@ impl crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

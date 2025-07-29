@@ -1,4 +1,4 @@
-#[cfg(feature = "BombExplosionEffect")]
+#[cfg(feature = "cordl_class_BombExplosionEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombExplosionEffect {
@@ -10,7 +10,7 @@ pub struct BombExplosionEffect {
     pub _emitParams: crate::UnityEngine::ParticleSystem_EmitParams,
     pub _explosionPSEmitParams: crate::UnityEngine::ParticleSystem_EmitParams,
 }
-#[cfg(feature = "BombExplosionEffect")]
+#[cfg(feature = "cordl_class_BombExplosionEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BombExplosionEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BombExplosio
         false
     }
 }
-#[cfg(feature = "BombExplosionEffect")]
+#[cfg(feature = "cordl_class_BombExplosionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::BombExplosionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BombExplosionEffect")]
+#[cfg(feature = "cordl_class_BombExplosionEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BombExplosionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::BombExplosionEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BombExplosionEffect")]
+#[cfg(feature = "cordl_class_BombExplosionEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombExplosionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

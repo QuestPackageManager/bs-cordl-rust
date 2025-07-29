@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
+#[cfg(feature = "cordl_class_System+Security+Claims+ClaimsPrincipal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClaimsPrincipal {
@@ -13,7 +13,7 @@ pub struct ClaimsPrincipal {
         >,
     >,
 }
-#[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
+#[cfg(feature = "cordl_class_System+Security+Claims+ClaimsPrincipal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Claims::ClaimsPrincipal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::System::Security::Claims::ClaimsPrincipal {
         false
     }
 }
-#[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
+#[cfg(feature = "cordl_class_System+Security+Claims+ClaimsPrincipal")]
 impl std::ops::Deref for crate::System::Security::Claims::ClaimsPrincipal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
+#[cfg(feature = "cordl_class_System+Security+Claims+ClaimsPrincipal")]
 impl std::ops::DerefMut for crate::System::Security::Claims::ClaimsPrincipal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -344,7 +344,7 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
+#[cfg(feature = "cordl_class_System+Security+Claims+ClaimsPrincipal")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Claims::ClaimsPrincipal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

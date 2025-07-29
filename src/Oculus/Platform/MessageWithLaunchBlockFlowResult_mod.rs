@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchBlockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchBlockFlowResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLaunchBlockFlowResult {
@@ -6,7 +6,7 @@ pub struct MessageWithLaunchBlockFlowResult {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchBlockFlowResult>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchBlockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchBlockFlowResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithLaunchBlockFlowResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithLaunchBlockFlowResult {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchBlockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchBlockFlowResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLaunchBlockFlowResult {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchBlockFlowResult>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithLaunchBlockFlowResu
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchBlockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchBlockFlowResult")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithLaunchBlockFlowResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithLaunchBlockFlowResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchBlockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchBlockFlowResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithLaunchBlockFlowResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

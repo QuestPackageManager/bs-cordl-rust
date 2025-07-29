@@ -1,11 +1,15 @@
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnmodifiableListProxy {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableList,
     pub l: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
     type Target = crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableList;
@@ -33,7 +39,9 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -290,7 +298,9 @@ impl crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

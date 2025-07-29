@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleSheetExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -100,7 +100,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

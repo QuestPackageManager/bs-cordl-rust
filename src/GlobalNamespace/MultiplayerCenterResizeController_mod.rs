@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerCenterResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerCenterResizeController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerCenterResizeController {
@@ -13,7 +13,7 @@ pub struct MultiplayerCenterResizeController {
     pub _isEdgeDistanceFromCenterCalculated_k__BackingField: bool,
     pub _edgeDistanceFromCenter_k__BackingField: f32,
 }
-#[cfg(feature = "MultiplayerCenterResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerCenterResizeController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerCenterResizeController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::MultiplayerCenterResizeController {
         false
     }
 }
-#[cfg(feature = "MultiplayerCenterResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerCenterResizeController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerCenterResizeController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerCenterResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerCenterResizeController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerCenterResizeController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -290,7 +290,7 @@ impl crate::GlobalNamespace::MultiplayerCenterResizeController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerCenterResizeController")]
+#[cfg(feature = "cordl_class_MultiplayerCenterResizeController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerCenterResizeController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

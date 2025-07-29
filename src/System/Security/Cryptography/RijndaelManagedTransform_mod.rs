@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManagedTransform")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RijndaelManagedTransform {
@@ -34,7 +34,7 @@ pub struct RijndaelManagedTransform {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
 }
-#[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManagedTransform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::RijndaelManagedTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,7 +54,7 @@ for crate::System::Security::Cryptography::RijndaelManagedTransform {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManagedTransform")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RijndaelManagedTransform {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -62,7 +62,7 @@ for crate::System::Security::Cryptography::RijndaelManagedTransform {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManagedTransform")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RijndaelManagedTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -705,7 +705,7 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManagedTransform")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::RijndaelManagedTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

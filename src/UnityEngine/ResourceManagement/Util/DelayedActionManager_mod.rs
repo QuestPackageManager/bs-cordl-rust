@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelayedActionManager {
@@ -33,7 +33,7 @@ pub struct DelayedActionManager {
     pub m_CollectionIndex: i32,
     pub m_DestroyOnCompletion: bool,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,7 +53,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
     type Target = crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
@@ -65,7 +65,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -391,7 +391,7 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -401,7 +401,9 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DelayedActionManager_DelegateInfo {
@@ -414,7 +416,9 @@ pub struct DelayedActionManager_DelegateInfo {
     >,
     pub _InvocationTime_k__BackingField: f32,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Held<'a> = Self;
@@ -444,7 +448,9 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Type = Self;
@@ -455,7 +461,9 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Actual = Self;
@@ -469,7 +477,9 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Type = Self;
@@ -484,7 +494,9 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Actual = Self;
@@ -498,7 +510,9 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+PrefabResourceFactory_2")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabResourceFactory_2<
@@ -10,7 +10,7 @@ pub struct PrefabResourceFactory_2<
     __cordl_phantom_P1: std::marker::PhantomData<P1>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Zenject+PrefabResourceFactory_2")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_2")]
 unsafe impl<
     P1: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "Zenject+PrefabResourceFactory_2")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_2")]
 impl<P1: quest_hook::libil2cpp::Type, T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::PrefabResourceFactory_2<P1, T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -56,7 +56,7 @@ for crate::Zenject::PrefabResourceFactory_2<P1, T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+PrefabResourceFactory_2")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_2")]
 impl<P1: quest_hook::libil2cpp::Type, T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::PrefabResourceFactory_2<P1, T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -293,7 +293,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+PrefabResourceFactory_2")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_2")]
 impl<
     P1: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,

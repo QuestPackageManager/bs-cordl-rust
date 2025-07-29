@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+MethodCall_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+MethodCall_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodCall_2<
@@ -9,7 +9,7 @@ pub struct MethodCall_2<
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+MethodCall_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+MethodCall_2")]
 unsafe impl<
     T: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -48,7 +48,7 @@ for crate::Newtonsoft::Json::Utilities::MethodCall_2<T, TResult> {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+MethodCall_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+MethodCall_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+MethodCall_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+MethodCall_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -259,7 +259,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+MethodCall_2")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+MethodCall_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

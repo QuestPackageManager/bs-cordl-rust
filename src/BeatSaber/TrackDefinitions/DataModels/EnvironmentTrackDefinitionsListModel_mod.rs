@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -15,7 +15,7 @@ pub struct EnvironmentTrackDefinitionsListModel {
     >,
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {
@@ -37,7 +37,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsL
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {
@@ -47,7 +47,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsL
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {
@@ -148,7 +148,7 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitions
     }
 }
 #[cfg(
-    feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
+    feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {

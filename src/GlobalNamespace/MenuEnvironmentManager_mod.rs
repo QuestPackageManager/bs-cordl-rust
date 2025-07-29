@@ -1,4 +1,4 @@
-#[cfg(feature = "MenuEnvironmentManager")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuEnvironmentManager {
@@ -12,7 +12,7 @@ pub struct MenuEnvironmentManager {
     >,
     pub _prevMenuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,
 }
-#[cfg(feature = "MenuEnvironmentManager")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuEnvironmentManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::MenuEnvironmentManager {
         false
     }
 }
-#[cfg(feature = "MenuEnvironmentManager")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuEnvironmentManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuEnvironmentManager")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuEnvironmentManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::MenuEnvironmentManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuEnvironmentManager")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuEnvironmentManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -137,7 +137,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentObjects")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuEnvironmentManager_MenuEnvironmentObjects {
@@ -145,7 +145,7 @@ pub struct MenuEnvironmentManager_MenuEnvironmentObjects {
     pub _menuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,
     pub _wrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentObjects")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -165,7 +165,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
         false
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentObjects")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -173,7 +173,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentObjects")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -265,7 +265,7 @@ impl crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentObjects")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -275,7 +275,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MenuEnvironmentManager_MenuEnvironmentType {
@@ -284,7 +284,7 @@ pub enum MenuEnvironmentManager_MenuEnvironmentType {
     Lobby = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Held<'a> = Self;
@@ -314,7 +314,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Type = Self;
@@ -325,7 +325,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Actual = Self;
@@ -339,7 +339,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
         self
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Type = Self;
@@ -354,7 +354,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
         }
     }
 }
-#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
+#[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Actual = Self;

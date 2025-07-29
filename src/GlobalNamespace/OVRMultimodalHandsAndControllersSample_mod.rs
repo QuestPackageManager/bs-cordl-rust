@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
+#[cfg(feature = "cordl_class_OVRMultimodalHandsAndControllersSample")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMultimodalHandsAndControllersSample {
@@ -7,7 +7,7 @@ pub struct OVRMultimodalHandsAndControllersSample {
     pub disableButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub displayText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
 }
-#[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
+#[cfg(feature = "cordl_class_OVRMultimodalHandsAndControllersSample")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
         false
     }
 }
-#[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
+#[cfg(feature = "cordl_class_OVRMultimodalHandsAndControllersSample")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
+#[cfg(feature = "cordl_class_OVRMultimodalHandsAndControllersSample")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -227,7 +227,7 @@ impl crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
+#[cfg(feature = "cordl_class_OVRMultimodalHandsAndControllersSample")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

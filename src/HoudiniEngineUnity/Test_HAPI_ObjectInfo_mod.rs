@@ -1,11 +1,11 @@
-#[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Test_HAPI_ObjectInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_self: crate::HoudiniEngineUnity::HAPI_ObjectInfo,
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -104,7 +104,7 @@ impl crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

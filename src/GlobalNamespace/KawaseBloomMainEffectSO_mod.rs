@@ -1,4 +1,4 @@
-#[cfg(feature = "KawaseBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_KawaseBloomMainEffectSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KawaseBloomMainEffectSO {
@@ -16,7 +16,7 @@ pub struct KawaseBloomMainEffectSO {
     pub _baseColorBoostThreshold: f32,
     pub _mainEffectMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
-#[cfg(feature = "KawaseBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_KawaseBloomMainEffectSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::KawaseBloomMainEffectSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::KawaseBloomMainEffectSO {
         false
     }
 }
-#[cfg(feature = "KawaseBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_KawaseBloomMainEffectSO")]
 impl std::ops::Deref for crate::GlobalNamespace::KawaseBloomMainEffectSO {
     type Target = crate::GlobalNamespace::MainEffectSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "KawaseBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_KawaseBloomMainEffectSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::KawaseBloomMainEffectSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -217,7 +217,7 @@ impl crate::GlobalNamespace::KawaseBloomMainEffectSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "KawaseBloomMainEffectSO")]
+#[cfg(feature = "cordl_class_KawaseBloomMainEffectSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::KawaseBloomMainEffectSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

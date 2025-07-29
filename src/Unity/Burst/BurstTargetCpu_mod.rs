@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Burst+BurstTargetCpu")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstTargetCpu")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstTargetCpu {
@@ -17,7 +17,7 @@ pub enum BurstTargetCpu {
     X86_SSE2 = 1i32,
     X86_SSE4 = 2i32,
 }
-#[cfg(feature = "Unity+Burst+BurstTargetCpu")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstTargetCpu")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstTargetCpu {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstTargetCpu 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstTargetCpu")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstTargetCpu")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstTargetCpu {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::BurstTarget
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstTargetCpu")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstTargetCpu")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstTargetCpu {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,7 +69,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::BurstTarge
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstTargetCpu")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstTargetCpu")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstTargetCpu {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::BurstTarget
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstTargetCpu")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstTargetCpu")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstTargetCpu {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

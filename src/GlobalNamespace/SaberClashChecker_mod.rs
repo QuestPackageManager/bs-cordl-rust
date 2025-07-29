@@ -1,4 +1,4 @@
-#[cfg(feature = "SaberClashChecker")]
+#[cfg(feature = "cordl_class_SaberClashChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberClashChecker {
@@ -9,7 +9,7 @@ pub struct SaberClashChecker {
     pub _rightSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
     pub _prevGetFrameNum: i32,
 }
-#[cfg(feature = "SaberClashChecker")]
+#[cfg(feature = "cordl_class_SaberClashChecker")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberClashChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberClashCh
         false
     }
 }
-#[cfg(feature = "SaberClashChecker")]
+#[cfg(feature = "cordl_class_SaberClashChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberClashChecker {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SaberClashChecker")]
+#[cfg(feature = "cordl_class_SaberClashChecker")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SaberClashChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -165,7 +165,7 @@ impl crate::GlobalNamespace::SaberClashChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SaberClashChecker")]
+#[cfg(feature = "cordl_class_SaberClashChecker")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberClashChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

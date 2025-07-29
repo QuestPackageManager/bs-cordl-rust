@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Resources+ResourceLocator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceLocator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ResourceLocator {
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _dataPos: i32,
 }
-#[cfg(feature = "System+Resources+ResourceLocator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceLocator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Resources::ResourceLocator {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Resources::ResourceLo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Resources+ResourceLocator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceLocator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Resources::ResourceLocator {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::System::Resources::ResourceLocator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Resources+ResourceLocator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceLocator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Resources::ResourceLocator {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::System::Resources::ResourceLocator {
         self
     }
 }
-#[cfg(feature = "System+Resources+ResourceLocator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceLocator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Resources::ResourceLocator {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::System::Resources::ResourceLocator {
         }
     }
 }
-#[cfg(feature = "System+Resources+ResourceLocator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceLocator")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Resources::ResourceLocator {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Resources::Resource
         actual
     }
 }
-#[cfg(feature = "System+Resources+ResourceLocator")]
+#[cfg(feature = "cordl_class_System+Resources+ResourceLocator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Resources::ResourceLocator {
     type Type = Self;

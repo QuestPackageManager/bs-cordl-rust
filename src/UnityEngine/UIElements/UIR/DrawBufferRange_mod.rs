@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+DrawBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+DrawBufferRange")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DrawBufferRange {
@@ -7,7 +7,7 @@ pub struct DrawBufferRange {
     pub minIndexVal: i32,
     pub vertsReferenced: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+DrawBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+DrawBufferRange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+DrawBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+DrawBufferRange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+DrawBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+DrawBufferRange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+DrawBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+DrawBufferRange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+DrawBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+DrawBufferRange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+DrawBufferRange")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+DrawBufferRange")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::DrawBufferRange {
     type Type = Self;

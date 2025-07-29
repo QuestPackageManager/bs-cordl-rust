@@ -1,4 +1,4 @@
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectionalLightWithIdsGroupEntry {
@@ -25,7 +25,7 @@ pub struct DirectionalLightWithIdsGroupEntry {
     >,
     pub _groupLightsWeighting: crate::GlobalNamespace::ColorMixAndWeightingApproach,
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
         false
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry")]
 impl std::ops::Deref for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -206,7 +206,7 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -216,7 +216,7 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+GroupLightData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectionalLightWithIdsGroupEntry_GroupLightData {
@@ -224,7 +224,7 @@ pub struct DirectionalLightWithIdsGroupEntry_GroupLightData {
     pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub _groupIntensity: f32,
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+GroupLightData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -244,7 +244,7 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
         false
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+GroupLightData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -252,7 +252,7 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+GroupLightData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -343,7 +343,7 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+GroupLightData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -353,7 +353,7 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
@@ -361,7 +361,7 @@ pub struct DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
     pub _lightId: i32,
     pub _intensity: f32,
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -381,7 +381,7 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWi
         false
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -389,7 +389,7 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -470,7 +470,7 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesW
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
+#[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

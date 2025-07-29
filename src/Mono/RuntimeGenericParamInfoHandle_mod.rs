@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+RuntimeGenericParamInfoHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGenericParamInfoHandle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeGenericParamInfoHandle {
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "Mono+RuntimeGenericParamInfoHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGenericParamInfoHandle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeGenericParamInfoHandle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeGenericParamInfo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+RuntimeGenericParamInfoHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGenericParamInfoHandle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::RuntimeGenericParamInfoHandle {
     type Type = Self;
@@ -44,7 +44,7 @@ for crate::Mono::RuntimeGenericParamInfoHandle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+RuntimeGenericParamInfoHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGenericParamInfoHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::RuntimeGenericParamInfoHandle {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::Mono::RuntimeGenericParamInfoHandle {
         self
     }
 }
-#[cfg(feature = "Mono+RuntimeGenericParamInfoHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGenericParamInfoHandle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::RuntimeGenericParamInfoHandle {
     type Type = Self;
@@ -73,7 +73,7 @@ for crate::Mono::RuntimeGenericParamInfoHandle {
         }
     }
 }
-#[cfg(feature = "Mono+RuntimeGenericParamInfoHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGenericParamInfoHandle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::RuntimeGenericParamInfoHandle {
     type Actual = Self;
@@ -87,7 +87,7 @@ for crate::Mono::RuntimeGenericParamInfoHandle {
         actual
     }
 }
-#[cfg(feature = "Mono+RuntimeGenericParamInfoHandle")]
+#[cfg(feature = "cordl_class_Mono+RuntimeGenericParamInfoHandle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::RuntimeGenericParamInfoHandle {
     type Type = Self;

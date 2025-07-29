@@ -1,4 +1,4 @@
-#[cfg(feature = "PacketEncryptionLayer")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketEncryptionLayer {
@@ -29,7 +29,7 @@ pub struct PacketEncryptionLayer {
     pub _filterUnencryptedTraffic_k__BackingField: bool,
     pub _enableStatistics_k__BackingField: bool,
 }
-#[cfg(feature = "PacketEncryptionLayer")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PacketEncryptionLayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::PacketEncryptionLayer {
         false
     }
 }
-#[cfg(feature = "PacketEncryptionLayer")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PacketEncryptionLayer {
     type Target = crate::LiteNetLib::Layers::PacketLayerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PacketEncryptionLayer")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PacketEncryptionLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -876,7 +876,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PacketEncryptionLayer")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PacketEncryptionLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -886,7 +886,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+EncryptionStatistics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketEncryptionLayer_EncryptionStatistics {
@@ -900,7 +900,7 @@ pub struct PacketEncryptionLayer_EncryptionStatistics {
     pub _encryptionProcessingTime: i64,
     pub _decryptionProcessingTime: i64,
 }
-#[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+EncryptionStatistics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -920,7 +920,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         false
     }
 }
-#[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+EncryptionStatistics")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -928,7 +928,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+EncryptionStatistics")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1312,7 +1312,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+EncryptionStatistics")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1322,7 +1322,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+PendingEncryptionStateList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketEncryptionLayer_PendingEncryptionStateList {
@@ -1336,7 +1336,7 @@ pub struct PacketEncryptionLayer_PendingEncryptionStateList {
         >,
     >,
 }
-#[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+PendingEncryptionStateList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1356,7 +1356,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         false
     }
 }
-#[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+PendingEncryptionStateList")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1364,7 +1364,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+PendingEncryptionStateList")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1609,7 +1609,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
+#[cfg(feature = "cordl_class_PacketEncryptionLayer+PendingEncryptionStateList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

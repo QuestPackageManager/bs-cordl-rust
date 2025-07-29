@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2 {
@@ -10,7 +10,7 @@ pub struct LegacySettingsV2 {
         crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings,
     >,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2 {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV2 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -134,7 +134,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2")]
 impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Settings::LegacySettingsV2 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -143,7 +143,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Settings::LegacySet
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_AudioSettings {
@@ -153,7 +153,7 @@ pub struct LegacySettingsV2_AudioSettings {
     pub overrideAudioLatency: bool,
     pub audioLatency: f32,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -173,14 +173,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -217,7 +217,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -227,7 +227,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_BloomPrepassTextureEffectPreset {
@@ -235,7 +237,9 @@ pub enum LegacySettingsV2_BloomPrepassTextureEffectPreset {
     HD = 0i32,
     HDWithoutToneMapping = 1i32,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Held<'a> = Self;
@@ -265,7 +269,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Type = Self;
@@ -276,7 +282,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Actual = Self;
@@ -290,7 +298,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Type = Self;
@@ -305,7 +315,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Actual = Self;
@@ -319,7 +331,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_ControllerSettings {
@@ -327,7 +339,7 @@ pub struct LegacySettingsV2_ControllerSettings {
     pub positionOffset: crate::Unity::Mathematics::float3,
     pub rotationOffset: crate::Unity::Mathematics::float3,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -347,7 +359,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -355,7 +367,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -393,7 +405,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -403,7 +415,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_CustomServerSettings {
@@ -414,7 +426,7 @@ pub struct LegacySettingsV2_CustomServerSettings {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -434,7 +446,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -442,7 +454,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -480,7 +492,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -490,7 +502,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_DebugSettings {
@@ -499,7 +511,7 @@ pub struct LegacySettingsV2_DebugSettings {
     pub enableFpsRecorder: bool,
     pub enableMemoryTracker: bool,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -519,14 +531,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -563,7 +575,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -573,7 +585,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_FoveatedRenderingLevel {
@@ -584,7 +598,9 @@ pub enum LegacySettingsV2_FoveatedRenderingLevel {
     Medium = 2i32,
     Off = 0i32,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Held<'a> = Self;
@@ -614,7 +630,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Type = Self;
@@ -625,7 +643,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Actual = Self;
@@ -639,7 +659,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Type = Self;
@@ -654,7 +676,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Actual = Self;
@@ -668,7 +692,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_GraphicSettings {
@@ -682,7 +706,7 @@ pub struct LegacySettingsV2_GraphicSettings {
     pub windowMode: crate::BeatSaber::Settings::LegacySettingsV2_WindowMode,
     pub windowResolution: crate::Unity::Mathematics::int2,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -702,14 +726,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -747,7 +771,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -757,7 +781,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_MainEffectPreset {
@@ -766,7 +790,7 @@ pub enum LegacySettingsV2_MainEffectPreset {
     Pyramid = 1i32,
     PyramidForBaking = 2i32,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Held<'a> = Self;
@@ -796,7 +820,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Type = Self;
@@ -807,7 +831,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Actual = Self;
@@ -821,7 +845,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Type = Self;
@@ -836,7 +860,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Actual = Self;
@@ -850,7 +874,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_MainSettings {
@@ -877,7 +901,7 @@ pub struct LegacySettingsV2_MainSettings {
     pub hapticFeedback: bool,
     pub createScreenshotDuringTheGame: bool,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -897,14 +921,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -941,7 +965,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -951,7 +975,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_MirrorQualityPreset {
@@ -961,7 +985,7 @@ pub enum LegacySettingsV2_MirrorQualityPreset {
     RenderedHQ = 3i32,
     RenderedLQ = 2i32,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Held<'a> = Self;
@@ -991,7 +1015,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Type = Self;
@@ -1002,7 +1026,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Actual = Self;
@@ -1016,7 +1040,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Type = Self;
@@ -1031,7 +1055,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Actual = Self;
@@ -1045,7 +1069,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_ObstaclesQuality {
@@ -1055,7 +1079,7 @@ pub enum LegacySettingsV2_ObstaclesQuality {
     ObstacleLW = 2i32,
     TexturedObstacle = 1i32,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Held<'a> = Self;
@@ -1085,7 +1109,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Type = Self;
@@ -1096,7 +1120,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Actual = Self;
@@ -1110,7 +1134,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Type = Self;
@@ -1125,7 +1149,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Actual = Self;
@@ -1139,7 +1163,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_PerformancePreset {
@@ -1165,7 +1189,7 @@ pub struct LegacySettingsV2_PerformancePreset {
     pub bloomPrePassTextureEffect: crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset,
     pub obstaclesQuality: crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1185,14 +1209,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1230,7 +1254,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1240,7 +1264,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_ProcessorPerformanceLevel {
@@ -1251,7 +1277,9 @@ pub enum LegacySettingsV2_ProcessorPerformanceLevel {
     SustainedLow = 1i32,
     Unknown = -1i32,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Held<'a> = Self;
@@ -1281,7 +1309,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Type = Self;
@@ -1292,7 +1322,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Actual = Self;
@@ -1306,7 +1338,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Type = Self;
@@ -1321,7 +1355,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Actual = Self;
@@ -1335,7 +1371,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_SmoothCameraSettings {
@@ -1348,7 +1384,7 @@ pub struct LegacySettingsV2_SmoothCameraSettings {
     pub thirdPersonPosition: crate::Unity::Mathematics::float3,
     pub thirdPersonEulerAngles: crate::Unity::Mathematics::float3,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1368,7 +1404,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1376,7 +1412,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1414,7 +1450,7 @@ impl crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1424,7 +1460,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_WindowMode {
@@ -1432,7 +1468,7 @@ pub enum LegacySettingsV2_WindowMode {
     Fullscreen = 1i32,
     Windowed = 0i32,
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Held<'a> = Self;
@@ -1462,7 +1498,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Type = Self;
@@ -1473,7 +1509,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Actual = Self;
@@ -1487,7 +1523,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Type = Self;
@@ -1502,7 +1538,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Actual = Self;

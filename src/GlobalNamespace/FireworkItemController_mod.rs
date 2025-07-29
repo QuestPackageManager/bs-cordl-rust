@@ -1,4 +1,4 @@
-#[cfg(feature = "FireworkItemController")]
+#[cfg(feature = "cordl_class_FireworkItemController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworkItemController {
@@ -48,7 +48,7 @@ pub struct FireworkItemController {
         >,
     >,
 }
-#[cfg(feature = "FireworkItemController")]
+#[cfg(feature = "cordl_class_FireworkItemController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FireworkItemController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -68,14 +68,14 @@ for crate::GlobalNamespace::FireworkItemController {
         false
     }
 }
-#[cfg(feature = "FireworkItemController")]
+#[cfg(feature = "cordl_class_FireworkItemController")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworkItemController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FireworkItemController")]
+#[cfg(feature = "cordl_class_FireworkItemController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FireworkItemController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -410,7 +410,7 @@ impl crate::GlobalNamespace::FireworkItemController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FireworkItemController")]
+#[cfg(feature = "cordl_class_FireworkItemController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FireworkItemController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -420,7 +420,7 @@ for crate::GlobalNamespace::FireworkItemController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
+#[cfg(feature = "cordl_class_FireworkItemController+FireworkItemParticleSystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworkItemController_FireworkItemParticleSystem {
@@ -432,7 +432,7 @@ pub struct FireworkItemController_FireworkItemParticleSystem {
     pub _particleColorGradient: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
     pub _randomizeSpeed: bool,
 }
-#[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
+#[cfg(feature = "cordl_class_FireworkItemController+FireworkItemParticleSystem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -452,7 +452,7 @@ for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
         false
     }
 }
-#[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
+#[cfg(feature = "cordl_class_FireworkItemController+FireworkItemParticleSystem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -460,7 +460,7 @@ for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
+#[cfg(feature = "cordl_class_FireworkItemController+FireworkItemParticleSystem")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -498,7 +498,7 @@ impl crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
+#[cfg(feature = "cordl_class_FireworkItemController+FireworkItemParticleSystem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -508,7 +508,7 @@ for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "FireworkItemController+Pool")]
+#[cfg(feature = "cordl_class_FireworkItemController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworkItemController_Pool {
@@ -516,7 +516,7 @@ pub struct FireworkItemController_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
     >,
 }
-#[cfg(feature = "FireworkItemController+Pool")]
+#[cfg(feature = "cordl_class_FireworkItemController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FireworkItemController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -536,7 +536,7 @@ for crate::GlobalNamespace::FireworkItemController_Pool {
         false
     }
 }
-#[cfg(feature = "FireworkItemController+Pool")]
+#[cfg(feature = "cordl_class_FireworkItemController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworkItemController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
@@ -545,7 +545,7 @@ impl std::ops::Deref for crate::GlobalNamespace::FireworkItemController_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FireworkItemController+Pool")]
+#[cfg(feature = "cordl_class_FireworkItemController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FireworkItemController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -582,7 +582,7 @@ impl crate::GlobalNamespace::FireworkItemController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FireworkItemController+Pool")]
+#[cfg(feature = "cordl_class_FireworkItemController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FireworkItemController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

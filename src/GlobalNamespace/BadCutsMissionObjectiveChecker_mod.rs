@@ -1,4 +1,4 @@
-#[cfg(feature = "BadCutsMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_BadCutsMissionObjectiveChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BadCutsMissionObjectiveChecker {
@@ -7,7 +7,7 @@ pub struct BadCutsMissionObjectiveChecker {
         crate::GlobalNamespace::BeatmapObjectManager,
     >,
 }
-#[cfg(feature = "BadCutsMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_BadCutsMissionObjectiveChecker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
         false
     }
 }
-#[cfg(feature = "BadCutsMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_BadCutsMissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
     type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BadCutsMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_BadCutsMissionObjectiveChecker")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BadCutsMissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_BadCutsMissionObjectiveChecker")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

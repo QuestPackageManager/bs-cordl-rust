@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsCompressedDataStreamGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bufferSize: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -175,7 +175,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -186,7 +186,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -206,7 +206,7 @@ pub struct CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
     >,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
@@ -228,7 +228,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompresse
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
@@ -238,7 +238,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompresse
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
@@ -403,7 +403,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {

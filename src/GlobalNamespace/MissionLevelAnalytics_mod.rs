@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionLevelAnalytics")]
+#[cfg(feature = "cordl_class_MissionLevelAnalytics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelAnalytics {
@@ -10,7 +10,7 @@ pub struct MissionLevelAnalytics {
         crate::GlobalNamespace::IAnalyticsModel,
     >,
 }
-#[cfg(feature = "MissionLevelAnalytics")]
+#[cfg(feature = "cordl_class_MissionLevelAnalytics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelAnalytics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::MissionLevelAnalytics {
         false
     }
 }
-#[cfg(feature = "MissionLevelAnalytics")]
+#[cfg(feature = "cordl_class_MissionLevelAnalytics")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelAnalytics {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionLevelAnalytics")]
+#[cfg(feature = "cordl_class_MissionLevelAnalytics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelAnalytics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::GlobalNamespace::MissionLevelAnalytics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionLevelAnalytics")]
+#[cfg(feature = "cordl_class_MissionLevelAnalytics")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionLevelAnalytics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

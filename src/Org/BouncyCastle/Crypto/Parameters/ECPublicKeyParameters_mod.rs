@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECPublicKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters,
     pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
     type Target = crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -347,7 +347,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

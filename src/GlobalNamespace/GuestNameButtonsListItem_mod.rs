@@ -1,4 +1,4 @@
-#[cfg(feature = "GuestNameButtonsListItem")]
+#[cfg(feature = "cordl_class_GuestNameButtonsListItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GuestNameButtonsListItem {
@@ -7,7 +7,7 @@ pub struct GuestNameButtonsListItem {
     pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _buttonPressed: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "GuestNameButtonsListItem")]
+#[cfg(feature = "cordl_class_GuestNameButtonsListItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GuestNameButtonsListItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::GuestNameButtonsListItem {
         false
     }
 }
-#[cfg(feature = "GuestNameButtonsListItem")]
+#[cfg(feature = "cordl_class_GuestNameButtonsListItem")]
 impl std::ops::Deref for crate::GlobalNamespace::GuestNameButtonsListItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GuestNameButtonsListItem")]
+#[cfg(feature = "cordl_class_GuestNameButtonsListItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GuestNameButtonsListItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::GuestNameButtonsListItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GuestNameButtonsListItem")]
+#[cfg(feature = "cordl_class_GuestNameButtonsListItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GuestNameButtonsListItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

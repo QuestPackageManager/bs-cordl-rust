@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidAmbientTemperature {
     __cordl_parent: crate::UnityEngine::InputSystem::AmbientTemperatureSensor,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
     type Target = crate::UnityEngine::InputSystem::AmbientTemperatureSensor;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

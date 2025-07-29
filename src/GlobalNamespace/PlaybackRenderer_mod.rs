@@ -1,4 +1,4 @@
-#[cfg(feature = "PlaybackRenderer")]
+#[cfg(feature = "cordl_class_PlaybackRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlaybackRenderer {
@@ -21,7 +21,7 @@ pub struct PlaybackRenderer {
         >,
     >,
 }
-#[cfg(feature = "PlaybackRenderer")]
+#[cfg(feature = "cordl_class_PlaybackRenderer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlaybackRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -40,14 +40,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlaybackRend
         false
     }
 }
-#[cfg(feature = "PlaybackRenderer")]
+#[cfg(feature = "cordl_class_PlaybackRenderer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlaybackRenderer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlaybackRenderer")]
+#[cfg(feature = "cordl_class_PlaybackRenderer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlaybackRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -455,7 +455,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlaybackRenderer")]
+#[cfg(feature = "cordl_class_PlaybackRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlaybackRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -464,7 +464,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlaybackRende
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlaybackRenderer_PlaybackScreenshot {
@@ -476,7 +476,7 @@ pub struct PlaybackRenderer_PlaybackScreenshot {
     pub _path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _backgroundColor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -496,14 +496,14 @@ for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         false
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot")]
 impl std::ops::Deref for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -774,7 +774,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -784,7 +784,7 @@ for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot+Type")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlaybackScreenshot_PlaybackRenderer_Type {
@@ -792,7 +792,7 @@ pub enum PlaybackScreenshot_PlaybackRenderer_Type {
     Background = 2i32,
     Foreground = 1i32,
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Held<'a> = Self;
@@ -822,7 +822,7 @@ for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Type = Self;
@@ -833,7 +833,7 @@ for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Actual = Self;
@@ -847,7 +847,7 @@ for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
         self
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Type = Self;
@@ -862,7 +862,7 @@ for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
         }
     }
 }
-#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
+#[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Actual = Self;

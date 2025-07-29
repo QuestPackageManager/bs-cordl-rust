@@ -1,4 +1,4 @@
-#[cfg(feature = "LocalizedTextAsset")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedTextAsset {
@@ -14,7 +14,7 @@ pub struct LocalizedTextAsset {
         crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
     >,
 }
-#[cfg(feature = "LocalizedTextAsset")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LocalizedTextAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LocalizedTex
         false
     }
 }
-#[cfg(feature = "LocalizedTextAsset")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalizedTextAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LocalizedTextAsset")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedTextAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::GlobalNamespace::LocalizedTextAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LocalizedTextAsset")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedTextAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -158,7 +158,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedText
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LocalizedTextAsset+TextInfo")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset+TextInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedTextAsset_TextInfo {
@@ -166,7 +166,7 @@ pub struct LocalizedTextAsset_TextInfo {
     pub language: crate::BGLib::Polyglot::Language,
     pub localizedText: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
 }
-#[cfg(feature = "LocalizedTextAsset+TextInfo")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset+TextInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -186,14 +186,14 @@ for crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
         false
     }
 }
-#[cfg(feature = "LocalizedTextAsset+TextInfo")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset+TextInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LocalizedTextAsset+TextInfo")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset+TextInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -230,7 +230,7 @@ impl crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LocalizedTextAsset+TextInfo")]
+#[cfg(feature = "cordl_class_LocalizedTextAsset+TextInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

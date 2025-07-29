@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ColumnsDataType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnsDataType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColumnsDataType {
@@ -9,7 +9,7 @@ pub enum ColumnsDataType {
     ResizePreview = 4i32,
     StretchMode = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnsDataType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnsDataType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ColumnsDataType {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::UIElements::ColumnsDataType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnsDataType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnsDataType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ColumnsDataType {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::UIElements::ColumnsDataType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnsDataType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnsDataType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ColumnsDataType {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::UIElements::ColumnsDataType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnsDataType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnsDataType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ColumnsDataType {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::UIElements::ColumnsDataType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnsDataType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnsDataType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ColumnsDataType {
     type Actual = Self;

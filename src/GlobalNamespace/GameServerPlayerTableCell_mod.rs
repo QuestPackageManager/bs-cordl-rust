@@ -1,4 +1,4 @@
-#[cfg(feature = "GameServerPlayerTableCell")]
+#[cfg(feature = "cordl_class_GameServerPlayerTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerPlayerTableCell {
@@ -45,7 +45,7 @@ pub struct GameServerPlayerTableCell {
         crate::System::Threading::CancellationTokenSource,
     >,
 }
-#[cfg(feature = "GameServerPlayerTableCell")]
+#[cfg(feature = "cordl_class_GameServerPlayerTableCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServerPlayerTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -65,14 +65,14 @@ for crate::GlobalNamespace::GameServerPlayerTableCell {
         false
     }
 }
-#[cfg(feature = "GameServerPlayerTableCell")]
+#[cfg(feature = "cordl_class_GameServerPlayerTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerPlayerTableCell {
     type Target = crate::GlobalNamespace::TableCellWithSeparator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServerPlayerTableCell")]
+#[cfg(feature = "cordl_class_GameServerPlayerTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServerPlayerTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -455,7 +455,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServerPlayerTableCell")]
+#[cfg(feature = "cordl_class_GameServerPlayerTableCell")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServerPlayerTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

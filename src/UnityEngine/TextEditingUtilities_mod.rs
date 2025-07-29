@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextEditingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditingUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextEditingUtilities {
@@ -15,7 +15,7 @@ pub struct TextEditingUtilities {
     pub multiline: bool,
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+TextEditingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditingUtilities")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextEditingUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextEditingUtili
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextEditingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditingUtilities")]
 impl std::ops::Deref for crate::UnityEngine::TextEditingUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextEditingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditingUtilities")]
 impl std::ops::DerefMut for crate::UnityEngine::TextEditingUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -806,7 +806,7 @@ impl crate::UnityEngine::TextEditingUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextEditingUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextEditingUtilities")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextEditingUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextSelectOp")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectOp")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextSelectOp {
@@ -25,7 +25,7 @@ pub enum TextSelectOp {
     SelectWordLeft = 12i32,
     SelectWordRight = 13i32,
 }
-#[cfg(feature = "UnityEngine+TextSelectOp")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectOp")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextSelectOp {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -54,7 +54,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextSelectOp {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectOp")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectOp")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextSelectOp {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -64,7 +64,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextSelectOp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectOp")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectOp")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextSelectOp {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextSelectO
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectOp")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectOp")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextSelectOp {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextSelectOp
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextSelectOp")]
+#[cfg(feature = "cordl_class_UnityEngine+TextSelectOp")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextSelectOp {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

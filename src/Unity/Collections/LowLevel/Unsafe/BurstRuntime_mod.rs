@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstRuntime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
 impl std::ops::Deref for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
 impl std::ops::DerefMut for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -90,7 +90,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -100,13 +100,17 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstRuntime_HashCode64_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
     type Held<'a> = Self;
@@ -152,7 +156,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
     type Type = Self;
@@ -163,7 +169,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
     type Actual = Self;
@@ -177,7 +185,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
         self
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
     type Type = Self;
@@ -192,7 +202,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
         }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
     type Actual = Self;
@@ -206,7 +218,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
         actual
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<T> {
     type Type = Self;

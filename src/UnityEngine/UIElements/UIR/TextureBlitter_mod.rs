@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextureBlitter {
@@ -21,7 +21,7 @@ pub struct TextureBlitter {
     >,
     pub _disposed_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::TextureBlitter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::TextureBlitter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::TextureBlitter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -367,7 +367,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureBlitter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::TextureBlitter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -391,7 +391,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextureBlitter_BlitInfo {
@@ -401,7 +401,7 @@ pub struct TextureBlitter_BlitInfo {
     pub border: i32,
     pub tint: crate::UnityEngine::Color,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Held<'a> = Self;
@@ -431,7 +431,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Type = Self;
@@ -442,7 +442,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Actual = Self;
@@ -456,7 +456,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Type = Self;
@@ -471,7 +471,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Actual = Self;
@@ -485,7 +485,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Type = Self;

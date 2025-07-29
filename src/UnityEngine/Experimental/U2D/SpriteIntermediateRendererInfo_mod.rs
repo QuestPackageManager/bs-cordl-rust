@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpriteIntermediateRendererInfo {
@@ -18,7 +20,9 @@ pub struct SpriteIntermediateRendererInfo {
     pub VertexCount: i32,
     pub ShaderChannelMask: i32,
 }
-#[cfg(feature = "UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
     type Held<'a> = Self;
@@ -48,7 +52,9 @@ for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
     type Type = Self;
@@ -59,7 +65,9 @@ for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
     type Actual = Self;
@@ -73,7 +81,9 @@ for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
     type Type = Self;
@@ -88,7 +98,9 @@ for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
     type Actual = Self;
@@ -102,7 +114,9 @@ for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Experimental::U2D::SpriteIntermediateRendererInfo {
     type Type = Self;

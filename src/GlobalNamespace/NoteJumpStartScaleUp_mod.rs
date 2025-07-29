@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteJumpStartScaleUp")]
+#[cfg(feature = "cordl_class_NoteJumpStartScaleUp")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpStartScaleUp {
@@ -10,7 +10,7 @@ pub struct NoteJumpStartScaleUp {
     >,
     pub _noteJump: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
 }
-#[cfg(feature = "NoteJumpStartScaleUp")]
+#[cfg(feature = "cordl_class_NoteJumpStartScaleUp")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteJumpStartScaleUp {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::NoteJumpStartScaleUp {
         false
     }
 }
-#[cfg(feature = "NoteJumpStartScaleUp")]
+#[cfg(feature = "cordl_class_NoteJumpStartScaleUp")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpStartScaleUp {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteJumpStartScaleUp")]
+#[cfg(feature = "cordl_class_NoteJumpStartScaleUp")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteJumpStartScaleUp {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -198,7 +198,7 @@ impl crate::GlobalNamespace::NoteJumpStartScaleUp {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteJumpStartScaleUp")]
+#[cfg(feature = "cordl_class_NoteJumpStartScaleUp")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteJumpStartScaleUp {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

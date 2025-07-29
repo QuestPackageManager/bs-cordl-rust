@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextInfo {
@@ -34,7 +34,7 @@ pub struct TextInfo {
     pub isDirty: bool,
     pub hasMultipleColors: bool,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,14 +54,14 @@ for crate::UnityEngine::TextCore::Text::TextInfo {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInfo")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInfo")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -276,7 +276,7 @@ impl crate::UnityEngine::TextCore::Text::TextInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextCore::Text::TextInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

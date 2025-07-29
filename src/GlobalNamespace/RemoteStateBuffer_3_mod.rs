@@ -1,4 +1,4 @@
-#[cfg(feature = "RemoteStateBuffer_3")]
+#[cfg(feature = "cordl_class_RemoteStateBuffer_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteStateBuffer_3<
@@ -33,7 +33,7 @@ pub struct RemoteStateBuffer_3<
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
-#[cfg(feature = "RemoteStateBuffer_3")]
+#[cfg(feature = "cordl_class_RemoteStateBuffer_3")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -70,7 +70,7 @@ for crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
         false
     }
 }
-#[cfg(feature = "RemoteStateBuffer_3")]
+#[cfg(feature = "cordl_class_RemoteStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -82,7 +82,7 @@ for crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RemoteStateBuffer_3")]
+#[cfg(feature = "cordl_class_RemoteStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -330,7 +330,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RemoteStateBuffer_3")]
+#[cfg(feature = "cordl_class_RemoteStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

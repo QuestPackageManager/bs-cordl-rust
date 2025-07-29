@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Converters+KeyValuePairConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+KeyValuePairConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyValuePairConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+KeyValuePairConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+KeyValuePairConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+KeyValuePairConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+KeyValuePairConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+KeyValuePairConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+KeyValuePairConverter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -208,7 +208,7 @@ impl crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+KeyValuePairConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+KeyValuePairConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InfoBoxAttribute {
@@ -6,7 +6,7 @@ pub struct InfoBoxAttribute {
     pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub messageType: crate::BGLib::UnityExtension::InfoBoxAttribute_Type,
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::InfoBoxAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::BGLib::UnityExtension::InfoBoxAttribute {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::InfoBoxAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute")]
 impl std::ops::DerefMut for crate::BGLib::UnityExtension::InfoBoxAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -86,7 +86,7 @@ impl crate::BGLib::UnityExtension::InfoBoxAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::InfoBoxAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -96,7 +96,7 @@ for crate::BGLib::UnityExtension::InfoBoxAttribute {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute+Type")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute+Type")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InfoBoxAttribute_Type {
@@ -106,7 +106,7 @@ pub enum InfoBoxAttribute_Type {
     None = 0i32,
     Warning = 2i32,
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute+Type")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute+Type")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
     type Held<'a> = Self;
@@ -136,7 +136,7 @@ for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute+Type")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
     type Type = Self;
@@ -147,7 +147,7 @@ for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute+Type")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
     type Actual = Self;
@@ -161,7 +161,7 @@ for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
         self
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute+Type")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
     type Type = Self;
@@ -176,7 +176,7 @@ for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
         }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute+Type")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute+Type")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::UnityExtension::InfoBoxAttribute_Type {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_VertexEntry")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VertexEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_VertexEntry {
@@ -7,7 +7,7 @@ pub struct HEU_VertexEntry {
     pub _vertexIndex: i32,
     pub _normalIndex: i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VertexEntry")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VertexEntry")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_VertexEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Verte
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VertexEntry")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VertexEntry")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_VertexEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VertexEntry")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VertexEntry")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_VertexEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -82,7 +82,7 @@ impl crate::HoudiniEngineUnity::HEU_VertexEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_VertexEntry")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_VertexEntry")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_VertexEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

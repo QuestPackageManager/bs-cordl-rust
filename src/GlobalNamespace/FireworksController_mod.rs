@@ -1,4 +1,4 @@
-#[cfg(feature = "FireworksController")]
+#[cfg(feature = "cordl_class_FireworksController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworksController {
@@ -22,7 +22,7 @@ pub struct FireworksController {
         >,
     >,
 }
-#[cfg(feature = "FireworksController")]
+#[cfg(feature = "cordl_class_FireworksController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FireworksController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FireworksCon
         false
     }
 }
-#[cfg(feature = "FireworksController")]
+#[cfg(feature = "cordl_class_FireworksController")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworksController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FireworksController")]
+#[cfg(feature = "cordl_class_FireworksController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FireworksController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -211,7 +211,7 @@ impl crate::GlobalNamespace::FireworksController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FireworksController")]
+#[cfg(feature = "cordl_class_FireworksController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FireworksController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

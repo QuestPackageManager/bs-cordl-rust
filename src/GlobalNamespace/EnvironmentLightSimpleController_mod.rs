@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentLightSimpleController")]
+#[cfg(feature = "cordl_class_EnvironmentLightSimpleController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentLightSimpleController {
@@ -9,7 +9,7 @@ pub struct EnvironmentLightSimpleController {
         crate::GlobalNamespace::LightWithIdManager,
     >,
 }
-#[cfg(feature = "EnvironmentLightSimpleController")]
+#[cfg(feature = "cordl_class_EnvironmentLightSimpleController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentLightSimpleController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::EnvironmentLightSimpleController {
         false
     }
 }
-#[cfg(feature = "EnvironmentLightSimpleController")]
+#[cfg(feature = "cordl_class_EnvironmentLightSimpleController")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentLightSimpleController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentLightSimpleController")]
+#[cfg(feature = "cordl_class_EnvironmentLightSimpleController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentLightSimpleController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::EnvironmentLightSimpleController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentLightSimpleController")]
+#[cfg(feature = "cordl_class_EnvironmentLightSimpleController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentLightSimpleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Threading+Tasks+ContinuationResultTaskFromResultTask_2")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+ContinuationResultTaskFromResultTask_2"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContinuationResultTaskFromResultTask_2<
@@ -12,7 +14,9 @@ pub struct ContinuationResultTaskFromResultTask_2<
     __cordl_phantom_TAntecedentResult: std::marker::PhantomData<TAntecedentResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationResultTaskFromResultTask_2")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+ContinuationResultTaskFromResultTask_2"
+)]
 unsafe impl<
     TAntecedentResult: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -54,7 +58,9 @@ for crate::System::Threading::Tasks::ContinuationResultTaskFromResultTask_2<
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationResultTaskFromResultTask_2")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+ContinuationResultTaskFromResultTask_2"
+)]
 impl<
     TAntecedentResult: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -68,7 +74,9 @@ for crate::System::Threading::Tasks::ContinuationResultTaskFromResultTask_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationResultTaskFromResultTask_2")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+ContinuationResultTaskFromResultTask_2"
+)]
 impl<
     TAntecedentResult: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -197,7 +205,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationResultTaskFromResultTask_2")]
+#[cfg(
+    feature = "cordl_class_System+Threading+Tasks+ContinuationResultTaskFromResultTask_2"
+)]
 impl<
     TAntecedentResult: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

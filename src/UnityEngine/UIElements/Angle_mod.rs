@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+Angle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Angle {
     pub m_Value: f32,
     pub m_Unit: crate::UnityEngine::UIElements::Angle_Unit,
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Angle {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Angl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::Angle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::Angle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements:
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::Angle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Angle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::An
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::Angle {
     type Type = Self;
@@ -381,7 +381,7 @@ for crate::UnityEngine::UIElements::Angle {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+Unit")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Angle_Unit {
@@ -392,7 +392,7 @@ pub enum Angle_Unit {
     Radian = 2i32,
     Turn = 3i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+Unit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Angle_Unit {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -421,7 +421,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Angl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+Unit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Angle_Unit {
     type Type = Self;
@@ -432,7 +432,7 @@ for crate::UnityEngine::UIElements::Angle_Unit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+Unit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Angle_Unit {
     type Actual = Self;
@@ -446,7 +446,7 @@ for crate::UnityEngine::UIElements::Angle_Unit {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+Unit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Angle_Unit {
     type Type = Self;
@@ -461,7 +461,7 @@ for crate::UnityEngine::UIElements::Angle_Unit {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+Unit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Angle_Unit {
     type Actual = Self;

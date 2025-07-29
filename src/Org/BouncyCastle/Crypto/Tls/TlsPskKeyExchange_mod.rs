@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsPskKeyExchange {
@@ -51,7 +51,7 @@ pub struct TlsPskKeyExchange {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -71,14 +71,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -702,7 +702,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

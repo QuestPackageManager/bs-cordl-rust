@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StateEvent {
     padding: quest_hook::libil2cpp::ValueTypePadding<25usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
     type Type = Self;
@@ -463,13 +463,17 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StateEvent__stateData_e__FixedBuffer {
     pub FixedElementField: u8,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuffer {
     type Held<'a> = Self;
@@ -499,7 +503,9 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuf
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuffer {
     type Type = Self;
@@ -510,7 +516,9 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuf
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuffer {
     type Actual = Self;
@@ -524,7 +532,9 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuf
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuffer {
     type Type = Self;
@@ -539,7 +549,9 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuf
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuffer {
     type Actual = Self;
@@ -553,7 +565,9 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuf
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::StateEvent__stateData_e__FixedBuffer {
     type Type = Self;

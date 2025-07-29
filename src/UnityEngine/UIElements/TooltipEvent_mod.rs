@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TooltipEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TooltipEvent {
@@ -10,7 +10,7 @@ pub struct TooltipEvent {
     >,
     pub _rect_k__BackingField: crate::UnityEngine::Rect,
 }
-#[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TooltipEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TooltipEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::UnityEngine::UIElements::TooltipEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TooltipEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TooltipEvent {
     type Target = crate::UnityEngine::UIElements::EventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TooltipEvent>,
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TooltipEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TooltipEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TooltipEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -170,7 +170,7 @@ impl crate::UnityEngine::UIElements::TooltipEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TooltipEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TooltipEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

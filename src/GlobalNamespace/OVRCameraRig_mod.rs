@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRCameraRig")]
+#[cfg(feature = "cordl_class_OVRCameraRig")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRCameraRig {
@@ -110,7 +110,7 @@ pub struct OVRCameraRig {
     pub _rightEyeCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _previousTrackingSpaceTransform: crate::UnityEngine::Matrix4x4,
 }
-#[cfg(feature = "OVRCameraRig")]
+#[cfg(feature = "cordl_class_OVRCameraRig")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRCameraRig {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -129,14 +129,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRCameraRig
         false
     }
 }
-#[cfg(feature = "OVRCameraRig")]
+#[cfg(feature = "cordl_class_OVRCameraRig")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRCameraRig {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRCameraRig")]
+#[cfg(feature = "cordl_class_OVRCameraRig")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRCameraRig {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1513,7 +1513,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRCameraRig")]
+#[cfg(feature = "cordl_class_OVRCameraRig")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCameraRig {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "TMPro+TMP_Compatibility")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Compatibility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "TMPro+TMP_Compatibility")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Compatibility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Compatibility {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_Compatibility")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility")]
 impl std::ops::Deref for crate::TMPro::TMP_Compatibility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_Compatibility")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility")]
 impl std::ops::DerefMut for crate::TMPro::TMP_Compatibility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -66,7 +66,7 @@ impl crate::TMPro::TMP_Compatibility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Compatibility")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Compatibility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -75,7 +75,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Compatibility {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_Compatibility_AnchorPositions {
@@ -92,7 +92,7 @@ pub enum TMP_Compatibility_AnchorPositions {
     TopLeft = 0i32,
     TopRight = 2i32,
 }
-#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Held<'a> = Self;
@@ -122,7 +122,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Type = Self;
@@ -133,7 +133,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Actual = Self;
@@ -147,7 +147,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Type = Self;
@@ -162,7 +162,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Actual = Self;

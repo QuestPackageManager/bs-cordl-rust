@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Data+InRowChangingEventException")]
+#[cfg(feature = "cordl_class_System+Data+InRowChangingEventException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InRowChangingEventException {
     __cordl_parent: crate::System::Data::DataException,
 }
-#[cfg(feature = "System+Data+InRowChangingEventException")]
+#[cfg(feature = "cordl_class_System+Data+InRowChangingEventException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::InRowChangingEventException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Data::InRowChangingEventException {
         false
     }
 }
-#[cfg(feature = "System+Data+InRowChangingEventException")]
+#[cfg(feature = "cordl_class_System+Data+InRowChangingEventException")]
 impl std::ops::Deref for crate::System::Data::InRowChangingEventException {
     type Target = crate::System::Data::DataException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+InRowChangingEventException")]
+#[cfg(feature = "cordl_class_System+Data+InRowChangingEventException")]
 impl std::ops::DerefMut for crate::System::Data::InRowChangingEventException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -149,7 +149,7 @@ impl crate::System::Data::InRowChangingEventException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+InRowChangingEventException")]
+#[cfg(feature = "cordl_class_System+Data+InRowChangingEventException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Data::InRowChangingEventException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

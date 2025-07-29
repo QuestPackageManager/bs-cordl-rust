@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputManager {
@@ -112,7 +112,7 @@ pub struct InputManager {
         crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -132,14 +132,14 @@ for crate::UnityEngine::InputSystem::InputManager {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4046,7 +4046,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4056,7 +4056,7 @@ for crate::UnityEngine::InputSystem::InputManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+AvailableDevice")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputManager_AvailableDevice {
@@ -4065,7 +4065,7 @@ pub struct InputManager_AvailableDevice {
     pub isNative: bool,
     pub isRemoved: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+AvailableDevice")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
     type Held<'a> = Self;
@@ -4095,7 +4095,7 @@ for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+AvailableDevice")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
     type Type = Self;
@@ -4106,7 +4106,7 @@ for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+AvailableDevice")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
     type Actual = Self;
@@ -4120,7 +4120,7 @@ for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+AvailableDevice")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
     type Type = Self;
@@ -4135,7 +4135,7 @@ for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+AvailableDevice")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
     type Actual = Self;
@@ -4149,7 +4149,7 @@ for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+AvailableDevice")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
     type Type = Self;
@@ -4162,7 +4162,7 @@ for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
 impl crate::UnityEngine::InputSystem::InputManager_AvailableDevice {}
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputManager_DeviceDisableScope {
@@ -4171,7 +4171,7 @@ pub enum InputManager_DeviceDisableScope {
     InFrontendOnly = 1i32,
     TemporaryWhilePlayerIsInBackground = 2i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
     type Held<'a> = Self;
@@ -4201,7 +4201,7 @@ for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
     type Type = Self;
@@ -4212,7 +4212,7 @@ for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
     type Actual = Self;
@@ -4226,7 +4226,7 @@ for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
     type Type = Self;
@@ -4241,7 +4241,7 @@ for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
     type Actual = Self;
@@ -4255,7 +4255,9 @@ for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorListener"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputManager_StateChangeMonitorListener {
@@ -4268,7 +4270,9 @@ pub struct InputManager_StateChangeMonitorListener {
     pub monitorIndex: i64,
     pub groupIndex: u32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorListener"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
     type Held<'a> = Self;
@@ -4298,7 +4302,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorListener"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
     type Type = Self;
@@ -4309,7 +4315,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorListener"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
     type Actual = Self;
@@ -4323,7 +4331,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorListener"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
     type Type = Self;
@@ -4338,7 +4348,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorListener"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
     type Actual = Self;
@@ -4352,7 +4364,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorListener"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
     type Type = Self;
@@ -4365,7 +4379,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
 impl crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {}
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputManager_StateChangeMonitorTimeout {
@@ -4379,7 +4395,9 @@ pub struct InputManager_StateChangeMonitorTimeout {
     pub monitorIndex: i64,
     pub timerIndex: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
     type Held<'a> = Self;
@@ -4409,7 +4427,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
     type Type = Self;
@@ -4420,7 +4440,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
     type Actual = Self;
@@ -4434,7 +4456,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
     type Type = Self;
@@ -4449,7 +4473,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
     type Actual = Self;
@@ -4463,7 +4489,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
     type Type = Self;
@@ -4476,7 +4504,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
 impl crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {}
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputManager_StateChangeMonitorsForDevice {
@@ -4494,7 +4524,9 @@ pub struct InputManager_StateChangeMonitorsForDevice {
     pub needToUpdateOrderingOfMonitors: bool,
     pub needToCompactArrays: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
     type Held<'a> = Self;
@@ -4524,7 +4556,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
     type Type = Self;
@@ -4535,7 +4569,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
     type Actual = Self;
@@ -4549,7 +4585,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
     type Type = Self;
@@ -4564,7 +4602,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
     type Actual = Self;
@@ -4578,7 +4618,9 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
     type Type = Self;

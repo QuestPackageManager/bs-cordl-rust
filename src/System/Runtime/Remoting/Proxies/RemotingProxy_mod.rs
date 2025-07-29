@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+RemotingProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemotingProxy {
@@ -11,7 +11,7 @@ pub struct RemotingProxy {
         crate::System::Runtime::Remoting::Messaging::ConstructionCall,
     >,
 }
-#[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+RemotingProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+RemotingProxy")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
     type Target = crate::System::Runtime::Remoting::Proxies::RealProxy;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+RemotingProxy")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -332,7 +332,7 @@ impl crate::System::Runtime::Remoting::Proxies::RemotingProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+RemotingProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

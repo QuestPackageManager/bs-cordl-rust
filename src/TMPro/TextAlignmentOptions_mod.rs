@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TextAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+TextAlignmentOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextAlignmentOptions {
@@ -41,7 +41,7 @@ pub enum TextAlignmentOptions {
     TopLeft = 257i32,
     TopRight = 260i32,
 }
-#[cfg(feature = "TMPro+TextAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextAlignmentOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextAlignmentOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TextAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextAlignmentOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,7 +80,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextAlignmentOptio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TextAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextAlignmentOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -93,7 +93,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextAlignmentOpti
         self
     }
 }
-#[cfg(feature = "TMPro+TextAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextAlignmentOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -107,7 +107,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextAlignmentOptio
         }
     }
 }
-#[cfg(feature = "TMPro+TextAlignmentOptions")]
+#[cfg(feature = "cordl_class_TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TextAlignmentOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

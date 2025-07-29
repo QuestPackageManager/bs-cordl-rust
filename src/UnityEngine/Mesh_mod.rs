@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Mesh")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Mesh {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+Mesh")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Mesh")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh")]
 impl std::ops::Deref for crate::UnityEngine::Mesh {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Mesh")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh")]
 impl std::ops::DerefMut for crate::UnityEngine::Mesh {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -10840,7 +10840,7 @@ impl crate::UnityEngine::Mesh {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Mesh")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Mesh {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -10849,13 +10849,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Mesh {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshData")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Mesh_MeshData {
     pub m_Ptr: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshData")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh_MeshData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -10884,7 +10884,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh_MeshData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshData")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Mesh_MeshData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -10894,7 +10894,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Mesh_MeshDat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshData")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Mesh_MeshData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -10907,7 +10907,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Mesh_MeshDa
         self
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshData")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Mesh_MeshData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -10921,7 +10921,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Mesh_MeshDat
         }
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshData")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Mesh_MeshData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -10934,7 +10934,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Mesh_MeshData 
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshData")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Mesh_MeshData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -11441,14 +11441,14 @@ impl crate::UnityEngine::Mesh_MeshData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshDataArray")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Mesh_MeshDataArray {
     pub m_Ptrs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Length: i32,
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh_MeshDataArray {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -11477,7 +11477,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh_MeshDataArr
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Mesh_MeshDataArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -11487,7 +11487,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Mesh_MeshDat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Mesh_MeshDataArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -11500,7 +11500,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Mesh_MeshDa
         self
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Mesh_MeshDataArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -11514,7 +11514,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Mesh_MeshDat
         }
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Mesh_MeshDataArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -11527,7 +11527,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Mesh_MeshDataA
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
+#[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Mesh_MeshDataArray {
     type Type = Self;

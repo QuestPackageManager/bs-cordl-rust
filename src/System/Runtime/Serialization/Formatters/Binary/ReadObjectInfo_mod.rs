@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadObjectInfo {
@@ -43,7 +45,9 @@ pub struct ReadObjectInfo {
         crate::System::Runtime::Serialization::IFormatterConverter,
     >,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -63,7 +67,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -71,7 +77,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -982,7 +990,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

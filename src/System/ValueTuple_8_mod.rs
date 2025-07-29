@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ValueTuple_8")]
+#[cfg(feature = "cordl_class_System+ValueTuple_8")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTuple_8<
@@ -28,7 +28,7 @@ pub struct ValueTuple_8<
     __cordl_phantom_T7: std::marker::PhantomData<T7>,
     __cordl_phantom_TRest: std::marker::PhantomData<TRest>,
 }
-#[cfg(feature = "System+ValueTuple_8")]
+#[cfg(feature = "cordl_class_System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -80,7 +80,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ValueTuple_8")]
+#[cfg(feature = "cordl_class_System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -100,7 +100,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ValueTuple_8")]
+#[cfg(feature = "cordl_class_System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -123,7 +123,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
         self
     }
 }
-#[cfg(feature = "System+ValueTuple_8")]
+#[cfg(feature = "cordl_class_System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -147,7 +147,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
         }
     }
 }
-#[cfg(feature = "System+ValueTuple_8")]
+#[cfg(feature = "cordl_class_System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -170,7 +170,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
         actual
     }
 }
-#[cfg(feature = "System+ValueTuple_8")]
+#[cfg(feature = "cordl_class_System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

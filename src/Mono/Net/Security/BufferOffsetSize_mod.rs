@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Net+Security+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+BufferOffsetSize")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferOffsetSize {
@@ -9,7 +9,7 @@ pub struct BufferOffsetSize {
     pub TotalBytes: i32,
     pub Complete: bool,
 }
-#[cfg(feature = "Mono+Net+Security+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+BufferOffsetSize")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Net::Security::BufferOffsetSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Mono::Net::Security::BufferOffsetSize {
         false
     }
 }
-#[cfg(feature = "Mono+Net+Security+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+BufferOffsetSize")]
 impl std::ops::Deref for crate::Mono::Net::Security::BufferOffsetSize {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Net+Security+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+BufferOffsetSize")]
 impl std::ops::DerefMut for crate::Mono::Net::Security::BufferOffsetSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -151,7 +151,7 @@ impl crate::Mono::Net::Security::BufferOffsetSize {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Net+Security+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+BufferOffsetSize")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Net::Security::BufferOffsetSize {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

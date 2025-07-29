@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+CompilerServices+Constant")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+Constant")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Constant {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Burst+CompilerServices+Constant")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+Constant")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::CompilerServices::Constant {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Burst::CompilerServices::Constant {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+CompilerServices+Constant")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+Constant")]
 impl std::ops::Deref for crate::Unity::Burst::CompilerServices::Constant {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+CompilerServices+Constant")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+Constant")]
 impl std::ops::DerefMut for crate::Unity::Burst::CompilerServices::Constant {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -84,7 +84,7 @@ impl crate::Unity::Burst::CompilerServices::Constant {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+CompilerServices+Constant")]
+#[cfg(feature = "cordl_class_Unity+Burst+CompilerServices+Constant")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::CompilerServices::Constant {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

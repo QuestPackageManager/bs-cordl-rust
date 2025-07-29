@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCallback_1<TEventType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TEventType: std::marker::PhantomData<TEventType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_1")]
 unsafe impl<TEventType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_1")]
 impl<TEventType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
     type Target = crate::System::MulticastDelegate;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_1")]
 impl<TEventType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -141,7 +141,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventCallback_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_1")]
 impl<TEventType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

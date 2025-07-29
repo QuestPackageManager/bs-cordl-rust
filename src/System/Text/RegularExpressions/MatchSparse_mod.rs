@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Text+RegularExpressions+MatchSparse")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchSparse")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MatchSparse {
     __cordl_parent: crate::System::Text::RegularExpressions::Match,
     pub _caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
-#[cfg(feature = "System+Text+RegularExpressions+MatchSparse")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchSparse")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::MatchSparse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Text::RegularExpressions::MatchSparse {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+MatchSparse")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchSparse")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::MatchSparse {
     type Target = crate::System::Text::RegularExpressions::Match;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+MatchSparse")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchSparse")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::MatchSparse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -137,7 +137,7 @@ impl crate::System::Text::RegularExpressions::MatchSparse {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+MatchSparse")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchSparse")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::MatchSparse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

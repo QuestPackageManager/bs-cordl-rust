@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CipherUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::CipherUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Security::CipherUtilities {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::CipherUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::CipherUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -275,7 +275,7 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Security::CipherUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -285,7 +285,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherUtilities_CipherAlgorithm {
@@ -330,7 +330,7 @@ pub enum CipherUtilities_CipherAlgorithm {
     VMPC_KSA3 = 37i32,
     XTEA = 38i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Held<'a> = Self;
@@ -360,7 +360,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Type = Self;
@@ -371,7 +371,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Actual = Self;
@@ -385,7 +385,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Type = Self;
@@ -400,7 +400,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Actual = Self;
@@ -414,7 +414,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
         actual
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherUtilities_CipherMode {
@@ -434,7 +434,7 @@ pub enum CipherUtilities_CipherMode {
     OPENPGPCFB = 12i32,
     SIC = 13i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Held<'a> = Self;
@@ -464,7 +464,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Type = Self;
@@ -475,7 +475,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Actual = Self;
@@ -489,7 +489,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Type = Self;
@@ -504,7 +504,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Actual = Self;
@@ -518,7 +518,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
         actual
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherUtilities_CipherPadding {
@@ -556,7 +556,7 @@ pub enum CipherUtilities_CipherPadding {
     X923PADDING = 30i32,
     ZEROBYTEPADDING = 31i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Held<'a> = Self;
@@ -586,7 +586,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Type = Self;
@@ -597,7 +597,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Actual = Self;
@@ -611,7 +611,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Type = Self;
@@ -626,7 +626,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Actual = Self;

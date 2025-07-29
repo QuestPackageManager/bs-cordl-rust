@@ -1,4 +1,4 @@
-#[cfg(feature = "SongRunningHelper")]
+#[cfg(feature = "cordl_class_SongRunningHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongRunningHelper {
@@ -24,7 +24,7 @@ pub struct SongRunningHelper {
         crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
     >,
 }
-#[cfg(feature = "SongRunningHelper")]
+#[cfg(feature = "cordl_class_SongRunningHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongRunningHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongRunningH
         false
     }
 }
-#[cfg(feature = "SongRunningHelper")]
+#[cfg(feature = "cordl_class_SongRunningHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::SongRunningHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SongRunningHelper")]
+#[cfg(feature = "cordl_class_SongRunningHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongRunningHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -270,7 +270,7 @@ impl crate::GlobalNamespace::SongRunningHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SongRunningHelper")]
+#[cfg(feature = "cordl_class_SongRunningHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongRunningHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -279,7 +279,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongRunningHe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+#[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SongRunningHelper_QueuedSongParams {
@@ -299,7 +299,7 @@ pub struct SongRunningHelper_QueuedSongParams {
     >,
     pub zenMode: bool,
 }
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+#[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Held<'a> = Self;
@@ -329,7 +329,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+#[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Type = Self;
@@ -340,7 +340,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+#[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Actual = Self;
@@ -354,7 +354,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         self
     }
 }
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+#[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Type = Self;
@@ -369,7 +369,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         }
     }
 }
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+#[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Actual = Self;
@@ -383,7 +383,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         actual
     }
 }
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+#[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Type = Self;

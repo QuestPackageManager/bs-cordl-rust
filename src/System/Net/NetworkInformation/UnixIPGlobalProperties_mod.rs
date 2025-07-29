@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPGlobalProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPGlobalProperties")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnixIPGlobalProperties {
     __cordl_parent: crate::System::Net::NetworkInformation::CommonUnixIPGlobalProperties,
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPGlobalProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPGlobalProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::UnixIPGlobalProperties {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Net::NetworkInformation::UnixIPGlobalProperties {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPGlobalProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPGlobalProperties")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::UnixIPGlobalProperties {
     type Target = crate::System::Net::NetworkInformation::CommonUnixIPGlobalProperties;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPGlobalProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPGlobalProperties")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::UnixIPGlobalProperties {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -69,7 +69,7 @@ impl crate::System::Net::NetworkInformation::UnixIPGlobalProperties {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+UnixIPGlobalProperties")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPGlobalProperties")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::UnixIPGlobalProperties {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

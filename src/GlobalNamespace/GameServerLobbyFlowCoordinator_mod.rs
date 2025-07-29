@@ -1,4 +1,4 @@
-#[cfg(feature = "GameServerLobbyFlowCoordinator")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerLobbyFlowCoordinator {
@@ -99,7 +99,7 @@ pub struct GameServerLobbyFlowCoordinator {
     pub didOpenInvitePanelEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _rejoinQuickPlay_k__BackingField: bool,
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinator")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -119,14 +119,14 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinator")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     type Target = crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinator")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2045,7 +2045,7 @@ impl crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServerLobbyFlowCoordinator")]
+#[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+RSAParameters")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAParameters")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RSAParameters {
@@ -11,7 +11,7 @@ pub struct RSAParameters {
     pub InverseQ: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub D: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "System+Security+Cryptography+RSAParameters")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::RSAParameters {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::System::Security::Cryptography::RSAParameters {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAParameters")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::RSAParameters {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::System::Security::Cryptography::RSAParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAParameters")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::RSAParameters {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::System::Security::Cryptography::RSAParameters {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAParameters")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::RSAParameters {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::System::Security::Cryptography::RSAParameters {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAParameters")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::RSAParameters {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::System::Security::Cryptography::RSAParameters {
         actual
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAParameters")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAParameters")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Security::Cryptography::RSAParameters {
     type Type = Self;

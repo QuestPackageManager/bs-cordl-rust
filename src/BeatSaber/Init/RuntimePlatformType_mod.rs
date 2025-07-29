@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+RuntimePlatformType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RuntimePlatformType {
@@ -9,7 +9,7 @@ pub enum RuntimePlatformType {
     Rift = 3i32,
     Steam = 4i32,
 }
-#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::RuntimePlatformType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::RuntimePlatf
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Init::RuntimePlatformType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::BeatSaber::Init::RuntimePlatformType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Init::RuntimePlatformType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::BeatSaber::Init::RuntimePlatformType {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Init::RuntimePlatformType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::BeatSaber::Init::RuntimePlatformType {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
+#[cfg(feature = "cordl_class_BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Init::RuntimePlatformType {
     type Actual = Self;

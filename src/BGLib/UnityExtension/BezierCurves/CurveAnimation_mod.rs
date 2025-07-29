@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurveAnimation {
@@ -26,7 +26,7 @@ pub struct CurveAnimation {
     >,
     pub _isPlaying_k__BackingField: bool,
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,14 +46,14 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation")]
 impl std::ops::DerefMut for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -238,7 +238,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -248,13 +248,17 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurveAnimation_CurveEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent,
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -274,7 +278,9 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent"
+)]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
     type Target = crate::UnityEngine::Events::UnityEvent;
@@ -282,7 +288,9 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent"
+)]
 impl std::ops::DerefMut
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -320,7 +328,9 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -330,14 +340,18 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurveAnimation_CurveEvent_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -373,7 +387,9 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {
     type Target = crate::UnityEngine::Events::UnityEvent_1<T>;
@@ -381,7 +397,9 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -427,7 +445,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1"
+)]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

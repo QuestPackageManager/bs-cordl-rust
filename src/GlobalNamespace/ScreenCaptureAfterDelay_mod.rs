@@ -1,4 +1,4 @@
-#[cfg(feature = "ScreenCaptureAfterDelay")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenCaptureAfterDelay {
@@ -17,7 +17,7 @@ pub struct ScreenCaptureAfterDelay {
         crate::UnityEngine::RenderTexture,
     >,
 }
-#[cfg(feature = "ScreenCaptureAfterDelay")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScreenCaptureAfterDelay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::ScreenCaptureAfterDelay {
         false
     }
 }
-#[cfg(feature = "ScreenCaptureAfterDelay")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay")]
 impl std::ops::Deref for crate::GlobalNamespace::ScreenCaptureAfterDelay {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScreenCaptureAfterDelay")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScreenCaptureAfterDelay {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::GlobalNamespace::ScreenCaptureAfterDelay {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScreenCaptureAfterDelay")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScreenCaptureAfterDelay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -169,7 +169,7 @@ for crate::GlobalNamespace::ScreenCaptureAfterDelay {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenCaptureAfterDelay_InitData {
@@ -179,7 +179,7 @@ pub struct ScreenCaptureAfterDelay_InitData {
     pub pixelsWidth: i32,
     pub pixelsHeight: i32,
 }
-#[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -199,14 +199,14 @@ for crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
         false
     }
 }
-#[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -268,7 +268,7 @@ impl crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
+#[cfg(feature = "cordl_class_ScreenCaptureAfterDelay+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

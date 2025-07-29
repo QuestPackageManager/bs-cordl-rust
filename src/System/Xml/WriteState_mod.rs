@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+WriteState")]
+#[cfg(feature = "cordl_class_System+Xml+WriteState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WriteState {
@@ -11,7 +11,7 @@ pub enum WriteState {
     Prolog = 1i32,
     Start = 0i32,
 }
-#[cfg(feature = "System+Xml+WriteState")]
+#[cfg(feature = "cordl_class_System+Xml+WriteState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::WriteState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::WriteState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+WriteState")]
+#[cfg(feature = "cordl_class_System+Xml+WriteState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::WriteState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::WriteState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+WriteState")]
+#[cfg(feature = "cordl_class_System+Xml+WriteState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::WriteState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::WriteState 
         self
     }
 }
-#[cfg(feature = "System+Xml+WriteState")]
+#[cfg(feature = "cordl_class_System+Xml+WriteState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::WriteState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::WriteState {
         }
     }
 }
-#[cfg(feature = "System+Xml+WriteState")]
+#[cfg(feature = "cordl_class_System+Xml+WriteState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::WriteState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

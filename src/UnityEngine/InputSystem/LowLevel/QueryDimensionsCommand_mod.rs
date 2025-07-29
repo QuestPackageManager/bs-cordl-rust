@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryDimensionsCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     type Type = Self;

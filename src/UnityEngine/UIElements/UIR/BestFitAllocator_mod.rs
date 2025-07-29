@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BestFitAllocator {
@@ -15,7 +15,7 @@ pub struct BestFitAllocator {
     >,
     pub m_HighWatermark: u32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -274,7 +274,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -284,7 +284,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BestFitAllocator_Block {
@@ -309,7 +309,7 @@ pub struct BestFitAllocator_Block {
     >,
     pub allocated: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -329,7 +329,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
@@ -340,7 +340,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator_B
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -394,7 +394,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -404,7 +404,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BestFitAllocator_BlockPool {
@@ -414,7 +414,7 @@ pub struct BestFitAllocator_BlockPool {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -434,7 +434,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPool_1<
@@ -446,7 +446,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -542,7 +542,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "PlayingMultiplayerRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingMultiplayerRichPresenceData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayingMultiplayerRichPresenceData {
     __cordl_parent: crate::GlobalNamespace::InMultiplayerRichPresenceData,
 }
-#[cfg(feature = "PlayingMultiplayerRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingMultiplayerRichPresenceData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
         false
     }
 }
-#[cfg(feature = "PlayingMultiplayerRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingMultiplayerRichPresenceData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
     type Target = crate::GlobalNamespace::InMultiplayerRichPresenceData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayingMultiplayerRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingMultiplayerRichPresenceData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayingMultiplayerRichPresenceData")]
+#[cfg(feature = "cordl_class_PlayingMultiplayerRichPresenceData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

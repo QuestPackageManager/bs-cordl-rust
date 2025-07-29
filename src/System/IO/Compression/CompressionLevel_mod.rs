@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+Compression+CompressionLevel")]
+#[cfg(feature = "cordl_class_System+IO+Compression+CompressionLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompressionLevel {
@@ -7,7 +7,7 @@ pub enum CompressionLevel {
     NoCompression = 2i32,
     Optimal = 0i32,
 }
-#[cfg(feature = "System+IO+Compression+CompressionLevel")]
+#[cfg(feature = "cordl_class_System+IO+Compression+CompressionLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::IO::Compression::CompressionLevel {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::IO::Compression::CompressionLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+IO+Compression+CompressionLevel")]
+#[cfg(feature = "cordl_class_System+IO+Compression+CompressionLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::IO::Compression::CompressionLevel {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::IO::Compression::CompressionLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+IO+Compression+CompressionLevel")]
+#[cfg(feature = "cordl_class_System+IO+Compression+CompressionLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::IO::Compression::CompressionLevel {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::IO::Compression::CompressionLevel {
         self
     }
 }
-#[cfg(feature = "System+IO+Compression+CompressionLevel")]
+#[cfg(feature = "cordl_class_System+IO+Compression+CompressionLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::IO::Compression::CompressionLevel {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::IO::Compression::CompressionLevel {
         }
     }
 }
-#[cfg(feature = "System+IO+Compression+CompressionLevel")]
+#[cfg(feature = "cordl_class_System+IO+Compression+CompressionLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::IO::Compression::CompressionLevel {
     type Actual = Self;

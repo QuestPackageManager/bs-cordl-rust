@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SessionParameters {
@@ -16,7 +16,7 @@ pub struct SessionParameters {
     >,
     pub mExtendedMasterSecret: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -403,7 +403,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -413,7 +413,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SessionParameters_Builder {
@@ -431,7 +431,7 @@ pub struct SessionParameters_Builder {
     >,
     pub mExtendedMasterSecret: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -451,7 +451,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -459,7 +459,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -830,7 +830,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

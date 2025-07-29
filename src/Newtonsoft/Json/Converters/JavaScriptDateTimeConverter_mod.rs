@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JavaScriptDateTimeConverter {
     __cordl_parent: crate::Newtonsoft::Json::Converters::DateTimeConverterBase,
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
     type Target = crate::Newtonsoft::Json::Converters::DateTimeConverterBase;
@@ -32,7 +32,7 @@ for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -153,7 +153,7 @@ impl crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClassInterfaceAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _val: crate::System::Runtime::InteropServices::ClassInterfaceType,
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -78,7 +78,7 @@ impl crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

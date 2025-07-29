@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+FactoryFromBinderBase")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryFromBinderBase {
@@ -11,7 +11,7 @@ pub struct FactoryFromBinderBase {
     >,
     pub _ContractType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "Zenject+FactoryFromBinderBase")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::FactoryFromBinderBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::FactoryFromBinderBas
         false
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinderBase")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderBase")]
 impl std::ops::Deref for crate::Zenject::FactoryFromBinderBase {
     type Target = crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinderBase")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderBase")]
 impl std::ops::DerefMut for crate::Zenject::FactoryFromBinderBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -964,7 +964,7 @@ impl crate::Zenject::FactoryFromBinderBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinderBase")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::FactoryFromBinderBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

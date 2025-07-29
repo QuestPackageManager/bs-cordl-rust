@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AssetSync {
@@ -8,7 +8,7 @@ pub struct HEU_AssetSync {
     >,
     pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_AssetSync {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Asset
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetSync {
     type Target = crate::HoudiniEngineUnity::HEU_BaseSync;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AssetSync {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -299,7 +299,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetSync {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetSync {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -308,13 +308,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetS
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AssetSync_AssetSyncCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -334,14 +334,14 @@ for crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -484,7 +484,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "DisableWhenMirrorIsEnabled")]
+#[cfg(feature = "cordl_class_DisableWhenMirrorIsEnabled")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisableWhenMirrorIsEnabled {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _mirror: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Mirror>,
 }
-#[cfg(feature = "DisableWhenMirrorIsEnabled")]
+#[cfg(feature = "cordl_class_DisableWhenMirrorIsEnabled")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DisableWhenMirrorIsEnabled {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::DisableWhenMirrorIsEnabled {
         false
     }
 }
-#[cfg(feature = "DisableWhenMirrorIsEnabled")]
+#[cfg(feature = "cordl_class_DisableWhenMirrorIsEnabled")]
 impl std::ops::Deref for crate::GlobalNamespace::DisableWhenMirrorIsEnabled {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DisableWhenMirrorIsEnabled")]
+#[cfg(feature = "cordl_class_DisableWhenMirrorIsEnabled")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DisableWhenMirrorIsEnabled {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -190,7 +190,7 @@ impl crate::GlobalNamespace::DisableWhenMirrorIsEnabled {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DisableWhenMirrorIsEnabled")]
+#[cfg(feature = "cordl_class_DisableWhenMirrorIsEnabled")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DisableWhenMirrorIsEnabled {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+InitializableManager")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializableManager {
@@ -12,7 +12,7 @@ pub struct InitializableManager {
     >,
     pub _hasInitialized: bool,
 }
-#[cfg(feature = "Zenject+InitializableManager")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InitializableManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InitializableManager
         false
     }
 }
-#[cfg(feature = "Zenject+InitializableManager")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager")]
 impl std::ops::Deref for crate::Zenject::InitializableManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+InitializableManager")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager")]
 impl std::ops::DerefMut for crate::Zenject::InitializableManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -264,7 +264,7 @@ impl crate::Zenject::InitializableManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+InitializableManager")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InitializableManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -273,7 +273,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InitializableManager 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager+InitializableInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializableManager_InitializableInfo {
@@ -281,7 +281,7 @@ pub struct InitializableManager_InitializableInfo {
     pub Initializable: quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
     pub Priority: i32,
 }
-#[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager+InitializableInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::InitializableManager_InitializableInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -301,14 +301,14 @@ for crate::Zenject::InitializableManager_InitializableInfo {
         false
     }
 }
-#[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager+InitializableInfo")]
 impl std::ops::Deref for crate::Zenject::InitializableManager_InitializableInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager+InitializableInfo")]
 impl std::ops::DerefMut for crate::Zenject::InitializableManager_InitializableInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -416,7 +416,7 @@ impl crate::Zenject::InitializableManager_InitializableInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
+#[cfg(feature = "cordl_class_Zenject+InitializableManager+InitializableInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::InitializableManager_InitializableInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

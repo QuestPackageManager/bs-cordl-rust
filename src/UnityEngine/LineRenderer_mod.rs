@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+LineRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+LineRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LineRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
 }
-#[cfg(feature = "UnityEngine+LineRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+LineRenderer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LineRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LineRenderer {
         false
     }
 }
-#[cfg(feature = "UnityEngine+LineRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+LineRenderer")]
 impl std::ops::Deref for crate::UnityEngine::LineRenderer {
     type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+LineRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+LineRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::LineRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1730,7 +1730,7 @@ impl crate::UnityEngine::LineRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+LineRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+LineRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::LineRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

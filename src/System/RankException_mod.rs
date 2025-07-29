@@ -1,10 +1,10 @@
-#[cfg(feature = "System+RankException")]
+#[cfg(feature = "cordl_class_System+RankException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RankException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+RankException")]
+#[cfg(feature = "cordl_class_System+RankException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::RankException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::RankException {
         false
     }
 }
-#[cfg(feature = "System+RankException")]
+#[cfg(feature = "cordl_class_System+RankException")]
 impl std::ops::Deref for crate::System::RankException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+RankException")]
+#[cfg(feature = "cordl_class_System+RankException")]
 impl std::ops::DerefMut for crate::System::RankException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::RankException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+RankException")]
+#[cfg(feature = "cordl_class_System+RankException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::RankException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

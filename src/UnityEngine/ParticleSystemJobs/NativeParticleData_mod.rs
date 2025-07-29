@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeParticleData {
@@ -19,7 +19,7 @@ pub struct NativeParticleData {
     pub customData2: crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4,
     pub meshIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Held<'a> = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Type = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Actual = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Type = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Actual = Self;
@@ -103,7 +103,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Type = Self;
@@ -121,7 +121,7 @@ impl crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
     pub type Array4 = crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4;
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeParticleData_Array3 {
@@ -129,7 +129,7 @@ pub struct NativeParticleData_Array3 {
     pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Held<'a> = Self;
@@ -159,7 +159,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Type = Self;
@@ -170,7 +170,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Actual = Self;
@@ -184,7 +184,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Type = Self;
@@ -199,7 +199,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Actual = Self;
@@ -213,7 +213,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Type = Self;
@@ -226,7 +226,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
 }
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 impl crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {}
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeParticleData_Array4 {
@@ -235,7 +235,7 @@ pub struct NativeParticleData_Array4 {
     pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub w: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Held<'a> = Self;
@@ -265,7 +265,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Type = Self;
@@ -276,7 +276,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Actual = Self;
@@ -290,7 +290,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Type = Self;
@@ -305,7 +305,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Actual = Self;
@@ -319,7 +319,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Type = Self;

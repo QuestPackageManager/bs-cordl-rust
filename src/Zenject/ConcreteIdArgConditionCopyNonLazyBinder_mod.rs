@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConcreteIdArgConditionCopyNonLazyBinder {
     __cordl_parent: crate::Zenject::ArgConditionCopyNonLazyBinder,
 }
-#[cfg(feature = "Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder {
         false
     }
 }
-#[cfg(feature = "Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder {
     type Target = crate::Zenject::ArgConditionCopyNonLazyBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
 impl std::ops::DerefMut for crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -105,7 +105,7 @@ impl crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(feature = "cordl_class_Zenject+ConcreteIdArgConditionCopyNonLazyBinder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParameterByRefUpdater {
@@ -7,7 +7,7 @@ pub struct ParameterByRefUpdater {
         crate::System::Linq::Expressions::Interpreter::LocalVariable,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
     type Target = crate::System::Linq::Expressions::Interpreter::ByRefUpdater;
@@ -35,7 +35,7 @@ for crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -127,7 +127,7 @@ impl crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ParameterByRefUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleProperty")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleProperty {
@@ -13,7 +13,7 @@ pub struct StyleProperty {
     pub isCustomProperty: bool,
     pub requireVariableResolve: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleProperty")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::UnityEngine::UIElements::StyleProperty {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleProperty")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleProperty {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleProperty")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,7 +141,7 @@ impl crate::UnityEngine::UIElements::StyleProperty {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleProperty")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleProperty")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleProperty {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

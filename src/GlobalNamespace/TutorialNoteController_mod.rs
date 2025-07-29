@@ -1,4 +1,4 @@
-#[cfg(feature = "TutorialNoteController")]
+#[cfg(feature = "cordl_class_TutorialNoteController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialNoteController {
@@ -13,7 +13,7 @@ pub struct TutorialNoteController {
     pub _beforeNoteCutWasOk: bool,
     pub _cutAngleTolerance: f32,
 }
-#[cfg(feature = "TutorialNoteController")]
+#[cfg(feature = "cordl_class_TutorialNoteController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TutorialNoteController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::TutorialNoteController {
         false
     }
 }
-#[cfg(feature = "TutorialNoteController")]
+#[cfg(feature = "cordl_class_TutorialNoteController")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialNoteController {
     type Target = crate::GlobalNamespace::NoteController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TutorialNoteController")]
+#[cfg(feature = "cordl_class_TutorialNoteController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialNoteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -383,7 +383,7 @@ impl crate::GlobalNamespace::TutorialNoteController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TutorialNoteController")]
+#[cfg(feature = "cordl_class_TutorialNoteController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TutorialNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -421,7 +421,7 @@ for crate::GlobalNamespace::TutorialNoteController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "TutorialNoteController+Pool")]
+#[cfg(feature = "cordl_class_TutorialNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialNoteController_Pool {
@@ -429,7 +429,7 @@ pub struct TutorialNoteController_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
     >,
 }
-#[cfg(feature = "TutorialNoteController+Pool")]
+#[cfg(feature = "cordl_class_TutorialNoteController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TutorialNoteController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -449,7 +449,7 @@ for crate::GlobalNamespace::TutorialNoteController_Pool {
         false
     }
 }
-#[cfg(feature = "TutorialNoteController+Pool")]
+#[cfg(feature = "cordl_class_TutorialNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialNoteController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
@@ -458,7 +458,7 @@ impl std::ops::Deref for crate::GlobalNamespace::TutorialNoteController_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TutorialNoteController+Pool")]
+#[cfg(feature = "cordl_class_TutorialNoteController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialNoteController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -495,7 +495,7 @@ impl crate::GlobalNamespace::TutorialNoteController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TutorialNoteController+Pool")]
+#[cfg(feature = "cordl_class_TutorialNoteController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TutorialNoteController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

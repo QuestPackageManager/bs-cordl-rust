@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextValueField_1<TValueType: quest_hook::libil2cpp::Type> {
@@ -10,7 +10,7 @@ pub struct TextValueField_1<TValueType: quest_hook::libil2cpp::Type> {
     pub m_ForceUpdateDisplay: bool,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1")]
 unsafe impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType>;
@@ -54,7 +54,7 @@ for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -674,7 +674,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -704,7 +704,7 @@ for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextValueField_1_TextValueInput<TValueType: quest_hook::libil2cpp::Type> {
@@ -716,7 +716,7 @@ pub struct TextValueField_1_TextValueInput<TValueType: quest_hook::libil2cpp::Ty
     >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 unsafe impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -752,7 +752,7 @@ for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> 
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
@@ -762,7 +762,7 @@ for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1114,7 +1114,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+TypeLimiter")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeLimiter {
@@ -7,7 +7,7 @@ pub struct TypeLimiter {
         crate::System::Data::TypeLimiter_Scope,
     >,
 }
-#[cfg(feature = "System+Data+TypeLimiter")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::TypeLimiter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::TypeLimiter {
         false
     }
 }
-#[cfg(feature = "System+Data+TypeLimiter")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter")]
 impl std::ops::Deref for crate::System::Data::TypeLimiter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+TypeLimiter")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter")]
 impl std::ops::DerefMut for crate::System::Data::TypeLimiter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -280,7 +280,7 @@ impl crate::System::Data::TypeLimiter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+TypeLimiter")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -289,7 +289,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Data+TypeLimiter+Scope")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter+Scope")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeLimiter_Scope {
@@ -303,7 +303,7 @@ pub struct TypeLimiter_Scope {
         crate::System::Data::TypeLimiter_Scope,
     >,
 }
-#[cfg(feature = "System+Data+TypeLimiter+Scope")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter+Scope")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::TypeLimiter_Scope {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -322,14 +322,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::TypeLimiter_Sco
         false
     }
 }
-#[cfg(feature = "System+Data+TypeLimiter+Scope")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter+Scope")]
 impl std::ops::Deref for crate::System::Data::TypeLimiter_Scope {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+TypeLimiter+Scope")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter+Scope")]
 impl std::ops::DerefMut for crate::System::Data::TypeLimiter_Scope {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -464,7 +464,7 @@ impl crate::System::Data::TypeLimiter_Scope {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+TypeLimiter+Scope")]
+#[cfg(feature = "cordl_class_System+Data+TypeLimiter+Scope")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter_Scope {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

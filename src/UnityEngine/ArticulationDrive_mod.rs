@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ArticulationDrive")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDrive")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArticulationDrive {
@@ -11,7 +11,7 @@ pub struct ArticulationDrive {
     pub targetVelocity: f32,
     pub driveType: crate::UnityEngine::ArticulationDriveType,
 }
-#[cfg(feature = "UnityEngine+ArticulationDrive")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDrive")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ArticulationDrive {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ArticulationDriv
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDrive")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDrive")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ArticulationDrive {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Articulation
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDrive")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDrive")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ArticulationDrive {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Articulatio
         self
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDrive")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDrive")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ArticulationDrive {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Articulation
         }
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDrive")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDrive")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ArticulationDrive {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ArticulationDr
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDrive")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDrive")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ArticulationDrive {
     type Type = Self;

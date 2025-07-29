@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperation_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperation_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChainOperation_2<
@@ -37,7 +37,7 @@ pub struct ChainOperation_2<
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
     __cordl_phantom_TObjectDependency: std::marker::PhantomData<TObjectDependency>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperation_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperation_2")]
 unsafe impl<
     TObject: quest_hook::libil2cpp::Type,
     TObjectDependency: quest_hook::libil2cpp::Type,
@@ -79,7 +79,7 @@ for crate::UnityEngine::ResourceManagement::ChainOperation_2<
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperation_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperation_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TObjectDependency: quest_hook::libil2cpp::Type,
@@ -95,7 +95,7 @@ for crate::UnityEngine::ResourceManagement::ChainOperation_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperation_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperation_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TObjectDependency: quest_hook::libil2cpp::Type,
@@ -542,7 +542,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperation_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperation_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TObjectDependency: quest_hook::libil2cpp::Type,

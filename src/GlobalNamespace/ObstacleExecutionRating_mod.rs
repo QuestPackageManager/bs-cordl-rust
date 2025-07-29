@@ -1,11 +1,11 @@
-#[cfg(feature = "ObstacleExecutionRating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleExecutionRating {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectExecutionRating,
     pub _rating_k__BackingField: crate::GlobalNamespace::ObstacleExecutionRating_Rating,
 }
-#[cfg(feature = "ObstacleExecutionRating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObstacleExecutionRating {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::ObstacleExecutionRating {
         false
     }
 }
-#[cfg(feature = "ObstacleExecutionRating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleExecutionRating {
     type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObstacleExecutionRating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleExecutionRating {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::ObstacleExecutionRating {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObstacleExecutionRating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObstacleExecutionRating {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -117,7 +117,7 @@ for crate::GlobalNamespace::ObstacleExecutionRating {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ObstacleExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObstacleExecutionRating_Rating {
@@ -125,7 +125,7 @@ pub enum ObstacleExecutionRating_Rating {
     NotGood = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "ObstacleExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
     type Held<'a> = Self;
@@ -155,7 +155,7 @@ for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ObstacleExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
     type Type = Self;
@@ -166,7 +166,7 @@ for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ObstacleExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
     type Actual = Self;
@@ -180,7 +180,7 @@ for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
         self
     }
 }
-#[cfg(feature = "ObstacleExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
     type Type = Self;
@@ -195,7 +195,7 @@ for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
         }
     }
 }
-#[cfg(feature = "ObstacleExecutionRating+Rating")]
+#[cfg(feature = "cordl_class_ObstacleExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ObstacleExecutionRating_Rating {
     type Actual = Self;

@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsyncOperationStatus {
@@ -7,7 +9,9 @@ pub enum AsyncOperationStatus {
     None = 0i32,
     Succeeded = 1i32,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatus {
     type Held<'a> = Self;
@@ -37,7 +41,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatus {
     type Type = Self;
@@ -48,7 +54,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatus {
     type Actual = Self;
@@ -62,7 +70,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatu
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatus {
     type Type = Self;
@@ -77,7 +87,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatu
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationStatus"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatus {
     type Actual = Self;

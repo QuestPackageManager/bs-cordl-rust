@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+RefreshMask")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RefreshMask")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RefreshMask {
@@ -11,7 +11,7 @@ pub enum RefreshMask {
     Tangents = 8i32,
     UV = 1i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RefreshMask")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RefreshMask")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::RefreshMask {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Refr
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RefreshMask")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RefreshMask")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::RefreshMask {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::ProBuilder::RefreshMask {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RefreshMask")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RefreshMask")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::RefreshMask {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::ProBuilder::RefreshMask {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RefreshMask")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RefreshMask")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::RefreshMask {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::ProBuilder::RefreshMask {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+RefreshMask")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RefreshMask")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::RefreshMask {
     type Actual = Self;

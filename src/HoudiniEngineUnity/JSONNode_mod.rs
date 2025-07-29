@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Enumerator_JSONNode_Type {
@@ -7,7 +7,7 @@ pub enum Enumerator_JSONNode_Type {
     None = 0i32,
     Object = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Actual = Self;
@@ -91,13 +91,13 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::JSONNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -116,14 +116,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::JSONNode 
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::JSONNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::JSONNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2769,7 +2769,7 @@ impl crate::HoudiniEngineUnity::JSONNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::JSONNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2778,7 +2778,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::JSONNode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_Enumerator {
@@ -2791,7 +2791,7 @@ pub struct JSONNode_Enumerator {
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Held<'a> = Self;
@@ -2821,7 +2821,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Type = Self;
@@ -2832,7 +2832,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Actual = Self;
@@ -2846,7 +2846,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Type = Self;
@@ -2861,7 +2861,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Actual = Self;
@@ -2875,7 +2875,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Type = Self;
@@ -3031,13 +3031,13 @@ impl crate::HoudiniEngineUnity::JSONNode_Enumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_KeyEnumerator {
     pub m_Enumerator: crate::HoudiniEngineUnity::JSONNode_Enumerator,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Held<'a> = Self;
@@ -3067,7 +3067,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Type = Self;
@@ -3078,7 +3078,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Actual = Self;
@@ -3092,7 +3092,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Type = Self;
@@ -3107,7 +3107,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Actual = Self;
@@ -3121,7 +3121,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Type = Self;
@@ -3300,7 +3300,7 @@ impl crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+LinqEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONNode_LinqEnumerator {
@@ -3308,7 +3308,7 @@ pub struct JSONNode_LinqEnumerator {
     pub m_Node: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     pub m_Enumerator: crate::HoudiniEngineUnity::JSONNode_Enumerator,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+LinqEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3328,14 +3328,14 @@ for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+LinqEnumerator")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+LinqEnumerator")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3582,7 +3582,7 @@ impl crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+LinqEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3714,13 +3714,13 @@ for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_ValueEnumerator {
     pub m_Enumerator: crate::HoudiniEngineUnity::JSONNode_Enumerator,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Held<'a> = Self;
@@ -3750,7 +3750,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Type = Self;
@@ -3761,7 +3761,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Actual = Self;
@@ -3775,7 +3775,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Type = Self;
@@ -3790,7 +3790,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Actual = Self;
@@ -3804,7 +3804,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Type = Self;

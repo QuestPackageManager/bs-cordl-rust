@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ICachable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -108,7 +108,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+ICachable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::AsyncOperations::ICachable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

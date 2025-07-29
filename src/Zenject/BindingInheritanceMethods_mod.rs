@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+BindingInheritanceMethods")]
+#[cfg(feature = "cordl_class_Zenject+BindingInheritanceMethods")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BindingInheritanceMethods {
@@ -9,7 +9,7 @@ pub enum BindingInheritanceMethods {
     MoveIntoAll = 3i32,
     None = 0i32,
 }
-#[cfg(feature = "Zenject+BindingInheritanceMethods")]
+#[cfg(feature = "cordl_class_Zenject+BindingInheritanceMethods")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::BindingInheritanceMethods {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::BindingInheritanceMe
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+BindingInheritanceMethods")]
+#[cfg(feature = "cordl_class_Zenject+BindingInheritanceMethods")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::BindingInheritanceMethods {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Zenject::BindingInheritanceMethods {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+BindingInheritanceMethods")]
+#[cfg(feature = "cordl_class_Zenject+BindingInheritanceMethods")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::BindingInheritanceMethods {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Zenject::BindingInheritanceMethods {
         self
     }
 }
-#[cfg(feature = "Zenject+BindingInheritanceMethods")]
+#[cfg(feature = "cordl_class_Zenject+BindingInheritanceMethods")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::BindingInheritanceMethods {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Zenject::BindingInheritanceMethods {
         }
     }
 }
-#[cfg(feature = "Zenject+BindingInheritanceMethods")]
+#[cfg(feature = "cordl_class_Zenject+BindingInheritanceMethods")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::BindingInheritanceMethods {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

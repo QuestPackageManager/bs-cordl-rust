@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphicRaycaster {
@@ -13,7 +13,7 @@ pub struct GraphicRaycaster {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::GraphicRaycaster {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::GraphicRayca
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::UI::GraphicRaycaster {
     type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::GraphicRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -411,7 +411,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::GraphicRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -420,7 +420,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::GraphicRaycas
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicRaycaster_BlockingObjects {
@@ -430,7 +430,7 @@ pub enum GraphicRaycaster_BlockingObjects {
     ThreeD = 2i32,
     TwoD = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
     type Held<'a> = Self;
@@ -460,7 +460,7 @@ for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
     type Type = Self;
@@ -471,7 +471,7 @@ for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
     type Actual = Self;
@@ -485,7 +485,7 @@ for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
     type Type = Self;
@@ -500,7 +500,7 @@ for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
     type Actual = Self;

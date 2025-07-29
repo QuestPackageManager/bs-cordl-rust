@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+RaycastResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RaycastResult {
@@ -18,7 +18,7 @@ pub struct RaycastResult {
     pub screenPosition: crate::UnityEngine::Vector2,
     pub displayIndex: i32,
 }
-#[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+RaycastResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::RaycastResult {
     type Held<'a> = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::EventSystems::RaycastResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+RaycastResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::RaycastResult {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::EventSystems::RaycastResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+RaycastResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::RaycastResult {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::EventSystems::RaycastResult {
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+RaycastResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::RaycastResult {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::EventSystems::RaycastResult {
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+RaycastResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::RaycastResult {
     type Actual = Self;
@@ -102,7 +102,7 @@ for crate::UnityEngine::EventSystems::RaycastResult {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+RaycastResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::EventSystems::RaycastResult {
     type Type = Self;

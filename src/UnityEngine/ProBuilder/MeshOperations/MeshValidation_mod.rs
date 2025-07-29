@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshValidation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -766,7 +766,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -777,7 +777,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -787,7 +787,7 @@ pub enum MeshValidation_AttributeValidationStrategy {
     Resize = 0i32,
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {
@@ -819,7 +819,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeVali
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {
@@ -832,7 +832,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeVali
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {
@@ -848,7 +848,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeVali
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {
@@ -865,7 +865,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeVali
     }
 }
 #[cfg(
-    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+    feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {

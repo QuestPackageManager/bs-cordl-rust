@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BackgroundRepeat {
     pub x: crate::UnityEngine::UIElements::Repeat,
     pub y: crate::UnityEngine::UIElements::Repeat,
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BackgroundRepeat {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::BackgroundRepeat {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::BackgroundRepeat {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::BackgroundRepeat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::BackgroundRepeat {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::BackgroundRepeat {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::BackgroundRepeat {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::UIElements::BackgroundRepeat {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::BackgroundRepeat {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::UIElements::BackgroundRepeat {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::BackgroundRepeat {
     type Type = Self;

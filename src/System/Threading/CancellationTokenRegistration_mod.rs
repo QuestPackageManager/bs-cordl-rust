@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CancellationTokenRegistration {
@@ -9,7 +9,7 @@ pub struct CancellationTokenRegistration {
         quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
     >,
 }
-#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::CancellationTokenRegistration {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::System::Threading::CancellationTokenRegistration {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::CancellationTokenRegistration {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Threading::CancellationTokenRegistration {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::CancellationTokenRegistration {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Threading::CancellationTokenRegistration {
         self
     }
 }
-#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::CancellationTokenRegistration {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Threading::CancellationTokenRegistration {
         }
     }
 }
-#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::CancellationTokenRegistration {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::System::Threading::CancellationTokenRegistration {
         actual
     }
 }
-#[cfg(feature = "System+Threading+CancellationTokenRegistration")]
+#[cfg(feature = "cordl_class_System+Threading+CancellationTokenRegistration")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Threading::CancellationTokenRegistration {
     type Type = Self;

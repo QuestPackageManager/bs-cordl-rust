@@ -1,11 +1,11 @@
-#[cfg(feature = "BloomFogParamsAnimator")]
+#[cfg(feature = "cordl_class_BloomFogParamsAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomFogParamsAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
 }
-#[cfg(feature = "BloomFogParamsAnimator")]
+#[cfg(feature = "cordl_class_BloomFogParamsAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomFogParamsAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::BloomFogParamsAnimator {
         false
     }
 }
-#[cfg(feature = "BloomFogParamsAnimator")]
+#[cfg(feature = "cordl_class_BloomFogParamsAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomFogParamsAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomFogParamsAnimator")]
+#[cfg(feature = "cordl_class_BloomFogParamsAnimator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogParamsAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -236,7 +236,7 @@ impl crate::GlobalNamespace::BloomFogParamsAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomFogParamsAnimator")]
+#[cfg(feature = "cordl_class_BloomFogParamsAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomFogParamsAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

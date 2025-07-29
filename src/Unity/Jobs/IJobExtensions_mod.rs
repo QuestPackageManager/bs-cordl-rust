@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Jobs+IJobExtensions")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IJobExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Jobs::IJobExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Jobs::IJobExtensions {
         false
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions")]
 impl std::ops::Deref for crate::Unity::Jobs::IJobExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions")]
 impl std::ops::DerefMut for crate::Unity::Jobs::IJobExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::Unity::Jobs::IJobExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Jobs::IJobExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -138,13 +138,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Jobs::IJobExtensions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IJobExtensions_JobStruct_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
     type Held<'a> = Self;
@@ -190,7 +190,7 @@ for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
     type Type = Self;
@@ -201,7 +201,7 @@ for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
     type Actual = Self;
@@ -215,7 +215,7 @@ for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
         self
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
     type Type = Self;
@@ -230,7 +230,7 @@ for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
         }
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
     type Actual = Self;
@@ -244,7 +244,7 @@ for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
         actual
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Jobs::IJobExtensions_JobStruct_1<T> {
     type Type = Self;
@@ -336,7 +336,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Jobs::IJobExtensions_JobStruc
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JobStruct_1_IJobExtensions_ExecuteJobFunction<
@@ -345,7 +345,7 @@ pub struct JobStruct_1_IJobExtensions_ExecuteJobFunction<
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -381,7 +381,7 @@ for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
         false
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
     type Target = crate::System::MulticastDelegate;
@@ -389,7 +389,7 @@ for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -499,7 +499,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
+#[cfg(feature = "cordl_class_Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

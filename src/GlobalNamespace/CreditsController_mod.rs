@@ -1,4 +1,4 @@
-#[cfg(feature = "CreditsController")]
+#[cfg(feature = "cordl_class_CreditsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsController {
@@ -35,7 +35,7 @@ pub struct CreditsController {
     pub _didFinish: bool,
     pub _isPaused: bool,
 }
-#[cfg(feature = "CreditsController")]
+#[cfg(feature = "cordl_class_CreditsController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -54,14 +54,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsContr
         false
     }
 }
-#[cfg(feature = "CreditsController")]
+#[cfg(feature = "cordl_class_CreditsController")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CreditsController")]
+#[cfg(feature = "cordl_class_CreditsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -439,7 +439,7 @@ impl crate::GlobalNamespace::CreditsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CreditsController")]
+#[cfg(feature = "cordl_class_CreditsController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

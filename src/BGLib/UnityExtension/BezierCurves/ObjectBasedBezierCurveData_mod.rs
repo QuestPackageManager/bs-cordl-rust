@@ -1,4 +1,6 @@
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectBasedBezierCurveData {
@@ -6,7 +8,9 @@ pub struct ObjectBasedBezierCurveData {
     pub _startPointTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _endPointTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +30,9 @@ for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData"
+)]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData {
     type Target = crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData;
@@ -34,7 +40,9 @@ for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData"
+)]
 impl std::ops::DerefMut
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -139,7 +147,9 @@ impl crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData")]
+#[cfg(
+    feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

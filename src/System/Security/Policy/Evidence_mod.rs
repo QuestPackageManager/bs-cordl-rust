@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Policy+Evidence")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Evidence {
@@ -11,7 +11,7 @@ pub struct Evidence {
         crate::System::Collections::ArrayList,
     >,
 }
-#[cfg(feature = "System+Security+Policy+Evidence")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::Policy::Evidence {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::Policy::Evi
         false
     }
 }
-#[cfg(feature = "System+Security+Policy+Evidence")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence")]
 impl std::ops::Deref for crate::System::Security::Policy::Evidence {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Policy+Evidence")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence")]
 impl std::ops::DerefMut for crate::System::Security::Policy::Evidence {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -193,7 +193,7 @@ impl crate::System::Security::Policy::Evidence {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Policy+Evidence")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Security::Policy::Evidence {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -230,7 +230,7 @@ for crate::System::Security::Policy::Evidence {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence+EvidenceEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Evidence_EvidenceEnumerator {
@@ -239,7 +239,7 @@ pub struct Evidence_EvidenceEnumerator {
     pub hostEnum: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     pub assemblyEnum: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
-#[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence+EvidenceEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -259,14 +259,14 @@ for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence+EvidenceEnumerator")]
 impl std::ops::Deref for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence+EvidenceEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -385,7 +385,7 @@ impl crate::System::Security::Policy::Evidence_EvidenceEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
+#[cfg(feature = "cordl_class_System+Security+Policy+Evidence+EvidenceEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,8 +1,8 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventListener {}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     type Held<'a> = Self;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     type Type = Self;
@@ -43,7 +43,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     type Actual = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     type Type = Self;
@@ -72,7 +72,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     type Actual = Self;
@@ -86,7 +86,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     type Type = Self;
@@ -257,7 +257,7 @@ impl AsMut<
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -270,7 +270,7 @@ pub struct InputEventListener_DisposableObserver {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
@@ -292,7 +292,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObse
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
@@ -302,7 +302,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObse
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
@@ -365,7 +365,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObs
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
@@ -394,7 +394,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObse
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEventListener_ObserverState {
@@ -413,7 +415,9 @@ pub struct InputEventListener_ObserverState {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -433,7 +437,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState 
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -441,7 +447,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -511,7 +519,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

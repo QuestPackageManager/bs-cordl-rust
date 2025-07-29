@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractProgressBar {
@@ -14,7 +14,7 @@ pub struct AbstractProgressBar {
     pub m_HighValue: f32,
     pub m_Value: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::AbstractProgressBar {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::UnityEngine::UIElements::AbstractProgressBar {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::AbstractProgressBar {
     type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::AbstractProgressBar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -339,7 +339,7 @@ impl crate::UnityEngine::UIElements::AbstractProgressBar {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::AbstractProgressBar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -365,7 +365,7 @@ for crate::UnityEngine::UIElements::AbstractProgressBar {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractProgressBar_UxmlTraits {
@@ -383,7 +383,7 @@ pub struct AbstractProgressBar_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -403,14 +403,14 @@ for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -484,7 +484,7 @@ impl crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

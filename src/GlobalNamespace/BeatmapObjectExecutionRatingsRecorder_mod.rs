@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRatingsRecorder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectExecutionRatingsRecorder {
@@ -28,7 +28,7 @@ pub struct BeatmapObjectExecutionRatingsRecorder {
         >,
     >,
 }
-#[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRatingsRecorder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -48,14 +48,14 @@ for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
         false
     }
 }
-#[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRatingsRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRatingsRecorder")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -266,7 +266,7 @@ impl crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
+#[cfg(feature = "cordl_class_BeatmapObjectExecutionRatingsRecorder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

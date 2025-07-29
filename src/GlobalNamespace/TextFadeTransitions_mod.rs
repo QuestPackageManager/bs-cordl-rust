@@ -1,4 +1,4 @@
-#[cfg(feature = "TextFadeTransitions")]
+#[cfg(feature = "cordl_class_TextFadeTransitions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextFadeTransitions {
@@ -11,7 +11,7 @@ pub struct TextFadeTransitions {
     pub _fade: f32,
     pub _delay: f32,
 }
-#[cfg(feature = "TextFadeTransitions")]
+#[cfg(feature = "cordl_class_TextFadeTransitions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TextFadeTransitions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TextFadeTran
         false
     }
 }
-#[cfg(feature = "TextFadeTransitions")]
+#[cfg(feature = "cordl_class_TextFadeTransitions")]
 impl std::ops::Deref for crate::GlobalNamespace::TextFadeTransitions {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TextFadeTransitions")]
+#[cfg(feature = "cordl_class_TextFadeTransitions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextFadeTransitions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -200,7 +200,7 @@ impl crate::GlobalNamespace::TextFadeTransitions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TextFadeTransitions")]
+#[cfg(feature = "cordl_class_TextFadeTransitions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextFadeTransitions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -209,7 +209,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextFadeTrans
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TextFadeTransitions+State")]
+#[cfg(feature = "cordl_class_TextFadeTransitions+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextFadeTransitions_State {
@@ -218,7 +218,7 @@ pub enum TextFadeTransitions_State {
     FadingOut = 1i32,
     NotInTransition = 0i32,
 }
-#[cfg(feature = "TextFadeTransitions+State")]
+#[cfg(feature = "cordl_class_TextFadeTransitions+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TextFadeTransitions_State {
     type Held<'a> = Self;
@@ -248,7 +248,7 @@ for crate::GlobalNamespace::TextFadeTransitions_State {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TextFadeTransitions+State")]
+#[cfg(feature = "cordl_class_TextFadeTransitions+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TextFadeTransitions_State {
     type Type = Self;
@@ -259,7 +259,7 @@ for crate::GlobalNamespace::TextFadeTransitions_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TextFadeTransitions+State")]
+#[cfg(feature = "cordl_class_TextFadeTransitions+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TextFadeTransitions_State {
     type Actual = Self;
@@ -273,7 +273,7 @@ for crate::GlobalNamespace::TextFadeTransitions_State {
         self
     }
 }
-#[cfg(feature = "TextFadeTransitions+State")]
+#[cfg(feature = "cordl_class_TextFadeTransitions+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TextFadeTransitions_State {
     type Type = Self;
@@ -288,7 +288,7 @@ for crate::GlobalNamespace::TextFadeTransitions_State {
         }
     }
 }
-#[cfg(feature = "TextFadeTransitions+State")]
+#[cfg(feature = "cordl_class_TextFadeTransitions+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TextFadeTransitions_State {
     type Actual = Self;

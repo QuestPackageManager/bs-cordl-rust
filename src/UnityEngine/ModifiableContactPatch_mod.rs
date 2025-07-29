@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ModifiableContactPatch {
@@ -14,7 +14,7 @@ pub struct ModifiableContactPatch {
     pub materialIndex: u16,
     pub otherMaterialIndex: u16,
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ModifiableContactPatch {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ModifiableContac
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ModifiableContactPatch {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::UnityEngine::ModifiableContactPatch {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ModifiableContactPatch {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::ModifiableContactPatch {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ModifiableContactPatch {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::UnityEngine::ModifiableContactPatch {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ModifiableContactPatch {
     type Actual = Self;
@@ -97,7 +97,7 @@ for crate::UnityEngine::ModifiableContactPatch {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ModifiableContactPatch {
     type Type = Self;
@@ -113,7 +113,7 @@ impl crate::UnityEngine::ModifiableContactPatch {
     #[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
     pub type Flags = crate::UnityEngine::ModifiableContactPatch_Flags;
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch+Flags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ModifiableContactPatch_Flags {
@@ -124,7 +124,7 @@ pub enum ModifiableContactPatch_Flags {
     HasTargetVelocity = 16i32,
     RegeneratePatches = 64i32,
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Held<'a> = Self;
@@ -154,7 +154,7 @@ for crate::UnityEngine::ModifiableContactPatch_Flags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Type = Self;
@@ -165,7 +165,7 @@ for crate::UnityEngine::ModifiableContactPatch_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Actual = Self;
@@ -179,7 +179,7 @@ for crate::UnityEngine::ModifiableContactPatch_Flags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Type = Self;
@@ -194,7 +194,7 @@ for crate::UnityEngine::ModifiableContactPatch_Flags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Actual = Self;

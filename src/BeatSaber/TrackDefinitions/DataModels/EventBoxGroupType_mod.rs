@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventBoxGroupType {
@@ -8,7 +8,7 @@ pub enum EventBoxGroupType {
     Rotation = 1i32,
     Translation = 2i32,
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
         self
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
         }
     }
 }
-#[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType {
     type Actual = Self;

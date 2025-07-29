@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRuntimeExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -81,7 +81,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

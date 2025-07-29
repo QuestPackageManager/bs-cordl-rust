@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDeviceMatcher {
@@ -11,7 +11,7 @@ pub struct InputDeviceMatcher {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     type Type = Self;
@@ -715,7 +715,9 @@ impl AsMut<
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDeviceMatcher_MatcherJson {
@@ -755,7 +757,9 @@ pub struct InputDeviceMatcher_MatcherJson {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     type Held<'a> = Self;
@@ -785,7 +789,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     type Type = Self;
@@ -796,7 +802,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     type Actual = Self;
@@ -810,7 +818,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     type Type = Self;
@@ -825,7 +835,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     type Actual = Self;
@@ -839,7 +851,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     type Type = Self;
@@ -912,7 +926,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -921,7 +935,7 @@ pub struct MatcherJson_InputDeviceMatcher_Capability {
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability {
@@ -953,7 +967,7 @@ for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Cap
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability {
@@ -966,7 +980,7 @@ for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Cap
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability {
@@ -982,7 +996,7 @@ for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Cap
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability {
@@ -999,7 +1013,7 @@ for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Cap
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability {
@@ -1015,7 +1029,7 @@ for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Cap
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability {

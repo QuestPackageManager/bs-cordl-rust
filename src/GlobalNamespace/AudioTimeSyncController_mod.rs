@@ -1,4 +1,4 @@
-#[cfg(feature = "AudioTimeSyncController")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioTimeSyncController {
@@ -38,7 +38,7 @@ pub struct AudioTimeSyncController {
     pub _forceNoAudioSyncOrAudioSyncErrorFixing: bool,
     pub _inBetweenDSPBufferingTimeEstimate: f32,
 }
-#[cfg(feature = "AudioTimeSyncController")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AudioTimeSyncController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -58,14 +58,14 @@ for crate::GlobalNamespace::AudioTimeSyncController {
         false
     }
 }
-#[cfg(feature = "AudioTimeSyncController")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioTimeSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AudioTimeSyncController")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioTimeSyncController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -709,7 +709,7 @@ impl crate::GlobalNamespace::AudioTimeSyncController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AudioTimeSyncController")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AudioTimeSyncController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -733,7 +733,7 @@ for crate::GlobalNamespace::AudioTimeSyncController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "AudioTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioTimeSyncController_InitData {
@@ -743,7 +743,7 @@ pub struct AudioTimeSyncController_InitData {
     pub songTimeOffset: f32,
     pub timeScale: f32,
 }
-#[cfg(feature = "AudioTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AudioTimeSyncController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -763,14 +763,14 @@ for crate::GlobalNamespace::AudioTimeSyncController_InitData {
         false
     }
 }
-#[cfg(feature = "AudioTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioTimeSyncController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AudioTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioTimeSyncController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -832,7 +832,7 @@ impl crate::GlobalNamespace::AudioTimeSyncController_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AudioTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AudioTimeSyncController_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -842,7 +842,7 @@ for crate::GlobalNamespace::AudioTimeSyncController_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AudioTimeSyncController+State")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioTimeSyncController_State {
@@ -851,7 +851,7 @@ pub enum AudioTimeSyncController_State {
     Playing = 0i32,
     Stopped = 2i32,
 }
-#[cfg(feature = "AudioTimeSyncController+State")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AudioTimeSyncController_State {
     type Held<'a> = Self;
@@ -881,7 +881,7 @@ for crate::GlobalNamespace::AudioTimeSyncController_State {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AudioTimeSyncController+State")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AudioTimeSyncController_State {
     type Type = Self;
@@ -892,7 +892,7 @@ for crate::GlobalNamespace::AudioTimeSyncController_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AudioTimeSyncController+State")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AudioTimeSyncController_State {
     type Actual = Self;
@@ -906,7 +906,7 @@ for crate::GlobalNamespace::AudioTimeSyncController_State {
         self
     }
 }
-#[cfg(feature = "AudioTimeSyncController+State")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AudioTimeSyncController_State {
     type Type = Self;
@@ -921,7 +921,7 @@ for crate::GlobalNamespace::AudioTimeSyncController_State {
         }
     }
 }
-#[cfg(feature = "AudioTimeSyncController+State")]
+#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AudioTimeSyncController_State {
     type Actual = Self;

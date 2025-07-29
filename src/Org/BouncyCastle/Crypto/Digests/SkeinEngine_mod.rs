@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine {
@@ -29,7 +29,7 @@ pub struct SkeinEngine {
     >,
     pub singleByte: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -734,7 +734,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -758,14 +758,14 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine_Configuration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -785,7 +785,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -793,7 +793,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -863,7 +863,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -873,7 +873,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine_Parameter {
@@ -881,7 +881,7 @@ pub struct SkeinEngine_Parameter {
     pub _cordl_type: i32,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -901,7 +901,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -909,7 +909,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1007,7 +1007,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1017,7 +1017,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine_UBI {
@@ -1032,7 +1032,7 @@ pub struct SkeinEngine_UBI {
     pub currentOffset: i32,
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1052,14 +1052,14 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1260,7 +1260,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1270,7 +1270,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine_UbiTweak {
@@ -1278,7 +1278,7 @@ pub struct SkeinEngine_UbiTweak {
     pub tweak: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     pub extendedPosition: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1298,7 +1298,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1306,7 +1306,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1609,7 +1609,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompositeExpression {
@@ -11,7 +11,7 @@ pub struct CompositeExpression {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     type Target = crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -204,7 +204,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

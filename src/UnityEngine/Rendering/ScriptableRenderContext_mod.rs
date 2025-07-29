@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ScriptableRenderContext {
     pub m_Ptr: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::ScriptableRenderContext {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ScriptableRenderContext {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ScriptableRenderContext {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ScriptableRenderContext {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ScriptableRenderContext {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::ScriptableRenderContext {
     type Type = Self;

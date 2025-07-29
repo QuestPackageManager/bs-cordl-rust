@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerOctetString {
@@ -10,7 +10,7 @@ pub struct BerOctetString {
         >,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::BerOctetString {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerOctetString {
     type Target = crate::Org::BouncyCastle::Asn1::DerOctetString;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerOctetString {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -543,7 +543,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::BerOctetString {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -567,7 +567,7 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerOctetString_ChunkEnumerator {
@@ -579,7 +579,7 @@ pub struct BerOctetString_ChunkEnumerator {
     >,
     pub nextChunkPos: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -599,14 +599,14 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -723,7 +723,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

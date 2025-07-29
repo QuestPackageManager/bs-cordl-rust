@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_InstanceInputUIState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InstanceInputUIState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InstanceInputUIState {
@@ -7,7 +7,7 @@ pub struct HEU_InstanceInputUIState {
     pub _numInputsToShowUI: i32,
     pub _inputsPageIndexUI: i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InstanceInputUIState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InstanceInputUIState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InstanceInputUIState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InstanceInputUIState")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InstanceInputUIState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InstanceInputUIState")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -131,7 +131,7 @@ impl crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InstanceInputUIState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InstanceInputUIState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

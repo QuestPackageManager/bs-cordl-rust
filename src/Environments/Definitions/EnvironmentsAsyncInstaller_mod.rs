@@ -1,4 +1,4 @@
-#[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
+#[cfg(feature = "cordl_class_Environments+Definitions+EnvironmentsAsyncInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentsAsyncInstaller {
@@ -11,7 +11,7 @@ pub struct EnvironmentsAsyncInstaller {
         >,
     >,
 }
-#[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
+#[cfg(feature = "cordl_class_Environments+Definitions+EnvironmentsAsyncInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
+#[cfg(feature = "cordl_class_Environments+Definitions+EnvironmentsAsyncInstaller")]
 impl std::ops::Deref for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
@@ -40,7 +40,7 @@ impl std::ops::Deref for crate::Environments::Definitions::EnvironmentsAsyncInst
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
+#[cfg(feature = "cordl_class_Environments+Definitions+EnvironmentsAsyncInstaller")]
 impl std::ops::DerefMut
 for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -227,7 +227,7 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
+#[cfg(feature = "cordl_class_Environments+Definitions+EnvironmentsAsyncInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

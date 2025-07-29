@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS8 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::Cryptography::PKCS8 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::Cryptography:
         false
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::PKCS8 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::PKCS8 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -43,7 +43,7 @@ impl crate::Mono::Security::Cryptography::PKCS8 {
     #[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
     pub type PrivateKeyInfo = crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo;
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::PKCS8 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -52,7 +52,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS8_EncryptedPrivateKeyInfo {
@@ -62,7 +62,7 @@ pub struct PKCS8_EncryptedPrivateKeyInfo {
     pub _iterations: i32,
     pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -82,7 +82,7 @@ for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
 impl std::ops::Deref
 for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -90,7 +90,7 @@ for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
 impl std::ops::DerefMut
 for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -295,7 +295,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -305,7 +305,7 @@ for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS8_PrivateKeyInfo {
@@ -315,7 +315,7 @@ pub struct PKCS8_PrivateKeyInfo {
     pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -335,14 +335,14 @@ for crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -729,7 +729,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

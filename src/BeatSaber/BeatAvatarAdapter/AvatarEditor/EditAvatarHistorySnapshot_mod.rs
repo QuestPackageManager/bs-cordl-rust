@@ -1,4 +1,6 @@
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EditAvatarHistorySnapshot {
@@ -7,7 +9,9 @@ pub struct EditAvatarHistorySnapshot {
         crate::BeatSaber::BeatAvatarSDK::AvatarData,
     >,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot {
     type Held<'a> = Self;
@@ -37,7 +41,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot {
     type Type = Self;
@@ -48,7 +54,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot {
     type Actual = Self;
@@ -62,7 +70,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot
         self
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot {
     type Type = Self;
@@ -77,7 +87,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot
         }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot {
     type Actual = Self;
@@ -91,7 +103,9 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot
         actual
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot")]
+#[cfg(
+    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot {
     type Type = Self;

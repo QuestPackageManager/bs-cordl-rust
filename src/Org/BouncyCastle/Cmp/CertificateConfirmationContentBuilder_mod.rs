@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateConfirmationContentBuilder {
@@ -9,7 +11,9 @@ pub struct CertificateConfirmationContentBuilder {
     pub acceptedCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub acceptedReqIds: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +33,9 @@ for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -37,7 +43,9 @@ for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -191,7 +199,9 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

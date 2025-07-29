@@ -1,10 +1,10 @@
-#[cfg(feature = "PS5PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS5PublisherSKUSettingsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5PublisherSKUSettingsSO {
     __cordl_parent: crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
 }
-#[cfg(feature = "PS5PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS5PublisherSKUSettingsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS5PublisherSKUSettingsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PS5PublisherSKUSettingsSO {
         false
     }
 }
-#[cfg(feature = "PS5PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS5PublisherSKUSettingsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5PublisherSKUSettingsSO {
     type Target = crate::GlobalNamespace::SonyPublisherSKUSettingsSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS5PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS5PublisherSKUSettingsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS5PublisherSKUSettingsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::PS5PublisherSKUSettingsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS5PublisherSKUSettingsSO")]
+#[cfg(feature = "cordl_class_PS5PublisherSKUSettingsSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PS5PublisherSKUSettingsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

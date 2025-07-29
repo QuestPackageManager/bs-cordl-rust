@@ -1,4 +1,4 @@
-#[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+CatalogLocationData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CatalogLocationData {
@@ -13,7 +13,7 @@ pub struct CatalogLocationData {
         crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     >,
 }
-#[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+CatalogLocationData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +33,7 @@ for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
         false
     }
 }
-#[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+CatalogLocationData")]
 impl std::ops::Deref
 for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -41,7 +41,7 @@ for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+CatalogLocationData")]
 impl std::ops::DerefMut
 for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -190,7 +190,7 @@ impl crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
+#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+CatalogLocationData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

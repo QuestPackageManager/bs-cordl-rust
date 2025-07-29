@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardEventDispatchingStrategy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::KeyboardEventDispatchingStrategy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::KeyboardEventDispatchingStrategy {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::KeyboardEventDispatchingStrategy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::KeyboardEventDispatchingStrategy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::KeyboardEventDispatchingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -132,7 +132,7 @@ impl crate::UnityEngine::UIElements::KeyboardEventDispatchingStrategy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardEventDispatchingStrategy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::KeyboardEventDispatchingStrategy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

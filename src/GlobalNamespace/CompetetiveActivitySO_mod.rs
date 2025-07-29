@@ -1,10 +1,10 @@
-#[cfg(feature = "CompetetiveActivitySO")]
+#[cfg(feature = "cordl_class_CompetetiveActivitySO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompetetiveActivitySO {
     __cordl_parent: crate::GlobalNamespace::PS5ActivityDataSO,
 }
-#[cfg(feature = "CompetetiveActivitySO")]
+#[cfg(feature = "cordl_class_CompetetiveActivitySO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CompetetiveActivitySO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::CompetetiveActivitySO {
         false
     }
 }
-#[cfg(feature = "CompetetiveActivitySO")]
+#[cfg(feature = "cordl_class_CompetetiveActivitySO")]
 impl std::ops::Deref for crate::GlobalNamespace::CompetetiveActivitySO {
     type Target = crate::GlobalNamespace::PS5ActivityDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CompetetiveActivitySO")]
+#[cfg(feature = "cordl_class_CompetetiveActivitySO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CompetetiveActivitySO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::CompetetiveActivitySO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CompetetiveActivitySO")]
+#[cfg(feature = "cordl_class_CompetetiveActivitySO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CompetetiveActivitySO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CADMethodReturnMessage {
@@ -13,7 +13,7 @@ pub struct CADMethodReturnMessage {
         >,
     >,
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +33,7 @@ for crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
     type Target = crate::System::Runtime::Remoting::Messaging::CADMessageBase;
@@ -41,7 +41,7 @@ for crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -273,7 +273,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

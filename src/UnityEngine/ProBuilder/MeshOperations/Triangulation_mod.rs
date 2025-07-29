@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+Triangulation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Triangulation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+Triangulation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+Triangulation")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+Triangulation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -368,7 +368,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+Triangulation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

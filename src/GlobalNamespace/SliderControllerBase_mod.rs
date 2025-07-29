@@ -1,4 +1,4 @@
-#[cfg(feature = "SliderControllerBase")]
+#[cfg(feature = "cordl_class_SliderControllerBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderControllerBase {
@@ -11,7 +11,7 @@ pub struct SliderControllerBase {
     >,
     pub _dissolving: bool,
 }
-#[cfg(feature = "SliderControllerBase")]
+#[cfg(feature = "cordl_class_SliderControllerBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderControllerBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::SliderControllerBase {
         false
     }
 }
-#[cfg(feature = "SliderControllerBase")]
+#[cfg(feature = "cordl_class_SliderControllerBase")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderControllerBase {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderControllerBase")]
+#[cfg(feature = "cordl_class_SliderControllerBase")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderControllerBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::SliderControllerBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderControllerBase")]
+#[cfg(feature = "cordl_class_SliderControllerBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderControllerBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

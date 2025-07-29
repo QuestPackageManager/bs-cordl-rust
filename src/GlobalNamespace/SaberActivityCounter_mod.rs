@@ -1,4 +1,4 @@
-#[cfg(feature = "SaberActivityCounter")]
+#[cfg(feature = "cordl_class_SaberActivityCounter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberActivityCounter {
@@ -29,7 +29,7 @@ pub struct SaberActivityCounter {
         crate::GlobalNamespace::MovementHistoryRecorder,
     >,
 }
-#[cfg(feature = "SaberActivityCounter")]
+#[cfg(feature = "cordl_class_SaberActivityCounter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SaberActivityCounter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::SaberActivityCounter {
         false
     }
 }
-#[cfg(feature = "SaberActivityCounter")]
+#[cfg(feature = "cordl_class_SaberActivityCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberActivityCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SaberActivityCounter")]
+#[cfg(feature = "cordl_class_SaberActivityCounter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SaberActivityCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -397,7 +397,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SaberActivityCounter")]
+#[cfg(feature = "cordl_class_SaberActivityCounter")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberActivityCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "SteamLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel {
@@ -29,7 +29,7 @@ pub struct SteamLevelProductCollectionModel {
     >,
     pub _maxPossibleInstalledDepots: i32,
 }
-#[cfg(feature = "SteamLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SteamLevelProductCollectionModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel {
         false
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SteamLevelProductCollectionModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SteamLevelProductCollectionModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -282,7 +282,7 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SteamLevelProductCollectionModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -292,7 +292,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelDepotData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel_LevelDepotData {
@@ -300,7 +300,7 @@ pub struct SteamLevelProductCollectionModel_LevelDepotData {
     pub checkDepots: bool,
     pub noEnvironmentKeywordsDepotId: u32,
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelDepotData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -320,7 +320,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
         false
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelDepotData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -328,7 +328,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelDepotData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -366,7 +366,7 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelDepotData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -376,7 +376,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackProductData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel_LevelPackProductData {
@@ -391,7 +391,7 @@ pub struct SteamLevelProductCollectionModel_LevelPackProductData {
         >,
     >,
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackProductData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -411,7 +411,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDat
         false
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -419,7 +419,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDat
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -580,7 +580,7 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDa
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackProductData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -626,7 +626,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel_LevelPackRedirectionData {
@@ -640,7 +640,7 @@ pub struct SteamLevelProductCollectionModel_LevelPackRedirectionData {
     pub _redirectedBundleId: u32,
     pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -660,7 +660,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectio
         false
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -668,7 +668,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -804,7 +804,7 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirecti
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -814,7 +814,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelProductData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel_LevelProductData {
@@ -825,7 +825,7 @@ pub struct SteamLevelProductCollectionModel_LevelProductData {
         crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData,
     >,
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelProductData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -845,7 +845,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
         false
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -853,7 +853,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -980,7 +980,7 @@ impl crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
+#[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelProductData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

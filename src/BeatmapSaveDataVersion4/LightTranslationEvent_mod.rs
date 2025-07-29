@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+LightTranslationEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightTranslationEvent")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LightTranslationEvent {
@@ -6,7 +6,7 @@ pub struct LightTranslationEvent {
     pub e: crate::BeatmapSaveDataCommon::EaseType,
     pub t: f32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightTranslationEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightTranslationEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightTranslationEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightTranslationEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightTranslationEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightTranslationEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightTranslationEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightTranslationEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightTranslationEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightTranslationEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
         actual
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+LightTranslationEvent")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+LightTranslationEvent")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapSaveDataVersion4::LightTranslationEvent {
     type Type = Self;

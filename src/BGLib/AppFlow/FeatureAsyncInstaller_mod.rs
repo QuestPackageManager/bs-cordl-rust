@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+AppFlow+FeatureAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+FeatureAsyncInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FeatureAsyncInstaller {
@@ -6,7 +6,7 @@ pub struct FeatureAsyncInstaller {
         quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >,
 }
-#[cfg(feature = "BGLib+AppFlow+FeatureAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+FeatureAsyncInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::AppFlow::FeatureAsyncInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::BGLib::AppFlow::FeatureAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "BGLib+AppFlow+FeatureAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+FeatureAsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::AppFlow::FeatureAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::BGLib::AppFlow::FeatureAsyncInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+AppFlow+FeatureAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+FeatureAsyncInstaller")]
 impl std::ops::DerefMut for crate::BGLib::AppFlow::FeatureAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -170,7 +170,7 @@ impl crate::BGLib::AppFlow::FeatureAsyncInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+AppFlow+FeatureAsyncInstaller")]
+#[cfg(feature = "cordl_class_BGLib+AppFlow+FeatureAsyncInstaller")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::AppFlow::FeatureAsyncInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

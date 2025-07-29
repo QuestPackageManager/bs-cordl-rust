@@ -1,4 +1,4 @@
-#[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerRandomValueSetter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockControllerRandomValueSetter {
@@ -16,7 +16,7 @@ pub struct MaterialPropertyBlockControllerRandomValueSetter {
     >,
     pub _propertyId: i32,
 }
-#[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerRandomValueSetter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
         false
     }
 }
-#[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerRandomValueSetter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerRandomValueSetter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -174,7 +174,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerRandomValueSetter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

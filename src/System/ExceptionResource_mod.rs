@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ExceptionResource")]
+#[cfg(feature = "cordl_class_System+ExceptionResource")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExceptionResource {
@@ -55,7 +55,7 @@ pub enum ExceptionResource {
     TaskT_TransitionToFinal_AlreadyCompleted = 46i32,
     UnauthorizedAccess_RegistryNoWrite = 41i32,
 }
-#[cfg(feature = "System+ExceptionResource")]
+#[cfg(feature = "cordl_class_System+ExceptionResource")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ExceptionResource {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ExceptionResource {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ExceptionResource")]
+#[cfg(feature = "cordl_class_System+ExceptionResource")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::ExceptionResource {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -94,7 +94,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::ExceptionResource
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ExceptionResource")]
+#[cfg(feature = "cordl_class_System+ExceptionResource")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ExceptionResource {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -107,7 +107,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ExceptionResourc
         self
     }
 }
-#[cfg(feature = "System+ExceptionResource")]
+#[cfg(feature = "cordl_class_System+ExceptionResource")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::ExceptionResource {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -121,7 +121,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::ExceptionResource
         }
     }
 }
-#[cfg(feature = "System+ExceptionResource")]
+#[cfg(feature = "cordl_class_System+ExceptionResource")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::ExceptionResource {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRMeshRenderer")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMeshRenderer {
@@ -20,7 +20,7 @@ pub struct OVRMeshRenderer {
     pub _IsDataHighConfidence_k__BackingField: bool,
     pub _ShouldUseSystemGestureMaterial_k__BackingField: bool,
 }
-#[cfg(feature = "OVRMeshRenderer")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMeshRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMeshRende
         false
     }
 }
-#[cfg(feature = "OVRMeshRenderer")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMeshRenderer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMeshRenderer")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRMeshRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -370,7 +370,7 @@ impl crate::GlobalNamespace::OVRMeshRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRMeshRenderer")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMeshRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -379,7 +379,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMeshRender
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+ConfidenceBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRMeshRenderer_ConfidenceBehavior {
@@ -387,7 +387,7 @@ pub enum OVRMeshRenderer_ConfidenceBehavior {
     None = 0i32,
     ToggleRenderer = 1i32,
 }
-#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Held<'a> = Self;
@@ -417,7 +417,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Type = Self;
@@ -428,7 +428,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Actual = Self;
@@ -442,7 +442,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
         self
     }
 }
-#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Type = Self;
@@ -457,7 +457,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
         }
     }
 }
-#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Actual = Self;
@@ -471,13 +471,13 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
         actual
     }
 }
-#[cfg(feature = "OVRMeshRenderer+IOVRMeshRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+IOVRMeshRendererDataProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMeshRenderer_IOVRMeshRendererDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRMeshRenderer+IOVRMeshRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+IOVRMeshRendererDataProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -497,7 +497,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
         false
     }
 }
-#[cfg(feature = "OVRMeshRenderer+IOVRMeshRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+IOVRMeshRendererDataProvider")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -505,7 +505,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMeshRenderer+IOVRMeshRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+IOVRMeshRendererDataProvider")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -547,7 +547,7 @@ impl crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "OVRMeshRenderer+IOVRMeshRendererDataProvider")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+IOVRMeshRendererDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -557,7 +557,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+MeshRendererData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRMeshRenderer_MeshRendererData {
@@ -565,7 +565,7 @@ pub struct OVRMeshRenderer_MeshRendererData {
     pub _IsDataHighConfidence_k__BackingField: bool,
     pub _ShouldUseSystemGestureMaterial_k__BackingField: bool,
 }
-#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Held<'a> = Self;
@@ -595,7 +595,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Type = Self;
@@ -606,7 +606,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Actual = Self;
@@ -620,7 +620,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         self
     }
 }
-#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Type = Self;
@@ -635,7 +635,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         }
     }
 }
-#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Actual = Self;
@@ -649,7 +649,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         actual
     }
 }
-#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Type = Self;
@@ -798,7 +798,7 @@ impl crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+SystemGestureBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRMeshRenderer_SystemGestureBehavior {
@@ -806,7 +806,7 @@ pub enum OVRMeshRenderer_SystemGestureBehavior {
     None = 0i32,
     SwapMaterial = 1i32,
 }
-#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Held<'a> = Self;
@@ -836,7 +836,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Type = Self;
@@ -847,7 +847,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Actual = Self;
@@ -861,7 +861,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
         self
     }
 }
-#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Type = Self;
@@ -876,7 +876,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
         }
     }
 }
-#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
+#[cfg(feature = "cordl_class_OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Actual = Self;

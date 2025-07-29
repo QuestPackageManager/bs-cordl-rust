@@ -1,10 +1,10 @@
-#[cfg(feature = "X509CertificateUtility")]
+#[cfg(feature = "cordl_class_X509CertificateUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "X509CertificateUtility")]
+#[cfg(feature = "cordl_class_X509CertificateUtility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::X509CertificateUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::X509CertificateUtility {
         false
     }
 }
-#[cfg(feature = "X509CertificateUtility")]
+#[cfg(feature = "cordl_class_X509CertificateUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "X509CertificateUtility")]
+#[cfg(feature = "cordl_class_X509CertificateUtility")]
 impl std::ops::DerefMut for crate::GlobalNamespace::X509CertificateUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -377,7 +377,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "X509CertificateUtility")]
+#[cfg(feature = "cordl_class_X509CertificateUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::X509CertificateUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -387,14 +387,14 @@ for crate::GlobalNamespace::X509CertificateUtility {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateUtility_PasswordFinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
 }
-#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -414,14 +414,14 @@ for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         false
     }
 }
-#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
 impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -532,7 +532,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -556,14 +556,14 @@ for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateUtility_RSACertificateEncryptionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
-#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -583,7 +583,7 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
         false
     }
 }
-#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl std::ops::Deref
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -591,7 +591,7 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -701,7 +701,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
+#[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

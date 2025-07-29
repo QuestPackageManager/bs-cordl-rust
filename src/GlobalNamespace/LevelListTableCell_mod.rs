@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelListTableCell")]
+#[cfg(feature = "cordl_class_LevelListTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelListTableCell {
@@ -33,7 +33,7 @@ pub struct LevelListTableCell {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "LevelListTableCell")]
+#[cfg(feature = "cordl_class_LevelListTableCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelListTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -52,14 +52,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelListTab
         false
     }
 }
-#[cfg(feature = "LevelListTableCell")]
+#[cfg(feature = "cordl_class_LevelListTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelListTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelListTableCell")]
+#[cfg(feature = "cordl_class_LevelListTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelListTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -301,7 +301,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelListTableCell")]
+#[cfg(feature = "cordl_class_LevelListTableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelListTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

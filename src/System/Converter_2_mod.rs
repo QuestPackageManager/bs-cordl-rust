@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Converter_2")]
+#[cfg(feature = "cordl_class_System+Converter_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Converter_2<
@@ -9,7 +9,7 @@ pub struct Converter_2<
     __cordl_phantom_TInput: std::marker::PhantomData<TInput>,
     __cordl_phantom_TOutput: std::marker::PhantomData<TOutput>,
 }
-#[cfg(feature = "System+Converter_2")]
+#[cfg(feature = "cordl_class_System+Converter_2")]
 unsafe impl<
     TInput: quest_hook::libil2cpp::Type,
     TOutput: quest_hook::libil2cpp::Type,
@@ -44,7 +44,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "System+Converter_2")]
+#[cfg(feature = "cordl_class_System+Converter_2")]
 impl<
     TInput: quest_hook::libil2cpp::Type,
     TOutput: quest_hook::libil2cpp::Type,
@@ -54,7 +54,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Converter_2")]
+#[cfg(feature = "cordl_class_System+Converter_2")]
 impl<
     TInput: quest_hook::libil2cpp::Type,
     TOutput: quest_hook::libil2cpp::Type,
@@ -148,7 +148,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Converter_2")]
+#[cfg(feature = "cordl_class_System+Converter_2")]
 impl<
     TInput: quest_hook::libil2cpp::Type,
     TOutput: quest_hook::libil2cpp::Type,

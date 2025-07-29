@@ -1,10 +1,10 @@
-#[cfg(feature = "ISliderDidDissolveEvent")]
+#[cfg(feature = "cordl_class_ISliderDidDissolveEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISliderDidDissolveEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ISliderDidDissolveEvent")]
+#[cfg(feature = "cordl_class_ISliderDidDissolveEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ISliderDidDissolveEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ISliderDidDissolveEvent {
         false
     }
 }
-#[cfg(feature = "ISliderDidDissolveEvent")]
+#[cfg(feature = "cordl_class_ISliderDidDissolveEvent")]
 impl std::ops::Deref for crate::GlobalNamespace::ISliderDidDissolveEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ISliderDidDissolveEvent")]
+#[cfg(feature = "cordl_class_ISliderDidDissolveEvent")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ISliderDidDissolveEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::ISliderDidDissolveEvent {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "ISliderDidDissolveEvent")]
+#[cfg(feature = "cordl_class_ISliderDidDissolveEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ISliderDidDissolveEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

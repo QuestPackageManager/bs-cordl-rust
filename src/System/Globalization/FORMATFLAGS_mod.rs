@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+FORMATFLAGS")]
+#[cfg(feature = "cordl_class_System+Globalization+FORMATFLAGS")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FORMATFLAGS {
@@ -11,7 +11,7 @@ pub enum FORMATFLAGS {
     UseSpacesInDayNames = 16i32,
     UseSpacesInMonthNames = 4i32,
 }
-#[cfg(feature = "System+Globalization+FORMATFLAGS")]
+#[cfg(feature = "cordl_class_System+Globalization+FORMATFLAGS")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::FORMATFLAGS {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::FORMAT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Globalization+FORMATFLAGS")]
+#[cfg(feature = "cordl_class_System+Globalization+FORMATFLAGS")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::FORMATFLAGS {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::System::Globalization::FORMATFLAGS {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Globalization+FORMATFLAGS")]
+#[cfg(feature = "cordl_class_System+Globalization+FORMATFLAGS")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::FORMATFLAGS {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::System::Globalization::FORMATFLAGS {
         self
     }
 }
-#[cfg(feature = "System+Globalization+FORMATFLAGS")]
+#[cfg(feature = "cordl_class_System+Globalization+FORMATFLAGS")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::FORMATFLAGS {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::System::Globalization::FORMATFLAGS {
         }
     }
 }
-#[cfg(feature = "System+Globalization+FORMATFLAGS")]
+#[cfg(feature = "cordl_class_System+Globalization+FORMATFLAGS")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Globalization::FORMATFLAGS {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

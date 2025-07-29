@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509V2AttributeCertificate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509V2AttributeCertificate {
@@ -9,7 +9,7 @@ pub struct X509V2AttributeCertificate {
     pub notBefore: crate::System::DateTime,
     pub notAfter: crate::System::DateTime,
 }
-#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509V2AttributeCertificate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509V2AttributeCertificate")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509V2AttributeCertificate")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -788,7 +788,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509V2AttributeCertificate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

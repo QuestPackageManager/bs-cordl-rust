@@ -1,4 +1,4 @@
-#[cfg(feature = "LightRotationGroup")]
+#[cfg(feature = "cordl_class_LightRotationGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationGroup {
@@ -8,7 +8,7 @@ pub struct LightRotationGroup {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationZTransform>,
     >,
 }
-#[cfg(feature = "LightRotationGroup")]
+#[cfg(feature = "cordl_class_LightRotationGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightRotationGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightRotatio
         false
     }
 }
-#[cfg(feature = "LightRotationGroup")]
+#[cfg(feature = "cordl_class_LightRotationGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroup {
     type Target = crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationXTransform>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroup {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightRotationGroup")]
+#[cfg(feature = "cordl_class_LightRotationGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::LightRotationGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightRotationGroup")]
+#[cfg(feature = "cordl_class_LightRotationGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightRotationGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

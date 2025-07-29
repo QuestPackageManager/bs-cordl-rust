@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Controls+StickControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+StickControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StickControl {
@@ -16,7 +16,7 @@ pub struct StickControl {
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+StickControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+StickControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::StickControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::UnityEngine::InputSystem::Controls::StickControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+StickControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+StickControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::StickControl {
     type Target = crate::UnityEngine::InputSystem::Controls::Vector2Control;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+StickControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+StickControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::StickControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -349,7 +349,7 @@ impl crate::UnityEngine::InputSystem::Controls::StickControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+StickControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+StickControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::StickControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

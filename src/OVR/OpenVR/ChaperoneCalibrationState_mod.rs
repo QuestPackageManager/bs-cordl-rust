@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+ChaperoneCalibrationState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ChaperoneCalibrationState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChaperoneCalibrationState {
@@ -14,7 +14,7 @@ pub enum ChaperoneCalibrationState {
     Warning_BaseStationRemoved = 102i32,
     Warning_SeatedBoundsInvalid = 103i32,
 }
-#[cfg(feature = "OVR+OpenVR+ChaperoneCalibrationState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ChaperoneCalibrationState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::ChaperoneCalibrationState {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::OVR::OpenVR::ChaperoneCalibrationState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+ChaperoneCalibrationState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ChaperoneCalibrationState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::ChaperoneCalibrationState {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::OVR::OpenVR::ChaperoneCalibrationState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+ChaperoneCalibrationState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ChaperoneCalibrationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::ChaperoneCalibrationState {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::OVR::OpenVR::ChaperoneCalibrationState {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+ChaperoneCalibrationState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ChaperoneCalibrationState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::ChaperoneCalibrationState {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::OVR::OpenVR::ChaperoneCalibrationState {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+ChaperoneCalibrationState")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+ChaperoneCalibrationState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::ChaperoneCalibrationState {
     type Actual = Self;

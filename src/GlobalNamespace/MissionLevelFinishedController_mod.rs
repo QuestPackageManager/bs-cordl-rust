@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionLevelFinishedController")]
+#[cfg(feature = "cordl_class_MissionLevelFinishedController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelFinishedController {
@@ -16,7 +16,7 @@ pub struct MissionLevelFinishedController {
         crate::GlobalNamespace::ILevelEndActions,
     >,
 }
-#[cfg(feature = "MissionLevelFinishedController")]
+#[cfg(feature = "cordl_class_MissionLevelFinishedController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelFinishedController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::MissionLevelFinishedController {
         false
     }
 }
-#[cfg(feature = "MissionLevelFinishedController")]
+#[cfg(feature = "cordl_class_MissionLevelFinishedController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelFinishedController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionLevelFinishedController")]
+#[cfg(feature = "cordl_class_MissionLevelFinishedController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelFinishedController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -172,7 +172,7 @@ impl crate::GlobalNamespace::MissionLevelFinishedController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionLevelFinishedController")]
+#[cfg(feature = "cordl_class_MissionLevelFinishedController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionLevelFinishedController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

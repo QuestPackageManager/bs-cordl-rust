@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector3Composite {
@@ -13,7 +13,7 @@ pub struct Vector3Composite {
     pub backward: i32,
     pub mode: crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +33,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<
         crate::UnityEngine::Vector3,
@@ -42,7 +42,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::Composites::Vector3Com
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -112,7 +112,7 @@ impl crate::UnityEngine::InputSystem::Composites::Vector3Composite {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -122,7 +122,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Vector3Composite_Mode {
@@ -131,7 +131,7 @@ pub enum Vector3Composite_Mode {
     Digital = 2i32,
     DigitalNormalized = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Held<'a> = Self;
@@ -161,7 +161,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Type = Self;
@@ -172,7 +172,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Actual = Self;
@@ -186,7 +186,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Type = Self;
@@ -201,7 +201,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Actual = Self;

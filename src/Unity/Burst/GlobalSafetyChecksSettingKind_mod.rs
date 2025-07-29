@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Burst+GlobalSafetyChecksSettingKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+GlobalSafetyChecksSettingKind")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlobalSafetyChecksSettingKind {
@@ -7,7 +7,7 @@ pub enum GlobalSafetyChecksSettingKind {
     Off = 0i32,
     On = 1i32,
 }
-#[cfg(feature = "Unity+Burst+GlobalSafetyChecksSettingKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+GlobalSafetyChecksSettingKind")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+GlobalSafetyChecksSettingKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+GlobalSafetyChecksSettingKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+GlobalSafetyChecksSettingKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+GlobalSafetyChecksSettingKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+GlobalSafetyChecksSettingKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+GlobalSafetyChecksSettingKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+GlobalSafetyChecksSettingKind")]
+#[cfg(feature = "cordl_class_Unity+Burst+GlobalSafetyChecksSettingKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::GlobalSafetyChecksSettingKind {
     type Actual = Self;

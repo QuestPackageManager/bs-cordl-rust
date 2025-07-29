@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnHeaderColumnResizePreview {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizePreview {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizePrevi
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizePreview {
     type Target = crate::UnityEngine::UIElements::VisualElement;
@@ -32,7 +38,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizePrevi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizePreview {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizePrev
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizePreview"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizePreview {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

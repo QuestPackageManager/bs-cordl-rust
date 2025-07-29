@@ -1,4 +1,4 @@
-#[cfg(feature = "ScreenshotRecorder")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenshotRecorder {
@@ -24,7 +24,7 @@ pub struct ScreenshotRecorder {
         crate::UnityEngine::RenderTexture,
     >,
 }
-#[cfg(feature = "ScreenshotRecorder")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScreenshotRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScreenshotRe
         false
     }
 }
-#[cfg(feature = "ScreenshotRecorder")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::ScreenshotRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScreenshotRecorder")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScreenshotRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -310,7 +310,7 @@ impl crate::GlobalNamespace::ScreenshotRecorder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScreenshotRecorder")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenshotRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -319,7 +319,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenshotRec
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ScreenshotRecorder+RecordingType")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder+RecordingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenshotRecorder_RecordingType {
@@ -331,7 +331,7 @@ pub enum ScreenshotRecorder_RecordingType {
     Sequence = 0i32,
     Stereo360Sequence = 1i32,
 }
-#[cfg(feature = "ScreenshotRecorder+RecordingType")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Held<'a> = Self;
@@ -361,7 +361,7 @@ for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ScreenshotRecorder+RecordingType")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Type = Self;
@@ -372,7 +372,7 @@ for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ScreenshotRecorder+RecordingType")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Actual = Self;
@@ -386,7 +386,7 @@ for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
         self
     }
 }
-#[cfg(feature = "ScreenshotRecorder+RecordingType")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Type = Self;
@@ -401,7 +401,7 @@ for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
         }
     }
 }
-#[cfg(feature = "ScreenshotRecorder+RecordingType")]
+#[cfg(feature = "cordl_class_ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Actual = Self;

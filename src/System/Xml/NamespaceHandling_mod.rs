@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+NamespaceHandling")]
+#[cfg(feature = "cordl_class_System+Xml+NamespaceHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NamespaceHandling {
@@ -6,7 +6,7 @@ pub enum NamespaceHandling {
     Default = 0i32,
     OmitDuplicates = 1i32,
 }
-#[cfg(feature = "System+Xml+NamespaceHandling")]
+#[cfg(feature = "cordl_class_System+Xml+NamespaceHandling")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::NamespaceHandling {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::NamespaceHandlin
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+NamespaceHandling")]
+#[cfg(feature = "cordl_class_System+Xml+NamespaceHandling")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::NamespaceHandling {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::NamespaceHan
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+NamespaceHandling")]
+#[cfg(feature = "cordl_class_System+Xml+NamespaceHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::NamespaceHandling {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::NamespaceHa
         self
     }
 }
-#[cfg(feature = "System+Xml+NamespaceHandling")]
+#[cfg(feature = "cordl_class_System+Xml+NamespaceHandling")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::NamespaceHandling {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::NamespaceHan
         }
     }
 }
-#[cfg(feature = "System+Xml+NamespaceHandling")]
+#[cfg(feature = "cordl_class_System+Xml+NamespaceHandling")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::NamespaceHandling {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

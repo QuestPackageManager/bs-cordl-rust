@@ -1,10 +1,10 @@
-#[cfg(feature = "AutoRecord")]
+#[cfg(feature = "cordl_class_AutoRecord")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AutoRecord {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "AutoRecord")]
+#[cfg(feature = "cordl_class_AutoRecord")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AutoRecord {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AutoRecord {
         false
     }
 }
-#[cfg(feature = "AutoRecord")]
+#[cfg(feature = "cordl_class_AutoRecord")]
 impl std::ops::Deref for crate::GlobalNamespace::AutoRecord {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AutoRecord")]
+#[cfg(feature = "cordl_class_AutoRecord")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AutoRecord {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -267,7 +267,7 @@ impl crate::GlobalNamespace::AutoRecord {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AutoRecord")]
+#[cfg(feature = "cordl_class_AutoRecord")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AutoRecord {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -276,7 +276,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AutoRecord {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AutoRecord+Beatmap")]
+#[cfg(feature = "cordl_class_AutoRecord+Beatmap")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AutoRecord_Beatmap {
@@ -288,7 +288,7 @@ pub struct AutoRecord_Beatmap {
         >,
     >,
 }
-#[cfg(feature = "AutoRecord+Beatmap")]
+#[cfg(feature = "cordl_class_AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -317,7 +317,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AutoRecord_B
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AutoRecord+Beatmap")]
+#[cfg(feature = "cordl_class_AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Type = Self;
@@ -328,7 +328,7 @@ for crate::GlobalNamespace::AutoRecord_Beatmap {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AutoRecord+Beatmap")]
+#[cfg(feature = "cordl_class_AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Actual = Self;
@@ -342,7 +342,7 @@ for crate::GlobalNamespace::AutoRecord_Beatmap {
         self
     }
 }
-#[cfg(feature = "AutoRecord+Beatmap")]
+#[cfg(feature = "cordl_class_AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Type = Self;
@@ -357,7 +357,7 @@ for crate::GlobalNamespace::AutoRecord_Beatmap {
         }
     }
 }
-#[cfg(feature = "AutoRecord+Beatmap")]
+#[cfg(feature = "cordl_class_AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Actual = Self;
@@ -371,7 +371,7 @@ for crate::GlobalNamespace::AutoRecord_Beatmap {
         actual
     }
 }
-#[cfg(feature = "AutoRecord+Beatmap")]
+#[cfg(feature = "cordl_class_AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Type = Self;

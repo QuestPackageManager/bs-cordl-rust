@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LinkedDictionary {
@@ -6,7 +6,7 @@ pub struct LinkedDictionary {
     pub hash: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -479,7 +479,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

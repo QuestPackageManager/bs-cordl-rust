@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteInputPlayerConnection {
@@ -17,7 +17,7 @@ pub struct RemoteInputPlayerConnection {
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -536,7 +536,7 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -594,7 +594,9 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteInputPlayerConnection_Subscriber {
@@ -608,7 +610,9 @@ pub struct RemoteInputPlayerConnection_Subscriber {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -628,7 +632,9 @@ for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -636,7 +642,9 @@ for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -695,7 +703,9 @@ impl crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

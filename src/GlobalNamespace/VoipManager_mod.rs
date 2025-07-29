@@ -1,10 +1,10 @@
-#[cfg(feature = "VoipManager")]
+#[cfg(feature = "cordl_class_VoipManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VoipManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "VoipManager")]
+#[cfg(feature = "cordl_class_VoipManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VoipManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VoipManager 
         false
     }
 }
-#[cfg(feature = "VoipManager")]
+#[cfg(feature = "cordl_class_VoipManager")]
 impl std::ops::Deref for crate::GlobalNamespace::VoipManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VoipManager")]
+#[cfg(feature = "cordl_class_VoipManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VoipManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::VoipManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VoipManager")]
+#[cfg(feature = "cordl_class_VoipManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VoipManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

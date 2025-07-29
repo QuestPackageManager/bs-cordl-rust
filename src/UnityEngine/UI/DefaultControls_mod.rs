@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UI+DefaultControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultControls {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::DefaultControls {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::DefaultContr
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls")]
 impl std::ops::Deref for crate::UnityEngine::UI::DefaultControls {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::DefaultControls {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -565,7 +565,7 @@ impl crate::UnityEngine::UI::DefaultControls {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::DefaultControls {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -574,13 +574,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::DefaultContro
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultControls_DefaultRuntimeFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -600,14 +600,14 @@ for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 impl std::ops::Deref for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -687,7 +687,7 @@ impl crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -713,13 +713,13 @@ for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+IFactoryControls")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultControls_IFactoryControls {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+IFactoryControls")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::DefaultControls_IFactoryControls {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -739,14 +739,14 @@ for crate::UnityEngine::UI::DefaultControls_IFactoryControls {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+IFactoryControls")]
 impl std::ops::Deref for crate::UnityEngine::UI::DefaultControls_IFactoryControls {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+IFactoryControls")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::DefaultControls_IFactoryControls {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -802,7 +802,7 @@ impl crate::UnityEngine::UI::DefaultControls_IFactoryControls {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+IFactoryControls")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::DefaultControls_IFactoryControls {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -812,7 +812,7 @@ for crate::UnityEngine::UI::DefaultControls_IFactoryControls {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+Resources")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DefaultControls_Resources {
@@ -824,7 +824,7 @@ pub struct DefaultControls_Resources {
     pub dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub mask: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::DefaultControls_Resources {
     type Held<'a> = Self;
@@ -854,7 +854,7 @@ for crate::UnityEngine::UI::DefaultControls_Resources {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::DefaultControls_Resources {
     type Type = Self;
@@ -865,7 +865,7 @@ for crate::UnityEngine::UI::DefaultControls_Resources {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::DefaultControls_Resources {
     type Actual = Self;
@@ -879,7 +879,7 @@ for crate::UnityEngine::UI::DefaultControls_Resources {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::DefaultControls_Resources {
     type Type = Self;
@@ -894,7 +894,7 @@ for crate::UnityEngine::UI::DefaultControls_Resources {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::DefaultControls_Resources {
     type Actual = Self;
@@ -908,7 +908,7 @@ for crate::UnityEngine::UI::DefaultControls_Resources {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UI::DefaultControls_Resources {
     type Type = Self;

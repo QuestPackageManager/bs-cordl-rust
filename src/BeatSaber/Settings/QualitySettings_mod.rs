@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct QualitySettings {
@@ -20,7 +20,7 @@ pub struct QualitySettings {
     pub maxShockwaveParticles: i32,
     pub maxNumberOfCutSoundEffects: i32,
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::QualitySettings {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::QualityS
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings {
     type Type = Self;
@@ -60,7 +60,7 @@ for crate::BeatSaber::Settings::QualitySettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings {
     type Actual = Self;
@@ -74,7 +74,7 @@ for crate::BeatSaber::Settings::QualitySettings {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings {
     type Type = Self;
@@ -89,7 +89,7 @@ for crate::BeatSaber::Settings::QualitySettings {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings {
     type Actual = Self;
@@ -103,7 +103,7 @@ for crate::BeatSaber::Settings::QualitySettings {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatSaber::Settings::QualitySettings {
     type Type = Self;
@@ -125,7 +125,7 @@ impl crate::BeatSaber::Settings::QualitySettings {
     #[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
     pub type ObstacleQuality = crate::BeatSaber::Settings::QualitySettings_ObstacleQuality;
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QualitySettings_BloomQuality {
@@ -133,7 +133,7 @@ pub enum QualitySettings_BloomQuality {
     Game = 0i32,
     LightBaking = 1i32,
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Held<'a> = Self;
@@ -163,7 +163,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Type = Self;
@@ -174,7 +174,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Actual = Self;
@@ -188,7 +188,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Type = Self;
@@ -203,7 +203,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Actual = Self;
@@ -217,7 +217,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QualitySettings_MainEffectOption {
@@ -226,7 +226,7 @@ pub enum QualitySettings_MainEffectOption {
     LightBaking = 2i32,
     Off = 0i32,
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Held<'a> = Self;
@@ -256,7 +256,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Type = Self;
@@ -267,7 +267,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Actual = Self;
@@ -281,7 +281,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Type = Self;
@@ -296,7 +296,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Actual = Self;
@@ -310,7 +310,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QualitySettings_MirrorQuality {
@@ -320,7 +320,7 @@ pub enum QualitySettings_MirrorQuality {
     Medium = 2i32,
     Off = 0i32,
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Held<'a> = Self;
@@ -350,7 +350,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Type = Self;
@@ -361,7 +361,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Actual = Self;
@@ -375,7 +375,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Type = Self;
@@ -390,7 +390,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Actual = Self;
@@ -404,7 +404,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
         actual
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QualitySettings_ObstacleQuality {
@@ -413,7 +413,7 @@ pub enum QualitySettings_ObstacleQuality {
     Low = 0i32,
     Medium = 1i32,
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Held<'a> = Self;
@@ -443,7 +443,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Type = Self;
@@ -454,7 +454,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Actual = Self;
@@ -468,7 +468,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
         self
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Type = Self;
@@ -483,7 +483,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
         }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Actual = Self;

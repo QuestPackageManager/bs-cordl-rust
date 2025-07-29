@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct F2mCurve {
@@ -11,7 +11,7 @@ pub struct F2mCurve {
         crate::Org::BouncyCastle::Math::EC::F2mPoint,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::F2mCurve {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::Org::BouncyCastle::Math::EC::F2mCurve {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::F2mCurve {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::F2mCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -739,7 +739,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::F2mCurve {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -748,7 +748,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::F
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct F2mCurve_DefaultF2mLookupTable {
@@ -757,7 +757,7 @@ pub struct F2mCurve_DefaultF2mLookupTable {
     pub m_table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     pub m_size: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -777,7 +777,7 @@ for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
@@ -785,7 +785,7 @@ for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -957,7 +957,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

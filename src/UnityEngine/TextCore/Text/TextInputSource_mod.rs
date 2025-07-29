@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInputSource")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInputSource")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextInputSource {
@@ -8,7 +8,7 @@ pub enum TextInputSource {
     TextInputBox = 0i32,
     TextString = 3i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInputSource")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInputSource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextInputSource {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::TextCore::Text::TextInputSource {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInputSource")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInputSource")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::TextInputSource {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::TextCore::Text::TextInputSource {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInputSource")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInputSource")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::TextInputSource {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::TextCore::Text::TextInputSource {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInputSource")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInputSource")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::TextInputSource {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::TextCore::Text::TextInputSource {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextInputSource")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextInputSource")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::TextInputSource {
     type Actual = Self;

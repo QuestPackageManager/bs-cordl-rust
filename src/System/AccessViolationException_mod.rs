@@ -1,10 +1,10 @@
-#[cfg(feature = "System+AccessViolationException")]
+#[cfg(feature = "cordl_class_System+AccessViolationException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AccessViolationException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+AccessViolationException")]
+#[cfg(feature = "cordl_class_System+AccessViolationException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::AccessViolationException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AccessViolationExcept
         false
     }
 }
-#[cfg(feature = "System+AccessViolationException")]
+#[cfg(feature = "cordl_class_System+AccessViolationException")]
 impl std::ops::Deref for crate::System::AccessViolationException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+AccessViolationException")]
+#[cfg(feature = "cordl_class_System+AccessViolationException")]
 impl std::ops::DerefMut for crate::System::AccessViolationException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::System::AccessViolationException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+AccessViolationException")]
+#[cfg(feature = "cordl_class_System+AccessViolationException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::AccessViolationException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

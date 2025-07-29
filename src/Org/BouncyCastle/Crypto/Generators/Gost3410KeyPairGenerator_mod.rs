@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Gost3410KeyPairGenerator {
@@ -7,7 +9,9 @@ pub struct Gost3410KeyPairGenerator {
         crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyGenerationParameters,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +41,9 @@ for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -134,7 +142,9 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Generators::Gost3410KeyPairGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

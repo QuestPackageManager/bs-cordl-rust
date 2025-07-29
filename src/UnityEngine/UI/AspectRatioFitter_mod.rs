@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspectRatioFitter {
@@ -10,7 +10,7 @@ pub struct AspectRatioFitter {
     pub m_DoesParentExist: bool,
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::AspectRatioFitter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::AspectRatioF
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter")]
 impl std::ops::Deref for crate::UnityEngine::UI::AspectRatioFitter {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::AspectRatioFitter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -523,7 +523,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::AspectRatioFitter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -560,7 +560,7 @@ for crate::UnityEngine::UI::AspectRatioFitter {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter+AspectMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AspectRatioFitter_AspectMode {
@@ -571,7 +571,7 @@ pub enum AspectRatioFitter_AspectMode {
     None = 0i32,
     WidthControlsHeight = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter+AspectMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
     type Held<'a> = Self;
@@ -601,7 +601,7 @@ for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter+AspectMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
     type Type = Self;
@@ -612,7 +612,7 @@ for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter+AspectMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
     type Actual = Self;
@@ -626,7 +626,7 @@ for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter+AspectMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
     type Type = Self;
@@ -641,7 +641,7 @@ for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+AspectRatioFitter+AspectMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
     type Actual = Self;

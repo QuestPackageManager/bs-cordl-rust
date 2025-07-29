@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicProxyMetaObject_1<T: quest_hook::libil2cpp::Type> {
@@ -8,7 +8,7 @@ pub struct DynamicProxyMetaObject_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +44,7 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
     type Target = crate::System::Dynamic::DynamicMetaObject;
@@ -52,7 +52,7 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1308,7 +1308,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1318,14 +1318,18 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicProxyMetaObject_1_Fallback<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1361,7 +1365,9 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
     type Target = crate::System::MulticastDelegate;
@@ -1369,7 +1375,9 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1548,7 +1556,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback"
+)]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1558,14 +1568,18 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicProxyMetaObject_1_GetBinderAdapter<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Dynamic::GetMemberBinder,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapter<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1601,7 +1615,9 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapte
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapter<T> {
     type Target = crate::System::Dynamic::GetMemberBinder;
@@ -1609,7 +1625,9 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapte
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapter<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1712,7 +1730,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter"
+)]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapter<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

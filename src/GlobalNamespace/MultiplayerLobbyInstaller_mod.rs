@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLobbyInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyInstaller {
@@ -10,7 +10,7 @@ pub struct MultiplayerLobbyInstaller {
         crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
     >,
 }
-#[cfg(feature = "MultiplayerLobbyInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLobbyInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::MultiplayerLobbyInstaller {
         false
     }
 }
-#[cfg(feature = "MultiplayerLobbyInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLobbyInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLobbyInstaller")]
+#[cfg(feature = "cordl_class_MultiplayerLobbyInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLobbyInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

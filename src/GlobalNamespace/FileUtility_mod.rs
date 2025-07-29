@@ -1,10 +1,10 @@
-#[cfg(feature = "FileUtility")]
+#[cfg(feature = "cordl_class_FileUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "FileUtility")]
+#[cfg(feature = "cordl_class_FileUtility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FileUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FileUtility 
         false
     }
 }
-#[cfg(feature = "FileUtility")]
+#[cfg(feature = "cordl_class_FileUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::FileUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FileUtility")]
+#[cfg(feature = "cordl_class_FileUtility")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FileUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::FileUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FileUtility")]
+#[cfg(feature = "cordl_class_FileUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FileUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Linq+LoadOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+LoadOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LoadOptions {
@@ -8,7 +8,7 @@ pub enum LoadOptions {
     SetBaseUri = 2i32,
     SetLineInfo = 4i32,
 }
-#[cfg(feature = "System+Xml+Linq+LoadOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::LoadOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::LoadOption
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Linq+LoadOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Linq::LoadOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Linq::LoadOp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Linq+LoadOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Linq::LoadOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Linq::LoadO
         self
     }
 }
-#[cfg(feature = "System+Xml+Linq+LoadOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Linq::LoadOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Linq::LoadOp
         }
     }
 }
-#[cfg(feature = "System+Xml+Linq+LoadOptions")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Linq::LoadOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "EventsTestSceneSetup")]
+#[cfg(feature = "cordl_class_EventsTestSceneSetup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestSceneSetup {
@@ -7,7 +7,7 @@ pub struct EventsTestSceneSetup {
         crate::GlobalNamespace::GameplayCoreSceneSetupData,
     >,
 }
-#[cfg(feature = "EventsTestSceneSetup")]
+#[cfg(feature = "cordl_class_EventsTestSceneSetup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EventsTestSceneSetup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::EventsTestSceneSetup {
         false
     }
 }
-#[cfg(feature = "EventsTestSceneSetup")]
+#[cfg(feature = "cordl_class_EventsTestSceneSetup")]
 impl std::ops::Deref for crate::GlobalNamespace::EventsTestSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EventsTestSceneSetup")]
+#[cfg(feature = "cordl_class_EventsTestSceneSetup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EventsTestSceneSetup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::EventsTestSceneSetup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EventsTestSceneSetup")]
+#[cfg(feature = "cordl_class_EventsTestSceneSetup")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EventsTestSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

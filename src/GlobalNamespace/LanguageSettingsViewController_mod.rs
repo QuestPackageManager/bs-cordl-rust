@@ -1,10 +1,10 @@
-#[cfg(feature = "LanguageSettingsViewController")]
+#[cfg(feature = "cordl_class_LanguageSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LanguageSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
 }
-#[cfg(feature = "LanguageSettingsViewController")]
+#[cfg(feature = "cordl_class_LanguageSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LanguageSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::LanguageSettingsViewController {
         false
     }
 }
-#[cfg(feature = "LanguageSettingsViewController")]
+#[cfg(feature = "cordl_class_LanguageSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LanguageSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LanguageSettingsViewController")]
+#[cfg(feature = "cordl_class_LanguageSettingsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LanguageSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::LanguageSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LanguageSettingsViewController")]
+#[cfg(feature = "cordl_class_LanguageSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LanguageSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lease {
@@ -14,7 +14,7 @@ pub struct Lease {
         crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate,
     >,
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Lifetime::Lease {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::System::Runtime::Remoting::Lifetime::Lease {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Lifetime::Lease {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Lifetime::Lease {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -316,7 +316,7 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Lifetime::Lease {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -340,13 +340,13 @@ for crate::System::Runtime::Remoting::Lifetime::Lease {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lease_RenewalDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -366,7 +366,7 @@ for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -374,7 +374,7 @@ for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -522,7 +522,7 @@ impl crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

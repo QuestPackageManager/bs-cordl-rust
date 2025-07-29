@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleBigDecimal {
@@ -6,7 +6,7 @@ pub struct SimpleBigDecimal {
     pub bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub scale: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -804,7 +804,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

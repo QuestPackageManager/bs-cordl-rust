@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GlvMultiplier {
@@ -8,7 +8,7 @@ pub struct GlvMultiplier {
         crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
     type Target = crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -131,7 +131,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

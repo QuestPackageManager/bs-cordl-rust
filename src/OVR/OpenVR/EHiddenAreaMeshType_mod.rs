@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EHiddenAreaMeshType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EHiddenAreaMeshType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EHiddenAreaMeshType {
@@ -8,7 +8,7 @@ pub enum EHiddenAreaMeshType {
     k_eHiddenAreaMesh_Max = 3i32,
     k_eHiddenAreaMesh_Standard = 0i32,
 }
-#[cfg(feature = "OVR+OpenVR+EHiddenAreaMeshType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EHiddenAreaMeshType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EHiddenAreaMeshType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EHiddenAreaMeshT
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EHiddenAreaMeshType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EHiddenAreaMeshType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EHiddenAreaMeshType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EHiddenAreaM
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EHiddenAreaMeshType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EHiddenAreaMeshType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::EHiddenAreaMeshType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::OVR::OpenVR::EHiddenAreaMeshType {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EHiddenAreaMeshType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EHiddenAreaMeshType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EHiddenAreaMeshType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EHiddenAreaM
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EHiddenAreaMeshType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EHiddenAreaMeshType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EHiddenAreaMeshType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

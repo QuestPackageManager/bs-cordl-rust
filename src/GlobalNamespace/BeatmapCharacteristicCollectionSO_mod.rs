@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapCharacteristicCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicCollectionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicCollectionSO {
@@ -9,7 +9,7 @@ pub struct BeatmapCharacteristicCollectionSO {
         >,
     >,
 }
-#[cfg(feature = "BeatmapCharacteristicCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicCollectionSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
         false
     }
 }
-#[cfg(feature = "BeatmapCharacteristicCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicCollectionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapCharacteristicCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicCollectionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapCharacteristicCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicCollectionSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

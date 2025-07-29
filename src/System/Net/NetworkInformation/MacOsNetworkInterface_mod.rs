@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsNetworkInterface")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MacOsNetworkInterface {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterface,
     pub _ifa_flags: u32,
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsNetworkInterface")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::MacOsNetworkInterface {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Net::NetworkInformation::MacOsNetworkInterface {
         false
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsNetworkInterface")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::MacOsNetworkInterface {
     type Target = crate::System::Net::NetworkInformation::UnixNetworkInterface;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsNetworkInterface")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::MacOsNetworkInterface {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -142,7 +142,7 @@ impl crate::System::Net::NetworkInformation::MacOsNetworkInterface {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterface")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsNetworkInterface")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::MacOsNetworkInterface {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

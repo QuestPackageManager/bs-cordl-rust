@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+Range")]
+#[cfg(feature = "cordl_class_System+Data+Range")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Range {
@@ -6,7 +6,7 @@ pub struct Range {
     pub _max: i32,
     pub _isNotNull: bool,
 }
-#[cfg(feature = "System+Data+Range")]
+#[cfg(feature = "cordl_class_System+Data+Range")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Range {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Range {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+Range")]
+#[cfg(feature = "cordl_class_System+Data+Range")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::Range {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::Range {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+Range")]
+#[cfg(feature = "cordl_class_System+Data+Range")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::Range {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::Range {
         self
     }
 }
-#[cfg(feature = "System+Data+Range")]
+#[cfg(feature = "cordl_class_System+Data+Range")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::Range {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::Range {
         }
     }
 }
-#[cfg(feature = "System+Data+Range")]
+#[cfg(feature = "cordl_class_System+Data+Range")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::Range {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::Range {
         actual
     }
 }
-#[cfg(feature = "System+Data+Range")]
+#[cfg(feature = "cordl_class_System+Data+Range")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Data::Range {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

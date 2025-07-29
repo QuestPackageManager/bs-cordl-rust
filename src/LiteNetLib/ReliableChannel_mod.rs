@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+ReliableChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReliableChannel {
@@ -27,7 +27,7 @@ pub struct ReliableChannel {
     pub _windowSize: i32,
     pub _id: u8,
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ReliableChannel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -46,14 +46,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ReliableChannel {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel")]
 impl std::ops::Deref for crate::LiteNetLib::ReliableChannel {
     type Target = crate::LiteNetLib::BaseChannel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel")]
 impl std::ops::DerefMut for crate::LiteNetLib::ReliableChannel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -185,7 +185,7 @@ impl crate::LiteNetLib::ReliableChannel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::ReliableChannel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -194,7 +194,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::ReliableChannel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel+PendingPacket")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ReliableChannel_PendingPacket {
@@ -202,7 +202,7 @@ pub struct ReliableChannel_PendingPacket {
     pub _timeStamp: i64,
     pub _isSent: bool,
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Held<'a> = Self;
@@ -232,7 +232,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Type = Self;
@@ -243,7 +243,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Actual = Self;
@@ -257,7 +257,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Type = Self;
@@ -272,7 +272,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
         }
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Actual = Self;
@@ -286,7 +286,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
         actual
     }
 }
-#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
+#[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Type = Self;

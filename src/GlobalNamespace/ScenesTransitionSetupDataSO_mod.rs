@@ -1,4 +1,4 @@
-#[cfg(feature = "ScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScenesTransitionSetupDataSO {
@@ -17,7 +17,7 @@ pub struct ScenesTransitionSetupDataSO {
         crate::System::Action,
     >,
 }
-#[cfg(feature = "ScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::ScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "ScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::ScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -355,7 +355,7 @@ impl crate::GlobalNamespace::ScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_ScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

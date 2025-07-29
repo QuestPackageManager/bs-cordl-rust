@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Normal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Normal {
@@ -6,7 +6,7 @@ pub struct Normal {
     pub _tangent_k__BackingField: crate::UnityEngine::Vector4,
     pub _bitangent_k__BackingField: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Normal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Normal {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Norm
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Normal")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ProBuilder::Normal {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ProBuilder::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Normal")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ProBuilder::Normal {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ProBuilder:
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Normal")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ProBuilder::Normal {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ProBuilder::
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Normal")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ProBuilder::Normal {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ProBuilder::No
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Normal")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Normal")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ProBuilder::Normal {
     type Type = Self;

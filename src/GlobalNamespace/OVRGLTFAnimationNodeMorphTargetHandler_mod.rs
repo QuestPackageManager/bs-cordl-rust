@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRGLTFAnimationNodeMorphTargetHandler")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimationNodeMorphTargetHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGLTFAnimationNodeMorphTargetHandler {
@@ -7,7 +7,7 @@ pub struct OVRGLTFAnimationNodeMorphTargetHandler {
     pub Weights: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub modified: bool,
 }
-#[cfg(feature = "OVRGLTFAnimationNodeMorphTargetHandler")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimationNodeMorphTargetHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
         false
     }
 }
-#[cfg(feature = "OVRGLTFAnimationNodeMorphTargetHandler")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimationNodeMorphTargetHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRGLTFAnimationNodeMorphTargetHandler")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimationNodeMorphTargetHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRGLTFAnimationNodeMorphTargetHandler")]
+#[cfg(feature = "cordl_class_OVRGLTFAnimationNodeMorphTargetHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

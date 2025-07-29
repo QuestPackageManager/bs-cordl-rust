@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+Tasks+TaskToApm")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskToApm {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::TaskToApm {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::Tas
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskToApm {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskToApm {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -165,7 +165,7 @@ impl crate::System::Threading::Tasks::TaskToApm {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::TaskToApm {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -174,7 +174,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskToApm_TaskWrapperAsyncResult {
@@ -183,7 +183,7 @@ pub struct TaskToApm_TaskWrapperAsyncResult {
     pub _state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _completedSynchronously: bool,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -203,7 +203,7 @@ for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -211,7 +211,7 @@ for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
 impl std::ops::DerefMut
 for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -369,7 +369,7 @@ impl crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

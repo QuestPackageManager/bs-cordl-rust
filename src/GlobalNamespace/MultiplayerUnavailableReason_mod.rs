@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerUnavailableReason")]
+#[cfg(feature = "cordl_class_MultiplayerUnavailableReason")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerUnavailableReason {
@@ -8,7 +8,7 @@ pub enum MultiplayerUnavailableReason {
     ServerOffline = 3i32,
     UpdateRequired = 2i32,
 }
-#[cfg(feature = "MultiplayerUnavailableReason")]
+#[cfg(feature = "cordl_class_MultiplayerUnavailableReason")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerUnavailableReason {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::MultiplayerUnavailableReason {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerUnavailableReason")]
+#[cfg(feature = "cordl_class_MultiplayerUnavailableReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerUnavailableReason {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::MultiplayerUnavailableReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerUnavailableReason")]
+#[cfg(feature = "cordl_class_MultiplayerUnavailableReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerUnavailableReason {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::GlobalNamespace::MultiplayerUnavailableReason {
         self
     }
 }
-#[cfg(feature = "MultiplayerUnavailableReason")]
+#[cfg(feature = "cordl_class_MultiplayerUnavailableReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerUnavailableReason {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::MultiplayerUnavailableReason {
         }
     }
 }
-#[cfg(feature = "MultiplayerUnavailableReason")]
+#[cfg(feature = "cordl_class_MultiplayerUnavailableReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerUnavailableReason {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+ChainValidationHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChainValidationHelper {
@@ -23,7 +23,7 @@ pub struct ChainValidationHelper {
     pub tlsStream: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MonoTlsStream>,
     pub request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
 }
-#[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+ChainValidationHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Net::Security::ChainValidationHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::Mono::Net::Security::ChainValidationHelper {
         false
     }
 }
-#[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+ChainValidationHelper")]
 impl std::ops::Deref for crate::Mono::Net::Security::ChainValidationHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+ChainValidationHelper")]
 impl std::ops::DerefMut for crate::Mono::Net::Security::ChainValidationHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -637,7 +637,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
+#[cfg(feature = "cordl_class_Mono+Net+Security+ChainValidationHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Net::Security::ChainValidationHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

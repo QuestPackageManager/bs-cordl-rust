@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AttributeData {
@@ -15,7 +15,7 @@ pub struct HEU_AttributeData {
     >,
     pub _attributeState: crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AttributeData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::HoudiniEngineUnity::HEU_AttributeData {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AttributeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AttributeData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributeData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AttributeData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -195,7 +195,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AttributeData_AttributeState {
@@ -204,7 +204,7 @@ pub enum HEU_AttributeData_AttributeState {
     LOCAL_DIRTY = 2i32,
     SYNCED = 1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Held<'a> = Self;
@@ -234,7 +234,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Type = Self;
@@ -245,7 +245,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Actual = Self;
@@ -259,7 +259,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Type = Self;
@@ -274,7 +274,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Actual = Self;
@@ -288,7 +288,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AttributeData_AttributeType {
@@ -300,7 +300,7 @@ pub enum HEU_AttributeData_AttributeType {
     STRING = 3i32,
     UNDEFINED = -1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Held<'a> = Self;
@@ -330,7 +330,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Type = Self;
@@ -341,7 +341,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Actual = Self;
@@ -355,7 +355,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Type = Self;
@@ -370,7 +370,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Actual = Self;

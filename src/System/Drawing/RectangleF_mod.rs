@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Drawing+RectangleF")]
+#[cfg(feature = "cordl_class_System+Drawing+RectangleF")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RectangleF {
@@ -7,7 +7,7 @@ pub struct RectangleF {
     pub width: f32,
     pub height: f32,
 }
-#[cfg(feature = "System+Drawing+RectangleF")]
+#[cfg(feature = "cordl_class_System+Drawing+RectangleF")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Drawing::RectangleF {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Drawing::RectangleF {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Drawing+RectangleF")]
+#[cfg(feature = "cordl_class_System+Drawing+RectangleF")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Drawing::RectangleF {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Drawing::Rectangl
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Drawing+RectangleF")]
+#[cfg(feature = "cordl_class_System+Drawing+RectangleF")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Drawing::RectangleF {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Drawing::Rectang
         self
     }
 }
-#[cfg(feature = "System+Drawing+RectangleF")]
+#[cfg(feature = "cordl_class_System+Drawing+RectangleF")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Drawing::RectangleF {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Drawing::Rectangl
         }
     }
 }
-#[cfg(feature = "System+Drawing+RectangleF")]
+#[cfg(feature = "cordl_class_System+Drawing+RectangleF")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Drawing::RectangleF {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Drawing::RectangleF
         actual
     }
 }
-#[cfg(feature = "System+Drawing+RectangleF")]
+#[cfg(feature = "cordl_class_System+Drawing+RectangleF")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Drawing::RectangleF {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

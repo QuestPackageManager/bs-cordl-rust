@@ -1,11 +1,11 @@
-#[cfg(feature = "PerformanceToolLauncher")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformanceToolLauncher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _assets: crate::GlobalNamespace::PerformanceToolLauncher_Assets,
 }
-#[cfg(feature = "PerformanceToolLauncher")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceToolLauncher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::PerformanceToolLauncher {
         false
     }
 }
-#[cfg(feature = "PerformanceToolLauncher")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher")]
 impl std::ops::Deref for crate::GlobalNamespace::PerformanceToolLauncher {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PerformanceToolLauncher")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceToolLauncher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PerformanceToolLauncher")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PerformanceToolLauncher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -199,7 +199,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceToolLauncher_Assets {
@@ -208,7 +208,7 @@ pub struct PerformanceToolLauncher_Assets {
     >,
     pub recorder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerformanceRecorder>,
 }
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Held<'a> = Self;
@@ -238,7 +238,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Type = Self;
@@ -249,7 +249,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Actual = Self;
@@ -263,7 +263,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
         self
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Type = Self;
@@ -278,7 +278,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
         }
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Actual = Self;
@@ -292,7 +292,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
         actual
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Type = Self;
@@ -305,14 +305,14 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
 }
 #[cfg(feature = "PerformanceToolLauncher+Assets")]
 impl crate::GlobalNamespace::PerformanceToolLauncher_Assets {}
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceToolLauncher_OverrideConfig {
     pub enableAutoplay: bool,
     pub enableRecording: bool,
 }
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Held<'a> = Self;
@@ -342,7 +342,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Type = Self;
@@ -353,7 +353,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Actual = Self;
@@ -367,7 +367,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
         self
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Type = Self;
@@ -382,7 +382,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
         }
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Actual = Self;
@@ -396,7 +396,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
         actual
     }
 }
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+#[cfg(feature = "cordl_class_PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Type = Self;

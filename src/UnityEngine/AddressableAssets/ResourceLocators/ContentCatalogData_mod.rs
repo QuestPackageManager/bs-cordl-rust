@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContentCatalogData {
@@ -56,7 +58,9 @@ pub struct ContentCatalogData {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -76,7 +80,9 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData 
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -84,7 +90,9 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -720,7 +728,9 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -731,7 +741,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData 
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -740,7 +750,7 @@ pub struct ContentCatalogData_Bucket {
     pub entries: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
@@ -772,7 +782,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
@@ -785,7 +795,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
@@ -801,7 +811,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
@@ -818,7 +828,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
@@ -834,7 +844,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
@@ -851,7 +861,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
 )]
 impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {}
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -870,7 +880,7 @@ pub struct ContentCatalogData_CompactLocation {
     pub m_Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation {
@@ -892,7 +902,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation {
@@ -902,7 +912,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation {
@@ -1302,7 +1312,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation {

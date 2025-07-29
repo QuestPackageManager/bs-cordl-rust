@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerIntroAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerIntroAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerIntroAnimator {
@@ -7,7 +7,7 @@ pub struct MultiplayerConnectedPlayerIntroAnimator {
         crate::UnityEngine::Playables::PlayableDirector,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerIntroAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerIntroAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerIntroAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerIntroAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerIntroAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerIntroAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerIntroAnimator")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerIntroAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

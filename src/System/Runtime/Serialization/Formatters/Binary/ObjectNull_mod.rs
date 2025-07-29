@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectNull {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nullCount: i32,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -182,7 +182,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectNull")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

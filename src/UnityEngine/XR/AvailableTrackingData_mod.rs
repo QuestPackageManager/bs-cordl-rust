@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+AvailableTrackingData")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+AvailableTrackingData")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvailableTrackingData {
@@ -11,7 +11,7 @@ pub enum AvailableTrackingData {
     RotationAvailable = 2i32,
     VelocityAvailable = 4i32,
 }
-#[cfg(feature = "UnityEngine+XR+AvailableTrackingData")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+AvailableTrackingData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::AvailableTrackingData {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::UnityEngine::XR::AvailableTrackingData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+AvailableTrackingData")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+AvailableTrackingData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::AvailableTrackingData {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::XR::AvailableTrackingData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+AvailableTrackingData")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+AvailableTrackingData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::AvailableTrackingData {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::XR::AvailableTrackingData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+AvailableTrackingData")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+AvailableTrackingData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::AvailableTrackingData {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::XR::AvailableTrackingData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+AvailableTrackingData")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+AvailableTrackingData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::AvailableTrackingData {
     type Actual = Self;

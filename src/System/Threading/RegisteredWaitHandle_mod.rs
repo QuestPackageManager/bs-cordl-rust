@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+RegisteredWaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+RegisteredWaitHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegisteredWaitHandle {
@@ -17,7 +17,7 @@ pub struct RegisteredWaitHandle {
     pub _executeOnlyOnce: bool,
     pub _unregistered: bool,
 }
-#[cfg(feature = "System+Threading+RegisteredWaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+RegisteredWaitHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::RegisteredWaitHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::System::Threading::RegisteredWaitHandle {
         false
     }
 }
-#[cfg(feature = "System+Threading+RegisteredWaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+RegisteredWaitHandle")]
 impl std::ops::Deref for crate::System::Threading::RegisteredWaitHandle {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+RegisteredWaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+RegisteredWaitHandle")]
 impl std::ops::DerefMut for crate::System::Threading::RegisteredWaitHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -199,7 +199,7 @@ impl crate::System::Threading::RegisteredWaitHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+RegisteredWaitHandle")]
+#[cfg(feature = "cordl_class_System+Threading+RegisteredWaitHandle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::RegisteredWaitHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

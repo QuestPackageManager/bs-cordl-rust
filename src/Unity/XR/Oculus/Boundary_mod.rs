@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+XR+Oculus+Boundary")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Boundary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Boundary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Boundary {
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Boundary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Boundary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::Unity::XR::Oculus::Boundary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Boundary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -138,7 +138,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Boundary {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary+BoundaryType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Boundary_BoundaryType {
@@ -146,7 +146,7 @@ pub enum Boundary_BoundaryType {
     OuterBoundary = 0i32,
     PlayArea = 1i32,
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Held<'a> = Self;
@@ -176,7 +176,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Type = Self;
@@ -187,7 +187,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Actual = Self;
@@ -201,7 +201,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
         self
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Type = Self;
@@ -216,7 +216,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
         }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Actual = Self;

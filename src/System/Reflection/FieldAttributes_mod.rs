@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+FieldAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+FieldAttributes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FieldAttributes {
@@ -23,7 +23,7 @@ pub enum FieldAttributes {
     SpecialName = 512i32,
     Static = 16i32,
 }
-#[cfg(feature = "System+Reflection+FieldAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+FieldAttributes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::FieldAttributes {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -52,7 +52,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::FieldAttr
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+FieldAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+FieldAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::FieldAttributes {
     type Type = Self;
@@ -63,7 +63,7 @@ for crate::System::Reflection::FieldAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+FieldAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+FieldAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::FieldAttributes {
     type Actual = Self;
@@ -77,7 +77,7 @@ for crate::System::Reflection::FieldAttributes {
         self
     }
 }
-#[cfg(feature = "System+Reflection+FieldAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+FieldAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::FieldAttributes {
     type Type = Self;
@@ -92,7 +92,7 @@ for crate::System::Reflection::FieldAttributes {
         }
     }
 }
-#[cfg(feature = "System+Reflection+FieldAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+FieldAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::FieldAttributes {
     type Actual = Self;

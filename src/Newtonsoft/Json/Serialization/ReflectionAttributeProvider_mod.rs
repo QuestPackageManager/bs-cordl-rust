@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionAttributeProvider {
@@ -7,7 +7,7 @@ pub struct ReflectionAttributeProvider {
         quest_hook::libil2cpp::Il2CppObject,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -159,7 +159,7 @@ impl crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

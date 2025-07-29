@@ -1,10 +1,10 @@
-#[cfg(feature = "ENet+SslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+SslConfiguration")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SslConfiguration {
     pub nativeSslConfiguration: crate::ENet::ENetSslConfiguration,
 }
-#[cfg(feature = "ENet+SslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+SslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::SslConfiguration {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::SslConfiguration {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ENet+SslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+SslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::SslConfiguration {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::SslConfiguration {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ENet+SslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+SslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::SslConfiguration {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::SslConfiguration {
         self
     }
 }
-#[cfg(feature = "ENet+SslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+SslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::SslConfiguration {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::SslConfiguration {
         }
     }
 }
-#[cfg(feature = "ENet+SslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+SslConfiguration")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::SslConfiguration {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::ENet::SslConfiguration {
         actual
     }
 }
-#[cfg(feature = "ENet+SslConfiguration")]
+#[cfg(feature = "cordl_class_ENet+SslConfiguration")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::SslConfiguration {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+UIElements+FocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusChangeDirection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FocusChangeDirection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Value: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusChangeDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::FocusChangeDirection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::UIElements::FocusChangeDirection {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusChangeDirection")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FocusChangeDirection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusChangeDirection")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FocusChangeDirection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -262,7 +262,7 @@ impl crate::UnityEngine::UIElements::FocusChangeDirection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+FocusChangeDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusChangeDirection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::FocusChangeDirection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

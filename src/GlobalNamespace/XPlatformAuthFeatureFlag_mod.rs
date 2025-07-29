@@ -1,11 +1,11 @@
-#[cfg(feature = "XPlatformAuthFeatureFlag")]
+#[cfg(feature = "cordl_class_XPlatformAuthFeatureFlag")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPlatformAuthFeatureFlag {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _UseXPlatformAuth_k__BackingField: bool,
 }
-#[cfg(feature = "XPlatformAuthFeatureFlag")]
+#[cfg(feature = "cordl_class_XPlatformAuthFeatureFlag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::XPlatformAuthFeatureFlag {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::XPlatformAuthFeatureFlag {
         false
     }
 }
-#[cfg(feature = "XPlatformAuthFeatureFlag")]
+#[cfg(feature = "cordl_class_XPlatformAuthFeatureFlag")]
 impl std::ops::Deref for crate::GlobalNamespace::XPlatformAuthFeatureFlag {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "XPlatformAuthFeatureFlag")]
+#[cfg(feature = "cordl_class_XPlatformAuthFeatureFlag")]
 impl std::ops::DerefMut for crate::GlobalNamespace::XPlatformAuthFeatureFlag {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::XPlatformAuthFeatureFlag {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "XPlatformAuthFeatureFlag")]
+#[cfg(feature = "cordl_class_XPlatformAuthFeatureFlag")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::XPlatformAuthFeatureFlag {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

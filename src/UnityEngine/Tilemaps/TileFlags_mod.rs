@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Tilemaps+TileFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TileFlags {
@@ -10,7 +10,7 @@ pub enum TileFlags {
     LockTransform = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileFlags")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Tilemaps::TileFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Tilemaps::TileFl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Tilemaps::TileFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Tilemaps::Ti
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Tilemaps::TileFlags {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::Tilemaps::TileFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Tilemaps::TileFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Tilemaps::Ti
         }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Tilemaps::TileFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvalidKeyException {
@@ -14,7 +14,7 @@ pub struct InvalidKeyException {
         crate::UnityEngine::AddressableAssets::AddressablesImpl,
     >,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::InvalidKeyException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::UnityEngine::AddressableAssets::InvalidKeyException {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::InvalidKeyException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException")]
 impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::InvalidKeyException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -915,7 +915,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::InvalidKeyException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

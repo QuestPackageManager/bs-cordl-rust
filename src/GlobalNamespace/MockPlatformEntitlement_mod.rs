@@ -1,4 +1,4 @@
-#[cfg(feature = "MockPlatformEntitlement")]
+#[cfg(feature = "cordl_class_MockPlatformEntitlement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlatformEntitlement {
@@ -6,7 +6,7 @@ pub struct MockPlatformEntitlement {
     pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _status: crate::GlobalNamespace::EntitlementStatus,
 }
-#[cfg(feature = "MockPlatformEntitlement")]
+#[cfg(feature = "cordl_class_MockPlatformEntitlement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockPlatformEntitlement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::MockPlatformEntitlement {
         false
     }
 }
-#[cfg(feature = "MockPlatformEntitlement")]
+#[cfg(feature = "cordl_class_MockPlatformEntitlement")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlatformEntitlement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockPlatformEntitlement")]
+#[cfg(feature = "cordl_class_MockPlatformEntitlement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockPlatformEntitlement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -157,7 +157,7 @@ impl crate::GlobalNamespace::MockPlatformEntitlement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockPlatformEntitlement")]
+#[cfg(feature = "cordl_class_MockPlatformEntitlement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MockPlatformEntitlement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

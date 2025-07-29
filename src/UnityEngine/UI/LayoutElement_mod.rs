@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+LayoutElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LayoutElement {
@@ -12,7 +12,7 @@ pub struct LayoutElement {
     pub m_FlexibleHeight: f32,
     pub m_LayoutPriority: i32,
 }
-#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+LayoutElement")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::LayoutElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::LayoutElemen
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+LayoutElement")]
 impl std::ops::Deref for crate::UnityEngine::UI::LayoutElement {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+LayoutElement")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::LayoutElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -607,7 +607,7 @@ impl crate::UnityEngine::UI::LayoutElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+LayoutElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+LayoutElement")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::LayoutElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

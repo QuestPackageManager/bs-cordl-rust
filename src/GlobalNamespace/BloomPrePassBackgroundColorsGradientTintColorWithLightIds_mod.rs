@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
@@ -7,7 +7,7 @@ pub struct BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
         crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
     >,
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLig
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLig
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLi
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

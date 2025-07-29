@@ -1,4 +1,4 @@
-#[cfg(feature = "VRUIControls+VRPointer")]
+#[cfg(feature = "cordl_class_VRUIControls+VRPointer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRPointer {
@@ -45,7 +45,7 @@ pub struct VRPointer {
     pub _hasLaserPointers: bool,
     pub _hasCursors: bool,
 }
-#[cfg(feature = "VRUIControls+VRPointer")]
+#[cfg(feature = "cordl_class_VRUIControls+VRPointer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRPointer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -64,14 +64,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRPointer {
         false
     }
 }
-#[cfg(feature = "VRUIControls+VRPointer")]
+#[cfg(feature = "cordl_class_VRUIControls+VRPointer")]
 impl std::ops::Deref for crate::VRUIControls::VRPointer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRUIControls+VRPointer")]
+#[cfg(feature = "cordl_class_VRUIControls+VRPointer")]
 impl std::ops::DerefMut for crate::VRUIControls::VRPointer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -733,7 +733,7 @@ impl crate::VRUIControls::VRPointer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRUIControls+VRPointer")]
+#[cfg(feature = "cordl_class_VRUIControls+VRPointer")]
 impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRPointer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

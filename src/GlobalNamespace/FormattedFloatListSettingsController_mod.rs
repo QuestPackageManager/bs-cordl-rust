@@ -1,4 +1,4 @@
-#[cfg(feature = "FormattedFloatListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormattedFloatListSettingsController {
@@ -21,7 +21,7 @@ pub struct FormattedFloatListSettingsController {
     pub _max: f32,
     pub _hasValue: bool,
 }
-#[cfg(feature = "FormattedFloatListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FormattedFloatListSettingsController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController {
         false
     }
 }
-#[cfg(feature = "FormattedFloatListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::FormattedFloatListSettingsController {
     type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FormattedFloatListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FormattedFloatListSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -353,7 +353,7 @@ impl crate::GlobalNamespace::FormattedFloatListSettingsController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FormattedFloatListSettingsController")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FormattedFloatListSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -363,7 +363,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController+ValueType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FormattedFloatListSettingsController_ValueType {
@@ -372,7 +372,7 @@ pub enum FormattedFloatListSettingsController_ValueType {
     Normal = 0i32,
     Normalized = 1i32,
 }
-#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Held<'a> = Self;
@@ -402,7 +402,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Type = Self;
@@ -413,7 +413,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Actual = Self;
@@ -427,7 +427,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
         self
     }
 }
-#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Type = Self;
@@ -442,7 +442,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
         }
     }
 }
-#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
+#[cfg(feature = "cordl_class_FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Actual = Self;

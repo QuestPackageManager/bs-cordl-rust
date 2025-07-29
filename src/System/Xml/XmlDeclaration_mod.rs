@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDeclaration")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDeclaration {
@@ -7,7 +7,7 @@ pub struct XmlDeclaration {
     pub encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub standalone: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+XmlDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDeclaration")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlDeclaration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlDeclaration {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDeclaration")]
 impl std::ops::Deref for crate::System::Xml::XmlDeclaration {
     type Target = crate::System::Xml::XmlLinkedNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDeclaration")]
 impl std::ops::DerefMut for crate::System::Xml::XmlDeclaration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -545,7 +545,7 @@ impl crate::System::Xml::XmlDeclaration {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlDeclaration")]
+#[cfg(feature = "cordl_class_System+Xml+XmlDeclaration")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlDeclaration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

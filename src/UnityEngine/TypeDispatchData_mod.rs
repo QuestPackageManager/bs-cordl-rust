@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TypeDispatchData")]
+#[cfg(feature = "cordl_class_UnityEngine+TypeDispatchData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeDispatchData {
@@ -10,7 +10,7 @@ pub struct TypeDispatchData {
     pub changedID: crate::Unity::Collections::NativeArray_1<i32>,
     pub destroyedID: crate::Unity::Collections::NativeArray_1<i32>,
 }
-#[cfg(feature = "UnityEngine+TypeDispatchData")]
+#[cfg(feature = "cordl_class_UnityEngine+TypeDispatchData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TypeDispatchData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TypeDispatchData
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TypeDispatchData")]
+#[cfg(feature = "cordl_class_UnityEngine+TypeDispatchData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TypeDispatchData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TypeDispatch
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TypeDispatchData")]
+#[cfg(feature = "cordl_class_UnityEngine+TypeDispatchData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TypeDispatchData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TypeDispatc
         self
     }
 }
-#[cfg(feature = "UnityEngine+TypeDispatchData")]
+#[cfg(feature = "cordl_class_UnityEngine+TypeDispatchData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TypeDispatchData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TypeDispatch
         }
     }
 }
-#[cfg(feature = "UnityEngine+TypeDispatchData")]
+#[cfg(feature = "cordl_class_UnityEngine+TypeDispatchData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TypeDispatchData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TypeDispatchDa
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TypeDispatchData")]
+#[cfg(feature = "cordl_class_UnityEngine+TypeDispatchData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TypeDispatchData {
     type Type = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Reflection+AssemblyDelaySignAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyDelaySignAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyDelaySignAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _DelaySign_k__BackingField: bool,
 }
-#[cfg(feature = "System+Reflection+AssemblyDelaySignAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyDelaySignAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::AssemblyDelaySignAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Reflection::AssemblyDelaySignAttribute {
         false
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyDelaySignAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyDelaySignAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyDelaySignAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyDelaySignAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyDelaySignAttribute")]
 impl std::ops::DerefMut for crate::System::Reflection::AssemblyDelaySignAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::System::Reflection::AssemblyDelaySignAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyDelaySignAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyDelaySignAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::AssemblyDelaySignAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

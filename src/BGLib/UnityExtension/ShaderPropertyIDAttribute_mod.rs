@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderPropertyIDAttribute {
@@ -7,7 +7,7 @@ pub struct ShaderPropertyIDAttribute {
         crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter,
     >,
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::ShaderPropertyIDAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::BGLib::UnityExtension::ShaderPropertyIDAttribute {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDAttribute")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::ShaderPropertyIDAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDAttribute")]
 impl std::ops::DerefMut for crate::BGLib::UnityExtension::ShaderPropertyIDAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::BGLib::UnityExtension::ShaderPropertyIDAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDAttribute")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::ShaderPropertyIDAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextureRegistry {
@@ -20,7 +20,7 @@ pub struct TextureRegistry {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TextureRegistry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::UnityEngine::UIElements::TextureRegistry {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextureRegistry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextureRegistry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -276,7 +276,7 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TextureRegistry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -286,7 +286,7 @@ for crate::UnityEngine::UIElements::TextureRegistry {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextureRegistry_TextureInfo {
@@ -294,7 +294,7 @@ pub struct TextureRegistry_TextureInfo {
     pub dynamic: bool,
     pub refCount: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
     type Held<'a> = Self;
@@ -324,7 +324,7 @@ for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
     type Type = Self;
@@ -335,7 +335,7 @@ for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
     type Actual = Self;
@@ -349,7 +349,7 @@ for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
     type Type = Self;
@@ -364,7 +364,7 @@ for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
     type Actual = Self;
@@ -378,7 +378,7 @@ for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
     type Type = Self;

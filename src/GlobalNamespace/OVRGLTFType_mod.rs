@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRGLTFType")]
+#[cfg(feature = "cordl_class_OVRGLTFType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFType {
@@ -10,7 +10,7 @@ pub enum OVRGLTFType {
     VEC3 = 3i32,
     VEC4 = 4i32,
 }
-#[cfg(feature = "OVRGLTFType")]
+#[cfg(feature = "cordl_class_OVRGLTFType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGLTFType 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRGLTFType")]
+#[cfg(feature = "cordl_class_OVRGLTFType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRGLTFType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRGLTFT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRGLTFType")]
+#[cfg(feature = "cordl_class_OVRGLTFType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRGLTFType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRGLTF
         self
     }
 }
-#[cfg(feature = "OVRGLTFType")]
+#[cfg(feature = "cordl_class_OVRGLTFType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRGLTFType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRGLTFT
         }
     }
 }
-#[cfg(feature = "OVRGLTFType")]
+#[cfg(feature = "cordl_class_OVRGLTFType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRGLTFType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

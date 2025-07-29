@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericBezierCurve {
@@ -8,7 +8,7 @@ pub struct GenericBezierCurve {
         >,
     >,
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
         false
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
     type Target = crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::BGLib::UnityExtension::BezierCurves::GenericBezi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
 impl std::ops::DerefMut
 for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -147,7 +147,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

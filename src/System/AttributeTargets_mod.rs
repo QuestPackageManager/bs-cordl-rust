@@ -1,4 +1,4 @@
-#[cfg(feature = "System+AttributeTargets")]
+#[cfg(feature = "cordl_class_System+AttributeTargets")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AttributeTargets {
@@ -20,7 +20,7 @@ pub enum AttributeTargets {
     ReturnValue = 8192i32,
     Struct = 8i32,
 }
-#[cfg(feature = "System+AttributeTargets")]
+#[cfg(feature = "cordl_class_System+AttributeTargets")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::AttributeTargets {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AttributeTargets {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+AttributeTargets")]
+#[cfg(feature = "cordl_class_System+AttributeTargets")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::AttributeTargets {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::AttributeTargets 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+AttributeTargets")]
+#[cfg(feature = "cordl_class_System+AttributeTargets")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::AttributeTargets {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::AttributeTargets
         self
     }
 }
-#[cfg(feature = "System+AttributeTargets")]
+#[cfg(feature = "cordl_class_System+AttributeTargets")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::AttributeTargets {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::AttributeTargets 
         }
     }
 }
-#[cfg(feature = "System+AttributeTargets")]
+#[cfg(feature = "cordl_class_System+AttributeTargets")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::AttributeTargets {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

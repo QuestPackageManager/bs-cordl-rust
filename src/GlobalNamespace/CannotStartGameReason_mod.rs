@@ -1,4 +1,4 @@
-#[cfg(feature = "CannotStartGameReason")]
+#[cfg(feature = "cordl_class_CannotStartGameReason")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CannotStartGameReason {
@@ -9,7 +9,7 @@ pub enum CannotStartGameReason {
     NoSongSelected = 3i32,
     None = 1i32,
 }
-#[cfg(feature = "CannotStartGameReason")]
+#[cfg(feature = "cordl_class_CannotStartGameReason")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CannotStartGameReason {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::CannotStartGameReason {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "CannotStartGameReason")]
+#[cfg(feature = "cordl_class_CannotStartGameReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CannotStartGameReason {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::CannotStartGameReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "CannotStartGameReason")]
+#[cfg(feature = "cordl_class_CannotStartGameReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CannotStartGameReason {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::GlobalNamespace::CannotStartGameReason {
         self
     }
 }
-#[cfg(feature = "CannotStartGameReason")]
+#[cfg(feature = "cordl_class_CannotStartGameReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CannotStartGameReason {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::GlobalNamespace::CannotStartGameReason {
         }
     }
 }
-#[cfg(feature = "CannotStartGameReason")]
+#[cfg(feature = "cordl_class_CannotStartGameReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CannotStartGameReason {
     type Actual = Self;

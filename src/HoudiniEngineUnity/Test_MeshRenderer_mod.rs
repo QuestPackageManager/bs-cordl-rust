@@ -1,11 +1,11 @@
-#[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_MeshRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Test_MeshRenderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_MeshRenderer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::Test_MeshRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::HoudiniEngineUnity::Test_MeshRenderer {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_MeshRenderer")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::Test_MeshRenderer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_MeshRenderer")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_MeshRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::HoudiniEngineUnity::Test_MeshRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+Test_MeshRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_MeshRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

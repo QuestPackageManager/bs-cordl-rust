@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererCullingOutput")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchRendererCullingOutput {
@@ -18,7 +18,7 @@ pub struct BatchRendererCullingOutput {
     pub sceneCullingMask: u64,
     pub drawCommands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererCullingOutput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
     type Held<'a> = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererCullingOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererCullingOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererCullingOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererCullingOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
     type Actual = Self;
@@ -102,7 +102,7 @@ for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererCullingOutput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Rendering::BatchRendererCullingOutput {
     type Type = Self;

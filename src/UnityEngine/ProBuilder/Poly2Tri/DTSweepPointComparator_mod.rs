@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DTSweepPointComparator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -108,7 +108,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListView {
@@ -26,7 +26,7 @@ pub struct ListView {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::ListView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::List
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListView {
     type Target = crate::UnityEngine::UIElements::BaseListView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ListView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -303,7 +303,7 @@ impl crate::UnityEngine::UIElements::ListView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ListView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -312,7 +312,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ListV
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListView_UxmlFactory {
@@ -321,7 +321,7 @@ pub struct ListView_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ListView_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ListView_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -341,7 +341,7 @@ for crate::UnityEngine::UIElements::ListView_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListView_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ListView>,
@@ -351,7 +351,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::ListView_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ListView_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -388,7 +388,7 @@ impl crate::UnityEngine::UIElements::ListView_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ListView_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -398,13 +398,13 @@ for crate::UnityEngine::UIElements::ListView_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ListView_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -424,14 +424,14 @@ for crate::UnityEngine::UIElements::ListView_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseListView_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ListView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -468,7 +468,7 @@ impl crate::UnityEngine::UIElements::ListView_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ListView_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

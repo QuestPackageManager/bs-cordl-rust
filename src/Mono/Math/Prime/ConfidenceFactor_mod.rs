@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Math+Prime+ConfidenceFactor")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+ConfidenceFactor")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConfidenceFactor {
@@ -10,7 +10,7 @@ pub enum ConfidenceFactor {
     Medium = 2i32,
     Provable = 5i32,
 }
-#[cfg(feature = "Mono+Math+Prime+ConfidenceFactor")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+ConfidenceFactor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::Prime::ConfidenceFactor {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::Prime::Confidence
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Math+Prime+ConfidenceFactor")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+ConfidenceFactor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Math::Prime::ConfidenceFactor {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::Mono::Math::Prime::ConfidenceFactor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Math+Prime+ConfidenceFactor")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+ConfidenceFactor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Math::Prime::ConfidenceFactor {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::Mono::Math::Prime::ConfidenceFactor {
         self
     }
 }
-#[cfg(feature = "Mono+Math+Prime+ConfidenceFactor")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+ConfidenceFactor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Math::Prime::ConfidenceFactor {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::Mono::Math::Prime::ConfidenceFactor {
         }
     }
 }
-#[cfg(feature = "Mono+Math+Prime+ConfidenceFactor")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+ConfidenceFactor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Math::Prime::ConfidenceFactor {
     type Actual = Self;

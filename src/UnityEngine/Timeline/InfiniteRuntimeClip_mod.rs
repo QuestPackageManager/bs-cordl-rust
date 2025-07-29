@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Timeline+InfiniteRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+InfiniteRuntimeClip")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InfiniteRuntimeClip {
     __cordl_parent: crate::UnityEngine::Timeline::RuntimeElement,
     pub m_Playable: crate::UnityEngine::Playables::Playable,
 }
-#[cfg(feature = "UnityEngine+Timeline+InfiniteRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+InfiniteRuntimeClip")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::InfiniteRuntimeClip {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Timeline::InfiniteRuntimeClip {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+InfiniteRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+InfiniteRuntimeClip")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::InfiniteRuntimeClip {
     type Target = crate::UnityEngine::Timeline::RuntimeElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+InfiniteRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+InfiniteRuntimeClip")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::InfiniteRuntimeClip {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -192,7 +192,7 @@ impl crate::UnityEngine::Timeline::InfiniteRuntimeClip {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+InfiniteRuntimeClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+InfiniteRuntimeClip")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::InfiniteRuntimeClip {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

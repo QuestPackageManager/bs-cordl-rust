@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+MarkerList")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MarkerList {
@@ -15,7 +15,7 @@ pub struct MarkerList {
     pub m_CacheDirty: bool,
     pub m_HasNotifications: bool,
 }
-#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+MarkerList")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::MarkerList {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::Marker
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+MarkerList")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::MarkerList {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::UnityEngine::Timeline::MarkerList {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+MarkerList")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::MarkerList {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::Timeline::MarkerList {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+MarkerList")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::MarkerList {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::Timeline::MarkerList {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+MarkerList")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Timeline::MarkerList {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -97,7 +97,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Timeline::Mark
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+MarkerList")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+MarkerList")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Timeline::MarkerList {
     type Type = Self;

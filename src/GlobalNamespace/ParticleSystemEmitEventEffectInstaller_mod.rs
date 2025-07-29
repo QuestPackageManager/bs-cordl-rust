@@ -1,4 +1,4 @@
-#[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
+#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffectInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffectInstaller {
@@ -8,7 +8,7 @@ pub struct ParticleSystemEmitEventEffectInstaller {
     >,
     pub _particleSystemEventControllerInitialSize: i32,
 }
-#[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
+#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffectInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
         false
     }
 }
-#[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
+#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffectInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
+#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffectInstaller")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -98,7 +98,7 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
+#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffectInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

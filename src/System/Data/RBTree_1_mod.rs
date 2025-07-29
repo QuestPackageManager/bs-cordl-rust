@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+RBTree_1")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RBTree_1<K: quest_hook::libil2cpp::Type> {
@@ -20,7 +20,7 @@ pub struct RBTree_1<K: quest_hook::libil2cpp::Type> {
     pub _accessMethod: crate::System::Data::TreeAccessMethod,
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
-#[cfg(feature = "System+Data+RBTree_1")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Data::RBTree_1<K> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,7 +53,7 @@ for crate::System::Data::RBTree_1<K> {
         false
     }
 }
-#[cfg(feature = "System+Data+RBTree_1")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1")]
 impl<K: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::RBTree_1<K> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -61,7 +61,7 @@ for crate::System::Data::RBTree_1<K> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+RBTree_1")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1")]
 impl<K: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Data::RBTree_1<K> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1828,7 +1828,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+RBTree_1")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1")]
 impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Data::RBTree_1<K> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1852,7 +1852,7 @@ for crate::System::Data::RBTree_1<K> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+Node")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+Node")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RBTree_1_Node<K: quest_hook::libil2cpp::Type> {
@@ -1866,7 +1866,7 @@ pub struct RBTree_1_Node<K: quest_hook::libil2cpp::Type> {
     pub _nodeColor: crate::System::Data::RBTree_1_NodeColor<K>,
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
-#[cfg(feature = "System+Data+RBTree_1+Node")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Data::RBTree_1_Node<K> {
     type Held<'a> = Self;
@@ -1909,7 +1909,7 @@ for crate::System::Data::RBTree_1_Node<K> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+Node")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Data::RBTree_1_Node<K> {
     type Type = Self;
@@ -1920,7 +1920,7 @@ for crate::System::Data::RBTree_1_Node<K> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+Node")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Data::RBTree_1_Node<K> {
     type Actual = Self;
@@ -1934,7 +1934,7 @@ for crate::System::Data::RBTree_1_Node<K> {
         self
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+Node")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Data::RBTree_1_Node<K> {
     type Type = Self;
@@ -1949,7 +1949,7 @@ for crate::System::Data::RBTree_1_Node<K> {
         }
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+Node")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Data::RBTree_1_Node<K> {
     type Actual = Self;
@@ -1963,7 +1963,7 @@ for crate::System::Data::RBTree_1_Node<K> {
         actual
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+Node")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::RBTree_1_Node<K> {
     type Type = Self;
@@ -1976,7 +1976,7 @@ for crate::System::Data::RBTree_1_Node<K> {
 }
 #[cfg(feature = "System+Data+RBTree_1+Node")]
 impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_Node<K> {}
-#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodeColor")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RBTree_1_NodeColor {
@@ -1984,7 +1984,7 @@ pub enum RBTree_1_NodeColor {
     black = 1i32,
     red = 0i32,
 }
-#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::RBTree_1_NodeColor {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2013,7 +2013,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::RBTree_1_NodeCo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::RBTree_1_NodeColor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2023,7 +2023,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::RBTree_1_No
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::RBTree_1_NodeColor {
     type Actual = Self;
@@ -2037,7 +2037,7 @@ for crate::System::Data::RBTree_1_NodeColor {
         self
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::RBTree_1_NodeColor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2051,7 +2051,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::RBTree_1_No
         }
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::RBTree_1_NodeColor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2064,7 +2064,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::RBTree_1_Node
         actual
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodePath")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RBTree_1_NodePath<K: quest_hook::libil2cpp::Type> {
@@ -2072,7 +2072,7 @@ pub struct RBTree_1_NodePath<K: quest_hook::libil2cpp::Type> {
     pub _mainTreeNodeID: i32,
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Held<'a> = Self;
@@ -2118,7 +2118,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Type = Self;
@@ -2129,7 +2129,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Actual = Self;
@@ -2143,7 +2143,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
         self
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Type = Self;
@@ -2158,7 +2158,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
         }
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Actual = Self;
@@ -2172,7 +2172,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
         actual
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Type = Self;
@@ -2217,7 +2217,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+RBTreeEnumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
@@ -2228,7 +2228,7 @@ pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
     pub _current: K,
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Held<'a> = Self;
@@ -2274,7 +2274,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Type = Self;
@@ -2285,7 +2285,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Actual = Self;
@@ -2299,7 +2299,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
         self
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Type = Self;
@@ -2314,7 +2314,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
         }
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Actual = Self;
@@ -2328,7 +2328,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
         actual
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Type = Self;
@@ -2579,7 +2579,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
         todo!()
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+TreePage")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+TreePage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RBTree_1_TreePage<K: quest_hook::libil2cpp::Type> {
@@ -2593,7 +2593,7 @@ pub struct RBTree_1_TreePage<K: quest_hook::libil2cpp::Type> {
     pub _nextFreeSlotLine: i32,
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
-#[cfg(feature = "System+Data+RBTree_1+TreePage")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+TreePage")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Data::RBTree_1_TreePage<K> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2629,7 +2629,7 @@ for crate::System::Data::RBTree_1_TreePage<K> {
         false
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+TreePage")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+TreePage")]
 impl<K: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::RBTree_1_TreePage<K> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2637,7 +2637,7 @@ for crate::System::Data::RBTree_1_TreePage<K> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+TreePage")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+TreePage")]
 impl<K: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Data::RBTree_1_TreePage<K> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2818,7 +2818,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+RBTree_1+TreePage")]
+#[cfg(feature = "cordl_class_System+Data+RBTree_1+TreePage")]
 impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Data::RBTree_1_TreePage<K> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

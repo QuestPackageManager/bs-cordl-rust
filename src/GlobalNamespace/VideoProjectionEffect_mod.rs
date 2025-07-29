@@ -1,4 +1,4 @@
-#[cfg(feature = "VideoProjectionEffect")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionEffect {
@@ -24,7 +24,7 @@ pub struct VideoProjectionEffect {
         crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
     >,
 }
-#[cfg(feature = "VideoProjectionEffect")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VideoProjectionEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::VideoProjectionEffect {
         false
     }
 }
-#[cfg(feature = "VideoProjectionEffect")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VideoProjectionEffect")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VideoProjectionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::GlobalNamespace::VideoProjectionEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VideoProjectionEffect")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VideoProjectionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -148,7 +148,9 @@ for crate::GlobalNamespace::VideoProjectionEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
+#[cfg(
+    feature = "cordl_class_VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
@@ -160,7 +162,9 @@ pub struct VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
+#[cfg(
+    feature = "cordl_class_VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -180,7 +184,9 @@ for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBe
         false
     }
 }
-#[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
+#[cfg(
+    feature = "cordl_class_VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
     type Target = crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior;
@@ -188,7 +194,9 @@ for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBe
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
+#[cfg(
+    feature = "cordl_class_VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -346,7 +354,9 @@ impl crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionB
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
+#[cfg(
+    feature = "cordl_class_VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -356,13 +366,13 @@ for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+GameplayVideoProjectionBehavior")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionEffect_GameplayVideoProjectionBehavior {
     __cordl_parent: crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
 }
-#[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+GameplayVideoProjectionBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -382,7 +392,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavio
         false
     }
 }
-#[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+GameplayVideoProjectionBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior {
     type Target = crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior;
@@ -390,7 +400,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+GameplayVideoProjectionBehavior")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -476,7 +486,7 @@ impl crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavi
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+GameplayVideoProjectionBehavior")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -486,14 +496,14 @@ for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavio
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "VideoProjectionEffect+InitData")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
-#[cfg(feature = "VideoProjectionEffect+InitData")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VideoProjectionEffect_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -513,14 +523,14 @@ for crate::GlobalNamespace::VideoProjectionEffect_InitData {
         false
     }
 }
-#[cfg(feature = "VideoProjectionEffect+InitData")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VideoProjectionEffect+InitData")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VideoProjectionEffect_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -566,7 +576,7 @@ impl crate::GlobalNamespace::VideoProjectionEffect_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VideoProjectionEffect+InitData")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VideoProjectionEffect_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -576,7 +586,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+VideoProjectionBehavior")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionEffect_VideoProjectionBehavior {
@@ -594,7 +604,7 @@ pub struct VideoProjectionEffect_VideoProjectionBehavior {
     >,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
-#[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+VideoProjectionBehavior")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -614,7 +624,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
         false
     }
 }
-#[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+VideoProjectionBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -622,7 +632,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+VideoProjectionBehavior")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -787,7 +797,7 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
+#[cfg(feature = "cordl_class_VideoProjectionEffect+VideoProjectionBehavior")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

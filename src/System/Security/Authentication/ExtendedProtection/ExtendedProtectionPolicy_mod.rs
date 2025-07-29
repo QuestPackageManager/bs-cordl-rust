@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct ExtendedProtectionPolicy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {
@@ -29,7 +29,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtect
     }
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 impl std::ops::Deref
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {
@@ -39,7 +39,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtect
     }
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {
@@ -196,7 +196,7 @@ impl crate::System::Security::Authentication::ExtendedProtection::ExtendedProtec
     }
 }
 #[cfg(
-    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
+    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {

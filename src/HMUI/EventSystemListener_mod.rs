@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+EventSystemListener")]
+#[cfg(feature = "cordl_class_HMUI+EventSystemListener")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventSystemListener {
@@ -14,7 +14,7 @@ pub struct EventSystemListener {
         >,
     >,
 }
-#[cfg(feature = "HMUI+EventSystemListener")]
+#[cfg(feature = "cordl_class_HMUI+EventSystemListener")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::EventSystemListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::EventSystemListener {
         false
     }
 }
-#[cfg(feature = "HMUI+EventSystemListener")]
+#[cfg(feature = "cordl_class_HMUI+EventSystemListener")]
 impl std::ops::Deref for crate::HMUI::EventSystemListener {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+EventSystemListener")]
+#[cfg(feature = "cordl_class_HMUI+EventSystemListener")]
 impl std::ops::DerefMut for crate::HMUI::EventSystemListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -289,7 +289,7 @@ impl crate::HMUI::EventSystemListener {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+EventSystemListener")]
+#[cfg(feature = "cordl_class_HMUI+EventSystemListener")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::EventSystemListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+AssemblyFileVersionAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyFileVersionAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyFileVersionAttribute {
@@ -7,7 +7,7 @@ pub struct AssemblyFileVersionAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+Reflection+AssemblyFileVersionAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyFileVersionAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::AssemblyFileVersionAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Reflection::AssemblyFileVersionAttribute {
         false
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyFileVersionAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyFileVersionAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyFileVersionAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyFileVersionAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyFileVersionAttribute")]
 impl std::ops::DerefMut for crate::System::Reflection::AssemblyFileVersionAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -78,7 +78,7 @@ impl crate::System::Reflection::AssemblyFileVersionAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+AssemblyFileVersionAttribute")]
+#[cfg(feature = "cordl_class_System+Reflection+AssemblyFileVersionAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::AssemblyFileVersionAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

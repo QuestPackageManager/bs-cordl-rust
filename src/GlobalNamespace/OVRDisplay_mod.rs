@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRDisplay")]
+#[cfg(feature = "cordl_class_OVRDisplay")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRDisplay {
@@ -14,7 +14,7 @@ pub struct OVRDisplay {
     pub localTrackingSpaceRecenterCount: i32,
     pub RecenteredPose: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "OVRDisplay")]
+#[cfg(feature = "cordl_class_OVRDisplay")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRDisplay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRDisplay {
         false
     }
 }
-#[cfg(feature = "OVRDisplay")]
+#[cfg(feature = "cordl_class_OVRDisplay")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRDisplay {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRDisplay")]
+#[cfg(feature = "cordl_class_OVRDisplay")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRDisplay {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -491,7 +491,7 @@ impl crate::GlobalNamespace::OVRDisplay {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRDisplay")]
+#[cfg(feature = "cordl_class_OVRDisplay")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDisplay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -500,7 +500,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDisplay {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRDisplay+EyeFov")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeFov")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDisplay_EyeFov {
@@ -509,7 +509,7 @@ pub struct OVRDisplay_EyeFov {
     pub LeftFov: f32,
     pub RightFov: f32,
 }
-#[cfg(feature = "OVRDisplay+EyeFov")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeFov")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRDisplay_EyeFov {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -538,7 +538,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRDisplay_E
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRDisplay+EyeFov")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeFov")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDisplay_EyeFov {
     type Type = Self;
@@ -549,7 +549,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeFov {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRDisplay+EyeFov")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeFov")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDisplay_EyeFov {
     type Actual = Self;
@@ -563,7 +563,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeFov {
         self
     }
 }
-#[cfg(feature = "OVRDisplay+EyeFov")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeFov")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDisplay_EyeFov {
     type Type = Self;
@@ -578,7 +578,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeFov {
         }
     }
 }
-#[cfg(feature = "OVRDisplay+EyeFov")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeFov")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRDisplay_EyeFov {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -591,7 +591,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRDisplay
         actual
     }
 }
-#[cfg(feature = "OVRDisplay+EyeFov")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeFov")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRDisplay_EyeFov {
     type Type = Self;
@@ -604,7 +604,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeFov {
 }
 #[cfg(feature = "OVRDisplay+EyeFov")]
 impl crate::GlobalNamespace::OVRDisplay_EyeFov {}
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeRenderDesc")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDisplay_EyeRenderDesc {
@@ -612,7 +612,7 @@ pub struct OVRDisplay_EyeRenderDesc {
     pub fov: crate::UnityEngine::Vector2,
     pub fullFov: crate::GlobalNamespace::OVRDisplay_EyeFov,
 }
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeRenderDesc")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
     type Held<'a> = Self;
@@ -642,7 +642,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeRenderDesc")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
     type Type = Self;
@@ -653,7 +653,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeRenderDesc")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
     type Actual = Self;
@@ -667,7 +667,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
         self
     }
 }
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeRenderDesc")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
     type Type = Self;
@@ -682,7 +682,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
         }
     }
 }
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeRenderDesc")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
     type Actual = Self;
@@ -696,7 +696,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
         actual
     }
 }
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+#[cfg(feature = "cordl_class_OVRDisplay+EyeRenderDesc")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
     type Type = Self;
@@ -709,7 +709,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
 }
 #[cfg(feature = "OVRDisplay+EyeRenderDesc")]
 impl crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {}
-#[cfg(feature = "OVRDisplay+LatencyData")]
+#[cfg(feature = "cordl_class_OVRDisplay+LatencyData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDisplay_LatencyData {
@@ -719,7 +719,7 @@ pub struct OVRDisplay_LatencyData {
     pub renderError: f32,
     pub timeWarpError: f32,
 }
-#[cfg(feature = "OVRDisplay+LatencyData")]
+#[cfg(feature = "cordl_class_OVRDisplay+LatencyData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRDisplay_LatencyData {
     type Held<'a> = Self;
@@ -749,7 +749,7 @@ for crate::GlobalNamespace::OVRDisplay_LatencyData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRDisplay+LatencyData")]
+#[cfg(feature = "cordl_class_OVRDisplay+LatencyData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDisplay_LatencyData {
     type Type = Self;
@@ -760,7 +760,7 @@ for crate::GlobalNamespace::OVRDisplay_LatencyData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRDisplay+LatencyData")]
+#[cfg(feature = "cordl_class_OVRDisplay+LatencyData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDisplay_LatencyData {
     type Actual = Self;
@@ -774,7 +774,7 @@ for crate::GlobalNamespace::OVRDisplay_LatencyData {
         self
     }
 }
-#[cfg(feature = "OVRDisplay+LatencyData")]
+#[cfg(feature = "cordl_class_OVRDisplay+LatencyData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDisplay_LatencyData {
     type Type = Self;
@@ -789,7 +789,7 @@ for crate::GlobalNamespace::OVRDisplay_LatencyData {
         }
     }
 }
-#[cfg(feature = "OVRDisplay+LatencyData")]
+#[cfg(feature = "cordl_class_OVRDisplay+LatencyData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDisplay_LatencyData {
     type Actual = Self;
@@ -803,7 +803,7 @@ for crate::GlobalNamespace::OVRDisplay_LatencyData {
         actual
     }
 }
-#[cfg(feature = "OVRDisplay+LatencyData")]
+#[cfg(feature = "cordl_class_OVRDisplay+LatencyData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRDisplay_LatencyData {
     type Type = Self;

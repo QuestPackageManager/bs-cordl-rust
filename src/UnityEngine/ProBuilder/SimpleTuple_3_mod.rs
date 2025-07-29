@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SimpleTuple_3")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SimpleTuple_3<
@@ -13,7 +13,7 @@ pub struct SimpleTuple_3<
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
     __cordl_phantom_T3: std::marker::PhantomData<T3>,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -63,7 +63,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -78,7 +78,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -96,7 +96,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -115,7 +115,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -133,7 +133,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

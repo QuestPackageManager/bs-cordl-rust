@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NativeArrayOptions {
@@ -6,7 +6,7 @@ pub enum NativeArrayOptions {
     ClearMemory = 1i32,
     UninitializedMemory = 0i32,
 }
-#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::NativeArrayOptions {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::Unity::Collections::NativeArrayOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Collections::NativeArrayOptions {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::Unity::Collections::NativeArrayOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::NativeArrayOptions {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::Unity::Collections::NativeArrayOptions {
         self
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Collections::NativeArrayOptions {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::Unity::Collections::NativeArrayOptions {
         }
     }
 }
-#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Collections::NativeArrayOptions {
     type Actual = Self;

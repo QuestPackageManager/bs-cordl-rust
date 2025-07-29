@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+HelpBoxMessageType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBoxMessageType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HelpBoxMessageType {
@@ -8,7 +8,7 @@ pub enum HelpBoxMessageType {
     None = 0i32,
     Warning = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBoxMessageType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBoxMessageType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::HelpBoxMessageType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::UIElements::HelpBoxMessageType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBoxMessageType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBoxMessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::HelpBoxMessageType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::HelpBoxMessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBoxMessageType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBoxMessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::HelpBoxMessageType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::HelpBoxMessageType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBoxMessageType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBoxMessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::HelpBoxMessageType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::HelpBoxMessageType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+HelpBoxMessageType")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBoxMessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::HelpBoxMessageType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+ProductList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ProductList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProductList {
@@ -6,7 +6,7 @@ pub struct ProductList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Product>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+Models+ProductList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ProductList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::ProductList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::Models::ProductList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+ProductList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ProductList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::ProductList {
     type Target = crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Product>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::Models::ProductList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+ProductList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ProductList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::ProductList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::Oculus::Platform::Models::ProductList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+ProductList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+ProductList")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Models::ProductList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

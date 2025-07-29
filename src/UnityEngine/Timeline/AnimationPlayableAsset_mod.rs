@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationPlayableAsset {
@@ -15,7 +15,7 @@ pub struct AnimationPlayableAsset {
     pub m_Version: i32,
     pub m_Rotation: crate::UnityEngine::Quaternion,
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AnimationPlayableAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AnimationPlayableAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::AnimationPlayableAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -977,7 +977,7 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::AnimationPlayableAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1030,7 +1030,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset {
     }
 }
 #[cfg(
-    feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
+    feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1038,7 +1038,7 @@ pub struct AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
-    feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
+    feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
@@ -1060,7 +1060,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetU
     }
 }
 #[cfg(
-    feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
+    feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
@@ -1070,7 +1070,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetU
     }
 }
 #[cfg(
-    feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
+    feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
@@ -1113,7 +1113,7 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAsset
     }
 }
 #[cfg(
-    feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
+    feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
@@ -1124,7 +1124,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetU
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimationPlayableAsset_LoopMode {
@@ -1133,7 +1133,7 @@ pub enum AnimationPlayableAsset_LoopMode {
     On = 1i32,
     UseSourceAsset = 0i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Held<'a> = Self;
@@ -1163,7 +1163,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Type = Self;
@@ -1174,7 +1174,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Actual = Self;
@@ -1188,7 +1188,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Type = Self;
@@ -1203,7 +1203,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Actual = Self;
@@ -1217,7 +1217,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimationPlayableAsset_Versions {
@@ -1225,7 +1225,7 @@ pub enum AnimationPlayableAsset_Versions {
     Initial = 0i32,
     RotationAsEuler = 1i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Held<'a> = Self;
@@ -1255,7 +1255,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Type = Self;
@@ -1266,7 +1266,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Actual = Self;
@@ -1280,7 +1280,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Type = Self;
@@ -1295,7 +1295,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKQuaternion {
@@ -7,7 +7,7 @@ pub struct SDKQuaternion {
     pub z: f32,
     pub w: f32,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKQuaternion {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKQuaternio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKQuaternion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKQuate
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKQuaternion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::SDKQuat
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKQuaternion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKQuate
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKQuaternion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKQuatern
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKQuaternion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::LIV::SDK::Unity::SDKQuaternion {
     type Type = Self;

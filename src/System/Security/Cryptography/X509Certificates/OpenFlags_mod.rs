@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+OpenFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+OpenFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OpenFlags {
@@ -9,7 +9,7 @@ pub enum OpenFlags {
     ReadOnly = 0i32,
     ReadWrite = 1i32,
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+OpenFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+OpenFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+OpenFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+OpenFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+OpenFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+OpenFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+OpenFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+OpenFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+X509Certificates+OpenFlags")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+OpenFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::OpenFlags {
     type Actual = Self;

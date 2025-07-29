@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+SliderDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SliderDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SliderDirection {
@@ -6,7 +6,7 @@ pub enum SliderDirection {
     Horizontal = 0i32,
     Vertical = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+SliderDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SliderDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::SliderDirection {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::UIElements::SliderDirection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SliderDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SliderDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::SliderDirection {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::SliderDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SliderDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SliderDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::SliderDirection {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::SliderDirection {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SliderDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SliderDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::SliderDirection {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::SliderDirection {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+SliderDirection")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+SliderDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::SliderDirection {
     type Actual = Self;

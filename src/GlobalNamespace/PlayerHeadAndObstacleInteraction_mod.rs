@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerHeadAndObstacleInteraction")]
+#[cfg(feature = "cordl_class_PlayerHeadAndObstacleInteraction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerHeadAndObstacleInteraction {
@@ -23,7 +23,7 @@ pub struct PlayerHeadAndObstacleInteraction {
     >,
     pub _prevFrameNumberOfIntersectingObstaclesCount: i32,
 }
-#[cfg(feature = "PlayerHeadAndObstacleInteraction")]
+#[cfg(feature = "cordl_class_PlayerHeadAndObstacleInteraction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
         false
     }
 }
-#[cfg(feature = "PlayerHeadAndObstacleInteraction")]
+#[cfg(feature = "cordl_class_PlayerHeadAndObstacleInteraction")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerHeadAndObstacleInteraction")]
+#[cfg(feature = "cordl_class_PlayerHeadAndObstacleInteraction")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -275,7 +275,7 @@ impl crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerHeadAndObstacleInteraction")]
+#[cfg(feature = "cordl_class_PlayerHeadAndObstacleInteraction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

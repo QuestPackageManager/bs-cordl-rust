@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+RichTextTagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+RichTextTagAttribute")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RichTextTagAttribute {
@@ -9,7 +9,7 @@ pub struct RichTextTagAttribute {
     pub valueLength: i32,
     pub unitType: crate::TMPro::TagUnitType,
 }
-#[cfg(feature = "TMPro+RichTextTagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+RichTextTagAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::RichTextTagAttribute {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::RichTextTagAttribute {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+RichTextTagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+RichTextTagAttribute")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::RichTextTagAttribute {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::RichTextTagAttribu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+RichTextTagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+RichTextTagAttribute")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::RichTextTagAttribute {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::RichTextTagAttrib
         self
     }
 }
-#[cfg(feature = "TMPro+RichTextTagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+RichTextTagAttribute")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::RichTextTagAttribute {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::RichTextTagAttribu
         }
     }
 }
-#[cfg(feature = "TMPro+RichTextTagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+RichTextTagAttribute")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::RichTextTagAttribute {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::RichTextTagAttribute
         actual
     }
 }
-#[cfg(feature = "TMPro+RichTextTagAttribute")]
+#[cfg(feature = "cordl_class_TMPro+RichTextTagAttribute")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::RichTextTagAttribute {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

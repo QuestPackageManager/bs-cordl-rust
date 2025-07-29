@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+SingletonIdentity")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+SingletonIdentity")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SingletonIdentity {
     __cordl_parent: crate::System::Runtime::Remoting::ServerIdentity,
 }
-#[cfg(feature = "System+Runtime+Remoting+SingletonIdentity")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+SingletonIdentity")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::SingletonIdentity {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::SingletonIdentity {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+SingletonIdentity")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+SingletonIdentity")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::SingletonIdentity {
     type Target = crate::System::Runtime::Remoting::ServerIdentity;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+SingletonIdentity")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+SingletonIdentity")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::SingletonIdentity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -196,7 +196,7 @@ impl crate::System::Runtime::Remoting::SingletonIdentity {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+SingletonIdentity")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+SingletonIdentity")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::SingletonIdentity {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

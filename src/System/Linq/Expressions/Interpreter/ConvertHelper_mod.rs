@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ConvertHelper")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ConvertHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConvertHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ConvertHelper")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ConvertHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::ConvertHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Linq::Expressions::Interpreter::ConvertHelper {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ConvertHelper")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ConvertHelper")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::ConvertHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ConvertHelper")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ConvertHelper")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::ConvertHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -64,7 +64,7 @@ impl crate::System::Linq::Expressions::Interpreter::ConvertHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+ConvertHelper")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ConvertHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ConvertHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

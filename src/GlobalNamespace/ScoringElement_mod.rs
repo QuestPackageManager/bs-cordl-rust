@@ -1,4 +1,4 @@
-#[cfg(feature = "ScoringElement")]
+#[cfg(feature = "cordl_class_ScoringElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoringElement {
@@ -10,7 +10,7 @@ pub struct ScoringElement {
     pub _maxMultiplier_k__BackingField: i32,
     pub _isFinished_k__BackingField: bool,
 }
-#[cfg(feature = "ScoringElement")]
+#[cfg(feature = "cordl_class_ScoringElement")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoringElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoringEleme
         false
     }
 }
-#[cfg(feature = "ScoringElement")]
+#[cfg(feature = "cordl_class_ScoringElement")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoringElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScoringElement")]
+#[cfg(feature = "cordl_class_ScoringElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoringElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -462,7 +462,7 @@ impl crate::GlobalNamespace::ScoringElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScoringElement")]
+#[cfg(feature = "cordl_class_ScoringElement")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoringElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -499,14 +499,14 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "ScoringElement+Pool_1")]
+#[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoringElement_Pool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::MemoryPool_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "ScoringElement+Pool_1")]
+#[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -539,7 +539,7 @@ for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
         false
     }
 }
-#[cfg(feature = "ScoringElement+Pool_1")]
+#[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
     type Target = crate::Zenject::MemoryPool_1<T>;
@@ -547,7 +547,7 @@ for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScoringElement+Pool_1")]
+#[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -621,7 +621,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ScoringElement_Pool
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScoringElement+Pool_1")]
+#[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

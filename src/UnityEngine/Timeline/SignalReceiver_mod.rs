@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalReceiver {
@@ -7,7 +7,7 @@ pub struct SignalReceiver {
         crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue,
     >,
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::SignalReceiver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::Timeline::SignalReceiver {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::SignalReceiver {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::SignalReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -460,7 +460,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::SignalReceiver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -483,7 +483,7 @@ for crate::UnityEngine::Timeline::SignalReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalReceiver_EventKeyValue {
@@ -499,7 +499,7 @@ pub struct SignalReceiver_EventKeyValue {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -519,14 +519,14 @@ for crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -763,7 +763,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

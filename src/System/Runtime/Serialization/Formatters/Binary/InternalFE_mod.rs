@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalFE")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalFE")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalFE {
@@ -8,7 +8,7 @@ pub struct InternalFE {
     pub FEsecurityLevel: crate::System::Runtime::Serialization::Formatters::TypeFilterLevel,
     pub FEserializerTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalFE")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalFE")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalFE {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalFE {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalFE")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalFE")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalFE {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -36,7 +36,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalFE {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalFE")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalFE")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalFE {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -74,7 +74,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::InternalFE {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalFE")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalFE")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalFE {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

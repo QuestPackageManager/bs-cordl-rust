@@ -1,10 +1,10 @@
-#[cfg(feature = "TubeLightTrack")]
+#[cfg(feature = "cordl_class_TubeLightTrack")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeLightTrack {
     __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
 }
-#[cfg(feature = "TubeLightTrack")]
+#[cfg(feature = "cordl_class_TubeLightTrack")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TubeLightTrack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TubeLightTra
         false
     }
 }
-#[cfg(feature = "TubeLightTrack")]
+#[cfg(feature = "cordl_class_TubeLightTrack")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeLightTrack {
     type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TubeLightTrack")]
+#[cfg(feature = "cordl_class_TubeLightTrack")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TubeLightTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::TubeLightTrack {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TubeLightTrack")]
+#[cfg(feature = "cordl_class_TubeLightTrack")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TubeLightTrack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

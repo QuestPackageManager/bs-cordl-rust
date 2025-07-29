@@ -1,4 +1,4 @@
-#[cfg(feature = "IntervalTree+RangeValuePair_2")]
+#[cfg(feature = "cordl_class_IntervalTree+RangeValuePair_2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RangeValuePair_2<
@@ -11,7 +11,7 @@ pub struct RangeValuePair_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "IntervalTree+RangeValuePair_2")]
+#[cfg(feature = "cordl_class_IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ unsafe impl<
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IntervalTree+RangeValuePair_2")]
+#[cfg(feature = "cordl_class_IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -73,7 +73,7 @@ for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IntervalTree+RangeValuePair_2")]
+#[cfg(feature = "cordl_class_IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -90,7 +90,7 @@ for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
         self
     }
 }
-#[cfg(feature = "IntervalTree+RangeValuePair_2")]
+#[cfg(feature = "cordl_class_IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -108,7 +108,7 @@ for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
         }
     }
 }
-#[cfg(feature = "IntervalTree+RangeValuePair_2")]
+#[cfg(feature = "cordl_class_IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -124,7 +124,7 @@ unsafe impl<
         actual
     }
 }
-#[cfg(feature = "IntervalTree+RangeValuePair_2")]
+#[cfg(feature = "cordl_class_IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -688,7 +688,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -698,14 +698,14 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MemoryHelpers_BitRegion {
     pub bitOffset: u32,
     pub sizeInBits: u32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
     type Held<'a> = Self;
@@ -735,7 +735,7 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
     type Type = Self;
@@ -746,7 +746,7 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
     type Actual = Self;
@@ -760,7 +760,7 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
     type Type = Self;
@@ -775,7 +775,7 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
     type Actual = Self;
@@ -789,7 +789,7 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
     type Type = Self;

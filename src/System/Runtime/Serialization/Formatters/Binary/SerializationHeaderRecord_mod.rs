@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -14,7 +14,7 @@ pub struct SerializationHeaderRecord {
     pub minorVersion: i32,
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHeaderRecord {
@@ -36,7 +36,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHead
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHeaderRecord {
@@ -46,7 +46,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHead
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHeaderRecord {
@@ -256,7 +256,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::SerializationHea
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHeaderRecord {

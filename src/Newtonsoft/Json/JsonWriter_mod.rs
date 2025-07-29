@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+JsonWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonWriter {
@@ -22,7 +22,7 @@ pub struct JsonWriter {
     >,
     pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonWriter 
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonWriter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5849,7 +5849,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::JsonWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -5870,7 +5870,7 @@ impl AsMut<crate::System::IDisposable> for crate::Newtonsoft::Json::JsonWriter {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonWriter_State {
@@ -5886,7 +5886,7 @@ pub enum JsonWriter_State {
     Property = 1i32,
     Start = 0i32,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonWriter_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -5915,7 +5915,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonWriter_
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter_State {
     type Type = Self;
@@ -5926,7 +5926,7 @@ for crate::Newtonsoft::Json::JsonWriter_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter_State {
     type Actual = Self;
@@ -5940,7 +5940,7 @@ for crate::Newtonsoft::Json::JsonWriter_State {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter_State {
     type Type = Self;
@@ -5955,7 +5955,7 @@ for crate::Newtonsoft::Json::JsonWriter_State {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::JsonWriter_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -5968,7 +5968,9 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::JsonWrite
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
@@ -5980,7 +5982,9 @@ pub struct JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     pub CancellationToken: crate::System::Threading::CancellationToken,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Held<'a> = Self;
@@ -6010,7 +6014,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Type = Self;
@@ -6021,7 +6027,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Actual = Self;
@@ -6035,7 +6043,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Type = Self;
@@ -6050,7 +6060,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Actual = Self;
@@ -6064,7 +6076,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
+#[cfg(
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Type = Self;
@@ -6146,7 +6160,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -6161,7 +6175,7 @@ pub struct JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
@@ -6193,7 +6207,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
@@ -6206,7 +6220,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
@@ -6222,7 +6236,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
@@ -6239,7 +6253,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
@@ -6255,7 +6269,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
@@ -6344,7 +6358,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -6359,7 +6373,7 @@ pub struct JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
@@ -6391,7 +6405,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
@@ -6404,7 +6418,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
@@ -6420,7 +6434,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
@@ -6437,7 +6451,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
@@ -6453,7 +6467,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
@@ -6542,7 +6556,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -6556,7 +6570,7 @@ pub struct JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
@@ -6588,7 +6602,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
@@ -6601,7 +6615,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
@@ -6617,7 +6631,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
@@ -6634,7 +6648,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
@@ -6650,7 +6664,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
     }
 }
 #[cfg(
-    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+    feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {

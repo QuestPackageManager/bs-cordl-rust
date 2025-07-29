@@ -1,4 +1,4 @@
-#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo+CellType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CellInfo_NetworkPlayersTableView_CellType {
@@ -7,7 +7,7 @@ pub enum CellInfo_NetworkPlayersTableView_CellType {
     Options = 2i32,
     Player = 1i32,
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
         self
     }
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
         }
     }
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
         actual
     }
 }
-#[cfg(feature = "NetworkPlayersTableView")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayersTableView {
@@ -120,7 +120,7 @@ pub struct NetworkPlayersTableView {
     >,
     pub _selectedCellHasOptions: bool,
 }
-#[cfg(feature = "NetworkPlayersTableView")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkPlayersTableView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -140,14 +140,14 @@ for crate::GlobalNamespace::NetworkPlayersTableView {
         false
     }
 }
-#[cfg(feature = "NetworkPlayersTableView")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayersTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkPlayersTableView")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayersTableView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -415,7 +415,7 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkPlayersTableView")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetworkPlayersTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -439,7 +439,7 @@ for crate::GlobalNamespace::NetworkPlayersTableView {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayersTableView_CellInfo {
@@ -449,7 +449,7 @@ pub struct NetworkPlayersTableView_CellInfo {
     pub player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
     pub lastCellInParty: bool,
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -469,14 +469,14 @@ for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
         false
     }
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -515,7 +515,7 @@ impl crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkPlayersTableView+CellInfo")]
+#[cfg(feature = "cordl_class_NetworkPlayersTableView+CellInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

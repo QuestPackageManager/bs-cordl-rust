@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Events+UnityEvent_4")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_4")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityEvent_4<
@@ -18,7 +18,7 @@ pub struct UnityEvent_4<
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
     __cordl_phantom_T3: std::marker::PhantomData<T3>,
 }
-#[cfg(feature = "UnityEngine+Events+UnityEvent_4")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_4")]
 unsafe impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ for crate::UnityEngine::Events::UnityEvent_4<T0, T1, T2, T3> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEvent_4")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_4")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -71,7 +71,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEvent_4")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_4")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -228,7 +228,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Events+UnityEvent_4")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_4")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,

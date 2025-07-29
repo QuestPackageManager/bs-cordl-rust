@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Collections+DeallocateOnJobCompletionAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+DeallocateOnJobCompletionAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeallocateOnJobCompletionAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Collections+DeallocateOnJobCompletionAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+DeallocateOnJobCompletionAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::DeallocateOnJobCompletionAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Collections::DeallocateOnJobCompletionAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+DeallocateOnJobCompletionAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+DeallocateOnJobCompletionAttribute")]
 impl std::ops::Deref for crate::Unity::Collections::DeallocateOnJobCompletionAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+DeallocateOnJobCompletionAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+DeallocateOnJobCompletionAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::DeallocateOnJobCompletionAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -40,7 +40,7 @@ for crate::Unity::Collections::DeallocateOnJobCompletionAttribute {
 }
 #[cfg(feature = "Unity+Collections+DeallocateOnJobCompletionAttribute")]
 impl crate::Unity::Collections::DeallocateOnJobCompletionAttribute {}
-#[cfg(feature = "Unity+Collections+DeallocateOnJobCompletionAttribute")]
+#[cfg(feature = "cordl_class_Unity+Collections+DeallocateOnJobCompletionAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::DeallocateOnJobCompletionAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

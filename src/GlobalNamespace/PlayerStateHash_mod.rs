@@ -1,10 +1,10 @@
-#[cfg(feature = "PlayerStateHash")]
+#[cfg(feature = "cordl_class_PlayerStateHash")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerStateHash {
     pub _bloomFilter: crate::GlobalNamespace::BitMask128,
 }
-#[cfg(feature = "PlayerStateHash")]
+#[cfg(feature = "cordl_class_PlayerStateHash")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerStateHash {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerStateH
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlayerStateHash")]
+#[cfg(feature = "cordl_class_PlayerStateHash")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::PlayerStateHash {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::PlayerSt
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlayerStateHash")]
+#[cfg(feature = "cordl_class_PlayerStateHash")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerStateHash {
     type Actual = Self;
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::PlayerStateHash {
         self
     }
 }
-#[cfg(feature = "PlayerStateHash")]
+#[cfg(feature = "cordl_class_PlayerStateHash")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::PlayerStateHash {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::PlayerSt
         }
     }
 }
-#[cfg(feature = "PlayerStateHash")]
+#[cfg(feature = "cordl_class_PlayerStateHash")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PlayerStateHash {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PlayerStat
         actual
     }
 }
-#[cfg(feature = "PlayerStateHash")]
+#[cfg(feature = "cordl_class_PlayerStateHash")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PlayerStateHash {
     type Type = Self;

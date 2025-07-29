@@ -1,4 +1,4 @@
-#[cfg(feature = "UnifiedNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnifiedNetworkPlayerModel {
@@ -44,7 +44,7 @@ pub struct UnifiedNetworkPlayerModel {
     >,
     pub _activeNetworkPlayerModelType: crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType,
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -64,14 +64,14 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
         false
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1549,7 +1549,7 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1615,7 +1615,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
@@ -1623,7 +1623,7 @@ pub enum UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     GameLift = 0i32,
     Platform = 1i32,
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Held<'a> = Self;
@@ -1653,7 +1653,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Type = Self;
@@ -1664,7 +1664,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Actual = Self;
@@ -1678,7 +1678,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
         self
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Type = Self;
@@ -1693,7 +1693,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
         }
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Actual = Self;
@@ -1707,7 +1707,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
         actual
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
@@ -1717,7 +1717,7 @@ pub struct UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
     pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1737,7 +1737,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig
         false
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
 impl std::ops::Deref
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1745,7 +1745,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1783,7 +1783,7 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfi
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1821,7 +1821,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+StartClientPartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnifiedNetworkPlayerModel_StartClientPartyConfig {
@@ -1829,7 +1829,7 @@ pub struct UnifiedNetworkPlayerModel_StartClientPartyConfig {
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+StartClientPartyConfig")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1849,7 +1849,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
         false
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+StartClientPartyConfig")]
 impl std::ops::Deref
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1857,7 +1857,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+StartClientPartyConfig")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1895,7 +1895,7 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+StartClientPartyConfig")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

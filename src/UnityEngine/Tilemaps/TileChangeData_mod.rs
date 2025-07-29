@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Tilemaps+TileChangeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileChangeData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TileChangeData {
@@ -7,7 +7,7 @@ pub struct TileChangeData {
     pub m_Color: crate::UnityEngine::Color,
     pub m_Transform: crate::UnityEngine::Matrix4x4,
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileChangeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileChangeData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Tilemaps::TileChangeData {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::Tilemaps::TileChangeData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileChangeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileChangeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Tilemaps::TileChangeData {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Tilemaps::TileChangeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileChangeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileChangeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Tilemaps::TileChangeData {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::Tilemaps::TileChangeData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileChangeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileChangeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Tilemaps::TileChangeData {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::Tilemaps::TileChangeData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileChangeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileChangeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Tilemaps::TileChangeData {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::Tilemaps::TileChangeData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Tilemaps+TileChangeData")]
+#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+TileChangeData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Tilemaps::TileChangeData {
     type Type = Self;

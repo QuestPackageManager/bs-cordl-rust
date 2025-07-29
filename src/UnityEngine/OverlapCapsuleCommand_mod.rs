@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+OverlapCapsuleCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapCapsuleCommand")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OverlapCapsuleCommand {
@@ -8,7 +8,7 @@ pub struct OverlapCapsuleCommand {
     pub _physicsScene_k__BackingField: crate::UnityEngine::PhysicsScene,
     pub queryParameters: crate::UnityEngine::QueryParameters,
 }
-#[cfg(feature = "UnityEngine+OverlapCapsuleCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapCapsuleCommand")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::OverlapCapsuleCommand {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::OverlapCapsuleCo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+OverlapCapsuleCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapCapsuleCommand")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::OverlapCapsuleCommand {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::OverlapCapsuleCommand {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+OverlapCapsuleCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapCapsuleCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::OverlapCapsuleCommand {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::OverlapCapsuleCommand {
         self
     }
 }
-#[cfg(feature = "UnityEngine+OverlapCapsuleCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapCapsuleCommand")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::OverlapCapsuleCommand {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::OverlapCapsuleCommand {
         }
     }
 }
-#[cfg(feature = "UnityEngine+OverlapCapsuleCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapCapsuleCommand")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::OverlapCapsuleCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::OverlapCapsule
         actual
     }
 }
-#[cfg(feature = "UnityEngine+OverlapCapsuleCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapCapsuleCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::OverlapCapsuleCommand {
     type Type = Self;

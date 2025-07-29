@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassBackgroundLightWithId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundLightWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundLightWithId {
@@ -7,7 +7,7 @@ pub struct BloomPrePassBackgroundLightWithId {
         crate::GlobalNamespace::BloomPrePassBackgroundColor,
     >,
 }
-#[cfg(feature = "BloomPrePassBackgroundLightWithId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundLightWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
         false
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundLightWithId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundLightWithId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassBackgroundLightWithId")]
+#[cfg(feature = "cordl_class_BloomPrePassBackgroundLightWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

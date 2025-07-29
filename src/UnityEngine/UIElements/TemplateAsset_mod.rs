@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TemplateAsset {
@@ -15,7 +15,7 @@ pub struct TemplateAsset {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TemplateAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::UnityEngine::UIElements::TemplateAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TemplateAsset {
     type Target = crate::UnityEngine::UIElements::VisualElementAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TemplateAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -127,7 +127,7 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TemplateAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -137,7 +137,7 @@ for crate::UnityEngine::UIElements::TemplateAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TemplateAsset_AttributeOverride {
@@ -145,7 +145,7 @@ pub struct TemplateAsset_AttributeOverride {
     pub m_AttributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
     type Held<'a> = Self;
@@ -175,7 +175,7 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
     type Type = Self;
@@ -186,7 +186,7 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
     type Actual = Self;
@@ -200,7 +200,7 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
     type Type = Self;
@@ -215,7 +215,7 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
     type Actual = Self;
@@ -229,7 +229,7 @@ for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
     type Type = Self;

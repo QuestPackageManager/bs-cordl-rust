@@ -1,4 +1,4 @@
-#[cfg(feature = "GameplayModifiersDropdown")]
+#[cfg(feature = "cordl_class_GameplayModifiersDropdown")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersDropdown {
@@ -21,7 +21,7 @@ pub struct GameplayModifiersDropdown {
         >,
     >,
 }
-#[cfg(feature = "GameplayModifiersDropdown")]
+#[cfg(feature = "cordl_class_GameplayModifiersDropdown")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameplayModifiersDropdown {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::GlobalNamespace::GameplayModifiersDropdown {
         false
     }
 }
-#[cfg(feature = "GameplayModifiersDropdown")]
+#[cfg(feature = "cordl_class_GameplayModifiersDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersDropdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameplayModifiersDropdown")]
+#[cfg(feature = "cordl_class_GameplayModifiersDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -387,7 +387,7 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameplayModifiersDropdown")]
+#[cfg(feature = "cordl_class_GameplayModifiersDropdown")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayModifiersDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

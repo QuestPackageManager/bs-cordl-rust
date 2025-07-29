@@ -1,4 +1,4 @@
-#[cfg(feature = "SelectableCellSelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableCellSelectableStateController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectableCellSelectableStateController {
@@ -6,7 +6,7 @@ pub struct SelectableCellSelectableStateController {
         quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
     >,
 }
-#[cfg(feature = "SelectableCellSelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableCellSelectableStateController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectableCellSelectableStateController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::SelectableCellSelectableStateController {
         false
     }
 }
-#[cfg(feature = "SelectableCellSelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableCellSelectableStateController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SelectableCellSelectableStateController {
     type Target = crate::GlobalNamespace::SelectableStateController_1<
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::SelectableCellSelectableStateController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SelectableCellSelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableCellSelectableStateController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SelectableCellSelectableStateController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -238,7 +238,7 @@ impl crate::GlobalNamespace::SelectableCellSelectableStateController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SelectableCellSelectableStateController")]
+#[cfg(feature = "cordl_class_SelectableCellSelectableStateController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SelectableCellSelectableStateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

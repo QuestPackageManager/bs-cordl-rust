@@ -1,4 +1,4 @@
-#[cfg(feature = "SonyAchievementIdsModelSO")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyAchievementIdsModelSO {
@@ -23,7 +23,7 @@ pub struct SonyAchievementIdsModelSO {
         >,
     >,
 }
-#[cfg(feature = "SonyAchievementIdsModelSO")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SonyAchievementIdsModelSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::GlobalNamespace::SonyAchievementIdsModelSO {
         false
     }
 }
-#[cfg(feature = "SonyAchievementIdsModelSO")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyAchievementIdsModelSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SonyAchievementIdsModelSO")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyAchievementIdsModelSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -250,7 +250,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SonyAchievementIdsModelSO")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SonyAchievementIdsModelSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -260,7 +260,7 @@ for crate::GlobalNamespace::SonyAchievementIdsModelSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO+AchievementIdData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyAchievementIdsModelSO_AchievementIdData {
@@ -268,7 +268,7 @@ pub struct SonyAchievementIdsModelSO_AchievementIdData {
     pub _trophyId: i32,
     pub _achievement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
 }
-#[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO+AchievementIdData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -288,7 +288,7 @@ for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
         false
     }
 }
-#[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO+AchievementIdData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -296,7 +296,7 @@ for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO+AchievementIdData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -405,7 +405,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
+#[cfg(feature = "cordl_class_SonyAchievementIdsModelSO+AchievementIdData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

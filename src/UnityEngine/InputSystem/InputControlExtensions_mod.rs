@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControlExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::InputControlExtensions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControlExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputControlExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1694,7 +1694,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputControlExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1704,7 +1704,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+ControlBuilder"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlExtensions_ControlBuilder {
@@ -1712,7 +1714,9 @@ pub struct InputControlExtensions_ControlBuilder {
         crate::UnityEngine::InputSystem::InputControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     type Held<'a> = Self;
@@ -1742,7 +1746,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     type Type = Self;
@@ -1753,7 +1759,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     type Actual = Self;
@@ -1767,7 +1775,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     type Type = Self;
@@ -1782,7 +1792,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     type Actual = Self;
@@ -1796,7 +1808,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     type Type = Self;
@@ -2385,7 +2399,9 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlExtensions_DeviceBuilder {
@@ -2393,7 +2409,9 @@ pub struct InputControlExtensions_DeviceBuilder {
         crate::UnityEngine::InputSystem::InputDevice,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     type Held<'a> = Self;
@@ -2423,7 +2441,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     type Type = Self;
@@ -2434,7 +2454,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     type Actual = Self;
@@ -2448,7 +2470,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     type Type = Self;
@@ -2463,7 +2487,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     type Actual = Self;
@@ -2477,7 +2503,9 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     type Type = Self;
@@ -2905,7 +2933,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControlExtensions_Enumerate {
@@ -2916,7 +2944,7 @@ pub enum InputControlExtensions_Enumerate {
     IncludeNonLeafControls = 16i32,
     IncludeSyntheticControls = 4i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
     type Held<'a> = Self;
@@ -2946,7 +2974,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
     type Type = Self;
@@ -2957,7 +2985,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
     type Actual = Self;
@@ -2971,7 +2999,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
     type Type = Self;
@@ -2986,7 +3014,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
     type Actual = Self;
@@ -3001,7 +3029,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -3014,7 +3042,7 @@ pub struct InputControlExtensions_InputEventControlCollection {
     pub m_MagnitudeThreshold: f32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
@@ -3046,7 +3074,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
@@ -3059,7 +3087,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
@@ -3075,7 +3103,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
@@ -3092,7 +3120,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
@@ -3108,7 +3136,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
@@ -3303,7 +3331,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -3336,7 +3364,7 @@ pub struct InputControlExtensions_InputEventControlEnumerator {
     pub m_MagnitudeThreshold: f32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
@@ -3368,7 +3396,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
@@ -3381,7 +3409,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
@@ -3397,7 +3425,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
@@ -3414,7 +3442,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
@@ -3430,7 +3458,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnu
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {

@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -291,7 +291,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -315,14 +315,18 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinParameters_Builder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -342,7 +346,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -350,7 +356,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -752,7 +760,9 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

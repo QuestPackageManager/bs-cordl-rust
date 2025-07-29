@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSACryptoServiceProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSACryptoServiceProvider {
@@ -12,7 +12,7 @@ pub struct RSACryptoServiceProvider {
     pub m_disposed: bool,
     pub rsa: quest_hook::libil2cpp::Gc<crate::Mono::Security::Cryptography::RSAManaged>,
 }
-#[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSACryptoServiceProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::RSACryptoServiceProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,7 +32,7 @@ for crate::System::Security::Cryptography::RSACryptoServiceProvider {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSACryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSACryptoServiceProvider {
     type Target = crate::System::Security::Cryptography::RSA;
@@ -40,7 +40,7 @@ for crate::System::Security::Cryptography::RSACryptoServiceProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSACryptoServiceProvider")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RSACryptoServiceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -535,7 +535,7 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSACryptoServiceProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::RSACryptoServiceProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

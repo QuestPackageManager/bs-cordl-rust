@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+WebRequestPrefixElement")]
+#[cfg(feature = "cordl_class_System+Net+WebRequestPrefixElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequestPrefixElement {
@@ -7,7 +7,7 @@ pub struct WebRequestPrefixElement {
     pub creator: quest_hook::libil2cpp::Gc<crate::System::Net::IWebRequestCreate>,
     pub creatorType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Net+WebRequestPrefixElement")]
+#[cfg(feature = "cordl_class_System+Net+WebRequestPrefixElement")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebRequestPrefixElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebRequestPrefix
         false
     }
 }
-#[cfg(feature = "System+Net+WebRequestPrefixElement")]
+#[cfg(feature = "cordl_class_System+Net+WebRequestPrefixElement")]
 impl std::ops::Deref for crate::System::Net::WebRequestPrefixElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebRequestPrefixElement")]
+#[cfg(feature = "cordl_class_System+Net+WebRequestPrefixElement")]
 impl std::ops::DerefMut for crate::System::Net::WebRequestPrefixElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,7 +141,7 @@ impl crate::System::Net::WebRequestPrefixElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebRequestPrefixElement")]
+#[cfg(feature = "cordl_class_System+Net+WebRequestPrefixElement")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebRequestPrefixElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

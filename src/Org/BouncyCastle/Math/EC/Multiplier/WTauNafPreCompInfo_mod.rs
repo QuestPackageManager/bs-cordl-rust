@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WTauNafPreCompInfo {
@@ -11,7 +11,7 @@ pub struct WTauNafPreCompInfo {
         >,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +39,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -158,7 +158,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

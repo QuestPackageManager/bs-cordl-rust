@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+WebResponse")]
+#[cfg(feature = "cordl_class_System+Net+WebResponse")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebResponse {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub m_IsFromCache: bool,
 }
-#[cfg(feature = "System+Net+WebResponse")]
+#[cfg(feature = "cordl_class_System+Net+WebResponse")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebResponse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebResponse {
         false
     }
 }
-#[cfg(feature = "System+Net+WebResponse")]
+#[cfg(feature = "cordl_class_System+Net+WebResponse")]
 impl std::ops::Deref for crate::System::Net::WebResponse {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebResponse")]
+#[cfg(feature = "cordl_class_System+Net+WebResponse")]
 impl std::ops::DerefMut for crate::System::Net::WebResponse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -352,7 +352,7 @@ impl crate::System::Net::WebResponse {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebResponse")]
+#[cfg(feature = "cordl_class_System+Net+WebResponse")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebResponse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

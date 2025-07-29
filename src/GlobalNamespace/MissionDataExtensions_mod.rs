@@ -1,10 +1,10 @@
-#[cfg(feature = "MissionDataExtensions")]
+#[cfg(feature = "cordl_class_MissionDataExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionDataExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "MissionDataExtensions")]
+#[cfg(feature = "cordl_class_MissionDataExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionDataExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::MissionDataExtensions {
         false
     }
 }
-#[cfg(feature = "MissionDataExtensions")]
+#[cfg(feature = "cordl_class_MissionDataExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionDataExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionDataExtensions")]
+#[cfg(feature = "cordl_class_MissionDataExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionDataExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::MissionDataExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionDataExtensions")]
+#[cfg(feature = "cordl_class_MissionDataExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionDataExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

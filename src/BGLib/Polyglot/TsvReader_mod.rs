@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+Polyglot+TsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+TsvReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TsvReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+Polyglot+TsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+TsvReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::TsvReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::TsvReader {
         false
     }
 }
-#[cfg(feature = "BGLib+Polyglot+TsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+TsvReader")]
 impl std::ops::Deref for crate::BGLib::Polyglot::TsvReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+Polyglot+TsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+TsvReader")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::TsvReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -118,7 +118,7 @@ impl crate::BGLib::Polyglot::TsvReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BGLib+Polyglot+TsvReader")]
+#[cfg(feature = "cordl_class_BGLib+Polyglot+TsvReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::TsvReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

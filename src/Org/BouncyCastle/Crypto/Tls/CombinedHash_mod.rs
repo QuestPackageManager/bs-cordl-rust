@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+CombinedHash")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CombinedHash {
@@ -9,7 +9,7 @@ pub struct CombinedHash {
     pub mMd5: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub mSha1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+CombinedHash")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+CombinedHash")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+CombinedHash")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -522,7 +522,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+CombinedHash")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

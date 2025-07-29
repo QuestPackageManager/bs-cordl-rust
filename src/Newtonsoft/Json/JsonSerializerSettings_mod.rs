@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+JsonSerializerSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonSerializerSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerSettings {
@@ -95,7 +95,7 @@ pub struct JsonSerializerSettings {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonSerializerSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonSerializerSettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonSerializerSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -115,14 +115,14 @@ for crate::Newtonsoft::Json::JsonSerializerSettings {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonSerializerSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonSerializerSettings")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonSerializerSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonSerializerSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonSerializerSettings")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonSerializerSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1983,7 +1983,7 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonSerializerSettings")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonSerializerSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::JsonSerializerSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

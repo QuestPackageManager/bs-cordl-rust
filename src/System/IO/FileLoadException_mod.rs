@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+FileLoadException")]
+#[cfg(feature = "cordl_class_System+IO+FileLoadException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileLoadException {
@@ -10,7 +10,7 @@ pub struct FileLoadException {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+IO+FileLoadException")]
+#[cfg(feature = "cordl_class_System+IO+FileLoadException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileLoadException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileLoadException
         false
     }
 }
-#[cfg(feature = "System+IO+FileLoadException")]
+#[cfg(feature = "cordl_class_System+IO+FileLoadException")]
 impl std::ops::Deref for crate::System::IO::FileLoadException {
     type Target = crate::System::IO::IOException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+FileLoadException")]
+#[cfg(feature = "cordl_class_System+IO+FileLoadException")]
 impl std::ops::DerefMut for crate::System::IO::FileLoadException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -329,7 +329,7 @@ impl crate::System::IO::FileLoadException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+FileLoadException")]
+#[cfg(feature = "cordl_class_System+IO+FileLoadException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::FileLoadException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

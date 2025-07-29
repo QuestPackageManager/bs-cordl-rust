@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Array")]
+#[cfg(feature = "cordl_class_System+Array")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Array {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Array")]
+#[cfg(feature = "cordl_class_System+Array")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Array {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array {
         false
     }
 }
-#[cfg(feature = "System+Array")]
+#[cfg(feature = "cordl_class_System+Array")]
 impl std::ops::Deref for crate::System::Array {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Array")]
+#[cfg(feature = "cordl_class_System+Array")]
 impl std::ops::DerefMut for crate::System::Array {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4936,7 +4936,7 @@ impl crate::System::Array {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Array")]
+#[cfg(feature = "cordl_class_System+Array")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Array {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -5017,7 +5017,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Array {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Array+ArrayEnumerator")]
+#[cfg(feature = "cordl_class_System+Array+ArrayEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Array_ArrayEnumerator {
@@ -5026,7 +5026,7 @@ pub struct Array_ArrayEnumerator {
     pub _index: i32,
     pub _endIndex: i32,
 }
-#[cfg(feature = "System+Array+ArrayEnumerator")]
+#[cfg(feature = "cordl_class_System+Array+ArrayEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_ArrayEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -5045,14 +5045,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_ArrayEnumerator
         false
     }
 }
-#[cfg(feature = "System+Array+ArrayEnumerator")]
+#[cfg(feature = "cordl_class_System+Array+ArrayEnumerator")]
 impl std::ops::Deref for crate::System::Array_ArrayEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Array+ArrayEnumerator")]
+#[cfg(feature = "cordl_class_System+Array+ArrayEnumerator")]
 impl std::ops::DerefMut for crate::System::Array_ArrayEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5188,7 +5188,7 @@ impl crate::System::Array_ArrayEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Array+ArrayEnumerator")]
+#[cfg(feature = "cordl_class_System+Array+ArrayEnumerator")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Array_ArrayEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -5223,14 +5223,14 @@ impl AsMut<crate::System::ICloneable> for crate::System::Array_ArrayEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+EmptyInternalEnumerator_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Array_EmptyInternalEnumerator_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+EmptyInternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5266,7 +5266,7 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
         false
     }
 }
-#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+EmptyInternalEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -5274,7 +5274,7 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+EmptyInternalEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5445,7 +5445,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Array_EmptyInternalEnumerato
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+EmptyInternalEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5501,7 +5501,7 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+InternalEnumerator_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Array_InternalEnumerator_1<T: quest_hook::libil2cpp::Type> {
@@ -5509,7 +5509,7 @@ pub struct Array_InternalEnumerator_1<T: quest_hook::libil2cpp::Type> {
     pub idx: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Array_InternalEnumerator_1<T> {
     type Held<'a> = Self;
@@ -5555,7 +5555,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Array_InternalEnumerator_1<T> {
     type Type = Self;
@@ -5566,7 +5566,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Array_InternalEnumerator_1<T> {
     type Actual = Self;
@@ -5580,7 +5580,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
         self
     }
 }
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Array_InternalEnumerator_1<T> {
     type Type = Self;
@@ -5595,7 +5595,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
         }
     }
 }
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Array_InternalEnumerator_1<T> {
     type Actual = Self;
@@ -5609,7 +5609,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
         actual
     }
 }
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
+#[cfg(feature = "cordl_class_System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Array_InternalEnumerator_1<T> {
     type Type = Self;
@@ -5826,7 +5826,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "System+Array+RawData")]
+#[cfg(feature = "cordl_class_System+Array+RawData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Array_RawData {
@@ -5835,7 +5835,7 @@ pub struct Array_RawData {
     pub Count: crate::System::IntPtr,
     pub Data: u8,
 }
-#[cfg(feature = "System+Array+RawData")]
+#[cfg(feature = "cordl_class_System+Array+RawData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_RawData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -5854,14 +5854,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_RawData {
         false
     }
 }
-#[cfg(feature = "System+Array+RawData")]
+#[cfg(feature = "cordl_class_System+Array+RawData")]
 impl std::ops::Deref for crate::System::Array_RawData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Array+RawData")]
+#[cfg(feature = "cordl_class_System+Array+RawData")]
 impl std::ops::DerefMut for crate::System::Array_RawData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5869,7 +5869,7 @@ impl std::ops::DerefMut for crate::System::Array_RawData {
 }
 #[cfg(feature = "System+Array+RawData")]
 impl crate::System::Array_RawData {}
-#[cfg(feature = "System+Array+RawData")]
+#[cfg(feature = "cordl_class_System+Array+RawData")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Array_RawData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -5878,7 +5878,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Array_RawData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Array+SorterGenericArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterGenericArray")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Array_SorterGenericArray {
@@ -5886,7 +5886,7 @@ pub struct Array_SorterGenericArray {
     pub items: quest_hook::libil2cpp::Gc<crate::System::Array>,
     pub comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
 }
-#[cfg(feature = "System+Array+SorterGenericArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_SorterGenericArray {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -5915,7 +5915,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_SorterGenericAr
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Array+SorterGenericArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Array_SorterGenericArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -5925,7 +5925,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Array_SorterGener
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Array+SorterGenericArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Array_SorterGenericArray {
     type Actual = Self;
@@ -5939,7 +5939,7 @@ for crate::System::Array_SorterGenericArray {
         self
     }
 }
-#[cfg(feature = "System+Array+SorterGenericArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Array_SorterGenericArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -5953,7 +5953,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Array_SorterGener
         }
     }
 }
-#[cfg(feature = "System+Array+SorterGenericArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Array_SorterGenericArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -5966,7 +5966,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Array_SorterGeneric
         actual
     }
 }
-#[cfg(feature = "System+Array+SorterGenericArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Array_SorterGenericArray {
     type Type = Self;
@@ -6255,7 +6255,7 @@ impl crate::System::Array_SorterGenericArray {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Array+SorterObjectArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterObjectArray")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Array_SorterObjectArray {
@@ -6271,7 +6271,7 @@ pub struct Array_SorterObjectArray {
     >,
     pub comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
 }
-#[cfg(feature = "System+Array+SorterObjectArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_SorterObjectArray {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -6300,7 +6300,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_SorterObjectArr
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Array+SorterObjectArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Array_SorterObjectArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6310,7 +6310,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Array_SorterObjec
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Array+SorterObjectArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Array_SorterObjectArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6323,7 +6323,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Array_SorterObje
         self
     }
 }
-#[cfg(feature = "System+Array+SorterObjectArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Array_SorterObjectArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6337,7 +6337,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Array_SorterObjec
         }
     }
 }
-#[cfg(feature = "System+Array+SorterObjectArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Array_SorterObjectArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -6350,7 +6350,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Array_SorterObjectA
         actual
     }
 }
-#[cfg(feature = "System+Array+SorterObjectArray")]
+#[cfg(feature = "cordl_class_System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Array_SorterObjectArray {
     type Type = Self;

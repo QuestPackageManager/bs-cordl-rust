@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+FormatUsage")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FormatUsage {
@@ -18,7 +18,7 @@ pub enum FormatUsage {
     Sparse = 2i32,
     StencilSampling = 16i32,
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Held<'a> = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::Experimental::Rendering::FormatUsage {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Experimental::Rendering::FormatUsage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::Experimental::Rendering::FormatUsage {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Experimental::Rendering::FormatUsage {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Actual = Self;

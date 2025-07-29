@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRCustomFaceExtensions")]
+#[cfg(feature = "cordl_class_OVRCustomFaceExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRCustomFaceExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRCustomFaceExtensions")]
+#[cfg(feature = "cordl_class_OVRCustomFaceExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRCustomFaceExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OVRCustomFaceExtensions {
         false
     }
 }
-#[cfg(feature = "OVRCustomFaceExtensions")]
+#[cfg(feature = "cordl_class_OVRCustomFaceExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRCustomFaceExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRCustomFaceExtensions")]
+#[cfg(feature = "cordl_class_OVRCustomFaceExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRCustomFaceExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -414,7 +414,7 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRCustomFaceExtensions")]
+#[cfg(feature = "cordl_class_OVRCustomFaceExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRCustomFaceExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

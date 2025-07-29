@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ZenjectSceneLoader")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSceneLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectSceneLoader {
@@ -6,7 +6,7 @@ pub struct ZenjectSceneLoader {
     pub _projectKernel: quest_hook::libil2cpp::Gc<crate::Zenject::ProjectKernel>,
     pub _sceneContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
-#[cfg(feature = "Zenject+ZenjectSceneLoader")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSceneLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectSceneLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectSceneLoader {
         false
     }
 }
-#[cfg(feature = "Zenject+ZenjectSceneLoader")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSceneLoader")]
 impl std::ops::Deref for crate::Zenject::ZenjectSceneLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ZenjectSceneLoader")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSceneLoader")]
 impl std::ops::DerefMut for crate::Zenject::ZenjectSceneLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1163,7 +1163,7 @@ impl crate::Zenject::ZenjectSceneLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ZenjectSceneLoader")]
+#[cfg(feature = "cordl_class_Zenject+ZenjectSceneLoader")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectSceneLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

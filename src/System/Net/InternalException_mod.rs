@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+InternalException")]
+#[cfg(feature = "cordl_class_System+Net+InternalException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+Net+InternalException")]
+#[cfg(feature = "cordl_class_System+Net+InternalException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::InternalException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::InternalExceptio
         false
     }
 }
-#[cfg(feature = "System+Net+InternalException")]
+#[cfg(feature = "cordl_class_System+Net+InternalException")]
 impl std::ops::Deref for crate::System::Net::InternalException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+InternalException")]
+#[cfg(feature = "cordl_class_System+Net+InternalException")]
 impl std::ops::DerefMut for crate::System::Net::InternalException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::System::Net::InternalException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+InternalException")]
+#[cfg(feature = "cordl_class_System+Net+InternalException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::InternalException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

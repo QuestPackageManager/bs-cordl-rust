@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SM2P256V1Curve {
@@ -7,7 +7,7 @@ pub struct SM2P256V1Curve {
         crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Point,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpCurve;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -444,7 +444,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -455,7 +455,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -468,7 +468,7 @@ pub struct SM2P256V1Curve_SM2P256V1LookupTable {
     pub m_size: i32,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve_SM2P256V1LookupTable {
@@ -490,7 +490,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve_SM2P256V1Look
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve_SM2P256V1LookupTable {
@@ -500,7 +500,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve_SM2P256V1Look
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve_SM2P256V1LookupTable {
@@ -680,7 +680,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve_SM2P256V1Loo
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+GM+SM2P256V1Curve+SM2P256V1LookupTable"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve_SM2P256V1LookupTable {

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -30,7 +30,7 @@ pub struct DiagnosticEventCollectorSingleton {
     pub fpsAvg: f32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton {
@@ -52,7 +52,7 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton {
@@ -66,7 +66,7 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton {
@@ -335,7 +335,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton {

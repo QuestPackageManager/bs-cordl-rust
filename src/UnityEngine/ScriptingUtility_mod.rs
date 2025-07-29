@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ScriptingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptingUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ScriptingUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ScriptingUtility
         false
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility")]
 impl std::ops::Deref for crate::UnityEngine::ScriptingUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility")]
 impl std::ops::DerefMut for crate::UnityEngine::ScriptingUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -58,7 +58,7 @@ impl crate::UnityEngine::ScriptingUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScriptingUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -67,13 +67,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScriptingUtility 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility+TestClass")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ScriptingUtility_TestClass {
     pub value: i32,
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Held<'a> = Self;
@@ -103,7 +103,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Type = Self;
@@ -114,7 +114,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Actual = Self;
@@ -128,7 +128,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Type = Self;
@@ -143,7 +143,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Actual = Self;
@@ -157,7 +157,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
+#[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Type = Self;

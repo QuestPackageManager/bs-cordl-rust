@@ -1,4 +1,4 @@
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CurveData {
@@ -7,7 +7,7 @@ pub struct CurveData {
     pub startControlPoint: crate::UnityEngine::Vector3,
     pub endControlPoint: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGLib::UnityExtension::BezierCurves::CurveData {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::UnityExtension::BezierCurves::CurveData {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::UnityExtension::BezierCurves::CurveData {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
         self
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::UnityExtension::BezierCurves::CurveData {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
         }
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::UnityExtension::BezierCurves::CurveData {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveData {
         actual
     }
 }
-#[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveData")]
+#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BGLib::UnityExtension::BezierCurves::CurveData {
     type Type = Self;

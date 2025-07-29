@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+StateUnion")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StateUnion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StateUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
-#[cfg(feature = "System+Xml+Schema+StateUnion")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StateUnion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::StateUnion {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::StateUni
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+StateUnion")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StateUnion")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Schema::StateUnion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Schema::Stat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+StateUnion")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StateUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Schema::StateUnion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Schema::Sta
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+StateUnion")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StateUnion")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Schema::StateUnion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Schema::Stat
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+StateUnion")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StateUnion")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Schema::StateUnion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Schema::StateU
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+StateUnion")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+StateUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Schema::StateUnion {
     type Type = Self;

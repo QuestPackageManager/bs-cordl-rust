@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+NetworkInformation+AixArpHardware")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixArpHardware")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AixArpHardware {
@@ -10,7 +10,7 @@ pub enum AixArpHardware {
     PPP = 23i32,
     SLIP = 28i32,
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixArpHardware")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixArpHardware")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::NetworkInformation::AixArpHardware {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::System::Net::NetworkInformation::AixArpHardware {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixArpHardware")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixArpHardware")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixArpHardware {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::System::Net::NetworkInformation::AixArpHardware {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixArpHardware")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixArpHardware")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixArpHardware {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::System::Net::NetworkInformation::AixArpHardware {
         self
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixArpHardware")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixArpHardware")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixArpHardware {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::System::Net::NetworkInformation::AixArpHardware {
         }
     }
 }
-#[cfg(feature = "System+Net+NetworkInformation+AixArpHardware")]
+#[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixArpHardware")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixArpHardware {
     type Actual = Self;

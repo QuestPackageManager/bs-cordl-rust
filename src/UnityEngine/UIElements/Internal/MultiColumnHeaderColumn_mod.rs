@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnHeaderColumn {
@@ -25,7 +25,7 @@ pub struct MultiColumnHeaderColumn {
         crate::UnityEngine::UIElements::Column,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
     type Target = crate::UnityEngine::UIElements::VisualElement;
@@ -53,7 +53,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -721,7 +721,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

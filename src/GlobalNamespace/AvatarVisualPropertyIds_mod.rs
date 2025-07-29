@@ -1,10 +1,10 @@
-#[cfg(feature = "AvatarVisualPropertyIds")]
+#[cfg(feature = "cordl_class_AvatarVisualPropertyIds")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarVisualPropertyIds {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "AvatarVisualPropertyIds")]
+#[cfg(feature = "cordl_class_AvatarVisualPropertyIds")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AvatarVisualPropertyIds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::AvatarVisualPropertyIds {
         false
     }
 }
-#[cfg(feature = "AvatarVisualPropertyIds")]
+#[cfg(feature = "cordl_class_AvatarVisualPropertyIds")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarVisualPropertyIds {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AvatarVisualPropertyIds")]
+#[cfg(feature = "cordl_class_AvatarVisualPropertyIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AvatarVisualPropertyIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -41,7 +41,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AvatarVisualPropertyIds {
 impl crate::GlobalNamespace::AvatarVisualPropertyIds {
     pub const kKeywordPointLightIsLocal: &'static str = "POINT_LIGHT_IS_LOCAL";
 }
-#[cfg(feature = "AvatarVisualPropertyIds")]
+#[cfg(feature = "cordl_class_AvatarVisualPropertyIds")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AvatarVisualPropertyIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

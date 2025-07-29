@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+BaseInputStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseInputStream {
     __cordl_parent: crate::System::IO::Stream,
     pub closed: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+BaseInputStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Utilities::IO::BaseInputStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Utilities::IO::BaseInputStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+BaseInputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::IO::BaseInputStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+BaseInputStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::IO::BaseInputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -343,7 +343,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::BaseInputStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+BaseInputStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Utilities::IO::BaseInputStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

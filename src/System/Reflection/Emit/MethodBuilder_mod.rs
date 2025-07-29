@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Reflection+Emit+MethodBuilder")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+MethodBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodBuilder {
     __cordl_parent: crate::System::Reflection::MethodInfo,
 }
-#[cfg(feature = "System+Reflection+Emit+MethodBuilder")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+MethodBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::Emit::MethodBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Reflection::Emit::MethodBuilder {
         false
     }
 }
-#[cfg(feature = "System+Reflection+Emit+MethodBuilder")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+MethodBuilder")]
 impl std::ops::Deref for crate::System::Reflection::Emit::MethodBuilder {
     type Target = crate::System::Reflection::MethodInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+Emit+MethodBuilder")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+MethodBuilder")]
 impl std::ops::DerefMut for crate::System::Reflection::Emit::MethodBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -423,7 +423,7 @@ impl crate::System::Reflection::Emit::MethodBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+Emit+MethodBuilder")]
+#[cfg(feature = "cordl_class_System+Reflection+Emit+MethodBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::Emit::MethodBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

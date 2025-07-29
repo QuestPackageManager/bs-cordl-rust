@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Timeline+TimelineClipCapsExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClipCapsExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineClipCapsExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClipCapsExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClipCapsExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClipCapsExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClipCapsExtensions")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClipCapsExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClipCapsExtensions")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -233,7 +233,7 @@ impl crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClipCapsExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClipCapsExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TimelineClipCapsExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

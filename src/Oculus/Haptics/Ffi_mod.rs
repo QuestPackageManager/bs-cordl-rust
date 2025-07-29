@@ -1,10 +1,10 @@
-#[cfg(feature = "Oculus+Haptics+Ffi")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ffi {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Oculus+Haptics+Ffi")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi {
         false
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi")]
 impl std::ops::Deref for crate::Oculus::Haptics::Ffi {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi")]
 impl std::ops::DerefMut for crate::Oculus::Haptics::Ffi {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -924,7 +924,7 @@ impl crate::Oculus::Haptics::Ffi {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -933,7 +933,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ffi_Controller {
@@ -942,7 +942,7 @@ pub enum Ffi_Controller {
     Left = 0i32,
     Right = 1i32,
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_Controller {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -971,7 +971,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_Controll
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_Controller {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -981,7 +981,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_Cont
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_Controller {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -994,7 +994,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_Con
         self
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_Controller {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1008,7 +1008,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_Cont
         }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_Controller {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1021,13 +1021,13 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_Contro
         actual
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogCallback")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ffi_LogCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogCallback")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_LogCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1046,14 +1046,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_LogCallb
         false
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogCallback")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogCallback")]
 impl std::ops::Deref for crate::Oculus::Haptics::Ffi_LogCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogCallback")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogCallback")]
 impl std::ops::DerefMut for crate::Oculus::Haptics::Ffi_LogCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1202,7 +1202,7 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogCallback")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi_LogCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1211,7 +1211,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi_LogCallba
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ffi_LogLevel {
@@ -1222,7 +1222,7 @@ pub enum Ffi_LogLevel {
     Trace = 0i32,
     Warn = 3i32,
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_LogLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1251,7 +1251,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_LogLevel
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_LogLevel {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1261,7 +1261,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_LogL
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_LogLevel {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1274,7 +1274,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_Log
         self
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_LogLevel {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1288,7 +1288,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_LogL
         }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_LogLevel {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1301,7 +1301,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_LogLev
         actual
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Ffi_NullBackendStatistics {
@@ -1309,7 +1309,7 @@ pub struct Ffi_NullBackendStatistics {
     pub stop_call_count: i64,
     pub samples_played: i64,
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Held<'a> = Self;
@@ -1339,7 +1339,7 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Type = Self;
@@ -1350,7 +1350,7 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Actual = Self;
@@ -1364,7 +1364,7 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
         self
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Type = Self;
@@ -1379,7 +1379,7 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
         }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Actual = Self;
@@ -1393,7 +1393,7 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
         actual
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Type = Self;
@@ -1406,7 +1406,7 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
 }
 #[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
 impl crate::Oculus::Haptics::Ffi_NullBackendStatistics {}
-#[cfg(feature = "Oculus+Haptics+Ffi+Result")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ffi_Result {
@@ -1427,7 +1427,7 @@ pub enum Ffi_Result {
     PlayerInvalidPriority = -13i32,
     Success = 0i32,
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Result")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_Result {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1456,7 +1456,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_Result {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Result")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_Result {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1466,7 +1466,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_Resu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Result")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_Result {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1479,7 +1479,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_Res
         self
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Result")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_Result {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1493,7 +1493,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_Resu
         }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+Result")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_Result {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1506,7 +1506,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_Result
         actual
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Ffi_SdkVersion {
@@ -1514,7 +1514,7 @@ pub struct Ffi_SdkVersion {
     pub minor: u16,
     pub patch: u16,
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_SdkVersion {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1543,7 +1543,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_SdkVersi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_SdkVersion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1553,7 +1553,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Haptics::Ffi_SdkV
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_SdkVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1566,7 +1566,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Haptics::Ffi_Sdk
         self
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_SdkVersion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1580,7 +1580,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Haptics::Ffi_SdkV
         }
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_SdkVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1593,7 +1593,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_SdkVer
         actual
     }
 }
-#[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
+#[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Oculus::Haptics::Ffi_SdkVersion {
     type Type = Self;

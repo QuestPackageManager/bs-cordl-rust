@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Processors+InvertVector2Processor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+InvertVector2Processor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvertVector2Processor {
@@ -8,7 +8,7 @@ pub struct InvertVector2Processor {
     pub invertX: bool,
     pub invertY: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+InvertVector2Processor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+InvertVector2Processor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Processors::InvertVector2Processor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::UnityEngine::InputSystem::Processors::InvertVector2Processor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+InvertVector2Processor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+InvertVector2Processor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::InvertVector2Processor {
     type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
@@ -38,7 +38,7 @@ for crate::UnityEngine::InputSystem::Processors::InvertVector2Processor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+InvertVector2Processor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+InvertVector2Processor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Processors::InvertVector2Processor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -135,7 +135,7 @@ impl crate::UnityEngine::InputSystem::Processors::InvertVector2Processor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Processors+InvertVector2Processor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+InvertVector2Processor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Processors::InvertVector2Processor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

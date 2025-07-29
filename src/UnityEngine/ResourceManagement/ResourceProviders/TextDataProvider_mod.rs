@@ -1,11 +1,15 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextDataProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
     pub _IgnoreFailures_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider 
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -33,7 +39,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -178,7 +186,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -189,7 +199,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider 
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -210,7 +220,7 @@ pub struct TextDataProvider_InternalOp {
     pub m_Timeout: i32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_InternalOp {
@@ -232,7 +242,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_InternalOp {
@@ -242,7 +252,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_InternalOp {
@@ -494,7 +504,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_InternalOp {

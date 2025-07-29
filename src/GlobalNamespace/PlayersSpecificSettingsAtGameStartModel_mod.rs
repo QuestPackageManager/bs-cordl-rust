@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]
+#[cfg(feature = "cordl_class_PlayersSpecificSettingsAtGameStartModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayersSpecificSettingsAtGameStartModel {
@@ -13,7 +13,7 @@ pub struct PlayersSpecificSettingsAtGameStartModel {
         crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
 }
-#[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]
+#[cfg(feature = "cordl_class_PlayersSpecificSettingsAtGameStartModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         false
     }
 }
-#[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]
+#[cfg(feature = "cordl_class_PlayersSpecificSettingsAtGameStartModel")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]
+#[cfg(feature = "cordl_class_PlayersSpecificSettingsAtGameStartModel")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -334,7 +334,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]
+#[cfg(feature = "cordl_class_PlayersSpecificSettingsAtGameStartModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

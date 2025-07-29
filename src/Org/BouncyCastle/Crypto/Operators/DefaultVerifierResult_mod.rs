@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultVerifierResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mSigner: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -142,7 +142,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+DefaultVerifierResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultVerifierResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

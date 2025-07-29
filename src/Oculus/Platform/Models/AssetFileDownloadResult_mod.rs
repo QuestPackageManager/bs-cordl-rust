@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+AssetFileDownloadResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+AssetFileDownloadResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetFileDownloadResult {
@@ -6,7 +6,7 @@ pub struct AssetFileDownloadResult {
     pub AssetId: u64,
     pub Filepath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "Oculus+Platform+Models+AssetFileDownloadResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+AssetFileDownloadResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::AssetFileDownloadResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Oculus::Platform::Models::AssetFileDownloadResult {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+AssetFileDownloadResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+AssetFileDownloadResult")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::AssetFileDownloadResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+AssetFileDownloadResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+AssetFileDownloadResult")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::AssetFileDownloadResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -77,7 +77,7 @@ impl crate::Oculus::Platform::Models::AssetFileDownloadResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+AssetFileDownloadResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+AssetFileDownloadResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::AssetFileDownloadResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

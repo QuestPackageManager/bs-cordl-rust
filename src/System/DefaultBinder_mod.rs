@@ -1,10 +1,10 @@
-#[cfg(feature = "System+DefaultBinder")]
+#[cfg(feature = "cordl_class_System+DefaultBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultBinder {
     __cordl_parent: crate::System::Reflection::Binder,
 }
-#[cfg(feature = "System+DefaultBinder")]
+#[cfg(feature = "cordl_class_System+DefaultBinder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder {
         false
     }
 }
-#[cfg(feature = "System+DefaultBinder")]
+#[cfg(feature = "cordl_class_System+DefaultBinder")]
 impl std::ops::Deref for crate::System::DefaultBinder {
     type Target = crate::System::Reflection::Binder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+DefaultBinder")]
+#[cfg(feature = "cordl_class_System+DefaultBinder")]
 impl std::ops::DerefMut for crate::System::DefaultBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1197,7 +1197,7 @@ impl crate::System::DefaultBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+DefaultBinder")]
+#[cfg(feature = "cordl_class_System+DefaultBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1206,7 +1206,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+DefaultBinder+BinderState")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+BinderState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultBinder_BinderState {
@@ -1215,7 +1215,7 @@ pub struct DefaultBinder_BinderState {
     pub m_originalSize: i32,
     pub m_isParamArray: bool,
 }
-#[cfg(feature = "System+DefaultBinder+BinderState")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+BinderState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder_BinderState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1234,14 +1234,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder_BinderS
         false
     }
 }
-#[cfg(feature = "System+DefaultBinder+BinderState")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+BinderState")]
 impl std::ops::Deref for crate::System::DefaultBinder_BinderState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+DefaultBinder+BinderState")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+BinderState")]
 impl std::ops::DerefMut for crate::System::DefaultBinder_BinderState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1296,7 +1296,7 @@ impl crate::System::DefaultBinder_BinderState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+DefaultBinder+BinderState")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+BinderState")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder_BinderState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1305,7 +1305,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder_BinderSt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+DefaultBinder+Primitives")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+Primitives")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DefaultBinder_Primitives {
@@ -1326,7 +1326,7 @@ pub enum DefaultBinder_Primitives {
     UInt32 = 1024i32,
     UInt64 = 4096i32,
 }
-#[cfg(feature = "System+DefaultBinder+Primitives")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder_Primitives {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1355,7 +1355,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder_Primiti
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+DefaultBinder+Primitives")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DefaultBinder_Primitives {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1365,7 +1365,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DefaultBinder_Pri
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+DefaultBinder+Primitives")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::DefaultBinder_Primitives {
     type Actual = Self;
@@ -1379,7 +1379,7 @@ for crate::System::DefaultBinder_Primitives {
         self
     }
 }
-#[cfg(feature = "System+DefaultBinder+Primitives")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DefaultBinder_Primitives {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1393,7 +1393,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DefaultBinder_Pri
         }
     }
 }
-#[cfg(feature = "System+DefaultBinder+Primitives")]
+#[cfg(feature = "cordl_class_System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DefaultBinder_Primitives {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

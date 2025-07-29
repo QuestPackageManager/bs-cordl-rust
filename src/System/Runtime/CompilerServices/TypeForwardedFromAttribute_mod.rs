@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+CompilerServices+TypeForwardedFromAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+TypeForwardedFromAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeForwardedFromAttribute {
@@ -7,7 +9,9 @@ pub struct TypeForwardedFromAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+TypeForwardedFromAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+TypeForwardedFromAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::TypeForwardedFromAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::System::Runtime::CompilerServices::TypeForwardedFromAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+TypeForwardedFromAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+TypeForwardedFromAttribute"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::TypeForwardedFromAttribute {
     type Target = crate::System::Attribute;
@@ -35,7 +41,9 @@ for crate::System::Runtime::CompilerServices::TypeForwardedFromAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+TypeForwardedFromAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+TypeForwardedFromAttribute"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::TypeForwardedFromAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -107,7 +115,9 @@ impl crate::System::Runtime::CompilerServices::TypeForwardedFromAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+TypeForwardedFromAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+TypeForwardedFromAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::TypeForwardedFromAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

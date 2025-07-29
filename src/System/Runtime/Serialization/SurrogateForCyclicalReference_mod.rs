@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+SurrogateForCyclicalReference"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SurrogateForCyclicalReference {
@@ -7,7 +9,9 @@ pub struct SurrogateForCyclicalReference {
         crate::System::Runtime::Serialization::ISerializationSurrogate,
     >,
 }
-#[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+SurrogateForCyclicalReference"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+SurrogateForCyclicalReference"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +41,9 @@ for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+SurrogateForCyclicalReference"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -131,7 +139,9 @@ impl crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+SurrogateForCyclicalReference"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

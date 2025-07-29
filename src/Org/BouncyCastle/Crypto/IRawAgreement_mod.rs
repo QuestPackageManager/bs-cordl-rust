@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+IRawAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IRawAgreement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IRawAgreement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+IRawAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IRawAgreement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::IRawAgreement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::IRawAgreement {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+IRawAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IRawAgreement")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::IRawAgreement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+IRawAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IRawAgreement")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IRawAgreement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::Org::BouncyCastle::Crypto::IRawAgreement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+IRawAgreement")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IRawAgreement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::IRawAgreement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

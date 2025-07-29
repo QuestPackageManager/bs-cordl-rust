@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureOutEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseCaptureOutEvent {
@@ -6,7 +6,7 @@ pub struct MouseCaptureOutEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseCaptureOutEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureOutEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MouseCaptureOutEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::MouseCaptureOutEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureOutEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseCaptureOutEvent {
     type Target = crate::UnityEngine::UIElements::MouseCaptureEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseCaptureOutEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::MouseCaptureOutEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureOutEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseCaptureOutEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::MouseCaptureOutEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureOutEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureOutEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MouseCaptureOutEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

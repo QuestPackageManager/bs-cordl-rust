@@ -1,10 +1,10 @@
-#[cfg(feature = "OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_SeatedZeroPoseReset_t {
     pub bResetBySystemMenu: bool,
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t {
     type Type = Self;

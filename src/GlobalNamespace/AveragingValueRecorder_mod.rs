@@ -1,4 +1,4 @@
-#[cfg(feature = "AveragingValueRecorder")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AveragingValueRecorder {
@@ -20,7 +20,7 @@ pub struct AveragingValueRecorder {
     pub _averageWindowValuesDuration: f32,
     pub _lastValue: f32,
 }
-#[cfg(feature = "AveragingValueRecorder")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AveragingValueRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::GlobalNamespace::AveragingValueRecorder {
         false
     }
 }
-#[cfg(feature = "AveragingValueRecorder")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::AveragingValueRecorder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AveragingValueRecorder")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AveragingValueRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -198,7 +198,7 @@ impl crate::GlobalNamespace::AveragingValueRecorder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AveragingValueRecorder")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AveragingValueRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -208,14 +208,14 @@ for crate::GlobalNamespace::AveragingValueRecorder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder+AverageValueData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AveragingValueRecorder_AverageValueData {
     pub _value_k__BackingField: f32,
     pub _time_k__BackingField: f32,
 }
-#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Held<'a> = Self;
@@ -245,7 +245,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Type = Self;
@@ -256,7 +256,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Actual = Self;
@@ -270,7 +270,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
         self
     }
 }
-#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Type = Self;
@@ -285,7 +285,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
         }
     }
 }
-#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Actual = Self;
@@ -299,7 +299,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
         actual
     }
 }
-#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
+#[cfg(feature = "cordl_class_AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Type = Self;

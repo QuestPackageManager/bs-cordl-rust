@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+#[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyValueCollectionPropertyBag_3<
@@ -18,7 +18,7 @@ pub struct KeyValueCollectionPropertyBag_3<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+#[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3")]
 unsafe impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -62,7 +62,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
         false
     }
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+#[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -78,7 +78,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+#[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -150,7 +150,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
+#[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -228,7 +228,9 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
@@ -245,7 +247,9 @@ pub struct KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty"
+)]
 unsafe impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -289,7 +293,9 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProper
         false
     }
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty"
+)]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -308,7 +314,9 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProper
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty"
+)]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -436,7 +444,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty"
+)]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

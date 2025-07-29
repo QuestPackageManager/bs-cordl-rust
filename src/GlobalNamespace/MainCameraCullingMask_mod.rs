@@ -1,4 +1,4 @@
-#[cfg(feature = "MainCameraCullingMask")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainCameraCullingMask {
@@ -8,7 +8,7 @@ pub struct MainCameraCullingMask {
         crate::GlobalNamespace::MainCameraCullingMask_InitData,
     >,
 }
-#[cfg(feature = "MainCameraCullingMask")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainCameraCullingMask {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::MainCameraCullingMask {
         false
     }
 }
-#[cfg(feature = "MainCameraCullingMask")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask")]
 impl std::ops::Deref for crate::GlobalNamespace::MainCameraCullingMask {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainCameraCullingMask")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainCameraCullingMask {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::MainCameraCullingMask {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainCameraCullingMask")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainCameraCullingMask {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -105,14 +105,14 @@ for crate::GlobalNamespace::MainCameraCullingMask {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MainCameraCullingMask+InitData")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainCameraCullingMask_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub showDebris: bool,
 }
-#[cfg(feature = "MainCameraCullingMask+InitData")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainCameraCullingMask_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -132,14 +132,14 @@ for crate::GlobalNamespace::MainCameraCullingMask_InitData {
         false
     }
 }
-#[cfg(feature = "MainCameraCullingMask+InitData")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::MainCameraCullingMask_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainCameraCullingMask+InitData")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainCameraCullingMask_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -179,7 +179,7 @@ impl crate::GlobalNamespace::MainCameraCullingMask_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainCameraCullingMask+InitData")]
+#[cfg(feature = "cordl_class_MainCameraCullingMask+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainCameraCullingMask_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

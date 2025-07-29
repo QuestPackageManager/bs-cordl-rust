@@ -1,4 +1,4 @@
-#[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
+#[cfg(feature = "cordl_class_BaseMultiplayerStartGameCountdownViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseMultiplayerStartGameCountdownViewController {
@@ -15,7 +15,7 @@ pub struct BaseMultiplayerStartGameCountdownViewController {
     >,
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
 }
-#[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
+#[cfg(feature = "cordl_class_BaseMultiplayerStartGameCountdownViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
         false
     }
 }
-#[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
+#[cfg(feature = "cordl_class_BaseMultiplayerStartGameCountdownViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     type Target = crate::HMUI::ViewController;
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
+#[cfg(feature = "cordl_class_BaseMultiplayerStartGameCountdownViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -300,7 +300,7 @@ impl crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
+#[cfg(feature = "cordl_class_BaseMultiplayerStartGameCountdownViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

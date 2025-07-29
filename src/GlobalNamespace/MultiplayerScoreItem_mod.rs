@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerScoreItem")]
+#[cfg(feature = "cordl_class_MultiplayerScoreItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerScoreItem {
@@ -15,7 +15,7 @@ pub struct MultiplayerScoreItem {
         crate::Tweening::Tween_1<crate::UnityEngine::Color>,
     >,
 }
-#[cfg(feature = "MultiplayerScoreItem")]
+#[cfg(feature = "cordl_class_MultiplayerScoreItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerScoreItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::MultiplayerScoreItem {
         false
     }
 }
-#[cfg(feature = "MultiplayerScoreItem")]
+#[cfg(feature = "cordl_class_MultiplayerScoreItem")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerScoreItem")]
+#[cfg(feature = "cordl_class_MultiplayerScoreItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -287,7 +287,7 @@ impl crate::GlobalNamespace::MultiplayerScoreItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerScoreItem")]
+#[cfg(feature = "cordl_class_MultiplayerScoreItem")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerScoreItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

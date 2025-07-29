@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+SystemDependencyProvider")]
+#[cfg(feature = "cordl_class_Mono+SystemDependencyProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemDependencyProvider {
@@ -7,7 +7,7 @@ pub struct SystemDependencyProvider {
         crate::Mono::SystemCertificateProvider,
     >,
 }
-#[cfg(feature = "Mono+SystemDependencyProvider")]
+#[cfg(feature = "cordl_class_Mono+SystemDependencyProvider")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::SystemDependencyProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::SystemDependencyProvide
         false
     }
 }
-#[cfg(feature = "Mono+SystemDependencyProvider")]
+#[cfg(feature = "cordl_class_Mono+SystemDependencyProvider")]
 impl std::ops::Deref for crate::Mono::SystemDependencyProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+SystemDependencyProvider")]
+#[cfg(feature = "cordl_class_Mono+SystemDependencyProvider")]
 impl std::ops::DerefMut for crate::Mono::SystemDependencyProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -204,7 +204,7 @@ impl crate::Mono::SystemDependencyProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+SystemDependencyProvider")]
+#[cfg(feature = "cordl_class_Mono+SystemDependencyProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::SystemDependencyProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

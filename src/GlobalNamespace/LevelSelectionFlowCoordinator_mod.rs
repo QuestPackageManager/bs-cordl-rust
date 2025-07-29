@@ -1,4 +1,4 @@
-#[cfg(feature = "LevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelSelectionFlowCoordinator {
@@ -19,7 +19,7 @@ pub struct LevelSelectionFlowCoordinator {
         crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
     >,
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1133,7 +1133,7 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1143,7 +1143,7 @@ for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator+State")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator+State")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelSelectionFlowCoordinator_State {
@@ -1157,7 +1157,7 @@ pub struct LevelSelectionFlowCoordinator_State {
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator+State")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1177,14 +1177,14 @@ for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
         false
     }
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator+State")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator+State")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator+State")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator+State")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1351,7 +1351,7 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LevelSelectionFlowCoordinator+State")]
+#[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator+State")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

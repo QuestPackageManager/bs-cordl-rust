@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRProgressIndicator")]
+#[cfg(feature = "cordl_class_OVRProgressIndicator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRProgressIndicator {
@@ -6,7 +6,7 @@ pub struct OVRProgressIndicator {
     pub progressImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
     pub currentProgress: f32,
 }
-#[cfg(feature = "OVRProgressIndicator")]
+#[cfg(feature = "cordl_class_OVRProgressIndicator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRProgressIndicator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::OVRProgressIndicator {
         false
     }
 }
-#[cfg(feature = "OVRProgressIndicator")]
+#[cfg(feature = "cordl_class_OVRProgressIndicator")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRProgressIndicator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRProgressIndicator")]
+#[cfg(feature = "cordl_class_OVRProgressIndicator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRProgressIndicator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::OVRProgressIndicator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRProgressIndicator")]
+#[cfg(feature = "cordl_class_OVRProgressIndicator")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRProgressIndicator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

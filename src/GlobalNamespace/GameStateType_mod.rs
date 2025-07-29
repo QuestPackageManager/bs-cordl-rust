@@ -1,4 +1,4 @@
-#[cfg(feature = "GameStateType")]
+#[cfg(feature = "cordl_class_GameStateType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameStateType {
@@ -8,7 +8,7 @@ pub enum GameStateType {
     SelectingLevel = 1i32,
     StartingLevel = 2i32,
 }
-#[cfg(feature = "GameStateType")]
+#[cfg(feature = "cordl_class_GameStateType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameStateType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameStateTyp
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GameStateType")]
+#[cfg(feature = "cordl_class_GameStateType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::GameStateType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::GameStat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GameStateType")]
+#[cfg(feature = "cordl_class_GameStateType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::GameStateType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::GameSta
         self
     }
 }
-#[cfg(feature = "GameStateType")]
+#[cfg(feature = "cordl_class_GameStateType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::GameStateType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::GameStat
         }
     }
 }
-#[cfg(feature = "GameStateType")]
+#[cfg(feature = "cordl_class_GameStateType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::GameStateType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

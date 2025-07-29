@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+InteractableTiltEffect")]
+#[cfg(feature = "cordl_class_HMUI+InteractableTiltEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InteractableTiltEffect {
@@ -9,7 +9,7 @@ pub struct InteractableTiltEffect {
     pub _prevLocalPoint: crate::UnityEngine::Vector2,
     pub _effectStrengthMultiplier: f32,
 }
-#[cfg(feature = "HMUI+InteractableTiltEffect")]
+#[cfg(feature = "cordl_class_HMUI+InteractableTiltEffect")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InteractableTiltEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InteractableTiltEffect 
         false
     }
 }
-#[cfg(feature = "HMUI+InteractableTiltEffect")]
+#[cfg(feature = "cordl_class_HMUI+InteractableTiltEffect")]
 impl std::ops::Deref for crate::HMUI::InteractableTiltEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+InteractableTiltEffect")]
+#[cfg(feature = "cordl_class_HMUI+InteractableTiltEffect")]
 impl std::ops::DerefMut for crate::HMUI::InteractableTiltEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -203,7 +203,7 @@ impl crate::HMUI::InteractableTiltEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+InteractableTiltEffect")]
+#[cfg(feature = "cordl_class_HMUI+InteractableTiltEffect")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::InteractableTiltEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

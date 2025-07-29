@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SigIObjectIdentifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::X509::SigI::SigIObjectIdentifiers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Asn1::X509::SigI::SigIObjectIdentifiers {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::SigI::SigIObjectIdentifiers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Asn1::X509::SigI::SigIObjectIdentifiers {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::X509::SigI::SigIObjectIdentifiers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::SigI::SigIObjectIdentifiers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+SigI+SigIObjectIdentifiers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::X509::SigI::SigIObjectIdentifiers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

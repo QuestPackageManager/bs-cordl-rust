@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Scripting+UsedByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+UsedByNativeCodeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UsedByNativeCodeAttribute {
@@ -7,7 +7,7 @@ pub struct UsedByNativeCodeAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+Scripting+UsedByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+UsedByNativeCodeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Scripting::UsedByNativeCodeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::Scripting::UsedByNativeCodeAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+UsedByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+UsedByNativeCodeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Scripting::UsedByNativeCodeAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+UsedByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+UsedByNativeCodeAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Scripting::UsedByNativeCodeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -132,7 +132,7 @@ impl crate::UnityEngine::Scripting::UsedByNativeCodeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Scripting+UsedByNativeCodeAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Scripting+UsedByNativeCodeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Scripting::UsedByNativeCodeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "DeactivateAfterFirstFrame")]
+#[cfg(feature = "cordl_class_DeactivateAfterFirstFrame")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeactivateAfterFirstFrame {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "DeactivateAfterFirstFrame")]
+#[cfg(feature = "cordl_class_DeactivateAfterFirstFrame")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DeactivateAfterFirstFrame {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::DeactivateAfterFirstFrame {
         false
     }
 }
-#[cfg(feature = "DeactivateAfterFirstFrame")]
+#[cfg(feature = "cordl_class_DeactivateAfterFirstFrame")]
 impl std::ops::Deref for crate::GlobalNamespace::DeactivateAfterFirstFrame {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DeactivateAfterFirstFrame")]
+#[cfg(feature = "cordl_class_DeactivateAfterFirstFrame")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DeactivateAfterFirstFrame {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::DeactivateAfterFirstFrame {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DeactivateAfterFirstFrame")]
+#[cfg(feature = "cordl_class_DeactivateAfterFirstFrame")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DeactivateAfterFirstFrame {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

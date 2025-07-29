@@ -1,4 +1,4 @@
-#[cfg(feature = "System+WeakReference")]
+#[cfg(feature = "cordl_class_System+WeakReference")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WeakReference {
@@ -6,7 +6,7 @@ pub struct WeakReference {
     pub isLongReference: bool,
     pub gcHandle: crate::System::Runtime::InteropServices::GCHandle,
 }
-#[cfg(feature = "System+WeakReference")]
+#[cfg(feature = "cordl_class_System+WeakReference")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::WeakReference {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::WeakReference {
         false
     }
 }
-#[cfg(feature = "System+WeakReference")]
+#[cfg(feature = "cordl_class_System+WeakReference")]
 impl std::ops::Deref for crate::System::WeakReference {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+WeakReference")]
+#[cfg(feature = "cordl_class_System+WeakReference")]
 impl std::ops::DerefMut for crate::System::WeakReference {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -360,7 +360,7 @@ impl crate::System::WeakReference {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+WeakReference")]
+#[cfg(feature = "cordl_class_System+WeakReference")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::WeakReference {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

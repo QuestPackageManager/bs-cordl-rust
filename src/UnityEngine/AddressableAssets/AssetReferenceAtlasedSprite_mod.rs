@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReferenceAtlasedSprite {
@@ -6,7 +6,7 @@ pub struct AssetReferenceAtlasedSprite {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
     type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
@@ -36,7 +36,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +133,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

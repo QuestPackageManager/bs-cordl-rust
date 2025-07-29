@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventHandler")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+ValidationEventHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventHandler")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+ValidationEventHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Schema::ValidationEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Schema::ValidationEventHandler {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventHandler")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+ValidationEventHandler")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::ValidationEventHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventHandler")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+ValidationEventHandler")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::ValidationEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -188,7 +188,7 @@ impl crate::Newtonsoft::Json::Schema::ValidationEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventHandler")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+ValidationEventHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Schema::ValidationEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

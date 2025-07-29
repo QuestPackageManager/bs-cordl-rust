@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DHPublicKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::DHKeyParameters,
     pub y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
     type Target = crate::Org::BouncyCastle::Crypto::Parameters::DHKeyParameters;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -322,7 +322,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DHPublicKeyParameters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

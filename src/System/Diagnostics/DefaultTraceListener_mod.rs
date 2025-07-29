@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DefaultTraceListener")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTraceListener {
     __cordl_parent: crate::System::Diagnostics::TraceListener,
     pub logFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DefaultTraceListener")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::DefaultTraceListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Diagnostics::DefaultTraceListener {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DefaultTraceListener")]
 impl std::ops::Deref for crate::System::Diagnostics::DefaultTraceListener {
     type Target = crate::System::Diagnostics::TraceListener;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DefaultTraceListener")]
 impl std::ops::DerefMut for crate::System::Diagnostics::DefaultTraceListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -345,7 +345,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DefaultTraceListener")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::DefaultTraceListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

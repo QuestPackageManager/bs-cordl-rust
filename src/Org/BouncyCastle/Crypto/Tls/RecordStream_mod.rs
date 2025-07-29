@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordStream {
@@ -50,7 +50,7 @@ pub struct RecordStream {
     pub mCompressedLimit: i32,
     pub mCiphertextLimit: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -70,14 +70,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -804,7 +804,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -814,7 +814,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordStream_HandshakeHashUpdateStream {
@@ -823,7 +825,9 @@ pub struct RecordStream_HandshakeHashUpdateStream {
         crate::Org::BouncyCastle::Crypto::Tls::RecordStream,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -843,7 +847,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStrea
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
@@ -851,7 +857,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStrea
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -936,7 +944,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStre
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -946,7 +956,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStrea
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordStream_SequenceNumber {
@@ -954,7 +964,7 @@ pub struct RecordStream_SequenceNumber {
     pub value: i64,
     pub exhausted: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -974,7 +984,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -982,7 +992,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1042,7 +1052,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

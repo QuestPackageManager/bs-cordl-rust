@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+ValidationType")]
+#[cfg(feature = "cordl_class_System+Xml+ValidationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ValidationType {
@@ -9,7 +9,7 @@ pub enum ValidationType {
     Schema = 4i32,
     XDR = 3i32,
 }
-#[cfg(feature = "System+Xml+ValidationType")]
+#[cfg(feature = "cordl_class_System+Xml+ValidationType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::ValidationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -38,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::ValidationType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+ValidationType")]
+#[cfg(feature = "cordl_class_System+Xml+ValidationType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::ValidationType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::ValidationTy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+ValidationType")]
+#[cfg(feature = "cordl_class_System+Xml+ValidationType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::ValidationType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,7 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::ValidationT
         self
     }
 }
-#[cfg(feature = "System+Xml+ValidationType")]
+#[cfg(feature = "cordl_class_System+Xml+ValidationType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::ValidationType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::ValidationTy
         }
     }
 }
-#[cfg(feature = "System+Xml+ValidationType")]
+#[cfg(feature = "cordl_class_System+Xml+ValidationType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::ValidationType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

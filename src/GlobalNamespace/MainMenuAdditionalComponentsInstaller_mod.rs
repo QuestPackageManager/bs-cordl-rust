@@ -1,10 +1,10 @@
-#[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
+#[cfg(feature = "cordl_class_MainMenuAdditionalComponentsInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainMenuAdditionalComponentsInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
 }
-#[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
+#[cfg(feature = "cordl_class_MainMenuAdditionalComponentsInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
         false
     }
 }
-#[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
+#[cfg(feature = "cordl_class_MainMenuAdditionalComponentsInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
+#[cfg(feature = "cordl_class_MainMenuAdditionalComponentsInstaller")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
+#[cfg(feature = "cordl_class_MainMenuAdditionalComponentsInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

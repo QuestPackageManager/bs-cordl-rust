@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+CircleTouchable")]
+#[cfg(feature = "cordl_class_HMUI+CircleTouchable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CircleTouchable {
@@ -7,7 +7,7 @@ pub struct CircleTouchable {
     pub _maxRadius: f32,
     pub _containerRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
 }
-#[cfg(feature = "HMUI+CircleTouchable")]
+#[cfg(feature = "cordl_class_HMUI+CircleTouchable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CircleTouchable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CircleTouchable {
         false
     }
 }
-#[cfg(feature = "HMUI+CircleTouchable")]
+#[cfg(feature = "cordl_class_HMUI+CircleTouchable")]
 impl std::ops::Deref for crate::HMUI::CircleTouchable {
     type Target = crate::HMUI::Touchable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+CircleTouchable")]
+#[cfg(feature = "cordl_class_HMUI+CircleTouchable")]
 impl std::ops::DerefMut for crate::HMUI::CircleTouchable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -199,7 +199,7 @@ impl crate::HMUI::CircleTouchable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+CircleTouchable")]
+#[cfg(feature = "cordl_class_HMUI+CircleTouchable")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::CircleTouchable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,6 @@
-#[cfg(feature = "System+ComponentModel+Design+Serialization+InstanceDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+InstanceDescriptor"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstanceDescriptor {
@@ -11,7 +13,9 @@ pub struct InstanceDescriptor {
         crate::System::Reflection::MemberInfo,
     >,
 }
-#[cfg(feature = "System+ComponentModel+Design+Serialization+InstanceDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+InstanceDescriptor"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +35,9 @@ for crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+Serialization+InstanceDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+InstanceDescriptor"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +45,9 @@ for crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+Serialization+InstanceDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+InstanceDescriptor"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -223,7 +231,9 @@ impl crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+Design+Serialization+InstanceDescriptor")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+Design+Serialization+InstanceDescriptor"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::Design::Serialization::InstanceDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

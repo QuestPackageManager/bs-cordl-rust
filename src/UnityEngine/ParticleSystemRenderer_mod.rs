@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystemRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystemRe
         false
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer")]
 impl std::ops::Deref for crate::UnityEngine::ParticleSystemRenderer {
     type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::ParticleSystemRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2423,7 +2423,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ParticleSystemRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2432,14 +2432,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ParticleSystemRen
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystemRenderer_BakeTextureOutput {
     pub vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub indices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Held<'a> = Self;
@@ -2469,7 +2469,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Type = Self;
@@ -2480,7 +2480,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Actual = Self;
@@ -2494,7 +2494,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Type = Self;
@@ -2509,7 +2509,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Actual = Self;
@@ -2523,7 +2523,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Type = Self;

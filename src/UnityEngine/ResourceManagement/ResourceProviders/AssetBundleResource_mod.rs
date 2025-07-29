@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleResource {
@@ -34,7 +36,9 @@ pub struct AssetBundleResource {
     pub m_TimeoutTimer: f32,
     pub m_TimeoutOverFrames: i32,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,7 +58,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -62,7 +68,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -841,7 +849,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -888,7 +898,7 @@ impl AsMut<
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -899,7 +909,7 @@ pub enum AssetBundleResource_LoadType {
     Web = 2i32,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {
@@ -931,7 +941,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {
@@ -944,7 +954,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {
@@ -960,7 +970,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {
@@ -977,7 +987,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {

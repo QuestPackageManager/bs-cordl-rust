@@ -1,10 +1,10 @@
-#[cfg(feature = "IDestinationRequestManager")]
+#[cfg(feature = "cordl_class_IDestinationRequestManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IDestinationRequestManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IDestinationRequestManager")]
+#[cfg(feature = "cordl_class_IDestinationRequestManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IDestinationRequestManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IDestinationRequestManager {
         false
     }
 }
-#[cfg(feature = "IDestinationRequestManager")]
+#[cfg(feature = "cordl_class_IDestinationRequestManager")]
 impl std::ops::Deref for crate::GlobalNamespace::IDestinationRequestManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IDestinationRequestManager")]
+#[cfg(feature = "cordl_class_IDestinationRequestManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IDestinationRequestManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::GlobalNamespace::IDestinationRequestManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IDestinationRequestManager")]
+#[cfg(feature = "cordl_class_IDestinationRequestManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IDestinationRequestManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

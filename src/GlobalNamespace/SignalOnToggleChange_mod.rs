@@ -1,4 +1,4 @@
-#[cfg(feature = "SignalOnToggleChange")]
+#[cfg(feature = "cordl_class_SignalOnToggleChange")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalOnToggleChange {
@@ -8,7 +8,7 @@ pub struct SignalOnToggleChange {
     >,
     pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }
-#[cfg(feature = "SignalOnToggleChange")]
+#[cfg(feature = "cordl_class_SignalOnToggleChange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SignalOnToggleChange {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::SignalOnToggleChange {
         false
     }
 }
-#[cfg(feature = "SignalOnToggleChange")]
+#[cfg(feature = "cordl_class_SignalOnToggleChange")]
 impl std::ops::Deref for crate::GlobalNamespace::SignalOnToggleChange {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SignalOnToggleChange")]
+#[cfg(feature = "cordl_class_SignalOnToggleChange")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SignalOnToggleChange {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -140,7 +140,7 @@ impl crate::GlobalNamespace::SignalOnToggleChange {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SignalOnToggleChange")]
+#[cfg(feature = "cordl_class_SignalOnToggleChange")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SignalOnToggleChange {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

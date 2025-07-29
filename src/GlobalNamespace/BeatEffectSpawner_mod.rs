@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatEffectSpawner")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatEffectSpawner {
@@ -25,7 +25,7 @@ pub struct BeatEffectSpawner {
         >,
     >,
 }
-#[cfg(feature = "BeatEffectSpawner")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatEffectSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -44,14 +44,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatEffectSp
         false
     }
 }
-#[cfg(feature = "BeatEffectSpawner")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatEffectSpawner")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatEffectSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -237,7 +237,7 @@ impl crate::GlobalNamespace::BeatEffectSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatEffectSpawner")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -260,14 +260,14 @@ for crate::GlobalNamespace::BeatEffectSpawner {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BeatEffectSpawner+InitData")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatEffectSpawner_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hideNoteSpawnEffect: bool,
 }
-#[cfg(feature = "BeatEffectSpawner+InitData")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatEffectSpawner_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -287,14 +287,14 @@ for crate::GlobalNamespace::BeatEffectSpawner_InitData {
         false
     }
 }
-#[cfg(feature = "BeatEffectSpawner+InitData")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffectSpawner_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatEffectSpawner+InitData")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatEffectSpawner_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -334,7 +334,7 @@ impl crate::GlobalNamespace::BeatEffectSpawner_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatEffectSpawner+InitData")]
+#[cfg(feature = "cordl_class_BeatEffectSpawner+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatEffectSpawner_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

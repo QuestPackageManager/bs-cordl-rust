@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SelectorMatchRecord {
@@ -8,7 +8,7 @@ pub struct SelectorMatchRecord {
         crate::UnityEngine::UIElements::StyleComplexSelector,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
     type Type = Self;

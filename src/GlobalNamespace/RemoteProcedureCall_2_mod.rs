@@ -1,4 +1,4 @@
-#[cfg(feature = "RemoteProcedureCall_2")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteProcedureCall_2<
@@ -15,7 +15,7 @@ pub struct RemoteProcedureCall_2<
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
 }
-#[cfg(feature = "RemoteProcedureCall_2")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_2")]
 unsafe impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -50,7 +50,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "RemoteProcedureCall_2")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::RemoteProcedureCall_2<T0, T1> {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::RemoteProcedureCall_2<T0, T1> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RemoteProcedureCall_2")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::RemoteProcedureCall_2<T0, T1> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -298,7 +298,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RemoteProcedureCall_2")]
+#[cfg(feature = "cordl_class_RemoteProcedureCall_2")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,

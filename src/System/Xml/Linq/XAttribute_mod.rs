@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Linq+XAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XAttribute {
@@ -7,7 +7,7 @@ pub struct XAttribute {
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+Linq+XAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XAttribute")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::XAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::XAttribute
         false
     }
 }
-#[cfg(feature = "System+Xml+Linq+XAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XAttribute")]
 impl std::ops::Deref for crate::System::Xml::Linq::XAttribute {
     type Target = crate::System::Xml::Linq::XObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Linq+XAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XAttribute")]
 impl std::ops::DerefMut for crate::System::Xml::Linq::XAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -331,7 +331,7 @@ impl crate::System::Xml::Linq::XAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Linq+XAttribute")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XAttribute")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

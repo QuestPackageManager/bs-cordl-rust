@@ -1,4 +1,4 @@
-#[cfg(feature = "ScoreMultiplierCounter")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreMultiplierCounter {
@@ -7,7 +7,7 @@ pub struct ScoreMultiplierCounter {
     pub _multiplierIncreaseProgress: i32,
     pub _multiplierIncreaseMaxProgress: i32,
 }
-#[cfg(feature = "ScoreMultiplierCounter")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScoreMultiplierCounter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::ScoreMultiplierCounter {
         false
     }
 }
-#[cfg(feature = "ScoreMultiplierCounter")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreMultiplierCounter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScoreMultiplierCounter")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreMultiplierCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::ScoreMultiplierCounter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScoreMultiplierCounter")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScoreMultiplierCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -164,7 +164,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScoreMultiplierCounter_MultiplierEventType {
@@ -173,7 +173,7 @@ pub enum ScoreMultiplierCounter_MultiplierEventType {
     Neutral = 1i32,
     Positive = 0i32,
 }
-#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Held<'a> = Self;
@@ -203,7 +203,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Type = Self;
@@ -214,7 +214,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Actual = Self;
@@ -228,7 +228,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
         self
     }
 }
-#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Type = Self;
@@ -243,7 +243,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
         }
     }
 }
-#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
+#[cfg(feature = "cordl_class_ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Actual = Self;

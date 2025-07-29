@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+FileShare")]
+#[cfg(feature = "cordl_class_System+IO+FileShare")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileShare {
@@ -10,7 +10,7 @@ pub enum FileShare {
     ReadWrite = 3i32,
     Write = 2i32,
 }
-#[cfg(feature = "System+IO+FileShare")]
+#[cfg(feature = "cordl_class_System+IO+FileShare")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileShare {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileShare {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+IO+FileShare")]
+#[cfg(feature = "cordl_class_System+IO+FileShare")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::IO::FileShare {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::IO::FileShare {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+IO+FileShare")]
+#[cfg(feature = "cordl_class_System+IO+FileShare")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IO::FileShare {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IO::FileShare {
         self
     }
 }
-#[cfg(feature = "System+IO+FileShare")]
+#[cfg(feature = "cordl_class_System+IO+FileShare")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::IO::FileShare {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::IO::FileShare {
         }
     }
 }
-#[cfg(feature = "System+IO+FileShare")]
+#[cfg(feature = "cordl_class_System+IO+FileShare")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::IO::FileShare {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

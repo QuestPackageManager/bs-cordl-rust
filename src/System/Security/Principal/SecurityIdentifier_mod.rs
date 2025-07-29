@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
+#[cfg(feature = "cordl_class_System+Security+Principal+SecurityIdentifier")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecurityIdentifier {
     __cordl_parent: crate::System::Security::Principal::IdentityReference,
     pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
+#[cfg(feature = "cordl_class_System+Security+Principal+SecurityIdentifier")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Principal::SecurityIdentifier {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Security::Principal::SecurityIdentifier {
         false
     }
 }
-#[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
+#[cfg(feature = "cordl_class_System+Security+Principal+SecurityIdentifier")]
 impl std::ops::Deref for crate::System::Security::Principal::SecurityIdentifier {
     type Target = crate::System::Security::Principal::IdentityReference;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
+#[cfg(feature = "cordl_class_System+Security+Principal+SecurityIdentifier")]
 impl std::ops::DerefMut for crate::System::Security::Principal::SecurityIdentifier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -565,7 +565,7 @@ impl crate::System::Security::Principal::SecurityIdentifier {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
+#[cfg(feature = "cordl_class_System+Security+Principal+SecurityIdentifier")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Principal::SecurityIdentifier {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

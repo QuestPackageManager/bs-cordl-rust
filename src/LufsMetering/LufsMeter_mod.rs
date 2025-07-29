@@ -1,4 +1,4 @@
-#[cfg(feature = "LufsMetering+LufsMeter")]
+#[cfg(feature = "cordl_class_LufsMetering+LufsMeter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LufsMeter {
@@ -10,7 +10,7 @@ pub struct LufsMeter {
         quest_hook::libil2cpp::Il2CppArray<crate::Unity::Collections::NativeArray_1<f32>>,
     >,
 }
-#[cfg(feature = "LufsMetering+LufsMeter")]
+#[cfg(feature = "cordl_class_LufsMetering+LufsMeter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::LufsMeter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::LufsMeter {
         false
     }
 }
-#[cfg(feature = "LufsMetering+LufsMeter")]
+#[cfg(feature = "cordl_class_LufsMetering+LufsMeter")]
 impl std::ops::Deref for crate::LufsMetering::LufsMeter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LufsMetering+LufsMeter")]
+#[cfg(feature = "cordl_class_LufsMetering+LufsMeter")]
 impl std::ops::DerefMut for crate::LufsMetering::LufsMeter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -195,7 +195,7 @@ impl crate::LufsMetering::LufsMeter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LufsMetering+LufsMeter")]
+#[cfg(feature = "cordl_class_LufsMetering+LufsMeter")]
 impl quest_hook::libil2cpp::ObjectType for crate::LufsMetering::LufsMeter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

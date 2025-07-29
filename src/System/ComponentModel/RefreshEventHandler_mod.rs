@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+RefreshEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshEventHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RefreshEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+ComponentModel+RefreshEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshEventHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::RefreshEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::RefreshEventHandler {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+RefreshEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshEventHandler")]
 impl std::ops::Deref for crate::System::ComponentModel::RefreshEventHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+RefreshEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshEventHandler")]
 impl std::ops::DerefMut for crate::System::ComponentModel::RefreshEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -110,7 +110,7 @@ impl crate::System::ComponentModel::RefreshEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+RefreshEventHandler")]
+#[cfg(feature = "cordl_class_System+ComponentModel+RefreshEventHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::RefreshEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

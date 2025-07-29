@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLoader {
     __cordl_parent: crate::UnityEngine::XR::Management::XRLoaderHelper,
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::OculusLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::OculusLoad
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::OculusLoader {
     type Target = crate::UnityEngine::XR::Management::XRLoaderHelper;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::OculusLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -285,7 +285,7 @@ impl crate::Unity::XR::Oculus::OculusLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -294,7 +294,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusLoade
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusLoader_DeviceSupportedResult {
@@ -303,7 +303,7 @@ pub enum OculusLoader_DeviceSupportedResult {
     NotSupported = 1i32,
     Supported = 0i32,
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Held<'a> = Self;
@@ -333,7 +333,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Type = Self;
@@ -344,7 +344,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Actual = Self;
@@ -358,7 +358,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
         self
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Type = Self;
@@ -373,7 +373,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
         }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Actual = Self;

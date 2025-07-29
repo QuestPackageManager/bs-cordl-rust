@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Enumerable")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enumerable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Enumerable")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Linq::Enumerable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Linq::Enumerable {
         false
     }
 }
-#[cfg(feature = "System+Linq+Enumerable")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable")]
 impl std::ops::Deref for crate::System::Linq::Enumerable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable")]
 impl std::ops::DerefMut for crate::System::Linq::Enumerable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3541,7 +3541,7 @@ impl crate::System::Linq::Enumerable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Enumerable")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Enumerable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -3550,7 +3550,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Enumerable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+Iterator_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enumerable_Iterator_1<TSource: quest_hook::libil2cpp::Type> {
@@ -3560,7 +3560,7 @@ pub struct Enumerable_Iterator_1<TSource: quest_hook::libil2cpp::Type> {
     pub current: TSource,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
-#[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+Iterator_1")]
 unsafe impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Linq::Enumerable_Iterator_1<TSource> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3596,7 +3596,7 @@ for crate::System::Linq::Enumerable_Iterator_1<TSource> {
         false
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+Iterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Enumerable_Iterator_1<TSource> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3604,7 +3604,7 @@ for crate::System::Linq::Enumerable_Iterator_1<TSource> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+Iterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Linq::Enumerable_Iterator_1<TSource> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3958,7 +3958,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+Iterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Enumerable_Iterator_1<TSource> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4050,7 +4050,7 @@ for crate::System::Linq::Enumerable_Iterator_1<TSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereArrayIterator_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enumerable_WhereArrayIterator_1<TSource: quest_hook::libil2cpp::Type> {
@@ -4060,7 +4060,7 @@ pub struct Enumerable_WhereArrayIterator_1<TSource: quest_hook::libil2cpp::Type>
     pub index: i32,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereArrayIterator_1")]
 unsafe impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4096,7 +4096,7 @@ for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
         false
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereArrayIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
     type Target = crate::System::Linq::Enumerable_Iterator_1<TSource>;
@@ -4104,7 +4104,7 @@ for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereArrayIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4300,7 +4300,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereArrayIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4310,7 +4310,7 @@ for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereEnumerableIterator_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enumerable_WhereEnumerableIterator_1<TSource: quest_hook::libil2cpp::Type> {
@@ -4324,7 +4324,7 @@ pub struct Enumerable_WhereEnumerableIterator_1<TSource: quest_hook::libil2cpp::
     >,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereEnumerableIterator_1")]
 unsafe impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4360,7 +4360,7 @@ for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
         false
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereEnumerableIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
     type Target = crate::System::Linq::Enumerable_Iterator_1<TSource>;
@@ -4368,7 +4368,7 @@ for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereEnumerableIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4593,7 +4593,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereEnumerableIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4603,7 +4603,7 @@ for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereListIterator_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enumerable_WhereListIterator_1<TSource: quest_hook::libil2cpp::Type> {
@@ -4615,7 +4615,7 @@ pub struct Enumerable_WhereListIterator_1<TSource: quest_hook::libil2cpp::Type> 
     pub enumerator: crate::System::Collections::Generic::List_1_Enumerator<TSource>,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereListIterator_1")]
 unsafe impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4651,7 +4651,7 @@ for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
         false
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereListIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
     type Target = crate::System::Linq::Enumerable_Iterator_1<TSource>;
@@ -4659,7 +4659,7 @@ for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereListIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4859,7 +4859,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereListIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4869,7 +4869,7 @@ for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectArrayIterator_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enumerable_WhereSelectArrayIterator_2<
@@ -4884,7 +4884,7 @@ pub struct Enumerable_WhereSelectArrayIterator_2<
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectArrayIterator_2")]
 unsafe impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -4923,7 +4923,7 @@ for crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<TSource, TResult>
         false
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectArrayIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -4934,7 +4934,7 @@ for crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<TSource, TResult>
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectArrayIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5151,7 +5151,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectArrayIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5164,7 +5164,7 @@ for crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<TSource, TResult>
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enumerable_WhereSelectEnumerableIterator_2<
@@ -5183,7 +5183,7 @@ pub struct Enumerable_WhereSelectEnumerableIterator_2<
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
 unsafe impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5222,7 +5222,7 @@ for crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<TSource, TRe
         false
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5233,7 +5233,7 @@ for crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<TSource, TRe
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5481,7 +5481,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5494,7 +5494,7 @@ for crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<TSource, TRe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectListIterator_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enumerable_WhereSelectListIterator_2<
@@ -5511,7 +5511,7 @@ pub struct Enumerable_WhereSelectListIterator_2<
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectListIterator_2")]
 unsafe impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5550,7 +5550,7 @@ for crate::System::Linq::Enumerable_WhereSelectListIterator_2<TSource, TResult> 
         false
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectListIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5561,7 +5561,7 @@ for crate::System::Linq::Enumerable_WhereSelectListIterator_2<TSource, TResult> 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectListIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5782,7 +5782,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
+#[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectListIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

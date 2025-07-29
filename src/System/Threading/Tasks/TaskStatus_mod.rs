@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+TaskStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TaskStatus {
@@ -12,7 +12,7 @@ pub enum TaskStatus {
     WaitingForChildrenToComplete = 4i32,
     WaitingToRun = 2i32,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::TaskStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::Tas
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::TaskStatus {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::System::Threading::Tasks::TaskStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::TaskStatus {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::System::Threading::Tasks::TaskStatus {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::TaskStatus {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::System::Threading::Tasks::TaskStatus {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::TaskStatus {
     type Actual = Self;

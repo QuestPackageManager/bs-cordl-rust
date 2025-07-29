@@ -1,4 +1,4 @@
-#[cfg(feature = "NodePoseSyncState")]
+#[cfg(feature = "cordl_class_NodePoseSyncState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NodePoseSyncState {
@@ -6,7 +6,7 @@ pub struct NodePoseSyncState {
     pub _leftController: crate::GlobalNamespace::PoseSerializable,
     pub _rightController: crate::GlobalNamespace::PoseSerializable,
 }
-#[cfg(feature = "NodePoseSyncState")]
+#[cfg(feature = "cordl_class_NodePoseSyncState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NodePoseSyncState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NodePoseSync
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NodePoseSyncState")]
+#[cfg(feature = "cordl_class_NodePoseSyncState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NodePoseSyncState {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::NodePoseSyncState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NodePoseSyncState")]
+#[cfg(feature = "cordl_class_NodePoseSyncState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NodePoseSyncState {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::NodePoseSyncState {
         self
     }
 }
-#[cfg(feature = "NodePoseSyncState")]
+#[cfg(feature = "cordl_class_NodePoseSyncState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NodePoseSyncState {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::NodePoseSyncState {
         }
     }
 }
-#[cfg(feature = "NodePoseSyncState")]
+#[cfg(feature = "cordl_class_NodePoseSyncState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NodePoseSyncState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NodePoseSy
         actual
     }
 }
-#[cfg(feature = "NodePoseSyncState")]
+#[cfg(feature = "cordl_class_NodePoseSyncState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::NodePoseSyncState {
     type Type = Self;
@@ -489,7 +489,7 @@ for crate::GlobalNamespace::NodePoseSyncState {
         todo!()
     }
 }
-#[cfg(feature = "NodePoseSyncState+NodePose")]
+#[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NodePoseSyncState_NodePose {
@@ -499,7 +499,7 @@ pub enum NodePoseSyncState_NodePose {
     LeftController = 1i32,
     RightController = 2i32,
 }
-#[cfg(feature = "NodePoseSyncState+NodePose")]
+#[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Held<'a> = Self;
@@ -529,7 +529,7 @@ for crate::GlobalNamespace::NodePoseSyncState_NodePose {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NodePoseSyncState+NodePose")]
+#[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Type = Self;
@@ -540,7 +540,7 @@ for crate::GlobalNamespace::NodePoseSyncState_NodePose {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NodePoseSyncState+NodePose")]
+#[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Actual = Self;
@@ -554,7 +554,7 @@ for crate::GlobalNamespace::NodePoseSyncState_NodePose {
         self
     }
 }
-#[cfg(feature = "NodePoseSyncState+NodePose")]
+#[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Type = Self;
@@ -569,7 +569,7 @@ for crate::GlobalNamespace::NodePoseSyncState_NodePose {
         }
     }
 }
-#[cfg(feature = "NodePoseSyncState+NodePose")]
+#[cfg(feature = "cordl_class_NodePoseSyncState+NodePose")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NodePoseSyncState_NodePose {
     type Actual = Self;

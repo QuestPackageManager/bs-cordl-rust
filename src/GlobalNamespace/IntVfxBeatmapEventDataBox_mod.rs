@@ -1,4 +1,4 @@
-#[cfg(feature = "IntVfxBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_IntVfxBeatmapEventDataBox")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntVfxBeatmapEventDataBox {
@@ -10,7 +10,7 @@ pub struct IntVfxBeatmapEventDataBox {
     >,
     pub _beatStep: f32,
 }
-#[cfg(feature = "IntVfxBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_IntVfxBeatmapEventDataBox")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
         false
     }
 }
-#[cfg(feature = "IntVfxBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_IntVfxBeatmapEventDataBox")]
 impl std::ops::Deref for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
     type Target = crate::GlobalNamespace::BeatmapEventDataBox;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IntVfxBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_IntVfxBeatmapEventDataBox")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -255,7 +255,7 @@ impl crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IntVfxBeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_IntVfxBeatmapEventDataBox")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1")]
+#[cfg(feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultipleSortedBeatmapObjectsListsEnumerator_1<
@@ -16,7 +16,7 @@ pub struct MultipleSortedBeatmapObjectsListsEnumerator_1<
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1")]
+#[cfg(feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,7 +52,7 @@ for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
         false
     }
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1")]
+#[cfg(feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1")]
+#[cfg(feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -222,7 +222,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1")]
+#[cfg(feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -246,7 +246,9 @@ for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode")]
+#[cfg(
+    feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
@@ -260,7 +262,9 @@ pub struct MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     pub _idx: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode")]
+#[cfg(
+    feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     T,
@@ -298,7 +302,9 @@ for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_Beatma
         false
     }
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode")]
+#[cfg(
+    feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     T,
@@ -308,7 +314,9 @@ for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_Beatma
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode")]
+#[cfg(
+    feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode"
+)]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     T,
@@ -441,7 +449,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode")]
+#[cfg(
+    feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode"
+)]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     T,

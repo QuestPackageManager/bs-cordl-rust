@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseVerticalCollectionView {
@@ -95,7 +95,7 @@ pub struct BaseVerticalCollectionView {
     pub m_ItemsSourceChangedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_TouchDownPosition: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -115,14 +115,14 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2645,7 +2645,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2669,7 +2669,9 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseVerticalCollectionView_UxmlTraits {
@@ -2702,7 +2704,9 @@ pub struct BaseVerticalCollectionView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2722,7 +2726,9 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
@@ -2730,7 +2736,9 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2804,7 +2812,9 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

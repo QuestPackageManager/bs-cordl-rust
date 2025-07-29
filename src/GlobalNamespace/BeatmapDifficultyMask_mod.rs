@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapDifficultyMask")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMask")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapDifficultyMask {
@@ -10,7 +10,7 @@ pub enum BeatmapDifficultyMask {
     Hard = 4u8,
     Normal = 2u8,
 }
-#[cfg(feature = "BeatmapDifficultyMask")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMask")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDifficultyMask {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::BeatmapDifficultyMask {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapDifficultyMask")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMask")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapDifficultyMask {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::BeatmapDifficultyMask {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapDifficultyMask")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMask")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapDifficultyMask {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::GlobalNamespace::BeatmapDifficultyMask {
         self
     }
 }
-#[cfg(feature = "BeatmapDifficultyMask")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMask")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapDifficultyMask {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::GlobalNamespace::BeatmapDifficultyMask {
         }
     }
 }
-#[cfg(feature = "BeatmapDifficultyMask")]
+#[cfg(feature = "cordl_class_BeatmapDifficultyMask")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapDifficultyMask {
     type Actual = Self;

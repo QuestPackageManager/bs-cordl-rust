@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ConsoleDriver")]
+#[cfg(feature = "cordl_class_System+ConsoleDriver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConsoleDriver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ConsoleDriver")]
+#[cfg(feature = "cordl_class_System+ConsoleDriver")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ConsoleDriver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ConsoleDriver {
         false
     }
 }
-#[cfg(feature = "System+ConsoleDriver")]
+#[cfg(feature = "cordl_class_System+ConsoleDriver")]
 impl std::ops::Deref for crate::System::ConsoleDriver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ConsoleDriver")]
+#[cfg(feature = "cordl_class_System+ConsoleDriver")]
 impl std::ops::DerefMut for crate::System::ConsoleDriver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -272,7 +272,7 @@ impl crate::System::ConsoleDriver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ConsoleDriver")]
+#[cfg(feature = "cordl_class_System+ConsoleDriver")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ConsoleDriver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

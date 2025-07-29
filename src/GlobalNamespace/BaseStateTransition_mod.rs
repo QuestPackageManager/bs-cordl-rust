@@ -1,4 +1,4 @@
-#[cfg(feature = "BaseStateTransition")]
+#[cfg(feature = "cordl_class_BaseStateTransition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseStateTransition {
@@ -8,7 +8,7 @@ pub struct BaseStateTransition {
     >,
     pub _viewState: crate::GlobalNamespace::SelectableStateController_ViewState,
 }
-#[cfg(feature = "BaseStateTransition")]
+#[cfg(feature = "cordl_class_BaseStateTransition")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BaseStateTransition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BaseStateTra
         false
     }
 }
-#[cfg(feature = "BaseStateTransition")]
+#[cfg(feature = "cordl_class_BaseStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::BaseStateTransition {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BaseStateTransition")]
+#[cfg(feature = "cordl_class_BaseStateTransition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BaseStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -601,7 +601,7 @@ impl crate::GlobalNamespace::BaseStateTransition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BaseStateTransition")]
+#[cfg(feature = "cordl_class_BaseStateTransition")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BaseStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

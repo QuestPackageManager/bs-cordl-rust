@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextualMenuManipulator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextualMenuManipulator {
@@ -11,7 +11,7 @@ pub struct ContextualMenuManipulator {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextualMenuManipulator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ContextualMenuManipulator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::UnityEngine::UIElements::ContextualMenuManipulator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextualMenuManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ContextualMenuManipulator {
     type Target = crate::UnityEngine::UIElements::MouseManipulator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextualMenuManipulator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ContextualMenuManipulator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -320,7 +320,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextualMenuManipulator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ContextualMenuManipulator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionSelectionNavigationController")]
+#[cfg(feature = "cordl_class_MissionSelectionNavigationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionSelectionNavigationController {
@@ -17,7 +17,7 @@ pub struct MissionSelectionNavigationController {
         >,
     >,
 }
-#[cfg(feature = "MissionSelectionNavigationController")]
+#[cfg(feature = "cordl_class_MissionSelectionNavigationController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionSelectionNavigationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::MissionSelectionNavigationController {
         false
     }
 }
-#[cfg(feature = "MissionSelectionNavigationController")]
+#[cfg(feature = "cordl_class_MissionSelectionNavigationController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionSelectionNavigationController {
     type Target = crate::HMUI::NavigationController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionSelectionNavigationController")]
+#[cfg(feature = "cordl_class_MissionSelectionNavigationController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MissionSelectionNavigationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -339,7 +339,7 @@ impl crate::GlobalNamespace::MissionSelectionNavigationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionSelectionNavigationController")]
+#[cfg(feature = "cordl_class_MissionSelectionNavigationController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionSelectionNavigationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

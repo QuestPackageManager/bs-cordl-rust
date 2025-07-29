@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateBlock {
@@ -7,7 +7,7 @@ pub struct InputStateBlock {
     pub _bitOffset_k__BackingField: u32,
     pub _sizeInBits_k__BackingField: u32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
     type Type = Self;

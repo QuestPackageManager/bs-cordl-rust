@@ -1,4 +1,4 @@
-#[cfg(feature = "ZenjectSafeBehaviour")]
+#[cfg(feature = "cordl_class_ZenjectSafeBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectSafeBehaviour {
@@ -6,7 +6,7 @@ pub struct ZenjectSafeBehaviour {
     pub _isInjected: bool,
     pub _wasOnEnableCalled: bool,
 }
-#[cfg(feature = "ZenjectSafeBehaviour")]
+#[cfg(feature = "cordl_class_ZenjectSafeBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ZenjectSafeBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::ZenjectSafeBehaviour {
         false
     }
 }
-#[cfg(feature = "ZenjectSafeBehaviour")]
+#[cfg(feature = "cordl_class_ZenjectSafeBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::ZenjectSafeBehaviour {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ZenjectSafeBehaviour")]
+#[cfg(feature = "cordl_class_ZenjectSafeBehaviour")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ZenjectSafeBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -228,7 +228,7 @@ impl crate::GlobalNamespace::ZenjectSafeBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ZenjectSafeBehaviour")]
+#[cfg(feature = "cordl_class_ZenjectSafeBehaviour")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ZenjectSafeBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

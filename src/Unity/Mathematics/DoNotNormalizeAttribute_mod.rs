@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Mathematics+DoNotNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+DoNotNormalizeAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoNotNormalizeAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }
-#[cfg(feature = "Unity+Mathematics+DoNotNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+DoNotNormalizeAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::DoNotNormalizeAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Mathematics::DoNotNormalizeAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Mathematics+DoNotNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+DoNotNormalizeAttribute")]
 impl std::ops::Deref for crate::Unity::Mathematics::DoNotNormalizeAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Mathematics+DoNotNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+DoNotNormalizeAttribute")]
 impl std::ops::DerefMut for crate::Unity::Mathematics::DoNotNormalizeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Unity::Mathematics::DoNotNormalizeAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Mathematics+DoNotNormalizeAttribute")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+DoNotNormalizeAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Mathematics::DoNotNormalizeAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

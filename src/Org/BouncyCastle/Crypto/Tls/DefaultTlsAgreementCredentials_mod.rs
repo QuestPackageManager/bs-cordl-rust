@@ -1,4 +1,6 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTlsAgreementCredentials {
@@ -14,7 +16,9 @@ pub struct DefaultTlsAgreementCredentials {
     >,
     pub mTruncateAgreement: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,7 +38,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials;
@@ -42,7 +48,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -167,7 +175,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

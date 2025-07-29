@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+AndroidJavaRunnableProxy")]
+#[cfg(feature = "cordl_class_UnityEngine+AndroidJavaRunnableProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJavaRunnableProxy {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
     pub mRunnable: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaRunnable>,
 }
-#[cfg(feature = "UnityEngine+AndroidJavaRunnableProxy")]
+#[cfg(feature = "cordl_class_UnityEngine+AndroidJavaRunnableProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AndroidJavaRunnableProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::AndroidJavaRunnableProxy {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AndroidJavaRunnableProxy")]
+#[cfg(feature = "cordl_class_UnityEngine+AndroidJavaRunnableProxy")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJavaRunnableProxy {
     type Target = crate::UnityEngine::AndroidJavaProxy;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AndroidJavaRunnableProxy")]
+#[cfg(feature = "cordl_class_UnityEngine+AndroidJavaRunnableProxy")]
 impl std::ops::DerefMut for crate::UnityEngine::AndroidJavaRunnableProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -129,7 +129,7 @@ impl crate::UnityEngine::AndroidJavaRunnableProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AndroidJavaRunnableProxy")]
+#[cfg(feature = "cordl_class_UnityEngine+AndroidJavaRunnableProxy")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AndroidJavaRunnableProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

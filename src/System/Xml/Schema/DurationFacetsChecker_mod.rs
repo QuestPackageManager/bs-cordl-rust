@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+DurationFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DurationFacetsChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DurationFacetsChecker {
     __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
 }
-#[cfg(feature = "System+Xml+Schema+DurationFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DurationFacetsChecker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::DurationFacetsChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::DurationFacetsChecker {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+DurationFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DurationFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::DurationFacetsChecker {
     type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+DurationFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DurationFacetsChecker")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::DurationFacetsChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -214,7 +214,7 @@ impl crate::System::Xml::Schema::DurationFacetsChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+DurationFacetsChecker")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+DurationFacetsChecker")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::DurationFacetsChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

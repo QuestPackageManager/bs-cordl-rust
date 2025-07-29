@@ -1,10 +1,10 @@
-#[cfg(feature = "System+SystemException")]
+#[cfg(feature = "cordl_class_System+SystemException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemException {
     __cordl_parent: crate::System::Exception,
 }
-#[cfg(feature = "System+SystemException")]
+#[cfg(feature = "cordl_class_System+SystemException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::SystemException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::SystemException {
         false
     }
 }
-#[cfg(feature = "System+SystemException")]
+#[cfg(feature = "cordl_class_System+SystemException")]
 impl std::ops::Deref for crate::System::SystemException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+SystemException")]
+#[cfg(feature = "cordl_class_System+SystemException")]
 impl std::ops::DerefMut for crate::System::SystemException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -190,7 +190,7 @@ impl crate::System::SystemException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+SystemException")]
+#[cfg(feature = "cordl_class_System+SystemException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::SystemException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

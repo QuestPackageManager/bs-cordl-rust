@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableOutput")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AudioPlayableOutput {
     pub m_Handle: crate::UnityEngine::Playables::PlayableOutputHandle,
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Audio::AudioPlayableOutput {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::Audio::AudioPlayableOutput {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Audio::AudioPlayableOutput {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::Audio::AudioPlayableOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Audio::AudioPlayableOutput {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Audio::AudioPlayableOutput {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Audio::AudioPlayableOutput {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::Audio::AudioPlayableOutput {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Audio::AudioPlayableOutput {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Audio::AudioPlayableOutput {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Audio::AudioPlayableOutput {
     type Type = Self;

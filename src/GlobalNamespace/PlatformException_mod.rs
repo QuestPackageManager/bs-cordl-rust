@@ -1,4 +1,4 @@
-#[cfg(feature = "PlatformException")]
+#[cfg(feature = "cordl_class_PlatformException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformException {
@@ -7,7 +7,7 @@ pub struct PlatformException {
     pub code: i32,
     pub httpCode: i32,
 }
-#[cfg(feature = "PlatformException")]
+#[cfg(feature = "cordl_class_PlatformException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlatformException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlatformExce
         false
     }
 }
-#[cfg(feature = "PlatformException")]
+#[cfg(feature = "cordl_class_PlatformException")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformException")]
+#[cfg(feature = "cordl_class_PlatformException")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::GlobalNamespace::PlatformException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformException")]
+#[cfg(feature = "cordl_class_PlatformException")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -153,7 +153,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformExcep
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlatformException+ErrorType")]
+#[cfg(feature = "cordl_class_PlatformException+ErrorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformException_ErrorType {
@@ -163,7 +163,7 @@ pub enum PlatformException_ErrorType {
     PlatformNotInstalled = 0i32,
     PlatformUserEntitlement = 2i32,
 }
-#[cfg(feature = "PlatformException+ErrorType")]
+#[cfg(feature = "cordl_class_PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Held<'a> = Self;
@@ -193,7 +193,7 @@ for crate::GlobalNamespace::PlatformException_ErrorType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlatformException+ErrorType")]
+#[cfg(feature = "cordl_class_PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Type = Self;
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::PlatformException_ErrorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlatformException+ErrorType")]
+#[cfg(feature = "cordl_class_PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Actual = Self;
@@ -218,7 +218,7 @@ for crate::GlobalNamespace::PlatformException_ErrorType {
         self
     }
 }
-#[cfg(feature = "PlatformException+ErrorType")]
+#[cfg(feature = "cordl_class_PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Type = Self;
@@ -233,7 +233,7 @@ for crate::GlobalNamespace::PlatformException_ErrorType {
         }
     }
 }
-#[cfg(feature = "PlatformException+ErrorType")]
+#[cfg(feature = "cordl_class_PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Actual = Self;

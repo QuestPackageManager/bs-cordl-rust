@@ -1,10 +1,10 @@
-#[cfg(feature = "NoteCutDirectionExtensions")]
+#[cfg(feature = "cordl_class_NoteCutDirectionExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutDirectionExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "NoteCutDirectionExtensions")]
+#[cfg(feature = "cordl_class_NoteCutDirectionExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NoteCutDirectionExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::NoteCutDirectionExtensions {
         false
     }
 }
-#[cfg(feature = "NoteCutDirectionExtensions")]
+#[cfg(feature = "cordl_class_NoteCutDirectionExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutDirectionExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NoteCutDirectionExtensions")]
+#[cfg(feature = "cordl_class_NoteCutDirectionExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutDirectionExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -271,7 +271,7 @@ impl crate::GlobalNamespace::NoteCutDirectionExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NoteCutDirectionExtensions")]
+#[cfg(feature = "cordl_class_NoteCutDirectionExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoteCutDirectionExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

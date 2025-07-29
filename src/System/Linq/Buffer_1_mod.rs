@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Buffer_1")]
+#[cfg(feature = "cordl_class_System+Linq+Buffer_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Buffer_1<TElement: quest_hook::libil2cpp::Type> {
@@ -6,7 +6,7 @@ pub struct Buffer_1<TElement: quest_hook::libil2cpp::Type> {
     pub count: i32,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
-#[cfg(feature = "System+Linq+Buffer_1")]
+#[cfg(feature = "cordl_class_System+Linq+Buffer_1")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Linq::Buffer_1<TElement> {
     type Held<'a> = Self;
@@ -49,7 +49,7 @@ for crate::System::Linq::Buffer_1<TElement> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Linq+Buffer_1")]
+#[cfg(feature = "cordl_class_System+Linq+Buffer_1")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Linq::Buffer_1<TElement> {
     type Type = Self;
@@ -60,7 +60,7 @@ for crate::System::Linq::Buffer_1<TElement> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Linq+Buffer_1")]
+#[cfg(feature = "cordl_class_System+Linq+Buffer_1")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Buffer_1<TElement> {
     type Actual = Self;
@@ -74,7 +74,7 @@ for crate::System::Linq::Buffer_1<TElement> {
         self
     }
 }
-#[cfg(feature = "System+Linq+Buffer_1")]
+#[cfg(feature = "cordl_class_System+Linq+Buffer_1")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Linq::Buffer_1<TElement> {
     type Type = Self;
@@ -89,7 +89,7 @@ for crate::System::Linq::Buffer_1<TElement> {
         }
     }
 }
-#[cfg(feature = "System+Linq+Buffer_1")]
+#[cfg(feature = "cordl_class_System+Linq+Buffer_1")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Linq::Buffer_1<TElement> {
     type Actual = Self;
@@ -103,7 +103,7 @@ for crate::System::Linq::Buffer_1<TElement> {
         actual
     }
 }
-#[cfg(feature = "System+Linq+Buffer_1")]
+#[cfg(feature = "cordl_class_System+Linq+Buffer_1")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Linq::Buffer_1<TElement> {
     type Type = Self;

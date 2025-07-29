@@ -1,4 +1,4 @@
-#[cfg(feature = "MockNoteData")]
+#[cfg(feature = "cordl_class_MockNoteData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockNoteData {
@@ -11,7 +11,7 @@ pub struct MockNoteData {
     pub _noteLineLayer_k__BackingField: crate::GlobalNamespace::NoteLineLayer,
     pub _duration_k__BackingField: f32,
 }
-#[cfg(feature = "MockNoteData")]
+#[cfg(feature = "cordl_class_MockNoteData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockNoteData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockNoteData
         false
     }
 }
-#[cfg(feature = "MockNoteData")]
+#[cfg(feature = "cordl_class_MockNoteData")]
 impl std::ops::Deref for crate::GlobalNamespace::MockNoteData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockNoteData")]
+#[cfg(feature = "cordl_class_MockNoteData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockNoteData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -429,7 +429,7 @@ impl crate::GlobalNamespace::MockNoteData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockNoteData")]
+#[cfg(feature = "cordl_class_MockNoteData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockNoteData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

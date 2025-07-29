@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInputModule {
@@ -40,7 +40,7 @@ pub struct OVRInputModule {
         crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
     >,
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::OVRInputModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -60,14 +60,14 @@ for crate::UnityEngine::EventSystems::OVRInputModule {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::OVRInputModule {
     type Target = crate::UnityEngine::EventSystems::PointerInputModule;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::OVRInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1163,7 +1163,7 @@ impl crate::UnityEngine::EventSystems::OVRInputModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::OVRInputModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1173,7 +1173,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule+InputMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInputModule_InputMode {
@@ -1181,7 +1181,7 @@ pub enum OVRInputModule_InputMode {
     Buttons = 1i32,
     Mouse = 0i32,
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Held<'a> = Self;
@@ -1211,7 +1211,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Type = Self;
@@ -1222,7 +1222,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Actual = Self;
@@ -1236,7 +1236,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Type = Self;
@@ -1251,7 +1251,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
+#[cfg(feature = "cordl_class_Microsoft+CSharp+CSharpCodeProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CSharpCodeProvider {
     __cordl_parent: crate::Microsoft::CSharp::CodeDomProvider,
 }
-#[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
+#[cfg(feature = "cordl_class_Microsoft+CSharp+CSharpCodeProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Microsoft::CSharp::CSharpCodeProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Microsoft::CSharp::CSharpCodeProvider {
         false
     }
 }
-#[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
+#[cfg(feature = "cordl_class_Microsoft+CSharp+CSharpCodeProvider")]
 impl std::ops::Deref for crate::Microsoft::CSharp::CSharpCodeProvider {
     type Target = crate::Microsoft::CSharp::CodeDomProvider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
+#[cfg(feature = "cordl_class_Microsoft+CSharp+CSharpCodeProvider")]
 impl std::ops::DerefMut for crate::Microsoft::CSharp::CSharpCodeProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::Microsoft::CSharp::CSharpCodeProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
+#[cfg(feature = "cordl_class_Microsoft+CSharp+CSharpCodeProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Microsoft::CSharp::CSharpCodeProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

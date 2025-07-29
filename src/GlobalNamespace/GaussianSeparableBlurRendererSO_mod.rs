@@ -1,10 +1,10 @@
-#[cfg(feature = "GaussianSeparableBlurRendererSO")]
+#[cfg(feature = "cordl_class_GaussianSeparableBlurRendererSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GaussianSeparableBlurRendererSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
 }
-#[cfg(feature = "GaussianSeparableBlurRendererSO")]
+#[cfg(feature = "cordl_class_GaussianSeparableBlurRendererSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
         false
     }
 }
-#[cfg(feature = "GaussianSeparableBlurRendererSO")]
+#[cfg(feature = "cordl_class_GaussianSeparableBlurRendererSO")]
 impl std::ops::Deref for crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GaussianSeparableBlurRendererSO")]
+#[cfg(feature = "cordl_class_GaussianSeparableBlurRendererSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GaussianSeparableBlurRendererSO")]
+#[cfg(feature = "cordl_class_GaussianSeparableBlurRendererSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

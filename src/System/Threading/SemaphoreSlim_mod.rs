@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+SemaphoreSlim")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SemaphoreSlim {
@@ -17,7 +17,7 @@ pub struct SemaphoreSlim {
         crate::System::Threading::SemaphoreSlim_TaskNode,
     >,
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::SemaphoreSlim {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::SemaphoreS
         false
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim")]
 impl std::ops::Deref for crate::System::Threading::SemaphoreSlim {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim")]
 impl std::ops::DerefMut for crate::System::Threading::SemaphoreSlim {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -627,7 +627,7 @@ impl crate::System::Threading::SemaphoreSlim {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::SemaphoreSlim {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -648,7 +648,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::SemaphoreSl
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim+TaskNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SemaphoreSlim_TaskNode {
@@ -660,7 +660,7 @@ pub struct SemaphoreSlim_TaskNode {
         crate::System::Threading::SemaphoreSlim_TaskNode,
     >,
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim+TaskNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::SemaphoreSlim_TaskNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -680,14 +680,14 @@ for crate::System::Threading::SemaphoreSlim_TaskNode {
         false
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim+TaskNode")]
 impl std::ops::Deref for crate::System::Threading::SemaphoreSlim_TaskNode {
     type Target = crate::System::Threading::Tasks::Task_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim+TaskNode")]
 impl std::ops::DerefMut for crate::System::Threading::SemaphoreSlim_TaskNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -778,7 +778,7 @@ impl crate::System::Threading::SemaphoreSlim_TaskNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
+#[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim+TaskNode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::SemaphoreSlim_TaskNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

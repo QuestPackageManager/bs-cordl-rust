@@ -1,4 +1,4 @@
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_AudioManager {
@@ -29,7 +29,7 @@ pub struct G_AudioManager {
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
 }
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Audio::G_AudioManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -48,14 +48,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Audio::G_AudioM
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioManager")]
 impl std::ops::Deref for crate::Tayx::Graphy::Audio::G_AudioManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioManager")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Audio::G_AudioManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -309,7 +309,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+Audio+G_AudioManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Audio::G_AudioManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "BadCutScoringElement")]
+#[cfg(feature = "cordl_class_BadCutScoringElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BadCutScoringElement {
@@ -6,7 +6,7 @@ pub struct BadCutScoringElement {
     pub _multiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
     pub _wouldBeCorrectCutBestPossibleMultiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
 }
-#[cfg(feature = "BadCutScoringElement")]
+#[cfg(feature = "cordl_class_BadCutScoringElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BadCutScoringElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::BadCutScoringElement {
         false
     }
 }
-#[cfg(feature = "BadCutScoringElement")]
+#[cfg(feature = "cordl_class_BadCutScoringElement")]
 impl std::ops::Deref for crate::GlobalNamespace::BadCutScoringElement {
     type Target = crate::GlobalNamespace::ScoringElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BadCutScoringElement")]
+#[cfg(feature = "cordl_class_BadCutScoringElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BadCutScoringElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -187,7 +187,7 @@ impl crate::GlobalNamespace::BadCutScoringElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BadCutScoringElement")]
+#[cfg(feature = "cordl_class_BadCutScoringElement")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BadCutScoringElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -196,7 +196,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BadCutScoring
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BadCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_BadCutScoringElement+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BadCutScoringElement_Pool {
@@ -204,7 +204,7 @@ pub struct BadCutScoringElement_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BadCutScoringElement>,
     >,
 }
-#[cfg(feature = "BadCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_BadCutScoringElement+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BadCutScoringElement_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -224,7 +224,7 @@ for crate::GlobalNamespace::BadCutScoringElement_Pool {
         false
     }
 }
-#[cfg(feature = "BadCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_BadCutScoringElement+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BadCutScoringElement_Pool {
     type Target = crate::GlobalNamespace::ScoringElement_Pool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BadCutScoringElement>,
@@ -233,7 +233,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BadCutScoringElement_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BadCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_BadCutScoringElement+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BadCutScoringElement_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -270,7 +270,7 @@ impl crate::GlobalNamespace::BadCutScoringElement_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BadCutScoringElement+Pool")]
+#[cfg(feature = "cordl_class_BadCutScoringElement+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BadCutScoringElement_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

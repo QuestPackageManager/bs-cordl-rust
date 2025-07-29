@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+VertexFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VertexFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VertexFlags {
@@ -10,7 +10,7 @@ pub enum VertexFlags {
     IsText = 1i32,
     IsTextured = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VertexFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VertexFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::VertexFlags {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::UIElements::UIR::VertexFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VertexFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VertexFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::VertexFlags {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::UIElements::UIR::VertexFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VertexFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VertexFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::VertexFlags {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::UIElements::UIR::VertexFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VertexFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VertexFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::VertexFlags {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UIElements::UIR::VertexFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VertexFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VertexFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::VertexFlags {
     type Actual = Self;

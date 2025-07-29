@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -10,7 +10,7 @@ pub struct TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
     pub _instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
@@ -42,7 +42,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
@@ -55,7 +55,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
@@ -71,7 +71,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
@@ -88,7 +88,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
@@ -104,7 +104,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
@@ -558,7 +558,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -570,7 +570,7 @@ pub struct TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
     pub _instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
@@ -602,7 +602,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTyp
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
@@ -615,7 +615,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTyp
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
@@ -631,7 +631,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTyp
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
@@ -648,7 +648,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTyp
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
@@ -664,7 +664,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTyp
     }
 }
 #[cfg(
-    feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
@@ -1119,13 +1119,13 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTyp
         todo!()
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1145,14 +1145,14 @@ for crate::System::ComponentModel::TypeDescriptor {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor")]
 impl std::ops::DerefMut for crate::System::ComponentModel::TypeDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2596,7 +2596,7 @@ impl crate::System::ComponentModel::TypeDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2606,7 +2606,9 @@ for crate::System::ComponentModel::TypeDescriptor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor_AttributeFilterCacheItem {
@@ -2620,7 +2622,9 @@ pub struct TypeDescriptor_AttributeFilterCacheItem {
         crate::System::Collections::ICollection,
     >,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2640,7 +2644,9 @@ for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2648,7 +2654,9 @@ for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2750,7 +2758,9 @@ impl crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2760,7 +2770,7 @@ for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor_FilterCacheItem {
@@ -2772,7 +2782,7 @@ pub struct TypeDescriptor_FilterCacheItem {
         crate::System::Collections::ICollection,
     >,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2792,14 +2802,14 @@ for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2891,7 +2901,7 @@ impl crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2901,13 +2911,13 @@ for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+IUnimplemented")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor_IUnimplemented {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+IUnimplemented")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2927,14 +2937,14 @@ for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+IUnimplemented")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+IUnimplemented")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2949,7 +2959,7 @@ impl crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+IUnimplemented")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2959,13 +2969,17 @@ for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+MemberDescriptorComparer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor_MemberDescriptorComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+MemberDescriptorComparer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2985,7 +2999,9 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+MemberDescriptorComparer"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2993,7 +3009,9 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+MemberDescriptorComparer"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3065,7 +3083,9 @@ impl crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+MemberDescriptorComparer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3089,7 +3109,7 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor_MergedTypeDescriptor {
@@ -3101,7 +3121,7 @@ pub struct TypeDescriptor_MergedTypeDescriptor {
         crate::System::ComponentModel::ICustomTypeDescriptor,
     >,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3121,7 +3141,7 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3129,7 +3149,7 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3573,7 +3593,7 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3597,7 +3617,7 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor_TypeDescriptionNode {
@@ -3609,7 +3629,7 @@ pub struct TypeDescriptor_TypeDescriptionNode {
         crate::System::ComponentModel::TypeDescriptionProvider,
     >,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3629,7 +3649,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     type Target = crate::System::ComponentModel::TypeDescriptionProvider;
@@ -3637,7 +3657,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3925,7 +3945,7 @@ impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
+#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3935,13 +3955,17 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorComObject"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor_TypeDescriptorComObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorComObject"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3961,7 +3985,9 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorComObject"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3969,7 +3995,9 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorComObject"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3978,7 +4006,9 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
 impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {}
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorComObject"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3988,13 +4018,17 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorInterface"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeDescriptor_TypeDescriptorInterface {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorInterface"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4014,7 +4048,9 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorInterface"
+)]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -4022,7 +4058,9 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorInterface"
+)]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4031,7 +4069,9 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
 impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {}
-#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
+#[cfg(
+    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorInterface"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

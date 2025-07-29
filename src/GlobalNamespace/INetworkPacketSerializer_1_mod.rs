@@ -1,11 +1,11 @@
-#[cfg(feature = "INetworkPacketSerializer_1")]
+#[cfg(feature = "cordl_class_INetworkPacketSerializer_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct INetworkPacketSerializer_1<TData: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TData: std::marker::PhantomData<TData>,
 }
-#[cfg(feature = "INetworkPacketSerializer_1")]
+#[cfg(feature = "cordl_class_INetworkPacketSerializer_1")]
 unsafe impl<TData: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
         false
     }
 }
-#[cfg(feature = "INetworkPacketSerializer_1")]
+#[cfg(feature = "cordl_class_INetworkPacketSerializer_1")]
 impl<TData: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "INetworkPacketSerializer_1")]
+#[cfg(feature = "cordl_class_INetworkPacketSerializer_1")]
 impl<TData: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -140,7 +140,7 @@ impl<
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "INetworkPacketSerializer_1")]
+#[cfg(feature = "cordl_class_INetworkPacketSerializer_1")]
 impl<TData: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

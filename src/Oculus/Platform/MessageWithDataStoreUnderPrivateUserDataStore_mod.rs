@@ -1,4 +1,6 @@
-#[cfg(feature = "Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore")]
+#[cfg(
+    feature = "cordl_class_Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithDataStoreUnderPrivateUserDataStore {
@@ -11,7 +13,9 @@ pub struct MessageWithDataStoreUnderPrivateUserDataStore {
         >,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore")]
+#[cfg(
+    feature = "cordl_class_Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithDataStoreUnderPrivateUserDataStore {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +35,9 @@ for crate::Oculus::Platform::MessageWithDataStoreUnderPrivateUserDataStore {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore")]
+#[cfg(
+    feature = "cordl_class_Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore"
+)]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithDataStoreUnderPrivateUserDataStore {
     type Target = crate::Oculus::Platform::Message_1<
@@ -46,7 +52,9 @@ for crate::Oculus::Platform::MessageWithDataStoreUnderPrivateUserDataStore {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore")]
+#[cfg(
+    feature = "cordl_class_Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore"
+)]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithDataStoreUnderPrivateUserDataStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -180,7 +188,9 @@ impl crate::Oculus::Platform::MessageWithDataStoreUnderPrivateUserDataStore {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore")]
+#[cfg(
+    feature = "cordl_class_Oculus+Platform+MessageWithDataStoreUnderPrivateUserDataStore"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithDataStoreUnderPrivateUserDataStore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

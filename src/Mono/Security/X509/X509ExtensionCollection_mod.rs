@@ -1,11 +1,11 @@
-#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ExtensionCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ExtensionCollection {
     __cordl_parent: crate::System::Collections::CollectionBase,
     pub readOnly: bool,
 }
-#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ExtensionCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::X509::X509ExtensionCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Mono::Security::X509::X509ExtensionCollection {
         false
     }
 }
-#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ExtensionCollection")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509ExtensionCollection {
     type Target = crate::System::Collections::CollectionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ExtensionCollection")]
 impl std::ops::DerefMut for crate::Mono::Security::X509::X509ExtensionCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::Mono::Security::X509::X509ExtensionCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
+#[cfg(feature = "cordl_class_Mono+Security+X509+X509ExtensionCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::X509::X509ExtensionCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

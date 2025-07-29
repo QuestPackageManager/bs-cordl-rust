@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ColorSpace")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorSpace {
@@ -7,7 +7,7 @@ pub enum ColorSpace {
     Linear = 1i32,
     Uninitialized = -1i32,
 }
-#[cfg(feature = "UnityEngine+ColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ColorSpace {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ColorSpace {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ColorSpace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ColorSpace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ColorSpace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ColorSpace 
         self
     }
 }
-#[cfg(feature = "UnityEngine+ColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ColorSpace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ColorSpace {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ColorSpace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+JsonContainerAttribute")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonContainerAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonContainerAttribute {
@@ -38,7 +38,7 @@ pub struct JsonContainerAttribute {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonContainerAttribute")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonContainerAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::JsonContainerAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -58,14 +58,14 @@ for crate::Newtonsoft::Json::JsonContainerAttribute {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonContainerAttribute")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonContainerAttribute")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonContainerAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonContainerAttribute")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonContainerAttribute")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonContainerAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -795,7 +795,7 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonContainerAttribute")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonContainerAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::JsonContainerAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

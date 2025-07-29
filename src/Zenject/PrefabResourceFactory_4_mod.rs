@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_4")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabResourceFactory_4<
@@ -14,7 +14,7 @@ pub struct PrefabResourceFactory_4<
     __cordl_phantom_P3: std::marker::PhantomData<P3>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_4")]
 unsafe impl<
     P1: quest_hook::libil2cpp::Type,
     P2: quest_hook::libil2cpp::Type,
@@ -55,7 +55,7 @@ for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
         false
     }
 }
-#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_4")]
 impl<
     P1: quest_hook::libil2cpp::Type,
     P2: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_4")]
 impl<
     P1: quest_hook::libil2cpp::Type,
     P2: quest_hook::libil2cpp::Type,
@@ -343,7 +343,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+PrefabResourceFactory_4")]
+#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_4")]
 impl<
     P1: quest_hook::libil2cpp::Type,
     P2: quest_hook::libil2cpp::Type,

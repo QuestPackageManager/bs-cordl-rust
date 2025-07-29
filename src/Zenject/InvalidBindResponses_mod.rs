@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+InvalidBindResponses")]
+#[cfg(feature = "cordl_class_Zenject+InvalidBindResponses")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InvalidBindResponses {
@@ -6,7 +6,7 @@ pub enum InvalidBindResponses {
     _cordl_Assert = 0i32,
     Skip = 1i32,
 }
-#[cfg(feature = "Zenject+InvalidBindResponses")]
+#[cfg(feature = "cordl_class_Zenject+InvalidBindResponses")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InvalidBindResponses {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InvalidBindResponses
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Zenject+InvalidBindResponses")]
+#[cfg(feature = "cordl_class_Zenject+InvalidBindResponses")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::InvalidBindResponses {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Zenject::InvalidBindRespo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Zenject+InvalidBindResponses")]
+#[cfg(feature = "cordl_class_Zenject+InvalidBindResponses")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::InvalidBindResponses {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Zenject::InvalidBindResp
         self
     }
 }
-#[cfg(feature = "Zenject+InvalidBindResponses")]
+#[cfg(feature = "cordl_class_Zenject+InvalidBindResponses")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::InvalidBindResponses {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Zenject::InvalidBindRespo
         }
     }
 }
-#[cfg(feature = "Zenject+InvalidBindResponses")]
+#[cfg(feature = "cordl_class_Zenject+InvalidBindResponses")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::InvalidBindResponses {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

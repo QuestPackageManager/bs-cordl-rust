@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+NetEvent")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetEvent {
@@ -16,7 +16,7 @@ pub struct NetEvent {
     pub DeliveryMethod: crate::LiteNetLib::DeliveryMethod,
     pub DataReader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
 }
-#[cfg(feature = "LiteNetLib+NetEvent")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetEvent {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+NetEvent")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent")]
 impl std::ops::Deref for crate::LiteNetLib::NetEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+NetEvent")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -88,7 +88,7 @@ impl crate::LiteNetLib::NetEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+NetEvent")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -97,7 +97,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+NetEvent+EType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetEvent_EType {
@@ -112,7 +112,7 @@ pub enum NetEvent_EType {
     Receive = 2i32,
     ReceiveUnconnected = 3i32,
 }
-#[cfg(feature = "LiteNetLib+NetEvent+EType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetEvent_EType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -141,7 +141,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetEvent_EType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+NetEvent+EType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::NetEvent_EType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -151,7 +151,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::NetEvent_ETyp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+NetEvent+EType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::NetEvent_EType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -164,7 +164,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LiteNetLib::NetEvent_ETy
         self
     }
 }
-#[cfg(feature = "LiteNetLib+NetEvent+EType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::NetEvent_EType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -178,7 +178,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::NetEvent_ETyp
         }
     }
 }
-#[cfg(feature = "LiteNetLib+NetEvent+EType")]
+#[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LiteNetLib::NetEvent_EType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

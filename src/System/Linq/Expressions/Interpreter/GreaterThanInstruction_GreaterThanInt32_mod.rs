@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct GreaterThanInstruction_GreaterThanInt32 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanInt32 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanInt32 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanInt32 {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanInt32 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanInt32 {
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::GreaterThanInstruction_GreaterThanInt32 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanInt32"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanInt32 {

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoreOnPlayableTrackAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::IgnoreOnPlayableTrackAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Timeline::IgnoreOnPlayableTrackAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::IgnoreOnPlayableTrackAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Timeline::IgnoreOnPlayableTrackAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -69,7 +69,7 @@ impl crate::UnityEngine::Timeline::IgnoreOnPlayableTrackAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::IgnoreOnPlayableTrackAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

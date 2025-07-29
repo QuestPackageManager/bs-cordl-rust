@@ -1,4 +1,4 @@
-#[cfg(feature = "LeaderboardEntry")]
+#[cfg(feature = "cordl_class_LeaderboardEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardEntry {
@@ -8,7 +8,7 @@ pub struct LeaderboardEntry {
     pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _color: crate::UnityEngine::Color,
 }
-#[cfg(feature = "LeaderboardEntry")]
+#[cfg(feature = "cordl_class_LeaderboardEntry")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LeaderboardEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LeaderboardE
         false
     }
 }
-#[cfg(feature = "LeaderboardEntry")]
+#[cfg(feature = "cordl_class_LeaderboardEntry")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardEntry {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardEntry")]
+#[cfg(feature = "cordl_class_LeaderboardEntry")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::LeaderboardEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardEntry")]
+#[cfg(feature = "cordl_class_LeaderboardEntry")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

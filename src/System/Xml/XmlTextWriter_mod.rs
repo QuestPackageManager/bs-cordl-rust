@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextWriter {
@@ -41,7 +41,7 @@ pub struct XmlTextWriter {
     pub useNsHashtable: bool,
     pub xmlCharType: crate::System::Xml::XmlCharType,
 }
-#[cfg(feature = "System+Xml+XmlTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -60,14 +60,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter")]
 impl std::ops::Deref for crate::System::Xml::XmlTextWriter {
     type Target = crate::System::Xml::XmlWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1660,7 +1660,7 @@ impl crate::System::Xml::XmlTextWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1669,7 +1669,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextWriter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Namespace")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlTextWriter_Namespace {
@@ -1678,7 +1678,7 @@ pub struct XmlTextWriter_Namespace {
     pub declared: bool,
     pub prevNsIndex: i32,
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_Namespace {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1707,7 +1707,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_Na
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextWriter_Namespace {
     type Type = Self;
@@ -1718,7 +1718,7 @@ for crate::System::Xml::XmlTextWriter_Namespace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextWriter_Namespace {
     type Actual = Self;
@@ -1732,7 +1732,7 @@ for crate::System::Xml::XmlTextWriter_Namespace {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextWriter_Namespace {
     type Type = Self;
@@ -1747,7 +1747,7 @@ for crate::System::Xml::XmlTextWriter_Namespace {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextWriter_Namespace {
     type Actual = Self;
@@ -1761,7 +1761,7 @@ for crate::System::Xml::XmlTextWriter_Namespace {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::XmlTextWriter_Namespace {
     type Type = Self;
@@ -1811,7 +1811,7 @@ impl crate::System::Xml::XmlTextWriter_Namespace {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+NamespaceState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextWriter_NamespaceState {
@@ -1821,7 +1821,7 @@ pub enum XmlTextWriter_NamespaceState {
     NotDeclaredButInScope = 1i32,
     Uninitialized = 0i32,
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+NamespaceState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextWriter_NamespaceState {
     type Held<'a> = Self;
@@ -1851,7 +1851,7 @@ for crate::System::Xml::XmlTextWriter_NamespaceState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+NamespaceState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextWriter_NamespaceState {
     type Type = Self;
@@ -1862,7 +1862,7 @@ for crate::System::Xml::XmlTextWriter_NamespaceState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+NamespaceState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextWriter_NamespaceState {
     type Actual = Self;
@@ -1876,7 +1876,7 @@ for crate::System::Xml::XmlTextWriter_NamespaceState {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+NamespaceState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextWriter_NamespaceState {
     type Type = Self;
@@ -1891,7 +1891,7 @@ for crate::System::Xml::XmlTextWriter_NamespaceState {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+NamespaceState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextWriter_NamespaceState {
     type Actual = Self;
@@ -1905,7 +1905,7 @@ for crate::System::Xml::XmlTextWriter_NamespaceState {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+SpecialAttr")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextWriter_SpecialAttr {
@@ -1915,7 +1915,7 @@ pub enum XmlTextWriter_SpecialAttr {
     XmlNs = 3i32,
     XmlSpace = 1i32,
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+SpecialAttr")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlTextWriter_SpecialAttr {
     type Held<'a> = Self;
@@ -1945,7 +1945,7 @@ for crate::System::Xml::XmlTextWriter_SpecialAttr {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+SpecialAttr")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextWriter_SpecialAttr {
     type Type = Self;
@@ -1956,7 +1956,7 @@ for crate::System::Xml::XmlTextWriter_SpecialAttr {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+SpecialAttr")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextWriter_SpecialAttr {
     type Actual = Self;
@@ -1970,7 +1970,7 @@ for crate::System::Xml::XmlTextWriter_SpecialAttr {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+SpecialAttr")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextWriter_SpecialAttr {
     type Type = Self;
@@ -1985,7 +1985,7 @@ for crate::System::Xml::XmlTextWriter_SpecialAttr {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+SpecialAttr")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextWriter_SpecialAttr {
     type Actual = Self;
@@ -1999,7 +1999,7 @@ for crate::System::Xml::XmlTextWriter_SpecialAttr {
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+State")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextWriter_State {
@@ -2015,7 +2015,7 @@ pub enum XmlTextWriter_State {
     Prolog = 1i32,
     Start = 0i32,
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+State")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+State")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2044,7 +2044,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_St
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+State")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+State")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::XmlTextWriter_State {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2054,7 +2054,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::XmlTextWrite
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+State")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextWriter_State {
     type Actual = Self;
@@ -2068,7 +2068,7 @@ for crate::System::Xml::XmlTextWriter_State {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+State")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+State")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::XmlTextWriter_State {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2082,7 +2082,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::XmlTextWrite
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+State")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextWriter_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2095,7 +2095,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextWriter_
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+TagInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlTextWriter_TagInfo {
@@ -2109,7 +2109,7 @@ pub struct XmlTextWriter_TagInfo {
     pub prefixCount: i32,
     pub mixed: bool,
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+TagInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_TagInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2138,7 +2138,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_Ta
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+TagInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextWriter_TagInfo {
     type Type = Self;
@@ -2149,7 +2149,7 @@ for crate::System::Xml::XmlTextWriter_TagInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+TagInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextWriter_TagInfo {
     type Actual = Self;
@@ -2163,7 +2163,7 @@ for crate::System::Xml::XmlTextWriter_TagInfo {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+TagInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextWriter_TagInfo {
     type Type = Self;
@@ -2178,7 +2178,7 @@ for crate::System::Xml::XmlTextWriter_TagInfo {
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+TagInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextWriter_TagInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2191,7 +2191,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextWriter_
         actual
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+TagInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::XmlTextWriter_TagInfo {
     type Type = Self;
@@ -2227,7 +2227,7 @@ impl crate::System::Xml::XmlTextWriter_TagInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Token")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextWriter_Token {
@@ -2247,7 +2247,7 @@ pub enum XmlTextWriter_Token {
     StartElement = 4i32,
     Whitespace = 12i32,
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_Token {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -2276,7 +2276,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_To
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::XmlTextWriter_Token {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2286,7 +2286,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::XmlTextWrite
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextWriter_Token {
     type Actual = Self;
@@ -2300,7 +2300,7 @@ for crate::System::Xml::XmlTextWriter_Token {
         self
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::XmlTextWriter_Token {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2314,7 +2314,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::XmlTextWrite
         }
     }
 }
-#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
+#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextWriter_Token {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

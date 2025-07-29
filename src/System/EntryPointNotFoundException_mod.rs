@@ -1,10 +1,10 @@
-#[cfg(feature = "System+EntryPointNotFoundException")]
+#[cfg(feature = "cordl_class_System+EntryPointNotFoundException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EntryPointNotFoundException {
     __cordl_parent: crate::System::TypeLoadException,
 }
-#[cfg(feature = "System+EntryPointNotFoundException")]
+#[cfg(feature = "cordl_class_System+EntryPointNotFoundException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::EntryPointNotFoundException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::EntryPointNotFoundExc
         false
     }
 }
-#[cfg(feature = "System+EntryPointNotFoundException")]
+#[cfg(feature = "cordl_class_System+EntryPointNotFoundException")]
 impl std::ops::Deref for crate::System::EntryPointNotFoundException {
     type Target = crate::System::TypeLoadException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+EntryPointNotFoundException")]
+#[cfg(feature = "cordl_class_System+EntryPointNotFoundException")]
 impl std::ops::DerefMut for crate::System::EntryPointNotFoundException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::EntryPointNotFoundException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+EntryPointNotFoundException")]
+#[cfg(feature = "cordl_class_System+EntryPointNotFoundException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::EntryPointNotFoundException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

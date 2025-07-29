@@ -1,4 +1,4 @@
-#[cfg(feature = "AsyncComputeOperation")]
+#[cfg(feature = "cordl_class_AsyncComputeOperation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncComputeOperation {
@@ -6,7 +6,7 @@ pub struct AsyncComputeOperation {
     pub _timeoutMs: i32,
     pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
 }
-#[cfg(feature = "AsyncComputeOperation")]
+#[cfg(feature = "cordl_class_AsyncComputeOperation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AsyncComputeOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::AsyncComputeOperation {
         false
     }
 }
-#[cfg(feature = "AsyncComputeOperation")]
+#[cfg(feature = "cordl_class_AsyncComputeOperation")]
 impl std::ops::Deref for crate::GlobalNamespace::AsyncComputeOperation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AsyncComputeOperation")]
+#[cfg(feature = "cordl_class_AsyncComputeOperation")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AsyncComputeOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::AsyncComputeOperation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AsyncComputeOperation")]
+#[cfg(feature = "cordl_class_AsyncComputeOperation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AsyncComputeOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

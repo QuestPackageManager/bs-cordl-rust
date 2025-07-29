@@ -1,8 +1,8 @@
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::PreUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::PreU
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate {
     type Type = Self;
@@ -42,7 +42,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate {
     type Actual = Self;
@@ -56,7 +56,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate {
     type Type = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::PlayerLoop::PreUpdate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::PlayerLoop::Pr
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate {
     type Type = Self;
@@ -118,11 +118,11 @@ impl crate::UnityEngine::PlayerLoop::PreUpdate {
     #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
     pub type WindUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate;
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_AIUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
     type Held<'a> = Self;
@@ -152,7 +152,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
     type Type = Self;
@@ -163,7 +163,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
     type Actual = Self;
@@ -177,7 +177,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
     type Type = Self;
@@ -192,7 +192,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
     type Actual = Self;
@@ -206,7 +206,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
     type Type = Self;
@@ -219,11 +219,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_CheckTexFieldInput {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
     type Held<'a> = Self;
@@ -253,7 +253,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
     type Type = Self;
@@ -264,7 +264,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
     type Actual = Self;
@@ -278,7 +278,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
     type Type = Self;
@@ -293,7 +293,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
     type Actual = Self;
@@ -307,7 +307,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
     type Type = Self;
@@ -320,11 +320,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_IMGUISendQueuedEvents {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
     type Held<'a> = Self;
@@ -354,7 +354,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
     type Type = Self;
@@ -365,7 +365,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
     type Actual = Self;
@@ -379,7 +379,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
     type Type = Self;
@@ -394,7 +394,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
     type Actual = Self;
@@ -408,7 +408,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
     type Type = Self;
@@ -421,11 +421,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_NewInputUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
     type Held<'a> = Self;
@@ -455,7 +455,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
     type Type = Self;
@@ -466,7 +466,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
     type Actual = Self;
@@ -480,7 +480,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
     type Type = Self;
@@ -495,7 +495,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
     type Actual = Self;
@@ -509,7 +509,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
     type Type = Self;
@@ -522,11 +522,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_Physics2DUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
     type Held<'a> = Self;
@@ -556,7 +556,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
     type Type = Self;
@@ -567,7 +567,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
     type Actual = Self;
@@ -581,7 +581,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
     type Type = Self;
@@ -596,7 +596,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
     type Actual = Self;
@@ -610,7 +610,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
     type Type = Self;
@@ -623,11 +623,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_PhysicsClothUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
     type Held<'a> = Self;
@@ -657,7 +657,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
     type Type = Self;
@@ -668,7 +668,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
     type Actual = Self;
@@ -682,7 +682,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
     type Type = Self;
@@ -697,7 +697,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
     type Actual = Self;
@@ -711,7 +711,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
     type Type = Self;
@@ -724,11 +724,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_PhysicsUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
     type Held<'a> = Self;
@@ -758,7 +758,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
     type Type = Self;
@@ -769,7 +769,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
     type Actual = Self;
@@ -783,7 +783,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
     type Type = Self;
@@ -798,7 +798,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
     type Actual = Self;
@@ -812,7 +812,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
     type Type = Self;
@@ -825,11 +825,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_SendMouseEvents {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
     type Held<'a> = Self;
@@ -859,7 +859,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
     type Type = Self;
@@ -870,7 +870,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
     type Actual = Self;
@@ -884,7 +884,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
     type Type = Self;
@@ -899,7 +899,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
     type Actual = Self;
@@ -913,7 +913,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
     type Type = Self;
@@ -926,11 +926,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_UpdateVideo {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
     type Held<'a> = Self;
@@ -960,7 +960,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
     type Type = Self;
@@ -971,7 +971,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
     type Actual = Self;
@@ -985,7 +985,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
     type Type = Self;
@@ -1000,7 +1000,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
     type Actual = Self;
@@ -1014,7 +1014,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
     type Type = Self;
@@ -1027,11 +1027,11 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreUpdate_WindUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
     type Held<'a> = Self;
@@ -1061,7 +1061,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
     type Type = Self;
@@ -1072,7 +1072,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
     type Actual = Self;
@@ -1086,7 +1086,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
         self
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
     type Type = Self;
@@ -1101,7 +1101,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
         }
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
     type Actual = Self;
@@ -1115,7 +1115,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
+#[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "DroppedFramesLabel")]
+#[cfg(feature = "cordl_class_DroppedFramesLabel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DroppedFramesLabel {
@@ -12,7 +12,7 @@ pub struct DroppedFramesLabel {
     pub _maxFrameTimeInInterval: f32,
     pub _frameCountInInterval: i32,
 }
-#[cfg(feature = "DroppedFramesLabel")]
+#[cfg(feature = "cordl_class_DroppedFramesLabel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DroppedFramesLabel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DroppedFrame
         false
     }
 }
-#[cfg(feature = "DroppedFramesLabel")]
+#[cfg(feature = "cordl_class_DroppedFramesLabel")]
 impl std::ops::Deref for crate::GlobalNamespace::DroppedFramesLabel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DroppedFramesLabel")]
+#[cfg(feature = "cordl_class_DroppedFramesLabel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DroppedFramesLabel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::DroppedFramesLabel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DroppedFramesLabel")]
+#[cfg(feature = "cordl_class_DroppedFramesLabel")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DroppedFramesLabel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

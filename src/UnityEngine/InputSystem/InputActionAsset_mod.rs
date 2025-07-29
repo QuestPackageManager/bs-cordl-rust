@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionAsset {
@@ -27,7 +27,7 @@ pub struct InputActionAsset {
     >,
     pub m_Devices: crate::UnityEngine::InputSystem::InputActionMap_DeviceArray,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,14 +47,14 @@ for crate::UnityEngine::InputSystem::InputActionAsset {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -999,7 +999,7 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputActionAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1083,7 +1083,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionAsset_ReadFileJson {
@@ -1099,7 +1099,7 @@ pub struct InputActionAsset_ReadFileJson {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Held<'a> = Self;
@@ -1129,7 +1129,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Type = Self;
@@ -1140,7 +1140,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Actual = Self;
@@ -1154,7 +1154,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Type = Self;
@@ -1169,7 +1169,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Actual = Self;
@@ -1183,7 +1183,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Type = Self;
@@ -1227,7 +1227,7 @@ impl crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionAsset_WriteFileJson {
@@ -1243,7 +1243,7 @@ pub struct InputActionAsset_WriteFileJson {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Held<'a> = Self;
@@ -1273,7 +1273,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Type = Self;
@@ -1284,7 +1284,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Actual = Self;
@@ -1298,7 +1298,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Type = Self;
@@ -1313,7 +1313,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Actual = Self;
@@ -1327,7 +1327,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Type = Self;

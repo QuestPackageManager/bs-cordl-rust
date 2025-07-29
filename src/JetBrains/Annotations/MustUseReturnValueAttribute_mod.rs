@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+MustUseReturnValueAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+MustUseReturnValueAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MustUseReturnValueAttribute {
@@ -7,7 +7,7 @@ pub struct MustUseReturnValueAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "JetBrains+Annotations+MustUseReturnValueAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+MustUseReturnValueAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::MustUseReturnValueAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::JetBrains::Annotations::MustUseReturnValueAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+MustUseReturnValueAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+MustUseReturnValueAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::MustUseReturnValueAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+MustUseReturnValueAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+MustUseReturnValueAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::MustUseReturnValueAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::JetBrains::Annotations::MustUseReturnValueAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+MustUseReturnValueAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+MustUseReturnValueAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::MustUseReturnValueAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

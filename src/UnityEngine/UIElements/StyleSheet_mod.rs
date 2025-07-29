@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleSheet {
@@ -78,7 +78,7 @@ pub struct StyleSheet {
     >,
     pub m_IsDefaultStyleSheet: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::StyleSheet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -97,14 +97,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Styl
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheet {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleSheet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1352,7 +1352,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::StyleSheet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1361,7 +1361,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Style
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+ImportStruct")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleSheet_ImportStruct {
@@ -1374,7 +1374,7 @@ pub struct StyleSheet_ImportStruct {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Held<'a> = Self;
@@ -1404,7 +1404,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Type = Self;
@@ -1415,7 +1415,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Actual = Self;
@@ -1429,7 +1429,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Type = Self;
@@ -1444,7 +1444,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Actual = Self;
@@ -1458,7 +1458,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Type = Self;

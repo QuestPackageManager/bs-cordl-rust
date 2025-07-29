@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+FtpControlStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpControlStream {
@@ -28,7 +28,7 @@ pub struct FtpControlStream {
     pub StatusCode: crate::System::Net::FtpStatusCode,
     pub StatusLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Net+FtpControlStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpControlStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpControlStream
         false
     }
 }
-#[cfg(feature = "System+Net+FtpControlStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream")]
 impl std::ops::Deref for crate::System::Net::FtpControlStream {
     type Target = crate::System::Net::CommandStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+FtpControlStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream")]
 impl std::ops::DerefMut for crate::System::Net::FtpControlStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1088,7 +1088,7 @@ impl crate::System::Net::FtpControlStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+FtpControlStream")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpControlStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1097,7 +1097,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpControlStream 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+FtpControlStream+GetPathOption")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream+GetPathOption")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FtpControlStream_GetPathOption {
@@ -1106,7 +1106,7 @@ pub enum FtpControlStream_GetPathOption {
     AssumeNoFilename = 2i32,
     Normal = 0i32,
 }
-#[cfg(feature = "System+Net+FtpControlStream+GetPathOption")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream+GetPathOption")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::FtpControlStream_GetPathOption {
     type Held<'a> = Self;
@@ -1136,7 +1136,7 @@ for crate::System::Net::FtpControlStream_GetPathOption {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+FtpControlStream+GetPathOption")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream+GetPathOption")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::FtpControlStream_GetPathOption {
     type Type = Self;
@@ -1147,7 +1147,7 @@ for crate::System::Net::FtpControlStream_GetPathOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+FtpControlStream+GetPathOption")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream+GetPathOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::FtpControlStream_GetPathOption {
     type Actual = Self;
@@ -1161,7 +1161,7 @@ for crate::System::Net::FtpControlStream_GetPathOption {
         self
     }
 }
-#[cfg(feature = "System+Net+FtpControlStream+GetPathOption")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream+GetPathOption")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::FtpControlStream_GetPathOption {
     type Type = Self;
@@ -1176,7 +1176,7 @@ for crate::System::Net::FtpControlStream_GetPathOption {
         }
     }
 }
-#[cfg(feature = "System+Net+FtpControlStream+GetPathOption")]
+#[cfg(feature = "cordl_class_System+Net+FtpControlStream+GetPathOption")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::FtpControlStream_GetPathOption {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+GenericParameterAttributes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GenericParameterAttributes {
@@ -12,7 +12,7 @@ pub enum GenericParameterAttributes {
     SpecialConstraintMask = 28i32,
     VarianceMask = 3i32,
 }
-#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::GenericParameterAttributes {
     type Held<'a> = Self;
@@ -42,7 +42,7 @@ for crate::System::Reflection::GenericParameterAttributes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::GenericParameterAttributes {
     type Type = Self;
@@ -53,7 +53,7 @@ for crate::System::Reflection::GenericParameterAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::GenericParameterAttributes {
     type Actual = Self;
@@ -67,7 +67,7 @@ for crate::System::Reflection::GenericParameterAttributes {
         self
     }
 }
-#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::GenericParameterAttributes {
     type Type = Self;
@@ -82,7 +82,7 @@ for crate::System::Reflection::GenericParameterAttributes {
         }
     }
 }
-#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
+#[cfg(feature = "cordl_class_System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::GenericParameterAttributes {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "MaterialPropertyBlockControllerArrayRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerArrayRandomValueSetter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockControllerArrayRandomValueSetter {
@@ -20,7 +20,7 @@ pub struct MaterialPropertyBlockControllerArrayRandomValueSetter {
     >,
     pub _propertyId: i32,
 }
-#[cfg(feature = "MaterialPropertyBlockControllerArrayRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerArrayRandomValueSetter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSetter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSette
         false
     }
 }
-#[cfg(feature = "MaterialPropertyBlockControllerArrayRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerArrayRandomValueSetter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSette
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialPropertyBlockControllerArrayRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerArrayRandomValueSetter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSett
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialPropertyBlockControllerArrayRandomValueSetter")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerArrayRandomValueSetter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSetter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

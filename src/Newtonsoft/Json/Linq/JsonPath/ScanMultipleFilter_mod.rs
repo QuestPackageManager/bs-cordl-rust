@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScanMultipleFilter {
@@ -9,7 +9,7 @@ pub struct ScanMultipleFilter {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Linq::JsonPath::ScanMultipleFilter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Newtonsoft::Json::Linq::JsonPath::ScanMultipleFilter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::ScanMultipleFilter {
     type Target = crate::Newtonsoft::Json::Linq::JsonPath::PathFilter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::ScanMultipleFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ScanMultipleFilter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Linq::JsonPath::ScanMultipleFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NativeContainerSupportsDeallocateOnJobCompletionAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeallocateOnJobCompletionAttribute {
@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDealloca
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeallocateOnJobCompletionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDealloca
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeallocateOnJobCompletionAttribute {
@@ -81,7 +81,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDealloc
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeallocateOnJobCompletionAttribute {

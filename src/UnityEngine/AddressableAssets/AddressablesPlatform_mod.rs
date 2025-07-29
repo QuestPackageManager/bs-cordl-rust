@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesPlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesPlatform")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AddressablesPlatform {
@@ -15,7 +15,7 @@ pub enum AddressablesPlatform {
     XboxOne = 6i32,
     iOS = 8i32,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesPlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesPlatform")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
     type Held<'a> = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesPlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesPlatform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
     type Type = Self;
@@ -56,7 +56,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesPlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesPlatform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
     type Actual = Self;
@@ -70,7 +70,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
         self
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesPlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesPlatform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
     type Type = Self;
@@ -85,7 +85,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
         }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesPlatform")]
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesPlatform")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AddressableAssets::AddressablesPlatform {
     type Actual = Self;

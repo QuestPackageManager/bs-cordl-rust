@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedDataStreamGenerator {
@@ -10,7 +10,7 @@ pub struct CmsEnvelopedDataStreamGenerator {
     pub _bufferSize: i32,
     pub _berEncodeRecipientSet: bool,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
     type Target = crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -364,7 +364,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -375,7 +375,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -398,7 +398,7 @@ pub struct CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
     >,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
@@ -420,7 +420,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedD
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
@@ -430,7 +430,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedD
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
@@ -605,7 +605,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnveloped
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+    feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {

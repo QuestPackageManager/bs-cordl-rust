@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializationUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -178,7 +186,9 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -189,7 +199,7 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -205,7 +215,7 @@ pub enum SerializationUtilities_ObjectType {
     UnicodeString = 1i32,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {
@@ -237,7 +247,7 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {
@@ -250,7 +260,7 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {
@@ -266,7 +276,7 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {
@@ -283,7 +293,7 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {

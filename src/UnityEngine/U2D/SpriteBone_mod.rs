@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+U2D+SpriteBone")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteBone")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpriteBone {
@@ -10,7 +10,7 @@ pub struct SpriteBone {
     pub m_ParentId: i32,
     pub m_Color: crate::UnityEngine::Color32,
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteBone")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteBone")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::U2D::SpriteBone {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::U2D::SpriteBone 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteBone")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteBone")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::U2D::SpriteBone {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::U2D::SpriteB
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteBone")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteBone")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::U2D::SpriteBone {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::U2D::Sprite
         self
     }
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteBone")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteBone")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::U2D::SpriteBone {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::U2D::SpriteB
         }
     }
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteBone")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteBone")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::U2D::SpriteBone {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::U2D::SpriteBon
         actual
     }
 }
-#[cfg(feature = "UnityEngine+U2D+SpriteBone")]
+#[cfg(feature = "cordl_class_UnityEngine+U2D+SpriteBone")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::U2D::SpriteBone {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

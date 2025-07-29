@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+XSDSchema")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XSDSchema {
@@ -46,7 +46,7 @@ pub struct XSDSchema {
     >,
     pub _fromInference: bool,
 }
-#[cfg(feature = "System+Data+XSDSchema")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XSDSchema {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -65,14 +65,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XSDSchema {
         false
     }
 }
-#[cfg(feature = "System+Data+XSDSchema")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema")]
 impl std::ops::Deref for crate::System::Data::XSDSchema {
     type Target = crate::System::Data::XMLSchema;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+XSDSchema")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema")]
 impl std::ops::DerefMut for crate::System::Data::XSDSchema {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1852,7 +1852,7 @@ impl crate::System::Data::XSDSchema {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+XSDSchema")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XSDSchema {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1861,7 +1861,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XSDSchema {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema+NameType")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XSDSchema_NameType {
@@ -1869,7 +1869,7 @@ pub struct XSDSchema_NameType {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema+NameType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XSDSchema_NameType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1888,14 +1888,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XSDSchema_NameT
         false
     }
 }
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema+NameType")]
 impl std::ops::Deref for crate::System::Data::XSDSchema_NameType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema+NameType")]
 impl std::ops::DerefMut for crate::System::Data::XSDSchema_NameType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1972,7 +1972,7 @@ impl crate::System::Data::XSDSchema_NameType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
+#[cfg(feature = "cordl_class_System+Data+XSDSchema+NameType")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XSDSchema_NameType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

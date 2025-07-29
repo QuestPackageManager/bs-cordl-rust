@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLightSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLightSensor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidLightSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::LightSensor,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLightSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLightSensor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidLightSensor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Android::AndroidLightSensor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLightSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLightSensor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Android::AndroidLightSensor {
     type Target = crate::UnityEngine::InputSystem::LightSensor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLightSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLightSensor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidLightSensor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -69,7 +69,7 @@ impl crate::UnityEngine::InputSystem::Android::AndroidLightSensor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLightSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLightSensor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidLightSensor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

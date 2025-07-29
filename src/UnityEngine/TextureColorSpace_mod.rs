@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextureColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureColorSpace")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextureColorSpace {
@@ -6,7 +6,7 @@ pub enum TextureColorSpace {
     Linear = 0i32,
     sRGB = 1i32,
 }
-#[cfg(feature = "UnityEngine+TextureColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureColorSpace")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextureColorSpace {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextureColorSpac
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextureColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureColorSpace")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextureColorSpace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextureColor
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextureColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureColorSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextureColorSpace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextureColo
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextureColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureColorSpace")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextureColorSpace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextureColor
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextureColorSpace")]
+#[cfg(feature = "cordl_class_UnityEngine+TextureColorSpace")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextureColorSpace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

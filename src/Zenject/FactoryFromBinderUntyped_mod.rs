@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+FactoryFromBinderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderUntyped")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryFromBinderUntyped {
     __cordl_parent: crate::Zenject::FactoryFromBinderBase,
 }
-#[cfg(feature = "Zenject+FactoryFromBinderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderUntyped")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::FactoryFromBinderUntyped {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::FactoryFromBinderUnt
         false
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderUntyped")]
 impl std::ops::Deref for crate::Zenject::FactoryFromBinderUntyped {
     type Target = crate::Zenject::FactoryFromBinderBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderUntyped")]
 impl std::ops::DerefMut for crate::Zenject::FactoryFromBinderUntyped {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::Zenject::FactoryFromBinderUntyped {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+FactoryFromBinderUntyped")]
+#[cfg(feature = "cordl_class_Zenject+FactoryFromBinderUntyped")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::FactoryFromBinderUntyped {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

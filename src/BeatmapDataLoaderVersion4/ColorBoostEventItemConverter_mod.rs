@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorBoostEventItemConverter {
@@ -9,7 +9,7 @@ pub struct ColorBoostEventItemConverter {
         >,
     >,
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
         false
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
     type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -147,7 +147,7 @@ impl crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

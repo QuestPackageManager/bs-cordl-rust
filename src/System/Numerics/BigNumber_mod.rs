@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Numerics+BigNumber")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigNumber {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Numerics+BigNumber")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Numerics::BigNumber {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Numerics::BigNumber {
         false
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber")]
 impl std::ops::Deref for crate::System::Numerics::BigNumber {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber")]
 impl std::ops::DerefMut for crate::System::Numerics::BigNumber {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -437,7 +437,7 @@ impl crate::System::Numerics::BigNumber {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Numerics::BigNumber {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -446,7 +446,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Numerics::BigNumber {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber+BigNumberBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BigNumber_BigNumberBuffer {
@@ -455,7 +455,7 @@ pub struct BigNumber_BigNumberBuffer {
     pub scale: i32,
     pub sign: bool,
 }
-#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Held<'a> = Self;
@@ -485,7 +485,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Type = Self;
@@ -496,7 +496,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Actual = Self;
@@ -510,7 +510,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
         self
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Type = Self;
@@ -525,7 +525,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
         }
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Actual = Self;
@@ -539,7 +539,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
         actual
     }
 }
-#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
+#[cfg(feature = "cordl_class_System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Type = Self;

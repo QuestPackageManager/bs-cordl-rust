@@ -1,10 +1,10 @@
-#[cfg(feature = "UnitySpecificRandomExtensions")]
+#[cfg(feature = "cordl_class_UnitySpecificRandomExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnitySpecificRandomExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnitySpecificRandomExtensions")]
+#[cfg(feature = "cordl_class_UnitySpecificRandomExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UnitySpecificRandomExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::UnitySpecificRandomExtensions {
         false
     }
 }
-#[cfg(feature = "UnitySpecificRandomExtensions")]
+#[cfg(feature = "cordl_class_UnitySpecificRandomExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::UnitySpecificRandomExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnitySpecificRandomExtensions")]
+#[cfg(feature = "cordl_class_UnitySpecificRandomExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnitySpecificRandomExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnitySpecificRandomExtensions")]
+#[cfg(feature = "cordl_class_UnitySpecificRandomExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UnitySpecificRandomExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

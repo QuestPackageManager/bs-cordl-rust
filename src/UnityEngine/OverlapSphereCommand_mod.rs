@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+OverlapSphereCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapSphereCommand")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OverlapSphereCommand {
@@ -7,7 +7,7 @@ pub struct OverlapSphereCommand {
     pub _physicsScene_k__BackingField: crate::UnityEngine::PhysicsScene,
     pub queryParameters: crate::UnityEngine::QueryParameters,
 }
-#[cfg(feature = "UnityEngine+OverlapSphereCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapSphereCommand")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::OverlapSphereCommand {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::OverlapSphereCom
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+OverlapSphereCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapSphereCommand")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::OverlapSphereCommand {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::OverlapSphereCommand {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+OverlapSphereCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapSphereCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::OverlapSphereCommand {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::OverlapSphereCommand {
         self
     }
 }
-#[cfg(feature = "UnityEngine+OverlapSphereCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapSphereCommand")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::OverlapSphereCommand {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::OverlapSphereCommand {
         }
     }
 }
-#[cfg(feature = "UnityEngine+OverlapSphereCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapSphereCommand")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::OverlapSphereCommand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,7 +89,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::OverlapSphereC
         actual
     }
 }
-#[cfg(feature = "UnityEngine+OverlapSphereCommand")]
+#[cfg(feature = "cordl_class_UnityEngine+OverlapSphereCommand")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::OverlapSphereCommand {
     type Type = Self;

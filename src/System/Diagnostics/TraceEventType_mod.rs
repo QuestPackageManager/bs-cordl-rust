@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Diagnostics+TraceEventType")]
+#[cfg(feature = "cordl_class_System+Diagnostics+TraceEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TraceEventType {
@@ -14,7 +14,7 @@ pub enum TraceEventType {
     Verbose = 16i32,
     Warning = 4i32,
 }
-#[cfg(feature = "System+Diagnostics+TraceEventType")]
+#[cfg(feature = "cordl_class_System+Diagnostics+TraceEventType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Diagnostics::TraceEventType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Diagnostics::TraceEve
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Diagnostics+TraceEventType")]
+#[cfg(feature = "cordl_class_System+Diagnostics+TraceEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::TraceEventType {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::System::Diagnostics::TraceEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Diagnostics+TraceEventType")]
+#[cfg(feature = "cordl_class_System+Diagnostics+TraceEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::TraceEventType {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::System::Diagnostics::TraceEventType {
         self
     }
 }
-#[cfg(feature = "System+Diagnostics+TraceEventType")]
+#[cfg(feature = "cordl_class_System+Diagnostics+TraceEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::TraceEventType {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::System::Diagnostics::TraceEventType {
         }
     }
 }
-#[cfg(feature = "System+Diagnostics+TraceEventType")]
+#[cfg(feature = "cordl_class_System+Diagnostics+TraceEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::TraceEventType {
     type Actual = Self;

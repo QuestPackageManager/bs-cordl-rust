@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithLeaderboardEntryList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardEntryList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLeaderboardEntryList {
@@ -6,7 +6,7 @@ pub struct MessageWithLeaderboardEntryList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardEntryList>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLeaderboardEntryList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardEntryList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithLeaderboardEntryList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithLeaderboardEntryList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLeaderboardEntryList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardEntryList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLeaderboardEntryList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardEntryList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithLeaderboardEntryLis
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLeaderboardEntryList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardEntryList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithLeaderboardEntryList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -138,7 +138,7 @@ impl crate::Oculus::Platform::MessageWithLeaderboardEntryList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLeaderboardEntryList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardEntryList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithLeaderboardEntryList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

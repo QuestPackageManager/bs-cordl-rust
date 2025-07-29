@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlUtf8RawTextWriterIndent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUtf8RawTextWriterIndent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlUtf8RawTextWriterIndent {
@@ -10,7 +10,7 @@ pub struct XmlUtf8RawTextWriterIndent {
     pub mixedContentStack: quest_hook::libil2cpp::Gc<crate::System::Xml::BitStack>,
     pub conformanceLevel: crate::System::Xml::ConformanceLevel,
 }
-#[cfg(feature = "System+Xml+XmlUtf8RawTextWriterIndent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUtf8RawTextWriterIndent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlUtf8RawTextWriterIndent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::System::Xml::XmlUtf8RawTextWriterIndent {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlUtf8RawTextWriterIndent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUtf8RawTextWriterIndent")]
 impl std::ops::Deref for crate::System::Xml::XmlUtf8RawTextWriterIndent {
     type Target = crate::System::Xml::XmlUtf8RawTextWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlUtf8RawTextWriterIndent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUtf8RawTextWriterIndent")]
 impl std::ops::DerefMut for crate::System::Xml::XmlUtf8RawTextWriterIndent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -731,7 +731,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriterIndent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlUtf8RawTextWriterIndent")]
+#[cfg(feature = "cordl_class_System+Xml+XmlUtf8RawTextWriterIndent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlUtf8RawTextWriterIndent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

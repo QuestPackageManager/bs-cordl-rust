@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerSnapshot")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioMixerSnapshot {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerSnapshot")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Audio::AudioMixerSnapshot {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Audio::AudioMixerSnapshot {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerSnapshot")]
 impl std::ops::Deref for crate::UnityEngine::Audio::AudioMixerSnapshot {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerSnapshot")]
 impl std::ops::DerefMut for crate::UnityEngine::Audio::AudioMixerSnapshot {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::UnityEngine::Audio::AudioMixerSnapshot {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
+#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerSnapshot")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Audio::AudioMixerSnapshot {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleComplexSelector {
@@ -20,7 +20,7 @@ pub struct StyleComplexSelector {
     >,
     pub orderInStyleSheet: i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleComplexSelector {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,14 +40,14 @@ for crate::UnityEngine::UIElements::StyleComplexSelector {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleComplexSelector {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleComplexSelector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -408,7 +408,7 @@ impl crate::UnityEngine::UIElements::StyleComplexSelector {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleComplexSelector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -432,14 +432,18 @@ for crate::UnityEngine::UIElements::StyleComplexSelector {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector+PseudoStateData"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleComplexSelector_PseudoStateData {
     pub state: crate::UnityEngine::UIElements::PseudoStates,
     pub negate: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector+PseudoStateData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
     type Held<'a> = Self;
@@ -469,7 +473,9 @@ for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector+PseudoStateData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
     type Type = Self;
@@ -480,7 +486,9 @@ for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector+PseudoStateData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
     type Actual = Self;
@@ -494,7 +502,9 @@ for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector+PseudoStateData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
     type Type = Self;
@@ -509,7 +519,9 @@ for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector+PseudoStateData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
     type Actual = Self;
@@ -523,7 +535,9 @@ for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector+PseudoStateData"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
     type Type = Self;

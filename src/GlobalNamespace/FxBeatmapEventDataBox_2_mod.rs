@@ -1,4 +1,4 @@
-#[cfg(feature = "FxBeatmapEventDataBox_2")]
+#[cfg(feature = "cordl_class_FxBeatmapEventDataBox_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FxBeatmapEventDataBox_2<
@@ -13,7 +13,7 @@ pub struct FxBeatmapEventDataBox_2<
     __cordl_phantom_TIn: std::marker::PhantomData<TIn>,
     __cordl_phantom_TOut: std::marker::PhantomData<TOut>,
 }
-#[cfg(feature = "FxBeatmapEventDataBox_2")]
+#[cfg(feature = "cordl_class_FxBeatmapEventDataBox_2")]
 unsafe impl<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
         false
     }
 }
-#[cfg(feature = "FxBeatmapEventDataBox_2")]
+#[cfg(feature = "cordl_class_FxBeatmapEventDataBox_2")]
 impl<TIn: quest_hook::libil2cpp::Type, TOut: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
     type Target = crate::GlobalNamespace::BeatmapEventDataBox;
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FxBeatmapEventDataBox_2")]
+#[cfg(feature = "cordl_class_FxBeatmapEventDataBox_2")]
 impl<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,
@@ -297,7 +297,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FxBeatmapEventDataBox_2")]
+#[cfg(feature = "cordl_class_FxBeatmapEventDataBox_2")]
 impl<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,

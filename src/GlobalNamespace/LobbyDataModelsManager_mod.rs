@@ -1,4 +1,4 @@
-#[cfg(feature = "LobbyDataModelsManager")]
+#[cfg(feature = "cordl_class_LobbyDataModelsManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyDataModelsManager {
@@ -19,7 +19,7 @@ pub struct LobbyDataModelsManager {
         crate::GlobalNamespace::ILobbyGameStateControllerBase,
     >,
 }
-#[cfg(feature = "LobbyDataModelsManager")]
+#[cfg(feature = "cordl_class_LobbyDataModelsManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LobbyDataModelsManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::LobbyDataModelsManager {
         false
     }
 }
-#[cfg(feature = "LobbyDataModelsManager")]
+#[cfg(feature = "cordl_class_LobbyDataModelsManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyDataModelsManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LobbyDataModelsManager")]
+#[cfg(feature = "cordl_class_LobbyDataModelsManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LobbyDataModelsManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::LobbyDataModelsManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LobbyDataModelsManager")]
+#[cfg(feature = "cordl_class_LobbyDataModelsManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LobbyDataModelsManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardTextEditorEventHandler {
@@ -6,7 +6,7 @@ pub struct KeyboardTextEditorEventHandler {
     pub m_ImguiEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     pub m_Changed: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     type Target = crate::UnityEngine::UIElements::TextEditorEventHandler;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -326,7 +326,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

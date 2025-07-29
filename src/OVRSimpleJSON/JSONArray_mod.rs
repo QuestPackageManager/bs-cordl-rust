@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSimpleJSON+JSONArray")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONArray")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONArray {
@@ -10,7 +10,7 @@ pub struct JSONArray {
     >,
     pub _cordl_inline: bool,
 }
-#[cfg(feature = "OVRSimpleJSON+JSONArray")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONArray")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONArray {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONArray {
         false
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONArray")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONArray")]
 impl std::ops::Deref for crate::OVRSimpleJSON::JSONArray {
     type Target = crate::OVRSimpleJSON::JSONNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONArray")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONArray")]
 impl std::ops::DerefMut for crate::OVRSimpleJSON::JSONArray {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -476,7 +476,7 @@ impl crate::OVRSimpleJSON::JSONArray {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSimpleJSON+JSONArray")]
+#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONArray")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVRSimpleJSON::JSONArray {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

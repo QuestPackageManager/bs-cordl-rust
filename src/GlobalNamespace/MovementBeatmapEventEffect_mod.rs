@@ -1,4 +1,4 @@
-#[cfg(feature = "MovementBeatmapEventEffect")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MovementBeatmapEventEffect {
@@ -30,7 +30,7 @@ pub struct MovementBeatmapEventEffect {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "MovementBeatmapEventEffect")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MovementBeatmapEventEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,14 +50,14 @@ for crate::GlobalNamespace::MovementBeatmapEventEffect {
         false
     }
 }
-#[cfg(feature = "MovementBeatmapEventEffect")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::MovementBeatmapEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MovementBeatmapEventEffect")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MovementBeatmapEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -240,7 +240,7 @@ impl crate::GlobalNamespace::MovementBeatmapEventEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MovementBeatmapEventEffect")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MovementBeatmapEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -250,14 +250,14 @@ for crate::GlobalNamespace::MovementBeatmapEventEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MovementBeatmapEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect+MovementData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MovementBeatmapEventEffect_MovementData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _localPositionOffset: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "MovementBeatmapEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect+MovementData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -277,7 +277,7 @@ for crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData {
         false
     }
 }
-#[cfg(feature = "MovementBeatmapEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect+MovementData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -285,7 +285,7 @@ for crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MovementBeatmapEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect+MovementData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -348,7 +348,7 @@ impl crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MovementBeatmapEventEffect+MovementData")]
+#[cfg(feature = "cordl_class_MovementBeatmapEventEffect+MovementData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

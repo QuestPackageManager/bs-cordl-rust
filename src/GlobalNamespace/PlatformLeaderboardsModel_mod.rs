@@ -1,4 +1,4 @@
-#[cfg(feature = "PlatformLeaderboardsModel")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel {
@@ -25,7 +25,7 @@ pub struct PlatformLeaderboardsModel {
     pub _state: crate::GlobalNamespace::PlatformLeaderboardsModel_State,
     pub _playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "PlatformLeaderboardsModel")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardsModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel {
         false
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformLeaderboardsModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformLeaderboardsModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -627,7 +627,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformLeaderboardsModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -637,13 +637,13 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel_GetScoresCompletionHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -663,7 +663,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler
         false
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
     type Target = crate::System::MulticastDelegate;
@@ -671,7 +671,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -850,7 +850,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandle
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -860,7 +860,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformLeaderboardsModel_GetScoresResult {
@@ -869,7 +869,7 @@ pub enum PlatformLeaderboardsModel_GetScoresResult {
     FailedTooManyRequests = 2i32,
     _cordl_Ok = 0i32,
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Held<'a> = Self;
@@ -899,7 +899,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Type = Self;
@@ -910,7 +910,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Actual = Self;
@@ -924,7 +924,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
         self
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Type = Self;
@@ -939,7 +939,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
         }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Actual = Self;
@@ -953,7 +953,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
         actual
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel_LeaderboardScore {
@@ -963,7 +963,7 @@ pub struct PlatformLeaderboardsModel_LeaderboardScore {
     pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -983,7 +983,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         false
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -991,7 +991,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1082,7 +1082,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1128,7 +1128,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+ScoresScope")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformLeaderboardsModel_ScoresScope {
@@ -1137,7 +1137,7 @@ pub enum PlatformLeaderboardsModel_ScoresScope {
     Friends = 2i32,
     Global = 0i32,
 }
-#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Held<'a> = Self;
@@ -1167,7 +1167,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Type = Self;
@@ -1178,7 +1178,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Actual = Self;
@@ -1192,7 +1192,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
         self
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Type = Self;
@@ -1207,7 +1207,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
         }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Actual = Self;
@@ -1221,7 +1221,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
         actual
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+State")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformLeaderboardsModel_State {
@@ -1230,7 +1230,7 @@ pub enum PlatformLeaderboardsModel_State {
     Initializing = 1i32,
     NotInitialized = 0i32,
 }
-#[cfg(feature = "PlatformLeaderboardsModel+State")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Held<'a> = Self;
@@ -1260,7 +1260,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+State")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Type = Self;
@@ -1271,7 +1271,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+State")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Actual = Self;
@@ -1285,7 +1285,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
         self
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+State")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Type = Self;
@@ -1300,7 +1300,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
         }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+State")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Actual = Self;
@@ -1314,13 +1314,13 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
         actual
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1340,7 +1340,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandl
         false
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     type Target = crate::System::MulticastDelegate;
@@ -1348,7 +1348,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandl
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1488,7 +1488,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHand
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1498,7 +1498,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandl
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformLeaderboardsModel_UploadScoreResult {
@@ -1507,7 +1507,7 @@ pub enum PlatformLeaderboardsModel_UploadScoreResult {
     FailedTooManyRequests = 2i32,
     _cordl_Ok = 0i32,
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Held<'a> = Self;
@@ -1537,7 +1537,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Type = Self;
@@ -1548,7 +1548,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Actual = Self;
@@ -1562,7 +1562,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
         self
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Type = Self;
@@ -1577,7 +1577,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
         }
     }
 }
-#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
+#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Actual = Self;

@@ -1,11 +1,11 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiagnosticsTraceWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _LevelFilter_k__BackingField: crate::System::Diagnostics::TraceLevel,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -181,7 +181,7 @@ impl crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::DiagnosticsTraceWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

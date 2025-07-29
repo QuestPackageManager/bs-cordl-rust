@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Video+VideoTimeSource")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeSource")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoTimeSource {
@@ -6,7 +6,7 @@ pub enum VideoTimeSource {
     AudioDSPTimeSource = 0i32,
     GameTimeSource = 1i32,
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeSource")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeSource")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Video::VideoTimeSource {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Video::VideoTime
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeSource")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeSource")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Video::VideoTimeSource {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::Video::VideoTimeSource {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeSource")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeSource")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Video::VideoTimeSource {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::Video::VideoTimeSource {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeSource")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeSource")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Video::VideoTimeSource {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::Video::VideoTimeSource {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoTimeSource")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoTimeSource")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Video::VideoTimeSource {
     type Actual = Self;

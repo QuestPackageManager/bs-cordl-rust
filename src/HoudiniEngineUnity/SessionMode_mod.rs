@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+SessionMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SessionMode {
@@ -6,7 +6,7 @@ pub enum SessionMode {
     Pipe = 1i32,
     Socket = 0i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::SessionMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::SessionMo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::SessionMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::Sessi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HoudiniEngineUnity::SessionMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HoudiniEngineUnity::Sess
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::SessionMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::Sessi
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::SessionMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

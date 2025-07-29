@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+SqlTypes+SqlDateTime")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDateTime")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlDateTime {
@@ -6,7 +6,7 @@ pub struct SqlDateTime {
     pub m_day: i32,
     pub m_time: i32,
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDateTime")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDateTime")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlDateTime {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlDa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDateTime")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDateTime")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::SqlTypes::SqlDateTime {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::System::Data::SqlTypes::SqlDateTime {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDateTime")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDateTime")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::SqlTypes::SqlDateTime {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::System::Data::SqlTypes::SqlDateTime {
         self
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDateTime")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDateTime")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::SqlTypes::SqlDateTime {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::System::Data::SqlTypes::SqlDateTime {
         }
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDateTime")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDateTime")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::SqlTypes::SqlDateTime {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::System::Data::SqlTypes::SqlDateTime {
         actual
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlDateTime")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlDateTime")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::SqlTypes::SqlDateTime {
     type Type = Self;

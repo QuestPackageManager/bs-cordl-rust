@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspMvcMasterLocationFormatAttribute {
@@ -7,7 +7,7 @@ pub struct AspMvcMasterLocationFormatAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::AspMvcMasterLocationFormatAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::JetBrains::Annotations::AspMvcMasterLocationFormatAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::AspMvcMasterLocationFormatAttribute {
     type Target = crate::System::Attribute;
@@ -35,7 +35,7 @@ for crate::JetBrains::Annotations::AspMvcMasterLocationFormatAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcMasterLocationFormatAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +133,7 @@ impl crate::JetBrains::Annotations::AspMvcMasterLocationFormatAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcMasterLocationFormatAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::AspMvcMasterLocationFormatAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

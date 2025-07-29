@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+SegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+SegmentedControlCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SegmentedControlCell {
@@ -6,7 +6,7 @@ pub struct SegmentedControlCell {
     pub _cellNumber_k__BackingField: i32,
     pub _segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
 }
-#[cfg(feature = "HMUI+SegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+SegmentedControlCell")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SegmentedControlCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SegmentedControlCell {
         false
     }
 }
-#[cfg(feature = "HMUI+SegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+SegmentedControlCell")]
 impl std::ops::Deref for crate::HMUI::SegmentedControlCell {
     type Target = crate::HMUI::SelectableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+SegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+SegmentedControlCell")]
 impl std::ops::DerefMut for crate::HMUI::SegmentedControlCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -164,7 +164,7 @@ impl crate::HMUI::SegmentedControlCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+SegmentedControlCell")]
+#[cfg(feature = "cordl_class_HMUI+SegmentedControlCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SegmentedControlCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

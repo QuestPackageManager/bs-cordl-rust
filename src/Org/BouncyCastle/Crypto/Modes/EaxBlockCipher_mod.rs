@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EaxBlockCipher {
@@ -22,7 +22,7 @@ pub struct EaxBlockCipher {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -596,7 +596,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -636,7 +636,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EaxBlockCipher_Tag {
@@ -645,7 +645,7 @@ pub enum EaxBlockCipher_Tag {
     H = 1u8,
     N = 0u8,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
     type Held<'a> = Self;
@@ -675,7 +675,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
     type Type = Self;
@@ -686,7 +686,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
     type Actual = Self;
@@ -700,7 +700,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
     type Type = Self;
@@ -715,7 +715,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher_Tag {
     type Actual = Self;

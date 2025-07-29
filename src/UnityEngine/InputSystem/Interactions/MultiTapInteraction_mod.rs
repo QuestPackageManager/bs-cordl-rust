@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiTapInteraction_TapPhase {
@@ -7,7 +9,9 @@ pub enum MultiTapInteraction_TapPhase {
     WaitingForNextPress = 2i32,
     WaitingForNextRelease = 1i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Held<'a> = Self;
@@ -37,7 +41,9 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Type = Self;
@@ -48,7 +54,9 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Actual = Self;
@@ -62,7 +70,9 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Type = Self;
@@ -77,7 +87,9 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Actual = Self;

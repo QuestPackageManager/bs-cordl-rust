@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRVignette")]
+#[cfg(feature = "cordl_class_OVRVignette")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRVignette {
@@ -40,7 +40,7 @@ pub struct OVRVignette {
     pub _OpaqueVignetteVisible: bool,
     pub _TransparentVignetteVisible: bool,
 }
-#[cfg(feature = "OVRVignette")]
+#[cfg(feature = "cordl_class_OVRVignette")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRVignette {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -59,14 +59,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRVignette 
         false
     }
 }
-#[cfg(feature = "OVRVignette")]
+#[cfg(feature = "cordl_class_OVRVignette")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVignette {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRVignette")]
+#[cfg(feature = "cordl_class_OVRVignette")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRVignette {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -481,7 +481,7 @@ impl crate::GlobalNamespace::OVRVignette {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRVignette")]
+#[cfg(feature = "cordl_class_OVRVignette")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVignette {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -490,7 +490,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVignette {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRVignette+FalloffType")]
+#[cfg(feature = "cordl_class_OVRVignette+FalloffType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRVignette_FalloffType {
@@ -498,7 +498,7 @@ pub enum OVRVignette_FalloffType {
     Linear = 0i32,
     Quadratic = 1i32,
 }
-#[cfg(feature = "OVRVignette+FalloffType")]
+#[cfg(feature = "cordl_class_OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Held<'a> = Self;
@@ -528,7 +528,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRVignette+FalloffType")]
+#[cfg(feature = "cordl_class_OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Type = Self;
@@ -539,7 +539,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRVignette+FalloffType")]
+#[cfg(feature = "cordl_class_OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Actual = Self;
@@ -553,7 +553,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
         self
     }
 }
-#[cfg(feature = "OVRVignette+FalloffType")]
+#[cfg(feature = "cordl_class_OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Type = Self;
@@ -568,7 +568,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
         }
     }
 }
-#[cfg(feature = "OVRVignette+FalloffType")]
+#[cfg(feature = "cordl_class_OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Actual = Self;
@@ -582,7 +582,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
         actual
     }
 }
-#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
+#[cfg(feature = "cordl_class_OVRVignette+MeshComplexityLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRVignette_MeshComplexityLevel {
@@ -593,7 +593,7 @@ pub enum OVRVignette_MeshComplexityLevel {
     VeryDetailed = 4i32,
     VerySimple = 0i32,
 }
-#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
+#[cfg(feature = "cordl_class_OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Held<'a> = Self;
@@ -623,7 +623,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
+#[cfg(feature = "cordl_class_OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Type = Self;
@@ -634,7 +634,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
+#[cfg(feature = "cordl_class_OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Actual = Self;
@@ -648,7 +648,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
         self
     }
 }
-#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
+#[cfg(feature = "cordl_class_OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Type = Self;
@@ -663,7 +663,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
         }
     }
 }
-#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
+#[cfg(feature = "cordl_class_OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Actual = Self;

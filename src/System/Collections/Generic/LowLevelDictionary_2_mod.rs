@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LowLevelDictionary_2<
@@ -24,7 +24,7 @@ pub struct LowLevelDictionary_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -63,7 +63,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -74,7 +74,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2<TKey, TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -430,7 +430,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -443,7 +443,9 @@ for crate::System::Collections::Generic::LowLevelDictionary_2<TKey, TValue> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LowLevelDictionary_2_DefaultComparer_1<
@@ -456,7 +458,9 @@ pub struct LowLevelDictionary_2_DefaultComparer_1<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -500,7 +504,9 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -516,7 +522,9 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -638,7 +646,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
+#[cfg(
+    feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -688,7 +698,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+Entry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LowLevelDictionary_2_Entry<
@@ -704,7 +714,7 @@ pub struct LowLevelDictionary_2_Entry<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -743,7 +753,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -754,7 +764,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -808,7 +818,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

@@ -1,11 +1,11 @@
-#[cfg(feature = "Zenject+IPoolable_1")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPoolable_1<TParam1: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
 }
-#[cfg(feature = "Zenject+IPoolable_1")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_1")]
 unsafe impl<TParam1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Zenject::IPoolable_1<TParam1> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,7 +38,7 @@ for crate::Zenject::IPoolable_1<TParam1> {
         false
     }
 }
-#[cfg(feature = "Zenject+IPoolable_1")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::IPoolable_1<TParam1> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -46,7 +46,7 @@ for crate::Zenject::IPoolable_1<TParam1> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+IPoolable_1")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::IPoolable_1<TParam1> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -120,7 +120,7 @@ impl<TParam1: quest_hook::libil2cpp::Type> crate::Zenject::IPoolable_1<TParam1> 
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Zenject+IPoolable_1")]
+#[cfg(feature = "cordl_class_Zenject+IPoolable_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Zenject::IPoolable_1<TParam1> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

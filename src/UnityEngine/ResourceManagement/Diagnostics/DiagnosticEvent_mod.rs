@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DiagnosticEvent {
@@ -12,7 +14,9 @@ pub struct DiagnosticEvent {
     pub m_Frame: i32,
     pub m_Value: i32,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     type Held<'a> = Self;
@@ -42,7 +46,9 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     type Type = Self;
@@ -53,7 +59,9 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     type Actual = Self;
@@ -67,7 +75,9 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     type Type = Self;
@@ -82,7 +92,9 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     type Actual = Self;
@@ -96,7 +108,9 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     type Type = Self;

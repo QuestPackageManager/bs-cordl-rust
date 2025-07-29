@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AnimatorControllerParameterType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameterType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimatorControllerParameterType {
@@ -8,7 +8,7 @@ pub enum AnimatorControllerParameterType {
     Int = 3i32,
     Trigger = 9i32,
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameterType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameterType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AnimatorControllerParameterType {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::AnimatorControllerParameterType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameterType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameterType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AnimatorControllerParameterType {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::AnimatorControllerParameterType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameterType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameterType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AnimatorControllerParameterType {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::AnimatorControllerParameterType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameterType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameterType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AnimatorControllerParameterType {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::AnimatorControllerParameterType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorControllerParameterType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameterType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AnimatorControllerParameterType {
     type Actual = Self;

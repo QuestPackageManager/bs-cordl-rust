@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CodePointIndexer {
@@ -12,7 +12,7 @@ pub struct CodePointIndexer {
     pub defaultIndex: i32,
     pub defaultCP: i32,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::CodePointIndexer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer {
         false
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::CodePointIndexer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer")]
 impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::CodePointIndexer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -120,7 +120,7 @@ impl crate::Mono::Globalization::Unicode::CodePointIndexer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Globalization::Unicode::CodePointIndexer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -130,7 +130,7 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CodePointIndexer_TableRange {
@@ -140,7 +140,7 @@ pub struct CodePointIndexer_TableRange {
     pub IndexStart: i32,
     pub IndexEnd: i32,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
     type Held<'a> = Self;
@@ -170,7 +170,7 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
     type Type = Self;
@@ -181,7 +181,7 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
     type Actual = Self;
@@ -195,7 +195,7 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
         self
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
     type Type = Self;
@@ -210,7 +210,7 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
         }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
     type Actual = Self;
@@ -224,7 +224,7 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
         actual
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
     type Type = Self;

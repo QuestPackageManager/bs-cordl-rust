@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputSystem")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputSystem")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeInputSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputSystem")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputSystem")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngineInternal::Input::NativeInputSystem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngineInternal::Input::NativeInputSystem {
         false
     }
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputSystem")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputSystem")]
 impl std::ops::Deref for crate::UnityEngineInternal::Input::NativeInputSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputSystem")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputSystem")]
 impl std::ops::DerefMut for crate::UnityEngineInternal::Input::NativeInputSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -416,7 +416,7 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngineInternal+Input+NativeInputSystem")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeInputSystem")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngineInternal::Input::NativeInputSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

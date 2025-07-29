@@ -1,11 +1,11 @@
-#[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockPositionUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockPositionUpdater {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockPositionUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
         false
     }
 }
-#[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockPositionUpdater")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
     type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockPositionUpdater")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockPositionUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

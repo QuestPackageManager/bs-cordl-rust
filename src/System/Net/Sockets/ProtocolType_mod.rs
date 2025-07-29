@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+ProtocolType")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+ProtocolType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProtocolType {
@@ -27,7 +27,7 @@ pub enum ProtocolType {
     Udp = 17i32,
     Unknown = -1i32,
 }
-#[cfg(feature = "System+Net+Sockets+ProtocolType")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::ProtocolType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Protoco
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Sockets+ProtocolType")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::ProtocolType {
     type Type = Self;
@@ -67,7 +67,7 @@ for crate::System::Net::Sockets::ProtocolType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Sockets+ProtocolType")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::ProtocolType {
     type Actual = Self;
@@ -81,7 +81,7 @@ for crate::System::Net::Sockets::ProtocolType {
         self
     }
 }
-#[cfg(feature = "System+Net+Sockets+ProtocolType")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::ProtocolType {
     type Type = Self;
@@ -96,7 +96,7 @@ for crate::System::Net::Sockets::ProtocolType {
         }
     }
 }
-#[cfg(feature = "System+Net+Sockets+ProtocolType")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::Sockets::ProtocolType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

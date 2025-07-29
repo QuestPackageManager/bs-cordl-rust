@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+BinaryNode")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryNode {
@@ -7,7 +7,7 @@ pub struct BinaryNode {
     pub _left: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     pub _right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
 }
-#[cfg(feature = "System+Data+BinaryNode")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::BinaryNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::BinaryNode {
         false
     }
 }
-#[cfg(feature = "System+Data+BinaryNode")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode")]
 impl std::ops::Deref for crate::System::Data::BinaryNode {
     type Target = crate::System::Data::ExpressionNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+BinaryNode")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode")]
 impl std::ops::DerefMut for crate::System::Data::BinaryNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -752,7 +752,7 @@ impl crate::System::Data::BinaryNode {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+BinaryNode")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::BinaryNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -761,7 +761,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::BinaryNode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Data+BinaryNode+DataTypePrecedence")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode+DataTypePrecedence")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BinaryNode_DataTypePrecedence {
@@ -801,7 +801,7 @@ pub enum BinaryNode_DataTypePrecedence {
     UInt32 = 9i32,
     UInt64 = 12i32,
 }
-#[cfg(feature = "System+Data+BinaryNode+DataTypePrecedence")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode+DataTypePrecedence")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Data::BinaryNode_DataTypePrecedence {
     type Held<'a> = Self;
@@ -831,7 +831,7 @@ for crate::System::Data::BinaryNode_DataTypePrecedence {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Data+BinaryNode+DataTypePrecedence")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode+DataTypePrecedence")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::BinaryNode_DataTypePrecedence {
     type Type = Self;
@@ -842,7 +842,7 @@ for crate::System::Data::BinaryNode_DataTypePrecedence {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Data+BinaryNode+DataTypePrecedence")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode+DataTypePrecedence")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::BinaryNode_DataTypePrecedence {
     type Actual = Self;
@@ -856,7 +856,7 @@ for crate::System::Data::BinaryNode_DataTypePrecedence {
         self
     }
 }
-#[cfg(feature = "System+Data+BinaryNode+DataTypePrecedence")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode+DataTypePrecedence")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::BinaryNode_DataTypePrecedence {
     type Type = Self;
@@ -871,7 +871,7 @@ for crate::System::Data::BinaryNode_DataTypePrecedence {
         }
     }
 }
-#[cfg(feature = "System+Data+BinaryNode+DataTypePrecedence")]
+#[cfg(feature = "cordl_class_System+Data+BinaryNode+DataTypePrecedence")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::BinaryNode_DataTypePrecedence {
     type Actual = Self;

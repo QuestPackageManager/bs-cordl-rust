@@ -1,11 +1,11 @@
-#[cfg(feature = "Zenject+Factory_1")]
+#[cfg(feature = "cordl_class_Zenject+Factory_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Factory_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::PlaceholderFactory_1<TValue>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "Zenject+Factory_1")]
+#[cfg(feature = "cordl_class_Zenject+Factory_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Zenject::Factory_1<TValue> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,7 +38,7 @@ for crate::Zenject::Factory_1<TValue> {
         false
     }
 }
-#[cfg(feature = "Zenject+Factory_1")]
+#[cfg(feature = "cordl_class_Zenject+Factory_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::Factory_1<TValue> {
     type Target = crate::Zenject::PlaceholderFactory_1<TValue>;
@@ -46,7 +46,7 @@ for crate::Zenject::Factory_1<TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+Factory_1")]
+#[cfg(feature = "cordl_class_Zenject+Factory_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::Factory_1<TValue> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -160,7 +160,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::Factory_1<TValue> {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+Factory_1")]
+#[cfg(feature = "cordl_class_Zenject+Factory_1")]
 impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Zenject::Factory_1<TValue> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonReader {
@@ -22,7 +22,7 @@ pub struct BsonReader {
     pub _jsonNet35BinaryCompatibility: bool,
     pub _dateTimeKindHandling: crate::System::DateTimeKind,
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Bson::BsonReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Bson::BsonR
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonReader {
     type Target = crate::Newtonsoft::Json::JsonReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -887,7 +887,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Bson::BsonReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -896,7 +896,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Bson::BsonRe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BsonReader_BsonReaderState {
@@ -911,7 +911,7 @@ pub enum BsonReader_BsonReaderState {
     ReferenceRef = 2i32,
     ReferenceStart = 1i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Held<'a> = Self;
@@ -941,7 +941,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Type = Self;
@@ -952,7 +952,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Actual = Self;
@@ -966,7 +966,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Type = Self;
@@ -981,7 +981,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Actual = Self;
@@ -995,7 +995,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonReader_ContainerContext {
@@ -1004,7 +1004,7 @@ pub struct BsonReader_ContainerContext {
     pub Length: i32,
     pub Position: i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1024,14 +1024,14 @@ for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1075,7 +1075,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

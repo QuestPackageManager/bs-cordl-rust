@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+Security+Cryptography+KeyBuilder")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+KeyBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Mono+Security+Cryptography+KeyBuilder")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+KeyBuilder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Cryptography::KeyBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Mono::Security::Cryptography::KeyBuilder {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+KeyBuilder")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+KeyBuilder")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::KeyBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+KeyBuilder")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+KeyBuilder")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::KeyBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::Mono::Security::Cryptography::KeyBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+KeyBuilder")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+KeyBuilder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Cryptography::KeyBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

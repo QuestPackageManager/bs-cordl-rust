@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct AndroidCompensateDirectionProcessor {
     __cordl_parent: crate::UnityEngine::InputSystem::Processors::CompensateDirectionProcessor,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirectionProcessor {
@@ -29,7 +29,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirecti
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirectionProcessor {
@@ -39,7 +39,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirecti
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirectionProcessor {
@@ -115,7 +115,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirect
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
+    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateDirectionProcessor {

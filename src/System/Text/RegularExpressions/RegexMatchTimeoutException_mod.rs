@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexMatchTimeoutException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexMatchTimeoutException {
@@ -11,7 +11,7 @@ pub struct RegexMatchTimeoutException {
     >,
     pub _MatchTimeout_k__BackingField: crate::System::TimeSpan,
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexMatchTimeoutException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
         false
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexMatchTimeoutException")]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
     type Target = crate::System::TimeoutException;
@@ -39,7 +39,7 @@ for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexMatchTimeoutException")]
 impl std::ops::DerefMut
 for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -285,7 +285,7 @@ impl crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
+#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexMatchTimeoutException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

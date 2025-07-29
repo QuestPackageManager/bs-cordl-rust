@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+ISerializationBinder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ISerializationBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISerializationBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ISerializationBinder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ISerializationBinder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::ISerializationBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Serialization::ISerializationBinder {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ISerializationBinder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ISerializationBinder")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::ISerializationBinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ISerializationBinder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ISerializationBinder")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::ISerializationBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -125,7 +125,7 @@ impl crate::Newtonsoft::Json::Serialization::ISerializationBinder {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+ISerializationBinder")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ISerializationBinder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::ISerializationBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

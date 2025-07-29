@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Mathematics+quaternion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+quaternion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct quaternion {
     pub value: crate::Unity::Mathematics::float4,
 }
-#[cfg(feature = "Unity+Mathematics+quaternion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+quaternion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::quaternion {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::quaternio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+quaternion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+quaternion")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::quaternion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::quate
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+quaternion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+quaternion")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::quaternion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::quat
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+quaternion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+quaternion")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::quaternion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::quate
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+quaternion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+quaternion")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::quaternion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::quatern
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+quaternion")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+quaternion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Mathematics::quaternion {
     type Type = Self;

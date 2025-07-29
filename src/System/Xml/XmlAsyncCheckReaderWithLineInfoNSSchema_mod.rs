@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAsyncCheckReaderWithLineInfoNSSchema {
@@ -7,7 +7,7 @@ pub struct XmlAsyncCheckReaderWithLineInfoNSSchema {
         crate::System::Xml::Schema::IXmlSchemaInfo,
     >,
 }
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
 impl std::ops::Deref for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
     type Target = crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNS;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
 impl std::ops::DerefMut for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -266,7 +266,7 @@ impl crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
+#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

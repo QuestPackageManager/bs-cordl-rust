@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRSceneSampleController")]
+#[cfg(feature = "cordl_class_OVRSceneSampleController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneSampleController {
@@ -16,7 +16,7 @@ pub struct OVRSceneSampleController {
     pub visionMode: bool,
     pub gridCube: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGridCube>,
 }
-#[cfg(feature = "OVRSceneSampleController")]
+#[cfg(feature = "cordl_class_OVRSceneSampleController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRSceneSampleController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -36,14 +36,14 @@ for crate::GlobalNamespace::OVRSceneSampleController {
         false
     }
 }
-#[cfg(feature = "OVRSceneSampleController")]
+#[cfg(feature = "cordl_class_OVRSceneSampleController")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneSampleController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRSceneSampleController")]
+#[cfg(feature = "cordl_class_OVRSceneSampleController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneSampleController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -218,7 +218,7 @@ impl crate::GlobalNamespace::OVRSceneSampleController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRSceneSampleController")]
+#[cfg(feature = "cordl_class_OVRSceneSampleController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSceneSampleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

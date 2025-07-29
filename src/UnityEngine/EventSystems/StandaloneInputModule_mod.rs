@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandaloneInputModule {
@@ -22,7 +22,7 @@ pub struct StandaloneInputModule {
     pub m_RepeatDelay: f32,
     pub m_ForceModuleActive: bool,
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::StandaloneInputModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule {
         false
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::StandaloneInputModule {
     type Target = crate::UnityEngine::EventSystems::PointerInputModule;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::StandaloneInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -928,7 +928,7 @@ impl crate::UnityEngine::EventSystems::StandaloneInputModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::EventSystems::StandaloneInputModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -938,7 +938,7 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandaloneInputModule_InputMode {
@@ -946,7 +946,7 @@ pub enum StandaloneInputModule_InputMode {
     Buttons = 1i32,
     Mouse = 0i32,
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
     type Held<'a> = Self;
@@ -976,7 +976,7 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
     type Type = Self;
@@ -987,7 +987,7 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
     type Actual = Self;
@@ -1001,7 +1001,7 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
     type Type = Self;
@@ -1016,7 +1016,7 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
     type Actual = Self;

@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidGamepadWithDpadAxes {
     __cordl_parent: crate::UnityEngine::InputSystem::Android::AndroidGamepad,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
     type Target = crate::UnityEngine::InputSystem::Android::AndroidGamepad;
@@ -32,7 +38,9 @@ for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

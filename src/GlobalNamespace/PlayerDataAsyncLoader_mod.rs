@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerDataAsyncLoader")]
+#[cfg(feature = "cordl_class_PlayerDataAsyncLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerDataAsyncLoader {
@@ -7,7 +7,7 @@ pub struct PlayerDataAsyncLoader {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "PlayerDataAsyncLoader")]
+#[cfg(feature = "cordl_class_PlayerDataAsyncLoader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerDataAsyncLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::PlayerDataAsyncLoader {
         false
     }
 }
-#[cfg(feature = "PlayerDataAsyncLoader")]
+#[cfg(feature = "cordl_class_PlayerDataAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerDataAsyncLoader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerDataAsyncLoader")]
+#[cfg(feature = "cordl_class_PlayerDataAsyncLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataAsyncLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::PlayerDataAsyncLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerDataAsyncLoader")]
+#[cfg(feature = "cordl_class_PlayerDataAsyncLoader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerDataAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

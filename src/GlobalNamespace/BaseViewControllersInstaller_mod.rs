@@ -1,4 +1,4 @@
-#[cfg(feature = "BaseViewControllersInstaller")]
+#[cfg(feature = "cordl_class_BaseViewControllersInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseViewControllersInstaller {
@@ -10,7 +10,7 @@ pub struct BaseViewControllersInstaller {
         crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController,
     >,
 }
-#[cfg(feature = "BaseViewControllersInstaller")]
+#[cfg(feature = "cordl_class_BaseViewControllersInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BaseViewControllersInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::BaseViewControllersInstaller {
         false
     }
 }
-#[cfg(feature = "BaseViewControllersInstaller")]
+#[cfg(feature = "cordl_class_BaseViewControllersInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::BaseViewControllersInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BaseViewControllersInstaller")]
+#[cfg(feature = "cordl_class_BaseViewControllersInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BaseViewControllersInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::BaseViewControllersInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BaseViewControllersInstaller")]
+#[cfg(feature = "cordl_class_BaseViewControllersInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BaseViewControllersInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

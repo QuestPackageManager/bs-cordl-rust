@@ -1,4 +1,4 @@
-#[cfg(feature = "MockScoreSyncStateSender")]
+#[cfg(feature = "cordl_class_MockScoreSyncStateSender")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockScoreSyncStateSender {
@@ -7,7 +7,7 @@ pub struct MockScoreSyncStateSender {
         crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
 }
-#[cfg(feature = "MockScoreSyncStateSender")]
+#[cfg(feature = "cordl_class_MockScoreSyncStateSender")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockScoreSyncStateSender {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::MockScoreSyncStateSender {
         false
     }
 }
-#[cfg(feature = "MockScoreSyncStateSender")]
+#[cfg(feature = "cordl_class_MockScoreSyncStateSender")]
 impl std::ops::Deref for crate::GlobalNamespace::MockScoreSyncStateSender {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MockScoreSyncStateSender")]
+#[cfg(feature = "cordl_class_MockScoreSyncStateSender")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockScoreSyncStateSender {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -183,7 +183,7 @@ impl crate::GlobalNamespace::MockScoreSyncStateSender {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MockScoreSyncStateSender")]
+#[cfg(feature = "cordl_class_MockScoreSyncStateSender")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MockScoreSyncStateSender {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

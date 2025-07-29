@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+IntegerField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegerField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<i32>,
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IntegerField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::IntegerField {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -259,7 +259,7 @@ impl crate::UnityEngine::UIElements::IntegerField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::IntegerField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -268,13 +268,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Integ
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+IntegerInput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegerField_IntegerInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i32>,
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+IntegerInput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -294,14 +294,14 @@ for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+IntegerInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+IntegerInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -480,7 +480,7 @@ impl crate::UnityEngine::UIElements::IntegerField_IntegerInput {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+IntegerInput")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -490,7 +490,7 @@ for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegerField_UxmlFactory {
@@ -501,7 +501,7 @@ pub struct IntegerField_UxmlFactory {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -521,7 +521,7 @@ for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IntegerField>,
@@ -533,7 +533,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_UxmlFactor
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -570,7 +570,7 @@ impl crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -580,7 +580,7 @@ for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegerField_UxmlTraits {
@@ -591,7 +591,7 @@ pub struct IntegerField_UxmlTraits {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -611,7 +611,7 @@ for crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         i32,
@@ -623,7 +623,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_UxmlTraits
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -660,7 +660,7 @@ impl crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

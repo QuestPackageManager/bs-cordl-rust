@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+JSONContainerType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONContainerType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JSONContainerType {
@@ -6,7 +6,7 @@ pub enum JSONContainerType {
     Array = 0i32,
     Object = 1i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONContainerType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::JSONContainerType {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::HoudiniEngineUnity::JSONContainerType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONContainerType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::JSONContainerType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::HoudiniEngineUnity::JSONContainerType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONContainerType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::JSONContainerType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::HoudiniEngineUnity::JSONContainerType {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONContainerType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::JSONContainerType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::HoudiniEngineUnity::JSONContainerType {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONContainerType")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::JSONContainerType {
     type Actual = Self;

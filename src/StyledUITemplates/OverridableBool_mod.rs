@@ -1,10 +1,10 @@
-#[cfg(feature = "StyledUITemplates+OverridableBool")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableBool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OverridableBool {
     __cordl_parent: crate::StyledUITemplates::OverridableData_1<bool>,
 }
-#[cfg(feature = "StyledUITemplates+OverridableBool")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableBool")]
 unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::OverridableBool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::Overridabl
         false
     }
 }
-#[cfg(feature = "StyledUITemplates+OverridableBool")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableBool")]
 impl std::ops::Deref for crate::StyledUITemplates::OverridableBool {
     type Target = crate::StyledUITemplates::OverridableData_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StyledUITemplates+OverridableBool")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableBool")]
 impl std::ops::DerefMut for crate::StyledUITemplates::OverridableBool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::StyledUITemplates::OverridableBool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StyledUITemplates+OverridableBool")]
+#[cfg(feature = "cordl_class_StyledUITemplates+OverridableBool")]
 impl quest_hook::libil2cpp::ObjectType for crate::StyledUITemplates::OverridableBool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

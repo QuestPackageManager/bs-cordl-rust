@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+CompilerServices+FormattableStringFactory")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormattableStringFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FormattableStringFactory")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::FormattableStringFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Runtime::CompilerServices::FormattableStringFactory {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FormattableStringFactory")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::FormattableStringFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Runtime::CompilerServices::FormattableStringFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FormattableStringFactory")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::FormattableStringFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -89,7 +89,7 @@ impl crate::System::Runtime::CompilerServices::FormattableStringFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FormattableStringFactory")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::FormattableStringFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -100,7 +100,7 @@ for crate::System::Runtime::CompilerServices::FormattableStringFactory {
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
+    feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -114,7 +114,7 @@ pub struct FormattableStringFactory_ConcreteFormattableString {
     >,
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
+    feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::FormattableStringFactory_ConcreteFormattableString {
@@ -136,7 +136,7 @@ for crate::System::Runtime::CompilerServices::FormattableStringFactory_ConcreteF
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
+    feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::FormattableStringFactory_ConcreteFormattableString {
@@ -146,7 +146,7 @@ for crate::System::Runtime::CompilerServices::FormattableStringFactory_ConcreteF
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
+    feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::FormattableStringFactory_ConcreteFormattableString {
@@ -355,7 +355,7 @@ impl crate::System::Runtime::CompilerServices::FormattableStringFactory_Concrete
     }
 }
 #[cfg(
-    feature = "System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
+    feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::FormattableStringFactory_ConcreteFormattableString {

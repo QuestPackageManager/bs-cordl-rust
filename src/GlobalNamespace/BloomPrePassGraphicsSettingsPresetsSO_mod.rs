@@ -1,4 +1,4 @@
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassGraphicsSettingsPresetsSO {
@@ -11,7 +11,7 @@ pub struct BloomPrePassGraphicsSettingsPresetsSO {
         >,
     >,
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
         false
     }
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
     type Target = crate::GlobalNamespace::NamedPresetsSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -160,7 +160,7 @@ impl crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -170,7 +170,7 @@ for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO+Preset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassGraphicsSettingsPresetsSO_Preset {
@@ -179,7 +179,7 @@ pub struct BloomPrePassGraphicsSettingsPresetsSO_Preset {
         crate::GlobalNamespace::BloomPrePassEffectSO,
     >,
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO+Preset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -199,7 +199,7 @@ for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
         false
     }
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO+Preset")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
     type Target = crate::GlobalNamespace::NamedPreset;
@@ -207,7 +207,7 @@ for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO+Preset")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -245,7 +245,7 @@ impl crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]
+#[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO+Preset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

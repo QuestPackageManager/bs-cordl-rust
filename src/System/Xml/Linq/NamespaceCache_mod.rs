@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+Linq+NamespaceCache")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceCache")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NamespaceCache {
     pub _ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
     pub _namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceCache")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceCache")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::NamespaceCache {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::NamespaceC
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceCache")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceCache")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Linq::NamespaceCache {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::System::Xml::Linq::NamespaceCache {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceCache")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceCache")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Linq::NamespaceCache {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::System::Xml::Linq::NamespaceCache {
         self
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceCache")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceCache")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Linq::NamespaceCache {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::System::Xml::Linq::NamespaceCache {
         }
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceCache")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceCache")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Linq::NamespaceCache {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Linq::Namespac
         actual
     }
 }
-#[cfg(feature = "System+Xml+Linq+NamespaceCache")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceCache")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Linq::NamespaceCache {
     type Type = Self;

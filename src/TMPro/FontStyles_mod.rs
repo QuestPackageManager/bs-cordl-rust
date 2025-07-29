@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+FontStyles")]
+#[cfg(feature = "cordl_class_TMPro+FontStyles")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FontStyles {
@@ -15,7 +15,7 @@ pub enum FontStyles {
     Underline = 4i32,
     UpperCase = 16i32,
 }
-#[cfg(feature = "TMPro+FontStyles")]
+#[cfg(feature = "cordl_class_TMPro+FontStyles")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FontStyles {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FontStyles {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+FontStyles")]
+#[cfg(feature = "cordl_class_TMPro+FontStyles")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FontStyles {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,7 +54,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FontStyles {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+FontStyles")]
+#[cfg(feature = "cordl_class_TMPro+FontStyles")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::FontStyles {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,7 +67,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::FontStyles {
         self
     }
 }
-#[cfg(feature = "TMPro+FontStyles")]
+#[cfg(feature = "cordl_class_TMPro+FontStyles")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FontStyles {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -81,7 +81,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FontStyles {
         }
     }
 }
-#[cfg(feature = "TMPro+FontStyles")]
+#[cfg(feature = "cordl_class_TMPro+FontStyles")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::FontStyles {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

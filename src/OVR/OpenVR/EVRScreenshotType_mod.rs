@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EVRScreenshotType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRScreenshotType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRScreenshotType {
@@ -10,7 +10,7 @@ pub enum EVRScreenshotType {
     Stereo = 2i32,
     StereoPanorama = 5i32,
 }
-#[cfg(feature = "OVR+OpenVR+EVRScreenshotType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EVRScreenshotType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EVRScreenshotTyp
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRScreenshotType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EVRScreenshotType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EVRScreensho
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRScreenshotType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EVRScreenshotType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EVRScreensh
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRScreenshotType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EVRScreenshotType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EVRScreensho
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVRScreenshotType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVRScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EVRScreenshotType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

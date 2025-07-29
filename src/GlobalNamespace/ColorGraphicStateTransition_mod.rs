@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorGraphicStateTransition")]
+#[cfg(feature = "cordl_class_ColorGraphicStateTransition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorGraphicStateTransition {
@@ -7,7 +7,7 @@ pub struct ColorGraphicStateTransition {
     >,
     pub _colorTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
-#[cfg(feature = "ColorGraphicStateTransition")]
+#[cfg(feature = "cordl_class_ColorGraphicStateTransition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorGraphicStateTransition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::ColorGraphicStateTransition {
         false
     }
 }
-#[cfg(feature = "ColorGraphicStateTransition")]
+#[cfg(feature = "cordl_class_ColorGraphicStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorGraphicStateTransition {
     type Target = crate::GlobalNamespace::ColorStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
@@ -36,7 +36,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ColorGraphicStateTransition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorGraphicStateTransition")]
+#[cfg(feature = "cordl_class_ColorGraphicStateTransition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorGraphicStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -513,7 +513,7 @@ impl crate::GlobalNamespace::ColorGraphicStateTransition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorGraphicStateTransition")]
+#[cfg(feature = "cordl_class_ColorGraphicStateTransition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorGraphicStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

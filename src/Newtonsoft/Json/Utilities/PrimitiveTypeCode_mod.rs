@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PrimitiveTypeCode {
@@ -46,7 +46,7 @@ pub enum PrimitiveTypeCode {
     UInt64Nullable = 21i32,
     Uri = 38i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
     type Held<'a> = Self;
@@ -76,7 +76,7 @@ for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
     type Actual = Self;
@@ -101,7 +101,7 @@ for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
     type Type = Self;
@@ -116,7 +116,7 @@ for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode {
     type Actual = Self;

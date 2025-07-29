@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+PoseControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PoseControl {
@@ -24,7 +24,7 @@ pub struct PoseControl {
         crate::UnityEngine::InputSystem::Controls::Vector3Control,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+PoseControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::XR::PoseControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +44,7 @@ for crate::UnityEngine::InputSystem::XR::PoseControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+PoseControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::PoseControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::XR::PoseState,
@@ -53,7 +53,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::PoseControl {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+PoseControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::PoseControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -566,7 +566,7 @@ impl crate::UnityEngine::InputSystem::XR::PoseControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+PoseControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::XR::PoseControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

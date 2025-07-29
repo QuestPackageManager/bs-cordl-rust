@@ -1,10 +1,10 @@
-#[cfg(feature = "ILobbyGameStateController")]
+#[cfg(feature = "cordl_class_ILobbyGameStateController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ILobbyGameStateController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ILobbyGameStateController")]
+#[cfg(feature = "cordl_class_ILobbyGameStateController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ILobbyGameStateController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ILobbyGameStateController {
         false
     }
 }
-#[cfg(feature = "ILobbyGameStateController")]
+#[cfg(feature = "cordl_class_ILobbyGameStateController")]
 impl std::ops::Deref for crate::GlobalNamespace::ILobbyGameStateController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ILobbyGameStateController")]
+#[cfg(feature = "cordl_class_ILobbyGameStateController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ILobbyGameStateController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1292,7 +1292,7 @@ impl crate::GlobalNamespace::ILobbyGameStateController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ILobbyGameStateController")]
+#[cfg(feature = "cordl_class_ILobbyGameStateController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ILobbyGameStateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

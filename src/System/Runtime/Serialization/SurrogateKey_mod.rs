@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Serialization+SurrogateKey")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SurrogateKey")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SurrogateKey {
@@ -6,7 +6,7 @@ pub struct SurrogateKey {
     pub m_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub m_context: crate::System::Runtime::Serialization::StreamingContext,
 }
-#[cfg(feature = "System+Runtime+Serialization+SurrogateKey")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SurrogateKey")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::SurrogateKey {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Runtime::Serialization::SurrogateKey {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SurrogateKey")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SurrogateKey")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::SurrogateKey {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SurrogateKey")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SurrogateKey")]
 impl std::ops::DerefMut for crate::System::Runtime::Serialization::SurrogateKey {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::System::Runtime::Serialization::SurrogateKey {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+SurrogateKey")]
+#[cfg(feature = "cordl_class_System+Runtime+Serialization+SurrogateKey")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::SurrogateKey {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

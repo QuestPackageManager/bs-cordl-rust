@@ -1,4 +1,4 @@
-#[cfg(feature = "ShaderWarmupSceneStart")]
+#[cfg(feature = "cordl_class_ShaderWarmupSceneStart")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderWarmupSceneStart {
@@ -10,7 +10,7 @@ pub struct ShaderWarmupSceneStart {
         crate::GlobalNamespace::GameScenesManager,
     >,
 }
-#[cfg(feature = "ShaderWarmupSceneStart")]
+#[cfg(feature = "cordl_class_ShaderWarmupSceneStart")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ShaderWarmupSceneStart {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::ShaderWarmupSceneStart {
         false
     }
 }
-#[cfg(feature = "ShaderWarmupSceneStart")]
+#[cfg(feature = "cordl_class_ShaderWarmupSceneStart")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderWarmupSceneStart {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ShaderWarmupSceneStart")]
+#[cfg(feature = "cordl_class_ShaderWarmupSceneStart")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ShaderWarmupSceneStart {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::ShaderWarmupSceneStart {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ShaderWarmupSceneStart")]
+#[cfg(feature = "cordl_class_ShaderWarmupSceneStart")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ShaderWarmupSceneStart {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

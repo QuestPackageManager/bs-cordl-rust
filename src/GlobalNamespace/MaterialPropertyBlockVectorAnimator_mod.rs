@@ -1,11 +1,11 @@
-#[cfg(feature = "MaterialPropertyBlockVectorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockVectorAnimator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockVectorAnimator {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _vector: crate::UnityEngine::Vector4,
 }
-#[cfg(feature = "MaterialPropertyBlockVectorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockVectorAnimator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
         false
     }
 }
-#[cfg(feature = "MaterialPropertyBlockVectorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockVectorAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
     type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MaterialPropertyBlockVectorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockVectorAnimator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MaterialPropertyBlockVectorAnimator")]
+#[cfg(feature = "cordl_class_MaterialPropertyBlockVectorAnimator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "PS4LevelProductPacksSO")]
+#[cfg(feature = "cordl_class_PS4LevelProductPacksSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4LevelProductPacksSO {
     __cordl_parent: crate::GlobalNamespace::SonyLevelProductPackSO,
 }
-#[cfg(feature = "PS4LevelProductPacksSO")]
+#[cfg(feature = "cordl_class_PS4LevelProductPacksSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS4LevelProductPacksSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PS4LevelProductPacksSO {
         false
     }
 }
-#[cfg(feature = "PS4LevelProductPacksSO")]
+#[cfg(feature = "cordl_class_PS4LevelProductPacksSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS4LevelProductPacksSO {
     type Target = crate::GlobalNamespace::SonyLevelProductPackSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS4LevelProductPacksSO")]
+#[cfg(feature = "cordl_class_PS4LevelProductPacksSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS4LevelProductPacksSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::PS4LevelProductPacksSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS4LevelProductPacksSO")]
+#[cfg(feature = "cordl_class_PS4LevelProductPacksSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PS4LevelProductPacksSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+EnvironmentVariableTarget")]
+#[cfg(feature = "cordl_class_System+EnvironmentVariableTarget")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentVariableTarget {
@@ -7,7 +7,7 @@ pub enum EnvironmentVariableTarget {
     Process = 0i32,
     User = 1i32,
 }
-#[cfg(feature = "System+EnvironmentVariableTarget")]
+#[cfg(feature = "cordl_class_System+EnvironmentVariableTarget")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::EnvironmentVariableTarget {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::EnvironmentVariableTa
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+EnvironmentVariableTarget")]
+#[cfg(feature = "cordl_class_System+EnvironmentVariableTarget")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::EnvironmentVariableTarget {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::EnvironmentVariableTarget {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+EnvironmentVariableTarget")]
+#[cfg(feature = "cordl_class_System+EnvironmentVariableTarget")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::EnvironmentVariableTarget {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::EnvironmentVariableTarget {
         self
     }
 }
-#[cfg(feature = "System+EnvironmentVariableTarget")]
+#[cfg(feature = "cordl_class_System+EnvironmentVariableTarget")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::EnvironmentVariableTarget {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::EnvironmentVariableTarget {
         }
     }
 }
-#[cfg(feature = "System+EnvironmentVariableTarget")]
+#[cfg(feature = "cordl_class_System+EnvironmentVariableTarget")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::EnvironmentVariableTarget {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

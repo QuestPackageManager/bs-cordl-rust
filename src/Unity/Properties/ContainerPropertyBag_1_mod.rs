@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+ContainerPropertyBag_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+ContainerPropertyBag_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContainerPropertyBag_1<TContainer: quest_hook::libil2cpp::Type> {
@@ -16,7 +16,7 @@ pub struct ContainerPropertyBag_1<TContainer: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
 }
-#[cfg(feature = "Unity+Properties+ContainerPropertyBag_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+ContainerPropertyBag_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -52,7 +52,7 @@ for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+ContainerPropertyBag_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+ContainerPropertyBag_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
     type Target = crate::Unity::Properties::PropertyBag_1<TContainer>;
@@ -60,7 +60,7 @@ for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+ContainerPropertyBag_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+ContainerPropertyBag_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -186,7 +186,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+ContainerPropertyBag_1")]
+#[cfg(feature = "cordl_class_Unity+Properties+ContainerPropertyBag_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

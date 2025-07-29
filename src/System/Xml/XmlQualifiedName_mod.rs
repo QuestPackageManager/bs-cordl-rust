@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlQualifiedName")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlQualifiedName {
@@ -7,7 +7,7 @@ pub struct XmlQualifiedName {
     pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hash: i32,
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlQualifiedName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlQualifiedName
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName")]
 impl std::ops::Deref for crate::System::Xml::XmlQualifiedName {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName")]
 impl std::ops::DerefMut for crate::System::Xml::XmlQualifiedName {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -653,7 +653,7 @@ impl crate::System::Xml::XmlQualifiedName {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlQualifiedName {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -662,13 +662,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlQualifiedName 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlQualifiedName_HashCodeOfStringDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -688,14 +688,14 @@ for crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate {
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
 impl std::ops::Deref for crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
 impl std::ops::DerefMut
 for crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -781,7 +781,7 @@ impl crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
+#[cfg(feature = "cordl_class_System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

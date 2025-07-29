@@ -1,4 +1,4 @@
-#[cfg(feature = "GenericSignal_1")]
+#[cfg(feature = "cordl_class_GenericSignal_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericSignal_1<T: quest_hook::libil2cpp::Type> {
@@ -6,7 +6,7 @@ pub struct GenericSignal_1<T: quest_hook::libil2cpp::Type> {
     pub _floatEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "GenericSignal_1")]
+#[cfg(feature = "cordl_class_GenericSignal_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GenericSignal_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::GenericSignal_1<T> {
         false
     }
 }
-#[cfg(feature = "GenericSignal_1")]
+#[cfg(feature = "cordl_class_GenericSignal_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::GenericSignal_1<T> {
     type Target = crate::GlobalNamespace::Signal;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::GenericSignal_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GenericSignal_1")]
+#[cfg(feature = "cordl_class_GenericSignal_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::GenericSignal_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -202,7 +202,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::GenericSignal_1<T> 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GenericSignal_1")]
+#[cfg(feature = "cordl_class_GenericSignal_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GenericSignal_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

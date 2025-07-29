@@ -1,10 +1,10 @@
-#[cfg(feature = "EncryptionUtility")]
+#[cfg(feature = "cordl_class_EncryptionUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptionUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "EncryptionUtility")]
+#[cfg(feature = "cordl_class_EncryptionUtility")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EncryptionUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EncryptionUt
         false
     }
 }
-#[cfg(feature = "EncryptionUtility")]
+#[cfg(feature = "cordl_class_EncryptionUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EncryptionUtility")]
+#[cfg(feature = "cordl_class_EncryptionUtility")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EncryptionUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -372,7 +372,7 @@ impl crate::GlobalNamespace::EncryptionUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EncryptionUtility")]
+#[cfg(feature = "cordl_class_EncryptionUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EncryptionUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -381,7 +381,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EncryptionUti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "EncryptionUtility+EncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+EncryptionState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptionUtility_EncryptionState {
@@ -410,7 +410,7 @@ pub struct EncryptionUtility_EncryptionState {
         >,
     >,
 }
-#[cfg(feature = "EncryptionUtility+EncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+EncryptionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -430,14 +430,14 @@ for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
         false
     }
 }
-#[cfg(feature = "EncryptionUtility+EncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+EncryptionState")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EncryptionUtility+EncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+EncryptionState")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -870,7 +870,7 @@ impl crate::GlobalNamespace::EncryptionUtility_EncryptionState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EncryptionUtility+EncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+EncryptionState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -910,13 +910,13 @@ for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "EncryptionUtility+IEncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+IEncryptionState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptionUtility_IEncryptionState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "EncryptionUtility+IEncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+IEncryptionState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -936,14 +936,14 @@ for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
         false
     }
 }
-#[cfg(feature = "EncryptionUtility+IEncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+IEncryptionState")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EncryptionUtility+IEncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+IEncryptionState")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1045,7 +1045,7 @@ impl crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EncryptionUtility+IEncryptionState")]
+#[cfg(feature = "cordl_class_EncryptionUtility+IEncryptionState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag {
@@ -6,7 +6,7 @@ pub struct SystemVersionPropertyBag {
         quest_hook::libil2cpp::Gc<crate::System::Version>,
     >,
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::SystemVersionProper
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -83,7 +83,7 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
+#[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -93,7 +93,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_BuildProperty {
@@ -102,7 +104,9 @@ pub struct SystemVersionPropertyBag_BuildProperty {
         i32,
     >,
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -122,7 +126,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty"
+)]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
     type Target = crate::Unity::Properties::Property_2<
@@ -133,7 +139,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty"
+)]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -198,7 +206,9 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -208,7 +218,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_MajorProperty {
@@ -217,7 +229,9 @@ pub struct SystemVersionPropertyBag_MajorProperty {
         i32,
     >,
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -237,7 +251,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty"
+)]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
     type Target = crate::Unity::Properties::Property_2<
@@ -248,7 +264,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty"
+)]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -313,7 +331,9 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -323,7 +343,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_MinorProperty {
@@ -332,7 +354,9 @@ pub struct SystemVersionPropertyBag_MinorProperty {
         i32,
     >,
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -352,7 +376,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty"
+)]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
     type Target = crate::Unity::Properties::Property_2<
@@ -363,7 +389,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty"
+)]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -428,7 +456,9 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -438,7 +468,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_RevisionProperty {
@@ -447,7 +479,9 @@ pub struct SystemVersionPropertyBag_RevisionProperty {
         i32,
     >,
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -467,7 +501,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionPropert
         false
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty"
+)]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
     type Target = crate::Unity::Properties::Property_2<
@@ -478,7 +514,9 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionPropert
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty"
+)]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -543,7 +581,9 @@ impl crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProper
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
+#[cfg(
+    feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

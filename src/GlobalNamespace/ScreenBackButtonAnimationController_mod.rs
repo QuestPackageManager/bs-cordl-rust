@@ -1,4 +1,4 @@
-#[cfg(feature = "ScreenBackButtonAnimationController")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenBackButtonAnimationController {
@@ -11,7 +11,7 @@ pub struct ScreenBackButtonAnimationController {
         >,
     >,
 }
-#[cfg(feature = "ScreenBackButtonAnimationController")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScreenBackButtonAnimationController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController {
         false
     }
 }
-#[cfg(feature = "ScreenBackButtonAnimationController")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController")]
 impl std::ops::Deref for crate::GlobalNamespace::ScreenBackButtonAnimationController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScreenBackButtonAnimationController")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScreenBackButtonAnimationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::ScreenBackButtonAnimationController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScreenBackButtonAnimationController")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScreenBackButtonAnimationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -134,7 +134,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController+AnimationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenBackButtonAnimationController_AnimationType {
@@ -146,7 +146,7 @@ pub enum ScreenBackButtonAnimationController_AnimationType {
     MoveOut = 3i32,
     MoveOut2 = 5i32,
 }
-#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Held<'a> = Self;
@@ -176,7 +176,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Type = Self;
@@ -187,7 +187,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Actual = Self;
@@ -201,7 +201,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
         self
     }
 }
-#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Type = Self;
@@ -216,7 +216,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
         }
     }
 }
-#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
+#[cfg(feature = "cordl_class_ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Actual = Self;

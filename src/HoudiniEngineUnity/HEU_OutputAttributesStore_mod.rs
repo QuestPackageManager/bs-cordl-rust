@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_OutputAttributesStore")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_OutputAttributesStore {
@@ -7,7 +7,7 @@ pub struct HEU_OutputAttributesStore {
         crate::HoudiniEngineUnity::HEU_OutputAttributeDictionary,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_OutputAttributesStore")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_OutputAttributesStore")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_OutputAttributesStore")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributesStore")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_OutputAttributesStore")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

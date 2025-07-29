@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+BoneWeight")]
+#[cfg(feature = "cordl_class_UnityEngine+BoneWeight")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BoneWeight {
@@ -11,7 +11,7 @@ pub struct BoneWeight {
     pub m_BoneIndex2: i32,
     pub m_BoneIndex3: i32,
 }
-#[cfg(feature = "UnityEngine+BoneWeight")]
+#[cfg(feature = "cordl_class_UnityEngine+BoneWeight")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::BoneWeight {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::BoneWeight {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+BoneWeight")]
+#[cfg(feature = "cordl_class_UnityEngine+BoneWeight")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::BoneWeight {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,7 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::BoneWeight {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+BoneWeight")]
+#[cfg(feature = "cordl_class_UnityEngine+BoneWeight")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::BoneWeight {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,7 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::BoneWeight 
         self
     }
 }
-#[cfg(feature = "UnityEngine+BoneWeight")]
+#[cfg(feature = "cordl_class_UnityEngine+BoneWeight")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::BoneWeight {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,7 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::BoneWeight {
         }
     }
 }
-#[cfg(feature = "UnityEngine+BoneWeight")]
+#[cfg(feature = "cordl_class_UnityEngine+BoneWeight")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::BoneWeight {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -90,7 +90,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::BoneWeight {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+BoneWeight")]
+#[cfg(feature = "cordl_class_UnityEngine+BoneWeight")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::BoneWeight {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

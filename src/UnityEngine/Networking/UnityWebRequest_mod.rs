@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityWebRequest {
@@ -18,7 +18,7 @@ pub struct UnityWebRequest {
     pub _disposeDownloadHandlerOnDispose_k__BackingField: bool,
     pub _disposeUploadHandlerOnDispose_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::UnityWebRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::UnityEngine::Networking::UnityWebRequest {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest")]
 impl std::ops::Deref for crate::UnityEngine::Networking::UnityWebRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest")]
 impl std::ops::DerefMut for crate::UnityEngine::Networking::UnityWebRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1681,7 +1681,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::UnityWebRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1705,7 +1705,7 @@ for crate::UnityEngine::Networking::UnityWebRequest {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+Result")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityWebRequest_Result {
@@ -1716,7 +1716,7 @@ pub enum UnityWebRequest_Result {
     ProtocolError = 3i32,
     Success = 1i32,
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Held<'a> = Self;
@@ -1746,7 +1746,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Type = Self;
@@ -1757,7 +1757,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Actual = Self;
@@ -1771,7 +1771,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Type = Self;
@@ -1786,7 +1786,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Actual = Self;
@@ -1800,7 +1800,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestError"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityWebRequest_UnityWebRequestError {
@@ -1847,7 +1849,9 @@ pub enum UnityWebRequest_UnityWebRequestError {
     UnsupportedProtocol = 4i32,
     WriteError = 11i32,
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestError"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Held<'a> = Self;
@@ -1877,7 +1881,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestError"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Type = Self;
@@ -1888,7 +1894,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestError"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Actual = Self;
@@ -1902,7 +1910,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestError"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Type = Self;
@@ -1917,7 +1927,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestError"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Actual = Self;
@@ -1931,7 +1943,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityWebRequest_UnityWebRequestMethod {
@@ -1942,7 +1956,9 @@ pub enum UnityWebRequest_UnityWebRequestMethod {
     Post = 1i32,
     Put = 2i32,
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Held<'a> = Self;
@@ -1972,7 +1988,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Type = Self;
@@ -1983,7 +2001,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Actual = Self;
@@ -1997,7 +2017,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Type = Self;
@@ -2012,7 +2034,9 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Actual = Self;

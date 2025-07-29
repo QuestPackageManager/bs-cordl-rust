@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Drawing+Point")]
+#[cfg(feature = "cordl_class_System+Drawing+Point")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Point {
     pub x: i32,
     pub y: i32,
 }
-#[cfg(feature = "System+Drawing+Point")]
+#[cfg(feature = "cordl_class_System+Drawing+Point")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Drawing::Point {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Drawing::Point {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Drawing+Point")]
+#[cfg(feature = "cordl_class_System+Drawing+Point")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Drawing::Point {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Drawing::Point {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Drawing+Point")]
+#[cfg(feature = "cordl_class_System+Drawing+Point")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Drawing::Point {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Drawing::Point {
         self
     }
 }
-#[cfg(feature = "System+Drawing+Point")]
+#[cfg(feature = "cordl_class_System+Drawing+Point")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Drawing::Point {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Drawing::Point {
         }
     }
 }
-#[cfg(feature = "System+Drawing+Point")]
+#[cfg(feature = "cordl_class_System+Drawing+Point")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Drawing::Point {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Drawing::Point {
         actual
     }
 }
-#[cfg(feature = "System+Drawing+Point")]
+#[cfg(feature = "cordl_class_System+Drawing+Point")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Drawing::Point {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

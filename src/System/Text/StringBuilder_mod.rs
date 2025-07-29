@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Text+StringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+StringBuilder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringBuilder {
@@ -11,7 +11,7 @@ pub struct StringBuilder {
     pub m_ChunkOffset: i32,
     pub m_MaxCapacity: i32,
 }
-#[cfg(feature = "System+Text+StringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+StringBuilder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::StringBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::StringBuilder {
         false
     }
 }
-#[cfg(feature = "System+Text+StringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+StringBuilder")]
 impl std::ops::Deref for crate::System::Text::StringBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Text+StringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+StringBuilder")]
 impl std::ops::DerefMut for crate::System::Text::StringBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2280,7 +2280,7 @@ impl crate::System::Text::StringBuilder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Text+StringBuilder")]
+#[cfg(feature = "cordl_class_System+Text+StringBuilder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Text::StringBuilder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

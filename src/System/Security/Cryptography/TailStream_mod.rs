@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+TailStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TailStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TailStream {
@@ -8,7 +8,7 @@ pub struct TailStream {
     pub _BufferIndex: i32,
     pub _BufferFull: bool,
 }
-#[cfg(feature = "System+Security+Cryptography+TailStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TailStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::TailStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Security::Cryptography::TailStream {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+TailStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TailStream")]
 impl std::ops::Deref for crate::System::Security::Cryptography::TailStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+TailStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TailStream")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::TailStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -404,7 +404,7 @@ impl crate::System::Security::Cryptography::TailStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+TailStream")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+TailStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::TailStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

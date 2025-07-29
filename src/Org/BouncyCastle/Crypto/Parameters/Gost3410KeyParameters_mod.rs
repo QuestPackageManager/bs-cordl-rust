@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Gost3410KeyParameters {
@@ -10,7 +10,7 @@ pub struct Gost3410KeyParameters {
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
     type Target = crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter;
@@ -38,7 +38,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -235,7 +235,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

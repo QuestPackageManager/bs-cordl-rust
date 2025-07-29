@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+OnRemoveWriter")]
+#[cfg(feature = "cordl_class_System+Xml+OnRemoveWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OnRemoveWriter {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Xml+OnRemoveWriter")]
+#[cfg(feature = "cordl_class_System+Xml+OnRemoveWriter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::OnRemoveWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::OnRemoveWriter {
         false
     }
 }
-#[cfg(feature = "System+Xml+OnRemoveWriter")]
+#[cfg(feature = "cordl_class_System+Xml+OnRemoveWriter")]
 impl std::ops::Deref for crate::System::Xml::OnRemoveWriter {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+OnRemoveWriter")]
+#[cfg(feature = "cordl_class_System+Xml+OnRemoveWriter")]
 impl std::ops::DerefMut for crate::System::Xml::OnRemoveWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -107,7 +107,7 @@ impl crate::System::Xml::OnRemoveWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+OnRemoveWriter")]
+#[cfg(feature = "cordl_class_System+Xml+OnRemoveWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::OnRemoveWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

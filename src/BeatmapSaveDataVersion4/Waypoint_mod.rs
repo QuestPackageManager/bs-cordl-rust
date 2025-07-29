@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+Waypoint")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Waypoint")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Waypoint {
@@ -6,7 +6,7 @@ pub struct Waypoint {
     pub y: i32,
     pub o: crate::BeatmapSaveDataCommon::OffsetDirection,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Waypoint")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Waypoint")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Waypoint {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Wayp
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Waypoint")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Waypoint")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::Waypoint {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::BeatmapSaveDataVersion4::Waypoint {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Waypoint")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Waypoint")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::Waypoint {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::BeatmapSaveDataVersion4::Waypoint {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Waypoint")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Waypoint")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::Waypoint {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::BeatmapSaveDataVersion4::Waypoint {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Waypoint")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Waypoint")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::Waypoint {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -88,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::Wa
         actual
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+Waypoint")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+Waypoint")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::BeatmapSaveDataVersion4::Waypoint {
     type Type = Self;

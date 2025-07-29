@@ -1,10 +1,10 @@
-#[cfg(feature = "IJumpOffsetYProvider")]
+#[cfg(feature = "cordl_class_IJumpOffsetYProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IJumpOffsetYProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IJumpOffsetYProvider")]
+#[cfg(feature = "cordl_class_IJumpOffsetYProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IJumpOffsetYProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IJumpOffsetYProvider {
         false
     }
 }
-#[cfg(feature = "IJumpOffsetYProvider")]
+#[cfg(feature = "cordl_class_IJumpOffsetYProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::IJumpOffsetYProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IJumpOffsetYProvider")]
+#[cfg(feature = "cordl_class_IJumpOffsetYProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IJumpOffsetYProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::IJumpOffsetYProvider {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IJumpOffsetYProvider")]
+#[cfg(feature = "cordl_class_IJumpOffsetYProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IJumpOffsetYProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

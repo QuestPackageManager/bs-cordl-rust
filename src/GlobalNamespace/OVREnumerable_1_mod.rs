@@ -1,4 +1,4 @@
-#[cfg(feature = "OVREnumerable_1+Enumerator+CollectionType")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator+CollectionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Enumerator_OVREnumerable_1_CollectionType {
@@ -9,7 +9,7 @@ pub enum Enumerator_OVREnumerable_1_CollectionType {
     Queue = 3i32,
     Set = 2i32,
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator+CollectionType")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator+CollectionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator+CollectionType")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator+CollectionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator+CollectionType")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator+CollectionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
         self
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator+CollectionType")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator+CollectionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
         }
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator+CollectionType")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator+CollectionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
         actual
     }
 }
-#[cfg(feature = "OVREnumerable_1")]
+#[cfg(feature = "cordl_class_OVREnumerable_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVREnumerable_1<T: quest_hook::libil2cpp::Type> {
@@ -102,7 +102,7 @@ pub struct OVREnumerable_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OVREnumerable_1")]
+#[cfg(feature = "cordl_class_OVREnumerable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVREnumerable_1<T> {
     type Held<'a> = Self;
@@ -145,7 +145,7 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVREnumerable_1")]
+#[cfg(feature = "cordl_class_OVREnumerable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVREnumerable_1<T> {
     type Type = Self;
@@ -156,7 +156,7 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVREnumerable_1")]
+#[cfg(feature = "cordl_class_OVREnumerable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVREnumerable_1<T> {
     type Actual = Self;
@@ -170,7 +170,7 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
         self
     }
 }
-#[cfg(feature = "OVREnumerable_1")]
+#[cfg(feature = "cordl_class_OVREnumerable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVREnumerable_1<T> {
     type Type = Self;
@@ -185,7 +185,7 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
         }
     }
 }
-#[cfg(feature = "OVREnumerable_1")]
+#[cfg(feature = "cordl_class_OVREnumerable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVREnumerable_1<T> {
     type Actual = Self;
@@ -199,7 +199,7 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
         actual
     }
 }
-#[cfg(feature = "OVREnumerable_1")]
+#[cfg(feature = "cordl_class_OVREnumerable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVREnumerable_1<T> {
     type Type = Self;
@@ -379,7 +379,7 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
         todo!()
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVREnumerable_1_Enumerator<T: quest_hook::libil2cpp::Type> {
@@ -396,7 +396,7 @@ pub struct OVREnumerable_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _queueEnumerator: crate::System::Collections::Generic::Queue_1_Enumerator<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
     type Held<'a> = Self;
@@ -442,7 +442,7 @@ for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
     type Type = Self;
@@ -453,7 +453,7 @@ for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
     type Actual = Self;
@@ -467,7 +467,7 @@ for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
         self
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
     type Type = Self;
@@ -482,7 +482,7 @@ for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
         }
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
     type Actual = Self;
@@ -496,7 +496,7 @@ for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
         actual
     }
 }
-#[cfg(feature = "OVREnumerable_1+Enumerator")]
+#[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
     type Type = Self;

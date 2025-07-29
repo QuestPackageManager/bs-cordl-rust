@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct DecrementInstruction_DecrementInt32 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::DecrementInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DecrementInstruction_DecrementInt32 {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::DecrementInstruction_DecrementInt32 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::DecrementInstruction_DecrementInt32 {
     type Target = crate::System::Linq::Expressions::Interpreter::DecrementInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::DecrementInstruction_DecrementI
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::DecrementInstruction_DecrementInt32 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::DecrementInstruction_DecrementInt32 {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DecrementInstruction_DecrementInt32 {

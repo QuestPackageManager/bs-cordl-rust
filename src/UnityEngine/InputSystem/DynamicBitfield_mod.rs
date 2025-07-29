@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DynamicBitfield")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DynamicBitfield {
     pub array: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<u64>,
     pub length: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DynamicBitfield")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::DynamicBitfield {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::InputSystem::DynamicBitfield {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DynamicBitfield")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::DynamicBitfield {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::InputSystem::DynamicBitfield {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DynamicBitfield")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::DynamicBitfield {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::DynamicBitfield {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DynamicBitfield")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::DynamicBitfield {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::InputSystem::DynamicBitfield {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DynamicBitfield")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::DynamicBitfield {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::InputSystem::DynamicBitfield {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DynamicBitfield")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::DynamicBitfield {
     type Type = Self;

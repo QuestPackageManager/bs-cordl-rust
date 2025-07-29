@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoapParameterAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Metadata::SoapParameterAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Runtime::Remoting::Metadata::SoapParameterAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Metadata::SoapParameterAttribute {
     type Target = crate::System::Runtime::Remoting::Metadata::SoapAttribute;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Remoting::Metadata::SoapParameterAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Metadata::SoapParameterAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::System::Runtime::Remoting::Metadata::SoapParameterAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Metadata::SoapParameterAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

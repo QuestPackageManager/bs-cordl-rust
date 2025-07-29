@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRGazePointer")]
+#[cfg(feature = "cordl_class_OVRGazePointer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGazePointer {
@@ -22,7 +22,7 @@ pub struct OVRGazePointer {
         crate::GlobalNamespace::OVRProgressIndicator,
     >,
 }
-#[cfg(feature = "OVRGazePointer")]
+#[cfg(feature = "cordl_class_OVRGazePointer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGazePointer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRGazePoint
         false
     }
 }
-#[cfg(feature = "OVRGazePointer")]
+#[cfg(feature = "cordl_class_OVRGazePointer")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGazePointer {
     type Target = crate::GlobalNamespace::OVRCursor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRGazePointer")]
+#[cfg(feature = "cordl_class_OVRGazePointer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRGazePointer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -471,7 +471,7 @@ impl crate::GlobalNamespace::OVRGazePointer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRGazePointer")]
+#[cfg(feature = "cordl_class_OVRGazePointer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGazePointer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

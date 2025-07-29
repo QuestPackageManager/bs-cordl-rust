@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+ShapeType")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShapeType {
@@ -17,7 +17,7 @@ pub enum ShapeType {
     Stair = 1i32,
     Torus = 12i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ShapeType")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::ShapeType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Shap
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ShapeType")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::ShapeType {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::ProBuilder::ShapeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ShapeType")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::ShapeType {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngine::ProBuilder::ShapeType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ShapeType")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::ShapeType {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::UnityEngine::ProBuilder::ShapeType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+ShapeType")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ProBuilder::ShapeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

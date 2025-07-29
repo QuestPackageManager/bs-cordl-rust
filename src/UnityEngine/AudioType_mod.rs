@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AudioType")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioType {
@@ -17,7 +17,7 @@ pub enum AudioType {
     XM = 21i32,
     XMA = 22i32,
 }
-#[cfg(feature = "UnityEngine+AudioType")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AudioType")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AudioType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AudioType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AudioType")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AudioType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,7 +69,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AudioType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+AudioType")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AudioType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AudioType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+AudioType")]
+#[cfg(feature = "cordl_class_UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AudioType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

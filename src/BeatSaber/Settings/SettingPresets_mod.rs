@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatSaber+Settings+SettingPresets")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SettingPresets")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SettingPresets {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatSaber+Settings+SettingPresets")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SettingPresets")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::SettingPresets {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::SettingP
         false
     }
 }
-#[cfg(feature = "BeatSaber+Settings+SettingPresets")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SettingPresets")]
 impl std::ops::Deref for crate::BeatSaber::Settings::SettingPresets {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+Settings+SettingPresets")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SettingPresets")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::SettingPresets {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::BeatSaber::Settings::SettingPresets {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+Settings+SettingPresets")]
+#[cfg(feature = "cordl_class_BeatSaber+Settings+SettingPresets")]
 impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Settings::SettingPresets {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

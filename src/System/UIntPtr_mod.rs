@@ -1,10 +1,10 @@
-#[cfg(feature = "System+UIntPtr")]
+#[cfg(feature = "cordl_class_System+UIntPtr")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIntPtr {
     pub _pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+UIntPtr")]
+#[cfg(feature = "cordl_class_System+UIntPtr")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::UIntPtr {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UIntPtr {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+UIntPtr")]
+#[cfg(feature = "cordl_class_System+UIntPtr")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::UIntPtr {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::UIntPtr {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+UIntPtr")]
+#[cfg(feature = "cordl_class_System+UIntPtr")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::UIntPtr {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::UIntPtr {
         self
     }
 }
-#[cfg(feature = "System+UIntPtr")]
+#[cfg(feature = "cordl_class_System+UIntPtr")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::UIntPtr {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,7 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::UIntPtr {
         }
     }
 }
-#[cfg(feature = "System+UIntPtr")]
+#[cfg(feature = "cordl_class_System+UIntPtr")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::UIntPtr {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,7 +83,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::UIntPtr {
         actual
     }
 }
-#[cfg(feature = "System+UIntPtr")]
+#[cfg(feature = "cordl_class_System+UIntPtr")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::UIntPtr {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

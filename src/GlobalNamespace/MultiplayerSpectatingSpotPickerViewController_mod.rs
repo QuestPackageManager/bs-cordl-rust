@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatingSpotPickerViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerSpectatingSpotPickerViewController {
@@ -10,7 +10,7 @@ pub struct MultiplayerSpectatingSpotPickerViewController {
         crate::GlobalNamespace::MultiplayerSpectatorController,
     >,
 }
-#[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatingSpotPickerViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
         false
     }
 }
-#[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatingSpotPickerViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatingSpotPickerViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -223,7 +223,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatingSpotPickerViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

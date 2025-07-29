@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReasonTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+RevocationReasonTag")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RevocationReasonTag {
@@ -9,7 +9,7 @@ pub enum RevocationReasonTag {
     NoReason = 0u8,
     UserNoLongerValid = 32u8,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReasonTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+RevocationReasonTag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReasonTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+RevocationReasonTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReasonTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+RevocationReasonTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReasonTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+RevocationReasonTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReasonTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+RevocationReasonTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Bcpg::RevocationReasonTag {
     type Actual = Self;

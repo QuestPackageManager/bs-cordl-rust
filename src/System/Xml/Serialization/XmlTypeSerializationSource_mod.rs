@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeSerializationSource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTypeSerializationSource {
@@ -9,7 +9,7 @@ pub struct XmlTypeSerializationSource {
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub rootHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeSerializationSource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Serialization::XmlTypeSerializationSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Xml::Serialization::XmlTypeSerializationSource {
         false
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeSerializationSource")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeSerializationSource {
     type Target = crate::System::Xml::Serialization::SerializationSource;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeSerializationSource")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlTypeSerializationSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -171,7 +171,7 @@ impl crate::System::Xml::Serialization::XmlTypeSerializationSource {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
+#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeSerializationSource")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlTypeSerializationSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlBaseConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBaseConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlBaseConverter {
@@ -7,7 +7,7 @@ pub struct XmlBaseConverter {
     pub typeCode: crate::System::Xml::Schema::XmlTypeCode,
     pub clrTypeDefault: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Xml+Schema+XmlBaseConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBaseConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlBaseConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Xml::Schema::XmlBaseConverter {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlBaseConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBaseConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlBaseConverter {
     type Target = crate::System::Xml::Schema::XmlValueConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlBaseConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBaseConverter")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlBaseConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3341,7 +3341,7 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlBaseConverter")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlBaseConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XmlBaseConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

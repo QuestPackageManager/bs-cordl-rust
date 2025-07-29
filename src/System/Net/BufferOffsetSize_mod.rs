@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_System+Net+BufferOffsetSize")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferOffsetSize {
@@ -7,7 +7,7 @@ pub struct BufferOffsetSize {
     pub Offset: i32,
     pub Size: i32,
 }
-#[cfg(feature = "System+Net+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_System+Net+BufferOffsetSize")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::BufferOffsetSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::BufferOffsetSize
         false
     }
 }
-#[cfg(feature = "System+Net+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_System+Net+BufferOffsetSize")]
 impl std::ops::Deref for crate::System::Net::BufferOffsetSize {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_System+Net+BufferOffsetSize")]
 impl std::ops::DerefMut for crate::System::Net::BufferOffsetSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -133,7 +133,7 @@ impl crate::System::Net::BufferOffsetSize {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+BufferOffsetSize")]
+#[cfg(feature = "cordl_class_System+Net+BufferOffsetSize")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::BufferOffsetSize {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "AppInitScenesTransitionSetupDataContainerSO")]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataContainerSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppInitScenesTransitionSetupDataContainerSO {
@@ -7,7 +7,7 @@ pub struct AppInitScenesTransitionSetupDataContainerSO {
         crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO,
     >,
 }
-#[cfg(feature = "AppInitScenesTransitionSetupDataContainerSO")]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataContainerSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO {
         false
     }
 }
-#[cfg(feature = "AppInitScenesTransitionSetupDataContainerSO")]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataContainerSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AppInitScenesTransitionSetupDataContainerSO")]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataContainerSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AppInitScenesTransitionSetupDataContainerSO")]
+#[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataContainerSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Video+VideoClipPlayable")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VideoClipPlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Video+VideoClipPlayable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Video+VideoClipPlayable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Video+VideoClipPlayable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Video+VideoClipPlayable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Video+VideoClipPlayable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Video+VideoClipPlayable")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRVirtualKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRVirtualKeyboardSampleControls {
@@ -19,7 +19,7 @@ pub struct OVRVirtualKeyboardSampleControls {
     pub keyboardScale_: f32,
     pub keyboardBackup: crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup,
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         false
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -349,7 +349,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -359,7 +359,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
@@ -392,7 +392,7 @@ pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
         crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
     >,
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     type Held<'a> = Self;
@@ -422,7 +422,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardB
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     type Type = Self;
@@ -433,7 +433,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardB
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     type Actual = Self;
@@ -447,7 +447,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardB
         self
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     type Type = Self;
@@ -462,7 +462,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardB
         }
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     type Actual = Self;
@@ -476,7 +476,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardB
         actual
     }
 }
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     type Type = Self;

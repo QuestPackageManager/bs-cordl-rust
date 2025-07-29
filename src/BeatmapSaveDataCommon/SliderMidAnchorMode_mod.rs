@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+SliderMidAnchorMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SliderMidAnchorMode {
@@ -7,7 +7,7 @@ pub enum SliderMidAnchorMode {
     CounterClockwise = 2i32,
     Straight = 0i32,
 }
-#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Actual = Self;

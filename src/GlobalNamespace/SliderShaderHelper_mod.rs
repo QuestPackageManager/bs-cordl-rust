@@ -1,10 +1,10 @@
-#[cfg(feature = "SliderShaderHelper")]
+#[cfg(feature = "cordl_class_SliderShaderHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderShaderHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "SliderShaderHelper")]
+#[cfg(feature = "cordl_class_SliderShaderHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderShaderHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderShader
         false
     }
 }
-#[cfg(feature = "SliderShaderHelper")]
+#[cfg(feature = "cordl_class_SliderShaderHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderShaderHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderShaderHelper")]
+#[cfg(feature = "cordl_class_SliderShaderHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderShaderHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -522,7 +522,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderShaderHelper")]
+#[cfg(feature = "cordl_class_SliderShaderHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderShaderHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

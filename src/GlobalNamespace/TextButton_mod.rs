@@ -1,4 +1,4 @@
-#[cfg(feature = "TextButton")]
+#[cfg(feature = "cordl_class_TextButton")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextButton {
@@ -6,7 +6,7 @@ pub struct TextButton {
     pub _text: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
 }
-#[cfg(feature = "TextButton")]
+#[cfg(feature = "cordl_class_TextButton")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TextButton {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TextButton {
         false
     }
 }
-#[cfg(feature = "TextButton")]
+#[cfg(feature = "cordl_class_TextButton")]
 impl std::ops::Deref for crate::GlobalNamespace::TextButton {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TextButton")]
+#[cfg(feature = "cordl_class_TextButton")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextButton {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::GlobalNamespace::TextButton {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TextButton")]
+#[cfg(feature = "cordl_class_TextButton")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextButton {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

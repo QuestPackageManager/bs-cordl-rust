@@ -1,11 +1,11 @@
-#[cfg(feature = "PublicServerInfo")]
+#[cfg(feature = "cordl_class_PublicServerInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PublicServerInfo {
     pub code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub currentPlayerCount: i32,
 }
-#[cfg(feature = "PublicServerInfo")]
+#[cfg(feature = "cordl_class_PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PublicServerInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PublicServer
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PublicServerInfo")]
+#[cfg(feature = "cordl_class_PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PublicServerInfo {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::PublicServerInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PublicServerInfo")]
+#[cfg(feature = "cordl_class_PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PublicServerInfo {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::GlobalNamespace::PublicServerInfo {
         self
     }
 }
-#[cfg(feature = "PublicServerInfo")]
+#[cfg(feature = "cordl_class_PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PublicServerInfo {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::PublicServerInfo {
         }
     }
 }
-#[cfg(feature = "PublicServerInfo")]
+#[cfg(feature = "cordl_class_PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PublicServerInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PublicServ
         actual
     }
 }
-#[cfg(feature = "PublicServerInfo")]
+#[cfg(feature = "cordl_class_PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PublicServerInfo {
     type Type = Self;

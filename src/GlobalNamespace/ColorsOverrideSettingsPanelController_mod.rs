@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorsOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_ColorsOverrideSettingsPanelController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorsOverrideSettingsPanelController {
@@ -30,7 +30,7 @@ pub struct ColorsOverrideSettingsPanelController {
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _isDirty: bool,
 }
-#[cfg(feature = "ColorsOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_ColorsOverrideSettingsPanelController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -50,14 +50,14 @@ for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         false
     }
 }
-#[cfg(feature = "ColorsOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_ColorsOverrideSettingsPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ColorsOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_ColorsOverrideSettingsPanelController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -455,7 +455,7 @@ impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ColorsOverrideSettingsPanelController")]
+#[cfg(feature = "cordl_class_ColorsOverrideSettingsPanelController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

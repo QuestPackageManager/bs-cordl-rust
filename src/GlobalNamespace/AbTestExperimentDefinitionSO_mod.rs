@@ -1,4 +1,4 @@
-#[cfg(feature = "AbTestExperimentDefinitionSO")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbTestExperimentDefinitionSO {
@@ -10,7 +10,7 @@ pub struct AbTestExperimentDefinitionSO {
     pub _salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _currentUserTreatmentGroup: crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group,
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         false
     }
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -265,7 +265,7 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -275,7 +275,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO+Group")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AbTestExperimentDefinitionSO_Group {
@@ -284,7 +284,7 @@ pub enum AbTestExperimentDefinitionSO_Group {
     Test1 = 1i32,
     Test2 = 2i32,
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Held<'a> = Self;
@@ -314,7 +314,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Type = Self;
@@ -325,7 +325,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Actual = Self;
@@ -339,7 +339,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
         self
     }
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Type = Self;
@@ -354,7 +354,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
         }
     }
 }
-#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
+#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Actual = Self;

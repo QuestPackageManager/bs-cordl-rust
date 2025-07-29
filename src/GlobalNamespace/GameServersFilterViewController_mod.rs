@@ -1,4 +1,4 @@
-#[cfg(feature = "GameServersFilterViewController")]
+#[cfg(feature = "cordl_class_GameServersFilterViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServersFilterViewController {
@@ -33,7 +33,7 @@ pub struct GameServersFilterViewController {
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub _showInternetGames: bool,
 }
-#[cfg(feature = "GameServersFilterViewController")]
+#[cfg(feature = "cordl_class_GameServersFilterViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GameServersFilterViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,14 +53,14 @@ for crate::GlobalNamespace::GameServersFilterViewController {
         false
     }
 }
-#[cfg(feature = "GameServersFilterViewController")]
+#[cfg(feature = "cordl_class_GameServersFilterViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServersFilterViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GameServersFilterViewController")]
+#[cfg(feature = "cordl_class_GameServersFilterViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServersFilterViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -317,7 +317,7 @@ impl crate::GlobalNamespace::GameServersFilterViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GameServersFilterViewController")]
+#[cfg(feature = "cordl_class_GameServersFilterViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameServersFilterViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

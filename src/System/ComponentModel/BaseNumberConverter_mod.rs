@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+BaseNumberConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BaseNumberConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseNumberConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }
-#[cfg(feature = "System+ComponentModel+BaseNumberConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BaseNumberConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::BaseNumberConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::BaseNumberConverter {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+BaseNumberConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BaseNumberConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::BaseNumberConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+BaseNumberConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BaseNumberConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::BaseNumberConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -379,7 +379,7 @@ impl crate::System::ComponentModel::BaseNumberConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+BaseNumberConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+BaseNumberConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::BaseNumberConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

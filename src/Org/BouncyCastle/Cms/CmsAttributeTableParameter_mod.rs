@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CmsAttributeTableParameter {
@@ -8,7 +8,7 @@ pub enum CmsAttributeTableParameter {
     DigestAlgorithmIdentifier = 3i32,
     Signature = 2i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Cms::CmsAttributeTableParameter {
     type Actual = Self;

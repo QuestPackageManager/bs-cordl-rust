@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+ConnectRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectRequestResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectRequestResult {
@@ -8,7 +8,7 @@ pub enum ConnectRequestResult {
     P2PLose = 1i32,
     Reconnection = 2i32,
 }
-#[cfg(feature = "LiteNetLib+ConnectRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectRequestResult")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ConnectRequestResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::ConnectRequestRes
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectRequestResult")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::ConnectRequestResult {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LiteNetLib::ConnectReques
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectRequestResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::ConnectRequestResult {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::LiteNetLib::ConnectRequestResult {
         self
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectRequestResult")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::ConnectRequestResult {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LiteNetLib::ConnectReques
         }
     }
 }
-#[cfg(feature = "LiteNetLib+ConnectRequestResult")]
+#[cfg(feature = "cordl_class_LiteNetLib+ConnectRequestResult")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LiteNetLib::ConnectRequestResult {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

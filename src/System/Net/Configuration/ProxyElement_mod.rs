@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Net+Configuration+ProxyElement")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ProxyElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProxyElement {
     __cordl_parent: crate::System::Configuration::ConfigurationElement,
 }
-#[cfg(feature = "System+Net+Configuration+ProxyElement")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ProxyElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Configuration::ProxyElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Net::Configuration::ProxyElement {
         false
     }
 }
-#[cfg(feature = "System+Net+Configuration+ProxyElement")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ProxyElement")]
 impl std::ops::Deref for crate::System::Net::Configuration::ProxyElement {
     type Target = crate::System::Configuration::ConfigurationElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Configuration+ProxyElement")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ProxyElement")]
 impl std::ops::DerefMut for crate::System::Net::Configuration::ProxyElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::System::Net::Configuration::ProxyElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Configuration+ProxyElement")]
+#[cfg(feature = "cordl_class_System+Net+Configuration+ProxyElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Configuration::ProxyElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

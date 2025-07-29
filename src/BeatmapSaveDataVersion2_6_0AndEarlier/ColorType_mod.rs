@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorType {
@@ -7,7 +7,7 @@ pub enum ColorType {
     ColorB = 1i32,
     None = -1i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType {
     type Actual = Self;

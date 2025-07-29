@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameObjectCollectionBase {
@@ -18,7 +18,7 @@ pub struct NameObjectCollectionBase {
     pub _version: i32,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,7 +38,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase {
         false
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -46,7 +46,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase")]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -744,7 +744,7 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
+#[cfg(feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -815,7 +815,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase {
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -825,7 +825,7 @@ pub struct NameObjectCollectionBase_NameObjectEntry {
     pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
@@ -847,7 +847,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
@@ -857,7 +857,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
@@ -915,7 +915,7 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjec
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
@@ -927,7 +927,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -940,7 +940,7 @@ pub struct NameObjectCollectionBase_NameObjectKeysEnumerator {
     pub _version: i32,
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {
@@ -962,7 +962,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {
@@ -972,7 +972,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {
@@ -1092,7 +1092,7 @@ impl crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjec
     }
 }
 #[cfg(
-    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
+    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {

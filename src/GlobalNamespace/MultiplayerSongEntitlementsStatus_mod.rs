@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
+#[cfg(feature = "cordl_class_MultiplayerSongEntitlementsStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerSongEntitlementsStatus {
@@ -6,7 +6,7 @@ pub enum MultiplayerSongEntitlementsStatus {
     Invalid = 1i32,
     _cordl_Ok = 0i32,
 }
-#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
+#[cfg(feature = "cordl_class_MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
+#[cfg(feature = "cordl_class_MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
+#[cfg(feature = "cordl_class_MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
         self
     }
 }
-#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
+#[cfg(feature = "cordl_class_MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
         }
     }
 }
-#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
+#[cfg(feature = "cordl_class_MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Actual = Self;

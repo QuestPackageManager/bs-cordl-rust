@@ -1,4 +1,4 @@
-#[cfg(feature = "ServerSettingsViewController")]
+#[cfg(feature = "cordl_class_ServerSettingsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerSettingsViewController {
@@ -10,7 +10,7 @@ pub struct ServerSettingsViewController {
         crate::GlobalNamespace::SettingsManager,
     >,
 }
-#[cfg(feature = "ServerSettingsViewController")]
+#[cfg(feature = "cordl_class_ServerSettingsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ServerSettingsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::ServerSettingsViewController {
         false
     }
 }
-#[cfg(feature = "ServerSettingsViewController")]
+#[cfg(feature = "cordl_class_ServerSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::ServerSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ServerSettingsViewController")]
+#[cfg(feature = "cordl_class_ServerSettingsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ServerSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -212,7 +212,7 @@ impl crate::GlobalNamespace::ServerSettingsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ServerSettingsViewController")]
+#[cfg(feature = "cordl_class_ServerSettingsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ServerSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

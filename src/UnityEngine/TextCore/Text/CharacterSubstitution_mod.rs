@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+CharacterSubstitution")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CharacterSubstitution {
     pub index: i32,
     pub unicode: u32,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+CharacterSubstitution")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::CharacterSubstitution {
     type Type = Self;

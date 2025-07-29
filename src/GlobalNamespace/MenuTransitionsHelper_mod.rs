@@ -1,4 +1,4 @@
-#[cfg(feature = "MenuTransitionsHelper")]
+#[cfg(feature = "cordl_class_MenuTransitionsHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuTransitionsHelper {
@@ -92,7 +92,7 @@ pub struct MenuTransitionsHelper {
         >,
     >,
 }
-#[cfg(feature = "MenuTransitionsHelper")]
+#[cfg(feature = "cordl_class_MenuTransitionsHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MenuTransitionsHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -112,14 +112,14 @@ for crate::GlobalNamespace::MenuTransitionsHelper {
         false
     }
 }
-#[cfg(feature = "MenuTransitionsHelper")]
+#[cfg(feature = "cordl_class_MenuTransitionsHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuTransitionsHelper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MenuTransitionsHelper")]
+#[cfg(feature = "cordl_class_MenuTransitionsHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuTransitionsHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1494,7 +1494,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MenuTransitionsHelper")]
+#[cfg(feature = "cordl_class_MenuTransitionsHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MenuTransitionsHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

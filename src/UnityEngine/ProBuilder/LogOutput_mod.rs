@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+LogOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogOutput")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LogOutput {
@@ -7,7 +7,7 @@ pub enum LogOutput {
     File = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogOutput")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::LogOutput {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::LogO
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::LogOutput {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::ProBuilder::LogOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::LogOutput {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ProBuilder::LogOutput {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::LogOutput {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::ProBuilder::LogOutput {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+LogOutput")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+LogOutput")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ProBuilder::LogOutput {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

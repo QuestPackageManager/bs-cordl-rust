@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ConsoleCancelEventArgs")]
+#[cfg(feature = "cordl_class_System+ConsoleCancelEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConsoleCancelEventArgs {
@@ -6,7 +6,7 @@ pub struct ConsoleCancelEventArgs {
     pub _type: crate::System::ConsoleSpecialKey,
     pub _Cancel_k__BackingField: bool,
 }
-#[cfg(feature = "System+ConsoleCancelEventArgs")]
+#[cfg(feature = "cordl_class_System+ConsoleCancelEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ConsoleCancelEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ConsoleCancelEventArg
         false
     }
 }
-#[cfg(feature = "System+ConsoleCancelEventArgs")]
+#[cfg(feature = "cordl_class_System+ConsoleCancelEventArgs")]
 impl std::ops::Deref for crate::System::ConsoleCancelEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ConsoleCancelEventArgs")]
+#[cfg(feature = "cordl_class_System+ConsoleCancelEventArgs")]
 impl std::ops::DerefMut for crate::System::ConsoleCancelEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -121,7 +121,7 @@ impl crate::System::ConsoleCancelEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ConsoleCancelEventArgs")]
+#[cfg(feature = "cordl_class_System+ConsoleCancelEventArgs")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ConsoleCancelEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

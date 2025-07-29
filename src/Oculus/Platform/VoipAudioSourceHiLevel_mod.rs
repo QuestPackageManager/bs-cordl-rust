@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VoipAudioSourceHiLevel {
@@ -8,7 +8,7 @@ pub struct VoipAudioSourceHiLevel {
     pub peakAmplitude: f32,
     pub pcmSource: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::IVoipPCMSource>,
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::VoipAudioSourceHiLevel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Oculus::Platform::VoipAudioSourceHiLevel {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel")]
 impl std::ops::Deref for crate::Oculus::Platform::VoipAudioSourceHiLevel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel")]
 impl std::ops::DerefMut for crate::Oculus::Platform::VoipAudioSourceHiLevel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -252,7 +252,7 @@ impl crate::Oculus::Platform::VoipAudioSourceHiLevel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::VoipAudioSourceHiLevel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -262,7 +262,7 @@ for crate::Oculus::Platform::VoipAudioSourceHiLevel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VoipAudioSourceHiLevel_FilterReadDelegate {
@@ -274,7 +274,7 @@ pub struct VoipAudioSourceHiLevel_FilterReadDelegate {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -294,7 +294,7 @@ for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
 impl std::ops::Deref
 for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -302,7 +302,7 @@ for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -393,7 +393,7 @@ impl crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
+#[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

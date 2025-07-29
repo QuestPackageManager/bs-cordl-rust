@@ -1,4 +1,4 @@
-#[cfg(feature = "SliderData")]
+#[cfg(feature = "cordl_class_SliderData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderData {
@@ -25,7 +25,7 @@ pub struct SliderData {
     pub _sliceCount_k__BackingField: i32,
     pub _squishAmount_k__BackingField: f32,
 }
-#[cfg(feature = "SliderData")]
+#[cfg(feature = "cordl_class_SliderData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -44,14 +44,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderData {
         false
     }
 }
-#[cfg(feature = "SliderData")]
+#[cfg(feature = "cordl_class_SliderData")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderData {
     type Target = crate::GlobalNamespace::BeatmapObjectData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderData")]
+#[cfg(feature = "cordl_class_SliderData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1604,7 +1604,7 @@ impl crate::GlobalNamespace::SliderData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderData")]
+#[cfg(feature = "cordl_class_SliderData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1613,7 +1613,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SliderData+Type")]
+#[cfg(feature = "cordl_class_SliderData+Type")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SliderData_Type {
@@ -1621,7 +1621,7 @@ pub enum SliderData_Type {
     Burst = 1i32,
     Normal = 0i32,
 }
-#[cfg(feature = "SliderData+Type")]
+#[cfg(feature = "cordl_class_SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderData_Type {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -1650,7 +1650,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderData_T
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SliderData+Type")]
+#[cfg(feature = "cordl_class_SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SliderData_Type {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1660,7 +1660,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SliderDa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SliderData+Type")]
+#[cfg(feature = "cordl_class_SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SliderData_Type {
     type Actual = Self;
@@ -1674,7 +1674,7 @@ for crate::GlobalNamespace::SliderData_Type {
         self
     }
 }
-#[cfg(feature = "SliderData+Type")]
+#[cfg(feature = "cordl_class_SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SliderData_Type {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1688,7 +1688,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SliderDa
         }
     }
 }
-#[cfg(feature = "SliderData+Type")]
+#[cfg(feature = "cordl_class_SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::SliderData_Type {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

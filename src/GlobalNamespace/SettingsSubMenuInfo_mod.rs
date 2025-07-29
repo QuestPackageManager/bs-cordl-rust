@@ -1,4 +1,4 @@
-#[cfg(feature = "SettingsSubMenuInfo")]
+#[cfg(feature = "cordl_class_SettingsSubMenuInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SettingsSubMenuInfo {
@@ -6,7 +6,7 @@ pub struct SettingsSubMenuInfo {
     pub _viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _menuName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "SettingsSubMenuInfo")]
+#[cfg(feature = "cordl_class_SettingsSubMenuInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SettingsSubMenuInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SettingsSubM
         false
     }
 }
-#[cfg(feature = "SettingsSubMenuInfo")]
+#[cfg(feature = "cordl_class_SettingsSubMenuInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::SettingsSubMenuInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SettingsSubMenuInfo")]
+#[cfg(feature = "cordl_class_SettingsSubMenuInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SettingsSubMenuInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::GlobalNamespace::SettingsSubMenuInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SettingsSubMenuInfo")]
+#[cfg(feature = "cordl_class_SettingsSubMenuInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SettingsSubMenuInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

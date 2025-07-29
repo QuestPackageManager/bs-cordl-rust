@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+KdTree_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+KdTree_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KdTree_2<
@@ -18,7 +18,7 @@ pub struct KdTree_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+KdTree_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+KdTree_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -57,7 +57,7 @@ for crate::UnityEngine::ProBuilder::KdTree::KdTree_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+KdTree_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+KdTree_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+KdTree_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+KdTree_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1286,7 +1286,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+KdTree_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+KdTree_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

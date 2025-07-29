@@ -1,10 +1,10 @@
-#[cfg(feature = "System+AppContext")]
+#[cfg(feature = "cordl_class_System+AppContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+AppContext")]
+#[cfg(feature = "cordl_class_System+AppContext")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::AppContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AppContext {
         false
     }
 }
-#[cfg(feature = "System+AppContext")]
+#[cfg(feature = "cordl_class_System+AppContext")]
 impl std::ops::Deref for crate::System::AppContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+AppContext")]
+#[cfg(feature = "cordl_class_System+AppContext")]
 impl std::ops::DerefMut for crate::System::AppContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -97,7 +97,7 @@ impl crate::System::AppContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+AppContext")]
+#[cfg(feature = "cordl_class_System+AppContext")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::AppContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -106,7 +106,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::AppContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+AppContext+SwitchValueState")]
+#[cfg(feature = "cordl_class_System+AppContext+SwitchValueState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppContext_SwitchValueState {
@@ -116,7 +116,7 @@ pub enum AppContext_SwitchValueState {
     HasTrueValue = 2i32,
     UnknownValue = 8i32,
 }
-#[cfg(feature = "System+AppContext+SwitchValueState")]
+#[cfg(feature = "cordl_class_System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::AppContext_SwitchValueState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -145,7 +145,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AppContext_SwitchValu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+AppContext+SwitchValueState")]
+#[cfg(feature = "cordl_class_System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::AppContext_SwitchValueState {
     type Type = Self;
@@ -156,7 +156,7 @@ for crate::System::AppContext_SwitchValueState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+AppContext+SwitchValueState")]
+#[cfg(feature = "cordl_class_System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::AppContext_SwitchValueState {
     type Actual = Self;
@@ -170,7 +170,7 @@ for crate::System::AppContext_SwitchValueState {
         self
     }
 }
-#[cfg(feature = "System+AppContext+SwitchValueState")]
+#[cfg(feature = "cordl_class_System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::AppContext_SwitchValueState {
     type Type = Self;
@@ -185,7 +185,7 @@ for crate::System::AppContext_SwitchValueState {
         }
     }
 }
-#[cfg(feature = "System+AppContext+SwitchValueState")]
+#[cfg(feature = "cordl_class_System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::AppContext_SwitchValueState {
     type Actual = Self;

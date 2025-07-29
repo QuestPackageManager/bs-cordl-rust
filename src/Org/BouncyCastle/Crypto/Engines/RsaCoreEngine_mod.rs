@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RsaCoreEngine {
@@ -9,7 +9,7 @@ pub struct RsaCoreEngine {
     pub forEncryption: bool,
     pub bitSize: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -268,7 +268,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

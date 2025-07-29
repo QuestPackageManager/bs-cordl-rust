@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+AccessControl+AccessControlSections")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AccessControlSections")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AccessControlSections {
@@ -10,7 +10,7 @@ pub enum AccessControlSections {
     None = 0i32,
     Owner = 4i32,
 }
-#[cfg(feature = "System+Security+AccessControl+AccessControlSections")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AccessControlSections")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::AccessControl::AccessControlSections {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::System::Security::AccessControl::AccessControlSections {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AccessControlSections")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AccessControlSections")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::AccessControl::AccessControlSections {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::System::Security::AccessControl::AccessControlSections {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AccessControlSections")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AccessControlSections")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::AccessControl::AccessControlSections {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::System::Security::AccessControl::AccessControlSections {
         self
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AccessControlSections")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AccessControlSections")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::AccessControl::AccessControlSections {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::System::Security::AccessControl::AccessControlSections {
         }
     }
 }
-#[cfg(feature = "System+Security+AccessControl+AccessControlSections")]
+#[cfg(feature = "cordl_class_System+Security+AccessControl+AccessControlSections")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::AccessControl::AccessControlSections {
     type Actual = Self;

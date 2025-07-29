@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+CommandBufferExecutionFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CommandBufferExecutionFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CommandBufferExecutionFlags {
@@ -6,7 +6,7 @@ pub enum CommandBufferExecutionFlags {
     AsyncCompute = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+CommandBufferExecutionFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CommandBufferExecutionFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CommandBufferExecutionFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CommandBufferExecutionFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CommandBufferExecutionFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CommandBufferExecutionFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CommandBufferExecutionFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CommandBufferExecutionFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+CommandBufferExecutionFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+CommandBufferExecutionFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::CommandBufferExecutionFlags {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+LocalVariableInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+LocalVariableInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalVariableInfo {
@@ -7,7 +7,7 @@ pub struct LocalVariableInfo {
     pub is_pinned: bool,
     pub position: u16,
 }
-#[cfg(feature = "System+Reflection+LocalVariableInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+LocalVariableInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::LocalVariableInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Reflection::LocalVariableInfo {
         false
     }
 }
-#[cfg(feature = "System+Reflection+LocalVariableInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+LocalVariableInfo")]
 impl std::ops::Deref for crate::System::Reflection::LocalVariableInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Reflection+LocalVariableInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+LocalVariableInfo")]
 impl std::ops::DerefMut for crate::System::Reflection::LocalVariableInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::System::Reflection::LocalVariableInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Reflection+LocalVariableInfo")]
+#[cfg(feature = "cordl_class_System+Reflection+LocalVariableInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::LocalVariableInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+JointSpring")]
+#[cfg(feature = "cordl_class_UnityEngine+JointSpring")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JointSpring {
@@ -6,7 +6,7 @@ pub struct JointSpring {
     pub damper: f32,
     pub targetPosition: f32,
 }
-#[cfg(feature = "UnityEngine+JointSpring")]
+#[cfg(feature = "cordl_class_UnityEngine+JointSpring")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::JointSpring {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::JointSpring {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+JointSpring")]
+#[cfg(feature = "cordl_class_UnityEngine+JointSpring")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::JointSpring {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::JointSpring 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+JointSpring")]
+#[cfg(feature = "cordl_class_UnityEngine+JointSpring")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::JointSpring {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::JointSpring
         self
     }
 }
-#[cfg(feature = "UnityEngine+JointSpring")]
+#[cfg(feature = "cordl_class_UnityEngine+JointSpring")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::JointSpring {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::JointSpring 
         }
     }
 }
-#[cfg(feature = "UnityEngine+JointSpring")]
+#[cfg(feature = "cordl_class_UnityEngine+JointSpring")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::JointSpring {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::JointSpring {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+JointSpring")]
+#[cfg(feature = "cordl_class_UnityEngine+JointSpring")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::JointSpring {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

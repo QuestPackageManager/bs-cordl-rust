@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEventDataBox {
@@ -14,7 +14,7 @@ pub struct BeatmapEventDataBox {
     pub _eventDistributionShouldAffectFirstBaseEvent: bool,
     pub _eventDistributionEaseType: crate::GlobalNamespace::EaseType,
 }
-#[cfg(feature = "BeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapEventDataBox {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapEvent
         false
     }
 }
-#[cfg(feature = "BeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBox {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataBox {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -429,7 +429,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapEventDataBox")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapEventDataBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -438,7 +438,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapEventD
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox+DistributionParamType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapEventDataBox_DistributionParamType {
@@ -446,7 +446,7 @@ pub enum BeatmapEventDataBox_DistributionParamType {
     Step = 2i32,
     Wave = 1i32,
 }
-#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Held<'a> = Self;
@@ -476,7 +476,7 @@ for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Type = Self;
@@ -487,7 +487,7 @@ for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Actual = Self;
@@ -501,7 +501,7 @@ for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
         self
     }
 }
-#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Type = Self;
@@ -516,7 +516,7 @@ for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
         }
     }
 }
-#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
+#[cfg(feature = "cordl_class_BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Actual = Self;

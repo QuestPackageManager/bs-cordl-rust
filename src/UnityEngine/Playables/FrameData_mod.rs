@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Playables+FrameData")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FrameData {
@@ -12,7 +12,7 @@ pub struct FrameData {
     pub m_Flags: crate::UnityEngine::Playables::FrameData_Flags,
     pub m_Output: crate::UnityEngine::Playables::PlayableOutput,
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Playables::FrameData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Playables::Frame
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::FrameData {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::UnityEngine::Playables::FrameData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::FrameData {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::UnityEngine::Playables::FrameData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::FrameData {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::Playables::FrameData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Playables::FrameData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -94,7 +94,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Playables::Fra
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Playables::FrameData {
     type Type = Self;
@@ -300,7 +300,7 @@ impl crate::UnityEngine::Playables::FrameData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FrameData_EvaluationType {
@@ -308,7 +308,7 @@ pub enum FrameData_EvaluationType {
     Evaluate = 0i32,
     Playback = 1i32,
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Playables::FrameData_EvaluationType {
     type Held<'a> = Self;
@@ -338,7 +338,7 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::FrameData_EvaluationType {
     type Type = Self;
@@ -349,7 +349,7 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::FrameData_EvaluationType {
     type Actual = Self;
@@ -363,7 +363,7 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::FrameData_EvaluationType {
     type Type = Self;
@@ -378,7 +378,7 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+EvaluationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Playables::FrameData_EvaluationType {
     type Actual = Self;
@@ -392,7 +392,7 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FrameData_Flags {
@@ -404,7 +404,7 @@ pub enum FrameData_Flags {
     Loop = 4i32,
     SeekOccured = 2i32,
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Playables::FrameData_Flags {
     type Held<'a> = Self;
@@ -434,7 +434,7 @@ for crate::UnityEngine::Playables::FrameData_Flags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::FrameData_Flags {
     type Type = Self;
@@ -445,7 +445,7 @@ for crate::UnityEngine::Playables::FrameData_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::FrameData_Flags {
     type Actual = Self;
@@ -459,7 +459,7 @@ for crate::UnityEngine::Playables::FrameData_Flags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::FrameData_Flags {
     type Type = Self;
@@ -474,7 +474,7 @@ for crate::UnityEngine::Playables::FrameData_Flags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+FrameData+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Playables::FrameData_Flags {
     type Actual = Self;

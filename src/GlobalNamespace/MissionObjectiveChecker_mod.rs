@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjectiveChecker {
@@ -23,7 +23,7 @@ pub struct MissionObjectiveChecker {
     >,
     pub _disableChecking: bool,
 }
-#[cfg(feature = "MissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionObjectiveChecker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::GlobalNamespace::MissionObjectiveChecker {
         false
     }
 }
-#[cfg(feature = "MissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionObjectiveChecker {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -489,7 +489,7 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionObjectiveChecker")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -499,7 +499,7 @@ for crate::GlobalNamespace::MissionObjectiveChecker {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MissionObjectiveChecker+Status")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker+Status")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MissionObjectiveChecker_Status {
@@ -510,7 +510,7 @@ pub enum MissionObjectiveChecker_Status {
     NotClearedYet = 1i32,
     NotFailedYet = 2i32,
 }
-#[cfg(feature = "MissionObjectiveChecker+Status")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker+Status")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionObjectiveChecker_Status {
     type Held<'a> = Self;
@@ -540,7 +540,7 @@ for crate::GlobalNamespace::MissionObjectiveChecker_Status {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MissionObjectiveChecker+Status")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker+Status")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MissionObjectiveChecker_Status {
     type Type = Self;
@@ -551,7 +551,7 @@ for crate::GlobalNamespace::MissionObjectiveChecker_Status {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MissionObjectiveChecker+Status")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker+Status")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MissionObjectiveChecker_Status {
     type Actual = Self;
@@ -565,7 +565,7 @@ for crate::GlobalNamespace::MissionObjectiveChecker_Status {
         self
     }
 }
-#[cfg(feature = "MissionObjectiveChecker+Status")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker+Status")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MissionObjectiveChecker_Status {
     type Type = Self;
@@ -580,7 +580,7 @@ for crate::GlobalNamespace::MissionObjectiveChecker_Status {
         }
     }
 }
-#[cfg(feature = "MissionObjectiveChecker+Status")]
+#[cfg(feature = "cordl_class_MissionObjectiveChecker+Status")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MissionObjectiveChecker_Status {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Threading+Monitor")]
+#[cfg(feature = "cordl_class_System+Threading+Monitor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Monitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Threading+Monitor")]
+#[cfg(feature = "cordl_class_System+Threading+Monitor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Monitor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Monitor {
         false
     }
 }
-#[cfg(feature = "System+Threading+Monitor")]
+#[cfg(feature = "cordl_class_System+Threading+Monitor")]
 impl std::ops::Deref for crate::System::Threading::Monitor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Monitor")]
+#[cfg(feature = "cordl_class_System+Threading+Monitor")]
 impl std::ops::DerefMut for crate::System::Threading::Monitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -579,7 +579,7 @@ impl crate::System::Threading::Monitor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Monitor")]
+#[cfg(feature = "cordl_class_System+Threading+Monitor")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Monitor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

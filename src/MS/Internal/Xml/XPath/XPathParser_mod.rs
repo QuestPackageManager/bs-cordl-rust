@@ -1,4 +1,4 @@
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathParser {
@@ -8,7 +8,7 @@ pub struct XPathParser {
     >,
     pub _parseDepth: i32,
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::MS::Internal::Xml::XPath::XPathParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::MS::Internal::Xml::XPath::XPathParser {
         false
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::XPathParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1011,7 +1011,7 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser")]
 impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::XPathParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1020,7 +1020,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::XPat
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathParser_ParamInfo {
@@ -1032,7 +1032,7 @@ pub struct XPathParser_ParamInfo {
         quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XPath::XPathResultType>,
     >,
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1052,14 +1052,14 @@ for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
         false
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1225,7 +1225,7 @@ impl crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
+#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

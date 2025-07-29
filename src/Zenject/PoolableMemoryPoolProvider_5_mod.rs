@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_5")]
+#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPoolProvider_5")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PoolableMemoryPoolProvider_5<
@@ -16,7 +16,7 @@ pub struct PoolableMemoryPoolProvider_5<
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
     __cordl_phantom_TMemoryPool: std::marker::PhantomData<TMemoryPool>,
 }
-#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_5")]
+#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPoolProvider_5")]
 unsafe impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -66,7 +66,7 @@ for crate::Zenject::PoolableMemoryPoolProvider_5<
         false
     }
 }
-#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_5")]
+#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPoolProvider_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -86,7 +86,7 @@ for crate::Zenject::PoolableMemoryPoolProvider_5<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_5")]
+#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPoolProvider_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -284,7 +284,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_5")]
+#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPoolProvider_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

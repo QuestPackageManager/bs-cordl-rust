@@ -1,4 +1,4 @@
-#[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsPositionStepEffectSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackLaneRingsPositionStepEffectSpawner {
@@ -17,7 +17,7 @@ pub struct TrackLaneRingsPositionStepEffectSpawner {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsPositionStepEffectSpawner")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
         false
     }
 }
-#[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsPositionStepEffectSpawner")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsPositionStepEffectSpawner")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -155,7 +155,7 @@ impl crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
+#[cfg(feature = "cordl_class_TrackLaneRingsPositionStepEffectSpawner")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

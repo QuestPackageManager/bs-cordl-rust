@@ -1,11 +1,11 @@
-#[cfg(feature = "Tweening+IntTween")]
+#[cfg(feature = "cordl_class_Tweening+IntTween")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntTween {
     __cordl_parent: crate::Tweening::Tween_1<i32>,
     pub _roundingType: crate::Tweening::IntTween_RoundingType,
 }
-#[cfg(feature = "Tweening+IntTween")]
+#[cfg(feature = "cordl_class_Tweening+IntTween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::IntTween {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::IntTween {
         false
     }
 }
-#[cfg(feature = "Tweening+IntTween")]
+#[cfg(feature = "cordl_class_Tweening+IntTween")]
 impl std::ops::Deref for crate::Tweening::IntTween {
     type Target = crate::Tweening::Tween_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tweening+IntTween")]
+#[cfg(feature = "cordl_class_Tweening+IntTween")]
 impl std::ops::DerefMut for crate::Tweening::IntTween {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -157,7 +157,7 @@ impl crate::Tweening::IntTween {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tweening+IntTween")]
+#[cfg(feature = "cordl_class_Tweening+IntTween")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tweening::IntTween {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -166,7 +166,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tweening::IntTween {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Tweening+IntTween+RoundingType")]
+#[cfg(feature = "cordl_class_Tweening+IntTween+RoundingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IntTween_RoundingType {
@@ -175,7 +175,7 @@ pub enum IntTween_RoundingType {
     Floor = 0i32,
     Round = 1i32,
 }
-#[cfg(feature = "Tweening+IntTween+RoundingType")]
+#[cfg(feature = "cordl_class_Tweening+IntTween+RoundingType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::IntTween_RoundingType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -204,7 +204,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::IntTween_RoundingTy
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Tweening+IntTween+RoundingType")]
+#[cfg(feature = "cordl_class_Tweening+IntTween+RoundingType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Tweening::IntTween_RoundingType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -214,7 +214,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Tweening::IntTween_Roundi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Tweening+IntTween+RoundingType")]
+#[cfg(feature = "cordl_class_Tweening+IntTween+RoundingType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Tweening::IntTween_RoundingType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -227,7 +227,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Tweening::IntTween_Round
         self
     }
 }
-#[cfg(feature = "Tweening+IntTween+RoundingType")]
+#[cfg(feature = "cordl_class_Tweening+IntTween+RoundingType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Tweening::IntTween_RoundingType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -241,7 +241,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Tweening::IntTween_Roundi
         }
     }
 }
-#[cfg(feature = "Tweening+IntTween+RoundingType")]
+#[cfg(feature = "cordl_class_Tweening+IntTween+RoundingType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Tweening::IntTween_RoundingType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

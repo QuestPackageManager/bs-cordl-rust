@@ -1,10 +1,10 @@
-#[cfg(feature = "LufsMetering+AudioJobHelpers")]
+#[cfg(feature = "cordl_class_LufsMetering+AudioJobHelpers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioJobHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "LufsMetering+AudioJobHelpers")]
+#[cfg(feature = "cordl_class_LufsMetering+AudioJobHelpers")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::AudioJobHelpers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::AudioJobHelpers
         false
     }
 }
-#[cfg(feature = "LufsMetering+AudioJobHelpers")]
+#[cfg(feature = "cordl_class_LufsMetering+AudioJobHelpers")]
 impl std::ops::Deref for crate::LufsMetering::AudioJobHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LufsMetering+AudioJobHelpers")]
+#[cfg(feature = "cordl_class_LufsMetering+AudioJobHelpers")]
 impl std::ops::DerefMut for crate::LufsMetering::AudioJobHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -94,7 +94,7 @@ impl crate::LufsMetering::AudioJobHelpers {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LufsMetering+AudioJobHelpers")]
+#[cfg(feature = "cordl_class_LufsMetering+AudioJobHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::LufsMetering::AudioJobHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

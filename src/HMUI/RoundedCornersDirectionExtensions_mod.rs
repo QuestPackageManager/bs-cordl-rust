@@ -1,10 +1,10 @@
-#[cfg(feature = "HMUI+RoundedCornersDirectionExtensions")]
+#[cfg(feature = "cordl_class_HMUI+RoundedCornersDirectionExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RoundedCornersDirectionExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "HMUI+RoundedCornersDirectionExtensions")]
+#[cfg(feature = "cordl_class_HMUI+RoundedCornersDirectionExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HMUI::RoundedCornersDirectionExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::HMUI::RoundedCornersDirectionExtensions {
         false
     }
 }
-#[cfg(feature = "HMUI+RoundedCornersDirectionExtensions")]
+#[cfg(feature = "cordl_class_HMUI+RoundedCornersDirectionExtensions")]
 impl std::ops::Deref for crate::HMUI::RoundedCornersDirectionExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+RoundedCornersDirectionExtensions")]
+#[cfg(feature = "cordl_class_HMUI+RoundedCornersDirectionExtensions")]
 impl std::ops::DerefMut for crate::HMUI::RoundedCornersDirectionExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -65,7 +65,7 @@ impl crate::HMUI::RoundedCornersDirectionExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+RoundedCornersDirectionExtensions")]
+#[cfg(feature = "cordl_class_HMUI+RoundedCornersDirectionExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HMUI::RoundedCornersDirectionExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

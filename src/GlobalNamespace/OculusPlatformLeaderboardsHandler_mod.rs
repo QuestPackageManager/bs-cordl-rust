@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusPlatformLeaderboardsHandler")]
+#[cfg(feature = "cordl_class_OculusPlatformLeaderboardsHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusPlatformLeaderboardsHandler {
@@ -13,7 +13,7 @@ pub struct OculusPlatformLeaderboardsHandler {
         crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
 }
-#[cfg(feature = "OculusPlatformLeaderboardsHandler")]
+#[cfg(feature = "cordl_class_OculusPlatformLeaderboardsHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
         false
     }
 }
-#[cfg(feature = "OculusPlatformLeaderboardsHandler")]
+#[cfg(feature = "cordl_class_OculusPlatformLeaderboardsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     type Target = crate::GlobalNamespace::PlatformLeaderboardsHandler;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusPlatformLeaderboardsHandler")]
+#[cfg(feature = "cordl_class_OculusPlatformLeaderboardsHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -244,7 +244,7 @@ impl crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusPlatformLeaderboardsHandler")]
+#[cfg(feature = "cordl_class_OculusPlatformLeaderboardsHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Base64FormattingOptions")]
+#[cfg(feature = "cordl_class_System+Base64FormattingOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Base64FormattingOptions {
@@ -6,7 +6,7 @@ pub enum Base64FormattingOptions {
     InsertLineBreaks = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Base64FormattingOptions")]
+#[cfg(feature = "cordl_class_System+Base64FormattingOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Base64FormattingOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Base64FormattingOptio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Base64FormattingOptions")]
+#[cfg(feature = "cordl_class_System+Base64FormattingOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Base64FormattingOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Base64FormattingO
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Base64FormattingOptions")]
+#[cfg(feature = "cordl_class_System+Base64FormattingOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Base64FormattingOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Base64Formatting
         self
     }
 }
-#[cfg(feature = "System+Base64FormattingOptions")]
+#[cfg(feature = "cordl_class_System+Base64FormattingOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Base64FormattingOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Base64FormattingO
         }
     }
 }
-#[cfg(feature = "System+Base64FormattingOptions")]
+#[cfg(feature = "cordl_class_System+Base64FormattingOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Base64FormattingOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

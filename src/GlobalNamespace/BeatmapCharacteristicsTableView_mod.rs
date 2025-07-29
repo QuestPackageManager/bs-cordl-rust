@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapCharacteristicsTableView")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicsTableView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicsTableView {
@@ -22,7 +22,7 @@ pub struct BeatmapCharacteristicsTableView {
     pub _isInitialized: bool,
     pub _selectedColumn: i32,
 }
-#[cfg(feature = "BeatmapCharacteristicsTableView")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicsTableView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
         false
     }
 }
-#[cfg(feature = "BeatmapCharacteristicsTableView")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicsTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapCharacteristicsTableView")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicsTableView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -377,7 +377,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsTableView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapCharacteristicsTableView")]
+#[cfg(feature = "cordl_class_BeatmapCharacteristicsTableView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

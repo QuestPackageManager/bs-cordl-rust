@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ScaleYPointMap")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ScaleYPointMap")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScaleYPointMap {
@@ -7,7 +7,7 @@ pub struct ScaleYPointMap {
         crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ScaleYPointMap")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ScaleYPointMap")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::ScaleYPointMap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Math::EC::ScaleYPointMap {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ScaleYPointMap")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ScaleYPointMap")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ScaleYPointMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ScaleYPointMap")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ScaleYPointMap")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::ScaleYPointMap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ impl crate::Org::BouncyCastle::Math::EC::ScaleYPointMap {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ScaleYPointMap")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ScaleYPointMap")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::ScaleYPointMap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

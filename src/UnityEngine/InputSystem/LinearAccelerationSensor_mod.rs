@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LinearAccelerationSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LinearAccelerationSensor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LinearAccelerationSensor {
@@ -7,7 +7,7 @@ pub struct LinearAccelerationSensor {
         crate::UnityEngine::InputSystem::Controls::Vector3Control,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LinearAccelerationSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LinearAccelerationSensor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LinearAccelerationSensor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::InputSystem::LinearAccelerationSensor {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LinearAccelerationSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LinearAccelerationSensor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LinearAccelerationSensor {
     type Target = crate::UnityEngine::InputSystem::Sensor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LinearAccelerationSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LinearAccelerationSensor")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LinearAccelerationSensor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -261,7 +261,7 @@ impl crate::UnityEngine::InputSystem::LinearAccelerationSensor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LinearAccelerationSensor")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LinearAccelerationSensor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LinearAccelerationSensor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

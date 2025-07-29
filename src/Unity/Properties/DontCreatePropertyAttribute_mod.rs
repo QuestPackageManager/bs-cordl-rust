@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Properties+DontCreatePropertyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+DontCreatePropertyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DontCreatePropertyAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Properties+DontCreatePropertyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+DontCreatePropertyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Properties::DontCreatePropertyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Properties::DontCreatePropertyAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Properties+DontCreatePropertyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+DontCreatePropertyAttribute")]
 impl std::ops::Deref for crate::Unity::Properties::DontCreatePropertyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+DontCreatePropertyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+DontCreatePropertyAttribute")]
 impl std::ops::DerefMut for crate::Unity::Properties::DontCreatePropertyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::Unity::Properties::DontCreatePropertyAttribut
 }
 #[cfg(feature = "Unity+Properties+DontCreatePropertyAttribute")]
 impl crate::Unity::Properties::DontCreatePropertyAttribute {}
-#[cfg(feature = "Unity+Properties+DontCreatePropertyAttribute")]
+#[cfg(feature = "cordl_class_Unity+Properties+DontCreatePropertyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::DontCreatePropertyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

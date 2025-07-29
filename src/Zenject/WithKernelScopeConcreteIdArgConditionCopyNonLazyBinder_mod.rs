@@ -1,4 +1,6 @@
-#[cfg(feature = "Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
@@ -7,7 +9,9 @@ pub struct WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
         crate::Zenject::SubContainerCreatorBindInfo,
     >,
 }
-#[cfg(feature = "Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::Zenject::WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
         false
     }
 }
-#[cfg(feature = "Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder"
+)]
 impl std::ops::Deref
 for crate::Zenject::WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
     type Target = crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder;
@@ -35,7 +41,9 @@ for crate::Zenject::WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder"
+)]
 impl std::ops::DerefMut
 for crate::Zenject::WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -157,7 +165,9 @@ impl crate::Zenject::WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(
+    feature = "cordl_class_Zenject+WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::WithKernelScopeConcreteIdArgConditionCopyNonLazyBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

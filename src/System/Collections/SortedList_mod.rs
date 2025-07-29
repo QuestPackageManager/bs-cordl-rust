@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+SortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList {
@@ -24,7 +24,7 @@ pub struct SortedList {
     >,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Collections+SortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::SortedList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::SortedLi
         false
     }
 }
-#[cfg(feature = "System+Collections+SortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList")]
 impl std::ops::Deref for crate::System::Collections::SortedList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+SortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -979,7 +979,7 @@ impl crate::System::Collections::SortedList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+SortedList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::SortedList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1042,14 +1042,14 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::SortedList
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+SortedList+KeyList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+KeyList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_KeyList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
-#[cfg(feature = "System+Collections+SortedList+KeyList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+KeyList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::SortedList_KeyList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1069,14 +1069,14 @@ for crate::System::Collections::SortedList_KeyList {
         false
     }
 }
-#[cfg(feature = "System+Collections+SortedList+KeyList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+KeyList")]
 impl std::ops::Deref for crate::System::Collections::SortedList_KeyList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+SortedList+KeyList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+KeyList")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList_KeyList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1516,7 +1516,7 @@ impl crate::System::Collections::SortedList_KeyList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+SortedList+KeyList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+KeyList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::SortedList_KeyList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1568,13 +1568,13 @@ for crate::System::Collections::SortedList_KeyList {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListDebugView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_SortedListDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListDebugView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::SortedList_SortedListDebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1594,14 +1594,14 @@ for crate::System::Collections::SortedList_SortedListDebugView {
         false
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListDebugView")]
 impl std::ops::Deref for crate::System::Collections::SortedList_SortedListDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListDebugView")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList_SortedListDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1609,7 +1609,7 @@ impl std::ops::DerefMut for crate::System::Collections::SortedList_SortedListDeb
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
 impl crate::System::Collections::SortedList_SortedListDebugView {}
-#[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListDebugView")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::SortedList_SortedListDebugView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1619,7 +1619,7 @@ for crate::System::Collections::SortedList_SortedListDebugView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_SortedListEnumerator {
@@ -1634,7 +1634,7 @@ pub struct SortedList_SortedListEnumerator {
     pub _current: bool,
     pub _getObjectRetType: i32,
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::SortedList_SortedListEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1654,14 +1654,14 @@ for crate::System::Collections::SortedList_SortedListEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListEnumerator")]
 impl std::ops::Deref for crate::System::Collections::SortedList_SortedListEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListEnumerator")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList_SortedListEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1890,7 +1890,7 @@ impl crate::System::Collections::SortedList_SortedListEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::SortedList_SortedListEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1942,14 +1942,14 @@ for crate::System::Collections::SortedList_SortedListEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+SortedList+ValueList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+ValueList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_ValueList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
-#[cfg(feature = "System+Collections+SortedList+ValueList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+ValueList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::SortedList_ValueList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1969,14 +1969,14 @@ for crate::System::Collections::SortedList_ValueList {
         false
     }
 }
-#[cfg(feature = "System+Collections+SortedList+ValueList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+ValueList")]
 impl std::ops::Deref for crate::System::Collections::SortedList_ValueList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+SortedList+ValueList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+ValueList")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList_ValueList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2416,7 +2416,7 @@ impl crate::System::Collections::SortedList_ValueList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+SortedList+ValueList")]
+#[cfg(feature = "cordl_class_System+Collections+SortedList+ValueList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::SortedList_ValueList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

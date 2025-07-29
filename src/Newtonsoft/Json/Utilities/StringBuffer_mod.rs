@@ -1,11 +1,11 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StringBuffer {
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _position: i32,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Actual = Self;
@@ -89,7 +89,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
         actual
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Type = Self;

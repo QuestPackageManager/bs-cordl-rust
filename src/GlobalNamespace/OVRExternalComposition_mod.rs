@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRExternalComposition")]
+#[cfg(feature = "cordl_class_OVRExternalComposition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRExternalComposition {
@@ -44,7 +44,7 @@ pub struct OVRExternalComposition {
     >,
     pub cachedChannels: i32,
 }
-#[cfg(feature = "OVRExternalComposition")]
+#[cfg(feature = "cordl_class_OVRExternalComposition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRExternalComposition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -64,14 +64,14 @@ for crate::GlobalNamespace::OVRExternalComposition {
         false
     }
 }
-#[cfg(feature = "OVRExternalComposition")]
+#[cfg(feature = "cordl_class_OVRExternalComposition")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRExternalComposition {
     type Target = crate::GlobalNamespace::OVRComposition;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRExternalComposition")]
+#[cfg(feature = "cordl_class_OVRExternalComposition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRExternalComposition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -453,7 +453,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRExternalComposition")]
+#[cfg(feature = "cordl_class_OVRExternalComposition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRExternalComposition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

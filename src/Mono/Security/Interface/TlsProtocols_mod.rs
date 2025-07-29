@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Interface+TlsProtocols")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+TlsProtocols")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TlsProtocols {
@@ -16,7 +16,7 @@ pub enum TlsProtocols {
     Tls12Server = 1024i32,
     Zero = 0i32,
 }
-#[cfg(feature = "Mono+Security+Interface+TlsProtocols")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+TlsProtocols")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Interface::TlsProtocols {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::Mono::Security::Interface::TlsProtocols {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Security+Interface+TlsProtocols")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+TlsProtocols")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Security::Interface::TlsProtocols {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::Mono::Security::Interface::TlsProtocols {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Security+Interface+TlsProtocols")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+TlsProtocols")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Security::Interface::TlsProtocols {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::Mono::Security::Interface::TlsProtocols {
         self
     }
 }
-#[cfg(feature = "Mono+Security+Interface+TlsProtocols")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+TlsProtocols")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Security::Interface::TlsProtocols {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::Mono::Security::Interface::TlsProtocols {
         }
     }
 }
-#[cfg(feature = "Mono+Security+Interface+TlsProtocols")]
+#[cfg(feature = "cordl_class_Mono+Security+Interface+TlsProtocols")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Security::Interface::TlsProtocols {
     type Actual = Self;

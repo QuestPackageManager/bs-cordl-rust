@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Dynamic+BinaryOperationBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BinaryOperationBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryOperationBinder {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
     pub _Operation_k__BackingField: crate::System::Linq::Expressions::ExpressionType,
 }
-#[cfg(feature = "System+Dynamic+BinaryOperationBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BinaryOperationBinder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Dynamic::BinaryOperationBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Dynamic::BinaryOperationBinder {
         false
     }
 }
-#[cfg(feature = "System+Dynamic+BinaryOperationBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BinaryOperationBinder")]
 impl std::ops::Deref for crate::System::Dynamic::BinaryOperationBinder {
     type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Dynamic+BinaryOperationBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BinaryOperationBinder")]
 impl std::ops::DerefMut for crate::System::Dynamic::BinaryOperationBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -198,7 +198,7 @@ impl crate::System::Dynamic::BinaryOperationBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Dynamic+BinaryOperationBinder")]
+#[cfg(feature = "cordl_class_System+Dynamic+BinaryOperationBinder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Dynamic::BinaryOperationBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

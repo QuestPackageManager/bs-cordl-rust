@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+NameTable")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameTable {
@@ -12,7 +12,7 @@ pub struct NameTable {
     pub mask: i32,
     pub hashCodeRandomizer: i32,
 }
-#[cfg(feature = "System+Xml+NameTable")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::NameTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::NameTable {
         false
     }
 }
-#[cfg(feature = "System+Xml+NameTable")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable")]
 impl std::ops::Deref for crate::System::Xml::NameTable {
     type Target = crate::System::Xml::XmlNameTable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+NameTable")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable")]
 impl std::ops::DerefMut for crate::System::Xml::NameTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -261,7 +261,7 @@ impl crate::System::Xml::NameTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+NameTable")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::NameTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -270,7 +270,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::NameTable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+NameTable+Entry")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable+Entry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameTable_Entry {
@@ -279,7 +279,7 @@ pub struct NameTable_Entry {
     pub hashCode: i32,
     pub next: quest_hook::libil2cpp::Gc<crate::System::Xml::NameTable_Entry>,
 }
-#[cfg(feature = "System+Xml+NameTable+Entry")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable+Entry")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::NameTable_Entry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -298,14 +298,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::NameTable_Entry 
         false
     }
 }
-#[cfg(feature = "System+Xml+NameTable+Entry")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable+Entry")]
 impl std::ops::Deref for crate::System::Xml::NameTable_Entry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+NameTable+Entry")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable+Entry")]
 impl std::ops::DerefMut for crate::System::Xml::NameTable_Entry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -361,7 +361,7 @@ impl crate::System::Xml::NameTable_Entry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+NameTable+Entry")]
+#[cfg(feature = "cordl_class_System+Xml+NameTable+Entry")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::NameTable_Entry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

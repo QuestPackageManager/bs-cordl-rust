@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+ListSortDirection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ListSortDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ListSortDirection {
@@ -6,7 +6,7 @@ pub enum ListSortDirection {
     Ascending = 0i32,
     Descending = 1i32,
 }
-#[cfg(feature = "System+ComponentModel+ListSortDirection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ListSortDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::ListSortDirection {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::System::ComponentModel::ListSortDirection {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ComponentModel+ListSortDirection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ListSortDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::ComponentModel::ListSortDirection {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::System::ComponentModel::ListSortDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ComponentModel+ListSortDirection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ListSortDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::ComponentModel::ListSortDirection {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::ComponentModel::ListSortDirection {
         self
     }
 }
-#[cfg(feature = "System+ComponentModel+ListSortDirection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ListSortDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::ComponentModel::ListSortDirection {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::System::ComponentModel::ListSortDirection {
         }
     }
 }
-#[cfg(feature = "System+ComponentModel+ListSortDirection")]
+#[cfg(feature = "cordl_class_System+ComponentModel+ListSortDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::ComponentModel::ListSortDirection {
     type Actual = Self;

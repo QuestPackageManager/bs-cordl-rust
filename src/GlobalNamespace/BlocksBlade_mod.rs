@@ -1,4 +1,4 @@
-#[cfg(feature = "BlocksBlade")]
+#[cfg(feature = "cordl_class_BlocksBlade")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BlocksBlade {
@@ -36,7 +36,7 @@ pub struct BlocksBlade {
     >,
     pub _layer: i32,
 }
-#[cfg(feature = "BlocksBlade")]
+#[cfg(feature = "cordl_class_BlocksBlade")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BlocksBlade {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -55,14 +55,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BlocksBlade 
         false
     }
 }
-#[cfg(feature = "BlocksBlade")]
+#[cfg(feature = "cordl_class_BlocksBlade")]
 impl std::ops::Deref for crate::GlobalNamespace::BlocksBlade {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BlocksBlade")]
+#[cfg(feature = "cordl_class_BlocksBlade")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BlocksBlade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -250,7 +250,7 @@ impl crate::GlobalNamespace::BlocksBlade {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BlocksBlade")]
+#[cfg(feature = "cordl_class_BlocksBlade")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BlocksBlade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -259,7 +259,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BlocksBlade {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BlocksBlade+Element")]
+#[cfg(feature = "cordl_class_BlocksBlade+Element")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BlocksBlade_Element {
@@ -267,7 +267,7 @@ pub struct BlocksBlade_Element {
     pub idx: i32,
     pub velocity: f32,
 }
-#[cfg(feature = "BlocksBlade+Element")]
+#[cfg(feature = "cordl_class_BlocksBlade+Element")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BlocksBlade_Element {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -286,14 +286,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BlocksBlade_
         false
     }
 }
-#[cfg(feature = "BlocksBlade+Element")]
+#[cfg(feature = "cordl_class_BlocksBlade+Element")]
 impl std::ops::Deref for crate::GlobalNamespace::BlocksBlade_Element {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BlocksBlade+Element")]
+#[cfg(feature = "cordl_class_BlocksBlade+Element")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BlocksBlade_Element {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -330,7 +330,7 @@ impl crate::GlobalNamespace::BlocksBlade_Element {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BlocksBlade+Element")]
+#[cfg(feature = "cordl_class_BlocksBlade+Element")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BlocksBlade_Element {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

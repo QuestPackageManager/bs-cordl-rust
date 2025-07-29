@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerLoopSystemInternal {
@@ -10,7 +10,7 @@ pub struct PlayerLoopSystemInternal {
     pub loopConditionFunction: crate::System::IntPtr,
     pub numSubSystems: i32,
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
         self
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
         }
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
+#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Type = Self;

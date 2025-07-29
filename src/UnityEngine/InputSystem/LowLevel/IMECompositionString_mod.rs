@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IMECompositionString {
     padding: quest_hook::libil2cpp::ValueTypePadding<132usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     type Type = Self;
@@ -287,7 +287,9 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IMECompositionString_Enumerator {
@@ -295,7 +297,9 @@ pub struct IMECompositionString_Enumerator {
     pub m_CurrentCharacter: char,
     pub m_CurrentIndex: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     type Held<'a> = Self;
@@ -325,7 +329,9 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     type Type = Self;
@@ -336,7 +342,9 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     type Actual = Self;
@@ -350,7 +358,9 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     type Type = Self;
@@ -365,7 +375,9 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     type Actual = Self;
@@ -379,7 +391,9 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     type Type = Self;
@@ -567,7 +581,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -575,7 +589,7 @@ pub struct IMECompositionString__buffer_e__FixedBuffer {
     pub FixedElementField: char,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
@@ -607,7 +621,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
@@ -620,7 +634,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
@@ -636,7 +650,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
@@ -653,7 +667,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {
@@ -669,7 +683,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+ExpressionType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+ExpressionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExpressionType {
@@ -89,7 +89,7 @@ pub enum ExpressionType {
     UnaryPlus = 29i32,
     Unbox = 62i32,
 }
-#[cfg(feature = "System+Linq+Expressions+ExpressionType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+ExpressionType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::ExpressionType {
     type Held<'a> = Self;
@@ -119,7 +119,7 @@ for crate::System::Linq::Expressions::ExpressionType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+ExpressionType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+ExpressionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::ExpressionType {
     type Type = Self;
@@ -130,7 +130,7 @@ for crate::System::Linq::Expressions::ExpressionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Linq+Expressions+ExpressionType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+ExpressionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::ExpressionType {
     type Actual = Self;
@@ -144,7 +144,7 @@ for crate::System::Linq::Expressions::ExpressionType {
         self
     }
 }
-#[cfg(feature = "System+Linq+Expressions+ExpressionType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+ExpressionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::ExpressionType {
     type Type = Self;
@@ -159,7 +159,7 @@ for crate::System::Linq::Expressions::ExpressionType {
         }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+ExpressionType")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+ExpressionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::ExpressionType {
     type Actual = Self;

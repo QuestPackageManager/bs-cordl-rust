@@ -1,10 +1,10 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::DynamicUtils {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Utilities::DynamicUtils {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::DynamicUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::DynamicUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -85,7 +85,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::DynamicUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -95,13 +95,13 @@ for crate::Newtonsoft::Json::Utilities::DynamicUtils {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicUtils_BinderWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -121,14 +121,14 @@ for crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -294,7 +294,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

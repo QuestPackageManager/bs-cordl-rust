@@ -1,4 +1,4 @@
-#[cfg(feature = "DisconnectedPlayer")]
+#[cfg(feature = "cordl_class_DisconnectedPlayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisconnectedPlayer {
@@ -12,7 +12,7 @@ pub struct DisconnectedPlayer {
     pub _sortIndex_k__BackingField: i32,
     pub _multiplayerAvatarsData_k__BackingField: crate::GlobalNamespace::MultiplayerAvatarsData,
 }
-#[cfg(feature = "DisconnectedPlayer")]
+#[cfg(feature = "cordl_class_DisconnectedPlayer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DisconnectedPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Disconnected
         false
     }
 }
-#[cfg(feature = "DisconnectedPlayer")]
+#[cfg(feature = "cordl_class_DisconnectedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::DisconnectedPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DisconnectedPlayer")]
+#[cfg(feature = "cordl_class_DisconnectedPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DisconnectedPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -429,7 +429,7 @@ impl crate::GlobalNamespace::DisconnectedPlayer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DisconnectedPlayer")]
+#[cfg(feature = "cordl_class_DisconnectedPlayer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisconnectedPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

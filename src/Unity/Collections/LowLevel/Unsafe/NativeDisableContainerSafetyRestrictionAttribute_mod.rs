@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NativeDisableContainerSafetyRestrictionAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRestrictionAttribute {
@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRes
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRestrictionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRes
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRestrictionAttribute {
@@ -81,7 +81,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRe
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRestrictionAttribute {

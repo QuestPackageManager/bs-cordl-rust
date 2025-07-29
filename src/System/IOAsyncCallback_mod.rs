@@ -1,10 +1,10 @@
-#[cfg(feature = "System+IOAsyncCallback")]
+#[cfg(feature = "cordl_class_System+IOAsyncCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IOAsyncCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+IOAsyncCallback")]
+#[cfg(feature = "cordl_class_System+IOAsyncCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IOAsyncCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IOAsyncCallback {
         false
     }
 }
-#[cfg(feature = "System+IOAsyncCallback")]
+#[cfg(feature = "cordl_class_System+IOAsyncCallback")]
 impl std::ops::Deref for crate::System::IOAsyncCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IOAsyncCallback")]
+#[cfg(feature = "cordl_class_System+IOAsyncCallback")]
 impl std::ops::DerefMut for crate::System::IOAsyncCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -107,7 +107,7 @@ impl crate::System::IOAsyncCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IOAsyncCallback")]
+#[cfg(feature = "cordl_class_System+IOAsyncCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IOAsyncCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

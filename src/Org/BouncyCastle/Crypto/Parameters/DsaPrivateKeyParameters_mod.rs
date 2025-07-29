@@ -1,11 +1,15 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DsaPrivateKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::DsaKeyParameters,
     pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Parameters::DsaPrivateKeyParameters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DsaPrivateKeyParameters {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::DsaPrivateKeyParameters {
     type Target = crate::Org::BouncyCastle::Crypto::Parameters::DsaKeyParameters;
@@ -33,7 +39,9 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DsaPrivateKeyParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::DsaPrivateKeyParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -193,7 +201,9 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DsaPrivateKeyParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DsaPrivateKeyParameters"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Parameters::DsaPrivateKeyParameters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

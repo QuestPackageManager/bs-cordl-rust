@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerInGameMenuViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerInGameMenuViewController {
@@ -34,7 +34,7 @@ pub struct MultiplayerLocalInactivePlayerInGameMenuViewController {
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerInGameMenuViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,7 +54,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControll
         false
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerInGameMenuViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControll
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerInGameMenuViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -363,7 +363,7 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewControl
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]
+#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerInGameMenuViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerInGameMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

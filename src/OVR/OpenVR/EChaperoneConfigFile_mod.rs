@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EChaperoneConfigFile")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EChaperoneConfigFile")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EChaperoneConfigFile {
@@ -6,7 +6,7 @@ pub enum EChaperoneConfigFile {
     Live = 1i32,
     Temp = 2i32,
 }
-#[cfg(feature = "OVR+OpenVR+EChaperoneConfigFile")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EChaperoneConfigFile")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EChaperoneConfigFile {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EChaperoneConfig
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EChaperoneConfigFile")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EChaperoneConfigFile")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::EChaperoneConfigFile {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::OVR::OpenVR::EChaperoneConfigFile {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EChaperoneConfigFile")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EChaperoneConfigFile")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::EChaperoneConfigFile {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::OVR::OpenVR::EChaperoneConfigFile {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EChaperoneConfigFile")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EChaperoneConfigFile")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::EChaperoneConfigFile {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::OVR::OpenVR::EChaperoneConfigFile {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EChaperoneConfigFile")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EChaperoneConfigFile")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EChaperoneConfigFile {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

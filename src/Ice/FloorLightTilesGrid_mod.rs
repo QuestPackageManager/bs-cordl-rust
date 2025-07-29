@@ -1,4 +1,4 @@
-#[cfg(feature = "Ice+FloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTilesGrid")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightTilesGrid {
@@ -25,7 +25,7 @@ pub struct FloorLightTilesGrid {
     pub _anchorPoint: crate::UnityEngine::Vector3,
     pub _ySize: i32,
 }
-#[cfg(feature = "Ice+FloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTilesGrid")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTilesGrid {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -44,14 +44,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTilesGrid {
         false
     }
 }
-#[cfg(feature = "Ice+FloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTilesGrid")]
 impl std::ops::Deref for crate::Ice::FloorLightTilesGrid {
     type Target = crate::GlobalNamespace::AbstractPoolContainer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Ice+FloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTilesGrid")]
 impl std::ops::DerefMut for crate::Ice::FloorLightTilesGrid {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -243,7 +243,7 @@ impl crate::Ice::FloorLightTilesGrid {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Ice+FloorLightTilesGrid")]
+#[cfg(feature = "cordl_class_Ice+FloorLightTilesGrid")]
 impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightTilesGrid {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

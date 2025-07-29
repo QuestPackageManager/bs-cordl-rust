@@ -1,4 +1,4 @@
-#[cfg(feature = "PS5SharedPackageSKUsSO")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5SharedPackageSKUsSO {
@@ -17,7 +17,7 @@ pub struct PS5SharedPackageSKUsSO {
         crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
     >,
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         false
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -273,7 +273,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -283,7 +283,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+BuildType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PS5SharedPackageSKUsSO_BuildType {
@@ -291,7 +291,7 @@ pub enum PS5SharedPackageSKUsSO_BuildType {
     Application = 0i32,
     RemasterPatch = 1i32,
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Held<'a> = Self;
@@ -321,7 +321,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Type = Self;
@@ -332,7 +332,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Actual = Self;
@@ -346,7 +346,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
         self
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Type = Self;
@@ -361,7 +361,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
         }
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Actual = Self;
@@ -375,7 +375,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
         actual
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+PS5BuildVersion")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5SharedPackageSKUsSO_PS5BuildVersion {
@@ -385,7 +385,7 @@ pub struct PS5SharedPackageSKUsSO_PS5BuildVersion {
         crate::GlobalNamespace::SonyContentVersion,
     >,
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+PS5BuildVersion")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -405,14 +405,14 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
         false
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+PS5BuildVersion")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+PS5BuildVersion")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -561,7 +561,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
+#[cfg(feature = "cordl_class_PS5SharedPackageSKUsSO+PS5BuildVersion")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

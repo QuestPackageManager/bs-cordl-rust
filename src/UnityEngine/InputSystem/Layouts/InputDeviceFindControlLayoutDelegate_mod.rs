@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputDeviceFindControlLayoutDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelega
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +38,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelega
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -224,7 +232,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDeleg
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

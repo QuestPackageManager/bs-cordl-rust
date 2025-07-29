@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Offset")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Offset {
@@ -7,7 +7,7 @@ pub struct Offset {
     pub m_Top: f32,
     pub m_Bottom: f32,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Offset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::Text::Offset {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextCore::Text::
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Offset")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::Offset {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::TextCore::Text::Offset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Offset")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::Offset {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::TextCore::Text::Offset {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Offset")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::Offset {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::TextCore::Text::Offset {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Offset")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::Offset {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::TextCore::Text::Offset {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+Offset")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::Offset {
     type Type = Self;

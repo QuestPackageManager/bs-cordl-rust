@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BundledAssetProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvi
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -32,7 +38,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -100,7 +108,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -111,7 +121,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvi
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -129,7 +139,7 @@ pub struct BundledAssetProvider_InternalOp {
     pub subObjectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider_InternalOp {
@@ -151,7 +161,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvi
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider_InternalOp {
@@ -161,7 +171,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvi
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider_InternalOp {
@@ -532,7 +542,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider_InternalOp {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+CausalityTraceLevel")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityTraceLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CausalityTraceLevel {
@@ -7,7 +7,7 @@ pub enum CausalityTraceLevel {
     Required = 0i32,
     Verbose = 2i32,
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityTraceLevel")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityTraceLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::CausalityTraceLevel {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Threading::Tasks::CausalityTraceLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityTraceLevel")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityTraceLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::CausalityTraceLevel {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Threading::Tasks::CausalityTraceLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityTraceLevel")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityTraceLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::CausalityTraceLevel {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Threading::Tasks::CausalityTraceLevel {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityTraceLevel")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityTraceLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::CausalityTraceLevel {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Threading::Tasks::CausalityTraceLevel {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+CausalityTraceLevel")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+CausalityTraceLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::CausalityTraceLevel {
     type Actual = Self;

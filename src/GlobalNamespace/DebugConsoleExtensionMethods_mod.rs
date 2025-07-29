@@ -1,10 +1,10 @@
-#[cfg(feature = "DebugConsoleExtensionMethods")]
+#[cfg(feature = "cordl_class_DebugConsoleExtensionMethods")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugConsoleExtensionMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "DebugConsoleExtensionMethods")]
+#[cfg(feature = "cordl_class_DebugConsoleExtensionMethods")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DebugConsoleExtensionMethods {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::DebugConsoleExtensionMethods {
         false
     }
 }
-#[cfg(feature = "DebugConsoleExtensionMethods")]
+#[cfg(feature = "cordl_class_DebugConsoleExtensionMethods")]
 impl std::ops::Deref for crate::GlobalNamespace::DebugConsoleExtensionMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DebugConsoleExtensionMethods")]
+#[cfg(feature = "cordl_class_DebugConsoleExtensionMethods")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DebugConsoleExtensionMethods {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::DebugConsoleExtensionMethods {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DebugConsoleExtensionMethods")]
+#[cfg(feature = "cordl_class_DebugConsoleExtensionMethods")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DebugConsoleExtensionMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "PS4ApplicationCategory")]
+#[cfg(feature = "cordl_class_PS4ApplicationCategory")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PS4ApplicationCategory {
@@ -7,7 +7,7 @@ pub enum PS4ApplicationCategory {
     Patch = 1i32,
     Remaster = 2i32,
 }
-#[cfg(feature = "PS4ApplicationCategory")]
+#[cfg(feature = "cordl_class_PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::PS4ApplicationCategory {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PS4ApplicationCategory")]
+#[cfg(feature = "cordl_class_PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::PS4ApplicationCategory {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PS4ApplicationCategory")]
+#[cfg(feature = "cordl_class_PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::GlobalNamespace::PS4ApplicationCategory {
         self
     }
 }
-#[cfg(feature = "PS4ApplicationCategory")]
+#[cfg(feature = "cordl_class_PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::GlobalNamespace::PS4ApplicationCategory {
         }
     }
 }
-#[cfg(feature = "PS4ApplicationCategory")]
+#[cfg(feature = "cordl_class_PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Actual = Self;

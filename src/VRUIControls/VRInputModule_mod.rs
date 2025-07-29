@@ -1,4 +1,4 @@
-#[cfg(feature = "VRUIControls+VRInputModule")]
+#[cfg(feature = "cordl_class_VRUIControls+VRInputModule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRInputModule {
@@ -34,7 +34,7 @@ pub struct VRInputModule {
     >,
     pub _mouseState: quest_hook::libil2cpp::Gc<crate::VRUIControls::MouseState>,
 }
-#[cfg(feature = "VRUIControls+VRInputModule")]
+#[cfg(feature = "cordl_class_VRUIControls+VRInputModule")]
 unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRInputModule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRInputModule {
         false
     }
 }
-#[cfg(feature = "VRUIControls+VRInputModule")]
+#[cfg(feature = "cordl_class_VRUIControls+VRInputModule")]
 impl std::ops::Deref for crate::VRUIControls::VRInputModule {
     type Target = crate::UnityEngine::EventSystems::BaseInputModule;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRUIControls+VRInputModule")]
+#[cfg(feature = "cordl_class_VRUIControls+VRInputModule")]
 impl std::ops::DerefMut for crate::VRUIControls::VRInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -768,7 +768,7 @@ impl crate::VRUIControls::VRInputModule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRUIControls+VRInputModule")]
+#[cfg(feature = "cordl_class_VRUIControls+VRInputModule")]
 impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRInputModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

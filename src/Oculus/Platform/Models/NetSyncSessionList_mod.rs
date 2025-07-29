@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+Models+NetSyncSessionList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+NetSyncSessionList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSyncSessionList {
@@ -6,7 +6,7 @@ pub struct NetSyncSessionList {
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncSession>,
     >,
 }
-#[cfg(feature = "Oculus+Platform+Models+NetSyncSessionList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+NetSyncSessionList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::Models::NetSyncSessionList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::Models::NetSyncSessionList {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+NetSyncSessionList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+NetSyncSessionList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::NetSyncSessionList {
     type Target = crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncSession>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::Models::NetSyncSessionList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+NetSyncSessionList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+NetSyncSessionList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::NetSyncSessionList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -79,7 +79,7 @@ impl crate::Oculus::Platform::Models::NetSyncSessionList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+Models+NetSyncSessionList")]
+#[cfg(feature = "cordl_class_Oculus+Platform+Models+NetSyncSessionList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::Models::NetSyncSessionList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

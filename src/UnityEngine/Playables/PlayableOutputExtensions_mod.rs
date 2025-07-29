@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Playables+PlayableOutputExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableOutputExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayableOutputExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableOutputExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableOutputExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Playables::PlayableOutputExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Playables::PlayableOutputExtensions {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableOutputExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableOutputExtensions")]
 impl std::ops::Deref for crate::UnityEngine::Playables::PlayableOutputExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableOutputExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableOutputExtensions")]
 impl std::ops::DerefMut for crate::UnityEngine::Playables::PlayableOutputExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -296,7 +296,7 @@ impl crate::UnityEngine::Playables::PlayableOutputExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Playables+PlayableOutputExtensions")]
+#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableOutputExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Playables::PlayableOutputExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

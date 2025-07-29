@@ -1,4 +1,4 @@
-#[cfg(feature = "ENet+ENetCallbacks")]
+#[cfg(feature = "cordl_class_ENet+ENetCallbacks")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ENetCallbacks {
@@ -6,7 +6,7 @@ pub struct ENetCallbacks {
     pub free: quest_hook::libil2cpp::Gc<crate::ENet::FreeCallback>,
     pub noMemory: quest_hook::libil2cpp::Gc<crate::ENet::NoMemoryCallback>,
 }
-#[cfg(feature = "ENet+ENetCallbacks")]
+#[cfg(feature = "cordl_class_ENet+ENetCallbacks")]
 unsafe impl quest_hook::libil2cpp::Type for crate::ENet::ENetCallbacks {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::ENetCallbacks {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ENet+ENetCallbacks")]
+#[cfg(feature = "cordl_class_ENet+ENetCallbacks")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::ENetCallbacks {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::ENetCallbacks {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ENet+ENetCallbacks")]
+#[cfg(feature = "cordl_class_ENet+ENetCallbacks")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::ENetCallbacks {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::ENetCallbacks {
         self
     }
 }
-#[cfg(feature = "ENet+ENetCallbacks")]
+#[cfg(feature = "cordl_class_ENet+ENetCallbacks")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::ENetCallbacks {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::ENetCallbacks {
         }
     }
 }
-#[cfg(feature = "ENet+ENetCallbacks")]
+#[cfg(feature = "cordl_class_ENet+ENetCallbacks")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::ENetCallbacks {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,7 +85,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::ENet::ENetCallbacks {
         actual
     }
 }
-#[cfg(feature = "ENet+ENetCallbacks")]
+#[cfg(feature = "cordl_class_ENet+ENetCallbacks")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::ENetCallbacks {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

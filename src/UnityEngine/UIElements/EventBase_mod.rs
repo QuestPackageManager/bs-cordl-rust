@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EventBase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBase {
@@ -30,7 +30,7 @@ pub struct EventBase {
     pub m_ImguiEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     pub _originalMousePosition_k__BackingField: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::EventBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -49,14 +49,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Even
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1765,7 +1765,7 @@ impl crate::UnityEngine::UIElements::EventBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::EventBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1786,7 +1786,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::Event
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+EventPropagation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventBase_EventPropagation {
@@ -1798,7 +1798,7 @@ pub enum EventBase_EventPropagation {
     SkipDisabledElements = 8i32,
     TricklesDown = 2i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Held<'a> = Self;
@@ -1828,7 +1828,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Type = Self;
@@ -1839,7 +1839,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Actual = Self;
@@ -1853,7 +1853,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Type = Self;
@@ -1868,7 +1868,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Actual = Self;
@@ -1882,7 +1882,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventBase_LifeCycleStatus {
@@ -1900,7 +1900,7 @@ pub enum EventBase_LifeCycleStatus {
     PropagationStopped = 1i32,
     StopDispatch = 64i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Held<'a> = Self;
@@ -1930,7 +1930,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Type = Self;
@@ -1941,7 +1941,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Actual = Self;
@@ -1955,7 +1955,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Type = Self;
@@ -1970,7 +1970,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Actual = Self;

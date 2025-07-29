@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+Generic+BitHelper")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+BitHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BitHelper {
@@ -8,7 +8,7 @@ pub struct BitHelper {
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _useStackAlloc: bool,
 }
-#[cfg(feature = "System+Collections+Generic+BitHelper")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+BitHelper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Generic::BitHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Collections::Generic::BitHelper {
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+BitHelper")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+BitHelper")]
 impl std::ops::Deref for crate::System::Collections::Generic::BitHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+BitHelper")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+BitHelper")]
 impl std::ops::DerefMut for crate::System::Collections::Generic::BitHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -186,7 +186,7 @@ impl crate::System::Collections::Generic::BitHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+BitHelper")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+BitHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Generic::BitHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

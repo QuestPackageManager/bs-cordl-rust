@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusVerbosity")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusVerbosity")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_StatusVerbosity {
@@ -7,7 +7,7 @@ pub enum HAPI_StatusVerbosity {
     HAPI_STATUSVERBOSITY_1 = 1i32,
     HAPI_STATUSVERBOSITY_2 = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusVerbosity")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusVerbosity")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusVerbosity")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusVerbosity")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusVerbosity")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusVerbosity")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusVerbosity")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusVerbosity")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_StatusVerbosity")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_StatusVerbosity")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_StatusVerbosity {
     type Actual = Self;

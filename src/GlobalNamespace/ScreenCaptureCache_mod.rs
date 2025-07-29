@@ -1,4 +1,4 @@
-#[cfg(feature = "ScreenCaptureCache")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenCaptureCache {
@@ -10,7 +10,7 @@ pub struct ScreenCaptureCache {
         >,
     >,
 }
-#[cfg(feature = "ScreenCaptureCache")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScreenCaptureCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScreenCaptur
         false
     }
 }
-#[cfg(feature = "ScreenCaptureCache")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache")]
 impl std::ops::Deref for crate::GlobalNamespace::ScreenCaptureCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScreenCaptureCache")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScreenCaptureCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::ScreenCaptureCache {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScreenCaptureCache")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenCaptureCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -142,7 +142,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenCapture
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenCaptureCache_ScreenshotType {
@@ -151,7 +151,7 @@ pub enum ScreenCaptureCache_ScreenshotType {
     Menu = 1i32,
     Other = 2i32,
 }
-#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Held<'a> = Self;
@@ -181,7 +181,7 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Type = Self;
@@ -192,7 +192,7 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Actual = Self;
@@ -206,7 +206,7 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
         self
     }
 }
-#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Type = Self;
@@ -221,7 +221,7 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
         }
     }
 }
-#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
+#[cfg(feature = "cordl_class_ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Actual = Self;

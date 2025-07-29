@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+State")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+State")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct State {
@@ -7,7 +7,7 @@ pub struct State {
     pub stencilRef: i32,
     pub sdfScale: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+State")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+State")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR::State {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR:
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+State")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::State {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::UIR::State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+State")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::State {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::UIR::State {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+State")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::State {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::UIR::State {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+State")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::State {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::UIElements::UIR::State {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+State")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+State")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::State {
     type Type = Self;

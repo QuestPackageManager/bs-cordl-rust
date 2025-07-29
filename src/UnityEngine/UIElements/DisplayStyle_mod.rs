@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+DisplayStyle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DisplayStyle")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DisplayStyle {
@@ -6,7 +6,7 @@ pub enum DisplayStyle {
     Flex = 0i32,
     None = 1i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+DisplayStyle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DisplayStyle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::DisplayStyle {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::UIElements::DisplayStyle {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DisplayStyle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DisplayStyle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DisplayStyle {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::DisplayStyle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DisplayStyle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DisplayStyle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DisplayStyle {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::DisplayStyle {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DisplayStyle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DisplayStyle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DisplayStyle {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::DisplayStyle {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+DisplayStyle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+DisplayStyle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DisplayStyle {
     type Actual = Self;

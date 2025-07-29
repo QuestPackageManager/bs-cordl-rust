@@ -1,4 +1,4 @@
-#[cfg(feature = "TutorialController")]
+#[cfg(feature = "cordl_class_TutorialController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialController {
@@ -26,7 +26,7 @@ pub struct TutorialController {
     pub levelDidStartEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _doingOutroTransition: bool,
 }
-#[cfg(feature = "TutorialController")]
+#[cfg(feature = "cordl_class_TutorialController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TutorialController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TutorialCont
         false
     }
 }
-#[cfg(feature = "TutorialController")]
+#[cfg(feature = "cordl_class_TutorialController")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TutorialController")]
+#[cfg(feature = "cordl_class_TutorialController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -340,7 +340,7 @@ impl crate::GlobalNamespace::TutorialController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TutorialController")]
+#[cfg(feature = "cordl_class_TutorialController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TutorialController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

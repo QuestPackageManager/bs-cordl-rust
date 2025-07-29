@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -8,7 +8,7 @@ pub struct SerializedTypeRestrictionAttribute {
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttribute {
@@ -30,7 +30,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttri
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttribute {
@@ -40,7 +40,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttri
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttribute {
@@ -82,7 +82,7 @@ impl crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttr
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttribute {

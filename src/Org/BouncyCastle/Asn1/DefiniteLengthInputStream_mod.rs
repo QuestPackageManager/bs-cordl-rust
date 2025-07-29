@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefiniteLengthInputStream {
@@ -6,7 +6,7 @@ pub struct DefiniteLengthInputStream {
     pub _originalLength: i32,
     pub _remaining: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream {
     type Target = crate::Org::BouncyCastle::Asn1::LimitedInputStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -206,7 +206,7 @@ impl crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerGameNoteController {
@@ -13,7 +13,7 @@ pub struct MultiplayerConnectedPlayerGameNoteController {
     pub _noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
     pub _gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     type Target = crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -276,7 +276,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -352,7 +352,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerGameNoteController_Pool {
@@ -362,7 +362,7 @@ pub struct MultiplayerConnectedPlayerGameNoteController_Pool {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -382,7 +382,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
@@ -394,7 +394,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -432,7 +432,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

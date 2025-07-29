@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Pen")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Pen")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pen {
@@ -31,7 +31,7 @@ pub struct Pen {
         crate::UnityEngine::InputSystem::Controls::AxisControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Pen")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Pen")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Pen {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -50,14 +50,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Pen
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Pen")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Pen")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Pen {
     type Target = crate::UnityEngine::InputSystem::Pointer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Pen")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Pen")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Pen {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -796,7 +796,7 @@ impl crate::UnityEngine::InputSystem::Pen {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Pen")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Pen")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Pen {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

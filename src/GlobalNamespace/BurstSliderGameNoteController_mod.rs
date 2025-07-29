@@ -1,4 +1,4 @@
-#[cfg(feature = "BurstSliderGameNoteController")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderGameNoteController {
@@ -37,7 +37,7 @@ pub struct BurstSliderGameNoteController {
     pub _moveEndOffsetZ: f32,
     pub _jumpEndOffsetZ: f32,
 }
-#[cfg(feature = "BurstSliderGameNoteController")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BurstSliderGameNoteController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -57,14 +57,14 @@ for crate::GlobalNamespace::BurstSliderGameNoteController {
         false
     }
 }
-#[cfg(feature = "BurstSliderGameNoteController")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController")]
 impl std::ops::Deref for crate::GlobalNamespace::BurstSliderGameNoteController {
     type Target = crate::GlobalNamespace::NoteController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BurstSliderGameNoteController")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BurstSliderGameNoteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -623,7 +623,7 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BurstSliderGameNoteController")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BurstSliderGameNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -719,7 +719,7 @@ for crate::GlobalNamespace::BurstSliderGameNoteController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BurstSliderGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderGameNoteController_Pool {
@@ -727,7 +727,7 @@ pub struct BurstSliderGameNoteController_Pool {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
     >,
 }
-#[cfg(feature = "BurstSliderGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController+Pool")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BurstSliderGameNoteController_Pool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -747,7 +747,7 @@ for crate::GlobalNamespace::BurstSliderGameNoteController_Pool {
         false
     }
 }
-#[cfg(feature = "BurstSliderGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BurstSliderGameNoteController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
@@ -756,7 +756,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BurstSliderGameNoteController_P
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BurstSliderGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BurstSliderGameNoteController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -793,7 +793,7 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController_Pool {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BurstSliderGameNoteController+Pool")]
+#[cfg(feature = "cordl_class_BurstSliderGameNoteController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BurstSliderGameNoteController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

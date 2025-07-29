@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+CipherMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CipherMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherMode {
@@ -9,7 +9,7 @@ pub enum CipherMode {
     ECB = 2i32,
     OFB = 3i32,
 }
-#[cfg(feature = "System+Security+Cryptography+CipherMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::CipherMode {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::System::Security::Cryptography::CipherMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CipherMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::CipherMode {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::System::Security::Cryptography::CipherMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CipherMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::CipherMode {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::System::Security::Cryptography::CipherMode {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CipherMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::CipherMode {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::System::Security::Cryptography::CipherMode {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+CipherMode")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::CipherMode {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRMesh")]
+#[cfg(feature = "cordl_class_OVRMesh")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMesh {
@@ -10,7 +10,7 @@ pub struct OVRMesh {
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _IsInitialized_k__BackingField: bool,
 }
-#[cfg(feature = "OVRMesh")]
+#[cfg(feature = "cordl_class_OVRMesh")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMesh {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMesh {
         false
     }
 }
-#[cfg(feature = "OVRMesh")]
+#[cfg(feature = "cordl_class_OVRMesh")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMesh {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMesh")]
+#[cfg(feature = "cordl_class_OVRMesh")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRMesh {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -269,7 +269,7 @@ impl crate::GlobalNamespace::OVRMesh {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRMesh")]
+#[cfg(feature = "cordl_class_OVRMesh")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMesh {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -278,13 +278,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMesh {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+#[cfg(feature = "cordl_class_OVRMesh+IOVRMeshDataProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMesh_IOVRMeshDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+#[cfg(feature = "cordl_class_OVRMesh+IOVRMeshDataProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -304,14 +304,14 @@ for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
         false
     }
 }
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+#[cfg(feature = "cordl_class_OVRMesh+IOVRMeshDataProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+#[cfg(feature = "cordl_class_OVRMesh+IOVRMeshDataProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -350,7 +350,7 @@ impl crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+#[cfg(feature = "cordl_class_OVRMesh+IOVRMeshDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -360,7 +360,7 @@ for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRMesh+MeshType")]
+#[cfg(feature = "cordl_class_OVRMesh+MeshType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRMesh_MeshType {
@@ -369,7 +369,7 @@ pub enum OVRMesh_MeshType {
     HandRight = 1i32,
     None = -1i32,
 }
-#[cfg(feature = "OVRMesh+MeshType")]
+#[cfg(feature = "cordl_class_OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMesh_MeshType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -398,7 +398,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMesh_Mesh
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRMesh+MeshType")]
+#[cfg(feature = "cordl_class_OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMesh_MeshType {
     type Type = Self;
@@ -409,7 +409,7 @@ for crate::GlobalNamespace::OVRMesh_MeshType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRMesh+MeshType")]
+#[cfg(feature = "cordl_class_OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMesh_MeshType {
     type Actual = Self;
@@ -423,7 +423,7 @@ for crate::GlobalNamespace::OVRMesh_MeshType {
         self
     }
 }
-#[cfg(feature = "OVRMesh+MeshType")]
+#[cfg(feature = "cordl_class_OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMesh_MeshType {
     type Type = Self;
@@ -438,7 +438,7 @@ for crate::GlobalNamespace::OVRMesh_MeshType {
         }
     }
 }
-#[cfg(feature = "OVRMesh+MeshType")]
+#[cfg(feature = "cordl_class_OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRMesh_MeshType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

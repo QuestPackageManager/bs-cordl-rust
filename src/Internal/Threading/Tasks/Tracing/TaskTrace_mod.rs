@@ -1,10 +1,10 @@
-#[cfg(feature = "Internal+Threading+Tasks+Tracing+TaskTrace")]
+#[cfg(feature = "cordl_class_Internal+Threading+Tasks+Tracing+TaskTrace")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskTrace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Internal+Threading+Tasks+Tracing+TaskTrace")]
+#[cfg(feature = "cordl_class_Internal+Threading+Tasks+Tracing+TaskTrace")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         false
     }
 }
-#[cfg(feature = "Internal+Threading+Tasks+Tracing+TaskTrace")]
+#[cfg(feature = "cordl_class_Internal+Threading+Tasks+Tracing+TaskTrace")]
 impl std::ops::Deref for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Internal+Threading+Tasks+Tracing+TaskTrace")]
+#[cfg(feature = "cordl_class_Internal+Threading+Tasks+Tracing+TaskTrace")]
 impl std::ops::DerefMut for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Internal+Threading+Tasks+Tracing+TaskTrace")]
+#[cfg(feature = "cordl_class_Internal+Threading+Tasks+Tracing+TaskTrace")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Internal::Threading::Tasks::Tracing::TaskTrace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

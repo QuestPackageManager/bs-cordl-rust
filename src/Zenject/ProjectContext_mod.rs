@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+ProjectContext")]
+#[cfg(feature = "cordl_class_Zenject+ProjectContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProjectContext {
@@ -13,7 +13,7 @@ pub struct ProjectContext {
     pub _settings: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
-#[cfg(feature = "Zenject+ProjectContext")]
+#[cfg(feature = "cordl_class_Zenject+ProjectContext")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ProjectContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ProjectContext {
         false
     }
 }
-#[cfg(feature = "Zenject+ProjectContext")]
+#[cfg(feature = "cordl_class_Zenject+ProjectContext")]
 impl std::ops::Deref for crate::Zenject::ProjectContext {
     type Target = crate::Zenject::Context;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+ProjectContext")]
+#[cfg(feature = "cordl_class_Zenject+ProjectContext")]
 impl std::ops::DerefMut for crate::Zenject::ProjectContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -714,7 +714,7 @@ impl crate::Zenject::ProjectContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+ProjectContext")]
+#[cfg(feature = "cordl_class_Zenject+ProjectContext")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ProjectContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,11 +1,11 @@
-#[cfg(feature = "MidiParser+MetaEventType")]
+#[cfg(feature = "cordl_class_MidiParser+MetaEventType")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MetaEventType {
     #[default]
     Tempo = 81u8,
 }
-#[cfg(feature = "MidiParser+MetaEventType")]
+#[cfg(feature = "cordl_class_MidiParser+MetaEventType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MetaEventType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MetaEventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MidiParser+MetaEventType")]
+#[cfg(feature = "cordl_class_MidiParser+MetaEventType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::MidiParser::MetaEventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::MidiParser::MetaEventType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MidiParser+MetaEventType")]
+#[cfg(feature = "cordl_class_MidiParser+MetaEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::MidiParser::MetaEventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::MidiParser::MetaEventTyp
         self
     }
 }
-#[cfg(feature = "MidiParser+MetaEventType")]
+#[cfg(feature = "cordl_class_MidiParser+MetaEventType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::MidiParser::MetaEventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::MidiParser::MetaEventType
         }
     }
 }
-#[cfg(feature = "MidiParser+MetaEventType")]
+#[cfg(feature = "cordl_class_MidiParser+MetaEventType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::MidiParser::MetaEventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

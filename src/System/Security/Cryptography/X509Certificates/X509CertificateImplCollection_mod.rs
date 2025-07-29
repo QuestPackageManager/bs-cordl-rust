@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -14,7 +14,7 @@ pub struct X509CertificateImplCollection {
     >,
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {
@@ -36,7 +36,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {
@@ -46,7 +46,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {
@@ -311,7 +311,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509CertificateImp
     }
 }
 #[cfg(
-    feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
+    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {

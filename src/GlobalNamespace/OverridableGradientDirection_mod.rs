@@ -1,4 +1,4 @@
-#[cfg(feature = "OverridableGradientDirection")]
+#[cfg(feature = "cordl_class_OverridableGradientDirection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OverridableGradientDirection {
@@ -6,7 +6,7 @@ pub struct OverridableGradientDirection {
         crate::GlobalNamespace::GradientDirection,
     >,
 }
-#[cfg(feature = "OverridableGradientDirection")]
+#[cfg(feature = "cordl_class_OverridableGradientDirection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OverridableGradientDirection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::OverridableGradientDirection {
         false
     }
 }
-#[cfg(feature = "OverridableGradientDirection")]
+#[cfg(feature = "cordl_class_OverridableGradientDirection")]
 impl std::ops::Deref for crate::GlobalNamespace::OverridableGradientDirection {
     type Target = crate::StyledUITemplates::OverridableData_1<
         crate::GlobalNamespace::GradientDirection,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::OverridableGradientDirection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OverridableGradientDirection")]
+#[cfg(feature = "cordl_class_OverridableGradientDirection")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OverridableGradientDirection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::OverridableGradientDirection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OverridableGradientDirection")]
+#[cfg(feature = "cordl_class_OverridableGradientDirection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OverridableGradientDirection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

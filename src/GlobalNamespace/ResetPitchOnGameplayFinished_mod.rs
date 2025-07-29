@@ -1,4 +1,4 @@
-#[cfg(feature = "ResetPitchOnGameplayFinished")]
+#[cfg(feature = "cordl_class_ResetPitchOnGameplayFinished")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResetPitchOnGameplayFinished {
@@ -8,7 +8,7 @@ pub struct ResetPitchOnGameplayFinished {
     >,
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
 }
-#[cfg(feature = "ResetPitchOnGameplayFinished")]
+#[cfg(feature = "cordl_class_ResetPitchOnGameplayFinished")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ResetPitchOnGameplayFinished {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::ResetPitchOnGameplayFinished {
         false
     }
 }
-#[cfg(feature = "ResetPitchOnGameplayFinished")]
+#[cfg(feature = "cordl_class_ResetPitchOnGameplayFinished")]
 impl std::ops::Deref for crate::GlobalNamespace::ResetPitchOnGameplayFinished {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ResetPitchOnGameplayFinished")]
+#[cfg(feature = "cordl_class_ResetPitchOnGameplayFinished")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ResetPitchOnGameplayFinished {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::ResetPitchOnGameplayFinished {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ResetPitchOnGameplayFinished")]
+#[cfg(feature = "cordl_class_ResetPitchOnGameplayFinished")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ResetPitchOnGameplayFinished {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

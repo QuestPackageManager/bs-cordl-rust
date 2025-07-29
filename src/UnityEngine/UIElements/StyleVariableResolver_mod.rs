@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleVariableResolver {
@@ -29,7 +29,7 @@ pub struct StyleVariableResolver {
         crate::UnityEngine::UIElements::StyleVariableContext,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleVariableResolver {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::UnityEngine::UIElements::StyleVariableResolver {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleVariableResolver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleVariableResolver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -580,7 +580,7 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleVariableResolver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -590,7 +590,9 @@ for crate::UnityEngine::UIElements::StyleVariableResolver {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+ResolveContext"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleVariableResolver_ResolveContext {
@@ -601,7 +603,9 @@ pub struct StyleVariableResolver_ResolveContext {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+ResolveContext"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Held<'a> = Self;
@@ -631,7 +635,9 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+ResolveContext"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Type = Self;
@@ -642,7 +648,9 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+ResolveContext"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Actual = Self;
@@ -656,7 +664,9 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+ResolveContext"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Type = Self;
@@ -671,7 +681,9 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+ResolveContext"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Actual = Self;
@@ -685,7 +697,9 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+ResolveContext"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Type = Self;
@@ -698,7 +712,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
 impl crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {}
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+Result")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleVariableResolver_Result {
@@ -707,7 +721,7 @@ pub enum StyleVariableResolver_Result {
     NotFound = 2i32,
     Valid = 0i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Held<'a> = Self;
@@ -737,7 +751,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Type = Self;
@@ -748,7 +762,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Actual = Self;
@@ -762,7 +776,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Type = Self;
@@ -777,7 +791,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Actual = Self;

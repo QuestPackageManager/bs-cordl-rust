@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Shader")]
+#[cfg(feature = "cordl_class_UnityEngine+Shader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Shader {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+Shader")]
+#[cfg(feature = "cordl_class_UnityEngine+Shader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Shader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Shader {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Shader")]
+#[cfg(feature = "cordl_class_UnityEngine+Shader")]
 impl std::ops::Deref for crate::UnityEngine::Shader {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Shader")]
+#[cfg(feature = "cordl_class_UnityEngine+Shader")]
 impl std::ops::DerefMut for crate::UnityEngine::Shader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5158,7 +5158,7 @@ impl crate::UnityEngine::Shader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Shader")]
+#[cfg(feature = "cordl_class_UnityEngine+Shader")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Shader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

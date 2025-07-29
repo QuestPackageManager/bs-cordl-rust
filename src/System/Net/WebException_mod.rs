@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+WebException")]
+#[cfg(feature = "cordl_class_System+Net+WebException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebException {
@@ -7,7 +7,7 @@ pub struct WebException {
     pub m_Response: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
     pub m_InternalStatus: crate::System::Net::WebExceptionInternalStatus,
 }
-#[cfg(feature = "System+Net+WebException")]
+#[cfg(feature = "cordl_class_System+Net+WebException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebException {
         false
     }
 }
-#[cfg(feature = "System+Net+WebException")]
+#[cfg(feature = "cordl_class_System+Net+WebException")]
 impl std::ops::Deref for crate::System::Net::WebException {
     type Target = crate::System::InvalidOperationException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+WebException")]
+#[cfg(feature = "cordl_class_System+Net+WebException")]
 impl std::ops::DerefMut for crate::System::Net::WebException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -638,7 +638,7 @@ impl crate::System::Net::WebException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+WebException")]
+#[cfg(feature = "cordl_class_System+Net+WebException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

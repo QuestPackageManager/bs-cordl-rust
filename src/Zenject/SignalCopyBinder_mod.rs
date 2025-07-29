@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SignalCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalCopyBinder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalCopyBinder {
@@ -9,7 +9,7 @@ pub struct SignalCopyBinder {
         >,
     >,
 }
-#[cfg(feature = "Zenject+SignalCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalCopyBinder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalCopyBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalCopyBinder {
         false
     }
 }
-#[cfg(feature = "Zenject+SignalCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalCopyBinder")]
 impl std::ops::Deref for crate::Zenject::SignalCopyBinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SignalCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalCopyBinder")]
 impl std::ops::DerefMut for crate::Zenject::SignalCopyBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -259,7 +259,7 @@ impl crate::Zenject::SignalCopyBinder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SignalCopyBinder")]
+#[cfg(feature = "cordl_class_Zenject+SignalCopyBinder")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalCopyBinder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

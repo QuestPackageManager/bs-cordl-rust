@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct NativeContainerIsAtomicWriteOnlyAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {
@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnl
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnl
     }
 }
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {
@@ -52,7 +52,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnl
 )]
 impl crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {}
 #[cfg(
-    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {

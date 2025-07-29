@@ -1,4 +1,4 @@
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
@@ -7,7 +7,7 @@ pub struct NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
         crate::Ice::NoteCutFloorLightStreakTileEffectSpawner,
     >,
 }
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
         false
     }
 }
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 impl std::ops::Deref
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
@@ -35,7 +35,7 @@ for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 impl std::ops::DerefMut
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -99,7 +99,7 @@ impl crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
+#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

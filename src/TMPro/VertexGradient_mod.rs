@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+VertexGradient")]
+#[cfg(feature = "cordl_class_TMPro+VertexGradient")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VertexGradient {
@@ -7,7 +7,7 @@ pub struct VertexGradient {
     pub bottomLeft: crate::UnityEngine::Color,
     pub bottomRight: crate::UnityEngine::Color,
 }
-#[cfg(feature = "TMPro+VertexGradient")]
+#[cfg(feature = "cordl_class_TMPro+VertexGradient")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::VertexGradient {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::VertexGradient {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+VertexGradient")]
+#[cfg(feature = "cordl_class_TMPro+VertexGradient")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::VertexGradient {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::VertexGradient {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+VertexGradient")]
+#[cfg(feature = "cordl_class_TMPro+VertexGradient")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::VertexGradient {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::VertexGradient {
         self
     }
 }
-#[cfg(feature = "TMPro+VertexGradient")]
+#[cfg(feature = "cordl_class_TMPro+VertexGradient")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::VertexGradient {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::VertexGradient {
         }
     }
 }
-#[cfg(feature = "TMPro+VertexGradient")]
+#[cfg(feature = "cordl_class_TMPro+VertexGradient")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::VertexGradient {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::VertexGradient {
         actual
     }
 }
-#[cfg(feature = "TMPro+VertexGradient")]
+#[cfg(feature = "cordl_class_TMPro+VertexGradient")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::VertexGradient {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

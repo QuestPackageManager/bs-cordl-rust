@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusSettings {
@@ -23,7 +23,7 @@ pub struct OculusSettings {
     pub TargetQuestPro: bool,
     pub SystemSplashScreen: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::OculusSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::OculusSett
         false
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::OculusSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::OculusSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -130,7 +130,7 @@ impl crate::Unity::XR::Oculus::OculusSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -139,7 +139,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusSetti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusSettings_FoveationMethod {
@@ -147,7 +147,7 @@ pub enum OculusSettings_FoveationMethod {
     EyeTrackedFoveatedRendering = 1i32,
     FixedFoveatedRendering = 0i32,
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Held<'a> = Self;
@@ -177,7 +177,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Type = Self;
@@ -188,7 +188,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Actual = Self;
@@ -202,7 +202,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
         self
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Type = Self;
@@ -217,7 +217,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
         }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Actual = Self;
@@ -231,7 +231,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
         actual
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusSettings_StereoRenderingModeAndroid {
@@ -239,7 +239,7 @@ pub enum OculusSettings_StereoRenderingModeAndroid {
     MultiPass = 0i32,
     Multiview = 2i32,
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Held<'a> = Self;
@@ -269,7 +269,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Type = Self;
@@ -280,7 +280,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Actual = Self;
@@ -294,7 +294,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
         self
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Type = Self;
@@ -309,7 +309,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
         }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Actual = Self;
@@ -323,7 +323,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
         actual
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusSettings_StereoRenderingModeDesktop {
@@ -331,7 +331,7 @@ pub enum OculusSettings_StereoRenderingModeDesktop {
     MultiPass = 0i32,
     SinglePassInstanced = 1i32,
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Held<'a> = Self;
@@ -361,7 +361,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Type = Self;
@@ -372,7 +372,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Actual = Self;
@@ -386,7 +386,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
         self
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Type = Self;
@@ -401,7 +401,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
         }
     }
 }
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
+#[cfg(feature = "cordl_class_Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Actual = Self;

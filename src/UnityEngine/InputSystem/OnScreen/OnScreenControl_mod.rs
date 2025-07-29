@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OnScreenControl {
@@ -11,7 +11,7 @@ pub struct OnScreenControl {
     >,
     pub m_InputEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -336,7 +336,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -346,7 +346,9 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OnScreenControl_OnScreenDeviceInfo {
@@ -357,7 +359,9 @@ pub struct OnScreenControl_OnScreenDeviceInfo {
         crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo {
     type Held<'a> = Self;
@@ -387,7 +391,9 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInf
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo {
     type Type = Self;
@@ -398,7 +404,9 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInf
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo {
     type Actual = Self;
@@ -412,7 +420,9 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInf
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo {
     type Type = Self;
@@ -427,7 +437,9 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInf
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo {
     type Actual = Self;
@@ -441,7 +453,9 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInf
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceInfo {
     type Type = Self;

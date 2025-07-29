@@ -1,4 +1,4 @@
-#[cfg(feature = "LicensesDisplayViewController")]
+#[cfg(feature = "cordl_class_LicensesDisplayViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LicensesDisplayViewController {
@@ -6,7 +6,7 @@ pub struct LicensesDisplayViewController {
     pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,
     pub _textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
 }
-#[cfg(feature = "LicensesDisplayViewController")]
+#[cfg(feature = "cordl_class_LicensesDisplayViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LicensesDisplayViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::LicensesDisplayViewController {
         false
     }
 }
-#[cfg(feature = "LicensesDisplayViewController")]
+#[cfg(feature = "cordl_class_LicensesDisplayViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LicensesDisplayViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LicensesDisplayViewController")]
+#[cfg(feature = "cordl_class_LicensesDisplayViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LicensesDisplayViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::LicensesDisplayViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LicensesDisplayViewController")]
+#[cfg(feature = "cordl_class_LicensesDisplayViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LicensesDisplayViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

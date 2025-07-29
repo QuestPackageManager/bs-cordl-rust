@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_AttributeInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_AttributeInfo {
@@ -11,7 +11,7 @@ pub struct HAPI_AttributeInfo {
     pub totalArrayElements: i64,
     pub typeInfo: crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_AttributeInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
     type Held<'a> = Self;
@@ -41,7 +41,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_AttributeInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
     type Type = Self;
@@ -52,7 +52,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_AttributeInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
     type Actual = Self;
@@ -66,7 +66,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_AttributeInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
     type Type = Self;
@@ -81,7 +81,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_AttributeInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
     type Actual = Self;
@@ -95,7 +95,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_AttributeInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HAPI_AttributeInfo {
     type Type = Self;

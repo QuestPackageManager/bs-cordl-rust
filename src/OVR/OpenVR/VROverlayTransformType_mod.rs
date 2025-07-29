@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+VROverlayTransformType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VROverlayTransformType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VROverlayTransformType {
@@ -8,7 +8,7 @@ pub enum VROverlayTransformType {
     VROverlayTransform_TrackedComponent = 3i32,
     VROverlayTransform_TrackedDeviceRelative = 1i32,
 }
-#[cfg(feature = "OVR+OpenVR+VROverlayTransformType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VROverlayTransformType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VROverlayTransformType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VROverlayTransfo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+VROverlayTransformType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VROverlayTransformType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::VROverlayTransformType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::OVR::OpenVR::VROverlayTransformType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+VROverlayTransformType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VROverlayTransformType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::VROverlayTransformType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::OVR::OpenVR::VROverlayTransformType {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+VROverlayTransformType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VROverlayTransformType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::VROverlayTransformType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::OVR::OpenVR::VROverlayTransformType {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+VROverlayTransformType")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+VROverlayTransformType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::VROverlayTransformType {
     type Actual = Self;

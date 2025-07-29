@@ -1,4 +1,4 @@
-#[cfg(feature = "ObstacleMaterialSetter")]
+#[cfg(feature = "cordl_class_ObstacleMaterialSetter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleMaterialSetter {
@@ -15,7 +15,7 @@ pub struct ObstacleMaterialSetter {
         crate::UnityEngine::Renderer,
     >,
 }
-#[cfg(feature = "ObstacleMaterialSetter")]
+#[cfg(feature = "cordl_class_ObstacleMaterialSetter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObstacleMaterialSetter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::ObstacleMaterialSetter {
         false
     }
 }
-#[cfg(feature = "ObstacleMaterialSetter")]
+#[cfg(feature = "cordl_class_ObstacleMaterialSetter")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleMaterialSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObstacleMaterialSetter")]
+#[cfg(feature = "cordl_class_ObstacleMaterialSetter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleMaterialSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::ObstacleMaterialSetter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObstacleMaterialSetter")]
+#[cfg(feature = "cordl_class_ObstacleMaterialSetter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObstacleMaterialSetter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

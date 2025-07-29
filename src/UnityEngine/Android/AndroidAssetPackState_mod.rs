@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidAssetPackState {
@@ -9,7 +9,7 @@ pub struct AndroidAssetPackState {
     pub _status_k__BackingField: crate::UnityEngine::Android::AndroidAssetPackStatus,
     pub _error_k__BackingField: crate::UnityEngine::Android::AndroidAssetPackError,
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Android::AndroidAssetPackState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::UnityEngine::Android::AndroidAssetPackState {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackState")]
 impl std::ops::Deref for crate::UnityEngine::Android::AndroidAssetPackState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackState")]
 impl std::ops::DerefMut for crate::UnityEngine::Android::AndroidAssetPackState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -90,7 +90,7 @@ impl crate::UnityEngine::Android::AndroidAssetPackState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Android+AndroidAssetPackState")]
+#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPackState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Android::AndroidAssetPackState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

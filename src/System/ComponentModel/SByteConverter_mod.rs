@@ -1,10 +1,10 @@
-#[cfg(feature = "System+ComponentModel+SByteConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SByteConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SByteConverter {
     __cordl_parent: crate::System::ComponentModel::BaseNumberConverter,
 }
-#[cfg(feature = "System+ComponentModel+SByteConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SByteConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::SByteConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::ComponentModel::SByteConverter {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+SByteConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SByteConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::SByteConverter {
     type Target = crate::System::ComponentModel::BaseNumberConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+SByteConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SByteConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::SByteConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -203,7 +203,7 @@ impl crate::System::ComponentModel::SByteConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+SByteConverter")]
+#[cfg(feature = "cordl_class_System+ComponentModel+SByteConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::SByteConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

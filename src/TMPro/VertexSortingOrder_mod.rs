@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+VertexSortingOrder")]
+#[cfg(feature = "cordl_class_TMPro+VertexSortingOrder")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VertexSortingOrder {
@@ -6,7 +6,7 @@ pub enum VertexSortingOrder {
     Normal = 0i32,
     Reverse = 1i32,
 }
-#[cfg(feature = "TMPro+VertexSortingOrder")]
+#[cfg(feature = "cordl_class_TMPro+VertexSortingOrder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::VertexSortingOrder {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::VertexSortingOrder {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+VertexSortingOrder")]
+#[cfg(feature = "cordl_class_TMPro+VertexSortingOrder")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::VertexSortingOrder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::VertexSortingOrder
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+VertexSortingOrder")]
+#[cfg(feature = "cordl_class_TMPro+VertexSortingOrder")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::VertexSortingOrder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::VertexSortingOrde
         self
     }
 }
-#[cfg(feature = "TMPro+VertexSortingOrder")]
+#[cfg(feature = "cordl_class_TMPro+VertexSortingOrder")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::VertexSortingOrder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::VertexSortingOrder
         }
     }
 }
-#[cfg(feature = "TMPro+VertexSortingOrder")]
+#[cfg(feature = "cordl_class_TMPro+VertexSortingOrder")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::VertexSortingOrder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

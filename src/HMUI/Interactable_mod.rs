@@ -1,4 +1,4 @@
-#[cfg(feature = "HMUI+Interactable")]
+#[cfg(feature = "cordl_class_HMUI+Interactable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interactable {
@@ -11,7 +11,7 @@ pub struct Interactable {
         >,
     >,
 }
-#[cfg(feature = "HMUI+Interactable")]
+#[cfg(feature = "cordl_class_HMUI+Interactable")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::Interactable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::Interactable {
         false
     }
 }
-#[cfg(feature = "HMUI+Interactable")]
+#[cfg(feature = "cordl_class_HMUI+Interactable")]
 impl std::ops::Deref for crate::HMUI::Interactable {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HMUI+Interactable")]
+#[cfg(feature = "cordl_class_HMUI+Interactable")]
 impl std::ops::DerefMut for crate::HMUI::Interactable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -189,7 +189,7 @@ impl crate::HMUI::Interactable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HMUI+Interactable")]
+#[cfg(feature = "cordl_class_HMUI+Interactable")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::Interactable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "PackDefinitionAsyncInstaller")]
+#[cfg(feature = "cordl_class_PackDefinitionAsyncInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionAsyncInstaller {
@@ -11,7 +11,7 @@ pub struct PackDefinitionAsyncInstaller {
         >,
     >,
 }
-#[cfg(feature = "PackDefinitionAsyncInstaller")]
+#[cfg(feature = "cordl_class_PackDefinitionAsyncInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PackDefinitionAsyncInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::PackDefinitionAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "PackDefinitionAsyncInstaller")]
+#[cfg(feature = "cordl_class_PackDefinitionAsyncInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
@@ -40,7 +40,7 @@ impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionAsyncInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PackDefinitionAsyncInstaller")]
+#[cfg(feature = "cordl_class_PackDefinitionAsyncInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -226,7 +226,7 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PackDefinitionAsyncInstaller")]
+#[cfg(feature = "cordl_class_PackDefinitionAsyncInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PackDefinitionAsyncInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

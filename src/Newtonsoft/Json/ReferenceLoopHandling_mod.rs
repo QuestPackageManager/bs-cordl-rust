@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+ReferenceLoopHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ReferenceLoopHandling")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReferenceLoopHandling {
@@ -7,7 +7,7 @@ pub enum ReferenceLoopHandling {
     Ignore = 1i32,
     Serialize = 2i32,
 }
-#[cfg(feature = "Newtonsoft+Json+ReferenceLoopHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ReferenceLoopHandling")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::ReferenceLoopHandling {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::Newtonsoft::Json::ReferenceLoopHandling {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ReferenceLoopHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ReferenceLoopHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::ReferenceLoopHandling {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::Newtonsoft::Json::ReferenceLoopHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ReferenceLoopHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ReferenceLoopHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::ReferenceLoopHandling {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::Newtonsoft::Json::ReferenceLoopHandling {
         self
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ReferenceLoopHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ReferenceLoopHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::ReferenceLoopHandling {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::Newtonsoft::Json::ReferenceLoopHandling {
         }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+ReferenceLoopHandling")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+ReferenceLoopHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::ReferenceLoopHandling {
     type Actual = Self;

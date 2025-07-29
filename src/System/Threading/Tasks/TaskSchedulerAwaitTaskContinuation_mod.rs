@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskSchedulerAwaitTaskContinuation {
@@ -7,7 +7,7 @@ pub struct TaskSchedulerAwaitTaskContinuation {
         crate::System::Threading::Tasks::TaskScheduler,
     >,
 }
-#[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
     type Target = crate::System::Threading::Tasks::AwaitTaskContinuation;
@@ -35,7 +35,7 @@ for crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 impl std::ops::DerefMut
 for crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -128,7 +128,7 @@ impl crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

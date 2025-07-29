@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+AspMvcTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcTemplateAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspMvcTemplateAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcTemplateAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::AspMvcTemplateAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::AspMvcTemplateAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcTemplateAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AspMvcTemplateAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcTemplateAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::AspMvcTemplateAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::JetBrains::Annotations::AspMvcTemplateAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+AspMvcTemplateAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcTemplateAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::AspMvcTemplateAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

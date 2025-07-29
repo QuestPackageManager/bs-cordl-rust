@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+NullableAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullableAttribute {
     __cordl_parent: crate::System::Attribute,
     pub NullableFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+NullableAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::NullableAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Runtime::CompilerServices::NullableAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+NullableAttribute")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::NullableAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+NullableAttribute")]
 impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::NullableAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -115,7 +115,7 @@ impl crate::System::Runtime::CompilerServices::NullableAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+NullableAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::NullableAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelaunayTriangle {
@@ -17,7 +17,7 @@ pub struct DelaunayTriangle {
     pub EdgeIsDelaunay: crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3,
     pub _IsInterior_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -37,14 +37,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1312,7 +1312,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NtlmAuthLevel {
@@ -8,7 +8,7 @@ pub enum NtlmAuthLevel {
     NTLM_only = 2i32,
     NTLMv2_only = 3i32,
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
         self
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
         }
     }
 }
-#[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
+#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel {
     type Actual = Self;

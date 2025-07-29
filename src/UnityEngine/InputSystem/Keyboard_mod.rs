@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Keyboard")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Keyboard {
@@ -39,7 +39,7 @@ pub struct Keyboard {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Keyboard")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Keyboard {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -58,14 +58,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Key
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Keyboard")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Keyboard {
     type Target = crate::UnityEngine::InputSystem::InputDevice;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Keyboard")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Keyboard {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4377,7 +4377,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Keyboard")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Keyboard {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,11 +1,11 @@
-#[cfg(feature = "WhiteColorOrAlphaGroupEffect")]
+#[cfg(feature = "cordl_class_WhiteColorOrAlphaGroupEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WhiteColorOrAlphaGroupEffect {
     __cordl_parent: crate::GlobalNamespace::LightColorGroupEffect,
     pub _defaultColor: crate::UnityEngine::Color,
 }
-#[cfg(feature = "WhiteColorOrAlphaGroupEffect")]
+#[cfg(feature = "cordl_class_WhiteColorOrAlphaGroupEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
         false
     }
 }
-#[cfg(feature = "WhiteColorOrAlphaGroupEffect")]
+#[cfg(feature = "cordl_class_WhiteColorOrAlphaGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
     type Target = crate::GlobalNamespace::LightColorGroupEffect;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "WhiteColorOrAlphaGroupEffect")]
+#[cfg(feature = "cordl_class_WhiteColorOrAlphaGroupEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "WhiteColorOrAlphaGroupEffect")]
+#[cfg(feature = "cordl_class_WhiteColorOrAlphaGroupEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

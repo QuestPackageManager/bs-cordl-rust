@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+LODGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+LODGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LODGroup {
     __cordl_parent: crate::UnityEngine::Component,
 }
-#[cfg(feature = "UnityEngine+LODGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+LODGroup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LODGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LODGroup {
         false
     }
 }
-#[cfg(feature = "UnityEngine+LODGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+LODGroup")]
 impl std::ops::Deref for crate::UnityEngine::LODGroup {
     type Target = crate::UnityEngine::Component;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+LODGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+LODGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::LODGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::UnityEngine::LODGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+LODGroup")]
+#[cfg(feature = "cordl_class_UnityEngine+LODGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::LODGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

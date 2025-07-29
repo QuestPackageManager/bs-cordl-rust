@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Coord")]
+#[cfg(feature = "cordl_class_System+Coord")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Coord {
     pub X: i16,
     pub Y: i16,
 }
-#[cfg(feature = "System+Coord")]
+#[cfg(feature = "cordl_class_System+Coord")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Coord {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Coord {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Coord")]
+#[cfg(feature = "cordl_class_System+Coord")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Coord {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Coord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Coord")]
+#[cfg(feature = "cordl_class_System+Coord")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Coord {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Coord {
         self
     }
 }
-#[cfg(feature = "System+Coord")]
+#[cfg(feature = "cordl_class_System+Coord")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Coord {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Coord {
         }
     }
 }
-#[cfg(feature = "System+Coord")]
+#[cfg(feature = "cordl_class_System+Coord")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Coord {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Coord {
         actual
     }
 }
-#[cfg(feature = "System+Coord")]
+#[cfg(feature = "cordl_class_System+Coord")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Coord {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

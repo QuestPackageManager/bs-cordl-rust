@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -18,7 +18,7 @@ pub struct KdfDoublePipelineIterationBytesGenerator {
     pub k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationBytesGenerator {
@@ -40,7 +40,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationByte
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationBytesGenerator {
@@ -50,7 +50,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationByte
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationBytesGenerator {
@@ -248,7 +248,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationByt
     }
 }
 #[cfg(
-    feature = "Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
+    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationBytesGenerator {

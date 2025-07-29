@@ -1,10 +1,10 @@
-#[cfg(feature = "DisableOnNonOculus")]
+#[cfg(feature = "cordl_class_DisableOnNonOculus")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisableOnNonOculus {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "DisableOnNonOculus")]
+#[cfg(feature = "cordl_class_DisableOnNonOculus")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DisableOnNonOculus {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DisableOnNon
         false
     }
 }
-#[cfg(feature = "DisableOnNonOculus")]
+#[cfg(feature = "cordl_class_DisableOnNonOculus")]
 impl std::ops::Deref for crate::GlobalNamespace::DisableOnNonOculus {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DisableOnNonOculus")]
+#[cfg(feature = "cordl_class_DisableOnNonOculus")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DisableOnNonOculus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::DisableOnNonOculus {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DisableOnNonOculus")]
+#[cfg(feature = "cordl_class_DisableOnNonOculus")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisableOnNonOculus {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

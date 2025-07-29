@@ -1,4 +1,4 @@
-#[cfg(feature = "PS5AppInit")]
+#[cfg(feature = "cordl_class_PS5AppInit")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5AppInit {
@@ -34,7 +34,7 @@ pub struct PS5AppInit {
     >,
     pub _launchingWithFPFCEnabled: bool,
 }
-#[cfg(feature = "PS5AppInit")]
+#[cfg(feature = "cordl_class_PS5AppInit")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PS5AppInit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PS5AppInit {
         false
     }
 }
-#[cfg(feature = "PS5AppInit")]
+#[cfg(feature = "cordl_class_PS5AppInit")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5AppInit {
     type Target = crate::BeatSaber::Init::BSAppInit;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PS5AppInit")]
+#[cfg(feature = "cordl_class_PS5AppInit")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS5AppInit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -278,7 +278,7 @@ impl crate::GlobalNamespace::PS5AppInit {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PS5AppInit")]
+#[cfg(feature = "cordl_class_PS5AppInit")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PS5AppInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

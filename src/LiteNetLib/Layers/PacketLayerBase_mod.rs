@@ -1,11 +1,11 @@
-#[cfg(feature = "LiteNetLib+Layers+PacketLayerBase")]
+#[cfg(feature = "cordl_class_LiteNetLib+Layers+PacketLayerBase")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketLayerBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ExtraPacketSizeForLayer: i32,
 }
-#[cfg(feature = "LiteNetLib+Layers+PacketLayerBase")]
+#[cfg(feature = "cordl_class_LiteNetLib+Layers+PacketLayerBase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Layers::PacketLayerBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Layers::PacketLay
         false
     }
 }
-#[cfg(feature = "LiteNetLib+Layers+PacketLayerBase")]
+#[cfg(feature = "cordl_class_LiteNetLib+Layers+PacketLayerBase")]
 impl std::ops::Deref for crate::LiteNetLib::Layers::PacketLayerBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+Layers+PacketLayerBase")]
+#[cfg(feature = "cordl_class_LiteNetLib+Layers+PacketLayerBase")]
 impl std::ops::DerefMut for crate::LiteNetLib::Layers::PacketLayerBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -153,7 +153,7 @@ impl crate::LiteNetLib::Layers::PacketLayerBase {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+Layers+PacketLayerBase")]
+#[cfg(feature = "cordl_class_LiteNetLib+Layers+PacketLayerBase")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Layers::PacketLayerBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

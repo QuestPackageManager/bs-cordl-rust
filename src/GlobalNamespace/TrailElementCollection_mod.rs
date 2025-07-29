@@ -1,4 +1,4 @@
-#[cfg(feature = "TrailElementCollection")]
+#[cfg(feature = "cordl_class_TrailElementCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrailElementCollection {
@@ -12,7 +12,7 @@ pub struct TrailElementCollection {
     pub _headIndex: i32,
     pub _totalDistance: f32,
 }
-#[cfg(feature = "TrailElementCollection")]
+#[cfg(feature = "cordl_class_TrailElementCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TrailElementCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -32,14 +32,14 @@ for crate::GlobalNamespace::TrailElementCollection {
         false
     }
 }
-#[cfg(feature = "TrailElementCollection")]
+#[cfg(feature = "cordl_class_TrailElementCollection")]
 impl std::ops::Deref for crate::GlobalNamespace::TrailElementCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TrailElementCollection")]
+#[cfg(feature = "cordl_class_TrailElementCollection")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TrailElementCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -316,7 +316,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TrailElementCollection")]
+#[cfg(feature = "cordl_class_TrailElementCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TrailElementCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -326,14 +326,14 @@ for crate::GlobalNamespace::TrailElementCollection {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TrailElementCollection+InterpolationState")]
+#[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrailElementCollection_InterpolationState {
     pub segmentIndex: i32,
     pub segmentLerp: f32,
 }
-#[cfg(feature = "TrailElementCollection+InterpolationState")]
+#[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Held<'a> = Self;
@@ -363,7 +363,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TrailElementCollection+InterpolationState")]
+#[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Type = Self;
@@ -374,7 +374,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TrailElementCollection+InterpolationState")]
+#[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Actual = Self;
@@ -388,7 +388,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
         self
     }
 }
-#[cfg(feature = "TrailElementCollection+InterpolationState")]
+#[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Type = Self;
@@ -403,7 +403,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
         }
     }
 }
-#[cfg(feature = "TrailElementCollection+InterpolationState")]
+#[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Actual = Self;
@@ -417,7 +417,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
         actual
     }
 }
-#[cfg(feature = "TrailElementCollection+InterpolationState")]
+#[cfg(feature = "cordl_class_TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Type = Self;

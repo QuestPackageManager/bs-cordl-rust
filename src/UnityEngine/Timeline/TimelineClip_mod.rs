@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineClip {
@@ -33,7 +33,7 @@ pub struct TimelineClip {
     pub m_PreExtrapolationTime: f64,
     pub m_DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::TimelineClip {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -52,14 +52,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::Timeli
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineClip {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineClip {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2150,7 +2150,7 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::TimelineClip {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2187,7 +2187,7 @@ for crate::UnityEngine::Timeline::TimelineClip {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineClip_BlendCurveMode {
@@ -2195,7 +2195,7 @@ pub enum TimelineClip_BlendCurveMode {
     Auto = 0i32,
     Manual = 1i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Held<'a> = Self;
@@ -2225,7 +2225,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Type = Self;
@@ -2236,7 +2236,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Actual = Self;
@@ -2250,7 +2250,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Type = Self;
@@ -2265,7 +2265,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Actual = Self;
@@ -2279,7 +2279,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineClip_ClipExtrapolation {
@@ -2290,7 +2290,7 @@ pub enum TimelineClip_ClipExtrapolation {
     None = 0i32,
     PingPong = 3i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Held<'a> = Self;
@@ -2320,7 +2320,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Type = Self;
@@ -2331,7 +2331,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Actual = Self;
@@ -2345,7 +2345,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Type = Self;
@@ -2360,7 +2360,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Actual = Self;
@@ -2374,13 +2374,13 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineClip_TimelineClipUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2400,14 +2400,14 @@ for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2444,7 +2444,7 @@ impl crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2454,7 +2454,7 @@ for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineClip_Versions {
@@ -2462,7 +2462,7 @@ pub enum TimelineClip_Versions {
     ClipInFromGlobalToLocal = 1i32,
     Initial = 0i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Held<'a> = Self;
@@ -2492,7 +2492,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Type = Self;
@@ -2503,7 +2503,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Actual = Self;
@@ -2517,7 +2517,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Type = Self;
@@ -2532,7 +2532,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Actual = Self;

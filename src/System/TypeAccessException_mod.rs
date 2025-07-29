@@ -1,10 +1,10 @@
-#[cfg(feature = "System+TypeAccessException")]
+#[cfg(feature = "cordl_class_System+TypeAccessException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeAccessException {
     __cordl_parent: crate::System::TypeLoadException,
 }
-#[cfg(feature = "System+TypeAccessException")]
+#[cfg(feature = "cordl_class_System+TypeAccessException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeAccessException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeAccessException {
         false
     }
 }
-#[cfg(feature = "System+TypeAccessException")]
+#[cfg(feature = "cordl_class_System+TypeAccessException")]
 impl std::ops::Deref for crate::System::TypeAccessException {
     type Target = crate::System::TypeLoadException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+TypeAccessException")]
+#[cfg(feature = "cordl_class_System+TypeAccessException")]
 impl std::ops::DerefMut for crate::System::TypeAccessException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -113,7 +113,7 @@ impl crate::System::TypeAccessException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+TypeAccessException")]
+#[cfg(feature = "cordl_class_System+TypeAccessException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TypeAccessException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

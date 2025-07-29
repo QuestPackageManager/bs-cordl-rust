@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemberPrimitiveTyped {
@@ -6,7 +8,9 @@ pub struct MemberPrimitiveTyped {
     pub primitiveTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTyped {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +30,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTy
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTyped {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +40,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTy
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTyped {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -185,7 +193,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveT
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveTyped"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTyped {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

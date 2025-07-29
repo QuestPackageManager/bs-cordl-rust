@@ -1,10 +1,10 @@
-#[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IGameLiftPlayerSessionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
         false
     }
 }
-#[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
 impl std::ops::Deref for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
 impl std::ops::DerefMut
 for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -128,7 +128,7 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
+#[cfg(feature = "cordl_class_BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

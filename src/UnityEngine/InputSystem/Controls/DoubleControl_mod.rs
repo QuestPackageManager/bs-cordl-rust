@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DoubleControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<f64>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DoubleControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::DoubleControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Controls::DoubleControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DoubleControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::DoubleControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<f64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DoubleControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::DoubleControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::UnityEngine::InputSystem::Controls::DoubleControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+DoubleControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::DoubleControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

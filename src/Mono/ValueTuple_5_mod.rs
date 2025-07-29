@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+ValueTuple_5")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_5")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTuple_5<
@@ -19,7 +19,7 @@ pub struct ValueTuple_5<
     __cordl_phantom_T4: std::marker::PhantomData<T4>,
     __cordl_phantom_T5: std::marker::PhantomData<T5>,
 }
-#[cfg(feature = "Mono+ValueTuple_5")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_5")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ unsafe impl<
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Mono+ValueTuple_5")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_5")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -83,7 +83,7 @@ unsafe impl<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Mono+ValueTuple_5")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_5")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -102,7 +102,7 @@ unsafe impl<
         self
     }
 }
-#[cfg(feature = "Mono+ValueTuple_5")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_5")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -122,7 +122,7 @@ unsafe impl<
         }
     }
 }
-#[cfg(feature = "Mono+ValueTuple_5")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_5")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -141,7 +141,7 @@ unsafe impl<
         actual
     }
 }
-#[cfg(feature = "Mono+ValueTuple_5")]
+#[cfg(feature = "cordl_class_Mono+ValueTuple_5")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

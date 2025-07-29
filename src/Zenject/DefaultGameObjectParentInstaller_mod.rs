@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
+#[cfg(feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultGameObjectParentInstaller {
@@ -8,7 +8,7 @@ pub struct DefaultGameObjectParentInstaller {
     >,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
+#[cfg(feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::DefaultGameObjectParentInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::Zenject::DefaultGameObjectParentInstaller {
         false
     }
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
+#[cfg(feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller")]
 impl std::ops::Deref for crate::Zenject::DefaultGameObjectParentInstaller {
     type Target = crate::Zenject::Installer_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::Zenject::DefaultGameObjectParentInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
+#[cfg(feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller")]
 impl std::ops::DerefMut for crate::Zenject::DefaultGameObjectParentInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,7 +173,7 @@ impl crate::Zenject::DefaultGameObjectParentInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
+#[cfg(feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::DefaultGameObjectParentInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -183,14 +183,18 @@ for crate::Zenject::DefaultGameObjectParentInstaller {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
+#[cfg(
+    feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
+#[cfg(
+    feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -210,7 +214,9 @@ for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroye
         false
     }
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
+#[cfg(
+    feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer"
+)]
 impl std::ops::Deref
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -218,7 +224,9 @@ for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroye
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
+#[cfg(
+    feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer"
+)]
 impl std::ops::DerefMut
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -346,7 +354,9 @@ impl crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroy
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
+#[cfg(
+    feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

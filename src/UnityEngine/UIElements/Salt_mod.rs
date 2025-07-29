@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+Salt")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Salt")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Salt {
@@ -7,7 +7,7 @@ pub enum Salt {
     IdSalt = 17i32,
     TagNameSalt = 13i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+Salt")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Salt")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Salt {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Salt
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Salt")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Salt")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::Salt {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Salt")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Salt")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::Salt {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements:
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Salt")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Salt")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::Salt {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+Salt")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Salt")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Salt {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

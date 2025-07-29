@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ScreenOrientation")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenOrientation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenOrientation {
@@ -10,7 +10,7 @@ pub enum ScreenOrientation {
     PortraitUpsideDown = 2i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "UnityEngine+ScreenOrientation")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenOrientation")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ScreenOrientation {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ScreenOrientatio
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ScreenOrientation")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenOrientation")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ScreenOrientation {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,7 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ScreenOrient
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ScreenOrientation")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenOrientation")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ScreenOrientation {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,7 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ScreenOrien
         self
     }
 }
-#[cfg(feature = "UnityEngine+ScreenOrientation")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenOrientation")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ScreenOrientation {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,7 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ScreenOrient
         }
     }
 }
-#[cfg(feature = "UnityEngine+ScreenOrientation")]
+#[cfg(feature = "cordl_class_UnityEngine+ScreenOrientation")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ScreenOrientation {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

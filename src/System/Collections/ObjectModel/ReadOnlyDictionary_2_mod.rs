@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadOnlyDictionary_2<
@@ -25,7 +25,7 @@ pub struct ReadOnlyDictionary_2<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -64,7 +64,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2<TKey, TValue> 
         false
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -75,7 +75,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2<TKey, TValue> 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1407,7 +1407,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2")]
+#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1631,7 +1631,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2<TKey, TValue> 
     }
 }
 #[cfg(
-    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -1651,7 +1651,7 @@ pub struct ReadOnlyDictionary_2_DictionaryEnumerator<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(
-    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -1705,7 +1705,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
     }
 }
 #[cfg(
-    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -1724,7 +1724,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
     }
 }
 #[cfg(
-    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -1746,7 +1746,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
     }
 }
 #[cfg(
-    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -1769,7 +1769,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
     }
 }
 #[cfg(
-    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -1791,7 +1791,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
     }
 }
 #[cfg(
-    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -2097,7 +2097,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
         todo!()
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadOnlyDictionary_2_KeyCollection<
@@ -2112,7 +2114,9 @@ pub struct ReadOnlyDictionary_2_KeyCollection<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2154,7 +2158,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
         false
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2168,7 +2174,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2669,7 +2677,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2823,7 +2833,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadOnlyDictionary_2_ValueCollection<
@@ -2838,7 +2850,9 @@ pub struct ReadOnlyDictionary_2_ValueCollection<
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2880,7 +2894,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_ValueCollectio
         false
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2894,7 +2910,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_ValueCollectio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3397,7 +3415,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection")]
+#[cfg(
+    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection"
+)]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

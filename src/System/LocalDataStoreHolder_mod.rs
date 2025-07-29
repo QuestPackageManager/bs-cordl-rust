@@ -1,11 +1,11 @@
-#[cfg(feature = "System+LocalDataStoreHolder")]
+#[cfg(feature = "cordl_class_System+LocalDataStoreHolder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalDataStoreHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Store: quest_hook::libil2cpp::Gc<crate::System::LocalDataStore>,
 }
-#[cfg(feature = "System+LocalDataStoreHolder")]
+#[cfg(feature = "cordl_class_System+LocalDataStoreHolder")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::LocalDataStoreHolder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::LocalDataStoreHolder 
         false
     }
 }
-#[cfg(feature = "System+LocalDataStoreHolder")]
+#[cfg(feature = "cordl_class_System+LocalDataStoreHolder")]
 impl std::ops::Deref for crate::System::LocalDataStoreHolder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+LocalDataStoreHolder")]
+#[cfg(feature = "cordl_class_System+LocalDataStoreHolder")]
 impl std::ops::DerefMut for crate::System::LocalDataStoreHolder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -123,7 +123,7 @@ impl crate::System::LocalDataStoreHolder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+LocalDataStoreHolder")]
+#[cfg(feature = "cordl_class_System+LocalDataStoreHolder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::LocalDataStoreHolder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

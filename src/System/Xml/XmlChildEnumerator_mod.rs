@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XmlChildEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlChildEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlChildEnumerator {
@@ -7,7 +7,7 @@ pub struct XmlChildEnumerator {
     pub child: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub isFirst: bool,
 }
-#[cfg(feature = "System+Xml+XmlChildEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlChildEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlChildEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlChildEnumerat
         false
     }
 }
-#[cfg(feature = "System+Xml+XmlChildEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlChildEnumerator")]
 impl std::ops::Deref for crate::System::Xml::XmlChildEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XmlChildEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlChildEnumerator")]
 impl std::ops::DerefMut for crate::System::Xml::XmlChildEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -196,7 +196,7 @@ impl crate::System::Xml::XmlChildEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XmlChildEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+XmlChildEnumerator")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlChildEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

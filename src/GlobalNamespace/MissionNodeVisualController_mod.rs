@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionNodeVisualController")]
+#[cfg(feature = "cordl_class_MissionNodeVisualController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionNodeVisualController {
@@ -24,7 +24,7 @@ pub struct MissionNodeVisualController {
     pub _cleared: bool,
     pub _interactable: bool,
 }
-#[cfg(feature = "MissionNodeVisualController")]
+#[cfg(feature = "cordl_class_MissionNodeVisualController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionNodeVisualController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::GlobalNamespace::MissionNodeVisualController {
         false
     }
 }
-#[cfg(feature = "MissionNodeVisualController")]
+#[cfg(feature = "cordl_class_MissionNodeVisualController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodeVisualController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionNodeVisualController")]
+#[cfg(feature = "cordl_class_MissionNodeVisualController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodeVisualController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -643,7 +643,7 @@ impl crate::GlobalNamespace::MissionNodeVisualController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionNodeVisualController")]
+#[cfg(feature = "cordl_class_MissionNodeVisualController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionNodeVisualController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

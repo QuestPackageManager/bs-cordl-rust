@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ArticulationDriveAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDriveAxis")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArticulationDriveAxis {
@@ -7,7 +7,7 @@ pub enum ArticulationDriveAxis {
     Y = 1i32,
     Z = 2i32,
 }
-#[cfg(feature = "UnityEngine+ArticulationDriveAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDriveAxis")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ArticulationDriveAxis {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ArticulationDriv
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDriveAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDriveAxis")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ArticulationDriveAxis {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::ArticulationDriveAxis {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDriveAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDriveAxis")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ArticulationDriveAxis {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::ArticulationDriveAxis {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDriveAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDriveAxis")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ArticulationDriveAxis {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::ArticulationDriveAxis {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ArticulationDriveAxis")]
+#[cfg(feature = "cordl_class_UnityEngine+ArticulationDriveAxis")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ArticulationDriveAxis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

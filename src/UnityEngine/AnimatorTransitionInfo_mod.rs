@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AnimatorTransitionInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorTransitionInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimatorTransitionInfo {
@@ -11,7 +11,7 @@ pub struct AnimatorTransitionInfo {
     pub m_AnyState: bool,
     pub m_TransitionType: i32,
 }
-#[cfg(feature = "UnityEngine+AnimatorTransitionInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorTransitionInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimatorTransitionInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -40,7 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimatorTransiti
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorTransitionInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorTransitionInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AnimatorTransitionInfo {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::AnimatorTransitionInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorTransitionInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorTransitionInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AnimatorTransitionInfo {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::AnimatorTransitionInfo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorTransitionInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorTransitionInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AnimatorTransitionInfo {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::AnimatorTransitionInfo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorTransitionInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorTransitionInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AnimatorTransitionInfo {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::AnimatorTransitionInfo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+AnimatorTransitionInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimatorTransitionInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::AnimatorTransitionInfo {
     type Type = Self;

@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryKeyboardLayoutCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<264usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
     type Held<'a> = Self;
@@ -34,7 +38,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
     type Type = Self;
@@ -45,7 +51,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
     type Actual = Self;
@@ -59,7 +67,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
     type Type = Self;
@@ -74,7 +84,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
     type Actual = Self;
@@ -88,7 +100,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
     type Type = Self;
@@ -256,7 +270,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -264,7 +278,7 @@ pub struct QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer {
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer {
@@ -296,7 +310,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameB
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer {
@@ -309,7 +323,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameB
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer {
@@ -325,7 +339,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameB
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer {
@@ -342,7 +356,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameB
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer {
@@ -358,7 +372,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameB
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer {

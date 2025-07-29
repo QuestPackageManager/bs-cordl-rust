@@ -1,10 +1,10 @@
-#[cfg(feature = "CustomControlPlayableAsset")]
+#[cfg(feature = "cordl_class_CustomControlPlayableAsset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomControlPlayableAsset {
     __cordl_parent: crate::UnityEngine::Timeline::ControlPlayableAsset,
 }
-#[cfg(feature = "CustomControlPlayableAsset")]
+#[cfg(feature = "cordl_class_CustomControlPlayableAsset")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CustomControlPlayableAsset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::CustomControlPlayableAsset {
         false
     }
 }
-#[cfg(feature = "CustomControlPlayableAsset")]
+#[cfg(feature = "cordl_class_CustomControlPlayableAsset")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomControlPlayableAsset {
     type Target = crate::UnityEngine::Timeline::ControlPlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "CustomControlPlayableAsset")]
+#[cfg(feature = "cordl_class_CustomControlPlayableAsset")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CustomControlPlayableAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::CustomControlPlayableAsset {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "CustomControlPlayableAsset")]
+#[cfg(feature = "cordl_class_CustomControlPlayableAsset")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CustomControlPlayableAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

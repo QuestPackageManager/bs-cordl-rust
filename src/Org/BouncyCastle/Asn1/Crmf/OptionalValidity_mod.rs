@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OptionalValidity {
@@ -6,7 +6,7 @@ pub struct OptionalValidity {
     pub notBefore: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
     pub notAfter: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -239,7 +239,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

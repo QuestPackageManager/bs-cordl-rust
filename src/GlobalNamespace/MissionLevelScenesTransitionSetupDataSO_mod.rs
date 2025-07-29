@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MissionLevelScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelScenesTransitionSetupDataSO {
@@ -19,7 +19,7 @@ pub struct MissionLevelScenesTransitionSetupDataSO {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MissionLevelScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MissionLevelScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MissionLevelScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -496,7 +496,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "cordl_class_MissionLevelScenesTransitionSetupDataSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

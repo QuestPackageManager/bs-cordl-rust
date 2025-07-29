@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+IntervalTreeNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IntervalTreeNode")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IntervalTreeNode {
@@ -8,7 +8,7 @@ pub struct IntervalTreeNode {
     pub left: i32,
     pub right: i32,
 }
-#[cfg(feature = "UnityEngine+Timeline+IntervalTreeNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IntervalTreeNode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::IntervalTreeNode {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::Timeline::IntervalTreeNode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+IntervalTreeNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IntervalTreeNode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::IntervalTreeNode {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::Timeline::IntervalTreeNode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+IntervalTreeNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IntervalTreeNode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::IntervalTreeNode {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::Timeline::IntervalTreeNode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+IntervalTreeNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IntervalTreeNode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::IntervalTreeNode {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::Timeline::IntervalTreeNode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+IntervalTreeNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IntervalTreeNode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::IntervalTreeNode {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::UnityEngine::Timeline::IntervalTreeNode {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+IntervalTreeNode")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+IntervalTreeNode")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::Timeline::IntervalTreeNode {
     type Type = Self;

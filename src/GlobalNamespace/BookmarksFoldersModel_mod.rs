@@ -1,4 +1,4 @@
-#[cfg(feature = "BookmarksFoldersModel")]
+#[cfg(feature = "cordl_class_BookmarksFoldersModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BookmarksFoldersModel {
@@ -14,7 +14,7 @@ pub struct BookmarksFoldersModel {
         >,
     >,
 }
-#[cfg(feature = "BookmarksFoldersModel")]
+#[cfg(feature = "cordl_class_BookmarksFoldersModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BookmarksFoldersModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::BookmarksFoldersModel {
         false
     }
 }
-#[cfg(feature = "BookmarksFoldersModel")]
+#[cfg(feature = "cordl_class_BookmarksFoldersModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BookmarksFoldersModel {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BookmarksFoldersModel")]
+#[cfg(feature = "cordl_class_BookmarksFoldersModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BookmarksFoldersModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::BookmarksFoldersModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BookmarksFoldersModel")]
+#[cfg(feature = "cordl_class_BookmarksFoldersModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BookmarksFoldersModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

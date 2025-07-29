@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationSaveMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConfigurationSaveMode {
@@ -7,7 +7,7 @@ pub enum ConfigurationSaveMode {
     Minimal = 1i32,
     Modified = 0i32,
 }
-#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Configuration::ConfigurationSaveMode {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::Configuration::ConfigurationSaveMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Configuration::ConfigurationSaveMode {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::Configuration::ConfigurationSaveMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Configuration::ConfigurationSaveMode {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::Configuration::ConfigurationSaveMode {
         self
     }
 }
-#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Configuration::ConfigurationSaveMode {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::Configuration::ConfigurationSaveMode {
         }
     }
 }
-#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
+#[cfg(feature = "cordl_class_System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Configuration::ConfigurationSaveMode {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CrossAppDomainData {
@@ -7,7 +7,7 @@ pub struct CrossAppDomainData {
     pub _DomainID: i32,
     pub _processGuid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainData {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainData")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::CrossAppDomainData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainData")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -119,7 +119,7 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainData")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

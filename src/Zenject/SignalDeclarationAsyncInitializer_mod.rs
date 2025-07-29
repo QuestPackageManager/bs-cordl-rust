@@ -1,4 +1,4 @@
-#[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclarationAsyncInitializer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalDeclarationAsyncInitializer {
@@ -14,7 +14,7 @@ pub struct SignalDeclarationAsyncInitializer {
         >,
     >,
 }
-#[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclarationAsyncInitializer")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::SignalDeclarationAsyncInitializer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::Zenject::SignalDeclarationAsyncInitializer {
         false
     }
 }
-#[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclarationAsyncInitializer")]
 impl std::ops::Deref for crate::Zenject::SignalDeclarationAsyncInitializer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclarationAsyncInitializer")]
 impl std::ops::DerefMut for crate::Zenject::SignalDeclarationAsyncInitializer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -197,7 +197,7 @@ impl crate::Zenject::SignalDeclarationAsyncInitializer {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
+#[cfg(feature = "cordl_class_Zenject+SignalDeclarationAsyncInitializer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::SignalDeclarationAsyncInitializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

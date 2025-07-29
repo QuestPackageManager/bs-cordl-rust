@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelColorSchemeSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelColorSchemeSaveData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelColorSchemeSaveData {
@@ -8,7 +8,7 @@ pub struct BeatmapLevelColorSchemeSaveData {
         crate::GlobalNamespace::PlayerSaveData_ColorScheme,
     >,
 }
-#[cfg(feature = "BeatmapLevelColorSchemeSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelColorSchemeSaveData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelColorSchemeSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelColorSchemeSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelColorSchemeSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelColorSchemeSaveData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelColorSchemeSaveData")]
+#[cfg(feature = "cordl_class_BeatmapLevelColorSchemeSaveData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

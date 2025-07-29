@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLaunchUnblockFlowResult {
@@ -8,7 +8,7 @@ pub struct MessageWithLaunchUnblockFlowResult {
         >,
     >,
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
         false
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithLaunchUnblockFlowRe
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ impl crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
+#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

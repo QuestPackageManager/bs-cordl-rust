@@ -1,4 +1,4 @@
-#[cfg(feature = "BladeMovementDataElement")]
+#[cfg(feature = "cordl_class_BladeMovementDataElement")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BladeMovementDataElement {
@@ -8,7 +8,7 @@ pub struct BladeMovementDataElement {
     pub bottomPos: crate::UnityEngine::Vector3,
     pub segmentNormal: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "BladeMovementDataElement")]
+#[cfg(feature = "cordl_class_BladeMovementDataElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BladeMovementDataElement {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::BladeMovementDataElement {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BladeMovementDataElement")]
+#[cfg(feature = "cordl_class_BladeMovementDataElement")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BladeMovementDataElement {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::BladeMovementDataElement {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BladeMovementDataElement")]
+#[cfg(feature = "cordl_class_BladeMovementDataElement")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BladeMovementDataElement {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::GlobalNamespace::BladeMovementDataElement {
         self
     }
 }
-#[cfg(feature = "BladeMovementDataElement")]
+#[cfg(feature = "cordl_class_BladeMovementDataElement")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BladeMovementDataElement {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::BladeMovementDataElement {
         }
     }
 }
-#[cfg(feature = "BladeMovementDataElement")]
+#[cfg(feature = "cordl_class_BladeMovementDataElement")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BladeMovementDataElement {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::GlobalNamespace::BladeMovementDataElement {
         actual
     }
 }
-#[cfg(feature = "BladeMovementDataElement")]
+#[cfg(feature = "cordl_class_BladeMovementDataElement")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::BladeMovementDataElement {
     type Type = Self;

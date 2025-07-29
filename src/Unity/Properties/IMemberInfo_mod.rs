@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Properties+IMemberInfo")]
+#[cfg(feature = "cordl_class_Unity+Properties+IMemberInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMemberInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Properties+IMemberInfo")]
+#[cfg(feature = "cordl_class_Unity+Properties+IMemberInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::IMemberInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::IMemberInf
         false
     }
 }
-#[cfg(feature = "Unity+Properties+IMemberInfo")]
+#[cfg(feature = "cordl_class_Unity+Properties+IMemberInfo")]
 impl std::ops::Deref for crate::Unity::Properties::IMemberInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Properties+IMemberInfo")]
+#[cfg(feature = "cordl_class_Unity+Properties+IMemberInfo")]
 impl std::ops::DerefMut for crate::Unity::Properties::IMemberInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -150,7 +150,7 @@ impl crate::Unity::Properties::IMemberInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Properties+IMemberInfo")]
+#[cfg(feature = "cordl_class_Unity+Properties+IMemberInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::IMemberInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

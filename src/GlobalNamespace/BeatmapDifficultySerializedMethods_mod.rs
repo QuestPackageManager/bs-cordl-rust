@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapDifficultySerializedMethods")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySerializedMethods")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDifficultySerializedMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDifficultySerializedMethods")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySerializedMethods")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
         false
     }
 }
-#[cfg(feature = "BeatmapDifficultySerializedMethods")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySerializedMethods")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDifficultySerializedMethods")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySerializedMethods")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -109,7 +109,7 @@ impl crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDifficultySerializedMethods")]
+#[cfg(feature = "cordl_class_BeatmapDifficultySerializedMethods")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

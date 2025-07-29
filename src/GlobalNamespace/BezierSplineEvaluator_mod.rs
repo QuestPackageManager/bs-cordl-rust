@@ -1,4 +1,4 @@
-#[cfg(feature = "BezierSplineEvaluator")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BezierSplineEvaluator {
@@ -8,7 +8,7 @@ pub struct BezierSplineEvaluator {
     >,
     pub _currentSegmentIndex: i32,
 }
-#[cfg(feature = "BezierSplineEvaluator")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BezierSplineEvaluator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::GlobalNamespace::BezierSplineEvaluator {
         false
     }
 }
-#[cfg(feature = "BezierSplineEvaluator")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator")]
 impl std::ops::Deref for crate::GlobalNamespace::BezierSplineEvaluator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BezierSplineEvaluator")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BezierSplineEvaluator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -339,7 +339,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BezierSplineEvaluator")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BezierSplineEvaluator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -349,7 +349,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator+CubicSolveResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BezierSplineEvaluator_CubicSolveResult {
@@ -358,7 +358,7 @@ pub struct BezierSplineEvaluator_CubicSolveResult {
     pub solution2: f32,
     pub solution3: f32,
 }
-#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Held<'a> = Self;
@@ -388,7 +388,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Type = Self;
@@ -399,7 +399,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Actual = Self;
@@ -413,7 +413,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         self
     }
 }
-#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Type = Self;
@@ -428,7 +428,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         }
     }
 }
-#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Actual = Self;
@@ -442,7 +442,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         actual
     }
 }
-#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
+#[cfg(feature = "cordl_class_BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Type = Self;

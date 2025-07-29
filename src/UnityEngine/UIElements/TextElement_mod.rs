@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextElement {
@@ -57,7 +57,7 @@ pub struct TextElement {
     pub m_CursorColor: crate::UnityEngine::Color,
     pub m_CursorWidth: f32,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TextElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -76,14 +76,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Text
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextElement {
     type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2657,7 +2657,7 @@ impl crate::UnityEngine::UIElements::TextElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2736,7 +2736,7 @@ for crate::UnityEngine::UIElements::TextElement {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextElement_UxmlFactory {
@@ -2745,7 +2745,7 @@ pub struct TextElement_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement_UxmlTraits>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlFactory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2765,7 +2765,7 @@ for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
@@ -2775,7 +2775,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TextElement_UxmlFactory
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2812,7 +2812,7 @@ impl crate::UnityEngine::UIElements::TextElement_UxmlFactory {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlFactory")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2822,7 +2822,7 @@ for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlTraits")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextElement_UxmlTraits {
@@ -2840,7 +2840,7 @@ pub struct TextElement_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlTraits")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::TextElement_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2860,14 +2860,14 @@ for crate::UnityEngine::UIElements::TextElement_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextElement_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextElement_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2940,7 +2940,7 @@ impl crate::UnityEngine::UIElements::TextElement_UxmlTraits {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlTraits")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TextElement_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct InitializeLocalInstruction_Reference {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
     type Target = crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::InitializeLocalInstruction_Refe
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
@@ -172,7 +172,7 @@ impl crate::GlobalNamespace::InitializeLocalInstruction_Reference {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::InitializeLocalInstruction_Reference {

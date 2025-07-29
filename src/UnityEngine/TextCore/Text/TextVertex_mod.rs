@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextVertex")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextVertex {
@@ -7,7 +7,7 @@ pub struct TextVertex {
     pub uv2: crate::UnityEngine::Vector2,
     pub color: crate::UnityEngine::Color32,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextVertex")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextVertex {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::TextCore::Text::TextVertex {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextVertex")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::TextVertex {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::Text::TextVertex {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextVertex")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::TextVertex {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::TextCore::Text::TextVertex {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextVertex")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::TextVertex {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::TextCore::Text::TextVertex {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextVertex")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::TextVertex {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::TextCore::Text::TextVertex {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextVertex")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextVertex")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::TextVertex {
     type Type = Self;

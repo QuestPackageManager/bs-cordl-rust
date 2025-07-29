@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Runtime+CompilerServices+FriendAccessAllowedAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+FriendAccessAllowedAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FriendAccessAllowedAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FriendAccessAllowedAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+FriendAccessAllowedAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::FriendAccessAllowedAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Runtime::CompilerServices::FriendAccessAllowedAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FriendAccessAllowedAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+FriendAccessAllowedAttribute"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::FriendAccessAllowedAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +38,9 @@ for crate::System::Runtime::CompilerServices::FriendAccessAllowedAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FriendAccessAllowedAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+FriendAccessAllowedAttribute"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::FriendAccessAllowedAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +78,9 @@ impl crate::System::Runtime::CompilerServices::FriendAccessAllowedAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FriendAccessAllowedAttribute")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+CompilerServices+FriendAccessAllowedAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::FriendAccessAllowedAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

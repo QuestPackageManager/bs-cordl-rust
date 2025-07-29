@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Burst+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstRuntime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstRuntime {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstRuntime {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime")]
 impl std::ops::Deref for crate::Unity::Burst::BurstRuntime {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstRuntime {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -402,7 +402,7 @@ impl crate::Unity::Burst::BurstRuntime {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstRuntime {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -411,13 +411,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstRuntime {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode32_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstRuntime_HashCode32_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode32_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
     type Held<'a> = Self;
@@ -463,7 +463,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode32_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
     type Type = Self;
@@ -474,7 +474,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode32_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
     type Actual = Self;
@@ -488,7 +488,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode32_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
     type Type = Self;
@@ -503,7 +503,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode32_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
     type Actual = Self;
@@ -517,7 +517,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode32_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
     type Type = Self;
@@ -530,13 +530,13 @@ for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
 }
 #[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {}
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode64_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstRuntime_HashCode64_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode64_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
     type Held<'a> = Self;
@@ -582,7 +582,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode64_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
     type Type = Self;
@@ -593,7 +593,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode64_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
     type Actual = Self;
@@ -607,7 +607,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
         self
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode64_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
     type Type = Self;
@@ -622,7 +622,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
         }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode64_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
     type Actual = Self;
@@ -636,7 +636,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
         actual
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode64_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
     type Type = Self;
@@ -649,13 +649,13 @@ for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
 }
 #[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {}
-#[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+PreserveAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstRuntime_PreserveAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+PreserveAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Burst::BurstRuntime_PreserveAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -675,14 +675,14 @@ for crate::Unity::Burst::BurstRuntime_PreserveAttribute {
         false
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+PreserveAttribute")]
 impl std::ops::Deref for crate::Unity::Burst::BurstRuntime_PreserveAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+PreserveAttribute")]
 impl std::ops::DerefMut for crate::Unity::Burst::BurstRuntime_PreserveAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -719,7 +719,7 @@ impl crate::Unity::Burst::BurstRuntime_PreserveAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
+#[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+PreserveAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Burst::BurstRuntime_PreserveAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

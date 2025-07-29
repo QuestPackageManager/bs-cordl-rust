@@ -1,10 +1,10 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SDKBridge {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKBridge {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKBridge {
         false
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge")]
 impl std::ops::Deref for crate::LIV::SDK::Unity::SDKBridge {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge")]
 impl std::ops::DerefMut for crate::LIV::SDK::Unity::SDKBridge {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -865,7 +865,7 @@ impl crate::LIV::SDK::Unity::SDKBridge {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge")]
 impl quest_hook::libil2cpp::ObjectType for crate::LIV::SDK::Unity::SDKBridge {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -874,7 +874,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LIV::SDK::Unity::SDKBridge {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKBridge_SDKInjection_1<T: quest_hook::libil2cpp::Type> {
@@ -883,7 +883,7 @@ pub struct SDKBridge_SDKInjection_1<T: quest_hook::libil2cpp::Type> {
     pub data: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
     type Held<'a> = Self;
@@ -929,7 +929,7 @@ for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
     type Type = Self;
@@ -940,7 +940,7 @@ for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
     type Actual = Self;
@@ -954,7 +954,7 @@ for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
         self
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
     type Type = Self;
@@ -969,7 +969,7 @@ for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
         }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
     type Actual = Self;
@@ -983,7 +983,7 @@ for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
         actual
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
     type Type = Self;

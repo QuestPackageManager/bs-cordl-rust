@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializationBinderAdapter {
@@ -7,7 +7,7 @@ pub struct SerializationBinderAdapter {
         crate::System::Runtime::Serialization::SerializationBinder,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +27,7 @@ for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -165,7 +165,7 @@ impl crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

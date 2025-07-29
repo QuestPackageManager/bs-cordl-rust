@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Experimental+Rendering+TextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+TextureCreationFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextureCreationFlags {
@@ -10,7 +10,7 @@ pub enum TextureCreationFlags {
     MipChain = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+TextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+TextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+TextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+TextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+TextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+TextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+TextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+TextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Experimental+Rendering+TextureCreationFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+TextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::Rendering::TextureCreationFlags {
     type Actual = Self;

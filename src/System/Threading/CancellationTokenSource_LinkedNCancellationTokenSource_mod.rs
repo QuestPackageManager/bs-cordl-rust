@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
+    feature = "cordl_class_System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct CancellationTokenSource_LinkedNCancellationTokenSource {
     __cordl_parent: crate::System::Threading::CancellationTokenSource,
 }
 #[cfg(
-    feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
+    feature = "cordl_class_System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSource {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSour
     }
 }
 #[cfg(
-    feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
+    feature = "cordl_class_System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSource {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSour
     }
 }
 #[cfg(
-    feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
+    feature = "cordl_class_System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSource {
@@ -52,7 +52,7 @@ for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSour
 )]
 impl crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSource {}
 #[cfg(
-    feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
+    feature = "cordl_class_System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSource {

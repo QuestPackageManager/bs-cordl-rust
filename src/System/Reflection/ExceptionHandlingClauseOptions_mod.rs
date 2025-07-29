@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Reflection+ExceptionHandlingClauseOptions")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClauseOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExceptionHandlingClauseOptions {
@@ -8,7 +8,7 @@ pub enum ExceptionHandlingClauseOptions {
     Filter = 1i32,
     Finally = 2i32,
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClauseOptions")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClauseOptions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::ExceptionHandlingClauseOptions {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Reflection::ExceptionHandlingClauseOptions {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClauseOptions")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClauseOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::ExceptionHandlingClauseOptions {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Reflection::ExceptionHandlingClauseOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClauseOptions")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClauseOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::ExceptionHandlingClauseOptions {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Reflection::ExceptionHandlingClauseOptions {
         self
     }
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClauseOptions")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClauseOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::ExceptionHandlingClauseOptions {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Reflection::ExceptionHandlingClauseOptions {
         }
     }
 }
-#[cfg(feature = "System+Reflection+ExceptionHandlingClauseOptions")]
+#[cfg(feature = "cordl_class_System+Reflection+ExceptionHandlingClauseOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::ExceptionHandlingClauseOptions {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+InteropServices+Marshal")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Marshal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::Marshal {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::InteropServices::Marshal {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::Marshal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::Marshal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1754,7 +1754,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal")]
+#[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::Marshal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1764,13 +1764,17 @@ for crate::System::Runtime::InteropServices::Marshal {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Marshal_MarshalerInstanceKeyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1790,7 +1794,9 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1798,7 +1804,9 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1916,7 +1924,9 @@ impl crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompar
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1966,13 +1976,17 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+SecureStringAllocator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Marshal_SecureStringAllocator {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+SecureStringAllocator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1992,7 +2006,9 @@ for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
         false
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+SecureStringAllocator"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
     type Target = crate::System::MulticastDelegate;
@@ -2000,7 +2016,9 @@ for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+SecureStringAllocator"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2074,7 +2092,9 @@ impl crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+InteropServices+Marshal+SecureStringAllocator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

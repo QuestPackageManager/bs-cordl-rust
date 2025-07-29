@@ -1,4 +1,4 @@
-#[cfg(feature = "RecordingToolSceneSetup")]
+#[cfg(feature = "cordl_class_RecordingToolSceneSetup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolSceneSetup {
@@ -7,7 +7,7 @@ pub struct RecordingToolSceneSetup {
         crate::GlobalNamespace::RecordingToolSceneSetupData,
     >,
 }
-#[cfg(feature = "RecordingToolSceneSetup")]
+#[cfg(feature = "cordl_class_RecordingToolSceneSetup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RecordingToolSceneSetup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::GlobalNamespace::RecordingToolSceneSetup {
         false
     }
 }
-#[cfg(feature = "RecordingToolSceneSetup")]
+#[cfg(feature = "cordl_class_RecordingToolSceneSetup")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RecordingToolSceneSetup")]
+#[cfg(feature = "cordl_class_RecordingToolSceneSetup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolSceneSetup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::RecordingToolSceneSetup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RecordingToolSceneSetup")]
+#[cfg(feature = "cordl_class_RecordingToolSceneSetup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RecordingToolSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

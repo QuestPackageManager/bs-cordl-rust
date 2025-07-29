@@ -1,4 +1,4 @@
-#[cfg(feature = "EndOfLifeNoticeViewController")]
+#[cfg(feature = "cordl_class_EndOfLifeNoticeViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EndOfLifeNoticeViewController {
@@ -19,7 +19,7 @@ pub struct EndOfLifeNoticeViewController {
         crate::UnityEngine::Coroutine,
     >,
 }
-#[cfg(feature = "EndOfLifeNoticeViewController")]
+#[cfg(feature = "cordl_class_EndOfLifeNoticeViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EndOfLifeNoticeViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::GlobalNamespace::EndOfLifeNoticeViewController {
         false
     }
 }
-#[cfg(feature = "EndOfLifeNoticeViewController")]
+#[cfg(feature = "cordl_class_EndOfLifeNoticeViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::EndOfLifeNoticeViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EndOfLifeNoticeViewController")]
+#[cfg(feature = "cordl_class_EndOfLifeNoticeViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EndOfLifeNoticeViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -221,7 +221,7 @@ impl crate::GlobalNamespace::EndOfLifeNoticeViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EndOfLifeNoticeViewController")]
+#[cfg(feature = "cordl_class_EndOfLifeNoticeViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EndOfLifeNoticeViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

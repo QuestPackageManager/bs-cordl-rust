@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompiledIdentityConstraint {
@@ -13,7 +13,7 @@ pub struct CompiledIdentityConstraint {
     >,
     pub refer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::CompiledIdentityConstraint {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint")]
 impl std::ops::Deref for crate::System::Xml::Schema::CompiledIdentityConstraint {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::CompiledIdentityConstraint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -220,7 +220,7 @@ impl crate::System::Xml::Schema::CompiledIdentityConstraint {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::CompiledIdentityConstraint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -230,7 +230,9 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompiledIdentityConstraint_ConstraintRole {
@@ -239,7 +241,9 @@ pub enum CompiledIdentityConstraint_ConstraintRole {
     Keyref = 2i32,
     Unique = 0i32,
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Held<'a> = Self;
@@ -269,7 +273,9 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Type = Self;
@@ -280,7 +286,9 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Actual = Self;
@@ -294,7 +302,9 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Type = Self;
@@ -309,7 +319,9 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Actual = Self;

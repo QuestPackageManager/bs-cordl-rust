@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContinuationTaskFromResultTask_1<
@@ -10,7 +10,7 @@ pub struct ContinuationTaskFromResultTask_1<
     >,
     __cordl_phantom_TAntecedentResult: std::marker::PhantomData<TAntecedentResult>,
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
 unsafe impl<TAntecedentResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
     TAntecedentResult,
@@ -48,7 +48,7 @@ for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
         false
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
 impl<TAntecedentResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
     TAntecedentResult,
@@ -58,7 +58,7 @@ for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
 impl<TAntecedentResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
     TAntecedentResult,
@@ -173,7 +173,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
 impl<TAntecedentResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
     TAntecedentResult,

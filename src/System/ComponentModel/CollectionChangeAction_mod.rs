@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+CollectionChangeAction")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionChangeAction")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollectionChangeAction {
@@ -7,7 +7,7 @@ pub enum CollectionChangeAction {
     Refresh = 3i32,
     Remove = 2i32,
 }
-#[cfg(feature = "System+ComponentModel+CollectionChangeAction")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionChangeAction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::CollectionChangeAction {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::System::ComponentModel::CollectionChangeAction {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+ComponentModel+CollectionChangeAction")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionChangeAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::ComponentModel::CollectionChangeAction {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::System::ComponentModel::CollectionChangeAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+ComponentModel+CollectionChangeAction")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionChangeAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::ComponentModel::CollectionChangeAction {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::System::ComponentModel::CollectionChangeAction {
         self
     }
 }
-#[cfg(feature = "System+ComponentModel+CollectionChangeAction")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionChangeAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::ComponentModel::CollectionChangeAction {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::System::ComponentModel::CollectionChangeAction {
         }
     }
 }
-#[cfg(feature = "System+ComponentModel+CollectionChangeAction")]
+#[cfg(feature = "cordl_class_System+ComponentModel+CollectionChangeAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::ComponentModel::CollectionChangeAction {
     type Actual = Self;

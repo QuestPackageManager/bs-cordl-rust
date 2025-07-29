@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+HtmlElementAttributesAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+HtmlElementAttributesAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HtmlElementAttributesAttribute {
@@ -7,7 +7,7 @@ pub struct HtmlElementAttributesAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "JetBrains+Annotations+HtmlElementAttributesAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+HtmlElementAttributesAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::HtmlElementAttributesAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::JetBrains::Annotations::HtmlElementAttributesAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+HtmlElementAttributesAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+HtmlElementAttributesAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::HtmlElementAttributesAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+HtmlElementAttributesAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+HtmlElementAttributesAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::HtmlElementAttributesAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -160,7 +160,7 @@ impl crate::JetBrains::Annotations::HtmlElementAttributesAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+HtmlElementAttributesAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+HtmlElementAttributesAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::HtmlElementAttributesAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

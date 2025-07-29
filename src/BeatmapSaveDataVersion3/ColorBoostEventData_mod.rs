@@ -1,11 +1,11 @@
-#[cfg(feature = "BeatmapSaveDataVersion3+ColorBoostEventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+ColorBoostEventData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorBoostEventData {
     __cordl_parent: crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem,
     pub o: bool,
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+ColorBoostEventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+ColorBoostEventData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion3::ColorBoostEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::BeatmapSaveDataVersion3::ColorBoostEventData {
         false
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+ColorBoostEventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+ColorBoostEventData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::ColorBoostEventData {
     type Target = crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+ColorBoostEventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+ColorBoostEventData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::ColorBoostEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::BeatmapSaveDataVersion3::ColorBoostEventData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion3+ColorBoostEventData")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+ColorBoostEventData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataVersion3::ColorBoostEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

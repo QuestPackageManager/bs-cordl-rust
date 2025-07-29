@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Collections+IDictionaryEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+IDictionaryEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IDictionaryEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Collections+IDictionaryEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+IDictionaryEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::IDictionaryEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Collections::IDictionaryEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Collections+IDictionaryEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+IDictionaryEnumerator")]
 impl std::ops::Deref for crate::System::Collections::IDictionaryEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+IDictionaryEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+IDictionaryEnumerator")]
 impl std::ops::DerefMut for crate::System::Collections::IDictionaryEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -124,7 +124,7 @@ impl crate::System::Collections::IDictionaryEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+IDictionaryEnumerator")]
+#[cfg(feature = "cordl_class_System+Collections+IDictionaryEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::IDictionaryEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

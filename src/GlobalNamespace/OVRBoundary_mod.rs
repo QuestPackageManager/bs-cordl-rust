@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRBoundary")]
+#[cfg(feature = "cordl_class_OVRBoundary")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRBoundary {
@@ -7,7 +7,7 @@ pub struct OVRBoundary {
         crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
 }
-#[cfg(feature = "OVRBoundary")]
+#[cfg(feature = "cordl_class_OVRBoundary")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary 
         false
     }
 }
-#[cfg(feature = "OVRBoundary")]
+#[cfg(feature = "cordl_class_OVRBoundary")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRBoundary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRBoundary")]
+#[cfg(feature = "cordl_class_OVRBoundary")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRBoundary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -260,7 +260,7 @@ impl crate::GlobalNamespace::OVRBoundary {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRBoundary")]
+#[cfg(feature = "cordl_class_OVRBoundary")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBoundary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -269,7 +269,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBoundary {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRBoundary_BoundaryTestResult {
@@ -278,7 +278,7 @@ pub struct OVRBoundary_BoundaryTestResult {
     pub ClosestPoint: crate::UnityEngine::Vector3,
     pub ClosestPointNormal: crate::UnityEngine::Vector3,
 }
-#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Held<'a> = Self;
@@ -308,7 +308,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Type = Self;
@@ -319,7 +319,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Actual = Self;
@@ -333,7 +333,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
         self
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Type = Self;
@@ -348,7 +348,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
         }
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Actual = Self;
@@ -362,7 +362,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
         actual
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Type = Self;
@@ -375,7 +375,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
 }
 #[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 impl crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {}
-#[cfg(feature = "OVRBoundary+BoundaryType")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRBoundary_BoundaryType {
@@ -383,7 +383,7 @@ pub enum OVRBoundary_BoundaryType {
     OuterBoundary = 1i32,
     PlayArea = 256i32,
 }
-#[cfg(feature = "OVRBoundary+BoundaryType")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Held<'a> = Self;
@@ -413,7 +413,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryType")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Type = Self;
@@ -424,7 +424,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryType")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Actual = Self;
@@ -438,7 +438,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
         self
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryType")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Type = Self;
@@ -453,7 +453,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
         }
     }
 }
-#[cfg(feature = "OVRBoundary+BoundaryType")]
+#[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Actual = Self;
@@ -467,7 +467,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
         actual
     }
 }
-#[cfg(feature = "OVRBoundary+Node")]
+#[cfg(feature = "cordl_class_OVRBoundary+Node")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRBoundary_Node {
@@ -476,7 +476,7 @@ pub enum OVRBoundary_Node {
     HandRight = 4i32,
     Head = 9i32,
 }
-#[cfg(feature = "OVRBoundary+Node")]
+#[cfg(feature = "cordl_class_OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary_Node {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -505,7 +505,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary_
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRBoundary+Node")]
+#[cfg(feature = "cordl_class_OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRBoundary_Node {
     type Type = Self;
@@ -516,7 +516,7 @@ for crate::GlobalNamespace::OVRBoundary_Node {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRBoundary+Node")]
+#[cfg(feature = "cordl_class_OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRBoundary_Node {
     type Actual = Self;
@@ -530,7 +530,7 @@ for crate::GlobalNamespace::OVRBoundary_Node {
         self
     }
 }
-#[cfg(feature = "OVRBoundary+Node")]
+#[cfg(feature = "cordl_class_OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRBoundary_Node {
     type Type = Self;
@@ -545,7 +545,7 @@ for crate::GlobalNamespace::OVRBoundary_Node {
         }
     }
 }
-#[cfg(feature = "OVRBoundary+Node")]
+#[cfg(feature = "cordl_class_OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRBoundary_Node {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

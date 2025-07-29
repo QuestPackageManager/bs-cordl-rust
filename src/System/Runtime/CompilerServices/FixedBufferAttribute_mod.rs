@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+CompilerServices+FixedBufferAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FixedBufferAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedBufferAttribute {
@@ -6,7 +6,7 @@ pub struct FixedBufferAttribute {
     pub _ElementType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _Length_k__BackingField: i32,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FixedBufferAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FixedBufferAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::FixedBufferAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Runtime::CompilerServices::FixedBufferAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FixedBufferAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FixedBufferAttribute")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::FixedBufferAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FixedBufferAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FixedBufferAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::FixedBufferAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -122,7 +122,7 @@ impl crate::System::Runtime::CompilerServices::FixedBufferAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+FixedBufferAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FixedBufferAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::FixedBufferAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

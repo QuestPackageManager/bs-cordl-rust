@@ -1,4 +1,4 @@
-#[cfg(feature = "ColorChangeUIEventType")]
+#[cfg(feature = "cordl_class_ColorChangeUIEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorChangeUIEventType {
@@ -6,7 +6,7 @@ pub enum ColorChangeUIEventType {
     Drag = 0i32,
     PointerUp = 1i32,
 }
-#[cfg(feature = "ColorChangeUIEventType")]
+#[cfg(feature = "cordl_class_ColorChangeUIEventType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ColorChangeUIEventType {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::ColorChangeUIEventType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ColorChangeUIEventType")]
+#[cfg(feature = "cordl_class_ColorChangeUIEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorChangeUIEventType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::ColorChangeUIEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ColorChangeUIEventType")]
+#[cfg(feature = "cordl_class_ColorChangeUIEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorChangeUIEventType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::ColorChangeUIEventType {
         self
     }
 }
-#[cfg(feature = "ColorChangeUIEventType")]
+#[cfg(feature = "cordl_class_ColorChangeUIEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorChangeUIEventType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::ColorChangeUIEventType {
         }
     }
 }
-#[cfg(feature = "ColorChangeUIEventType")]
+#[cfg(feature = "cordl_class_ColorChangeUIEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorChangeUIEventType {
     type Actual = Self;

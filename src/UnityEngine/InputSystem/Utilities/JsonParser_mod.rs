@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonParser {
@@ -8,7 +8,7 @@ pub struct JsonParser {
     pub m_MatchAnyElementInArray: bool,
     pub m_DryRun: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::JsonParser {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::JsonParser {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::JsonParser {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::JsonParser {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::JsonParser {
     type Actual = Self;
@@ -92,7 +92,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Utilities::JsonParser {
     type Type = Self;
@@ -569,14 +569,14 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonParser_JsonString {
     pub text: crate::UnityEngine::InputSystem::Utilities::Substring,
     pub hasEscapes: bool,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     type Held<'a> = Self;
@@ -606,7 +606,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     type Type = Self;
@@ -617,7 +617,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     type Actual = Self;
@@ -631,7 +631,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     type Type = Self;
@@ -646,7 +646,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     type Actual = Self;
@@ -660,7 +660,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     type Type = Self;
@@ -883,7 +883,7 @@ impl AsMut<
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonParser_JsonValue {
@@ -905,7 +905,7 @@ pub struct JsonParser_JsonValue {
     >,
     pub anyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     type Held<'a> = Self;
@@ -935,7 +935,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     type Type = Self;
@@ -946,7 +946,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     type Actual = Self;
@@ -960,7 +960,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     type Type = Self;
@@ -975,7 +975,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     type Actual = Self;
@@ -989,7 +989,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     type Type = Self;
@@ -1503,7 +1503,9 @@ impl AsMut<
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonParser_JsonValueType {
@@ -1517,7 +1519,9 @@ pub enum JsonParser_JsonValueType {
     Real = 2i32,
     String = 4i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
     type Held<'a> = Self;
@@ -1547,7 +1551,9 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
     type Type = Self;
@@ -1558,7 +1564,9 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
     type Actual = Self;
@@ -1572,7 +1580,9 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
     type Type = Self;
@@ -1587,7 +1597,9 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TouchHistory {
@@ -14,7 +14,7 @@ pub struct TouchHistory {
     pub m_StartIndex: i32,
     pub m_Version: u32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     type Actual = Self;
@@ -98,7 +98,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     type Type = Self;
@@ -391,7 +391,9 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchHistory_Enumerator {
@@ -399,7 +401,9 @@ pub struct TouchHistory_Enumerator {
     pub m_Owner: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
     pub m_Index: i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -419,7 +423,9 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -427,7 +433,9 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -585,7 +593,9 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

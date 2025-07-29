@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncDisconnectReason")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetSyncDisconnectReason {
@@ -9,7 +9,7 @@ pub enum NetSyncDisconnectReason {
     ServerTerminated = 2i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::Oculus::Platform::NetSyncDisconnectReason {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::Oculus::Platform::NetSyncDisconnectReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::Oculus::Platform::NetSyncDisconnectReason {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::Oculus::Platform::NetSyncDisconnectReason {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
+#[cfg(feature = "cordl_class_Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Actual = Self;

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+CompilerServices+IsUnmanagedAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IsUnmanagedAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IsUnmanagedAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+IsUnmanagedAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IsUnmanagedAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::IsUnmanagedAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Runtime::CompilerServices::IsUnmanagedAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+IsUnmanagedAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IsUnmanagedAttribute")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::IsUnmanagedAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+IsUnmanagedAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IsUnmanagedAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::IsUnmanagedAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -69,7 +69,7 @@ impl crate::System::Runtime::CompilerServices::IsUnmanagedAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+IsUnmanagedAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IsUnmanagedAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::IsUnmanagedAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

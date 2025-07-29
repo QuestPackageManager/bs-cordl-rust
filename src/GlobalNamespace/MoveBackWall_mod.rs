@@ -1,4 +1,4 @@
-#[cfg(feature = "MoveBackWall")]
+#[cfg(feature = "cordl_class_MoveBackWall")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MoveBackWall {
@@ -12,7 +12,7 @@ pub struct MoveBackWall {
     pub _isVisible: bool,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
-#[cfg(feature = "MoveBackWall")]
+#[cfg(feature = "cordl_class_MoveBackWall")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MoveBackWall {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MoveBackWall
         false
     }
 }
-#[cfg(feature = "MoveBackWall")]
+#[cfg(feature = "cordl_class_MoveBackWall")]
 impl std::ops::Deref for crate::GlobalNamespace::MoveBackWall {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MoveBackWall")]
+#[cfg(feature = "cordl_class_MoveBackWall")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MoveBackWall {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::MoveBackWall {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MoveBackWall")]
+#[cfg(feature = "cordl_class_MoveBackWall")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MoveBackWall {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

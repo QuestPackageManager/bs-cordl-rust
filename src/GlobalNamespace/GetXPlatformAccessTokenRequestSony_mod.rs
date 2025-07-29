@@ -1,4 +1,4 @@
-#[cfg(feature = "GetXPlatformAccessTokenRequestSony")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenRequestSony")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GetXPlatformAccessTokenRequestSony {
@@ -6,7 +6,7 @@ pub struct GetXPlatformAccessTokenRequestSony {
     pub platformToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub platformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
 }
-#[cfg(feature = "GetXPlatformAccessTokenRequestSony")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenRequestSony")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GetXPlatformAccessTokenRequestSony {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::GlobalNamespace::GetXPlatformAccessTokenRequestSony {
         false
     }
 }
-#[cfg(feature = "GetXPlatformAccessTokenRequestSony")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenRequestSony")]
 impl std::ops::Deref for crate::GlobalNamespace::GetXPlatformAccessTokenRequestSony {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GetXPlatformAccessTokenRequestSony")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenRequestSony")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GetXPlatformAccessTokenRequestSony {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -85,7 +85,7 @@ impl crate::GlobalNamespace::GetXPlatformAccessTokenRequestSony {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GetXPlatformAccessTokenRequestSony")]
+#[cfg(feature = "cordl_class_GetXPlatformAccessTokenRequestSony")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GetXPlatformAccessTokenRequestSony {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

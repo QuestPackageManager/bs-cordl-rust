@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+XsdValidatingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdValidatingReader {
@@ -74,7 +74,7 @@ pub struct XsdValidatingReader {
     >,
     pub savedState: crate::System::Xml::XsdValidatingReader_ValidatingReaderState,
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XsdValidatingReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -93,14 +93,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XsdValidatingRea
         false
     }
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader")]
 impl std::ops::Deref for crate::System::Xml::XsdValidatingReader {
     type Target = crate::System::Xml::XmlReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader")]
 impl std::ops::DerefMut for crate::System::Xml::XsdValidatingReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2023,7 +2023,7 @@ impl crate::System::Xml::XsdValidatingReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XsdValidatingReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -2074,7 +2074,7 @@ for crate::System::Xml::XsdValidatingReader {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader+ValidatingReaderState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdValidatingReader_ValidatingReaderState {
@@ -2093,7 +2093,7 @@ pub enum XsdValidatingReader_ValidatingReaderState {
     ReadAhead = 6i32,
     ReaderClosed = 8i32,
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Held<'a> = Self;
@@ -2123,7 +2123,7 @@ for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Type = Self;
@@ -2134,7 +2134,7 @@ for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Actual = Self;
@@ -2148,7 +2148,7 @@ for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
         self
     }
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Type = Self;
@@ -2163,7 +2163,7 @@ for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
         }
     }
 }
-#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
+#[cfg(feature = "cordl_class_System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Actual = Self;

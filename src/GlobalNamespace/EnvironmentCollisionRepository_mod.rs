@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentCollisionRepository")]
+#[cfg(feature = "cordl_class_EnvironmentCollisionRepository")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentCollisionRepository {
@@ -10,7 +10,7 @@ pub struct EnvironmentCollisionRepository {
         >,
     >,
 }
-#[cfg(feature = "EnvironmentCollisionRepository")]
+#[cfg(feature = "cordl_class_EnvironmentCollisionRepository")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentCollisionRepository {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::EnvironmentCollisionRepository {
         false
     }
 }
-#[cfg(feature = "EnvironmentCollisionRepository")]
+#[cfg(feature = "cordl_class_EnvironmentCollisionRepository")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentCollisionRepository {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentCollisionRepository")]
+#[cfg(feature = "cordl_class_EnvironmentCollisionRepository")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentCollisionRepository {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -140,7 +140,7 @@ impl crate::GlobalNamespace::EnvironmentCollisionRepository {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentCollisionRepository")]
+#[cfg(feature = "cordl_class_EnvironmentCollisionRepository")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentCollisionRepository {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

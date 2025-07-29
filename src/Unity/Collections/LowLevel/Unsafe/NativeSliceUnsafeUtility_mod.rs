@@ -1,10 +1,14 @@
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeSliceUnsafeUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility"
+)]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility"
+)]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -141,7 +149,9 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

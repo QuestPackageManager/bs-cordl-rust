@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ItemPriority_2<
@@ -10,7 +10,7 @@ pub struct ItemPriority_2<
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -73,7 +73,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -90,7 +90,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -108,7 +108,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -125,7 +125,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

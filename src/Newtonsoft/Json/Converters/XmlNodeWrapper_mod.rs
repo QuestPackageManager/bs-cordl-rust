@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Converters+XmlNodeWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XmlNodeWrapper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNodeWrapper {
@@ -15,7 +15,7 @@ pub struct XmlNodeWrapper {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+XmlNodeWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XmlNodeWrapper")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Converters::XmlNodeWrapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::Newtonsoft::Json::Converters::XmlNodeWrapper {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+XmlNodeWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XmlNodeWrapper")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::XmlNodeWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+XmlNodeWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XmlNodeWrapper")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::XmlNodeWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -449,7 +449,7 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeWrapper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Converters+XmlNodeWrapper")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XmlNodeWrapper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Converters::XmlNodeWrapper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

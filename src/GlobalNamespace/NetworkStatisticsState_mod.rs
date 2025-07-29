@@ -1,4 +1,4 @@
-#[cfg(feature = "NetworkStatisticsState")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NetworkStatisticsState {
@@ -16,7 +16,7 @@ pub struct NetworkStatisticsState {
     pub encryptionProcessingTime: i64,
     pub decryptionProcessingTime: i64,
 }
-#[cfg(feature = "NetworkStatisticsState")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkStatisticsState {
     type Held<'a> = Self;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::NetworkStatisticsState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NetworkStatisticsState")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NetworkStatisticsState {
     type Type = Self;
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::NetworkStatisticsState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NetworkStatisticsState")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NetworkStatisticsState {
     type Actual = Self;
@@ -71,7 +71,7 @@ for crate::GlobalNamespace::NetworkStatisticsState {
         self
     }
 }
-#[cfg(feature = "NetworkStatisticsState")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NetworkStatisticsState {
     type Type = Self;
@@ -86,7 +86,7 @@ for crate::GlobalNamespace::NetworkStatisticsState {
         }
     }
 }
-#[cfg(feature = "NetworkStatisticsState")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NetworkStatisticsState {
     type Actual = Self;
@@ -100,7 +100,7 @@ for crate::GlobalNamespace::NetworkStatisticsState {
         actual
     }
 }
-#[cfg(feature = "NetworkStatisticsState")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::NetworkStatisticsState {
     type Type = Self;
@@ -223,13 +223,13 @@ impl crate::GlobalNamespace::NetworkStatisticsState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -249,7 +249,7 @@ for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelega
         false
     }
 }
-#[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -257,7 +257,7 @@ for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelega
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -414,7 +414,7 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
+#[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

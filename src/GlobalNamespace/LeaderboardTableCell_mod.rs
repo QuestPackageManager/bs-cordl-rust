@@ -1,4 +1,4 @@
-#[cfg(feature = "LeaderboardTableCell")]
+#[cfg(feature = "cordl_class_LeaderboardTableCell")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardTableCell {
@@ -11,7 +11,7 @@ pub struct LeaderboardTableCell {
     pub _specialScoreColor: crate::UnityEngine::Color,
     pub _separatorImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
-#[cfg(feature = "LeaderboardTableCell")]
+#[cfg(feature = "cordl_class_LeaderboardTableCell")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LeaderboardTableCell {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,14 +31,14 @@ for crate::GlobalNamespace::LeaderboardTableCell {
         false
     }
 }
-#[cfg(feature = "LeaderboardTableCell")]
+#[cfg(feature = "cordl_class_LeaderboardTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LeaderboardTableCell")]
+#[cfg(feature = "cordl_class_LeaderboardTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -231,7 +231,7 @@ impl crate::GlobalNamespace::LeaderboardTableCell {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LeaderboardTableCell")]
+#[cfg(feature = "cordl_class_LeaderboardTableCell")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

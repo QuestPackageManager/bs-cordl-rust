@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -7,7 +7,7 @@ pub struct ActionEvent__m_ValueData_e__FixedBuffer {
     pub FixedElementField: u8,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__FixedBuffer {
@@ -39,7 +39,7 @@ for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__FixedBuffer {
@@ -52,7 +52,7 @@ for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__FixedBuffer {
@@ -68,7 +68,7 @@ for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__FixedBuffer {
@@ -85,7 +85,7 @@ for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__FixedBuffer {
@@ -101,7 +101,7 @@ for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__Fixed
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__FixedBuffer {

@@ -1,10 +1,10 @@
-#[cfg(feature = "BGLib+JsonExtension+JsonSettings")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+JsonSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BGLib+JsonExtension+JsonSettings")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+JsonSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::JsonExtension::JsonSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::JsonExtension::JsonSet
         false
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+JsonSettings")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+JsonSettings")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::JsonSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BGLib+JsonExtension+JsonSettings")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+JsonSettings")]
 impl std::ops::DerefMut for crate::BGLib::JsonExtension::JsonSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -38,7 +38,7 @@ impl std::ops::DerefMut for crate::BGLib::JsonExtension::JsonSettings {
 }
 #[cfg(feature = "BGLib+JsonExtension+JsonSettings")]
 impl crate::BGLib::JsonExtension::JsonSettings {}
-#[cfg(feature = "BGLib+JsonExtension+JsonSettings")]
+#[cfg(feature = "cordl_class_BGLib+JsonExtension+JsonSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::JsonExtension::JsonSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "System+MissingFieldException")]
+#[cfg(feature = "cordl_class_System+MissingFieldException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissingFieldException {
     __cordl_parent: crate::System::MissingMemberException,
 }
-#[cfg(feature = "System+MissingFieldException")]
+#[cfg(feature = "cordl_class_System+MissingFieldException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::MissingFieldException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::MissingFieldException
         false
     }
 }
-#[cfg(feature = "System+MissingFieldException")]
+#[cfg(feature = "cordl_class_System+MissingFieldException")]
 impl std::ops::Deref for crate::System::MissingFieldException {
     type Target = crate::System::MissingMemberException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+MissingFieldException")]
+#[cfg(feature = "cordl_class_System+MissingFieldException")]
 impl std::ops::DerefMut for crate::System::MissingFieldException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -219,7 +219,7 @@ impl crate::System::MissingFieldException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+MissingFieldException")]
+#[cfg(feature = "cordl_class_System+MissingFieldException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::MissingFieldException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

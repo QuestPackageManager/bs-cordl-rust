@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Data+DataTextWriter")]
+#[cfg(feature = "cordl_class_System+Data+DataTextWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTextWriter {
     __cordl_parent: crate::System::Xml::XmlWriter,
     pub _xmltextWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
 }
-#[cfg(feature = "System+Data+DataTextWriter")]
+#[cfg(feature = "cordl_class_System+Data+DataTextWriter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataTextWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataTextWriter 
         false
     }
 }
-#[cfg(feature = "System+Data+DataTextWriter")]
+#[cfg(feature = "cordl_class_System+Data+DataTextWriter")]
 impl std::ops::Deref for crate::System::Data::DataTextWriter {
     type Target = crate::System::Xml::XmlWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+DataTextWriter")]
+#[cfg(feature = "cordl_class_System+Data+DataTextWriter")]
 impl std::ops::DerefMut for crate::System::Data::DataTextWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -872,7 +872,7 @@ impl crate::System::Data::DataTextWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+DataTextWriter")]
+#[cfg(feature = "cordl_class_System+Data+DataTextWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataTextWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Globalization+Unicode+TailoringInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+TailoringInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TailoringInfo {
@@ -8,7 +8,7 @@ pub struct TailoringInfo {
     pub TailoringCount: i32,
     pub FrenchSort: bool,
 }
-#[cfg(feature = "Mono+Globalization+Unicode+TailoringInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+TailoringInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Globalization::Unicode::TailoringInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::Mono::Globalization::Unicode::TailoringInfo {
         false
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+TailoringInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+TailoringInfo")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::TailoringInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+TailoringInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+TailoringInfo")]
 impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::TailoringInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -89,7 +89,7 @@ impl crate::Mono::Globalization::Unicode::TailoringInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Globalization+Unicode+TailoringInfo")]
+#[cfg(feature = "cordl_class_Mono+Globalization+Unicode+TailoringInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Globalization::Unicode::TailoringInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

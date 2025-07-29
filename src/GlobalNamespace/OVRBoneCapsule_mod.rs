@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRBoneCapsule")]
+#[cfg(feature = "cordl_class_OVRBoneCapsule")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRBoneCapsule {
@@ -11,7 +11,7 @@ pub struct OVRBoneCapsule {
         crate::UnityEngine::CapsuleCollider,
     >,
 }
-#[cfg(feature = "OVRBoneCapsule")]
+#[cfg(feature = "cordl_class_OVRBoneCapsule")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoneCapsule {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoneCapsu
         false
     }
 }
-#[cfg(feature = "OVRBoneCapsule")]
+#[cfg(feature = "cordl_class_OVRBoneCapsule")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRBoneCapsule {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRBoneCapsule")]
+#[cfg(feature = "cordl_class_OVRBoneCapsule")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRBoneCapsule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -269,7 +269,7 @@ impl crate::GlobalNamespace::OVRBoneCapsule {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRBoneCapsule")]
+#[cfg(feature = "cordl_class_OVRBoneCapsule")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBoneCapsule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

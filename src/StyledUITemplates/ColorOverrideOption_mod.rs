@@ -1,4 +1,4 @@
-#[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
+#[cfg(feature = "cordl_class_StyledUITemplates+ColorOverrideOption")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorOverrideOption {
@@ -10,7 +10,7 @@ pub struct ColorOverrideOption {
         crate::GlobalNamespace::ColorSO,
     >,
 }
-#[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
+#[cfg(feature = "cordl_class_StyledUITemplates+ColorOverrideOption")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::StyledUITemplates::ColorOverrideOption {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::StyledUITemplates::ColorOverrideOption {
         false
     }
 }
-#[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
+#[cfg(feature = "cordl_class_StyledUITemplates+ColorOverrideOption")]
 impl std::ops::Deref for crate::StyledUITemplates::ColorOverrideOption {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
+#[cfg(feature = "cordl_class_StyledUITemplates+ColorOverrideOption")]
 impl std::ops::DerefMut for crate::StyledUITemplates::ColorOverrideOption {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -393,7 +393,7 @@ impl crate::StyledUITemplates::ColorOverrideOption {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
+#[cfg(feature = "cordl_class_StyledUITemplates+ColorOverrideOption")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::StyledUITemplates::ColorOverrideOption {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

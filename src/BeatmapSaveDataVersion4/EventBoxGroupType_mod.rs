@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroupType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventBoxGroupType {
@@ -9,7 +9,7 @@ pub enum EventBoxGroupType {
     Rotation = 2i32,
     Translation = 3i32,
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroupType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroupType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion4::EventBoxGroupType {
     type Actual = Self;

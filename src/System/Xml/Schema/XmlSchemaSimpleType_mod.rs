@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleType")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSimpleType {
@@ -7,7 +7,7 @@ pub struct XmlSchemaSimpleType {
         crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaSimpleType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::Xml::Schema::XmlSchemaSimpleType {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleType")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSimpleType {
     type Target = crate::System::Xml::Schema::XmlSchemaType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleType")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaSimpleType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -159,7 +159,7 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleType")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaSimpleType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

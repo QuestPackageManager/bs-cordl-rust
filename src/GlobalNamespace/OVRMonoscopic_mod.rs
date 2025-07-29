@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRMonoscopic")]
+#[cfg(feature = "cordl_class_OVRMonoscopic")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMonoscopic {
@@ -6,7 +6,7 @@ pub struct OVRMonoscopic {
     pub toggleButton: crate::GlobalNamespace::OVRInput_RawButton,
     pub monoscopic: bool,
 }
-#[cfg(feature = "OVRMonoscopic")]
+#[cfg(feature = "cordl_class_OVRMonoscopic")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMonoscopic {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMonoscopi
         false
     }
 }
-#[cfg(feature = "OVRMonoscopic")]
+#[cfg(feature = "cordl_class_OVRMonoscopic")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMonoscopic {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMonoscopic")]
+#[cfg(feature = "cordl_class_OVRMonoscopic")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRMonoscopic {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::OVRMonoscopic {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRMonoscopic")]
+#[cfg(feature = "cordl_class_OVRMonoscopic")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMonoscopic {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

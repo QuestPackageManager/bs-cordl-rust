@@ -1,4 +1,4 @@
-#[cfg(feature = "GhostDuplicationEffect")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GhostDuplicationEffect {
@@ -13,7 +13,7 @@ pub struct GhostDuplicationEffect {
         crate::Tweening::TimeTweeningManager,
     >,
 }
-#[cfg(feature = "GhostDuplicationEffect")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GhostDuplicationEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::GlobalNamespace::GhostDuplicationEffect {
         false
     }
 }
-#[cfg(feature = "GhostDuplicationEffect")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::GhostDuplicationEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "GhostDuplicationEffect")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GhostDuplicationEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -337,7 +337,7 @@ impl crate::GlobalNamespace::GhostDuplicationEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "GhostDuplicationEffect")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GhostDuplicationEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -347,7 +347,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect+GhostEffectParams")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GhostDuplicationEffect_GhostEffectParams {
@@ -364,7 +364,7 @@ pub struct GhostDuplicationEffect_GhostEffectParams {
     pub peakDistance: f32,
     pub lastPhase: bool,
 }
-#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Held<'a> = Self;
@@ -394,7 +394,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Type = Self;
@@ -405,7 +405,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Actual = Self;
@@ -419,7 +419,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
         self
     }
 }
-#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Type = Self;
@@ -434,7 +434,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
         }
     }
 }
-#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Actual = Self;
@@ -448,7 +448,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
         actual
     }
 }
-#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
+#[cfg(feature = "cordl_class_GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Type = Self;

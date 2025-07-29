@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubOvfInstruction_SubOvfUInt32 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::SubOvfInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt32 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +28,18 @@ for crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt32 {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32"
+)]
 impl std::ops::Deref for crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt32 {
     type Target = crate::System::Linq::Expressions::Interpreter::SubOvfInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32"
+)]
 impl std::ops::DerefMut for crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt32 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +106,9 @@ impl crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt32 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt32 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

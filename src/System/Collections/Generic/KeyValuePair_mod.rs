@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Collections+Generic+KeyValuePair")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+KeyValuePair")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyValuePair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Collections+Generic+KeyValuePair")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+KeyValuePair")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Collections::Generic::KeyValuePair {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Collections::Generic::KeyValuePair {
         false
     }
 }
-#[cfg(feature = "System+Collections+Generic+KeyValuePair")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+KeyValuePair")]
 impl std::ops::Deref for crate::System::Collections::Generic::KeyValuePair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Collections+Generic+KeyValuePair")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+KeyValuePair")]
 impl std::ops::DerefMut for crate::System::Collections::Generic::KeyValuePair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -75,7 +75,7 @@ impl crate::System::Collections::Generic::KeyValuePair {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Collections+Generic+KeyValuePair")]
+#[cfg(feature = "cordl_class_System+Collections+Generic+KeyValuePair")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Generic::KeyValuePair {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

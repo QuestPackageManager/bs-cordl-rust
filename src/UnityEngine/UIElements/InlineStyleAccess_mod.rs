@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InlineStyleAccess {
@@ -27,7 +27,7 @@ pub struct InlineStyleAccess {
     pub m_InlineBackgroundSize: crate::UnityEngine::UIElements::StyleBackgroundSize,
     pub m_InlineRule: crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule,
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::InlineStyleAccess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,14 +47,14 @@ for crate::UnityEngine::UIElements::InlineStyleAccess {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::InlineStyleAccess {
     type Target = crate::UnityEngine::UIElements::StyleValueCollection;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::InlineStyleAccess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2258,7 +2258,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::InlineStyleAccess {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2282,7 +2282,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccess {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InlineStyleAccess_InlineRule {
@@ -2294,7 +2294,7 @@ pub struct InlineStyleAccess_InlineRule {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
     type Held<'a> = Self;
@@ -2324,7 +2324,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
     type Type = Self;
@@ -2335,7 +2335,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
     type Actual = Self;
@@ -2349,7 +2349,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
     type Type = Self;
@@ -2364,7 +2364,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
     type Actual = Self;
@@ -2378,7 +2378,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::InlineStyleAccess_InlineRule {
     type Type = Self;

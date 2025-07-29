@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Alloc")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Alloc {
@@ -7,7 +7,7 @@ pub struct Alloc {
     pub handle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub shortLived: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Alloc")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR::Alloc {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR:
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Alloc")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::Alloc {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::UIR::Alloc {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Alloc")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::Alloc {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::UIR::Alloc {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Alloc")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::Alloc {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::UIElements::UIR::Alloc {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Alloc")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::Alloc {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::UIElements::UIR::Alloc {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Alloc")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::Alloc {
     type Type = Self;

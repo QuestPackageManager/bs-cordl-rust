@@ -1,10 +1,10 @@
-#[cfg(feature = "JetBrains+Annotations+TerminatesProgramAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+TerminatesProgramAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TerminatesProgramAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "JetBrains+Annotations+TerminatesProgramAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+TerminatesProgramAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::TerminatesProgramAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::TerminatesProgramAttribute {
         false
     }
 }
-#[cfg(feature = "JetBrains+Annotations+TerminatesProgramAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+TerminatesProgramAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::TerminatesProgramAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+TerminatesProgramAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+TerminatesProgramAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::TerminatesProgramAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::JetBrains::Annotations::TerminatesProgramAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+TerminatesProgramAttribute")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+TerminatesProgramAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::JetBrains::Annotations::TerminatesProgramAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

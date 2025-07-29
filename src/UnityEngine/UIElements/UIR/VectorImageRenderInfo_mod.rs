@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VectorImageRenderInfo {
@@ -13,7 +13,7 @@ pub struct VectorImageRenderInfo {
     >,
     pub gradientSettingsAlloc: crate::UnityEngine::UIElements::UIR::Alloc,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,7 +33,7 @@ for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
@@ -44,7 +44,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::VectorImageRenderI
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

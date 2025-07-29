@@ -1,10 +1,10 @@
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightColorBaseDataConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
         false
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -71,7 +71,7 @@ impl crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
+#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

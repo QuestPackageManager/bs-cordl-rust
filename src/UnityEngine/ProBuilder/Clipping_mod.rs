@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Clipping {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Clipping {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Clip
         false
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Clipping {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Clipping {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::UnityEngine::ProBuilder::Clipping {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Clipping {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -108,7 +108,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Clipp
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Clipping_OutCode {
@@ -119,7 +119,7 @@ pub enum Clipping_OutCode {
     Right = 2i32,
     Top = 8i32,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Held<'a> = Self;
@@ -149,7 +149,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Type = Self;
@@ -160,7 +160,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Actual = Self;
@@ -174,7 +174,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Type = Self;
@@ -189,7 +189,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Actual = Self;

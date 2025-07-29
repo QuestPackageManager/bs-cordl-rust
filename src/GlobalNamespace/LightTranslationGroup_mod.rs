@@ -1,4 +1,4 @@
-#[cfg(feature = "LightTranslationGroup")]
+#[cfg(feature = "cordl_class_LightTranslationGroup")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroup {
@@ -20,7 +20,7 @@ pub struct LightTranslationGroup {
     pub _yDistributionLimits: crate::UnityEngine::Vector2,
     pub _zDistributionLimits: crate::UnityEngine::Vector2,
 }
-#[cfg(feature = "LightTranslationGroup")]
+#[cfg(feature = "cordl_class_LightTranslationGroup")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LightTranslationGroup {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::LightTranslationGroup {
         false
     }
 }
-#[cfg(feature = "LightTranslationGroup")]
+#[cfg(feature = "cordl_class_LightTranslationGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroup {
     type Target = crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<
@@ -57,7 +57,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroup {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LightTranslationGroup")]
+#[cfg(feature = "cordl_class_LightTranslationGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -261,7 +261,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LightTranslationGroup")]
+#[cfg(feature = "cordl_class_LightTranslationGroup")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LightTranslationGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

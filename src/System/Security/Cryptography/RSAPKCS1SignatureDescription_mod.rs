@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDescription")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureDescription")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSAPKCS1SignatureDescription {
     __cordl_parent: crate::System::Security::Cryptography::SignatureDescription,
     pub _hashAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDescription")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureDescription")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +25,7 @@ for crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDescription")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureDescription")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
     type Target = crate::System::Security::Cryptography::SignatureDescription;
@@ -33,7 +33,7 @@ for crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDescription")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureDescription")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -87,7 +87,7 @@ impl crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDescription")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureDescription")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::RSAPKCS1SignatureDescription {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

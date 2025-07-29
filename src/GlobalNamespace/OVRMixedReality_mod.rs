@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRMixedReality")]
+#[cfg(feature = "cordl_class_OVRMixedReality")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMixedReality {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRMixedReality")]
+#[cfg(feature = "cordl_class_OVRMixedReality")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMixedReality {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMixedReal
         false
     }
 }
-#[cfg(feature = "OVRMixedReality")]
+#[cfg(feature = "cordl_class_OVRMixedReality")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMixedReality {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRMixedReality")]
+#[cfg(feature = "cordl_class_OVRMixedReality")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRMixedReality {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::OVRMixedReality {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRMixedReality")]
+#[cfg(feature = "cordl_class_OVRMixedReality")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMixedReality {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

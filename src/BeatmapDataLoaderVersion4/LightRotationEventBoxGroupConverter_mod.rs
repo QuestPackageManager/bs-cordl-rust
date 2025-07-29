@@ -1,10 +1,14 @@
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationEventBoxGroupConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter,
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
         false
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter"
+)]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
     type Target = crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter;
@@ -32,7 +38,9 @@ for crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter"
+)]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -132,7 +140,9 @@ impl crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter")]
+#[cfg(
+    feature = "cordl_class_BeatmapDataLoaderVersion4+LightRotationEventBoxGroupConverter"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

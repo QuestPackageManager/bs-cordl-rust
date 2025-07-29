@@ -1,10 +1,10 @@
-#[cfg(feature = "Zenject+MonoInstaller")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoInstaller {
     __cordl_parent: crate::Zenject::MonoInstallerBase,
 }
-#[cfg(feature = "Zenject+MonoInstaller")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::MonoInstaller {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::MonoInstaller {
         false
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller")]
 impl std::ops::Deref for crate::Zenject::MonoInstaller {
     type Target = crate::Zenject::MonoInstallerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller")]
 impl std::ops::DerefMut for crate::Zenject::MonoInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -92,7 +92,7 @@ impl crate::Zenject::MonoInstaller {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Zenject+MonoInstaller")]
+#[cfg(feature = "cordl_class_Zenject+MonoInstaller")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::MonoInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

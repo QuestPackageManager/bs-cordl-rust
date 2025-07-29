@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EndoUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -197,7 +197,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -207,7 +207,9 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EndoUtilities_MapPointCallback {
@@ -217,7 +219,9 @@ pub struct EndoUtilities_MapPointCallback {
     >,
     pub m_point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -237,7 +241,9 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback"
+)]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -245,7 +251,9 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback"
+)]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -377,7 +385,9 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
+#[cfg(
+    feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

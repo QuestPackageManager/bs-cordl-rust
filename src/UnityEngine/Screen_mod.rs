@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Screen")]
+#[cfg(feature = "cordl_class_UnityEngine+Screen")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Screen {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Screen")]
+#[cfg(feature = "cordl_class_UnityEngine+Screen")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Screen {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Screen {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Screen")]
+#[cfg(feature = "cordl_class_UnityEngine+Screen")]
 impl std::ops::Deref for crate::UnityEngine::Screen {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Screen")]
+#[cfg(feature = "cordl_class_UnityEngine+Screen")]
 impl std::ops::DerefMut for crate::UnityEngine::Screen {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -399,7 +399,7 @@ impl crate::UnityEngine::Screen {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Screen")]
+#[cfg(feature = "cordl_class_UnityEngine+Screen")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Screen {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

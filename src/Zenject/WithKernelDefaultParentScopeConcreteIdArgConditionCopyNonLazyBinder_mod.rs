@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
+    feature = "cordl_class_Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
     __cordl_parent: crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
 }
 #[cfg(
-    feature = "Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
+    feature = "cordl_class_Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
@@ -29,7 +29,7 @@ for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLaz
     }
 }
 #[cfg(
-    feature = "Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
+    feature = "cordl_class_Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
 )]
 impl std::ops::Deref
 for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
@@ -39,7 +39,7 @@ for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLaz
     }
 }
 #[cfg(
-    feature = "Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
+    feature = "cordl_class_Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
 )]
 impl std::ops::DerefMut
 for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
@@ -165,7 +165,7 @@ impl crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLa
     }
 }
 #[cfg(
-    feature = "Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
+    feature = "cordl_class_Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {

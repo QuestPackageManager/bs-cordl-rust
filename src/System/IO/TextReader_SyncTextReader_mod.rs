@@ -1,11 +1,11 @@
-#[cfg(feature = "System+IO+TextReader+SyncTextReader")]
+#[cfg(feature = "cordl_class_System+IO+TextReader+SyncTextReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextReader_SyncTextReader {
     __cordl_parent: crate::System::IO::TextReader,
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
 }
-#[cfg(feature = "System+IO+TextReader+SyncTextReader")]
+#[cfg(feature = "cordl_class_System+IO+TextReader+SyncTextReader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TextReader_SyncTextReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::GlobalNamespace::TextReader_SyncTextReader {
         false
     }
 }
-#[cfg(feature = "System+IO+TextReader+SyncTextReader")]
+#[cfg(feature = "cordl_class_System+IO+TextReader+SyncTextReader")]
 impl std::ops::Deref for crate::GlobalNamespace::TextReader_SyncTextReader {
     type Target = crate::System::IO::TextReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+TextReader+SyncTextReader")]
+#[cfg(feature = "cordl_class_System+IO+TextReader+SyncTextReader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextReader_SyncTextReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -283,7 +283,7 @@ impl crate::GlobalNamespace::TextReader_SyncTextReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+TextReader+SyncTextReader")]
+#[cfg(feature = "cordl_class_System+IO+TextReader+SyncTextReader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::TextReader_SyncTextReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

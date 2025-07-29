@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -9,7 +9,7 @@ pub enum InternalSerializerTypeE {
     Soap = 1i32,
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE {
@@ -41,7 +41,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerialize
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE {
@@ -54,7 +54,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerialize
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE {
@@ -70,7 +70,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerialize
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE {
@@ -87,7 +87,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerialize
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE {

@@ -1,4 +1,4 @@
-#[cfg(feature = "MockPlayerAvatarType")]
+#[cfg(feature = "cordl_class_MockPlayerAvatarType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MockPlayerAvatarType {
@@ -6,7 +6,7 @@ pub enum MockPlayerAvatarType {
     Beat = 0i32,
     Meta = 1i32,
 }
-#[cfg(feature = "MockPlayerAvatarType")]
+#[cfg(feature = "cordl_class_MockPlayerAvatarType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MockPlayerAvatarType {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::MockPlayerAvatarType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MockPlayerAvatarType")]
+#[cfg(feature = "cordl_class_MockPlayerAvatarType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MockPlayerAvatarType {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::MockPlayerAvatarType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MockPlayerAvatarType")]
+#[cfg(feature = "cordl_class_MockPlayerAvatarType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MockPlayerAvatarType {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::MockPlayerAvatarType {
         self
     }
 }
-#[cfg(feature = "MockPlayerAvatarType")]
+#[cfg(feature = "cordl_class_MockPlayerAvatarType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MockPlayerAvatarType {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::MockPlayerAvatarType {
         }
     }
 }
-#[cfg(feature = "MockPlayerAvatarType")]
+#[cfg(feature = "cordl_class_MockPlayerAvatarType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MockPlayerAvatarType {
     type Actual = Self;

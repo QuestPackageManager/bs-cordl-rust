@@ -1,10 +1,10 @@
-#[cfg(feature = "IPlatformAchievementsHandler")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPlatformAchievementsHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IPlatformAchievementsHandler")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IPlatformAchievementsHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler {
         false
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::IPlatformAchievementsHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IPlatformAchievementsHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IPlatformAchievementsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -162,13 +162,17 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -188,7 +192,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         false
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler {
     type Target = crate::System::MulticastDelegate;
@@ -196,7 +202,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -366,7 +374,9 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -376,7 +386,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsResult"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
@@ -384,7 +396,9 @@ pub enum IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     Failed = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Held<'a> = Self;
@@ -414,7 +428,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Type = Self;
@@ -425,7 +441,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Actual = Self;
@@ -439,7 +457,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         self
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Type = Self;
@@ -454,7 +474,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         }
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsResult"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Actual = Self;
@@ -468,13 +490,17 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         actual
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementCompletionHandler"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPlatformAchievementsHandler_UnlockAchievementCompletionHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementCompletionHandler"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -494,7 +520,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementComple
         false
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementCompletionHandler"
+)]
 impl std::ops::Deref
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler {
     type Target = crate::System::MulticastDelegate;
@@ -502,7 +530,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementComple
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementCompletionHandler"
+)]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -642,7 +672,9 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompl
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementCompletionHandler")]
+#[cfg(
+    feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementCompletionHandler"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -652,7 +684,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementComple
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IPlatformAchievementsHandler_UnlockAchievementResult {
@@ -660,7 +692,7 @@ pub enum IPlatformAchievementsHandler_UnlockAchievementResult {
     Failed = 1i32,
     OK = 0i32,
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Held<'a> = Self;
@@ -690,7 +722,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Type = Self;
@@ -701,7 +733,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Actual = Self;
@@ -715,7 +747,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
         self
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Type = Self;
@@ -730,7 +762,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
         }
     }
 }
-#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
+#[cfg(feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Actual = Self;

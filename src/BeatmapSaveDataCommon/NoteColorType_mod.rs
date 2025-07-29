@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapSaveDataCommon+NoteColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteColorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteColorType {
@@ -6,7 +6,7 @@ pub enum NoteColorType {
     ColorA = 0i32,
     ColorB = 1i32,
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteColorType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataCommon::NoteColorType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataCommon::NoteCo
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteColorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::NoteColorType {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::BeatmapSaveDataCommon::NoteColorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteColorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::NoteColorType {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::BeatmapSaveDataCommon::NoteColorType {
         self
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteColorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::NoteColorType {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::BeatmapSaveDataCommon::NoteColorType {
         }
     }
 }
-#[cfg(feature = "BeatmapSaveDataCommon+NoteColorType")]
+#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+NoteColorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::NoteColorType {
     type Actual = Self;

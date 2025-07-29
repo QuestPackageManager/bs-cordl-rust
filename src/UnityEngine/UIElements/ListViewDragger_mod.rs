@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListViewDragger {
@@ -19,7 +19,7 @@ pub struct ListViewDragger {
         crate::UnityEngine::UIElements::ICollectionDragAndDropController,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ListViewDragger {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -39,14 +39,14 @@ for crate::UnityEngine::UIElements::ListViewDragger {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListViewDragger {
     type Target = crate::UnityEngine::UIElements::DragEventsProcessor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ListViewDragger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -772,7 +772,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ListViewDragger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -782,7 +782,7 @@ for crate::UnityEngine::UIElements::ListViewDragger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger+DragPosition")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ListViewDragger_DragPosition {
@@ -794,7 +794,7 @@ pub struct ListViewDragger_DragPosition {
     >,
     pub dropPosition: crate::UnityEngine::UIElements::DragAndDropPosition,
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Held<'a> = Self;
@@ -824,7 +824,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Type = Self;
@@ -835,7 +835,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Actual = Self;
@@ -849,7 +849,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Type = Self;
@@ -864,7 +864,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Actual = Self;
@@ -878,7 +878,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Type = Self;

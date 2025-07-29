@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerMenuClient")]
+#[cfg(feature = "cordl_class_MultiplayerMenuClient")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerMenuClient {
@@ -10,7 +10,7 @@ pub struct MultiplayerMenuClient {
         crate::GlobalNamespace::INodePoseSyncStateManager,
     >,
 }
-#[cfg(feature = "MultiplayerMenuClient")]
+#[cfg(feature = "cordl_class_MultiplayerMenuClient")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerMenuClient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::MultiplayerMenuClient {
         false
     }
 }
-#[cfg(feature = "MultiplayerMenuClient")]
+#[cfg(feature = "cordl_class_MultiplayerMenuClient")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerMenuClient {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerMenuClient")]
+#[cfg(feature = "cordl_class_MultiplayerMenuClient")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerMenuClient {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::MultiplayerMenuClient {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerMenuClient")]
+#[cfg(feature = "cordl_class_MultiplayerMenuClient")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerMenuClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

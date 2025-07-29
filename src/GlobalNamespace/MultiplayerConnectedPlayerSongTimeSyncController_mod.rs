@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerSongTimeSyncController {
@@ -23,7 +23,7 @@ pub struct MultiplayerConnectedPlayerSongTimeSyncController {
     pub _fixingAudioSyncError: bool,
     pub _isReady: bool,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -361,7 +361,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -385,7 +385,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerSongTimeSyncController_InitData {
@@ -394,7 +394,7 @@ pub struct MultiplayerConnectedPlayerSongTimeSyncController_InitData {
     pub songTimeOffset: f32,
     pub timeScale: f32,
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -414,7 +414,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_Ini
         false
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -422,7 +422,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_Ini
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -472,7 +472,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_In
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
+#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

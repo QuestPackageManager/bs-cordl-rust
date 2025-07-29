@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderInfoStorageRGBA32 {
@@ -6,7 +6,7 @@ pub struct ShaderInfoStorageRGBA32 {
         crate::UnityEngine::Color32,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
     type Target = crate::UnityEngine::UIElements::UIR::ShaderInfoStorage_1<
         crate::UnityEngine::Color32,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageR
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -82,7 +82,7 @@ impl crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+ChainBuilderStats")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ChainBuilderStats")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ChainBuilderStats {
@@ -27,7 +27,7 @@ pub struct ChainBuilderStats {
     pub groupTransformElementsChanged: u32,
     pub immedateRenderersActive: u32,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ChainBuilderStats")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ChainBuilderStats")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
     type Held<'a> = Self;
@@ -57,7 +57,7 @@ for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ChainBuilderStats")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ChainBuilderStats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
     type Type = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ChainBuilderStats")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ChainBuilderStats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
     type Actual = Self;
@@ -82,7 +82,7 @@ for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ChainBuilderStats")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ChainBuilderStats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
     type Type = Self;
@@ -97,7 +97,7 @@ for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ChainBuilderStats")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ChainBuilderStats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
     type Actual = Self;
@@ -111,7 +111,7 @@ for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIR+ChainBuilderStats")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ChainBuilderStats")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::UIR::ChainBuilderStats {
     type Type = Self;

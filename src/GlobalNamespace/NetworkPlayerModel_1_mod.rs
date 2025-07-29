@@ -1,4 +1,4 @@
-#[cfg(feature = "NetworkPlayerModel_1")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1<T: quest_hook::libil2cpp::Type> {
@@ -55,7 +55,7 @@ pub struct NetworkPlayerModel_1<T: quest_hook::libil2cpp::Type> {
     pub _filterChanged: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "NetworkPlayerModel_1")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -88,7 +88,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
         false
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
     type Target = crate::GlobalNamespace::BaseNetworkPlayerModel;
@@ -96,7 +96,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1655,7 +1655,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1679,7 +1679,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1_JoinMatchmakingPartyConfig<
@@ -1690,7 +1690,7 @@ pub struct NetworkPlayerModel_1_JoinMatchmakingPartyConfig<
     pub code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1726,7 +1726,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
         false
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
     type Target = crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig;
@@ -1734,7 +1734,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1780,7 +1780,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1822,7 +1822,7 @@ impl<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkPlayer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1_NetworkPlayer<T: quest_hook::libil2cpp::Type> {
@@ -1835,7 +1835,7 @@ pub struct NetworkPlayerModel_1_NetworkPlayer<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkPlayer")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1871,7 +1871,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
         false
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkPlayer")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1879,7 +1879,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkPlayer")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2613,7 +2613,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkPlayer")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2637,7 +2637,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkServer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkServer")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1_NetworkServer<T: quest_hook::libil2cpp::Type> {
@@ -2652,7 +2652,7 @@ pub struct NetworkPlayerModel_1_NetworkServer<T: quest_hook::libil2cpp::Type> {
     pub _lastUpdateTime: f32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkServer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkServer")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -2688,7 +2688,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
         false
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkServer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkServer")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2696,7 +2696,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkServer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkServer")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3524,7 +3524,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+NetworkServer")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkServer")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3548,14 +3548,14 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+StartClientPartyConfig")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1_StartClientPartyConfig<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "NetworkPlayerModel_1+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+StartClientPartyConfig")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3591,7 +3591,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
         false
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+StartClientPartyConfig")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
     type Target = crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig;
@@ -3599,7 +3599,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+StartClientPartyConfig")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3645,7 +3645,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "NetworkPlayerModel_1+StartClientPartyConfig")]
+#[cfg(feature = "cordl_class_NetworkPlayerModel_1+StartClientPartyConfig")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

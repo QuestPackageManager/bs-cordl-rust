@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UI+InputField")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField {
@@ -66,7 +66,7 @@ pub struct InputField {
     pub m_IsCompositionActive: bool,
     pub m_ProcessingEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
 }
-#[cfg(feature = "UnityEngine+UI+InputField")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::InputField {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -85,14 +85,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::InputField {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4194,7 +4194,7 @@ impl crate::UnityEngine::UI::InputField {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::InputField {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -4331,7 +4331,7 @@ for crate::UnityEngine::UI::InputField {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+CharacterValidation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_CharacterValidation {
@@ -4343,7 +4343,7 @@ pub enum InputField_CharacterValidation {
     Name = 4i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Held<'a> = Self;
@@ -4373,7 +4373,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Type = Self;
@@ -4384,7 +4384,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Actual = Self;
@@ -4398,7 +4398,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Type = Self;
@@ -4413,7 +4413,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Actual = Self;
@@ -4427,7 +4427,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+ContentType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_ContentType {
@@ -4443,7 +4443,7 @@ pub enum InputField_ContentType {
     Pin = 8i32,
     Standard = 0i32,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::InputField_ContentType {
     type Held<'a> = Self;
@@ -4473,7 +4473,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_ContentType {
     type Type = Self;
@@ -4484,7 +4484,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_ContentType {
     type Actual = Self;
@@ -4498,7 +4498,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_ContentType {
     type Type = Self;
@@ -4513,7 +4513,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_ContentType {
     type Actual = Self;
@@ -4527,7 +4527,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EditState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_EditState {
@@ -4535,7 +4535,7 @@ pub enum InputField_EditState {
     Continue = 0i32,
     Finish = 1i32,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::InputField_EditState {
     type Held<'a> = Self;
@@ -4565,7 +4565,7 @@ for crate::UnityEngine::UI::InputField_EditState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_EditState {
     type Type = Self;
@@ -4576,7 +4576,7 @@ for crate::UnityEngine::UI::InputField_EditState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_EditState {
     type Actual = Self;
@@ -4590,7 +4590,7 @@ for crate::UnityEngine::UI::InputField_EditState {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_EditState {
     type Type = Self;
@@ -4605,7 +4605,7 @@ for crate::UnityEngine::UI::InputField_EditState {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_EditState {
     type Actual = Self;
@@ -4619,7 +4619,7 @@ for crate::UnityEngine::UI::InputField_EditState {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EndEditEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_EndEditEvent {
@@ -4627,7 +4627,7 @@ pub struct InputField_EndEditEvent {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EndEditEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::InputField_EndEditEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4647,7 +4647,7 @@ for crate::UnityEngine::UI::InputField_EndEditEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EndEditEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4656,7 +4656,7 @@ impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EndEditEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_EndEditEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4693,7 +4693,7 @@ impl crate::UnityEngine::UI::InputField_EndEditEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EndEditEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::InputField_EndEditEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4703,7 +4703,7 @@ for crate::UnityEngine::UI::InputField_EndEditEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+InputType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_InputType {
@@ -4712,7 +4712,7 @@ pub enum InputField_InputType {
     Password = 2i32,
     Standard = 0i32,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::InputField_InputType {
     type Held<'a> = Self;
@@ -4742,7 +4742,7 @@ for crate::UnityEngine::UI::InputField_InputType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_InputType {
     type Type = Self;
@@ -4753,7 +4753,7 @@ for crate::UnityEngine::UI::InputField_InputType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_InputType {
     type Actual = Self;
@@ -4767,7 +4767,7 @@ for crate::UnityEngine::UI::InputField_InputType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_InputType {
     type Type = Self;
@@ -4782,7 +4782,7 @@ for crate::UnityEngine::UI::InputField_InputType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_InputType {
     type Actual = Self;
@@ -4796,7 +4796,7 @@ for crate::UnityEngine::UI::InputField_InputType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+LineType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_LineType {
@@ -4805,7 +4805,7 @@ pub enum InputField_LineType {
     MultiLineSubmit = 1i32,
     SingleLine = 0i32,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::InputField_LineType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -4834,7 +4834,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::InputField_L
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_LineType {
     type Type = Self;
@@ -4845,7 +4845,7 @@ for crate::UnityEngine::UI::InputField_LineType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_LineType {
     type Actual = Self;
@@ -4859,7 +4859,7 @@ for crate::UnityEngine::UI::InputField_LineType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_LineType {
     type Type = Self;
@@ -4874,7 +4874,7 @@ for crate::UnityEngine::UI::InputField_LineType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_LineType {
     type Actual = Self;
@@ -4888,7 +4888,7 @@ for crate::UnityEngine::UI::InputField_LineType {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnChangeEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_OnChangeEvent {
@@ -4896,7 +4896,7 @@ pub struct InputField_OnChangeEvent {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnChangeEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::InputField_OnChangeEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4916,7 +4916,7 @@ for crate::UnityEngine::UI::InputField_OnChangeEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnChangeEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4925,7 +4925,7 @@ impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnChangeEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnChangeEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_OnChangeEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4962,7 +4962,7 @@ impl crate::UnityEngine::UI::InputField_OnChangeEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnChangeEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::InputField_OnChangeEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -4972,13 +4972,13 @@ for crate::UnityEngine::UI::InputField_OnChangeEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnValidateInput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_OnValidateInput {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnValidateInput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::InputField_OnValidateInput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -4998,14 +4998,14 @@ for crate::UnityEngine::UI::InputField_OnValidateInput {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnValidateInput")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnValidateInput {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnValidateInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_OnValidateInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5159,7 +5159,7 @@ impl crate::UnityEngine::UI::InputField_OnValidateInput {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnValidateInput")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::InputField_OnValidateInput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5169,7 +5169,7 @@ for crate::UnityEngine::UI::InputField_OnValidateInput {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+SubmitEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_SubmitEvent {
@@ -5177,7 +5177,7 @@ pub struct InputField_SubmitEvent {
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
-#[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+SubmitEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UI::InputField_SubmitEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5197,7 +5197,7 @@ for crate::UnityEngine::UI::InputField_SubmitEvent {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+SubmitEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_SubmitEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -5206,7 +5206,7 @@ impl std::ops::Deref for crate::UnityEngine::UI::InputField_SubmitEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+SubmitEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_SubmitEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5243,7 +5243,7 @@ impl crate::UnityEngine::UI::InputField_SubmitEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+SubmitEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::InputField_SubmitEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionChange")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputActionChange {
@@ -13,7 +13,7 @@ pub enum InputActionChange {
     BoundControlsAboutToChange = 7i32,
     BoundControlsChanged = 8i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Held<'a> = Self;
@@ -43,7 +43,7 @@ for crate::UnityEngine::InputSystem::InputActionChange {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::UnityEngine::InputSystem::InputActionChange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::UnityEngine::InputSystem::InputActionChange {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::UnityEngine::InputSystem::InputActionChange {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Actual = Self;

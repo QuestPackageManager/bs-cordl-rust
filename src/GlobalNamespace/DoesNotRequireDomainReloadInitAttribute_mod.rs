@@ -1,10 +1,10 @@
-#[cfg(feature = "DoesNotRequireDomainReloadInitAttribute")]
+#[cfg(feature = "cordl_class_DoesNotRequireDomainReloadInitAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoesNotRequireDomainReloadInitAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }
-#[cfg(feature = "DoesNotRequireDomainReloadInitAttribute")]
+#[cfg(feature = "cordl_class_DoesNotRequireDomainReloadInitAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
         false
     }
 }
-#[cfg(feature = "DoesNotRequireDomainReloadInitAttribute")]
+#[cfg(feature = "cordl_class_DoesNotRequireDomainReloadInitAttribute")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DoesNotRequireDomainReloadInitAttribute")]
+#[cfg(feature = "cordl_class_DoesNotRequireDomainReloadInitAttribute")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DoesNotRequireDomainReloadInitAttribute")]
+#[cfg(feature = "cordl_class_DoesNotRequireDomainReloadInitAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

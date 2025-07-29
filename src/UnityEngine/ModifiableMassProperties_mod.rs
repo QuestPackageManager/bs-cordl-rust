@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ModifiableMassProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableMassProperties")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ModifiableMassProperties {
@@ -7,7 +7,7 @@ pub struct ModifiableMassProperties {
     pub otherInverseMassScale: f32,
     pub otherInverseInertiaScale: f32,
 }
-#[cfg(feature = "UnityEngine+ModifiableMassProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableMassProperties")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ModifiableMassProperties {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::ModifiableMassProperties {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableMassProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableMassProperties")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ModifiableMassProperties {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::ModifiableMassProperties {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableMassProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableMassProperties")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ModifiableMassProperties {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::ModifiableMassProperties {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableMassProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableMassProperties")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ModifiableMassProperties {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::ModifiableMassProperties {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableMassProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableMassProperties")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ModifiableMassProperties {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::ModifiableMassProperties {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ModifiableMassProperties")]
+#[cfg(feature = "cordl_class_UnityEngine+ModifiableMassProperties")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ModifiableMassProperties {
     type Type = Self;

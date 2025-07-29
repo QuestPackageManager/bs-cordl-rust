@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatAvatarVisualController {
@@ -55,7 +55,7 @@ pub struct BeatAvatarVisualController {
         crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
     >,
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -75,14 +75,14 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
         false
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -304,7 +304,7 @@ impl crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
+#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -315,7 +315,7 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -323,7 +323,7 @@ pub struct BeatAvatarVisualController_HighlighterDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate {
@@ -345,7 +345,7 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDeleg
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate {
@@ -355,7 +355,7 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDeleg
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate {
@@ -506,7 +506,7 @@ impl crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDele
     }
 }
 #[cfg(
-    feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
+    feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate {

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystemDescriptor_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegratedSubsystemDescriptor_1<TSubsystem: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::IntegratedSubsystemDescriptor,
     __cordl_phantom_TSubsystem: std::marker::PhantomData<TSubsystem>,
 }
-#[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystemDescriptor_1")]
 unsafe impl<TSubsystem: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystemDescriptor_1")]
 impl<TSubsystem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
     type Target = crate::UnityEngine::IntegratedSubsystemDescriptor;
@@ -49,7 +49,7 @@ for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystemDescriptor_1")]
 impl<TSubsystem: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -149,7 +149,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor_1")]
+#[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystemDescriptor_1")]
 impl<TSubsystem: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

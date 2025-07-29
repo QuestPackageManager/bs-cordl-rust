@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JPakeParticipant {
@@ -24,7 +24,7 @@ pub struct JPakeParticipant {
     pub b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub state: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,7 +44,7 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -52,7 +52,7 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -473,7 +473,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakeParticipant")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeParticipant {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

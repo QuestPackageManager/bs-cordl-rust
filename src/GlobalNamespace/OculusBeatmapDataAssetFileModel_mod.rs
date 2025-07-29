@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusBeatmapDataAssetFileModel")]
+#[cfg(feature = "cordl_class_OculusBeatmapDataAssetFileModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusBeatmapDataAssetFileModel {
@@ -34,7 +34,7 @@ pub struct OculusBeatmapDataAssetFileModel {
         crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
     >,
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel")]
+#[cfg(feature = "cordl_class_OculusBeatmapDataAssetFileModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -54,14 +54,14 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         false
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel")]
+#[cfg(feature = "cordl_class_OculusBeatmapDataAssetFileModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel")]
+#[cfg(feature = "cordl_class_OculusBeatmapDataAssetFileModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -524,7 +524,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel")]
+#[cfg(feature = "cordl_class_OculusBeatmapDataAssetFileModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -562,7 +562,9 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
+#[cfg(
+    feature = "cordl_class_OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
@@ -574,7 +576,9 @@ pub struct OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
         >,
     >,
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
+#[cfg(
+    feature = "cordl_class_OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     type Held<'a> = Self;
@@ -604,7 +608,9 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
+#[cfg(
+    feature = "cordl_class_OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     type Type = Self;
@@ -615,7 +621,9 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
+#[cfg(
+    feature = "cordl_class_OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     type Actual = Self;
@@ -629,7 +637,9 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadi
         self
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
+#[cfg(
+    feature = "cordl_class_OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     type Type = Self;
@@ -644,7 +654,9 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadi
         }
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
+#[cfg(
+    feature = "cordl_class_OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     type Actual = Self;
@@ -658,7 +670,9 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadi
         actual
     }
 }
-#[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
+#[cfg(
+    feature = "cordl_class_OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     type Type = Self;

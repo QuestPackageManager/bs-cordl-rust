@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct IncrementInstruction_IncrementDouble {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::IncrementInstruction,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IncrementInstruction_IncrementDouble {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::IncrementInstruction_IncrementDouble {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementDouble {
     type Target = crate::System::Linq::Expressions::Interpreter::IncrementInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementD
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IncrementInstruction_IncrementDouble {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::IncrementInstruction_IncrementDouble {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IncrementInstruction_IncrementDouble {

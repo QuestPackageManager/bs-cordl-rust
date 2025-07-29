@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+WordInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct WordInfo {
@@ -6,7 +6,7 @@ pub struct WordInfo {
     pub lastCharacterIndex: i32,
     pub characterCount: i32,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+WordInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::WordInfo {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::UnityEngine::TextCore::Text::WordInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+WordInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::WordInfo {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::UnityEngine::TextCore::Text::WordInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+WordInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::WordInfo {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::UnityEngine::TextCore::Text::WordInfo {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+WordInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::WordInfo {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::UnityEngine::TextCore::Text::WordInfo {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+WordInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::WordInfo {
     type Actual = Self;
@@ -90,7 +90,7 @@ for crate::UnityEngine::TextCore::Text::WordInfo {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+WordInfo")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+WordInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::WordInfo {
     type Type = Self;

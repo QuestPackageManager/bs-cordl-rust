@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemGradientMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemGradientMode {
@@ -9,7 +9,7 @@ pub enum ParticleSystemGradientMode {
     TwoColors = 2i32,
     TwoGradients = 3i32,
 }
-#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::ParticleSystemGradientMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::ParticleSystemGradientMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::ParticleSystemGradientMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::ParticleSystemGradientMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECCurve {
@@ -24,7 +24,7 @@ pub struct ECCurve {
         crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::EC::ECCurve {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::EC::
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::ECCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1397,7 +1397,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::ECCurve {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1406,7 +1406,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+Config")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECCurve_Config {
@@ -1420,7 +1420,7 @@ pub struct ECCurve_Config {
         crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
     >,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+Config")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1440,14 +1440,14 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+Config")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+Config")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1644,7 +1644,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+Config")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1654,7 +1654,7 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECCurve_DefaultLookupTable {
@@ -1663,7 +1663,7 @@ pub struct ECCurve_DefaultLookupTable {
     pub m_table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_size: i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1683,14 +1683,14 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1862,7 +1862,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

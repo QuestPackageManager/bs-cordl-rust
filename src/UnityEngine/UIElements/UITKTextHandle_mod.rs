@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+UITKTextHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextHandle")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UITKTextHandle {
@@ -13,7 +13,7 @@ pub struct UITKTextHandle {
     pub hasLinkTag: bool,
     pub hasATag: bool,
 }
-#[cfg(feature = "UnityEngine+UIElements+UITKTextHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextHandle")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UITKTextHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -33,14 +33,14 @@ for crate::UnityEngine::UIElements::UITKTextHandle {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UITKTextHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextHandle")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UITKTextHandle {
     type Target = crate::UnityEngine::TextCore::Text::TextHandle;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UITKTextHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextHandle")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UITKTextHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -666,7 +666,7 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UITKTextHandle")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextHandle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UITKTextHandle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

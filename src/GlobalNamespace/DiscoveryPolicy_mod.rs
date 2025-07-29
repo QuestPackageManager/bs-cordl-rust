@@ -1,4 +1,4 @@
-#[cfg(feature = "DiscoveryPolicy")]
+#[cfg(feature = "cordl_class_DiscoveryPolicy")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DiscoveryPolicy {
@@ -7,7 +7,7 @@ pub enum DiscoveryPolicy {
     Public = 2u8,
     WithCode = 1u8,
 }
-#[cfg(feature = "DiscoveryPolicy")]
+#[cfg(feature = "cordl_class_DiscoveryPolicy")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DiscoveryPolicy {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DiscoveryPol
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "DiscoveryPolicy")]
+#[cfg(feature = "cordl_class_DiscoveryPolicy")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::DiscoveryPolicy {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Discover
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "DiscoveryPolicy")]
+#[cfg(feature = "cordl_class_DiscoveryPolicy")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::DiscoveryPolicy {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::DiscoveryPolicy {
         self
     }
 }
-#[cfg(feature = "DiscoveryPolicy")]
+#[cfg(feature = "cordl_class_DiscoveryPolicy")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::DiscoveryPolicy {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Discover
         }
     }
 }
-#[cfg(feature = "DiscoveryPolicy")]
+#[cfg(feature = "cordl_class_DiscoveryPolicy")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::DiscoveryPolicy {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

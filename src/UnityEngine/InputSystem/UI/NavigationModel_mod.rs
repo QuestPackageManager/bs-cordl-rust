@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NavigationModel {
@@ -10,7 +10,7 @@ pub struct NavigationModel {
         crate::UnityEngine::EventSystems::AxisEventData,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::UI::NavigationModel {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::NavigationModel {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::NavigationModel {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::NavigationModel {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::NavigationModel {
     type Actual = Self;
@@ -94,7 +94,7 @@ for crate::UnityEngine::InputSystem::UI::NavigationModel {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+NavigationModel")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::UI::NavigationModel {
     type Type = Self;

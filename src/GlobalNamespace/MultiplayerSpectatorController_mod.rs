@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerSpectatorController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatorController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerSpectatorController {
@@ -25,7 +25,7 @@ pub struct MultiplayerSpectatorController {
         crate::GlobalNamespace::IMultiplayerSpectatingSpot,
     >,
 }
-#[cfg(feature = "MultiplayerSpectatorController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatorController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerSpectatorController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::MultiplayerSpectatorController {
         false
     }
 }
-#[cfg(feature = "MultiplayerSpectatorController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatorController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerSpectatorController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerSpectatorController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatorController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerSpectatorController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -446,7 +446,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerSpectatorController")]
+#[cfg(feature = "cordl_class_MultiplayerSpectatorController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerSpectatorController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+Compositor_OverlaySettings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_OverlaySettings")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Compositor_OverlaySettings {
@@ -17,7 +17,7 @@ pub struct Compositor_OverlaySettings {
     pub gridScale: f32,
     pub transform: crate::OVR::OpenVR::HmdMatrix44_t,
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_OverlaySettings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_OverlaySettings")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::Compositor_OverlaySettings {
     type Held<'a> = Self;
@@ -47,7 +47,7 @@ for crate::OVR::OpenVR::Compositor_OverlaySettings {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_OverlaySettings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_OverlaySettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::Compositor_OverlaySettings {
     type Type = Self;
@@ -58,7 +58,7 @@ for crate::OVR::OpenVR::Compositor_OverlaySettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_OverlaySettings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_OverlaySettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::Compositor_OverlaySettings {
     type Actual = Self;
@@ -72,7 +72,7 @@ for crate::OVR::OpenVR::Compositor_OverlaySettings {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_OverlaySettings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_OverlaySettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::Compositor_OverlaySettings {
     type Type = Self;
@@ -87,7 +87,7 @@ for crate::OVR::OpenVR::Compositor_OverlaySettings {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_OverlaySettings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_OverlaySettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::Compositor_OverlaySettings {
     type Actual = Self;
@@ -101,7 +101,7 @@ for crate::OVR::OpenVR::Compositor_OverlaySettings {
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+Compositor_OverlaySettings")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+Compositor_OverlaySettings")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::Compositor_OverlaySettings {
     type Type = Self;

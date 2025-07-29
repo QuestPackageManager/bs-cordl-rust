@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelCollectionSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelCollectionSO {
@@ -9,7 +9,7 @@ pub struct BeatmapLevelCollectionSO {
         >,
     >,
 }
-#[cfg(feature = "BeatmapLevelCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelCollectionSO")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelCollectionSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::GlobalNamespace::BeatmapLevelCollectionSO {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelCollectionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelCollectionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelCollectionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelCollectionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::BeatmapLevelCollectionSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelCollectionSO")]
+#[cfg(feature = "cordl_class_BeatmapLevelCollectionSO")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelCollectionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

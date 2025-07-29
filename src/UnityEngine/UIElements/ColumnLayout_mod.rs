@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+ColumnLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnLayout")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColumnLayout {
@@ -59,7 +59,7 @@ pub struct ColumnLayout {
     >,
     pub layoutRequested: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnLayout")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::ColumnLayout {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -79,14 +79,14 @@ for crate::UnityEngine::UIElements::ColumnLayout {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnLayout")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ColumnLayout {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnLayout")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ColumnLayout {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1496,7 +1496,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+ColumnLayout")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+ColumnLayout")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ColumnLayout {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

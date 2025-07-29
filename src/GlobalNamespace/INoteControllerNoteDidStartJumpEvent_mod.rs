@@ -1,10 +1,10 @@
-#[cfg(feature = "INoteControllerNoteDidStartJumpEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartJumpEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct INoteControllerNoteDidStartJumpEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "INoteControllerNoteDidStartJumpEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartJumpEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent {
         false
     }
 }
-#[cfg(feature = "INoteControllerNoteDidStartJumpEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartJumpEvent")]
 impl std::ops::Deref for crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "INoteControllerNoteDidStartJumpEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartJumpEvent")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "INoteControllerNoteDidStartJumpEvent")]
+#[cfg(feature = "cordl_class_INoteControllerNoteDidStartJumpEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Linq+Expressions+OpAssignMethodConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+OpAssignMethodConversionBinaryExpression"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpAssignMethodConversionBinaryExpression {
@@ -7,7 +9,9 @@ pub struct OpAssignMethodConversionBinaryExpression {
         crate::System::Linq::Expressions::LambdaExpression,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+OpAssignMethodConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+OpAssignMethodConversionBinaryExpression"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+OpAssignMethodConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+OpAssignMethodConversionBinaryExpression"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
     type Target = crate::System::Linq::Expressions::MethodBinaryExpression;
@@ -35,7 +41,9 @@ for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+OpAssignMethodConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+OpAssignMethodConversionBinaryExpression"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -145,7 +153,9 @@ impl crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+OpAssignMethodConversionBinaryExpression")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+OpAssignMethodConversionBinaryExpression"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

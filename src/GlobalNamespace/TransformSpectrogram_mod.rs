@@ -1,4 +1,4 @@
-#[cfg(feature = "TransformSpectrogram")]
+#[cfg(feature = "cordl_class_TransformSpectrogram")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransformSpectrogram {
@@ -21,7 +21,7 @@ pub struct TransformSpectrogram {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
-#[cfg(feature = "TransformSpectrogram")]
+#[cfg(feature = "cordl_class_TransformSpectrogram")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::TransformSpectrogram {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,14 +41,14 @@ for crate::GlobalNamespace::TransformSpectrogram {
         false
     }
 }
-#[cfg(feature = "TransformSpectrogram")]
+#[cfg(feature = "cordl_class_TransformSpectrogram")]
 impl std::ops::Deref for crate::GlobalNamespace::TransformSpectrogram {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TransformSpectrogram")]
+#[cfg(feature = "cordl_class_TransformSpectrogram")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TransformSpectrogram {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::TransformSpectrogram {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TransformSpectrogram")]
+#[cfg(feature = "cordl_class_TransformSpectrogram")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TransformSpectrogram {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

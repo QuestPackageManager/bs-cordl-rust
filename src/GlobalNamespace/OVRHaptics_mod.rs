@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRHaptics")]
+#[cfg(feature = "cordl_class_OVRHaptics")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHaptics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRHaptics")]
+#[cfg(feature = "cordl_class_OVRHaptics")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHaptics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHaptics {
         false
     }
 }
-#[cfg(feature = "OVRHaptics")]
+#[cfg(feature = "cordl_class_OVRHaptics")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHaptics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRHaptics")]
+#[cfg(feature = "cordl_class_OVRHaptics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHaptics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::OVRHaptics {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRHaptics")]
+#[cfg(feature = "cordl_class_OVRHaptics")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -77,7 +77,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
@@ -87,7 +87,7 @@ pub struct OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         crate::GlobalNamespace::OVRHapticsClip,
     >,
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -107,7 +107,7 @@ for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         false
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -115,7 +115,7 @@ for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -262,7 +262,7 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -272,13 +272,13 @@ for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRHaptics+Config")]
+#[cfg(feature = "cordl_class_OVRHaptics+Config")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHaptics_Config {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "OVRHaptics+Config")]
+#[cfg(feature = "cordl_class_OVRHaptics+Config")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHaptics_Config {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -297,14 +297,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHaptics_C
         false
     }
 }
-#[cfg(feature = "OVRHaptics+Config")]
+#[cfg(feature = "cordl_class_OVRHaptics+Config")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHaptics_Config {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRHaptics+Config")]
+#[cfg(feature = "cordl_class_OVRHaptics+Config")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHaptics_Config {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -604,7 +604,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRHaptics+Config")]
+#[cfg(feature = "cordl_class_OVRHaptics+Config")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics_Config {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -613,7 +613,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics_Co
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsChannel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHaptics_OVRHapticsChannel {
@@ -622,7 +622,7 @@ pub struct OVRHaptics_OVRHapticsChannel {
         crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput,
     >,
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsChannel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -642,14 +642,14 @@ for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         false
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsChannel")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsChannel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -794,7 +794,7 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsChannel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -804,7 +804,7 @@ for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHaptics_OVRHapticsOutput {
@@ -828,7 +828,7 @@ pub struct OVRHaptics_OVRHapticsOutput {
     >,
     pub PrevSampleRateHz: i32,
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -848,14 +848,14 @@ for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         false
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1023,7 +1023,7 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
+#[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

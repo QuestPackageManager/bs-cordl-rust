@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTilemap {
@@ -7,7 +7,7 @@ pub struct HEU_InputInterfaceTilemap {
         crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
     type Target = crate::HoudiniEngineUnity::HEU_InputInterface;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -237,7 +237,7 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -247,7 +247,9 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
@@ -255,7 +257,9 @@ pub struct HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     pub _tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::Tilemap>,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -275,7 +279,9 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap"
+)]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     type Target = crate::HoudiniEngineUnity::HEU_InputData;
@@ -283,7 +289,9 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap"
+)]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -321,7 +329,9 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
+#[cfg(
+    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

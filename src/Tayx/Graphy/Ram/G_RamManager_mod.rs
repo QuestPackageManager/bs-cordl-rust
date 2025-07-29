@@ -1,4 +1,4 @@
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_RamManager {
@@ -21,7 +21,7 @@ pub struct G_RamManager {
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
 }
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Ram::G_RamManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -40,14 +40,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Ram::G_RamManag
         false
     }
 }
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamManager")]
 impl std::ops::Deref for crate::Tayx::Graphy::Ram::G_RamManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamManager")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Ram::G_RamManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -301,7 +301,7 @@ impl crate::Tayx::Graphy::Ram::G_RamManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
+#[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Ram::G_RamManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

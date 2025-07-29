@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Application")]
+#[cfg(feature = "cordl_class_UnityEngine+Application")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Application")]
+#[cfg(feature = "cordl_class_UnityEngine+Application")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Application {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Application {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Application")]
+#[cfg(feature = "cordl_class_UnityEngine+Application")]
 impl std::ops::Deref for crate::UnityEngine::Application {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Application")]
+#[cfg(feature = "cordl_class_UnityEngine+Application")]
 impl std::ops::DerefMut for crate::UnityEngine::Application {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1291,7 +1291,7 @@ impl crate::UnityEngine::Application {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Application")]
+#[cfg(feature = "cordl_class_UnityEngine+Application")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1300,13 +1300,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Application+LogCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LogCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application_LogCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Application+LogCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LogCallback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Application_LogCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -1325,14 +1325,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Application_LogC
         false
     }
 }
-#[cfg(feature = "UnityEngine+Application+LogCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LogCallback")]
 impl std::ops::Deref for crate::UnityEngine::Application_LogCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Application+LogCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LogCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::Application_LogCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1420,7 +1420,7 @@ impl crate::UnityEngine::Application_LogCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Application+LogCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LogCallback")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application_LogCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1429,13 +1429,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application_LogCa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Application+LowMemoryCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LowMemoryCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application_LowMemoryCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Application+LowMemoryCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LowMemoryCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Application_LowMemoryCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1455,14 +1455,14 @@ for crate::UnityEngine::Application_LowMemoryCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Application+LowMemoryCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LowMemoryCallback")]
 impl std::ops::Deref for crate::UnityEngine::Application_LowMemoryCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Application+LowMemoryCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LowMemoryCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::Application_LowMemoryCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1534,7 +1534,7 @@ impl crate::UnityEngine::Application_LowMemoryCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Application+LowMemoryCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+LowMemoryCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Application_LowMemoryCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1544,13 +1544,13 @@ for crate::UnityEngine::Application_LowMemoryCallback {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+MemoryUsageChangedCallback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application_MemoryUsageChangedCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+MemoryUsageChangedCallback")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Application_MemoryUsageChangedCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1570,14 +1570,14 @@ for crate::UnityEngine::Application_MemoryUsageChangedCallback {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+MemoryUsageChangedCallback")]
 impl std::ops::Deref for crate::UnityEngine::Application_MemoryUsageChangedCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+MemoryUsageChangedCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::Application_MemoryUsageChangedCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1658,7 +1658,7 @@ impl crate::UnityEngine::Application_MemoryUsageChangedCallback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
+#[cfg(feature = "cordl_class_UnityEngine+Application+MemoryUsageChangedCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Application_MemoryUsageChangedCallback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

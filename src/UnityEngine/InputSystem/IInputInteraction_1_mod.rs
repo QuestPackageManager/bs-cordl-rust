@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+IInputInteraction_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IInputInteraction_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+IInputInteraction_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -41,7 +41,7 @@ for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+IInputInteraction_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -49,7 +49,7 @@ for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+IInputInteraction_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -66,7 +66,7 @@ impl<
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+IInputInteraction_1")]
 impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

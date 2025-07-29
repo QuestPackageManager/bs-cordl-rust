@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRExtendedDisplay {
@@ -12,7 +12,7 @@ pub struct IVRExtendedDisplay {
         crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo,
     >,
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRExtendedDisplay {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -41,7 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRExtendedDispl
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRExtendedDisplay {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -51,7 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRExtendedD
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRExtendedDisplay {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -64,7 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRExtended
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRExtendedDisplay {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -78,7 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRExtendedD
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRExtendedDisplay {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,7 +91,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRExtendedDis
         actual
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::IVRExtendedDisplay {
     type Type = Self;
@@ -111,13 +111,13 @@ impl crate::OVR::OpenVR::IVRExtendedDisplay {
     #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
     pub type _GetWindowBounds = crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds;
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRExtendedDisplay__GetDXGIOutputInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -137,14 +137,14 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -301,7 +301,7 @@ impl crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -311,13 +311,13 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRExtendedDisplay__GetEyeOutputViewport {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -337,14 +337,14 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -518,7 +518,7 @@ impl crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -528,13 +528,13 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRExtendedDisplay__GetWindowBounds {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -554,14 +554,14 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
         false
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -726,7 +726,7 @@ impl crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

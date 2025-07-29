@@ -1,4 +1,4 @@
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetPacketProcessor {
@@ -18,7 +18,7 @@ pub struct NetPacketProcessor {
         crate::LiteNetLib::Utils::NetDataWriter,
     >,
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::Utils::NetPacketProcessor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::LiteNetLib::Utils::NetPacketProcessor {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetPacketProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor")]
 impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetPacketProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1024,7 +1024,7 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetPacketProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1033,14 +1033,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetPacketPr
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetPacketProcessor_HashCache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1076,7 +1076,7 @@ for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1084,7 +1084,7 @@ for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1095,7 +1095,7 @@ for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {}
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1105,13 +1105,13 @@ for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetPacketProcessor_SubscribeDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1131,14 +1131,14 @@ for crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
         false
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
 impl std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1293,7 +1293,7 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
+#[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

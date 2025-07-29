@@ -1,8 +1,8 @@
-#[cfg(feature = "UnityEngineInternal+MathfInternal")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+MathfInternal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MathfInternal {}
-#[cfg(feature = "UnityEngineInternal+MathfInternal")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+MathfInternal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngineInternal::MathfInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngineInternal::MathfInt
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngineInternal+MathfInternal")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+MathfInternal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngineInternal::MathfInternal {
     type Type = Self;
@@ -42,7 +42,7 @@ for crate::UnityEngineInternal::MathfInternal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngineInternal+MathfInternal")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+MathfInternal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngineInternal::MathfInternal {
     type Actual = Self;
@@ -56,7 +56,7 @@ for crate::UnityEngineInternal::MathfInternal {
         self
     }
 }
-#[cfg(feature = "UnityEngineInternal+MathfInternal")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+MathfInternal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngineInternal::MathfInternal {
     type Type = Self;
@@ -71,7 +71,7 @@ for crate::UnityEngineInternal::MathfInternal {
         }
     }
 }
-#[cfg(feature = "UnityEngineInternal+MathfInternal")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+MathfInternal")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngineInternal::MathfInternal {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngineInternal::MathfI
         actual
     }
 }
-#[cfg(feature = "UnityEngineInternal+MathfInternal")]
+#[cfg(feature = "cordl_class_UnityEngineInternal+MathfInternal")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngineInternal::MathfInternal {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Events+PersistentCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCall")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PersistentCall {
@@ -14,7 +14,7 @@ pub struct PersistentCall {
     >,
     pub m_CallState: crate::UnityEngine::Events::UnityEventCallState,
 }
-#[cfg(feature = "UnityEngine+Events+PersistentCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCall")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Events::PersistentCall {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Events::Persiste
         false
     }
 }
-#[cfg(feature = "UnityEngine+Events+PersistentCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCall")]
 impl std::ops::Deref for crate::UnityEngine::Events::PersistentCall {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Events+PersistentCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCall")]
 impl std::ops::DerefMut for crate::UnityEngine::Events::PersistentCall {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -354,7 +354,7 @@ impl crate::UnityEngine::Events::PersistentCall {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Events+PersistentCall")]
+#[cfg(feature = "cordl_class_UnityEngine+Events+PersistentCall")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Events::PersistentCall {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

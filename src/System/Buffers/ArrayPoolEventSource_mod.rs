@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayPoolEventSource {
     __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Buffers::ArrayPoolEventSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Buffers::ArrayPoolEventSource {
         false
     }
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource")]
 impl std::ops::Deref for crate::System::Buffers::ArrayPoolEventSource {
     type Target = crate::System::Diagnostics::Tracing::EventSource;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource")]
 impl std::ops::DerefMut for crate::System::Buffers::ArrayPoolEventSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Buffers::ArrayPoolEventSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -232,7 +232,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Buffers::ArrayPoolEven
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArrayPoolEventSource_BufferAllocatedReason {
@@ -241,7 +241,7 @@ pub enum ArrayPoolEventSource_BufferAllocatedReason {
     PoolExhausted = 2i32,
     Pooled = 0i32,
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Held<'a> = Self;
@@ -271,7 +271,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Type = Self;
@@ -282,7 +282,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Actual = Self;
@@ -296,7 +296,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
         self
     }
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Type = Self;
@@ -311,7 +311,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
         }
     }
 }
-#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
+#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZDeflaterOutputStream {
@@ -9,7 +9,7 @@ pub struct ZDeflaterOutputStream {
     pub buf1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub outp: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
     type Target = crate::System::IO::Stream;
@@ -37,7 +37,7 @@ for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -503,7 +503,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityLightWithId")]
+#[cfg(feature = "cordl_class_UnityLightWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityLightWithId {
@@ -7,7 +7,7 @@ pub struct UnityLightWithId {
     pub _intensity: f32,
     pub _minAlpha: f32,
 }
-#[cfg(feature = "UnityLightWithId")]
+#[cfg(feature = "cordl_class_UnityLightWithId")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityLightWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityLightWi
         false
     }
 }
-#[cfg(feature = "UnityLightWithId")]
+#[cfg(feature = "cordl_class_UnityLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityLightWithId")]
+#[cfg(feature = "cordl_class_UnityLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnityLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::UnityLightWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityLightWithId")]
+#[cfg(feature = "cordl_class_UnityLightWithId")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Threading+Tasks+AsyncCausalityStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AsyncCausalityStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsyncCausalityStatus {
@@ -8,7 +8,7 @@ pub enum AsyncCausalityStatus {
     Error = 3i32,
     Started = 0i32,
 }
-#[cfg(feature = "System+Threading+Tasks+AsyncCausalityStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AsyncCausalityStatus")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Threading::Tasks::AsyncCausalityStatus {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::System::Threading::Tasks::AsyncCausalityStatus {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Threading+Tasks+AsyncCausalityStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AsyncCausalityStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::AsyncCausalityStatus {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::System::Threading::Tasks::AsyncCausalityStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Threading+Tasks+AsyncCausalityStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AsyncCausalityStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::AsyncCausalityStatus {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::System::Threading::Tasks::AsyncCausalityStatus {
         self
     }
 }
-#[cfg(feature = "System+Threading+Tasks+AsyncCausalityStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AsyncCausalityStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::AsyncCausalityStatus {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::System::Threading::Tasks::AsyncCausalityStatus {
         }
     }
 }
-#[cfg(feature = "System+Threading+Tasks+AsyncCausalityStatus")]
+#[cfg(feature = "cordl_class_System+Threading+Tasks+AsyncCausalityStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::AsyncCausalityStatus {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "VRControllersValueSettingsOffsets")]
+#[cfg(feature = "cordl_class_VRControllersValueSettingsOffsets")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersValueSettingsOffsets {
@@ -10,7 +10,7 @@ pub struct VRControllersValueSettingsOffsets {
         crate::BeatSaber::GameSettings::ControllerProfilesModel,
     >,
 }
-#[cfg(feature = "VRControllersValueSettingsOffsets")]
+#[cfg(feature = "cordl_class_VRControllersValueSettingsOffsets")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -30,14 +30,14 @@ for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
         false
     }
 }
-#[cfg(feature = "VRControllersValueSettingsOffsets")]
+#[cfg(feature = "cordl_class_VRControllersValueSettingsOffsets")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
     type Target = crate::GlobalNamespace::VRControllerTransformOffset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "VRControllersValueSettingsOffsets")]
+#[cfg(feature = "cordl_class_VRControllersValueSettingsOffsets")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -241,7 +241,7 @@ impl crate::GlobalNamespace::VRControllersValueSettingsOffsets {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "VRControllersValueSettingsOffsets")]
+#[cfg(feature = "cordl_class_VRControllersValueSettingsOffsets")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

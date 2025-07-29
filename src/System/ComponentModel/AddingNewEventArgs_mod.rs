@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ComponentModel+AddingNewEventArgs")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AddingNewEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddingNewEventArgs {
@@ -7,7 +7,7 @@ pub struct AddingNewEventArgs {
         quest_hook::libil2cpp::Il2CppObject,
     >,
 }
-#[cfg(feature = "System+ComponentModel+AddingNewEventArgs")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AddingNewEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::AddingNewEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::System::ComponentModel::AddingNewEventArgs {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+AddingNewEventArgs")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AddingNewEventArgs")]
 impl std::ops::Deref for crate::System::ComponentModel::AddingNewEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+AddingNewEventArgs")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AddingNewEventArgs")]
 impl std::ops::DerefMut for crate::System::ComponentModel::AddingNewEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -98,7 +98,7 @@ impl crate::System::ComponentModel::AddingNewEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+AddingNewEventArgs")]
+#[cfg(feature = "cordl_class_System+ComponentModel+AddingNewEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::AddingNewEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

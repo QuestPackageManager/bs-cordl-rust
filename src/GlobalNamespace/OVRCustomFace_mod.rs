@@ -1,4 +1,4 @@
-#[cfg(feature = "OVRCustomFace")]
+#[cfg(feature = "cordl_class_OVRCustomFace")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRCustomFace {
@@ -11,7 +11,7 @@ pub struct OVRCustomFace {
     pub retargetingType: crate::GlobalNamespace::OVRCustomFace_RetargetingType,
     pub _allowDuplicateMapping: bool,
 }
-#[cfg(feature = "OVRCustomFace")]
+#[cfg(feature = "cordl_class_OVRCustomFace")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRCustomFace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRCustomFac
         false
     }
 }
-#[cfg(feature = "OVRCustomFace")]
+#[cfg(feature = "cordl_class_OVRCustomFace")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRCustomFace {
     type Target = crate::GlobalNamespace::OVRFace;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OVRCustomFace")]
+#[cfg(feature = "cordl_class_OVRCustomFace")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRCustomFace {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -352,7 +352,7 @@ impl crate::GlobalNamespace::OVRCustomFace {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OVRCustomFace")]
+#[cfg(feature = "cordl_class_OVRCustomFace")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCustomFace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -361,7 +361,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCustomFace
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRCustomFace+RetargetingType")]
+#[cfg(feature = "cordl_class_OVRCustomFace+RetargetingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRCustomFace_RetargetingType {
@@ -369,7 +369,7 @@ pub enum OVRCustomFace_RetargetingType {
     Custom = 1i32,
     OculusFace = 0i32,
 }
-#[cfg(feature = "OVRCustomFace+RetargetingType")]
+#[cfg(feature = "cordl_class_OVRCustomFace+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
     type Held<'a> = Self;
@@ -399,7 +399,7 @@ for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRCustomFace+RetargetingType")]
+#[cfg(feature = "cordl_class_OVRCustomFace+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
     type Type = Self;
@@ -410,7 +410,7 @@ for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRCustomFace+RetargetingType")]
+#[cfg(feature = "cordl_class_OVRCustomFace+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
     type Actual = Self;
@@ -424,7 +424,7 @@ for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
         self
     }
 }
-#[cfg(feature = "OVRCustomFace+RetargetingType")]
+#[cfg(feature = "cordl_class_OVRCustomFace+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
     type Type = Self;
@@ -439,7 +439,7 @@ for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
         }
     }
 }
-#[cfg(feature = "OVRCustomFace+RetargetingType")]
+#[cfg(feature = "cordl_class_OVRCustomFace+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRCustomFace_RetargetingType {
     type Actual = Self;

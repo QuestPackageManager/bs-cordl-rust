@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerResultsViewController")]
+#[cfg(feature = "cordl_class_MultiplayerResultsViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsViewController {
@@ -27,7 +27,7 @@ pub struct MultiplayerResultsViewController {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerResultsViewController")]
+#[cfg(feature = "cordl_class_MultiplayerResultsViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerResultsViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -47,14 +47,14 @@ for crate::GlobalNamespace::MultiplayerResultsViewController {
         false
     }
 }
-#[cfg(feature = "MultiplayerResultsViewController")]
+#[cfg(feature = "cordl_class_MultiplayerResultsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerResultsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerResultsViewController")]
+#[cfg(feature = "cordl_class_MultiplayerResultsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerResultsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -372,7 +372,7 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerResultsViewController")]
+#[cfg(feature = "cordl_class_MultiplayerResultsViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerResultsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,14 @@
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeArrayUnsafeUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility"
+)]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +38,9 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility"
+)]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -172,7 +180,9 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility")]
+#[cfg(
+    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeArrayUnsafeUtility"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

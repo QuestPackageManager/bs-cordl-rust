@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+ActivatedClientTypeEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+ActivatedClientTypeEntry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivatedClientTypeEntry {
@@ -6,7 +6,7 @@ pub struct ActivatedClientTypeEntry {
     pub applicationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub obj_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Runtime+Remoting+ActivatedClientTypeEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+ActivatedClientTypeEntry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,14 +26,14 @@ for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+ActivatedClientTypeEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+ActivatedClientTypeEntry")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
     type Target = crate::System::Runtime::Remoting::TypeEntry;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+ActivatedClientTypeEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+ActivatedClientTypeEntry")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -213,7 +213,7 @@ impl crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+ActivatedClientTypeEntry")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+ActivatedClientTypeEntry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

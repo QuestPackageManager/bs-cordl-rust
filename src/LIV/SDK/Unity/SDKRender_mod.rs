@@ -1,4 +1,4 @@
-#[cfg(feature = "LIV+SDK+Unity+SDKRender")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKRender")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SDKRender {
@@ -61,7 +61,7 @@ pub struct SDKRender {
     pub _requestedPose: crate::LIV::SDK::Unity::SDKPose,
     pub _requestedPoseFrameIndex: i32,
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKRender")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKRender")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKRender {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -80,14 +80,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKRender {
         false
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKRender")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKRender")]
 impl std::ops::Deref for crate::LIV::SDK::Unity::SDKRender {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKRender")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKRender")]
 impl std::ops::DerefMut for crate::LIV::SDK::Unity::SDKRender {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1309,7 +1309,7 @@ impl crate::LIV::SDK::Unity::SDKRender {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LIV+SDK+Unity+SDKRender")]
+#[cfg(feature = "cordl_class_LIV+SDK+Unity+SDKRender")]
 impl quest_hook::libil2cpp::ObjectType for crate::LIV::SDK::Unity::SDKRender {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

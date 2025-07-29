@@ -1,4 +1,4 @@
-#[cfg(feature = "FakeReflectionDynamicObjectsState")]
+#[cfg(feature = "cordl_class_FakeReflectionDynamicObjectsState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FakeReflectionDynamicObjectsState {
@@ -6,7 +6,7 @@ pub enum FakeReflectionDynamicObjectsState {
     Disabled = 0i32,
     Enabled = 1i32,
 }
-#[cfg(feature = "FakeReflectionDynamicObjectsState")]
+#[cfg(feature = "cordl_class_FakeReflectionDynamicObjectsState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "FakeReflectionDynamicObjectsState")]
+#[cfg(feature = "cordl_class_FakeReflectionDynamicObjectsState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "FakeReflectionDynamicObjectsState")]
+#[cfg(feature = "cordl_class_FakeReflectionDynamicObjectsState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
         self
     }
 }
-#[cfg(feature = "FakeReflectionDynamicObjectsState")]
+#[cfg(feature = "cordl_class_FakeReflectionDynamicObjectsState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
         }
     }
 }
-#[cfg(feature = "FakeReflectionDynamicObjectsState")]
+#[cfg(feature = "cordl_class_FakeReflectionDynamicObjectsState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::FakeReflectionDynamicObjectsState {
     type Actual = Self;

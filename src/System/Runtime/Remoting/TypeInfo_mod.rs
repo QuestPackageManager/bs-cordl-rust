@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+TypeInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeInfo {
@@ -15,7 +15,7 @@ pub struct TypeInfo {
         >,
     >,
 }
-#[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+TypeInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::Remoting::TypeInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Runtime::Remoting::Ty
         false
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+TypeInfo")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::TypeInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+TypeInfo")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::TypeInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ impl crate::System::Runtime::Remoting::TypeInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+Remoting+TypeInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Remoting::TypeInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

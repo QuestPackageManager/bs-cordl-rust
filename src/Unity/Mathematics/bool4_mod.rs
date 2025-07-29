@@ -1,4 +1,4 @@
-#[cfg(feature = "Unity+Mathematics+bool4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct bool4 {
@@ -7,7 +7,7 @@ pub struct bool4 {
     pub z: bool,
     pub w: bool,
 }
-#[cfg(feature = "Unity+Mathematics+bool4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::bool4 {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::bool4 {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::bool4 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::bool4
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::bool4 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::bool
         self
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::bool4 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::bool4
         }
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::bool4 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::bool4 {
         actual
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::bool4 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
@@ -10919,7 +10919,7 @@ for crate::Unity::Mathematics::bool4 {
         todo!()
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4+DebuggerProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct bool4_DebuggerProxy {
@@ -10929,7 +10929,7 @@ pub struct bool4_DebuggerProxy {
     pub z: bool,
     pub w: bool,
 }
-#[cfg(feature = "Unity+Mathematics+bool4+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4+DebuggerProxy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Mathematics::bool4_DebuggerProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -10949,14 +10949,14 @@ for crate::Unity::Mathematics::bool4_DebuggerProxy {
         false
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4+DebuggerProxy")]
 impl std::ops::Deref for crate::Unity::Mathematics::bool4_DebuggerProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4+DebuggerProxy")]
 impl std::ops::DerefMut for crate::Unity::Mathematics::bool4_DebuggerProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -11000,7 +11000,7 @@ impl crate::Unity::Mathematics::bool4_DebuggerProxy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Mathematics+bool4+DebuggerProxy")]
+#[cfg(feature = "cordl_class_Unity+Mathematics+bool4+DebuggerProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Mathematics::bool4_DebuggerProxy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

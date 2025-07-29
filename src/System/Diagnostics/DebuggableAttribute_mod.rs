@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebuggableAttribute {
     __cordl_parent: crate::System::Attribute,
     pub m_debuggingModes: crate::System::Diagnostics::DebuggableAttribute_DebuggingModes,
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::DebuggableAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Diagnostics::DebuggableAttribute {
         false
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::DebuggableAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute")]
 impl std::ops::DerefMut for crate::System::Diagnostics::DebuggableAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -78,7 +78,7 @@ impl crate::System::Diagnostics::DebuggableAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::DebuggableAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -88,7 +88,7 @@ for crate::System::Diagnostics::DebuggableAttribute {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute+DebuggingModes")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DebuggableAttribute_DebuggingModes {
@@ -99,7 +99,7 @@ pub enum DebuggableAttribute_DebuggingModes {
     IgnoreSymbolStoreSequencePoints = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute+DebuggingModes")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
     type Held<'a> = Self;
@@ -129,7 +129,7 @@ for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute+DebuggingModes")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
     type Type = Self;
@@ -140,7 +140,7 @@ for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute+DebuggingModes")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
     type Actual = Self;
@@ -154,7 +154,7 @@ for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
         self
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute+DebuggingModes")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
     type Type = Self;
@@ -169,7 +169,7 @@ for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
         }
     }
 }
-#[cfg(feature = "System+Diagnostics+DebuggableAttribute+DebuggingModes")]
+#[cfg(feature = "cordl_class_System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::DebuggableAttribute_DebuggingModes {
     type Actual = Self;

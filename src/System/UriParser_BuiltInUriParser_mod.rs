@@ -1,10 +1,10 @@
-#[cfg(feature = "System+UriParser+BuiltInUriParser")]
+#[cfg(feature = "cordl_class_System+UriParser+BuiltInUriParser")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriParser_BuiltInUriParser {
     __cordl_parent: crate::System::UriParser,
 }
-#[cfg(feature = "System+UriParser+BuiltInUriParser")]
+#[cfg(feature = "cordl_class_System+UriParser+BuiltInUriParser")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::UriParser_BuiltInUriParser {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::UriParser_BuiltInUriParser {
         false
     }
 }
-#[cfg(feature = "System+UriParser+BuiltInUriParser")]
+#[cfg(feature = "cordl_class_System+UriParser+BuiltInUriParser")]
 impl std::ops::Deref for crate::GlobalNamespace::UriParser_BuiltInUriParser {
     type Target = crate::System::UriParser;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+UriParser+BuiltInUriParser")]
+#[cfg(feature = "cordl_class_System+UriParser+BuiltInUriParser")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UriParser_BuiltInUriParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::UriParser_BuiltInUriParser {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+UriParser+BuiltInUriParser")]
+#[cfg(feature = "cordl_class_System+UriParser+BuiltInUriParser")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UriParser_BuiltInUriParser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "OVR+OpenVR+EVREye")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVREye")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVREye {
@@ -6,7 +6,7 @@ pub enum EVREye {
     Eye_Left = 0i32,
     Eye_Right = 1i32,
 }
-#[cfg(feature = "OVR+OpenVR+EVREye")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVREye")]
 unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EVREye {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EVREye {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVREye")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVREye")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EVREye {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EVREye {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVREye")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVREye")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EVREye {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,7 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EVREye {
         self
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVREye")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVREye")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EVREye {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,7 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EVREye {
         }
     }
 }
-#[cfg(feature = "OVR+OpenVR+EVREye")]
+#[cfg(feature = "cordl_class_OVR+OpenVR+EVREye")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EVREye {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

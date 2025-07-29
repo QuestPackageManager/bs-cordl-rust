@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+EasingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EasingMode {
@@ -27,7 +27,7 @@ pub enum EasingMode {
     EaseOutSine = 6i32,
     Linear = 4i32,
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::EasingMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -56,7 +56,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Easi
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EasingMode {
     type Type = Self;
@@ -67,7 +67,7 @@ for crate::UnityEngine::UIElements::EasingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EasingMode {
     type Actual = Self;
@@ -81,7 +81,7 @@ for crate::UnityEngine::UIElements::EasingMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EasingMode {
     type Type = Self;
@@ -96,7 +96,7 @@ for crate::UnityEngine::UIElements::EasingMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+EasingMode")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+EasingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EasingMode {
     type Actual = Self;

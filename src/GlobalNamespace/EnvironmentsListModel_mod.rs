@@ -1,4 +1,4 @@
-#[cfg(feature = "EnvironmentsListModel")]
+#[cfg(feature = "cordl_class_EnvironmentsListModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentsListModel {
@@ -25,7 +25,7 @@ pub struct EnvironmentsListModel {
         >,
     >,
 }
-#[cfg(feature = "EnvironmentsListModel")]
+#[cfg(feature = "cordl_class_EnvironmentsListModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::EnvironmentsListModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::EnvironmentsListModel {
         false
     }
 }
-#[cfg(feature = "EnvironmentsListModel")]
+#[cfg(feature = "cordl_class_EnvironmentsListModel")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentsListModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "EnvironmentsListModel")]
+#[cfg(feature = "cordl_class_EnvironmentsListModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentsListModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -449,7 +449,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "EnvironmentsListModel")]
+#[cfg(feature = "cordl_class_EnvironmentsListModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EnvironmentsListModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

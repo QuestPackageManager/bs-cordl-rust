@@ -1,4 +1,4 @@
-#[cfg(feature = "SetApplicationVersionText")]
+#[cfg(feature = "cordl_class_SetApplicationVersionText")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetApplicationVersionText {
@@ -14,7 +14,7 @@ pub struct SetApplicationVersionText {
         crate::BeatSaber::Init::GameVersionProvider,
     >,
 }
-#[cfg(feature = "SetApplicationVersionText")]
+#[cfg(feature = "cordl_class_SetApplicationVersionText")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SetApplicationVersionText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -34,14 +34,14 @@ for crate::GlobalNamespace::SetApplicationVersionText {
         false
     }
 }
-#[cfg(feature = "SetApplicationVersionText")]
+#[cfg(feature = "cordl_class_SetApplicationVersionText")]
 impl std::ops::Deref for crate::GlobalNamespace::SetApplicationVersionText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SetApplicationVersionText")]
+#[cfg(feature = "cordl_class_SetApplicationVersionText")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SetApplicationVersionText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::SetApplicationVersionText {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SetApplicationVersionText")]
+#[cfg(feature = "cordl_class_SetApplicationVersionText")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SetApplicationVersionText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+EdgeLookup")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EdgeLookup {
     pub m_Local: crate::UnityEngine::ProBuilder::Edge,
     pub m_Common: crate::UnityEngine::ProBuilder::Edge,
 }
-#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+EdgeLookup")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::EdgeLookup {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Edge
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+EdgeLookup")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::EdgeLookup {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::UnityEngine::ProBuilder::EdgeLookup {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+EdgeLookup")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::EdgeLookup {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::ProBuilder::EdgeLookup {
         self
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+EdgeLookup")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::EdgeLookup {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::UnityEngine::ProBuilder::EdgeLookup {
         }
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+EdgeLookup")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::EdgeLookup {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::ProBuilder::EdgeLookup {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
+#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+EdgeLookup")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ProBuilder::EdgeLookup {
     type Type = Self;

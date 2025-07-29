@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IOSelectorJob")]
+#[cfg(feature = "cordl_class_System+IOSelectorJob")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IOSelectorJob {
@@ -7,7 +7,7 @@ pub struct IOSelectorJob {
     pub callback: quest_hook::libil2cpp::Gc<crate::System::IOAsyncCallback>,
     pub state: quest_hook::libil2cpp::Gc<crate::System::IOAsyncResult>,
 }
-#[cfg(feature = "System+IOSelectorJob")]
+#[cfg(feature = "cordl_class_System+IOSelectorJob")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IOSelectorJob {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IOSelectorJob {
         false
     }
 }
-#[cfg(feature = "System+IOSelectorJob")]
+#[cfg(feature = "cordl_class_System+IOSelectorJob")]
 impl std::ops::Deref for crate::System::IOSelectorJob {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IOSelectorJob")]
+#[cfg(feature = "cordl_class_System+IOSelectorJob")]
 impl std::ops::DerefMut for crate::System::IOSelectorJob {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -164,7 +164,7 @@ impl crate::System::IOSelectorJob {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IOSelectorJob")]
+#[cfg(feature = "cordl_class_System+IOSelectorJob")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IOSelectorJob {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

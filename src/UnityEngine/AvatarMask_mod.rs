@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+AvatarMask")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMask")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarMask {
     __cordl_parent: crate::UnityEngine::Object,
 }
-#[cfg(feature = "UnityEngine+AvatarMask")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMask")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AvatarMask {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AvatarMask {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AvatarMask")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMask")]
 impl std::ops::Deref for crate::UnityEngine::AvatarMask {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AvatarMask")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMask")]
 impl std::ops::DerefMut for crate::UnityEngine::AvatarMask {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -154,7 +154,7 @@ impl crate::UnityEngine::AvatarMask {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AvatarMask")]
+#[cfg(feature = "cordl_class_UnityEngine+AvatarMask")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AvatarMask {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

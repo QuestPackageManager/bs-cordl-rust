@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationMixerPlayable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivationMixerPlayable {
@@ -7,7 +7,7 @@ pub struct ActivationMixerPlayable {
     pub m_BoundGameObjectInitialStateIsActive: bool,
     pub m_BoundGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationMixerPlayable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::ActivationMixerPlayable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,14 +27,14 @@ for crate::UnityEngine::Timeline::ActivationMixerPlayable {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationMixerPlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationMixerPlayable {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationMixerPlayable")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::ActivationMixerPlayable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -222,7 +222,7 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationMixerPlayable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::ActivationMixerPlayable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "QuickPlaySetupModel")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySetupModel {
@@ -14,7 +14,7 @@ pub struct QuickPlaySetupModel {
     >,
     pub _lastRequestTime: crate::System::DateTime,
 }
-#[cfg(feature = "QuickPlaySetupModel")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::QuickPlaySetupModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::QuickPlaySet
         false
     }
 }
-#[cfg(feature = "QuickPlaySetupModel")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel")]
 impl std::ops::Deref for crate::GlobalNamespace::QuickPlaySetupModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "QuickPlaySetupModel")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::QuickPlaySetupModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -249,7 +249,7 @@ impl crate::GlobalNamespace::QuickPlaySetupModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "QuickPlaySetupModel")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySetupModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -272,7 +272,7 @@ for crate::GlobalNamespace::QuickPlaySetupModel {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel+QuickPlaySetupDataFB")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
@@ -283,7 +283,7 @@ pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
         >,
     >,
 }
-#[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel+QuickPlaySetupDataFB")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -303,7 +303,7 @@ for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
         false
     }
 }
-#[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel+QuickPlaySetupDataFB")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -311,7 +311,7 @@ for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel+QuickPlaySetupDataFB")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -349,7 +349,7 @@ impl crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
+#[cfg(feature = "cordl_class_QuickPlaySetupModel+QuickPlaySetupDataFB")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+IO+StringWriter")]
+#[cfg(feature = "cordl_class_System+IO+StringWriter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringWriter {
@@ -6,7 +6,7 @@ pub struct StringWriter {
     pub _sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _isOpen: bool,
 }
-#[cfg(feature = "System+IO+StringWriter")]
+#[cfg(feature = "cordl_class_System+IO+StringWriter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::StringWriter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::StringWriter {
         false
     }
 }
-#[cfg(feature = "System+IO+StringWriter")]
+#[cfg(feature = "cordl_class_System+IO+StringWriter")]
 impl std::ops::Deref for crate::System::IO::StringWriter {
     type Target = crate::System::IO::TextWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+IO+StringWriter")]
+#[cfg(feature = "cordl_class_System+IO+StringWriter")]
 impl std::ops::DerefMut for crate::System::IO::StringWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -483,7 +483,7 @@ impl crate::System::IO::StringWriter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+IO+StringWriter")]
+#[cfg(feature = "cordl_class_System+IO+StringWriter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::StringWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

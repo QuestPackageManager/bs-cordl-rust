@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersLobbyPermissionConfigurationNetSerializable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayersLobbyPermissionConfigurationNetSerializable {
@@ -11,7 +11,7 @@ pub struct PlayersLobbyPermissionConfigurationNetSerializable {
         >,
     >,
 }
-#[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersLobbyPermissionConfigurationNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
         false
     }
 }
-#[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersLobbyPermissionConfigurationNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
     type Target = crate::GlobalNamespace::PoolableSerializable;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersLobbyPermissionConfigurationNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -291,7 +291,7 @@ impl crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable 
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
+#[cfg(feature = "cordl_class_PlayersLobbyPermissionConfigurationNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

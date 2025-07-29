@@ -1,4 +1,4 @@
-#[cfg(feature = "HelpMenuViewController")]
+#[cfg(feature = "cordl_class_HelpMenuViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpMenuViewController {
@@ -33,7 +33,7 @@ pub struct HelpMenuViewController {
         >,
     >,
 }
-#[cfg(feature = "HelpMenuViewController")]
+#[cfg(feature = "cordl_class_HelpMenuViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HelpMenuViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -53,14 +53,14 @@ for crate::GlobalNamespace::HelpMenuViewController {
         false
     }
 }
-#[cfg(feature = "HelpMenuViewController")]
+#[cfg(feature = "cordl_class_HelpMenuViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::HelpMenuViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HelpMenuViewController")]
+#[cfg(feature = "cordl_class_HelpMenuViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HelpMenuViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -229,7 +229,7 @@ impl crate::GlobalNamespace::HelpMenuViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HelpMenuViewController")]
+#[cfg(feature = "cordl_class_HelpMenuViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HelpMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

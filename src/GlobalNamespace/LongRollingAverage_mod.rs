@@ -1,4 +1,4 @@
-#[cfg(feature = "LongRollingAverage")]
+#[cfg(feature = "cordl_class_LongRollingAverage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct LongRollingAverage {
@@ -9,7 +9,7 @@ pub struct LongRollingAverage {
     pub _index: i32,
     pub _length: i32,
 }
-#[cfg(feature = "LongRollingAverage")]
+#[cfg(feature = "cordl_class_LongRollingAverage")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LongRollingAverage {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LongRollingA
         false
     }
 }
-#[cfg(feature = "LongRollingAverage")]
+#[cfg(feature = "cordl_class_LongRollingAverage")]
 impl std::ops::Deref for crate::GlobalNamespace::LongRollingAverage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "LongRollingAverage")]
+#[cfg(feature = "cordl_class_LongRollingAverage")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LongRollingAverage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ impl crate::GlobalNamespace::LongRollingAverage {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "LongRollingAverage")]
+#[cfg(feature = "cordl_class_LongRollingAverage")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LongRollingAverage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

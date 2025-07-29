@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+WaitForEndOfFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForEndOfFrame")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaitForEndOfFrame {
     __cordl_parent: crate::UnityEngine::YieldInstruction,
 }
-#[cfg(feature = "UnityEngine+WaitForEndOfFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForEndOfFrame")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WaitForEndOfFrame {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WaitForEndOfFram
         false
     }
 }
-#[cfg(feature = "UnityEngine+WaitForEndOfFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForEndOfFrame")]
 impl std::ops::Deref for crate::UnityEngine::WaitForEndOfFrame {
     type Target = crate::UnityEngine::YieldInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+WaitForEndOfFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForEndOfFrame")]
 impl std::ops::DerefMut for crate::UnityEngine::WaitForEndOfFrame {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::UnityEngine::WaitForEndOfFrame {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+WaitForEndOfFrame")]
+#[cfg(feature = "cordl_class_UnityEngine+WaitForEndOfFrame")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::WaitForEndOfFrame {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

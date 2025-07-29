@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+IPEndPoint")]
+#[cfg(feature = "cordl_class_System+Net+IPEndPoint")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPEndPoint {
@@ -6,7 +6,7 @@ pub struct IPEndPoint {
     pub _address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     pub _port: i32,
 }
-#[cfg(feature = "System+Net+IPEndPoint")]
+#[cfg(feature = "cordl_class_System+Net+IPEndPoint")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::IPEndPoint {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::IPEndPoint {
         false
     }
 }
-#[cfg(feature = "System+Net+IPEndPoint")]
+#[cfg(feature = "cordl_class_System+Net+IPEndPoint")]
 impl std::ops::Deref for crate::System::Net::IPEndPoint {
     type Target = crate::System::Net::EndPoint;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+IPEndPoint")]
+#[cfg(feature = "cordl_class_System+Net+IPEndPoint")]
 impl std::ops::DerefMut for crate::System::Net::IPEndPoint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -275,7 +275,7 @@ impl crate::System::Net::IPEndPoint {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+IPEndPoint")]
+#[cfg(feature = "cordl_class_System+Net+IPEndPoint")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::IPEndPoint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

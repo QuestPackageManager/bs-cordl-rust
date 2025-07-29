@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerConnection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerConnection {
@@ -11,7 +11,7 @@ pub struct PlayerConnection {
     >,
     pub m_IsInitilized: bool,
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerConnection")]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     type Target = crate::UnityEngine::ScriptableObject;
@@ -39,7 +39,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerConnection")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -607,7 +607,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerConnection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

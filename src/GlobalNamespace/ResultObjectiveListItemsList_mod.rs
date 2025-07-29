@@ -1,4 +1,4 @@
-#[cfg(feature = "ResultObjectiveListItemsList")]
+#[cfg(feature = "cordl_class_ResultObjectiveListItemsList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResultObjectiveListItemsList {
@@ -6,7 +6,7 @@ pub struct ResultObjectiveListItemsList {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultObjectiveListItem>,
     >,
 }
-#[cfg(feature = "ResultObjectiveListItemsList")]
+#[cfg(feature = "cordl_class_ResultObjectiveListItemsList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ResultObjectiveListItemsList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::ResultObjectiveListItemsList {
         false
     }
 }
-#[cfg(feature = "ResultObjectiveListItemsList")]
+#[cfg(feature = "cordl_class_ResultObjectiveListItemsList")]
 impl std::ops::Deref for crate::GlobalNamespace::ResultObjectiveListItemsList {
     type Target = crate::HMUI::UIItemsList_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultObjectiveListItem>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ResultObjectiveListItemsList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ResultObjectiveListItemsList")]
+#[cfg(feature = "cordl_class_ResultObjectiveListItemsList")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ResultObjectiveListItemsList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::ResultObjectiveListItemsList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ResultObjectiveListItemsList")]
+#[cfg(feature = "cordl_class_ResultObjectiveListItemsList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ResultObjectiveListItemsList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

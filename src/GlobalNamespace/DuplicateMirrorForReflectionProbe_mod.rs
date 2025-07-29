@@ -1,10 +1,10 @@
-#[cfg(feature = "DuplicateMirrorForReflectionProbe")]
+#[cfg(feature = "cordl_class_DuplicateMirrorForReflectionProbe")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DuplicateMirrorForReflectionProbe {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
-#[cfg(feature = "DuplicateMirrorForReflectionProbe")]
+#[cfg(feature = "cordl_class_DuplicateMirrorForReflectionProbe")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
         false
     }
 }
-#[cfg(feature = "DuplicateMirrorForReflectionProbe")]
+#[cfg(feature = "cordl_class_DuplicateMirrorForReflectionProbe")]
 impl std::ops::Deref for crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DuplicateMirrorForReflectionProbe")]
+#[cfg(feature = "cordl_class_DuplicateMirrorForReflectionProbe")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DuplicateMirrorForReflectionProbe")]
+#[cfg(feature = "cordl_class_DuplicateMirrorForReflectionProbe")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "RankModel")]
+#[cfg(feature = "cordl_class_RankModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RankModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "RankModel")]
+#[cfg(feature = "cordl_class_RankModel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RankModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RankModel {
         false
     }
 }
-#[cfg(feature = "RankModel")]
+#[cfg(feature = "cordl_class_RankModel")]
 impl std::ops::Deref for crate::GlobalNamespace::RankModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RankModel")]
+#[cfg(feature = "cordl_class_RankModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RankModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::RankModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RankModel")]
+#[cfg(feature = "cordl_class_RankModel")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RankModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -114,7 +114,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RankModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "RankModel+Rank")]
+#[cfg(feature = "cordl_class_RankModel+Rank")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RankModel_Rank {
@@ -128,7 +128,7 @@ pub enum RankModel_Rank {
     SS = 6i32,
     SSS = 7i32,
 }
-#[cfg(feature = "RankModel+Rank")]
+#[cfg(feature = "cordl_class_RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RankModel_Rank {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -157,7 +157,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RankModel_Ra
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "RankModel+Rank")]
+#[cfg(feature = "cordl_class_RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::RankModel_Rank {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -167,7 +167,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::RankMode
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "RankModel+Rank")]
+#[cfg(feature = "cordl_class_RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::RankModel_Rank {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -180,7 +180,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::RankMod
         self
     }
 }
-#[cfg(feature = "RankModel+Rank")]
+#[cfg(feature = "cordl_class_RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::RankModel_Rank {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -194,7 +194,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::RankMode
         }
     }
 }
-#[cfg(feature = "RankModel+Rank")]
+#[cfg(feature = "cordl_class_RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::RankModel_Rank {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

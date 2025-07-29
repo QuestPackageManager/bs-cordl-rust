@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Http+MonoWebRequestHandler")]
+#[cfg(feature = "cordl_class_System+Net+Http+MonoWebRequestHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoWebRequestHandler {
@@ -36,7 +36,7 @@ pub struct MonoWebRequestHandler {
     pub timeout: crate::System::Nullable_1<crate::System::TimeSpan>,
     pub disposed: bool,
 }
-#[cfg(feature = "System+Net+Http+MonoWebRequestHandler")]
+#[cfg(feature = "cordl_class_System+Net+Http+MonoWebRequestHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::MonoWebRequestHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -56,14 +56,14 @@ for crate::System::Net::Http::MonoWebRequestHandler {
         false
     }
 }
-#[cfg(feature = "System+Net+Http+MonoWebRequestHandler")]
+#[cfg(feature = "cordl_class_System+Net+Http+MonoWebRequestHandler")]
 impl std::ops::Deref for crate::System::Net::Http::MonoWebRequestHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Http+MonoWebRequestHandler")]
+#[cfg(feature = "cordl_class_System+Net+Http+MonoWebRequestHandler")]
 impl std::ops::DerefMut for crate::System::Net::Http::MonoWebRequestHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -546,7 +546,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Http+MonoWebRequestHandler")]
+#[cfg(feature = "cordl_class_System+Net+Http+MonoWebRequestHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::MonoWebRequestHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

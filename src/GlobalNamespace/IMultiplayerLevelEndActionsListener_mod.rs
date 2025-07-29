@@ -1,10 +1,10 @@
-#[cfg(feature = "IMultiplayerLevelEndActionsListener")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsListener")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMultiplayerLevelEndActionsListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "IMultiplayerLevelEndActionsListener")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsListener")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
         false
     }
 }
-#[cfg(feature = "IMultiplayerLevelEndActionsListener")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsListener")]
 impl std::ops::Deref for crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "IMultiplayerLevelEndActionsListener")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsListener")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
         unsafe { (object_param as *mut Self) }
     }
 }
-#[cfg(feature = "IMultiplayerLevelEndActionsListener")]
+#[cfg(feature = "cordl_class_IMultiplayerLevelEndActionsListener")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JobsUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         false
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl std::ops::Deref for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl std::ops::DerefMut for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -386,7 +386,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -396,7 +396,9 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
+#[cfg(
+    feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JobsUtility_JobScheduleParameters {
@@ -405,7 +407,9 @@ pub struct JobsUtility_JobScheduleParameters {
     pub ReflectionData: crate::System::IntPtr,
     pub JobDataPtr: crate::System::IntPtr,
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
+#[cfg(
+    feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Held<'a> = Self;
@@ -435,7 +439,9 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
+#[cfg(
+    feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Type = Self;
@@ -446,7 +452,9 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
+#[cfg(
+    feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Actual = Self;
@@ -460,7 +468,9 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         self
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
+#[cfg(
+    feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Type = Self;
@@ -475,7 +485,9 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         }
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
+#[cfg(
+    feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Actual = Self;
@@ -489,7 +501,9 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         actual
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
+#[cfg(
+    feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Type = Self;
@@ -543,13 +557,13 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JobsUtility_PanicFunction_ {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -569,7 +583,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
         false
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 impl std::ops::Deref
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
     type Target = crate::System::MulticastDelegate;
@@ -577,7 +591,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 impl std::ops::DerefMut
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -650,7 +664,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
+#[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

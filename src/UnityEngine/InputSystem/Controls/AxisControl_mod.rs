@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AxisControl {
@@ -15,7 +15,7 @@ pub struct AxisControl {
     pub scale: bool,
     pub scaleFactor: f32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::AxisControl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::UnityEngine::InputSystem::Controls::AxisControl {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::AxisControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::AxisControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -311,7 +311,7 @@ impl crate::UnityEngine::InputSystem::Controls::AxisControl {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Controls::AxisControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -321,7 +321,7 @@ for crate::UnityEngine::InputSystem::Controls::AxisControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AxisControl_Clamp {
@@ -331,7 +331,7 @@ pub enum AxisControl_Clamp {
     None = 0i32,
     ToConstantBeforeNormalize = 3i32,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
     type Held<'a> = Self;
@@ -361,7 +361,7 @@ for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
     type Type = Self;
@@ -372,7 +372,7 @@ for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
     type Actual = Self;
@@ -386,7 +386,7 @@ for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
     type Type = Self;
@@ -401,7 +401,7 @@ for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp {
     type Actual = Self;

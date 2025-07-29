@@ -1,4 +1,4 @@
-#[cfg(feature = "HydraulicCarSuspensionEffect")]
+#[cfg(feature = "cordl_class_HydraulicCarSuspensionEffect")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HydraulicCarSuspensionEffect {
@@ -31,7 +31,7 @@ pub struct HydraulicCarSuspensionEffect {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
 }
-#[cfg(feature = "HydraulicCarSuspensionEffect")]
+#[cfg(feature = "cordl_class_HydraulicCarSuspensionEffect")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
         false
     }
 }
-#[cfg(feature = "HydraulicCarSuspensionEffect")]
+#[cfg(feature = "cordl_class_HydraulicCarSuspensionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HydraulicCarSuspensionEffect")]
+#[cfg(feature = "cordl_class_HydraulicCarSuspensionEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -197,7 +197,7 @@ impl crate::GlobalNamespace::HydraulicCarSuspensionEffect {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HydraulicCarSuspensionEffect")]
+#[cfg(feature = "cordl_class_HydraulicCarSuspensionEffect")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

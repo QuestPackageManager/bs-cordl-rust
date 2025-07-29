@@ -1,4 +1,4 @@
-#[cfg(feature = "System+ByteMatcher")]
+#[cfg(feature = "cordl_class_System+ByteMatcher")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByteMatcher {
@@ -6,7 +6,7 @@ pub struct ByteMatcher {
     pub map: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub starts: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
-#[cfg(feature = "System+ByteMatcher")]
+#[cfg(feature = "cordl_class_System+ByteMatcher")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::ByteMatcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ByteMatcher {
         false
     }
 }
-#[cfg(feature = "System+ByteMatcher")]
+#[cfg(feature = "cordl_class_System+ByteMatcher")]
 impl std::ops::Deref for crate::System::ByteMatcher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ByteMatcher")]
+#[cfg(feature = "cordl_class_System+ByteMatcher")]
 impl std::ops::DerefMut for crate::System::ByteMatcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -177,7 +177,7 @@ impl crate::System::ByteMatcher {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ByteMatcher")]
+#[cfg(feature = "cordl_class_System+ByteMatcher")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ByteMatcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "OculusPlatformUserModel")]
+#[cfg(feature = "cordl_class_OculusPlatformUserModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusPlatformUserModel {
@@ -22,7 +22,7 @@ pub struct OculusPlatformUserModel {
         >,
     >,
 }
-#[cfg(feature = "OculusPlatformUserModel")]
+#[cfg(feature = "cordl_class_OculusPlatformUserModel")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusPlatformUserModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -42,14 +42,14 @@ for crate::GlobalNamespace::OculusPlatformUserModel {
         false
     }
 }
-#[cfg(feature = "OculusPlatformUserModel")]
+#[cfg(feature = "cordl_class_OculusPlatformUserModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformUserModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OculusPlatformUserModel")]
+#[cfg(feature = "cordl_class_OculusPlatformUserModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformUserModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -535,7 +535,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OculusPlatformUserModel")]
+#[cfg(feature = "cordl_class_OculusPlatformUserModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusPlatformUserModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -559,7 +559,9 @@ for crate::GlobalNamespace::OculusPlatformUserModel {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+#[cfg(
+    feature = "cordl_class_OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
@@ -580,7 +582,9 @@ pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
         >,
     >,
 }
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+#[cfg(
+    feature = "cordl_class_OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     type Held<'a> = Self;
@@ -610,7 +614,9 @@ for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+#[cfg(
+    feature = "cordl_class_OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     type Type = Self;
@@ -621,7 +627,9 @@ for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+#[cfg(
+    feature = "cordl_class_OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     type Actual = Self;
@@ -635,7 +643,9 @@ for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__
         self
     }
 }
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+#[cfg(
+    feature = "cordl_class_OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     type Type = Self;
@@ -650,7 +660,9 @@ for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__
         }
     }
 }
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+#[cfg(
+    feature = "cordl_class_OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     type Actual = Self;
@@ -664,7 +676,9 @@ for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__
         actual
     }
 }
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+#[cfg(
+    feature = "cordl_class_OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     type Type = Self;

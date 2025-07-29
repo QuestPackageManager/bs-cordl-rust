@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+UIPainter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIPainter2D")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIPainter2D {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+UIPainter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIPainter2D")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIPainter2D {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIPa
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIPainter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIPainter2D")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIPainter2D {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIPainter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIPainter2D")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIPainter2D {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -114,7 +114,7 @@ impl crate::UnityEngine::UIElements::UIPainter2D {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UIPainter2D")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIPainter2D")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIPainter2D {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "SpriteLightWithId")]
+#[cfg(feature = "cordl_class_SpriteLightWithId")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteLightWithId {
@@ -14,7 +14,7 @@ pub struct SpriteLightWithId {
     pub _setAlphaOnly: bool,
     pub _setOnlyOnce: bool,
 }
-#[cfg(feature = "SpriteLightWithId")]
+#[cfg(feature = "cordl_class_SpriteLightWithId")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SpriteLightWithId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SpriteLightW
         false
     }
 }
-#[cfg(feature = "SpriteLightWithId")]
+#[cfg(feature = "cordl_class_SpriteLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::SpriteLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SpriteLightWithId")]
+#[cfg(feature = "cordl_class_SpriteLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpriteLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::SpriteLightWithId {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SpriteLightWithId")]
+#[cfg(feature = "cordl_class_SpriteLightWithId")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpriteLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -135,7 +135,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpriteLightWi
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
+#[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteLightWithId_MultiplyColorByAlphaType {
@@ -144,7 +144,7 @@ pub enum SpriteLightWithId_MultiplyColorByAlphaType {
     BeforeApplyingMinAlpha = 1i32,
     None = 0i32,
 }
-#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
+#[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Held<'a> = Self;
@@ -174,7 +174,7 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
+#[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Type = Self;
@@ -185,7 +185,7 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
+#[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Actual = Self;
@@ -199,7 +199,7 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
         self
     }
 }
-#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
+#[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Type = Self;
@@ -214,7 +214,7 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
         }
     }
 }
-#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
+#[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+BlurEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BlurEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BlurEvent {
@@ -6,7 +6,7 @@ pub struct BlurEvent {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BlurEvent>,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+BlurEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BlurEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::BlurEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Blur
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BlurEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BlurEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BlurEvent {
     type Target = crate::UnityEngine::UIElements::FocusEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BlurEvent>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BlurEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BlurEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BlurEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BlurEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -99,7 +99,7 @@ impl crate::UnityEngine::UIElements::BlurEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BlurEvent")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BlurEvent")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::BlurEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

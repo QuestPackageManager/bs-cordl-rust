@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PartInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_PartInfo {
@@ -16,7 +16,7 @@ pub struct HAPI_PartInfo {
     pub instanceCount: i32,
     pub hasChanged: bool,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PartInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_PartInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -45,7 +45,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Part
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PartInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_PartInfo {
     type Type = Self;
@@ -56,7 +56,7 @@ for crate::HoudiniEngineUnity::HAPI_PartInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PartInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_PartInfo {
     type Actual = Self;
@@ -70,7 +70,7 @@ for crate::HoudiniEngineUnity::HAPI_PartInfo {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PartInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_PartInfo {
     type Type = Self;
@@ -85,7 +85,7 @@ for crate::HoudiniEngineUnity::HAPI_PartInfo {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PartInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_PartInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -98,7 +98,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_Pa
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_PartInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HAPI_PartInfo {
     type Type = Self;

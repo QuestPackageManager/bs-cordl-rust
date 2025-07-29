@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+Timeline+NotificationUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotificationUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotificationUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+Timeline+NotificationUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotificationUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::NotificationUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::Timeline::NotificationUtilities {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+NotificationUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotificationUtilities")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::NotificationUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+NotificationUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotificationUtilities")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::NotificationUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -246,7 +246,7 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+NotificationUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+NotificationUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::NotificationUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

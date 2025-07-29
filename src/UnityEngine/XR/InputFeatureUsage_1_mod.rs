@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputFeatureUsage_1")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputFeatureUsage_1<T: quest_hook::libil2cpp::Type> {
@@ -7,7 +7,7 @@ pub struct InputFeatureUsage_1<T: quest_hook::libil2cpp::Type> {
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputFeatureUsage_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
     type Held<'a> = Self;
@@ -53,7 +53,7 @@ for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputFeatureUsage_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
     type Type = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputFeatureUsage_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
     type Actual = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputFeatureUsage_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
     type Type = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputFeatureUsage_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
     type Actual = Self;
@@ -107,7 +107,7 @@ for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+InputFeatureUsage_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
     type Type = Self;

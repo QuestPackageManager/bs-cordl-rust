@@ -1,4 +1,4 @@
-#[cfg(feature = "RecPlayBehaviour")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecPlayBehaviour {
@@ -32,7 +32,7 @@ pub struct RecPlayBehaviour {
     pub _recording: bool,
     pub _playback: bool,
 }
-#[cfg(feature = "RecPlayBehaviour")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RecPlayBehaviour {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -51,14 +51,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RecPlayBehav
         false
     }
 }
-#[cfg(feature = "RecPlayBehaviour")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::RecPlayBehaviour {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RecPlayBehaviour")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecPlayBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -537,7 +537,7 @@ impl crate::GlobalNamespace::RecPlayBehaviour {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RecPlayBehaviour")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecPlayBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -546,7 +546,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecPlayBehavi
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "RecPlayBehaviour+State")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour+State")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecPlayBehaviour_State {
@@ -554,7 +554,7 @@ pub struct RecPlayBehaviour_State {
     pub recording: bool,
     pub playback: bool,
 }
-#[cfg(feature = "RecPlayBehaviour+State")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour+State")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RecPlayBehaviour_State {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -574,14 +574,14 @@ for crate::GlobalNamespace::RecPlayBehaviour_State {
         false
     }
 }
-#[cfg(feature = "RecPlayBehaviour+State")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour+State")]
 impl std::ops::Deref for crate::GlobalNamespace::RecPlayBehaviour_State {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RecPlayBehaviour+State")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour+State")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecPlayBehaviour_State {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -618,7 +618,7 @@ impl crate::GlobalNamespace::RecPlayBehaviour_State {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RecPlayBehaviour+State")]
+#[cfg(feature = "cordl_class_RecPlayBehaviour+State")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RecPlayBehaviour_State {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

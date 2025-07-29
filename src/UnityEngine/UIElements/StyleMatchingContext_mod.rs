@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleMatchingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleMatchingContext")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleMatchingContext {
@@ -24,7 +24,7 @@ pub struct StyleMatchingContext {
         crate::UnityEngine::UIElements::AncestorFilter,
     >,
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleMatchingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleMatchingContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::StyleMatchingContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -44,14 +44,14 @@ for crate::UnityEngine::UIElements::StyleMatchingContext {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleMatchingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleMatchingContext")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleMatchingContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleMatchingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleMatchingContext")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleMatchingContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -214,7 +214,7 @@ impl crate::UnityEngine::UIElements::StyleMatchingContext {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+StyleMatchingContext")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleMatchingContext")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleMatchingContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

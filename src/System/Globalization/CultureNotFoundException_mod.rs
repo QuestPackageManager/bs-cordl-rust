@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Globalization+CultureNotFoundException")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureNotFoundException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureNotFoundException {
@@ -8,7 +8,7 @@ pub struct CultureNotFoundException {
     >,
     pub _invalidCultureId: crate::System::Nullable_1<i32>,
 }
-#[cfg(feature = "System+Globalization+CultureNotFoundException")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureNotFoundException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Globalization::CultureNotFoundException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Globalization::CultureNotFoundException {
         false
     }
 }
-#[cfg(feature = "System+Globalization+CultureNotFoundException")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureNotFoundException")]
 impl std::ops::Deref for crate::System::Globalization::CultureNotFoundException {
     type Target = crate::System::ArgumentException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Globalization+CultureNotFoundException")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureNotFoundException")]
 impl std::ops::DerefMut for crate::System::Globalization::CultureNotFoundException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -327,7 +327,7 @@ impl crate::System::Globalization::CultureNotFoundException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Globalization+CultureNotFoundException")]
+#[cfg(feature = "cordl_class_System+Globalization+CultureNotFoundException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Globalization::CultureNotFoundException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

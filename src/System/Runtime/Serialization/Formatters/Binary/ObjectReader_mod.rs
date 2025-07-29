@@ -1,4 +1,6 @@
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectReader {
@@ -62,7 +64,9 @@ pub struct ObjectReader {
     pub previousName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub previousType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -82,7 +86,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
         false
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader"
+)]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -90,7 +96,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader"
+)]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1222,7 +1230,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader")]
+#[cfg(
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1233,7 +1243,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1244,7 +1254,7 @@ pub struct ObjectReader_TopLevelAssemblyTypeResolver {
     >,
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopLevelAssemblyTypeResolver {
@@ -1266,7 +1276,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopL
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopLevelAssemblyTypeResolver {
@@ -1276,7 +1286,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopL
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopLevelAssemblyTypeResolver {
@@ -1362,7 +1372,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_Top
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopLevelAssemblyTypeResolver {
@@ -1374,7 +1384,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopL
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -1384,7 +1394,7 @@ pub struct ObjectReader_TypeNAssembly {
     pub assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TypeNAssembly {
@@ -1406,7 +1416,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_Type
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TypeNAssembly {
@@ -1416,7 +1426,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_Type
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TypeNAssembly {
@@ -1458,7 +1468,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_Typ
     }
 }
 #[cfg(
-    feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
+    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TypeNAssembly {

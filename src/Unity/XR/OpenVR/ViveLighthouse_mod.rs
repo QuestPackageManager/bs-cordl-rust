@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+XR+OpenVR+ViveLighthouse")]
+#[cfg(feature = "cordl_class_Unity+XR+OpenVR+ViveLighthouse")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViveLighthouse {
     __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
 }
-#[cfg(feature = "Unity+XR+OpenVR+ViveLighthouse")]
+#[cfg(feature = "cordl_class_Unity+XR+OpenVR+ViveLighthouse")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::OpenVR::ViveLighthouse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::OpenVR::ViveLighth
         false
     }
 }
-#[cfg(feature = "Unity+XR+OpenVR+ViveLighthouse")]
+#[cfg(feature = "cordl_class_Unity+XR+OpenVR+ViveLighthouse")]
 impl std::ops::Deref for crate::Unity::XR::OpenVR::ViveLighthouse {
     type Target = crate::UnityEngine::InputSystem::TrackedDevice;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+XR+OpenVR+ViveLighthouse")]
+#[cfg(feature = "cordl_class_Unity+XR+OpenVR+ViveLighthouse")]
 impl std::ops::DerefMut for crate::Unity::XR::OpenVR::ViveLighthouse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -67,7 +67,7 @@ impl crate::Unity::XR::OpenVR::ViveLighthouse {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+XR+OpenVR+ViveLighthouse")]
+#[cfg(feature = "cordl_class_Unity+XR+OpenVR+ViveLighthouse")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::OpenVR::ViveLighthouse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+MonoChunkStream")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoChunkStream {
@@ -10,7 +10,7 @@ pub struct MonoChunkStream {
         crate::System::Net::MonoChunkParser,
     >,
 }
-#[cfg(feature = "System+Net+MonoChunkStream")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkStream 
         false
     }
 }
-#[cfg(feature = "System+Net+MonoChunkStream")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkStream")]
 impl std::ops::Deref for crate::System::Net::MonoChunkStream {
     type Target = crate::System::Net::WebReadStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+MonoChunkStream")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkStream")]
 impl std::ops::DerefMut for crate::System::Net::MonoChunkStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -244,7 +244,7 @@ impl crate::System::Net::MonoChunkStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+MonoChunkStream")]
+#[cfg(feature = "cordl_class_System+Net+MonoChunkStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::MonoChunkStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

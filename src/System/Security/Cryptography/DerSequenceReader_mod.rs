@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerSequenceReader {
@@ -8,7 +8,7 @@ pub struct DerSequenceReader {
     pub _position: i32,
     pub _ContentLength_k__BackingField: i32,
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::DerSequenceReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Security::Cryptography::DerSequenceReader {
         false
     }
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader")]
 impl std::ops::Deref for crate::System::Security::Cryptography::DerSequenceReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::DerSequenceReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -929,7 +929,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::DerSequenceReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -939,7 +939,7 @@ for crate::System::Security::Cryptography::DerSequenceReader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader+DerTag")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DerSequenceReader_DerTag {
@@ -960,7 +960,7 @@ pub enum DerSequenceReader_DerTag {
     UTCTime = 23u8,
     UTF8String = 12u8,
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader+DerTag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
     type Held<'a> = Self;
@@ -990,7 +990,7 @@ for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader+DerTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
     type Type = Self;
@@ -1001,7 +1001,7 @@ for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader+DerTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
     type Actual = Self;
@@ -1015,7 +1015,7 @@ for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
         self
     }
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader+DerTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
     type Type = Self;
@@ -1030,7 +1030,7 @@ for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
         }
     }
 }
-#[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
+#[cfg(feature = "cordl_class_System+Security+Cryptography+DerSequenceReader+DerTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
     type Actual = Self;

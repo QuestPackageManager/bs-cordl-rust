@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeHierarchyFlagsUpdater {
@@ -6,7 +6,7 @@ pub struct VisualTreeHierarchyFlagsUpdater {
     pub m_Version: u32,
     pub m_LastVersion: u32,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
     type Target = crate::UnityEngine::UIElements::BaseVisualTreeUpdater;
@@ -34,7 +34,7 @@ for crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -208,7 +208,7 @@ impl crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

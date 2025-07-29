@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Reflection+ParameterModifier")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterModifier")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParameterModifier {
     pub _byRef: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
 }
-#[cfg(feature = "System+Reflection+ParameterModifier")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterModifier")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Reflection::ParameterModifier {
     type Held<'a> = Self;
@@ -34,7 +34,7 @@ for crate::System::Reflection::ParameterModifier {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Reflection+ParameterModifier")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterModifier")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::ParameterModifier {
     type Type = Self;
@@ -45,7 +45,7 @@ for crate::System::Reflection::ParameterModifier {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Reflection+ParameterModifier")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterModifier")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::ParameterModifier {
     type Actual = Self;
@@ -59,7 +59,7 @@ for crate::System::Reflection::ParameterModifier {
         self
     }
 }
-#[cfg(feature = "System+Reflection+ParameterModifier")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterModifier")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::ParameterModifier {
     type Type = Self;
@@ -74,7 +74,7 @@ for crate::System::Reflection::ParameterModifier {
         }
     }
 }
-#[cfg(feature = "System+Reflection+ParameterModifier")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterModifier")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::ParameterModifier {
     type Actual = Self;
@@ -88,7 +88,7 @@ for crate::System::Reflection::ParameterModifier {
         actual
     }
 }
-#[cfg(feature = "System+Reflection+ParameterModifier")]
+#[cfg(feature = "cordl_class_System+Reflection+ParameterModifier")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Reflection::ParameterModifier {
     type Type = Self;

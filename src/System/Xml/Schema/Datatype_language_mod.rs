@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Xml+Schema+Datatype_language")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_language")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_language {
     __cordl_parent: crate::System::Xml::Schema::Datatype_token,
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_language")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_language")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::Datatype_language {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_language {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_language")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_language")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_language {
     type Target = crate::System::Xml::Schema::Datatype_token;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_language")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_language")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_language {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::System::Xml::Schema::Datatype_language {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+Datatype_language")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_language")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::Datatype_language {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

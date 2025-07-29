@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LigatureSubstitutionRecord {
@@ -7,7 +7,7 @@ pub struct LigatureSubstitutionRecord {
     >,
     pub m_LigatureGlyphID: u32,
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
     type Actual = Self;
@@ -91,7 +91,7 @@ for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord {
     type Type = Self;

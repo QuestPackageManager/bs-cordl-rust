@@ -1,10 +1,10 @@
-#[cfg(feature = "ToneMappingExtensions")]
+#[cfg(feature = "cordl_class_ToneMappingExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ToneMappingExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ToneMappingExtensions")]
+#[cfg(feature = "cordl_class_ToneMappingExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ToneMappingExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ToneMappingExtensions {
         false
     }
 }
-#[cfg(feature = "ToneMappingExtensions")]
+#[cfg(feature = "cordl_class_ToneMappingExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::ToneMappingExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ToneMappingExtensions")]
+#[cfg(feature = "cordl_class_ToneMappingExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ToneMappingExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::ToneMappingExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ToneMappingExtensions")]
+#[cfg(feature = "cordl_class_ToneMappingExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ToneMappingExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

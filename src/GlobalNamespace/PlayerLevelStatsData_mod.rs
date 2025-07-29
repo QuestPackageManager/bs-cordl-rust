@@ -1,4 +1,4 @@
-#[cfg(feature = "PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerLevelStatsData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerLevelStatsData {
@@ -15,7 +15,7 @@ pub struct PlayerLevelStatsData {
         crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
 }
-#[cfg(feature = "PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerLevelStatsData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PlayerLevelStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::GlobalNamespace::PlayerLevelStatsData {
         false
     }
 }
-#[cfg(feature = "PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerLevelStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerLevelStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerLevelStatsData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerLevelStatsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -506,7 +506,7 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PlayerLevelStatsData")]
+#[cfg(feature = "cordl_class_PlayerLevelStatsData")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerLevelStatsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

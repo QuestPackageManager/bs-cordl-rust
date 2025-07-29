@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Video+VideoAudioOutputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoAudioOutputMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoAudioOutputMode {
@@ -8,7 +8,7 @@ pub enum VideoAudioOutputMode {
     Direct = 2i32,
     None = 0i32,
 }
-#[cfg(feature = "UnityEngine+Video+VideoAudioOutputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoAudioOutputMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Video::VideoAudioOutputMode {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::Video::VideoAudioOutputMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoAudioOutputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoAudioOutputMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Video::VideoAudioOutputMode {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::Video::VideoAudioOutputMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoAudioOutputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoAudioOutputMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Video::VideoAudioOutputMode {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::Video::VideoAudioOutputMode {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoAudioOutputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoAudioOutputMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Video::VideoAudioOutputMode {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::Video::VideoAudioOutputMode {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Video+VideoAudioOutputMode")]
+#[cfg(feature = "cordl_class_UnityEngine+Video+VideoAudioOutputMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Video::VideoAudioOutputMode {
     type Actual = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NameAndParameters")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NameAndParameters {
@@ -9,7 +9,7 @@ pub struct NameAndParameters {
         crate::UnityEngine::InputSystem::Utilities::NamedValue,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NameAndParameters")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NameAndParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NameAndParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NameAndParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NameAndParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+NameAndParameters")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     type Type = Self;

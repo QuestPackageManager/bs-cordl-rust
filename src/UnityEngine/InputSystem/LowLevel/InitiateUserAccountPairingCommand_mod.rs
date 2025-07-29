@@ -1,10 +1,14 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InitiateUserAccountPairingCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Held<'a> = Self;
@@ -34,7 +38,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Type = Self;
@@ -45,7 +51,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Actual = Self;
@@ -59,7 +67,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         self
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Type = Self;
@@ -74,7 +84,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Actual = Self;
@@ -88,7 +100,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         actual
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Type = Self;
@@ -203,7 +217,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -214,7 +228,7 @@ pub enum InitiateUserAccountPairingCommand_Result {
     SuccessfullyInitiated = 1i32,
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {
@@ -246,7 +260,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {
@@ -259,7 +273,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {
@@ -275,7 +289,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {
@@ -292,7 +306,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
     }
 }
 #[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {

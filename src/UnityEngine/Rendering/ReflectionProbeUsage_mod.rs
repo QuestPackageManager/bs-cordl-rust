@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeUsage")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeUsage {
@@ -8,7 +8,7 @@ pub enum ReflectionProbeUsage {
     Off = 0i32,
     Simple = 3i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeUsage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::ReflectionProbeUsage {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeUsage {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeUsage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ReflectionProbeUsage {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeUsage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeUsage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ReflectionProbeUsage {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeUsage {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeUsage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ReflectionProbeUsage {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeUsage {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeUsage")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ReflectionProbeUsage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ReflectionProbeUsage {
     type Actual = Self;

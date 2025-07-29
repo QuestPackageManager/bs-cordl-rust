@@ -1,10 +1,10 @@
-#[cfg(feature = "ScoreModel")]
+#[cfg(feature = "cordl_class_ScoreModel")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "ScoreModel")]
+#[cfg(feature = "cordl_class_ScoreModel")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoreModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoreModel {
         false
     }
 }
-#[cfg(feature = "ScoreModel")]
+#[cfg(feature = "cordl_class_ScoreModel")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScoreModel")]
+#[cfg(feature = "cordl_class_ScoreModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -193,7 +193,7 @@ impl crate::GlobalNamespace::ScoreModel {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScoreModel")]
+#[cfg(feature = "cordl_class_ScoreModel")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -202,7 +202,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
+#[cfg(feature = "cordl_class_ScoreModel+MaxScoreCounterElement")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel_MaxScoreCounterElement {
@@ -212,7 +212,7 @@ pub struct ScoreModel_MaxScoreCounterElement {
     >,
     pub _cordl_time: f32,
 }
-#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
+#[cfg(feature = "cordl_class_ScoreModel+MaxScoreCounterElement")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -232,14 +232,14 @@ for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
         false
     }
 }
-#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
+#[cfg(feature = "cordl_class_ScoreModel+MaxScoreCounterElement")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
+#[cfg(feature = "cordl_class_ScoreModel+MaxScoreCounterElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -315,7 +315,7 @@ impl crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
+#[cfg(feature = "cordl_class_ScoreModel+MaxScoreCounterElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -361,7 +361,7 @@ impl AsMut<
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "ScoreModel+NoteScoreDefinition")]
+#[cfg(feature = "cordl_class_ScoreModel+NoteScoreDefinition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel_NoteScoreDefinition {
@@ -373,7 +373,7 @@ pub struct ScoreModel_NoteScoreDefinition {
     pub maxAfterCutScore: i32,
     pub fixedCutScore: i32,
 }
-#[cfg(feature = "ScoreModel+NoteScoreDefinition")]
+#[cfg(feature = "cordl_class_ScoreModel+NoteScoreDefinition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -393,14 +393,14 @@ for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
         false
     }
 }
-#[cfg(feature = "ScoreModel+NoteScoreDefinition")]
+#[cfg(feature = "cordl_class_ScoreModel+NoteScoreDefinition")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ScoreModel+NoteScoreDefinition")]
+#[cfg(feature = "cordl_class_ScoreModel+NoteScoreDefinition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -509,7 +509,7 @@ impl crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ScoreModel+NoteScoreDefinition")]
+#[cfg(feature = "cordl_class_ScoreModel+NoteScoreDefinition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

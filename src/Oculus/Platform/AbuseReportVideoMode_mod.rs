@@ -1,4 +1,4 @@
-#[cfg(feature = "Oculus+Platform+AbuseReportVideoMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportVideoMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AbuseReportVideoMode {
@@ -8,7 +8,7 @@ pub enum AbuseReportVideoMode {
     Skip = 3i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportVideoMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportVideoMode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Oculus::Platform::AbuseReportVideoMode {
     type Held<'a> = Self;
@@ -38,7 +38,7 @@ for crate::Oculus::Platform::AbuseReportVideoMode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportVideoMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportVideoMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::AbuseReportVideoMode {
     type Type = Self;
@@ -49,7 +49,7 @@ for crate::Oculus::Platform::AbuseReportVideoMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportVideoMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportVideoMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::AbuseReportVideoMode {
     type Actual = Self;
@@ -63,7 +63,7 @@ for crate::Oculus::Platform::AbuseReportVideoMode {
         self
     }
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportVideoMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportVideoMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::AbuseReportVideoMode {
     type Type = Self;
@@ -78,7 +78,7 @@ for crate::Oculus::Platform::AbuseReportVideoMode {
         }
     }
 }
-#[cfg(feature = "Oculus+Platform+AbuseReportVideoMode")]
+#[cfg(feature = "cordl_class_Oculus+Platform+AbuseReportVideoMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::AbuseReportVideoMode {
     type Actual = Self;

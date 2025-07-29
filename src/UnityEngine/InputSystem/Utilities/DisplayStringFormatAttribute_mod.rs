@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisplayStringFormatAttribute {
@@ -7,7 +9,9 @@ pub struct DisplayStringFormatAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     type Target = crate::System::Attribute;
@@ -35,7 +41,9 @@ for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -133,7 +141,9 @@ impl crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

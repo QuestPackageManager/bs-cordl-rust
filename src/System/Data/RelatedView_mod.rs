@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+RelatedView")]
+#[cfg(feature = "cordl_class_System+Data+RelatedView")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RelatedView {
@@ -12,7 +12,7 @@ pub struct RelatedView {
         >,
     >,
 }
-#[cfg(feature = "System+Data+RelatedView")]
+#[cfg(feature = "cordl_class_System+Data+RelatedView")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::RelatedView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::RelatedView {
         false
     }
 }
-#[cfg(feature = "System+Data+RelatedView")]
+#[cfg(feature = "cordl_class_System+Data+RelatedView")]
 impl std::ops::Deref for crate::System::Data::RelatedView {
     type Target = crate::System::Data::DataView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+RelatedView")]
+#[cfg(feature = "cordl_class_System+Data+RelatedView")]
 impl std::ops::DerefMut for crate::System::Data::RelatedView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -327,7 +327,7 @@ impl crate::System::Data::RelatedView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+RelatedView")]
+#[cfg(feature = "cordl_class_System+Data+RelatedView")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::RelatedView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

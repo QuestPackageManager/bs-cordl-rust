@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+MouseEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseEventDispatchingStrategy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseEventDispatchingStrategy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseEventDispatchingStrategy")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseEventDispatchingStrategy")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseEventDispatchingStrategy")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -341,7 +341,7 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+MouseEventDispatchingStrategy")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseEventDispatchingStrategy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

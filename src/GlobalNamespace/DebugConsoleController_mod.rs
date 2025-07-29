@@ -1,4 +1,4 @@
-#[cfg(feature = "DebugConsoleController")]
+#[cfg(feature = "cordl_class_DebugConsoleController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugConsoleController {
@@ -29,7 +29,7 @@ pub struct DebugConsoleController {
         crate::System::Threading::Tasks::Task,
     >,
 }
-#[cfg(feature = "DebugConsoleController")]
+#[cfg(feature = "cordl_class_DebugConsoleController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DebugConsoleController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,14 +49,14 @@ for crate::GlobalNamespace::DebugConsoleController {
         false
     }
 }
-#[cfg(feature = "DebugConsoleController")]
+#[cfg(feature = "cordl_class_DebugConsoleController")]
 impl std::ops::Deref for crate::GlobalNamespace::DebugConsoleController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "DebugConsoleController")]
+#[cfg(feature = "cordl_class_DebugConsoleController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DebugConsoleController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -569,7 +569,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "DebugConsoleController")]
+#[cfg(feature = "cordl_class_DebugConsoleController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DebugConsoleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -607,14 +607,14 @@ for crate::GlobalNamespace::DebugConsoleController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+#[cfg(feature = "cordl_class_DebugConsoleController+ConsoleMessage")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DebugConsoleController_ConsoleMessage {
     pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Type: crate::UnityEngine::LogType,
 }
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+#[cfg(feature = "cordl_class_DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Held<'a> = Self;
@@ -644,7 +644,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+#[cfg(feature = "cordl_class_DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Type = Self;
@@ -655,7 +655,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+#[cfg(feature = "cordl_class_DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Actual = Self;
@@ -669,7 +669,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         self
     }
 }
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+#[cfg(feature = "cordl_class_DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Type = Self;
@@ -684,7 +684,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         }
     }
 }
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+#[cfg(feature = "cordl_class_DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Actual = Self;
@@ -698,7 +698,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         actual
     }
 }
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+#[cfg(feature = "cordl_class_DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Type = Self;

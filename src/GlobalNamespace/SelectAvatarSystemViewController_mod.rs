@@ -1,4 +1,4 @@
-#[cfg(feature = "SelectAvatarSystemViewController")]
+#[cfg(feature = "cordl_class_SelectAvatarSystemViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectAvatarSystemViewController {
@@ -49,7 +49,7 @@ pub struct SelectAvatarSystemViewController {
         crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
     >,
 }
-#[cfg(feature = "SelectAvatarSystemViewController")]
+#[cfg(feature = "cordl_class_SelectAvatarSystemViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SelectAvatarSystemViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -69,14 +69,14 @@ for crate::GlobalNamespace::SelectAvatarSystemViewController {
         false
     }
 }
-#[cfg(feature = "SelectAvatarSystemViewController")]
+#[cfg(feature = "cordl_class_SelectAvatarSystemViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectAvatarSystemViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SelectAvatarSystemViewController")]
+#[cfg(feature = "cordl_class_SelectAvatarSystemViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectAvatarSystemViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -835,7 +835,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SelectAvatarSystemViewController")]
+#[cfg(feature = "cordl_class_SelectAvatarSystemViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SelectAvatarSystemViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

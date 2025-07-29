@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Cloth")]
+#[cfg(feature = "cordl_class_UnityEngine+Cloth")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Cloth {
@@ -6,7 +6,7 @@ pub struct Cloth {
     pub _useContinuousCollision_k__BackingField: f32,
     pub _selfCollision_k__BackingField: bool,
 }
-#[cfg(feature = "UnityEngine+Cloth")]
+#[cfg(feature = "cordl_class_UnityEngine+Cloth")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Cloth {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Cloth {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Cloth")]
+#[cfg(feature = "cordl_class_UnityEngine+Cloth")]
 impl std::ops::Deref for crate::UnityEngine::Cloth {
     type Target = crate::UnityEngine::Component;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Cloth")]
+#[cfg(feature = "cordl_class_UnityEngine+Cloth")]
 impl std::ops::DerefMut for crate::UnityEngine::Cloth {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -93,7 +93,7 @@ impl crate::UnityEngine::Cloth {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Cloth")]
+#[cfg(feature = "cordl_class_UnityEngine+Cloth")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Cloth {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

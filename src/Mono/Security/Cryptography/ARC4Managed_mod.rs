@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+ARC4Managed")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ARC4Managed {
@@ -9,7 +9,7 @@ pub struct ARC4Managed {
     pub y: u8,
     pub m_disposed: bool,
 }
-#[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+ARC4Managed")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Cryptography::ARC4Managed {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::Mono::Security::Cryptography::ARC4Managed {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+ARC4Managed")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::ARC4Managed {
     type Target = crate::Mono::Security::Cryptography::RC4;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+ARC4Managed")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::ARC4Managed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -548,7 +548,7 @@ impl crate::Mono::Security::Cryptography::ARC4Managed {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
+#[cfg(feature = "cordl_class_Mono+Security+Cryptography+ARC4Managed")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Cryptography::ARC4Managed {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

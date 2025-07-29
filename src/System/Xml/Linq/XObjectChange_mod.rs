@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Linq+XObjectChange")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChange")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XObjectChange {
@@ -8,7 +8,7 @@ pub enum XObjectChange {
     Remove = 1i32,
     Value = 3i32,
 }
-#[cfg(feature = "System+Xml+Linq+XObjectChange")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChange")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::XObjectChange {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::XObjectCha
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Linq+XObjectChange")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChange")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Linq::XObjectChange {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Linq::XObjec
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Linq+XObjectChange")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Linq::XObjectChange {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::System::Xml::Linq::XObjectChange {
         self
     }
 }
-#[cfg(feature = "System+Xml+Linq+XObjectChange")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChange")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Linq::XObjectChange {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,7 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Linq::XObjec
         }
     }
 }
-#[cfg(feature = "System+Xml+Linq+XObjectChange")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChange")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Linq::XObjectChange {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

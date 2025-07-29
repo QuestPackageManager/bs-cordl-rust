@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AsyncInstantiateOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncInstantiateOperation {
@@ -9,7 +9,7 @@ pub struct AsyncInstantiateOperation {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+AsyncInstantiateOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AsyncInstantiateOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::UnityEngine::AsyncInstantiateOperation {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AsyncInstantiateOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation")]
 impl std::ops::Deref for crate::UnityEngine::AsyncInstantiateOperation {
     type Target = crate::UnityEngine::AsyncOperation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AsyncInstantiateOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation")]
 impl std::ops::DerefMut for crate::UnityEngine::AsyncInstantiateOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -73,7 +73,7 @@ impl crate::UnityEngine::AsyncInstantiateOperation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AsyncInstantiateOperation")]
+#[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AsyncInstantiateOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

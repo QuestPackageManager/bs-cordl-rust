@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+ShaderPropertyFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderPropertyFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShaderPropertyFlags {
@@ -14,7 +14,7 @@ pub enum ShaderPropertyFlags {
     Normal = 8i32,
     PerRendererData = 2i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderPropertyFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderPropertyFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::ShaderPropertyFlags {
     type Held<'a> = Self;
@@ -44,7 +44,7 @@ for crate::UnityEngine::Rendering::ShaderPropertyFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderPropertyFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderPropertyFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ShaderPropertyFlags {
     type Type = Self;
@@ -55,7 +55,7 @@ for crate::UnityEngine::Rendering::ShaderPropertyFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderPropertyFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderPropertyFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ShaderPropertyFlags {
     type Actual = Self;
@@ -69,7 +69,7 @@ for crate::UnityEngine::Rendering::ShaderPropertyFlags {
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderPropertyFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderPropertyFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ShaderPropertyFlags {
     type Type = Self;
@@ -84,7 +84,7 @@ for crate::UnityEngine::Rendering::ShaderPropertyFlags {
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+ShaderPropertyFlags")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderPropertyFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ShaderPropertyFlags {
     type Actual = Self;

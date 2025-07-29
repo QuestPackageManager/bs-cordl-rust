@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlObjectFactoryRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -224,7 +224,7 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

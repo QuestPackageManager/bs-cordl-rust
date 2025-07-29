@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UserAttributeSubpacketTag {
     #[default]
     ImageAttribute = 1i32,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
     type Held<'a> = Self;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
     type Type = Self;
@@ -46,7 +46,7 @@ for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
     type Actual = Self;
@@ -60,7 +60,7 @@ for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
         self
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
     type Type = Self;
@@ -75,7 +75,7 @@ for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
         }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag {
     type Actual = Self;

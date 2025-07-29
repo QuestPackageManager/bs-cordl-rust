@@ -1,10 +1,10 @@
-#[cfg(feature = "Unity+Collections+NativeSliceExtensions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeSliceExtensions")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeSliceExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "Unity+Collections+NativeSliceExtensions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeSliceExtensions")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::Collections::NativeSliceExtensions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::Unity::Collections::NativeSliceExtensions {
         false
     }
 }
-#[cfg(feature = "Unity+Collections+NativeSliceExtensions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeSliceExtensions")]
 impl std::ops::Deref for crate::Unity::Collections::NativeSliceExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Unity+Collections+NativeSliceExtensions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeSliceExtensions")]
 impl std::ops::DerefMut for crate::Unity::Collections::NativeSliceExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -102,7 +102,7 @@ impl crate::Unity::Collections::NativeSliceExtensions {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Unity+Collections+NativeSliceExtensions")]
+#[cfg(feature = "cordl_class_Unity+Collections+NativeSliceExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::NativeSliceExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

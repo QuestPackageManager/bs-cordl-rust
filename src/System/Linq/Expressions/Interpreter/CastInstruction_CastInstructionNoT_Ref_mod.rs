@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct CastInstructionNoT_CastInstruction_Ref {
     __cordl_parent: crate::GlobalNamespace::CastInstruction_CastInstructionNoT,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Ref {
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Ref {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Ref {
     type Target = crate::GlobalNamespace::CastInstruction_CastInstructionNoT;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::CastInstructionNoT_CastInstruct
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Ref {
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Ref {
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Ref {

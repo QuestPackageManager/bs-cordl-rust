@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExceptionDispatchInfo {
@@ -6,7 +6,7 @@ pub struct ExceptionDispatchInfo {
     pub m_Exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     pub m_stackTrace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
-#[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
         false
     }
 }
-#[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
 impl std::ops::Deref
 for crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
 impl std::ops::DerefMut
 for crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -210,7 +210,7 @@ impl crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
+#[cfg(feature = "cordl_class_System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

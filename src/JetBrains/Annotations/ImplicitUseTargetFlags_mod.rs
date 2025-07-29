@@ -1,4 +1,4 @@
-#[cfg(feature = "JetBrains+Annotations+ImplicitUseTargetFlags")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ImplicitUseTargetFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ImplicitUseTargetFlags {
@@ -7,7 +7,7 @@ pub enum ImplicitUseTargetFlags {
     Members = 2i32,
     WithMembers = 3i32,
 }
-#[cfg(feature = "JetBrains+Annotations+ImplicitUseTargetFlags")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ImplicitUseTargetFlags")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
     type Held<'a> = Self;
@@ -37,7 +37,7 @@ for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ImplicitUseTargetFlags")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ImplicitUseTargetFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ImplicitUseTargetFlags")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ImplicitUseTargetFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
         self
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ImplicitUseTargetFlags")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ImplicitUseTargetFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
         }
     }
 }
-#[cfg(feature = "JetBrains+Annotations+ImplicitUseTargetFlags")]
+#[cfg(feature = "cordl_class_JetBrains+Annotations+ImplicitUseTargetFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::JetBrains::Annotations::ImplicitUseTargetFlags {
     type Actual = Self;

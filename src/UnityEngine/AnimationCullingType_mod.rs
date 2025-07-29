@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AnimationCullingType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationCullingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimationCullingType {
@@ -8,7 +8,7 @@ pub enum AnimationCullingType {
     BasedOnRenderers = 1i32,
     BasedOnUserBounds = 3i32,
 }
-#[cfg(feature = "UnityEngine+AnimationCullingType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationCullingType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimationCullingType {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimationCulling
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AnimationCullingType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationCullingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AnimationCullingType {
     type Type = Self;
@@ -48,7 +48,7 @@ for crate::UnityEngine::AnimationCullingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AnimationCullingType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationCullingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AnimationCullingType {
     type Actual = Self;
@@ -62,7 +62,7 @@ for crate::UnityEngine::AnimationCullingType {
         self
     }
 }
-#[cfg(feature = "UnityEngine+AnimationCullingType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationCullingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AnimationCullingType {
     type Type = Self;
@@ -77,7 +77,7 @@ for crate::UnityEngine::AnimationCullingType {
         }
     }
 }
-#[cfg(feature = "UnityEngine+AnimationCullingType")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationCullingType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AnimationCullingType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

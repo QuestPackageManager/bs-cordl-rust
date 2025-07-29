@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_Settings")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Settings {
@@ -49,7 +49,7 @@ pub struct TMP_Settings {
     >,
     pub m_UseModernHangulLineBreakingRules: bool,
 }
-#[cfg(feature = "TMPro+TMP_Settings")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Settings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -68,14 +68,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Settings {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_Settings")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings")]
 impl std::ops::Deref for crate::TMPro::TMP_Settings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_Settings")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings")]
 impl std::ops::DerefMut for crate::TMPro::TMP_Settings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1143,7 +1143,7 @@ impl crate::TMPro::TMP_Settings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Settings")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Settings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1152,7 +1152,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Settings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings+LineBreakingTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Settings_LineBreakingTable {
@@ -1164,7 +1164,7 @@ pub struct TMP_Settings_LineBreakingTable {
         crate::System::Collections::Generic::Dictionary_2<i32, char>,
     >,
 }
-#[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings+LineBreakingTable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::TMP_Settings_LineBreakingTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1184,14 +1184,14 @@ for crate::TMPro::TMP_Settings_LineBreakingTable {
         false
     }
 }
-#[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings+LineBreakingTable")]
 impl std::ops::Deref for crate::TMPro::TMP_Settings_LineBreakingTable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings+LineBreakingTable")]
 impl std::ops::DerefMut for crate::TMPro::TMP_Settings_LineBreakingTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1228,7 +1228,7 @@ impl crate::TMPro::TMP_Settings_LineBreakingTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Settings+LineBreakingTable")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Settings_LineBreakingTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

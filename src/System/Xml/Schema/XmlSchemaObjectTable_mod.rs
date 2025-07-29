@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable {
@@ -15,7 +15,7 @@ pub struct XmlSchemaObjectTable {
         >,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaObjectTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaObjectTable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaObjectTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -403,7 +403,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaObjectTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -413,7 +413,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaObjectTable_EnumeratorType {
@@ -422,7 +422,7 @@ pub enum XmlSchemaObjectTable_EnumeratorType {
     Keys = 0i32,
     Values = 1i32,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Held<'a> = Self;
@@ -452,7 +452,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Type = Self;
@@ -463,7 +463,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Actual = Self;
@@ -477,7 +477,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Type = Self;
@@ -492,7 +492,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Actual = Self;
@@ -506,7 +506,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable_ValuesCollection {
@@ -518,7 +518,7 @@ pub struct XmlSchemaObjectTable_ValuesCollection {
     >,
     pub _cordl_size: i32,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -538,7 +538,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -546,7 +546,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -725,7 +725,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -763,13 +763,17 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable_XSODictionaryEnumerator {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -789,7 +793,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator"
+)]
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     type Target = crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator;
@@ -797,7 +803,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator"
+)]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -941,7 +949,9 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -979,7 +989,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable_XSOEnumerator {
@@ -997,7 +1007,7 @@ pub struct XmlSchemaObjectTable_XSOEnumerator {
         crate::System::Xml::Schema::XmlSchemaObject,
     >,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -1017,14 +1027,14 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
         false
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1154,7 +1164,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
+#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -1178,14 +1188,18 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlSchemaObjectTable_XmlSchemaObjectEntry {
     pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub xso: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Held<'a> = Self;
@@ -1215,7 +1229,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Type = Self;
@@ -1226,7 +1242,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Actual = Self;
@@ -1240,7 +1258,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
         self
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Type = Self;
@@ -1255,7 +1275,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
         }
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Actual = Self;
@@ -1269,7 +1291,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
         actual
     }
 }
-#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
+#[cfg(
+    feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Type = Self;

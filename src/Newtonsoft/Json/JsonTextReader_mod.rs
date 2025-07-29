@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonTextReader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonTextReader {
@@ -20,7 +20,7 @@ pub struct JsonTextReader {
         crate::Newtonsoft::Json::JsonNameTable,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonTextReader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonTextReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonTextRea
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonTextReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonTextReader {
     type Target = crate::Newtonsoft::Json::JsonReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonTextReader")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonTextReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3960,7 +3960,7 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonTextReader")]
 impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::JsonTextReader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

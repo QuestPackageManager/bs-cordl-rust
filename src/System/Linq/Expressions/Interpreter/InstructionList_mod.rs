@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -13,7 +13,7 @@ pub struct DebugView_InstructionList_InstructionView {
     >,
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
@@ -45,7 +45,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
@@ -58,7 +58,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
@@ -74,7 +74,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
@@ -91,7 +91,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
@@ -107,7 +107,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
     }
 }
 #[cfg(
-    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
@@ -197,7 +197,7 @@ impl crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_In
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstructionList {
@@ -235,7 +235,7 @@ pub struct InstructionList {
         >,
     >,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::InstructionList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -255,14 +255,14 @@ for crate::System::Linq::Expressions::Interpreter::InstructionList {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::InstructionList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::InstructionList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3488,7 +3488,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::InstructionList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -3498,13 +3498,17 @@ for crate::System::Linq::Expressions::Interpreter::InstructionList {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstructionList_DebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3524,7 +3528,9 @@ for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3532,7 +3538,9 @@ for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3635,7 +3643,9 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

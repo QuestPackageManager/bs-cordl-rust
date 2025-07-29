@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+Compute_DistanceTransform_EventTypes")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DistanceTransform_EventTypes")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Compute_DistanceTransform_EventTypes {
@@ -6,7 +6,7 @@ pub enum Compute_DistanceTransform_EventTypes {
     Completed = 1i32,
     Processing = 0i32,
 }
-#[cfg(feature = "TMPro+Compute_DistanceTransform_EventTypes")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DistanceTransform_EventTypes")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::TMPro::Compute_DistanceTransform_EventTypes {
     type Held<'a> = Self;
@@ -36,7 +36,7 @@ for crate::TMPro::Compute_DistanceTransform_EventTypes {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+Compute_DistanceTransform_EventTypes")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DistanceTransform_EventTypes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::Compute_DistanceTransform_EventTypes {
     type Type = Self;
@@ -47,7 +47,7 @@ for crate::TMPro::Compute_DistanceTransform_EventTypes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+Compute_DistanceTransform_EventTypes")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DistanceTransform_EventTypes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::Compute_DistanceTransform_EventTypes {
     type Actual = Self;
@@ -61,7 +61,7 @@ for crate::TMPro::Compute_DistanceTransform_EventTypes {
         self
     }
 }
-#[cfg(feature = "TMPro+Compute_DistanceTransform_EventTypes")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DistanceTransform_EventTypes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::Compute_DistanceTransform_EventTypes {
     type Type = Self;
@@ -76,7 +76,7 @@ for crate::TMPro::Compute_DistanceTransform_EventTypes {
         }
     }
 }
-#[cfg(feature = "TMPro+Compute_DistanceTransform_EventTypes")]
+#[cfg(feature = "cordl_class_TMPro+Compute_DistanceTransform_EventTypes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::Compute_DistanceTransform_EventTypes {
     type Actual = Self;

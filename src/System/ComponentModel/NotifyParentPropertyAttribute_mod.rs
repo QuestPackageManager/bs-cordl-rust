@@ -1,11 +1,11 @@
-#[cfg(feature = "System+ComponentModel+NotifyParentPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+NotifyParentPropertyAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotifyParentPropertyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub notifyParent: bool,
 }
-#[cfg(feature = "System+ComponentModel+NotifyParentPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+NotifyParentPropertyAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::ComponentModel::NotifyParentPropertyAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::ComponentModel::NotifyParentPropertyAttribute {
         false
     }
 }
-#[cfg(feature = "System+ComponentModel+NotifyParentPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+NotifyParentPropertyAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::NotifyParentPropertyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+ComponentModel+NotifyParentPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+NotifyParentPropertyAttribute")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::NotifyParentPropertyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -150,7 +150,7 @@ impl crate::System::ComponentModel::NotifyParentPropertyAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+ComponentModel+NotifyParentPropertyAttribute")]
+#[cfg(feature = "cordl_class_System+ComponentModel+NotifyParentPropertyAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::NotifyParentPropertyAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

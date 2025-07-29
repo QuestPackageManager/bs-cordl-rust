@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_CookedDataEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_CookedDataEvent")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_CookedDataEvent {
@@ -6,7 +6,7 @@ pub struct HEU_CookedDataEvent {
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_CookedEventData>,
     >,
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_CookedDataEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_CookedDataEvent")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::HoudiniEngineUnity::HEU_CookedDataEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -26,7 +26,7 @@ for crate::HoudiniEngineUnity::HEU_CookedDataEvent {
         false
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_CookedDataEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_CookedDataEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_CookedDataEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_CookedEventData>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_CookedDataEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_CookedDataEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_CookedDataEvent")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_CookedDataEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -72,7 +72,7 @@ impl crate::HoudiniEngineUnity::HEU_CookedDataEvent {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HEU_CookedDataEvent")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_CookedDataEvent")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_CookedDataEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -1,4 +1,4 @@
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeDeformatter")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeDeformatter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthenticodeDeformatter {
@@ -23,7 +23,7 @@ pub struct AuthenticodeDeformatter {
         crate::Mono::Security::X509::X509Chain,
     >,
 }
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeDeformatter")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeDeformatter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
         false
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeDeformatter")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeDeformatter")]
 impl std::ops::Deref for crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
     type Target = crate::Mono::Security::Authenticode::AuthenticodeBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeDeformatter")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeDeformatter")]
 impl std::ops::DerefMut
 for crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -334,7 +334,7 @@ impl crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+Authenticode+AuthenticodeDeformatter")]
+#[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeDeformatter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

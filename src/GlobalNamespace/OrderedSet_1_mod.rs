@@ -1,4 +1,4 @@
-#[cfg(feature = "OrderedSet_1")]
+#[cfg(feature = "cordl_class_OrderedSet_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrderedSet_1<T: quest_hook::libil2cpp::Type> {
@@ -16,7 +16,7 @@ pub struct OrderedSet_1<T: quest_hook::libil2cpp::Type> {
     pub _clearCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OrderedSet_1")]
+#[cfg(feature = "cordl_class_OrderedSet_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OrderedSet_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::OrderedSet_1<T> {
         false
     }
 }
-#[cfg(feature = "OrderedSet_1")]
+#[cfg(feature = "cordl_class_OrderedSet_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OrderedSet_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::OrderedSet_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OrderedSet_1")]
+#[cfg(feature = "cordl_class_OrderedSet_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::OrderedSet_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -614,7 +614,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OrderedSet_1")]
+#[cfg(feature = "cordl_class_OrderedSet_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OrderedSet_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -656,7 +656,7 @@ for crate::GlobalNamespace::OrderedSet_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OrderedSet_1+Node")]
+#[cfg(feature = "cordl_class_OrderedSet_1+Node")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrderedSet_1_Node<T: quest_hook::libil2cpp::Type> {
@@ -670,7 +670,7 @@ pub struct OrderedSet_1_Node<T: quest_hook::libil2cpp::Type> {
     pub clearCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
-#[cfg(feature = "OrderedSet_1+Node")]
+#[cfg(feature = "cordl_class_OrderedSet_1+Node")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OrderedSet_1_Node<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -703,7 +703,7 @@ for crate::GlobalNamespace::OrderedSet_1_Node<T> {
         false
     }
 }
-#[cfg(feature = "OrderedSet_1+Node")]
+#[cfg(feature = "cordl_class_OrderedSet_1+Node")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OrderedSet_1_Node<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -711,7 +711,7 @@ for crate::GlobalNamespace::OrderedSet_1_Node<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "OrderedSet_1+Node")]
+#[cfg(feature = "cordl_class_OrderedSet_1+Node")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::OrderedSet_1_Node<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -766,7 +766,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1_Node<T
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "OrderedSet_1+Node")]
+#[cfg(feature = "cordl_class_OrderedSet_1+Node")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OrderedSet_1_Node<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -776,7 +776,7 @@ for crate::GlobalNamespace::OrderedSet_1_Node<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OrderedSet_1+ProcessOrder")]
+#[cfg(feature = "cordl_class_OrderedSet_1+ProcessOrder")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OrderedSet_1_ProcessOrder {
@@ -785,7 +785,7 @@ pub enum OrderedSet_1_ProcessOrder {
     Fifo = 1i32,
     Lifo = 0i32,
 }
-#[cfg(feature = "OrderedSet_1+ProcessOrder")]
+#[cfg(feature = "cordl_class_OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Held<'a> = Self;
@@ -815,7 +815,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OrderedSet_1+ProcessOrder")]
+#[cfg(feature = "cordl_class_OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Type = Self;
@@ -826,7 +826,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OrderedSet_1+ProcessOrder")]
+#[cfg(feature = "cordl_class_OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Actual = Self;
@@ -840,7 +840,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
         self
     }
 }
-#[cfg(feature = "OrderedSet_1+ProcessOrder")]
+#[cfg(feature = "cordl_class_OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Type = Self;
@@ -855,7 +855,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
         }
     }
 }
-#[cfg(feature = "OrderedSet_1+ProcessOrder")]
+#[cfg(feature = "cordl_class_OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Actual = Self;

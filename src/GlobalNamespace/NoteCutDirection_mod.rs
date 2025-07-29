@@ -1,4 +1,4 @@
-#[cfg(feature = "NoteCutDirection")]
+#[cfg(feature = "cordl_class_NoteCutDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteCutDirection {
@@ -14,7 +14,7 @@ pub enum NoteCutDirection {
     UpLeft = 4i32,
     UpRight = 5i32,
 }
-#[cfg(feature = "NoteCutDirection")]
+#[cfg(feature = "cordl_class_NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutDirection {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -43,7 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutDirec
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "NoteCutDirection")]
+#[cfg(feature = "cordl_class_NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteCutDirection {
     type Type = Self;
@@ -54,7 +54,7 @@ for crate::GlobalNamespace::NoteCutDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "NoteCutDirection")]
+#[cfg(feature = "cordl_class_NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteCutDirection {
     type Actual = Self;
@@ -68,7 +68,7 @@ for crate::GlobalNamespace::NoteCutDirection {
         self
     }
 }
-#[cfg(feature = "NoteCutDirection")]
+#[cfg(feature = "cordl_class_NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteCutDirection {
     type Type = Self;
@@ -83,7 +83,7 @@ for crate::GlobalNamespace::NoteCutDirection {
         }
     }
 }
-#[cfg(feature = "NoteCutDirection")]
+#[cfg(feature = "cordl_class_NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteCutDirection {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

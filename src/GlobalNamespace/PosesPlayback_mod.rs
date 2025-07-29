@@ -1,4 +1,4 @@
-#[cfg(feature = "PosesPlayback")]
+#[cfg(feature = "cordl_class_PosesPlayback")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesPlayback {
@@ -15,7 +15,7 @@ pub struct PosesPlayback {
     pub _data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     pub _keyframeIndex: i32,
 }
-#[cfg(feature = "PosesPlayback")]
+#[cfg(feature = "cordl_class_PosesPlayback")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosesPlayback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PosesPlaybac
         false
     }
 }
-#[cfg(feature = "PosesPlayback")]
+#[cfg(feature = "cordl_class_PosesPlayback")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesPlayback {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PosesPlayback")]
+#[cfg(feature = "cordl_class_PosesPlayback")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PosesPlayback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -221,7 +221,7 @@ impl crate::GlobalNamespace::PosesPlayback {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PosesPlayback")]
+#[cfg(feature = "cordl_class_PosesPlayback")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesPlayback {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

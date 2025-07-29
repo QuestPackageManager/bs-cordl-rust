@@ -1,4 +1,4 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931Rng")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+X931Rng")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct X931Rng {
@@ -15,7 +15,7 @@ pub struct X931Rng {
     pub mV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mReseedCounter: i64,
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931Rng")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+X931Rng")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,14 +35,14 @@ for crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931Rng")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+X931Rng")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931Rng")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+X931Rng")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -296,7 +296,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931Rng")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+X931Rng")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Prng::X931Rng {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

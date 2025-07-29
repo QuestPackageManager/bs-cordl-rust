@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
+#[cfg(feature = "cordl_class_MultiplayerOffsetPositionByLocalPlayerPosition")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerOffsetPositionByLocalPlayerPosition {
@@ -11,7 +11,7 @@ pub struct MultiplayerOffsetPositionByLocalPlayerPosition {
     pub _lastParentPosition: crate::UnityEngine::Vector3,
     pub _lastParentRotation: crate::UnityEngine::Quaternion,
 }
-#[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
+#[cfg(feature = "cordl_class_MultiplayerOffsetPositionByLocalPlayerPosition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
         false
     }
 }
-#[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
+#[cfg(feature = "cordl_class_MultiplayerOffsetPositionByLocalPlayerPosition")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
+#[cfg(feature = "cordl_class_MultiplayerOffsetPositionByLocalPlayerPosition")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -170,7 +170,7 @@ impl crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
+#[cfg(feature = "cordl_class_MultiplayerOffsetPositionByLocalPlayerPosition")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

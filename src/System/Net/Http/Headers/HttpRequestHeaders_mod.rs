@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpRequestHeaders")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpRequestHeaders {
     __cordl_parent: crate::System::Net::Http::Headers::HttpHeaders,
     pub expectContinue: crate::System::Nullable_1<bool>,
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpRequestHeaders")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Http::Headers::HttpRequestHeaders {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::System::Net::Http::Headers::HttpRequestHeaders {
         false
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpRequestHeaders")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::HttpRequestHeaders {
     type Target = crate::System::Net::Http::Headers::HttpHeaders;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpRequestHeaders")]
 impl std::ops::DerefMut for crate::System::Net::Http::Headers::HttpRequestHeaders {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -313,7 +313,7 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]
+#[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpRequestHeaders")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::HttpRequestHeaders {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

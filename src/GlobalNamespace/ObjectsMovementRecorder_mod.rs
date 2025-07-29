@@ -1,4 +1,4 @@
-#[cfg(feature = "ObjectsMovementRecorder")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectsMovementRecorder {
@@ -43,7 +43,7 @@ pub struct ObjectsMovementRecorder {
         crate::GlobalNamespace::IPosesSerializer,
     >,
 }
-#[cfg(feature = "ObjectsMovementRecorder")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObjectsMovementRecorder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -63,14 +63,14 @@ for crate::GlobalNamespace::ObjectsMovementRecorder {
         false
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::ObjectsMovementRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ObjectsMovementRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -180,7 +180,7 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObjectsMovementRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -190,7 +190,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObjectsMovementRecorder_CameraView {
@@ -198,7 +198,7 @@ pub enum ObjectsMovementRecorder_CameraView {
     FirstPerson = 0i32,
     ThirdPerson = 1i32,
 }
-#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Held<'a> = Self;
@@ -228,7 +228,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Type = Self;
@@ -239,7 +239,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Actual = Self;
@@ -253,7 +253,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
         self
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Type = Self;
@@ -268,7 +268,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
         }
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Actual = Self;
@@ -282,7 +282,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
         actual
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+InitData")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectsMovementRecorder_InitData {
@@ -308,7 +308,7 @@ pub struct ObjectsMovementRecorder_InitData {
     >,
     pub logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
 }
-#[cfg(feature = "ObjectsMovementRecorder+InitData")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -328,14 +328,14 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
         false
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+InitData")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+InitData")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -475,7 +475,7 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+InitData")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -485,7 +485,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+Mode")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObjectsMovementRecorder_Mode {
@@ -494,7 +494,7 @@ pub enum ObjectsMovementRecorder_Mode {
     Playback = 1i32,
     Record = 0i32,
 }
-#[cfg(feature = "ObjectsMovementRecorder+Mode")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Held<'a> = Self;
@@ -524,7 +524,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+Mode")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Type = Self;
@@ -535,7 +535,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+Mode")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Actual = Self;
@@ -549,7 +549,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
         self
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+Mode")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Type = Self;
@@ -564,7 +564,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
         }
     }
 }
-#[cfg(feature = "ObjectsMovementRecorder+Mode")]
+#[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Actual = Self;

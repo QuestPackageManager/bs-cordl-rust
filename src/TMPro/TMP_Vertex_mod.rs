@@ -1,4 +1,4 @@
-#[cfg(feature = "TMPro+TMP_Vertex")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Vertex")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Vertex {
@@ -8,7 +8,7 @@ pub struct TMP_Vertex {
     pub uv4: crate::UnityEngine::Vector2,
     pub color: crate::UnityEngine::Color32,
 }
-#[cfg(feature = "TMPro+TMP_Vertex")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Vertex")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Vertex {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -37,7 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Vertex {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+TMP_Vertex")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Vertex")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Vertex {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,7 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Vertex {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+TMP_Vertex")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Vertex")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Vertex {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,7 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Vertex {
         self
     }
 }
-#[cfg(feature = "TMPro+TMP_Vertex")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Vertex")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Vertex {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,7 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Vertex {
         }
     }
 }
-#[cfg(feature = "TMPro+TMP_Vertex")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Vertex")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Vertex {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,7 +87,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Vertex {
         actual
     }
 }
-#[cfg(feature = "TMPro+TMP_Vertex")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Vertex")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Vertex {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

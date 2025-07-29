@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -22,7 +22,7 @@ pub struct ContentCatalogProvider {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
@@ -44,7 +44,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
@@ -54,7 +54,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
@@ -179,7 +179,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
@@ -191,7 +191,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -202,7 +202,7 @@ pub enum ContentCatalogProvider_DependencyHashIndex {
     Remote = 0i32,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
@@ -234,7 +234,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
@@ -247,7 +247,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
@@ -263,7 +263,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
@@ -280,7 +280,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
@@ -296,7 +296,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -324,7 +324,7 @@ pub struct ContentCatalogProvider_InternalOp {
     pub m_IsLocalCatalogInBundle: bool,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
@@ -346,7 +346,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
@@ -356,7 +356,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
@@ -730,7 +730,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
@@ -742,7 +742,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -776,7 +776,7 @@ pub struct InternalOp_ContentCatalogProvider_BundledCatalog {
     >,
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog {
@@ -798,7 +798,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Content
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog {
@@ -808,7 +808,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Content
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog {
@@ -1166,7 +1166,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
     }
 }
 #[cfg(
-    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
+    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog {

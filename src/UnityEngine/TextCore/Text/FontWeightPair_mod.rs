@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontWeightPair")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct FontWeightPair {
@@ -9,7 +9,7 @@ pub struct FontWeightPair {
         crate::UnityEngine::TextCore::Text::FontAsset,
     >,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontWeightPair")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::FontWeightPair {
     type Held<'a> = Self;
@@ -39,7 +39,7 @@ for crate::UnityEngine::TextCore::Text::FontWeightPair {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontWeightPair")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::FontWeightPair {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::UnityEngine::TextCore::Text::FontWeightPair {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontWeightPair")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::FontWeightPair {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::UnityEngine::TextCore::Text::FontWeightPair {
         self
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontWeightPair")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::FontWeightPair {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::UnityEngine::TextCore::Text::FontWeightPair {
         }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontWeightPair")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::FontWeightPair {
     type Actual = Self;
@@ -93,7 +93,7 @@ for crate::UnityEngine::TextCore::Text::FontWeightPair {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+FontWeightPair")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::TextCore::Text::FontWeightPair {
     type Type = Self;

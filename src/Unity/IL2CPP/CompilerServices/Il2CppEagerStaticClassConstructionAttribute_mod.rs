@@ -1,5 +1,5 @@
 #[cfg(
-    feature = "Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
+    feature = "cordl_class_Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -7,7 +7,7 @@ pub struct Il2CppEagerStaticClassConstructionAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(
-    feature = "Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
+    feature = "cordl_class_Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAttribute {
@@ -29,7 +29,7 @@ for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAt
     }
 }
 #[cfg(
-    feature = "Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
+    feature = "cordl_class_Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAt
     }
 }
 #[cfg(
-    feature = "Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
+    feature = "cordl_class_Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAttribute {
@@ -81,7 +81,7 @@ impl crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionA
     }
 }
 #[cfg(
-    feature = "Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
+    feature = "cordl_class_Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAttribute {

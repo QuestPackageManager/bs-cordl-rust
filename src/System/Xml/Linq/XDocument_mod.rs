@@ -1,11 +1,11 @@
-#[cfg(feature = "System+Xml+Linq+XDocument")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XDocument")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct XDocument {
     __cordl_parent: crate::System::Xml::Linq::XContainer,
     pub _declaration: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XDeclaration>,
 }
-#[cfg(feature = "System+Xml+Linq+XDocument")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XDocument")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::XDocument {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::XDocument 
         false
     }
 }
-#[cfg(feature = "System+Xml+Linq+XDocument")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XDocument")]
 impl std::ops::Deref for crate::System::Xml::Linq::XDocument {
     type Target = crate::System::Xml::Linq::XContainer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Xml+Linq+XDocument")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XDocument")]
 impl std::ops::DerefMut for crate::System::Xml::Linq::XDocument {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -454,7 +454,7 @@ impl crate::System::Xml::Linq::XDocument {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Xml+Linq+XDocument")]
+#[cfg(feature = "cordl_class_System+Xml+Linq+XDocument")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XDocument {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+AnimationState")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationState {
     __cordl_parent: crate::UnityEngine::TrackedReference,
 }
-#[cfg(feature = "UnityEngine+AnimationState")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimationState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimationState {
         false
     }
 }
-#[cfg(feature = "UnityEngine+AnimationState")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationState")]
 impl std::ops::Deref for crate::UnityEngine::AnimationState {
     type Target = crate::UnityEngine::TrackedReference;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+AnimationState")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationState")]
 impl std::ops::DerefMut for crate::UnityEngine::AnimationState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -172,7 +172,7 @@ impl crate::UnityEngine::AnimationState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+AnimationState")]
+#[cfg(feature = "cordl_class_UnityEngine+AnimationState")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AnimationState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

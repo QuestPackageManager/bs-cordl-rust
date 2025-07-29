@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EqualInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::EqualInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::EqualInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::EqualInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::EqualInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::EqualInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -241,7 +241,7 @@ impl crate::System::Linq::Expressions::Interpreter::EqualInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::EqualInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

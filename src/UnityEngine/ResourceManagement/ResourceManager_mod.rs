@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager {
@@ -137,7 +137,7 @@ pub struct ResourceManager {
         >,
     >,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -157,14 +157,14 @@ for crate::UnityEngine::ResourceManagement::ResourceManager {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::ResourceManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::ResourceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2906,7 +2906,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
+#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -2930,7 +2930,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager_CompletedOperation_1<TObject: quest_hook::libil2cpp::Type> {
@@ -2942,7 +2944,9 @@ pub struct ResourceManager_CompletedOperation_1<TObject: quest_hook::libil2cpp::
     pub m_ReleaseDependenciesOnFailure: bool,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
+)]
 unsafe impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
     TObject,
@@ -2980,7 +2984,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
     TObject,
@@ -2992,7 +2998,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
     TObject,
@@ -3203,7 +3211,9 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
+)]
 impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
     TObject,
@@ -3216,7 +3226,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -3227,7 +3237,7 @@ pub struct ResourceManager_DeferredCallbackRegisterRequest {
     pub incrementRefCount: bool,
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
@@ -3259,7 +3269,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
@@ -3272,7 +3282,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
@@ -3288,7 +3298,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
@@ -3305,7 +3315,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
@@ -3321,7 +3331,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
@@ -3337,7 +3347,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
     feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 impl crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+)]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ResourceManager_DiagnosticEventContext {
@@ -3354,7 +3366,9 @@ pub struct ResourceManager_DiagnosticEventContext {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Held<'a> = Self;
@@ -3384,7 +3398,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Type = Self;
@@ -3395,7 +3411,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Actual = Self;
@@ -3409,7 +3427,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Type = Self;
@@ -3424,7 +3444,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Actual = Self;
@@ -3438,7 +3460,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+)]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Type = Self;
@@ -3649,7 +3673,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventCont
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ResourceManager_DiagnosticEventType {
@@ -3661,7 +3687,9 @@ pub enum ResourceManager_DiagnosticEventType {
     AsyncOperationPercentComplete = 2i32,
     AsyncOperationReferenceCount = 4i32,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Held<'a> = Self;
@@ -3691,7 +3719,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Type = Self;
@@ -3702,7 +3732,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Actual = Self;
@@ -3716,7 +3748,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
         self
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Type = Self;
@@ -3731,7 +3765,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
         }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Actual = Self;
@@ -3745,7 +3781,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
         actual
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+InstanceOperation"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager_InstanceOperation {
@@ -3762,7 +3800,9 @@ pub struct ResourceManager_InstanceOperation {
     pub m_instance: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_scene: crate::UnityEngine::SceneManagement::Scene,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+InstanceOperation"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -3782,7 +3822,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+InstanceOperation"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
@@ -3792,7 +3834,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+InstanceOperation"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4080,7 +4124,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+InstanceOperation"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

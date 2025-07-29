@@ -1,10 +1,14 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFinallyInstruction"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterFinallyInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFinallyInstruction"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +28,9 @@ for crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFinallyInstruction"
+)]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction;
@@ -32,7 +38,9 @@ for crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFinallyInstruction"
+)]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -195,7 +203,9 @@ impl crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFinallyInstruction")]
+#[cfg(
+    feature = "cordl_class_System+Linq+Expressions+Interpreter+EnterFinallyInstruction"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

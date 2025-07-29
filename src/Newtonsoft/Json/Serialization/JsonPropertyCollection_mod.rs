@@ -1,4 +1,4 @@
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonPropertyCollection")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonPropertyCollection {
@@ -15,7 +15,7 @@ pub struct JsonPropertyCollection {
         >,
     >,
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonPropertyCollection")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -35,7 +35,7 @@ for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonPropertyCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
     type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -45,7 +45,7 @@ impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonPropertyCol
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonPropertyCollection")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -260,7 +260,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonPropertyCollection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

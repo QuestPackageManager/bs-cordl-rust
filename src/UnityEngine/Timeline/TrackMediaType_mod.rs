@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Timeline+TrackMediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackMediaType")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackMediaType {
     __cordl_parent: crate::System::Attribute,
     pub m_MediaType: crate::UnityEngine::Timeline::TimelineAsset_MediaType,
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackMediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackMediaType")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Timeline::TrackMediaType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Timeline::TrackMediaType {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackMediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackMediaType")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TrackMediaType {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackMediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackMediaType")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackMediaType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -76,7 +76,7 @@ impl crate::UnityEngine::Timeline::TrackMediaType {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Timeline+TrackMediaType")]
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackMediaType")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::TrackMediaType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

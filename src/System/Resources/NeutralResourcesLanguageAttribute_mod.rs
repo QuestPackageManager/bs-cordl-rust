@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Resources+NeutralResourcesLanguageAttribute")]
+#[cfg(feature = "cordl_class_System+Resources+NeutralResourcesLanguageAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NeutralResourcesLanguageAttribute {
@@ -8,7 +8,7 @@ pub struct NeutralResourcesLanguageAttribute {
     >,
     pub _Location_k__BackingField: crate::System::Resources::UltimateResourceFallbackLocation,
 }
-#[cfg(feature = "System+Resources+NeutralResourcesLanguageAttribute")]
+#[cfg(feature = "cordl_class_System+Resources+NeutralResourcesLanguageAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Resources::NeutralResourcesLanguageAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -28,14 +28,14 @@ for crate::System::Resources::NeutralResourcesLanguageAttribute {
         false
     }
 }
-#[cfg(feature = "System+Resources+NeutralResourcesLanguageAttribute")]
+#[cfg(feature = "cordl_class_System+Resources+NeutralResourcesLanguageAttribute")]
 impl std::ops::Deref for crate::System::Resources::NeutralResourcesLanguageAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Resources+NeutralResourcesLanguageAttribute")]
+#[cfg(feature = "cordl_class_System+Resources+NeutralResourcesLanguageAttribute")]
 impl std::ops::DerefMut for crate::System::Resources::NeutralResourcesLanguageAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -133,7 +133,7 @@ impl crate::System::Resources::NeutralResourcesLanguageAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Resources+NeutralResourcesLanguageAttribute")]
+#[cfg(feature = "cordl_class_System+Resources+NeutralResourcesLanguageAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Resources::NeutralResourcesLanguageAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

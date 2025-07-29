@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+XR+XRNodeState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNodeState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRNodeState {
@@ -13,7 +13,7 @@ pub struct XRNodeState {
     pub m_Tracked: i32,
     pub m_UniqueID: u64,
 }
-#[cfg(feature = "UnityEngine+XR+XRNodeState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNodeState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRNodeState {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -42,7 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRNodeState 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNodeState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNodeState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::XR::XRNodeState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -52,7 +52,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::XR::XRNodeSt
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNodeState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNodeState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::XR::XRNodeState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -65,7 +65,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::XR::XRNodeS
         self
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNodeState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNodeState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::XR::XRNodeState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -79,7 +79,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::XR::XRNodeSt
         }
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNodeState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNodeState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::XR::XRNodeState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -92,7 +92,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::XR::XRNodeStat
         actual
     }
 }
-#[cfg(feature = "UnityEngine+XR+XRNodeState")]
+#[cfg(feature = "cordl_class_UnityEngine+XR+XRNodeState")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::XR::XRNodeState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatmapLevelLoader")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelLoader {
@@ -24,7 +24,7 @@ pub struct BeatmapLevelLoader {
         crate::GlobalNamespace::AudioClipAsyncLoader,
     >,
 }
-#[cfg(feature = "BeatmapLevelLoader")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevelLoader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevel
         false
     }
 }
-#[cfg(feature = "BeatmapLevelLoader")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelLoader")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -636,7 +636,7 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelLoader")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -671,14 +671,14 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelL
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+InitData")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelLoader_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maxCachedBeatmapLevels: i32,
 }
-#[cfg(feature = "BeatmapLevelLoader+InitData")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -698,14 +698,14 @@ for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
         false
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+InitData")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+InitData")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -745,7 +745,7 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+InitData")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -755,7 +755,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelLoader_LevelDownloadingUpdate {
@@ -763,7 +763,7 @@ pub struct BeatmapLevelLoader_LevelDownloadingUpdate {
     pub progress: f32,
     pub downloadingState: crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState,
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     type Held<'a> = Self;
@@ -793,7 +793,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     type Type = Self;
@@ -804,7 +804,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     type Actual = Self;
@@ -818,7 +818,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
         self
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     type Type = Self;
@@ -833,7 +833,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
         }
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     type Actual = Self;
@@ -847,7 +847,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
         actual
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
+#[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     type Type = Self;
@@ -898,7 +898,9 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
@@ -907,7 +909,9 @@ pub enum LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
     Downloading = 1i32,
     PreparingToDownload = 0i32,
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
     type Held<'a> = Self;
@@ -937,7 +941,9 @@ for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_Downloadin
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
     type Type = Self;
@@ -948,7 +954,9 @@ for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_Downloadin
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
     type Actual = Self;
@@ -962,7 +970,9 @@ for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_Downloadin
         self
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
     type Type = Self;
@@ -977,7 +987,9 @@ for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_Downloadin
         }
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
+#[cfg(
+    feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
     type Actual = Self;

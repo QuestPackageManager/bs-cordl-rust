@@ -1,10 +1,10 @@
-#[cfg(feature = "OVRSemanticLabels")]
+#[cfg(feature = "cordl_class_OVRSemanticLabels")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSemanticLabels {
     pub _Handle_k__BackingField: u64,
 }
-#[cfg(feature = "OVRSemanticLabels")]
+#[cfg(feature = "cordl_class_OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSemanticLabels {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSemanticL
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "OVRSemanticLabels")]
+#[cfg(feature = "cordl_class_OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSemanticLabels {
     type Type = Self;
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::OVRSemanticLabels {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "OVRSemanticLabels")]
+#[cfg(feature = "cordl_class_OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSemanticLabels {
     type Actual = Self;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::OVRSemanticLabels {
         self
     }
 }
-#[cfg(feature = "OVRSemanticLabels")]
+#[cfg(feature = "cordl_class_OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSemanticLabels {
     type Type = Self;
@@ -73,7 +73,7 @@ for crate::GlobalNamespace::OVRSemanticLabels {
         }
     }
 }
-#[cfg(feature = "OVRSemanticLabels")]
+#[cfg(feature = "cordl_class_OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRSemanticLabels {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRSemanti
         actual
     }
 }
-#[cfg(feature = "OVRSemanticLabels")]
+#[cfg(feature = "cordl_class_OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::OVRSemanticLabels {
     type Type = Self;

@@ -1,4 +1,4 @@
-#[cfg(feature = "MultiplayerModeSelectionViewController")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerModeSelectionViewController {
@@ -25,7 +25,7 @@ pub struct MultiplayerModeSelectionViewController {
         >,
     >,
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
         false
     }
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -360,7 +360,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionViewController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -370,7 +370,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController+MenuButton")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerModeSelectionViewController_MenuButton {
@@ -380,7 +380,7 @@ pub enum MultiplayerModeSelectionViewController_MenuButton {
     JoinWithCode = 2i32,
     QuickPlay = 0i32,
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Held<'a> = Self;
@@ -410,7 +410,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Type = Self;
@@ -421,7 +421,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Actual = Self;
@@ -435,7 +435,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
         self
     }
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Type = Self;
@@ -450,7 +450,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
         }
     }
 }
-#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
+#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Actual = Self;

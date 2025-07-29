@@ -1,4 +1,4 @@
-#[cfg(feature = "MissionLevelFailedController")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelFailedController {
@@ -31,7 +31,7 @@ pub struct MissionLevelFailedController {
         crate::GlobalNamespace::BeatmapObjectManager,
     >,
 }
-#[cfg(feature = "MissionLevelFailedController")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelFailedController {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -51,14 +51,14 @@ for crate::GlobalNamespace::MissionLevelFailedController {
         false
     }
 }
-#[cfg(feature = "MissionLevelFailedController")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelFailedController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionLevelFailedController")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelFailedController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -193,7 +193,7 @@ impl crate::GlobalNamespace::MissionLevelFailedController {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionLevelFailedController")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionLevelFailedController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -203,14 +203,14 @@ for crate::GlobalNamespace::MissionLevelFailedController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MissionLevelFailedController+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelFailedController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub autoRestart: bool,
 }
-#[cfg(feature = "MissionLevelFailedController+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MissionLevelFailedController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -230,14 +230,14 @@ for crate::GlobalNamespace::MissionLevelFailedController_InitData {
         false
     }
 }
-#[cfg(feature = "MissionLevelFailedController+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelFailedController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MissionLevelFailedController+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MissionLevelFailedController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -278,7 +278,7 @@ impl crate::GlobalNamespace::MissionLevelFailedController_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MissionLevelFailedController+InitData")]
+#[cfg(feature = "cordl_class_MissionLevelFailedController+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionLevelFailedController_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

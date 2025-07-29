@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualData {
@@ -19,7 +19,7 @@ pub struct VisualData {
     pub opacity: f32,
     pub overflow: crate::UnityEngine::UIElements::OverflowInternal,
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualData")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::VisualData {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -48,7 +48,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Visu
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualData {
     type Type = Self;
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::VisualData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualData {
     type Actual = Self;
@@ -73,7 +73,7 @@ for crate::UnityEngine::UIElements::VisualData {
         self
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualData {
     type Type = Self;
@@ -88,7 +88,7 @@ for crate::UnityEngine::UIElements::VisualData {
         }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualData {
     type Actual = Self;
@@ -102,7 +102,7 @@ for crate::UnityEngine::UIElements::VisualData {
         actual
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+VisualData")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::UIElements::VisualData {
     type Type = Self;

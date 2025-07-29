@@ -1,4 +1,4 @@
-#[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
+#[cfg(feature = "cordl_class_RelativeScoreAndImmediateRankCounter")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct RelativeScoreAndImmediateRankCounter {
@@ -18,7 +18,7 @@ pub struct RelativeScoreAndImmediateRankCounter {
     pub _relativeScore_k__BackingField: f32,
     pub _immediateRank_k__BackingField: crate::GlobalNamespace::RankModel_Rank,
 }
-#[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
+#[cfg(feature = "cordl_class_RelativeScoreAndImmediateRankCounter")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -38,14 +38,14 @@ for crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         false
     }
 }
-#[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
+#[cfg(feature = "cordl_class_RelativeScoreAndImmediateRankCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
+#[cfg(feature = "cordl_class_RelativeScoreAndImmediateRankCounter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -332,7 +332,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
+#[cfg(feature = "cordl_class_RelativeScoreAndImmediateRankCounter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

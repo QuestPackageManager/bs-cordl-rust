@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+HDROutputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+HDROutputSettings")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct HDROutputSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DisplayIndex: i32,
 }
-#[cfg(feature = "UnityEngine+HDROutputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+HDROutputSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HDROutputSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HDROutputSetting
         false
     }
 }
-#[cfg(feature = "UnityEngine+HDROutputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+HDROutputSettings")]
 impl std::ops::Deref for crate::UnityEngine::HDROutputSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+HDROutputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+HDROutputSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::HDROutputSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::HDROutputSettings {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+HDROutputSettings")]
+#[cfg(feature = "cordl_class_UnityEngine+HDROutputSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::HDROutputSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

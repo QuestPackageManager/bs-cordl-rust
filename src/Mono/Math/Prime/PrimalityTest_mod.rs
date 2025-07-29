@@ -1,10 +1,10 @@
-#[cfg(feature = "Mono+Math+Prime+PrimalityTest")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+PrimalityTest")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrimalityTest {
     __cordl_parent: crate::System::MulticastDelegate,
 }
-#[cfg(feature = "Mono+Math+Prime+PrimalityTest")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+PrimalityTest")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::Prime::PrimalityTest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::Prime::PrimalityT
         false
     }
 }
-#[cfg(feature = "Mono+Math+Prime+PrimalityTest")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+PrimalityTest")]
 impl std::ops::Deref for crate::Mono::Math::Prime::PrimalityTest {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Math+Prime+PrimalityTest")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+PrimalityTest")]
 impl std::ops::DerefMut for crate::Mono::Math::Prime::PrimalityTest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -111,7 +111,7 @@ impl crate::Mono::Math::Prime::PrimalityTest {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Math+Prime+PrimalityTest")]
+#[cfg(feature = "cordl_class_Mono+Math+Prime+PrimalityTest")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::Prime::PrimalityTest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

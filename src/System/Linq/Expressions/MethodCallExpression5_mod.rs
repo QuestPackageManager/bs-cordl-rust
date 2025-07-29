@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression5")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression5")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodCallExpression5 {
@@ -9,7 +9,7 @@ pub struct MethodCallExpression5 {
     pub _arg3: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     pub _arg4: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression5")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression5")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Linq::Expressions::MethodCallExpression5 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -29,14 +29,14 @@ for crate::System::Linq::Expressions::MethodCallExpression5 {
         false
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression5")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression5")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MethodCallExpression5 {
     type Target = crate::System::Linq::Expressions::MethodCallExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression5")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression5")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::MethodCallExpression5 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -205,7 +205,7 @@ impl crate::System::Linq::Expressions::MethodCallExpression5 {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Linq+Expressions+MethodCallExpression5")]
+#[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression5")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::MethodCallExpression5 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

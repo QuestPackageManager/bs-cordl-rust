@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityAsyncHelper")]
+#[cfg(feature = "cordl_class_UnityAsyncHelper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityAsyncHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityAsyncHelper")]
+#[cfg(feature = "cordl_class_UnityAsyncHelper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityAsyncHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityAsyncHe
         false
     }
 }
-#[cfg(feature = "UnityAsyncHelper")]
+#[cfg(feature = "cordl_class_UnityAsyncHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityAsyncHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityAsyncHelper")]
+#[cfg(feature = "cordl_class_UnityAsyncHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnityAsyncHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -375,7 +375,7 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityAsyncHelper")]
+#[cfg(feature = "cordl_class_UnityAsyncHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityAsyncHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -385,7 +385,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityAsyncHel
     }
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -396,7 +396,7 @@ pub struct __c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPr
     pub __4__this: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
@@ -418,7 +418,7 @@ for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsy
     }
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
@@ -428,7 +428,7 @@ for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsy
     }
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
@@ -597,7 +597,7 @@ impl crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAs
     }
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
@@ -679,7 +679,7 @@ for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsy
     }
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 #[repr(C)]
 #[derive(Debug)]
@@ -690,7 +690,7 @@ pub struct __c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPr
     pub __4__this: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
@@ -712,7 +712,7 @@ for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsy
     }
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
@@ -722,7 +722,7 @@ for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsy
     }
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
@@ -891,7 +891,7 @@ impl crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAs
     }
 }
 #[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+    feature = "cordl_class_UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {

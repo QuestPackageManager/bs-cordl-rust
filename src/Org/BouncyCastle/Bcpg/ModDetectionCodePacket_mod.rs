@@ -1,11 +1,11 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ModDetectionCodePacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
     type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -178,7 +178,7 @@ impl crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

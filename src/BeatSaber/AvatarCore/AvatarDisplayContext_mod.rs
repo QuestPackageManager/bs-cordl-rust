@@ -1,4 +1,4 @@
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarDisplayContext")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarDisplayContext")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarDisplayContext {
@@ -10,7 +10,7 @@ pub enum AvatarDisplayContext {
     UI = 1i32,
     Unknown = 0i32,
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarDisplayContext")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarDisplayContext")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
     type Held<'a> = Self;
@@ -40,7 +40,7 @@ for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarDisplayContext")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarDisplayContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
     type Type = Self;
@@ -51,7 +51,7 @@ for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarDisplayContext")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarDisplayContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
     type Actual = Self;
@@ -65,7 +65,7 @@ for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
         self
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarDisplayContext")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarDisplayContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
     type Type = Self;
@@ -80,7 +80,7 @@ for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
         }
     }
 }
-#[cfg(feature = "BeatSaber+AvatarCore+AvatarDisplayContext")]
+#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarDisplayContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::AvatarCore::AvatarDisplayContext {
     type Actual = Self;

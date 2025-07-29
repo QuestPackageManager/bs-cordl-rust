@@ -1,11 +1,11 @@
-#[cfg(feature = "UnityEngine+Networking+DownloadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandler")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct DownloadHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
 }
-#[cfg(feature = "UnityEngine+Networking+DownloadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandler")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Networking::DownloadHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::UnityEngine::Networking::DownloadHandler {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Networking+DownloadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandler")]
 impl std::ops::Deref for crate::UnityEngine::Networking::DownloadHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Networking+DownloadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::Networking::DownloadHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -724,7 +724,7 @@ impl crate::UnityEngine::Networking::DownloadHandler {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Networking+DownloadHandler")]
+#[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandler")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::DownloadHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

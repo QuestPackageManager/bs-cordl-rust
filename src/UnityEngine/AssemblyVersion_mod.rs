@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+AssemblyVersion")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyVersion")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AssemblyVersion {
@@ -7,7 +7,7 @@ pub struct AssemblyVersion {
     pub build: u16,
     pub revision: u16,
 }
-#[cfg(feature = "UnityEngine+AssemblyVersion")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyVersion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AssemblyVersion {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AssemblyVersion 
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyVersion")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyVersion")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AssemblyVersion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,7 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AssemblyVers
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyVersion")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyVersion")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AssemblyVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,7 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AssemblyVer
         self
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyVersion")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyVersion")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AssemblyVersion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,7 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AssemblyVers
         }
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyVersion")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyVersion")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AssemblyVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -86,7 +86,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AssemblyVersio
         actual
     }
 }
-#[cfg(feature = "UnityEngine+AssemblyVersion")]
+#[cfg(feature = "cordl_class_UnityEngine+AssemblyVersion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::AssemblyVersion {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

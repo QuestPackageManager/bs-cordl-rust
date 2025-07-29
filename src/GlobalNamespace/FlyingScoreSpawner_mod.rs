@@ -1,4 +1,4 @@
-#[cfg(feature = "FlyingScoreSpawner")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingScoreSpawner {
@@ -10,7 +10,7 @@ pub struct FlyingScoreSpawner {
         crate::GlobalNamespace::FlyingScoreSpawner_InitData,
     >,
 }
-#[cfg(feature = "FlyingScoreSpawner")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingScoreSpawner {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingScoreS
         false
     }
 }
-#[cfg(feature = "FlyingScoreSpawner")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FlyingScoreSpawner")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FlyingScoreSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -215,7 +215,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FlyingScoreSpawner")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingScoreSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -240,14 +240,14 @@ for crate::GlobalNamespace::FlyingScoreSpawner {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+InitData")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+InitData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingScoreSpawner_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub spawnPosition: crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition,
 }
-#[cfg(feature = "FlyingScoreSpawner+InitData")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+InitData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -267,14 +267,14 @@ for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
         false
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+InitData")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+InitData")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -318,7 +318,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+InitData")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+InitData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -328,7 +328,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FlyingScoreSpawner_SpawnPosition {
@@ -336,7 +336,7 @@ pub enum FlyingScoreSpawner_SpawnPosition {
     AboveGround = 1i32,
     Underground = 0i32,
 }
-#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Held<'a> = Self;
@@ -366,7 +366,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Type = Self;
@@ -377,7 +377,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Actual = Self;
@@ -391,7 +391,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
         self
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Type = Self;
@@ -406,7 +406,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
         }
     }
 }
-#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
+#[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Actual = Self;

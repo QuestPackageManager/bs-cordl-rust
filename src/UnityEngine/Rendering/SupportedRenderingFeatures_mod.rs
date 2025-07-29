@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SupportedRenderingFeatures {
@@ -36,7 +36,7 @@ pub struct SupportedRenderingFeatures {
         quest_hook::libil2cpp::Il2CppString,
     >,
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -56,14 +56,14 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         false
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures")]
 impl std::ops::DerefMut for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -684,7 +684,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
+#[cfg(feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -695,7 +695,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
 )]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -707,7 +707,7 @@ pub enum SupportedRenderingFeatures_LightmapMixedBakeModes {
     Subtractive = 2i32,
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
 )]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
@@ -739,7 +739,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
@@ -752,7 +752,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
@@ -768,7 +768,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
@@ -785,7 +785,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
     }
 }
 #[cfg(
-    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
@@ -800,7 +800,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
         actual
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes"
+)]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SupportedRenderingFeatures_ReflectionProbeModes {
@@ -808,7 +810,9 @@ pub enum SupportedRenderingFeatures_ReflectionProbeModes {
     None = 0i32,
     Rotation = 1i32,
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Held<'a> = Self;
@@ -838,7 +842,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeMod
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Type = Self;
@@ -849,7 +855,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeMod
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Actual = Self;
@@ -863,7 +871,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeMod
         self
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Type = Self;
@@ -878,7 +888,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeMod
         }
     }
 }
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Actual = Self;

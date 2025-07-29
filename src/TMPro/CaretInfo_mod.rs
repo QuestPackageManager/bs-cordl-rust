@@ -1,11 +1,11 @@
-#[cfg(feature = "TMPro+CaretInfo")]
+#[cfg(feature = "cordl_class_TMPro+CaretInfo")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CaretInfo {
     pub index: i32,
     pub position: crate::TMPro::CaretPosition,
 }
-#[cfg(feature = "TMPro+CaretInfo")]
+#[cfg(feature = "cordl_class_TMPro+CaretInfo")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::CaretInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -34,7 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::CaretInfo {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "TMPro+CaretInfo")]
+#[cfg(feature = "cordl_class_TMPro+CaretInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::CaretInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,7 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::CaretInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "TMPro+CaretInfo")]
+#[cfg(feature = "cordl_class_TMPro+CaretInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::CaretInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,7 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::CaretInfo {
         self
     }
 }
-#[cfg(feature = "TMPro+CaretInfo")]
+#[cfg(feature = "cordl_class_TMPro+CaretInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::CaretInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,7 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::CaretInfo {
         }
     }
 }
-#[cfg(feature = "TMPro+CaretInfo")]
+#[cfg(feature = "cordl_class_TMPro+CaretInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::CaretInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -84,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::CaretInfo {
         actual
     }
 }
-#[cfg(feature = "TMPro+CaretInfo")]
+#[cfg(feature = "cordl_class_TMPro+CaretInfo")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::CaretInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {

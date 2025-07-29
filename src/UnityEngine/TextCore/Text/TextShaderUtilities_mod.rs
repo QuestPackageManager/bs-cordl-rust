@@ -1,10 +1,10 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextShaderUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextShaderUtilities")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextShaderUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextShaderUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextShaderUtilities")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::TextCore::Text::TextShaderUtilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,14 +24,14 @@ for crate::UnityEngine::TextCore::Text::TextShaderUtilities {
         false
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextShaderUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextShaderUtilities")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextShaderUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextShaderUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextShaderUtilities")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextShaderUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -115,7 +115,7 @@ impl crate::UnityEngine::TextCore::Text::TextShaderUtilities {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+TextCore+Text+TextShaderUtilities")]
+#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextShaderUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextShaderUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

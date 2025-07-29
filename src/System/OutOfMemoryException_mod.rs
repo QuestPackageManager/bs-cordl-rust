@@ -1,10 +1,10 @@
-#[cfg(feature = "System+OutOfMemoryException")]
+#[cfg(feature = "cordl_class_System+OutOfMemoryException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OutOfMemoryException {
     __cordl_parent: crate::System::SystemException,
 }
-#[cfg(feature = "System+OutOfMemoryException")]
+#[cfg(feature = "cordl_class_System+OutOfMemoryException")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::OutOfMemoryException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::OutOfMemoryException 
         false
     }
 }
-#[cfg(feature = "System+OutOfMemoryException")]
+#[cfg(feature = "cordl_class_System+OutOfMemoryException")]
 impl std::ops::Deref for crate::System::OutOfMemoryException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+OutOfMemoryException")]
+#[cfg(feature = "cordl_class_System+OutOfMemoryException")]
 impl std::ops::DerefMut for crate::System::OutOfMemoryException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -148,7 +148,7 @@ impl crate::System::OutOfMemoryException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+OutOfMemoryException")]
+#[cfg(feature = "cordl_class_System+OutOfMemoryException")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::OutOfMemoryException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

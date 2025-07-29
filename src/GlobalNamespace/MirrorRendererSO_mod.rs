@@ -1,4 +1,4 @@
-#[cfg(feature = "MirrorRendererSO")]
+#[cfg(feature = "cordl_class_MirrorRendererSO")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirrorRendererSO {
@@ -33,7 +33,7 @@ pub struct MirrorRendererSO {
     pub kRightRect: crate::UnityEngine::Rect,
     pub kFullRect: crate::UnityEngine::Rect,
 }
-#[cfg(feature = "MirrorRendererSO")]
+#[cfg(feature = "cordl_class_MirrorRendererSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MirrorRendererSO {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -52,14 +52,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MirrorRender
         false
     }
 }
-#[cfg(feature = "MirrorRendererSO")]
+#[cfg(feature = "cordl_class_MirrorRendererSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MirrorRendererSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "MirrorRendererSO")]
+#[cfg(feature = "cordl_class_MirrorRendererSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirrorRendererSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -447,7 +447,7 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "MirrorRendererSO")]
+#[cfg(feature = "cordl_class_MirrorRendererSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirrorRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -456,7 +456,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirrorRendere
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+#[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MirrorRendererSO_CameraTransformData {
@@ -465,7 +465,7 @@ pub struct MirrorRendererSO_CameraTransformData {
     pub fov: f32,
     pub stereoEnabled: bool,
 }
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+#[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     type Held<'a> = Self;
@@ -495,7 +495,7 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+#[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     type Type = Self;
@@ -506,7 +506,7 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+#[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     type Actual = Self;
@@ -520,7 +520,7 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
         self
     }
 }
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+#[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     type Type = Self;
@@ -535,7 +535,7 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
         }
     }
 }
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+#[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     type Actual = Self;
@@ -549,7 +549,7 @@ for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
         actual
     }
 }
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+#[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     type Type = Self;

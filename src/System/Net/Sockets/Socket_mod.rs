@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+Sockets+Socket")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Socket {
@@ -26,7 +26,7 @@ pub struct Socket {
     pub connect_in_progress: bool,
     pub _cordl_ID: i32,
 }
-#[cfg(feature = "System+Net+Sockets+Socket")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket 
         false
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket")]
 impl std::ops::Deref for crate::System::Net::Sockets::Socket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::Socket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5254,7 +5254,7 @@ impl crate::System::Net::Sockets::Socket {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Sockets::Socket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -5275,7 +5275,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::Sockets::Socket {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Socket_AwaitableSocketAsyncEventArgs {
@@ -5292,7 +5292,7 @@ pub struct Socket_AwaitableSocketAsyncEventArgs {
     pub _token: i16,
     pub _WrapExceptionsInIOExceptions_k__BackingField: bool,
 }
-#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5312,7 +5312,7 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl std::ops::Deref
 for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     type Target = crate::System::Net::Sockets::SocketAsyncEventArgs;
@@ -5320,7 +5320,7 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl std::ops::DerefMut
 for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5794,7 +5794,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5838,7 +5838,7 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+CachedEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Socket_CachedEventArgs {
@@ -5861,7 +5861,7 @@ pub struct Socket_CachedEventArgs {
         crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs,
     >,
 }
-#[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+CachedEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::Socket_CachedEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5881,14 +5881,14 @@ for crate::System::Net::Sockets::Socket_CachedEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+CachedEventArgs")]
 impl std::ops::Deref for crate::System::Net::Sockets::Socket_CachedEventArgs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+CachedEventArgs")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::Socket_CachedEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5925,7 +5925,7 @@ impl crate::System::Net::Sockets::Socket_CachedEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+CachedEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Sockets::Socket_CachedEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -5935,14 +5935,14 @@ for crate::System::Net::Sockets::Socket_CachedEventArgs {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Socket_Int32TaskSocketAsyncEventArgs {
     __cordl_parent: crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<i32>,
     pub _wrapExceptionsInIOExceptions: bool,
 }
-#[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -5962,7 +5962,7 @@ for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
         false
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 impl std::ops::Deref
 for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     type Target = crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<i32>;
@@ -5970,7 +5970,7 @@ for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 impl std::ops::DerefMut
 for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6008,7 +6008,7 @@ impl crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6018,7 +6018,7 @@ for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct Socket_TaskSocketAsyncEventArgs_1<TResult: quest_hook::libil2cpp::Type> {
@@ -6029,7 +6029,7 @@ pub struct Socket_TaskSocketAsyncEventArgs_1<TResult: quest_hook::libil2cpp::Typ
     pub _accessed: bool,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
-#[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
 for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -6065,7 +6065,7 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
         false
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
     type Target = crate::System::Net::Sockets::SocketAsyncEventArgs;
@@ -6073,7 +6073,7 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6155,7 +6155,7 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
@@ -6165,14 +6165,14 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Socket_WSABUF {
     pub len: i32,
     pub buf: crate::System::IntPtr,
 }
-#[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket_WSABUF {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -6201,7 +6201,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket_
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::Socket_WSABUF {
     type Type = Self;
@@ -6212,7 +6212,7 @@ for crate::System::Net::Sockets::Socket_WSABUF {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::Socket_WSABUF {
     type Actual = Self;
@@ -6226,7 +6226,7 @@ for crate::System::Net::Sockets::Socket_WSABUF {
         self
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::Socket_WSABUF {
     type Type = Self;
@@ -6241,7 +6241,7 @@ for crate::System::Net::Sockets::Socket_WSABUF {
         }
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Sockets::Socket_WSABUF {
     type Actual = Self;
@@ -6255,7 +6255,7 @@ for crate::System::Net::Sockets::Socket_WSABUF {
         actual
     }
 }
-#[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
+#[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::Sockets::Socket_WSABUF {
     type Type = Self;

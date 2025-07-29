@@ -1,11 +1,15 @@
-#[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthorityKeyIdentifierExtension {
     __cordl_parent: crate::Mono::Security::X509::X509Extension,
     pub aki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,7 +29,9 @@ for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
         false
     }
 }
-#[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension"
+)]
 impl std::ops::Deref
 for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
     type Target = crate::Mono::Security::X509::X509Extension;
@@ -33,7 +39,9 @@ for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension"
+)]
 impl std::ops::DerefMut
 for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -178,7 +186,9 @@ impl crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
+#[cfg(
+    feature = "cordl_class_Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

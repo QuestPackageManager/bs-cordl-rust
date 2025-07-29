@@ -1,11 +1,11 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoThrowSetBinderMember {
     __cordl_parent: crate::System::Dynamic::SetMemberBinder,
     pub _innerBinder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>,
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -25,14 +25,14 @@ for crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
         false
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
     type Target = crate::System::Dynamic::SetMemberBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -124,7 +124,7 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
+#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

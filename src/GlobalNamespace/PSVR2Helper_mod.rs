@@ -1,4 +1,4 @@
-#[cfg(feature = "PSVR2Helper")]
+#[cfg(feature = "cordl_class_PSVR2Helper")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PSVR2Helper {
@@ -55,7 +55,7 @@ pub struct PSVR2Helper {
     pub hmdMountedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub controllersDidDisconnectEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
-#[cfg(feature = "PSVR2Helper")]
+#[cfg(feature = "cordl_class_PSVR2Helper")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PSVR2Helper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -74,14 +74,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PSVR2Helper 
         false
     }
 }
-#[cfg(feature = "PSVR2Helper")]
+#[cfg(feature = "cordl_class_PSVR2Helper")]
 impl std::ops::Deref for crate::GlobalNamespace::PSVR2Helper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "PSVR2Helper")]
+#[cfg(feature = "cordl_class_PSVR2Helper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PSVR2Helper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1366,7 +1366,7 @@ impl crate::GlobalNamespace::PSVR2Helper {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "PSVR2Helper")]
+#[cfg(feature = "cordl_class_PSVR2Helper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PSVR2Helper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -1389,14 +1389,14 @@ for crate::GlobalNamespace::PSVR2Helper {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
+#[cfg(feature = "cordl_class_PSVR2Helper+HeadsetHapticFrequencyLimit")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PSVR2Helper_HeadsetHapticFrequencyLimit {
     pub maxTimePlayed: f32,
     pub maximumFrequency: i32,
 }
-#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
+#[cfg(feature = "cordl_class_PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Held<'a> = Self;
@@ -1426,7 +1426,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
+#[cfg(feature = "cordl_class_PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Type = Self;
@@ -1437,7 +1437,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
+#[cfg(feature = "cordl_class_PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Actual = Self;
@@ -1451,7 +1451,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
         self
     }
 }
-#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
+#[cfg(feature = "cordl_class_PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Type = Self;
@@ -1466,7 +1466,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
         }
     }
 }
-#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
+#[cfg(feature = "cordl_class_PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Actual = Self;
@@ -1480,7 +1480,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
         actual
     }
 }
-#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
+#[cfg(feature = "cordl_class_PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Type = Self;

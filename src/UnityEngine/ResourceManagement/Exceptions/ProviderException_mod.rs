@@ -1,4 +1,6 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException"
+)]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProviderException {
@@ -7,7 +9,9 @@ pub struct ProviderException {
         crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     >,
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException"
+)]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -27,7 +31,9 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
         false
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException"
+)]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     type Target = crate::UnityEngine::ResourceManagement::Exceptions::OperationException;
@@ -35,7 +41,9 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException"
+)]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -128,7 +136,9 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException"
+)]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

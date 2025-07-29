@@ -1,4 +1,4 @@
-#[cfg(feature = "SliderInteractionManager")]
+#[cfg(feature = "cordl_class_SliderInteractionManager")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderInteractionManager {
@@ -25,7 +25,7 @@ pub struct SliderInteractionManager {
         >,
     >,
 }
-#[cfg(feature = "SliderInteractionManager")]
+#[cfg(feature = "cordl_class_SliderInteractionManager")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::GlobalNamespace::SliderInteractionManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -45,14 +45,14 @@ for crate::GlobalNamespace::SliderInteractionManager {
         false
     }
 }
-#[cfg(feature = "SliderInteractionManager")]
+#[cfg(feature = "cordl_class_SliderInteractionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderInteractionManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "SliderInteractionManager")]
+#[cfg(feature = "cordl_class_SliderInteractionManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderInteractionManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -496,7 +496,7 @@ impl crate::GlobalNamespace::SliderInteractionManager {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "SliderInteractionManager")]
+#[cfg(feature = "cordl_class_SliderInteractionManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderInteractionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

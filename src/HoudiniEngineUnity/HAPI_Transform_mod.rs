@@ -1,4 +1,4 @@
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Transform")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_Transform {
@@ -10,7 +10,7 @@ pub struct HAPI_Transform {
     pub shear: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub rstOrder: crate::HoudiniEngineUnity::HAPI_RSTOrder,
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Transform")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Transform {
     type Held<'a> = Self;
     type HeldRaw = Self;
@@ -39,7 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Tran
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Transform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_Transform {
     type Type = Self;
@@ -50,7 +50,7 @@ for crate::HoudiniEngineUnity::HAPI_Transform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Transform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_Transform {
     type Actual = Self;
@@ -64,7 +64,7 @@ for crate::HoudiniEngineUnity::HAPI_Transform {
         self
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Transform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_Transform {
     type Type = Self;
@@ -79,7 +79,7 @@ for crate::HoudiniEngineUnity::HAPI_Transform {
         }
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Transform")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_Transform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -92,7 +92,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_Tr
         actual
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
+#[cfg(feature = "cordl_class_HoudiniEngineUnity+HAPI_Transform")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::HoudiniEngineUnity::HAPI_Transform {
     type Type = Self;

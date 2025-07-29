@@ -1,4 +1,4 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeInputRuntime {
@@ -23,7 +23,7 @@ pub struct NativeInputRuntime {
     pub m_DidCallOnShutdown: bool,
     pub m_FocusChangedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -43,14 +43,14 @@ for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
         false
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -962,7 +962,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

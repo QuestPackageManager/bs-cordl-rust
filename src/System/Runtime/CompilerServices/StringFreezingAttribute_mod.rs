@@ -1,10 +1,10 @@
-#[cfg(feature = "System+Runtime+CompilerServices+StringFreezingAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StringFreezingAttribute")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringFreezingAttribute {
     __cordl_parent: crate::System::Attribute,
 }
-#[cfg(feature = "System+Runtime+CompilerServices+StringFreezingAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StringFreezingAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
         false
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+StringFreezingAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StringFreezingAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+StringFreezingAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StringFreezingAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -70,7 +70,7 @@ impl crate::System::Runtime::CompilerServices::StringFreezingAttribute {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Runtime+CompilerServices+StringFreezingAttribute")]
+#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StringFreezingAttribute")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

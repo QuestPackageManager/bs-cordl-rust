@@ -1,10 +1,10 @@
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct StreamOverflowException {
     __cordl_parent: crate::System::IO::IOException,
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
         false
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
     type Target = crate::System::IO::IOException;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -147,7 +147,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
+#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

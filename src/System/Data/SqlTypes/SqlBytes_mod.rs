@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Data+SqlTypes+SqlBytes")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytes")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct SqlBytes {
@@ -9,7 +9,7 @@ pub struct SqlBytes {
     pub _state: crate::System::Data::SqlTypes::SqlBytesCharsState,
     pub _rgbWorkBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytes")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytes")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlBytes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlBy
         false
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytes")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytes")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlBytes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytes")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytes")]
 impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlBytes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -497,7 +497,7 @@ impl crate::System::Data::SqlTypes::SqlBytes {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Data+SqlTypes+SqlBytes")]
+#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlBytes")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::SqlTypes::SqlBytes {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)

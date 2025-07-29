@@ -1,4 +1,4 @@
-#[cfg(feature = "System+Net+ChunkedInputStream")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChunkedInputStream {
@@ -8,7 +8,7 @@ pub struct ChunkedInputStream {
     pub context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     pub no_more_data: bool,
 }
-#[cfg(feature = "System+Net+ChunkedInputStream")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::ChunkedInputStream {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::ChunkedInputStre
         false
     }
 }
-#[cfg(feature = "System+Net+ChunkedInputStream")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream")]
 impl std::ops::Deref for crate::System::Net::ChunkedInputStream {
     type Target = crate::System::Net::RequestStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+ChunkedInputStream")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream")]
 impl std::ops::DerefMut for crate::System::Net::ChunkedInputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -253,7 +253,7 @@ impl crate::System::Net::ChunkedInputStream {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+ChunkedInputStream")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ChunkedInputStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
@@ -262,7 +262,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ChunkedInputStrea
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream+ReadBufferState")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChunkedInputStream_ReadBufferState {
@@ -273,7 +273,7 @@ pub struct ChunkedInputStream_ReadBufferState {
     pub InitialCount: i32,
     pub Ares: quest_hook::libil2cpp::Gc<crate::System::Net::HttpStreamAsyncResult>,
 }
-#[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream+ReadBufferState")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::System::Net::ChunkedInputStream_ReadBufferState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
@@ -293,14 +293,14 @@ for crate::System::Net::ChunkedInputStream_ReadBufferState {
         false
     }
 }
-#[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream+ReadBufferState")]
 impl std::ops::Deref for crate::System::Net::ChunkedInputStream_ReadBufferState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream+ReadBufferState")]
 impl std::ops::DerefMut for crate::System::Net::ChunkedInputStream_ReadBufferState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -359,7 +359,7 @@ impl crate::System::Net::ChunkedInputStream_ReadBufferState {
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
+#[cfg(feature = "cordl_class_System+Net+ChunkedInputStream+ReadBufferState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::ChunkedInputStream_ReadBufferState {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
